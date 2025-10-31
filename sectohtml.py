@@ -75,8 +75,7 @@ section_info = {
 with open(test_file, 'r') as file:
     content = file.read()
     
-content = clean_sec_string(content)
-
+content = clean_sec_string(content, brk_replaced=False)
 
 html_fragment = BeautifulSoup(content, 'html.parser')
 

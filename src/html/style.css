@@ -23,6 +23,11 @@ br {
     display: none; /* This is a 'reset' requirement */
 }
 
+brk {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
 scn,
 stl,
 dte,
