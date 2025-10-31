@@ -83,10 +83,11 @@ def files_have_0x81(file_dict: dict) -> bool:
 
 
 
-original_sec_files = get_file_dict()
+original_dir = r'./specs/sec'
+original_sec_files = get_file_dict(original_dir)
 files_have_0x81(original_sec_files)
 
-new_dir = './specs/new_sec'
+new_dir = r'./specs/cleaned_sec'
 if not os.path.exists(new_dir):
     os.mkdir(os.path.abspath(new_dir))
 
