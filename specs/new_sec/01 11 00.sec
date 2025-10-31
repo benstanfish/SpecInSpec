@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
+<BRK/>
+<SCN>SECTION 01 11 00</SCN><BRK/>
+<BRK/>
+<STL>STATEMENT OF WORK</STL><BRK/>
+<BRK/>
+<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
+<BRK/>
+<SPT><TTL>General</TTL><BRK/>
+<BRK/>
+<TXT>The Contractor shall design and construct [Description of Project] at [Location of Project] resulting in complete and usable facility.</TXT><BRK/>
+<BRK/>
+<TXT>The intent of this section is to specify the minimum design and construction requirements for quality, function, materials, and types of construction 
+in sufficient detail for Contract completion.</TXT><BRK/>
+<BRK/>
+<TXT>Basis of design, design submittal requirements, construction document drawings, and specifications shall be prepared to comply with this section 
+and Section <SRF>01 33 16</SRF> DESIGN AFTER AWARD.  No deviations from these sections shall be allowed unless prior approval is obtained from the Contracting 
+Officer.  All questions or problems encountered by the Contractor in following the requirements in this section shall be promptly submitted with 
+recommendations to the Contracting Officer for resolution.</TXT><BRK/>
+<BRK/>
+<TXT>Coordinate with U.S. Army Corps of Engineers, Japan District regarding the following sections during design:</TXT><BRK/>
+<BRK/>
+[<LST INDENT="-0.33">a.  Section 01 45 35 SPECIAL INSPECTIONS</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Section 01 91 00.15 TOTAL BUILDING COMMISSIONING</LST>]<BRK/>
+<BRK/></SPT>
+</PRT><PRT><TTL>PART 2   PRODUCTS (NOT USED)</TTL><BRK/>
+<BRK/></PRT>
+<PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
+<BRK/>
+<SPT><TTL>ATTACHMENTS</TTL><BRK/>
+<BRK/>
+<TXT>Information provided in the attachments is intended to provide design requirements and information.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>01 11 00-A</TTL><BRK/>
+<BRK/>
+<TXT>Design Criteria: Design and construction for this project shall comply with Attachment 01 11 00-A.  Secure any necessary reference at Contractor's 
+own expense and resources.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>01 11 00-B</TTL><BRK/>
+<BRK/>
+<TXT>Concept Drawings: Provided for design and coordination purposes.  Information depicted in the Concept Drawings serves as a guide only.  Further 
+development shall require coordination with the using agency and base personnel.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>01 11 00-C</TTL><BRK/>
+<BRK/>
+<TXT>Room Data Sheets.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>01 11 00-D</TTL><BRK/>
+<BRK/>
+<TXT>Existing Utilities Information.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>01 11 00-E</TTL><BRK/>
+<BRK/>
+<TXT>Geotechnical Report.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>01 11 00-F</TTL><BRK/>
+<BRK/>
+<TXT>Environmental/Hazardous Materials Survey Report.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>DESIGN COORDINATION, SUBMITTALS, AND OTHER REQUIREMENTS</TTL><BRK/>
+<BRK/>
+<TXT>Refer to Section <SRF>01 33 16</SRF> DESIGN AFTER AWARD.</TXT><BRK/>
+<BRK/>
+<BRK/></SPT>
+</PRT><END/><BRK/></SEC>

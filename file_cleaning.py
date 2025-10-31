@@ -1,10 +1,8 @@
-import os
+import os, shutil
 from pathlib import Path
 from defusedxml import ElementTree as ET
 
 from src.console.escapes import Escapes
-
-
 
 def clean_0x81_file(file_path: str, 
                     new_path: str='') -> None:
@@ -28,7 +26,7 @@ def clean_0x81_file(file_path: str,
                 file.write(content)
     except Exception as e:
         print(f'An error occured when trying to write the file to {'new file' if new_path else 'existing path'}: {e}')
-    print(f'Cleaned file written {'new file' if new_path else 'existing path'}: {new_path if new_path else file_path}')
+    # print(f'Cleaned file written {'new file' if new_path else 'existing path'}: {new_path if new_path else file_path}')
 
 def file_has_0x81(file_path: str) -> bool:
     """Determine if the file contains occurances of the 0x81 character.
@@ -62,11 +60,43 @@ def get_file_dict(parent_dir: str=r'./specs/sec',
                     if Path(file).suffix.lower() == extension]
     return {Path(file_path).stem: file_path for file_path in file_list}
 
+def files_have_0x81(file_dict: dict) -> bool:
+    """Loops through files in dictionary to test if each file has 0x81 character and prints color-coded results to console.
+
+    Args:
+        file_dict (dict): Dictionary with key = file stem, value = absolute path.
+    
+    Returns:
+        bool: Result of all parsed files in supplied file dictionary.
+    """
+    dir_has_0x81 = False
+    for file_stem, path in file_dict.items():
+        file_with_0x81 = file_has_0x81(path)
+        if file_with_0x81:
+            dir_has_0x81 = file_with_0x81
+        print(f'{file_stem}: {Escapes.Red + Escapes.Bold if file_with_0x81 \
+                         else Escapes.Green}{file_with_0x81}{Escapes.Reset}')
+    print(f'Directory {Escapes.Red + Escapes.Bold + 'has' if dir_has_0x81 \
+                       else Escapes.Green + 'does not'}{Escapes.Reset} files with 0x81 character.')
+    return dir_has_0x81
 
 
 
 
-sec_files = get_file_dict()
-for section, path in sec_files.items():
-    print(f'{section}: {Escapes.Red + Escapes.Bold if file_has_0x81(path) \
-                         else Escapes.Green}{file_has_0x81(path)}{Escapes.Reset}')
+original_sec_files = get_file_dict()
+files_have_0x81(original_sec_files)
+
+new_dir = './specs/new_sec'
+if not os.path.exists(new_dir):
+    os.mkdir(os.path.abspath(new_dir))
+
+cleaned_sec_files = {}
+for section, path in original_sec_files.items():
+    new_path = os.path.join(os.path.abspath(new_dir), section + '.sec')
+    if file_has_0x81(path):
+        clean_0x81_file(path, new_path)
+    else:
+        shutil.copy(path, new_path)
+    cleaned_sec_files[section] = new_path
+
+files_have_0x81(cleaned_sec_files)
