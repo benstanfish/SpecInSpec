@@ -71,16 +71,17 @@ def files_have_0x81(file_dict: dict) -> bool:
         bool: Result of all parsed files in supplied file dictionary.
     """
     dir_has_0x81 = False
+    print('='*75)
     for file_stem, path in file_dict.items():
         file_with_0x81 = file_has_0x81(path)
         if file_with_0x81:
             dir_has_0x81 = file_with_0x81
-    #     print(f'{file_stem}: {Escapes.Red + Escapes.Bold if file_with_0x81 \
-    #                      else Escapes.Green}{file_with_0x81}{Escapes.Reset}')
-    # print(f'Directory {Escapes.Red + Escapes.Bold + 'has' if dir_has_0x81 \
-    #                    else Escapes.Green + 'does not'}{Escapes.Reset} files with 0x81 character.')
+        print(f'{file_stem}: {Escapes.Red + Escapes.Bold if file_with_0x81 \
+                         else Escapes.Green}{file_with_0x81}{Escapes.Reset}')
+    print('-'*75)
+    print(f'File dictionary {Escapes.Red + Escapes.Bold + 'has' if dir_has_0x81 \
+                       else Escapes.Green + 'does not'}{Escapes.Reset} files with 0x81 character.\n')
     return dir_has_0x81
-
 
 
 
@@ -102,3 +103,5 @@ for section, path in original_sec_files.items():
     cleaned_sec_files[section] = new_path
 
 files_have_0x81(cleaned_sec_files)
+
+print('Script completed.')

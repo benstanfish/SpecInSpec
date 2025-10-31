@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
+<BRK/>
+<SCN>SECTION 01 10 00</SCN><BRK/>
+<BRK/>
+<STL>DESCRIPTION OF WORK</STL><BRK/>
+<BRK/>
+<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
+<BRK/>
+<SPT><TTL>GENERAL DESCRIPTION</TTL><BRK/>
+<BRK/>
+<TXT>The work includes, but is not limited to, providing zero to 100 percent design effort, reproduction, labor, transportation, 
+materials, equipment, and supervision necessary to accomplish various maintenance, repairs, alterations, construction, 
+demolition, and associated incidental environmental work (including but not limited to asbestos, lead-based paint, 
+mold, PCBs, site contamination, etc.) to U.S. Government facilities in Japan, by means of this Multiple Award 
+Task Order Contract (MATOC).  Task Orders shall be issued by the Contracting Officer as either a Design-Bid-Build 
+(D-B-B) or as a Design-Build (D-B) Task Order.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>LOCATION</TTL><BRK/>
+<BRK/>
+<TXT>Work is located at various U.S. Government facilities in Japan.  The Contracting Officer shall identify the exact 
+location of each project on the Task Order.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>DEFINITION</TTL><BRK/>
+<BRK/>
+<TXT>The term "United States" shall appear before the word "Government" whenever the latter word appears in this Contract, 
+except where the word "Government" refers to a different-named Government.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>TERM OF CONTRACT</TTL><BRK/>
+<BRK/>
+<TXT>The Contract term shall be for a period of <HL1><HL3>five (5) years</HL3></HL1>, commencing on the date of award.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>REQUIREMENTS TYPE CONTRACTS</TTL><BRK/>
+<BRK/>
+<TXT>Task Orders shall not be issued under this Contract when the work directly conflicts with the scope of an installation's 
+requirements type Contract.  Task Orders may be issued under this Contract if the conflicting work is incidental 
+to the overall scope of the Task Order.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>TASK ORDER PROCEDURES</TTL><BRK/>
+<BRK/>
+<TXT>A fixed price shall be paid for each Task Order as specified in the following procedures.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Fixed Price Task Orders</TTL><BRK/>
+<BRK/>
+<TXT>Payment for fixed priced Contracts shall be made pursuant to Contract clause 52.232-5, PAYMENTS UNDER FIXED-PRICE 
+CONSTRUCTION CONTRACTS.  Partial payments are authorized based on agreement by the Contractor and the Government 
+of the percentage of work completed.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>D-B TASK ORDERS</TTL><BRK/>
+<BRK/>
+<TXT>Task Orders issued under the D-B process are generally for projects that require significant engineering and 
+design effort by the Contractor prior to construction.  Examples of these types of projects shall include, but 
+not limited to, full barracks renovations, condensate tank design, electrical substation designs, fuel storage 
+facilities, fire suppression systems, etc.  The Task Order shall be awarded for design and construction efforts 
+combined.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Project Scope</TTL><BRK/>
+<BRK/>
+<TXT>The project scope under D-B Task Orders includes, but not limited to, the scope of work, design requirements, 
+construction method requirements, Contract Cost Limitations (if any), shop drawings, project duration, and the 
+amount of liquidated damages that can be assessed (if any).  Project scope under D-B Task Orders shall be of 
+a complex nature.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>D-B-B TASK ORDERS</TTL><BRK/>
+<BRK/>
+<TXT>Task Orders issued under the D-B-B process includes a complete design package and specifications, and is applicable 
+to the construction phase of the project only.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Project Scope</TTL><BRK/>
+<BRK/>
+<TXT>The project scope under D-B-B Task Orders is defined by the complete design package.  In addition, the D-B-B 
+Task Order includes, but not limited to, shop drawings, construction duration, and the amount of liquidated damages 
+that can be assessed (if any).</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>CONTRACTOR'S PROPOSAL SCHEDULE</TTL><BRK/>
+<BRK/>
+<TXT>Submit a proposal in accordance with the rates in the schedule in Section 00 10 00 and the Task Order CLIN Schedule.  
+Schedule requirement of the Task Order shall be based upon the complexity, urgency and level of detail necessary 
+for the success of the Task Order.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>COST PROPOSAL</TTL><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Divide cost proposals into two separate parts for D-B Task Orders:</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) Design (D-B only).  The first part shall cover all design effort required, to include all 
+design meetings, on-board reviews, site visits, reproduction, and any engineering services during 
+construction.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) Construction (D-B and D-B-B).  The second part shall cover all construction effort required, 
+to include all quality control, supervision and any technical requirements during construction.</ITM><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Consider the project scope, customers' requirements, design and construction requirements, code requirements, 
+safety requirements, quality, maintainability, operability, and cost when preparing a proposal.  Provide 
+concept sketches or drawings for proposed methods, proposed schedules (design and construction), cost 
+proposals, and other information as required.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Propose representative costs for materials, equipment rentals, disposal, testing and laboratories 
+required.  In addition, the costs shall reflect the recommended design and construction methodology.  
+Provide quotes for known materials, equipment, disposal, testing and laboratory costs.  Select quotes 
+that meet the specifications.  Provide equipment catalog cut sheets with manufacturer's specifications 
+and manufacturer's installation procedures or execution specifications.  Consolidate shop drawings, catalog 
+cuts, detailed scope of work, sketches, drawings, specifications, quotes, and price estimates into a 
+comprehensive proposal.</LST><BRK/>
+<BRK/>
+<TXT>The Government reserves the right to challenge any proposed costs and may require the Contractor to obtain additional 
+quotes or may require the Contractor to further justify the proposed costs.  The Government's identification 
+of any commercial sources is merely informational in nature and shall not constitute an endorsement of a particular 
+source or product.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>TASK ORDER AWARD</TTL><BRK/>
+<BRK/>
+<TXT>Award of individual Task Orders shall be made as indicated in Section 00 73 00 SUPPLEMENTARY CONDITIONS.  When 
+evaluation factors other than proposed price are used as the basis for award, the Contracting Officer may review 
+the Contractor's proposal and may revise the project scope and/or negotiate with the Contractor.</TXT><BRK/>
+<BRK/></SPT>
+</PRT><PRT><TTL>PART 3   EXECUTION (NOT USED)</TTL><BRK/>
+<BRK/>
+<BRK/></PRT>
+<END/><BRK/></SEC>
