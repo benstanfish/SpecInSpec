@@ -1,5 +1,7 @@
 # Copyright (c) 2025 Ben Fisher
 
+__all__ = ['clean_files']
+
 import os, shutil
 from pathlib import Path
 from defusedxml import ElementTree as ET
@@ -26,9 +28,9 @@ def clean_0x81_file(file_path: str, new_path: str='') -> None:
             with open(file_path, 'wb') as file:
                 file.write(content)
     except Exception as e:
-        # print(f'An error occured when trying to write the file to {'new file' if new_path else 'existing path'}: {e}')
+        print(f'An error occured when trying to write the file to {'new file' if new_path else 'existing path'}: {e}')
         pass
-    # print(f'Cleaned file written {'new file' if new_path else 'existing path'}: {new_path if new_path else file_path}')
+    print(f'Cleaned file written {'new file' if new_path else 'existing path'}: {new_path if new_path else file_path}')
 
 def file_has_0x81(file_path: str) -> bool:
     """Determine if the file contains occurances of the 0x81 character.
