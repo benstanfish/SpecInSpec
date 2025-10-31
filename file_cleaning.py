@@ -6,8 +6,7 @@ from defusedxml import ElementTree as ET
 
 from src.console.escapes import Escapes
 
-def clean_0x81_file(file_path: str, 
-                    new_path: str='') -> None:
+def clean_0x81_file(file_path: str, new_path: str='') -> None:
     """Replaces the 0x81 byte (all occurances) and saves to file.
 
     Args:
@@ -47,8 +46,7 @@ def file_has_0x81(file_path: str) -> bool:
     except:
         return True
 
-def get_file_dict(parent_dir: str=r'./specs/sec',
-                  extension: str='.sec') -> dict:
+def get_file_dict(parent_dir: str=r'./specs/sec', extension: str='.sec') -> dict:
     """Creates dictionary of file stems and absolute paths that match the file extension condition.
 
     Args:
@@ -85,25 +83,30 @@ def files_have_0x81(file_dict: dict) -> bool:
                        else Escapes.Green + 'does not'}{Escapes.Reset} files with 0x81 character.\n')
     return dir_has_0x81
 
+def clean_files(orig_dir: str=r'./specs/sec',
+                new_dir: str=r'./specs/cleaned_sec',
+                file_type: str='.sec') -> None:
+    """Clean all files in a specified directory, copying to new directory (or overwrite existing files).
 
+    Args:
+        orig_dir (str, optional): Path to directory with source files. Defaults to r'./specs/sec'.
+        new_dir (str, optional): Path to directory to place new files. Use orig_dir to overwrite existing. Defaults to r'./specs/cleaned_sec'.
+    """
+    
+    orig_files = get_file_dict(orig_dir, file_type)
+    files_have_0x81(orig_files)
 
-original_dir = r'./specs/sec'
-original_sec_files = get_file_dict(original_dir)
-files_have_0x81(original_sec_files)
+    if not os.path.exists(new_dir):
+        os.mkdir(os.path.abspath(new_dir))
 
-new_dir = r'./specs/cleaned_sec'
-if not os.path.exists(new_dir):
-    os.mkdir(os.path.abspath(new_dir))
+    cleaned_files = {}
+    for section, path in orig_files.items():
+        new_path = os.path.join(os.path.abspath(new_dir), section + file_type)
+        if file_has_0x81(path):
+            clean_0x81_file(path, new_path)
+        else:
+            shutil.copy(path, new_path)
+        cleaned_files[section] = new_path
 
-cleaned_sec_files = {}
-for section, path in original_sec_files.items():
-    new_path = os.path.join(os.path.abspath(new_dir), section + '.sec')
-    if file_has_0x81(path):
-        clean_0x81_file(path, new_path)
-    else:
-        shutil.copy(path, new_path)
-    cleaned_sec_files[section] = new_path
-
-files_have_0x81(cleaned_sec_files)
-
-print('Script completed.')
+    files_have_0x81(cleaned_files)
+    
