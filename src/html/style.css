@@ -1,8 +1,8 @@
 :root {
     --standard-margin: 12px;
     --display-hdr: none;
-    --display-notes: block;
-    --display-del: inline-block; /* none or inline-block */
+    --display-notes: none;
+    --display-del: none; /* none or inline-block */
 
     --ref-color: magenta;
     --sub-color: blue;
@@ -10,6 +10,7 @@
     --del-color: green;
     --note-color: #aaa;
     --hdr-color: #aaa;
+
 }
 
 body {
@@ -17,6 +18,7 @@ body {
     margin: 72px auto;
 
     font-size: 16px;
+    line-height: 1.375;
 }
 
 br {
