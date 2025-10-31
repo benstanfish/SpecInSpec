@@ -1,3 +1,5 @@
+# Copyright (c) 2025 Ben Fisher
+
 import os, shutil
 from pathlib import Path
 from defusedxml import ElementTree as ET
