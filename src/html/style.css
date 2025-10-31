@@ -1,15 +1,15 @@
 :root {
     --standard-margin: 12px;
     --display-hdr: none;
-    --display-notes: none;
+    --display-notes: block;
     --display-del: inline-block; /* none or inline-block */
 
     --ref-color: magenta;
     --sub-color: blue;
     --add-color: red; 
     --del-color: green;
-    --note-color: grey;
-    --hdr-color: grey;
+    --note-color: #aaa;
+    --hdr-color: #aaa;
 }
 
 body {
@@ -35,6 +35,11 @@ spt {
     display: block;
     margin-bottom: var(--standard-margin);
 }
+
+/* url {
+    color: blue;
+    border-bottom: 1px solid blue;
+} */
 
 lst {
     display: block;
@@ -121,4 +126,15 @@ sub {
 lst sub {
     display: block;
     margin: var(--standard-margin) 0;
+}
+
+met {
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+}
+eng {
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
 }
