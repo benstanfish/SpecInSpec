@@ -25,7 +25,8 @@ def clean_0x81_file(file_path: str,
             with open(file_path, 'wb') as file:
                 file.write(content)
     except Exception as e:
-        print(f'An error occured when trying to write the file to {'new file' if new_path else 'existing path'}: {e}')
+        # print(f'An error occured when trying to write the file to {'new file' if new_path else 'existing path'}: {e}')
+        pass
     # print(f'Cleaned file written {'new file' if new_path else 'existing path'}: {new_path if new_path else file_path}')
 
 def file_has_0x81(file_path: str) -> bool:
@@ -74,10 +75,10 @@ def files_have_0x81(file_dict: dict) -> bool:
         file_with_0x81 = file_has_0x81(path)
         if file_with_0x81:
             dir_has_0x81 = file_with_0x81
-        print(f'{file_stem}: {Escapes.Red + Escapes.Bold if file_with_0x81 \
-                         else Escapes.Green}{file_with_0x81}{Escapes.Reset}')
-    print(f'Directory {Escapes.Red + Escapes.Bold + 'has' if dir_has_0x81 \
-                       else Escapes.Green + 'does not'}{Escapes.Reset} files with 0x81 character.')
+    #     print(f'{file_stem}: {Escapes.Red + Escapes.Bold if file_with_0x81 \
+    #                      else Escapes.Green}{file_with_0x81}{Escapes.Reset}')
+    # print(f'Directory {Escapes.Red + Escapes.Bold + 'has' if dir_has_0x81 \
+    #                    else Escapes.Green + 'does not'}{Escapes.Reset} files with 0x81 character.')
     return dir_has_0x81
 
 
