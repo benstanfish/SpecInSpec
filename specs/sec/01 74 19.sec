@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
+<BRK/>
+<SCN>SECTION 01 74 19</SCN><BRK/>
+<BRK/>
+<STL>CONSTRUCTION AND DEMOLITION WASTE MANAGEMENT</STL><BRK/>
+<HL4>01/24</HL4><BRK/>
+<BRK/>
+<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
+<BRK/>
+<SPT><TTL>REFERENCES</TTL><BRK/>
+<BRK/>
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK/>
+<BRK/>
+<REF><ORG>U.S. DEPARTMENT OF DEFENSE (DOD)</ORG><BRK/>
+<BRK/>
+<RID>JEGS</RID><RTL>(Ap<DEL>ril</DEL><ADD>r</ADD> 202<DEL>2</DEL><ADD>4</ADD>) Japan Environmental Governing 
+Standards</RTL><BRK/>
+<BRK/></REF>
+</SPT><SPT><TTL>GOVERNMENT POLICY</TTL><BRK/>
+<BRK/>
+<TXT>Government policy is to apply sound environmental principles in the design, construction and use of facilities.  
+As part of the implementation of that policy, practice efficient waste management when sizing, cutting, and installing 
+products and materials, and use all reasonable means to divert construction and demolition waste from landfills 
+and incinerators and to facilitate their recycling or reuse.  Divert a minimum of 60 percent by weight of total 
+project solid waste from the landfill.[Comply with TPC requirements as specified in Section <SRF>01 33 29</SRF> SUSTAINABILITY 
+REQUIREMENTS AND REPORTING.]</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>MANAGEMENT</TTL><BRK/>
+<BRK/>
+<TXT>Develop and implement a waste management program.  Take a pro-active, responsible role in the management of construction 
+and demolition waste and require all subcontractors, vendors, and suppliers to participate in the effort.  The 
+Environmental Manager, as specified in Section [<SRF>01 57 19</SRF>][<SRF>01 57 19.01</SRF>] TEMPORARY ENVIRONMENTAL CONTROLS, is responsible 
+for instructing workers and overseeing and documenting results of the Waste Management Plan for the project.  
+Construction and demolition waste includes products of demolition or removal, excess or unusable construction 
+materials, packaging materials for construction products, and other materials generated during the construction 
+process but not incorporated into the work.  In the management of waste, consider the availability of viable 
+markets, the condition of the material, the ability to provide the material in suitable condition and in a  quantity 
+acceptable to available markets, and time constraints imposed by internal project completion mandates.  Implement 
+any special programs involving rebates or similar incentives related to recycling of waste.  Revenues or other 
+savings obtained for salvage, or recyclable materials not claimed by the Government will accrue to the Contractor.  
+Appropriately permit firms and facilities used for recycling, reuse, and disposal for the intended use to the 
+extent required by federal, state, and local regulations.  Also, provide on-site instruction of appropriate separation, 
+handling, recycling, salvage, reuse, and return methods to be used by all parties at the appropriate stages of 
+the project.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>SUBMITTALS</TTL><BRK/>
+<BRK/>
+<TXT>Government approval is required for submittals with a "G" designation; <TAI OPT="DESIGN-BID-BUILD">submittals not having a "G" designation 
+are for information only</TAI><TAI OPT="DESIGN-BUILD">submittals not having a "G" designation are for Contractor Quality Control or Designer 
+of Record approval</TAI>. Submit the following in accordance with Section <SRF>01 33 00</SRF>SUBMITTAL PROCEDURES:</TXT><BRK/>
+<BRK/>
+<LST><SUB>SD-01 Preconstruction Submittals</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Waste Management Plan</SUB>; <SUB>G</SUB></ITM><BRK/>
+<BRK/>
+<LST><SUB>SD-11 Closeout Submittals</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Records</SUB>; <SUB>G</SUB></ITM><BRK/>
+<BRK/></SPT>
+<SPT><TTL>MEETINGS</TTL><BRK/>
+<BRK/>
+<TXT>Conduct Construction Waste Management meetings.  After award of the Contract and prior to commencement of work, 
+schedule and conduct a meeting with the Contracting Officer to discuss the proposed Waste Management Plan and 
+to develop a mutual understanding relative to the details of waste management.  The requirements for this meeting 
+may be fulfilled during the coordination and mutual understanding meeting outlined in Section <SRF>01 45 00.00 10</SRF> 
+QUALITY CONTROL.  At a minimum, discuss environmental and waste management goals and issues at the following 
+additional meetings:</TXT><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">a.  Pre-bid meeting.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">b.  Preconstruction meeting.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">c.  Regular QC meetings.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">d.  Work safety meetings.</ITM><BRK/>
+<BRK/></SPT>
+<SPT><TTL><SUB>WASTE MANAGEMENT PLAN</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Submit a Waste Management Plan within 15 days after Notice to Proceed.  The plan demonstrates how to meet <DEL>the </DEL>
+the project waste diversion goal.  Also, include the following in the plan:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Name of individuals on the Contractor's staff responsible for waste prevention and management.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Actions that will be taken to reduce solid waste generation, including coordination with Subcontractors 
+to ensure awareness and participation.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Description of the regular meetings to be held to address waste management.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Description of the specific approaches to be used in recycling/reuse of the various materials generated, 
+including the areas on site and equipment to be used for processing, sorting, and temporary storage of 
+wastes.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Characterization, including estimated types and quantities, of the waste to be generated.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  Name of landfill and/or incinerator to be used and the estimated costs for use, assuming that there 
+would be no salvage or recycling on the project.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  Identification of local and regional reuse programs, including non-profit organizations such as schools, 
+local housing agencies, and organizations that accept used materials such as materials exchange networks 
+and Habitat for Humanity.  Include the name, location, and phone number for each reuse facility to be 
+used, and provide a copy of the permit or license for each facility.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">h.  List of specific waste materials that will be salvaged for resale, salvaged and reused on the current 
+project, salvaged and stored for reuse on a future project, or recycled.  Identify the recycling facilities 
+by name, location, and phone number, including a copy of the permit or license for each facility.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">i.  Identification of materials that cannot be recycled/reused with an explanation or justification, 
+to be approved by the Contracting Officer.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">j.  Description of the means by which any waste materials identified in item (h) above will be protected 
+from contamination.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">k.  Description of the means of transportation of the recyclable materials (whether materials will be 
+site-separated and self-hauled to designated centers, or whether mixed materials will be collected by 
+a waste hauler and removed from the site).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">l.  Anticipated net cost savings determined by subtracting Contractor program management costs and the 
+cost of disposal from the revenue generated by sale of the materials and the incineration and/or landfill 
+cost avoidance.</LST><BRK/>
+<BRK/>
+<TXT>Revise and resubmit Plan as required by the Contracting Officer.  Approval of Contractor's Plan shall not relieve 
+the Contractor of responsibility for compliance with applicable environmental regulations or meeting project 
+cumulative waste diversion requirement.  Distribute copies of the Waste Management Plan to each Subcontractor, 
+the Quality Control Manager, and the Contracting Officer.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL><SUB>RECORDS</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Maintain records to document the quantity of waste generated; the quantity of waste diverted through sale, reuse, 
+or recycling; and the quantity of waste disposed by landfill or incineration.  Quantities may be measured by 
+weight or by volume, but must be consistent throughout.  List each type of waste separately noting the disposal 
+or diversion date.  Identify the landfill, recycling center, waste processor, or other organization used to process 
+or receive the solid waste.  Provide explanations for any waste not recycled or reused.  With each application 
+for payment, submit updated documentation for solid waste disposal and diversion, and submit manifests, weight 
+tickets, receipts, and invoices specifically identifying the project and waste material.  Make the records available 
+to the Contracting Officer during construction, and deliver to the Contracting Officer upon completion of the 
+construction a copy of the records.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>REPORTS</TTL><BRK/>
+<BRK/>
+<TXT>Provide quarterly reports and a final report to Contracting Officer.  Include project name, information for waste 
+generated this quarter, and cumulative totals for the project in quarterly and final reports.  Also include in 
+each report, supporting documentation to include manifests, weight tickets, receipts, and invoices specifically 
+identifying the project and waste material.  Include timber harvest and demolition information, if any.  See 
+Section [<SRF>01 57 19</SRF>] [<SRF>01 57 19.01</SRF>] TEMPORARY ENVIRONMENTAL CONTROLS for Nonhazardous Solid Waste Diversion Report 
+requirements.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>COLLECTION</TTL><BRK/>
+<BRK/>
+<TXT>Separate, store, protect, and handle at the site identified recyclable and salvageable waste products in a manner 
+that maximizes recyclability and salvagability of identified materials.  Provide the necessary containers, bins 
+and storage areas to facilitate effective waste management and clearly and appropriately identify them.  Provide 
+materials for barriers and enclosures around recyclable material storage areas which are nonhazardous and recyclable 
+or reusable.  Locate out of the way of construction traffic.  Provide adequate space for pick-up and delivery 
+and convenience to Subcontractors.  Recycling and waste bin areas are to be kept neat and clean, and handle recyclable 
+materials to prevent contamination of materials from incompatible products and materials.  Clean contaminated 
+materials prior to placing in collection containers.  Use cleaning materials that are nonhazardous and biodegradable.  
+Handle hazardous waste and hazardous materials in accordance with applicable regulations and coordinate with 
+Section [<SRF>01 57 19</SRF>][<SRF>01 57 19.01</SRF>] TEMPORARY ENVIRONMENTAL CONTROLS.  Separate materials by one of the following 
+methods:</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Source Separated Method</TTL><BRK/>
+<BRK/>
+<TXT>Separate waste products and materials that are recyclable from trash and sorted as described below into appropriately 
+marked separate containers.  Transport materials to the respective recycling facility for further processing. 
+Deliver materials in accordance with recycling or reuse facility requirements (e.g., free of dirt, adhesives, 
+solvents, petroleum contamination, and other substances deleterious to the recycling process).  Separate materials 
+into the following category types as appropriate to the project waste and to the available recycling and reuse 
+programs in the project area:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Land clearing debris.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Asphalt.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Concrete and masonry.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Metal (e.g. banding, stud trim, ductwork, piping, rebar, roofing, other trim, steel, iron, galvanized, 
+stainless steel, aluminum, copper, zinc, lead brass, bronze).</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) Ferrous.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) Non-ferrous.</ITM><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Wood (nails and staples allowed).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  Debris.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  Glass (colored glass allowed).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">h.  Paper.</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) Bond.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) Newsprint.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(3) Cardboard and paper packaging materials.</ITM><BRK/>
+<BRK/>
+<LST INDENT="-0.33">i.  Plastic.</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) Type 1 - Polyethylene Terephthalate (PET, PETE).</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) Type 2 - High Density Polyethylene (HDPE).</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(3) Type 3 - Vinyl (Polyvinyl Chloride or PVC).</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(4) Type 4 - Low Density Polyethylene (LDPE).</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(5) Type 5 - Polypropylene (PP).</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(6) Type 6 - Polystyrene (PS).</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(7) Type 7 - Other.  Use of this code indicates that the package in question is made with a 
+resin other than the six listed above, or is made of more than one resin listed above, and used 
+in a multi-layer combination.</ITM><BRK/>
+<BRK/>
+<LST INDENT="-0.33">j.  Gypsum.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">k.  Non-hazardous paint and paint cans.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">l.  Carpet.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">m.  Ceiling tiles.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">n.  Insulation.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">o.  Beverage containers.</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Co-Mingled Method</TTL><BRK/>
+<BRK/>
+<TXT>Place waste products and recyclable materials into a single container and then transport to a recycling facility 
+where the recyclable materials are sorted and processed.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Other Methods</TTL><BRK/>
+<BRK/>
+<TXT>Other proposed methods may be used when approved by the Contracting Officer.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>DISPOSAL</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  For MCAS Iwakuni, select the bracketed language.<BRK/></NPR>
+<BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Control accumulation of waste materials and trash.  Where materials are to be turned over to the Contractor for 
+disposal, every effort shall be made to obtain credit from the disposal to reduce the cost of the Contract. Recycle 
+or dispose of collected materials off of Government property at intervals approved by the Contracting Officer 
+and in compliance with waste management procedures of <RID>JEGS</RID> and local laws and regulations.[For MCAS Iwakuni, 
+metal Items to be demolished shall be sent to the Recycle Center, Building 7725.]  Except as otherwise specified 
+in other sections of the specifications, dispose of in accordance with the following:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">1.  Reuse.  Give first consideration to salvage for reuse since little or no re-processing is necessary 
+for this method, and less pollution is created when items are reused in their original form.  Consider 
+sale or donation of waste suitable for reuse.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">2.  Recycle.  Recycle waste materials not suitable for reuse, but having value as being recyclable.  
+Recycle all fluorescent lamps, HID lamps, and mercury-containing thermostats removed from the site.  
+Arrange for timely pickups from the site or deliveries to recycling facilities in order to prevent contamination 
+of recyclable materials.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">3.  Compost.  Consider composting on-site if a reasonable amount of compostable material will be available.  
+Compostable materials include plant material, sawdust, and certain food scraps.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">4.  Waste.  Dispose of materials with no practical use or economic benefit to waste-to-energy plants 
+where available.  As the last choice, dispose of materials at a landfill or incinerator.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">5.  Return.  Set aside and protect misdelivered and substandard products and materials and return to 
+supplier for credit.</LST><BRK/>
+<BRK/></SPT>
+</PRT><PRT><TTL>PART 2   PRODUCTS (NOT USED)</TTL><BRK/>
+<BRK/></PRT>
+<PRT><TTL>PART 3   EXECUTION (NOT USED)</TTL><BRK/>
+<BRK/>
+<BRK/></PRT>
+<END/><BRK/></SEC>

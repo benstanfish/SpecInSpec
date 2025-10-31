@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><HDR><AST/><BRK/>
+USACE / NAVFAC / AFCEC / NASA             UFGS-01 33 29 (February 2021)<BRK/>
+                                          --------------------------------<BRK/>
+Preparing Activity:  <PRA>NAVFAC</PRA>               Superseding<BRK/>
+                                          UFGS-01 33 29 (February 2017)<BRK/>
+                                          UFGS-01 33 29.05 20 (March 2019)<BRK/>
+<BRK/>
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
+<BRK/>
+<HL4>References are in agreement with UMRL dated April 2021</HL4><BRK/>
+<AST/><BRK/></HDR>
+<BRK/>
+<SCN>SECTION 01 33 29</SCN><BRK/>
+<BRK/>
+<STL>SUSTAINABILITY REQUIREMENTS AND REPORTING</STL><BRK/>
+<DTE>02/21</DTE><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>providing sustainability 
+documentation for Guiding Principles Validation (GPV) and Third Party Certification 
+(TPC)</SCP>.  GPV is equivalent to meeting the requirements of UFC 1-200-02 "HIGH 
+PERFORMANCE AND SUSTAINABLE BUILDING REQUIREMENTS."  All projects must meet 
+the requirements of UFC 1-200-02.</NPR><BRK/>
+<BRK/>
+<NPR>This guide specification includes tailoring for both DESIGN-BUILD and DESIGN-BID-BUILD.</NPR><BRK/>
+<BRK/>
+<NPR>This guide specification includes tailoring for ARMY.  Deselect the ARMY tailoring 
+option for Navy-executed projects.</NPR><BRK/>
+<BRK/>
+<NPR>Use a properly edited version of this guide specification for projects that 
+contain one or more buildings that meet one of the following:</NPR><BRK/>
+<BRK/>
+<NPR>a)  For Army and Navy, new buildings or stand-alone additions greater than or 
+equal to 10,000 SF; for Air Force, all new buildings or stand-alone additions.</NPR><BRK/>
+<BRK/>
+<NPR>b)  Comprehensive replacement in an existing building that is greater than or 
+equal to 10,000 SF, with total cost (includes new work, renovation, operations 
+and maintenance, sustainment, restoration, and modernization associated with 
+and existing building renovation) greater than $3M and 50-percent or more Estimated 
+Replacement Cost (ERC).</NPR><BRK/>
+<BRK/>
+<NPR>Use the HPSB Checklist for the Service who will maintain the building asset 
+in their Real Property Record.  Complete an HPSB Checklist for each applicable 
+building in the project, before attaching to this specification. Checklist(s) 
+must be completely filled out before being used in a solicitation.  Check with 
+the user Command for additional requirements.  Each Component’s HPSB Checklist 
+may be found at: <URL HREF="https://www.wbdg.org/ffc/dod/tri-services-sustainability-program/tracking-reporting">https://www.wbdg.org/ffc/dod/tri-services-<BRK/>
+sustainability-program/tracking-reporting</URL></NPR><BRK/>
+<BRK/>
+<NPR>(Where Internet address appears on multiple lines, copy full address into Internet 
+browser.)</NPR><BRK/>
+<BRK/>
+<NPR>Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.</NPR><BRK/>
+<BRK/>
+<NPR>Remove information and requirements not required in respective project, whether 
+or not brackets are present.</NPR><BRK/>
+<BRK/>
+<NPR>Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
+<BRK/>
+<SPT><TTL>REFERENCES</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification.  The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.</NPR><BRK/>
+<BRK/>
+<NPR>Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.</NPR><BRK/>
+<BRK/>
+<NPR>References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK/>
+<BRK/>
+<REF><ORG>COUNCIL ON ENVIRONMENTAL QUALITY (CEQ) (WHITE HOUSE)</ORG><BRK/>
+<BRK/>
+<RID>HPSB Guiding Principles</RID><RTL>(2016) Guiding Principles for Sustainable Federal 
+Buildings and Determining Compliance with the 
+Guiding Principles for Sustainable Federal Buildings</RTL></REF><BRK/>
+<BRK/>
+<ADD><REF><ORG>GREEN BUILDING INITIATIVE (GBI)</ORG><BRK/>
+<BRK/>
+<RID>GBI DOD GP Compliance</RID><RTL>(2017) GBI Department of Defense Guiding Principles 
+Compliance Program for New Construction</RTL><BRK/>
+<BRK/></REF>
+</ADD><REF><ORG>GREEN BUSINESS CERTIFICATION INC. (GBCI)</ORG><BRK/>
+<BRK/>
+<RID>GP Assessment (DOD)</RID><RTL>Guiding Principles Assessment for Department 
+of Defense</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>INTERNATIONAL CODE COUNCIL (ICC)</ORG><BRK/>
+<BRK/>
+<RID>ICC IGCC</RID><RTL>(2018) International Green Construction Code</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>SHEET METAL AND AIR CONDITIONING CONTRACTORS' NATIONAL ASSOCIATION (SMACNA)</ORG><BRK/>
+<BRK/>
+<RID>ANSI/SMACNA 008</RID><RTL>(2007) IAQ Guidelines for Occupied Buildings 
+Under Construction, 2nd Edition</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. DEPARTMENT OF DEFENSE (DOD)</ORG><BRK/>
+<BRK/>
+<RID>UFC 1-200-02</RID><RTL>(2020) High Performance and Sustainable Building 
+Requirements</RTL><BRK/>
+<BRK/>
+<RID>UFC 3-210-10</RID><RTL>(2015; with Change 3, 2020) Low Impact Development</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. DEPARTMENT OF ENERGY (DOE)</ORG><BRK/>
+<BRK/>
+<RID>Energy Star</RID><RTL>(1992; R 2006) Energy Star Energy Efficiency 
+Labeling System (FEMP)</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. GREEN BUILDING COUNCIL (USGBC)</ORG><BRK/>
+<BRK/>
+<RID>LEED v4 BD+C</RID><RTL>LEED v4 Building Design and Construction</RTL></REF><BRK/>
+<BRK/></SPT>
+<SPT><TTL>SUMMARY</TTL><BRK/>
+<BRK/>
+<TXT>This section includes requirements for Sustainability documentation and reporting submittals per the federally 
+mandated High Performance and Sustainable Building (HPSB) or HPSB "Guiding Principles" (GP),[ and Third Party 
+Certification (TPC) requirements,] in accordance with <RID>UFC 1-200-02</RID> High Performance and Sustainable Building 
+Requirements.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>SUBMITTALS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Review Submittal Description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list, and corresponding submittal items in 
+the text, to reflect only the submittals required for the project.  The Guide 
+Specification technical editors have classified those items that require Government 
+approval, due to their complexity or criticality, with a "G."  Generally, other 
+submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a "G" to an item if the submittal is sufficiently important or complex 
+in context of the project.</NPR><BRK/>
+<BRK/>
+<NPR><TAI OPT="ARMY">For Army projects, fill in the empty brackets following the "G" classification, 
+with a code of up to three characters to indicate the approving authority.  
+Codes for Army projects using the Resident Management System (RMS) are:  "AE" 
+for Architect-Engineer; "DO" for District Office (Engineering Division or other 
+organization in the District Office); "AO" for Area Office; "RO" for Resident 
+Office; and "PO" for Project Office.  </TAI>Codes following the "G" typically are 
+not used for Navy, Air Force, and NASA projects.</NPR><BRK/>
+<BRK/>
+<NPR>The "S" classification indicates submittals required as proof of compliance 
+for sustainability Guiding Principles Validation or Third Party Certification 
+and as described in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Sustainability requirements have been identified in many of the technical 
+performance sections.  Include additional sustainability requirements throughout 
+the technical specification sections according to goals of this project.  Identify 
+products and other submittals required for Guiding Principle Validation (GPV) 
+and Third Party Certification (TPC) where applicable, with an "S" next to the 
+submittal item.  Use the following format to add submittal items in the technical 
+sections to comply with the requirements of this section:</NPR><BRK/>
+<BRK/>
+<NPR>&lt;ITM&gt;&lt;SUB&gt;Insert Submittal Item&lt;/SUB&gt;; &lt;SUB&gt;S&lt;/SUB&gt;&lt;/ITM&gt;</NPR><BRK/>
+<BRK/>
+<NPR>Make corresponding edits in technical sections' Part 1, Part 2 Products or in 
+Part 3 Execution to differentiate those pieces of equipment, products, or activities 
+related to GPV and TPC.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose the following bracketed paragraph for all projects except Navy-executed 
+DESIGN-BUILD.</NPR><BRK/>
+<BRK/>
+<NPR>Choose the first bracketed item for Navy, Air Force, and NASA projects, or choose 
+the second bracketed item for Army projects.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<DEL>[</DEL><TXT>Government approval is required for submittals with a "G" classification.  Submittals not having a "G" classification 
+are for Contractor Quality Control approval.  Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES:</TXT><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  For Air Force only:  For every Air Force DESIGN-BUILD project, keep all 
+bracketed SD-01, SD-05, and SD-11 submittals.  For every Air Force DESIGN-BID-BUILD 
+project, keep all SD-01 and SD-11 submittals</NPR><BRK/>
+<BRK/>
+<NPR>Add other Checklist and Sustainability eNotebook submittals to match the number 
+of design submissions, based on the project scope, and add requirements paragraphs 
+in Part 1.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<LST><SUB>SD-01 Preconstruction Submittals</SUB></LST><NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  For Navy projects in the NAVFAC PAC Area of Operation only: remove the 
+"G" designation from all SD-01 Preconstruction Submittals.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<ITM><SUB>Sustainability Action Plan</SUB>; <SUB>G</SUB></ITM><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  For DESIGN-BID-BUILD projects, delete the following submittal if it is 
+not part of the contractor's scope.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<LST><SUB>SD-11 Closeout Submittals</SUB></LST><BRK/>
+<ITM><SUB>High Performance and Sustainable Building Checklist</SUB>; <SUB>G</SUB></ITM><BRK/>
+<ITM><SUB>Final Sustainability eNotebook</SUB>; <SUB>G</SUB></ITM><BRK/>
+<ITM><SUB>Amended Final Sustainability eNotebook</SUB>; <SUB>G</SUB></ITM><NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose bracketed option for "Third Party Certification Certificate, Assessment, 
+or Validation and Compliance Report" for TPC projects that require the Contractor 
+to obtain the TPC certification.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+[<ITM><SUB>Third Party Certification Certificate, Assessment, or Validation and Compliance Report</SUB>; <SUB>G</SUB></ITM><BRK/>
+<ITM><SUB>Amended Final High Performance And Sustainable Building Checklist</SUB>;<SUB> G</SUB></ITM><BRK/>
+]</SPT><SPT><TTL>GUIDING PRINCIPLES VALIDATION (GPV)</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  GUIDING PRINCIPLES VALIDATION (GPV) is required in accordance with UFC 
+1-200-02 HIGH PERFORMANCE SUSTAINABLE BUILDING REQUIREMENTS and the notes under 
+this specification's title above.</NPR><BRK/>
+<BRK/>
+<NPR>Complete Preliminary HPSB Checklist and include at the end of this specification.  
+For projects with multiple buildings, attach HPSB Checklist for each building.  
+See the notes under this specification's title above.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide the following sustainability activities and documentation to verify achievement of <RID>HPSB Guiding Principles</RID>
+ Validation (GPV):</TXT><BRK/>
+<BRK/>
+<SPT><TTL><SUB>Sustainability Action Plan</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Include the following information in the Sustainability Action Plan:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Analysis of each <RID>HPSB Guiding Principles</RID> and how project will comply.  Final government approved 
+narrative(s) must be included in the HPSB Checklist submittal.</LST><BRK/>
+<LST INDENT="-0.33">b.  Name and contact information for: Contractor's Point of Contact (POC) ensuring sustainability goals 
+are accomplished and documentation is assembled.<DEL>  For TPC that include on-site visit by third party representative, 
+provide list of required attendees</DEL></LST><BRK/>
+<LST INDENT="-0.33"><DEL>b</DEL><ADD>c</ADD>.  HPSB Checklist.  No changes to the HPSB Checklist are allowed without approval from the Contracting 
+Officer, in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL REQUIREMENTS.  Immediately bring to the attention 
+of the Contracting Officer any project changes that impact meeting the approved <RID>HPSB Guiding Principles</RID>
+ for this project.  Demonstrate the change will not increase the life-cycle cost and maintains or improves 
+the building performance.</LST><BRK/>
+<LST INDENT="-0.33"><ADD>d</ADD><DEL>c</DEL>.  Documentation of all work required to incorporate the applicable <RID>HPSB Guiding Principles</RID> requirements 
+indicated on the HPSB Checklist and in this contract.</LST><BRK/>
+<LST INDENT="-0.33"><DEL>c</DEL><ADD>e</ADD>.  Indoor Air Quality plan.</LST><ADD><BRK/>
+<BRK/>
+<TXT>For each designated construction related HPSB Guiding Principles Requirement that is not achieved, provide a 
+narrative explaining how the mission or activity precludes achieving the specific sustainability requirement 
+or goal. Include final, government approved narratives with the HPSB checklist.</TXT></ADD><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>SUSTAINABILITY SUBMITTALS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>High Performance Sustainable Building (HPSB) Checklist</TTL><BRK/>
+<BRK/>
+<TXT>Provide construction documentation that provides proof of, and supports compliance with, the completed HPSB Checklist.  
+Submit updated HPSB Checklist with each Sustainability eNotebook submittal.  Include the final HPSB Checklist(s) 
+with the interim DD1354 Real Property Record Submittal.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Sustainability eNotebook</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Include the bracketed TPC phrases for projects required to obtain TPC.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>The Sustainability eNotebook is an electronic organizational file that serves as a repository for all required 
+sustainability submittals.  To support documentation of compliance with an approved HPSB[ and TPC] checklist, 
+provide and maintain a comprehensive and current Sustainability eNotebook.  Include all required data in Sustainability 
+eNotebook, to support full compliance with the <RID>HPSB Guiding Principles</RID> Requirements, including:</TXT><BRK/>
+<DEL><LST INDENT="-0.33">a.  HPSB checklist</LST></DEL><BRK/>
+<LST INDENT="-0.33"><DEL>b</DEL><ADD>a</ADD>.  Sustainability Action Plan</LST><BRK/>
+<LST INDENT="-0.33"><ADD>b</ADD><DEL>c</DEL>.  Calculations</LST><BRK/>
+<LST INDENT="-0.33"><ADD>c</ADD><DEL>d</DEL>.  Labels</LST><BRK/>
+<LST INDENT="-0.33"><DEL>e</DEL><ADD>d</ADD>.  Sustainability submittals</LST><ADD><BRK/>
+[<LST INDENT="-0.33">e.  HPSB checklist</LST><BRK/>
+]</ADD>[<LST INDENT="-0.33">f.  Certifications, assessments, or validations and compliance report</LST><BRK/>
+][<LST INDENT="-0.33">g.  TPC documentation required in paragraph THIRD PARTY CERTIFICATION (TPC).</LST><BRK/>
+<BRK/>
+]<SPT><TTL>Sustainability eNotebook Format</TTL><BRK/>
+<BRK/>
+<TXT>Provide Sustainability eNotebook in the form of an Adobe PDF file; bookmark each <RID>HPSB Guiding Principles</RID> Requirement[, 
+TPC requirement,] and sub-bookmark at each document.  Match format to <RID>HPSB Guiding Principles</RID> numbering system 
+indicated herein.  Maintain up-to-date information, such as spreadsheets, templates, with each current submittals.[  
+For TPC projects, provide a second Table of Contents using TPC numbering system, for maintaining documentation 
+unique to TPC.]</TXT><BRK/>
+<BRK/>
+<TXT>Contracting Officer may deduct from the monthly progress payment accordingly if Sustainability eNotebook information 
+is not current and on track per project goals.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Sustainability eNotebook Submittal Schedule</TTL><BRK/>
+<BRK/>
+<TXT>Provide Sustainability eNotebook Submittals at the following milestones of the project:</TXT><NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose submittal paragraphs, based on scope of project.  In each of the 
+following paragraphs, include the first bracketed phrase for projects required 
+to obtain TPC.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  For projects required to obtain TPC, include the bracketed paragraph 
+when seeking approval of TPC design requirements.  This is the preferred method 
+to obtain TPC, and it is preferred this report is obtained prior to construction 
+award.  For DESIGN-BID-BUILD projects, delete this report if it is not part 
+of the contractor's scope.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:   Include the bracketed phrases for projects required to obtain TPC.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Include the first bracketed phrase for projects required to obtain TPC.</NPR><BRK/>
+<BRK/>
+<NPR>Include the second bracketed phrase for Navy-executed DESIGN-BUILD only.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<LST INDENT="-0.33">a.  <SUB>Final Sustainability eNotebook</SUB></LST><BRK/>
+<LST INDENT="-0.33">    Submit updated Sustainability eNotebook with updated <SUB>High Performance and Sustainable Building Checklist</SUB>
+[ with TPC Checklist] at Beneficial Occupancy Date (BOD).  Final progress payment retainage may be held 
+by Contracting Officer until Final Sustainability construction phase documentation is complete.</LST><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Include the following paragraph when an amended Sustainability eNotebook 
+is required (due to post-construction activities such as commissioning).  Include 
+the first bracketed phrase for projects required to obtain TPC.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+[<LST INDENT="-0.33">b.  <SUB>Amended Final Sustainability eNotebook</SUB></LST><BRK/>
+<LST INDENT="-0.33">    Amend and resubmit the Amended Final Sustainability eNotebook with <SUB>Amended Final High Performance 
+and Sustainable Building Checklist</SUB>[ and amended TPC Checklist], to include post-occupancy corrections, 
+updates, and requirements.  Final progress payment retainage may be held by Contracting Officer until 
+amended final sustainability documentation is complete.  Submit the Amended Final Sustainability eNotebook 
+Submittal on DVDs to the Contracting Officer no later than 30 days after final GP[, TPC] determination.</LST><BRK/>
+<BRK/>
+]</SPT></SPT></SPT><SPT><TTL>DOCUMENTATION REQUIREMENTS</TTL><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Incorporate each of the applicable <RID>UFC 1-200-02</RID> <RID>HPSB Guiding Principles</RID> requirements into project 
+and provide documentation that proves compliance with each listed requirement.  For life-cycle cost analysis 
+requirements, one document with all analyses is acceptable, with Contracting Officer approval.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  For the following items, Japanese acceptable alternatives are listed.  For all other items, see UFC 
+1-200-02.</LST><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The following subparagraphs provide Guiding Principle Requirements.</NPR><BRK/>
+<BRK/>
+<NPR>Choose requirements that can be fully achieved, or partially achieved to the 
+greatest degree possible.  For partially achievable requirements, track them 
+as "yes" only with one of the following justifications:</NPR><BRK/>
+<BRK/>
+<NPR>1.  Life-cycle cost-effectiveness and energy model;<BRK/>
+2.  Mission restriction (ex: 24/7 operation);<BRK/>
+3.  Location/regional restriction (ex: availability of high-efficiency equipment service);<BRK/>
+4.  Locale restriction (ex: proximity of existing buildings restricts daylighting).</NPR><BRK/>
+<BRK/>
+<NPR>Delete requirements that are not applicable to the project.  Non-applicability 
+requires one of the following justifications:</NPR><BRK/>
+<BRK/>
+<NPR>1.  Life-cycle cost-effectiveness and energy model;<BRK/>
+2.  Mission exclusion (ex: no daylighting in a theater or a SCIF);<BRK/>
+3.  Location/regional exclusion (ex: no local recycling facility); or<BRK/>
+4.  Locale exclusion (ex: there is no steam to meter).</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>Energy Efficient Products</TTL><BRK/>
+<BRK/>
+<TXT>Products do not have to have the  <RID>Energy Star</RID> label, but they shall have Federal Energy Management Program (FEMP) 
+recommended efficiencies.  Energy efficient products can be referenced at: <URL>https://www.energy.gov/eere/femp/federal-energy-management-program</URL>
+ and <URL>http://www.energystar.gov/</URL>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Indoor Water Use</TTL><BRK/>
+<BRK/>
+<TXT>Products do not have to have the EPA WaterSense label, but they shall comply with WaterSense efficiency requirements.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Reduce Volatile Organic Compounds (VOC) (Low-Emitting Materials)</TTL><BRK/>
+<BRK/>
+<TXT>F 4-Star and 4VOC combined ratings are acceptable Japanese alternatives for low-VOC materials.  For Construction 
+submittal documentation, provide certifications or labels that demonstrate compliance with cited requirements.</TXT><BRK/>
+<BRK/></SPT>
+[<SPT><TTL>Additional Sustainability Requirements</TTL><BRK/>
+<BRK/>
+<TXT>Provide the additional sustainability requirements cited in this paragraph.</TXT><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  In addition to GPV and Sustainability eNotebook, Third Party Certification 
+(TPC) is required for projects that meet the thresholds cited in Table 1-1 of 
+UFC 1-200-02.</NPR><BRK/>
+<BRK/>
+<NPR>1.  New building or stand-alone addition greater than or equal to 10,000 SF, 
+with construction cost greater than $3M.</NPR><BRK/>
+<BRK/>
+<NPR>2.  Comprehensive replacement in an existing building that is greater than or 
+equal to 10,000 SF, with total cost greater than $3M and 50-percent or more 
+ERC.</NPR><BRK/>
+<BRK/>
+<NPR>TPC is the generic term for a third party product that provides either certification 
+of the third party vendor's proprietary product requirements (examples LEED, 
+Green Globes), or a validation program by the third party vendor that UFC 1-200-02 
+requirements have been met (examples: Guiding Principles Assessment, Guiding 
+Principles Compliance).</NPR><BRK/>
+<BRK/>
+<NPR>For each building that meets item 1 or item 2 above, choose one of the following 
+paragraphs titled "Third Party Certification (TPC) Documentation" below, based 
+on how TPC is executed, and delete the others.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TAI OPT="DESIGN-BID-BUILD">[<SPT><TTL>Third Party Certification (TPC) Documentation</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose this DESIGN-BID-BUILD "Third Party Certification (TPC) Documentation" 
+paragraph for Third Party Certification, assessment, or validation when the 
+Designer of Record is responsible for the entire TPC process, with the Construction 
+Contractor providing the construction documentation.  This is the preferred 
+method of TPC execution for DESIGN-BID-BUILD (DBB)  Delete the other DESIGN-BID-BUILD 
+"Third Party Certification (TPC) Documentation" paragraph option.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Third Party Certification certificate, assessment, or validation, and compliance report requirements are in addition 
+to all requirements under header above GUIDING PRINCIPLES VALIDATION (GPV).</TXT><BRK/>
+<BRK/>
+<SPT><TTL>TPC Registration</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose the rating system below that best assists with Guiding Principles 
+Validation, complies with Component policy, and delete the others.</NPR><BRK/>
+<BRK/>
+<NPR>Obtain, fill out, and include TPC checklist with this section.  For projects 
+with multiple buildings, attach TPC Checklist for each building that requires 
+TPC.</NPR><BRK/>
+<BRK/>
+<NPR>For certifications, assessments or validations that include a plaque, include 
+the bracketed phrase in the first paragraph.</NPR><BRK/>
+<BRK/>
+<NPR>For Air Force ONLY:  Choose one of the following methods for executing TPC:</NPR><BRK/>
+<BRK/>
+<NPR>a.  For Guiding Principles Assessment for Department of Defense (by GBCI), choose 
+"GP Assessment (DOD)", use only DOD version, and ask for it when registering.</NPR><BRK/>
+<BRK/>
+<NPR>b.  For Green Building Initiative (GBI) "Department of Defense Guiding Principles 
+Compliance", or "GBI DOD GP Compliance", use only DOD version, and ask for it 
+when registering.</NPR><BRK/>
+<BRK/>
+<NPR>For Army projects ONLY:  Choose only the following method for executing TPC:</NPR><BRK/>
+<BRK/>
+<NPR>a.  For USGBC LEED v4, choose "LEED v4 BD+C", and enter "Silver" in the bracket.  
+For use of alternate certification systems, a waiver must be submitted per the 
+current Army Sustainable Design and Development Policy.</NPR><BRK/>
+<BRK/>
+<NPR>For Navy ONLY:  Choose one of the following methods for executing TPC:</NPR><BRK/>
+<BRK/>
+<NPR>a.  For USGBC LEED v4, choose "LEED v4 BD+C", and enter the target level in 
+the bracket.</NPR><BRK/>
+<BRK/>
+<NPR>b.  For Guiding Principles Assessment for Department of Defense (by GBCI), choose 
+"GP Assessment (DOD)", use only DOD version, and ask for it when registering.</NPR><BRK/>
+<BRK/>
+<NPR>c.  For Green Building Initiative (GBI) "Department of Defense Guiding Principles 
+Compliance", or "GBI GP DOD Compliance", use only DOD version, and ask for it 
+when registering.</NPR><BRK/>
+<BRK/>
+<NPR>d.  For Green Building Initiative (GBI) Green Globes, choose "GBI Green Globes 
+for NC", and enter the target level in the bracket.</NPR><BRK/>
+<BRK/>
+<NPR>e.  For an alternate certification system, use only those that comply with the 
+minimum requirements of 10 CFR 433.300 Subpart C — Green Building Certification 
+for Federal Buildings, and insert the name of the compliant system in the empty 
+bracket.  Facilities Engineering Command (FEC) Capital Improvements (CI) Core 
+must authorize the use of alternative system.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>This project has been designed for, and must be constructed to achieve [<RID>LEED v4 BD+C</RID>][<RID>GP Assessment (DOD)</RID>]<ADD>[<RID>GBI DOD GP Compliance</RID>
+]</ADD>.  Project is already registered with the TPC Organization.  Provide construction related sustainability documentation, 
+in the format required by the TPC Organization, to the Contracting Officer for approval, and for final approval 
+by the TPC organization.  Third Party Certification is met when Government receives TPC organization certificate, 
+assessment, or validation and compliance report.  Execute the following:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Refer to TPC Checklist at the end of this specification section.  (Multiple checklists indicate multiple 
+buildings that require TPC.)</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Immediately bring to the attention of the Contracting Officer any project changes that impact meeting 
+the approved TPC Requirements for this project.  Demonstrate the change will not increase the life-cycle 
+cost and maintains or improves the building performance.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Complete all work required to incorporate the applicable TPC Requirements.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Maintain the construction related information in the Sustainability eNotebook pertaining to additions 
+and changes to the approved sustainability requirements.  Maintain the Sustainability eNotebook in electronic 
+format.  For more explanation, refer to paragraph SUSTAINABILITY eNOTEBOOK.  Provide the following components 
+in the Sustainability eNotebook, in addition to the GPV components above:</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) TPC Checklist</ITM><BRK/>
+<ITM INDENT="-0.33">(2) Provide construction documentation required to achieve third party certification</ITM><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Provide the following information in the Sustainability Action Plan.  Provide this TPC information 
+in addition to the GPV Action Plan items above:</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) Planned method to achieve each TPC requirement.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) For each TPC requirement that is attempted but not achieved, provide narrative explaining 
+how mission or activity precludes achieving specific sustainability requirement or goal.  Provide 
+analysis of particular requirement and level to which project is able to comply.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(3) Provide name and contact information for: Sustainability Point of Contact (POC) and other 
+names of sustainability professionals responsible for ensuring TPC sustainability goals are 
+accomplished and documentation is assembled.  Sustainability POCs are also responsible for ensuring 
+GPV required in paragraph GUIDING PRINCIPLES VALIDATION (GPV) above.</ITM><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  Bear all costs associated with construction changes that affect sustainability design requirements, 
+constructing, demonstrating, and documenting that project complies with approved TPC requirements, including 
+but not limited to:</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) TPC coordination with Government's AE and other consultants, TPC website requirements, and 
+management for construction related documentation.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) Construction work required to incorporate TPC requirements.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(3) Submittals required to demonstrate compliance with Government approved TPC checklists.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(4) Documentation illustrating compliance with TPC requirements and additional documentation 
+required by the TPC.</ITM><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  Provide all calculations, product data, and certifications, assessments, or validations required 
+in this contract to demonstrate compliance with the TPC Requirements of this section.</LST><BRK/>
+<BRK/></SPT>
+</SPT>]</TAI><TAI OPT="DESIGN-BID-BUILD">[<SPT><TTL>Third Party Certification (TPC) Documentation</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose this DESIGN-BID-BUILD "Third Party Certification (TPC) Documentation" 
+paragraph, if the Construction Contractor is responsible for achieving the final 
+TPC.  Use of this method is discouraged.  Delete the previous DESIGN-BID-BUILD 
+"Third Party Certification (TPC) Documentation" paragraph option.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Third Party Certification certificate, assessment, or validation, and compliance report requirements are in addition 
+to all requirements under header above GUIDING PRINCIPLES VALIDATION (GPV).</TXT><BRK/>
+<BRK/>
+[<SPT><TTL>TPC Registration Required</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose this bracketed paragraph if the Designer of Record (DOR) has not 
+registered the project with a TPC organization, and the Construction Contractor 
+must do so.  Delete the second bracketed paragraph.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose the rating system below that best assists with Guiding Principles 
+Validation complies with Component policy and delete the others.</NPR><BRK/>
+<BRK/>
+<NPR>Obtain, fill out, and include TPC checklist with this section.  For projects 
+with multiple buildings, attach TPC Checklist for each building that requires 
+TPC.</NPR><BRK/>
+<BRK/>
+<NPR>For certifications, assessments, or validations that include a plaque, include 
+the bracketed phrases below.</NPR><BRK/>
+<BRK/>
+<NPR>For Air Force ONLY:  Choose one of the following methods for executing TPC:</NPR><BRK/>
+<BRK/>
+<NPR>a.  For Guiding Principles Assessment by USGBC/GBCI (DOD Version), choose "GBCI 
+GP Assessment", use only DOD version, and ask for it when registering.</NPR><BRK/>
+<BRK/>
+<NPR>b.  For Green Building Initiative (GBI) "Department of Defense Guiding Principles 
+Compliance", or "GBI GP DOD Compliance", use only DOD version, and ask for it 
+when registering.</NPR><BRK/>
+<BRK/>
+<NPR>For Army projects ONLY:  Choose only the following method for executing TPC:</NPR><BRK/>
+<BRK/>
+<NPR>a.  For USGBC LEED v4, choose "LEED v4 BD+C", and enter "Silver" in the bracket.  
+For use of alternate certification systems, a waiver must be submitted per the 
+current Army Sustainable Design and Development Policy.</NPR><BRK/>
+<BRK/>
+<NPR>For Navy ONLY: Choose one of the following methods for executing TPC:</NPR><BRK/>
+<BRK/>
+<NPR>a.  For USGBC LEED v4, choose "LEED v4 BD+C", and enter the target level in 
+the bracket.</NPR><BRK/>
+<BRK/>
+<NPR>b. For Guiding Principles Assessment for Department of Defense (by GBCI), choose 
+"GP Assessment (DOD)", use only DOD version, and ask for it when registering.</NPR><BRK/>
+<BRK/>
+<NPR>c. For Green Building Initiative (GBI) "Department of Defense Guiding Principles 
+Compliance", or "GBI GP DOD Compliance", use only DOD version, and ask for it 
+when registering.</NPR><BRK/>
+<BRK/>
+<NPR>d. For Green Building Initiative (GBI) Green Globes, choose "GBI Green Globes 
+for NC", and enter the target level in the bracket.</NPR><BRK/>
+<BRK/>
+<NPR>e. For an alternate certification system, use only those that comply with the 
+minimum requirements of 10 CFR 433.300 Subpart C — Green Building Certification 
+for Federal Buildings, and insert the name of the compliant system in the empty 
+bracket.  Facilities Engineering Command (FEC) Capital Improvements (CI) Core 
+must authorize the use of alternative system.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Pay all fees associated with registration and achievement of Third Party Certification (TPC), by meeting all 
+TPC and project requirements to achieve [<RID>LEED v4 BD+C</RID> [<RID>GP Assessment (DOD)</RID>] sustainability certification, assessment, 
+or validation.  Third Party Certification is met when Government receives TPC organization certificate, assessment, 
+or validation and compliance report</TXT><BRK/>
+<BRK/>
+<TXT>Register project with TPC organization using the following format and content:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Project Title First Line: Building Owner (US Army, US Air Force, US Navy or US Marine Corps), Building 
+Name (if known)</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Project Title Second Line: MILCON P#, DD1391 Project Name</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Project Address: UIC (Installation code), Category code, RPUID (Real Property Unique Identifier) 
+Number</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Project Owner Organization: US Army, US Air Force, US Navy or US Marine Corps</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Primary Contact, Project Owner: Component Project Manager</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  Building Owner Organization: US Army, US Air Force, US Navy or US Marine Corps</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g. Building Owner Organization Project Number</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">h.  Additional Contact, Building Owner: Department of Public Works, Public Works Officer, Base Civil 
+Engineer, or Designee</LST><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>TPC Already Registered</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose this bracketed paragraph if the DOR has registered the project 
+with a TPC organization and will pass the responsibility for final TPC documentation 
+and certification, assessment, or validation to the Construction Contractor.  
+Delete the previous bracketed paragraph.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Obtain, fill out, and include TPC checklist with this section.  For projects 
+with multiple buildings, attach TPC Checklist for each building that requires 
+TPC.</NPR><BRK/>
+<BRK/>
+<NPR>For certifications, assessments, or validations that include a plaque, include 
+the bracketed phrases below.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Project is already registered with TPC organization to achieve [<RID>LEED v4 BD+C</RID>] [<RID>GP Assessment (DOD)</RID>]<ADD>[<RID>GBI DOD GP Compliance</RID>
+]</ADD>.  When applicable, request TPC online access turnover from Government.  Manage and provide all documentation 
+for requirements of TPC and obtain Final Certification or validation.  Third Party Certification is met when 
+Government receives TPC organization certificate, assessment, or validation and compliance report.</TXT><BRK/>
+<BRK/></SPT>
+]<SPT><TTL>TPC Management and Certification</TTL><BRK/>
+<BRK/>
+<TXT>Execute the following TPC Certification, assessment, or validation requirements:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Refer to TPC Checklist at the end of this specification section.  (Multiple checklists indicate multiple 
+buildings that require TPC.)</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Immediately bring to the attention of the Contracting Officer any project changes that impact meeting 
+the approved TPC Requirements for this project.  Demonstrate the change will not increase the life-cycle 
+cost and maintains or improves the building performance.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Complete all work required to incorporate the applicable TPC Requirements.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Maintain the construction related information in the Sustainability eNotebook pertaining to additions 
+and changes to the approved sustainability requirements.  When construction changes are made that affect 
+design sustainability requirements, provide all required updates to affected design requirements and 
+update in the Sustainability eNotebook.  Maintain the Sustainability eNotebook in electronic format.  
+For more explanation, refer to paragraph SUSTAINABILITY eNOTEBOOK.  Provide the following components 
+in the Sustainability eNotebook, in addition to the GPV components above:</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) TPC Checklist</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) Completed TPC forms.  Transmit by the method required by the TPC organization.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(3) Copy of all correspondence with the TPC organization including proof of TPC registration</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(4) Documentation illustrating compliance with TPC requirements and additional documentation 
+as requested by the TPC</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(5) TPC Award Certificate, assessment, or validation and compliance report.</ITM><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Provide the following information in the Sustainability Action Plan.  Provide this TPC information 
+in addition to the Sustainability Action Plan items above:</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) Planned method to achieve each TPC requirement.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) For each TPC requirement that is attempted but not achieved, provide narrative explaining 
+how mission or activity precludes achieving specific sustainability requirement or goal.  Provide 
+analysis of particular requirement and level to which project is able to comply.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(3) Provide name and contact information for:  Sustainability point of contact (POC) and other 
+names of sustainability professionals responsible for ensuring TPC sustainability goals are 
+accomplished and documentation is assembled.  Sustainability POCs are also responsible for ensuring 
+GPV required in paragraph GUIDING PRINCIPLES VALIDATION (GPV) above.</ITM><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  For certifications, assessments, or validations that include a plaque, 
+included the bracketed phrase.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<LST INDENT="-0.33">f.  Bear all costs associated with construction changes that affect sustainability design requirements, 
+constructing, demonstrating, and documenting that project complies with approved TPC requirements, including 
+but not limited to:</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) Final TPC review, certification, assessment, or validation fees.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) Online (or offline with secure facilities) TPC management and documentation.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(3) Obtaining TPC certification or validation based on Government-approved sustainability goals.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(4) Construction work required to incorporate TPC requirements.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(5) Submittals required to demonstrate compliance with Government approved TPC checklists.</ITM><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  Provide all calculations, product data, and certifications, assessments, or validations required 
+in this specification to demonstrate compliance with the TPC Requirements.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">h.  Provide all TPC management and documentation. Transmit TPC requirements by the method required by 
+TPC organization.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">i.  Provide all required responses to third party organization.</LST><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Include the bracketed paragraph below for TPC that includes required 
+site visit by a TPC representative (this is typically required for GBI provided 
+TPC).  The Government Executing Agent's Project Manager is responsible to coordinate 
+the TPC site visit.  Project Manager must coordinate with the TPC representative, 
+Design Manager, and Construction Manager to determine participating team members.  
+Include commissioning provider on applicable projects.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+[<LST INDENT="-0.33">j.  Facilitate and participate in required TPC site visit.  Coordinate with the Contract Officer to determine 
+participating team members.  Include Commissioning provider on applicable projects.</LST><BRK/>
+]<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose the following paragraph for TPC that includes a certificate, assessment, 
+or validation.  For TPC that include a plaque, include the bracketed phrases.</NPR><BRK/>
+<AST/><BRK/></NTE>
+[<LST INDENT="-0.33">k.  Provide TPC Certificate, assessment, or validation. Provide TPC compliance report that includes level 
+achieved and reasons for non-compliance or not applicable elements. Use format below to create the Certificate, 
+assessment or validation, compliance report, and Letter of Congratulations (when provided).  Forward 
+to parties designated by Contracting Officer:</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) Certificate, Assessment or Validation:</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">    Project Title, first line: P-(X); Form DD1391 Project Name).</ITM><BRK/>
+<ITM INDENT="-0.33">    Project Title, second line: UIC (Installation code)</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) Letter Congratulations (when provided): Address letter to Facility's Installation Commander 
+Name.  Address the letter to an individual person.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(3) Compliance Report:  Title page must cite Project title: P-(X); (1391 Project Name); Final 
+Building Name if known; UIC (installation code); Owner Service; User organization if known; 
+date of compliance.  Include TPC scoresheet if applicable.</ITM><BRK/>
+]<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose first bracket for Air Force projects and delete the others. Choose 
+second bracket for Army projects and delete the others. Choose third bracket 
+for Navy projects and delete the others.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<LST INDENT="-0.33">l.  Once Final Certification is achieved, turn over Administrative rights to online TPC to the [Base 
+Civil Engineer] [Department of Public Works] [Public Works Office] or designee, contact information provided 
+by the Contracting Officer.</LST><BRK/>
+<BRK/></SPT>
+</SPT>]</TAI></SPT>][<SPT><TTL>Additional Sustainability Requirements</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Include this bracketed paragraph when there are additional sustainability 
+requirements, including additional TPC requirements.  TPC optional requirements 
+that align with HPSB requirements are mandatory.  Add them as requirements in 
+the following paragraph.  Coordinate language throughout affected UFGS Sections 
+in this project.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>The following requirements are included, as required by the project scope or the applied sustainability Third 
+Party Certification program:</TXT><BRK/>
+<BRK/>
+<TXT>[_____]</TXT><BRK/>
+<BRK/></SPT>
+]</SPT></PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
+<BRK/>
+<TXT>Not used.</TXT><BRK/>
+<BRK/></PRT>
+<PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
+<BRK/>
+<SPT><TTL>SUSTAINABILITY COORDINATION</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose all the bracketed options below for projects required to obtain 
+TPC certification, assessment, or validation.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide sustainability focus and coordination at all meetings to achieve sustainability goals.  Coordinate meeting 
+requirements with other UFGS Sections meeting requirements in this project.  Ensure the designated [TPC accredited 
+]sustainability professional responsible for GP [and TPC ]documentation participates in these meetings to coordinate 
+documentation completion.  Review GP[ and TPC] sustainability requirements, HPSB Checklist[ and TPC] documentation, 
+Sustainability Action Plan, and completeness status of Sustainability eNotebook[, and TPC status] at the following 
+meetings:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Pre-Construction Conference</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Construction Quality Control Meetings</LST><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose the following bracketed sentences for TPC that require on-site 
+visit.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<LST INDENT="-0.33">c. Facility Turnover Meetings</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">    Conduct review no later than 60 days before final turnover and identify any outstanding issues that 
+affect correct completion of all documentation[ and final TPC certification, assessment or validation], 
+and actions that will achieve requirements. Conduct corrective actions prior to turnover, to ensure all 
+requirements are achieved.</LST><BRK/>
+<BRK/></SPT>
+[<SPT><TTL><SUB>THIRD PARTY CERTIFICATION CERTIFICATE, ASSESSMENT, OR VALIDATION AND COMPLIANCE REPORT</SUB></TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Choose this bracketed paragraph for projects that require the Contractor 
+to obtain the TPC certification.</NPR><BRK/>
+<BRK/>
+<NPR>For certifications, assessments, or validations that include a plaque, include 
+the bracketed phrase for the plaques.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Finalize the process requirements and obtain the TPC Certificate, assessment, or validation, and compliance report, 
+indicating completion of the project's sustainability goals.  Include TPC compliance report with final TPC scoresheet 
+as applicable.</TXT><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE: Choose the first bracketed sentence when the contract documents give specific 
+instruction for placement of the plaque.</NPR><BRK/>
+<BRK/>
+<NPR>Choose the second bracketed sentence if the Contracting Officer has verified 
+the building occupant wants a framed certificate, assessment, or validation, 
+and what kind of framing.</NPR><BRK/>
+<BRK/>
+<NPR>For certification that include a plaque, include the last bracketed phrase.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>[Provide one original framed copy of the certificate, assessment, or validation, mounted in<MET> 25 mm</MET><ENG> 1 inch</ENG> deep 
+metal frames, with double matt, and wire hangers, in location approved by Contracting Officer.  ]Deliver [one][_____] 
+original certificate, assessment, or validation, and compliance report to Contractor Officer, unless otherwise 
+instructed.</TXT><ADD><BRK/></ADD>
+<PGE/></SPT><ADD>]</ADD><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>Attach completed draft "High Performance and Sustainable Building (HPSB) Checklist".  
+For Army and Navy, this is required when project exceeds threshold defined in 
+notes under this section’s title.  For Air Force, this is required for every 
+project.  For projects with multiple buildings, attach completed draft HPSB 
+Checklist for each building.</NPR><BRK/>
+<BRK/>
+<NPR>Attach completed draft TPC checklist.  This is required when project exceeds 
+threshold defined in <NED/>note above the paragraph THIRD PARTY CERTIFICATION (TPC) 
+DOCUMENTATION.  For projects with multiple buildings, attach completed draft 
+TPC Checklist for each building that requires TPC.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/></PRT>
+    <END/><BRK/></SEC>

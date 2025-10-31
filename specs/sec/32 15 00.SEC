@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
+<HDR><AST/><BRK/>
+USACE / NAVFAC / AFCEC / NASA                   UFGS-32 15 00 (May 2017)<BRK/>
+                                                --------------------------<BRK/>
+Preparing Activity:  <PRA>USACE</PRA>                      Superseding<BRK/>
+                                                UFGS-32 15 00 (April 2008)<BRK/>
+<BRK/>
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
+<BRK/>
+<HL4>References are in agreement with UMRL dated January 2019</HL4><BRK/>
+<AST/><BRK/></HDR>
+<BRK/>
+<SCN>SECTION 32 15 00</SCN><BRK/>
+<BRK/>
+<STL>AGGREGATE SURFACING</STL><BRK/>
+<DTE>05/17</DTE><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements and include Japanese products, 
+where feasible, for a standard Japan Engineer District project.  The Designer of Record (DOR) shall tailor as 
+applicable to meet project specific requirements.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>aggregate surfacing for roads, parking areas and Army 
+airfields</SCP>.<BRK/>
+<BRK/>
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections.  Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text.<BRK/>
+<BRK/>
+Remove information and requirements not required in respective project.<BRK/>
+<BRK/>
+Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
+<BRK/>
+<SPT><TTL>REFERENCES</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of the guide specification.  The publications 
+are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK/>
+<BRK/>
+Use the Reference Wizard's Check Reference feature when you add a Reference Identifier (RID) outside of the Section's 
+Reference Article to automatically place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<BRK/>
+<BRK/>
+References not used in the text will automatically be deleted from this section of the project specification when 
+you choose to reconcile references in the publish print process.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements for a basic Japan Engineer District 
+project. Designer shall tailor as applicable to meet project specific requirement.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are referred to within the text by 
+the basic designation only.</TXT><BRK/>
+<BRK/>
+<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK/>
+<BRK/>
+<RID>JIS A 1102</RID><RTL>(2014) Method of Test for Sieve Analysis of Aggregates</RTL><BRK/>
+<BRK/>
+<RID>JIS A 1103</RID><RTL>(2014) Method of Test for Amount of Material Passing Test Sieve 75 µm in Aggregates</RTL><BRK/>
+<BRK/>
+<RID>JIS A 1121</RID><RTL>(2007) Method of Test for Resistance to Abrasion of Coarse Aggregate by Use of 
+the Los Angeles Machine</RTL><BRK/>
+<BRK/>
+<RID>JIS A 1201</RID><RTL>(2009) Practise for Preparing Disturbed Soil Samples for Soil Testing</RTL><BRK/>
+<BRK/>
+<RID>JIS A 1205</RID><RTL>(2009) Test Method for Liquid Limit and Plastic Limit of Soils</RTL><BRK/>
+<BRK/>
+<RID>JIS A 1210</RID><RTL>(2009) Test Method for Soil Compaction Using a Rammer</RTL><BRK/>
+<BRK/>
+<RID>JIS A 1214</RID><RTL>(2013) Test Method for Soil Density by the Sand Replacement Method</RTL><BRK/>
+<BRK/>
+<RID>JIS A 5001</RID><RTL>(2008) Crushed Stone for Road Construction</RTL><BRK/>
+<BRK/>
+<RID>JIS Z 8801</RID><RTL>(2006) Test Sieves Part 1: Test Sieves of Metal Wire Cloth</RTL><BRK/>
+<BRK/></REF>
+</SPT><SPT><TTL>DEGREE OF COMPACTION</TTL><BRK/>
+<BRK/>
+<TXT>Degree of compaction required, except as noted in the second sentence, is expressed as a percentage of the maximum laboratory dry density obtained 
+by the test procedure presented in <RID>JIS A 1210</RID> abbreviated as a percent of laboratory maximum dry density.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>SUBMITTALS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project.<BRK/>
+<BRK/>
+The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G."  Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System.  Only add a “G” to an item, if the submittal is sufficiently important or complex in context 
+of the project.<BRK/>
+<BRK/>
+For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
+tags may be used following the "G" designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" for District Office (Engineering 
+Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
+for Project Office.  Codes following the "G" typically are not used for Navy and Air Force projects.<BRK/>
+<BRK/>
+An "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook to 
+fulfill federally mandated sustainable requirements in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Locate the "S" submittal under the SD number that best describes the submittal item.<BRK/>
+<BRK/></NPR>
+<BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are for information only.  When 
+used, a designation following the "G" designation identifies the office that will review the submittal for the Government.  Submittals with an 
+"S" are for inclusion in the Sustainability eNotebook, in conformance to Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Submit the following in accordance 
+with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
+<BRK/>
+<LST><SUB>SD-03 Product Data</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Plant, Equipment, and Tools</SUB>; </ITM><BRK/>
+<BRK/>
+<BRK/>
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Initial Tests</SUB>; <SUB>G</SUB></ITM><BRK/>
+<ITM><SUB>In-Place Tests</SUB>; <SUB>G</SUB></ITM><BRK/>
+<BRK/></SPT>
+<SPT><TTL>EQUIPMENT, TOOLS, AND MACHINES</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  If desirable, requirements for types of equipment applicable to methods of construction based on local 
+conditions will be included.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>All <SUB>plant, equipment, and tools</SUB> used in the performance of the work will be subject to approval by the Contracting Officer before the work is started.  
+Maintain all plant, equipment, and tools in satisfactory working condition at all times.  Submit a list of proposed equipment, including descriptive 
+data.  Provide adequate equipment having the capability of minimizing segregation, producing the required compaction, meeting grade controls, thickness 
+control, and smoothness requirements as set forth herein.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>QUALITY ASSURANCE</TTL><BRK/>
+<BRK/>
+<TXT>Sampling and testing are the responsibility of the Contractor. Perform sampling and testing using a laboratory approved in accordance with Section <TAI OPT="AIR FORCE,ARMY">
+<SRF>01 45 00.00 10</SRF></TAI><TAI OPT="NAVY"><SRF>01 45 00.00 20</SRF></TAI><TAI OPT="NASA"><SRF>01 45 00.00 40</SRF></TAI> QUALITY CONTROL.  Work requiring testing will not be permitted until the testing laboratory has been 
+inspected and approved.  Test the materials to establish compliance with the specified requirements and perform testing at the specified frequency.  
+The Contracting Officer may specify the time and location of the tests.  Furnish copies of test results to the Contracting Officer within 24 hours 
+of completion of the tests.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Sampling</TTL><BRK/>
+<BRK/>
+<TXT>Take samples for laboratory testing in conformance with <RID>JIS A 1201</RID>.  When deemed necessary, the sampling will be observed by the Contracting Officer.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Testing</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Sieve Analysis</TTL><BRK/>
+<BRK/>
+<TXT>Perform sieve analysis in conformance with <RID>JIS A 1103</RID> and <RID>JIS A 1102</RID> using sieves conforming to <RID>JIS Z 8801</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Liquid Limit and Plasticity Index</TTL><BRK/>
+<BRK/>
+<TXT>Determine liquid limit and plasticity index in accordance with <RID>JIS A 1205</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Moisture-Density Determinations</TTL><BRK/>
+<BRK/>
+<TXT>Determine the laboratory maximum dry density and optimum moisture content in accordance with paragraph DEGREE OF COMPACTION.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Field Density Tests</TTL><BRK/>
+<BRK/>
+<TXT>Measure field density in accordance with <RID>JIS A 1214</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Wear Test</TTL><BRK/>
+<BRK/>
+<TXT>Perform wear tests on aggregate surface course material in conformance with <RID>JIS A 1121</RID>.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></SPT><SPT><TTL>ENVIRONMENTAL REQUIREMENTS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This paragraph may be deleted in localities where freezing temperatures do not occur, and elsewhere when 
+it is definitely known that the work will not be carried on during periods when such temperatures are to be expected.  
+Otherwise, this requirement will be retained, but the protective measures specified may be modified to suit local 
+conditions and individual project requirements.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Perform construction when the atmospheric temperature is above<MET> 2 degrees C</MET><ENG> 35 degrees F</ENG>.  It is the responsibility of the Contractor to protect, 
+by approved method or methods, all areas of surfacing that have not been accepted by the Contracting Officer.  Bring surfaces damaged by freeze, 
+rainfall, or other weather conditions to a satisfactory condition.</TXT><BRK/>
+<BRK/></SPT>
+</PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>AGGREGATES</TTL><BRK/>
+<BRK/>
+<TXT>Provide aggregates consisting of clean, sound, durable particles of natural gravel, crushed gravel, crushed stone, sand, slag, soil, or other approved 
+materials processed and blended or naturally combined.  Provide aggregates free from lumps and balls of clay, organic matter, objectionable coatings, 
+and other foreign materials.  The Contractor is responsible for obtaining materials that meet the specification and can be used to meet the grade 
+and smoothness requirements specified herein after all compaction and proof rolling operations have been completed. Aggregates shall conform to <RID>
+JIS A 5001</RID>, M-30/RM-30.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Coarse Aggregates</TTL><BRK/>
+<BRK/>
+<TXT>The material retained on the<MET> 5 mm</MET><ENG> No. 4</ENG> sieve is known as coarse aggregate.  Use only coarse aggregates that are reasonably uniform in density 
+and quality.  Use only coarse aggregate having a percentage of wear not exceeding 50 percent after 500 revolutions as determined by <RID>JIS A 1121</RID>.  
+The amount of flat and/or elongated particles must not exceed 20 percent.  A flat particle is one having a ratio of width to thickness greater 
+than three; an elongated particle is one having a ratio of length to width greater than three.  When the coarse aggregate is supplied from more 
+than one source, aggregate from each source must meet the requirements set forth herein.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Fine Aggregates</TTL><BRK/>
+<BRK/>
+<TXT>The material passing the<MET> 5 mm</MET><ENG> No. 4</ENG> sieve is known as fine aggregate.  Fine aggregate consists of screenings, sand, soil, or other finely divided 
+mineral matter that is processed or naturally combined with the coarse aggregate.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Gradation Requirements</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Specify the aggregate gradation as recommended by Japan Road Association.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Gradation requirements specified in TABLE I apply to the completed aggregate surface.  It is the responsibility of the Contractor to obtain materials 
+that will meet the gradation requirements after mixing, placing, compacting, and other operations.  TABLE I shows permissible gradings for granular 
+material used in aggregate surface roads and airfields.  Use sieves conforming to <RID>JIS Z 8801</RID>.</TXT><BRK/>
+<BRK/>
+<HL4>GRADATION OF AGGREGATES</HL4><BRK/>
+<BRK/>
+<HL4>Percentage by Weight Passing Square-Mesh Sieve</HL4><BRK/>
+<TAB>
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM"/>
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="2" ROWCOUNT="8">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="234.00"/>
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="233.25"/>
+      <ROW AUTOHEIGHT="0" HEIGHT="22.50">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Sieve Designation</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">M-30 / RM-30</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="22.50">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">37.5</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">100</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="22.50">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">31.5</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">95-100</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="22.50">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">19.0</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">60-90</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="22.50">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">4.75</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">30-65</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="22.50">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">2.36</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">20-50</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="22.50">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">0.425</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">10-30</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="33.75">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">0.075</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">2-10</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB><BRK/></SPT>
+</SPT><SPT><TTL>LIQUID LIMIT AND PLASTICITY INDEX</TTL><BRK/>
+<BRK/>
+<TXT>The portion of the completed aggregate surface course passing the<MET> 0.425 mm</MET><ENG> No. 40</ENG> sieve must have a maximum liquid limit of 35 and a plasticity 
+index of 4 to 9.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>TESTS, INSPECTIONS, AND VERIFICATIONS</TTL><BRK/>
+<BRK/>
+<SPT><TTL><SUB><TST>Initial Tests</TST></SUB></TTL><BRK/>
+<BRK/>
+<TXT>Perform one of each of the following tests, on the proposed material prior to commencing construction, to demonstrate that the proposed material 
+meets all specified requirements when furnished.  Complete this testing for each source if materials from more than one source are proposed.</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Sieve Analysis.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Liquid limit and plasticity index.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Moisture-density relationship.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Wear.</LST><BRK/>
+<BRK/>
+<TXT>Submit certified copies of test results for approval not less than 30 days before material is required for the work.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Approval of Material</TTL><BRK/>
+<BRK/>
+<TXT>Tentative approval of material will be based on initial test results.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
+<BRK/>
+<SPT><TTL>STOCKPILING MATERIAL</TTL><BRK/>
+<BRK/>
+<TXT>Prior to stockpiling the material, clear and level the storage sites.  Stockpile all materials, including approved material available from excavation 
+and grading, in the manner and at the locations designated.  Stockpile aggregates in such a manner that will prevent segregation.  Stockpile aggregates 
+and binders obtained from different sources separately.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>PREPARATION OF UNDERLYING COURSE SUBGRADE</TTL><BRK/>
+<BRK/>
+<TXT>Clean the underlying course subgrade and shoulders of all foreign substances.  Do not construct the surface course on underlying course subgrade 
+that is frozen material.  Correct ruts or soft yielding spots in the underlying course subgrade, areas having inadequate compaction and deviations 
+of the surface from the requirements set forth herein by loosening and removing soft or unsatisfactory material and by adding approved material, 
+reshaping to line and grade and recompacting to density requirements specified in Section <SRF>31 00 00</SRF> EARTHWORK Section <SRF>32 11 20</SRF> BASE COURSE FOR RIGID 
+AND SUBBASES FOR FLEXIBLE PAVING.  Do not allow traffic or other operations to disturb the completed underlying course subgrade and maintain in 
+a satisfactory condition until the surface course is placed.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>GRADE CONTROL</TTL><BRK/>
+<BRK/>
+<TXT>During construction, maintain the lines and grades including crown and cross slope indicated for the aggregate surface course by means of line 
+and grade stakes placed by the Contractor in accordance with the SPECIAL CONTRACT REQUIREMENTS.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>MIXING AND PLACING MATERIALS</TTL><BRK/>
+<BRK/>
+<TXT>Mix and place the materials to obtain uniformity of the material and a uniform optimum water content for compaction.  Make adjustments in mixing, 
+placing procedures, or in equipment to obtain the true grades, to minimize segregation and degradation, to obtain the desired water content, and 
+to ensure a satisfactory surface course.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>LAYER THICKNESS</TTL><BRK/>
+<BRK/>
+<TXT>Place the aggregate material on the underlying course subgrade in layers of uniform thickness.  Compact the completed aggregate surface course 
+to the thickness indicated.  No individual layer may be thicker than<MET> 150 mm</MET><ENG> 6 inches</ENG> nor be thinner than<MET> 75 mm</MET><ENG> 3 inches</ENG> in compacted thickness.  
+Compact the aggregate surface course to a total thickness that is within<MET> 13 mm</MET><ENG> 1/2 inch</ENG> of the thickness indicated.  Where the measured thickness 
+is more than<MET> 13 mm</MET><ENG> 1/2 inch</ENG> deficient, correct such areas by scarifying, adding new material of proper gradation, reblading, and recompacting as 
+directed.  Where the measured thickness is more than<MET> 13 mm </MET><ENG> 1/2 inch</ENG> thicker than indicated, the course will be considered as conforming to the 
+specified thickness requirements.  The average job thickness will be the average of all thickness measurements taken for the job and must be within<MET>
+ 6 mm </MET><ENG> 1/4 inch</ENG> of the thickness indicated.  Measure the total thickness of the aggregate surface course at intervals of one measurement for each 
+500 square<MET> meters</MET><ENG> yards</ENG> of surface course.  Measure total thickness using <MET> 75 mm</MET><ENG> 3 inch</ENG> diameter test holes penetrating the aggregate surface course.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>COMPACTION</TTL><BRK/>
+<BRK/>
+<TXT>Degree of compaction is a percentage of the maximum density obtained by the test procedure presented in <RID>JIS A 1210</RID> abbreviated herein as percent 
+laboratory maximum density. Compact each layer of the aggregate surface course with approved compaction equipment, as required in the following 
+paragraphs.  Maintain the water content during the compaction procedure at optimum or at the percentage specified by the Contracting Officer.  
+Compact the mixture with mechanical tampers in locations not accessible to rollers.  Continue compaction until each layer through the full depth 
+is compacted to at least 100 percent of laboratory maximum density.  Remove any materials that are found to be unsatisfactory and replace them 
+with satisfactory material or rework them to produce a satisfactory material.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>EDGES OF AGGREGATE SURFACE COURSE</TTL><BRK/>
+<BRK/>
+<TXT>Place approved material along the edges of the aggregate surface course in such quantity as to compact to the thickness of the course being constructed.  
+Simultaneously roll and compact at least<MET> 300 mm</MET><ENG> 1 foot</ENG> of shoulder width with the rolling and compacting of each layer of the surface course when 
+the course is being constructed in two or more layers.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL><TST>SMOOTHNESS TEST</TST></TTL><BRK/>
+<BRK/>
+<TXT>Construct each layer so that the surface shows no deviations in excess of<MET> 10 mm</MET><ENG> 3/8 inch</ENG> when tested with a<MET> 3 m</MET><ENG> 10 foot</ENG> straightedge applied both 
+parallel with and at right angles to the centerline of the area to be paved.  Correct deviations exceeding this amount by removing material, replacing 
+with new material, or reworking existing material and compacting, as directed.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>FIELD QUALITY CONTROL</TTL><BRK/>
+<BRK/>
+<SPT><TTL><SUB><TST>In-Place Tests</TST></SUB></TTL><BRK/>
+<BRK/>
+<TXT>Perform each of the following tests on samples taken from the placed and compacted aggregate surface course.  Take samples and test at the rates 
+indicated.</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Perform density tests on every lift of material placed and at a frequency of one set of tests for every 250 <MET> square meters</MET><ENG> square yards</ENG>
+, or portion thereof, of completed area.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Perform sieve analysis on every lift of material placed and at a frequency of one sieve analysis for every 500 <MET> square meters</MET><ENG> square 
+yards</ENG>, or portion thereof, of material placed.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Perform liquid limit and plasticity index tests at the same frequency as the sieve analysis.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Measure the thickness of the aggregate surface course at intervals providing at least one measurement for each 500  square<MET> meters</MET><ENG> yards</ENG>
+ of base course or part thereof.  Measure the thickness using test holes, at least <MET> 75 mm</MET><ENG> 3 inch</ENG> in diameter through the aggregate surface 
+course.</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Approval of Material</TTL><BRK/>
+<BRK/>
+<TXT>Final approval of the materials will be based on tests for gradation, liquid limit, and plasticity index performed on samples taken from the completed 
+and full coompacted aggregate surface course.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>MAINTENANCE</TTL><BRK/>
+<BRK/>
+<TXT>Maintain the aggregate surface course in a condition that will meet all specification requirements until accepted.</TXT><BRK/>
+<BRK/></SPT>
+</PRT>    <END/><BRK/></SEC>

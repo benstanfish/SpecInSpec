@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
+<HDR><AST/><BRK/>
+USACE / NAVFAC / AFCEC / NASA             UFGS-10 14 00.20 (August 2017)<BRK/>
+                                          Change 2 - 11/18<BRK/>
+                                          -----------------------------<BRK/>
+Preparing Activity:  <PRA>USACE</PRA>                Superseding<BRK/>
+                                          UFGS-10 14 00.20 (November 2012)<BRK/>
+<BRK/>
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
+<BRK/>
+<HL4>References are in agreement with UMRL dated July 2019</HL4><BRK/>
+<AST/><BRK/></HDR>
+<BRK/>
+<SCN>SECTION 10 14 00.20</SCN><BRK/>
+<BRK/>
+<STL>INTERIOR SIGNAGE</STL><BRK/>
+<DTE>08/17</DTE><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project.  The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>common types of 
+signs, dimensional letters, and metal plaques used inside buildings</SCP>.<BRK/>
+<BRK/>
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.<BRK/>
+<BRK/>
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<BRK/>
+<BRK/>
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This section covers some of the more common interior sign types.  When 
+other sign types are to be used, such as elevator-related signs, occupancy load 
+signs and structural load limit signs, specifications will be modified accordingly.  
+Buildings will be accessible in accordance with 36 CFR, Part 1191, Americans 
+with Disabilities Act (ADA) Accessibility Guidelines for Buildings and Facilities 
+except for Army buildings excluded by TI 800-01 Design Criteria.</NPR><BRK/>
+<BRK/>
+<NPR>Reference UFC 3-120-01 available at  Unified Federal Criteria Design: Sign Standard 
+for design, construction and placement of signs.</NPR><BRK/>
+<BRK/>
+<NPR>In combination with this specification, drawings and attachments will include 
+location, dimensions, elevations, schedules, content, details and such other 
+information as required to indicate the extent of the work.  The same terminology 
+and designations used in the specification will be used on the drawings, schedules 
+and attachments.</NPR><BRK/>
+<BRK/>
+<NPR>Product selections must be based on quality, aesthetic values, appearance, and 
+cost as related to project needs.</NPR><BRK/>
+<BRK/>
+<NPR>Use of personal names on interior signage is discouraged.  If personal names 
+are required, changeable message strips will be used.  Consider coordination 
+of interior signage within this specification with signage required on individual 
+workstations which is specified in Section <SRF>12 59 00</SRF> SYSTEMS FURNITURE.</NPR><BRK/>
+<BRK/>
+<NPR>Interior stairwell signage will be provided in accordance with Life Safety Code 
+NFPA 101, Chapter 5, and applicable occupancy chapters.  Clearly define interstitial 
+spaces or other doorways within stairwell that do not lead to a horizontal exitway 
+with signage that states "Not an Exit".</NPR><BRK/>
+<BRK/>
+<NPR>Permanent information on room identification signs includes the room number 
+on all room identification signs, symbol and message on toilet rooms, message 
+on janitor closets, mechanical/electrical and communications rooms, and message 
+on stairs.</NPR><BRK/>
+<BRK/>
+<NPR>Where appropriate for MEDICAL FACILITIES, include the following requirements 
+for signage:<BRK/>
+<BRK/>
+1.  Room numbering for spaces within the medical facility will be determined 
+jointly by the using facility and the design team.  User room number will be 
+different than architectural room number (see UFC 4-510-01 Design:  Medical 
+Military Facilities).  Room numbering will be consistent throughout the facility.  
+For inpatient medical facilities, rooms with audiovisual nurse call must have 
+a unique user room number, since audiovisual nurse call is tied into a digital 
+paging system.  For outpatient clinics, rooms with tonevisual nurse call, do 
+not need a unique user room number, since tonevisual nurse call is hardwired 
+to a panel located at a nursing station.  Room numbering should address the 
+following issues:<BRK/>
+<BRK/>
+    a.  Wayfinding within clinics and other departments (user room #).<BRK/>
+<BRK/>
+    b.  Facility Maintenance (architectural room #).<BRK/>
+<BRK/>
+    c.  Audiovisual Nurse Call (inpatient) (unique user room #).<BRK/>
+<BRK/>
+    d.  Tonevisual Nurse Call (outpatient) (user room #).<BRK/>
+<BRK/>
+2.  The use of symbols/graphics on interior signage will be limited.  International 
+symbols and graphics will be used where needed.  Recommended symbols include 
+men/women symbol for toilet rooms and showers, men/women symbol with key for 
+locker rooms, telephone symbol for public telephone areas, information (?), 
+radiation symbol, biohazard symbol, and handicap symbol.<BRK/>
+<BRK/>
+3.  Arrow placement order on interior signage will comply with UFC 4-510-01 
+Design:  Medical Military Facilities.  Left pointing arrows at top of sign, 
+followed by up pointing arrows, then right pointing arrows at bottom of sign.  
+Example follows:<BRK/>
+<BRK/>
+            &lt; EMERGENCY<BRK/>
+            ^ Orthopedic Clinic<BRK/>
+            &gt; Admissions<BRK/>
+<BRK/>
+4.  Signage schedule should be provided in electronic spreadsheet format.  Schedule 
+will include architectural room number, user room number, type of sign, message, 
+symbol (if needed), color, and mounting location.<BRK/>
+<BRK/>
+5.  Building directories and accompanying orientation maps for the medical facility 
+will be determined jointly by the using facility and the design team.  Orientation 
+maps, if required, will be included as part of the interior signage package, 
+and should be of the same manufacturer.  Include international symbols for information 
+(?), parking areas (upper case P within circle), public toilet rooms, public 
+telephones, and graphic north arrow on orientation maps.  Orientation map is 
+to be positioned so that building left is viewer's left.<BRK/>
+<BRK/>
+6.  Large, easy to read signs over reception counters, check-in counters, information 
+desks, or departments will be provided.  Signs should be either ceiling mounted 
+or affixed to soffit directly above counters.<BRK/>
+<BRK/>
+7.  Room identification signs should be<MET> 200 mm x 200 mm</MET><ENG> 8 x 8 inch</ENG> or<MET> 230 mm 
+x 230 mm</MET><ENG> 9 x 9 inch</ENG>.  Justification of room number and message will be flush left.<BRK/>
+<BRK/>
+8.  Fire evacuation signs will be provided in accordance with the local Fire 
+Marshal, if required.<BRK/>
+<BRK/>
+9.  Overhead directional signs should not block fire exit signs.<BRK/>
+<BRK/>
+10.  Signage will clearly define all staff, public, or patient toilet rooms.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>REFERENCES</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification.  The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK/>
+<BRK/>
+Use the Reference Wizard's Check Reference feature when you add a RID outside 
+of the Section's Reference Article to automatically place the reference in the 
+Reference Article.  Also use the Reference Wizard's Check Reference feature 
+to update the issue dates.<BRK/>
+<BRK/>
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to in the text by basic designation only.</TXT><BRK/>
+<BRK/>
+<REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK/>
+<BRK/>
+<ADD><RID>ASTM B209</RID><RTL>(2014) Standard Specification for Aluminum and 
+Aluminum-Alloy Sheet and Plate</RTL><BRK/>
+<BRK/>
+<RID>ASTM B221</RID><RTL>(2021) Standard Specification for Aluminum and 
+Aluminum-Alloy Extruded Bars, Rods, Wire, Profiles, 
+and Tubes</RTL><BRK/>
+<BRK/></ADD>
+<RID>ASTM D635</RID><RTL>(2018) Standard Test Method for Rate of Burning 
+and/or Extent and Time of Burning of Plastics 
+in a Horizontal Position</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>INTERNATIONAL CODE COUNCIL (ICC)</ORG><BRK/>
+<BRK/>
+<RID>ICC A117.1 COMM</RID><RTL>(2017) Standard and Commentary Accessible and 
+Usable Buildings and Facilities</RTL><BRK/>
+<BRK/></REF>
+<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK/>
+<BRK/>
+<RID>JIS H 4000</RID><RTL><DEL>(2017) Aluminium and Aluminium Alloy Sheets, 
+Strips and Plates (Amendment 1)</DEL><ADD>(2017) Aluminium 
+and Aluminium Alloy Sheets, Strips and Plates 
+(Amendment 1)</ADD></RTL><BRK/>
+<BRK/>
+<RID>JIS H 4040</RID><RTL>(2015) Aluminum and Aluminum Alloy Bars and 
+Wires</RTL><BRK/>
+<BRK/>
+<RID>JIS H 8602</RID><RTL>(2010) Combined Coatings of Anodic Oxide and 
+Organic Coatings on Aluminum and Aluminum Alloys</RTL><BRK/>
+<BRK/>
+<RID>JIS K 5906</RID><RTL>(1998) Aluminum Pigments For Paints</RTL><BRK/>
+<BRK/>
+<RID>JIS R 3202</RID><RTL>(2011) Float Glass and Polished Plate Glass</RTL><BRK/>
+<BRK/>
+<RID>JIS Z 3410</RID><RTL>(2013) Welding Coordination - Tasks and Responsibilities</RTL><BRK/>
+<BRK/>
+<RID>JIS Z 3801</RID><RTL>(2018) Standard Qualification Test and Acceptance 
+Requirements for Manual Welding Technique</RTL><BRK/>
+<BRK/>
+<RID>JIS Z 3841</RID><RTL>(2018) <DEL>Test Method and Criteria in Semi-Automatic 
+Welding Technology Certification</DEL><ADD>Standard Qualification 
+Test and Acceptance Requirements for Semi-Automatic 
+Welding Technique</ADD></RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK/>
+<BRK/>
+<RID>NFPA 101</RID><DEL><RTL>(2018; TIA 18-1; TIA 18-2; TIA 18-3) Life Safety 
+Code</RTL></DEL><ADD><RTL>(2021; TIA 21-1) Life Safety Code</RTL></ADD><BRK/>
+<BRK/>
+<RID>NFPA 70</RID><DEL><RTL>(2017; ERTA 1-2 2017; TIA 17-1; TIA 17-2; TIA 
+17-3; TIA 17-4; TIA 17-5; TIA 17-6; TIA 17-7; 
+TIA 17-8; TIA 17-9; TIA 17-10; TIA 17-11; TIA 
+17-12; TIA 17-13; TIA 17-14; TIA 17-15; TIA 
+17-16; TIA 17-17 ) National Electrical Code</RTL></DEL><ADD><RTL>(2023; 
+ERTA 7 2023; TIA 23-15) National Electrical 
+Code</RTL></ADD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)</ORG><BRK/>
+<BRK/>
+<RID>36 CFR 1191</RID><RTL>Americans with Disabilities Act (ADA) Accessibility 
+Guidelines for Buildings and Facilities; Architectural 
+Barriers Act (ABA) Accessibility Guidelines</RTL><BRK/>
+<BRK/></REF>
+</SPT><SPT><TTL>SUBMITTALS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.<BRK/>
+<BRK/>
+The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G."  Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a “G” to an item, if the submittal is sufficiently important or complex 
+in context of the project.<BRK/>
+<BRK/>
+For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office.  Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.<BRK/>
+<BRK/>
+The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
+submittal under the SD number that best describes the submittal item.<BRK/>
+<BRK/>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are for [Contractor Quality Control approval.] [information only.  When used, a designation following the "G" 
+designation identifies the office that will review the submittal for the Government.]  Submittals with an "S" 
+are for inclusion in the Sustainability eNotebook, in conformance to Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
+<BRK/>
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Detail Drawings</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK/>
+<BRK/>
+<LST><SUB>SD-10 Operation and Maintenance Data</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Approved Manufacturer's Instructions</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Protection and Cleaning</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK/>
+<BRK/></SPT>
+<SPT><TTL>EXTRA MATERIALS</TTL><BRK/>
+<BRK/>
+<TXT>Provide [_____] extra frames and extra stock of the following:  [[_____] blank plates of each color and size 
+for sign types [_____].] [[_____] changeable message strips for sign type [_____].]  Provide [[_____] paper inserts 
+and [one][_____] copy of the software for user produced signs and inserts after project completion] [and equipment 
+necessary for removal of signage parts and pieces.]</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>QUALITY ASSURANCE</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Samples</TTL><BRK/>
+<BRK/>
+<TXT>Submit interior signage samples of each of the following sign types showing typical quality, workmanship and 
+color: Directional sign, Standard Room sign, Changeable message strip sign, [Facility Recognition Plaque] [_____].   
+The samples may be installed in the work, provided each sample is identified and location recorded.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL><SUB>Detail Drawings</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Submit detail drawings showing elevations of each type of sign, dimensions, details and methods of mounting or 
+anchoring, mounting height, shape and thickness of materials, and details of construction.  Include a schedule 
+showing the location, each sign type, and message.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK/>
+<BRK/>
+<TXT>Materials must be packaged to prevent damage and deterioration during shipment, handling, storage and installation.  
+Product must be delivered to the jobsite in manufacturer's original packaging and stored in a clean, dry area 
+in accordance with manufacturer's instructions.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>WARRANTY</TTL><BRK/>
+<BRK/>
+<TXT>Warrant the interior signage for a period of [2][     ] year[s] against defective workmanship and material.  
+Warranties must be signed by the authorized representative of the manufacturer.  Submit warranty accompanied 
+by the document authenticating the signer as an authorized representative of the guarantor.  Guarantee that the 
+signage products and the installation are free from any defects in material and workmanship from the date of 
+delivery.</TXT><BRK/>
+<BRK/></SPT>
+</PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Delete signage systems, directories, etc., not required for project.  
+Coordinate electrical requirements with Division 26 and building electrical 
+design.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>STANDARD PRODUCTS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Do not use galvanized or enameled steel products for panels, brackets, 
+fasteners, or hardware in locations where deployments may leave facilities unoccupied 
+or without conditioned spaces for extended time periods, humid interior spaces, 
+humid project locations or exterior project locations with Environmental Severity 
+Classifications (ESC) C4 and C5. Humid project locations are those in ASHRAE 
+climate zones 0A, 1A, 2A, 3A, 3C, 4C and 5C (as identified in ASHRAE 90.1). 
+See UFC 1-200-01 for determination of ESC for project locations.</NPR><BRK/>
+<BRK/>
+<NPR>Humid interior spaces include, but are not limited to, high humidity, non air 
+conditioned spaces (for example, bathrooms, locker rooms, pools, trainers), 
+areas open to the exterior (for example, mechanical rooms and hangars), and 
+spaces that are not conditioned by design or may not be conditioned during prolonged 
+periods due to deployment or occupancy (for example, garages, motor pool bays, 
+vehicle repair bays, park bathrooms, field house toilets, storage warehouses, 
+and in some cases enlisted and officer quarters).</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Signs, plaques, directories, and dimensional letters must be the standard product of a manufacturer regularly 
+engaged in the manufacture of such products that essentially duplicate signs that have been in satisfactory use 
+at least 2 years prior to bid opening.  Obtain signage from a single manufacturer with edges and corners of finished 
+letterforms and graphics true and clean.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>ROOM IDENTIFICATION/DIRECTIONAL SIGNAGE SYSTEM</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Depending on the complexity of the project consider a modular signage 
+system such as structural rails and end caps.  Coordinate project requirements 
+and specific signage system with user.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>Standard Room Signs</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Do not use framed signs or metal signs where exposed to the weather in 
+humid locations or project locations with Environmental Severity Classifications 
+(ESC) of C3 thru C5.  Humid project locations are those in ASHRAE climate zones 
+0A, 1A, 2A, 3A, 3C, 4C and 5C (as identified in ASHRAE 90.1).  See UFC 1-200-01 
+for determination of ESC for project locations. Use Acrylic Plastic or Phenolic 
+sign materials without frames in these areas.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Signs must consist of [acrylic plastic<MET> 2 mm</MET><ENG> 0.080 inch</ENG> thickness minimum conforming to] [laminated thermosetting 
+Type MP plastic (three-ply melamine plastic laminate with phenolic core)] [6063-T5 extruded aluminum in accordance 
+with<ENG> <RID>ASTM B221</RID></ENG><ENG> <RID>ASTM B209</RID></ENG>] [_____] and must conform to the following:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Frames must be [[aluminum] [wood] [molded acrylic]], [[flat][radius]]  [[<MET>3 mm</MET><ENG> 1/8 inch</ENG>] [<MET>6 mm</MET><ENG> 1/4 
+inch</ENG>] [_____] thick.]</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  End caps must be [aluminum] [wood] [molded acrylic] with [round] [square] [_____] style corners.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Units must be frameless.  Corners of signs must be [squared] [rounded to<MET> [10] [13] [19] [_____] mm</MET><ENG>
+ [3/8] [1/2] [3/4] [_____] inch</ENG> radius].</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Changeable Message Strip Signs</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The insert preparation method most appropriate to each building should 
+be chosen, and the same method should be used consistently throughout the building.  
+Requirements for sign-making equipment or software will be determined jointly 
+by the using facility and the designer.  If using other than standard paper, 
+require extra stock be provided.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Changeable message strip signs must be of same construction as standard room signs to include a clear sleeve 
+that will accept a paper or plastic insert identifying changeable text.  The insert must be prepared [die-cut 
+vinyl letters applied to<MET> 0.38 mm</MET><ENG> 0.015 inch</ENG> rigid vinyl film] [typeset message mounted on paper card stock ][typewritten 
+message] [_____].[  Provide[ paper and] software for creating text and symbols for computers identified by owner 
+for Owner production of paper inserts after project completion.][  Furnish one [suction][_____] device to assist 
+in removing face sheet.][  Sliding inserts or slide knobs that slide horizontally exposing different graphic 
+information must be provided as identified in the signage placement schedule and [drawings][attachments.]]</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Type of Mounting For Signs</TTL><BRK/>
+<BRK/>
+<TXT>Provide extruded aluminum brackets for hanging, projecting, and double-sided signs.  Mounting for framed, hanging, 
+and projecting signs must be by mechanical fasteners.  Surface mounted signs must be mounted with [countersunk 
+mounting holes in plaques and mounting screws][<MET>1.6 mm</MET><ENG> 1/16 inch</ENG> thick closed cell vinyl foam with adhesive backing.  
+Adhesive must be transparent, long aging, high tech formulation on two sides of the vinyl foam.][magnetic tape 
+[silicone adhesive]][[hook and loop tape consisting of hooked part on sign back and looped side on mounting surface] 
+[pin mount] for textile surfaces] [_____] fabricated from materials that are not corrosive to sign material and 
+mounting surface.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Graphics</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Edit the following requirements as necessary for the project.  Graphics 
+methods that are easily vandalized, such as vinyl first surface copy and acrylic 
+characters bonded to acrylic will not be permitted.  The silkscreened first 
+surface copy method is generally used for mass produced signs.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Signage graphics for modular signs must conform to the following:</TXT><BRK/>
+<BRK/>
+[<SPT><TTL>Subsurface Copy</TTL><BRK/>
+<BRK/>
+<TXT>Copy is transferred to the back face of clear acrylic sheeting forming the panel face to produce precisely formed 
+opaque image.  This method bonds all sign elements (color, graphics, lettering, Braille and substrate) into a 
+single unit.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>First Surface Copy Direct Print or Silkscreened (Non-Tactile)</TTL><BRK/>
+<BRK/>
+<TXT>Message may be applied to panel using the silkscreen process.  Silkscreened images must be executed with photo 
+screens prepared from original art.  Handcut screens will not be accepted.  Original art is defined as artwork 
+that is a first generation reproduction of the specified art.  Edges and corners must be clean.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Surface Applied Photopolymer</TTL><BRK/>
+<BRK/>
+<TXT>Integral graphics and Braille achieved by photomechanical stratification processes.  Photopolymer used for ADA 
+compliant graphics must be of the type that has a minimum durometer reading of 90.  Tactile graphics must be 
+raised<MET> 0.8 mm</MET><ENG> 1/32 inch</ENG> from the first surface of plaque by photomechanical stratification process.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Engraved Copy</TTL><BRK/>
+<BRK/>
+<TXT>Machine engrave letters, numbers, symbols, and other graphics into panel sign on face to produce precisely formed 
+copy and sharp images, incised to uniform depth.  Melamine plastic engraving stock used for ADA compliant graphic 
+must be three-ply lamination contrasting color core meeting <RID>ASTM D635</RID>.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Graphic Blast Raised Copy</TTL><BRK/>
+<BRK/>
+<TXT>Background is sandblasted to a uniform depth of<MET> 0.8 mm</MET><ENG> 1/32 inch</ENG> leaving raised text and Braille.  Background 
+must be painted with polyurethane paint.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Embossed</TTL><BRK/>
+<BRK/>
+<TXT>Methods other than sandblasting such as vacuum formed to create ADA compliant projected graphics.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>[Cast] [Fabricated] [Solid] Aluminum Letters</TTL><BRK/>
+<BRK/>
+<TXT>Provide <MET>[3] [6] [_____] mm</MET><ENG> [1/8] [1/4] [_____] inch</ENG> thick and fasten to the message panel with concealed fasteners.</TXT><BRK/>
+<BRK/></SPT>
+]</SPT><SPT><TTL>Character Proportions and Heights</TTL><BRK/>
+<BRK/>
+<TXT>Letters and numbers on signs conform to <RID>36 CFR 1191</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Tactile Letters, Symbols and Braille</TTL><BRK/>
+<BRK/>
+<TXT>Raised letters and numbers on signs must conform to <RID>36 CFR 1191</RID>.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>STAIR SIGNAGE</TTL><BRK/>
+<BRK/>
+<TXT>Provide signs on stairs serving three or more stories with special signage within the enclosure at each floor 
+landing conforming to <RID>NFPA 101</RID>.  Indicate the floor level, the terminus of the top and bottom of the stair enclosure, 
+and the identification of the stair enclosure.  Also, state the floor level of, and the direction to, exit discharge.  
+Locate the signage inside the enclosure in a position that is visible when the door is in the open or closed 
+position and install in conformance with <RID>36 CFR 1191</RID>.  The floor level designation must also be tactile in accordance 
+with <RID>ICC A117.1 COMM</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>BUILDING DIRECTORIES</TTL><BRK/>
+<BRK/>
+<TXT>Building directories must be lobby directories or floor directories, and must be provided with a changeable directory 
+listing consisting of the areas, offices and personnel located within the facility.  Dimensions, details, and 
+materials of sign and message content must be as shown on the [drawings][attachments][signage placement schedule].</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Header Panel</TTL><BRK/>
+<BRK/>
+<TXT>Header panel must [have background metal to match frame] [be acrylic with raised acrylic letters][be ES/MP plastic 
+with raised letters] [_____].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Doors</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Door Glazing</TTL><BRK/>
+<BRK/>
+<TXT>Door glazing must be [in accordance with <RID>JIS R 3202</RID>, minimum<MET> 3 mm</MET><ENG> 1/8 inch</ENG> thick][clear acrylic sheet<MET> 5 mm</MET><ENG> 3/16 
+inch</ENG> thick conforming to [_____]][clear polycarbonate sheet<MET> 5 mm</MET><ENG> 3/16 inch</ENG> thick][_____].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Door Construction</TTL><BRK/>
+<BRK/>
+<TXT>Extruded aluminum door frame must be of same finish as surrounding frame.  Corners must be mitered [, reinforced] 
+[, welded], and assembled with concealed fasteners.  Hinges must be standard with the manufacturer, in finish 
+to match frames and trim.  Glazing must be set in frame with resilient glazing channels.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Door Locks</TTL><BRK/>
+<BRK/>
+<TXT>Door locks must be manufacturer's standard, and must be keyed alike.  Provide two sets of keys.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Fabrication</TTL><BRK/>
+<BRK/>
+<TXT>Extruded aluminum frames and trim must be assembled with corners [reinforced] [welded] and mitered to a hairline 
+fit, with no exposed fasteners.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Illuminated Units</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Coordinate illumination with Division 26 and building electrical design.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Illuminated directory units must have concealed internal [top] [back] lighting with [LED] [rapid start fluorescent 
+tube lamp] [_____], internal wiring, and lead at wire for connection.  Electrical work must comply with <RID>NFPA 70</RID>
+ and must be UL or FM listed.  Directory must consist of backlit photo negative directory strips and a black 
+background.  Unit must have a tinted [tempered safety solar glass][_____] door.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Construction</TTL><BRK/>
+<BRK/>
+<TXT>The directory must be<MET> [50][100][150] mm</MET><ENG> [1][2][4][_____] inch</ENG> deep frame constructed of an [aluminum with [[satin 
+[black][painted][dark bronze][_____] anodized finish]][[red oak][walnut][_____] with [natural][stained] finish]].  
+Unit must be [[semi][fully] recessed][surface][_____] mounted.  Unit must have a<MET> [75][_____] mm</MET><ENG> [3][_____] inch</ENG>
+ high header lettering as shown.  Unit must have a<MET> [10][_____]mm</MET><ENG> [3/8][     ] inch</ENG> face door frame with concealed 
+hinges and locking system or other secure method.  Door frame must [match directory material and finish][_____].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Message Strips</TTL><BRK/>
+<BRK/>
+<TXT>Message strips must be photo negative type updatable by user.  Message strips must be [as shown on the drawings] 
+[_____].</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Non-Illuminated Unit</TTL><BRK/>
+<BRK/>
+<TXT>Directory must consist of a non-illuminated unit with [machine or laser engraved copy in interchangeable acrylic, 
+metal, or high-pressure plastic laminate strips] [screen printed or vinyl copy applied to acrylic, metal, or 
+high-pressure plastic laminate strips] [vinyl or screen printed lettering on plastic film held in interchangeable 
+plastic carriers] [screen printed or vinyl copy laminated to magnetic tape].  Design of unit must be as shown 
+in the drawings.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Construction</TTL><BRK/>
+<BRK/>
+<TXT>The directory must be constructed of an aluminum<MET> [50][100][150] mm</MET><ENG> [2][4][6] inch</ENG> deep frame with [satin [black][painted][dark 
+bronze][_____] anodized finish][[red oak][walnut][     ] with [natural][stained] finish].  Unit must be [[semi][fully] 
+recessed][surface][_____] mounted.  Unit must have a<MET> [75][_____] mm</MET><ENG> [3][_____] inch</ENG> high header lettering as 
+shown.  Unit must have a <MET>[9.3][     ] mm</MET><ENG> [3/8][     ] inch</ENG> face door frame with concealed hinges and locking 
+system or other secure method.  Door frame must [match directory material and finish][_____].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Message Strips</TTL><BRK/>
+<BRK/>
+<TXT>[Message strips must be updatable by user.  ]Message strips must be [sized in accordance with manufacturer's 
+standard] [_____].  Letters and numbers must be provided in accordance with the [drawings] [schedule].</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Electronic Directory System</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The electronic directory system is a limited usage item and must be fully 
+justified prior to being specified.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide [non-interactive][interactive] electronic directory.  Electronic directory system must be a complete 
+turnkey system consisting of digital display, hardware, software connected through the local area network (LAN) 
+to a [server][cloud].  Electrical equipment must be UL listed and must comply with <RID>NFPA 70</RID>.  Unit must be [free-standing][wall 
+mounted].</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>METAL PLAQUES</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Cast Metal Plaques</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Fabrication</TTL><BRK/>
+<BRK/>
+<TXT>Cast metal plaques must have the logo, emblem and artwork cast in the [bas relief] [flat relief] [_____] technique.  
+Plaques must be fabricated from [prime aluminum] [bronze] [brass] [_____].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Border</TTL><BRK/>
+<BRK/>
+<TXT>Border must be [flat band] [plain edge] [bevel] [custom ornamental] [_____].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Finish</TTL><BRK/>
+<TXT><TAB HEADERROWS="0">
+<WBK>
+   <STS/>
+   <TDA COLUMNCOUNT="2" ROWCOUNT="3">
+      <COL AUTOWIDTH="0" WIDTH="285.00"/>
+      <COL AUTOWIDTH="0" WIDTH="286.50"/>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL>
+<DTA TYPE="STRING">Letter Finish</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[satin] [polished]</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL>
+<DTA TYPE="STRING">Background Finish</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[[light][dark] aluminum][[dark][     ] bronze]</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.75">
+         <CEL>
+<DTA TYPE="STRING">Background Texture</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[leather][pebble][smooth][     ]</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB></TXT><BRK/></SPT>
+<SPT><TTL>Mounting</TTL><BRK/>
+<BRK/>
+<TXT>Mounting must be [concealed] [rosettes and anchors] [rosettes and toggle bolts] [_____].</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Chemically Etched Metal Plaques</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Fabrication</TTL><BRK/>
+<BRK/>
+<TXT>Plaque must be chemically etched one-piece or photochemically engraved metal sheet or plate [aluminum] [brass] 
+[bronze] [zinc] [magnesium] [_____]<MET> [_____] mm</MET><ENG> [0.032][0.064][0.125][0.250][_____] inch</ENG> thick.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Finish</TTL><BRK/>
+<BRK/>
+<TXT>[Single-etched raised areas must be in [gold-tone] [silver-tone] [bronze-tone] finish and recessed areas must 
+be colorfilled.] [Double-etched raised areas must be [gold-tone] [silver-tone] and recessed textured areas must 
+be [gold-tone] [silver-tone] colorfilled.]</TXT><BRK/>
+<BRK/></SPT>
+</SPT></SPT><SPT><TTL>DIMENSIONAL BUILDING LETTERS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  These letters are for direct application to interior building surfaces.  
+Drawings must show mounting type details.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>Fabrication</TTL><BRK/>
+<BRK/>
+<TXT>Letters must be [cast][cutout][fabricated channel][molded plastic].  Letters must be [aluminum][bronze][brass][     
+].  Package letters for protection until installation.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Size</TTL><BRK/>
+<BRK/>
+<TXT>Letter size must be [_____] [as indicated].  Provide letter thickness that is [manufacturer's standard for the 
+size of letter][_____].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Finish</TTL><BRK/>
+<BRK/>
+<TXT>Provide [[mill][clear anodized][[light][medium][dark] anodized bronze]] [[polished] bronze with clear coat] [baked 
+enamel] [powder coat][two-component acrylic polyurethane] finish.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Mounting</TTL><BRK/>
+<BRK/>
+<TXT>[Threaded studs] [Steel U-bracket, cap screws, and expansion bolts] of number and size recommended by manufacturer, 
+must be supplied for concealed anchorage.  Letters which project from the mounting surface must have [stud spacer 
+sleeves] [_____].  Letters, studs, and sleeves must be of the same material.  Templates for mounting must be 
+supplied.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>PRESSURE SENSITIVE LETTERS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Use pressure sensitive letters for direct application to building interior 
+surfaces such as glass and doors.  Be sure surface of material will accept adhesion 
+of letters.  Show locations, message content, sizes, and colors on drawings 
+or in a message schedule.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>Fabrication</TTL><BRK/>
+<BRK/>
+<TXT>Ensure that vinyl letter edges and corners of finished letterforms and graphics are true and clean.  Do not use 
+letterforms and graphics with rounded positive or negative corners, nicked, cut, or ragged edges.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Size</TTL><BRK/>
+<BRK/>
+<TXT>Letter size:  [as indicated] [_____].</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>ALUMINUM ALLOY PRODUCTS</TTL><BRK/>
+<BRK/>
+<TXT>Aluminum extrusions must be at least<MET> 3 mm</MET><ENG> 1/8 inch</ENG> thick, and aluminum plate or sheet must be at least<MET> 1.3 mm</MET><ENG>
+ 0.0508 inch</ENG> thick.  Extrusions must conform to<MET> <RID>JIS H 4040</RID></MET><ENG> <RID>ASTM B221</RID></ENG>; plate and sheet must conform to<MET> <RID>JIS H 4000</RID></MET><ENG>
+ <RID>ASTM B209</RID></ENG>.  Where anodic coatings are specified, alloy must conform to [_____].  Exposed anodized aluminum finishes 
+must be as shown.  Welding for aluminum products must conform to <RID>JIS Z 3801</RID>, <RID>JIS Z 3410</RID>, and <RID>JIS Z 3841</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>ANODIC COATING</TTL><BRK/>
+<BRK/>
+<TXT>Anodized finish must conform to <RID>JIS H 8602</RID> as follows:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  [Clear (natural).] </LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  [Integral color.]</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  [Electrolytically deposited color-anodized.]</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>ORGANIC COATING</TTL><BRK/>
+<BRK/>
+<TXT>Organic coating must conform to <RID>JIS K 5906</RID>, with total dry film thickness not less than<MET> 0.030 mm</MET><ENG> 1.2 mils</ENG>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>FABRICATION AND MANUFACTURE</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Factory Workmanship</TTL><BRK/>
+<BRK/>
+<TXT>Holes for bolts and screws must be drilled or punched.  Drilling and punching must produce clean, true lines 
+and surfaces.  Exposed surfaces of work must have a smooth finish and exposed riveting must be flush.  Fastenings 
+must be concealed where practicable.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Dissimilar Materials</TTL><BRK/>
+<BRK/>
+<TXT>Where dissimilar metals are in contact, the surfaces will be protected to prevent galvanic or corrosive action.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>COLOR, FINISH, AND CONTRAST</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Color must be selected from manufacturer's standard colors and indicated 
+in SECTION <SRF>09 06 00</SRF> SCHEDULES FOR FINISHES or identified in this specification 
+only when the project is very simple and has minimal finishes.  Custom colors 
+must be limited due to additional cost and impact on future orders.<BRK/>
+<BRK/>
+Signage background color should be in high contrast with signage copy.  Dark 
+background with light copy is preferred.<BRK/>
+<BRK/>
+When the government directs that color be located in the drawings a note must 
+be added that states:  "Where color is shown as being specific to one manufacturer, 
+an equivalent color by another manufacturer may be submitted for approval.  
+Manufacturers and materials specified are not intended to limit the selection 
+of equal colors from other manufacturers.  The word "color" as used herein includes 
+surface color and pattern."</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Color must be [in accordance with Section <SRF>09 06 00</SRF> SCHEDULES FOR FINISHES] [as indicated] [_____].  Finish of 
+all signs must be eggshell, matte, or other non-glare finish as required in handicapped-accessible buildings.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>TYPEFACE</TTL><BRK/>
+<BRK/>
+<TXT>[ADA-ABA compliant font for Room Signs][Helvetica Regular][_____].</TXT><BRK/>
+<BRK/></SPT>
+</PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
+<BRK/>
+[<SPT><TTL>PLACEMENT SCHEDULE</TTL><BRK/>
+<BRK/>
+<TXT><TAB>
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN HORIZONTAL="CENTER"/>
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="5" ROWCOUNT="3">
+      <COL AUTOWIDTH="0" WIDTH="113.25"/>
+      <COL AUTOWIDTH="0" WIDTH="113.25"/>
+      <COL AUTOWIDTH="0" WIDTH="113.25"/>
+      <COL AUTOWIDTH="0" WIDTH="113.25"/>
+      <COL AUTOWIDTH="0" WIDTH="118.50"/>
+      <ROW AUTOHEIGHT="0" HEIGHT="36.00">
+         <CEL MERGEACROSS="4" STYLEID="s50">
+<DTA TYPE="STRING">SIGNAGE PLACEMENT SCHEDULE</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Door/Room Number</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Sign Type</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Text</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Insert(s)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Symbol/Remarks</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL>
+<DTA TYPE="STRING">[_______]</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_______]</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_______]</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_______]</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_______]</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB></TXT><BRK/>
+<BRK/></SPT>
+]<SPT><TTL>INSTALLATION</TTL><BRK/>
+<BRK/>
+<TXT>Install signs plumb and true and in accordance with <SUB>approved manufacturer's instructions</SUB> at locations shown on 
+the [detail drawings] [schedule below] [attachments].  Submit operating instructions outlining the step-by-step 
+procedures required for system operation.  The instructions include simplified diagrams for the system as installed, 
+the manufacturer's name, model number, service manual, parts list, and brief description of all equipment and 
+their basic operating features.  Provide each set  permanently bound with a hard cover.  The following identification 
+must be inscribed on the covers:  "OPERATING AND MAINTENANCE INSTRUCTIONS", name and location of the facility, 
+name of the Contractor, and contract number.  Submit in accordance with Section 01 78 23 OPERATING AND MAINTENANCE 
+DATA.  Mounting height and mounting location complies with <RID>36 CFR 1191</RID>.  Install required blocking.  Do not install 
+signs on doors or other surfaces until finishes on such surfaces have been installed.  Signs installed on glass 
+surfaces are installed with matching blank back-up plates in accordance with manufacturer's instructions.  [Provide 
+illuminated signage in conformance with the requirements of Section <SRF>26 51 00</SRF> INTERIOR LIGHTING.]</TXT><BRK/>
+<BRK/>
+<TXT>Do not install items that show visual evidence of biological growth.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Anchorage</TTL><BRK/>
+<BRK/>
+<TXT>Provide anchorage in accordance with approved manufacturer's instructions.  In high humidity interior spaces 
+(for example, bathrooms, locker rooms, pools, trainers) and unconditioned spaces, use corrosion-resistant anchors/fasteners 
+or with approval by the manufacturer, waterproof silicone adhesive.  Anchorage not otherwise specified or shown 
+must include slotted inserts, expansion shields, and powder-driven fasteners when approved for concrete; toggle 
+bolts and through bolts for masonry; machine carriage bolts for steel; lag bolts and screws for wood.  Provide 
+exposed anchor and fastener materials compatible with metal to which applied with matching color and finish.At 
+interior applications in heavy traffic areas, firmly attach signage to structure walls with tamper-proof fasteners.</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Signs mounted to painted gypsum board surfaces must be removable for painting maintenance.</LST>  <BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Mount signs mounted to lay-in ceiling grids with clip connections to ceiling tees.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Install signs mounted on metal surfaces with magnetic tape.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Install signs mounted on fabric surfaces with hook and loop tape or pin mount.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Install signs to workstation panels with panel clips.</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL><SUB>Protection and Cleaning</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Protect the work against damage during construction.  Adjust hardware and electrical equipment for proper operation.  
+Clean glass, frames, and other sign surfaces at completion of signage installation in accordance with the manufacturer's 
+written instructions.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></PRT>     <END/><BRK/></SEC>
