@@ -1,14 +1,30 @@
 # Copyright (c) 2025 Ben Fisher
+""" 
+This module provides utilities for inspecting and cleaning files that contain 
+non-printing 0x81 byte characters, which interfer with Python libraries used to
+process XML, text and other files.
 
-__all__ = ['get_file_list', 'clean_files']
+It includes functions for:
+- Safely evaluate if a file contains 0x81 bytes
+- Remove 0x81 bytes from files and overwrite existing or copy to new file
+- Batch processing files in a given directory
+
+Example usage:
+    >>> import clean0x81
+    >>> clean0x81.get_0x81_file_list('path/to/dir', '.xml')
+    'Report written to: path/to/dir/files_with_0x81.txt'
+
+    >>> clean0x81.clean_0x81_files('path/do/dir', 'path/do/new_dir', '.sec')
+"""
+
+__all__ = ['get_0x81_file_list', 'clean_0x81_files']
 
 import os, shutil
 from pathlib import Path
-from defusedxml import ElementTree as ET
-
 from src.console.escapes import Escapes
 
-def clean_0x81_file(file_path: str, new_path: str='') -> None:
+def clean_0x81_file(file_path: str, 
+                    new_path: str='') -> None:
     """Replaces the 0x81 byte (all occurances) and saves to file.
 
     Args:
@@ -48,7 +64,8 @@ def file_has_0x81(file_path: str) -> bool:
     except:
         return True
 
-def get_file_dict(parent_dir: str=r'./specs/sec', extension: str='.sec') -> dict:
+def get_file_dict(parent_dir: str=r'./specs/sec', 
+                  extension: str='.sec') -> dict:
     """Creates dictionary of file stems and absolute paths that match the file extension condition.
 
     Args:
@@ -85,7 +102,8 @@ def files_have_0x81(file_dict: dict) -> bool:
                        else Escapes.Green + 'does not'}{Escapes.Reset} files with 0x81 character.\n')
     return dir_has_0x81
 
-def get_file_list(parent_dir: str=r'./specs/sec', extension: str='.sec') -> None:
+def get_0x81_file_list(parent_dir: str=r'./specs/sec', 
+                       extension: str='.sec') -> None:
     """Write list of files in directory that contain 0x81 character(s) to text file in same directory.
 
     Args:
@@ -108,9 +126,9 @@ def get_file_list(parent_dir: str=r'./specs/sec', extension: str='.sec') -> None
     except Exception as e:
         print(f'An exception occurred when trying to write the report: {e}')
 
-def clean_files(orig_dir: str=r'./specs/sec',
-                new_dir: str=r'./specs/cleaned_sec',
-                file_type: str='.sec') -> None:
+def clean_0x81_files(orig_dir: str=r'./specs/sec', 
+                     new_dir: str=r'./specs/cleaned_sec', 
+                     file_type: str='.sec') -> None:
     """Clean all files in a specified directory, copying to new directory (or overwrite existing files).
 
     Args:
