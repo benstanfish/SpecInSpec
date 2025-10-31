@@ -20,16 +20,44 @@ def remove_declaration(xml_string: str) -> str:
     declaration_pattern = r'<\?xml[^>]*\?>'
     return re.sub(declaration_pattern, '', xml_string, count=1).strip()
 
-def clean_sec_string(xml_string:str, multiples:int=100) -> str:
+def clean_sec_string(xml_string:str, 
+                     spaces_reduced:bool=True, 
+                     brk_replaced:bool=True, 
+                     ast_removed:bool=False, 
+                     ast_character:str='*', 
+                     ast_count:int=100) -> str:
     temp = remove_declaration(xml_string)
-    temp = re.sub(' +', ' ', temp)
+    if spaces_reduced:
+        temp = re.sub(' +', ' ', temp)
     temp = re.sub(r'<BRK />\s+?<BRK />', '<BRK />', temp)
-    temp = re.sub('<BRK />', '<br/>', temp)
-    temp = temp.replace('<AST />', f"<AST>{'*' * multiples}</AST>")
+    if brk_replaced:
+        temp = re.sub('<BRK />', '<br/>', temp)
+    if not ast_removed:
+        temp = temp.replace('<AST />', f"<AST>{ast_character * ast_count}</AST>")
+    else:
+        temp = temp.replaced('<AST />', '')
     return temp
+
+def get_all_tags(file_path:str) -> list:
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+    raw_tags = []
+    raw_tags.append(root.tag)
+    for elem in root.iter():
+        if elem.tag not in raw_tags:
+            raw_tags.append(elem.tag)
+    sorted_tags = sorted(raw_tags)
+    return sorted_tags
+
+
+
+
+
+
 
 
 test_file = './specs/cleaned_sec/05 12 00.sec'
+
 
 tree = ET.parse(test_file)
 root = tree.getroot()
@@ -53,7 +81,7 @@ content = clean_sec_string(content)
 html_fragment = BeautifulSoup(content, 'html.parser')
 
 html_template = './src/html/template.html'
-html_path = f'./src/html/{section_info['section']}.html'
+html_path = f"./src/html/{section_info['section']}.html"
 
 html_file = shutil.copy(html_template, html_path)
 
