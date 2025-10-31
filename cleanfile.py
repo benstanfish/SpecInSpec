@@ -1,6 +1,6 @@
 # Copyright (c) 2025 Ben Fisher
 
-__all__ = ['clean_files']
+__all__ = ['get_file_list', 'clean_files']
 
 import os, shutil
 from pathlib import Path
@@ -53,7 +53,7 @@ def get_file_dict(parent_dir: str=r'./specs/sec', extension: str='.sec') -> dict
 
     Args:
         parent_dir (str, optional): Path to directory (parent) of files to be included. Defaults to r'./specs/sec'.
-        extension (str, optional): File extension to be matched. Defaults to '.sec' (a type of .xml).
+        extension (str, optional): File extension to be matched; case-insensitive. Defaults to '.sec' (a type of .xml).
 
     Returns:
         dict: Dictionary with keys = file name stem and value = absolute path to file.
@@ -85,6 +85,29 @@ def files_have_0x81(file_dict: dict) -> bool:
                        else Escapes.Green + 'does not'}{Escapes.Reset} files with 0x81 character.\n')
     return dir_has_0x81
 
+def get_file_list(parent_dir: str=r'./specs/sec', extension: str='.sec') -> None:
+    """Write list of files in directory that contain 0x81 character(s) to text file in same directory.
+
+    Args:
+        parent_dir (str, optional): Path of directory to be evaluated. Defaults to r'./specs/sec'.
+        extension (str, optional): File extension to be matched; case-insensitive. Defaults to '.sec' (a type of .xml).
+    """
+    file_dict = get_file_dict(parent_dir=parent_dir, extension=extension)
+    has_list = []
+    for file_stem, path in file_dict.items():
+        if file_has_0x81(path):
+            has_list.append(Path(path).name)
+    report_path = os.path.join(parent_dir, 'files_with_0x81.txt')
+    try:
+        with open(report_path, 'w') as file:
+            if has_list:
+                file.write(f'The following {len(has_list)} files include 0x81 byte characters and need to be cleaned before processing:\n\n')
+                for item in has_list:
+                    file.write(item + '\n')
+        print(f'Report written to: {report_path}')
+    except Exception as e:
+        print(f'An exception occurred when trying to write the report: {e}')
+
 def clean_files(orig_dir: str=r'./specs/sec',
                 new_dir: str=r'./specs/cleaned_sec',
                 file_type: str='.sec') -> None:
@@ -111,4 +134,3 @@ def clean_files(orig_dir: str=r'./specs/sec',
         cleaned_files[section] = new_path
 
     files_have_0x81(cleaned_files)
-    

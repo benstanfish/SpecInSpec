@@ -1,0 +1,23 @@
+The following 21 files include 0x81 byte characters and need to be cleaned before processing:
+
+02 83 00.sec
+05 30 00.SEC
+05 51 33.SEC
+05 52 00.SEC
+07 60 00.SEC
+08 11 16.SEC
+08 31 00.sec
+08 91 00.sec
+10 14 00.10.SEC
+10 14 00.20.SEC
+21 30 00.SEC
+22 00 00.sec
+23 05 15.SEC
+23 07 00.SEC
+23 23 00.SEC
+23 30 00.SEC
+23 64 26.SEC
+23 65 00.SEC
+23 81 00.SEC
+26 11 16.00 33.SEC
+33 11 00.SEC
