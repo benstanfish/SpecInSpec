@@ -39,21 +39,21 @@ def clean_sec_string(xml_string:str,
     return temp
 
 def get_all_tags(file_path:str) -> list:
-    tree = ET.parse(file_path)
-    root = tree.getroot()
-    raw_tags = []
-    raw_tags.append(root.tag)
-    for elem in root.iter():
-        if elem.tag not in raw_tags:
-            raw_tags.append(elem.tag)
-    sorted_tags = sorted(raw_tags)
-    return sorted_tags
-
-
-
-
-
-
+    try:
+        tree = ET.parse(file_path)
+        root = tree.getroot()
+        raw_tags = []
+        raw_tags.append(root.tag)
+        for elem in root.iter():
+            if elem.tag not in raw_tags:
+                raw_tags.append(elem.tag)
+        sorted_tags = sorted(raw_tags)
+        # for tag in sorted_tags:
+        #     print(tag)
+        return sorted_tags
+    except Exception as e:
+        print(f'An exception occurred: {e}')
+    return []
 
 
 test_file = './specs/cleaned_sec/05 12 00.sec'
@@ -61,7 +61,9 @@ test_file = './specs/cleaned_sec/05 12 00.sec'
 
 tree = ET.parse(test_file)
 root = tree.getroot()
-# print(root.tag == 'SEC')
+
+# The following can be used for initial validation:
+# print(root.tag == 'SEC')  
 
 section_info = {
     'section': root.find('SCN').text.replace('SECTION ', '').strip(),
@@ -74,8 +76,13 @@ section_info = {
 
 with open(test_file, 'r') as file:
     content = file.read()
-    
+
+all_tags = get_all_tags(test_file) 
+
+
 content = clean_sec_string(content, brk_replaced=False)
+
+
 
 html_fragment = BeautifulSoup(content, 'html.parser')
 

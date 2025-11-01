@@ -1,0 +1,147 @@
+:root {
+    --standard-margin: 12px;
+    --display-hdr: none;
+    --display-notes: none;
+    --display-del: none; /* none or inline-block */
+
+    --ref-color: magenta;
+    --sub-color: blue;
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+    --hdr-color: #aaa;
+
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+br {
+    display: none; /* This is a 'reset' requirement */
+}
+
+brk {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ast,
+npr,
+nte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+/* url {
+    color: blue;
+    border-bottom: 1px solid blue;
+} */
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    color: grey;
+    display: var(--display-hdr);
+}
+
+ast {
+    color: grey
+}
+
+scn,
+stl,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte {
+    color: var(--note-color);
+    display: var(--display-notes);
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: normal;
+    color: var(--ref-color);
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+del {
+    display: var(--display-del);
+    color: var(--del-color);
+}
+
+add {
+    color: var(--add-color);
+}
+
+sub {
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: 16px;
+}
+
+lst sub {
+    display: block;
+    margin: var(--standard-margin) 0;
+}
+
+met {
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+}
+eng {
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
