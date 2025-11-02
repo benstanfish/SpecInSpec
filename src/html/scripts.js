@@ -2,6 +2,11 @@
 
 document.getElementById('notes-toggle-switch').checked = true;
 document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('toggle-menu').checked = true;
+
+const top_menu = document.getElementsByClassName('.user-selections')
+toggle_menu('toggle-menu', '.user-selections')
+
 
 set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
 set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
@@ -54,7 +59,17 @@ function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
     })
 }
 
-
+function toggle_menu(toggle_element_id, target_elements_class_name, display_style='inherit') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_element = document.querySelector(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        if (toggle_element.checked) {
+                target_element.style.top = '0';
+            } else {
+                target_element.style.top = '-175px';
+            }
+    })
+}
 
 
 
