@@ -235,3 +235,7 @@ td + td {
     font-weight: bold;
 }
 
+.brackets {
+    background-color: yellow;
+    display: inherit;
+}

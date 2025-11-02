@@ -66,6 +66,18 @@ def add_display_tags(tag_name: str, all_text: str) -> str:
     
     return temp
 
+# def _wrap_with_brackets_span(match):
+#     # bracket_pattern = r'\[.*?\]'
+#     # return re.sub(bracket_pattern, f'<span class="brackets">{bracket_pattern}</span>', html_text)
+#     return f'<span class="brackets">{match.group(0)}</span>'
+
+# def wrap_brackets(html_string:str) -> str:
+#     bracket_pattern = re.compile(r'\[.*?\]', re.MULTILINE)
+#     return re.sub(bracket_pattern, _wrap_with_brackets_span, html_string)
+
+def wrap_brackets_in_span(html_string:str) -> str:
+    temp = html_string.replace(r'[', r'<span class="brackets">[')
+    return temp.replace(r']', r']</span>')
 
 test_file = './specs/cleaned_sec/05 12 00.sec'
 
@@ -94,6 +106,7 @@ display_tags = ['NPR', 'ENG', 'MET']
 for display_tag in display_tags:
     content = add_display_tags(tag_name=display_tag, all_text=content)
     
+content = wrap_brackets_in_span(content)
 content = clean_sec_string(content, brk_replaced=False)
 
 
