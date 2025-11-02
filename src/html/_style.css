@@ -21,6 +21,11 @@ body {
     line-height: 1.375;
 }
 
+main {
+    margin-top: 72px;
+}
+
+
 br {
     display: none; /* This is a 'reset' requirement */
 }
@@ -154,15 +159,27 @@ eng {
 
 
 
-
-
-
+#menuBtn {
+  display: block; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #555; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
 
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  right: 120px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
@@ -185,8 +202,7 @@ h1 {
 
 
 hr {
-    margin-bottom: 24px;
-    border: 0.5px solid dodgerblue;
+    border-width: 0.25px;
 }
 
 label {
@@ -199,10 +215,18 @@ td + td {
 }
 
 .user-selections {
-    position: sticky;
     top: 0;
-    background-color: rgb(159, 207, 255);
-    border-radius: 6px;
+    position: fixed;
+    display: block;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
     margin: -24px;
     padding: 24px;
     margin-top: -24px;
@@ -215,6 +239,7 @@ td + td {
     margin-bottom: 12px;
 }
 
+.display_NTE,
 .display_NPR {
     display: none;
     color: orange;

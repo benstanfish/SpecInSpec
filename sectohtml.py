@@ -33,7 +33,8 @@ def clean_sec_string(xml_string:str,
     if brk_replaced:
         temp = re.sub('<BRK />', '<br/>', temp)
     if not ast_removed:
-        temp = temp.replace('<AST />', f"<AST>{ast_character * ast_count}</AST>")
+        # temp = temp.replace('<AST />', f"<AST>{ast_character * ast_count}</AST>")
+        temp = temp.replace('<AST />', f'<AST><hr></AST>')
     else:
         temp = temp.replaced('<AST />', '')
     return temp
@@ -102,7 +103,7 @@ with open(test_file, 'r') as file:
 
 all_tags = get_all_tags(test_file) 
 
-display_tags = ['NPR', 'ENG', 'MET']
+display_tags = ['NTE', 'NPR', 'ENG', 'MET']
 for display_tag in display_tags:
     content = add_display_tags(tag_name=display_tag, all_text=content)
     
@@ -122,7 +123,7 @@ with open(html_file, 'r') as file:
 
 soup = BeautifulSoup(html_content, 'html.parser')
 soup.find('title').string = section_info['section'] + '.sec Viewer'
-soup.find('body').append(html_fragment)
+soup.find('main').append(html_fragment)
 
 soup.prettify()
 

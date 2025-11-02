@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="reboot.css">
     <link rel="stylesheet" href="_style.css">
 
-    
-
     <title>Document</title>
 </head>
 <body>
@@ -37,8 +35,14 @@
                 </td>
                 <td>
                     <div class="toggle-container">
+                        <input type="checkbox" id="nte-toggle-switch" class="toggle-checkbox" />
+                        <label for="nte-toggle-switch" class="toggle-label"><pre>Show &lt;NTE&gt; tags</pre></label>
+                    </div>
+                </td>
+                <td>
+                    <div class="toggle-container">
                         <input type="checkbox" id="npr-toggle-switch" class="toggle-checkbox" />
-                        <label for="npr-toggle-switch" class="toggle-label"><pre>Show User Notes &lt;NPR&gt; tags</pre></label>
+                        <label for="npr-toggle-switch" class="toggle-label"><pre>Show &lt;NPR&gt; tags</pre></label>
                     </div>
                 </td>
             </tr>
@@ -60,13 +64,11 @@
                 </td>
             </tr>
         </table>
-        <hr>
-        <div class="toggle-container">
-            <input type="checkbox" id="toggle-menu" class="toggle-checkbox" />
-            <label for="toggle-menu" class="toggle-label">Show Menu</label>
-        </div>
     </div>
+    <main>
 
+    </main>
+    <button onclick="toggleMenu()" id="menuBtn" title="Toggle menu">Menu</button>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
 <script src="scripts.js"></script>

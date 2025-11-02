@@ -35,8 +35,14 @@
 </td>
 <td>
 <div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>Show &lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
 <input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
-<label class="toggle-label" for="npr-toggle-switch"><pre>Show User Notes &lt;NPR&gt; tags</pre></label>
+<label class="toggle-label" for="npr-toggle-switch"><pre>Show &lt;NPR&gt; tags</pre></label>
 </div>
 </td>
 </tr>
@@ -58,18 +64,13 @@
 </td>
 </tr>
 </table>
-<hr/>
-<div class="toggle-container">
-<input class="toggle-checkbox" id="toggle-menu" type="checkbox"/>
-<label class="toggle-label" for="toggle-menu">Show Menu</label>
 </div>
-</div>
-<button id="myBtn" onclick="topFunction()" title="Go to top">Top</button>
+<main>
 <sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd">
 <mta content="NEW" name="SUBFORMAT"></mta>
 <mta content="TRUE" name="AUTONUMBER"></mta>
 <hdr>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk> 
  USACE / NAVFAC / AFCEC / NASA UFGS-05 12 00 (August 2018)
  <brk></brk> 
@@ -85,7 +86,7 @@
 <brk></brk>
 <hl4>References are in agreement with UMRL dated April 2019</hl4>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 </hdr>
 <brk></brk>
@@ -95,9 +96,9 @@
 <brk></brk>
 <dte>08/18</dte>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: This guide specification has been edited to cover the minimum requirements
@@ -106,12 +107,12 @@
  meet project specific requirements.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
-<nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers requirements for <scp>
  structural steel used
@@ -143,12 +144,12 @@
  welcome and should be submitted as a
  <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
-<nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Ensure the following information is shown on the project drawings:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
@@ -177,9 +178,9 @@
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>9. Type of coating for hardware.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <prt>
 <ttl>PART 1 GENERAL</ttl>
@@ -187,9 +188,9 @@
 <spt>
 <ttl>REFERENCES</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: This paragraph is used to list the publications cited in the text of
@@ -211,9 +212,9 @@
  publish print process.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
  The publications listed below form a part of this specification to the extent referenced. The publications are
@@ -541,9 +542,9 @@
 <spt>
 <ttl>SUBMITTALS</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review Submittal Description (SD) definitions in Section <srf>01 33 00</srf>
  SUBMITTAL
@@ -564,9 +565,9 @@
  the second bracketed item for Army projects.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
  Government approval is required for submittals with a "G" designation; submittals not having a "G" designation
@@ -679,9 +680,9 @@
 </spt><div class="brackets">[<spt>
 <ttl>MLIT QUALITY CERTIFICATION</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: It will be unlikely to find an AISC certified structural steel fabricator
@@ -701,9 +702,9 @@
  meters or less, grade of steel material 490N or less, steel plate 25mm or less.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>Work must be fabricated by MLIT Structural Steel Fabricator, Category M <div class="brackets">[R]</div> <div class="brackets">[H]</div>. Submit <sub>
  MLIT Structural Steel
@@ -720,18 +721,18 @@
  <spt>
 <ttl>SEISMIC PROVISIONS</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Include the seismic provisions requirement when delegated design is performed
  by the Contractor.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>Provide the structural steel system in accordance with <rid> AISC 341</rid>, Chapter J as amended by <rid>UFC 3-301-01</rid>.</txt>
 <brk></brk>
@@ -748,15 +749,15 @@
 <sub>Erection and Erection Bracing Drawings</sub>
 </ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the last line when delegated design is performed by the contractor.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
  Submit for record purposes. Indicate the sequence of erection, temporary shoring and bracing. The erection
@@ -771,18 +772,18 @@
 <spt>
 <ttl>Fabrication Drawing Requirements</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Include the requirement for fabrication drawings to be signed and sealed
  when delegated design is performed by the contractor.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>Submit <sub>fabrication drawings</sub> for approval prior to fabrication. Prepare in accordance with <rid>JASS 6</rid> and <rid>MLIT-SS Chapter 7</rid> 
  . Fabrication drawings must not be reproductions of contract drawings.<div class="brackets">[ Sign and seal fabrication drawings
@@ -806,9 +807,9 @@
 <spt>
 <ttl>Welding Procedures and Qualifications</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: AWS D1.8/D1.8M is a seismic supplement welding manual that applies to
@@ -817,9 +818,9 @@
  alternative only to welds that are not part of the SFRS.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
  Prior to welding, submit certification for each welder stating the type of welding and positions qualified for,
@@ -832,9 +833,9 @@
 <brk></brk>
 <txt>Conform to all requirements specified in <rid>JASS 6</rid> <div class="brackets">[and <rid>AWS D1.8/D1.8M</rid>]</div>.</txt>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Include the following paragraph when there is a top running bridge crane
@@ -843,9 +844,9 @@
  NAVINST 11230.1F refers to CMAA for new equipment installation.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 </spt>
 <div class="brackets">[
@@ -870,9 +871,9 @@
 <spt>
 <ttl>SYSTEM DESCRIPTION</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Check the design to ensure that adequate supports at appropriate spacings
@@ -885,9 +886,9 @@
  Include bracketed sentence for Design-Build projects only.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt><div class="brackets">[Conform the design of structural steel system to <rid>AISC 360</rid>, <rid>AISC 303</rid>, <rid>AISC 341</rid>, and <rid>UFC 3-301-01</rid>.]</div></txt>
 <brk></brk>
@@ -901,9 +902,9 @@
 <spt>
 <ttl>STEEL</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Select materials appropriate to the design and delete remaining materials.<brk></brk> 
  Designer should require materials, products, and innovative construction methods
@@ -911,12 +912,12 @@
  and conserve natural resources.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
-<nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Designs requiring notch strength or installation and operation at low
@@ -929,16 +930,16 @@
  the proposed ambient and working temperatures for resistance to brittle fracture.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <spt>
 <ttl>Structural Steel</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: ASTM A992/A992M covers W shapes (rolled wide flange shapes) intended
@@ -969,9 +970,9 @@
  content is 93 percent.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>Wide flange and WT shapes, <rid>JIS G 3136</rid>, SN490B, 325 MPa. Angles and Channels <rid>JIS G 3106</rid>
  , SM400, 235 MPa. Plates,
@@ -983,9 +984,9 @@
 <spt>
 <ttl>Structural Steel Tubing</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: ASTM A500/A500M tubing is available in Grades A, B, C, and D with minimum
@@ -1030,9 +1031,9 @@
  be in 90 percent to 100 percent range.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
 <rid>JIS G 3466</rid>
@@ -1044,9 +1045,9 @@
 <spt>
 <ttl>Steel Pipe</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: ASTM A53/A53M pipe, Type E (Electric-resistance Welded) and Type S (Seamless),
@@ -1077,9 +1078,9 @@
  of brackets.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
 <rid>JIS G 3444</rid>, STK 400 and 235 MPa.<div class="brackets">[ Provide steel pipe containing a minimum of <div class="brackets">[50]</div><div class="brackets">[_____]</div> percent recycled content.]</div></txt>
@@ -1100,9 +1101,9 @@
 <spt>
 <ttl>Bolts</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: When galvanizing ASTM A307 bolts specify either hot-dip process in ASTM
@@ -1112,9 +1113,9 @@
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>Engineer of Record shall design connections with appropriate JIS B olts.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
 <rid>JIS B 1180</rid> with 420 MPa minimum tensile strength, plain finish <div class="brackets">[hot dipped zinc coating in accordance with <rid>JIS B 1048</rid> 
@@ -1136,15 +1137,15 @@
  <spt>
 <ttl>Self-Locking Nuts</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Drawings or specifications should identify where these items are used.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
  Provide nuts with a locking pin set in the nut. The locking pin must slide along the bolt threads, and by reversing
@@ -1175,18 +1176,18 @@
 <spt>
 <ttl>Bolts</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Do not galvanize Grade F2280 bolts.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
-<nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Do not mix bolt Grade A325M A325 and Grade A490M A490 on the same diameter
@@ -1214,9 +1215,9 @@
  is required, edit to provide either F8T for 12G SHTB type fasteners.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
 <rid>JIS B 1186</rid>, Type F10T.</txt>
@@ -1236,9 +1237,9 @@
 <sub>Direct Tension Indicator Washers</sub>
 </ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: If direct tension indicator washers are not used then tension control
@@ -1248,9 +1249,9 @@
  Include bracketed phrase if tension indicator washers are to be galvanized.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
 <rid>ASTM F959/F959M</rid>.<div class="brackets">[ Provide <rid>ASTM B695</rid>
@@ -1272,9 +1273,9 @@
 <sub>Tension Control Bolts</sub>
 </ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Use Grade F1852 where high strength bolts (AISC Group A) with a minimum
@@ -1285,9 +1286,9 @@
  Joints)
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>MLIT approved <rid>JSS II 09</rid>, <rid>JIS B 1186</rid>
  S10T twistoff style assemblies consisting of steel structural bolts with
@@ -1299,9 +1300,9 @@
 <spt>
 <ttl>Foundation Anchorage</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: For most jobs, ASTM F1554 36 ksi anchor rods are used. If high tensile
@@ -1317,9 +1318,9 @@
  for stainless steel Type SUS304A anchor rods.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <spt>
 <ttl>Anchor Rods</ttl>
@@ -1369,9 +1370,9 @@
 <sub>Welding Electrodes and Rods</sub>
 </ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include AWS D1.8/D1.8M when required for seismic resisting systems.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
@@ -1380,9 +1381,9 @@
  rods and wire. Refer to JASS 6, Table 3.4 - "JIS Standards for Welding Materials"
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
 <rid>AWS D1.1/D1.1M</rid> or <rid>JASS 6</rid><div class="brackets">[ and <rid>AWS D1.8/D1.8M</rid>]</div>. Submit product data for welding electrodes and rods.</txt>
@@ -1393,9 +1394,9 @@
 <sub>Non-Shrink Grout</sub>
 </ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Some nonshrink grouts derive their nonshrink properties from an increase
@@ -1403,9 +1404,9 @@
  sake, specify nonmetallic grout.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
  Packaged dry, hydraulic cement non-shrink grout, that is non-metallic, non-corrosive, non-bleed, with the following
@@ -1426,9 +1427,9 @@
 <spt>
 <ttl>Welded Shear Stud Connectors</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: AWS D1.1, Type B welded shear stud connectors have minimum ultimate tensile
@@ -1439,9 +1440,9 @@
  JIS B 1198 alternate
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
 <rid>JIS B 1198</rid> <div class="brackets">[,450MPa minimum ultimate tensile strength]</div> <div class="brackets">[and 350MPa minimum yield strength]</div>.</txt>
@@ -1450,9 +1451,9 @@
 </spt><div class="brackets">[<spt>
 <ttl>GALVANIZING</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Most structural steel is painted. If galvanized items are required,
@@ -1471,9 +1472,9 @@
  of Iron and Steel.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
 <rid>JIS B 1048</rid> for threaded parts or <rid>JIS H 8641</rid>
@@ -1505,18 +1506,18 @@
  Splices not indicated require the approval of the Contracting Officer.
  </txt>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Include the following paragraph where there are truss chord splices on
  the project.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <div class="brackets">[
  <txt>
@@ -1540,9 +1541,9 @@
  concentrations.<div class="brackets">[ Affix embossed tags to hot-dipped galvanized members.]</div>
 </txt>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: SPE-P1 is for enclosed paint shop, SPE-P2 is for an outside but covered
@@ -1550,9 +1551,9 @@
  qualification including NACE and SSPC which exceed AISC paint endorsements.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 </spt>
 <spt>
@@ -1560,9 +1561,9 @@
 <sub>Shop Primer</sub>
 </ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Generally, for interior use, standard structural steel with a minimum
@@ -1577,9 +1578,9 @@
  anticorrosive paint commonly used as shop primer and should be specified.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>Shop prime structural steel, <rid>JIS K 5674</rid>
  lead Free, chromium Free, anticorrosive paint, except as modified herein,
@@ -1653,9 +1654,9 @@
  <spt>
 <ttl>Surface Finishes</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: AISC states "finished" surfaces, where identified, should have a maximum
@@ -1663,9 +1664,9 @@
  in lieu of 500, is recommended.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
 <rid>ASME B46.1</rid> maximum surface roughness of 125 for pin, pinholes, and sliding bearings, unless indicated otherwise.</txt>
@@ -1732,15 +1733,15 @@
 <spt>
 <ttl>High-Strength Bolts</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: If only tension control bolts are used, delete this paragraph.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>Provide direct tension indicator washers in all <eng><pre class="display_ENG">&lt;ENG&gt;</pre>A325<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
 <rid>JIS B 1186</rid>
@@ -1794,15 +1795,15 @@
 <spt>
 <ttl>WELDING</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include AWS D1.8/D1.8M when required for seismic resisting systems.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>Welding must be in accordance with <rid>JASS 6</rid><div class="brackets">[ and <rid>AWS D1.8/D1.8M</rid>
  ]</div>.<div class="brackets">[ Grind exposed welds smooth as indicated.]</div>
@@ -1817,18 +1818,18 @@
 <spt>
 <ttl>Removal of Temporary Welds, Run-Off Plates, and Backing Strips</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Include last bracketed statement where required by prequalified connection
  requirements in AISC 358.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
 <div class="brackets">[Removal is not required]</div><div class="brackets">[Remove only from finished areas]</div>.<div class="brackets">[ Remove backing strips from bottom flange of moment
@@ -1902,9 +1903,9 @@
 <spt>
 <ttl>Nondestructive Testing</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Indicate the location of test welds and types of testing desired. The
@@ -1931,9 +1932,9 @@
  loading identify them on the construction documents.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>Nondestructive testing must be in accordance with <rid>JASS 6</rid> and <rid>JIS Z 3060</rid><div class="brackets">[ and <rid>AWS D1.8/D1.8M</rid>
  ]</div>. Ultrasonic testing
@@ -2029,15 +2030,15 @@
 <brl></brl>
 </tab>
 </hl4>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: If only tension control bolts are used, delete this paragraph.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 </spt>
 </spt>
@@ -2062,18 +2063,18 @@
  <spt>
 <ttl>Direct Tension Indicator Gaps</ttl>
 <brk></brk>
-<nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Use this paragraph on large complex structural steel systems or on jobs
  where minimal on site inspection is expected.
  <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<ast>****************************************************************************************************</ast>
+<ast><hr/></ast>
 <brk></brk>
-</nte>
+<pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>In addition to the above testing, an independent testing agency as approved by the Contracting Officer, must <tst> 
  test in place the direct tension indicator gaps
@@ -2171,6 +2172,9 @@
 </prt>
 <end></end>
 <brk></brk>
-</sec></body>
+</sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="myBtn" onclick="topFunction()" title="Go to top">Top</button>
+</body>
 <script src="scripts.js"></script>
 </html>
