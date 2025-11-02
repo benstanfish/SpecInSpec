@@ -76,8 +76,8 @@ def add_display_tags(tag_name: str, all_text: str) -> str:
 #     return re.sub(bracket_pattern, _wrap_with_brackets_span, html_string)
 
 def wrap_brackets_in_span(html_string:str) -> str:
-    temp = html_string.replace(r'[', r'<span class="brackets">[')
-    return temp.replace(r']', r']</span>')
+    temp = html_string.replace(r'[', r'<div class="brackets">[')
+    return temp.replace(r']', r']</div>')
 
 test_file = './specs/cleaned_sec/05 12 00.sec'
 

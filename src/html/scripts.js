@@ -1,6 +1,7 @@
 
 
 document.getElementById('notes-toggle-switch').checked = true;
+document.getElementById('brackets-toggle-switch').checked = true;
 
 set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
 set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
@@ -8,7 +9,7 @@ set_up_toggle_by_tag('notes-toggle-switch', 'AST');
 set_up_toggle_by_class('eng-toggle-switch', '.display_ENG', 'inline');
 set_up_toggle_by_class('met-toggle-switch', '.display_MET', 'inline');
 
-
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
 
 
 function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inherit') {
@@ -39,7 +40,19 @@ function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, d
     })
 }
 
-
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
 
 
 

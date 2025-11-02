@@ -237,5 +237,9 @@ td + td {
 
 .brackets {
     background-color: yellow;
-    display: inherit;
+    display: inline-block;
 }
+
+/* itm {
+    display: inherit;
+} */
