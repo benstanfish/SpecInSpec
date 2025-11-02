@@ -49,3 +49,11 @@ TXT,
 URL,
 WBK 
 */
+
+
+
+.display_NPR {
+    display: block;
+    color: orange;
+    background-color: rgb(235, 211, 166);
+}

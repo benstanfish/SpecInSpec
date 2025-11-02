@@ -55,6 +55,17 @@ def get_all_tags(file_path:str) -> list:
         print(f'An exception occurred: {e}')
     return []
 
+def add_display_tags(tag_name: str, all_text: str) -> str:
+    start_tag = f'<{tag_name}>'
+    end_tag = f'</{tag_name}>'
+    
+    new_start_tag = f'<{tag_name}><pre class="display_{tag_name}">&lt;{tag_name}&gt;</pre>'
+    new_end_tag = f'<pre class="display_{tag_name}">&lt;/{tag_name.upper()}&gt;</pre></{tag_name}>'
+    temp = all_text.replace(end_tag, new_end_tag)
+    temp = temp.replace(start_tag, new_start_tag)
+    
+    return temp
+
 
 test_file = './specs/cleaned_sec/05 12 00.sec'
 
@@ -63,7 +74,7 @@ tree = ET.parse(test_file)
 root = tree.getroot()
 
 # The following can be used for initial validation:
-# print(root.tag == 'SEC')  
+# print(root.tag == 'SEC')  ``
 
 section_info = {
     'section': root.find('SCN').text.replace('SECTION ', '').strip(),
@@ -79,9 +90,11 @@ with open(test_file, 'r') as file:
 
 all_tags = get_all_tags(test_file) 
 
-
+display_tags = ['NPR', 'ENG', 'MET']
+for display_tag in display_tags:
+    content = add_display_tags(tag_name=display_tag, all_text=content)
+    
 content = clean_sec_string(content, brk_replaced=False)
-
 
 
 html_fragment = BeautifulSoup(content, 'html.parser')

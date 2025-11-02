@@ -5,10 +5,52 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="reboot.css" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
+<link href="_style.css" rel="stylesheet"/>
 <title>05 12 00.sec Viewer</title>
 </head>
 <body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>User Display Preferences</h1>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<table class="user-pref-table">
+<tr>
+<td><strong>User Notes</strong></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show User Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>Show User Notes &lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<strong>Unit Labels</strong>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+</table>
+<hr/>
+</div>
+<button id="myBtn" onclick="topFunction()" title="Go to top">Top</button>
 <sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd">
 <mta content="NEW" name="SUBFORMAT"></mta>
 <mta content="TRUE" name="AUTONUMBER"></mta>
@@ -43,12 +85,12 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: This guide specification has been edited to cover the minimum requirements
  and include Japanese products, where feasible, for a standard Japan Engineer
  District project. The Designer of Record (DOR) shall tailor as applicable to
  meet project specific requirements.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -57,7 +99,7 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>NOTE: This guide specification covers requirements for <scp>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers requirements for <scp>
  structural steel used
  in building construction
  </scp>
@@ -85,7 +127,7 @@
  <brk></brk> 
  Comments, suggestions and recommended changes for this guide specification are
  welcome and should be submitted as a
- <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.</npr>
+ <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -94,32 +136,32 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>NOTE: Ensure the following information is shown on the project drawings:</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Ensure the following information is shown on the project drawings:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>1. The extent and location of structural steel;</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>1. The extent and location of structural steel;<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>2. Designations of steel members;</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>2. Designations of steel members;<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>3. Type and yield strength of steel used in design;</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>3. Type and yield strength of steel used in design;<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>4. Locations where galvanized steel will be used;</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>4. Locations where galvanized steel will be used;<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>5. Types of connections (welded and bolted);</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>5. Types of connections (welded and bolted);<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  6. Locations where high-strength bolts and slip critical connections are required
  and the loads and stresses required if steel connection design is provided by
  Contractor; and
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  7. The location of welds requiring nondestructive testing, along with the type
  of testing required.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>8. Type of steel coating and limits of coating application; and</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>8. Type of steel coating and limits of coating application; and<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>9. Type of coating for hardware.</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>9. Type of coating for hardware.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -135,25 +177,25 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: This paragraph is used to list the publications cited in the text of
  the guide specification. The publications are referred to in the text by basic
  designation only and listed in this paragraph by organization, designation,
  date, and title.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  Use the Reference Wizard's Check Reference feature when you add a Reference
  Identifier (RID) outside of the Section's Reference Article to automatically
  place the reference in the Reference Article. Also use the Reference Wizard's
  Check Reference feature to update the issue dates.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  References not used in the text will automatically be deleted from this section
  of the project specification when you choose to reconcile references in the
  publish print process.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -489,24 +531,24 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>NOTE: Review Submittal Description (SD) definitions in Section <srf>01 33 00</srf>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review Submittal Description (SD) definitions in Section <srf>01 33 00</srf>
  SUBMITTAL
  PROCEDURES and edit the following list to reflect only the submittals required
  for the project.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  The Guide Specification technical editors have designated those items that require
  Government approval, due to their complexity or criticality, with a "G." Generally,
  other submittal items can be reviewed by the Contractor's Quality Control System.
  Only add a "G" to an item, if the submittal is sufficiently important or complex
  in context of the project.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  Choose the first bracketed item for Navy, Air Force and NASA projects, or choose
  the second bracketed item for Army projects.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -627,14 +669,14 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: It will be unlikely to find an AISC certified structural steel fabricator
  or erector in Japan. The government agency MLIT has a certification process
  in place to ensure quality workmanship for steel fabricators and erectors.
  Therefore reference to AISC steel fabricators and erectors will be deleted.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>MLIT Steel Fabrication Plant Categories:<brk></brk> 
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>MLIT Steel Fabrication Plant Categories:<brk></brk> 
  Category H has no height and area restrictions, grade of steel material 520N
  or less, steel plates 60mm or less.
  <brk></brk> 
@@ -643,7 +685,7 @@
  <brk></brk> 
  Category R is limited to buildings 5 floors or less, floor area 3000 square
  meters or less, grade of steel material 490N or less, steel plate 25mm or less.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -668,10 +710,10 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Include the seismic provisions requirement when delegated design is performed
  by the Contractor.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -696,7 +738,7 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>NOTE: Include the last line when delegated design is performed by the contractor.</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the last line when delegated design is performed by the contractor.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -719,10 +761,10 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Include the requirement for fabrication drawings to be signed and sealed
  when delegated design is performed by the contractor.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -754,12 +796,12 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: AWS D1.8/D1.8M is a seismic supplement welding manual that applies to
  welds that are part of the seismic force resisting system (SFRS). Welds that
  are not part of the SFRS are governed by AWS D1.1. Hence, JASS 6 is an acceptable
  alternative only to welds that are not part of the SFRS.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -780,12 +822,12 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Include the following paragraph when there is a top running bridge crane
  in the project.
  <brk></brk> 
  NAVINST 11230.1F refers to CMAA for new equipment installation.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -818,7 +860,7 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Check the design to ensure that adequate supports at appropriate spacings
  have been provided for the installation of piping, expansion tanks, unit heaters,
  suspended ceilings and similar items.
@@ -827,7 +869,7 @@
  be a problem.
  <brk></brk> 
  Include bracketed sentence for Design-Build projects only.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -849,11 +891,11 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>NOTE: Select materials appropriate to the design and delete remaining materials.<brk></brk> 
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Select materials appropriate to the design and delete remaining materials.<brk></brk> 
  Designer should require materials, products, and innovative construction methods
  and techniques which are environmentally sensitive, take advantage of recycling
  and conserve natural resources.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -862,7 +904,7 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Designs requiring notch strength or installation and operation at low
  temperatures will require special material selections. Notch strength will
  be required based on design geometry or for dynamically loaded structures.
@@ -871,7 +913,7 @@
  supplementary requirements (ASTM A6/A6M) specified. In designs where the material
  will be exposed to temperatures below freezing, check the material type against
  the proposed ambient and working temperatures for resistance to brittle fracture.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -884,7 +926,7 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: ASTM A992/A992M covers W shapes (rolled wide flange shapes) intended
  for use in building framing will likely not be available in Japan. The Engineer
  of Record shall be aware of the available Japanese H steel sizes and design
@@ -896,9 +938,9 @@
  235 MPa for plates. Where higher strength connection plates are required, such
  as gusset plates, splice plates, fillers plate, then 3136, SN490B, 325 MPa should
  be specified.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  Use materials with recycled content where appropriate for use. Verify suitability,
  availability within the region, cost effectiveness and adequate competition
  (including verification of bracketed percentages included in this guide specification)
@@ -911,7 +953,7 @@
  of brackets. AISC 2017 white paper "More than Recycled Content: The Sustainable
  Characteristics of Structural Steel" indicates that the industry average recycled
  content is 93 percent.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -931,15 +973,15 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: ASTM A500/A500M tubing is available in Grades A, B, C, and D with minimum
  yield strengths of
- <met> 230, 290, 317, and 250 MPa</met>
-<eng> 33, 42, 46, and 36 ksi</eng>
+ <met><pre class="display_MET">&lt;MET&gt;</pre> 230, 290, 317, and 250 MPa<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 33, 42, 46, and 36 ksi<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
  for round
  structural tubing and
- <met> 269, 317, 345, and 250 MPa</met>
-<eng> 39, 46, 50, and 36 ksi</eng>
+ <met><pre class="display_MET">&lt;MET&gt;</pre> 269, 317, 345, and 250 MPa<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 39, 46, 50, and 36 ksi<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
  for
  square or rectangular shaped structural tubing, respectively. ASTM A500/A500M
  tubing may not be suitable for dynamically loaded structures or applications
@@ -951,9 +993,9 @@
  <brk></brk> 
  ASTM A1085 provides tighter shape tolerance over ASTM A500 and minimum yield
  strength of
- <met> 345 MPa</met>
-<eng> 50 ksi</eng> and a maximum yield strength of<met> 485 MPa</met>
-<eng> 70 ksi</eng>
+ <met><pre class="display_MET">&lt;MET&gt;</pre> 345 MPa<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 50 ksi<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and a maximum yield strength of<met><pre class="display_MET">&lt;MET&gt;</pre> 485 MPa<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 70 ksi<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
  for
  all round, square and rectangular shapes. ASTM A1085/A1085M also provides standard
  requirements for charpy V-notch toughness.
@@ -972,7 +1014,7 @@
  is from a basic oxygen furnace then the recycled content will be near 25 percent,
  but if the coil is from an electric arc furnace then the recycled content will
  be in 90 percent to 100 percent range.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -992,23 +1034,23 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: ASTM A53/A53M pipe, Type E (Electric-resistance Welded) and Type S (Seamless),
  Grade B, has a minimum yield strength of
- <met> 245 MPa</met>
-<eng> 35 ksi</eng>
+ <met><pre class="display_MET">&lt;MET&gt;</pre> 245 MPa<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 35 ksi<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
  and is available in
  the following weight classes: STD (Standard), XS (Extra Strong), and XXS (Double-extra
  Strong).
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  ASTM A500 tubes will likely not be available in Japan. The comparable round
  tube product is JIS G 3444, STK 400, 235 MPa. Engineer of record should be
  aware of the grade of steel and design accordingly.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  Use materials with recycled content where appropriate for use. Verify suitability,
  availability within the region, cost effectiveness and adequate competition
  (including verification of bracketed percentages included in this guide specification)
@@ -1019,7 +1061,7 @@
  Some manufacturers and regions have higher percentages. If desired, insert
  higher percentages into the second set of brackets and delete the first set
  of brackets.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1048,13 +1090,13 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: When galvanizing ASTM A307 bolts specify either hot-dip process in ASTM
  F2329/F2329M (JIS B 1048) (There appears to be no JIS Equivalent for mechanically
  deposited zinc, therefore delete this option).
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>Engineer of Record shall design connections with appropriate JIS B olts.</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Engineer of Record shall design connections with appropriate JIS B olts.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1071,9 +1113,9 @@
 <ttl>Nuts</ttl>
 <brk></brk>
 <txt>
-<eng>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre>
 <rid>ASTM A563</rid>
-</eng>Heavy hex style <rid>JIS B 1181</rid>, plain finish [hot dipped zinc coating in accordance with <rid>JIS B 1048</rid>]. </txt>
+<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>Heavy hex style <rid>JIS B 1181</rid>, plain finish [hot dipped zinc coating in accordance with <rid>JIS B 1048</rid>]. </txt>
 <brk></brk>
 </spt> 
  [
@@ -1084,7 +1126,7 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>NOTE: Drawings or specifications should identify where these items are used.</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Drawings or specifications should identify where these items are used.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1123,7 +1165,7 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>NOTE: Do not galvanize Grade F2280 bolts.</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Do not galvanize Grade F2280 bolts.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1132,31 +1174,31 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Do not mix bolt Grade A325M A325 and Grade A490M A490 on the same diameter
  bolts in high strength connections. The Grade A325M A325 and Grade A490M A490
  bolts specified are for a maximum diameter of
- <met> M36</met>
-<eng> 1.5 inch</eng>
+ <met><pre class="display_MET">&lt;MET&gt;</pre> M36<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1.5 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
  . If larger bolts
  are required, include the following ASTM publications in reference article:
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  ASTM A354 - Quenched and Tempered Alloy Steel Bolts, Studs, and Other Externally
  Threaded Fasteners
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>ASTM A449 - Quenched and Tempered Steel Bolts and Studs.</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>ASTM A449 - Quenched and Tempered Steel Bolts and Studs.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>Type 1 bolts are carbon steel. Type 3 bolts are weathering steel.</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Type 1 bolts are carbon steel. Type 3 bolts are weathering steel.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  Engineer of Record shall be cognizant of the differences in strengths between
  ASTM F3125/F3125M, Grade A325 and A490 bolts and JIS B 1186, F10T and F8T bolts,
  and adjust design of bolted connection accordingly. If hot dipped zinc coating
  is required, edit to provide either F8T for 12G SHTB type fasteners.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1184,13 +1226,13 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: If direct tension indicator washers are not used then tension control
  bolts are required per UFC 3-301-01. Use the Tension Control Bolts paragraph
  and delete the BOLTS, NUTS AND DIRECT TENSION INDICATOR WASHERS paragraph.
  <brk></brk> 
  Include bracketed phrase if tension indicator washers are to be galvanized.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1220,14 +1262,14 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Use Grade F1852 where high strength bolts (AISC Group A) with a minimum
  tension strength of 827MPa are required. Use Grade F2280 where high strength
  bolts (AISC Group B) with a minimum tension strength of 1034MPa are required.
  Grade F2280 tension control bolts only have a plain assembly finish. (JSS II-09-2015
  Sets of Torshear Type High-Strength Bolt, Hexagon Nut and Plain Washer for Structural
  Joints)
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1247,19 +1289,19 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: For most jobs, ASTM F1554 36 ksi anchor rods are used. If high tensile
  loads are anticipated, consider the use of 55 ksi or 105 ksi ASTM F1554 anchor
  rods. If stainless steel is considered, select from material in ASTM A193/A193M.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  Designer/Engineer of Record shall be cognizant of the differences in strengths
  between ASTM F1554, Grades 36 and 55 anchor rods and JIS B 1220, ABR400 and
  ABR490 anchor rods, and adjust design of bolted connection accordingly. There
  is no JIS Equivalent to Grade 105 anchor rod. JIS B 1220, ABR520SUS is designation
  for stainless steel Type SUS304A anchor rods.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1317,12 +1359,12 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>NOTE: Include AWS D1.8/D1.8M when required for seismic resisting systems.</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include AWS D1.8/D1.8M when required for seismic resisting systems.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  Contractor to submit AWS equivalent JIS product data for welding electrodes,
  rods and wire. Refer to JASS 6, Table 3.4 - "JIS Standards for Welding Materials"
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1341,11 +1383,11 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Some nonshrink grouts derive their nonshrink properties from an increase
  in volume of metal due to oxidation. Where oxidation is not desired for appearance
  sake, specify nonmetallic grout.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1374,14 +1416,14 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: AWS D1.1, Type B welded shear stud connectors have minimum ultimate tensile
  and yield strength values of 448 MPa and 351 MPa, respectively. JIS B 1198
  welded shear studs mechanical properties are reported as 400-550 MPa ultimate
  tensile strength with a minimum yield strength of 235 MPa minimum. Designer/Engineer
  of record to determine if mechanical properties are required to be listed alongside
  JIS B 1198 alternate
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1398,7 +1440,7 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Most structural steel is painted. If galvanized items are required,
  they must be indicated or specified. The galvanizing specified is by the hot-dip
  process. This process requires large amounts of energy and unevenly heats steel
@@ -1406,14 +1448,14 @@
  Using zinc coating by thermal spraying (metallizing) as an alternative to hot-dip
  galvanizing should be considered for certain steel sections. Consult the following
  American Welding Society (AWS) publications for further information:
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>TS-85 - Thermal Spraying - Practice, Theories, and Application</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>TS-85 - Thermal Spraying - Practice, Theories, and Application<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  C2.2-67 - Recommended Practices for Metallizing with Aluminum and Zinc for Protection
  of Iron and Steel.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1436,10 +1478,10 @@
  perpendicular to the surface of the member.
  </txt>
 <brk></brk>
-<txt>Compression joints depending on contact bearing must have a surface roughness not in excess of<met> 13 micrometer</met>
-<eng> 
+<txt>Compression joints depending on contact bearing must have a surface roughness not in excess of<met><pre class="display_MET">&lt;MET&gt;</pre> 13 micrometer<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 
  500 micro inch
- </eng> as determined by <rid>ASME B46.1</rid>
+ <pre class="display_ENG">&lt;/ENG&gt;</pre></eng> as determined by <rid>ASME B46.1</rid>
  , and ends must be square within the tolerances for milled ends specified
  in
  <rid>JIS G 3192</rid>, <rid>JIS G 3193</rid>, and <rid>JASS 6</rid>.</txt>
@@ -1453,10 +1495,10 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Include the following paragraph where there are truss chord splices on
  the project.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1469,9 +1511,9 @@
  intersect at panel points unless otherwise approved by the Contracting Officer. When the center of gravity lines
  do not intersect at a panel point, make provisions for the stresses due to eccentricity. Camber of trusses must
  be
- <met> 3 mm</met>
-<eng> 1/8 inch</eng> in<met> 3.0 meters</met>
-<eng> 10 feet</eng> unless otherwise indicated.</txt>
+ <met><pre class="display_MET">&lt;MET&gt;</pre> 3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> in<met><pre class="display_MET">&lt;MET&gt;</pre> 3.0 meters<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 10 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> unless otherwise indicated.</txt>
 <brk></brk> 
  ]
  <spt>
@@ -1488,11 +1530,11 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: SPE-P1 is for enclosed paint shop, SPE-P2 is for an outside but covered
  paint shop and SPE-P3 is for an outside paint shop. There are other paint shop
  qualification including NACE and SSPC which exceed AISC paint endorsements.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1508,18 +1550,18 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Generally, for interior use, standard structural steel with a minimum
  coating system of a shop primer is adequate. For exterior environments or areas
  open to the exterior, use coated galvanized steel or a zinc rich coating system
  described in UFC 3-190-06, Protective Coatings and Paints.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  JASS 6, Section 8 Table 8.3 provides listing of paints for various service conditions
  and steel substrate surface types. JIS K 5674 is the lead free, chromium free,
  anticorrosive paint commonly used as shop primer and should be specified.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1532,19 +1574,19 @@
  . Do not prime steel surfaces embedded in concrete, galvanized surfaces,[ surfaces
  to receive sprayed-on fireproofing,] [ surfaces to receive epoxy coatings,] [surfaces designed as part of a composite
  steel concrete section,] [slip critical surfaces of high strength bolted connections,] or surfaces within
- <met>
+ <met><pre class="display_MET">&lt;MET&gt;</pre>
  13
  mm
- </met>
-<eng> 0.5 inch</eng>
+ <pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.5 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
  of the toe of the welds prior to welding (except surfaces on which metal decking and shear studs
  are to be welded). If flash rusting occurs, re-clean the surface prior to application of primer. Apply primer
  [in accordance with endorsement "SPE-P1" ["SPE-P2"] ["SPE-P3"] of
  <rid>AISC 420</rid>
  or approved equal NACE or SSPC certification]
  [_____]to a minimum dry film thickness of
- <met> 0.05 mm</met>
-<eng> 2.0 mil</eng>. Submit shop primer product data.<add>
+ <met><pre class="display_MET">&lt;MET&gt;</pre> 0.05 mm<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2.0 mil<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Submit shop primer product data.<add>
  See Section 09 90
  00 PAINTS AND COATINGS and Section 09 97 13.27 HIGH PERFORMANCE COATING FOR STEEL STRUCTURES for finish coating
  requirements, where applicable.
@@ -1559,12 +1601,12 @@
 <txt>
  Prior to assembly, prime surfaces which will be concealed or inaccessible after assembly. Do not apply primer
  in foggy or rainy weather; when the ambient temperature is below
- <met> 7 degrees C or over 35 degrees C</met>
-<eng>
+ <met><pre class="display_MET">&lt;MET&gt;</pre> 7 degrees C or over 35 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre>
  45 degrees
  F or over 95 degrees F
- </eng>; or when the primer may be exposed to temperatures below<met> 4 degrees C</met>
-<eng> 40 degrees F</eng>
+ <pre class="display_ENG">&lt;/ENG&gt;</pre></eng>; or when the primer may be exposed to temperatures below<met><pre class="display_MET">&lt;MET&gt;</pre> 4 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 40 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
  within
  48 hours after application, unless approved otherwise by the Contracting Officer. Repair damaged primed surfaces
  with an additional coat of primer.
@@ -1601,11 +1643,11 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: AISC states "finished" surfaces, where identified, should have a maximum
  roughness of 500. For pins and bearing surfaces, a maximum roughness of 125,
  in lieu of 500, is recommended.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1620,8 +1662,8 @@
 <spt>
 <ttl>DRAINAGE HOLES</ttl>
 <brk></brk>
-<txt>Drill adequate drainage holes to eliminate water traps. Hole diameter must be<met> 13 mm</met>
-<eng> 1/2 inch</eng>
+<txt>Drill adequate drainage holes to eliminate water traps. Hole diameter must be<met><pre class="display_MET">&lt;MET&gt;</pre> 13 mm<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
  and location indicated
  on the detail drawings. Hole size and locations must not affect the structural integrity.
  </txt>
@@ -1680,15 +1722,15 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>NOTE: If only tension control bolts are used, delete this paragraph.</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: If only tension control bolts are used, delete this paragraph.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
 </nte>
 <brk></brk>
-<txt>Provide direct tension indicator washers in all <eng>A325</eng>
+<txt>Provide direct tension indicator washers in all <eng><pre class="display_ENG">&lt;ENG&gt;</pre>A325<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
 <rid>JIS B 1186</rid>
-<eng>A490</eng>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre>A490<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
  bolted connections. Bolts must be installed
  in connection holes and initially brought to a snug tight fit. After the initial tightening procedure, fully
  tension bolts, progressing from the most rigid part of a connection to the free edges.
@@ -1708,8 +1750,8 @@
  to the turned element, provide a flat washer between the DTIW and nut when the nut is turned for tightening,
  and between the DTIW and bolt head when the bolt head is turned for tightening. In addition to the DTIW, provide
  flat washers under both the bolt head and nut when JIS Bolts equivalent to
- <rid>ASTM F3125/F3125M</rid>, Grade<met> A490M</met>
-<eng> A490</eng> 
+ <rid>ASTM F3125/F3125M</rid>, Grade<met><pre class="display_MET">&lt;MET&gt;</pre> A490M<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> A490<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> 
  bolts are used.
  </txt>
 <brk></brk>
@@ -1742,7 +1784,7 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>NOTE: Include AWS D1.8/D1.8M when required for seismic resisting systems.</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include AWS D1.8/D1.8M when required for seismic resisting systems.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1765,10 +1807,10 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Include last bracketed statement where required by prequalified connection
  requirements in AISC 358.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1777,8 +1819,8 @@
 <txt>
  [Removal is not required][Remove only from finished areas].[ Remove backing strips from bottom flange of moment
  connections, backgouge the root pass to sound weld metal and reinforce with a
- <met> 8 mm</met>
-<eng> 5/16 inch</eng> fillet weld minimum.]</txt>
+ <met><pre class="display_MET">&lt;MET&gt;</pre> 8 mm<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5/16 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> fillet weld minimum.]</txt>
 <brk></brk>
 </spt>
 </spt>
@@ -1850,7 +1892,7 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Indicate the location of test welds and types of testing desired. The
  following information is presented as guidance. Dye penetrant testing detects
  small surface defects by enhancing the visibility of the flaw. Magnetic particle
@@ -1863,9 +1905,9 @@
  that can be used for testing welds.
  <brk></brk> 
  Include AWS D1.8/D1.8M when required for seismic resisting systems.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  AWS D1.1 does not require any NDT other than visual inspection unless specified
  by the Engineer. AWS D1.8 specifically required NDT for seismic connections.
  The engineer must specify which welds require inspection.
@@ -1873,7 +1915,7 @@
  For statically loaded welds test per Table 6.2 of AWS D1.1. For cyclically
  loaded welds test per Table 6.3 of AWS D1.1. Where welds are subjected to cyclic
  loading identify them on the construction documents.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1977,7 +2019,7 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>NOTE: If only tension control bolts are used, delete this paragraph.</npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: If only tension control bolts are used, delete this paragraph.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -1995,8 +2037,8 @@
 <tst>Test direct tension indicator washers</tst>
  in place to verify that they have been compressed sufficiently to provide
  the
- <met> 0.38 mm</met>
-<eng> 0.015 inch</eng> gap, as required by <rid>ASTM F959/F959M</rid>. Submit <sub>
+ <met><pre class="display_MET">&lt;MET&gt;</pre> 0.38 mm<pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.015 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> gap, as required by <rid>ASTM F959/F959M</rid>. Submit <sub>
  direct tension indicator washer inspection
  reports
  </sub>.</txt>
@@ -2010,10 +2052,10 @@
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
-<npr>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>
  NOTE: Use this paragraph on large complex structural steel systems or on jobs
  where minimal on site inspection is expected.
- </npr>
+ <pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
 <brk></brk>
 <ast>****************************************************************************************************</ast>
 <brk></brk>
@@ -2116,4 +2158,5 @@
 <end></end>
 <brk></brk>
 </sec></body>
+<script src="scripts.js"></script>
 </html>

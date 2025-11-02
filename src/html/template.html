@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reboot.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="_style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="user-selections">
+        <div class="user-instructions">
+            <h1>User Display Preferences</h1>
+            <p>Select which elements to display (elements hidden by default):</p>
+        </div>
+        <table class="user-pref-table">
+            <tr>
+                <td><strong>User Notes</strong></td>
+                <td>
+                    <div class="toggle-container">
+                        <input type="checkbox" id="notes-toggle-switch" class="toggle-checkbox" />
+                        <label for="notes-toggle-switch" class="toggle-label"><pre>Show User Notes</pre></label>
+                    </div>
+                </td>
+                <td>
+                    <div class="toggle-container">
+                        <input type="checkbox" id="npr-toggle-switch" class="toggle-checkbox" />
+                        <label for="npr-toggle-switch" class="toggle-label"><pre>Show User Notes &lt;NPR&gt; tags</pre></label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Unit Labels</strong>
+                </td>
+                <td>
+                    <div class="toggle-container">
+                        <input type="checkbox" id="eng-toggle-switch" class="toggle-checkbox" />
+                        <label for="eng-toggle-switch" class="toggle-label"><pre>Show imperial &lt;ENG&gt; tags</pre></label>
+                    </div>
+                </td>
+                <td>
+                    <div class="toggle-container">
+                        <input type="checkbox" id="met-toggle-switch" class="toggle-checkbox" />
+                        <label for="met-toggle-switch" class="toggle-label"><pre>Show metric &lt;MET&gt; tags</pre></label>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
+<script src="scripts.js"></script>
 </html>
