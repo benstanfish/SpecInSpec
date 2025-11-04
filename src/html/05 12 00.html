@@ -430,7 +430,31 @@ td + td {
     background-color: yellow;
     display: inline;
 }
-</style>
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        height: 90vh;
+        width: 90vw;
+    }   
+
+}</style>
 <title>05 12 00.sec Viewer</title>
 </head>
 <body>
