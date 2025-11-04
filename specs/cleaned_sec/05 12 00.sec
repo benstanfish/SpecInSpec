@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="windows-1252"?>
-<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd">
-    <MTA NAME="SUBFORMAT"
-         CONTENT="NEW" />
-    <MTA NAME="AUTONUMBER"
-         CONTENT="TRUE" />
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd">
+    <MTA NAME="SUBFORMAT" CONTENT="NEW" />
+    <MTA NAME="AUTONUMBER" CONTENT="TRUE" />
     <HDR>
         <AST />
         <BRK />            
@@ -135,11 +131,11 @@
         <BRK />
     </NTE>
     <BRK />
-    <PRT>
+    <PRT outline="1">
         <TTL>PART 1   GENERAL</TTL>
         <BRK />
         <BRK />
-        <SPT>
+        <SPT outline="1.1">
             <TTL>REFERENCES</TTL>
             <BRK />
             <NTE>
@@ -239,7 +235,7 @@
                 <BRK />
                 <BRK />
                 <RID>AWS D1.8/D1.8M</RID>
-                <RTL>(2016) Structural Welding Code�Seismic Supplement</RTL>
+                <RTL>(2016) Structural Welding Code&#239;&#191;&#189;Seismic Supplement</RTL>
                 <BRK />
                 <BRK />
             </REF>
@@ -550,7 +546,7 @@
                 <BRK />
             </REF>
         </SPT>
-        <SPT>
+        <SPT outline="1.2">
             <TTL>SUBMITTALS</TTL>
             <BRK />
             <NTE>
@@ -714,7 +710,7 @@
             <BRK />
             <BRK />                
                 ]
-            </SPT>[<SPT>
+            </SPT>[<SPT outline="1.3">
                 <TTL>MLIT QUALITY CERTIFICATION</TTL>
                 <BRK />
                 <NTE>
@@ -760,7 +756,7 @@
                 <BRK />
             </SPT>                
                 ][
-            <SPT>
+            <SPT outline="1.4">
                 <TTL>SEISMIC PROVISIONS</TTL>
                 <BRK />
                 <NTE>
@@ -781,15 +777,15 @@
                 <BRK />
             </SPT>                
                 ]
-            <SPT>
+            <SPT outline="1.5">
                 <TTL>QUALITY ASSURANCE</TTL>
                 <BRK />
                 <BRK />
-                <SPT>
+                <SPT outline="1.5.1">
                     <TTL>Preconstruction Submittals</TTL>
                     <BRK />
                     <BRK />
-                    <SPT>
+                    <SPT outline="1.5.1.1">
                         <TTL>
                             <SUB>Erection and Erection Bracing Drawings</SUB>
                         </TTL>
@@ -815,7 +811,7 @@
                         <BRK />
                     </SPT>
                 </SPT>
-                <SPT>
+                <SPT outline="1.5.2">
                     <TTL>Fabrication Drawing Requirements</TTL>
                     <BRK />
                     <NTE>
@@ -848,11 +844,11 @@
                     <BRK />
                     <BRK />
                 </SPT>
-                <SPT>
+                <SPT outline="1.5.3">
                     <TTL>Certifications</TTL>
                     <BRK />
                     <BRK />
-                    <SPT>
+                    <SPT outline="1.5.3.1">
                         <TTL>Welding Procedures and Qualifications</TTL>
                         <BRK />
                         <NTE>
@@ -900,7 +896,7 @@
                         <BRK />
                     </SPT>                        
                         [
-                    <SPT>
+                    <SPT outline="1.5.3.2">
                         <TTL>
                             <SUB>Overhead, Top Running Crane Rail Beam</SUB>
                         </TTL>
@@ -917,11 +913,11 @@
                     </SPT>
                 </SPT>
             </PRT>
-            <PRT>
+            <PRT outline="2">
                 <TTL>PART 2   PRODUCTS</TTL>
                 <BRK />
                 <BRK />
-                <SPT>
+                <SPT outline="2.1">
                     <TTL>SYSTEM DESCRIPTION</TTL>
                     <BRK />
                     <NTE>
@@ -956,7 +952,7 @@
                     <BRK />
                     <BRK />
                 </SPT>
-                <SPT>
+                <SPT outline="2.2">
                     <TTL>STEEL</TTL>
                     <BRK />
                     <NTE>
@@ -992,7 +988,7 @@
                         <BRK />
                     </NTE>
                     <BRK />
-                    <SPT>
+                    <SPT outline="2.2.1">
                         <TTL>Structural Steel</TTL>
                         <BRK />
                         <NTE>
@@ -1043,7 +1039,7 @@
                         <BRK />
                         <BRK />
                     </SPT>
-                    <SPT>
+                    <SPT outline="2.2.2">
                         <TTL>Structural Steel Tubing</TTL>
                         <BRK />
                         <NTE>
@@ -1109,7 +1105,7 @@
                             <BRK />
                             <BRK />
                         </SPT>
-                        <SPT>
+                        <SPT outline="2.2.3">
                             <TTL>Steel Pipe</TTL>
                             <BRK />
                             <NTE>
@@ -1158,7 +1154,7 @@
                                 <BRK />
                             </SPT>
                         </SPT>
-                        <SPT>
+                        <SPT outline="2.3">
                             <TTL>BOLTS, NUTS, AND WASHERS</TTL>
                             <BRK />
                             <BRK />
@@ -1168,11 +1164,11 @@
                             </TXT>
                             <BRK />
                             <BRK />
-                            <SPT>
+                            <SPT outline="2.3.1">
                                 <TTL>Common Grade Bolts</TTL>
                                 <BRK />
                                 <BRK />
-                                <SPT>
+                                <SPT outline="2.3.1.1">
                                     <TTL>Bolts</TTL>
                                     <BRK />
                                     <NTE>
@@ -1200,7 +1196,7 @@
                                         <BRK />
                                         <BRK />
                                     </SPT>
-                                    <SPT>
+                                    <SPT outline="2.3.1.2">
                                         <TTL>Nuts</TTL>
                                         <BRK />
                                         <BRK />
@@ -1212,7 +1208,7 @@
                                             <BRK />
                                         </SPT>                                            
                                             [
-                                        <SPT>
+                                        <SPT outline="2.3.1.3">
                                             <TTL>Self-Locking Nuts</TTL>
                                             <BRK />
                                             <NTE>
@@ -1234,7 +1230,7 @@
                                             <BRK />
                                         </SPT>                                            
                                             ]
-                                        <SPT>
+                                        <SPT outline="2.3.1.4">
                                             <TTL>Washers</TTL>
                                             <BRK />
                                             <BRK />
@@ -1244,7 +1240,7 @@
                                                 <BRK />
                                             </SPT>
                                         </SPT>
-                                        <SPT>
+                                        <SPT outline="2.3.2">
                                             <TTL>High-Strength Bolts</TTL>
                                             <BRK />
                                             <BRK />
@@ -1256,7 +1252,7 @@
                                             </TXT>
                                             <BRK />
                                             <BRK />
-                                            <SPT>
+                                            <SPT outline="2.3.2.1">
                                                 <TTL>Bolts</TTL>
                                                 <BRK />
                                                 <NTE>
@@ -1314,7 +1310,7 @@
                                                     <BRK />
                                                     <BRK />
                                                 </SPT>
-                                                <SPT>
+                                                <SPT outline="2.3.2.2">
                                                     <TTL>Nuts</TTL>
                                                     <BRK />
                                                     <BRK />
@@ -1323,7 +1319,7 @@
                                                         <BRK />
                                                         <BRK />
                                                     </SPT>
-                                                    <SPT>
+                                                    <SPT outline="2.3.2.3">
                                                         <TTL>
                                                             <SUB>Direct Tension Indicator Washers</SUB>
                                                         </TTL>
@@ -1353,7 +1349,7 @@
                                                             <BRK />
                                                             <BRK />
                                                         </SPT>
-                                                        <SPT>
+                                                        <SPT outline="2.3.2.4">
                                                             <TTL>Washers</TTL>
                                                             <BRK />
                                                             <BRK />
@@ -1363,7 +1359,7 @@
                                                                 <BRK />
                                                             </SPT>
                                                         </SPT>
-                                                        <SPT>
+                                                        <SPT outline="2.3.3">
                                                             <TTL>
                                                                 <SUB>Tension Control Bolts</SUB>
                                                             </TTL>
@@ -1393,7 +1389,7 @@
                                                             <BRK />
                                                             <BRK />
                                                         </SPT>
-                                                        <SPT>
+                                                        <SPT outline="2.3.4">
                                                             <TTL>Foundation Anchorage</TTL>
                                                             <BRK />
                                                             <NTE>
@@ -1419,7 +1415,7 @@
                                                                 <BRK />
                                                             </NTE>
                                                             <BRK />
-                                                            <SPT>
+                                                            <SPT outline="2.3.4.1">
                                                                 <TTL>Anchor Rods</TTL>
                                                                 <BRK />
                                                                 <BRK />
@@ -1430,7 +1426,7 @@
                                                                     <BRK />
                                                                     <BRK />
                                                                 </SPT>
-                                                                <SPT>
+                                                                <SPT outline="2.3.4.2">
                                                                     <TTL>Anchor Nuts</TTL>
                                                                     <BRK />
                                                                     <BRK />
@@ -1441,7 +1437,7 @@
                                                                     <BRK />
                                                                     <BRK />
                                                                 </SPT>
-                                                                <SPT>
+                                                                <SPT outline="2.3.4.3">
                                                                     <TTL>Anchor Washers</TTL>
                                                                     <BRK />
                                                                     <BRK />
@@ -1453,7 +1449,7 @@
                                                                         <BRK />
                                                                         <BRK />
                                                                     </SPT>
-                                                                    <SPT>
+                                                                    <SPT outline="2.3.4.4">
                                                                         <TTL>Anchor Plate Washers</TTL>
                                                                         <BRK />
                                                                         <BRK />
@@ -1467,11 +1463,11 @@
                                                                         </SPT>
                                                                     </SPT>
                                                                 </SPT>
-                                                                <SPT>
+                                                                <SPT outline="2.4">
                                                                     <TTL>STRUCTURAL STEEL ACCESSORIES</TTL>
                                                                     <BRK />
                                                                     <BRK />
-                                                                    <SPT>
+                                                                    <SPT outline="2.4.1">
                                                                         <TTL>
                                                                             <SUB>Welding Electrodes and Rods</SUB>
                                                                         </TTL>
@@ -1497,7 +1493,7 @@
                                                                             <BRK />
                                                                             <BRK />
                                                                         </SPT>
-                                                                        <SPT>
+                                                                        <SPT outline="2.4.2">
                                                                             <TTL>
                                                                                 <SUB>Non-Shrink Grout</SUB>
                                                                             </TTL>
@@ -1536,7 +1532,7 @@
                                                                             <BRK />
                                                                             <BRK />
                                                                         </SPT>
-                                                                        <SPT>
+                                                                        <SPT outline="2.4.3">
                                                                             <TTL>Welded Shear Stud Connectors</TTL>
                                                                             <BRK />
                                                                             <NTE>
@@ -1561,7 +1557,7 @@
                                                                                 <BRK />
                                                                                 <BRK />
                                                                             </SPT>
-                                                                        </SPT>[<SPT>
+                                                                        </SPT>[<SPT outline="2.5">
                                                                             <TTL>GALVANIZING</TTL>
                                                                             <BRK />
                                                                             <NTE>
@@ -1600,7 +1596,7 @@
                                                                                 <BRK />
                                                                             </SPT>                                                                                
                                                                                 ]
-                                                                            <SPT>
+                                                                            <SPT outline="2.6">
                                                                                 <TTL>FABRICATION</TTL>
                                                                                 <BRK />
                                                                                 <BRK />
@@ -1651,7 +1647,7 @@
                                                                                 <BRK />
                                                                                 <BRK />                                                                                    
                                                                                     ]
-                                                                                <SPT>
+                                                                                <SPT outline="2.6.1">
                                                                                     <TTL>Markings</TTL>
                                                                                     <BRK />
                                                                                     <BRK />
@@ -1677,7 +1673,7 @@
                                                                                     </NTE>
                                                                                     <BRK />
                                                                                 </SPT>
-                                                                                <SPT>
+                                                                                <SPT outline="2.6.2">
                                                                                     <TTL>
                                                                                         <SUB>Shop Primer</SUB>
                                                                                     </TTL>
@@ -1752,7 +1748,7 @@
                                                                                 </TXT>
                                                                                 <BRK />
                                                                                 <BRK />
-                                                                                <SPT>
+                                                                                <SPT outline="2.6.2.1">
                                                                                     <TTL>Cleaning</TTL>
                                                                                     <BRK />
                                                                                     <BRK />
@@ -1768,7 +1764,7 @@
                                                                                         <BRK />
                                                                                         <BRK />
                                                                                     </SPT>
-                                                                                </SPT>[<SPT>
+                                                                                </SPT>[<SPT outline="2.6.3">
                                                                                     <TTL>[Fireproofing] [and] [Epoxy] Coated Surfaces</TTL>
                                                                                     <BRK />
                                                                                     <BRK />
@@ -1780,7 +1776,7 @@
                                                                                     <BRK />
                                                                                 </SPT>                                                                                    
                                                                                     ][
-                                                                                <SPT>
+                                                                                <SPT outline="2.6.4">
                                                                                     <TTL>Surface Finishes</TTL>
                                                                                     <BRK />
                                                                                     <NTE>
@@ -1804,7 +1800,7 @@
                                                                                     </SPT>                                                                                        
                                                                                         ]
                                                                                     </SPT>
-                                                                                    <SPT>
+                                                                                    <SPT outline="2.7">
                                                                                         <TTL>DRAINAGE HOLES</TTL>
                                                                                         <BRK />
                                                                                         <BRK />
@@ -1817,11 +1813,11 @@
                                                                                         <BRK />
                                                                                     </SPT>
                                                                                 </PRT>
-                                                                                <PRT>
+                                                                                <PRT outline="3">
                                                                                     <TTL>PART 3   EXECUTION</TTL>
                                                                                     <BRK />
                                                                                     <BRK />
-                                                                                    <SPT>
+                                                                                    <SPT outline="3.1">
                                                                                         <TTL>ERECTION</TTL>
                                                                                         <BRK />
                                                                                         <BRK />
@@ -1839,7 +1835,7 @@
                                                                                         </TXT>
                                                                                         <BRK />
                                                                                         <BRK />
-                                                                                        <SPT>
+                                                                                        <SPT outline="3.1.1">
                                                                                             <TTL>STORAGE</TTL>
                                                                                             <BRK />
                                                                                             <BRK />
@@ -1848,7 +1844,7 @@
                                                                                             <BRK />
                                                                                         </SPT>
                                                                                     </SPT>
-                                                                                    <SPT>
+                                                                                    <SPT outline="3.2">
                                                                                         <TTL>CONNECTIONS</TTL>
                                                                                         <BRK />
                                                                                         <BRK />
@@ -1860,7 +1856,7 @@
                                                                                         </TXT>
                                                                                         <BRK />
                                                                                         <BRK />
-                                                                                        <SPT>
+                                                                                        <SPT outline="3.2.1">
                                                                                             <TTL>Common Grade Bolts</TTL>
                                                                                             <BRK />
                                                                                             <BRK />
@@ -1872,7 +1868,7 @@
                                                                                             <BRK />
                                                                                             <BRK />
                                                                                         </SPT>
-                                                                                        <SPT>
+                                                                                        <SPT outline="3.2.2">
                                                                                             <TTL>High-Strength Bolts</TTL>
                                                                                             <BRK />
                                                                                             <NTE>
@@ -1901,7 +1897,7 @@
                                                                                             </TXT>
                                                                                             <BRK />
                                                                                             <BRK />
-                                                                                            <SPT>
+                                                                                            <SPT outline="3.2.2.1">
                                                                                                 <TTL>Installation of Direct Tension Indicator Washers (DTIW)</TTL>
                                                                                                 <BRK />
                                                                                                 <BRK />
@@ -1918,7 +1914,7 @@
                                                                                                 <BRK />
                                                                                             </SPT>
                                                                                         </SPT>
-                                                                                        <SPT>
+                                                                                        <SPT outline="3.2.3">
                                                                                             <TTL>Tension Control Bolts</TTL>
                                                                                             <BRK />
                                                                                             <BRK />
@@ -1930,7 +1926,7 @@
                                                                                             <BRK />
                                                                                         </SPT>
                                                                                     </SPT>
-                                                                                    <SPT>
+                                                                                    <SPT outline="3.3">
                                                                                         <TTL>GAS CUTTING</TTL>
                                                                                         <BRK />
                                                                                         <BRK />
@@ -1942,7 +1938,7 @@
                                                                                         <BRK />
                                                                                         <BRK />
                                                                                     </SPT>
-                                                                                    <SPT>
+                                                                                    <SPT outline="3.4">
                                                                                         <TTL>WELDING</TTL>
                                                                                         <BRK />
                                                                                         <NTE>
@@ -1967,7 +1963,7 @@
                                                                                         </TXT>
                                                                                         <BRK />
                                                                                         <BRK />
-                                                                                        <SPT>
+                                                                                        <SPT outline="3.4.1">
                                                                                             <TTL>Removal of Temporary Welds, Run-Off Plates, and Backing Strips</TTL>
                                                                                             <BRK />
                                                                                             <NTE>
@@ -1992,7 +1988,7 @@
                                                                                             <BRK />
                                                                                         </SPT>
                                                                                     </SPT>
-                                                                                    <SPT>
+                                                                                    <SPT outline="3.5">
                                                                                         <TTL>SHOP PRIMER REPAIR</TTL>
                                                                                         <BRK />
                                                                                         <BRK />
@@ -2002,7 +1998,7 @@
                                                                                         </TXT>
                                                                                         <BRK />
                                                                                         <BRK />
-                                                                                        <SPT>
+                                                                                        <SPT outline="3.5.1">
                                                                                             <TTL>Field Priming</TTL>
                                                                                             <BRK />
                                                                                             <BRK />
@@ -2014,7 +2010,7 @@
                                                                                             <BRK />
                                                                                             <BRK />
                                                                                         </SPT>
-                                                                                    </SPT>[<SPT>
+                                                                                    </SPT>[<SPT outline="3.6">
                                                                                         <TTL>GALVANIZING REPAIR</TTL>
                                                                                         <BRK />
                                                                                         <BRK />
@@ -2026,7 +2022,7 @@
                                                                                         <BRK />
                                                                                     </SPT>                                                                                        
                                                                                         ]
-                                                                                    <SPT>
+                                                                                    <SPT outline="3.7">
                                                                                         <TTL>FIELD QUALITY CONTROL</TTL>
                                                                                         <BRK />
                                                                                         <BRK />
@@ -2039,11 +2035,11 @@
                                                                                         </TXT>
                                                                                         <BRK />
                                                                                         <BRK />
-                                                                                        <SPT>
+                                                                                        <SPT outline="3.7.1">
                                                                                             <TTL>Welds</TTL>
                                                                                             <BRK />
                                                                                             <BRK />
-                                                                                            <SPT>
+                                                                                            <SPT outline="3.7.1.1">
                                                                                                 <TTL>Visual Inspection</TTL>
                                                                                                 <BRK />
                                                                                                 <BRK />
@@ -2065,7 +2061,7 @@
                                                                                                 <BRK />                                                                                                    
                                                                                                     ]
                                                                                                 </SPT>
-                                                                                                <SPT>
+                                                                                                <SPT outline="3.7.1.2">
                                                                                                     <TTL>Nondestructive Testing</TTL>
                                                                                                     <BRK />
                                                                                                     <NTE>
@@ -2137,16 +2133,10 @@
                                                                                                                         <ALN VERTICAL="BOTTOM" />
                                                                                                                     </STY>
                                                                                                                 </STS>
-                                                                                                                <TDA COLUMNCOUNT="2"
-                                                                                                                     ROWCOUNT="5">
-                                                                                                                    <COL STYLEID="s50"
-                                                                                                                         AUTOWIDTH="0"
-                                                                                                                         WIDTH="174.00" />
-                                                                                                                    <COL STYLEID="s50"
-                                                                                                                         AUTOWIDTH="0"
-                                                                                                                         WIDTH="363.75" />
-                                                                                                                    <ROW AUTOHEIGHT="0"
-                                                                                                                         HEIGHT="23.25">
+                                                                                                                <TDA COLUMNCOUNT="2" ROWCOUNT="5">
+                                                                                                                    <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="174.00" />
+                                                                                                                    <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="363.75" />
+                                                                                                                    <ROW AUTOHEIGHT="0" HEIGHT="23.25">
                                                                                                                         <CEL STYLEID="s50">
                                                                                                                             <DTA TYPE="STRING">
                                                                                                                                 <HL1>Test Type</HL1>
@@ -2158,8 +2148,7 @@
                                                                                                                             </DTA>
                                                                                                                         </CEL>
                                                                                                                     </ROW>
-                                                                                                                    <ROW AUTOHEIGHT="0"
-                                                                                                                         HEIGHT="23.25">
+                                                                                                                    <ROW AUTOHEIGHT="0" HEIGHT="23.25">
                                                                                                                         <CEL STYLEID="s50">
                                                                                                                             <DTA TYPE="STRING">Ultrasonic</DTA>
                                                                                                                         </CEL>
@@ -2167,8 +2156,7 @@
                                                                                                                             <DTA TYPE="STRING">[_____]50 percent of CJP Welds</DTA>
                                                                                                                         </CEL>
                                                                                                                     </ROW>
-                                                                                                                    <ROW AUTOHEIGHT="0"
-                                                                                                                         HEIGHT="23.25">
+                                                                                                                    <ROW AUTOHEIGHT="0" HEIGHT="23.25">
                                                                                                                         <CEL STYLEID="s50">
                                                                                                                             <DTA TYPE="STRING">Magnetic Particle</DTA>
                                                                                                                         </CEL>
@@ -2176,8 +2164,7 @@
                                                                                                                             <DTA TYPE="STRING">[_____]50 percent of PJP and Fillet Welds</DTA>
                                                                                                                         </CEL>
                                                                                                                     </ROW>
-                                                                                                                    <ROW AUTOHEIGHT="0"
-                                                                                                                         HEIGHT="23.25">
+                                                                                                                    <ROW AUTOHEIGHT="0" HEIGHT="23.25">
                                                                                                                         <CEL STYLEID="s50">
                                                                                                                             <DTA TYPE="STRING">Dye Penetrant</DTA>
                                                                                                                         </CEL>
@@ -2185,8 +2172,7 @@
                                                                                                                             <DTA TYPE="STRING">[_____]50 percent of PJP and Fillet Welds</DTA>
                                                                                                                         </CEL>
                                                                                                                     </ROW>
-                                                                                                                    <ROW AUTOHEIGHT="0"
-                                                                                                                         HEIGHT="26.25">
+                                                                                                                    <ROW AUTOHEIGHT="0" HEIGHT="26.25">
                                                                                                                         <CEL STYLEID="s50">
                                                                                                                             <DTA TYPE="STRING">[_____]</DTA>
                                                                                                                         </CEL>
@@ -2221,11 +2207,11 @@
                                                                                                     <BRK />
                                                                                                 </SPT>
                                                                                             </SPT>
-                                                                                            <SPT>
+                                                                                            <SPT outline="3.7.2">
                                                                                                 <TTL>Direct Tension Indicator Washers</TTL>
                                                                                                 <BRK />
                                                                                                 <BRK />
-                                                                                                <SPT>
+                                                                                                <SPT outline="3.7.2.1">
                                                                                                     <TTL>Direct Tension Indicator Washer Compression</TTL>
                                                                                                     <BRK />
                                                                                                     <BRK />
@@ -2242,7 +2228,7 @@
                                                                                                         <BRK />
                                                                                                     </SPT>                                                                                                        
                                                                                                         [
-                                                                                                    <SPT>
+                                                                                                    <SPT outline="3.7.2.2">
                                                                                                         <TTL>Direct Tension Indicator Gaps</TTL>
                                                                                                         <BRK />
                                                                                                         <NTE>
@@ -2276,11 +2262,11 @@
                                                                                                     </SPT>                                                                                                        
                                                                                                         ]
                                                                                                     </SPT>
-                                                                                                    <SPT>
+                                                                                                    <SPT outline="3.7.3">
                                                                                                         <TTL>High-Strength Bolts</TTL>
                                                                                                         <BRK />
                                                                                                         <BRK />
-                                                                                                        <SPT>
+                                                                                                        <SPT outline="3.7.3.1">
                                                                                                             <TTL>Testing Bolt, Nut, and Washer Assemblies</TTL>
                                                                                                             <BRK />
                                                                                                             <BRK />
@@ -2298,7 +2284,7 @@
                                                                                                                 <BRK />
                                                                                                                 <BRK />
                                                                                                             </SPT>
-                                                                                                            <SPT>
+                                                                                                            <SPT outline="3.7.3.2">
                                                                                                                 <TTL>Inspection</TTL>
                                                                                                                 <BRK />
                                                                                                                 <BRK />
@@ -2320,7 +2306,7 @@
                                                                                                                 <BRK />                                                                                                                    
                                                                                                                     ]
                                                                                                                 </SPT>
-                                                                                                                <SPT>
+                                                                                                                <SPT outline="3.7.3.3">
                                                                                                                     <TTL>Testing</TTL>
                                                                                                                     <BRK />
                                                                                                                     <BRK />
@@ -2336,7 +2322,7 @@
                                                                                                                     <BRK />
                                                                                                                     <BRK />
                                                                                                                 </SPT>
-                                                                                                            </SPT>[<SPT>
+                                                                                                            </SPT>[<SPT outline="3.7.4">
                                                                                                                 <TTL>Testing for Embrittlement</TTL>
                                                                                                                 <BRK />
                                                                                                                 <BRK />
@@ -2347,7 +2333,7 @@
                                                                                                                         <BRK />
                                                                                                                     </SPT>                                                                                                                        
                                                                                                                         ]
-                                                                                                                    <SPT>
+                                                                                                                    <SPT outline="3.7.5">
                                                                                                                         <TTL>Inspection and Testing of Steel Stud Welding</TTL>
                                                                                                                         <BRK />
                                                                                                                         <BRK />

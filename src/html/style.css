@@ -334,7 +334,6 @@ td + td {
 .display_MET {
     display: none;
     font-weight: bold;
-    display: inline;
 }
 
 .display_ENG {
@@ -351,21 +350,21 @@ td + td {
     background-color: magenta;
     color: white;
     font-weight: bold;
-    display: inline;
+    display: none;
 }
 
 .display_DEL {
     background-color: green;
     color: white;
     font-weight: bold;
-    display: inline;
+    display: none;
 }
 
 .display_ADD {
     background-color: red;
     color: white;
     font-weight: bold;
-    display: inline;
+    display: none;
 }
 
 .brackets {

@@ -1,9 +1,7 @@
 
 document.getElementById('notes-toggle-switch').checked = false;
 document.getElementById('brackets-toggle-switch').checked = true;
-document.getElementById('rid-toggle-switch').checked = true;
-document.getElementById('add-toggle-switch').checked = true;
-document.getElementById('del-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
 
 set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
 set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
@@ -17,9 +15,8 @@ set_up_toggle_by_class('met-toggle-switch', '.display_MET', 'inline');
 toggle_bracket_style('brackets-toggle-switch', '.brackets')
 
 set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
-set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
-set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
-
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD', 'inline');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL', 'inline');
 
 function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inherit') {
     let toggle_element = document.getElementById(toggle_element_id)

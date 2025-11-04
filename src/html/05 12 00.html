@@ -11,7 +11,7 @@
 <body>
 <div class="user-selections">
 <div class="user-instructions">
-<h1>User Display Preferences</h1>
+<h1>Display Preferences</h1>
 <p>
                 This is a web-view version (html) of a SpecsIntact .sec file and is intended to help readers visualize the non-visible parts of the .sec file and how they influences the final product. Specifically, it is a modified version of the .sec that allows users to interact with SpecsIntact formatting "tags", discussed in further detail on the SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
 </p>
@@ -54,13 +54,13 @@
 <td>
 <div class="toggle-container">
 <input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
-<label class="toggle-label" for="add-toggle-switch"><pre>Show Additions</pre></label>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show Additions Tags</pre></label>
 </div>
 </td>
 <td>
 <div class="toggle-container">
 <input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
-<label class="toggle-label" for="del-toggle-switch"><pre>Show Deletions</pre></label>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show Deletions Tags</pre></label>
 </div>
 </td>
 </tr>
@@ -214,11 +214,11 @@
 <brk></brk>
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<prt>
+<prt outline="1">
 <ttl>PART 1 GENERAL</ttl>
 <brk></brk>
-<spt>
-<ttl>REFERENCES</ttl>
+<spt outline="1.1">
+<ttl>1.1 REFERENCES</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -571,8 +571,8 @@
 <brk></brk>
 </ref>
 </spt>
-<spt>
-<ttl>SUBMITTALS</ttl>
+<spt outline="1.2">
+<ttl>1.2 SUBMITTALS</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -709,8 +709,8 @@
 </itm>
 <brk></brk> 
  ]</div>
-</spt><div class="brackets">[<spt>
-<ttl>MLIT QUALITY CERTIFICATION</ttl>
+</spt><div class="brackets">[<spt outline="1.3">
+<ttl>1.3 MLIT QUALITY CERTIFICATION</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -750,8 +750,8 @@
 <brk></brk>
 </spt> 
  ]</div><div class="brackets">[
- <spt>
-<ttl>SEISMIC PROVISIONS</ttl>
+ <spt outline="1.4">
+<ttl>1.4 SEISMIC PROVISIONS</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -770,15 +770,15 @@
 <brk></brk>
 </spt> 
  ]</div>
-<spt>
-<ttl>QUALITY ASSURANCE</ttl>
+<spt outline="1.5">
+<ttl>1.5 QUALITY ASSURANCE</ttl>
 <brk></brk>
-<spt>
-<ttl>Preconstruction Submittals</ttl>
+<spt outline="1.5.1">
+<ttl>1.5.1 Preconstruction Submittals</ttl>
 <brk></brk>
-<spt>
-<ttl>
-<sub>Erection and Erection Bracing Drawings</sub>
+<spt outline="1.5.1.1">
+<ttl>1.5.1.1 
+Erection and Erection Bracing Drawings
 </ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
@@ -801,8 +801,8 @@
 <brk></brk>
 </spt>
 </spt>
-<spt>
-<ttl>Fabrication Drawing Requirements</ttl>
+<spt outline="1.5.2">
+<ttl>1.5.2 Fabrication Drawing Requirements</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -833,11 +833,11 @@
  </txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>Certifications</ttl>
+<spt outline="1.5.3">
+<ttl>1.5.3 Certifications</ttl>
 <brk></brk>
-<spt>
-<ttl>Welding Procedures and Qualifications</ttl>
+<spt outline="1.5.3.1">
+<ttl>1.5.3.1 Welding Procedures and Qualifications</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -882,9 +882,9 @@
 <brk></brk>
 </spt>
 <div class="brackets">[
- <spt>
-<ttl>
-<sub>Overhead, Top Running Crane Rail Beam</sub>
+ <spt outline="1.5.3.2">
+<ttl>1.5.3.2 
+Overhead, Top Running Crane Rail Beam
 </ttl>
 <brk></brk>
 <txt>
@@ -897,11 +897,11 @@
 </spt>
 </spt>
 </prt>
-<prt>
+<prt outline="2">
 <ttl>PART 2 PRODUCTS</ttl>
 <brk></brk>
-<spt>
-<ttl>SYSTEM DESCRIPTION</ttl>
+<spt outline="2.1">
+<ttl>2.1 SYSTEM DESCRIPTION</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -931,8 +931,8 @@
  <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid>, except as modified in this contract.</txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>STEEL</ttl>
+<spt outline="2.2">
+<ttl>2.2 STEEL</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -966,8 +966,8 @@
 <brk></brk>
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<spt>
-<ttl>Structural Steel</ttl>
+<spt outline="2.2.1">
+<ttl>2.2.1 Structural Steel</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -1013,8 +1013,8 @@
 </txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>Structural Steel Tubing</ttl>
+<spt outline="2.2.2">
+<ttl>2.2.2 Structural Steel Tubing</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -1074,8 +1074,8 @@
 </txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>Steel Pipe</ttl>
+<spt outline="2.2.3">
+<ttl>2.2.3 Steel Pipe</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -1119,19 +1119,19 @@
 <brk></brk>
 </spt>
 </spt>
-<spt>
-<ttl>BOLTS, NUTS, AND WASHERS</ttl>
+<spt outline="2.3">
+<ttl>2.3 BOLTS, NUTS, AND WASHERS</ttl>
 <brk></brk>
 <txt>
  Submit the certified manufacturer's mill reports which clearly show the applicable JIS mechanical and chemical
  requirements together with the actual test results for the supplied fasteners.
  </txt>
 <brk></brk>
-<spt>
-<ttl>Common Grade Bolts</ttl>
+<spt outline="2.3.1">
+<ttl>2.3.1 Common Grade Bolts</ttl>
 <brk></brk>
-<spt>
-<ttl>Bolts</ttl>
+<spt outline="2.3.1.1">
+<ttl>2.3.1.1 Bolts</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -1156,8 +1156,8 @@
  <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> specifications.</txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>Nuts</ttl>
+<spt outline="2.3.1.2">
+<ttl>2.3.1.2 Nuts</ttl>
 <brk></brk>
 <txt>
 <eng><pre class="display_ENG">&lt;ENG&gt;</pre>
@@ -1166,8 +1166,8 @@
 <brk></brk>
 </spt>
 <div class="brackets">[
- <spt>
-<ttl>Self-Locking Nuts</ttl>
+ <spt outline="2.3.1.3">
+<ttl>2.3.1.3 Self-Locking Nuts</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -1187,16 +1187,16 @@
 <brk></brk>
 </spt> 
  ]</div>
-<spt>
-<ttl>Washers</ttl>
+<spt outline="2.3.1.4">
+<ttl>2.3.1.4 Washers</ttl>
 <brk></brk>
 <txt>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1256<pre class="display_RID">&lt;/RID&gt;</pre></rid>, plain finish <div class="brackets">[hot dipped zinc coating in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1048<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>.</txt>
 <brk></brk>
 </spt>
 </spt>
-<spt>
-<ttl>High-Strength Bolts</ttl>
+<spt outline="2.3.2">
+<ttl>2.3.2 High-Strength Bolts</ttl>
 <brk></brk>
 <txt>
  High strength bolts and nuts must be shipped together in the same shipping container. Fasteners indicated to
@@ -1205,8 +1205,8 @@
  without stripping. The supplier shall supply nuts that have been lubricated and tested with the supplied bolts.
  </txt>
 <brk></brk>
-<spt>
-<ttl>Bolts</ttl>
+<spt outline="2.3.2.1">
+<ttl>2.3.2.1 Bolts</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -1257,16 +1257,16 @@
 <txt><div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Type F8T hot dipped zinc coating]</div> <div class="brackets">[MLIT certified 12G SHTB hot dipped zinc coating]</div>.</txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>Nuts</ttl>
+<spt outline="2.3.2.2">
+<ttl>2.3.2.2 Nuts</ttl>
 <brk></brk>
 <txt>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>, F10 <div class="brackets">[hot dipped zinc coating]</div>.</txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>
-<sub>Direct Tension Indicator Washers</sub>
+<spt outline="2.3.2.3">
+<ttl>2.3.2.3 
+Direct Tension Indicator Washers
 </ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
@@ -1292,17 +1292,17 @@
  </txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>Washers</ttl>
+<spt outline="2.3.2.4">
+<ttl>2.3.2.4 Washers</ttl>
 <brk></brk>
 <txt>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>, F35, plain carbon steel <div class="brackets">[hot dipped zinc coating]</div>.</txt>
 <brk></brk>
 </spt>
 </spt>
-<spt>
-<ttl>
-<sub>Tension Control Bolts</sub>
+<spt outline="2.3.3">
+<ttl>2.3.3 
+Tension Control Bolts
 </ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
@@ -1329,8 +1329,8 @@
  </txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>Foundation Anchorage</ttl>
+<spt outline="2.3.4">
+<ttl>2.3.4 Foundation Anchorage</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -1354,8 +1354,8 @@
 <brk></brk>
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<spt>
-<ttl>Anchor Rods</ttl>
+<spt outline="2.3.4.1">
+<ttl>2.3.4.1 Anchor Rods</ttl>
 <brk></brk>
 <txt>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid> ABR 400 <div class="brackets">[ABR490]</div> <div class="brackets">[hot dipped galvanized]</div>. <div class="brackets">[Stainless steel <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>, ABR520SUS.]</div> <div class="brackets">[Stainless steel <rid><pre class="display_RID">&lt;RID&gt;</pre> 
@@ -1363,8 +1363,8 @@
  <pre class="display_RID">&lt;/RID&gt;</pre></rid>, ABR520SUS conforming to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 4321<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Type SUS316A.]</div></txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>Anchor Nuts</ttl>
+<spt outline="2.3.4.2">
+<ttl>2.3.4.2 Anchor Nuts</ttl>
 <brk></brk>
 <txt>Hexagon nuts <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid> ABR 400 <div class="brackets">[ABR490]</div> <div class="brackets">[hot dipped galvanized]</div>. <div class="brackets">[Stainless steel <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  , ABR520SUS.]</div> <div class="brackets">[Stainless
@@ -1372,8 +1372,8 @@
  <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>, ABR520SUS conforming to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 4321<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Type SUS316A.]</div></txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>Anchor Washers</ttl>
+<spt outline="2.3.4.3">
+<ttl>2.3.4.3 Anchor Washers</ttl>
 <brk></brk>
 <txt>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid> ABR 400 <div class="brackets">[ABR490]</div> <div class="brackets">[hot dipped galvanized]</div>. <div class="brackets">[Stainless steel <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>
@@ -1382,8 +1382,8 @@
  <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>.</txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>Anchor Plate Washers</ttl>
+<spt outline="2.3.4.4">
+<ttl>2.3.4.4 Anchor Plate Washers</ttl>
 <brk></brk>
 <txt>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid> ABR 400 <div class="brackets">[ABR490]</div> <div class="brackets">[hot dipped galvanized]</div>. <div class="brackets">[Stainless steel <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 4321<pre class="display_RID">&lt;/RID&gt;</pre></rid>
@@ -1394,12 +1394,12 @@
 </spt>
 </spt>
 </spt>
-<spt>
-<ttl>STRUCTURAL STEEL ACCESSORIES</ttl>
+<spt outline="2.4">
+<ttl>2.4 STRUCTURAL STEEL ACCESSORIES</ttl>
 <brk></brk>
-<spt>
-<ttl>
-<sub>Welding Electrodes and Rods</sub>
+<spt outline="2.4.1">
+<ttl>2.4.1 
+Welding Electrodes and Rods
 </ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
@@ -1421,9 +1421,9 @@
 <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid><div class="brackets">[ and <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>. Submit product data for welding electrodes and rods.</txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>
-<sub>Non-Shrink Grout</sub>
+<spt outline="2.4.2">
+<ttl>2.4.2 
+Non-Shrink Grout
 </ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
@@ -1456,8 +1456,8 @@
 <lst indent="-0.33">c. Height change of moist cured hardened grout: 0.0 to + 0.3 percent at 1-day, 3-day, 14-day and 28-day.</lst>
 <brk></brk>
 </spt>
-<spt>
-<ttl>Welded Shear Stud Connectors</ttl>
+<spt outline="2.4.3">
+<ttl>2.4.3 Welded Shear Stud Connectors</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -1480,8 +1480,8 @@
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1198<pre class="display_RID">&lt;/RID&gt;</pre></rid> <div class="brackets">[,450MPa minimum ultimate tensile strength]</div> <div class="brackets">[and 350MPa minimum yield strength]</div>.</txt>
 <brk></brk>
 </spt>
-</spt><div class="brackets">[<spt>
-<ttl>GALVANIZING</ttl>
+</spt><div class="brackets">[<spt outline="2.5">
+<ttl>2.5 GALVANIZING</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -1516,8 +1516,8 @@
 <brk></brk>
 </spt> 
  ]</div>
-<spt>
-<ttl>FABRICATION</ttl>
+<spt outline="2.6">
+<ttl>2.6 FABRICATION</ttl>
 <brk></brk>
 <txt>Fabrication must be in accordance with the applicable provisions of <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 325<pre class="display_RID">&lt;/RID&gt;</pre></rid>and <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  . Fabrication and assembly
@@ -1563,8 +1563,8 @@
 <eng><pre class="display_ENG">&lt;ENG&gt;</pre> 10 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> unless otherwise indicated.</txt>
 <brk></brk> 
  ]</div>
-<spt>
-<ttl>Markings</ttl>
+<spt outline="2.6.1">
+<ttl>2.6.1 Markings</ttl>
 <brk></brk>
 <txt>
  Prior to erection, identify members by a painted erection mark. Connecting parts assembled in the shop for reaming
@@ -1588,9 +1588,9 @@
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 </spt>
-<spt>
-<ttl>
-<sub>Shop Primer</sub>
+<spt outline="2.6.2">
+<ttl>2.6.2 
+Shop Primer
 </ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
@@ -1659,8 +1659,8 @@
  with an additional coat of primer.
  </txt>
 <brk></brk>
-<spt>
-<ttl>Cleaning</ttl>
+<spt outline="2.6.2.1">
+<ttl>2.6.2.1 Cleaning</ttl>
 <brk></brk>
 <txt>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>SSPC SP 6/NACE No.3<pre class="display_RID">&lt;/RID&gt;</pre></rid>
@@ -1673,8 +1673,8 @@
  </txt>
 <brk></brk>
 </spt>
-</spt><div class="brackets">[<spt>
-<ttl><div class="brackets">[Fireproofing]</div> <div class="brackets">[and]</div> <div class="brackets">[Epoxy]</div> Coated Surfaces</ttl>
+</spt><div class="brackets">[<spt outline="2.6.3">
+<ttl>2.6.3 [Fireproofing] [and] [Epoxy] Coated Surfaces</ttl>
 <brk></brk>
 <txt>
  Clean and prepare surfaces to receive <div class="brackets">[sprayed-on fireproofing]</div> <div class="brackets">[epoxy]</div> coatings in accordance with the manufacturer's
@@ -1683,8 +1683,8 @@
 <brk></brk>
 </spt> 
  ]</div><div class="brackets">[
- <spt>
-<ttl>Surface Finishes</ttl>
+ <spt outline="2.6.4">
+<ttl>2.6.4 Surface Finishes</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -1706,8 +1706,8 @@
 </spt> 
  ]</div>
 </spt>
-<spt>
-<ttl>DRAINAGE HOLES</ttl>
+<spt outline="2.7">
+<ttl>2.7 DRAINAGE HOLES</ttl>
 <brk></brk>
 <txt>Drill adequate drainage holes to eliminate water traps. Hole diameter must be<met><pre class="display_MET">&lt;MET&gt;</pre> 13 mm<pre class="display_MET">&lt;/MET&gt;</pre></met>
 <eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
@@ -1717,11 +1717,11 @@
 <brk></brk>
 </spt>
 </prt>
-<prt>
+<prt outline="3">
 <ttl>PART 3 EXECUTION</ttl>
 <brk></brk>
-<spt>
-<ttl>ERECTION</ttl>
+<spt outline="3.1">
+<ttl>3.1 ERECTION</ttl>
 <brk></brk>
 <lst indent="-0.33">a. Erection of structural steel must be in accordance with the applicable provisions of <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 325<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 303<pre class="display_RID">&lt;/RID&gt;</pre></rid> 
  and
@@ -1735,15 +1735,15 @@
  6.
  </txt>
 <brk></brk>
-<spt>
-<ttl>STORAGE</ttl>
+<spt outline="3.1.1">
+<ttl>3.1.1 STORAGE</ttl>
 <brk></brk>
 <txt>Store the material out of contact with the ground in such manner and location as to minimize deterioration.</txt>
 <brk></brk>
 </spt>
 </spt>
-<spt>
-<ttl>CONNECTIONS</ttl>
+<spt outline="3.2">
+<ttl>3.2 CONNECTIONS</ttl>
 <brk></brk>
 <txt>Except as modified in this section, design connections indicated in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 360<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  . Build connections
@@ -1752,8 +1752,8 @@
  prior to installation.
  </txt>
 <brk></brk>
-<spt>
-<ttl>Common Grade Bolts</ttl>
+<spt outline="3.2.1">
+<ttl>3.2.1 Common Grade Bolts</ttl>
 <brk></brk>
 <txt>Tighten <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1180<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  bolts to a "snug tight" fit. "Snug tight" is the tightness that exists when plies in a joint
@@ -1762,8 +1762,8 @@
  </txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>High-Strength Bolts</ttl>
+<spt outline="3.2.2">
+<ttl>3.2.2 High-Strength Bolts</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -1789,8 +1789,8 @@
  of the work shift.
  </txt>
 <brk></brk>
-<spt>
-<ttl>Installation of Direct Tension Indicator Washers (DTIW)</ttl>
+<spt outline="3.2.2.1">
+<ttl>3.2.2.1 Installation of Direct Tension Indicator Washers (DTIW)</ttl>
 <brk></brk>
 <txt>
  Where possible, install the DTIW under the bolt head and tighten the nut. If the DTIW is installed adjacent
@@ -1804,8 +1804,8 @@
 <brk></brk>
 </spt>
 </spt>
-<spt>
-<ttl>Tension Control Bolts</ttl>
+<spt outline="3.2.3">
+<ttl>3.2.3 Tension Control Bolts</ttl>
 <brk></brk>
 <txt>
  Bolts must be installed in connection holes and initially brought to a snug tight fit. After the initial tightening
@@ -1814,8 +1814,8 @@
 <brk></brk>
 </spt>
 </spt>
-<spt>
-<ttl>GAS CUTTING</ttl>
+<spt outline="3.3">
+<ttl>3.3 GAS CUTTING</ttl>
 <brk></brk>
 <txt>
  Use of gas-cutting torch in the field for correcting fabrication errors is not permitted on any major member
@@ -1824,8 +1824,8 @@
  </txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>WELDING</ttl>
+<spt outline="3.4">
+<ttl>3.4 WELDING</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -1847,8 +1847,8 @@
  procedures. Submit for approval all WPS, whether prequalified or qualified by testing.
  </txt>
 <brk></brk>
-<spt>
-<ttl>Removal of Temporary Welds, Run-Off Plates, and Backing Strips</ttl>
+<spt outline="3.4.1">
+<ttl>3.4.1 Removal of Temporary Welds, Run-Off Plates, and Backing Strips</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -1871,16 +1871,16 @@
 <brk></brk>
 </spt>
 </spt>
-<spt>
-<ttl>SHOP PRIMER REPAIR</ttl>
+<spt outline="3.5">
+<ttl>3.5 SHOP PRIMER REPAIR</ttl>
 <brk></brk>
 <txt>
  Repair shop primer in accordance with the paint manufacturer's recommendation for surfaces damaged by handling,
  transporting, cutting, welding, or bolting.
  </txt>
 <brk></brk>
-<spt>
-<ttl>Field Priming</ttl>
+<spt outline="3.5.1">
+<ttl>3.5.1 Field Priming</ttl>
 <brk></brk>
 <txt>
  Field prime steel exposed to the weather, or located in building areas without HVAC for control of relative humidity.
@@ -1889,8 +1889,8 @@
  </txt>
 <brk></brk>
 </spt>
-</spt><div class="brackets">[<spt>
-<ttl>GALVANIZING REPAIR</ttl>
+</spt><div class="brackets">[<spt outline="3.6">
+<ttl>3.6 GALVANIZING REPAIR</ttl>
 <brk></brk>
 <txt>Repair damage to galvanized coatings using <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  zinc rich paint for galvanizing damaged by handling, transporting,
@@ -1899,8 +1899,8 @@
 <brk></brk>
 </spt> 
  ]</div>
-<spt>
-<ttl>FIELD QUALITY CONTROL</ttl>
+<spt outline="3.7">
+<ttl>3.7 FIELD QUALITY CONTROL</ttl>
 <brk></brk>
 <txt>
 <tst>
@@ -1910,11 +1910,11 @@
  </tst>
 </txt>
 <brk></brk>
-<spt>
-<ttl>Welds</ttl>
+<spt outline="3.7.1">
+<ttl>3.7.1 Welds</ttl>
 <brk></brk>
-<spt>
-<ttl>Visual Inspection</ttl>
+<spt outline="3.7.1.1">
+<ttl>3.7.1.1 Visual Inspection</ttl>
 <brk></brk>
 <txt>Perform in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  . Furnish the services of certified welding inspectors for fabrication and
@@ -1932,8 +1932,8 @@
 <brk></brk> 
  ]</div>
 </spt>
-<spt>
-<ttl>Nondestructive Testing</ttl>
+<spt outline="3.7.1.2">
+<ttl>3.7.1.2 Nondestructive Testing</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -2074,11 +2074,11 @@
 <brk></brk>
 </spt>
 </spt>
-<spt>
-<ttl>Direct Tension Indicator Washers</ttl>
+<spt outline="3.7.2">
+<ttl>3.7.2 Direct Tension Indicator Washers</ttl>
 <brk></brk>
-<spt>
-<ttl>Direct Tension Indicator Washer Compression</ttl>
+<spt outline="3.7.2.1">
+<ttl>3.7.2.1 Direct Tension Indicator Washer Compression</ttl>
 <brk></brk>
 <txt>
 <tst>Test direct tension indicator washers</tst>
@@ -2092,8 +2092,8 @@
 <brk></brk>
 </spt>
 <div class="brackets">[
- <spt>
-<ttl>Direct Tension Indicator Gaps</ttl>
+ <spt outline="3.7.2.2">
+<ttl>3.7.2.2 Direct Tension Indicator Gaps</ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -2125,11 +2125,11 @@
 </spt> 
  ]</div>
 </spt>
-<spt>
-<ttl>High-Strength Bolts</ttl>
+<spt outline="3.7.3">
+<ttl>3.7.3 High-Strength Bolts</ttl>
 <brk></brk>
-<spt>
-<ttl>Testing Bolt, Nut, and Washer Assemblies</ttl>
+<spt outline="3.7.3.1">
+<ttl>3.7.3.1 Testing Bolt, Nut, and Washer Assemblies</ttl>
 <brk></brk>
 <txt>
 <tst>Test a minimum of <div class="brackets">[3]</div> <div class="brackets">[_____]</div> bolt, nut, and washer assemblies</tst>
@@ -2144,8 +2144,8 @@
  <sub>bolt testing reports</sub>.</txt>
 <brk></brk>
 </spt>
-<spt>
-<ttl>Inspection</ttl>
+<spt outline="3.7.3.2">
+<ttl>3.7.3.2 Inspection</ttl>
 <brk></brk>
 <txt>Inspection procedures must be in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  . As a minimum, high-strength bolting
@@ -2163,8 +2163,8 @@
 <brk></brk> 
  ]</div>
 </spt>
-<spt>
-<ttl>Testing</ttl>
+<spt outline="3.7.3.3">
+<ttl>3.7.3.3 Testing</ttl>
 <brk></brk>
 <txt>The Government has the <tst>option to perform nondestructive tests on <div class="brackets">[5]</div> <div class="brackets">[_____]</div> percent of the installed bolts</tst>
  to
@@ -2177,8 +2177,8 @@
  </txt>
 <brk></brk>
 </spt>
-</spt><div class="brackets">[<spt>
-<ttl>Testing for Embrittlement</ttl>
+</spt><div class="brackets">[<spt outline="3.7.4">
+<ttl>3.7.4 Testing for Embrittlement</ttl>
 <brk></brk>
 <txt>
 <tst>
@@ -2186,8 +2186,8 @@
 <brk></brk>
 </spt> 
  ]</div>
-<spt>
-<ttl>Inspection and Testing of Steel Stud Welding</ttl>
+<spt outline="3.7.5">
+<ttl>3.7.5 Inspection and Testing of Steel Stud Welding</ttl>
 <brk></brk>
 <txt>Perform verification inspection and testing of steel stud welding conforming to the requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  , Stud
