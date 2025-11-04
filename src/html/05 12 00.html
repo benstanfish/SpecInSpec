@@ -5,26 +5,19 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="reboot.css" rel="stylesheet"/>
-<link href="_style.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
 <title>05 12 00.sec Viewer</title>
 </head>
 <body>
 <div class="user-selections">
 <div class="user-instructions">
 <h1>User Display Preferences</h1>
+<p>
+                This is a web-view version (html) of a SpecsIntact .sec file and is intended to help readers visualize the non-visible parts of the .sec file and how they influences the final product. Specifically, it is a modified version of the .sec that allows users to interact with SpecsIntact formatting "tags", discussed in further detail on the SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
 <p>Select which elements to display (elements hidden by default):</p>
 </div>
 <table class="user-pref-table">
-<tr>
-<td><strong>Brackets (Spec-Writer Options)</strong></td>
-<td>
-<div class="toggle-container">
-<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
-<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight bracketed text</pre></label>
-</div>
-</td>
-<td></td>
-</tr>
 <tr>
 <td><strong>User Notes</strong></td>
 <td>
@@ -47,6 +40,31 @@
 </td>
 </tr>
 <tr>
+<td><strong>Brackets (User Options)</strong></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight bracketed text</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Add &amp; Delete</strong></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show Additions</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show Deletions</pre></label>
+</div>
+</td>
+</tr>
+<tr>
 <td>
 <strong>Unit Labels</strong>
 </td>
@@ -63,7 +81,21 @@
 </div>
 </td>
 </tr>
+<tr>
+<td>
+<strong>References</strong>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+</td>
+</tr>
 </table>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
 </div>
 <main>
 <sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd">
@@ -224,25 +256,25 @@
 <ref>
 <org>AMERICAN INSTITUTE OF STEEL CONSTRUCTION (AISC)</org>
 <brk></brk>
-<rid>AISC 303</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 303<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2016) Code of Standard Practice for Steel Buildings
  and Bridges
  </rtl>
 <brk></brk>
-<rid>AISC 325</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 325<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>(2017) Steel Construction Manual</rtl>
 <brk></brk>
-<rid>AISC 341</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 341<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2016) Seismic Provisions for Structural Steel
  Buildings
  </rtl>
 <brk></brk>
-<rid>AISC 360</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 360<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>(2016) Specification for Structural Steel Buildings</rtl>
 <brk></brk>
-<rid>AISC 420</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 420<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2010) Certification Standard for Shop Application
  of Complex Protective Coating Systems
@@ -252,34 +284,34 @@
 <ref>
 <org>AMERICAN WELDING SOCIETY (AWS)</org>
 <brk></brk>
-<rid>AWS A2.4</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AWS A2.4<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2012) Standard Symbols for Welding, Brazing
  and Nondestructive Examination
  </rtl>
 <brk></brk>
-<rid>AWS D1.1/D1.1M</rid>
-<del>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+<del><pre class="display_DEL">&lt;DEL&gt;</pre>
 <rtl>
  (2015; Errata 1 2015; Errata 2 2016) Structural
  Welding Code - Steel
  </rtl>
-</del>
-<add>
+<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>
 <rtl>
  (2020; Errata 1 2021) Structural
  Welding Code - Steel
  </rtl>
-</add>
+<pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 <brk></brk>
-<rid>AWS D1.8/D1.8M</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>(2016) Structural Welding Code�Seismic Supplement</rtl>
 <brk></brk>
 </ref>
 <ref>
 <org>AMERICAN SOCIETY OF MECHANICAL ENGINEERS (ASME)</org>
 <brk></brk>
-<rid>ASME B46.1</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASME B46.1<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2009) Surface Texture, Surface Roughness, Waviness
  and Lay
@@ -289,7 +321,7 @@
 <ref>
 <org>ASTM INTERNATIONAL (ASTM)</org>
 <brk></brk>
-<rid>ASTM A143/A143M</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM A143/A143M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2007; R 2014) Standard Practice for Safeguarding
  Against Embrittlement of Hot-Dip Galvanized
@@ -297,21 +329,21 @@
  Detecting Embrittlement
  </rtl>
 <brk></brk>
-<add>
-<rid>ASTM A563</rid>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM A563<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2021; E 2022a) Standard Specification for Carbon
  and Alloy Steel Nuts
  </rtl>
 <brk></brk>
-</add>
-<rid>ASTM B695</rid>
+<pre class="display_ADD">&lt;/ADD&gt;</pre></add>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM B695<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2021) Standard Specification for Coatings of
  Zinc Mechanically Deposited on Iron and Steel
  </rtl>
 <brk></brk>
-<rid>ASTM F3125/F3125M</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F3125/F3125M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2015a) Standard Specification for High Strength
  Structural Bolts, Steel and Alloy Steel, Heat
@@ -319,7 +351,7 @@
  Strength, Metric Dimensions
  </rtl>
 <brk></brk>
-<rid>ASTM F959/F959M</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F959/F959M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2017a) Standard Specification for Compressible-Washer-Type
  Direct Tension Indicators for Use with Structural
@@ -330,7 +362,7 @@
 <ref>
 <org>CRANE MANUFACTURERS ASSOCIATION OF AMERICA (CMAA)</org>
 <brk></brk>
-<rid>CMAA 70</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>CMAA 70<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2015) Specification for Top Running Bridge
  and Gantry Type Multiple Girder Electric Overhead
@@ -340,11 +372,11 @@
 </ref>
 <ref>
 <org>
-<del>JAPANESE ARCHITECTURAL STANDARD SPECIFICATIONS (JASS)</del>
-<add>ARCHITECTURAL INSTITUTE OF JAPAN (AIJ)</add>
+<del><pre class="display_DEL">&lt;DEL&gt;</pre>JAPANESE ARCHITECTURAL STANDARD SPECIFICATIONS (JASS)<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>ARCHITECTURAL INSTITUTE OF JAPAN (AIJ)<pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 </org>
 <brk></brk>
-<rid>JASS 6</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2015) Structural Steelwork Specification for
  Building Construction
@@ -352,115 +384,115 @@
 <brk></brk>
 </ref>
 <ref>
-<del>
+<del><pre class="display_DEL">&lt;DEL&gt;</pre>
 <org>JAPANESE INDUSTRIAL STANDARDS (JIS)</org>
-</del>
-<add>
+<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>
 <org>JAPANESE STANDARDS ASSOCIATION (JSA)</org>
-</add>
+<pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 <brk></brk>
-<rid>JIS B 1048</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1048<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>(2007) Fasteners - Hot Dip Galvanized Coatings</rtl>
 <brk></brk>
-<rid>JIS B 1180</rid>
-<del>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1180<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+<del><pre class="display_DEL">&lt;DEL&gt;</pre>
 <rtl>(2014) Hexagon Head Bolts and Hexagon Head Screws</rtl>
-</del>
-<add>
+<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>
 <rtl> 
  (2014) Hexagon Head Bolts and Hexagon Screws
  </rtl>
-</add>
+<pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 <brk></brk>
-<rid>JIS B 1181</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1181<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>(2014) Hexagon Nuts and Hexagon Thin Nuts</rtl>
 <brk></brk>
-<rid>JIS B 1186</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2013) Sets of High Strength Hexagon Bolt, Hexagon
  Nut and Plain Washers for Friction Grip Joints
  </rtl>
 <brk></brk>
-<rid>JIS B 1198</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1198<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>(2011) Headed Studs</rtl>
 <brk></brk>
-<rid>JIS B 1220</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>(2015) Set of Anchor Bolt for Structures</rtl>
 <brk></brk>
-<rid>JIS G 3106</rid>
-<del>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3106<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+<del><pre class="display_DEL">&lt;DEL&gt;</pre>
 <rtl>
  (2017) Rolled Steels for Welded Structure (Amendment
  1)
  </rtl>
-</del>
-<add>
+<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>
 <rtl>(2020) Rolled Steels for Welded Structure</rtl>
-</add>
+<pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 <brk></brk>
-<rid>JIS B 1256</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1256<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>(2008) Plain Washers</rtl>
 <brk></brk>
-<rid>JIS G 3136</rid>
-<del>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3136<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+<del><pre class="display_DEL">&lt;DEL&gt;</pre>
 <rtl>(2012) Rolled Steel for Building Structures</rtl>
-</del>
-<add>
+<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>
 <rtl>
  (2022)
  Rolled Steels for Building Structure
  </rtl>
-</add>
+<pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 <brk></brk>
-<rid>JIS G 3192</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3192<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2014) Dimensions, Mass and Permissible Variations
  of Hot Rolled Steel Sections
  </rtl>
 <brk></brk>
-<rid>JIS G 3193</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3193<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2008) Dimensions, Mass and Permissible Variations
  of Hot Rolled Steel Plates, Sheets, and Strips
  </rtl>
 <brk></brk>
-<rid>JIS G 3444</rid>
-<rtl>(20<del>16</del>
-<add>21</add>) Carbon Steel Tubes for General Structure</rtl>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3444<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+<rtl>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>16<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Carbon Steel Tubes for General Structure</rtl>
 <brk></brk>
-<rid>JIS G 3466</rid>
-<rtl>(20<del>15</del>
-<add>21</add>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3466<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+<rtl>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>15<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>
  ) Carbon Steel Square and Rectangular
  Tubes for General Structure
  </rtl>
 <brk></brk>
-<rid>JIS G 4321</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 4321<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>(2000) Stainless Steel for Building Structure</rtl>
 <brk></brk>
-<rid>JIS Z2305</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z2305<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2013) Non-destructive Testing - Qualification
  and Certification of Personnel
  </rtl>
 <brk></brk>
-<rid>JIS H 8641</rid>
-<rtl>(20<del>07</del>
-<add>21</add>) Hot Dip Galvanized Coatings</rtl>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8641<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+<rtl>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>07<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Hot Dip Galvanized Coatings</rtl>
 <brk></brk>
-<rid>JIS K 5674</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 5674<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2019) Lead-Free, Chromium-Free Anticorrosive
  Paints
  </rtl>
 <brk></brk>
-<rid>JIS Z 3021</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3021<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2016) Welding and Allied Processes - Symbolic
  Representation
  </rtl>
 <brk></brk>
-<rid>JIS Z 3060</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3060<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2015) Method of Ultrasonic Testing for Welds
  of Ferritic Steel
@@ -470,7 +502,7 @@
 <ref>
 <org>JAPANESE SOCIETY OF STEEL CONSTRUCTION (JSS)</org>
 <brk></brk>
-<rid>JSS II 09</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JSS II 09<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2015) Sets of Torshear Type High Strength Bolt,
  Hexagonal Nut and Plain Washer for Structural
@@ -480,14 +512,14 @@
 </ref>
 <ref>
 <org>
-<del>MINISTRY OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM, GOVERNMENT OF JAPAN (MLIT)</del>
-<add>
+<del><pre class="display_DEL">&lt;DEL&gt;</pre>MINISTRY OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM, GOVERNMENT OF JAPAN (MLIT)<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>
  MINISTRY
  OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM (MLIT)
- </add>
+ <pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 </org>
 <brk></brk>
-<rid>MLIT-SS Chapter 7</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2019) Public Building Construction Standard
  Specifications - Ch.7 Steel Frame Work
@@ -496,45 +528,45 @@
 </ref>
 <ref>
 <org>
-<del>THE SOCIETY FOR PROTECTIVE COATINGS (SSPC)</del>
-<add>
+<del><pre class="display_DEL">&lt;DEL&gt;</pre>THE SOCIETY FOR PROTECTIVE COATINGS (SSPC)<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>
  ASSOCIATION FOR MATERIALS PROTECTION AND PERFORMANCE
  (AMPP)
- </add>
+ <pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 </org>
 <brk></brk>
-<rid>SSPC PA 1</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>SSPC PA 1<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>
  (2016) Shop, Field, and Maintenance Coating
  of Metals
  </rtl>
 <brk></brk>
-<rid>SSPC SP 3</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>SSPC SP 3<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>(1982; E 2004) Power Tool Cleaning</rtl>
 <brk></brk>
-<rid>SSPC SP 6/NACE No.3</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>SSPC SP 6/NACE No.3<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>(2007) Commercial Blast Cleaning</rtl>
 <brk></brk>
 </ref>
 <ref>
 <org>U.S. DEPARTMENT OF DEFENSE (DOD)</org>
 <brk></brk>
-<rid>UFC 3-301-01</rid>
-<del>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 3-301-01<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+<del><pre class="display_DEL">&lt;DEL&gt;</pre>
 <rtl>(2019) Structural Engineering</rtl>
-</del>
-<add>
+<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>
 <rtl>
  (2023; with Change
  1, 2023) Structural Engineering
  </rtl>
-</add>
+<pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 <brk></brk>
 </ref>
 <ref>
 <org>U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)</org>
 <brk></brk>
-<rid>29 CFR Part 1926, Subpart R</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>29 CFR Part 1926, Subpart R<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <rtl>Steel Erection</rtl>
 <brk></brk>
 </ref>
@@ -734,7 +766,7 @@
 <brk></brk>
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<txt>Provide the structural steel system in accordance with <rid> AISC 341</rid>, Chapter J as amended by <rid>UFC 3-301-01</rid>.</txt>
+<txt>Provide the structural steel system in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre> AISC 341<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Chapter J as amended by <rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 3-301-01<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt>
 <brk></brk>
 </spt> 
  ]</div>
@@ -762,7 +794,7 @@
 <txt>
  Submit for record purposes. Indicate the sequence of erection, temporary shoring and bracing. The erection
  drawings must conform to
- <rid>JASS 6</rid> and <rid>MLIT-SS Chapter 7</rid>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  .<div class="brackets">[ Erection drawings must be reviewed, stamped and sealed
  by a registered professional engineer.]</div>
 </txt>
@@ -785,12 +817,12 @@
 <brk></brk>
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<txt>Submit <sub>fabrication drawings</sub> for approval prior to fabrication. Prepare in accordance with <rid>JASS 6</rid> and <rid>MLIT-SS Chapter 7</rid> 
+<txt>Submit <sub>fabrication drawings</sub> for approval prior to fabrication. Prepare in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid> 
  . Fabrication drawings must not be reproductions of contract drawings.<div class="brackets">[ Sign and seal fabrication drawings
  by a registered professional engineer.]</div> Include complete information for the fabrication and erection of the
  structure's components, including the location, type, and size of bolts, welds, member sizes and lengths, connection
  details, blocks, copes, and cuts. Use
- <rid>AWS A2.4</rid> or <rid>JIS Z 3021</rid> standard welding symbols.<div class="brackets">[ <sub>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS A2.4<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3021<pre class="display_RID">&lt;/RID&gt;</pre></rid> standard welding symbols.<div class="brackets">[ <sub>
  Shoring and temporary
  bracing
  </sub>
@@ -831,7 +863,7 @@
  6 months.]</div>
 </txt>
 <brk></brk>
-<txt>Conform to all requirements specified in <rid>JASS 6</rid> <div class="brackets">[and <rid>AWS D1.8/D1.8M</rid>]</div>.</txt>
+<txt>Conform to all requirements specified in <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> <div class="brackets">[and <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>.</txt>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
 <brk></brk>
@@ -858,7 +890,7 @@
 <txt>
  Submit written field survey results for overhead, top running crane rail beam verifying tolerance requirements
  per
- <rid>CMAA 70</rid>.</txt>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>CMAA 70<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt>
 <brk></brk>
 </spt> 
  ]</div>
@@ -890,13 +922,13 @@
 <brk></brk>
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<txt><div class="brackets">[Conform the design of structural steel system to <rid>AISC 360</rid>, <rid>AISC 303</rid>, <rid>AISC 341</rid>, and <rid>UFC 3-301-01</rid>.]</div></txt>
+<txt><div class="brackets">[Conform the design of structural steel system to <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 360<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 303<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 341<pre class="display_RID">&lt;/RID&gt;</pre></rid>, and <rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 3-301-01<pre class="display_RID">&lt;/RID&gt;</pre></rid>.]</div></txt>
 <brk></brk>
 <txt>
  Provide the structural steel system, including <div class="brackets">[shop primer]</div> <div class="brackets">[galvanizing]</div>, complete and ready for use. Provide
  structural steel systems including materials, installation, workmanship, fabrication, assembly, erection, inspection,
  quality control, and testing in accordance with
- <rid>JASS 6</rid> and <rid>MLIT-SS Chapter 7</rid>, except as modified in this contract.</txt>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid>, except as modified in this contract.</txt>
 <brk></brk>
 </spt>
 <spt>
@@ -974,7 +1006,7 @@
 <brk></brk>
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<txt>Wide flange and WT shapes, <rid>JIS G 3136</rid>, SN490B, 325 MPa. Angles and Channels <rid>JIS G 3106</rid>
+<txt>Wide flange and WT shapes, <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3136<pre class="display_RID">&lt;/RID&gt;</pre></rid>, SN490B, 325 MPa. Angles and Channels <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3106<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  , SM400, 235 MPa. Plates,
  JIS G 3136, SN400B, 235 MPa <div class="brackets">[SN490B, 325 MPa]</div>, unless otherwise indicated on contract drawings.<div class="brackets">[ Provide structural
  steel containing a minimum of <div class="brackets">[80]</div><div class="brackets">[_____]</div> percent recycled content.]</div>
@@ -1036,7 +1068,7 @@
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
-<rid>JIS G 3466</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3466<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  , STKR400, 245MPa.<div class="brackets">[ Provide structural steel tubing containing a minimum of <div class="brackets">[25]</div><div class="brackets">[90]</div><div class="brackets">[_____]</div> percent
  recycled content.]</div>
 </txt>
@@ -1083,7 +1115,7 @@
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
-<rid>JIS G 3444</rid>, STK 400 and 235 MPa.<div class="brackets">[ Provide steel pipe containing a minimum of <div class="brackets">[50]</div><div class="brackets">[_____]</div> percent recycled content.]</div></txt>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3444<pre class="display_RID">&lt;/RID&gt;</pre></rid>, STK 400 and 235 MPa.<div class="brackets">[ Provide steel pipe containing a minimum of <div class="brackets">[50]</div><div class="brackets">[_____]</div> percent recycled content.]</div></txt>
 <brk></brk>
 </spt>
 </spt>
@@ -1118,10 +1150,10 @@
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
-<rid>JIS B 1180</rid> with 420 MPa minimum tensile strength, plain finish <div class="brackets">[hot dipped zinc coating in accordance with <rid>JIS B 1048</rid> 
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1180<pre class="display_RID">&lt;/RID&gt;</pre></rid> with 420 MPa minimum tensile strength, plain finish <div class="brackets">[hot dipped zinc coating in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1048<pre class="display_RID">&lt;/RID&gt;</pre></rid> 
  ]</div>. The bolt heads and the nuts of the supplied fasteners must be marked with the manufacturer's identification
  mark, the strength grade and type specified by JIS or
- <rid>JASS 6</rid> specifications.</txt>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> specifications.</txt>
 <brk></brk>
 </spt>
 <spt>
@@ -1129,8 +1161,8 @@
 <brk></brk>
 <txt>
 <eng><pre class="display_ENG">&lt;ENG&gt;</pre>
-<rid>ASTM A563</rid>
-<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>Heavy hex style <rid>JIS B 1181</rid>, plain finish <div class="brackets">[hot dipped zinc coating in accordance with <rid>JIS B 1048</rid>]</div>. </txt>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM A563<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>Heavy hex style <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1181<pre class="display_RID">&lt;/RID&gt;</pre></rid>, plain finish <div class="brackets">[hot dipped zinc coating in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1048<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>. </txt>
 <brk></brk>
 </spt>
 <div class="brackets">[
@@ -1159,7 +1191,7 @@
 <ttl>Washers</ttl>
 <brk></brk>
 <txt>
-<rid>JIS B 1256</rid>, plain finish <div class="brackets">[hot dipped zinc coating in accordance with <rid>JIS B 1048</rid>]</div>.</txt>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1256<pre class="display_RID">&lt;/RID&gt;</pre></rid>, plain finish <div class="brackets">[hot dipped zinc coating in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1048<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>.</txt>
 <brk></brk>
 </spt>
 </spt>
@@ -1220,16 +1252,16 @@
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
-<rid>JIS B 1186</rid>, Type F10T.</txt>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Type F10T.</txt>
 <brk></brk>
-<txt><div class="brackets">[<rid>JIS B 1186</rid>, Type F8T hot dipped zinc coating]</div> <div class="brackets">[MLIT certified 12G SHTB hot dipped zinc coating]</div>.</txt>
+<txt><div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Type F8T hot dipped zinc coating]</div> <div class="brackets">[MLIT certified 12G SHTB hot dipped zinc coating]</div>.</txt>
 <brk></brk>
 </spt>
 <spt>
 <ttl>Nuts</ttl>
 <brk></brk>
 <txt>
-<rid>JIS B 1186</rid>, F10 <div class="brackets">[hot dipped zinc coating]</div>.</txt>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>, F10 <div class="brackets">[hot dipped zinc coating]</div>.</txt>
 <brk></brk>
 </spt>
 <spt>
@@ -1254,7 +1286,7 @@
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
-<rid>ASTM F959/F959M</rid>.<div class="brackets">[ Provide <rid>ASTM B695</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F959/F959M<pre class="display_RID">&lt;/RID&gt;</pre></rid>.<div class="brackets">[ Provide <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM B695<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  , Class 55, Type 1 galvanizing.]</div> Submit product data for direct tension
  indicator washers.
  </txt>
@@ -1264,7 +1296,7 @@
 <ttl>Washers</ttl>
 <brk></brk>
 <txt>
-<rid>JIS B 1186</rid>, F35, plain carbon steel <div class="brackets">[hot dipped zinc coating]</div>.</txt>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>, F35, plain carbon steel <div class="brackets">[hot dipped zinc coating]</div>.</txt>
 <brk></brk>
 </spt>
 </spt>
@@ -1290,7 +1322,7 @@
 <brk></brk>
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<txt>MLIT approved <rid>JSS II 09</rid>, <rid>JIS B 1186</rid>
+<txt>MLIT approved <rid><pre class="display_RID">&lt;RID&gt;</pre>JSS II 09<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  S10T twistoff style assemblies consisting of steel structural bolts with
  splined ends, heavy-hex carbon steel nuts, and hardened carbon steel washers. Assembly finish must be <div class="brackets">[plain]</div>.
  Submit product data for tension control bolts.
@@ -1326,38 +1358,38 @@
 <ttl>Anchor Rods</ttl>
 <brk></brk>
 <txt>
-<rid>JIS B 1220</rid> ABR 400 <div class="brackets">[ABR490]</div> <div class="brackets">[hot dipped galvanized]</div>. <div class="brackets">[Stainless steel <rid>JIS B 1220</rid>, ABR520SUS.]</div> <div class="brackets">[Stainless steel <rid> 
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid> ABR 400 <div class="brackets">[ABR490]</div> <div class="brackets">[hot dipped galvanized]</div>. <div class="brackets">[Stainless steel <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>, ABR520SUS.]</div> <div class="brackets">[Stainless steel <rid><pre class="display_RID">&lt;RID&gt;</pre> 
  JIS B 1220
- </rid>, ABR520SUS conforming to <rid>JIS G 4321</rid>, Type SUS316A.]</div></txt>
+ <pre class="display_RID">&lt;/RID&gt;</pre></rid>, ABR520SUS conforming to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 4321<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Type SUS316A.]</div></txt>
 <brk></brk>
 </spt>
 <spt>
 <ttl>Anchor Nuts</ttl>
 <brk></brk>
-<txt>Hexagon nuts <rid>JIS B 1220</rid> ABR 400 <div class="brackets">[ABR490]</div> <div class="brackets">[hot dipped galvanized]</div>. <div class="brackets">[Stainless steel <rid>JIS B 1220</rid>
+<txt>Hexagon nuts <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid> ABR 400 <div class="brackets">[ABR490]</div> <div class="brackets">[hot dipped galvanized]</div>. <div class="brackets">[Stainless steel <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  , ABR520SUS.]</div> <div class="brackets">[Stainless
  steel
- <rid>JIS B 1220</rid>, ABR520SUS conforming to <rid>JIS G 4321</rid>, Type SUS316A.]</div></txt>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>, ABR520SUS conforming to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 4321<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Type SUS316A.]</div></txt>
 <brk></brk>
 </spt>
 <spt>
 <ttl>Anchor Washers</ttl>
 <brk></brk>
 <txt>
-<rid>JIS B 1220</rid> ABR 400 <div class="brackets">[ABR490]</div> <div class="brackets">[hot dipped galvanized]</div>. <div class="brackets">[Stainless steel <rid>JIS B 1220</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid> ABR 400 <div class="brackets">[ABR490]</div> <div class="brackets">[hot dipped galvanized]</div>. <div class="brackets">[Stainless steel <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  , ABR520SUS.]</div> <div class="brackets">[Stainless steel
  G 4321 Type SUS316A conforming to
- <rid>JIS B 1220</rid>]</div>.</txt>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>.</txt>
 <brk></brk>
 </spt>
 <spt>
 <ttl>Anchor Plate Washers</ttl>
 <brk></brk>
 <txt>
-<rid>JIS B 1220</rid> ABR 400 <div class="brackets">[ABR490]</div> <div class="brackets">[hot dipped galvanized]</div>. <div class="brackets">[Stainless steel <rid>JIS G 4321</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid> ABR 400 <div class="brackets">[ABR490]</div> <div class="brackets">[hot dipped galvanized]</div>. <div class="brackets">[Stainless steel <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 4321<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  Type SUS304A <div class="brackets">[Type SUS316A]</div>
  conforming to
- <rid>JIS B 1220</rid>]</div>.</txt>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>.</txt>
 <brk></brk>
 </spt>
 </spt>
@@ -1386,7 +1418,7 @@
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
-<rid>AWS D1.1/D1.1M</rid> or <rid>JASS 6</rid><div class="brackets">[ and <rid>AWS D1.8/D1.8M</rid>]</div>. Submit product data for welding electrodes and rods.</txt>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid><div class="brackets">[ and <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>. Submit product data for welding electrodes and rods.</txt>
 <brk></brk>
 </spt>
 <spt>
@@ -1445,7 +1477,7 @@
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
-<rid>JIS B 1198</rid> <div class="brackets">[,450MPa minimum ultimate tensile strength]</div> <div class="brackets">[and 350MPa minimum yield strength]</div>.</txt>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1198<pre class="display_RID">&lt;/RID&gt;</pre></rid> <div class="brackets">[,450MPa minimum ultimate tensile strength]</div> <div class="brackets">[and 350MPa minimum yield strength]</div>.</txt>
 <brk></brk>
 </spt>
 </spt><div class="brackets">[<spt>
@@ -1477,7 +1509,7 @@
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
-<rid>JIS B 1048</rid> for threaded parts or <rid>JIS H 8641</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1048<pre class="display_RID">&lt;/RID&gt;</pre></rid> for threaded parts or <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8641<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  for structural steel members, as applicable, unless specified otherwise
  galvanize after fabrication where practicable.
  </txt>
@@ -1487,7 +1519,7 @@
 <spt>
 <ttl>FABRICATION</ttl>
 <brk></brk>
-<txt>Fabrication must be in accordance with the applicable provisions of <rid>AISC 325</rid>and <rid>JASS 6</rid>
+<txt>Fabrication must be in accordance with the applicable provisions of <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 325<pre class="display_RID">&lt;/RID&gt;</pre></rid>and <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  . Fabrication and assembly
  must be done in the shop to the greatest extent possible. Punch, subpunch and ream, or drill bolt <div class="brackets">[and pin]</div> holes
  perpendicular to the surface of the member.
@@ -1496,10 +1528,10 @@
 <txt>Compression joints depending on contact bearing must have a surface roughness not in excess of<met><pre class="display_MET">&lt;MET&gt;</pre> 13 micrometer<pre class="display_MET">&lt;/MET&gt;</pre></met>
 <eng><pre class="display_ENG">&lt;ENG&gt;</pre> 
  500 micro inch
- <pre class="display_ENG">&lt;/ENG&gt;</pre></eng> as determined by <rid>ASME B46.1</rid>
+ <pre class="display_ENG">&lt;/ENG&gt;</pre></eng> as determined by <rid><pre class="display_RID">&lt;RID&gt;</pre>ASME B46.1<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  , and ends must be square within the tolerances for milled ends specified
  in
- <rid>JIS G 3192</rid>, <rid>JIS G 3193</rid>, and <rid>JASS 6</rid>.</txt>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3192<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3193<pre class="display_RID">&lt;/RID&gt;</pre></rid>, and <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt>
 <brk></brk>
 <txt>
  Shop splices of members between field splices will be permitted only where indicated on the Contract Drawings.
@@ -1582,10 +1614,10 @@
 <brk></brk>
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<txt>Shop prime structural steel, <rid>JIS K 5674</rid>
+<txt>Shop prime structural steel, <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 5674<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  lead Free, chromium Free, anticorrosive paint, except as modified herein,
  in accordance with
- <rid>SSPC PA 1</rid>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>SSPC PA 1<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  . Do not prime steel surfaces embedded in concrete, galvanized surfaces,<div class="brackets">[ surfaces
  to receive sprayed-on fireproofing,]</div> <div class="brackets">[ surfaces to receive epoxy coatings,]</div> <div class="brackets">[surfaces designed as part of a composite
  steel concrete section,]</div> <div class="brackets">[slip critical surfaces of high strength bolted connections,]</div> or surfaces within
@@ -1597,18 +1629,18 @@
  of the toe of the welds prior to welding (except surfaces on which metal decking and shear studs
  are to be welded). If flash rusting occurs, re-clean the surface prior to application of primer. Apply primer
  <div class="brackets">[in accordance with endorsement "SPE-P1" <div class="brackets">["SPE-P2"]</div> <div class="brackets">["SPE-P3"]</div> of
- <rid>AISC 420</rid>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 420<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  or approved equal NACE or SSPC certification]</div>
 <div class="brackets">[_____]</div>to a minimum dry film thickness of
  <met><pre class="display_MET">&lt;MET&gt;</pre> 0.05 mm<pre class="display_MET">&lt;/MET&gt;</pre></met>
-<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2.0 mil<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Submit shop primer product data.<add>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2.0 mil<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Submit shop primer product data.<add><pre class="display_ADD">&lt;ADD&gt;</pre>
  See Section 09 90
  00 PAINTS AND COATINGS and Section 09 97 13.27 HIGH PERFORMANCE COATING FOR STEEL STRUCTURES for finish coating
  requirements, where applicable.
- </add>
+ <pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 </txt>
 <brk></brk>
-<txt>Prime slip critical surfaces with a <sub>Class B coating</sub> in accordance with <rid>AISC 325</rid>
+<txt>Prime slip critical surfaces with a <sub>Class B coating</sub> in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 325<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  . Submit test report for Class
  B coating.
  </txt>
@@ -1631,10 +1663,10 @@
 <ttl>Cleaning</ttl>
 <brk></brk>
 <txt>
-<rid>SSPC SP 6/NACE No.3</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>SSPC SP 6/NACE No.3<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  , except steel exposed in spaces above ceilings, attic spaces, furred spaces, and chases that
  will be hidden to view in finished construction may be cleaned to
- <rid>SSPC SP 3</rid>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>SSPC SP 3<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  when recommended by the shop primer
  manufacturer. Maintain steel surfaces free from rust, dirt, oil, grease, and other contaminants through final
  assembly.
@@ -1669,7 +1701,7 @@
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>
-<rid>ASME B46.1</rid> maximum surface roughness of 125 for pin, pinholes, and sliding bearings, unless indicated otherwise.</txt>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASME B46.1<pre class="display_RID">&lt;/RID&gt;</pre></rid> maximum surface roughness of 125 for pin, pinholes, and sliding bearings, unless indicated otherwise.</txt>
 <brk></brk>
 </spt> 
  ]</div>
@@ -1691,14 +1723,14 @@
 <spt>
 <ttl>ERECTION</ttl>
 <brk></brk>
-<lst indent="-0.33">a. Erection of structural steel must be in accordance with the applicable provisions of <rid>AISC 325</rid>, <rid>AISC 303</rid> 
+<lst indent="-0.33">a. Erection of structural steel must be in accordance with the applicable provisions of <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 325<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 303<pre class="display_RID">&lt;/RID&gt;</pre></rid> 
  and
- <rid>29 CFR Part 1926, Subpart R</rid> or <rid>MLIT-SS Chapter 7</rid> and JASS 6.</lst>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>29 CFR Part 1926, Subpart R<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid> and JASS 6.</lst>
 <brk></brk>
 <txt>
  After final positioning of steel members, provide full bearing under base plates and bearing plates using nonshrink
  grout. Place nonshrink grout in accordance with the manufacturer's instructions or
- <rid>MLIT-SS Chapter 7</rid>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  and JASS
  6.
  </txt>
@@ -1713,7 +1745,7 @@
 <spt>
 <ttl>CONNECTIONS</ttl>
 <brk></brk>
-<txt>Except as modified in this section, design connections indicated in accordance with <rid>AISC 360</rid>
+<txt>Except as modified in this section, design connections indicated in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 360<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  . Build connections
  into existing work. Do not tighten anchor bolts set in concrete with impact torque wrenches. Holes must not
  be cut or enlarged by burning. Bolts, nuts, and washers must be clean of dirt and rust, and lubricated immediately
@@ -1723,7 +1755,7 @@
 <spt>
 <ttl>Common Grade Bolts</ttl>
 <brk></brk>
-<txt>Tighten <rid>JIS B 1180</rid>
+<txt>Tighten <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1180<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  bolts to a "snug tight" fit. "Snug tight" is the tightness that exists when plies in a joint
  are in firm contact. If firm contact of joint plies cannot be obtained with a few impacts of an impact wrench,
  or the full effort of a man using a spud wrench, contact the Contracting Officer for further instructions.
@@ -1744,7 +1776,7 @@
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt>Provide direct tension indicator washers in all <eng><pre class="display_ENG">&lt;ENG&gt;</pre>A325<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
-<rid>JIS B 1186</rid>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <eng><pre class="display_ENG">&lt;ENG&gt;</pre>A490<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
  bolted connections. Bolts must be installed
  in connection holes and initially brought to a snug tight fit. After the initial tightening procedure, fully
@@ -1765,7 +1797,7 @@
  to the turned element, provide a flat washer between the DTIW and nut when the nut is turned for tightening,
  and between the DTIW and bolt head when the bolt head is turned for tightening. In addition to the DTIW, provide
  flat washers under both the bolt head and nut when JIS Bolts equivalent to
- <rid>ASTM F3125/F3125M</rid>, Grade<met><pre class="display_MET">&lt;MET&gt;</pre> A490M<pre class="display_MET">&lt;/MET&gt;</pre></met>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F3125/F3125M<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Grade<met><pre class="display_MET">&lt;MET&gt;</pre> A490M<pre class="display_MET">&lt;/MET&gt;</pre></met>
 <eng><pre class="display_ENG">&lt;ENG&gt;</pre> A490<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> 
  bolts are used.
  </txt>
@@ -1805,10 +1837,10 @@
 <brk></brk>
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<txt>Welding must be in accordance with <rid>JASS 6</rid><div class="brackets">[ and <rid>AWS D1.8/D1.8M</rid>
+<txt>Welding must be in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid><div class="brackets">[ and <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  ]</div>.<div class="brackets">[ Grind exposed welds smooth as indicated.]</div>
  Provide
- <rid>JASS 6</rid> qualified welders, welding operators, and tackers.</txt>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> qualified welders, welding operators, and tackers.</txt>
 <brk></brk>
 <txt>Develop and submit the <sub>Welding Procedure Specifications (WPS)</sub>
  for all welding, including welding done using prequalified
@@ -1860,7 +1892,7 @@
 </spt><div class="brackets">[<spt>
 <ttl>GALVANIZING REPAIR</ttl>
 <brk></brk>
-<txt>Repair damage to galvanized coatings using <rid>JASS 6</rid>
+<txt>Repair damage to galvanized coatings using <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  zinc rich paint for galvanizing damaged by handling, transporting,
  cutting, welding, or bolting. Do not heat surfaces to which repair paint has been applied.
  </txt>
@@ -1884,13 +1916,13 @@
 <spt>
 <ttl>Visual Inspection</ttl>
 <brk></brk>
-<txt>Perform in accordance with <rid>JASS 6</rid>
+<txt>Perform in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  . Furnish the services of certified welding inspectors for fabrication and
  erection inspection and testing and verification inspections. A Certified Welding Inspector must perform visual
  inspection on 100 percent of all welds. Document this inspection in the Visual Weld Inspection Log. Submit
  certificates indicating that certified welding inspectors meet the requirements of Japanese Welding Engineering
  Society (JWES) and
- <rid>JASS 6</rid>.</txt>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt>
 <brk></brk>
 <div class="brackets">[
  <txt>
@@ -1936,16 +1968,16 @@
 <brk></brk>
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<txt>Nondestructive testing must be in accordance with <rid>JASS 6</rid> and <rid>JIS Z 3060</rid><div class="brackets">[ and <rid>AWS D1.8/D1.8M</rid>
+<txt>Nondestructive testing must be in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3060<pre class="display_RID">&lt;/RID&gt;</pre></rid><div class="brackets">[ and <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  ]</div>. Ultrasonic testing
  must be performed in accordance with Table <div class="brackets">[6.2]</div> <div class="brackets">[or 6.3]</div> of
- <rid>AWS D1.1/D1.1M</rid>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  . Test locations must be <div class="brackets">[as indicated]</div><div class="brackets">[selected
  by the Contracting Officer]</div>. All personnel performing NDT must be certified in accordance with
- <rid>JIS Z2305</rid>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z2305<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  in
  the method of testing being performed. Submit certificates showing compliance with
- <rid>JIS Z2305</rid> for all NDT technicians. <tst> 
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z2305<pre class="display_RID">&lt;/RID&gt;</pre></rid> for all NDT technicians. <tst> 
  If more than <div class="brackets">[20]</div> <div class="brackets">[_____]</div> percent of welds made by a welder contain defects identified by testing, then all groove
  welds made by that welder must be tested by ultrasonic testing
  </tst>
@@ -2053,7 +2085,7 @@
  in place to verify that they have been compressed sufficiently to provide
  the
  <met><pre class="display_MET">&lt;MET&gt;</pre> 0.38 mm<pre class="display_MET">&lt;/MET&gt;</pre></met>
-<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.015 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> gap, as required by <rid>ASTM F959/F959M</rid>. Submit <sub>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.015 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> gap, as required by <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F959/F959M<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Submit <sub>
  direct tension indicator washer inspection
  reports
  </sub>.</txt>
@@ -2081,11 +2113,11 @@
  </tst>
  on 20 percent of the installed direct tension indicator washers
  to verify that the
- <rid>ASTM F959/F959M</rid>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F959/F959M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  direct tension indicator gaps have been achieved. If more than 10 percent
  of the direct tension indicators tested have not been compressed sufficiently to provide the average gaps required
  by
- <rid>ASTM F959/F959M</rid>, test all in place direct tension indicator washers to verify that the <rid>ASTM F959/F959M</rid>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F959/F959M<pre class="display_RID">&lt;/RID&gt;</pre></rid>, test all in place direct tension indicator washers to verify that the <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F959/F959M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  direct
  tension indicator gaps have been achieved. Test locations must be selected by the Contracting Officer.
  </txt>
@@ -2104,7 +2136,7 @@
  from each mill certificate batch in a tension
  measuring device at the job site prior to the beginning of bolting start-up. Demonstrate that the bolts and
  nuts, when used together, can develop tension not less than the provisions specified in
- <rid>AISC 360</rid>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 360<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  , depending on
  bolt size and grade. The bolt tension must be developed by tightening the nut. A representative of the manufacturer
  or supplier must be present to ensure that the fasteners are properly used, and to demonstrate that the fastener
@@ -2115,7 +2147,7 @@
 <spt>
 <ttl>Inspection</ttl>
 <brk></brk>
-<txt>Inspection procedures must be in accordance with <rid>JASS 6</rid> and <rid>MLIT-SS Chapter 7</rid>
+<txt>Inspection procedures must be in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  . As a minimum, high-strength bolting
  inspection tasks shall be in accordance with Section
  <srf>01 45 35</srf>
@@ -2150,18 +2182,18 @@
 <brk></brk>
 <txt>
 <tst>
-<rid>ASTM A143/A143M</rid> for steel products hot-dip galvanized after fabrication.</tst> Submit <sub>embrittlement test reports</sub>.</txt>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM A143/A143M<pre class="display_RID">&lt;/RID&gt;</pre></rid> for steel products hot-dip galvanized after fabrication.</tst> Submit <sub>embrittlement test reports</sub>.</txt>
 <brk></brk>
 </spt> 
  ]</div>
 <spt>
 <ttl>Inspection and Testing of Steel Stud Welding</ttl>
 <brk></brk>
-<txt>Perform verification inspection and testing of steel stud welding conforming to the requirements of <rid>JASS 6</rid>
+<txt>Perform verification inspection and testing of steel stud welding conforming to the requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  , Stud
  Welding Clause. The Contracting Officer will serve as the verification inspector. Bend test studs that do not
  show a full 360 degree weld flash or have been repaired
- <ned></ned>by welding as required by <rid>JASS 6</rid>
+ <ned></ned>by welding as required by <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  , Stud Welding Clause.
  Studs that crack under testing in the weld, base metal or shank will be rejected and replaced by the Contractor
  at no additional cost.
@@ -2174,7 +2206,7 @@
 <brk></brk>
 </sec></main>
 <button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
-<button id="myBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
 </body>
 <script src="scripts.js"></script>
 </html>

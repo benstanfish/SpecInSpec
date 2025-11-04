@@ -49,8 +49,6 @@ def get_all_tags(file_path:str) -> list:
             if elem.tag not in raw_tags:
                 raw_tags.append(elem.tag)
         sorted_tags = sorted(raw_tags)
-        # for tag in sorted_tags:
-        #     print(tag)
         return sorted_tags
     except Exception as e:
         print(f'An exception occurred: {e}')
@@ -67,18 +65,21 @@ def add_display_tags(tag_name: str, all_text: str) -> str:
     
     return temp
 
-# def _wrap_with_brackets_span(match):
-#     # bracket_pattern = r'\[.*?\]'
-#     # return re.sub(bracket_pattern, f'<span class="brackets">{bracket_pattern}</span>', html_text)
-#     return f'<span class="brackets">{match.group(0)}</span>'
-
-# def wrap_brackets(html_string:str) -> str:
-#     bracket_pattern = re.compile(r'\[.*?\]', re.MULTILINE)
-#     return re.sub(bracket_pattern, _wrap_with_brackets_span, html_string)
-
 def wrap_brackets_in_span(html_string:str) -> str:
     temp = html_string.replace(r'[', r'<div class="brackets">[')
     return temp.replace(r']', r']</div>')
+
+
+
+
+
+
+
+
+
+
+
+
 
 test_file = './specs/cleaned_sec/05 12 00.sec'
 
@@ -103,7 +104,7 @@ with open(test_file, 'r') as file:
 
 all_tags = get_all_tags(test_file) 
 
-display_tags = ['NTE', 'NPR', 'ENG', 'MET']
+display_tags = ['NTE', 'NPR', 'ENG', 'MET', 'RID', 'ADD', 'DEL']
 for display_tag in display_tags:
     content = add_display_tags(tag_name=display_tag, all_text=content)
     

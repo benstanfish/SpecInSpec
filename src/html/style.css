@@ -1,3 +1,19 @@
+:root {
+    --standard-margin: 12px;
+    --display-hdr: none;
+    --display-notes: inherit;
+    --display-del: inline-block; /* none or inline-block */
+
+    --ref-color: magenta;
+    --sub-color: blue;
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+    --hdr-color: #aaa;
+
+}
+
+
 
 
 /* The following is a list of all native SpecsIntact .sec file <TAG> names */
@@ -52,8 +68,307 @@ WBK
 
 
 
-.display_NPR {
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+
+br {
+    display: none; /* This is a 'reset' requirement */
+}
+
+strong {
+    font-weight: bold;
+}
+
+brk {
     display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ast,
+npr,
+nte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+/* url {
+    color: blue;
+    border-bottom: 1px solid blue;
+} */
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    color: grey;
+    display: var(--display-hdr);
+}
+
+ast {
+    color: grey
+}
+
+scn,
+stl,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: normal;
+    color: var(--ref-color);
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+del, add {
+    display: inline;
+}
+
+del {
+    display: var(--display-del);
+    color: var(--del-color);
+}
+
+add {
+    color: var(--add-color);
+}
+
+sub {
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: 16px;
+}
+
+lst sub {
+    display: block;
+    margin: var(--standard-margin) 0;
+}
+
+
+met {
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+}
+eng {
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+#menuBtn {
+  display: block; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: #555; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgba(30, 143, 255, 0.2);
+    cursor: pointer; 
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+}
+
+#topBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 120px; /* Place the button 30px from the right */
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: #555; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#topBtn:hover,
+#menuBtn:hover {
+  background-color: dodgerblue; /* Add a dark-grey background on hover */
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+
+td + td {
+    padding: 0 16px;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: block;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.display_NTE,
+.display_NPR {
+    display: none;
     color: orange;
     background-color: rgb(235, 211, 166);
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+    display: inline;
+}
+
+.display_ENG {
+    background-color: rgb(255, 176, 147);
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: rgb(136, 195, 255);
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: inline;
+}
+
+.display_DEL {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    display: inline;
+}
+
+.display_ADD {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    display: inline;
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline-block;
 }
