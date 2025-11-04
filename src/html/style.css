@@ -188,6 +188,11 @@ del {
     color: var(--del-color);
 }
 
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
 add {
     color: var(--add-color);
 }
@@ -215,8 +220,6 @@ eng {
     color: white;
     font-weight: bold;
 }
-
-
 
 
 
@@ -369,5 +372,5 @@ td + td {
 
 .brackets {
     background-color: yellow;
-    display: inline-block;
+    display: inline;
 }

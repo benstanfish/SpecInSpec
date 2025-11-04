@@ -143,9 +143,25 @@ html_file = shutil.copy(html_template, html_path)
 with open(html_file, 'r') as file:
     html_content = file.read()
 
+
+
 soup = BeautifulSoup(html_content, 'html.parser')
 soup.find('title').string = section_info['section'] + '.sec Viewer'
 soup.find('main').append(html_fragment)
+
+with open('./src/html/reboot.css', 'r') as file:
+    css_reboot = file.read()
+
+with open('./src/html/style.css', 'r') as file:
+    css_styles = file.read()
+
+with open('./src/html/scripts.js', 'r') as file:
+    js_scripts = file.read()
+
+soup.find(id='reboot').append(css_reboot)
+soup.find(id='styles').append(css_styles)
+soup.find(id='scripts').append(js_scripts)
+
 soup = update_html_outline(soup)
 soup.prettify()
 
