@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="reboot.css">
-    <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="../../src/html/reboot.css">
+    <link rel="stylesheet" href="../../src/html/style.css">
     <style id="reboot"></style>
     <style id="styles"></style>
     <title>Document</title>
@@ -18,88 +18,88 @@
             </p>
             <p>Select which elements to display (elements hidden by default):</p>
         </div>
-        <table class="user-pref-table">
-            <tr>
-                <td><strong>User Notes</strong></td>
-                <td>
-                    <div class="toggle-container">
-                        <input type="checkbox" id="notes-toggle-switch" class="toggle-checkbox" />
-                        <label for="notes-toggle-switch" class="toggle-label"><pre>Show User Notes</pre></label>
-                    </div>
-                </td>
-                <td>
-                    <div class="toggle-container">
-                        <input type="checkbox" id="nte-toggle-switch" class="toggle-checkbox" />
-                        <label for="nte-toggle-switch" class="toggle-label"><pre>Show &lt;NTE&gt; tags</pre></label>
-                    </div>
-                </td>
-                <td>
-                    <div class="toggle-container">
-                        <input type="checkbox" id="npr-toggle-switch" class="toggle-checkbox" />
-                        <label for="npr-toggle-switch" class="toggle-label"><pre>Show &lt;NPR&gt; tags</pre></label>
-                    </div>
-                </td>
-            </tr>
+        <div class="user-table-container">
+            <table class="user-pref-table">
+                <tr>
+                    <td><strong>User Notes</strong></td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="notes-toggle-switch" class="toggle-checkbox" />
+                            <label for="notes-toggle-switch" class="toggle-label"><pre>Show User Notes</pre></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="nte-toggle-switch" class="toggle-checkbox" />
+                            <label for="nte-toggle-switch" class="toggle-label"><pre>Show &lt;NTE&gt; tags</pre></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="npr-toggle-switch" class="toggle-checkbox" />
+                            <label for="npr-toggle-switch" class="toggle-label"><pre>Show &lt;NPR&gt; tags</pre></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Brackets (User Options)</strong></td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="brackets-toggle-switch" class="toggle-checkbox" />
+                            <label for="brackets-toggle-switch" class="toggle-label"><pre>Highlight bracketed text</pre></label>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Add &amp; Delete</strong></td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="add-toggle-switch" class="toggle-checkbox" />
+                            <label for="add-toggle-switch" class="toggle-label"><pre>Show Additions Tags</pre></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="del-toggle-switch" class="toggle-checkbox" />
+                            <label for="del-toggle-switch" class="toggle-label"><pre>Show Deletions Tags</pre></label>
+                        </div>
+                    </td>
+                </tr>
 
+                <tr>
+                    <td>
+                        <strong>Unit Labels</strong>
+                    </td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="eng-toggle-switch" class="toggle-checkbox" />
+                            <label for="eng-toggle-switch" class="toggle-label"><pre>Show imperial &lt;ENG&gt; tags</pre></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="met-toggle-switch" class="toggle-checkbox" />
+                            <label for="met-toggle-switch" class="toggle-label"><pre>Show metric &lt;MET&gt; tags</pre></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>References</strong>
+                    </td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="rid-toggle-switch" class="toggle-checkbox" />
+                            <label for="rid-toggle-switch" class="toggle-label"><pre>Show reference &lt;RID&gt; tags</pre></label>
+                        </div>
+                    </td>
+                    <td>
 
-            <tr>
-                <td><strong>Brackets (User Options)</strong></td>
-                <td>
-                    <div class="toggle-container">
-                        <input type="checkbox" id="brackets-toggle-switch" class="toggle-checkbox" />
-                        <label for="brackets-toggle-switch" class="toggle-label"><pre>Highlight bracketed text</pre></label>
-                    </div>
-                </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><strong>Add &amp; Delete</strong></td>
-                <td>
-                    <div class="toggle-container">
-                        <input type="checkbox" id="add-toggle-switch" class="toggle-checkbox" />
-                        <label for="add-toggle-switch" class="toggle-label"><pre>Show Additions Tags</pre></label>
-                    </div>
-                </td>
-                <td>
-                    <div class="toggle-container">
-                        <input type="checkbox" id="del-toggle-switch" class="toggle-checkbox" />
-                        <label for="del-toggle-switch" class="toggle-label"><pre>Show Deletions Tags</pre></label>
-                    </div>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <strong>Unit Labels</strong>
-                </td>
-                <td>
-                    <div class="toggle-container">
-                        <input type="checkbox" id="eng-toggle-switch" class="toggle-checkbox" />
-                        <label for="eng-toggle-switch" class="toggle-label"><pre>Show imperial &lt;ENG&gt; tags</pre></label>
-                    </div>
-                </td>
-                <td>
-                    <div class="toggle-container">
-                        <input type="checkbox" id="met-toggle-switch" class="toggle-checkbox" />
-                        <label for="met-toggle-switch" class="toggle-label"><pre>Show metric &lt;MET&gt; tags</pre></label>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <strong>References</strong>
-                </td>
-                <td>
-                    <div class="toggle-container">
-                        <input type="checkbox" id="rid-toggle-switch" class="toggle-checkbox" />
-                        <label for="rid-toggle-switch" class="toggle-label"><pre>Show reference &lt;RID&gt; tags</pre></label>
-                    </div>
-                </td>
-                <td>
-
-                </td>
-            </tr>
-        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
         <button onclick="toggleMenu()" id="hideBtn" title="Toggle menu">Hide Menu</button>
     </div>
     <main>
@@ -110,5 +110,5 @@
 </body>
 
 <script id="scripts"></script>
-<!-- <script src="scripts.js"></script> -->
+<script src="../../src/html/scripts.js"></script>
 </html>

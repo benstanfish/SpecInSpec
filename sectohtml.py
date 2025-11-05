@@ -136,13 +136,12 @@ content = clean_sec_string(content, brk_replaced=False)
 html_fragment = BeautifulSoup(content, 'html.parser')
 
 html_template = './src/html/template.html'
-html_path = f"./src/html/{section_info['section']}.html"
+html_path = f"./specs/html/{section_info['section']}.html"
 
 html_file = shutil.copy(html_template, html_path)
 
 with open(html_file, 'r') as file:
     html_content = file.read()
-
 
 
 soup = BeautifulSoup(html_content, 'html.parser')
@@ -158,9 +157,9 @@ with open('./src/html/style.css', 'r') as file:
 with open('./src/html/scripts.js', 'r') as file:
     js_scripts = file.read()
 
-soup.find(id='reboot').append(css_reboot)
-soup.find(id='styles').append(css_styles)
-soup.find(id='scripts').append(js_scripts)
+# soup.find(id='reboot').append(css_reboot)
+# soup.find(id='styles').append(css_styles)
+# soup.find(id='scripts').append(js_scripts)
 
 soup = update_html_outline(soup)
 soup.prettify()

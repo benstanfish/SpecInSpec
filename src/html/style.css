@@ -1,5 +1,6 @@
 :root {
     --standard-margin: 12px;
+
     --display-hdr: none;
     --display-notes: inherit;
     --display-del: inline-block; /* none or inline-block */
@@ -14,60 +15,6 @@
 }
 
 
-
-
-/* The following is a list of all native SpecsIntact .sec file <TAG> names */
-
-/* 
-ADD,
-ALN,
-AST,
-BRK,
-BRL,
-CEL,
-COL,
-DEL,
-DTA,
-DTE,
-END,
-ENG,
-HDR,
-HL1,
-HL4,
-ITM,
-LST,
-MET,
-MTA,
-NED,
-NPR,
-NTE,
-ORG,
-PRA,
-PRT,
-REF,
-RID,
-ROW,
-RTL,
-SCN,
-SCP,
-SEC,
-SPT,
-SRF,
-STL,
-STS,
-STY,
-SUB,
-TAB,
-TDA,
-TST,
-TTL,
-TXT,
-URL,
-WBK 
-*/
-
-
-
 body {
     max-width: 100ch;
     margin: 72px auto;
@@ -80,16 +27,29 @@ main {
     margin-top: 72px;
 }
 
-
-br {
-    display: none; /* This is a 'reset' requirement */
-}
-
 strong {
     font-weight: bold;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
 brk {
+    /* this is used by specsintact instead of <br /> line breaks */
     display: block;
     margin-bottom: var(--standard-margin);
 }
@@ -107,10 +67,10 @@ spt {
     margin-bottom: var(--standard-margin);
 }
 
-/* url {
+url {
     color: blue;
     border-bottom: 1px solid blue;
-} */
+}
 
 lst {
     display: block;
@@ -198,6 +158,7 @@ add {
 }
 
 sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
     color: var(--sub-color);
     font-weight: bold;
     vertical-align: baseline;
@@ -209,12 +170,12 @@ lst sub {
     margin: var(--standard-margin) 0;
 }
 
-
 met {
     background-color: dodgerblue;
     color: white;
     font-weight: bold;
 }
+
 eng {
     background-color: tomato;
     color: white;
@@ -222,77 +183,6 @@ eng {
 }
 
 
-
-
-
-#menuBtn {
-  display: block; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: #555; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; 
-  padding: 15px; 
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#hideBtn {
-    display: block;
-    margin: 16px auto;
-    z-index: 99; 
-    border: none; 
-    outline: none; 
-    background-color: rgba(30, 143, 255, 0.2);
-    cursor: pointer; 
-    padding: 6px; 
-    border: 1px solid dodgerblue;
-    border-radius: 10px;
-}
-
-#topBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 120px; /* Place the button 30px from the right */
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: #555; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; 
-  padding: 15px; 
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#topBtn:hover,
-#menuBtn:hover {
-  background-color: dodgerblue; /* Add a dark-grey background on hover */
-}
-
-
-h1 {
-    font-size: 2rem;
-}
-
-
-hr {
-    border-width: 0.25px;
-}
-
-label {
-    display: inline-block;
-}
-
-
-td + td {
-    padding: 0 16px;
-}
 
 .user-selections {
     top: 0;
@@ -325,6 +215,14 @@ td + td {
 .user-instructions p {
     margin-bottom: 12px;
 }
+
+.user-table-container {
+    overflow: auto;
+}
+
+
+
+
 
 .display_NTE,
 .display_NPR {
@@ -370,10 +268,174 @@ td + td {
     display: none;
 }
 
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+.display_RID {
+
+}
+
+.display_RTL {
+
+}
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+
+}
+
+.display_STL {
+
+}
+
+.display_SUB {
+
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+
 .brackets {
     background-color: yellow;
     display: inline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+}
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 120px;
+    z-index: 99; 
+
+    background-color: #555;
+    color: white;
+
+    padding: 12px; 
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#topBtn:hover,
+#menuBtn:hover {
+    background-color: dodgerblue;
+}
+
+
+
+
+
 
 
 
@@ -395,12 +457,22 @@ td + td {
         padding: 12px;
 
         max-width: none;
-        height: 90vh;
-        width: 90vw;
+        height: 90dvh;
+        width: 90dvw;
 
         border: 1px solid dodgerblue;
         
         border-radius: 12px;
     }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
 
 }
