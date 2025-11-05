@@ -67,6 +67,12 @@ def add_display_tags(tag_name: str, all_text: str) -> str:
     temp = temp.replace(start_tag, new_start_tag)
     return temp
 
+def add_display_tags_to_soup(parent_tag, prefix, suffix, soup_element:BeautifulSoup):
+    parent_tags = soup_element.find_all(parent_tag)
+    for parent_tag in parent_tags:
+        parent_tags.append()
+    pass
+
 def wrap_brackets_in_span(html_string:str) -> str:
     temp = html_string.replace(r'[', r'<div class="brackets">[')
     return temp.replace(r']', r']</div>')
@@ -95,9 +101,12 @@ def update_html_outline(soup: BeautifulSoup) -> BeautifulSoup:
     for element in soup.find_all():
         if 'outline' in element.attrs and element.name == 'spt':
             title_element = element.find('ttl')
-            title_element.string = element.attrs['outline'] + ' ' + title_element.text
+            sub_element = title_element.find('sub')
+            if sub_element:
+                sub_element.insert_before(f'{element.attrs['outline']} ')
+            else:
+                title_element.string = element.attrs['outline'] + ' ' + title_element.text
     return soup
-
 
 test_file = './specs/cleaned_sec/03 30 00.sec'
 
@@ -121,7 +130,7 @@ section_info = {
 with open(test_file, 'r') as file:
     content = file.read()
 
-display_tags = ['NTE', 'NPR', 'ENG', 'MET', 'RID', 'RTL', 'ADD', 'DEL', 'SRF', 'STL', 'SUB']
+display_tags = ['NTE', 'NPR', 'ENG', 'MET', 'RID', 'RTL', 'ADD', 'DEL', 'SRF', 'STL']
 for display_tag in display_tags:
     content = add_display_tags(tag_name=display_tag, all_text=content)
 content = wrap_brackets_in_span(content)
