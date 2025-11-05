@@ -11,10 +11,14 @@ Example usage:
 """
 
 import os, shutil, re
+from datetime import datetime
 from bs4 import BeautifulSoup
 
 from defusedxml import ElementTree as ET
 from xml.etree.ElementTree import Element
+
+def get_timestamp() -> str:
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 def remove_declaration(xml_string: str) -> str:
     declaration_pattern = r'<\?xml[^>]*\?>'
@@ -57,12 +61,10 @@ def get_all_tags(file_path:str) -> list:
 def add_display_tags(tag_name: str, all_text: str) -> str:
     start_tag = f'<{tag_name}>'
     end_tag = f'</{tag_name}>'
-    
     new_start_tag = f'<{tag_name}><pre class="display_{tag_name}">&lt;{tag_name}&gt;</pre>'
     new_end_tag = f'<pre class="display_{tag_name}">&lt;/{tag_name.upper()}&gt;</pre></{tag_name}>'
     temp = all_text.replace(end_tag, new_end_tag)
     temp = temp.replace(start_tag, new_start_tag)
-    
     return temp
 
 def wrap_brackets_in_span(html_string:str) -> str:
@@ -97,8 +99,7 @@ def update_html_outline(soup: BeautifulSoup) -> BeautifulSoup:
     return soup
 
 
-test_file = './specs/cleaned_sec/05 12 00.sec'
-
+test_file = './specs/cleaned_sec/03 30 00.sec'
 
 tree = ET.parse(test_file)
 root = tree.getroot()
@@ -117,21 +118,14 @@ section_info = {
     'date': root.find('DTE').text.strip()
 }
 
-# for key, value in section_info.items():
-#     print(f'{key.title()}:', value)
-
 with open(test_file, 'r') as file:
     content = file.read()
 
-# all_tags = get_all_tags(test_file) 
-
-display_tags = ['NTE', 'NPR', 'ENG', 'MET', 'RID', 'ADD', 'DEL']
+display_tags = ['NTE', 'NPR', 'ENG', 'MET', 'RID', 'RTL', 'ADD', 'DEL', 'SRF', 'STL', 'SUB']
 for display_tag in display_tags:
     content = add_display_tags(tag_name=display_tag, all_text=content)
-    
 content = wrap_brackets_in_span(content)
 content = clean_sec_string(content, brk_replaced=False)
-
 
 html_fragment = BeautifulSoup(content, 'html.parser')
 
@@ -144,9 +138,15 @@ with open(html_file, 'r') as file:
     html_content = file.read()
 
 
+
 soup = BeautifulSoup(html_content, 'html.parser')
 soup.find('title').string = section_info['section'] + '.sec Viewer'
 soup.find('main').append(html_fragment)
+
+soup.find('span', class_='this_section_number').append(section_info['section'])
+soup.find('span', class_='create_date').append(get_timestamp())
+
+
 
 with open('./src/html/reboot.css', 'r') as file:
     css_reboot = file.read()
@@ -164,5 +164,5 @@ with open('./src/html/scripts.js', 'r') as file:
 soup = update_html_outline(soup)
 soup.prettify()
 
-with open(html_file, 'w') as file:
+with open(html_file, 'w', encoding='utf-8') as file:
     file.write(str(soup))

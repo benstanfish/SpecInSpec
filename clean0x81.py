@@ -152,3 +152,5 @@ def clean_0x81_files(orig_dir: str=r'./specs/sec',
         cleaned_files[section] = new_path
 
     files_have_0x81(cleaned_files)
+
+clean_0x81_files()

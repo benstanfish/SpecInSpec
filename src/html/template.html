@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../src/html/reboot.css">
-    <link rel="stylesheet" href="../../src/html/style.css">
     <style id="reboot"></style>
     <style id="styles"></style>
+    <link rel="stylesheet" href="../../src/html/reboot.css">
+    <link rel="stylesheet" href="../../src/html/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,80 +14,97 @@
         <div class="user-instructions">
             <h1>Display Preferences</h1>
             <p>
-                This is a web-view version (html) of a SpecsIntact .sec file and is intended to help readers visualize the non-visible parts of the .sec file and how they influences the final product. Specifically, it is a modified version of the .sec that allows users to interact with SpecsIntact formatting "tags", discussed in further detail on the SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+                This is a web version (html) of the <span class="this_section_number"></span> SpecsIntact .sec file (created <span class="create_date"></span>), modified tp allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
             </p>
             <p>Select which elements to display (elements hidden by default):</p>
         </div>
         <div class="user-table-container">
             <table class="user-pref-table">
                 <tr>
-                    <td><strong>User Notes</strong></td>
+                    <td>User Notes</td>
                     <td>
                         <div class="toggle-container">
                             <input type="checkbox" id="notes-toggle-switch" class="toggle-checkbox" />
-                            <label for="notes-toggle-switch" class="toggle-label"><pre>Show User Notes</pre></label>
+                            <label for="notes-toggle-switch" class="toggle-label"><pre>Show Notes</pre></label>
                         </div>
                     </td>
                     <td>
                         <div class="toggle-container">
                             <input type="checkbox" id="nte-toggle-switch" class="toggle-checkbox" />
-                            <label for="nte-toggle-switch" class="toggle-label"><pre>Show &lt;NTE&gt; tags</pre></label>
+                            <label for="nte-toggle-switch" class="toggle-label"><pre>&lt;NTE&gt; tags</pre></label>
                         </div>
                     </td>
                     <td>
                         <div class="toggle-container">
                             <input type="checkbox" id="npr-toggle-switch" class="toggle-checkbox" />
-                            <label for="npr-toggle-switch" class="toggle-label"><pre>Show &lt;NPR&gt; tags</pre></label>
+                            <label for="npr-toggle-switch" class="toggle-label"><pre>&lt;NPR&gt; tags</pre></label>
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <td><strong>Brackets (User Options)</strong></td>
+                    <td>Brackets (Options)</td>
                     <td>
                         <div class="toggle-container">
                             <input type="checkbox" id="brackets-toggle-switch" class="toggle-checkbox" />
-                            <label for="brackets-toggle-switch" class="toggle-label"><pre>Highlight bracketed text</pre></label>
+                            <label for="brackets-toggle-switch" class="toggle-label"><pre>Highlight</pre></label>
                         </div>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td><strong>Add &amp; Delete</strong></td>
+                    <td>Add &amp; Delete</td>
                     <td>
                         <div class="toggle-container">
                             <input type="checkbox" id="add-toggle-switch" class="toggle-checkbox" />
-                            <label for="add-toggle-switch" class="toggle-label"><pre>Show Additions Tags</pre></label>
+                            <label for="add-toggle-switch" class="toggle-label"><pre>Show &lt;ADD&gt; Tags</pre></label>
                         </div>
                     </td>
                     <td>
                         <div class="toggle-container">
                             <input type="checkbox" id="del-toggle-switch" class="toggle-checkbox" />
-                            <label for="del-toggle-switch" class="toggle-label"><pre>Show Deletions Tags</pre></label>
+                            <label for="del-toggle-switch" class="toggle-label"><pre>Show &lt;DEL&gt; Tags</pre></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="add-color-toggle-switch" class="toggle-checkbox" />
+                            <label for="add-color-toggle-switch" class="toggle-label"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="del-color-toggle-switch" class="toggle-checkbox" />
+                            <label for="del-color-toggle-switch" class="toggle-label"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="show-deletions-toggle-switch" class="toggle-checkbox" />
+                            <label for="show-deletions-toggle-switch" class="toggle-label">Show deletions</label>
                         </div>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>
-                        <strong>Unit Labels</strong>
-                    </td>
+                    <td>Units</td>
                     <td>
                         <div class="toggle-container">
                             <input type="checkbox" id="eng-toggle-switch" class="toggle-checkbox" />
-                            <label for="eng-toggle-switch" class="toggle-label"><pre>Show imperial &lt;ENG&gt; tags</pre></label>
+                            <label for="eng-toggle-switch" class="toggle-label"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
                         </div>
                     </td>
                     <td>
                         <div class="toggle-container">
                             <input type="checkbox" id="met-toggle-switch" class="toggle-checkbox" />
-                            <label for="met-toggle-switch" class="toggle-label"><pre>Show metric &lt;MET&gt; tags</pre></label>
+                            <label for="met-toggle-switch" class="toggle-label"><pre>Show Metric &lt;MET&gt; tags</pre></label>
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <strong>References</strong>
-                    </td>
+                    <td>References</td>
                     <td>
                         <div class="toggle-container">
                             <input type="checkbox" id="rid-toggle-switch" class="toggle-checkbox" />
@@ -95,7 +112,83 @@
                         </div>
                     </td>
                     <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="rtl-toggle-switch" class="toggle-checkbox" />
+                            <label for="rtl-toggle-switch" class="toggle-label"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+                        </div>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="color-rid-toggle-switch" class="toggle-checkbox" />
+                            <label for="color-rid-toggle-switch" class="toggle-label">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="color-rtl-toggle-switch" class="toggle-checkbox" />
+                            <label for="color-rtl-toggle-switch" class="toggle-label">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Other Sections</td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="srf-toggle-switch" class="toggle-checkbox" />
+                            <label for="srf-toggle-switch" class="toggle-label"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="stl-toggle-switch" class="toggle-checkbox" />
+                            <label for="stl-toggle-switch" class="toggle-label"><pre>Show Section &lt;STL&gt; tags</pre></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="color-srf-toggle-switch" class="toggle-checkbox" />
+                            <label for="color-srf-toggle-switch" class="toggle-label">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="color-stl-toggle-switch" class="toggle-checkbox" />
+                            <label for="color-stl-toggle-switch" class="toggle-label">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Submittals</td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="sub-toggle-switch" class="toggle-checkbox" />
+                            <label for="sub-toggle-switch" class="toggle-label"><pre>Show &lt;SUB&gt; tags</pre></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="color-sub-toggle-switch" class="toggle-checkbox" />
+                            <label for="color-sub-toggle-switch" class="toggle-label">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+                        </div>
+                    </td>
 
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Tables</td>
+                    <td colspan="3">
+                        <p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
                     </td>
                 </tr>
             </table>

@@ -1,17 +1,27 @@
 :root {
+    --standard-text-color: black;
     --standard-margin: 12px;
 
-    --display-hdr: none;
-    --display-notes: inherit;
-    --display-del: inline-block; /* none or inline-block */
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
 
-    --ref-color: magenta;
     --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
     --add-color: red; 
     --del-color: green;
     --note-color: #aaa;
-    --hdr-color: #aaa;
 
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
 }
 
 
@@ -57,9 +67,6 @@ brk {
 scn,
 stl,
 dte,
-ast,
-npr,
-nte,
 ttl,
 org,
 spt {
@@ -87,21 +94,48 @@ itm {
 }
 
 hdr {
-    color: grey;
-    display: var(--display-hdr);
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
 }
 
 ast {
+    display: block;
     color: grey
 }
 
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+
 scn,
-stl,
+stl:first-of-type,
 dte {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
 }
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
 
 dte {
     margin-bottom: 72px;
@@ -127,8 +161,13 @@ ref org {
 }
 
 rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
     font-weight: normal;
-    color: var(--ref-color);
+    background-color: none;
 }
 
 ref br {
@@ -139,12 +178,19 @@ ref org + br {
     display: none;
 }
 
-del, add {
-    display: inline;
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
 }
 
 del {
-    display: var(--display-del);
+    display: none;
     color: var(--del-color);
 }
 
@@ -154,8 +200,10 @@ ttl {
 }
 
 add {
-    color: var(--add-color);
+    display: inline;
+    color: var(--standard-text-color);
 }
+
 
 sub {
     /* specsintact overrides the standard sub tag for 'submittals' */
@@ -163,26 +211,58 @@ sub {
     font-weight: bold;
     vertical-align: baseline;
     font-size: 16px;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
 }
 
 lst sub {
-    display: block;
+    display: inline;
+    color: var(--sub-color);
     margin: var(--standard-margin) 0;
 }
 
+ttl sub {
+    color: var(--sub-color);
+}
+
 met {
-    background-color: dodgerblue;
-    color: white;
+    background-color:var(--met-bg);
+    color: var(--met-color);
     font-weight: bold;
 }
 
 eng {
-    background-color: tomato;
-    color: white;
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
     font-weight: bold;
 }
 
 
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
 
 .user-selections {
     top: 0;
@@ -210,6 +290,7 @@ eng {
 .user-instructions {
     width: calc(8in + 2 * var(--standard-margin));
     margin-bottom: 12px;
+
 }
 
 .user-instructions p {
@@ -220,15 +301,21 @@ eng {
     overflow: auto;
 }
 
+tr {
+    margin-bottom: 12px;
+}
 
-
+tr td:first-of-type {
+    font-weight: bold;
+}
 
 
 .display_NTE,
 .display_NPR {
     display: none;
-    color: orange;
-    background-color: rgb(235, 211, 166);
+    color: white;
+    background-color: orange;
+    font-weight: bold
 }
 
 .display_ENG,
@@ -238,12 +325,14 @@ eng {
 }
 
 .display_ENG {
-    background-color: rgb(255, 176, 147);
+    background-color: var(--eng-color);
+    color: white;
     font-weight: bold;
 }
 
 .display_MET {
-    background-color: rgb(136, 195, 255);
+    background-color: var(--met-color);
+    color: white;
     font-weight: bold;
 }
 
@@ -254,15 +343,21 @@ eng {
     display: none;
 }
 
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
 .display_DEL {
-    background-color: green;
+    background-color: var(--del-color);
     color: white;
     font-weight: bold;
     display: none;
 }
 
 .display_ADD {
-    background-color: red;
+    background-color: var(--add-color);
     color: white;
     font-weight: bold;
     display: none;
@@ -308,13 +403,8 @@ eng {
 
 }
 
-.display_RID {
 
-}
 
-.display_RTL {
-
-}
 
 .display_SCN {
 
@@ -329,15 +419,17 @@ eng {
 }
 
 .display_SRF {
-
+    display: none;
 }
 
 .display_STL {
-
+    display: none;
 }
 
 .display_SUB {
-
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
 }
 
 .display_TAB {
@@ -363,7 +455,6 @@ eng {
 .display_URL {
 
 }
-
 
 .brackets {
     background-color: yellow;
@@ -393,6 +484,10 @@ button {
     background-color: #555;
 }
 
+button:hover {
+    background-color: dodgerblue;
+}
+
 #menuBtn {
     display: block; 
     position: fixed; 
@@ -405,7 +500,8 @@ button {
     margin: 16px auto;
 
     border: none; 
-    outline: none; 
+    outline: none;
+    color: black; 
     background-color: rgba(30, 143, 255, 0.2);
 
     padding: 6px; 
@@ -416,20 +512,7 @@ button {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 120px;
-    z-index: 99; 
-
-    background-color: #555;
-    color: white;
-
-    padding: 12px; 
-    border-radius: 10px;
-    font-size: 18px;
-}
-
-#topBtn:hover,
-#menuBtn:hover {
-    background-color: dodgerblue;
+    right: 100px;
 }
 
 

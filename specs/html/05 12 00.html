@@ -4,10 +4,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="../../src/html/reboot.css" rel="stylesheet"/>
-<link href="../../src/html/style.css" rel="stylesheet"/>
 <style id="reboot"></style>
 <style id="styles"></style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
 <title>05 12 00.sec Viewer</title>
 </head>
 <body>
@@ -15,79 +15,96 @@
 <div class="user-instructions">
 <h1>Display Preferences</h1>
 <p>
-                This is a web-view version (html) of a SpecsIntact .sec file and is intended to help readers visualize the non-visible parts of the .sec file and how they influences the final product. Specifically, it is a modified version of the .sec that allows users to interact with SpecsIntact formatting "tags", discussed in further detail on the SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+                This is a web version (html) of the <span class="this_section_number">05 12 00</span> SpecsIntact .sec file (created <span class="create_date">2025-11-05 14:53:17</span>), modified tp allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
 </p>
 <p>Select which elements to display (elements hidden by default):</p>
 </div>
 <div class="user-table-container">
 <table class="user-pref-table">
 <tr>
-<td><strong>User Notes</strong></td>
+<td>User Notes</td>
 <td>
 <div class="toggle-container">
 <input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
-<label class="toggle-label" for="notes-toggle-switch"><pre>Show User Notes</pre></label>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
 </div>
 </td>
 <td>
 <div class="toggle-container">
 <input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
-<label class="toggle-label" for="nte-toggle-switch"><pre>Show &lt;NTE&gt; tags</pre></label>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
 </div>
 </td>
 <td>
 <div class="toggle-container">
 <input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
-<label class="toggle-label" for="npr-toggle-switch"><pre>Show &lt;NPR&gt; tags</pre></label>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
 </div>
 </td>
 </tr>
 <tr>
-<td><strong>Brackets (User Options)</strong></td>
+<td>Brackets (Options)</td>
 <td>
 <div class="toggle-container">
 <input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
-<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight bracketed text</pre></label>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
 </div>
 </td>
 <td></td>
 </tr>
 <tr>
-<td><strong>Add &amp; Delete</strong></td>
+<td>Add &amp; Delete</td>
 <td>
 <div class="toggle-container">
 <input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
-<label class="toggle-label" for="add-toggle-switch"><pre>Show Additions Tags</pre></label>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
 </div>
 </td>
 <td>
 <div class="toggle-container">
 <input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
-<label class="toggle-label" for="del-toggle-switch"><pre>Show Deletions Tags</pre></label>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
 </div>
 </td>
 </tr>
 <tr>
+<td></td>
 <td>
-<strong>Unit Labels</strong>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
 </td>
 <td>
 <div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
 <input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
-<label class="toggle-label" for="eng-toggle-switch"><pre>Show imperial &lt;ENG&gt; tags</pre></label>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
 </div>
 </td>
 <td>
 <div class="toggle-container">
 <input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
-<label class="toggle-label" for="met-toggle-switch"><pre>Show metric &lt;MET&gt; tags</pre></label>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
 </div>
 </td>
 </tr>
 <tr>
-<td>
-<strong>References</strong>
-</td>
+<td>References</td>
 <td>
 <div class="toggle-container">
 <input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
@@ -95,6 +112,74 @@
 </div>
 </td>
 <td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="4">
 </td>
 </tr>
 </table>
@@ -128,7 +213,7 @@
 <brk></brk>
 <scn>SECTION 05 12 00</scn>
 <brk></brk>
-<stl>STRUCTURAL STEEL</stl>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>STRUCTURAL STEEL<pre class="display_STL">&lt;/STL&gt;</pre></stl>
 <brk></brk>
 <dte>08/18</dte>
 <brk></brk>
@@ -261,117 +346,117 @@
 <org>AMERICAN INSTITUTE OF STEEL CONSTRUCTION (AISC)</org>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 303<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2016) Code of Standard Practice for Steel Buildings
  and Bridges
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 325<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(2017) Steel Construction Manual</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017) Steel Construction Manual<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 341<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2016) Seismic Provisions for Structural Steel
  Buildings
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 360<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(2016) Specification for Structural Steel Buildings</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) Specification for Structural Steel Buildings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 420<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2010) Certification Standard for Shop Application
  of Complex Protective Coating Systems
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 </ref>
 <ref>
 <org>AMERICAN WELDING SOCIETY (AWS)</org>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS A2.4<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2012) Standard Symbols for Welding, Brazing
  and Nondestructive Examination
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <del><pre class="display_DEL">&lt;DEL&gt;</pre>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2015; Errata 1 2015; Errata 2 2016) Structural
  Welding Code - Steel
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <pre class="display_DEL">&lt;/DEL&gt;</pre></del>
 <add><pre class="display_ADD">&lt;ADD&gt;</pre>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2020; Errata 1 2021) Structural
  Welding Code - Steel
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(2016) Structural Welding Code�Seismic Supplement</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) Structural Welding Code�Seismic Supplement<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 </ref>
 <ref>
 <org>AMERICAN SOCIETY OF MECHANICAL ENGINEERS (ASME)</org>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>ASME B46.1<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2009) Surface Texture, Surface Roughness, Waviness
  and Lay
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 </ref>
 <ref>
 <org>ASTM INTERNATIONAL (ASTM)</org>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM A143/A143M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2007; R 2014) Standard Practice for Safeguarding
  Against Embrittlement of Hot-Dip Galvanized
  Structural Steel Products and Procedure for
  Detecting Embrittlement
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <add><pre class="display_ADD">&lt;ADD&gt;</pre>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM A563<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2021; E 2022a) Standard Specification for Carbon
  and Alloy Steel Nuts
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM B695<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2021) Standard Specification for Coatings of
  Zinc Mechanically Deposited on Iron and Steel
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F3125/F3125M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2015a) Standard Specification for High Strength
  Structural Bolts, Steel and Alloy Steel, Heat
  Treated, 830 MPa and 1040 MPa Minimum Tensile
  Strength, Metric Dimensions
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F959/F959M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2017a) Standard Specification for Compressible-Washer-Type
  Direct Tension Indicators for Use with Structural
  Fasteners, Metric Series
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 </ref>
 <ref>
 <org>CRANE MANUFACTURERS ASSOCIATION OF AMERICA (CMAA)</org>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>CMAA 70<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2015) Specification for Top Running Bridge
  and Gantry Type Multiple Girder Electric Overhead
  Traveling Cranes
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 </ref>
 <ref>
@@ -381,10 +466,10 @@
 </org>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2015) Structural Steelwork Specification for
  Building Construction
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 </ref>
 <ref>
@@ -396,122 +481,122 @@
 <pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1048<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(2007) Fasteners - Hot Dip Galvanized Coatings</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2007) Fasteners - Hot Dip Galvanized Coatings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1180<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <del><pre class="display_DEL">&lt;DEL&gt;</pre>
-<rtl>(2014) Hexagon Head Bolts and Hexagon Head Screws</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2014) Hexagon Head Bolts and Hexagon Head Screws<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <pre class="display_DEL">&lt;/DEL&gt;</pre></del>
 <add><pre class="display_ADD">&lt;ADD&gt;</pre>
-<rtl> 
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre> 
  (2014) Hexagon Head Bolts and Hexagon Screws
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1181<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(2014) Hexagon Nuts and Hexagon Thin Nuts</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2014) Hexagon Nuts and Hexagon Thin Nuts<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2013) Sets of High Strength Hexagon Bolt, Hexagon
  Nut and Plain Washers for Friction Grip Joints
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1198<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(2011) Headed Studs</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2011) Headed Studs<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(2015) Set of Anchor Bolt for Structures</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Set of Anchor Bolt for Structures<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3106<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <del><pre class="display_DEL">&lt;DEL&gt;</pre>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2017) Rolled Steels for Welded Structure (Amendment
  1)
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <pre class="display_DEL">&lt;/DEL&gt;</pre></del>
 <add><pre class="display_ADD">&lt;ADD&gt;</pre>
-<rtl>(2020) Rolled Steels for Welded Structure</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2020) Rolled Steels for Welded Structure<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1256<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(2008) Plain Washers</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2008) Plain Washers<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3136<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <del><pre class="display_DEL">&lt;DEL&gt;</pre>
-<rtl>(2012) Rolled Steel for Building Structures</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2012) Rolled Steel for Building Structures<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <pre class="display_DEL">&lt;/DEL&gt;</pre></del>
 <add><pre class="display_ADD">&lt;ADD&gt;</pre>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2022)
  Rolled Steels for Building Structure
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3192<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2014) Dimensions, Mass and Permissible Variations
  of Hot Rolled Steel Sections
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3193<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2008) Dimensions, Mass and Permissible Variations
  of Hot Rolled Steel Plates, Sheets, and Strips
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3444<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>16<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
-<add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Carbon Steel Tubes for General Structure</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>16<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Carbon Steel Tubes for General Structure<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3466<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>15<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>15<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
 <add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>
  ) Carbon Steel Square and Rectangular
  Tubes for General Structure
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 4321<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(2000) Stainless Steel for Building Structure</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2000) Stainless Steel for Building Structure<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z2305<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2013) Non-destructive Testing - Qualification
  and Certification of Personnel
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8641<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>07<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
-<add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Hot Dip Galvanized Coatings</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>07<pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Hot Dip Galvanized Coatings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 5674<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2019) Lead-Free, Chromium-Free Anticorrosive
  Paints
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3021<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2016) Welding and Allied Processes - Symbolic
  Representation
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3060<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2015) Method of Ultrasonic Testing for Welds
  of Ferritic Steel
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 </ref>
 <ref>
 <org>JAPANESE SOCIETY OF STEEL CONSTRUCTION (JSS)</org>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>JSS II 09<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2015) Sets of Torshear Type High Strength Bolt,
  Hexagonal Nut and Plain Washer for Structural
  Joints
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 </ref>
 <ref>
@@ -524,10 +609,10 @@
 </org>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2019) Public Building Construction Standard
  Specifications - Ch.7 Steel Frame Work
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 </ref>
 <ref>
@@ -540,16 +625,16 @@
 </org>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>SSPC PA 1<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2016) Shop, Field, and Maintenance Coating
  of Metals
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>SSPC SP 3<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(1982; E 2004) Power Tool Cleaning</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(1982; E 2004) Power Tool Cleaning<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>SSPC SP 6/NACE No.3<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>(2007) Commercial Blast Cleaning</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2007) Commercial Blast Cleaning<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 </ref>
 <ref>
@@ -557,13 +642,13 @@
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 3-301-01<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 <del><pre class="display_DEL">&lt;DEL&gt;</pre>
-<rtl>(2019) Structural Engineering</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2019) Structural Engineering<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <pre class="display_DEL">&lt;/DEL&gt;</pre></del>
 <add><pre class="display_ADD">&lt;ADD&gt;</pre>
-<rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
  (2023; with Change
  1, 2023) Structural Engineering
- </rtl>
+ <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 <brk></brk>
 </ref>
@@ -571,7 +656,7 @@
 <org>U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)</org>
 <brk></brk>
 <rid><pre class="display_RID">&lt;RID&gt;</pre>29 CFR Part 1926, Subpart R<pre class="display_RID">&lt;/RID&gt;</pre></rid>
-<rtl>Steel Erection</rtl>
+<rtl><pre class="display_RTL">&lt;RTL&gt;</pre>Steel Erection<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl>
 <brk></brk>
 </ref>
 </spt>
@@ -582,7 +667,7 @@
 <brk></brk>
 <ast><hr/></ast>
 <brk></brk>
-<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review Submittal Description (SD) definitions in Section <srf>01 33 00</srf>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review Submittal Description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf>
  SUBMITTAL
  PROCEDURES and edit the following list to reflect only the submittals required
  for the project.
@@ -610,106 +695,106 @@
  are <div class="brackets">[for Contractor Quality Control approval.]</div><div class="brackets">[for information only. When used, a designation following the
  "G" designation identifies the office that will review the submittal for the Government.]</div> Submit the following
  in accordance with Section
- <srf>01 33 00</srf> SUBMITTAL PROCEDURES:</txt>
+ <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt>
 <brk></brk>
 <lst>
-<sub>SD-01 Preconstruction Submittals</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-01 Preconstruction Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </lst>
 <brk></brk>
 <itm>
-<sub>Erection and Erection Bracing Drawings</sub>; <sub>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div></sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Erection and Erection Bracing Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk>
 <lst>
-<sub>SD-02 Shop Drawings</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-02 Shop Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </lst>
 <brk></brk>
 <itm>
-<sub>Fabrication Drawings</sub> Including Details of Connections; <sub>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div></sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Fabrication Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> Including Details of Connections; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk>
 <lst>
-<sub>SD-03 Product Data</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-03 Product Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </lst>
 <brk></brk>
 <itm>
-<sub>Shop Primer</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Shop Primer<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk>
 <itm>
-<sub>Welding Electrodes and Rods</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Welding Electrodes and Rods<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk>
 <itm>
-<sub>Direct Tension Indicator Washers</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Direct Tension Indicator Washers<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk>
 <itm>
-<sub>Non-Shrink Grout</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Non-Shrink Grout<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk>
 <itm>
-<sub>Tension Control Bolts</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Tension Control Bolts<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk>
 <lst>
-<sub>SD-05 Design Data</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-05 Design Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </lst>
 <brk></brk>
 <div class="brackets">[
  <itm>
-<sub>Shoring and Temporary Bracing</sub>; <sub>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div></sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Shoring and Temporary Bracing<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk> 
  ]</div>
 <lst>
-<sub>SD-06 Test Reports</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-06 Test Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </lst>
 <brk></brk>
 <itm>
-<sub>Class B Coating</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Class B Coating<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk>
 <itm>
-<sub>Weld Inspection Reports</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Weld Inspection Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk>
 <itm>
-<sub>Direct Tension Indicator Washer Inspection Reports</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Direct Tension Indicator Washer Inspection Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk>
 <itm>
-<sub>Bolt Testing Reports</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Bolt Testing Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk>
 <div class="brackets">[
  <itm>
-<sub>Embrittlement Test Reports</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Embrittlement Test Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk> 
  ]</div>
 <lst>
-<sub>SD-07 Certificates</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-07 Certificates<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </lst>
 <brk></brk> 
  ]<div class="brackets">[
  <itm>
-<sub>MLIT Structural Steel Fabricator Quality Certification</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>MLIT Structural Steel Fabricator Quality Certification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk> 
  ]</div><div class="brackets">[
  <itm>
-<sub>MLIT Structural Steel Erector Quality Certification</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>MLIT Structural Steel Erector Quality Certification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk> 
  ]</div>
 <itm>
-<sub>Welding Procedure Specifications (WPS)</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Welding Procedure Specifications (WPS)<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk>
 <div class="brackets">[
  <itm>
-<sub>Overhead, Top Running Crane Rail Beam</sub>
+<sub><pre class="display_SUB">&lt;SUB&gt;</pre>Overhead, Top Running Crane Rail Beam<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
 </itm>
 <brk></brk> 
  ]</div>
@@ -742,15 +827,15 @@
 <brk></brk>
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<txt>Work must be fabricated by MLIT Structural Steel Fabricator, Category M <div class="brackets">[R]</div> <div class="brackets">[H]</div>. Submit <sub>
+<txt>Work must be fabricated by MLIT Structural Steel Fabricator, Category M <div class="brackets">[R]</div> <div class="brackets">[H]</div>. Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>
  MLIT Structural Steel
  Fabricator quality certification
- </sub>.</txt>
+ <pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt>
 <brk></brk>
-<txt>Work must be erected by MLIT Structural Steel Certified Erector. Submit <sub>
+<txt>Work must be erected by MLIT Structural Steel Certified Erector. Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>
  MLIT Structural Steel erector quality
  certification
- </sub>.</txt>
+ <pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt>
 <brk></brk>
 </spt> 
  ]</div><div class="brackets">[
@@ -782,7 +867,7 @@
 <brk></brk>
 <spt outline="1.5.1.1">
 <ttl>1.5.1.1 
-Erection and Erection Bracing Drawings
+&lt;SUB&gt;Erection and Erection Bracing Drawings&lt;/SUB&gt;
 </ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
@@ -821,15 +906,15 @@ Erection and Erection Bracing Drawings
 <brk></brk>
 <pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<txt>Submit <sub>fabrication drawings</sub> for approval prior to fabrication. Prepare in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid> 
+<txt>Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>fabrication drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> for approval prior to fabrication. Prepare in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid> 
  . Fabrication drawings must not be reproductions of contract drawings.<div class="brackets">[ Sign and seal fabrication drawings
  by a registered professional engineer.]</div> Include complete information for the fabrication and erection of the
  structure's components, including the location, type, and size of bolts, welds, member sizes and lengths, connection
  details, blocks, copes, and cuts. Use
- <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS A2.4<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3021<pre class="display_RID">&lt;/RID&gt;</pre></rid> standard welding symbols.<div class="brackets">[ <sub>
+ <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS A2.4<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3021<pre class="display_RID">&lt;/RID&gt;</pre></rid> standard welding symbols.<div class="brackets">[ <sub><pre class="display_SUB">&lt;SUB&gt;</pre>
  Shoring and temporary
  bracing
- </sub>
+ <pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
  must be designed and sealed by a registered professional engineer and submitted for record purposes<div class="brackets">[,
  with calculations,]</div> as part of the drawings.]</div> Clearly highlight any deviations from the details shown on the
  contract drawings highlighted on the fabrication drawings. Explain the reasons for any deviations from the contract
@@ -888,7 +973,7 @@ Erection and Erection Bracing Drawings
 <div class="brackets">[
  <spt outline="1.5.3.2">
 <ttl>1.5.3.2 
-Overhead, Top Running Crane Rail Beam
+&lt;SUB&gt;Overhead, Top Running Crane Rail Beam&lt;/SUB&gt;
 </ttl>
 <brk></brk>
 <txt>
@@ -1270,7 +1355,7 @@ Overhead, Top Running Crane Rail Beam
 </spt>
 <spt outline="2.3.2.3">
 <ttl>2.3.2.3 
-Direct Tension Indicator Washers
+&lt;SUB&gt;Direct Tension Indicator Washers&lt;/SUB&gt;
 </ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
@@ -1306,7 +1391,7 @@ Direct Tension Indicator Washers
 </spt>
 <spt outline="2.3.3">
 <ttl>2.3.3 
-Tension Control Bolts
+&lt;SUB&gt;Tension Control Bolts&lt;/SUB&gt;
 </ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
@@ -1403,7 +1488,7 @@ Tension Control Bolts
 <brk></brk>
 <spt outline="2.4.1">
 <ttl>2.4.1 
-Welding Electrodes and Rods
+&lt;SUB&gt;Welding Electrodes and Rods&lt;/SUB&gt;
 </ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
@@ -1427,7 +1512,7 @@ Welding Electrodes and Rods
 </spt>
 <spt outline="2.4.2">
 <ttl>2.4.2 
-Non-Shrink Grout
+&lt;SUB&gt;Non-Shrink Grout&lt;/SUB&gt;
 </ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
@@ -1594,7 +1679,7 @@ Non-Shrink Grout
 </spt>
 <spt outline="2.6.2">
 <ttl>2.6.2 
-Shop Primer
+&lt;SUB&gt;Shop Primer&lt;/SUB&gt;
 </ttl>
 <brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre>
@@ -1644,7 +1729,7 @@ Shop Primer
  <pre class="display_ADD">&lt;/ADD&gt;</pre></add>
 </txt>
 <brk></brk>
-<txt>Prime slip critical surfaces with a <sub>Class B coating</sub> in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 325<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+<txt>Prime slip critical surfaces with a <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Class B coating<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 325<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  . Submit test report for Class
  B coating.
  </txt>
@@ -1683,7 +1768,7 @@ Shop Primer
 <txt>
  Clean and prepare surfaces to receive <div class="brackets">[sprayed-on fireproofing]</div> <div class="brackets">[epoxy]</div> coatings in accordance with the manufacturer's
  recommendations, and as specified in Section
- <srf>07 81 00</srf> SPRAY-APPLIED FIREPROOFING.</txt>
+ <srf><pre class="display_SRF">&lt;SRF&gt;</pre>07 81 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SPRAY-APPLIED FIREPROOFING.</txt>
 <brk></brk>
 </spt> 
  ]</div><div class="brackets">[
@@ -1846,7 +1931,7 @@ Shop Primer
  Provide
  <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> qualified welders, welding operators, and tackers.</txt>
 <brk></brk>
-<txt>Develop and submit the <sub>Welding Procedure Specifications (WPS)</sub>
+<txt>Develop and submit the <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Welding Procedure Specifications (WPS)<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
  for all welding, including welding done using prequalified
  procedures. Submit for approval all WPS, whether prequalified or qualified by testing.
  </txt>
@@ -1989,10 +2074,10 @@ Shop Primer
  be inspected by magnetic particle testing (MT) or dye penetrant testing (PT) as approved by the Contracting Officer.
  When groove welds made by an individual welder are required to be tested, magnetic particle or dye penetrant
  testing may be used only in areas inaccessible to ultrasonic testing. Retest all repaired areas. Submit
- <sub>
+ <sub><pre class="display_SUB">&lt;SUB&gt;</pre>
  weld
  inspection reports
- </sub>.</txt>
+ <pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt>
 <brk></brk>
 <txt>Testing frequency: Provide the following types and number of tests:</txt>
 <brk></brk>
@@ -2089,10 +2174,10 @@ Shop Primer
  in place to verify that they have been compressed sufficiently to provide
  the
  <met><pre class="display_MET">&lt;MET&gt;</pre> 0.38 mm<pre class="display_MET">&lt;/MET&gt;</pre></met>
-<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.015 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> gap, as required by <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F959/F959M<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Submit <sub>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.015 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> gap, as required by <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F959/F959M<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>
  direct tension indicator washer inspection
  reports
- </sub>.</txt>
+ <pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt>
 <brk></brk>
 </spt>
 <div class="brackets">[
@@ -2145,7 +2230,7 @@ Shop Primer
  bolt size and grade. The bolt tension must be developed by tightening the nut. A representative of the manufacturer
  or supplier must be present to ensure that the fasteners are properly used, and to demonstrate that the fastener
  assemblies supplied satisfy the specified requirements. Submit
- <sub>bolt testing reports</sub>.</txt>
+ <sub><pre class="display_SUB">&lt;SUB&gt;</pre>bolt testing reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt>
 <brk></brk>
 </spt>
 <spt outline="3.7.3.2">
@@ -2154,7 +2239,7 @@ Shop Primer
 <txt>Inspection procedures must be in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid>
  . As a minimum, high-strength bolting
  inspection tasks shall be in accordance with Section
- <srf>01 45 35</srf>
+ <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 45 35<pre class="display_SRF">&lt;/SRF&gt;</pre></srf>
  SPECIAL INSPECTION. Confirm and report to the
  Contracting Officer that the materials meet the project specification and that they are properly stored. Confirm
  that the faying surfaces have been properly prepared before the connections are assembled. Observe the specified
@@ -2186,7 +2271,7 @@ Shop Primer
 <brk></brk>
 <txt>
 <tst>
-<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM A143/A143M<pre class="display_RID">&lt;/RID&gt;</pre></rid> for steel products hot-dip galvanized after fabrication.</tst> Submit <sub>embrittlement test reports</sub>.</txt>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM A143/A143M<pre class="display_RID">&lt;/RID&gt;</pre></rid> for steel products hot-dip galvanized after fabrication.</tst> Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>embrittlement test reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt>
 <brk></brk>
 </spt> 
  ]</div>
