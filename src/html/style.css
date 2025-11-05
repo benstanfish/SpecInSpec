@@ -267,7 +267,7 @@ tab cel {
 .user-selections {
     top: 0;
     position: fixed;
-    display: block;
+    display: none;
 
     background-color: aliceblue;
     border: 1px solid dodgerblue;
@@ -485,22 +485,33 @@ button {
 }
 
 button:hover {
-    background-color: dodgerblue;
+    background-color: dodgerblue !important;
 }
 
-#indexBtn {
-    display: block; 
-    position: fixed; 
-    bottom: 70px; 
-    right: 30px;
-}
+
 
 #menuBtn {
     display: block; 
     position: fixed; 
     bottom: 20px; 
     right: 30px;
+    background-color: darkslateblue;
 }
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
 
 #hideBtn {
     display: block;
@@ -515,12 +526,6 @@ button:hover {
     border: 1px solid dodgerblue;
 }
 
-#topBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 100px;
-}
 
 
 

@@ -157,7 +157,7 @@ function topFunction() {
 function toggleMenu() {
     let menuElement = document.querySelector('.user-selections');
     let mainElement = document.querySelector('main');
-    if (menuElement.style.display == 'none') {
+    if (menuElement.style.display != 'block') {
         menuElement.style.display = 'block';
         mainElement.style.marginTop = '200px';
     } else {
