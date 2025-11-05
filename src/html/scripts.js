@@ -143,6 +143,11 @@ function scrollFunction() {
   }
 }
 
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
 
 function topFunction() {
   document.body.scrollTop = 0; // For Safari

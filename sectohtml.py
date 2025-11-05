@@ -108,7 +108,15 @@ def update_html_outline(soup: BeautifulSoup) -> BeautifulSoup:
                 title_element.string = element.attrs['outline'] + ' ' + title_element.text
     return soup
 
-test_file = './specs/cleaned_sec/03 30 00.sec'
+
+
+
+
+
+
+
+
+test_file = './specs/cleaned_sec/05 12 00.sec'
 
 tree = ET.parse(test_file)
 root = tree.getroot()

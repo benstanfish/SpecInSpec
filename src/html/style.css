@@ -488,6 +488,13 @@ button:hover {
     background-color: dodgerblue;
 }
 
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 70px; 
+    right: 30px;
+}
+
 #menuBtn {
     display: block; 
     position: fixed; 
