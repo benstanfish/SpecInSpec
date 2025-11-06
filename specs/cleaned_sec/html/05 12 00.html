@@ -4,8 +4,628 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<style id="reboot"></style>
-<style id="styles"></style>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
 <link href="../../src/html/reboot.css" rel="stylesheet"/>
 <link href="../../src/html/style.css" rel="stylesheet"/>
 <title>05 12 00.sec Viewer</title>
@@ -15,7 +635,7 @@
 <div class="user-instructions">
 <h1>Display Preferences</h1>
 <p>
-                This is a web version (html) of the <span class="this_section_number">05 12 00</span> SpecsIntact .sec file (created <span class="create_date">2025-11-05 16:44:25</span>), modified tp allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+                This is a web version (html) of the <span class="this_section_number">05 12 00</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 12:27:54</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
 </p>
 <p>Select which elements to display (elements hidden by default):</p>
 </div>
@@ -382,29 +1002,29 @@ the second bracketed item for Army projects.<pre class="display_NPR">&lt;/NPR&gt
 are <div class="brackets">[for Contractor Quality Control approval.]</div><div class="brackets">[for information only. When used, a designation following the 
 "G" designation identifies the office that will review the submittal for the Government.]</div> Submit the following 
 in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
-<lst><sub>SD-01 Preconstruction Submittals</sub></lst><brk></brk>
-<itm><sub>Erection and Erection Bracing Drawings</sub>; <sub>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div></sub></itm><brk></brk>
-<lst><sub>SD-02 Shop Drawings</sub></lst><brk></brk>
-<itm><sub>Fabrication Drawings</sub> Including Details of Connections; <sub>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div></sub></itm><brk></brk>
-<lst><sub>SD-03 Product Data</sub></lst><brk></brk>
-<itm><sub>Shop Primer</sub></itm><brk></brk>
-<itm><sub>Welding Electrodes and Rods</sub></itm><brk></brk>
-<itm><sub>Direct Tension Indicator Washers</sub></itm><brk></brk>
-<itm><sub>Non-Shrink Grout</sub></itm><brk></brk>
-<itm><sub>Tension Control Bolts</sub></itm><brk></brk>
-<lst><sub>SD-05 Design Data</sub></lst><brk></brk>
-<div class="brackets">[<itm><sub>Shoring and Temporary Bracing</sub>; <sub>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div></sub></itm><brk></brk>
-]</div><lst><sub>SD-06 Test Reports</sub></lst><brk></brk>
-<itm><sub>Class B Coating</sub></itm><brk></brk>
-<itm><sub>Weld Inspection Reports</sub></itm><brk></brk>
-<itm><sub>Direct Tension Indicator Washer Inspection Reports</sub></itm><brk></brk>
-<itm><sub>Bolt Testing Reports</sub></itm><brk></brk>
-<div class="brackets">[<itm><sub>Embrittlement Test Reports</sub></itm><brk></brk>
-]</div><lst><sub>SD-07 Certificates</sub></lst><brk></brk>
-]<div class="brackets">[<itm><sub>MLIT Structural Steel Fabricator Quality Certification</sub></itm><brk></brk>
-]</div><div class="brackets">[<itm><sub>MLIT Structural Steel Erector Quality Certification</sub></itm><brk></brk>
-]</div><itm><sub>Welding Procedure Specifications (WPS)</sub></itm><brk></brk>
-<div class="brackets">[<itm><sub>Overhead, Top Running Crane Rail Beam</sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-01 Preconstruction Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Erection and Erection Bracing Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-02 Shop Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Fabrication Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> Including Details of Connections; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-03 Product Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Shop Primer<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Welding Electrodes and Rods<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Direct Tension Indicator Washers<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Non-Shrink Grout<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Tension Control Bolts<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-05 Design Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Shoring and Temporary Bracing<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+]</div><lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-06 Test Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Class B Coating<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Weld Inspection Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Direct Tension Indicator Washer Inspection Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Bolt Testing Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Embrittlement Test Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+]</div><lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-07 Certificates<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+]<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>MLIT Structural Steel Fabricator Quality Certification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+]</div><div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>MLIT Structural Steel Erector Quality Certification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+]</div><itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Welding Procedure Specifications (WPS)<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Overhead, Top Running Crane Rail Beam<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
 ]</div></spt><div class="brackets">[<spt outline="1.3"><ttl>1.3 MLIT QUALITY CERTIFICATION</ttl><brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
 <ast><hr/></ast><brk></brk>
@@ -421,10 +1041,10 @@ Category R is limited to buildings 5 floors or less, floor area 3000 square
 meters or less, grade of steel material 490N or less, steel plate 25mm or less. <pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
 <ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<txt>Work must be fabricated by MLIT Structural Steel Fabricator, Category M <div class="brackets">[R]</div> <div class="brackets">[H]</div>. Submit <sub>MLIT Structural Steel 
-Fabricator quality certification</sub>.</txt><brk></brk>
-<txt>Work must be erected by MLIT Structural Steel Certified Erector. Submit <sub>MLIT Structural Steel erector quality 
-certification</sub>.</txt><brk></brk></spt>
+<txt>Work must be fabricated by MLIT Structural Steel Fabricator, Category M <div class="brackets">[R]</div> <div class="brackets">[H]</div>. Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>MLIT Structural Steel 
+Fabricator quality certification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt><brk></brk>
+<txt>Work must be erected by MLIT Structural Steel Certified Erector. Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>MLIT Structural Steel erector quality 
+certification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt><brk></brk></spt>
 ]</div><div class="brackets">[<spt outline="1.4"><ttl>1.4 SEISMIC PROVISIONS</ttl><brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
 <ast><hr/></ast><brk></brk>
@@ -435,7 +1055,7 @@ by the Contractor.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
 <txt>Provide the structural steel system in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre> AISC 341<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Chapter J as amended by <rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 3-301-01<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
 ]</div><spt outline="1.5"><ttl>1.5 QUALITY ASSURANCE</ttl><brk></brk>
 <spt outline="1.5.1"><ttl>1.5.1 Preconstruction Submittals</ttl><brk></brk>
-<spt outline="1.5.1.1"><ttl>1.5.1.1 <sub>Erection and Erection Bracing Drawings</sub></ttl><brk></brk>
+<spt outline="1.5.1.1"><ttl>1.5.1.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Erection and Erection Bracing Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
 <ast><hr/></ast><brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the last line when delegated design is performed by the contractor.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
@@ -451,12 +1071,12 @@ by a registered professional engineer.]</div></txt><brk></brk></spt>
 when delegated design is performed by the contractor.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
 <ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
-<txt>Submit <sub>fabrication drawings</sub> for approval prior to fabrication. Prepare in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+<txt>Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>fabrication drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> for approval prior to fabrication. Prepare in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid>
 . Fabrication drawings must not be reproductions of contract drawings.<div class="brackets">[ Sign and seal fabrication drawings 
 by a registered professional engineer.]</div> Include complete information for the fabrication and erection of the 
 structure's components, including the location, type, and size of bolts, welds, member sizes and lengths, connection 
-details, blocks, copes, and cuts. Use <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS A2.4<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3021<pre class="display_RID">&lt;/RID&gt;</pre></rid> standard welding symbols.<div class="brackets">[ <sub>Shoring and temporary 
-bracing</sub> must be designed and sealed by a registered professional engineer and submitted for record purposes<div class="brackets">[, 
+details, blocks, copes, and cuts. Use <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS A2.4<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3021<pre class="display_RID">&lt;/RID&gt;</pre></rid> standard welding symbols.<div class="brackets">[ <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Shoring and temporary 
+bracing<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> must be designed and sealed by a registered professional engineer and submitted for record purposes<div class="brackets">[, 
 with calculations,]</div> as part of the drawings.]</div> Clearly highlight any deviations from the details shown on the 
 contract drawings highlighted on the fabrication drawings. Explain the reasons for any deviations from the contract 
 drawings.</txt><brk></brk></spt>
@@ -484,7 +1104,7 @@ in the project.<brk></brk>
 NAVINST 11230.1F refers to CMAA for new equipment installation.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
 <ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk></spt>
-<div class="brackets">[<spt outline="1.5.3.2"><ttl>1.5.3.2 <sub>Overhead, Top Running Crane Rail Beam</sub></ttl><brk></brk>
+<div class="brackets">[<spt outline="1.5.3.2"><ttl>1.5.3.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Overhead, Top Running Crane Rail Beam<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
 <txt>Submit written field survey results for overhead, top running crane rail beam verifying tolerance requirements 
 per <rid><pre class="display_RID">&lt;RID&gt;</pre>CMAA 70<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
 ]</div></spt></spt></prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
@@ -666,7 +1286,7 @@ is required, edit to provide either F8T for 12G SHTB type fasteners.<pre class="
 <txt><div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Type F8T hot dipped zinc coating]</div> <div class="brackets">[MLIT certified 12G SHTB hot dipped zinc coating]</div>.</txt><brk></brk></spt>
 <spt outline="2.3.2.2"><ttl>2.3.2.2 Nuts</ttl><brk></brk>
 <txt><rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>, F10 <div class="brackets">[hot dipped zinc coating]</div>.</txt><brk></brk></spt>
-<spt outline="2.3.2.3"><ttl>2.3.2.3 <sub>Direct Tension Indicator Washers</sub></ttl><brk></brk>
+<spt outline="2.3.2.3"><ttl>2.3.2.3 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Direct Tension Indicator Washers<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
 <ast><hr/></ast><brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: If direct tension indicator washers are not used then tension control 
@@ -679,7 +1299,7 @@ Include bracketed phrase if tension indicator washers are to be galvanized.<pre 
 indicator washers.</txt><brk></brk></spt>
 <spt outline="2.3.2.4"><ttl>2.3.2.4 Washers</ttl><brk></brk>
 <txt><rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1186<pre class="display_RID">&lt;/RID&gt;</pre></rid>, F35, plain carbon steel <div class="brackets">[hot dipped zinc coating]</div>.</txt><brk></brk></spt>
-</spt><spt outline="2.3.3"><ttl>2.3.3 <sub>Tension Control Bolts</sub></ttl><brk></brk>
+</spt><spt outline="2.3.3"><ttl>2.3.3 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Tension Control Bolts<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
 <ast><hr/></ast><brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use Grade F1852 where high strength bolts (AISC Group A) with a minimum 
@@ -719,7 +1339,7 @@ G 4321 Type SUS316A conforming to <rid><pre class="display_RID">&lt;RID&gt;</pre
 <txt><rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid> ABR 400 <div class="brackets">[ABR490]</div> <div class="brackets">[hot dipped galvanized]</div>. <div class="brackets">[Stainless steel <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 4321<pre class="display_RID">&lt;/RID&gt;</pre></rid> Type SUS304A <div class="brackets">[Type SUS316A]</div> 
 conforming to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS B 1220<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>.</txt><brk></brk></spt>
 </spt></spt><spt outline="2.4"><ttl>2.4 STRUCTURAL STEEL ACCESSORIES</ttl><brk></brk>
-<spt outline="2.4.1"><ttl>2.4.1 <sub>Welding Electrodes and Rods</sub></ttl><brk></brk>
+<spt outline="2.4.1"><ttl>2.4.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Welding Electrodes and Rods<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
 <ast><hr/></ast><brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include AWS D1.8/D1.8M when required for seismic resisting systems.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
@@ -728,7 +1348,7 @@ rods and wire. Refer to JASS 6, Table 3.4 - "JIS Standards for Welding Materials
 <ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk>
 <txt><rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid><div class="brackets">[ and <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>. Submit product data for welding electrodes and rods.</txt><brk></brk></spt>
-<spt outline="2.4.2"><ttl>2.4.2 <sub>Non-Shrink Grout</sub></ttl><brk></brk>
+<spt outline="2.4.2"><ttl>2.4.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Non-Shrink Grout<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
 <ast><hr/></ast><brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Some nonshrink grouts derive their nonshrink properties from an increase 
@@ -804,7 +1424,7 @@ paint shop and SPE-P3 is for an outside paint shop. There are other paint shop
 qualification including NACE and SSPC which exceed AISC paint endorsements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
 <ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
 <brk></brk></spt>
-<spt outline="2.6.2"><ttl>2.6.2 <sub>Shop Primer</sub></ttl><brk></brk>
+<spt outline="2.6.2"><ttl>2.6.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Shop Primer<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
 <ast><hr/></ast><brk></brk>
 <npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Generally, for interior use, standard structural steel with a minimum 
@@ -826,7 +1446,7 @@ are to be welded). If flash rusting occurs, re-clean the surface prior to applic
 <div class="brackets">[_____]</div>to a minimum dry film thickness of<met><pre class="display_MET">&lt;MET&gt;</pre> 0.05 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2.0 mil<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Submit shop primer product data.<add><pre class="display_ADD">&lt;ADD&gt;</pre> See Section 09 90 
 00 PAINTS AND COATINGS and Section 09 97 13.27 HIGH PERFORMANCE COATING FOR STEEL STRUCTURES for finish coating 
 requirements, where applicable.<pre class="display_ADD">&lt;/ADD&gt;</pre></add></txt><brk></brk>
-<txt>Prime slip critical surfaces with a <sub>Class B coating</sub> in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 325<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Submit test report for Class 
+<txt>Prime slip critical surfaces with a <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Class B coating<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 325<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Submit test report for Class 
 B coating. </txt><brk></brk>
 <txt>Prior to assembly, prime surfaces which will be concealed or inaccessible after assembly. Do not apply primer 
 in foggy or rainy weather; when the ambient temperature is below<met><pre class="display_MET">&lt;MET&gt;</pre> 7 degrees C or over 35 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 45 degrees 
@@ -904,7 +1524,7 @@ after approval has been obtained from the Contracting Officer.</txt><brk></brk><
 <brk></brk>
 <txt>Welding must be in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid><div class="brackets">[ and <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>.<div class="brackets">[ Grind exposed welds smooth as indicated.]</div> 
 Provide <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> qualified welders, welding operators, and tackers.</txt><brk></brk>
-<txt>Develop and submit the <sub>Welding Procedure Specifications (WPS)</sub> for all welding, including welding done using prequalified 
+<txt>Develop and submit the <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Welding Procedure Specifications (WPS)<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> for all welding, including welding done using prequalified 
 procedures. Submit for approval all WPS, whether prequalified or qualified by testing.</txt><brk></brk>
 <spt outline="3.4.1"><ttl>3.4.1 Removal of Temporary Welds, Run-Off Plates, and Backing Strips</ttl><brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
@@ -968,8 +1588,8 @@ If more than <div class="brackets">[20]</div> <div class="brackets">[_____]</div
 welds made by that welder must be tested by ultrasonic testing</tst>, and all fillet welds made by that welder must 
 be inspected by magnetic particle testing (MT) or dye penetrant testing (PT) as approved by the Contracting Officer. 
 When groove welds made by an individual welder are required to be tested, magnetic particle or dye penetrant 
-testing may be used only in areas inaccessible to ultrasonic testing. Retest all repaired areas. Submit <sub>weld 
-inspection reports</sub>.</txt><brk></brk>
+testing may be used only in areas inaccessible to ultrasonic testing. Retest all repaired areas. Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>weld 
+inspection reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt><brk></brk>
 <txt>Testing frequency: Provide the following types and number of tests:</txt><brk></brk>
 <hl4><tab width="92">
 <wbk>
@@ -1031,8 +1651,8 @@ inspection reports</sub>.</txt><brk></brk>
 </spt><spt outline="3.7.2"><ttl>3.7.2 Direct Tension Indicator Washers</ttl><brk></brk>
 <spt outline="3.7.2.1"><ttl>3.7.2.1 Direct Tension Indicator Washer Compression</ttl><brk></brk>
 <txt><tst>Test direct tension indicator washers</tst> in place to verify that they have been compressed sufficiently to provide 
-the<met><pre class="display_MET">&lt;MET&gt;</pre> 0.38 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.015 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> gap, as required by <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F959/F959M<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Submit <sub>direct tension indicator washer inspection 
-reports</sub>.</txt><brk></brk></spt>
+the<met><pre class="display_MET">&lt;MET&gt;</pre> 0.38 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.015 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> gap, as required by <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM F959/F959M<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>direct tension indicator washer inspection 
+reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt><brk></brk></spt>
 <div class="brackets">[<spt outline="3.7.2.2"><ttl>3.7.2.2 Direct Tension Indicator Gaps</ttl><brk></brk>
 <nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
 <ast><hr/></ast><brk></brk>
@@ -1053,7 +1673,7 @@ measuring device at the job site prior to the beginning of bolting start-up. Dem
 nuts, when used together, can develop tension not less than the provisions specified in <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 360<pre class="display_RID">&lt;/RID&gt;</pre></rid>, depending on 
 bolt size and grade. The bolt tension must be developed by tightening the nut. A representative of the manufacturer 
 or supplier must be present to ensure that the fasteners are properly used, and to demonstrate that the fastener 
-assemblies supplied satisfy the specified requirements. Submit <sub>bolt testing reports</sub>.</txt><brk></brk></spt>
+assemblies supplied satisfy the specified requirements. Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>bolt testing reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt><brk></brk></spt>
 <spt outline="3.7.3.2"><ttl>3.7.3.2 Inspection</ttl><brk></brk>
 <txt>Inspection procedures must be in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid>. As a minimum, high-strength bolting 
 inspection tasks shall be in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 45 35<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SPECIAL INSPECTION. Confirm and report to the 
@@ -1071,7 +1691,7 @@ by the Contracting Officer. If more than <div class="brackets">[10]</div> <div c
 by testing, then all bolts used from the batch from which the tested bolts were taken, must be tested at the 
 Contractor's expense. Retest new bolts after installation at the Contractor's expense.</txt><brk></brk></spt>
 </spt><div class="brackets">[<spt outline="3.7.4"><ttl>3.7.4 Testing for Embrittlement</ttl><brk></brk>
-<txt><tst><rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM A143/A143M<pre class="display_RID">&lt;/RID&gt;</pre></rid> for steel products hot-dip galvanized after fabrication.</tst> Submit <sub>embrittlement test reports</sub>.</txt><brk></brk></spt>
+<txt><tst><rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM A143/A143M<pre class="display_RID">&lt;/RID&gt;</pre></rid> for steel products hot-dip galvanized after fabrication.</tst> Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>embrittlement test reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt><brk></brk></spt>
 ]</div><spt outline="3.7.5"><ttl>3.7.5 Inspection and Testing of Steel Stud Welding</ttl><brk></brk>
 <txt>Perform verification inspection and testing of steel stud welding conforming to the requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Stud 
 Welding Clause. The Contracting Officer will serve as the verification inspector. Bend test studs that do not 
@@ -1083,6 +1703,172 @@ at no additional cost.</txt><brk></brk></spt>
 <button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
 <button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
 </body>
-<script id="scripts"></script>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
 <script src="../../src/html/scripts.js"></script>
 </html>

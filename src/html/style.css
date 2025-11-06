@@ -24,7 +24,6 @@
     --stl-bg: violet;
 }
 
-
 body {
     max-width: 100ch;
     margin: 72px auto;
@@ -117,7 +116,6 @@ srf {
     color: var(--srf-color);
     font-weight: bold;
 }
-
 
 
 scn,
@@ -258,6 +256,9 @@ tab cel {
     border: 1px solid white;
 }
 
+prt > ttl {
+    margin-top: 48px !important;
+}
 
 
 .this_section_number {

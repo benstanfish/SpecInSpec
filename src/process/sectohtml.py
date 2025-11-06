@@ -13,11 +13,14 @@ Example usage:
 import os, shutil, re
 from datetime import datetime
 from bs4 import BeautifulSoup
+from pathlib import Path
 
 from defusedxml import ElementTree as ET
 from xml.etree.ElementTree import Element
 
-def get_timestamp() -> str:
+def get_timestamp(as_day:bool=False) -> str:
+    if as_day:
+        return datetime.now().strftime("%Y-%m-%d")
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 def remove_declaration(xml_string: str) -> str:
@@ -108,78 +111,99 @@ def update_html_outline(soup: BeautifulSoup) -> BeautifulSoup:
                 title_element.string = element.attrs['outline'] + ' ' + title_element.text
     return soup
 
+def make_subfolder(a_path:str, subfolder_name:str) -> str:
+    parent_dir = os.path.abspath(os.path.dirname(a_path))
+    new_path = os.path.join(parent_dir, subfolder_name)
+    if not os.path.exists(new_path):
+        os.mkdir(new_path)
+    return new_path
 
 
+def process_sec_file(sec_path:str) -> dict:
 
+    try:
 
+        tree = ET.parse(sec_path)
+        root = tree.getroot()
 
+        if root.tag == 'SEC':
 
+            number_sections_recursively(root)
 
+            with open(sec_path, 'wb') as file:
+                file.write(ET.tostring(root))
 
-test_file = './specs/cleaned_sec/05 12 00.sec'
+            try:
+                _section = root.find('SCN').text.replace('SECTION ', '').strip()
+            except:
+                _section = 'Section number not found.'
+            try:
+                _title = root.find('STL').text.title().strip()
+            except:
+                _title = 'Section title not found.'
+            try:
+                _date = root.find('DTE').text.strip()
+            except:
+                _date = ''
 
-tree = ET.parse(test_file)
-root = tree.getroot()
+            section_info = {
+                'section': _section,
+                'title': _title,
+                'date': _date,
+                'run_date': get_timestamp()
+            }
 
-number_sections_recursively(root)
+            with open(sec_path, 'r') as file:
+                content = file.read()
 
-with open(test_file, 'wb') as file:
-    file.write(ET.tostring(root))
+            display_tags = ['NTE', 'NPR', 'ENG', 'MET', 'RID', 'RTL', 'ADD', 'DEL', 'SRF', 'STL', 'SUB']
+            for display_tag in display_tags:
+                content = add_display_tags(tag_name=display_tag, all_text=content)
+            content = wrap_brackets_in_span(content)
+            content = clean_sec_string(content, brk_replaced=False)
 
-# The following can be used for initial validation:
-# print(root.tag == 'SEC')  
+            html_fragment = BeautifulSoup(content, 'html.parser')
 
-section_info = {
-    'section': root.find('SCN').text.replace('SECTION ', '').strip(),
-    'title': root.find('STL').text.title().strip(),
-    'date': root.find('DTE').text.strip()
-}
+            html_template = './src/html/template.html'
 
-with open(test_file, 'r') as file:
-    content = file.read()
+            html_folder = make_subfolder(sec_path, 'html')
 
-display_tags = ['NTE', 'NPR', 'ENG', 'MET', 'RID', 'RTL', 'ADD', 'DEL', 'SRF', 'STL']
-for display_tag in display_tags:
-    content = add_display_tags(tag_name=display_tag, all_text=content)
-content = wrap_brackets_in_span(content)
-content = clean_sec_string(content, brk_replaced=False)
+            html_path = os.path.join(os.path.abspath(html_folder), f"{section_info['section']}.html")
+            html_file = shutil.copy(html_template, html_path)
 
-html_fragment = BeautifulSoup(content, 'html.parser')
+            with open(html_file, 'r') as file:
+                html_content = file.read()
 
-html_template = './src/html/template.html'
-html_path = f"./specs/html/{section_info['section']}.html"
+            soup = BeautifulSoup(html_content, 'html.parser')
+            soup.find('title').string = section_info['section'] + '.sec Viewer'
+            soup.find('main').append(html_fragment)
 
-html_file = shutil.copy(html_template, html_path)
+            soup.find('span', class_='this_section_number').append(section_info['section'])
+            soup.find('span', class_='create_date').append(get_timestamp())
 
-with open(html_file, 'r') as file:
-    html_content = file.read()
+            with open('./src/html/reboot.css', 'r') as file:
+                css_reboot = file.read()
 
+            with open('./src/html/style.css', 'r') as file:
+                css_styles = file.read()
 
+            with open('./src/html/scripts.js', 'r') as file:
+                js_scripts = file.read()
 
-soup = BeautifulSoup(html_content, 'html.parser')
-soup.find('title').string = section_info['section'] + '.sec Viewer'
-soup.find('main').append(html_fragment)
+            soup.find(id='reboot').append(css_reboot)
+            soup.find(id='styles').append(css_styles)
+            soup.find(id='scripts').append(js_scripts)
 
-soup.find('span', class_='this_section_number').append(section_info['section'])
-soup.find('span', class_='create_date').append(get_timestamp())
+            soup = update_html_outline(soup)
+            soup.prettify()
 
+            with open(html_file, 'w', encoding='utf-8') as file:
+                file.write(str(soup))
 
+            return section_info
+        else:
+            return {}
+    except:
+        return {}
+    
 
-with open('./src/html/reboot.css', 'r') as file:
-    css_reboot = file.read()
-
-with open('./src/html/style.css', 'r') as file:
-    css_styles = file.read()
-
-with open('./src/html/scripts.js', 'r') as file:
-    js_scripts = file.read()
-
-# soup.find(id='reboot').append(css_reboot)
-# soup.find(id='styles').append(css_styles)
-# soup.find(id='scripts').append(js_scripts)
-
-soup = update_html_outline(soup)
-soup.prettify()
-
-with open(html_file, 'w', encoding='utf-8') as file:
-    file.write(str(soup))

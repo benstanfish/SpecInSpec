@@ -21,7 +21,7 @@ __all__ = ['get_0x81_file_list', 'clean_0x81_files']
 
 import os, shutil
 from pathlib import Path
-from src.console.escapes import Escapes
+from ..console.escapes import Escapes
 
 def clean_0x81_file(file_path: str, 
                     new_path: str='') -> None:
@@ -64,7 +64,7 @@ def file_has_0x81(file_path: str) -> bool:
     except:
         return True
 
-def get_file_dict(parent_dir: str=r'./specs/sec', 
+def get_file_dict(parent_dir: str=r'../../specs/sec', 
                   extension: str='.sec') -> dict:
     """Creates dictionary of file stems and absolute paths that match the file extension condition.
 
@@ -102,7 +102,7 @@ def files_have_0x81(file_dict: dict) -> bool:
                        else Escapes.Green + 'does not'}{Escapes.Reset} files with 0x81 character.\n')
     return dir_has_0x81
 
-def get_0x81_file_list(parent_dir: str=r'./specs/sec', 
+def get_0x81_file_list(parent_dir: str=r'../../specs/sec', 
                        extension: str='.sec') -> None:
     """Write list of files in directory that contain 0x81 character(s) to text file in same directory.
 
@@ -126,8 +126,8 @@ def get_0x81_file_list(parent_dir: str=r'./specs/sec',
     except Exception as e:
         print(f'An exception occurred when trying to write the report: {e}')
 
-def clean_0x81_files(orig_dir: str=r'./specs/sec', 
-                     new_dir: str=r'./specs/cleaned_sec', 
+def clean_0x81_files(orig_dir: str=r'../../specs/sec', 
+                     new_dir: str=r'../../specs/cleaned_sec', 
                      file_type: str='.sec') -> None:
     """Clean all files in a specified directory, copying to new directory (or overwrite existing files).
 
@@ -153,4 +153,5 @@ def clean_0x81_files(orig_dir: str=r'./specs/sec',
 
     files_have_0x81(cleaned_files)
 
-clean_0x81_files()
+
+print(os.path.abspath('../../specs/sec/05 12 00.sec'))
