@@ -21,7 +21,7 @@ __all__ = ['get_0x81_file_list', 'clean_0x81_files']
 
 import os, shutil
 from pathlib import Path
-from ..console.escapes import Escapes
+from ..escapes.escapes import Escapes
 
 def clean_0x81_file(file_path: str, 
                     new_path: str='') -> None:
@@ -44,9 +44,9 @@ def clean_0x81_file(file_path: str,
             with open(file_path, 'wb') as file:
                 file.write(content)
     except Exception as e:
-        print(f'An error occured when trying to write the file to {'new file' if new_path else 'existing path'}: {e}')
+        # print(f'An error occured when trying to write the file to {'new file' if new_path else 'existing path'}: {e}')
         pass
-    print(f'Cleaned file written {'new file' if new_path else 'existing path'}: {new_path if new_path else file_path}')
+    # print(f'Cleaned file written {'new file' if new_path else 'existing path'}: {new_path if new_path else file_path}')
 
 def file_has_0x81(file_path: str) -> bool:
     """Determine if the file contains occurances of the 0x81 character.
@@ -64,7 +64,7 @@ def file_has_0x81(file_path: str) -> bool:
     except:
         return True
 
-def get_file_dict(parent_dir: str=r'../../specs/sec', 
+def get_file_dict(parent_dir: str, 
                   extension: str='.sec') -> dict:
     """Creates dictionary of file stems and absolute paths that match the file extension condition.
 
@@ -126,18 +126,17 @@ def get_0x81_file_list(parent_dir: str=r'../../specs/sec',
     except Exception as e:
         print(f'An exception occurred when trying to write the report: {e}')
 
-def clean_0x81_files(orig_dir: str=r'../../specs/sec', 
-                     new_dir: str=r'../../specs/cleaned_sec', 
-                     file_type: str='.sec') -> None:
+def clean_0x81_files(orig_dir: str, 
+                     new_dir: str, 
+                     file_type: str='.sec') -> str:
     """Clean all files in a specified directory, copying to new directory (or overwrite existing files).
 
     Args:
-        orig_dir (str, optional): Path to directory with source files. Defaults to r'./specs/sec'.
-        new_dir (str, optional): Path to directory to place new files. Use orig_dir to overwrite existing. Defaults to r'./specs/cleaned_sec'.
+        orig_dir (str, optional): Path to directory with source files.
+        new_dir (str, optional): Path to directory to place new files. Use orig_dir to overwrite existing.
     """
     
     orig_files = get_file_dict(orig_dir, file_type)
-    files_have_0x81(orig_files)
 
     if not os.path.exists(new_dir):
         os.mkdir(os.path.abspath(new_dir))
@@ -145,13 +144,13 @@ def clean_0x81_files(orig_dir: str=r'../../specs/sec',
     cleaned_files = {}
     for section, path in orig_files.items():
         new_path = os.path.join(os.path.abspath(new_dir), section + file_type)
-        if file_has_0x81(path):
-            clean_0x81_file(path, new_path)
+        if new_path != path:
+            if file_has_0x81(path):
+                clean_0x81_file(path, new_path)
+            else:
+                shutil.copy(path, new_path)
+            cleaned_files[section] = new_path
         else:
-            shutil.copy(path, new_path)
-        cleaned_files[section] = new_path
+            cleaned_files[section] = path
+    return new_dir
 
-    files_have_0x81(cleaned_files)
-
-
-print(os.path.abspath('../../specs/sec/05 12 00.sec'))

@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>01 78 00.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">01 78 00</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:51</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><brk></brk>
+<hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-01 78 00 (May 2019)<brk></brk>
+ ---------------------------<brk></brk>
+Preparing Activity: <pra>USACE</pra> Superseding<brk></brk>
+ UFGS-01 78 00 (August 2011)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated April 2019</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 01 78 00</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>CLOSEOUT SUBMITTALS<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>05/19</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>closeout submittals 
+including: revised project documents, warranty management, testing, adjusting 
+and balancing, O &amp; M manuals, and cleanup</scp>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections. Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text. For bracketed items, choose applicable 
+item(s) or insert appropriate information.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>This guide specification includes tailoring options for DESIGN-BID-BUILD (DBB), 
+DESIGN-BUILD (DB), ARMY, NAVY, AIR FORCE and NASA projects. Selection or deselection 
+of a tailoring option will include or exclude that option in the section, but 
+editing the resulting section to fit the project is still required. This guide 
+specification also includes tailoring options for BIM and Advanced BIM Modeling 
+and is tailored for ARMY and AIR FORCE.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Remove information and requirements not required in respective project, whether 
+or not brackets are present.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Comments and suggestions on this guide specification are welcome and should 
+be submitted as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Coordinate with the customer regarding special warranty requirements 
+and options.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of 
+the guide specification. The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<brk></brk>
+Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article. Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<brk></brk>
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are 
+referred to within the text by the basic designation only.</txt><brk></brk>
+<ref><org>ASTM INTERNATIONAL (ASTM)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E1971<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2005; R 2011) Stewardship for the Cleaning 
+of Commercial and Institutional Buildings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>GREEN SEAL (GS)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>GS-37<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017) Cleaning Products for Industrial and 
+Institutional Use<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org><del><pre class="display_DEL">&lt;DEL&gt;</pre>SPATIAL DATA STANDARDS FOR FACILITIES, INFRASTRUCTURE, AND ENVIRONMENT (SDSFIE)<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>SPATIAL DATA 
+STANDARD FOR FACILITIES, INFRASTRUCTURE, AND ENVIRONMENT (SDSFIE)<pre class="display_ADD">&lt;/ADD&gt;</pre></add></org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>SDSFIE 3.1.0.1<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Air Force Data Model<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>U.S. ARMY CORPS OF ENGINEERS (USACE)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>EM 1110-1-2909<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2012) Geospatial Data and Systems<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ERDC/ITL TR-12-1<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) A/E/C Graphics Standard, Release 2.0<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ERDC/ITL TR-12-6<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) A/E/C CAD Standard - Release 6.0<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>U.S. DEPARTMENT OF DEFENSE (DOD)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>FC 1-300-09N<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2014; with Change 4, 2018) Navy and Marine 
+Corps Design<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 1-300-08<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2009, with Change 2, 2011) Criteria for Transfer 
+and Acceptance of DoD Real Property<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.2"><ttl>1.2 DEFINITIONS</ttl><brk></brk>
+<spt outline="1.2.1"><ttl>1.2.1 As-Built Drawings</ttl><brk></brk>
+<txt>As-built drawings are the marked-up drawings, maintained by the Contractor on-site, that depict actual conditions 
+and deviations from the Contract Documents. These deviations and additions may result from coordination required 
+by, but not limited to: contract modifications; official responses to submitted Requests for Information (RFI's); 
+direction from the Contracting Officer; design that is the responsibility of the Contractor, and differing site 
+conditions. Maintain the as-builts throughout construction as red-lined hard copies on site and/or red-lined 
+PDF files. These files serve as the basis for the creation of the record drawings.</txt><brk></brk></spt>
+<spt outline="1.2.2"><ttl>1.2.2 Record Drawings</ttl><brk></brk>
+<txt>The record drawings are the final compilation of actual conditions reflected in the as-built drawings.</txt><brk></brk></spt>
+<spt outline="1.2.3"><ttl>1.2.3 USACE CAD/BIM Technology Center</ttl><brk></brk>
+<txt>The USACE CAD/BIM Technology Center hosts all standard content for USACE. This content can be accessed through 
+the CAD/BIM Technology Center website, <url href="https://cadbimcenter.erdc.dren.mil">https://cadbimcenter.erdc.dren.mil/</url>.</txt><brk></brk></spt>
+</spt><spt outline="1.3"><ttl>1.3 SOURCE DRAWING FILES</ttl><brk></brk>
+<txt>Request the full set of electronic drawings, in the source format, for Record Drawing preparation, after award 
+and at least 30 days prior to required use.</txt><brk></brk>
+<spt outline="1.3.1"><ttl>1.3.1 Terms and Conditions</ttl><brk></brk>
+<txt>Data contained on these electronic files must not be used for any purpose other than as a convenience in the 
+preparation of construction <tai opt="DESIGN-BUILD">drawings and </tai>data for the referenced project. Any other use or reuse shall be at 
+the sole risk of the Contractor and without liability or legal exposure to the Government. The Contractor must 
+make no claim and waives to the fullest extent permitted by law, any claim or cause of action of any nature against 
+the Government, its agents or sub consultants that may arise out of or in connection with the use of these electronic 
+files. The Contractor must, to the fullest extent permitted by law, indemnify and hold the Government harmless 
+against all damages, liabilities or costs, including reasonable attorney's fees and defense costs, arising out 
+of or resulting from the use of these electronic files.</txt><brk></brk>
+<txt>These electronic CAD drawing files are not construction documents. Differences may exist between the CAD files 
+and the corresponding construction documents. The Government makes no representation regarding the accuracy 
+or completeness of the electronic CAD files, nor does it make representation to the compatibility of these files 
+with the Contractor hardware or software. In the event that a conflict arises between the signed and sealed 
+construction documents prepared by the Government and the furnished Source drawing files, the signed and sealed 
+construction documents govern. The Contractor is responsible for determining if any conflict exists. Use of 
+these Source Drawing files does not relieve the Contractor of duty to fully comply with the contract documents, 
+including and without limitation, the need to check, confirm and coordinate the work of all contractors for the 
+project. If the Contractor uses, duplicates or modifies these electronic source drawing files for use in producing 
+construction <tai opt="DESIGN-BUILD">drawings and</tai>data related to this contract, remove all previous indicia of ownership (seals, logos, 
+signatures, initials and dates).</txt><brk></brk></spt>
+</spt><spt outline="1.4"><ttl>1.4 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review submittal description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.<brk></brk>
+The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G." Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System. 
+Only add a “G” to an item, if the submittal is sufficiently important or complex 
+in context of the project.<brk></brk>
+For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office. Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.<brk></brk>
+The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. Locate the "S" 
+submittal under the SD number that best describes the submittal item.<brk></brk>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; <tai opt="DESIGN-BID-BUILD">submittals not having a "G" designation 
+are for information only</tai><tai opt="DESIGN-BUILD">submittals not having a "G" designation are for Contractor Quality Control or Designer 
+of Record approval</tai>. Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf>SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-03 Product Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Warranty Management Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Warranty Tags<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Final Cleaning<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Spare Parts Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre><itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Spare Parts And Spare Parts Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk><pre class="display_ADD">&lt;/ADD&gt;</pre></add>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-08 Manufacturer's Instructions<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm>Posted <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Instructions<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-10 Operation and Maintenance Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Operation and Maintenance Manuals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-11 Closeout Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>As-Built Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Record Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>As-Built Record of Equipment and Materials<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Final Approved Shop Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Construction Contract Specifications<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Interim DD FORM 1354<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Checklist for DD FORM 1354<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<brk></brk></spt>
+<spt outline="1.5"><ttl>1.5 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>SPARE PARTS <add><pre class="display_ADD">&lt;ADD&gt;</pre>AND SPARE PARTS <pre class="display_ADD">&lt;/ADD&gt;</pre></add>DATA<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Following sentence contains tailoring for NAVFAC NW for four copies.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Submit two copies of the <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Spare Parts Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> list.</txt><brk></brk>
+<lst indent="-0.33">a. <add><pre class="display_ADD">&lt;ADD&gt;</pre>Supply the necessary quantity of items of each part for spare parts required by this contract, identified 
+in the technical specification herein. <pre class="display_ADD">&lt;/ADD&gt;</pre></add>Indicate manufacturer's name, part number, nomenclature, and stock 
+level required for maintenance and repair. List those items that may be standard to the normal maintenance 
+of the system.</lst><brk></brk></spt>
+<spt outline="1.6"><ttl>1.6 QUALITY CONTROL</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This subpart is tailored for ARMY and NASA use only. Do not use this 
+paragraph for NAVY projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Additions and corrections to the contract drawings must be equal in quality and detail to that of the originals. 
+Line colors, line weights, lettering, layering conventions, and symbols must be the same as the original line 
+colors, line weights, lettering, layering conventions, and symbols.</txt><brk></brk></spt>
+<spt outline="1.7"><ttl>1.7 WARRANTY MANAGEMENT</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: A warranty package based on a cost/benefit determination will be established 
+with the customer at the beginning of a project. Coordinate with the customer 
+regarding special warranty requirements and options.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use four sets for NAVFAC NW.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="1.7.1"><ttl>1.7.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Warranty Management Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Develop a warranty management plan which contains information relevant to FAR 52.246-21 Warranty of Construction. 
+At least 30 days before the planned pre-warranty conference, submit one set of the warranty management plan. 
+Include within the warranty management plan all required actions and documents to assure that the Government 
+receives all warranties to which it is entitled. The plan narrative must contain sufficient detail to render 
+it suitable for use by future maintenance and repair personnel, whether tradesmen, or of engineering background, 
+not necessarily familiar with this contract. The term "status" as indicated below must include due date and 
+whether item has been submitted or was accomplished. Submit warranty information, made available during the 
+construction phase, to the Contracting Officer for approval prior to each monthly pay estimate. Assemble approved 
+information in a binder and turn over to the Government upon acceptance of the work. The construction warranty 
+period must begin on the date of project acceptance and continue for the full product warranty period. Conduct 
+a joint 4 month and 9 month warranty inspection, measured from time of acceptance; with the Contractor, Contracting 
+Officer and the Customer Representative. The warranty management plan must include, but is not limited to, the 
+following:</txt><brk></brk>
+<lst indent="-0.33">a. Roles and responsibilities of personnel associated with the warranty process, including points of 
+contact and telephone numbers within the organizations of the Contractors, subcontractors, manufacturers 
+or suppliers involved.</lst><brk></brk>
+<lst indent="-0.33">b. For each warranty, the name, address, telephone number, and email of each of the guarantor's representatives 
+nearest to the project location.</lst><brk></brk>
+<lst indent="-0.33">c. A list and status of delivery of Certificates of Warranty for extended warranty items, including 
+roofs, HVAC balancing, pumps, motors, transformers, and for commissioned systems, such as fire protection 
+and alarm systems, sprinkler systems, and lightning protection systems.</lst><brk></brk>
+<lst indent="-0.33">d. <sub><pre class="display_SUB">&lt;SUB&gt;</pre>As-Built Record of Equipment and Materials<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> list for each warranted equipment, item, feature of construction 
+or system indicating:</lst><brk></brk>
+<itm indent="-0.33">(1) Name of item.</itm><brk></brk>
+<itm indent="-0.33">(2) Model and serial numbers.</itm><brk></brk>
+<itm indent="-0.33">(3) Location where installed.</itm><brk></brk>
+<itm indent="-0.33">(4) Name and phone numbers of manufacturers or suppliers.</itm><brk></brk>
+<itm indent="-0.33">(5) Warranties and terms of warranty. Include one-year overall warranty of construction, including 
+the starting date of warranty of construction. Items which have extended warranties must be 
+indicated with separate warranty expiration dates.</itm><brk></brk>
+<itm indent="-0.33">(6) Cross-reference to warranty certificates as applicable.</itm><brk></brk>
+<itm indent="-0.33">(7) Starting point and duration of warranty period.</itm><brk></brk>
+<itm indent="-0.33">(8) Summary of maintenance procedures required to continue the warranty in force.</itm><brk></brk>
+<itm indent="-0.33">(9) Cross-reference to specific pertinent Operation and Maintenance manuals.</itm><brk></brk>
+<itm indent="-0.33">(10) Organization, names and phone numbers of persons to call for warranty service.</itm><brk></brk>
+<itm indent="-0.33">(11) Typical response time and repair time expected for various warranted equipment.</itm><brk></brk>
+<lst indent="-0.33">e. The plans for attendance at the 4 and 9 month post-construction warranty inspections conducted by 
+the Government.</lst><brk></brk>
+<lst indent="-0.33">f. Procedure and status of tagging of equipment covered by extended warranties.</lst><brk></brk>
+<lst indent="-0.33">g. Copies of <sub><pre class="display_SUB">&lt;SUB&gt;</pre>instructions<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> to be posted near selected pieces of equipment where operation is critical 
+for warranty or safety reasons.</lst><brk></brk></spt>
+<spt outline="1.7.2"><ttl>1.7.2 Performance Bond</ttl><brk></brk>
+<txt>The Performance Bond must remain effective throughout the construction period.</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use the bracketed item if the bond must extend beyond the construction 
+period; coordinate requirement with the Contracting Officer.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<lst indent="-0.33">a. In the event the Contractor fails to commence and diligently pursue any construction warranty work 
+required, the Contracting Officer will have the work performed by others, and after completion of the 
+work, will charge the remaining construction warranty funds of expenses incurred by the Government while 
+performing the work, including, but not limited to administrative expenses.</lst><brk></brk>
+<lst indent="-0.33">b. In the event sufficient funds are not available to cover the construction warranty work performed 
+by the Government at the Contractor's expense, the Contracting Officer will have the right to recoup 
+expenses from the bonding company.</lst><brk></brk>
+<lst indent="-0.33">c. Following oral or written notification of required construction warranty repair work, respond in 
+a timely manner. Written verification will follow oral instructions. Failure to respond will be cause 
+for the Contracting Officer to proceed against the Contractor.</lst><brk></brk></spt>
+<spt outline="1.7.3"><ttl>1.7.3 Pre-Warranty Conference</ttl><brk></brk>
+<txt>Prior to contract completion, and at a time designated by the Contracting Officer, meet with the Contracting 
+Officer to develop a mutual understanding with respect to the requirements of this section. At this meeting, 
+establish and review communication procedures for Contractor notification of construction warranty defects, priorities 
+with respect to the type of defect, reasonable time required for Contractor response, and other details deemed 
+necessary by the Contracting Officer for the execution of the construction warranty In connection with these 
+requirements and at the time of the Contractor's quality control completion inspection, furnish the name, telephone 
+number and address of a licensed and bonded company which is authorized to initiate and pursue construction warranty 
+work action on behalf of the Contractor. This point of contact must be located within the local service area 
+of the warranted construction, be continuously available, and be responsive to Government inquiry on warranty 
+work action and status. This requirement does not relieve the Contractor of any of its responsibilities in connection 
+with other portions of this provision.</txt><brk></brk></spt>
+<spt outline="1.7.4"><ttl>1.7.4 Contractor's Response to Construction Warranty Service Requirements</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This subpart is tailored for ARMY and NASA only. Delete this paragraph 
+for NAVY projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Following oral or written notification by the Contracting Officer, respond to construction warranty service requirements 
+in accordance with the "Construction Warranty Service Priority List" and the three categories of priorities listed 
+below. Submit a report on any warranty item that has been repaired during the warranty period. Include within 
+the report the cause of the problem, date reported, corrective action taken, and when the repair was completed. 
+If the Contractor does not perform the construction warranty within the timeframe specified, the Government will 
+perform the work and back charge the construction warranty payment item established.</txt><brk></brk>
+<lst indent="-0.33">a. First Priority Code 1. Perform onsite inspection to evaluate situation, and determine course of 
+action within 4 hours, initiate work within 6 hours and work continuously to completion or relief.</lst><brk></brk>
+<lst indent="-0.33">b. Second Priority Code 2. Perform onsite inspection to evaluate situation, and determine course of 
+action within 8 hours, initiate work within 24 hours and work continuously to completion or relief.</lst><brk></brk>
+<lst indent="-0.33">c. Third Priority Code 3. All other work to be initiated within 3 work days and work continuously to 
+completion or relief.</lst><brk></brk>
+<lst indent="-0.33">d. The "Construction Warranty Service Priority List" is as follows:</lst><brk></brk>
+<lst>Code 1-Life Safety Systems</lst><brk></brk>
+<itm indent="-0.33">(1) Fire suppression systems.</itm><brk></brk>
+<itm indent="-0.33">(2) Fire alarm system(s) in place in the building.</itm><brk></brk>
+<lst>Code 1-Air Conditioning Systems</lst><brk></brk>
+<itm indent="-0.33">(1) Recreational support.</itm><brk></brk>
+<itm indent="-0.33">(2) Air conditioning leak in part of building, if causing damage.</itm><brk></brk>
+<itm indent="-0.33">(3) Air conditioning system not cooling properly.</itm><brk></brk>
+<lst>Code 1-Doors</lst><brk></brk>
+<itm indent="-0.33">(1) Overhead doors not operational, causing a security, fire, or safety problem.</itm><brk></brk>
+<itm indent="-0.33">(2) Interior, exterior personnel doors or hardware, not functioning properly, causing a security, 
+fire, or safety problem.</itm><brk></brk>
+<lst>Code 3-Doors</lst><brk></brk>
+<itm indent="-0.33">(1) Overhead doors not operational.</itm><brk></brk>
+<itm indent="-0.33">(2) Interior/exterior personnel doors or hardware not functioning properly.</itm><brk></brk>
+<lst>Code 1-Electrical</lst><brk></brk>
+<itm indent="-0.33">(1) Power failure (entire area or any building operational after 1600 hours).</itm><brk></brk>
+<itm indent="-0.33">(2) Security lights</itm><brk></brk>
+<itm indent="-0.33">(3) Smoke detectors</itm><brk></brk>
+<lst>Code 2-Electrical</lst><brk></brk>
+<itm indent="-0.33">(1) Power failure (no power to a room or part of building).</itm><brk></brk>
+<itm indent="-0.33">(2) Receptacle and lights (in a room or part of building).</itm><brk></brk>
+<lst>Code 3-Electrical</lst><brk></brk>
+<itm indent="-0.33">Street lights.</itm><brk></brk>
+<lst>Code 1-Gas</lst><brk></brk>
+<itm indent="-0.33">(1) Leaks and breaks.</itm><brk></brk>
+<itm indent="-0.33">(2) No gas to family housing unit or cantonment area.</itm><brk></brk>
+<lst>Code 1-Heat</lst><brk></brk>
+<itm indent="-0.33">(1) Area power failure affecting heat.</itm><brk></brk>
+<itm indent="-0.33">(2) Heater in unit not working.</itm><brk></brk>
+<lst>Code 2-Kitchen Equipment</lst><brk></brk>
+<itm indent="-0.33">(1) Dishwasher not operating properly.</itm><brk></brk>
+<itm indent="-0.33">(2) All other equipment hampering preparation of a meal.</itm><brk></brk>
+<lst>Code 1-Plumbing</lst><brk></brk>
+<itm indent="-0.33">(1) Hot water heater failure.</itm><brk></brk>
+<itm indent="-0.33">(2) Leaking water supply pipes.</itm><brk></brk>
+<lst>Code 2-Plumbing</lst><brk></brk>
+<itm indent="-0.33">(1) Flush valves not operating properly.</itm><brk></brk>
+<itm indent="-0.33">(2) Fixture drain, supply line to commode, or any water pipe leaking.</itm><brk></brk>
+<itm indent="-0.33">(3) Commode leaking at base.</itm><brk></brk>
+<lst>Code 3 -Plumbing</lst><brk></brk>
+<itm indent="-0.33">Leaky faucets.</itm><brk></brk>
+<lst>Code 3-Interior</lst><brk></brk>
+<itm indent="-0.33">(1) Floors damaged.</itm><brk></brk>
+<itm indent="-0.33">(2) Paint chipping or peeling.</itm><brk></brk>
+<itm indent="-0.33">(3) Casework.</itm><brk></brk>
+<lst>Code 1-Roof Leaks</lst><brk></brk>
+<itm indent="-0.33">Temporary repairs will be made where major damage to property is occurring.</itm><brk></brk>
+<lst>Code 2-Roof Leaks</lst><brk></brk>
+<itm indent="-0.33">Where major damage to property is not occurring, check for location of leak during rain and 
+complete repairs on a Code 2 basis.</itm><brk></brk>
+<lst>Code 2-Water (Exterior)</lst><brk></brk>
+<itm indent="-0.33">No water to facility.</itm><brk></brk>
+<lst>Code 2-Water (Hot)</lst><brk></brk>
+<itm indent="-0.33">No hot water in portion of building listed.</itm><brk></brk>
+<lst>Code 3-All other work not listed above.</lst><brk></brk></spt>
+<spt outline="1.7.5"><ttl>1.7.5 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Warranty Tags<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Paragraph below contains tailoring for NAVFAC NW for four copies.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>At the time of installation, tag each warranted item with a durable, oil and water resistant tag approved by 
+the Contracting Officer. Attach each tag with a copper wire and spray with a silicone waterproof coating. Also, 
+submit two record copies of the warranty tags showing the layout and design. The date of acceptance and the 
+QC signature must remain blank until the project is accepted for beneficial occupancy. Show the following information 
+on the tag.</txt><brk></brk>
+<txt><tab headerrows="0">
+<wbk>
+<sts></sts>
+<tda columncount="2" rowcount="14">
+<col autowidth="0" width="183.00"/>
+<col autowidth="0" width="388.50"/>
+<row autoheight="0" height="27.00">
+<cel>
+<dta type="STRING">Type of product/material</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="27.00">
+<cel>
+<dta type="STRING">Model number</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="27.00">
+<cel>
+<dta type="STRING">Serial number</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="27.00">
+<cel>
+<dta type="STRING">Contract number</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="27.00">
+<cel>
+<dta type="STRING">Warranty period from/to</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="27.00">
+<cel>
+<dta type="STRING">Inspector's signature</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="27.00">
+<cel>
+<dta type="STRING">Construction Contractor</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="27.00">
+<cel>
+<dta type="STRING">Address</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="27.00">
+<cel>
+<dta type="STRING">Telephone number</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="27.00">
+<cel>
+<dta type="STRING">Warranty contact</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="27.00">
+<cel>
+<dta type="STRING">Address</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="27.00">
+<cel>
+<dta type="STRING">Telephone number</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="27.00">
+<cel>
+<dta type="STRING">Warranty response time priority code</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="44.25">
+<cel mergeacross="1">
+<dta type="STRING">WARNING - PROJECT PERSONNEL TO PERFORM ONLY OPERATIONAL MAINTENANCE DURING THE WARRANTY PERIOD.</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab></txt><brk></brk></spt>
+</spt></prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<spt outline="2.1"><ttl>2.1 RECORD DRAWINGS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is tailored for ARMY and NASA only. Do not use for NAVY 
+projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use and edit this paragraph to specify CAD files compatible with the 
+customers CAD system.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Prepare the CAD drawing files in AutoCAD Release 2013 format <tai opt="ARMY">and Bentley Microstation V8i format </tai>compatible with 
+a Windows 7 or higher operating system.</txt><brk></brk>
+<spt outline="2.1.1"><ttl>2.1.1 Additional Drawings</ttl><brk></brk>
+<txt>If additional drawings are required, prepare them using the specified electronic file format applying the same 
+graphic standards specified for original drawings. The title block and drawing border to be used for any new 
+final record drawings must be identical to that used on the contract drawings.</txt><brk></brk>
+<spt outline="2.1.1.1"><ttl>2.1.1.1 Sheet Numbers and File Names</ttl><brk></brk>
+<txt>If a sheet needs to be added between two sequential sheets, append a Supplemental Drawing Designator in accordance 
+with <rid><pre class="display_RID">&lt;RID&gt;</pre>ERDC/ITL TR-12-6<pre class="display_RID">&lt;/RID&gt;</pre></rid> Adding a drawing sheet, and <rid><pre class="display_RID">&lt;RID&gt;</pre>ERDC/ITL TR-12-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+</spt></spt><spt outline="2.2"><ttl>2.2 PDF AS-BUILT FILES</ttl><brk></brk>
+<txt>Provide electronic PDF "plots" of all contract drawings sheets associated with the as-built drawing submittal. 
+Compile and organize the PDF set to match the contract drawings. </txt><brk></brk></spt>
+<spt outline="2.3"><ttl>2.3 REDLINES AND MARKUPS</ttl><brk></brk>
+<txt>Provide PDFs of the current working redlines and/or markups complying with the as-builts drawing and markup requirements 
+contained in this specification.</txt><brk></brk></spt>
+<spt outline="2.4"><ttl>2.4 AS-BUILT RE-SUBMISSION REQUIREMENTS</ttl><brk></brk>
+<txt>If elements of an as-built submittal or advanced modeling package are rejected, provide the following for each 
+re-submission, in addition to any information required in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst indent="-0.33">a. Re-submit all components required under paragraph As-Builts or Advanced Modeling Package, including 
+a new Advanced Modeling Submittal Checklist and updated content in response to Government comments.</lst><brk></brk>
+<lst indent="-0.33">b. Provide a copy of all Government review comments.</lst><brk></brk>
+<lst indent="-0.33">c. Provide a disposition/response to each Government review comment for a back-check of the re-submission 
+deliverable.</lst><brk></brk></spt>
+</prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>AS-BUILT DRAWINGS<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Provide and maintain two black line print copies of the PDF contract drawings for As-Built Drawings. Maintain 
+the as-builts throughout construction as red-lined hard copies on site and/or red-lined PDF files. Submit As-Built 
+Drawings 30 days prior to Beneficial Occupance Date (BOD).</txt><brk></brk>
+<spt outline="3.1.1"><ttl>3.1.1 Markup Guidelines</ttl><brk></brk>
+<txt>Make comments and markup the drawings complete without reference to letters, memos, or materials that are not 
+part of the As-Built drawing. Show what was changed, how it was changed, where item(s) were relocated and change 
+related details. These working as-built markup prints must be neat, legible and accurate as follows:</txt><brk></brk>
+<lst indent="-0.33">a. Use base colors of red, green, and blue. Color code for changes as follows:</lst><brk></brk>
+<itm indent="-0.33">(1) Special (Blue) - Items requiring special information, coordination, or special detailing 
+or detailing notes.</itm><brk></brk>
+<itm indent="-0.33">(2) Deletions (Red) - Over-strike deleted graphic items (lines), lettering in notes and leaders.</itm><brk></brk>
+<itm indent="-0.33">(3) Additions (Green) - Added items, lettering in notes and leaders.</itm><brk></brk>
+<lst indent="-0.33">b. Provide a legend if colors other than the "base" colors of red, green, and blue are used.</lst><brk></brk>
+<lst indent="-0.33">c. Add and denote any additional equipment or material facilities, service lines, incorporated under 
+As-Built Revisions if not already shown in legend.</lst><brk></brk>
+<lst indent="-0.33">d. Use frequent written explanations on markup drawings to describe changes. Do not totally rely on 
+graphic means to convey the revision.</lst><brk></brk>
+<lst indent="-0.33">e. Use legible lettering and precise and clear digital values when marking prints. Clarify ambiguities 
+concerning the nature and application of change involved.</lst><brk></brk>
+<lst indent="-0.33">f. Wherever a revision is made, also make changes to related section views, details, legend, profiles, 
+plans and elevation views, schedules, notes and call out designations, and mark accordingly to avoid 
+conflicting data on all other sheets.</lst><brk></brk>
+<lst indent="-0.33">g. For deletions, cross out all features, data and captions that relate to that revision.</lst><brk></brk>
+<lst indent="-0.33">h. For changes on small-scale drawings and in restricted areas, provide large-scale inserts, with leaders 
+to the applicable location.</lst><brk></brk>
+<lst indent="-0.33">i. Indicate one of the following when attaching a print or sketch to a markup print:</lst><brk></brk>
+<itm indent="-0.33">1) Add an entire drawing to contract drawings</itm><brk></brk>
+<itm indent="-0.33">2) Change the contract drawing to show</itm><brk></brk>
+<itm indent="-0.33">3) Provided for reference only to further detail the initial design.</itm><brk></brk>
+<lst indent="-0.33">j. Incorporate all shop and fabrication drawings into the markup drawings.</lst><brk></brk></spt>
+<spt outline="3.1.2"><ttl>3.1.2 As-Built Drawings Content</ttl><brk></brk>
+<txt>Revise As-Built Drawings in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ERDC/ITL TR-12-1<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>ERDC/ITL TR-12-6<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Keep these working as-built 
+markup drawings current on a weekly basis and at least one set available on the jobsite at all times. Changes 
+from the contract drawings which are made during construction or additional information which might be uncovered 
+in the course of construction must be accurately and neatly recorded as they occur by means of details and notes. 
+Submit the working as-built markup drawings for approval prior to submission of each monthly pay estimate. For 
+failure to maintain the working and final record drawings as specified herein, the Contracting Officer will withhold 
+10 percent of the monthly progress payment until approval of updated drawings. Show on the as-built drawings, 
+but not limited to, the following information:</txt><brk></brk>
+<lst indent="-0.33">a. The actual location, kinds and sizes of all sub-surface utility lines. In order that the location 
+of these lines and appurtenances may be determined in the event the surface openings or indicators become 
+covered over or obscured, show by offset dimensions to two permanently fixed surface features the end 
+of each run including each change in direction on the record drawings. Locate valves, splice boxes and 
+similar appurtenances by dimensioning along the utility run from a reference point. Also record the 
+average depth below the surface of each run.</lst><brk></brk>
+<lst indent="-0.33">b. The location and dimensions of any changes within the building structure.</lst><brk></brk>
+<lst indent="-0.33">c. Layout and schematic drawings of electrical circuits and piping.</lst><brk></brk>
+<lst indent="-0.33">d. Correct grade, elevations, cross section, or alignment of roads, earthwork, structures or utilities 
+if any changes were made from contract plans.</lst><brk></brk>
+<lst indent="-0.33">e. Changes in details of design or additional information obtained from working drawings specified to 
+be prepared or furnished by the Contractor; including but not limited to shop drawings, fabrication, 
+erection, installation plans and placing details, pipe sizes, insulation material, dimensions of equipment, 
+and foundations.</lst><brk></brk>
+<lst indent="-0.33">f. The topography, invert elevations and grades of drainage installed or affected as part of the project 
+construction.</lst><brk></brk>
+<lst indent="-0.33">g. Changes or Revisions which result from the final inspection.</lst><brk></brk>
+<lst indent="-0.33">h. Where contract drawings or specifications present options, show only the option selected for construction 
+on the working as-built markup drawings.</lst><brk></brk>
+<lst indent="-0.33">i. If borrow material for this project is from sources on Government property, or if Government property 
+is used as a spoil area, furnish a contour map of the final borrow pit/spoil area elevations.</lst><brk></brk>
+<lst indent="-0.33">j. Systems designed or enhanced by the Contractor, such as HVAC controls, fire alarm, fire sprinkler, 
+and irrigation systems.</lst><brk></brk>
+<lst indent="-0.33">k. Changes in location of equipment and architectural features.</lst><brk></brk>
+<lst indent="-0.33">j. Modifications (include within change order price the cost to change working as-built markup drawings 
+to reflect modifications).</lst><brk></brk>
+<lst indent="-0.33">l. Actual location of anchors, construction and control joints, etc., in concrete.</lst><brk></brk>
+<lst indent="-0.33">m. Unusual or uncharted obstructions that are encountered in the contract work area during construction.</lst><brk></brk>
+<lst indent="-0.33">n. Location, extent, thickness, and size of stone protection particularly where it will be normally 
+submerged by water.</lst><brk></brk></spt>
+<tai opt="KADENA AB"><spt><ttl>GIS Data</ttl><brk></brk>
+<txt>Provide GIS data with as-builts. GIS data shall be in a format accepted by ESRI software. Data shall comply 
+with <rid><pre class="display_RID">&lt;RID&gt;</pre>SDSFIE 3.1.0.1<pre class="display_RID">&lt;/RID&gt;</pre></rid>. The Air Force adaptation data dictionary can be obtained from the Kadena GeoBase Office 
+(718ces.geobase@us.af.mil or DSN 634-9322). All GIS data shall be delivered with the following requirements:</txt><brk></brk>
+<lst indent="-0.33">a. Projection: UTM Zone 52N</lst><brk></brk>
+<lst indent="-0.33">b. Datum: WGS 1984</lst><brk></brk>
+<lst indent="-0.33">c. Geoid: EGM 96</lst><brk></brk>
+<lst indent="-0.33">d. Units: Meters</lst><brk></brk></spt>
+</tai><tai opt="MARINE CORPS IN OKINAWA"><spt><ttl>GIS Data</ttl><brk></brk>
+<txt>Provide GIS data with as-builts. GIS data shall be in a format accepted by ESRI software. Data shall comply 
+with <rid><pre class="display_RID">&lt;RID&gt;</pre>SDSFIE 3.1.0.1<pre class="display_RID">&lt;/RID&gt;</pre></rid>. All GIS data shall be delivered with the following requirements:</txt><brk></brk>
+<lst indent="-0.33">a. Projection: JGD 2000 Zone 15</lst><brk></brk>
+<lst indent="-0.33">b. Datum: WGS 1984</lst><brk></brk>
+<lst indent="-0.33">c. Geoid: EGM 96</lst><brk></brk>
+<lst indent="-0.33">d. Units: Meters</lst><brk></brk></spt>
+</tai></spt><spt outline="3.2"><ttl>3.2 RECORD DRAWING FILES</ttl><brk></brk>
+<txt>If additional drawings are required, prepare them using the specified electronic file format applying the same 
+graphic standards specified for original drawings. The title block and drawing border to be used for any new 
+final record drawings must be identical to that used on the contract drawings. Accomplish additions and corrections 
+to the contract drawings using CAD files. Provide all program files and hardware necessary to prepare final 
+PDF record drawings. The Contracting Officer will review final PDF record drawings for accuracy and return them 
+to the Contractor for required corrections, changes, additions, and deletions.</txt><brk></brk>
+<spt outline="3.2.1"><ttl>3.2.1 Rename the CAD Drawing files</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use the bracket with the ACES-PM Project Number requirement for Kadena 
+Air Base projects only.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Rename the CAD Drawing files using the <div class="brackets">[ACES-PM Project Number as the Project Code field, (e.g., LXEZ11745C-101.DWG)]</div><div class="brackets">[Contract 
+number as the Project Code field, (e.g., W912HV-15-C-0001-A-101.DWG)]</div> as instructed in the Pre-Construction conference. 
+Use only those renamed files for the Marked-up changes. Make all changes on the layer/level as the original 
+item.</txt><brk></brk>
+<lst indent="-0.33">a. For AutoCAD files (DWG), enter all as-built delta changes and notations on the AS-BUILT layer.</lst><brk></brk>
+<lst indent="-0.33">c. When final revisions have been completed, show the wording "RECORD DRAWING AS-BUILTS" followed by 
+the name of the Contractor in letters at least 5 mm high on the cover sheet drawing. Date RECORD DRAWING 
+AS-BUILTS" drawing revisions in the revision block.</lst><brk></brk>
+<lst indent="-0.33">d. Within 20 days after Government approval of all of the working record drawings for a phase of work, 
+prepare the final CAD record drawings for that phase of work and submit PDF drawing files and two sets 
+of prints for review and approval. The Government will promptly return one set of prints annotated with 
+any necessary corrections. Within 10 days revise the CAD files accordingly at no additional cost and 
+submit one set of final prints for the completed phase of work to the Government. Within 20 days of 
+substantial completion of all phases of work, submit the final record drawing package for the entire 
+project. Submit one set of electronic CAD files, and one set of the approved working record PDF files 
+on an optical disc with two sets of prints. The CAD files must be complete in all details and identical 
+in form and function to the CAD drawing files supplied by the Government. Prepare AutoCAD files for 
+transmittal using e-Transmit. Make any transactions or adjustments necessary to accomplish this. The 
+Government reserves the right to reject any drawing files it deems incompatible with the customer's CAD 
+system. Paper prints, drawing files and storage media submitted will become the property of the Government 
+upon final approval. Failure to submit final record PDF drawing files, CAD files and marked prints as 
+specified will be cause for withholding any payment due under this contract. Approval and acceptance 
+of final record drawings must be accomplished before final payment is made.</lst><brk></brk></spt>
+</spt><spt outline="3.3"><ttl>3.3 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>RECORD DRAWINGS<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Prepare final record drawings after the completion of each definable feature of work as listed in the Contractor 
+Quality Control Plan (such as Foundations, Utilities, or Structural Steel as appropriate for the project). Transfer 
+the changes from the approved working as-built markup drawings to the original electronic CAD drawing files. 
+Modify the as-built CAD drawing files to correctly show the features of the project as-built by bringing the 
+working CAD drawing set into agreement with approved working as-built markup drawings, and adding such additional 
+drawings as may be necessary. Refer to <rid><pre class="display_RID">&lt;RID&gt;</pre>ERDC/ITL TR-12-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Jointly review the working as-built markup drawings 
+with printouts from working as-built CAD drawing PDF files for accuracy and completeness. Monthly review of 
+working as-built CAD drawing PDF file printouts must cover all sheets revised since the previous review. These 
+PDF drawing files are part of the permanent records of this project. Any drawings damaged or lost must be satisfactorily 
+replaced at no expense to the Government.</txt><brk></brk>
+<txt>Drawing revisions (include within change order price the cost to change working and final record drawings to 
+reflect revisions) and compliance with the following procedures.</txt><brk></brk>
+<itm indent="-0.33">a. Follow directions in the revision for posting descriptive changes.</itm><brk></brk>
+<itm indent="-0.33">b. The revision delta size must be 8 mm<eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5/16 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> unless the area where the delta is to be 
+placed is crowded. Use a smaller size delta for crowded areas.</itm><brk></brk>
+<itm indent="-0.33">c. Place a revision delta at the location of each deletion.</itm><brk></brk>
+<itm indent="-0.33">d. For new details or sections which are added to a drawing, place a revision delta by the 
+detail or section title.</itm><brk></brk>
+<itm indent="-0.33">e. For minor changes, place a revision delta by the area changed on the drawing (each location).</itm><brk></brk>
+<itm indent="-0.33">f. For major changes to a drawing, place a revision delta by the title of the affected plan, 
+section, or detail at each location.</itm><brk></brk>
+<itm indent="-0.33">g. For changes to schedules or drawings, place a revision delta either by the schedule heading 
+or by the change in the schedule.</itm><brk></brk>
+<spt outline="3.3.1"><ttl>3.3.1 Final Record Drawing Package</ttl><brk></brk>
+<txt>Submit the final record PDF and CAD drawings package for the entire project within 20 days of substantial completion 
+of all phases of work. Submit one set of A1 size PDF and CAD files on optical disc, read-only memory (ROM), 
+two sets of A1 size prints and one set of the approved working record drawings. The package must be complete 
+in all details and identical in form and function to the contract drawing files supplied by the Government.</txt><brk></brk></spt>
+</spt><spt outline="3.4"><ttl>3.4 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>FINAL APPROVED SHOP DRAWINGS<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Submit final approved project shop drawings 30 days after transfer of the completed facility.</txt><brk></brk></spt>
+<spt outline="3.5"><ttl>3.5 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>CONSTRUCTION CONTRACT SPECIFICATIONS<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Submit final PDF file record construction contract specifications, including revisions thereto, 30 days after 
+transfer of the completed facility.</txt><brk></brk></spt>
+<spt outline="3.6"><ttl>3.6 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>AS-BUILT RECORD OF EQUIPMENT AND MATERIALS<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Furnish one copy of preliminary record of equipment and materials used on the project 15 days prior to final 
+inspection. This preliminary submittal will be reviewed and returned 2 days after final inspection with Government 
+comments. Submit Two sets of final record of equipment and materials 10 days after final inspection. Key the 
+designations to the related area depicted on the contract drawings. List the following data:</txt><brk></brk>
+<txt><tab headerrows="2">
+<wbk>
+<sts>
+<sty sid="s50">
+<aln vertical="BOTTOM"></aln>
+</sty>
+<sty sid="s51">
+<aln horizontal="CENTER" vertical="BOTTOM"></aln>
+</sty>
+</sts>
+<tda columncount="5" rowcount="4">
+<col autowidth="0" styleid="s50" width="108.00"/>
+<col autowidth="0" styleid="s50" width="108.00"/>
+<col autowidth="0" width="108.00"/>
+<col autowidth="0" width="108.00"/>
+<col autowidth="0" width="139.50"/>
+<row autoheight="0" height="17.25">
+<cel mergeacross="4" styleid="s51">
+<dta type="STRING">RECORD OF DESIGNATED EQUIPMENT AND MATERIALS DATA</dta>
+</cel>
+</row>
+<row autoheight="0" height="54.00">
+<cel styleid="s50">
+<dta type="STRING">Description</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Specification Section</dta>
+</cel>
+<cel>
+<dta type="STRING">Manufacturer and Catalog, Model, and Serial Number</dta>
+</cel>
+<cel>
+<dta type="STRING">Composition and Size</dta>
+</cel>
+<cel>
+<dta type="STRING">Where Used</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50"></cel>
+<cel styleid="s50"></cel>
+<cel></cel>
+<cel></cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="36.00">
+<cel styleid="s50"></cel>
+<cel styleid="s50"></cel>
+<cel></cel>
+<cel></cel>
+<cel></cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab></txt><brk></brk></spt>
+<spt outline="3.7"><ttl>3.7 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>OPERATION AND MAINTENANCE MANUALS<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Provide project operation and maintenance manuals as specified in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 78 23<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> OPERATION AND MAINTENANCE 
+MANUALS DATA. Provide one<brk></brk>
+electronic copy of the Operation and Maintenance Manual files and<brk></brk>
+three hard copies of the Operation and Maintenance Manuals. Submit<brk></brk>
+to the Contracting Officer for approval within 30 calendar<brk></brk>
+days of the Beneficial Occupancy Date (BOD). Update and resubmit files for<brk></brk>
+final approval at BOD.</txt><brk></brk></spt>
+<spt outline="3.8"><ttl>3.8 CLEANUP</ttl><brk></brk>
+<txt>Provide <sub><pre class="display_SUB">&lt;SUB&gt;</pre>final cleaning<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E1971<pre class="display_RID">&lt;/RID&gt;</pre></rid> and submit two copies of the listing of completed final 
+clean-up items. Leave premises "broom clean." Comply with <rid><pre class="display_RID">&lt;RID&gt;</pre>GS-37<pre class="display_RID">&lt;/RID&gt;</pre></rid> for general purpose cleaning and bathroom cleaning. 
+Use only nonhazardous cleaning materials, including natural cleaning materials, in the final cleanup. Clean 
+interior and exterior glass surfaces exposed to view; remove temporary labels, stains and foreign substances; 
+polish transparent and glossy surfaces; vacuum carpeted and soft surfaces. Clean equipment and fixtures to a 
+sanitary condition. Clean filters of operating equipment and comply with the Indoor Air Quality (IAQ) Management 
+Plan as required. Clean debris from roofs, gutters, downspouts and drainage systems. Sweep paved areas and 
+rake clean landscaped areas. Remove waste and surplus materials, rubbish and construction facilities from the 
+site. Recycle, salvage, and return construction and demolition waste from project in accordance with Section 
+<srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 57 19<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> TEMPORARY ENVIRONMENTAL CONTROLS, and <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 74 19<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> CONSTRUCTION WASTE MANAGEMENT AND DISPOSAL.</txt><brk></brk></spt>
+<spt outline="3.9"><ttl>3.9 REAL PROPERTY RECORD</ttl><brk></brk>
+<txt>Near the completion of Project, but a minimum of 60 days prior to final acceptance of the work, complete and 
+submit an accounting of all installed property with <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Interim DD FORM 1354<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>. Contact the Contracting Officer for 
+any project specific information necessary to complete the DD FORM 1354. Refer to <rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 1-300-08<pre class="display_RID">&lt;/RID&gt;</pre></rid> for instruction 
+on completing the DD FORM 1354.<tai opt="DESIGN-BID-BUILD"> Refer to Attachment 01 78 00-A for the Draft DD FORM 1354.</tai><tai opt="SUSTAINABILITY">Attach the Real Property 
+receiving Component's completed High Performance and Sustainable Building (HPSB) Checklist for each applicable 
+building to the completed DD 1354, in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. </tai>For convenience, 
+a blank fillable PDF DD FORM 1354 may be obtained at the following link: <url href="www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1354.pdf">www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1354.pdf </url><brk></brk>
+Submit the completed <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Checklist for DD FORM 1354<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> of Installed Building Equipment items. Attach this list to the 
+updated DD FORM 1354.</txt><brk></brk></spt>
+</prt><end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

@@ -1,0 +1,2057 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>31 62 13.20.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">31 62 13.20</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:14:02</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-31 62 13.20 (August 2009)<brk></brk>
+ Change 2 - 11/14<brk></brk>
+ ------------------------------<brk></brk>
+Preparing Activity: <pra>NAVFAC</pra> Superseding<brk></brk>
+ UFGS-31 62 13.20 (April 2006)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated January 2019</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 31 62 13.20</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>PRECAST/PRESTRESSED CONCRETE PILES<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>08/09</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification has been edited to cover the minimum requirements and include Japanese products, 
+where feasible, for a standard Japan Engineer District project. The Designer of Record (DOR) shall tailor as 
+applicable to meet project specific requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>prestressed, pretensioned piles</scp>.<brk></brk>
+Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections. Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text. For bracketed items, choose applicable item(s) or insert 
+appropriate information.<brk></brk>
+Remove information and requirements not required in respective project, whether or not brackets are present.<brk></brk>
+Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: TO DOWNLOAD UFGS GRAPHICS<brk></brk>
+Go to <url>http://www.wbdg.org/FFC/NAVGRAPH/graphtoc.pdf</url><pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The extent and location of the work to be accomplished should be indicated on the project drawings or included 
+in the project specification.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The following information shall be shown on the drawings:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>1. Locations and design loads of piles. If both tension and compression piles are contained in design, identify 
+by type.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>2. Size, shape, and length of piles.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>3. Locations, sizes, and number of prestressing steel strands. Unit stresses for prestressing strands.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>4. Details of reinforcement.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>5. Details of splices, if required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>6. Locations of test piles, if required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>7. Soil data, where required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of the guide specification. The publications 
+are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
+date, and title.<brk></brk>
+Use the Reference Wizard's Check Reference feature when you add a Reference Identifier (RID) outside of the Section's 
+Reference Article to automatically place the reference in the Reference Article. Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<brk></brk>
+References not used in the text will automatically be deleted from this section of the project specification when 
+you choose to reconcile references in the publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Note that most of the ASTM standards listed in the References section of the UFGS may not be applicable 
+to Japan projects since piles are typically manufactured locally. Precast/Prestressed Concrete piles shall be 
+manufactured in accordance with JIS A 5373<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are referred to within the text by 
+the basic designation only.</txt><brk></brk>
+<ref><del><pre class="display_DEL">&lt;DEL&gt;</pre><org>JAPANESE INDUSTRIAL STANDARDS (JIS)</org><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><org>JAPANESE STANDARDS ASSOCIATION (JSA)</org><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1108<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018) Method of Test for Compressive Strength of Concrete<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1132<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2014) Method of Making and Curing Concrete Specimens<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) Precast Prestressed Concrete Products<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 7201<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2009) Standard Practice for Execution of Spun Concrete Piles<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org><del><pre class="display_DEL">&lt;DEL&gt;</pre>JAPANESE GEOTECHNICAL SOCIETY (JGS)<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>JAPANESE GEOTECHNICAL SOCIETY (JGS)<pre class="display_ADD">&lt;/ADD&gt;</pre></add></org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JGS 1811<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2002) Method for Static Axial Compressive Load Test of Single Piles<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JGS 1813<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2002) Method for Static Axial Tensile Load Test of Single Piles<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JGS 1816<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2002) Method for Dynamic Load Test of Single Piles<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JGS 1831<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2010) Method for Lateral Load Test of Piles<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org><del><pre class="display_DEL">&lt;DEL&gt;</pre>JAPAN MINISTRY OF THE ENVIRONMENT (MOE)<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>MINISTRY OF THE ENVIRONMENT GOVERNMENT OF JAPAN (MOE)<pre class="display_ADD">&lt;/ADD&gt;</pre></add></org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>Notification No.46<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2001) Environmental Quality Standards for Soil Contamination<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><div class="brackets">[<spt outline="1.2"><ttl>1.2 LUMP SUM PAYMENT</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use this paragraph for lump-sum contracts, consult with Contracting Officer's Technical Representative 
+(Geotechnical Branch) on applicability of use prior to selection. This paragraph will be typically used when 
+there are 1) relatively small quantity of piles, 2) allowable pile loading is less than 40 tons, and 3) the subsurface 
+conditions are well defined. Fill in Table I as required selecting columns applicable to project. Generally, 
+pile capacity, location, and minimum tip elevation are shown on plans. Test piles and load tests are not incorporated 
+on lump sum contracts. Delete this paragraph for unit-price contracts. <pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Base bids upon providing the number, size, capacity, and length of piles as indicated on the <div class="brackets">[drawings.]</div> <div class="brackets">[following Table I:</div></txt><brk></brk>
+<tab>
+<wbk>
+<sts>
+<sty sid="s50">
+<aln vertical="BOTTOM"></aln>
+</sty>
+<sty sid="s51">
+<aln horizontal="CENTER" vertical="BOTTOM"></aln>
+</sty>
+<sty sid="s52">
+<aln horizontal="CENTER"></aln>
+</sty>
+</sts>
+<tda columncount="5" rowcount="2">
+<col autowidth="0" styleid="s50" width="111.75"/>
+<col autowidth="0" styleid="s50" width="111.75"/>
+<col autowidth="0" width="111.75"/>
+<col autowidth="0" width="111.75"/>
+<col autowidth="0" width="173.25"/>
+<row autoheight="0" height="17.25">
+<cel mergeacross="4" styleid="s50">
+<dta type="STRING"><hl4>Table 1</hl4></dta>
+</cel>
+</row>
+<row autoheight="0" height="42.00">
+<cel styleid="s51">
+<dta type="STRING"><hl1><div class="brackets">[Location]</div></hl1></dta>
+</cel>
+<cel styleid="s51">
+<dta type="STRING"> <hl1>Number</hl1></dta>
+</cel>
+<cel styleid="s52">
+<dta type="STRING"><hl1>Size</hl1></dta>
+</cel>
+<cel styleid="s52">
+<dta type="STRING"><hl1><div class="brackets">[Capacity]</div></hl1></dta>
+</cel>
+<cel styleid="s52">
+<dta type="STRING"><hl1>Length (tip to cut-off)</hl1></dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab>]</spt></div><brk></brk>
+<txt>The contract price for piling shall include the cost of all necessary equipment, tools, material, labor, and supervision required to: deliver, 
+handle, install, cut-off, dispose of any cut-offs, and meet the applicable contract requirements. The contract price also includes mobilization, 
+pre-drilling, and redriving heaved piles. If, in redriving, it is found that any pile is not of sufficient length to provide the capacity specified, 
+notify the Contracting Officer, who reserves the right to increase or decrease the total length of piles to be furnished and installed by changing 
+the pile locations or elevations, requiring the installation of additional piles, or directing the omission of piles from the requirements shown 
+and specified. Should total number of piles or number of each length vary from that specified as the basis for bidding, an adjustment in the contract 
+price or time for completion, or both, will be made in accordance with the contract documents. Payment for piles will be based on successfully 
+installing piles to both the minimum tip elevation and satisfying the acceptance criteria identified herein. No additional payment will be made 
+for: damaged, rejected, or misplaced piles; withdrawn piles; any portion of a pile remaining above the cut-off elevation; backdriving; cutting 
+off piles; splicing; build-ups; any cut-off length of piles; or other excesses beyond the assumed pile length indicated for which the Contractor 
+is responsible.</txt><brk></brk>
+<spt outline="1.2.1"><ttl>1.2.1 Acceptance Criteria</ttl><brk></brk>
+<txt>Safe design capacity for piles is <div class="brackets">[_____]</div> KiloNewtons (KN). Piles shall be driven to a minimum depth of <div class="brackets">[_____]</div> feet below cut-off elevation, 
+and to such additional depth as required to obtain a bearing capacity of not less than <div class="brackets">[_____]</div> KN. <brk></brk>
+The following formulas are presented only as a guide to aid in establishing the controlling penetration per blow, which, together with the minimum 
+depth of penetration will serve to determine the required minimum depth of penetration of each individual pile:</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: THESE EQUATIONS ARE NOT USED IN JAPAN. RATHER, THIS EQUATION IS USED PER JIS A 7201:<brk></brk>
+R = (2WH) / (5s plus 0.1)<brk></brk>
+Where: <brk></brk>
+R - is the approximate allowable pile load in KN<brk></brk>
+W - is the weight of the hammer in KN<brk></brk>
+H - is the height of fall of hammer in m<brk></brk>
+S - is the average of penetration for the last ten blows in m<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>R = (2WH) / (5s plus 0.1)<brk></brk>
+Where: <brk></brk>
+R - is the approximate allowable pile load in KN<brk></brk>
+W - is the weight of the hammer in KN<brk></brk>
+H - is the height of fall of hammer in m<brk></brk>
+S - is the average of penetration for the last ten blows in m</txt><brk></brk></spt>
+]<div class="brackets">[<tai opt="NAVY"><spt><ttl>MEASUREMENT AND PAYMENT</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete this paragraph for lump-sum contracts.<brk></brk>
+For NAVFAC PAC projects: Where there is unit pricing for piles, use this paragraph and edit applicable attachments 
+from Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>00 22 13.00 20 SUPPLEMENTARY INSTRUCTIONS TO OFFERORS <pre class="display_SRF">&lt;/SRF&gt;</pre></srf> for inclusion in Standard Form 1442, "Solicitation, 
+Offer and Award" and "Schedule of Bid Items." Select first bracketed text.<brk></brk>
+For NAVFAC Southeast projects, where there is a need for unit pricing of piles, include this paragraph. Refer 
+to NAVFAC SE Instruction 00010, "Instructions for Preparing Basis of Bid Statement With Unit-Priced Items," for 
+method of specifying unit price bid items. Select first bracketed text.<brk></brk><pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
+<brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This entire section should be coordinated with the Government and/or JED Cost Section.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<txt>For unit price bid, see SF 1442, "Solicitation, Offer and Award" and "Schedule of Bid Items."]</txt></div> <div class="brackets">[Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>00 22 13.00 20<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUPPLEMENTARY INSTRUCTIONS 
+TO OFFERORS.<brk></brk>
+]</div><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For NAVFAC LANT projects, use the following paragraph for measurement and payment and subsequent sub-parts.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Requirements of FAR 52.211-18 Variation in Estimated Quantity shall not apply to payment for piling. Each pile and test pile acceptably provided 
+will be paid for at the bid unit price per unit length, which price shall include items incidental to furnishing and driving the piles including 
+mobilization and demobilization,<div class="brackets">[ jetting]</div><div class="brackets">[ predrilling]</div><div class="brackets">[ probing]</div>, redriving uplifted piles, <div class="brackets">[an additional<met><pre class="display_MET">&lt;MET&gt;</pre> 1.5 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> in furnished length for 
+any test pile not driven beyond estimated pile length,]</div> and cutting off piles at the cut-off elevation. <div class="brackets">[The cost for additional length for the 
+test piles shall be included in the total unit price cost for the job.]</div> Payment will be made for job <div class="brackets">[and test piles]</div> at the bid unit price for 
+the length of pile, from tip to final cut-off, actually provided, excluding buildups and splices directed by the Contracting Officer to be made. 
+Should the actual cumulative pile length driven (tip to cut-off) vary more than 25 percent from the total pile length specified as a basis for 
+bidding, at the direction of the Contracting Officer, the unit price per unit length will be adjusted in accordance with provisions of FAR 52.236-2 
+Differing Site Conditions.</txt><brk></brk>
+<spt><ttl>Pile Cut-Off</ttl><brk></brk>
+<txt>Where the tip to cut-off length is less than that calculated from the results of test pile driving <div class="brackets">[and load testing]</div>, payment for that portion 
+of pile not driven will be made at 75 percent of the bid unit price and no other payment will be made for making the cut-off. </txt><brk></brk></spt>
+<spt><ttl>Pile Build-ups</ttl><brk></brk>
+<txt>Payment for buildups will be made at 125 percent of the bid unit price.</txt><brk></brk></spt>
+<spt><ttl>Pile Splices</ttl><brk></brk>
+<txt>Payment for splices, as specified, will be made at 25 times the unit price per<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> bid for<met><pre class="display_MET">&lt;MET&gt;</pre> 250 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 10 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> piling, 22 times the unit price 
+per<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> bid for<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> piling, and 18 times the unit price per<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> bid for all other piling.</txt><brk></brk></spt>
+<spt><ttl>Pulled Piles</ttl><brk></brk>
+<txt>Piles required to be pulled at no fault of the Contractor will be paid for at the bid unit price for furnishing and driving the pile in its original 
+position plus 25 percent of the amount to cover the cost of pulling. Such pulled piles when redriven will be paid for at 25 percent of the bid 
+unit price for the length driven.</txt><brk></brk></spt>
+<div class="brackets">[<spt><ttl>Pile Load Test</ttl><brk></brk>
+<txt>Payment for each acceptably provided complete test loading of a single pile will be made at the contract unit price per test, which price shall 
+include furnishing, placing, and removing testing equipment, and placing and removing test loads. At the direction of the Contracting Officer, 
+load tests may be waived at a credit to the Government of the unit price bid therefore.</txt><brk></brk></spt>
+]</div></spt>]</tai></div><div class="brackets">[<tai opt="ARMY"><spt><ttl>UNIT PRICES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete this paragraph for lump-sum contracts.<brk></brk>
+If Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 22 00.00 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> PRICE AND PAYMENT PROCEDURES is included in the project specifications, this paragraph 
+title (UNIT PRICES) should be deleted from this section and the remaining appropriately edited subparagraphs below 
+should be inserted into Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 22 00.00 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> PRICE AND PAYMENT PROCEDURES.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: NOTE: This entire section should be coordinated with the Government and/or JED Cost Section.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt><ttl>Furnishing and Delivering Prestressed Concrete Piles</ttl><brk></brk>
+<spt><ttl>Payment</ttl><brk></brk>
+<txt>Payment will be made for costs associated with furnishing and delivering the required lengths of permanent prestressed concrete piles, <div class="brackets">[including 
+H-pile extensions,]</div> which includes costs of furnishing and delivering piles to the work site. No payment will be made for the driving head or 
+lengths of piles exceeding required lengths. No payment will be made for piles damaged during delivery, storage, or handling to the extent that 
+they are rendered unsuitable for the work, in the opinion of the Contracting Officer.</txt><brk></brk></spt>
+<spt><ttl>Measurement</ttl><brk></brk>
+<txt>Furnishing and delivering permanent prestressed concrete piles will be measured for payment by the linear<met><pre class="display_MET">&lt;MET&gt;</pre> meter<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of piles required below the 
+cut-off elevation as <div class="brackets">[determined by the Contracting Officer and furnished to the Contractor]</div> <div class="brackets">[indicated]</div>.</txt><brk></brk></spt>
+<spt><ttl>Unit of Measure</ttl><brk></brk>
+<txt>Unit of measure: linear<met><pre class="display_MET">&lt;MET&gt;</pre> meter<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.</txt><brk></brk></spt>
+</spt><spt><ttl>Driving Prestressed Concrete Piles</ttl><brk></brk>
+<spt><ttl>Payment</ttl><brk></brk>
+<txt>Payment will be made for costs associated with driving permanent prestressed concrete piles, which includes costs of handling, driving, <div class="brackets">[and splicing 
+of piles,]</div> <div class="brackets">[performing dynamic testing, interpreting data and submitting reports,]</div> measuring heave, redriving heaved piles, removal of <div class="brackets">[build-ups]</div> 
+driving heads or cutting off piles at the cut-off elevation and removing from the work site, compiling and submitting pile driving records, backfilling 
+voids around piles, and any other items incidental to driving piles to the required elevation.</txt><brk></brk></spt>
+<spt><ttl>Measurement</ttl><brk></brk>
+<txt>Permanent prestressed concrete piles will be measured for payment for driving on the basis of lengths, to the nearest<met><pre class="display_MET">&lt;MET&gt;</pre> hundredth<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> tenth<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of a linear<met><pre class="display_MET">&lt;MET&gt;</pre>
+ meter<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, along the axis of each pile acceptably in place below the cut-off elevation shown.</txt><brk></brk></spt>
+<spt><ttl>Unit of Measure</ttl><brk></brk>
+<txt>Unit of measure: linear<met><pre class="display_MET">&lt;MET&gt;</pre> meter<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.</txt><brk></brk></spt>
+</spt><spt><ttl>Pulled Prestressed Concrete Piles</ttl><brk></brk>
+<spt><ttl>Payment</ttl><brk></brk>
+<txt>Payment will be made for costs associated with piles pulled at the direction of the Contracting Officer and found to be undamaged. The cost of 
+furnishing and delivering pulled and undamaged piles will be paid for at the applicable contract unit price for payment item "Furnishing and Delivering 
+Prestressed Concrete Piles". The cost of driving pulled and undamaged piles will be paid for at the applicable contract unit price for payment 
+item "Driving Prestressed Concrete Piles". The cost of pulling pulled and undamaged piles will be paid for at twice the applicable contract unit 
+price for payment item "Driving Prestressed Concrete Piles", which includes backfilling any remaining void. The cost of redriving pulled and undamaged 
+piles will be paid for at the applicable contract unit price for payment item "Driving Prestressed Concrete Piles". No payment will be made for 
+furnishing, delivering, driving, pulling, and disposing of piles, including pile driving points, pulled and found to be damaged and backfilling 
+voids. New piles replacing damaged piles will be paid for at the applicable contract unit price for payment items "Furnishing and Delivering Prestressed 
+Concrete Piles" and "Driving Prestressed Concrete Piles".</txt><brk></brk></spt>
+<spt><ttl>Measurement</ttl><brk></brk>
+<txt>Furnishing and delivering pulled and undamaged permanent prestressed concrete piles will be measured for payment as specified in paragraph UNIT 
+PRICES, subparagraph FURNISH AND DELIVER PRESTRESSED CONCRETE PILES. Pulling undamaged prestressed concrete piles will be measured for payment 
+as specified in paragraph UNIT PRICES, subparagraph DRIVING PRESTRESSED CONCRETE PILES. Redriving pulled undamaged prestressed concrete piles 
+will be measured for payment as specified in paragraph UNIT PRICES, subparagraph DRIVING PRESTRESSED CONCRETE PILES. New piles replacing damaged 
+piles will be measured for payment as specified in paragraph UNIT PRICES, subparagraphs FURNISH AND DELIVER PRESTRESSED CONCRETE PILES and DRIVING 
+PRESTRESSED CONCRETE PILES.</txt><brk></brk></spt>
+<spt><ttl>Unit of Measure</ttl><brk></brk>
+<txt>Unit of measure: linear<met><pre class="display_MET">&lt;MET&gt;</pre> meter<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.</txt><brk></brk></spt>
+</spt><spt><div class="brackets">[<ttl>Prestressed Concrete Pile Driving Tests</ttl>]</div><brk></brk>
+<spt><ttl>Payment</ttl><brk></brk>
+<txt>Payment will be made for costs associated with furnishing, delivering, driving, pulling, and disposing of driven test piles, <div class="brackets">[including <div class="brackets">[pile driving 
+points]</div> <div class="brackets">[and]</div> <div class="brackets">[splices]</div>]</div>; conducting pile driving tests; backfilling voids around piles; compiling pile driving test records <div class="brackets">[; performing dynamic 
+testing; interpreting data; and submitting reports]</div>.</txt><brk></brk></spt>
+<spt><ttl>Measurement</ttl><brk></brk>
+<txt>Prestressed concrete pile driving tests will be measured for payment on the basis of the applicable contract unit price per pile driving test.</txt><brk></brk></spt>
+<spt><ttl>Unit of Measure</ttl><brk></brk>
+<txt>Unit of measure: each.</txt><brk></brk></spt>
+</spt><spt><div class="brackets">[<ttl>Prestressed Concrete Piles for Load Tests</ttl>]</div><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Tensile and Lateral load tests are very expensive and not common in Japan for regular projects. Compressive 
+(static) load test can be performed but is very expensive. However, Dynamic Testing may be used in lieu of compressive 
+tests. Dynamic Testing is able to provide compressive load capacities. Typically between 2% - 5% of piles should 
+be tested dynamically.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt><ttl>Payment</ttl><brk></brk>
+<txt>Payment will be made for costs associated with furnishing, delivering, driving, pulling, and disposing of load test piles <div class="brackets">[including <div class="brackets">[pile driving 
+points]</div> <div class="brackets">[and]</div> <div class="brackets">[splices]</div>]</div>; backfilling voids around piles; compiling pile driving records <div class="brackets">[; furnishing, fabricating, and mounting of strain rods 
+and protective assembly]</div> <div class="brackets">[; furnishing, fabricating, and mounting of inclinometer and inclinometer protective assembly]</div> <div class="brackets">[; performing dynamic testing; 
+interpreting data; and submitting reports]</div>. No additional payment will be made for load test piles incorporated in the permanent work other than 
+as provided.</txt><brk></brk></spt>
+<spt><ttl>Measurement</ttl><brk></brk>
+<txt>Prestressed concrete piles for load tests will be measured for payment on the basis of the applicable contract unit price per load test pile.</txt><brk></brk></spt>
+<spt><ttl>Unit of Measure</ttl><brk></brk>
+<txt>Unit of measure: each.</txt><brk></brk></spt>
+</spt><spt><div class="brackets">[<ttl>Prestressed Concrete Pile Compressive Load Tests</ttl>]</div><brk></brk>
+<spt><ttl>Payment</ttl><brk></brk>
+<txt>Payment will be made for costs associated with prestressed concrete pile compressive load tests, including material and labor for fabricating and 
+furnishing load frames; calibrating load cells and hydraulic jacks; furnishing specified test equipment; installing strain rods; placing and removing 
+test loads and test equipment; recording, reducing, and submitting test data; and compiling and submitting pile load test reports. No payment 
+will be made for rejected pile compressive load tests.</txt><brk></brk></spt>
+<spt><ttl>Measurement</ttl><brk></brk>
+<txt>Prestressed concrete pile compressive load tests will be measured for payment on the basis of the applicable contract unit price per load test.</txt><brk></brk></spt>
+<spt><ttl>Unit of Measure</ttl><brk></brk>
+<txt>Unit of measure: each.</txt><brk></brk></spt>
+</spt><spt><div class="brackets">[<ttl>Prestressed Concrete Pile Tensile Load Tests</ttl>]</div><brk></brk>
+<spt><ttl>Payment</ttl><brk></brk>
+<txt>Payment will be made for costs associated with prestressed concrete pile tensile load tests, including material and labor for fabricating and furnishing 
+load frames; calibrating load cells and hydraulic jacks; furnishing specified test equipment; installing strain rods; placing and removing test 
+loads and test equipment; recording, reducing, and submitting test data; and compiling and submitting pile load test reports. No payment will 
+be made for rejected pile tensile load tests.</txt><brk></brk></spt>
+<spt><ttl>Measurement</ttl><brk></brk>
+<txt>Prestressed concrete pile tensile load tests will be measured for payment on the basis of the applicable contract unit price per number of tensile 
+load test.</txt><brk></brk></spt>
+<spt><ttl>Unit of Measure</ttl><brk></brk>
+<txt>Unit of measure: each.</txt><brk></brk></spt>
+</spt><spt><div class="brackets">[<ttl>Prestressed Concrete Pile Lateral Load Tests</ttl>]</div><brk></brk>
+<spt><ttl>Payment</ttl><brk></brk>
+<txt>Payment will be made for costs associated with prestressed concrete pile lateral load tests, including material and labor for fabricating and furnishing 
+load frames; calibrating load cells and hydraulic jacks; furnishing specified test equipment; installing inclinometers; placing and removing test 
+loads and test equipment; recording, reducing, and submitting test data; and compiling and submitting pile load test reports. No payment will 
+be made for rejected pile lateral load tests.</txt><brk></brk></spt>
+<spt><ttl>Measurement</ttl><brk></brk>
+<txt>Prestressed concrete pile lateral load tests will be measured for payment on the basis of the applicable contract unit price per lateral load test.</txt><brk></brk></spt>
+<spt><ttl>Unit of Measure</ttl><brk></brk>
+<txt>Unit of measure: each.</txt><brk></brk></spt>
+</spt><spt><div class="brackets">[<ttl>Pulled Load Test Prestressed Concrete Piles</ttl>]</div><brk></brk>
+<spt><ttl>Payment</ttl><brk></brk>
+<txt>Payment will be made for costs associated with load test prestressed concrete piles pulled prior to load testing at the direction of the Contracting 
+Officer and found to be undamaged. The cost of furnishing, delivering, driving, and pulling undamaged load test piles will be paid for at the 
+applicable contract unit price for payment item "Prestressed Concrete Piles for Load Tests". The cost of pulling undamaged load test piles the 
+second time after redriving and testing will be paid for at twice the applicable contract unit price for payment item "Driving Prestressed Concrete 
+Piles". The cost of redriving pulled undamaged load test piles will be paid for at the applicable contract unit price for payment item "Driving 
+Prestressed Concrete Piles". No payment will be made for furnishing, delivering, driving, pulling, and disposing of load test piles pulled at 
+the direction of the Contracting Officer and found to be damaged. New load test piles replacing damaged piles will be paid for at the applicable 
+contract unit price for payment item "Prestressed Concrete Piles for Load Tests".</txt><brk></brk></spt>
+<spt><ttl>Measurement</ttl><brk></brk>
+<txt>Pulled undamaged load test prestressed concrete piles will be measured for payment as specified in paragraph UNIT PRICES, subparagraph PRESTRESSED 
+CONCRETE PILES FOR LOAD TESTS. Pulling undamaged load test prestressed concrete piles the second time after redriving and testing will be measured 
+for payment as specified in paragraph UNIT PRICES, subparagraph DRIVING PRESTRESSED CONCRETE PILES. Redriving pulled undamaged prestressed concrete 
+piles will be measured for payment as specified in paragraph UNIT PRICES, subparagraph DRIVING PRESTRESSED CONCRETE PILES. New load test prestressed 
+concrete piles replacing damaged piles will be measured for payment as specified in paragraph UNIT PRICES, subparagraph PRESTRESSED CONCRETE PILES 
+FOR LOAD TESTS.</txt><brk></brk></spt>
+<spt><ttl>Unit of Measure</ttl><brk></brk>
+<txt>Unit of measure: as specified in paragraph UNIT PRICES, subparagraphs DRIVING PRESTRESSED CONCRETE PILES and PRESTRESSED CONCRETE PILES FOR LOAD 
+TESTS, respectfully.</txt><brk></brk></spt>
+</spt><spt><div class="brackets">[<ttl>Prestressed Concrete Pile Splices</ttl>]</div><brk></brk>
+<spt><ttl>Payment</ttl><brk></brk>
+<txt>Payment will be made for costs associated with prestressed concrete pile splices, including all plant, labor, and material required to make the 
+splice.</txt><brk></brk></spt>
+<spt><ttl>Measurement</ttl><brk></brk>
+<txt>Prestressed concrete pile splices will be measured for payment on the basis of the applicable contract unit price per pile splice.</txt><brk></brk></spt>
+<spt><ttl>Unit of Measure</ttl><brk></brk>
+<txt>Unit of measure: each.</txt><brk></brk></spt>
+</spt></spt>]</tai></div><spt outline="1.3"><ttl>1.3 PILE REQUIREMENTS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete sentence in brackets when test piles are not required. On large scale Design-Bid-Build projects, 
+the Government may still require the Contractor to employ a Geotechnical Consultant to determine the calculated 
+tip elevation and provide oversight of piling installation and testing.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: It is our understanding that the "Pile List" will be prepared by the Contractor.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide precast prestressed concrete piles per <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Production of piles shall be in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid>. The<tai opt="DESIGN-BUILD"> Contractor's Geotechnical 
+Consultant</tai> will determine and list "calculated" tip elevations or driving resistance for each pile<div class="brackets">[ from test pile data]</div>. This information will 
+be given to the Contractor no later than 7 days from receipt of complete test data. Use this list as the basis for ordering the piles. Do not 
+order piles until list is provided by the<tai opt="DESIGN-BUILD"> Contractor's Geotechnical Consultant</tai>. <div class="brackets">[Test piles shall be<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[1.5]</div> <div class="brackets">[_____]</div> meter<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[5]</div> <div class="brackets">[_____]</div> feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> longer 
+than the bid length.]</div></txt><brk></brk></spt>
+<spt outline="1.4"><ttl>1.4 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review Submittal Description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project.<brk></brk>
+The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G". Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System. Only add a “G” to an item, if the submittal is sufficiently important or complex in 
+context of the project.<brk></brk>
+For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
+tags may be used following the "G" designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" for District Office (Engineering 
+Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
+for Project Office. Codes following the "G" typically are not used for Navy, Air Force, and NASA projects.<brk></brk>
+The "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook to 
+fulfill federally mandated sustainable requirements in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Locate the "S" submittal under the SD number that best describes the submittal item.<brk></brk>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose the second bracketed item for 
+Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are <div class="brackets">[for Contractor Quality Control 
+approval.]</div><div class="brackets">[for information only. When used, a designation following the "G" designation identifies the office that will review the submittal for 
+the Government.]</div> Submittals with an "S" are for inclusion in the Sustainability eNotebook, in conformance to Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-01 Preconstruction Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Installation Procedures<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Geotechnical Consultant Documentation<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+]</div><div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Wave Equation Analysis<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+]</div><itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Order List<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm>Precasting manufacturer's <sub><pre class="display_SUB">&lt;SUB&gt;</pre>quality control procedures<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: It is our understanding that Dynamic Pile Testing Inspection and Monitoring of piles should be conducted 
+by the contractor.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide instructions and procedures for the processes of Dynamic Pile Testing, Inspection and Monitoring of piles during installation and testing.</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-02 Shop Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: When the size and complexity of project warrants certification by a registered engineer, insert requirements; 
+otherwise delete.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Piles<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-03 Product Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Pile Driving Equipment<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm> Submit descriptions of pile driving equipment, including hammers, power packs, driving helmets, cap blocks, pile cushions, leads, 
+extractors, jetting equipment, and preboring equipment at least 30 days prior to commencement of work.</itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-05 Design Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Concrete mix design<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm>Submit a concrete mix design before concrete is placed, for each type of concrete used for the piles.</itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Cement milk mix design<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-06 Test Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Silica Fume<pre class="display_SUB">&lt;/SUB&gt;</pre></sub><div class="brackets">[; G]</div><div class="brackets">[; G, <div class="brackets">[_____]</div>]</div>]</itm></div><brk></brk>
+<itm>Concrete <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Compressive Strength<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Cement milk Compressive Strength<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Test piles<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Load tests<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div><brk></brk>
+<itm> Submit concrete cylinder compressive strength test results. <div class="brackets">[Submit test pile records]</div> <div class="brackets">[and]</div> <div class="brackets">[load test data]</div>. </itm><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Dynamic Pile Analysis<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm> Submit a summary report of dynamic test results for test piles within <div class="brackets">[7]</div><div class="brackets">[_____]</div> calendar days of completing field work. <div class="brackets">[For 
+permanent piles, submit a field summary report within one (1) day of testing. Submit a typed report summarizing the results of 
+dynamic testing of permanent piles on a monthly basis.]</div></itm>]</div><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-11 Closeout Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Pile records<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm> Submit pile <div class="brackets">[and test pile]</div> records.<div class="brackets">[ Submit load test data and results.]</div></itm><brk></brk></spt>
+<spt outline="1.5"><ttl>1.5 QUALITY ASSURANCE</ttl><brk></brk>
+<spt outline="1.5.1"><ttl>1.5.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Piles<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Prepare in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 7201<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Indicate placement of reinforcement including tendons. Indicate location of special embedded 
+or attached lifting devices, employment of pick-up points, support points other than pick-up points, and any other methods of pick-up. <div class="brackets">[Provide 
+certification of a Professional Engineer registered in any jurisdiction of the U. S. or its territories or Japan, that layout and details of reinforcement 
+and tendons conform with that shown on the structural design drawings.]</div></txt><brk></brk></spt>
+<spt outline="1.5.2"><ttl>1.5.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Quality Control Procedures<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Submit the precasting manufacturer's quality control procedures and inspection records established in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="1.5.3"><ttl>1.5.3 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Installation Procedures<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<lst indent="-0.33">a. Submit information on the type of equipment proposed to be used, proposed methods of operation, pile driving plan including proposed 
+sequence of driving, and details of all pile driving equipment and accessories.</lst><brk></brk>
+<div class="brackets">[<lst indent="-0.33">b. Provide details of pile driving equipment and a Wave Equation Analysis of pile drivability for selection of the hammer along with a 
+statement of driving procedures. The Wave Equation Analysis is to be completed by the Contractor's Geotechnical Consultant for each test 
+pile location where different subsurface conditions exist and is to include the following information pertaining to the proposed pile driving 
+equipment:</lst><brk></brk>
+<itm indent="-0.33">(1) Complete <att>Pile and Driving Equipment Data Form</att>, (which can be downloaded at: <url>http://www.wbdg.org/FFC/NAVGRAPH/graphtoc.pdf</url>
+) for each proposed pile hammer and pile type combination.</itm><brk></brk>
+<itm indent="-0.33">(2) Copies of computer input and output sheets and graphs showing soil resistance versus blow count as well as maximum tension 
+and compression stresses versus blow count. Analysis shall be run at the estimated tip elevation as well as other required elevations 
+to define maximum stress levels in the pile during driving.</itm><brk></brk>
+<lst indent="-0.33">c. Provide detailed procedures for conducting the dynamic pile load test and equipment to be used for conducting the load test. The detailed 
+description shall explain how specific information of pile performance will be evaluated.</lst><brk></brk>
+]</div></spt><div class="brackets">[<spt outline="1.5.4"><ttl>1.5.4 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Geotechnical Consultant Documentation<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>The services of an independent, Registered Professional Geotechnical Engineer, experienced in soil mechanics and Pile Dynamic Analysis, shall be 
+hired by the Contractor to observe test pile installation and job pile installation as specified herein. The Geotechnical Consultant shall be 
+independent of the Contractor and shall have no employee of employer relationship which could constitute a conflict of interest.</txt><brk></brk></spt>
+]</div><spt outline="1.5.5"><ttl>1.5.5 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Concrete Mix Design<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Certify, using a Government-approved independent commercial testing laboratory, that proportioning of mix is in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid> for 
+specified strength and is based on aggregate data which has been determined by laboratory tests during last twelve months. Submit a complete list 
+of materials including type; brand; source and amount of cement, fly ash, pozzolan, ground slag, and admixtures; and applicable reference specifications. 
+Submit additional data regarding concrete aggregates if the source of aggregate changes. Submittal shall clearly indicate where each mix design 
+will be used when more than one mix design is submitted.</txt><brk></brk></spt>
+<div class="brackets">[<spt outline="1.5.6"><ttl>1.5.6 Load Test Supporting Data</ttl><brk></brk>
+<txt>Submit Jack calibration records, a testing arrangement description and diagram, and the proposed loading sequence.</txt><brk></brk></spt>
+]</div><spt outline="1.5.7"><ttl>1.5.7 Silica Fume Manufacturer's Representative</ttl><brk></brk>
+<txt>Provide statement that the manufacturer's representative will be present at plant to ensure proper mix, including high range water reducer (HRWR), 
+and batching methods.</txt><brk></brk></spt>
+</spt><brk></brk>
+<spt outline="1.6"><ttl>1.6 DELIVERY, STORAGE, AND HANDLING</ttl><brk></brk>
+<txt>Piles shall be stored, handled, and transported in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid> except as follows. Methods used for handling and storage of piles 
+shall be such that the piles are not subjected to excessive bending stress, cracking, spalling, or other damage. </txt><brk></brk>
+<spt outline="1.6.1"><ttl>1.6.1 Damaged Piles</ttl><brk></brk>
+<txt>The Contractor shall inspect each pile for sweep and structural damage such as cracking and spalling before transporting them to the project site 
+and immediately prior to placement in the driving leads. Any unusual cracks (cracks other than crazing, surface drying, shrinkage cracks and end 
+cracks) shall be brought to the attention of the Contracting Officer. Piles which are damaged during delivery, storage, or handling to the extent 
+they are rendered unsuitable for the work, in the opinion of the Contracting Officer, shall be rejected and removed from the project site, or may 
+be repaired, if approved, at no cost to the Government.</txt><brk></brk>
+<spt outline="1.6.1.1"><ttl>1.6.1.1 Repairable Cracks</ttl><brk></brk>
+<txt>Piles with cracks equal to or greater than<met><pre class="display_MET">&lt;MET&gt;</pre> 0.15 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.006 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> but less than<met><pre class="display_MET">&lt;MET&gt;</pre> 1.5 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.06 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> shall be rejected or repaired. As an alternate 
+to pile rejection, the Contractor may submit a proposal to repair deficient piles, which shall be restored prior to driving to provide its required 
+design capacity, perform its intended function in the structure, and take into consideration long term durability in corrosive environment.</txt><brk></brk></spt>
+<spt outline="1.6.1.2"><ttl>1.6.1.2 Non-Repairable Cracks</ttl><brk></brk>
+<txt>Piles with cracks equal to or greater than<met><pre class="display_MET">&lt;MET&gt;</pre> 1.5 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.06 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> shall be rejected.</txt><brk></brk></spt>
+</spt><spt outline="1.6.2"><ttl>1.6.2 Pile Sweep</ttl><brk></brk>
+<txt>Sweep shall be limited to<met><pre class="display_MET">&lt;MET&gt;</pre> 3 mm per 3 M<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/8 inch per 10 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> over the length of the pile. Piles having excessive sweep shall be rejected.</txt><brk></brk>
+<brk></brk></spt>
+</spt></prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The entire Part 2 shall also comply with JIS A 5373.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="2.1"><ttl>2.1 MATERIALS</ttl><brk></brk>
+<txt> Materials used for manufacturing precast/prestressed concrete piles shall comply with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid></txt>.<brk></brk></spt>
+<spt outline="2.2"><ttl>2.2 CONCRETE MIX DESIGN</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Insert the minimum 28 day compressive strength required by the design. A minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 80 MPa<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5000 psi<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> is 
+generally required. Insert aggregate size, either<met><pre class="display_MET">&lt;MET&gt;</pre> 19 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> or<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> is generally maximum. For 
+marine exposure, (or moderate and severe sulfate exposure) include last bracketed sentence, which limits the water-cement 
+ratio to a maximum of 0.40.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Air-entrainment may be considered optional only in regions that do not experience freezing temperatures.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><pre class="display_NTE">&lt;/NTE&gt;</pre></nte><brk></brk>
+<txt>Concrete shall have a minimum <sub><pre class="display_SUB">&lt;SUB&gt;</pre>compressive strength<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> of<met><pre class="display_MET">&lt;MET&gt;</pre> 80 MPa<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[5000]</div> psi<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> at 28 days and a maximum size aggregate of <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Concrete 
+shall be air entrained with a minimum of 4.5 percent and a maximum of 7.5 percent. Mix shall contain fly ash, ground iron blast furnace slag or <sub><pre class="display_SUB">&lt;SUB&gt;</pre>
+silica fume<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> to meet the requirements specified herein to mitigate Alkali-Silica Reactivity (ASR).<div class="brackets">[ For marine exposure, ensure a dense concrete 
+free of shrinkage cracks, with a minimum degree of permeability. The maximum water cement ratio shall be 0.40 .]</div></txt><brk></brk></spt>
+<spt outline="2.3"><ttl>2.3 FABRICATION</ttl><brk></brk>
+<spt outline="2.3.1"><ttl>2.3.1 Formwork</ttl><brk></brk>
+<txt>Formwork and dimensional tolerances shall be in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid> , and as specified herein. Provide forms of metal, braced and stiffened 
+against deformation, accurately constructed, watertight, and supported on unyielding casting beds. Forms shall permit movement of pile without 
+damage during release of prestressing force. Form precast dowel holes with galvanized flexible metal conduit. <div class="brackets">[Inside forms or void tubes not 
+to be grouted may be treated cardboard, plywood, or other material.]</div></txt><brk></brk></spt>
+<spt outline="2.3.2"><ttl>2.3.2 Pretensioning</ttl><brk></brk>
+<txt>Pretensioning shall be performed in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid>, and as specified herein. Use gage calibrated within last 6 months by a laboratory 
+approved by Contracting Officer. Provide means for measuring elongation of steel to nearest<met><pre class="display_MET">&lt;MET&gt;</pre> 3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Give tensioning steel a uniform prestress 
+prior to being brought to design prestress. Induce same initial prestress in each unit when several units of prestressing steel in a pile are 
+stretched simultaneously.</txt><brk></brk></spt>
+<spt outline="2.3.3"><ttl>2.3.3 Casting</ttl><brk></brk>
+<spt outline="2.3.3.1"><ttl>2.3.3.1 Conveying</ttl><brk></brk>
+<txt>Convey concrete to formwork in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid>, and as specified herein. Clean conveying equipment thoroughly before each run. During 
+placing, make any free vertical drop of the concrete less than<met><pre class="display_MET">&lt;MET&gt;</pre> 0.91 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Remove concrete which has segregated in conveying or placing.</txt><brk></brk></spt>
+<spt outline="2.3.3.2"><ttl>2.3.3.2 Placing and Casting</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Select the size of chamfer required. Consult with local producers. Where project requires a large quantity 
+of piling a specific value may be specified, otherwise, use a minimum or a range of values.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Perform concrete casting within 3 days after pretensioning steel; however, do not deposit concrete in forms until placement of reinforcement and 
+anchorages has been inspected and approved by pile manufacturer's quality control representative. Produce each pile of dense concrete straight 
+with smooth surfaces with reinforcement retained in its proper position during fabrication. Use vibrator with heads smaller than the minimum distance 
+between steel for pretensioning. Make surface of pile ends perpendicular to axis of pile. Chamfer, <div class="brackets">[a minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 19 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>,]</div> <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>
+<div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>,]</div> <div class="brackets">[between<met><pre class="display_MET">&lt;MET&gt;</pre> 19 mm and 31 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch and 1 1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>,]</div> ends of piles and corners of square piles.</txt><brk></brk></spt>
+</spt><spt outline="2.3.4"><ttl>2.3.4 Curing of Piles</ttl><brk></brk>
+<txt>Cure piles using moist or accelerated curing. Curing of piles shall be in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid> except as follows.</txt><brk></brk></spt>
+</spt><spt outline="2.4"><ttl>2.4 PRODUCT QUALITY CONTROL</ttl><brk></brk>
+<txt>Where piling is manufactured in a plant with an established quality control program as attested to by a current certification in the PCI "Certification 
+Program for Quality Control" perform product quality control in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid>. <tst>Where piling is manufactured by specialists or in 
+plants not currently enrolled in the PCI "Certification Program for Quality Control," set-up a product quality control system in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>
+JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid> and perform concrete and aggregate quality control testing using an independent commercial testing laboratory approved by the Contracting 
+Officer in accordance with the following.</tst></txt><brk></brk>
+<spt outline="2.4.1"><ttl>2.4.1 Aggregate Tests</ttl><brk></brk>
+<txt><tst>Aggregate tests shall comply with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</tst></txt><brk></brk></spt>
+<spt outline="2.4.2"><ttl>2.4.2 Slump and Strength Tests</ttl><brk></brk>
+<txt>Slump and compressive strength tests shall comply with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.4.3"><ttl>2.4.3 Changes in Proportions</ttl><brk></brk>
+<txt>If, after evaluation of strength test results, compressive strength is less than specified compressive strength, make adjustments in proportions 
+and water content and changes in temperature, moisture, and curing procedures as necessary to secure specified strength. Submit changes in mix 
+design to Contracting Officer in writing.</txt><brk></brk></spt>
+</spt></prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>PILE DRIVING EQUIPMENT<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<spt outline="3.1.1"><ttl>3.1.1 Pile Hammers</ttl><brk></brk>
+<txt>Furnish a hammer capable of developing the indicated ultimate pile capacity considering hammer impact velocity; ram weight; stiffness of hammer 
+and pile cushions; cross section, length, and total weight of pile; and character of subsurface material to be encountered. <div class="brackets">[Use the same pile 
+hammer, operating at the same rate and in the same manner, as that used for driving test piles.]</div> Obtain required driving energy of hammer, except 
+for diesel hammers, by use of a heavy ram and a short stroke with low impact velocity. At final driving, operate pile hammer in accordance with 
+manufacturer's recommendation for driving either end bearing piles or friction piles. At final driving, operate diesel powered hammers at rate 
+recommended by manufacturer for hard driving. Maintain pressure at steam or air hammer so that: (1) for double-acting hammer, the number of blows 
+per minute during and at completion of driving of a pile is equal approximately to that at which hammer is rated; (2) for single-acting hammer, 
+there is a full upward stroke of the ram; and (3) for differential type hammer, there is a slight rise of hammer base during each upward stroke.</txt><brk></brk></spt>
+<spt outline="3.1.2"><ttl>3.1.2 Driving Helmets and Cushion Blocks</ttl><brk></brk>
+<spt outline="3.1.2.1"><ttl>3.1.2.1 Driving Helmets or Caps and Pile Cushions</ttl><brk></brk>
+<txt>Use a steel driving helmet or cap including a pile cushion between top of pile and driving helmet or cap to prevent impact damage to pile. Use 
+a driving helmet or cap and pile cushion combination capable of protecting pile head, minimizing energy absorption and dissipation, and transmitting 
+hammer energy uniformly over top of pile. Provide driving helmet or cap that fits sufficiently loose around top of pile so that pile may be free 
+to rotate without binding within driving helmet. <div class="brackets">[<tst>During test pile installation, demonstrate to satisfaction of Contracting Officer that equipment 
+to be used on project performs specified function.</tst>]</div> Use pile cushion of solid wood or of laminated construction using plywood, softwood or hardwood 
+boards with grain parallel to end of pile. Provide pile cushion with thickness of <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[75]</div> mm <pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre><div class="brackets">[3]</div> inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> minimum and the thickness shall be 
+increased so as to be suitable for the size and length of pile, character of the sub-surface material to be encountered, hammer characteristics, 
+and the required driving resistance. Replace pile cushion at the start of driving of each pile and when it becomes highly compressed, charred 
+or burned, or has become spongy or deteriorated in any manner. Show details of driving helmets, capblocks, and pile cushions. Submit 2 weeks 
+prior to <div class="brackets">[test]</div> pile installation.</txt><brk></brk></spt>
+<spt outline="3.1.2.2"><ttl>3.1.2.2 Hammer Cushion or Capblock</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Select either wood or aluminum/micarta capblock. Delete inappropriate sentences. An aluminum/micarta 
+capblock is recommended because of its consistent elastic properties and long life. If final pile penetration 
+resistance is based on a Wave Equation analysis, the type capblock used should be the same as that used in the 
+analysis.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Use a hammer cushion or capblock between driving helmet or cap and hammer ram consisting of <div class="brackets">[a solid hardwood block with grain parallel to the 
+pile axis and enclosed in a close-fitting steel housing]</div> <div class="brackets">[aluminum and micarta (or equal) discs stacked alternately in a steel housing or a suitable 
+polymer designed for this specific purpose as indicated by the hammer manufacturer]</div>. Use steel plates at top and bottom of capblock. <div class="brackets">[Replace 
+wood capblock when it becomes highly compressed, charred or burned or becomes spongy or deteriorated in any manner]</div>. <div class="brackets">[Replace aluminum, micarta 
+or polymer discs that have become damaged, split or deteriorated in any manner]</div>. <div class="brackets">[Do not replace wood capblock during final driving of any pile.]</div> 
+Do not use small wood blocks, wood chips, rope or other materials that permit excessive loss of hammer energy.</txt><brk></brk></spt>
+</spt></spt><spt outline="3.2"><ttl>3.2 PRELIMINARY WORK</ttl><brk></brk>
+<div class="brackets">[<spt outline="3.2.1"><ttl>3.2.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Wave Equation Analysis<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> of Pile Drivability</ttl><brk></brk>
+<lst indent="-0.33">a. Prior to driving any pile, the Contractor shall submit a pile Wave Equation Analysis, performed by his Geotechnical Consultant, for 
+each size pile and distinct subsurface profile condition. These analyses shall take into account the proposed hammer assembly, pile cap 
+block and cushion characteristics, the pile properties and estimated lengths and the soil properties anticipated to be encountered throughout 
+the installed pile length based on static capacity analysis with consideration of driving gain/loss factors. Only one specific model of 
+pile hammer may be used for each pile type and capacity.</lst><brk></brk>
+<lst indent="-0.33">b. The Wave Equation Analysis shall demonstrate that the piles will not be damaged during driving, shall indicate that the driving stresses 
+will be maintained within the limits below and indicate the blow count necessary to achieve the required ultimate static pile capacities.</lst><brk></brk>
+<hl1><hl3>Allowable Driving Stresses</hl3></hl1><brk></brk>
+<hl1>Steel Piles</hl1><brk></brk>
+ Compression - 0.9 fy (MPa)<brk></brk>
+ Tension - 0.9 fy (MPa)<brk></brk>
+ Where fy is yield strength of steel<brk></brk>
+<hl1>Concrete</hl1><brk></brk>
+ Compression - 0.85f'c minus UPL (MPa)<brk></brk>
+ Tension - (0.25 times (the square root of f'c)) plus UPL (MPa)<brk></brk>
+ f'c is compressive strength of concrete (MPa)<brk></brk>
+ UPL = Unit Prestress after Losses (MPa)<brk></brk>
+ (Obtain values from pile manufacturer) <brk></brk>
+<lst indent="-0.33">c. Upon completion of the dynamic and static testing programs outlined in this specification section, a refined Wave Equation Analysis 
+shall be performed taking into consideration the evaluated capacities, gain/loss factors and recommended production pile lengths. Production 
+pile driving criteria shall be developed based on the results of the refined Wave Equation Evaluations.</lst><brk></brk>
+<lst indent="-0.33">d. All pile driving equipment furnished by the Contractor shall be subject to the approval of the Contractor's Geotechnical Consultant. 
+Complete the attached pile and driving equipment data form, including hammer information, in full as part of the submittal of the results 
+of the Wave Equation Analyses.</lst><brk></brk>
+<lst indent="-0.33">e. The cost of performing the Wave Equation Analyses shall be paid for by the Contractor and included in the base bid.</lst><brk></brk></spt>
+]</div><spt outline="3.2.2"><ttl>3.2.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Order List<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>The Contractor shall submit to the Contracting Officer for approval, an itemized list for piles prior to placing the order with the supplier. 
+The list shall indicate the pile lengths required at each location as shown on the plans and the corresponding ordered length of each pile.<div class="brackets">[ Load 
+testing and refined wave equation analysis shall be completed prior to submission of an order list.]</div></txt><brk></brk></spt>
+<spt outline="3.2.3"><ttl>3.2.3 Pile Length Markings</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Marks and numbers are typically done at 1 meter intervals.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The Contractor shall mark each pile prior to driving with horizontal lines at<met><pre class="display_MET">&lt;MET&gt;</pre> 1 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> intervals, and the number of feet from pile tip at<met><pre class="display_MET">&lt;MET&gt;</pre> 1 
+m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5 foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> intervals.</txt><brk></brk></spt>
+</spt><spt outline="3.3"><ttl>3.3 PILE DRIVING</ttl><brk></brk>
+<spt outline="3.3.1"><ttl>3.3.1 Driving Piles</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete bracketed option for foundation excavation when not required. Delete items in brackets dealing 
+with tip elevation and driving resistance when test piles or load tests are not used. Delete item in brackets 
+regarding predrilling or jetting when procedure is not used. If needed, insert maximum hammer energy for no tip 
+resistance. This can be determined by comparing tensile stresses in pile resulting from a Wave Equation Analysis 
+with effective prestress in pile.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><tst>Notify Contracting Officer 10 days prior to driving of <div class="brackets">[test]</div> piles <div class="brackets">[and load test]</div>.</tst> <div class="brackets">[Foundation excavation shall be stopped at<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> 
+above foundation grade before piles are driven. When pile driving is completed, excavation shall be completed to lines and grade shown. ]</div>Piles 
+may be driven when the specified 28-day concrete strength has been achieved but not less than 7 days after casting. Drive piles to <div class="brackets">[or below "calculated"]</div>
+<div class="brackets">[indicated]</div> tip elevation <div class="brackets">[to reach a driving resistance established by the wave equation analyses (WEAP) in accordance with the schedule which 
+the<tai opt="DESIGN-BID-BUILD"> Government</tai><tai opt="DESIGN-BUILD"> Contractor's Geotechnical Consultant</tai> will prepare from the test-pile driving data]</div>. During initial driving and until pile tip has 
+penetrated beyond layers of very soft soil <div class="brackets">[or below bottom of predrilled or prejetted holes]</div>, use a reduced driving energy of the hammer as required 
+to prevent pile damage. Refusal criteria shall be established by the Contracting Officer. <tst>If a pile fails to reach <div class="brackets">["calculated"]</div> <div class="brackets">[indicated]</div> 
+tip elevation, <div class="brackets">[or if a pile reaches <div class="brackets">["calculated"]</div> tip elevation without reaching required driving resistance,]</div> notify Contracting Officer and 
+perform corrective measures as directed.</tst> Provide hearing protection when noise levels exceed 140 dB. Piles or pile sections shall not be handled 
+or moved in any manner that would result in cracking or permanent damage to the concrete or to the grout surrounding the prestressing cables. 
+Piles may be driven without pile guides or leads providing a hammer guide frame is used to keep the pile and hammer in alignment.</txt><brk></brk></spt>
+<spt outline="3.3.2"><ttl>3.3.2 Protection of Piles</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete references to batter piles when not applicable to the project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Take care to avoid damage to piles during handling, placing pile in leads, and during pile driving operations. Support piles laterally during 
+driving, but allow rotation in leads. <div class="brackets">[Where pile or projecting reinforcement orientation is essential, take precautionary measures to maintain 
+the orientation during driving. ]</div><div class="brackets">[Take special care in supporting battered piles to prevent excessive bending stresses in pile.]</div> Square top of 
+pile to longitudinal axis of pile. Maintain axial alignment of pile hammer with that of the pile. If the Contractor elects to use a pile head 
+with projecting strands or mild steel reinforcement, prevent direct impact forces from being transmitted through the reinforcement, by using a 
+special driving head.</txt><brk></brk></spt>
+<spt outline="3.3.3"><ttl>3.3.3 Tolerances in Driving</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Omit references to batter piles when not applicable to the project. Select appropriate tolerances for 
+type of pile.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Drive piles with a variation of not more than 2 percent from vertical for plumb piles or more than 4 percent from required angle for batter piles. 
+Maintain and check axial alignment of pile and leads at all times. <tst>If subsurface conditions cause pile drifting beyond allowable axial alignment 
+tolerance, notify Contracting Officer and perform corrective measures as directed.</tst> Place butts within<met><pre class="display_MET">&lt;MET&gt;</pre> 100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of location indicated. 
+<div class="brackets">[Manipulation of piles within specified tolerances <div class="brackets">[will not be permitted.]</div><div class="brackets">[will be permitted, to a maximum of 1 1/2-percent of their exposed length 
+above ground surface or mudline.]</div>]</div> In addition to specified tolerances, maintain a location to provide a clear distance of at least<met><pre class="display_MET">&lt;MET&gt;</pre> 125 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
+ from butt to edge of pile cap. If clear distance can not be maintained, then notify Contracting Officer. Check each pile for heave. Redrive 
+heaved piles to required point elevation.</txt><brk></brk></spt>
+<spt outline="3.3.4"><ttl>3.3.4 Rejected Piles</ttl><brk></brk>
+<txt>Piles damaged or impaired for use during handling or driving, mislocated, or driven out of alignment beyond the maximum tolerance shall be withdrawn 
+and replaced by new piles or shall be cut-off and abandoned and new piles driven as directed. Excess cut-off from piles and unacceptable piles 
+shall be removed from the work site. All work in connection with withdrawing and removing rejected piles from the site shall be done at no additional 
+cost to the Government.</txt><brk></brk></spt>
+<spt outline="3.3.5"><ttl>3.3.5 Jetting of Piles</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Jetting should generally not be permitted for piles:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>1. Dependent on side friction in fine-grained low permeability soils (high clay or silt content) where considerable 
+time is required for the soil to reconsolidate around the piles.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>2. Subject to uplift or lateral forces.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>3. Adjacent to existing structures.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>4. In closely spaced clusters unless the load capacity is confirmed by test.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Water jets will<div class="brackets">[ not]</div> be permitted.<div class="brackets">[ Jetting <div class="brackets">[may]</div> <div class="brackets">[shall]</div> be used to assist driving piles through strata that cannot be penetrated practicably 
+by use of the hammer alone. <div class="brackets">[Driving shall be restricted to a static weight while water is being injected to prevent inducing tensile stresses 
+in the piles which damage the concrete.]</div> After the penetration of the strata requiring jetting has been accomplished, jetting shall be discontinued 
+and hammer driving shall be resumed.]</div><div class="brackets">[ Discontinue jetting when the pile tip is approximately<met><pre class="display_MET">&lt;MET&gt;</pre> 1.5 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> above the <div class="brackets">[calculated]</div> <div class="brackets">[indicated]</div> 
+pile tip elevation. Drive pile the final<met><pre class="display_MET">&lt;MET&gt;</pre> 1.5 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of penetration.]</div><div class="brackets">[Adequate measures shall be taken for collecting and disposing of runoff 
+water.]</div><div class="brackets">[ Jetting method and equipment shall be approved by the Contracting Officer prior to commencing jetting operation.]</div> Before starting final 
+driving, firmly seat piles in place by application of a number of reduced energy hammer blows.<div class="brackets">[Measures, including use of a silt curtain, shall 
+be employed to contain turbid water created by jetting piles.]</div></txt><brk></brk></spt>
+<spt outline="3.3.6"><ttl>3.3.6 Predrilling of Piles</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Predrilling should generally not be permitted for piles:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>1. Dependent on side friction in fine-grained low permeability soils (high clay or silt content) where considerable 
+time is required for the soil to reconsolidate around the piles.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>2. Subject to uplift or lateral forces.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>3. Located in cohesionless soils.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>4. In closely spaced clusters unless the load capacity is confirmed by test.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Predrilling to remove soil or other material representing the bulk of the volume of the pile to be driven<div class="brackets">[ will<div class="brackets">[ not]</div> be permitted]</div><div class="brackets">[ shall be provided]</div>. 
+<div class="brackets">[The diameter of the hole should not exceed two-thirds the width of the pile.]</div><div class="brackets">[Predrill only to a depth of <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre> meters<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> below cut-off elevation 
+prior to setting piles.]</div><div class="brackets">[Discontinue drilling when the pile tip is approximately<met><pre class="display_MET">&lt;MET&gt;</pre> 1.5 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> above the <div class="brackets">[calculated]</div> <div class="brackets">[indicated]</div> pile tip elevation. 
+Drive pile the final<met><pre class="display_MET">&lt;MET&gt;</pre> 1.5 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of penetration.]</div></txt><brk></brk></spt>
+<spt outline="3.3.7"><ttl>3.3.7 Splices</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Splicing of piles normally should not be permitted except where extremely long or heavy piles are required. 
+If splices are permitted, drawings should indicate splice details. (See PCI standard drawings for typical splice 
+details).<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<txt>Splicing of piles is not permitted.]</txt></div> <div class="brackets">[Make splices as indicated. Splices shall be capable of developing the full strength of the member in compression, 
+tension, shear, and bending. Detail drawings of splices and design calculations demonstrating the strength of the splice shall be submitted for 
+approval.<brk></brk>
+]</div></spt><spt outline="3.3.8"><ttl>3.3.8 Build-Ups</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Insert compressive strength required by design, usually a minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 80 MPa<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5,000 psi<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Insert maximum 
+percent of build-ups permitted for project. The percent will depend on criticality of pile failure at build-up; 
+whether the top of the pile is designed as a moment connection; exposure of piles to external physical or corrosive 
+damage. Normally, for piles supporting piers exposed to seawater, limit percentage of build-ups to 10 percent.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Where required, pile section may be extended to cut-off elevation by means of a cast-in-place reinforced concrete build-up or by adding a new pile 
+segment with same properties of the below pile. Make build-up in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5373<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Construct build-ups made after completion of driving 
+in accordance with detail, "Build-Up Without Driving." Make build-ups to be driven in accordance with detail "Build-Up With Driving." Have details 
+of means for protecting joints by a suitable mortar or epoxy approved by Contracting Officer. Where build-ups are exposed to water, protect cast-in-place 
+section from water during curing period. Concrete in build-up shall have a minimum compressive strength of <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre> MPa<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> psi<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. <tst>Build-ups will not 
+be permitted on more than <div class="brackets">[_____]</div> percent of total number of piles. If this percent figure is exceeded, or if in the judgment of the Contracting 
+Officer, the clustered location of build-ups is undesirable, withdraw piles of insufficient length and replace with longer piles.</tst> Payment for 
+such withdrawal and replacement will be made as an adjustment to the contract price.</txt><brk></brk></spt>
+<spt outline="3.3.9"><ttl>3.3.9 Pile Cut-Off</ttl><brk></brk>
+<txt>Cut-off piles with a smooth level cut using pneumatic tools, sawing, or other suitable methods approved by Contracting Officer. Use of explosives 
+for cutting is not permitted. Cut-off sections of piles shall be removed from the site upon completion of the work.</txt><brk></brk></spt>
+</spt><spt outline="3.4"><ttl>3.4 FIELD QUALITY CONTROL</ttl><brk></brk>
+<spt outline="3.4.1"><ttl>3.4.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Test Piles<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Select the second bracketed option when soil conditions dictate the use of a test pile longer than job 
+piles. The ordered pile length for test piles should be<met><pre class="display_MET">&lt;MET&gt;</pre> 1.5 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> longer than ordered length for job piles 
+to allow additional penetration if driving conditions dictate. Indicate location and number (if required) of 
+test piles on plans , or list appropriate soil boring test hole numbers.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<txt>Use test piles of type, and drive as specified for piling elsewhere in this section. ]</txt></div><div class="brackets">[Order test piles <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre> meters<pre class="display_MET">&lt;/MET&gt;</pre></met> <eng><pre class="display_ENG">&lt;ENG&gt;</pre>feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> longer in length than 
+production piles. The additional test pile length shall be driven only at the direction of the Contracting Officer. ]</div><tst>The<tai opt="DESIGN-BUILD"> Contractor's Geotechnical 
+Consultant</tai> will use test pile data to determine "calculated" pile tip elevation or necessary driving resistance. Drive test piles <div class="brackets">[at the locations 
+indicated]</div> <div class="brackets">[in vicinity of soil boring test holes Nos. <div class="brackets">[_____,]</div> <div class="brackets">[_____,]</div> and <div class="brackets">[_____]</div>]</div>. Drive test piles to <div class="brackets">[indicated tip elevation]</div> <div class="brackets">[indicated 
+bidding lengths]</div>.</tst> Use test piles, if located properly and offering adequate driving resistance in finished work. <div class="brackets">[<tst>Pre-drilling or jetting is 
+permitted only when test piles clearly establish validity of its use, or as directed by the Contracting Officer. </tst>]</div><div class="brackets">[A pile dynamic analyzer shall 
+be provided and operated as specified in paragraph DYNAMIC PILE ANALYSIS during the driving of each test pile. Modify driving as required based 
+upon recommendation of Contractor's Geotechnical Consultant and approval of the Contracting Officer.<brk></brk>
+]</div></spt><div class="brackets">[<spt outline="3.4.2"><ttl>3.4.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Dynamic Pile Analysis<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This section may be deleted if Dynamic Pile Testing will not be performed<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The purpose of dynamic testing is to provide supplemental information for evaluating pile hammer performance, driving stresses, and bearing capacities. 
+Dynamic testing shall be conducted during the entire time piles are initially driven or redriven and during pile restrike testing. Use test piles 
+of type as specified elsewhere in this section. Equipment to obtain dynamic measurements, record, reduce and display its data shall be furnished 
+and meet the requirement of <rid><pre class="display_RID">&lt;RID&gt;</pre>JGS 1816<pre class="display_RID">&lt;/RID&gt;</pre></rid>. The equipment shall have been calibrated within 12 months thereafter throughout the contract duration. 
+Drive test piles at the locations indicated. The contractor shall employ an independent inspection firm, hereinafter referred to as the "Contractor's 
+Geotechnical Consultant", experienced in the pile driving process, monitoring of test pile installation, and in the use of the Pile Driving Analyzer 
+and its related equipment. Dynamic pile analysis shall be performed as follows:</txt><brk></brk>
+<lst indent="-0.33">a. Each dynamic pile analysis shall be performed in two steps. The first step is to check the hammer, pile and soil performance, and 
+to determine the suitability of the proposed hammer for the size, length and type of pile being installed for the soil types encountered 
+as the piles are driven. This initial monitoring shall determine whether pre-augering or jetting is appropriate, efficiency of the hammer 
+relative to specified efficiency, effectiveness of cushion, level of compressive and tensile stress in pile and extent/location of any 
+pile damage caused by the initial driving. With each blow of the pile the information listed below shall be electronically recorded and 
+analyzed by the Pile Driving Analyzer:</lst><brk></brk>
+<itm indent="-0.33">(1) Blow number</itm><brk></brk>
+<itm indent="-0.33">(2) Blow rate per minute and/or stroke.</itm><brk></brk>
+<itm indent="-0.33">(3) Input and reflected values of force and velocity.</itm><brk></brk>
+<itm indent="-0.33">(4) Value of upward and downward traveling force wave with time.</itm><brk></brk>
+<itm indent="-0.33">(5) Maximum and final transferred energy to pile, hammer system<brk></brk>
+ efficiency.</itm><brk></brk>
+<itm indent="-0.33">(6) Maximum compressive stress, velocity, acceleration and<brk></brk>
+ displacement.</itm><brk></brk>
+<itm indent="-0.33">(7) Maximum tensile stress in pile.</itm><brk></brk>
+<itm indent="-0.33">(8) Pile structural integrity, damage detection, extent and<brk></brk>
+ location.</itm><brk></brk>
+<itm indent="-0.33">(9) Bearing capacity of pile by Case method.</itm><brk></brk>
+<itm indent="-0.33">If the pile, hammer and soil performance evaluation recommends changes to the hammer stroke, pile cushioning, augering or any 
+other aspect for the pile driving operation these changes shall be incorporated into production pile driving in an effort to control 
+excessive stresses and pile damage. Test piles damaged or broken during installation shall be replaced, incorporating driving 
+modifications as determined by the Contractor's Geotechnical Consultant and reviewed and approved by the Contracting Officer. 
+This procedure shall be repeated until allowable tensile and compressive stresses are achieved in the pile and/or pile damage 
+is minimized. Selected initial driving records shall be subjected to rigorous computer analysis based on the Case Method for 
+determination of resistance distribution, soil resistance and properties, and estimation of anticipated gain/loss factors.</itm><brk></brk>
+<lst indent="-0.33">b. Upon completion of test pile driving the piles shall be allowed to set-up for at least 72 hours. After evaluation of pile, hammer 
+and soil performance by the Contractor's Geotechnical Consultant, the second step of the dynamic pile analysis may proceed. This portion 
+of the evaluation requires striking the set-up piles a minimum of 20-50 times, or as directed by the Contractor's Geotechnical Consultant 
+using the same hammer which was used for the test pile driving and which will be used for production pile driving. The hammer shall be 
+"warmed up" and in optimal readiness prior to restriking, in order to avoid capacity losses during evaluation of restrike data. Maximum 
+hammer energy shall be applied during restrike in order to fully mobilize the soil resistance. However, care should be exercised as to 
+not overstress the pile. In addition to those items listed above, selected restrike driving records (as directed by the Contractor's Geotechnical 
+Consultant are to be subjected to rigorous computer analysis based on the Case method for determination of resistance distribution, soil 
+resistance and properties, and plot of applied load vs. average pile displacement based on the calculated soil properties.</lst><brk></brk>
+<lst indent="-0.33">c. Performance Report:</lst><brk></brk>
+<itm indent="-0.33">(1) Upon satisfactory completion of each dynamic load test a minimum of three copies of a Pile Performance Report shall be submitted 
+for the Contractor by the Contractor's Geotechnical Consultant. The submittal shall be prepared and sealed by a Professional 
+Engineer registered in any jurisdiction of the U.S. or its territories or Japan and shall be made within three working days of 
+the completion of the dynamic load test.</itm><brk></brk>
+<itm indent="-0.33">(2) The report for the Dynamic Pile Analysis shall contain the following information:</itm><brk></brk>
+<itm>(a) Bearing capacity of pile. Information resulting from analysis of a selected restrike blow.</itm><brk></brk>
+<itm>(b) Maximum and final transferred energy, hammer system efficiency during pile installation.</itm><brk></brk>
+<itm>(c) Maximum compressive stress, velocity, acceleration and displacement.</itm><brk></brk>
+<itm>(d) Maximum tensile stress in pile.</itm><brk></brk>
+<itm>(e) Pile structural integrity, damage detection, extent and location.</itm><brk></brk>
+<itm>(f) Blows per minute and blow number.</itm><brk></brk>
+<itm>(g) Input and reflection values of force and velocity, upward and downward traveling force wave with time.</itm><brk></brk>
+<itm>(h) Pile skin friction and toe resistance distribution.</itm><brk></brk>
+<itm>(i) Maximum energy transferred to pile.</itm><brk></brk>
+<itm indent="-0.33">(3) The maximum allowable pile design load will be proposed by the Contractor's Geotechnical Consultant based upon the results 
+of a satisfactory pile load test conducted on a pile driven as specified herein and shall include the effects of load transfer 
+to the soil above the foundation stratum.</itm><brk></brk>
+<lst indent="-0.33">d. The equipment to be used for dynamic testing of the pile hammer and soil performance and for dynamic load testing of the test pile 
+shall meet the requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JGS 1816<pre class="display_RID">&lt;/RID&gt;</pre></rid>.<brk></brk></lst>
+<brk></brk>
+<lst indent="-0.33">e. All services of the Contractor's Geotechnical Consultant shall be paid for by the Contractor. The Contractor's Geotechnical Consultant 
+shall be available throughout the pile driving operation to consult with the Contracting Officer when required by the Contracting Officer. 
+The cost of changes in the Contractor's procedure, as required by evaluation of the results of the Pile Driving Analysis, shall be at the 
+Contractor's expense.</lst><brk></brk></spt>
+]</div><spt outline="3.4.3"><ttl>Static 3.4.3 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Load Tests<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This section may be deleted if Static Load Testing will not be performed.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: If pile load tests are required and approved by the Contracting Officer, specify number and location of 
+piles. Select appropriate acceptance criteria.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><tst>Perform compressive load tests on <div class="brackets">[_____]</div> test piles in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JGS 1811<pre class="display_RID">&lt;/RID&gt;</pre></rid> as modified herein. <div class="brackets">[Allow a minimum of 72 hours following final 
+test pile driving for pile set-up prior to load testing. ]</div></tst><div class="brackets">[Do not use anchor piles.]</div> Provide apparatus for applying vertical loads as required 
+by method, using load from weighted box or platform <div class="brackets">[or reaction frame attached to sufficient uplift piles to safely take required load]</div> applied 
+to pile by hydraulic jack. Increase load in increments until rapid progressive settlement takes place or until application of total compressive 
+load of <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre> metric tons<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> tons<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> for compressive load tests . Consider load test satisfactory when <div class="brackets">[after one hour at full test load gross settlement 
+of pile butt is not greater than gross elastic pile compression plus<met><pre class="display_MET">&lt;MET&gt;</pre> 4 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.15 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> plus one percent of pile tip diameter or width in <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>
+ inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>,]</div> <div class="brackets">[slope of gross load-settlement curve under full test load does not exceed<met><pre class="display_MET">&lt;MET&gt;</pre> 1.5 mm per metric ton<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.05 inches per ton<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>,]</div> <div class="brackets">[net settlement 
+after removal of test load does not exceed<met><pre class="display_MET">&lt;MET&gt;</pre> 19 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.]</div> Perform load tests at locations<div class="brackets">[ as proposed by the Contractor's Geotechnical Consultant 
+and]</div> as directed by the Contracting Officer. <tst>Additional load tests, at Government expense, may be required by the Contracting Officer.</tst> Loading, 
+testing, and recording and analysis of data shall be under the direct supervision of a Registered Professional Engineer, registered in the state 
+of project location, and provided and paid for by the Contractor.</txt><brk></brk>
+<spt outline="3.4.3.1"><ttl>3.4.3.1 Safe Design Capacity</ttl><brk></brk>
+<txt>The safe design capacity of a test pile as determined from the results of load tests shall be the lesser of the two values computed according to 
+the following:</txt><brk></brk>
+<lst indent="-0.33">a. One-half of that load which causes a net settlement after rebound of not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 0.28 mm per metric ton<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.01 inch per ton<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of total 
+test load.</lst><brk></brk>
+<lst indent="-0.33">b. One-half of the load that causes a gross settlement of not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm,<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch,<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> provided the load settlement curve shows no sign 
+of failure.</lst><brk></brk></spt>
+</spt><div class="brackets">[<spt outline="3.4.4"><ttl>3.4.4 Tensile Load Test</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This section may be deleted if Tensile Load Test will not be performed.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Perform tensile load tests on <div class="brackets">[_____]</div> test piles in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JGS 1813<pre class="display_RID">&lt;/RID&gt;</pre></rid>, as modified <div class="brackets">[and]</div> in paragraph LOAD TESTS. A tensile load of <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre>
+ kN<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> tons<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> shall be applied to each tensile load test pile. In performing the tension load test, the ultimate load to be applied shall be one and 
+one-half times the safe tension capacity, and the Standard Loading Procedure shall be employed.</txt><brk></brk></spt>
+]</div><div class="brackets">[<spt outline="3.4.5"><ttl>3.4.5 Lateral Load Test</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This section may be deleted if Lateral Load Test will not be performed.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Perform lateral load tests on <div class="brackets">[_____]</div> piles in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JGS 1831<pre class="display_RID">&lt;/RID&gt;</pre></rid>, as modified <div class="brackets">[and]</div> in paragraph LOAD TESTS. Lateral load tests shall consist 
+of jacking two piles apart with a hydraulic jack, with one pile serving as the reaction pile for the other. A lateral load of <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre> kN<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> tons<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> 
+shall be applied to each pair of lateral load test piles. Required movement readings shall be made and recorded for each pile.</txt><brk></brk></spt>
+]</div><spt outline="3.4.6"><ttl>3.4.6 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Pile Records<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Omit reference to load test when not required in project. Omit reference to test piles and "calculated 
+tip elevation" when test piles are not driven. Where special or unusual soil conditions are expected, consultation 
+with the Contracting Officer's Technical Representative (Geotechnical Branch) regarding special engineering supervision 
+of driving, testing, recording and analysis of data for project may be useful.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The Specifier shall attach the specifications pile driving log graphic (for all pile driving projects) 
+and the pile driving equipment data form (for projects using PDA) to the end of this specification section.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Keep a complete and accurate record of each pile driven. Indicate the pile location, deviations from pile location, cross section shape and dimensions, 
+original length, ground elevation, tip elevation, cut-off elevations, <div class="brackets">[batter alignment,]</div> number of blows required for each<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of penetration 
+and number of blows for the last<met><pre class="display_MET">&lt;MET&gt;</pre> 150 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> penetration or fraction thereof <div class="brackets">[as required]</div> for the "calculated" <div class="brackets">[driving resistance]</div>. Include 
+in the record the beginning and ending times of each operation during driving of pile, type and size of hammer used, rate of operation, stroke 
+or equivalent stroke for diesel hammer, type of driving helmet, and type and dimension of hammer cushion (capblock) and pile cushion used. Record 
+retap data and unusual occurrences during pile driving such as redriving, heaving, weaving, obstructions, <div class="brackets">[jetting,]</div> and any driving interruptions. 
+A preprinted <att>pile driving log</att> for recording pile driving data<div class="brackets">[ and pile driving equipment data form]</div>, which can be downloaded at: <url>http://www.wbdg.org/FFC/NAVGRAPH/graphtoc.pdf</url>
+. For piles installed by the Cement-Milk Method, provide the actual grout amount pumped into the predrilled hole on the Pile Record. </txt><brk></brk></spt>
+</spt><div class="brackets">[<spt outline="3.5"><ttl>3.5 SPECIAL INSPECTION AND TESTING FOR SEISMIC-RESISTING SYSTEMS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include this paragraph <hl1>only</hl1> when special inspection and testing for seismic-resisting systems is required 
+by the International Building Code (IBC).<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>This paragraph will be applicable to both new buildings designed and to existing building seismic rehabilitation 
+designs done according to UFC 1-200-01, "General Building Requirements" and UFC 3-310-04, "Seismic Design for 
+Buildings".<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>The designer must indicate on the drawings all locations and all features for which special inspection and testing 
+is required in accordance with Chapter 17 of the IBC. This includes indicating the locations of all structural 
+components and connections requiring inspection.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Add any additional requirements as necessary.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><ned></ned><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Special inspections and testing for seismic-resisting systems and components shall be done in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 45 35<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SPECIAL INSPECTIONS.</txt><brk></brk></spt>
+]</div><spt outline="3.6"><ttl>3.6 PILE INSTALLATION BY PLACING METHODS ("Cement-Milk" Method)</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: In Japan, Precast/Prestressed Concrete piles are also installed by means of the "Cement-Milk" method. This 
+section is added to cover the general requirements for the "Cement-Milk" method. Wave equation analysis is not 
+applicable for this method. Dynamic pile analysis shall be performed in only one step after the cement-milk reaches 
+the required compressive strength.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Pile installation by placing methods consists of pre-drilling with earth auger system and filling with cement grout ("cement milk"). </txt><brk></brk>
+<txt>If required, use borehole stabilizing liquid during pre-drilling operations. Excavation liquid shall be Bentonite plus cement plus water with following 
+standard mixing quantities</txt><brk></brk>
+<tab borders="1">
+<wbk>
+<sts>
+<sty sid="s50">
+<aln horizontal="CENTER"></aln>
+</sty>
+</sts>
+<tda columncount="3" rowcount="2">
+<col autowidth="0" width="195.00"/>
+<col autowidth="0" width="195.00"/>
+<col autowidth="0" width="195.00"/>
+<row autoheight="0" height="21.75">
+<cel styleid="s50">
+<dta type="STRING">Bentonite (kg)</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Cement (kg)</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Water (l)</dta>
+</cel>
+</row>
+<row>
+<cel styleid="s50">
+<dta type="STRING">25 - 50</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">80 - 160</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">450 - 500</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab><brk></brk>
+<txt>The <sub><pre class="display_SUB">&lt;SUB&gt;</pre>cement milk compressive strength<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> at 28-Days shall be greater than <met><pre class="display_MET">&lt;MET&gt;</pre>20 MPa<pre class="display_MET">&lt;/MET&gt;</pre></met>. The <sub><pre class="display_SUB">&lt;SUB&gt;</pre>cement milk mix design<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> that can provide the required compressive 
+strength shall be submitted before concrete is placed. Piles shall be open-end piles.</txt><brk></brk>
+<spt outline="3.6.1"><ttl>3.6.1 PILE INSTALLATION PROCEDURES</ttl><brk></brk>
+<lst indent="-0.33">(1) Conduct pre-drilling operations as indicated in drawings.</lst><brk></brk>
+<lst indent="-0.33">(2) Earth auger head diameter is approximately pile diameter plus <met><pre class="display_MET">&lt;MET&gt;</pre>100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met>. </lst><brk></brk>
+<lst indent="-0.33">(3) The electric current of earth auger motor shall be recorded continuously. </lst><brk></brk>
+<lst indent="-0.33">(4) Drilling and Pile Erection</lst><brk></brk>
+<lst indent="-0.33"> (a) Perform drilling in a vertical direction aligned with the pile centerline and prevent soil on the lateral surface of a borehole 
+from collapsing by using soil stabilizing liquid. Do not rotate the earth auger in a reverse direction when it is pulled out.</lst><brk></brk>
+<lst indent="-0.33"> (b) After the earth auger reaches the specified bearing ground and subsequently cement milk for condensation is injected, pull out the 
+earth auger while injecting perimeter condensation liquid, place a pile into the borehole while being careful of not damaging the lateral 
+surface of the borehole, either applying pressure with the pile equipment or by slightly driving the pile with a hammer. </lst><brk></brk>
+<lst indent="-0.33"> (c) After placing the pile into the borehole, allow for curing process for approximate 7 days while keeping it as it is aligned with 
+the pile centerline.</lst><brk></brk>
+<lst indent="-0.33">(5) Stabilizing Liquid, Cement Milk for Condensation, and Perimeter Condensation Liquid</lst><brk></brk>
+<lst indent="-0.33"> (a) Use borehole stabilizing liquid for preventing the lateral surface of a borehole from collapsing.</lst><brk></brk>
+<lst indent="-0.33"> (b) Cement milk for condensation is a cement-grout material that is injected at the pile top zone.</lst><brk></brk>
+<lst indent="-0.33"> (c) Perimeter condensation liquid is a cement-grout material injected to fill the gap between the pile and the borehole.</lst><brk></brk>
+<lst indent="-0.33">(6) Perform supervision tests for cement milk for condensation and perimeter condensation liquid as follows: </lst><brk></brk>
+<lst indent="-0.33"> (a) The number of samples per test shall be three.</lst><brk></brk>
+<lst indent="-0.33"> (b) Collect samples as follows: 1) Collect the amount of cement milk for condensation for one test from a grout plant at one time. 2) 
+Collect the amount of perimeter condensation liquid from the cement milk flown over a drilled hole at one time after inserting a pile into 
+it.</lst><brk></brk>
+<lst indent="-0.33"> (c) Collect samples by using polyethylene bags and make cylindrical samples with the approximate diameter of 50 mm and the approximate 
+height of <met><pre class="display_MET">&lt;MET&gt;</pre>100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met>.</lst><brk></brk>
+<lst indent="-0.33"> (d) Cure samples in accordance with the standard cure method which is in the water curing at 20+2 degrees C specified in <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1132<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</lst><brk></brk>
+<lst indent="-0.33"> (e) Strength test shall be in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1108<pre class="display_RID">&lt;/RID&gt;</pre></rid> (Method of Test for Compressive Strength of Concrete).</lst><brk></brk>
+<lst indent="-0.33"> (f) The compressive strengths of cement milk for condensation and perimeter condensation liquid are those determined on the 28th day 
+of curing. Required compressive strengths are listed below.</lst><brk></brk>
+<brk></brk>
+<hl4>Compressive Strength (Unit: N/mm2)</hl4><brk></brk>
+<tab>
+<wbk>
+<sts>
+<sty sid="s50">
+<aln horizontal="CENTER"></aln>
+</sty>
+</sts>
+<tda columncount="2" rowcount="3">
+<col autowidth="0" width="234.00"/>
+<col autowidth="0" width="233.25"/>
+<row autoheight="0" height="23.25">
+<cel styleid="s50">
+<dta type="STRING">Type</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Compressive Strength</dta>
+</cel>
+</row>
+<row autoheight="0" height="23.25">
+<cel>
+<dta type="STRING">Cement Milk for Condensation</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">20 or greater</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.75">
+<cel>
+<dta type="STRING">Perimeter Condensation Liquid</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">0.5 or greater</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab><brk></brk></spt>
+<spt outline="3.6.2"><ttl>3.6.2 FIELD QUALITY CONTROL</ttl><brk></brk>
+<txt>Tests indicated in Section 3.4.2, 3.4.3, 3.4.4 and 3.4.5 may also be applicable to piles installed by the "cement-milk" method.</txt><brk></brk></spt>
+<spt outline="3.6.3"><ttl>3.6.3 ENVIRONMENTAL CONSIDERATIONS</ttl><brk></brk>
+<txt>The Soil Mixing Contractor shall use cement materials in order to comply<brk></brk>
+with the regulations from the Japanese Ministry of the Environment<brk></brk>
+indicated in <rid><pre class="display_RID">&lt;RID&gt;</pre>Notification No.46<pre class="display_RID">&lt;/RID&gt;</pre></rid> (i.e. limits for Hexavalent Chromium<brk></brk>
+Leachate in Soils) or other applicable local environmental regulations.<brk></brk></txt>
+<brk></brk></spt>
+</spt></prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

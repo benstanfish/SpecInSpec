@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>10 14 00.20.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">10 14 00.20</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:56</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><brk></brk>
+<hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-10 14 00.20 (August 2017)<brk></brk>
+ Change 2 - 11/18<brk></brk>
+ -----------------------------<brk></brk>
+Preparing Activity: <pra>USACE</pra> Superseding<brk></brk>
+ UFGS-10 14 00.20 (November 2012)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated July 2019</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 10 14 00.20</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>INTERIOR SIGNAGE<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>08/17</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project. The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>common types of 
+signs, dimensional letters, and metal plaques used inside buildings</scp>.<brk></brk>
+Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections. Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text. For bracketed items, choose applicable 
+item(s) or insert appropriate information.<brk></brk>
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<brk></brk>
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This section covers some of the more common interior sign types. When 
+other sign types are to be used, such as elevator-related signs, occupancy load 
+signs and structural load limit signs, specifications will be modified accordingly. 
+Buildings will be accessible in accordance with 36 CFR, Part 1191, Americans 
+with Disabilities Act (ADA) Accessibility Guidelines for Buildings and Facilities 
+except for Army buildings excluded by TI 800-01 Design Criteria.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Reference UFC 3-120-01 available at Unified Federal Criteria Design: Sign Standard 
+for design, construction and placement of signs.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>In combination with this specification, drawings and attachments will include 
+location, dimensions, elevations, schedules, content, details and such other 
+information as required to indicate the extent of the work. The same terminology 
+and designations used in the specification will be used on the drawings, schedules 
+and attachments.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Product selections must be based on quality, aesthetic values, appearance, and 
+cost as related to project needs.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Use of personal names on interior signage is discouraged. If personal names 
+are required, changeable message strips will be used. Consider coordination 
+of interior signage within this specification with signage required on individual 
+workstations which is specified in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>12 59 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SYSTEMS FURNITURE.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Interior stairwell signage will be provided in accordance with Life Safety Code 
+NFPA 101, Chapter 5, and applicable occupancy chapters. Clearly define interstitial 
+spaces or other doorways within stairwell that do not lead to a horizontal exitway 
+with signage that states "Not an Exit".<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Permanent information on room identification signs includes the room number 
+on all room identification signs, symbol and message on toilet rooms, message 
+on janitor closets, mechanical/electrical and communications rooms, and message 
+on stairs.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Where appropriate for MEDICAL FACILITIES, include the following requirements 
+for signage:<brk></brk>
+1. Room numbering for spaces within the medical facility will be determined 
+jointly by the using facility and the design team. User room number will be 
+different than architectural room number (see UFC 4-510-01 Design: Medical 
+Military Facilities). Room numbering will be consistent throughout the facility. 
+For inpatient medical facilities, rooms with audiovisual nurse call must have 
+a unique user room number, since audiovisual nurse call is tied into a digital 
+paging system. For outpatient clinics, rooms with tonevisual nurse call, do 
+not need a unique user room number, since tonevisual nurse call is hardwired 
+to a panel located at a nursing station. Room numbering should address the 
+following issues:<brk></brk>
+ a. Wayfinding within clinics and other departments (user room #).<brk></brk>
+ b. Facility Maintenance (architectural room #).<brk></brk>
+ c. Audiovisual Nurse Call (inpatient) (unique user room #).<brk></brk>
+ d. Tonevisual Nurse Call (outpatient) (user room #).<brk></brk>
+2. The use of symbols/graphics on interior signage will be limited. International 
+symbols and graphics will be used where needed. Recommended symbols include 
+men/women symbol for toilet rooms and showers, men/women symbol with key for 
+locker rooms, telephone symbol for public telephone areas, information (?), 
+radiation symbol, biohazard symbol, and handicap symbol.<brk></brk>
+3. Arrow placement order on interior signage will comply with UFC 4-510-01 
+Design: Medical Military Facilities. Left pointing arrows at top of sign, 
+followed by up pointing arrows, then right pointing arrows at bottom of sign. 
+Example follows:<brk></brk>
+ &lt; EMERGENCY<brk></brk>
+ ^ Orthopedic Clinic<brk></brk>
+ &gt; Admissions<brk></brk>
+4. Signage schedule should be provided in electronic spreadsheet format. Schedule 
+will include architectural room number, user room number, type of sign, message, 
+symbol (if needed), color, and mounting location.<brk></brk>
+5. Building directories and accompanying orientation maps for the medical facility 
+will be determined jointly by the using facility and the design team. Orientation 
+maps, if required, will be included as part of the interior signage package, 
+and should be of the same manufacturer. Include international symbols for information 
+(?), parking areas (upper case P within circle), public toilet rooms, public 
+telephones, and graphic north arrow on orientation maps. Orientation map is 
+to be positioned so that building left is viewer's left.<brk></brk>
+6. Large, easy to read signs over reception counters, check-in counters, information 
+desks, or departments will be provided. Signs should be either ceiling mounted 
+or affixed to soffit directly above counters.<brk></brk>
+7. Room identification signs should be<met><pre class="display_MET">&lt;MET&gt;</pre> 200 mm x 200 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 8 x 8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> or<met><pre class="display_MET">&lt;MET&gt;</pre> 230 mm 
+x 230 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 9 x 9 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Justification of room number and message will be flush left.<brk></brk>
+8. Fire evacuation signs will be provided in accordance with the local Fire 
+Marshal, if required.<brk></brk>
+9. Overhead directional signs should not block fire exit signs.<brk></brk>
+10. Signage will clearly define all staff, public, or patient toilet rooms.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of 
+the guide specification. The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<brk></brk>
+Use the Reference Wizard's Check Reference feature when you add a RID outside 
+of the Section's Reference Article to automatically place the reference in the 
+Reference Article. Also use the Reference Wizard's Check Reference feature 
+to update the issue dates.<brk></brk>
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are 
+referred to in the text by basic designation only.</txt><brk></brk>
+<ref><org>ASTM INTERNATIONAL (ASTM)</org><brk></brk>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre><rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM B209<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2014) Standard Specification for Aluminum and 
+Aluminum-Alloy Sheet and Plate<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM B221<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2021) Standard Specification for Aluminum and 
+Aluminum-Alloy Extruded Bars, Rods, Wire, Profiles, 
+and Tubes<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk><pre class="display_ADD">&lt;/ADD&gt;</pre></add>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D635<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018) Standard Test Method for Rate of Burning 
+and/or Extent and Time of Burning of Plastics 
+in a Horizontal Position<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>INTERNATIONAL CODE COUNCIL (ICC)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ICC A117.1 COMM<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017) Standard and Commentary Accessible and 
+Usable Buildings and Facilities<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><del><pre class="display_DEL">&lt;DEL&gt;</pre><org>JAPANESE INDUSTRIAL STANDARDS (JIS)</org><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><org>JAPANESE STANDARDS ASSOCIATION (JSA)</org><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 4000<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre><del><pre class="display_DEL">&lt;DEL&gt;</pre>(2017) Aluminium and Aluminium Alloy Sheets, 
+Strips and Plates (Amendment 1)<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>(2017) Aluminium 
+and Aluminium Alloy Sheets, Strips and Plates 
+(Amendment 1)<pre class="display_ADD">&lt;/ADD&gt;</pre></add><pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 4040<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Aluminum and Aluminum Alloy Bars and 
+Wires<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8602<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2010) Combined Coatings of Anodic Oxide and 
+Organic Coatings on Aluminum and Aluminum Alloys<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 5906<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(1998) Aluminum Pigments For Paints<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS R 3202<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2011) Float Glass and Polished Plate Glass<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3410<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2013) Welding Coordination - Tasks and Responsibilities<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3801<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018) Standard Qualification Test and Acceptance 
+Requirements for Manual Welding Technique<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3841<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018) <del><pre class="display_DEL">&lt;DEL&gt;</pre>Test Method and Criteria in Semi-Automatic 
+Welding Technology Certification<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>Standard Qualification 
+Test and Acceptance Requirements for Semi-Automatic 
+Welding Technique<pre class="display_ADD">&lt;/ADD&gt;</pre></add><pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 101<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018; TIA 18-1; TIA 18-2; TIA 18-3) Life Safety 
+Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2021; TIA 21-1) Life Safety Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 70<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017; ERTA 1-2 2017; TIA 17-1; TIA 17-2; TIA 
+17-3; TIA 17-4; TIA 17-5; TIA 17-6; TIA 17-7; 
+TIA 17-8; TIA 17-9; TIA 17-10; TIA 17-11; TIA 
+17-12; TIA 17-13; TIA 17-14; TIA 17-15; TIA 
+17-16; TIA 17-17 ) National Electrical Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2023; 
+ERTA 7 2023; TIA 23-15) National Electrical 
+Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk></ref>
+<ref><org>U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>36 CFR 1191<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>Americans with Disabilities Act (ADA) Accessibility 
+Guidelines for Buildings and Facilities; Architectural 
+Barriers Act (ABA) Accessibility Guidelines<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.2"><ttl>1.2 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review submittal description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.<brk></brk>
+The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G." Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System. 
+Only add a “G” to an item, if the submittal is sufficiently important or complex 
+in context of the project.<brk></brk>
+For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office. Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.<brk></brk>
+The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. Locate the "S" 
+submittal under the SD number that best describes the submittal item.<brk></brk>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are for <div class="brackets">[Contractor Quality Control approval.]</div> <div class="brackets">[information only. When used, a designation following the "G" 
+designation identifies the office that will review the submittal for the Government.]</div> Submittals with an "S" 
+are for inclusion in the Sustainability eNotebook, in conformance to Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-02 Shop Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Detail Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-10 Operation and Maintenance Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Approved Manufacturer's Instructions<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Protection and Cleaning<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 EXTRA MATERIALS</ttl><brk></brk>
+<txt>Provide <div class="brackets">[_____]</div> extra frames and extra stock of the following: <div class="brackets">[<div class="brackets">[_____]</div> blank plates of each color and size 
+for sign types <div class="brackets">[_____]</div>.]</div> <div class="brackets">[<div class="brackets">[_____]</div> changeable message strips for sign type <div class="brackets">[_____]</div>.]</div> Provide <div class="brackets">[<div class="brackets">[_____]</div> paper inserts 
+and <div class="brackets">[one]</div><div class="brackets">[_____]</div> copy of the software for user produced signs and inserts after project completion]</div> <div class="brackets">[and equipment 
+necessary for removal of signage parts and pieces.]</div></txt><brk></brk></spt>
+<spt outline="1.4"><ttl>1.4 QUALITY ASSURANCE</ttl><brk></brk>
+<spt outline="1.4.1"><ttl>1.4.1 Samples</ttl><brk></brk>
+<txt>Submit interior signage samples of each of the following sign types showing typical quality, workmanship and 
+color: Directional sign, Standard Room sign, Changeable message strip sign, <div class="brackets">[Facility Recognition Plaque]</div> <div class="brackets">[_____]</div>. 
+The samples may be installed in the work, provided each sample is identified and location recorded.</txt><brk></brk></spt>
+<spt outline="1.4.2"><ttl>1.4.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Detail Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Submit detail drawings showing elevations of each type of sign, dimensions, details and methods of mounting or 
+anchoring, mounting height, shape and thickness of materials, and details of construction. Include a schedule 
+showing the location, each sign type, and message.</txt><brk></brk></spt>
+</spt><spt outline="1.5"><ttl>1.5 DELIVERY, STORAGE, AND HANDLING</ttl><brk></brk>
+<txt>Materials must be packaged to prevent damage and deterioration during shipment, handling, storage and installation. 
+Product must be delivered to the jobsite in manufacturer's original packaging and stored in a clean, dry area 
+in accordance with manufacturer's instructions.</txt><brk></brk></spt>
+<spt outline="1.6"><ttl>1.6 WARRANTY</ttl><brk></brk>
+<txt>Warrant the interior signage for a period of <div class="brackets">[2]</div><div class="brackets">[ ]</div> year<div class="brackets">[s]</div> against defective workmanship and material. 
+Warranties must be signed by the authorized representative of the manufacturer. Submit warranty accompanied 
+by the document authenticating the signer as an authorized representative of the guarantor. Guarantee that the 
+signage products and the installation are free from any defects in material and workmanship from the date of 
+delivery.</txt><brk></brk></spt>
+</prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete signage systems, directories, etc., not required for project. 
+Coordinate electrical requirements with Division 26 and building electrical 
+design.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="2.1"><ttl>2.1 STANDARD PRODUCTS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Do not use galvanized or enameled steel products for panels, brackets, 
+fasteners, or hardware in locations where deployments may leave facilities unoccupied 
+or without conditioned spaces for extended time periods, humid interior spaces, 
+humid project locations or exterior project locations with Environmental Severity 
+Classifications (ESC) C4 and C5. Humid project locations are those in ASHRAE 
+climate zones 0A, 1A, 2A, 3A, 3C, 4C and 5C (as identified in ASHRAE 90.1). 
+See UFC 1-200-01 for determination of ESC for project locations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Humid interior spaces include, but are not limited to, high humidity, non air 
+conditioned spaces (for example, bathrooms, locker rooms, pools, trainers), 
+areas open to the exterior (for example, mechanical rooms and hangars), and 
+spaces that are not conditioned by design or may not be conditioned during prolonged 
+periods due to deployment or occupancy (for example, garages, motor pool bays, 
+vehicle repair bays, park bathrooms, field house toilets, storage warehouses, 
+and in some cases enlisted and officer quarters).<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Signs, plaques, directories, and dimensional letters must be the standard product of a manufacturer regularly 
+engaged in the manufacture of such products that essentially duplicate signs that have been in satisfactory use 
+at least 2 years prior to bid opening. Obtain signage from a single manufacturer with edges and corners of finished 
+letterforms and graphics true and clean.</txt><brk></brk></spt>
+<spt outline="2.2"><ttl>2.2 ROOM IDENTIFICATION/DIRECTIONAL SIGNAGE SYSTEM</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Depending on the complexity of the project consider a modular signage 
+system such as structural rails and end caps. Coordinate project requirements 
+and specific signage system with user.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="2.2.1"><ttl>2.2.1 Standard Room Signs</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Do not use framed signs or metal signs where exposed to the weather in 
+humid locations or project locations with Environmental Severity Classifications 
+(ESC) of C3 thru C5. Humid project locations are those in ASHRAE climate zones 
+0A, 1A, 2A, 3A, 3C, 4C and 5C (as identified in ASHRAE 90.1). See UFC 1-200-01 
+for determination of ESC for project locations. Use Acrylic Plastic or Phenolic 
+sign materials without frames in these areas.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Signs must consist of <div class="brackets">[acrylic plastic<met><pre class="display_MET">&lt;MET&gt;</pre> 2 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.080 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thickness minimum conforming to]</div> <div class="brackets">[laminated thermosetting 
+Type MP plastic (three-ply melamine plastic laminate with phenolic core)]</div> <div class="brackets">[6063-T5 extruded aluminum in accordance 
+with<eng><pre class="display_ENG">&lt;ENG&gt;</pre> <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM B221<pre class="display_RID">&lt;/RID&gt;</pre></rid><pre class="display_ENG">&lt;/ENG&gt;</pre></eng><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM B209<pre class="display_RID">&lt;/RID&gt;</pre></rid><pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> <div class="brackets">[_____]</div> and must conform to the following:</txt><brk></brk>
+<lst indent="-0.33">a. Frames must be <div class="brackets">[<div class="brackets">[aluminum]</div> <div class="brackets">[wood]</div> <div class="brackets">[molded acrylic]</div>]</div>, <div class="brackets">[<div class="brackets">[flat]</div><div class="brackets">[radius]</div>]</div> <div class="brackets">[<div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4 
+inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> <div class="brackets">[_____]</div> thick.]</div></lst><brk></brk>
+<lst indent="-0.33">b. End caps must be <div class="brackets">[aluminum]</div> <div class="brackets">[wood]</div> <div class="brackets">[molded acrylic]</div> with <div class="brackets">[round]</div> <div class="brackets">[square]</div> <div class="brackets">[_____]</div> style corners.</lst><brk></brk>
+<lst indent="-0.33">c. Units must be frameless. Corners of signs must be <div class="brackets">[squared]</div> <div class="brackets">[rounded to<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[10]</div> <div class="brackets">[13]</div> <div class="brackets">[19]</div> <div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>
+<div class="brackets">[3/8]</div> <div class="brackets">[1/2]</div> <div class="brackets">[3/4]</div> <div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> radius]</div>.</lst><brk></brk></spt>
+<spt outline="2.2.2"><ttl>2.2.2 Changeable Message Strip Signs</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The insert preparation method most appropriate to each building should 
+be chosen, and the same method should be used consistently throughout the building. 
+Requirements for sign-making equipment or software will be determined jointly 
+by the using facility and the designer. If using other than standard paper, 
+require extra stock be provided.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Changeable message strip signs must be of same construction as standard room signs to include a clear sleeve 
+that will accept a paper or plastic insert identifying changeable text. The insert must be prepared <div class="brackets">[die-cut 
+vinyl letters applied to<met><pre class="display_MET">&lt;MET&gt;</pre> 0.38 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.015 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> rigid vinyl film]</div> <div class="brackets">[typeset message mounted on paper card stock ]</div><div class="brackets">[typewritten 
+message]</div> <div class="brackets">[_____]</div>.<div class="brackets">[ Provide<div class="brackets">[ paper and]</div> software for creating text and symbols for computers identified by owner 
+for Owner production of paper inserts after project completion.]</div><div class="brackets">[ Furnish one <div class="brackets">[suction]</div><div class="brackets">[_____]</div> device to assist 
+in removing face sheet.]</div><div class="brackets">[ Sliding inserts or slide knobs that slide horizontally exposing different graphic 
+information must be provided as identified in the signage placement schedule and <div class="brackets">[drawings]</div><div class="brackets">[attachments.]</div>]</div></txt><brk></brk></spt>
+<spt outline="2.2.3"><ttl>2.2.3 Type of Mounting For Signs</ttl><brk></brk>
+<txt>Provide extruded aluminum brackets for hanging, projecting, and double-sided signs. Mounting for framed, hanging, 
+and projecting signs must be by mechanical fasteners. Surface mounted signs must be mounted with <div class="brackets">[countersunk 
+mounting holes in plaques and mounting screws]</div><div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>1.6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/16 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick closed cell vinyl foam with adhesive backing. 
+Adhesive must be transparent, long aging, high tech formulation on two sides of the vinyl foam.]</div><div class="brackets">[magnetic tape 
+<div class="brackets">[silicone adhesive]</div>]</div><div class="brackets">[<div class="brackets">[hook and loop tape consisting of hooked part on sign back and looped side on mounting surface]</div>
+<div class="brackets">[pin mount]</div> for textile surfaces]</div> <div class="brackets">[_____]</div> fabricated from materials that are not corrosive to sign material and 
+mounting surface.</txt><brk></brk></spt>
+<spt outline="2.2.4"><ttl>2.2.4 Graphics</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Edit the following requirements as necessary for the project. Graphics 
+methods that are easily vandalized, such as vinyl first surface copy and acrylic 
+characters bonded to acrylic will not be permitted. The silkscreened first 
+surface copy method is generally used for mass produced signs.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Signage graphics for modular signs must conform to the following:</txt><brk></brk>
+<div class="brackets">[<spt outline="2.2.4.1"><ttl>2.2.4.1 Subsurface Copy</ttl><brk></brk>
+<txt>Copy is transferred to the back face of clear acrylic sheeting forming the panel face to produce precisely formed 
+opaque image. This method bonds all sign elements (color, graphics, lettering, Braille and substrate) into a 
+single unit.</txt><brk></brk></spt>
+]</div><div class="brackets">[<spt outline="2.2.4.2"><ttl>2.2.4.2 First Surface Copy Direct Print or Silkscreened (Non-Tactile)</ttl><brk></brk>
+<txt>Message may be applied to panel using the silkscreen process. Silkscreened images must be executed with photo 
+screens prepared from original art. Handcut screens will not be accepted. Original art is defined as artwork 
+that is a first generation reproduction of the specified art. Edges and corners must be clean.</txt><brk></brk></spt>
+]</div><div class="brackets">[<spt outline="2.2.4.3"><ttl>2.2.4.3 Surface Applied Photopolymer</ttl><brk></brk>
+<txt>Integral graphics and Braille achieved by photomechanical stratification processes. Photopolymer used for ADA 
+compliant graphics must be of the type that has a minimum durometer reading of 90. Tactile graphics must be 
+raised<met><pre class="display_MET">&lt;MET&gt;</pre> 0.8 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/32 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> from the first surface of plaque by photomechanical stratification process.</txt><brk></brk></spt>
+]</div><div class="brackets">[<spt outline="2.2.4.4"><ttl>2.2.4.4 Engraved Copy</ttl><brk></brk>
+<txt>Machine engrave letters, numbers, symbols, and other graphics into panel sign on face to produce precisely formed 
+copy and sharp images, incised to uniform depth. Melamine plastic engraving stock used for ADA compliant graphic 
+must be three-ply lamination contrasting color core meeting <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D635<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+]</div><div class="brackets">[<spt outline="2.2.4.5"><ttl>2.2.4.5 Graphic Blast Raised Copy</ttl><brk></brk>
+<txt>Background is sandblasted to a uniform depth of<met><pre class="display_MET">&lt;MET&gt;</pre> 0.8 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/32 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> leaving raised text and Braille. Background 
+must be painted with polyurethane paint.</txt><brk></brk></spt>
+]</div><div class="brackets">[<spt outline="2.2.4.6"><ttl>2.2.4.6 Embossed</ttl><brk></brk>
+<txt>Methods other than sandblasting such as vacuum formed to create ADA compliant projected graphics.</txt><brk></brk></spt>
+]</div><div class="brackets">[<spt outline="2.2.4.7"><ttl>2.2.4.7 [Cast] [Fabricated] [Solid] Aluminum Letters</ttl><brk></brk>
+<txt>Provide <met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[3]</div> <div class="brackets">[6]</div> <div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[1/8]</div> <div class="brackets">[1/4]</div> <div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick and fasten to the message panel with concealed fasteners.</txt><brk></brk></spt>
+]</div></spt><spt outline="2.2.5"><ttl>2.2.5 Character Proportions and Heights</ttl><brk></brk>
+<txt>Letters and numbers on signs conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>36 CFR 1191<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.2.6"><ttl>2.2.6 Tactile Letters, Symbols and Braille</ttl><brk></brk>
+<txt>Raised letters and numbers on signs must conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>36 CFR 1191<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+</spt><spt outline="2.3"><ttl>2.3 STAIR SIGNAGE</ttl><brk></brk>
+<txt>Provide signs on stairs serving three or more stories with special signage within the enclosure at each floor 
+landing conforming to <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 101<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Indicate the floor level, the terminus of the top and bottom of the stair enclosure, 
+and the identification of the stair enclosure. Also, state the floor level of, and the direction to, exit discharge. 
+Locate the signage inside the enclosure in a position that is visible when the door is in the open or closed 
+position and install in conformance with <rid><pre class="display_RID">&lt;RID&gt;</pre>36 CFR 1191<pre class="display_RID">&lt;/RID&gt;</pre></rid>. The floor level designation must also be tactile in accordance 
+with <rid><pre class="display_RID">&lt;RID&gt;</pre>ICC A117.1 COMM<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.4"><ttl>2.4 BUILDING DIRECTORIES</ttl><brk></brk>
+<txt>Building directories must be lobby directories or floor directories, and must be provided with a changeable directory 
+listing consisting of the areas, offices and personnel located within the facility. Dimensions, details, and 
+materials of sign and message content must be as shown on the <div class="brackets">[drawings]</div><div class="brackets">[attachments]</div><div class="brackets">[signage placement schedule]</div>.</txt><brk></brk>
+<spt outline="2.4.1"><ttl>2.4.1 Header Panel</ttl><brk></brk>
+<txt>Header panel must <div class="brackets">[have background metal to match frame]</div> <div class="brackets">[be acrylic with raised acrylic letters]</div><div class="brackets">[be ES/MP plastic 
+with raised letters]</div> <div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+<spt outline="2.4.2"><ttl>2.4.2 Doors</ttl><brk></brk>
+<spt outline="2.4.2.1"><ttl>2.4.2.1 Door Glazing</ttl><brk></brk>
+<txt>Door glazing must be <div class="brackets">[in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS R 3202<pre class="display_RID">&lt;/RID&gt;</pre></rid>, minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick]</div><div class="brackets">[clear acrylic sheet<met><pre class="display_MET">&lt;MET&gt;</pre> 5 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/16 
+inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick conforming to <div class="brackets">[_____]</div>]</div><div class="brackets">[clear polycarbonate sheet<met><pre class="display_MET">&lt;MET&gt;</pre> 5 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/16 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick]</div><div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+<spt outline="2.4.2.2"><ttl>2.4.2.2 Door Construction</ttl><brk></brk>
+<txt>Extruded aluminum door frame must be of same finish as surrounding frame. Corners must be mitered <div class="brackets">[, reinforced]</div>
+<div class="brackets">[, welded]</div>, and assembled with concealed fasteners. Hinges must be standard with the manufacturer, in finish 
+to match frames and trim. Glazing must be set in frame with resilient glazing channels.</txt><brk></brk></spt>
+<spt outline="2.4.2.3"><ttl>2.4.2.3 Door Locks</ttl><brk></brk>
+<txt>Door locks must be manufacturer's standard, and must be keyed alike. Provide two sets of keys.</txt><brk></brk></spt>
+</spt><spt outline="2.4.3"><ttl>2.4.3 Fabrication</ttl><brk></brk>
+<txt>Extruded aluminum frames and trim must be assembled with corners <div class="brackets">[reinforced]</div> <div class="brackets">[welded]</div> and mitered to a hairline 
+fit, with no exposed fasteners.</txt><brk></brk></spt>
+<spt outline="2.4.4"><ttl>2.4.4 Illuminated Units</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Coordinate illumination with Division 26 and building electrical design.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Illuminated directory units must have concealed internal <div class="brackets">[top]</div> <div class="brackets">[back]</div> lighting with <div class="brackets">[LED]</div> <div class="brackets">[rapid start fluorescent 
+tube lamp]</div> <div class="brackets">[_____]</div>, internal wiring, and lead at wire for connection. Electrical work must comply with <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 70<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ and must be UL or FM listed. Directory must consist of backlit photo negative directory strips and a black 
+background. Unit must have a tinted <div class="brackets">[tempered safety solar glass]</div><div class="brackets">[_____]</div> door.</txt><brk></brk>
+<spt outline="2.4.4.1"><ttl>2.4.4.1 Construction</ttl><brk></brk>
+<txt>The directory must be<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[50]</div><div class="brackets">[100]</div><div class="brackets">[150]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[1]</div><div class="brackets">[2]</div><div class="brackets">[4]</div><div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> deep frame constructed of an <div class="brackets">[aluminum with <div class="brackets">[<div class="brackets">[satin 
+<div class="brackets">[black]</div><div class="brackets">[painted]</div><div class="brackets">[dark bronze]</div><div class="brackets">[_____]</div> anodized finish]</div>]</div><div class="brackets">[<div class="brackets">[red oak]</div><div class="brackets">[walnut]</div><div class="brackets">[_____]</div> with <div class="brackets">[natural]</div><div class="brackets">[stained]</div> finish]</div>]</div>. 
+Unit must be <div class="brackets">[<div class="brackets">[semi]</div><div class="brackets">[fully]</div> recessed]</div><div class="brackets">[surface]</div><div class="brackets">[_____]</div> mounted. Unit must have a<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[75]</div><div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[3]</div><div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
+ high header lettering as shown. Unit must have a<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[10]</div><div class="brackets">[_____]</div>mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[3/8]</div><div class="brackets">[ ]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> face door frame with concealed 
+hinges and locking system or other secure method. Door frame must <div class="brackets">[match directory material and finish]</div><div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+<spt outline="2.4.4.2"><ttl>2.4.4.2 Message Strips</ttl><brk></brk>
+<txt>Message strips must be photo negative type updatable by user. Message strips must be <div class="brackets">[as shown on the drawings]</div>
+<div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+</spt><spt outline="2.4.5"><ttl>2.4.5 Non-Illuminated Unit</ttl><brk></brk>
+<txt>Directory must consist of a non-illuminated unit with <div class="brackets">[machine or laser engraved copy in interchangeable acrylic, 
+metal, or high-pressure plastic laminate strips]</div> <div class="brackets">[screen printed or vinyl copy applied to acrylic, metal, or 
+high-pressure plastic laminate strips]</div> <div class="brackets">[vinyl or screen printed lettering on plastic film held in interchangeable 
+plastic carriers]</div> <div class="brackets">[screen printed or vinyl copy laminated to magnetic tape]</div>. Design of unit must be as shown 
+in the drawings.</txt><brk></brk>
+<spt outline="2.4.5.1"><ttl>2.4.5.1 Construction</ttl><brk></brk>
+<txt>The directory must be constructed of an aluminum<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[50]</div><div class="brackets">[100]</div><div class="brackets">[150]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[2]</div><div class="brackets">[4]</div><div class="brackets">[6]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> deep frame with <div class="brackets">[satin <div class="brackets">[black]</div><div class="brackets">[painted]</div><div class="brackets">[dark 
+bronze]</div><div class="brackets">[_____]</div> anodized finish]</div><div class="brackets">[<div class="brackets">[red oak]</div><div class="brackets">[walnut]</div><div class="brackets">[ ]</div> with <div class="brackets">[natural]</div><div class="brackets">[stained]</div> finish]</div>. Unit must be <div class="brackets">[<div class="brackets">[semi]</div><div class="brackets">[fully]</div> 
+recessed]</div><div class="brackets">[surface]</div><div class="brackets">[_____]</div> mounted. Unit must have a<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[75]</div><div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[3]</div><div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high header lettering as 
+shown. Unit must have a <met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[9.3]</div><div class="brackets">[ ]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[3/8]</div><div class="brackets">[ ]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> face door frame with concealed hinges and locking 
+system or other secure method. Door frame must <div class="brackets">[match directory material and finish]</div><div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+<spt outline="2.4.5.2"><ttl>2.4.5.2 Message Strips</ttl><brk></brk>
+<txt><div class="brackets">[Message strips must be updatable by user. ]</div>Message strips must be <div class="brackets">[sized in accordance with manufacturer's 
+standard]</div> <div class="brackets">[_____]</div>. Letters and numbers must be provided in accordance with the <div class="brackets">[drawings]</div> <div class="brackets">[schedule]</div>.</txt><brk></brk></spt>
+</spt><spt outline="2.4.6"><ttl>2.4.6 Electronic Directory System</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The electronic directory system is a limited usage item and must be fully 
+justified prior to being specified.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide <div class="brackets">[non-interactive]</div><div class="brackets">[interactive]</div> electronic directory. Electronic directory system must be a complete 
+turnkey system consisting of digital display, hardware, software connected through the local area network (LAN) 
+to a <div class="brackets">[server]</div><div class="brackets">[cloud]</div>. Electrical equipment must be UL listed and must comply with <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 70<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Unit must be <div class="brackets">[free-standing]</div><div class="brackets">[wall 
+mounted]</div>.</txt><brk></brk></spt>
+</spt><spt outline="2.5"><ttl>2.5 METAL PLAQUES</ttl><brk></brk>
+<spt outline="2.5.1"><ttl>2.5.1 Cast Metal Plaques</ttl><brk></brk>
+<spt outline="2.5.1.1"><ttl>2.5.1.1 Fabrication</ttl><brk></brk>
+<txt>Cast metal plaques must have the logo, emblem and artwork cast in the <div class="brackets">[bas relief]</div> <div class="brackets">[flat relief]</div> <div class="brackets">[_____]</div> technique. 
+Plaques must be fabricated from <div class="brackets">[prime aluminum]</div> <div class="brackets">[bronze]</div> <div class="brackets">[brass]</div> <div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+<spt outline="2.5.1.2"><ttl>2.5.1.2 Border</ttl><brk></brk>
+<txt>Border must be <div class="brackets">[flat band]</div> <div class="brackets">[plain edge]</div> <div class="brackets">[bevel]</div> <div class="brackets">[custom ornamental]</div> <div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+<spt outline="2.5.1.3"><ttl>2.5.1.3 Finish</ttl><brk></brk>
+<txt><tab headerrows="0">
+<wbk>
+<sts></sts>
+<tda columncount="2" rowcount="3">
+<col autowidth="0" width="285.00"/>
+<col autowidth="0" width="286.50"/>
+<row autoheight="0" height="23.25">
+<cel>
+<dta type="STRING">Letter Finish</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[satin]</div> <div class="brackets">[polished]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="23.25">
+<cel>
+<dta type="STRING">Background Finish</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[<div class="brackets">[light]</div><div class="brackets">[dark]</div> aluminum]</div><div class="brackets">[<div class="brackets">[dark]</div><div class="brackets">[ ]</div> bronze]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="24.75">
+<cel>
+<dta type="STRING">Background Texture</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[leather]</div><div class="brackets">[pebble]</div><div class="brackets">[smooth]</div><div class="brackets">[ ]</div></dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab></txt><brk></brk></spt>
+<spt outline="2.5.1.4"><ttl>2.5.1.4 Mounting</ttl><brk></brk>
+<txt>Mounting must be <div class="brackets">[concealed]</div> <div class="brackets">[rosettes and anchors]</div> <div class="brackets">[rosettes and toggle bolts]</div> <div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+</spt><spt outline="2.5.2"><ttl>2.5.2 Chemically Etched Metal Plaques</ttl><brk></brk>
+<spt outline="2.5.2.1"><ttl>2.5.2.1 Fabrication</ttl><brk></brk>
+<txt>Plaque must be chemically etched one-piece or photochemically engraved metal sheet or plate <div class="brackets">[aluminum]</div> <div class="brackets">[brass]</div>
+<div class="brackets">[bronze]</div> <div class="brackets">[zinc]</div> <div class="brackets">[magnesium]</div> <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[0.032]</div><div class="brackets">[0.064]</div><div class="brackets">[0.125]</div><div class="brackets">[0.250]</div><div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick.</txt><brk></brk></spt>
+<spt outline="2.5.2.2"><ttl>2.5.2.2 Finish</ttl><brk></brk>
+<txt><div class="brackets">[Single-etched raised areas must be in <div class="brackets">[gold-tone]</div> <div class="brackets">[silver-tone]</div> <div class="brackets">[bronze-tone]</div> finish and recessed areas must 
+be colorfilled.]</div> <div class="brackets">[Double-etched raised areas must be <div class="brackets">[gold-tone]</div> <div class="brackets">[silver-tone]</div> and recessed textured areas must 
+be <div class="brackets">[gold-tone]</div> <div class="brackets">[silver-tone]</div> colorfilled.]</div></txt><brk></brk></spt>
+</spt></spt><spt outline="2.6"><ttl>2.6 DIMENSIONAL BUILDING LETTERS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: These letters are for direct application to interior building surfaces. 
+Drawings must show mounting type details.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="2.6.1"><ttl>2.6.1 Fabrication</ttl><brk></brk>
+<txt>Letters must be <div class="brackets">[cast]</div><div class="brackets">[cutout]</div><div class="brackets">[fabricated channel]</div><div class="brackets">[molded plastic]</div>. Letters must be <div class="brackets">[aluminum]</div><div class="brackets">[bronze]</div><div class="brackets">[brass]</div><div class="brackets">[ 
+]</div>. Package letters for protection until installation.</txt><brk></brk></spt>
+<spt outline="2.6.2"><ttl>2.6.2 Size</ttl><brk></brk>
+<txt>Letter size must be <div class="brackets">[_____]</div> <div class="brackets">[as indicated]</div>. Provide letter thickness that is <div class="brackets">[manufacturer's standard for the 
+size of letter]</div><div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+<spt outline="2.6.3"><ttl>2.6.3 Finish</ttl><brk></brk>
+<txt>Provide <div class="brackets">[<div class="brackets">[mill]</div><div class="brackets">[clear anodized]</div><div class="brackets">[<div class="brackets">[light]</div><div class="brackets">[medium]</div><div class="brackets">[dark]</div> anodized bronze]</div>]</div> <div class="brackets">[<div class="brackets">[polished]</div> bronze with clear coat]</div> <div class="brackets">[baked 
+enamel]</div> <div class="brackets">[powder coat]</div><div class="brackets">[two-component acrylic polyurethane]</div> finish.</txt><brk></brk></spt>
+<spt outline="2.6.4"><ttl>2.6.4 Mounting</ttl><brk></brk>
+<txt><div class="brackets">[Threaded studs]</div> <div class="brackets">[Steel U-bracket, cap screws, and expansion bolts]</div> of number and size recommended by manufacturer, 
+must be supplied for concealed anchorage. Letters which project from the mounting surface must have <div class="brackets">[stud spacer 
+sleeves]</div> <div class="brackets">[_____]</div>. Letters, studs, and sleeves must be of the same material. Templates for mounting must be 
+supplied.</txt><brk></brk></spt>
+</spt><spt outline="2.7"><ttl>2.7 PRESSURE SENSITIVE LETTERS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use pressure sensitive letters for direct application to building interior 
+surfaces such as glass and doors. Be sure surface of material will accept adhesion 
+of letters. Show locations, message content, sizes, and colors on drawings 
+or in a message schedule.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="2.7.1"><ttl>2.7.1 Fabrication</ttl><brk></brk>
+<txt>Ensure that vinyl letter edges and corners of finished letterforms and graphics are true and clean. Do not use 
+letterforms and graphics with rounded positive or negative corners, nicked, cut, or ragged edges.</txt><brk></brk></spt>
+<spt outline="2.7.2"><ttl>2.7.2 Size</ttl><brk></brk>
+<txt>Letter size: <div class="brackets">[as indicated]</div> <div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+</spt><spt outline="2.8"><ttl>2.8 ALUMINUM ALLOY PRODUCTS</ttl><brk></brk>
+<txt>Aluminum extrusions must be at least<met><pre class="display_MET">&lt;MET&gt;</pre> 3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick, and aluminum plate or sheet must be at least<met><pre class="display_MET">&lt;MET&gt;</pre> 1.3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>
+ 0.0508 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick. Extrusions must conform to<met><pre class="display_MET">&lt;MET&gt;</pre> <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 4040<pre class="display_RID">&lt;/RID&gt;</pre></rid><pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM B221<pre class="display_RID">&lt;/RID&gt;</pre></rid><pre class="display_ENG">&lt;/ENG&gt;</pre></eng>; plate and sheet must conform to<met><pre class="display_MET">&lt;MET&gt;</pre> <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 4000<pre class="display_RID">&lt;/RID&gt;</pre></rid><pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM B209<pre class="display_RID">&lt;/RID&gt;</pre></rid><pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Where anodic coatings are specified, alloy must conform to <div class="brackets">[_____]</div>. Exposed anodized aluminum finishes 
+must be as shown. Welding for aluminum products must conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3801<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3410<pre class="display_RID">&lt;/RID&gt;</pre></rid>, and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3841<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.9"><ttl>2.9 ANODIC COATING</ttl><brk></brk>
+<txt>Anodized finish must conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8602<pre class="display_RID">&lt;/RID&gt;</pre></rid> as follows:</txt><brk></brk>
+<lst indent="-0.33">a. <div class="brackets">[Clear (natural).]</div> </lst><brk></brk>
+<lst indent="-0.33">b. <div class="brackets">[Integral color.]</div></lst><brk></brk>
+<lst indent="-0.33">c. <div class="brackets">[Electrolytically deposited color-anodized.]</div></lst><brk></brk></spt>
+<spt outline="2.10"><ttl>2.10 ORGANIC COATING</ttl><brk></brk>
+<txt>Organic coating must conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 5906<pre class="display_RID">&lt;/RID&gt;</pre></rid>, with total dry film thickness not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 0.030 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1.2 mils<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.</txt><brk></brk></spt>
+<spt outline="2.11"><ttl>2.11 FABRICATION AND MANUFACTURE</ttl><brk></brk>
+<spt outline="2.11.1"><ttl>2.11.1 Factory Workmanship</ttl><brk></brk>
+<txt>Holes for bolts and screws must be drilled or punched. Drilling and punching must produce clean, true lines 
+and surfaces. Exposed surfaces of work must have a smooth finish and exposed riveting must be flush. Fastenings 
+must be concealed where practicable.</txt><brk></brk></spt>
+<spt outline="2.11.2"><ttl>2.11.2 Dissimilar Materials</ttl><brk></brk>
+<txt>Where dissimilar metals are in contact, the surfaces will be protected to prevent galvanic or corrosive action.</txt><brk></brk></spt>
+</spt><spt outline="2.12"><ttl>2.12 COLOR, FINISH, AND CONTRAST</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Color must be selected from manufacturer's standard colors and indicated 
+in SECTION <srf><pre class="display_SRF">&lt;SRF&gt;</pre>09 06 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SCHEDULES FOR FINISHES or identified in this specification 
+only when the project is very simple and has minimal finishes. Custom colors 
+must be limited due to additional cost and impact on future orders.<brk></brk>
+Signage background color should be in high contrast with signage copy. Dark 
+background with light copy is preferred.<brk></brk>
+When the government directs that color be located in the drawings a note must 
+be added that states: "Where color is shown as being specific to one manufacturer, 
+an equivalent color by another manufacturer may be submitted for approval. 
+Manufacturers and materials specified are not intended to limit the selection 
+of equal colors from other manufacturers. The word "color" as used herein includes 
+surface color and pattern."<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Color must be <div class="brackets">[in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>09 06 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SCHEDULES FOR FINISHES]</div> <div class="brackets">[as indicated]</div> <div class="brackets">[_____]</div>. Finish of 
+all signs must be eggshell, matte, or other non-glare finish as required in handicapped-accessible buildings.</txt><brk></brk></spt>
+<spt outline="2.13"><ttl>2.13 TYPEFACE</ttl><brk></brk>
+<txt><div class="brackets">[ADA-ABA compliant font for Room Signs]</div><div class="brackets">[Helvetica Regular]</div><div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+</prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<div class="brackets">[<spt outline="3.1"><ttl>3.1 PLACEMENT SCHEDULE</ttl><brk></brk>
+<txt><tab>
+<wbk>
+<sts>
+<sty sid="s50">
+<aln horizontal="CENTER"></aln>
+</sty>
+</sts>
+<tda columncount="5" rowcount="3">
+<col autowidth="0" width="113.25"/>
+<col autowidth="0" width="113.25"/>
+<col autowidth="0" width="113.25"/>
+<col autowidth="0" width="113.25"/>
+<col autowidth="0" width="118.50"/>
+<row autoheight="0" height="36.00">
+<cel mergeacross="4" styleid="s50">
+<dta type="STRING">SIGNAGE PLACEMENT SCHEDULE</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">Door/Room Number</dta>
+</cel>
+<cel>
+<dta type="STRING">Sign Type</dta>
+</cel>
+<cel>
+<dta type="STRING">Text</dta>
+</cel>
+<cel>
+<dta type="STRING">Insert(s)</dta>
+</cel>
+<cel>
+<dta type="STRING">Symbol/Remarks</dta>
+</cel>
+</row>
+<row autoheight="0" height="23.25">
+<cel>
+<dta type="STRING"><div class="brackets">[_______]</div></dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_______]</div></dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_______]</div></dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_______]</div></dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_______]</div></dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab></txt><brk></brk></spt>
+]</div><spt outline="3.2"><ttl>3.2 INSTALLATION</ttl><brk></brk>
+<txt>Install signs plumb and true and in accordance with <sub><pre class="display_SUB">&lt;SUB&gt;</pre>approved manufacturer's instructions<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> at locations shown on 
+the <div class="brackets">[detail drawings]</div> <div class="brackets">[schedule below]</div> <div class="brackets">[attachments]</div>. Submit operating instructions outlining the step-by-step 
+procedures required for system operation. The instructions include simplified diagrams for the system as installed, 
+the manufacturer's name, model number, service manual, parts list, and brief description of all equipment and 
+their basic operating features. Provide each set permanently bound with a hard cover. The following identification 
+must be inscribed on the covers: "OPERATING AND MAINTENANCE INSTRUCTIONS", name and location of the facility, 
+name of the Contractor, and contract number. Submit in accordance with Section 01 78 23 OPERATING AND MAINTENANCE 
+DATA. Mounting height and mounting location complies with <rid><pre class="display_RID">&lt;RID&gt;</pre>36 CFR 1191<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Install required blocking. Do not install 
+signs on doors or other surfaces until finishes on such surfaces have been installed. Signs installed on glass 
+surfaces are installed with matching blank back-up plates in accordance with manufacturer's instructions. <div class="brackets">[Provide 
+illuminated signage in conformance with the requirements of Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>26 51 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> INTERIOR LIGHTING.]</div></txt><brk></brk>
+<txt>Do not install items that show visual evidence of biological growth.</txt><brk></brk>
+<spt outline="3.2.1"><ttl>3.2.1 Anchorage</ttl><brk></brk>
+<txt>Provide anchorage in accordance with approved manufacturer's instructions. In high humidity interior spaces 
+(for example, bathrooms, locker rooms, pools, trainers) and unconditioned spaces, use corrosion-resistant anchors/fasteners 
+or with approval by the manufacturer, waterproof silicone adhesive. Anchorage not otherwise specified or shown 
+must include slotted inserts, expansion shields, and powder-driven fasteners when approved for concrete; toggle 
+bolts and through bolts for masonry; machine carriage bolts for steel; lag bolts and screws for wood. Provide 
+exposed anchor and fastener materials compatible with metal to which applied with matching color and finish.At 
+interior applications in heavy traffic areas, firmly attach signage to structure walls with tamper-proof fasteners.</txt><brk></brk>
+<lst indent="-0.33">a. Signs mounted to painted gypsum board surfaces must be removable for painting maintenance.</lst> <brk></brk>
+<lst indent="-0.33">b. Mount signs mounted to lay-in ceiling grids with clip connections to ceiling tees.</lst><brk></brk>
+<lst indent="-0.33">c. Install signs mounted on metal surfaces with magnetic tape.</lst><brk></brk>
+<lst indent="-0.33">d. Install signs mounted on fabric surfaces with hook and loop tape or pin mount.</lst><brk></brk>
+<lst indent="-0.33">e. Install signs to workstation panels with panel clips.</lst><brk></brk></spt>
+<spt outline="3.2.2"><ttl>3.2.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Protection and Cleaning<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Protect the work against damage during construction. Adjust hardware and electrical equipment for proper operation. 
+Clean glass, frames, and other sign surfaces at completion of signage installation in accordance with the manufacturer's 
+written instructions.</txt><brk></brk></spt>
+</spt></prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

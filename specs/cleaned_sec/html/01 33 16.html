@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>01 33 16.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">01 33 16</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:49</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><brk></brk>
+<scn>SECTION 01 33 16</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>DESIGN AFTER AWARD<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL </ttl><brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<txt>The publications listed below form a part of this section to the extent referenced. The publications are referred 
+to within the text by the basic designation only.</txt><brk></brk>
+<ref><org>U.S. DEPARTMENT OF DEFENSE (DOD)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>MIL-STD 3007<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>Standard Practice For Unified Facilities Criteria 
+And Unified Facilities Guide Specifications <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 1-200-01<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2020) DoD Building Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 3-301-01<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2019) Structural Engineering<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2023; with Change 
+1, 2023) Structural Engineering<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 3-600-01<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016; Change 4) Fire Protection Engineering 
+for Facilities<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016; with Change 6, 2021) Fire 
+Protection Engineering for Facilities<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 4-010-01<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018; Change 1) DoD Minimum Antiterrorism Standards 
+for Buildings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018; with Change 1, 2020) DoD 
+Minimum Antiterrorism Standards for Buildings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk></ref>
+<ref><org>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 101<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2021) Life Safety Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 72<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2022) National Fire Alarm and Signaling Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>U.S. ARMY CORPS OF ENGINEERS (USACE)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ER 1110-345-122<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(1999) Interior Design<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ER 1110-345-700<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(1997) Design Analysis, Drawings and Specifications<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>PDC TR 12-08<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2013) Standoff Distances for Japanese Conventional 
+Construction<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>TR-06-X<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2012) A/E/C (Architectural, Engineering, and 
+Construction) CADD Standard - Release 5.0<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><add><pre class="display_ADD">&lt;ADD&gt;</pre><spt><ttl>SUBMITTALS</ttl><brk></brk>
+<txt>Designer of Record Approval and Government Conformance Review is required for submittals with a "R" designation. 
+Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00 <pre class="display_SRF">&lt;/SRF&gt;</pre></srf>SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-05 Design Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Concept (35%) Design Submittal<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>R<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Intermediate (65%) Design Submittal<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>R<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Final (95%) Design Submittal<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>R<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Final Backcheck (100%) Design Submittal<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>R<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>"Cleared For Construction" Submittal<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>R<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></spt>
+<pre class="display_ADD">&lt;/ADD&gt;</pre></add><spt outline="1.2"><ttl>1.2 GENERAL DESCRIPTION</ttl><brk></brk>
+<txt>This section lists items that must be submitted for review at various milestones following award of a Design-Build 
+Contract.</txt><brk></brk>
+<txt>Design submittals are required at the <div class="brackets">[Concept stage, ]</div><div class="brackets">[Intermediate stage, ]</div><div class="brackets">[Final stage, ]</div><div class="brackets">[and Final Backcheck 
+stage]</div>. The requirements for each design stage are listed hereinafter.</txt><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 DESIGNER</ttl><brk></brk>
+<spt outline="1.3.1"><ttl>1.3.1 Designer Of Record (DOR) Identification</ttl><brk></brk>
+<txt>Identify a DOR for each design area. Minimum requirements of the DORs shall be as indicated in following experience 
+matrix. Submit a list of DORs to the Contracting Officer's Representative.</txt><brk></brk>
+<div class="brackets">[<tab headerrows="2">
+<wbk>
+<sts>
+<sty sid="s50">
+<aln horizontal="CENTER"></aln>
+</sty>
+</sts>
+<tda columncount="2" rowcount="12">
+<col autowidth="0" width="186.00"/>
+<col autowidth="0" width="340.50"/>
+<row autoheight="0" height="23.25">
+<cel mergeacross="1" styleid="s50">
+<dta type="STRING">Experience Matrix</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING">Area</dta>
+</cel>
+<cel>
+<dta type="STRING">Qualifications</dta>
+</cel>
+</row>
+<row autoheight="0" height="80.25">
+<cel>
+<dta type="STRING">Civil</dta>
+</cel>
+<cel>
+<dta type="STRING">Graduate of an accredited university with a Civil Engineering degree. Two years of work experience as either a U.S. Licensed Professional Civil Engineer or 1 Kyu Doboku Sekou Kanrigishi (1st Class Civil Engineering Works Management Engineer).</dta>
+</cel>
+</row>
+<row autoheight="0" height="77.25">
+<cel>
+<dta type="STRING">Mechanical</dta>
+</cel>
+<cel>
+<dta type="STRING">Graduate of an accredited university with a Mechanical Engineering degree. Two years of work experience as either a U.S. Licensed Professional Mechanical Engineer or 1 Kyu Kankouji Sekou Kanrigishi (1st Class Building Mechanical and Electrical Engineer).</dta>
+</cel>
+</row>
+<row autoheight="0" height="77.25">
+<cel>
+<dta type="STRING">Electrical</dta>
+</cel>
+<cel>
+<dta type="STRING">Graduate of an accredited university with an Electrical Engineering degree. Two years of work experience as either a U.S. Licensed Professional Electrical Engineer or 1 Kyu Kankouji Sekou Kanrigishi (1st Class Building Mechanical and Electrical Engineer).</dta>
+</cel>
+</row>
+<row autoheight="0" height="66.00">
+<cel>
+<dta type="STRING">Structural</dta>
+</cel>
+<cel>
+<dta type="STRING">Graduate of an accredited university with a Structural Engineering degree. Two years of work experience as either a U.S. Licensed Professional Structural Engineer or 1 Kyu Kenchikushi (1st Class Qualified Architect).</dta>
+</cel>
+</row>
+<row autoheight="0" height="53.25">
+<cel>
+<dta type="STRING">Architectural</dta>
+</cel>
+<cel>
+<dta type="STRING">Graduate of an accredited university with an Architectural degree. Two years of work experience as either a U.S. Licensed Architect or 1 Kyu Kenchikushi (1st Class Qualified Architect).</dta>
+</cel>
+</row>
+<row autoheight="0" height="108.00">
+<cel>
+<dta type="STRING">Fire Protection</dta>
+</cel>
+<cel>
+<dta type="STRING">Registered U.S. Professional Engineer who has passed the fire protection<brk></brk>engineering written examination administered by the National Council of<brk></brk>Examiners and Surveying (NCEES) and has a minimum of four (4) years of<brk></brk>relevant fire protection engineering experience. <brk></brk></dta>
+</cel>
+</row>
+<row autoheight="0" height="84.00">
+<cel>
+<dta type="STRING">Communications</dta>
+</cel>
+<cel>
+<dta type="STRING">Graduate of an accredited university with a Communications or Electrical Engineering degree. Two years of work experience designing communication systems for buildings or facilities. Either a U.S. Licensed Registered Communications Distribution Designer (RCDD) or Type 3 Denki Shunin Gijutsusha.</dta>
+</cel>
+</row>
+<row autoheight="0" height="47.25">
+<cel>
+<dta type="STRING">Environmental</dta>
+</cel>
+<cel>
+<dta type="STRING">Graduate of an accredited university with an Environmental Engineering degree. Two years of experience working with JEGS compliance.</dta>
+</cel>
+</row>
+<row autoheight="0" height="80.25">
+<cel>
+<dta type="STRING">Geotechnical</dta>
+</cel>
+<cel>
+<dta type="STRING">Graduate of an accredited university with a Civil or related Engineering degree. Two years of work experience as either a U.S. Licensed Professional Engineer or Registered Civil Engineering Consulting Manager (RCCM) with Geotechnical Certification.</dta>
+</cel>
+</row>
+<row autoheight="0" height="73.50">
+<cel>
+<dta type="STRING">Surveying</dta>
+</cel>
+<cel>
+<dta type="STRING">Graduate of an accredited university with a Civil or related Engineering degree. Two years of work experience as either a U.S. Licensed Professional Engineer or Sokuryo shi Japanese Professional Registration.</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab><brk></brk>
+<txt>For Architecture and Structural Engineering, the highest level of qualification is specified. For Mechanical 
+Engineering, qualification of Kenchiku Setsubishi is higher than 1st class Kankouji Sekou Kanrigishi, and therefore 
+acceptable. For Civil and Geotechnical Engineering, Gijutsushi is higher in qualifications than RCCM, and therefore 
+acceptable.</txt>]</div><brk></brk></spt>
+<spt outline="1.3.2"><ttl>1.3.2 DOR Responsibilities</ttl><brk></brk>
+<txt>Each DOR shall be responsible for ensuring integrity of their design and design integration in all construction 
+submittals and extensions to design developed by others, such as the Contractor, subcontractors, or suppliers.</txt><brk></brk>
+<txt>All construction drawings and design calculations of the Contractor and any changes to these documents shall 
+be affixed with the registration stamp (seal) of the DOR and that of all consultants, as appropriate, (i.e. structural, 
+civil, mechanical and fire protection engineers) before submittal for review. Approval shall be indicated on 
+all documents by having the professional stamp/seal of the architect or engineer with personal signature over 
+same appearing on all sheets as applicable to their specialties.</txt><brk></brk>
+<txt>Each DOR shall review and approve all construction submittals and extensions to design, in accordance with the 
+procedures described in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES. Each DOR shall be responsible for reviewing Requests 
+for Information (RFI), applicable to their area of design responsibility, prior to submission to the Government.</txt><brk></brk></spt>
+</spt><spt outline="1.4"><ttl>1.4 SEQUENCE OF DESIGN AND CONSTRUCTION</ttl><brk></brk>
+<lst indent="-0.33">a. After receipt of the Contract Notice to Proceed (NTP) the Contractor shall initiate design, comply 
+with all design submission requirements as covered under Division 01 General Requirements, and obtain 
+Government review of each submission. No construction shall be started until the Government reviews 
+the Final Backcheck Design submission and determines it satisfactory for purposes of beginning construction. 
+The COR shall notify the Contractor when the design is cleared for construction. The Government shall 
+not grant any time extension for any design resubmittal required when, in the opinion of the ACO or COR, 
+the initial submission failed to meet the minimum quality requirements as set forth in the Contract.</lst><brk></brk>
+<lst indent="-0.33">b. If the Government allows the Contractor to proceed with limited construction based on pending minor 
+revisions to the reviewed Final Backcheck Design submission, no payment shall be made for any in-place 
+construction related to the pending revisions until they are completed, resubmitted and are satisfactory 
+to the Government.</lst><brk></brk>
+<lst indent="-0.33">c. No payment shall be made for any in-place construction until all required submittals have been made, 
+reviewed and are satisfactory to the Government.</lst><brk></brk></spt>
+<spt outline="1.5"><ttl>1.5 CONTRACTOR'S ROLE DURING DESIGN</ttl><brk></brk>
+<txt>The Contractor's construction management key personnel shall be actively involved during the design process to 
+effectively integrate the design and construction requirements of this Contract. In addition to the typical 
+required construction activities, the Contractor's involvement includes, but is not limited to actions such as: 
+integrating the design schedule into the Master Schedule to maximize the effectiveness of fast-tracking design 
+and construction (within the limits allowed in the contract), ensuring constructability and economy of the design, 
+integrating the shop drawing and installation drawing process into the design, executing the material and equipment 
+acquisition programs to meet critical schedules, effectively interfacing the construction QC program with the 
+design QC program, and maintaining and providing the design team with accurate, up-to-date redline and as-built 
+documentation. The Contractor shall require and manage the active involvement of key trade subcontractors in 
+the above activities.</txt><brk></brk></spt>
+<spt outline="1.6"><ttl>1.6 DESIGN TIMELINE</ttl><brk></brk>
+<txt>As indicated in Section <div class="brackets">[<srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 32 01.00 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> PROJECT SCHEDULE]</div><div class="brackets">[<srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 32 16.00 20<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SMALL PROJECT CONSTRUCTION SCHEDULES]</div>, 
+the Contractor shall submit for approval, a complete design schedule with all submittals and review times indicated 
+in calendar dates. Update this schedule in accordance with <div class="brackets">[<srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 32 01.00 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> PROJECT SCHEDULE]</div><div class="brackets">[<srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 32 16.00 20<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> 
+SMALL PROJECT CONSTRUCTION SCHEDULES]</div>. No design submittals shall be reviewed or evaluated until after receipt 
+and acceptance of the proposed design/review schedule.</txt><brk></brk></spt>
+<spt outline="1.7"><ttl>1.7 DEVIATING FROM THE ACCEPTED DESIGN</ttl><brk></brk>
+<txt>The Contractor must obtain the approval of the Designer of Record and the Government's concurrence for any Contractor 
+proposed revision to the professionally stamped and sealed and Government reviewed and concurred design, before 
+proceeding with the revision.</txt><brk></brk>
+<lst indent="-0.33">a. The Government reserves the right to non-concur with any revisions to the design, which may impact 
+furniture, furnishings or equipment selections or operations decisions that were made, based on the reviewed 
+and concurred design.</lst><brk></brk>
+<lst indent="-0.33">b. Any revisions to the design, which deviates from the Contract requirements (i.e., the RFP and the 
+accepted proposal), will require a modification, pursuant to the Changes clause, in addition to Government 
+concurrence. The Government reserves the right to disapprove such a revision.</lst><brk></brk>
+<lst indent="-0.33">c. Unless the Government initiates a change to the Contract requirements, or the Government determines 
+that the Government furnished design criteria are incorrect and must be revised, any Contractor initiated 
+proposed change to the Contract requirements, resulting in additional cost, shall strictly be at the 
+Contractor's expense.</lst><brk></brk>
+<lst indent="-0.33">d. The Contractor shall track all approved revisions to the reviewed and accepted design and shall incorporate 
+them into the as-built design documentation, in accordance with agreed procedures. The Designer of Record 
+shall document its professional concurrence on the as-builts for any revisions to the stamped and sealed 
+drawings and specifications.</lst><brk></brk></spt>
+<spt outline="1.8"><ttl>1.8 DESIGN CONFERENCES</ttl><brk></brk>
+<spt outline="1.8.1"><ttl>1.8.1 Pre-Performance</ttl><brk></brk>
+<txt>As part of the Pre-Performance Conference conducted after the Contract award, key representatives of the Government 
+and the Contractor shall review the design submission and review procedures specified herein, discuss the preliminary 
+design schedule and provisions for phase completion of the D-B documents with construction activities (fast tracking), 
+as appropriate, meet with Corps of Engineers Design Review personnel and key Using Agency points of contact and 
+any other appropriate pre-design discussion items.</txt><brk></brk></spt>
+<spt outline="1.8.2"><ttl>1.8.2 Design Charrette</ttl><brk></brk>
+<txt>After award of the Contract, the Contractor shall visit the site and conduct extensive interviews, and problem 
+solving discussions with the individual users, base personnel, Corps of Engineers personnel to acquire all necessary 
+site information, review user options, and discuss user needs. The Contractor shall document all discussions. 
+Additionally, the Contractor shall schedule and perform a Design Charrette which is a condensed design meeting 
+with all stakeholders present, if required by the Contract SOW. The design scope shall be finalized as direct 
+result of these meetings.</txt><brk></brk></spt>
+<spt outline="1.8.3"><ttl>1.8.3 Design Review Conferences</ttl><brk></brk>
+<txt>Review conferences shall be held either on-base or Corps of Engineer's Office for each design submittal. The 
+Contractor shall bring the personnel that developed the design submittal to the review conference. The conferences 
+shall take place approximately one week after the review is complete.</txt><brk></brk></spt>
+</spt><spt outline="1.9"><ttl>1.9 POST REVIEW CONFERENCE ACTION</ttl><brk></brk>
+<txt>Copies of comments, annotated with comment action agreed on, shall be made available to all parties before the 
+conference adjourns. Unresolved problems shall be resolved by immediate follow-on action at the end of conferences. 
+Valid comments shall be incorporated. After receipt of Final Backcheck design documents upon incorporation of 
+backcheck comments, the Contractor may proceed with site and building development activities within the parameters 
+set forth in the Contract and accepted design submittal. The Government, however, reserves the right to reject 
+design document submittals if comments are significant (in the opinion of the Government, it does not comply 
+with the Contract documents nor the level of quality implied).</txt><brk></brk></spt>
+<spt outline="1.10"><ttl>1.10 CONFERENCE RECORDS</ttl><brk></brk>
+<txt>The Contractor shall within three (3) working days after each conference or discussion, prepare a written record 
+of the meeting and/or discussions and submit to the Japan Engineer District Resident Engineer/Contracting Officer 
+Representative identified in the Contract. The written report shall include the project name, Contract number, 
+subject, the name of the participants, an outline of discussions, the recommendations, and conclusions. All 
+meetings, site visits, review conferences, and telephonic discussions require written records. The Contractor 
+shall also provide copies of conference records to the designated Administrative Contracting Officer identified 
+for the Contract. Number each written record for the particular project under design in consecutive order.</txt><brk></brk></spt>
+<spt outline="1.11"><ttl>1.11 DESIGN SUBMITTALS</ttl><brk></brk>
+<txt>The Contractor shall follow the requirements outlined below for all submittals.</txt><brk></brk>
+<spt outline="1.11.1"><ttl>1.11.1 Guidance, References, and Precedence</ttl><brk></brk>
+<txt>The design shall comply with Department of Defense Uniform Facilities Criteria (UFC), Component Service (Air 
+Force, Army, Navy) Design Standards, the appropriate Installation Design Guide, and the US Army Corps of Engineers 
+planning, design, and construction directive. In the event of conflict between documents and references, precedence 
+shall be given to the following in descending order.</txt><brk></brk>
+<lst indent="-0.33">a. Unified Facilities Criteria (UFC) system prescribed by <rid><pre class="display_RID">&lt;RID&gt;</pre>MIL-STD 3007<pre class="display_RID">&lt;/RID&gt;</pre></rid>, which provides planning, design, 
+construction, operations, and maintenance criteria, and applies to all Department of Defense (DoD) commands. 
+UFC are distributed in electronic media from the Whole Building Design Guide (WBDG) website: http://www.wbdg.org/ccb/browse_cat.php?c=4. <rid><pre class="display_RID">&lt;RID&gt;</pre>
+UFC 1-200-01<pre class="display_RID">&lt;/RID&gt;</pre></rid> provides guidance for the use of model building codes for design and construction of DoD 
+facilities. Public Law 104-113, National Technology Transfer and Advancement Act of 1995, requires federal 
+use of private sector consensus standards wherever practicable. The goal of the law is to reduce reliance 
+on Federal standards by using industry standards when there is potential to simplify contracting, increase 
+timeliness and cost effectiveness, and promote the safety and welfare of users.</lst><brk></brk>
+<lst indent="-0.33">b. The Service Component Design Standards provide common facility and infrastructure standards for the 
+relevant Service Component installations. The appropriate installation design standards in conjunction 
+with mission requirements and technical designs and specifications, define requirements for installation 
+maintenance, repair, and construction projects. The Installation Design Standards and Installation Design 
+Guides improve the functional and visual aspects of the installation. The Installation Design Standards 
+follow the concept established in the Joint Service Unified Facilities Criteria Installation Design Manual.</lst><brk></brk>
+<lst indent="-0.33">c. Federal and Industry Standards. All applicable Federal and local industry standards referenced in 
+the scope of work, including those not referenced or listed, constitute criteria for the design of this 
+project, unless otherwise indicated. Applicable Japanese standards may apply.</lst><brk></brk></spt>
+<spt outline="1.11.2"><ttl>1.11.2 Quantity of Design Submittals</ttl><brk></brk>
+<txt>Submit the documents listed and generally described hereinafter to the Government. Each submittal shall be accompanied 
+by two (2) electronic copies of all documentation and drawings to be provided. The electronic copies shall consist 
+of standard type word processing, spreadsheet, and CAD (AutoCAD or MicroStation) files. The delivery address, 
+quantity and type of the required hardcopy submittals are identified in the table below.</txt><brk></brk>
+<del><pre class="display_DEL">&lt;DEL&gt;</pre><div class="brackets">[<pre class="display_DEL">&lt;/DEL&gt;</pre></div></del><tab>
+<wbk>
+<sts>
+<sty sid="s50">
+<aln vertical="BOTTOM"></aln>
+</sty>
+</sts>
+<tda columncount="5" rowcount="4">
+<col autowidth="0" styleid="s50" width="313.50"/>
+<col autowidth="0" styleid="s50" width="111.75"/>
+<col autowidth="0" width="108.75"/>
+<col autowidth="0" width="57.75"/>
+<col autowidth="0" width="110.25"/>
+<row autoheight="0" height="48.00">
+<cel styleid="s50">
+<dta type="STRING">Activity and Address</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Drawing set <brk></brk>(Size A1)</dta>
+</cel>
+<cel>
+<dta type="STRING">Design Analysis</dta>
+</cel>
+<cel>
+<dta type="STRING">Spec
+s</dta>
+</cel>
+<cel>
+<dta type="STRING">Other<brk></brk>Documents</dta>
+</cel>
+</row>
+<row autoheight="0" height="84.00">
+<cel styleid="s50">
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[]</div>Resident Office<brk></brk>ATTN: <div class="brackets">[]</div><brk></brk><div class="brackets">[Type in mailing address]</div><brk></brk>DSN: 315-<div class="brackets">[]</div>-<div class="brackets">[]</div><brk></brk>COMM: 81-<div class="brackets">[]</div>-<div class="brackets">[]</div>-<div class="brackets">[]</div><brk></brk>EMAIL: <div class="brackets">[]</div>@usace.army.mil<pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[1]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+<cel>
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[1]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+<cel>
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[1]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+<cel>
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[1]</div>CD<pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+</row>
+<row autoheight="0" height="48.00">
+<cel styleid="s50">
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[1]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+<cel>
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[1]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+<cel>
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[1]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+<cel>
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[1]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+</row>
+<row autoheight="0" height="59.25">
+<cel styleid="s50">
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[1]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+<cel>
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[1]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+<cel>
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[1]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+<cel>
+<dta type="STRING"><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[1]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add></dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl></tab><del><pre class="display_DEL">&lt;DEL&gt;</pre>]<brk></brk><pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre><brk></brk><pre class="display_ADD">&lt;/ADD&gt;</pre></add>
+<brk></brk></spt>
+<spt outline="1.11.3"><ttl>1.11.3 Delivery of Design Submittals</ttl><brk></brk>
+<txt>Mail or hand deliver all design submittals to the Government during design and construction. For mail delivery 
+use an overnight mailing service. The Government shall furnish the Contractor addresses where each copy shall 
+be delivered after Contract award.</txt><brk></brk></spt>
+<spt outline="1.11.4"><ttl>1.11.4 Transmittal Letter</ttl><brk></brk>
+<txt>Each design submittal shall have a transmittal letter accompanying it indicating the date, design percentage, 
+type of submittal, list of items submitted, transmittal number, and point of contact with telephone number.</txt><brk></brk></spt>
+<spt outline="1.11.5"><ttl>1.11.5 Late Design Submittal</ttl><brk></brk>
+<txt>If a design submittal is over one (1) day late in accordance with the latest design schedule, the Government 
+review period may be extended 7 calendar days. The review conference shall be held the week after the new period. 
+Submittal date revisions must be made in writing at least one (1) week prior to the affected submittal schedules.</txt><brk></brk></spt>
+</spt><spt outline="1.12"><ttl>1.12 GOVERNMENT REVIEW</ttl><brk></brk>
+<txt>After receipt of submittals, the Government shall be allowed twenty-one (21) calendar days to review and comment 
+on each Intermediate and Final Design submittal, except as noted below. The Final Backcheck design submittal 
+shall permit the Government fourteen (14) calendar days to review and ensure the Final Design submittal was updated. 
+For each design submittal, the COR shall furnish the Contractor comments from the various design sections and 
+from other concerned agencies involved in the review process. The review shall be for conformance with the technical 
+requirements of the Contract RFP and the Contractor's proposal. If the Contractor disagrees technically with 
+any comment or comments and does not intend to comply with the comment, he must clearly outline, with ample justification, 
+the reasons for noncompliance within five (5) working days after receipt of these comments in order that the 
+comment can be resolved. All comments must be mutually resolved by the Government and the Contractor. The Contractor 
+shall furnish disposition of all comments, in writing, with the next scheduled submittal. The Contractor is 
+cautioned in that if he believes the action required by any comment exceeds the requirements of this Contract, 
+that he should take no action and notify the COR in writing immediately. Review conferences shall be held for 
+each design submittal at the project's location. The Contractor shall bring the personnel that developed the 
+design submittal to the review conference. These conferences shall take place approximately one week after the 
+twenty-one (21) day review period.</txt><brk></brk>
+<spt outline="1.12.1"><ttl>1.12.1 ProjNet (DrChecks)</ttl><brk></brk>
+<txt>Although the Contractor may use its own internal system for overall design<brk></brk>
+configuration management, the Government and the Contractor shall use the<brk></brk>
+DrChecks Design Review and Checking System to initiate, respond to,<brk></brk>
+resolve and track Government design compliance review comments. This<brk></brk>
+system may be useful for other data which needs to be interactive or<brk></brk>
+otherwise available for shared use and retrieval. The Contractor shall check the Design Quality Lessons learned 
+(DQLL) through DrChecks and incorporate any applicable Lessons Learned into the design of this project.</txt><brk></brk>
+<spt outline="1.12.1.1"><ttl>1.12.1.1 Tracking Comments in DrChecks</ttl><brk></brk>
+<txt>Throughout the design process, the DB Contractor shall enter, track, and back-check comments using the DrChecks 
+system. DOR shall annotate their own discipline specific comments timely to indicate exactly what action will 
+be taken or why the action is not required. Merely stating “concur” or “will comply” or is not considered a 
+satisfactory response. Comments considered critical by the conference participants shall be flagged as such.</txt><brk></brk></spt>
+<spt outline="1.12.1.2"><ttl>1.12.1.2 DrChecks Review Comments</ttl><brk></brk>
+<txt>The DB Contractor shall monitor DrChecks to assure all comments are annotated and agreed to by the designers 
+and reviewers prior to the next submittal. The DrChecks comments and responses shall be printed and included 
+in the design analysis for record.<brk></brk>
+Conference participants (reviewers) will expect coordination between Design Analysis calculations and the submitted 
+design. Reviewers will also focus on the design submittal's satisfaction of the contract requirements.<brk></brk>
+The DOR shall answer each comment in DrChecks with a formal response prior to the next submittal, clearly indicating 
+what action will be taken and what drawing/spec will change. DOR are encouraged to directly contact reviewers 
+to discuss and agree to the formal comment responses rather than relying only on DrChecks and review meetings 
+to discuss comments. With the next design conference, reviewers will back-check answers to the comments against 
+the submittal, in addition to reviewing additional design work.<brk></brk>
+Comments that, in the DB Contractor's opinion, require effort outside the scope of the contract shall be clearly 
+indicated as such in DrChecks. The DB Contractor shall not proceed with work outside the contract until a modification 
+to the contract is properly executed, if one is necessary.</txt><brk></brk></spt>
+<spt outline="1.12.1.3"><ttl>1.12.1.3 DrChecks Initial Account Set-Up</ttl><brk></brk>
+<txt>To initialize an office's use of DrChecks, choose a contact person within the office to call the DrChecks Help 
+Desk at 800-428-4357, M-F, 8AM-5PM, Central time. This POC will be given an office password to distribute to 
+others in the office. Individuals can then go to the hyperlink at {http://www.projnet.org} and register as a 
+first time user. Upon registration, each user will be given a personal password to the DrChecks system.<brk></brk>
+Once the office and individuals are registered, the US Army Corps of Engineers’s project manager or lead reviewer 
+will assign the individuals and/or offices to the specific project for review. At this point, persons assigned 
+can make comments, annotate comments, and close comments, depending on their particular assignment.</txt><brk></brk></spt>
+<spt outline="1.12.1.4"><ttl>1.12.1.4 DrChecks Comment Evaluation</ttl><brk></brk>
+<txt>The role of the DOR is to evaluate and respond to the comments entered by the reviewer. To respond to comments:</txt><brk></brk>
+<lst>1. Log into DrChecks.</lst><brk></brk>
+<lst>2. Click on the appropriate project.</lst><brk></brk>
+<lst>3. Under “Evaluate” click on the number under “Pending”.</lst><brk></brk>
+<lst>4. Locate the comments that require your evaluation. (Note: If you know the comment number you can use 
+the Jump to ID on the left hand side in DrChecks; enter the number and click on go.)</lst><brk></brk>
+<lst>5. Select the appropriate evaluation (concur, non-concur, for information only, or check and resolve) 
+and add the response.</lst><brk></brk>
+<lst>6. Click on the Add button. The evaluation will be added to the database and a fresh screen will appear 
+with the next comment.</lst><brk></brk>
+<lst>7. Once evaluations are all entered, exit DrChecks by choosing "My Account" and then Logout.</lst><brk></brk></spt>
+</spt><spt outline="1.12.2"><ttl>1.12.2 Contractor Actions</ttl><brk></brk>
+<txt>The disposition of each Government review comment must be clearly annotated. Merely stating "concur" or "will 
+comply" is not considered an adequate indication of actions taken. Not-in-scope comments annotated by the Contractor 
+must be discussed with the Government within five (5) working days.</txt><brk></brk></spt>
+<spt outline="1.12.3"><ttl>1.12.3 Design Responsibility and Compliance</ttl><brk></brk>
+<txt>Regardless of Government review and comment on design submittals, the Contractor shall be responsible for compliance 
+with all requirements of the RFP and accepted Proposal. Should any non-compliance be discovered during design 
+and/or construction, the Contractor shall be responsible for providing corrective action at no additional cost 
+and/or time impact to the Government in order to comply with the requirements of the Contract.</txt><brk></brk></spt>
+</spt></prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<spt outline="2.1"><ttl>2.1 DESIGN ANALYSIS</ttl><brk></brk>
+<spt outline="2.1.1"><ttl>2.1.1 General</ttl><brk></brk>
+<txt>Design Analysis format shall follow guidance from <rid><pre class="display_RID">&lt;RID&gt;</pre>ER 1110-345-700<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Appendix B located on Corps of Engineers website: http://www.publications.usace.army.mil/Portals/76/Publications/<brk></brk>
+EngineerRegulations/ER_1110-345-700.pdf. <brk></brk>
+This shall exclude part 6 "Exceptions to Appendix B, Requirements."</txt><brk></brk></spt>
+<spt outline="2.1.2"><ttl>2.1.2 Format</ttl><brk></brk>
+<txt>Use standard A4 size or 8.5 inch by 11 inch paper except that larger sheets may be used when required for graphs 
+or other special calculation forms. All sheets shall be in reproducible form. The material may be typewritten, 
+hand lettered, handwritten, or a combination thereof, provided it is legible. Side margins shall be 1 inch minimum 
+to permit side binding and head to head printing. Bottom margins shall be a minimum of 1 inch with page numbers 
+centered.</txt><brk></brk></spt>
+<spt outline="2.1.3"><ttl>2.1.3 Organization</ttl><brk></brk>
+<txt>The design analysis shall be sequentially numbered and bound under a cover indicating the name of the facility 
+and project number. The design analysis shall be further classified by the submittal stage. All portions of 
+the design analysis shall be organized and bound by relevant topics.</txt><brk></brk></spt>
+<spt outline="2.1.4"><ttl>2.1.4 Design Computations</ttl><brk></brk>
+<txt>Calculations are a part of the design analysis. When they are voluminous, bind them separately from the narrative 
+part of the design analysis. Present the design calculations in a clean and legible form incorporating a title 
+page and index for each volume. Furnish a table of contents which shall be an index of the indices, when there 
+is more than one volume. Identify the source of loading conditions, supplementary sketches, graphs, formulae, 
+and references. Explain all assumptions and conclusions. Calculation sheets shall carry the names or initials 
+of the computer and the checker and the dates of calculations and checking. As part of the Contractor's Quality 
+Control System, no portion of the calculations shall be computed and checked by the same person.</txt><brk></brk>
+<txt>When ADPS are used to perform design calculations, the design analysis shall include descriptions of the computer 
+programs used and copies of the ADPS input data and output summaries. When the computer output is large, it 
+may be divided into volumes at logical division points. Precede each set of computer printouts by an index and 
+by a description of the computation performed. If several sets of computations are submitted; they shall be 
+accompanied by a general table of contents in addition to the individual indices. Include the following in the 
+description accompanying each set of ADPS printouts:</txt><brk></brk>
+<lst indent="-0.33">a. Explain the design method, including assumptions, theories and formulae.</lst><brk></brk>
+<lst indent="-0.33">b. Include applicable diagrams, adequately identified.</lst><brk></brk>
+<lst indent="-0.33">c. State exactly the computation performed by the computer.</lst><brk></brk>
+<lst indent="-0.33">d. Provide all necessary explanations of the computer printout format, symbols and abbreviations.</lst><brk></brk>
+<lst indent="-0.33">e. Use adequate and consistent notation.</lst><brk></brk>
+<lst indent="-0.33">f. Provide sufficient information to permit manual checks of the results.</lst><brk></brk></spt>
+</spt><spt outline="2.2"><ttl>2.2 DRAWINGS</ttl><brk></brk>
+<spt outline="2.2.1"><ttl>2.2.1 General</ttl><brk></brk>
+<txt>Prepare all drawings utilizing Computer-Aided Design and Drafting (CADD) software so that they are well arranged, 
+placed for ready reference and they present complete information. The Contractor shall prepare all CADD files 
+drawings in compliance with the A/E/C CADD Standards (rel 6.0) dated August 2015 (referred to as the "CADD standard") 
+unless otherwise specified. Drawings shall be complete, unnecessary work such as duplicate views, notes and lettering, 
+and repetition of details shall not be permitted. Do not show standard details that are not applicable to the 
+project, and minimize unnecessary wasted space. Do not include details of standard products or items, which 
+are adequately covered by specifications on the drawings. The cover sheet shall be signed and stamped by a principal 
+of the firm who is a registered professional engineer/architect. Each design discipline shall provide a complete 
+list of abbreviations and symbols used in their respective drawings. Do not use shop drawings as design drawings. 
+The design documents shall consist of drawings utilizing metric drawing sheets A1 (594 x 841 mm) or A2 (420 x 
+594 mm) format unless otherwise specified. The Contractor shall use standard Corps of Engineers title blocks 
+and borders on all drawings. The Contractor shall submit all CADD files for A/E/C compliance verification and 
+a description of all drawings and drawing file names with each required design submittal.</txt><brk></brk></spt>
+<spt outline="2.2.2"><ttl>2.2.2 Methods and Format</ttl><brk></brk>
+<txt>Create all drawings utilizing metric units. All CADD files shall utilize one of the following software applications 
+and the version specified (or the latest version):</txt><brk></brk>
+<lst indent="-0.33">a. AutoCAD 2013 (.dwg)</lst><brk></brk>
+<lst indent="-0.33">b. MicroStation V8 (.dgn)</lst><brk></brk></spt>
+<spt outline="2.2.3"><ttl>2.2.3 Use of Records Management Directory Structure</ttl><brk></brk>
+<lst indent="-0.33">a. The main (root) folder shall be named after the P2 number of the project.</lst><brk></brk>
+<lst indent="-0.33">b. The folder names (under the root folder) are shown on table 2-1, page 13 of the CADD standard. CADD 
+files shall then be properly organized in the applicable folder structure as described. Table 2-1 shall 
+also serve as the sequence or order of drawings.</lst><brk></brk>
+<lst indent="-0.33">c. Model files shall be organized in a sub-folder (in each applicable discipline) called "resource".</lst><brk></brk>
+<lst indent="-0.33">d. Sheet files shall be organized in the applicable discipline folder.</lst><brk></brk>
+<lst indent="-0.33">e. A subfolder called "PDF" shall be created under each applicable discipline folder to store design 
+.pdf files of each submittal percentage phase.</lst><brk></brk>
+<lst indent="-0.33">f. Only English language characters shall be used in the folder names.</lst><brk></brk>
+<lst indent="-0.33">g. The Contractor at their prerogative may delete folders that are not applicable to the design.</lst><brk></brk></spt>
+<spt outline="2.2.4"><ttl>2.2.4 Use of A/E/C CADD File Naming System</ttl><brk></brk>
+<txt>For the purposes of simplicity model files and sheet files shall be named as described below:</txt><brk></brk>
+<lst indent="-0.33">a. Model files names shall have a minimum of ten characters (reference the CADD standard, figure 2-4, 
+page 12). The first six characters shall be the project P2 number, followed by two characters for the 
+discipline designator, and the last two characters the model file type. The last four characters of 
+the model file name is user definable and may be used at the Contractor's prerogative. Only English 
+alphabet and numerical characters shall be used in file names (no kanji).</lst><brk></brk>
+<lst indent="-0.33">b. The sheet file name shall have a minimum of ten characters (reference the CADD Standard, figure 2-5, 
+page 18). The first six characters shall be the project P2 number, followed by one character for the 
+discipline designator (the level 2 designator shall be used only when more than 99 sheets are needed 
+to subdivide the applicable discipline), and the last two characters the sheet sequence number. The 
+last three characters of the sheet file name is user definable and shall be used in the event of an amendment 
+or modification.</lst><brk></brk></spt>
+<spt outline="2.2.5"><ttl>2.2.5 Use of Reference or Xref Files</ttl><brk></brk>
+<txt>The use of reference or xrefs files during the design stage is at the discretion of the designers.</txt><brk></brk></spt>
+<spt outline="2.2.6"><ttl>2.2.6 Drawing Sheet Assembly</ttl><brk></brk>
+<txt>CADD drawings shall utilize model and sheet files (modelspace and paperspace) and shall be drawn in real world 
+units. The drawings shall be Xref'd or referenced to a scale (see table 3-7, page 35 of the CADD standard) that 
+fits into the Government provided border sheet. The Contractor shall utilize "Option 1" of a drawing sheet assembly 
+(see figure 2-2, page 10 of the CADD standard). The border sheet shall remain at its original scale and only 
+one bordersheet (paperspace) per design file is allowed.</txt><brk></brk></spt>
+<spt outline="2.2.7"><ttl>2.2.7 Use of True Type Fonts and Sizes</ttl><brk></brk>
+<txt>For file conversion purposes the standard font shall be Arial.ttf and simplex.ttf. Fonts created by third parties 
+or the designers are not permitted. Standard text sizes that may be used are 1.5 mm, 3 mm, 6 mm and 12 mm (text 
+height and width).</txt><brk></brk></spt>
+<spt outline="2.2.8"><ttl>2.2.8 Use of Standard Dimensioning and Terminator Symbols</ttl><brk></brk>
+<txt>All dimensioning shall be in millimeters (see figure 3-7 through 3-10, pages 38 and 39 of the CADD standard). 
+The preferred terminator for dimensioning shall be the architectural slash. In the event that filled arrowheads 
+are selected ensure that the size of the arrowheads are at a ratio of 3:1 (see page 37 of the CADD standard).</txt><brk></brk></spt>
+<spt outline="2.2.9"><ttl>2.2.9 Use of Standard Abbreviations</ttl><brk></brk>
+<txt>The use of abbreviations are for use when space is limited within a drawing sheet, otherwise it is recommended 
+the all the words are spelled out versus using abbreviations. Approved abbreviations are available from the 
+National CADD Standard (NCS version 3.1)</txt><brk></brk></spt>
+<spt outline="2.2.10"><ttl>2.2.10 Use of Standard Symbols, Patterns, and Line Styles</ttl><brk></brk>
+<txt>General symbols such as a two part detail, section and elevation bubbles are to be used. Other approved symbols, 
+patterns, and line styles are located in Appendix D of the CADD Standards.</txt><brk></brk></spt>
+<spt outline="2.2.11"><ttl>2.2.11 Government Provided Files</ttl><brk></brk>
+<txt>The use of these files is free. The U.S. Army Corps of Engineers (USACE) makes no warranty, impressed or implied, 
+with regards to the use of these files. USACE shall not be liable for any errors or for incidental or consequential 
+damages in connection with the furnishing and performance of these files. The COR shall furnish the Contractor 
+with the following:</txt><brk></brk>
+<lst indent="-0.33">a. A/E/C CADD Standards rel. 6.0 (Main text, Appendix A in pdf format)</lst><brk></brk>
+<lst indent="-0.33">b. Japan Engineer District Title and border sheets (Size A1 and A2 in .dgn and .dwg format)</lst><brk></brk>
+<lst indent="-0.33">c. AutoCAD drawing template and MicroStation library files (.dwt and .dgnlib)</lst><brk></brk>
+<lst indent="-0.33">d. A/E/C Cell and Block Libraries (.cel and .dwg)</lst><brk></brk>
+<lst indent="-0.33">e. A/E/C Line Style Libraries (.rsc and .shx)</lst><brk></brk>
+<lst indent="-0.33">f. A/E/C Pattern Libraries (.cel and .pat)</lst><brk></brk></spt>
+<spt outline="2.2.12"><ttl>2.2.12 Submittal Delivery Media and Format</ttl><brk></brk>
+<txt>Submit all Design Complete CADD files on the following media.</txt><brk></brk>
+<lst indent="-0.33">a. Before a CADD file is copied on the delivery digital media, the following procedures shall be performed:</lst><brk></brk>
+<itm indent="-0.33">(1) Remove all extraneous graphics outside the border area of the sheet file. Set the active 
+parameters to a standard setting or those in the Government-furnished template or seed file.</itm><brk></brk>
+<itm indent="-0.33">(2) Include all files, both graphic and non-graphic, required for the project (i.e., color tables, 
+pen tables, font libraries, cell libraries, user command files, plot files, etc.). All cells/blocks 
+not provided as Government-furnished materials must be provided to the Government as a part 
+of the electronic digital deliverables.</itm><brk></brk>
+<itm indent="-0.33">(3) Make sure that all support files such as those listed above are in the resource directory 
+and that model files do not include device or directory specifications.</itm><brk></brk>
+<itm indent="-0.33">(4) Document any fonts, tables, etc., developed by the Contractor or not provided among the 
+Government-furnished materials. The Contractor shall obtain Government approval before using 
+anything other than the Government's standard fonts, line styles, patterns, cells/blocks.</itm><brk></brk>
+<lst indent="-0.33">b. A copy of all CADD data and files developed under this Contract shall be submitted to the Government 
+on electronic digital CAD media for approval by the Government at the Intermediate Design submittal phase, 
+the Final Design submittal stage, and at the Final Backcheck Design submittal phase as required unless 
+otherwise directed by the Contracting Officer.</lst><brk></brk>
+<lst indent="-0.33">c. The external label for each electronic digital media shall contain, as a minimum, the following information:</lst><brk></brk>
+<itm indent="-0.33">(1) The Project title, design submittal stage, and date.</itm><brk></brk>
+<itm indent="-0.33">(2) The format and version of operating system software.</itm><brk></brk>
+<itm indent="-0.33">(3) The name and version of utility software used for preparation (e.g., compression/decompression) 
+and copying files to the media.</itm><brk></brk>
+<itm indent="-0.33">(4) The A/E name and address.</itm><brk></brk></spt>
+</spt><spt outline="2.3"><ttl>2.3 SPECIFICATIONS</ttl><brk></brk>
+<spt outline="2.3.1"><ttl>2.3.1 General</ttl><brk></brk>
+<txt>The latest version of Unified Facilities Guide Specifications (UFGS), as established by CSI Manual of Practice, 
+shall be utilized, and can be obtained from the Whole Building Design Guide website http://www.wbdg.org/ccb/browse_cat.php?c=3.</txt><brk></brk>
+<txt>SpecsIntact is an automated specification processing system for use in preparing construction project specifications 
+from the UFGS. The use of SpecsIntact is mandatory. SpecsIntact can be downloaded at http://specsintact.ksc.nasa.gov/. 
+The Contractor shall submit SpecsIntact (.sec) files for marked-up and final specifications as required in the 
+Contract.</txt><brk></brk>
+<txt>Federal Specs and MIL Specs have been phased out with a few exceptions. Only those Federal and MIL specs in 
+the current editions of the UFGS may be used. Industry standards (e.g. ASTM, ANSI) shall be used to the greatest 
+extent practicable for description of materials. Japanese Industry Standards (e.g. JIS, JAS) are acceptable, 
+provided that the A-E can provide adequate documentation for COR's approval proving that the Japanese Industry 
+Standards are equivalent to the US Industry Standards. A limited set of modified UFGS incorporating previously 
+identified and<brk></brk>
+accepted Japanese standards and methods (also known as Japan Edited Specifications, or JES) can be found at https://www.poj.usace.army.mil/Business-With-Us/References/. <brk></brk>
+When standards are not available for an item, specify by performance criteria instead. Proprietary items are 
+not allowed.</txt><brk></brk>
+<txt>At the Intermediate and Final Design submittal stages, submit edited specifications in marked-up or redlined 
+format. At the Final Backcheck Design submittal stage, execute all previous revisions.</txt><brk></brk></spt>
+<spt outline="2.3.2"><ttl>2.3.2 Submittal Register</ttl><brk></brk>
+<txt>A Submittal Register indicating the submittal requirements during the construction phase must be prepared by 
+the A-E using SpecsIntact during the design phase of the Contract. The A-E shall be responsible for listing 
+all required submittals necessary to insure the project requirements are complied with. The Register shall identify 
+submittal items such as shop drawings, manufacturer's literature, certificates of compliance, material samples, 
+guarantees, test results, etc. that the Contractor shall submit for review and/or approval action during the 
+life of the construction Contract. The A-E shall include the Submittal Register as an attachment to Section 
+<srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES with the specifications.</txt><brk></brk></spt>
+</spt></prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>CONCEPT (35%) DESIGN SUBMITTAL<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>The A-E shall prepare the Concept Design based on the discussions and decisions made at the design charrette.</txt><brk></brk>
+<txt>The Concept Design goal is to demonstrate that the A-E has a thorough understanding of the scope of the project 
+and the owner's requirements, as discussed at the design charrette. At the Concept Design stage, the A-E shall 
+confirm all CADD requirements (i.e.: sheet numbering, sheet size, A/E/C CADD &amp; USACE standards) with the 
+POJ CADD center.</txt><brk></brk>
+<txt>Concept Design submittal shall consist of, but not limited to, the following:</txt><brk></brk>
+<spt outline="3.1.1"><ttl>3.1.1 Design Drawings</ttl><brk></brk>
+<lst indent="-0.33">a. Title and general sheets with preliminary haul route.</lst><brk></brk>
+<lst indent="-0.33">b. Project site plan &amp; area site plan.</lst><brk></brk>
+<lst indent="-0.33">c. Construction notes and legend pages (all disciplines); Phasing plan, if required.</lst><brk></brk>
+<lst indent="-0.33">d. Preliminary Building Life Safety Code Analysis.</lst><brk></brk>
+<lst indent="-0.33">e. Civil</lst><brk></brk>
+<itm indent="-0.33">(1) Project site plan, including required standoff setbacks.</itm><brk></brk>
+<itm indent="-0.33">(2) Area site plan.</itm><brk></brk>
+<itm indent="-0.33">(3) General Preliminary Exterior Utility Plans.</itm><brk></brk>
+<itm indent="-0.33">(4) Complete subsurface investigation and analysis.</itm> <brk></brk>
+<lst indent="-0.33">f. Architectural</lst><brk></brk>
+<itm indent="-0.33">(1) Architectural Plans that consider functional relationships, work area use, security requirements 
+and traffic flow patterns.</itm><brk></brk>
+<itm indent="-0.33">(2) General Preliminary Building code/life safety code analysis diagrams.</itm><brk></brk>
+<itm indent="-0.33">(3) Exterior elevations showing principal shapes, fenestrations and exterior finishes.</itm><brk></brk>
+<itm indent="-0.33">(4) Building sections.</itm><brk></brk>
+<itm indent="-0.33">(5) General interior finish selections.</itm><brk></brk>
+<lst indent="-0.33">g. Structural</lst><brk></brk>
+<itm indent="-0.33">(1) General Preliminary Blast Requirements for Exterior Windows and Doors.</itm><brk></brk>
+<lst indent="-0.33">h. Mechanical/Plumbing</lst><brk></brk>
+<itm indent="-0.33">(1) General Preliminary HVAC, plumbing layouts, including equipment capacities and sizes.</itm><brk></brk>
+<lst indent="-0.33">i. Electrical and Telecommunication</lst><brk></brk>
+<itm indent="-0.33">(1) General Preliminary electrical, and information systems layout, including equipment capacities 
+and sizes.</itm><brk></brk>
+<lst indent="-0.33">j. Fire Protection</lst><brk></brk>
+<itm indent="-0.33">(1) Fire Alarm Control Panel configuration, Riser configuration, pipe size and configuration.</itm><brk></brk></spt>
+<spt outline="3.1.2"><ttl>3.1.2 Specifications</ttl><brk></brk>
+<txt>List of Technical Specification sections that will be included in the intermediate submittal.</txt><brk></brk></spt>
+<spt outline="3.1.3"><ttl>3.1.3 Design Analysis</ttl><brk></brk>
+<lst indent="-0.33">a. Concept Design Analysis</lst><brk></brk>
+<itm indent="-0.33">(1) Include a discussion of existing conditions and project goals.</itm><brk></brk>
+<itm indent="-0.33">(2) List design assumptions, design calculations referenced criteria, and show initial calculations.</itm><brk></brk>
+<itm indent="-0.33">(3) Include placeholder sections for topics not required in the concept submittal, but needed 
+for the intermediate submittal.</itm><brk></brk>
+<itm indent="-0.33">(4) Narrative description of the approach used and basis for AT measures, and a narrative description 
+of those measures in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 4-010-01<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</itm><brk></brk>
+<itm indent="-0.33">(5) Life Safety &amp; Fire protection analysis in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 3-600-01<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</itm><brk></brk>
+<itm indent="-0.33">(6) Discussion of types and capacities of HVAC systems, including a description of the selected 
+system.</itm><brk></brk>
+<itm indent="-0.33">(7) Discussion of types and capacities of primary electrical power, conduit, information systems, 
+lighting, and other systems considered, including a description of the selected systems.</itm><brk></brk>
+<itm indent="-0.33">(8) Description of the foundation, including any special requirements such as drilled piers, 
+pilings, and support facilities.</itm><brk></brk>
+<itm indent="-0.33">(9) Site analysis that discusses the opportunities and constraints of the site and include the 
+recommendations from the IDG/Installation.</itm><brk></brk>
+<itm indent="-0.33">(10)Hazard analysis (lead<del><pre class="display_DEL">&lt;DEL&gt;</pre> <pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>-<pre class="display_ADD">&lt;/ADD&gt;</pre></add>based paint, asbestos, etc., if required).</itm><brk></brk>
+<itm indent="-0.33">(11)Preliminary erosion control analysis.</itm><brk></brk>
+<itm indent="-0.33">(12)Preliminary plant material analysis that reflects the selection of plant material native 
+to the project area, if required.</itm><brk></brk>
+<itm indent="-0.33">(13)Life cycle cost analysis.</itm><brk></brk>
+<itm indent="-0.33">(14)Building energy simulations, energy conservation studies, and design energy use calculations.</itm><brk></brk>
+<itm indent="-0.33">(15)Corrosion mitigation plan, if required.</itm><brk></brk>
+<itm indent="-0.33">(16)Site specific traffic analysis.</itm><brk></brk>
+<itm indent="-0.33">(17)List of materials and methods of construction to be used.</itm><brk></brk></spt>
+<spt outline="3.1.4"><ttl>3.1.4 Cost Estimate</ttl><brk></brk>
+<txt>Current working estimate.</txt><brk></brk></spt>
+</spt><spt outline="3.2"><ttl>3.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>INTERMEDIATE (65%) DESIGN SUBMITTAL<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Prepare the Intermediate Design and technical specifications based on Concept Design, project criteria and general 
+instructions.</txt><brk></brk>
+<txt>The Intermediate Design effort shall be a continuation of the Concept Design. The Intermediate Design goals 
+are to show the project is on schedule and at an acceptable level of quality and completeness and demonstrate 
+that A-E's QC process is functioning properly. Submit all QC documentation with the Intermediate Design submittal. 
+Complete coordination amongst design disciplines shall be conducted to review and resolve design conflicts.</txt><brk></brk>
+<txt>Intermediate Design shall consist of, but not limited to, the following:</txt><brk></brk>
+<spt outline="3.2.1"><ttl>3.2.1 Design Drawings</ttl><brk></brk>
+<lst indent="-0.33">a. Title and general sheets with haul route.</lst> <brk></brk>
+<lst indent="-0.33">b. Project site plan &amp; area site plan.</lst><brk></brk>
+<lst indent="-0.33">c. Construction notes and legend pages (all disciplines); Phasing plan, if required.</lst><brk></brk>
+<lst indent="-0.33">d. Building Life Safety Code &amp; Fire Protection Plans including Building Code and Occupancy Analysis.</lst><brk></brk>
+<lst indent="-0.33">e. Complete Discipline coordination of the design.</lst><brk></brk>
+<lst indent="-0.33">f. Civil</lst><brk></brk>
+<itm indent="-0.33">(1) Existing conditions (topography).</itm><brk></brk>
+<itm indent="-0.33">(2) Demolition plan.</itm><brk></brk>
+<itm indent="-0.33">(3) Site plan.</itm><brk></brk>
+<itm indent="-0.33">(4) Grading plan.</itm><brk></brk>
+<itm indent="-0.33">(5) Road sections, plans, and profiles.</itm><brk></brk>
+<itm indent="-0.33">(6) Utility plans and profiles.</itm><brk></brk>
+<itm indent="-0.33">(7) Civil and site profiles.</itm><brk></brk>
+<itm indent="-0.33">(8) Geotechnical boring logs.</itm><brk></brk>
+<lst indent="-0.33">g. Architectural</lst><brk></brk>
+<itm indent="-0.33">(1) Architectural Floor Plans.</itm><brk></brk>
+<itm indent="-0.33">(2) Reflected Ceiling Plans.</itm><brk></brk>
+<itm indent="-0.33">(3) Roof Plans.</itm><brk></brk>
+<itm indent="-0.33">(4) Furniture/Equipment Floor Plans and Schedules.</itm><brk></brk>
+<itm indent="-0.33">(5) Exterior elevations.</itm><brk></brk>
+<itm indent="-0.33">(6) Building sections.</itm><brk></brk>
+<itm indent="-0.33">(7) Wall sections.</itm><brk></brk>
+<itm indent="-0.33">(8) Partition Types.</itm><brk></brk>
+<itm indent="-0.33">(9) Air barrier plans and details.</itm><brk></brk>
+<itm indent="-0.33">(10)Interior elevations.</itm><brk></brk>
+<itm indent="-0.33">(11)Door &amp; window types/schedules and details.</itm><brk></brk>
+<itm indent="-0.33">(12)Blast requirements for Exterior Windows and Doors, details.</itm><brk></brk>
+<itm indent="-0.33">(13)Room Finish Materials and Schedule.</itm><brk></brk>
+<itm indent="-0.33">(14)Miscellaneous Details.</itm><brk></brk>
+<itm indent="-0.33">(15)Signage Plans and Schedules.</itm><brk></brk>
+<lst indent="-0.33">h. Structural</lst><brk></brk>
+<itm indent="-0.33">(1) Foundation plans.</itm><brk></brk>
+<itm indent="-0.33">(2) Floor framing plans.</itm><brk></brk>
+<itm indent="-0.33">(3) Roof framing plans.</itm><brk></brk>
+<itm indent="-0.33">(4) Foundation Schedule and details.</itm><brk></brk>
+<itm indent="-0.33">(5) Wall sections and details.</itm><brk></brk>
+<itm indent="-0.33">(6) Column Schedules and details.</itm><brk></brk>
+<itm indent="-0.33">(7) Beam/Girder Schedules and details.</itm><brk></brk>
+<itm indent="-0.33">(8) Slab Schedules and details.</itm><brk></brk>
+<itm indent="-0.33">(9) Building sections.</itm><brk></brk>
+<lst indent="-0.33">i. Mechanical</lst><brk></brk>
+<itm indent="-0.33">(1) Site Plans.</itm><brk></brk>
+<itm indent="-0.33">(2) HVAC Plans.</itm><brk></brk>
+<itm indent="-0.33">(3) Piping Plans.</itm><brk></brk>
+<itm indent="-0.33">(4) Sections.</itm><brk></brk>
+<itm indent="-0.33">(5) Equipment Control Sequences.</itm><brk></brk>
+<itm indent="-0.33">(6) DDC points list.</itm><brk></brk>
+<itm indent="-0.33">(7) Equipment Schedules.</itm><brk></brk>
+<itm indent="-0.33">(8) Isometrics.</itm><brk></brk>
+<itm indent="-0.33">(9) Riser Diagrams.</itm><brk></brk>
+<itm indent="-0.33">(10)Schematics.</itm><brk></brk>
+<itm indent="-0.33">(11)Details.</itm><brk></brk>
+<lst indent="-0.33">j. Plumbing</lst><brk></brk>
+<itm indent="-0.33">(1) Site Plans.</itm><brk></brk>
+<itm indent="-0.33">(2) Plumbing Plans.</itm><brk></brk>
+<itm indent="-0.33">(3) Sections.</itm><brk></brk>
+<itm indent="-0.33">(4) Equipment Control Sequences.</itm><brk></brk>
+<itm indent="-0.33">(5) Fixture Schedules.</itm><brk></brk>
+<itm indent="-0.33">(6) Isometrics/Riser Diagrams.</itm><brk></brk>
+<itm indent="-0.33">(7) Details.</itm><brk></brk>
+<lst indent="-0.33">k. Electrical</lst><brk></brk>
+<itm indent="-0.33">(1) Electrical Legend.</itm><brk></brk>
+<itm indent="-0.33">(2) Existing Electrical Site plan, indicating power, lighting.</itm><brk></brk>
+<itm indent="-0.33">(3) Exterior Demolition Plan.</itm><brk></brk>
+<itm indent="-0.33">(4) Plan view, indicating the interior electrical power plan, <brk></brk>
+including receptacles, HVAC equipment, and specialty items needing power.</itm><brk></brk>
+<itm indent="-0.33">(5) Plan view, indicating the interior light fixture layout.</itm><brk></brk>
+<itm indent="-0.33">(6) Preliminary Light fixture schedule.</itm><brk></brk>
+<itm indent="-0.33">(7) Preliminary Electrical one line diagram.</itm><brk></brk>
+<itm indent="-0.33">(8) Preliminary one line diagram for any auxiliary systems.</itm><brk></brk>
+<lst indent="-0.33">l. Telecommunication</lst><brk></brk>
+<itm indent="-0.33">(1) Existing Telecommunication Site plan.</itm><brk></brk>
+<itm indent="-0.33">(2) Exterior Demolition Plan.</itm><brk></brk>
+<itm indent="-0.33">(3) Interior Telecommunication Plan.</itm><brk></brk>
+<itm indent="-0.33">(4) Preliminary Telecommunication one-line diagrams.</itm><brk></brk>
+<lst indent="-0.33">m. Fire Protection</lst><brk></brk>
+<itm indent="-0.33">(1) Fire Suppression general notes and legend.</itm><brk></brk>
+<itm indent="-0.33">(2) Fire Alarm &amp; Mass Notification general notes and legend.</itm> <brk></brk>
+<itm indent="-0.33">(3) Fire Protection site plans.</itm><brk></brk>
+<itm indent="-0.33">(4) Fire Suppression details.</itm><brk></brk>
+<itm indent="-0.33">(5) Fire alarm plans and details.</itm><brk></brk>
+<lst indent="-0.33">n. Food Service (as required)</lst><brk></brk>
+<itm indent="-0.33">(1) Equipment Plans and Schedules.</itm><brk></brk>
+<itm indent="-0.33">(2) Details.</itm><brk></brk>
+<lst indent="-0.33">o. Audio/Video (as required)</lst><brk></brk>
+<itm indent="-0.33">(1) AV Plans and Schedules.</itm><brk></brk>
+<itm indent="-0.33">(2) Details.</itm><brk></brk></spt>
+<spt outline="3.2.2"><ttl>3.2.2 Technical Specifications</ttl><brk></brk>
+<lst indent="-0.33">a. Inter<add><pre class="display_ADD">&lt;ADD&gt;</pre>i<pre class="display_ADD">&lt;/ADD&gt;</pre></add>m set of Technical Specifications.</lst><brk></brk>
+<itm indent="-0.33">(1) Technical specifications shall incorporate all comments and revisions from the previous 
+submission.</itm> <brk></brk>
+<lst indent="-0.33">b. Specifications shall include the submittal register (ENG Form 4288) in .csv and .pdf format in this 
+and all subsequent submittals.</lst><brk></brk>
+<lst indent="-0.33">c. Draft 1354 property form shall be submitted for review.</lst><brk></brk></spt>
+<spt outline="3.2.3"><ttl>3.2.3 Design Analysis</ttl><brk></brk>
+<lst indent="-0.33">a. Intermediate Design Analysis</lst><brk></brk>
+<itm indent="-0.33">(1) Include a discussion of existing conditions and project goals.</itm> <brk></brk>
+<itm indent="-0.33">(2) List design assumptions, design calculations referenced criteria, and show initial calculations 
+and manufacturer's material and equipment information.</itm> <brk></brk>
+<itm indent="-0.33">(3) Narrative description of the approach used and basis for AT measures, and a narrative description 
+of those measures in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 4-010-01<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>PDC TR 12-08<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</itm> <brk></brk>
+<itm indent="-0.33">(4) Life Safety &amp; Fire protection analysis including hydraulic calculations in accordance 
+with <rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 3-600-01<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</itm><brk></brk>
+<itm indent="-0.33">(5) Designed HVAC systems types and capacities, including a description of the selected system.</itm><brk></brk>
+<itm indent="-0.33">(6) Designed primary electrical power types and capacities, conduit, information systems, lighting, 
+and other systems considered, including a description of the selected systems.</itm><brk></brk>
+<itm indent="-0.33">(7) Designed information systems requirements.</itm><brk></brk>
+<itm indent="-0.33">(8) Designed food service requirements (as required).</itm><brk></brk>
+<itm indent="-0.33">(9) Designed audio/visual requirements (as required).</itm><brk></brk>
+<itm indent="-0.33">(10)Designed foundation, including any special requirements such as drilled piers, pilings, 
+and support facilities.</itm><brk></brk>
+<itm indent="-0.33">(11)Site analysis that discusses the opportunities and constraints of the site and include the 
+recommendations from the IDG/Installation.</itm><brk></brk>
+<itm indent="-0.33">(12)Hazard analysis, if required.</itm><brk></brk>
+<itm indent="-0.33">(13)Erosion control analysis.</itm><brk></brk>
+<itm indent="-0.33">(14)Landscaping planting plan and a plant material analysis that reflects the selection of plant 
+material native to the project area, if required.</itm> <brk></brk>
+<itm indent="-0.33">(15)Life cycle cost analysis.</itm><brk></brk>
+<itm indent="-0.33">(16)Building energy simulations, energy conservation studies, and design energy use calculations.</itm><brk></brk>
+<itm indent="-0.33">(17)Corrosion mitigation plan (as required).</itm><brk></brk>
+<itm indent="-0.33">(18)Economic analyses.</itm><brk></brk>
+<itm indent="-0.33">(19)Justification for use of all U.S. materials/equipment specified in the design to be used 
+in construction when local materials/equipment are excluded.</itm> <brk></brk>
+<div class="brackets">[<lst indent="-0.33">b. Provide completed LEED Checklist.</lst>]</div><brk></brk>
+<lst indent="-0.33">c. Provide a copy of the project's DD Form 1391.</lst><brk></brk>
+<lst indent="-0.33">d. For Renovation Projects: Discussion on property replacement values versus plant replacement values 
+of the existing building(s) and associated implementation triggers for Seismic (<rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 3-301-01<pre class="display_RID">&lt;/RID&gt;</pre></rid>) and Anti-Terrorism 
+(<rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 4-010-01<pre class="display_RID">&lt;/RID&gt;</pre></rid>) requirements.</lst><brk></brk></spt>
+<spt outline="3.2.4"><ttl>3.2.4 Cost Estimate</ttl><brk></brk>
+<txt>Current working estimate for budget purposes and back-up cost data and price quotes.</txt><brk></brk></spt>
+<spt outline="3.2.5"><ttl>3.2.5 Quality Control</ttl><brk></brk>
+<txt>Submit completed Detail Check Review (DCR) and Independent Technical Review (ITR) documents to include: Completed 
+DCR checklists, completed ITR annotated comment sheets in accordance with the project's Scope of Work.</txt><brk></brk></spt>
+</spt><spt outline="3.3"><ttl>3.3 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>FINAL (95%) DESIGN SUBMITTAL<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>The A-E shall prepare the Final Design based on the Intermediate Design, project criteria and general instructions.</txt><brk></brk>
+<txt>The Final Design effort shall be a complete design incorporating and resolving all previous review comments. 
+Complete coordination amongst design disciplines shall be conducted to review and resolve any and all design 
+conflicts. A-E shall conduct a full Quality Control review prior to the submittal of the Final Design. A-E 
+QC review shall consist of a full Detail Check and Independent Technical Review. The Final Design submittal 
+is the last full review of the Contract documents by the Government. Any significant new information included 
+in this submittal that is not a direct result of a review comment shall be brought to the attention of the reviewer(s) 
+and USACE Project Manager. Provide a brief description of the new information. The design shall be within the 
+project's programmed amount.</txt><brk></brk>
+<txt>All disciplines and specialty systems shall be designed and detailed to provide clear design intent. Design 
+analysis shall include representative sample manufacturer's product information.</txt><brk></brk>
+<txt>Final Design shall consist of, but not limited, to the following:</txt><brk></brk>
+<spt outline="3.3.1"><ttl>3.3.1 Design Drawings</ttl><brk></brk>
+<lst indent="-0.33">a. Title and general sheets with haul route.</lst><brk></brk>
+<lst indent="-0.33">b. Project site plan &amp; area site plan.</lst><brk></brk>
+<lst indent="-0.33">c. Construction notes and legend pages (all disciplines); Phasing plan (as required).</lst><brk></brk>
+<lst indent="-0.33">d. Building Life Safety Code &amp; Fire Protection Plans including Occupancy Analysis.</lst><brk></brk>
+<lst indent="-0.33">e. Complete Discipline Coordinate of the design.</lst><brk></brk>
+<lst indent="-0.33">f. Civil</lst><brk></brk>
+<itm indent="-0.33">(1) Completed set of Civil drawings.</itm><brk></brk>
+<lst indent="-0.33">g. Architectural</lst><brk></brk>
+<itm indent="-0.33">(1) Completed set of Architectural drawings.</itm><brk></brk>
+<lst indent="-0.33">h. Structural</lst><brk></brk>
+<itm indent="-0.33">(1) Completed set of Structural drawings.</itm><brk></brk>
+<lst indent="-0.33">i. Mechanical &amp; Plumbing</lst><brk></brk>
+<itm indent="-0.33">(1) Completed set of Mechanical and Plumbing drawings.</itm><brk></brk>
+<lst indent="-0.33">j. Electrical &amp; Telecommunication</lst> <brk></brk>
+<itm indent="-0.33">(1) Completed set of Electrical and Telecommunication drawings.</itm><brk></brk>
+<lst indent="-0.33">k. Fire Protection</lst><brk></brk>
+<itm indent="-0.33">(1) Completed set of Fire Protection drawings.</itm><brk></brk>
+<lst indent="-0.33">l. Food Service (as required)</lst><brk></brk>
+<itm indent="-0.33">(1) Completed set of Food Service drawings.</itm><brk></brk>
+<lst indent="-0.33">m. Audio/Video (as required)</lst><brk></brk>
+<itm indent="-0.33">(1) Completed set of Audio/Visual drawings.</itm><brk></brk></spt>
+<spt outline="3.3.2"><ttl>3.3.2 Technical Specifications</ttl><brk></brk>
+<lst indent="-0.33">a. Completed set of Technical Specifications.</lst><brk></brk>
+<itm indent="-0.33">(1) Technical specifications shall incorporate all comments and revisions from the previous 
+submission.</itm> <brk></brk>
+<lst indent="-0.33">b. Specifications shall include the submittal register (ENG Form 4288) in .csv and .pdf format in this 
+and all subsequent submittals.</lst><brk></brk>
+<lst indent="-0.33">c. Draft 1354 property form shall be submitted for review.</lst><brk></brk></spt>
+<spt outline="3.3.3"><ttl>3.3.3 Design Analysis</ttl><brk></brk>
+<lst indent="-0.33">a. Final Design Analysis</lst><brk></brk>
+<itm indent="-0.33">(1) Completed Design Analysis incorporating all comments and revisions from the previous submission.</itm><brk></brk>
+<div class="brackets">[ <div class="brackets">[<div class="brackets">[<lst indent="-0.33">b. Provide completed LEED Checklist.</lst> ]</div> <brk></brk>
+<lst indent="-0.33">c. Provide a copy of the project DD Form 1391.</lst><brk></brk>
+<lst indent="-0.33">d. For Renovation Projects: Discussion on Property Replacement Values versus plant replacement values 
+of the existing building(s) and associated implementation triggers for Seismic (<rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 3-301-01<pre class="display_RID">&lt;/RID&gt;</pre></rid>) and Anti-Terrorism 
+(<rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 4-010-01<pre class="display_RID">&lt;/RID&gt;</pre></rid>) requirements.</lst> <brk></brk></div></div></spt>
+<spt outline="3.3.4"><ttl>3.3.4 Cost Estimate</ttl><brk></brk>
+<lst indent="-0.33">a. Final working cost estimate with all back-up data, vendor estimates, etc.</lst><brk></brk></spt>
+<spt outline="3.3.5"><ttl>3.3.5 Quality Control</ttl><brk></brk>
+<lst indent="-0.33">a. Submit Detail Check Review (DCR) and Independent Technical Review (ITR) documents to include: Completed 
+DCR checklists, completed ITR annotated comment sheets in accordance with the project Scope of Work.</lst><brk></brk></spt>
+</spt><spt outline="3.4"><ttl>3.4 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>FINAL BACKCHECK (100%) DESIGN SUBMITTAL<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>The A-E shall prepare the Final Backcheck Design submittal based on the Final Design, project criteria and general 
+instructions.</txt><brk></brk>
+<txt>The Final Backcheck Design submittal shall be complete in every respect, from the Government's perspective. 
+The drawings shall show the name of the reviewer and signature of the Principal of the firm responsible for the 
+design as testimony that this submittal has been reviewed. The submittal shall incorporate all previous review 
+comments. A-E shall provide a response indicating the reason for not incorporating any non-concurred comments. 
+The A-E shall submit a complete response to all previous review comments in DrChecks with the submission.</txt><brk></brk>
+<txt>Final Backcheck Design shall consist of, but not limited to, the following:</txt><brk></brk>
+<spt outline="3.4.1"><ttl>3.4.1 Design Drawings</ttl><brk></brk>
+<txt>Complete final design construction drawings.</txt><brk></brk></spt>
+<spt outline="3.4.2"><ttl>3.4.2 Technical Specifications</ttl><brk></brk>
+<txt>Completed set of final technical specifications.</txt><brk></brk></spt>
+<spt outline="3.4.3"><ttl>3.4.3 Design Analysis</ttl><brk></brk>
+<txt>Complete final design analysis.</txt><brk></brk></spt>
+<spt outline="3.4.4"><ttl>3.4.4 Cost Estimate</ttl><brk></brk>
+<txt>Complete final working cost estimate.</txt><del><pre class="display_DEL">&lt;DEL&gt;</pre><brk></brk><pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<brk></brk></spt>
+</spt><spt outline="3.5"><ttl><del><pre class="display_DEL">&lt;DEL&gt;</pre>"<pre class="display_DEL">&lt;/DEL&gt;</pre></del>3.5 <sub><pre class="display_SUB">&lt;SUB&gt;</pre><del><pre class="display_DEL">&lt;DEL&gt;</pre>CLEARED FOR CONSTRUCTION" SUBMITTAL<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>"CLEARED FOR CONSTRUCTION" SUBMITTAL<pre class="display_ADD">&lt;/ADD&gt;</pre></add><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>DOR shall submit one (1) hard copy Japanese-style folded and bound sets of A3 size drawings and A4 specifications. 
+Submittal shall be provided to the Resident Office at the Pre-Construction meeting. "Cleared For Construction" 
+Submittal is defined as the complete, government-approved set of drawings and specifications that can be used 
+by the Contractor to build and complete the project.<brk></brk></txt>
+</spt></prt><end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

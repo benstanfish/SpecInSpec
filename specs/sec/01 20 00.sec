@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
-<BRK/>
-<SCN>SECTION 01 20 00</SCN><BRK/>
-<BRK/>
-<STL>PRICE AND PAYMENT PROCEDURES</STL><BRK/>
-<BRK/>
-<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
-<BRK/>
-<SPT><TTL>GENERAL</TTL><BRK/>
-<BRK/>
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><BRK />
+<BRK />
+<SCN>SECTION 01 20 00</SCN><BRK />
+<BRK />
+<STL>PRICE AND PAYMENT PROCEDURES</STL><BRK />
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>GENERAL</TTL><BRK />
+<BRK />
 <TXT>Payment items for the work of this Contract for which payments shall be made are listed in the CONTRACT LINE 
 ITEM NUMBER (CLIN) SCHEDULE and described below.  All costs for items of work, which are not specifically mentioned 
 to be included in a particular job or unit price payment item, are included in the listed job item most closely 
@@ -18,230 +18,230 @@ and for performing all work required by drawings and specifications for which se
 provided.  Work paid for under one item shall not be paid for under any other item.  No separate payment shall 
 be made for the work, services, or operations required by the Contractor, as specified in DIVISION 01, GENERAL 
 REQUIREMENTS, to complete the project in accordance with these specifications; all costs thereof shall be considered 
-as incidental to the work.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Submittals</TTL><BRK/>
-<BRK/>
+as incidental to the work.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2"><TTL>Submittals</TTL><BRK />
+<BRK />
 <TXT>Government approval is required for submittals with a "G" designation; DESIGN-BID-BUILD:submittals not haveing 
 a "G" designation are for information only; DESIGN-BUILD: submittals not having a "G" designation are for Contractor 
 Quality Control or Designer of Record appproval. Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL 
-PROCEDURES: </TXT><BRK/>
-<BRK/>
-<LST><SUB>SD-07 Certificates</SUB></LST><BRK/>
-<BRK/>
-<BRK/>
-<ITM><SUB>Bill Of Lading</SUB>; <SUB>G</SUB></ITM><BRK/>
-<BRK/></SPT>
-<SPT><TTL>LINE ITEMS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>CLIN 0001, Construction of Primary Facility</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Payment</TTL><BRK/>
-<BRK/>
+PROCEDURES: </TXT><BRK />
+<BRK />
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK />
+<BRK />
+<BRK />
+<ITM><SUB>Bill Of Lading</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>LINE ITEMS</TTL><BRK />
+<BRK />
+<SPT outline="1.3.1"><TTL>CLIN 0001, Construction of Primary Facility</TTL><BRK />
+<BRK />
+<SPT outline="1.3.1.1"><TTL>Payment</TTL><BRK />
+<BRK />
 <TXT>Payment shall be made at the Contract job price for CLIN 0001 "Construction of Primary Facility" for work completed 
 including, but not limited to []. Payment for work completed shall constitute full compensation of CLIN 0001, 
-complete.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Unit of Measure</TTL><BRK/>
-<BRK/>
-<TXT>Unit of measure:  job.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>CLIN 0002, Construction of Supporting Facilities, 1.5 meters outside of Buildings</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Payment</TTL><BRK/>
-<BRK/>
+complete.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3.1.2"><TTL>Unit of Measure</TTL><BRK />
+<BRK />
+<TXT>Unit of measure:  job.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.3.2"><TTL>CLIN 0002, Construction of Supporting Facilities, 1.5 meters outside of Buildings</TTL><BRK />
+<BRK />
+<SPT outline="1.3.2.1"><TTL>Payment</TTL><BRK />
+<BRK />
 <TXT>Payment shall be made at the Contract job price for CLIN 0002 "Construction of Supporting Facilities, 1.5 meters 
 outside of buildings" for work completed including, but not limited to, construction of Supporting Facilities 
 including special construction features [Pile Foundations], canopies, electrical utilities, communication utilities, 
 water/sewer/utilities, site preparation, roads, sidewalks and parking, site improvements, AT/FP, demolition, 
 low impact development, and environmental mitigation as shown on the drawings and specifications 1.5 meter outside 
-of buildings, complete. Payment for work completed shall constitute full compensation of CLIN 0002, complete.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Unit of Measure</TTL><BRK/>
-<BRK/>
-<TXT>Unit of measure:  job.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>CLIN 0003, Excavation</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Payment</TTL><BRK/>
-<BRK/>
+of buildings, complete. Payment for work completed shall constitute full compensation of CLIN 0002, complete.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3.2.2"><TTL>Unit of Measure</TTL><BRK />
+<BRK />
+<TXT>Unit of measure:  job.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.3.3"><TTL>CLIN 0003, Excavation</TTL><BRK />
+<BRK />
+<SPT outline="1.3.3.1"><TTL>Payment</TTL><BRK />
+<BRK />
 <TXT>Payment will be made for costs associated with excavation for the channel and for the structure, which includes 
 performing required excavation and other operations incidental thereto, Contractor-furnished disposal area(s) 
-and disposition of excess excavated material and unsuitable and frozen materials.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Measurement</TTL><BRK/>
-<BRK/>
+and disposition of excess excavated material and unsuitable and frozen materials.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3.3.2"><TTL>Measurement</TTL><BRK />
+<BRK />
 <TXT>The total quantity of excavated material for which payment will be made will be the theoretical quantity between 
 the ground surface as determined by a survey and the grade and slope of the theoretical cross sections indicated.  
 No allowance will be made for overdepth excavation or for the removal of any material outside the required slope 
-lines unless authorized.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Unit of Measure</TTL><BRK/>
-<BRK/>
-<TXT>Unit of measure:  cubic yard (CY).</TXT><BRK/>
-<BRK/></SPT>
-</SPT></SPT></PRT><PRT><TTL>PART 2   PRODUCTS (NOT USED)</TTL><BRK/>
-<BRK/></PRT>
-<PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
-<BRK/>
-<SPT><TTL>PROGRESS PAYMENT INVOICE</TTL><BRK/>
-<BRK/>
-<TXT>Requests for payment shall be submitted in accordance with Federal<BRK/>
-Acquisition Regulations (FAR) Subpart 32.9, entitled "PROMPT PAYMENT", and<BRK/>
-Paragraphs 52.232-5 and 52.232-27, entitled "Payments Under Fixed-Price<BRK/>
-Construction Contracts", and "Prompt Payment for Construction Contracts",<BRK/>
-respectively.  In addition each request shall be submitted in the number of<BRK/>
-copies and to the designated billing office as shown in the Contract.</TXT><BRK/>
-<BRK/>
-<TXT>When submitting payment requests, the Contractor shall complete Blocks 1<BRK/>
-through 12 of the "PROGRESS PAYMENT INVOICE" Form as directed by the<BRK/>
-Contracting Officer (provided in RMS CM).  The completed form shall then<BRK/>
-become the cover document to which all other support data shall be attached.</TXT><BRK/>
-<BRK/>
-<TXT>One additional copy of the entire request for payment, to include the<BRK/>
-"PROGRESS PAYMENT INVOICE" cover document, shall be forwarded to a separate<BRK/>
-address as designated by the Contracting Officer.</TXT><BRK/>
-<BRK/>
-<TXT>The Contractor shall submit with each pay request, a list of subcontractors<BRK/>
-that have worked during that pay period.  The listing shall be broken down<BRK/>
-into weeks, identifying each subcontractor that has worked during a<BRK/>
-particular week, and indicate the total number of employees that have<BRK/>
-worked on site for each subcontractor for each week.  The prime Contractor<BRK/>
-shall also indicate the total number of employees for its on site staff for<BRK/>
-each week.</TXT><BRK/>
-<BRK/>
+lines unless authorized.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3.3.3"><TTL>Unit of Measure</TTL><BRK />
+<BRK />
+<TXT>Unit of measure:  cubic yard (CY).</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT></PRT><PRT outline="2"><TTL>PART 2   PRODUCTS (NOT USED)</TTL><BRK />
+<BRK /></PRT>
+<PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>PROGRESS PAYMENT INVOICE</TTL><BRK />
+<BRK />
+<TXT>Requests for payment shall be submitted in accordance with Federal<BRK />
+Acquisition Regulations (FAR) Subpart 32.9, entitled "PROMPT PAYMENT", and<BRK />
+Paragraphs 52.232-5 and 52.232-27, entitled "Payments Under Fixed-Price<BRK />
+Construction Contracts", and "Prompt Payment for Construction Contracts",<BRK />
+respectively.  In addition each request shall be submitted in the number of<BRK />
+copies and to the designated billing office as shown in the Contract.</TXT><BRK />
+<BRK />
+<TXT>When submitting payment requests, the Contractor shall complete Blocks 1<BRK />
+through 12 of the "PROGRESS PAYMENT INVOICE" Form as directed by the<BRK />
+Contracting Officer (provided in RMS CM).  The completed form shall then<BRK />
+become the cover document to which all other support data shall be attached.</TXT><BRK />
+<BRK />
+<TXT>One additional copy of the entire request for payment, to include the<BRK />
+"PROGRESS PAYMENT INVOICE" cover document, shall be forwarded to a separate<BRK />
+address as designated by the Contracting Officer.</TXT><BRK />
+<BRK />
+<TXT>The Contractor shall submit with each pay request, a list of subcontractors<BRK />
+that have worked during that pay period.  The listing shall be broken down<BRK />
+into weeks, identifying each subcontractor that has worked during a<BRK />
+particular week, and indicate the total number of employees that have<BRK />
+worked on site for each subcontractor for each week.  The prime Contractor<BRK />
+shall also indicate the total number of employees for its on site staff for<BRK />
+each week.</TXT><BRK />
+<BRK />
 <TXT>Formal invoices shall be submitted every month between the first and the tenth of the month. Any invoice received 
 after the tenth will be considered as not meeting the contract requirements and rejected. It may be resubmitted 
-on the first of the following month.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>TRANSPORTATION OF SUPPLIES BY SEA, BILL OF LADING</TTL><BRK/>
-<BRK/>
-<TXT>The Contractor shall, within 30 days after each shipment covered by Defense<BRK/>
-Federal Acquisition Regulation (DFAR) Subpart 252.247-7023, provide the<BRK/>
-Contracting Officer and the Maritime Administration (MARAD) one copy of the<BRK/>
-rated on board vessel operating carrier's ocean <SUB>Bill of Lading</SUB>. See DFAR<BRK/>
+on the first of the following month.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2"><TTL>TRANSPORTATION OF SUPPLIES BY SEA, BILL OF LADING</TTL><BRK />
+<BRK />
+<TXT>The Contractor shall, within 30 days after each shipment covered by Defense<BRK />
+Federal Acquisition Regulation (DFAR) Subpart 252.247-7023, provide the<BRK />
+Contracting Officer and the Maritime Administration (MARAD) one copy of the<BRK />
+rated on board vessel operating carrier's ocean <SUB>Bill of Lading</SUB>. See DFAR<BRK />
 252.247-7023 for information required in the bill of lading. MARAD contact information: usarmy.scott.sddc.mbx.g3-ffw-team@mail.mil 
-and msc.n101.ffw@navy.mil.</TXT><BRK/>
-<BRK/>
+and msc.n101.ffw@navy.mil.</TXT><BRK />
+<BRK />
 <TXT>The Contractor shall use U.S.-flag vessels when transporting any supplies by sea under this contract.  If U.S.-flag 
 vessels are not available, the Contractor may submit a request for use of foreign-flag vessels in writing to 
 the Contracting Officer at least 45 days prior to the sailing date necessary to meet its delivery schedules. 
 Refer to DFAR 252.247-7023 for required documentation when making this request.  The Contracting Officer will 
 process requests submitted as expeditiously as possible, but the Contracting Officer's failure to grant approvals 
 to meet the shipper's sailing date will not of itself constitute a compensable delay.  Failure to get approval 
-prior to the use of foreign-flag vessels may result in monetary penalty.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>CONTRACT COST BREAKDOWN</TTL><BRK/>
-<BRK/>
+prior to the use of foreign-flag vessels may result in monetary penalty.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3"><TTL>CONTRACT COST BREAKDOWN</TTL><BRK />
+<BRK />
 <TXT>The Contractor must furnish within 30 days after the date of Notice to Proceed, and prior to the submission of 
 its first partial payment estimate, a breakdown of its single job pay item or items which will be reviewed by 
 the Contracting Officer as to propriety of distribution of the total cost to the various accounts.  Any unbalanced 
 items as between early and late payment items or other discrepancies will be revised by the Contracting Officer 
 to agree with a reasonable cost of the work included in the various items.  This contract cost breakdown will 
-then be utilized as the basis for progress payments to the Contractor.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>CONTRACT ADMINISTRATION</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Contracting Officer (KO)</TTL><BRK/>
-<BRK/>
+then be utilized as the basis for progress payments to the Contractor.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4"><TTL>CONTRACT ADMINISTRATION</TTL><BRK />
+<BRK />
+<SPT outline="3.4.1"><TTL>Contracting Officer (KO)</TTL><BRK />
+<BRK />
 <TXT>This Contract shall be administered by a Contracting Officer (KO) assigned to the U.S. Army Corps of Engineers, 
-Japan Engineer District, APO AP 96338-5010.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Administrative Contracting Officer (ACO)</TTL><BRK/>
-<BRK/>
-<TXT>In accordance with the USACE Acquisition Instruction (UAI) 5101.603-3-100,<BRK/>
-Appointment, Administrative Contracting Officer(s) (ACO's) may be delegated<BRK/>
-a part of the Contracting Officer's authority to modify this Contract and<BRK/>
-perform Contract administration functions under Federal Acquisition<BRK/>
-Regulation (FAR) Section 42.302, subject to the authority and limitations<BRK/>
-set forth in the appointment and delegation letter.<BRK/></TXT>
-<BRK/>
-<BRK/></SPT>
-<SPT><TTL>Contracting Officer's Representative (COR)</TTL><BRK/>
-<BRK/>
+Japan Engineer District, APO AP 96338-5010.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.2"><TTL>Administrative Contracting Officer (ACO)</TTL><BRK />
+<BRK />
+<TXT>In accordance with the USACE Acquisition Instruction (UAI) 5101.603-3-100,<BRK />
+Appointment, Administrative Contracting Officer(s) (ACO's) may be delegated<BRK />
+a part of the Contracting Officer's authority to modify this Contract and<BRK />
+perform Contract administration functions under Federal Acquisition<BRK />
+Regulation (FAR) Section 42.302, subject to the authority and limitations<BRK />
+set forth in the appointment and delegation letter.<BRK /></TXT>
+<BRK />
+<BRK /></SPT>
+<SPT outline="3.4.3"><TTL>Contracting Officer's Representative (COR)</TTL><BRK />
+<BRK />
 <TXT>The Contracting Officer may designate one or more individuals as his/her authorized representatives in administering 
 this Contract.  Refer to the clause in Section 00 70 00 CONDITIONS OF THE CONTRACT entitled CONTRACTING OFFICER'S 
-REPRESENTATIVE (DFARS 252.201-7000) for the definition and limited authority of CORs.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>DESIGNATED BILLING OFFICE</TTL><BRK/>
-<BRK/>
-<TAI OPT="OKINAWA AO"><TXT>The designated billing office for this Contract is:<BRK/>
-<BRK/>
-            Resident Engineer, Zukeran Resident Office<BRK/>
-            U.S. Army Corps of Engineers, Japan Engineer District<BRK/>
-            Unit 35132 <BRK/>
-            APO AP 96376-5132</TXT><BRK/></TAI>
-<TAI OPT="YOKOSUKA RO"><TXT>The designated billing office for this Contract is:<BRK/>
-<BRK/>
-            Resident Engineer, Yokosuka Resident Office<BRK/>
-            U.S. Army Corps of Engineers, Japan Engineer District<BRK/>
-            PSC 473, Box 1571<BRK/>
-            FPO AP 96349-0016<BRK/>
-<BRK/>
-            USAED-J<BRK/>
-            Box 1571, Bldg. 4328, 3F<BRK/>
-            Yokosuka Naval Base<BRK/>
-            2381 Tomari-Cho<BRK/>
-            Yokosuka-City, Kanagawa<BRK/>
-            238-0001 JAPAN</TXT><BRK/></TAI>
-<TAI OPT="IWAKUNI RO"><TXT>The designated billing office for this Contract is:  <BRK/>
-            Iwakuni Resident Office<BRK/>
-            U.S. Army Corps of Engineers, Japan Engineer District<BRK/>
-            PSC 561, Box 1860<BRK/>
-            FPO AP 96310-0019<BRK/>
-<BRK/>
-            USAED-J<BRK/>
-            Bldg. 53<BRK/>
-            MCAS Iwakuni<BRK/>
-            Misumi-Cho<BRK/>
-            Iwakuni-City, Yamaguchi<BRK/>
-            740-0025 JAPAN</TXT><BRK/></TAI>
-<TAI OPT="KANAGAWA RO"><TXT>The designated billing office for this Contract is:<BRK/>
-            Kanagawa Resident Office<BRK/>
-            U.S. Army Corps of Engineers, Japan Engineer District<BRK/>
-            Unit 45010<BRK/>
-            APO AP 96343-5010<BRK/>
-<BRK/>
-            USAED-J<BRK/>
-            Bldg. 250<BRK/>
-            Camp Zama<BRK/>
-            Zama-City, Kanagawa<BRK/>
-            252-8511 JAPAN</TXT><BRK/></TAI>
-<TAI OPT="MISAWA RO"><TXT>The designated billing office for this Contract is:<BRK/>
-            Misawa Resident Office<BRK/>
-            U.S. Army Corps of Engineers, Japan Engineer District<BRK/>
-            Unit 5254<BRK/>
-            APO AP 96319-5254<BRK/>
-<BRK/>
-            USAED-J<BRK/>
-            Bldg. 793<BRK/>
-            Misawa Air Base<BRK/>
-            64 Hirahata<BRK/>
-            Misawa-City, Aomori<BRK/>
-            033-0012 JAPAN</TXT><BRK/></TAI>
-<TAI OPT="SASEBO RO"><TXT>The designated billing office for this Contract is:<BRK/>
-            Sasebo Resident Office<BRK/>
-            U.S. Army Corps of Engineers, Japan Engineer District<BRK/>
-            PSC 476, Box 83<BRK/>
-            FPO AP 96322-0001<BRK/>
-<BRK/>
-            USAED-J<BRK/>
-            Bldg. 200, Rm. 212<BRK/>
-            Sasebo Naval Base<BRK/>
-            Hirase-Cho<BRK/>
-            Sasebo City, Nagasaki<BRK/>
-            857-0056 JAPAN</TXT><BRK/></TAI>
-<TAI OPT="YOKOTA RO"><TXT>The designated billing office for this Contract is:<BRK/>
-            Yokota Resident Office<BRK/>
-            U.S. Army Corps of Engineers, Japan Engineer District<BRK/>
-            Unit 5101<BRK/>
-            APO AP  96328-5101<BRK/>
-<BRK/>
-            USAED-J<BRK/>
-            Unit 5101, Bldg 445<BRK/>
-            Yokota Air Base<BRK/>
-            Fussa-City, Tokyo<BRK/>
-            197-0001 JAPAN</TXT><BRK/></TAI>
-<BRK/>
-<BRK/></SPT>
-</PRT><END/><BRK/></SEC>
+REPRESENTATIVE (DFARS 252.201-7000) for the definition and limited authority of CORs.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.5"><TTL>DESIGNATED BILLING OFFICE</TTL><BRK />
+<BRK />
+<TAI OPT="OKINAWA AO"><TXT>The designated billing office for this Contract is:<BRK />
+<BRK />
+            Resident Engineer, Zukeran Resident Office<BRK />
+            U.S. Army Corps of Engineers, Japan Engineer District<BRK />
+            Unit 35132 <BRK />
+            APO AP 96376-5132</TXT><BRK /></TAI>
+<TAI OPT="YOKOSUKA RO"><TXT>The designated billing office for this Contract is:<BRK />
+<BRK />
+            Resident Engineer, Yokosuka Resident Office<BRK />
+            U.S. Army Corps of Engineers, Japan Engineer District<BRK />
+            PSC 473, Box 1571<BRK />
+            FPO AP 96349-0016<BRK />
+<BRK />
+            USAED-J<BRK />
+            Box 1571, Bldg. 4328, 3F<BRK />
+            Yokosuka Naval Base<BRK />
+            2381 Tomari-Cho<BRK />
+            Yokosuka-City, Kanagawa<BRK />
+            238-0001 JAPAN</TXT><BRK /></TAI>
+<TAI OPT="IWAKUNI RO"><TXT>The designated billing office for this Contract is:  <BRK />
+            Iwakuni Resident Office<BRK />
+            U.S. Army Corps of Engineers, Japan Engineer District<BRK />
+            PSC 561, Box 1860<BRK />
+            FPO AP 96310-0019<BRK />
+<BRK />
+            USAED-J<BRK />
+            Bldg. 53<BRK />
+            MCAS Iwakuni<BRK />
+            Misumi-Cho<BRK />
+            Iwakuni-City, Yamaguchi<BRK />
+            740-0025 JAPAN</TXT><BRK /></TAI>
+<TAI OPT="KANAGAWA RO"><TXT>The designated billing office for this Contract is:<BRK />
+            Kanagawa Resident Office<BRK />
+            U.S. Army Corps of Engineers, Japan Engineer District<BRK />
+            Unit 45010<BRK />
+            APO AP 96343-5010<BRK />
+<BRK />
+            USAED-J<BRK />
+            Bldg. 250<BRK />
+            Camp Zama<BRK />
+            Zama-City, Kanagawa<BRK />
+            252-8511 JAPAN</TXT><BRK /></TAI>
+<TAI OPT="MISAWA RO"><TXT>The designated billing office for this Contract is:<BRK />
+            Misawa Resident Office<BRK />
+            U.S. Army Corps of Engineers, Japan Engineer District<BRK />
+            Unit 5254<BRK />
+            APO AP 96319-5254<BRK />
+<BRK />
+            USAED-J<BRK />
+            Bldg. 793<BRK />
+            Misawa Air Base<BRK />
+            64 Hirahata<BRK />
+            Misawa-City, Aomori<BRK />
+            033-0012 JAPAN</TXT><BRK /></TAI>
+<TAI OPT="SASEBO RO"><TXT>The designated billing office for this Contract is:<BRK />
+            Sasebo Resident Office<BRK />
+            U.S. Army Corps of Engineers, Japan Engineer District<BRK />
+            PSC 476, Box 83<BRK />
+            FPO AP 96322-0001<BRK />
+<BRK />
+            USAED-J<BRK />
+            Bldg. 200, Rm. 212<BRK />
+            Sasebo Naval Base<BRK />
+            Hirase-Cho<BRK />
+            Sasebo City, Nagasaki<BRK />
+            857-0056 JAPAN</TXT><BRK /></TAI>
+<TAI OPT="YOKOTA RO"><TXT>The designated billing office for this Contract is:<BRK />
+            Yokota Resident Office<BRK />
+            U.S. Army Corps of Engineers, Japan Engineer District<BRK />
+            Unit 5101<BRK />
+            APO AP  96328-5101<BRK />
+<BRK />
+            USAED-J<BRK />
+            Unit 5101, Bldg 445<BRK />
+            Yokota Air Base<BRK />
+            Fussa-City, Tokyo<BRK />
+            197-0001 JAPAN</TXT><BRK /></TAI>
+<BRK />
+<BRK /></SPT>
+</PRT><END /><BRK /></SEC>

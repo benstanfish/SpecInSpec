@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="index_styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1.25rem 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+.page_list {
+    columns: 3;
+}
+
+table {
+    margin-left: -12px;
+}
+
+table * {
+    text-align: start;
+}
+
+th {
+    background-color: #eee;
+    border-radius: 6px;
+    border: 1px solid white;
+    padding: 3px 12px;
+    width: 20ch;
+}
+
+td {
+    padding: 0 12px;
+}
+
+.page_list_container {
+    margin: 0 16px;
+}
+
+ol {
+    list-style-type: disc;
+}
+
+.error-row {
+    display: table-row;
+}
+
+.error-section {
+    font-weight: bold;
+    display: table-cell;
+    width: 25ch;
+
+
+}
+
+.error-value {
+    display: table-cell;
+}
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .page_list {
+        columns: 1;
+    }
+
+}</style>
+<title>Index</title>
+</head>
+<body>
+<header>
+<h1>Files with Errors</h1>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</header>
+<main>
+<div class="error_report"><div class="error-row"><div class="error-section">Section</div><div class="error-section">Error</div></div><br/><div class="error-row"><div class="error-section">01 32 01.00 10.sec</div><div class="error-value">not well-formed (invalid token): line 33, column 30</div></div><div class="error-row"><div class="error-section">01 35 26.sec</div><div class="error-value">mismatched tag: line 664, column 78</div></div><div class="error-row"><div class="error-section">01 42 00.sec</div><div class="error-value">mismatched tag: line 632, column 72</div></div><div class="error-row"><div class="error-section">01 45 00.00 10.sec</div><div class="error-value">not well-formed (invalid token): line 364, column 175</div></div><div class="error-row"><div class="error-section">02 61 13.sec</div><div class="error-value">not well-formed (invalid token): line 35, column 30</div></div><div class="error-row"><div class="error-section">02 81 00.sec</div><div class="error-value">not well-formed (invalid token): line 30, column 30</div></div><div class="error-row"><div class="error-section">05 51 00.sec</div><div class="error-value">not well-formed (invalid token): line 35, column 30</div></div><div class="error-row"><div class="error-section">06 10 00.sec</div><div class="error-value">not well-formed (invalid token): line 35, column 30</div></div><div class="error-row"><div class="error-section">06 20 00.sec</div><div class="error-value">not well-formed (invalid token): line 31, column 30</div></div><div class="error-row"><div class="error-section">06 61 16.sec</div><div class="error-value">not well-formed (invalid token): line 33, column 30</div></div><div class="error-row"><div class="error-section">07 05 23.sec</div><div class="error-value">not well-formed (invalid token): line 29, column 30</div></div><div class="error-row"><div class="error-section">07 21 16.sec</div><div class="error-value">not well-formed (invalid token): line 35, column 30</div></div><div class="error-row"><div class="error-section">07 27 10.00 10.sec</div><div class="error-value">not well-formed (invalid token): line 31, column 30</div></div><div class="error-row"><div class="error-section">08 41 13.sec</div><div class="error-value">not well-formed (invalid token): line 31, column 30</div></div><div class="error-row"><div class="error-section">08 51 23.sec</div><div class="error-value">not well-formed (invalid token): line 35, column 30</div></div><div class="error-row"><div class="error-section">08 91 00.sec</div><div class="error-value">not well-formed (invalid token): line 29, column 30</div></div><div class="error-row"><div class="error-section">14 21 23.sec</div><div class="error-value">not well-formed (invalid token): line 36, column 35</div></div><div class="error-row"><div class="error-section">22 00 00.sec</div><div class="error-value">mismatched tag: line 1243, column 67</div></div><div class="error-row"><div class="error-section">26 05 48.00 10.sec</div><div class="error-value">not well-formed (invalid token): line 29, column 30</div></div><div class="error-row"><div class="error-section">26 29 23.sec</div><div class="error-value">not well-formed (invalid token): line 35, column 30</div></div><div class="error-row"><div class="error-section">26 41 00.sec</div><div class="error-value">not well-formed (invalid token): line 29, column 30</div></div><div class="error-row"><div class="error-section">31 21 13.sec</div><div class="error-value">not well-formed (invalid token): line 33, column 30</div></div></div>
+</main>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+</html>

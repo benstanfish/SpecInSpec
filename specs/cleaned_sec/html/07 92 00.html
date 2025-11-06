@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>07 92 00.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">07 92 00</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:54</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-07 92 00 (August 2016)<brk></brk>
+ Change 3 - 11/18<brk></brk>
+ -----------------------------<brk></brk>
+Preparing Activity: <pra>NAVFAC</pra> Superseding<brk></brk>
+ UFGS-07 92 00 (February 2016)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated April 2019</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 07 92 00</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>JOINT SEALANTS<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>08/16</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project. The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>sealants for normal 
+building construction</scp>.<brk></brk>
+Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections. Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text. For bracketed items, choose applicable 
+item(s) or insert appropriate information.<brk></brk>
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<brk></brk>
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification must be carefully modified if resealing or sealing 
+of an addition to an existing building is required or if conditions require 
+use of special sealing materials and designs such as high-rise curtain wall 
+systems.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: On the drawings, show:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>1. Joints in which each type of sealant will be used.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>2. Typical scale or full-size details of sealant joints, indicating joint symbol 
+or designation.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of 
+the guide specification. The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<brk></brk>
+Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article. Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<brk></brk>
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are 
+referred to within the text by the basic designation only.</txt><brk></brk>
+<ref><org>ASTM INTERNATIONAL (ASTM)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E84<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018a) Standard Test Method for Surface Burning 
+Characteristics of Building Materials<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2023) 
+Standard Test Method for Surface Burning Characteristics 
+of Building Materials<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM C919<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2012; R 2017) Standard Practice for Use<brk></brk>
+of Sealants in Acoustical Applications<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><del><pre class="display_DEL">&lt;DEL&gt;</pre><org>JAPANESE INDUSTRIAL STANDARDS (JIS)</org><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><org>JAPANESE STANDARDS ASSOCIATION (JSA)</org><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1901<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Determination of the Emission of Volatile 
+Organic Compounds and Aldehydes by Building 
+Products - Small Chamber Test Method<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5758<pre class="display_RID">&lt;/RID&gt;</pre></rid> <rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>16<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>22<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Sealants for Sealing and Glazing in 
+Buildings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org><del><pre class="display_DEL">&lt;DEL&gt;</pre>MINISTRY OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM, GOVERNMENT OF JAPAN (MLIT)<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>MINISTRY 
+OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM (MLIT)<pre class="display_ADD">&lt;/ADD&gt;</pre></add></org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT SS Chapter 9<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2019) Building Construction Standard Specifications 
+- Chapter 9 Waterproofing Construction <pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.2"><ttl>1.2 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review Submittal Description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G." Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System. 
+Only add a "G" to an item, if the submittal is sufficiently important or complex 
+in context of the project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office. Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. Locate the "S" 
+submittal under the SD number that best describes the submittal item.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are <div class="brackets">[for Contractor Quality Control approval.]</div><div class="brackets">[for information only. When used, a designation following the 
+"G" designation identifies the office that will review the submittal for the Government.]</div> Submittals with an 
+"S" are for inclusion in the Sustainability eNotebook, in conformance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 PRODUCT DATA</ttl><brk></brk>
+<txt>Include storage requirements, shelf life, curing time, instructions for mixing and application, and accessories. 
+Provide manufacturer's Safety Data Sheets (SDS) for each solvent, primer and sealant material proposed.</txt><brk></brk></spt>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the following section where these products are used on the interior 
+of the building (defined as inside of the weatherproofing system).<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<spt outline="1.4"><ttl>1.4 ENVIRONMENTAL CONDITIONS</ttl><brk></brk>
+<txt>Apply sealant when the ambient temperature is between<met><pre class="display_MET">&lt;MET&gt;</pre> 4 and 32 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 40 and 90 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.</txt><brk></brk></spt>
+<spt outline="1.5"><ttl>1.5 DELIVERY AND STORAGE</ttl><brk></brk>
+<txt>Deliver materials to the jobsite in unopened manufacturers' sealed shipping containers, with brand name, date 
+of manufacture, <div class="brackets">[color,]</div> and material designation clearly marked thereon. Label elastomeric sealant containers 
+to identify type, class, grade, and use. Handle and store materials in accordance with manufacturer's printed 
+instructions. Prevent exposure to foreign materials or subjection to sustained temperatures exceeding<met><pre class="display_MET">&lt;MET&gt;</pre> 32 degrees 
+C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 90 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> or lower than<met><pre class="display_MET">&lt;MET&gt;</pre> 4 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Keep materials and containers closed and separated from 
+absorptive materials such as wood and insulation.</txt><brk></brk></spt>
+<spt outline="1.6"><ttl>1.6 QUALITY ASSURANCE</ttl><brk></brk>
+<spt outline="1.6.1"><ttl>1.6.1 Compatibility with Substrate</ttl><brk></brk>
+<txt>Verify that each sealant is compatible for use with each joint substrate in accordance with sealant manufacturer's 
+printed recommendations for each application.</txt><brk></brk></spt>
+<spt outline="1.6.2"><ttl>1.6.2 Joint Tolerance</ttl><brk></brk>
+<txt>Provide joint tolerances in accordance with manufacturer's printed instructions.</txt><brk></brk></spt>
+<spt outline="1.6.3"><ttl>1.6.3 Mock-Up</ttl><brk></brk>
+<txt>Provide a mock-up of each type of sealant using materials, colors, and techniques approved for use on the project. 
+Approved mock-ups may be incorporated into the Work.</txt><brk></brk></spt>
+<spt outline="1.6.4"><ttl>1.6.4 Adhesion</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5758<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+</spt></prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<spt outline="2.1"><ttl>2.1 SEALANTS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use Latex Sealant for temporary, low budget construction but verify toxicity 
+of products prior to specifying; interior sealing of joints in wood or masonry, 
+or in short joints between masonry, wood, or metal surfaces where maximum movement 
+is anticipated not to exceed 15 percent of joint width.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Use elastomeric Sealants for interior and exterior applications where maximum 
+joint movement is anticipated to be between 25 and 50 percent of joint width.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Chemically curing sealants should not be used adjacent to or above membrane 
+surfaces of asphaltic or bituminous materials; a sealant based on asphalt or 
+bituminous materials similar to those in the membrane should be used.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Since all sealants meeting this specification are not suitable for all applications 
+and substrates, specify applicable type, grade, class, and use(s) for each intended 
+purpose:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: In project locations with ambient temperatures that exceed<met><pre class="display_MET">&lt;MET&gt;</pre> 43.33 degrees 
+C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 110 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>; insert bracketed paragraph below.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide sealant products that have been tested, found suitable, and documented as such by the manufacturer for 
+the particular substrates to which they will be applied, and comply with <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT SS Chapter 9<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk>
+<div class="brackets">[<txt>In areas with ambient temperatures that exceed<met><pre class="display_MET">&lt;MET&gt;</pre> 43.33 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 110 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, do not use polybutene, bituminous, 
+acrylic-latex, polyvinyl acetate latex sealants, polychloroprene (neoprene), and polyurethane foams, and neoprene, 
+and styrene butadiene rubber extruded seals and closure strips due to these materials having maximum recommended 
+surface temperature ranges from<met><pre class="display_MET">&lt;MET&gt;</pre> 54.44 degrees C to 82.22 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 130 to 180 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.</txt><brk></brk>
+]</div><spt outline="2.1.1"><ttl>2.1.1 Interior Sealants</ttl><brk></brk>
+<txt>Provide sealant products per <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5758<pre class="display_RID">&lt;/RID&gt;</pre></rid>, used on the interior of the building (defined as inside of the weatherproofing 
+system) meeting VOC content requirements to attain F4-Star, and meet Japan Sealants Industry Association requirement. 
+Provide certification or validation of indoor air quality for interior sealants. Location(s) and color(s) of 
+sealant for the following. Note, color "as selected" refers to manufacturer's full range of color options</txt><brk></brk>
+<hl4><tab width="98">
+<wbk>
+<sts>
+<sty sid="s50">
+<aln vertical="BOTTOM"></aln>
+</sty>
+</sts>
+<tda columncount="2" rowcount="10">
+<col autowidth="0" styleid="s50" width="363.75"/>
+<col autowidth="0" styleid="s50" width="94.50"/>
+<row autoheight="0" height="26.25">
+<cel styleid="s50">
+<dta type="STRING">LOCATION</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">COLOR</dta>
+</cel>
+</row>
+<row autoheight="0" height="50.25">
+<cel styleid="s50">
+<dta type="STRING">a. Small voids between walls or partitions and adjacent lockers, casework, shelving, door frames, built-in or surface mounted equipment and fixtures, and similar items.</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[As selected]</div> <div class="brackets">[Gray]</div> <div class="brackets">[White]</div> <div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="50.25">
+<cel styleid="s50">
+<dta type="STRING">b. Perimeter of frames at doors, windows, and access panels which adjoin exposed interior concrete and masonry surfaces.</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="41.25">
+<cel styleid="s50">
+<dta type="STRING">c. Joints of interior masonry walls and partitions which adjoin columns, pilasters, concrete walls, and exterior walls unless otherwise detailed.<brk></brk></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="38.25">
+<cel styleid="s50">
+<dta type="STRING">d. Joints between edge members for acoustical tile and adjoining vertical surfaces.</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="41.25">
+<cel styleid="s50">
+<dta type="STRING">e. Interior locations, not otherwise indicated or specified, where small voids exist between materials specified to be painted.<brk></brk></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="41.25">
+<cel styleid="s50">
+<dta type="STRING">f. Joints between bathtubs and ceramic tile; joints between shower receptors and ceramic tile; joints formed where non-planar tile surfaces meet.</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="41.25">
+<cel styleid="s50">
+<dta type="STRING">g. Joints formed between tile floors and tile base cove; joints between tile and dissimilar materials; joints occurring where substrates change.</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="38.25">
+<cel styleid="s50">
+<dta type="STRING">h. Behind escutcheon plates at valve pipe penetrations and showerheads in showers.</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="27.00">
+<cel styleid="s50">
+<dta type="STRING">i. <div class="brackets">[_____]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab></hl4><brk></brk></spt>
+<spt outline="2.1.2"><ttl>2.1.2 Exterior Sealants</ttl><brk></brk>
+<txt>For joints in vertical surfaces and horizontal surfaces, provide <brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5758<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide location(s) and color(s) of sealant as follows. Note, color "as selected" refers to manufacturer's 
+full range of color options:</txt><brk></brk>
+<tab>
+<wbk>
+<sts></sts>
+<tda columncount="2" rowcount="12">
+<col autowidth="0" width="456.75"/>
+<col autowidth="0" width="128.25"/>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">LOCATION</dta>
+</cel>
+<cel>
+<dta type="STRING">COLOR</dta>
+</cel>
+</row>
+<row autoheight="0" height="60.00">
+<cel>
+<dta type="STRING">a. Joints and recesses formed where frames and subsills of windows, doors, louvers, and vents adjoin masonry, concrete, or metal frames. Use sealant at both exterior and interior surfaces of exterior wall penetrations.</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[Match adjacent surface color]</div> <div class="brackets">[As selected]</div> <div class="brackets">[Gray]</div> <div class="brackets">[White]</div> <div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">b. Joints between new and existing exterior masonry walls.</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="36.00">
+<cel>
+<dta type="STRING">c. Masonry joints where shelf angles occur.</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">d. Joints in wash surfaces of stonework.</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">e. Expansion and control joints.</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="36.00">
+<cel>
+<dta type="STRING">f. Interior face of expansion joints in exterior concrete or masonry walls where metal expansion joint covers are not required.</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">g. Voids where items pass through exterior walls.</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="36.00">
+<cel>
+<dta type="STRING">h. Metal reglets, where flashing is inserted into masonry joints, and where flashing is penetrated by coping dowels.</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="36.00">
+<cel>
+<dta type="STRING">i. Metal-to-metal joints where sealant is indicated or specified.</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="36.00">
+<cel>
+<dta type="STRING">j. Joints between ends of gravel stops, fascia, copings, and adjacent walls.</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="35.25">
+<cel>
+<dta type="STRING">k. <div class="brackets">[_____]</div></dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab><brk></brk></spt>
+<spt outline="2.1.3"><ttl>2.1.3 Floor Joint Sealants</ttl><brk></brk>
+<txt>Provide sealant products per <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5758<pre class="display_RID">&lt;/RID&gt;</pre></rid> used on the interior of the building (defined as inside of the weatherproofing 
+system) meeting either emissions requirements of UL 2818(Greenguard) Gold, SCS Global Services Indoor Advantage 
+Gold, CDPH Section 01350 (limit requirements of either office or classroom spaces regardless of space type), 
+VOC content requirements of SCAQMD Rule 1168, or F4-star, and meet Japan Sealant Industry Association requirement. 
+Provide location(s) and color(s) of sealant as follows. Note, color "as selected" refers to manufacturer's full 
+range of color options:</txt><brk></brk>
+<tab>
+<wbk>
+<sts></sts>
+<tda columncount="2" rowcount="3">
+<col autowidth="0" width="367.50"/>
+<col autowidth="0" width="100.50"/>
+<row autoheight="0" height="23.25">
+<cel>
+<dta type="STRING">LOCATION</dta>
+</cel>
+<cel>
+<dta type="STRING">COLOR</dta>
+</cel>
+</row>
+<row autoheight="0" height="34.50">
+<cel>
+<dta type="STRING">a. Seats of metal thresholds for exterior doors.</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[As selected]</div> <div class="brackets">[Gray]</div> <div class="brackets">[White]</div> <div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="37.50">
+<cel>
+<dta type="STRING">b. Control and expansion joints in floors, slabs, ceramic tile, and walkways.</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab><brk></brk></spt>
+<spt outline="2.1.4"><ttl>2.1.4 Acoustical Sealants</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: See ASTM C919 for use of acoustical sealant. The acoustical sealant described 
+here is to be used only in non-moving joints protected from abuse. Other specified 
+sealants may be used in acoustical applications when appropriate.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><div class="brackets">[_____]</div> Rubber or polymer based acoustical sealant in accordance to <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM C919<pre class="display_RID">&lt;/RID&gt;</pre></rid>, to have a flame spread of 25 or 
+less and a smoke developed rating of 50 or less when tested in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E84<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide non-staining 
+acoustical sealant with a consistency of 250 to 310. Acoustical sealant must remain flexible and adhesive after 
+500 hours of accelerated weathering. Provide sealant products used on the interior of the building (defined 
+as inside of the weatherproofing system) to have low or no pollutant emissions.</txt><brk></brk></spt>
+<spt outline="2.1.5"><ttl>2.1.5 Preformed Sealants</ttl><brk></brk>
+<txt>Provide preformed sealants of polybutylene or isoprene-butylene based pressure sensitive weather resistant tape 
+or bead sealants capable of sealing out moisture, air and dust when installed as recommended by the manufacturer. 
+At temperatures from minus<met><pre class="display_MET">&lt;MET&gt;</pre> 34 to plus 71 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 30 to plus 160 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, sealants must be non-bleeding and 
+have no loss of adhesion.</txt><brk></brk>
+<spt outline="2.1.5.1"><ttl>2.1.5.1 Tape</ttl><brk></brk>
+<txt><div class="brackets">[_____]</div> Tape sealant: Provide cross section dimensions of <div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+<spt outline="2.1.5.2"><ttl>2.1.5.2 Bead</ttl><brk></brk>
+<txt><div class="brackets">[_____]</div> Bead sealant: Provide cross section dimensions of <div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+<spt outline="2.1.5.3"><ttl>2.1.5.3 Foam Strip</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Untreated polyurethane foam can be used where exposed to view or where 
+staining of adjacent surfaces is not acceptable.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide <div class="brackets">[_____]</div> foam strip of polyurethane foam with cross section dimensions of <div class="brackets">[_____]</div>. Provide foam strip 
+capable of sealing out moisture, air, and dust when installed and compressed in accordance with manufacturer's 
+printed instructions. Service temperature must be<met><pre class="display_MET">&lt;MET&gt;</pre> minus 40 to plus 135 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> minus 40 to plus 275 degrees 
+F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Furnish untreated strips with adhesive to hold them in place. Do not allow adhesive to stain or bleed onto 
+adjacent finishes. Saturate treated strips with butylene waterproofing or impregnate with asphalt.</txt><brk></brk></spt>
+</spt></spt><spt outline="2.2"><ttl>2.2 PRIMERS</ttl><brk></brk>
+<txt>Non-staining, quick drying type and consistency as recommended by the sealant manufacturer for the particular 
+application. Provide primers for interior applications that meet the indoor air quality requirements of the 
+paragraph SEALANTS above.</txt><brk></brk></spt>
+<spt outline="2.3"><ttl>2.3 BOND BREAKERS</ttl><brk></brk>
+<txt>Type and consistency as recommended by the sealant manufacturer to prevent adhesion of the sealant to the backing 
+or to the bottom of the joint. Provide bond breakers for interior applications that meet the indoor air quality 
+requirements of the paragraph SEALANTS above.</txt><brk></brk></spt>
+<spt outline="2.4"><ttl>2.4 BACKSTOPS</ttl><brk></brk>
+<txt>Provide glass fiber roving, neoprene, butyl, polyurethane, or polyethylene foams free from oil or other staining 
+elements as recommended by sealant manufacturer. Provide 25 to 33 percent oversized backing for closed cell 
+and 40 to 50 percent oversized backing for open cell material, unless otherwise indicated. Provide backstop 
+material that is compatible with sealant. Do not use oakum<div class="brackets">[, <div class="brackets">[_____]</div>]</div> or other types of absorptive materials 
+as backstops.</txt><brk></brk>
+<spt outline="2.4.1"><ttl>2.4.1 Rubber</ttl><brk></brk>
+<txt>Provide in accordance per manufacturer requirement <div class="brackets">[round]</div> <div class="brackets">[_____]</div> cross section for <div class="brackets">[_____]</div> cellular rubber 
+sponge backing.</txt><brk></brk></spt>
+<spt outline="2.4.2"><ttl>2.4.2 Silicone Rubber Base</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5758<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Color <div class="brackets">[as selected from manufacturer's full range of color choices]</div>
+<div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+</spt><spt outline="2.5"><ttl>2.5 CAULKING</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The term "caulking" is limited herein to oil- and resin-based caulking 
+which should be used only indoors and where there is little or no anticipated 
+joint movement. Use a sealant where joints may move.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>For interior use and only where there is little or no anticipated joint movement. Provide products used on the 
+interior of the building (defined as inside of the weatherproofing system) meeting either emissions requirements 
+of CDPH SECTION 01350(limit requirements of either office or classroom spaces regardless of space type), VOC 
+content requirements of SCAQMD Rule 1168, or F-4 Star. Provide certification or validation of indoor air quality 
+for interior caulking.</txt><brk></brk></spt>
+<spt outline="2.6"><ttl>2.6 CLEANING SOLVENTS</ttl><brk></brk>
+<txt>Provide type(s) recommended by the sealant manufacturer and in accordance with environmental requirements herein. 
+<div class="brackets">[Protect adjacent aluminum and bronze surfaces from solvents]</div>. Provide solvents for interior applications that 
+meet the indoor air quality requirements of the paragraph SEALANTS above.</txt><brk></brk></spt>
+</prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 FIELD QUALITY CONTROL</ttl><brk></brk>
+<txt>Perform a field adhesion test in accordance with manufacturer's instructions. Remove sealants that fail adhesion 
+testing; clean substrates, reapply sealants, and re-test. Test sealants adjacent to failed sealants. Submit 
+field adhesion test report indicating tests, locations, dates, results, and remedial actions taken.</txt><brk></brk></spt>
+<spt outline="3.2"><ttl>3.2 SURFACE PREPARATION</ttl><brk></brk>
+<txt>Prepare surfaces according to manufacturer's printed installation instructions. Clean surfaces from dirt, frost, 
+moisture, grease, oil, wax, lacquer, paint, or other foreign matter that would destroy or impair adhesion. Remove 
+oil and grease with solvent; thoroughly remove solvents prior to sealant installation. Wipe surfaces dry with 
+clean cloths. When resealing an existing joint, remove existing caulk or sealant prior to applying new sealant. 
+For surface types not listed below, provide in accordance with sealant manufacturer's printed instructions for 
+each specific surface.</txt><brk></brk>
+<spt outline="3.2.1"><ttl>3.2.1 Steel Surfaces</ttl><brk></brk>
+<txt>Remove loose mill scale by sandblasting or, if sandblasting is impractical or would damage finished work, scraping 
+and wire brushing. Remove protective coatings by sandblasting or using a residue free solvent. Remove resulting 
+debris and solvent residue prior to sealant installation.</txt><brk></brk></spt>
+<spt outline="3.2.2"><ttl>3.2.2 Aluminum or Bronze Surfaces</ttl><brk></brk>
+<txt>Remove temporary protective coatings from surfaces that will be in contact with sealant. When masking tape is 
+used as a protective coating, remove tape and any residual adhesive prior to sealant application. For removing 
+protective coatings and final cleaning, use non-staining solvents recommended by the manufacturer of the item(s) 
+containing aluminum or bronze surfaces.</txt><brk></brk></spt>
+<spt outline="3.2.3"><ttl>3.2.3 Concrete and Masonry Surfaces</ttl><brk></brk>
+<txt>Where surfaces have been treated with curing compounds, oil, or other such materials, remove materials by sandblasting 
+or wire brushing. Remove laitance, efflorescence and loose mortar from the joint cavity. Remove resulting debris 
+prior to sealant installation.</txt><brk></brk></spt>
+<spt outline="3.2.4"><ttl>3.2.4 Wood Surfaces</ttl><brk></brk>
+<txt>Ensure wood surfaces that will be in contact with sealants are free of splinters, sawdust and other loose particles.</txt><brk></brk></spt>
+<div class="brackets">[<spt outline="3.2.5"><ttl>3.2.5 Removing Existing Hazardous Sealants</ttl><brk></brk>
+<txt>For sealants applied prior to 1979, or that have been tested and found to contain polychlorinated biphenyls (PCBs), 
+remove and dispose of these sealants in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>02 84 33<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> REMOVAL AND DISPOSAL OF POLYCHLORINATED 
+BIPHENYLS (PCBs)</txt>.<brk></brk></spt>
+]</div></spt><spt outline="3.3"><ttl>3.3 SEALANT PREPARATION</ttl><brk></brk>
+<txt>Do not add liquids, solvents, or powders to sealants. Mix multicomponent elastomeric sealants in accordance 
+with manufacturer's printed instructions.</txt><brk></brk></spt>
+<spt outline="3.4"><ttl>3.4 APPLICATION</ttl><brk></brk>
+<spt outline="3.4.1"><ttl>3.4.1 Joint Width-To-Depth Ratios</ttl><brk></brk>
+<txt>Acceptable Ratios:</txt><brk></brk>
+<met><pre class="display_MET">&lt;MET&gt;</pre><tab headerrows="2">
+<wbk>
+<sts>
+<sty sid="s50">
+<aln vertical="BOTTOM"></aln>
+</sty>
+<sty sid="s51">
+<aln horizontal="CENTER" vertical="BOTTOM"></aln>
+</sty>
+<sty sid="s52">
+<aln horizontal="CENTER"></aln>
+</sty>
+</sts>
+<tda columncount="3" rowcount="10">
+<col autowidth="0" styleid="s50" width="156.00"/>
+<col autowidth="0" styleid="s50" width="156.00"/>
+<col autowidth="0" width="156.00"/>
+<row autoheight="0" height="24.00">
+<cel mergedown="1" styleid="s50">
+<dta type="STRING"><hl1>JOINT WIDTH</hl1></dta>
+</cel>
+<cel mergeacross="1" styleid="s51">
+<dta type="STRING"><hl1>JOINT DEPTH</hl1></dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel index="2" styleid="s51">
+<dta type="STRING">Minimum</dta>
+</cel>
+<cel styleid="s52">
+<dta type="STRING">Maximum</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel mergeacross="2" styleid="s50">
+<dta type="STRING">For metal, glass, or other nonporous surfaces:</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">6 mm (minimum)</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">6 mm</dta>
+</cel>
+<cel>
+<dta type="STRING">6 mm</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">over 6 mm</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">1/2 of width</dta>
+</cel>
+<cel>
+<dta type="STRING">Equal to width</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel mergeacross="2" styleid="s50">
+<dta type="STRING">For wood, concrete, masonry, stone, or <div class="brackets">[_____]</div>:</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">6 mm (minimum)</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">6 mm</dta>
+</cel>
+<cel>
+<dta type="STRING">6 mm</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">over 6 mm to 13 mm</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">6 mm</dta>
+</cel>
+<cel>
+<dta type="STRING">Equal to width</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">over 13 mm to 25 mm</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">50 mm</dta>
+</cel>
+<cel>
+<dta type="STRING">16 mm</dta>
+</cel>
+</row>
+<row autoheight="0" height="23.25">
+<cel styleid="s50">
+<dta type="STRING">Over 25 mm</dta>
+</cel>
+<cel mergeacross="1" styleid="s50">
+<dta type="STRING">prohibited</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl></tab><brk></brk><pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre><tab headerrows="2">
+<wbk>
+<sts>
+<sty sid="s50">
+<aln vertical="BOTTOM"></aln>
+</sty>
+<sty sid="s51">
+<aln horizontal="CENTER" vertical="BOTTOM"></aln>
+</sty>
+<sty sid="s52">
+<aln horizontal="CENTER"></aln>
+</sty>
+</sts>
+<tda columncount="3" rowcount="10">
+<col autowidth="0" styleid="s50" width="156.00"/>
+<col autowidth="0" styleid="s50" width="156.00"/>
+<col autowidth="0" width="156.00"/>
+<row autoheight="0" height="24.00">
+<cel mergedown="1" styleid="s50">
+<dta type="STRING"><hl1>JOINT WIDTH</hl1></dta>
+</cel>
+<cel mergeacross="1" styleid="s51">
+<dta type="STRING"><hl1>JOINT DEPTH</hl1></dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel index="2" styleid="s51">
+<dta type="STRING">Minimum</dta>
+</cel>
+<cel styleid="s52">
+<dta type="STRING">Maximum</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel mergeacross="2" styleid="s50">
+<dta type="STRING">For metal, glass, or other nonporous surfaces:</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">1/4 inch (minimum)</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">1/4 inch</dta>
+</cel>
+<cel>
+<dta type="STRING">1/4 inch</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">over 1/4 inch</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">1/2 of width</dta>
+</cel>
+<cel>
+<dta type="STRING">Equal to width</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel mergeacross="2" styleid="s50">
+<dta type="STRING">For wood, concrete, masonry, stone, or <div class="brackets">[_____]</div>:</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">1/4 inch (minimum)</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">1/4 inch</dta>
+</cel>
+<cel>
+<dta type="STRING">1/4 inch</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">over 1/4 inch to 1/2 inch</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">1/4 inch</dta>
+</cel>
+<cel>
+<dta type="STRING">Equal to width</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">over 1/2 inch to 1 inch</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">1/2 inch</dta>
+</cel>
+<cel>
+<dta type="STRING">5/8 inch</dta>
+</cel>
+</row>
+<row autoheight="0" height="23.25">
+<cel styleid="s50">
+<dta type="STRING">Over 1 inch</dta>
+</cel>
+<cel mergeacross="1" styleid="s50">
+<dta type="STRING">prohibited</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl></tab><pre class="display_ENG">&lt;/ENG&gt;</pre></eng><brk></brk>
+<txt>Unacceptable Ratios: Where joints of acceptable width-to-depth ratios have not been provided, clean out joints 
+to acceptable depths and grind or cut to acceptable widths without damage to the adjoining work. Grinding is 
+prohibited at metal surfaces.</txt><brk></brk></spt>
+<spt outline="3.4.2"><ttl>3.4.2 Unacceptable Sealant Use</ttl><brk></brk>
+<txt>Do not install sealants in lieu of other required building enclosure weatherproofing components such as flashing, 
+drainage components, and joint closure accessories, or to close gaps between walls, floors, roofs, windows, and 
+doors, that exceed acceptable installation tolerances. Remove sealants that have been used in an unacceptable 
+manner and correct building enclosure deficiencies to comply with contract documents requirements.</txt><brk></brk></spt>
+<spt outline="3.4.3"><ttl>3.4.3 Masking Tape</ttl><brk></brk>
+<txt>Place masking tape on the finished surface on one or both sides of joint cavities to protect adjacent finished 
+surfaces from primer or sealant smears. Remove masking tape within 10 minutes of joint filling and tooling.</txt><brk></brk></spt>
+<spt outline="3.4.4"><ttl>3.4.4 Backstops</ttl><brk></brk>
+<txt>Provide backstops dry and free of tears or holes. Tightly pack the back or bottom of joint cavities with backstop 
+material to provide joints in specified depths. Provide backstops where indicated and where backstops are not 
+indicated but joint cavities exceed the acceptable maximum depths specified in JOINT WIDTH-TO-DEPTH RATIOS Table.</txt><brk></brk></spt>
+<spt outline="3.4.5"><ttl>3.4.5 Primer</ttl><brk></brk>
+<txt>Clean out loose particles from joints immediately prior to application of. Apply primer to joints in concrete 
+masonry units, wood, and other porous surfaces in accordance with sealant manufacturer's printed instructions. 
+Do not apply primer to exposed finished surfaces.</txt><brk></brk></spt>
+<spt outline="3.4.6"><ttl>3.4.6 Bond Breaker</ttl><brk></brk>
+<txt>Provide bond breakers to surfaces not intended to bond in accordance with, sealant manufacturer's printed instructions 
+for each type of surface and sealant combination specified.</txt><brk></brk></spt>
+<spt outline="3.4.7"><ttl>3.4.7 Sealants</ttl><brk></brk>
+<txt>Provide sealants compatible with the material(s) to which they are applied. Do not use a sealant that has exceeded 
+its shelf life or has jelled and cannot be discharged in a continuous flow from the sealant gun. Apply sealants 
+in accordance with the manufacturer's printed instructions with a gun having a nozzle that fits the joint width. 
+Work sealant into joints so as to fill the joints solidly without air pockets. Tool sealant after application 
+to ensure adhesion. Apply sealant uniformly smooth and free of wrinkles. Upon completion of sealant application, 
+roughen partially filled or unfilled joints, apply additional sealant, and tool smooth as specified. Apply sealer 
+over sealants in accordance with the sealant manufacturer's printed instructions.</txt><brk></brk></spt>
+</spt><spt outline="3.5"><ttl>3.5 PROTECTION AND CLEANING</ttl><brk></brk>
+<spt outline="3.5.1"><ttl>3.5.1 Protection</ttl><brk></brk>
+<txt>Protect areas adjacent to joints from sealant smears. Masking tape may be used for this purpose if removed 5 
+to 10 minutes after the joint is filled and no residual tape marks remain.</txt><brk></brk></spt>
+<spt outline="3.5.2"><ttl>3.5.2 Final Cleaning</ttl><brk></brk>
+<txt>Upon completion of sealant application, remove remaining smears and stains and leave the work in a clean and 
+neat condition.</txt><brk></brk>
+<lst indent="-0.33">a. Masonry and Other Porous Surfaces: Immediately remove fresh sealant that has been smeared on adjacent 
+masonry, rub clean with a solvent, and remove solvent residue, in accordance with sealant manufacturer's 
+printed instructions. Allow excess <ned></ned>sealant to cure for 24 hour then remove by wire brushing or sanding. 
+Remove resulting debris.</lst><brk></brk>
+<lst indent="-0.33">b. Metal and Other Non-Porous Surfaces: Remove excess sealant with a solvent moistened cloth. Remove 
+solvent residue in accordance with solvent manufacturer's printed instructions.</lst><brk></brk></spt>
+</spt></prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

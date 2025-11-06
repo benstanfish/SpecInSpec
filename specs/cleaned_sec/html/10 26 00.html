@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>10 26 00.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">10 26 00</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:57</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><brk></brk>
+<hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-10 26 00 (August 2017)<brk></brk>
+ Change 2 - 08/18<brk></brk>
+ ---------------------------<brk></brk>
+Preparing Activity: <pra>USACE</pra> Superseding<brk></brk>
+ UFGS-10 26 00(August 2010)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated January 2020</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 10 26 00</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>WALL AND DOOR PROTECTION<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>08/17</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>corner guards, wall 
+guards (bumper guards), door protectors, and wall panels</scp>.<brk></brk>
+Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections. Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text. For bracketed items, choose applicable 
+item(s) or insert appropriate information.<brk></brk>
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<brk></brk>
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Army facilities not excluded by TI 800-01 Design Criteria will be accessible 
+in accordance with 36 CFR, Part 1191, Americans with Disabilities Act (ADA) 
+Accessibility Guidelines for Buildings and Facilities.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Drawings should show basic profiles and details but should not be so explicit 
+as to become proprietary in nature. The following information must be shown 
+on the project drawings:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>1. Locations of wall and corner guards.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>2. Locations of handrails, wall panels, and door protectors.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>3. Mounting and anchorage details, and dimensions.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of 
+the guide specification. The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<brk></brk>
+Use the Reference Wizard's Check Reference feature when you add a RID outside 
+of the Section's Reference Article to automatically place the reference in the 
+Reference Article. Also use the Reference Wizard's Check Reference feature 
+to update the issue dates.<brk></brk>
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are 
+referred to within the text by the basic designation only.</txt><brk></brk>
+<ref><org>ALUMINUM ASSOCIATION (AA)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AA DAF45<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2003; Reaffirmed 2009) Designation System for 
+Aluminum Finishes<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>ASTM INTERNATIONAL (ASTM)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM A240/A240M<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>18<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>22<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Standard Specification for Chromium 
+and Chromium-Nickel Stainless Steel Plate, Sheet, 
+and Strip for Pressure Vessels and for General 
+Applications<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM B221<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>14<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Standard Specification for Aluminum 
+and Aluminum-Alloy Extruded Bars, Rods, Wire, 
+Profiles, and Tubes<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D256<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2010; R 2018) Standard Test Methods for Determining 
+the Izod Pendulum Impact Resistance of Plastics<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D543<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2014) Standard Practices for Evaluating the 
+Resistance of Plastics to Chemical Reagents<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D635<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018) Standard Test Method for Rate of Burning 
+and/or Extent and Time of Burning of Plastics 
+in a Horizontal Position<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E84<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018a) Standard Test Method for Surface Burning 
+Characteristics of Building Materials<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2023) 
+Standard Test Method for Surface Burning Characteristics 
+of Building Materials<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM G21<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Standard Practice for Determining Resistance 
+of Synthetic Polymeric Materials to Fungi<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015; 
+R 2021; E 2021) Standard Practice for Determining 
+Resistance of Synthetic Polymeric Materials 
+to Fungi<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk></ref>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre><ref><org>CALIFORNIA DEPARTMENT OF PUBLIC HEALTH (CDPH)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>CDPH SECTION 01350<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017; Version 1.2) Standard Method for the 
+Testing and Evaluation of Volatile Organic Chemical 
+Emissions from Indoor Sources using Environmental 
+Chambers<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<pre class="display_ADD">&lt;/ADD&gt;</pre></add><ref><del><pre class="display_DEL">&lt;DEL&gt;</pre><org>JAPANESE INDUSTRIAL STANDARDS (JIS)</org><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><org>JAPANESE STANDARDS ASSOCIATION (JSA)</org><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1901<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Determination of the Emission of Volatile 
+Organic Compounds and Aldehydes by Building 
+Products - Small Chamber Test Method<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 6909<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>14<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Coating Materials for Textured Finishes 
+of Buildings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>NATIONAL ASSOCIATION OF ARCHITECTURAL METAL MANUFACTURERS (NAAMM)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NAAMM AMP 500<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2006) Metal Finishes Manual<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 80<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>16; TIA 16-1<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>22<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Standard for Fire Doors and 
+Other Opening Protectives<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>SCIENTIFIC CERTIFICATION SYSTEMS (SCS)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>SCS<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>SCS Global Services (SCS) Indoor Advantage<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>SOCIETY OF AUTOMOTIVE ENGINEERS INTERNATIONAL (SAE)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>SAE J1545<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2005; R 2014) Instrumental Color Difference 
+Measurement for Exterior Finishes, Textiles 
+and Colored Trim<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.2"><ttl>1.2 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review submittal description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.<brk></brk>
+The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G." Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System. 
+Only add a “G” to an item, if the submittal is sufficiently important or complex 
+in context of the project.<brk></brk>
+For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office. Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.<brk></brk>
+The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. Locate the "S" 
+submittal under the SD number that best describes the submittal item.<brk></brk>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are for <div class="brackets">[Contractor Quality Control approval.]</div> <div class="brackets">[information only. When used, a designation following the "G" 
+designation identifies the office that will review the submittal for the Government.]</div> Submittals with an "S" 
+are for inclusion in the Sustainability eNotebook, in conformance to Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-02 Shop Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Corner Guards<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Wall Guards (Bumper Guards)<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Door Protectors<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Wall Covering/Panels<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-03 Product Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Corner Guards<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Wall Guards (Bumper Guards)<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Door Protectors<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Wall Covering/Panels<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Recycled content for aluminum component of corner guards<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>S<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Recycled content for steel component of corner guards<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>S<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Recycled content for aluminum component of wall guards, Combination Handrail/Wall guard and 
+handrails<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>S<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Recycled content for aluminum component of wall guards/bed locators<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>S<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Recycled content for aluminum component of combination handrail/wall guards<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>S<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Recycled content for aluminum component of handrails<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>S<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-04 Samples<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Finish<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-06 Test Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Corner Guards<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Wall Guards (Bumper Guards)<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Door Protectors<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Wall Covering/Panels<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-07 Certificates<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Corner Guards<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Wall Guards (Bumper Guards)<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Door Protectors<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Indoor air quality for wall covering/panels<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>S<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Indoor air quality for adhesives<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>S<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 CERTIFICATIONS</ttl><brk></brk>
+<spt outline="1.3.1"><ttl>1.3.1 Indoor Air Quality</ttl><brk></brk>
+<spt outline="1.3.1.1"><ttl>1.3.1.1 Wall Covering/Panels</ttl><brk></brk>
+<txt>Provide sheet and high impact resistant resilient materials certified to meet indoor air quality requirements 
+of <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1901<pre class="display_RID">&lt;/RID&gt;</pre></rid> (use the office or classroom requirements, regardless of space type) and formaldehyde emission 
+class F**** per <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 6909<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide current product certification documentation from certification body. When 
+product does not have certification, provide validation that product meets the indoor air quality product requirements 
+cited herein.</txt><brk></brk></spt>
+<spt outline="1.3.1.2"><ttl>1.3.1.2 Adhesives and Sealants</ttl><brk></brk>
+<txt>Provide products certified to meet indoor air quality requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1901<pre class="display_RID">&lt;/RID&gt;</pre></rid> (use the office or classroom 
+requirements, regardless of space type) and formaldehyde emission class F**** per <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 6909<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide current 
+product certification documentation from certification body When product does not have certification, provide 
+validation that product meets the indoor air quality product requirements cited herein..</txt><brk></brk></spt>
+</spt></spt><spt outline="1.4"><ttl>1.4 DELIVERY, STORAGE, AND HANDLING</ttl><brk></brk>
+<txt>Deliver materials to the project site in manufacturer's original unopened containers with seals unbroken and 
+labels and trademarks intact. Keep materials dry, protected from weather and damage, and stored under cover. 
+Materials must be stored at approximately<met><pre class="display_MET">&lt;MET&gt;</pre> 21 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 70 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> for at least 48 hours prior to installation.</txt><brk></brk></spt>
+<spt outline="1.5"><ttl>1.5 WARRANTY</ttl><brk></brk>
+<txt>Provide manufacturer's standard performance guarantees or warranties that extend beyond a 1 year period.</txt><brk></brk></spt>
+</prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<spt outline="2.1"><ttl>2.1 STANDARD PRODUCTS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: All paragraphs must be carefully edited because of the broad number of 
+possible requirements and the diverse combinations available with these products.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>To the maximum extent possible, corner guards, door and door frame protectors, wall guards (bumper guards), wall 
+panels and wall covering must be the standard products of a single manufacturer and must be furnished as detailed. 
+Drawings show general configuration of products required, and items differing in minor details from those shown 
+will be acceptable.</txt><brk></brk>
+<spt outline="2.1.1"><ttl>2.1.1 Resilient Material</ttl><brk></brk>
+<txt>Provide resilient material consisting of high impact resistant extruded acrylic vinyl, polyvinyl chloride, or 
+injection molded thermal plastic conforming to the following:</txt><brk></brk>
+<spt outline="2.1.1.1"><ttl>2.1.1.1 Minimum Impact Resistance</ttl><brk></brk>
+<txt>Minimum impact resistance must be<met><pre class="display_MET">&lt;MET&gt;</pre> 960.8 N-m/m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 18 ft-lbs/sq. inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> when tested in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D256<pre class="display_RID">&lt;/RID&gt;</pre></rid>, (Izod 
+impact, ft-lbs per sq inch notched).</txt><brk></brk></spt>
+<spt outline="2.1.1.2"><ttl>2.1.1.2 Fire Rating</ttl><brk></brk>
+<txt>Fire rating must be Class 1 when tested in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E84<pre class="display_RID">&lt;/RID&gt;</pre></rid>, having a maximum flame spread of 25 and 
+a smoke developed rating of 450 or less. Material must be rated self extinguishing when tested in accordance 
+with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D635<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Material must be labeled and tested by an approved nationally known testing laboratory. Resilient 
+material used for protection on fire rated doors and frames must be listed by the testing laboratory performing 
+the tests. Resilient material installed on fire rated wood/steel door and frame assemblies must have been tested 
+on similar type assemblies. Test results of material tested on any other combination of door/frame assembly 
+will not be acceptable.</txt><brk></brk></spt>
+<spt outline="2.1.1.3"><ttl>2.1.1.3 Integral Color</ttl><brk></brk>
+<txt>Colored components must have integral color and must be matched in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>SAE J1545<pre class="display_RID">&lt;/RID&gt;</pre></rid> to within plus or 
+minus 1.0 on the CIE-LCH scales.</txt><brk></brk></spt>
+<spt outline="2.1.1.4"><ttl>2.1.1.4 Chemical and Stain Resistance</ttl><brk></brk>
+<txt>Materials must be resistant to chemicals and stains reagents in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D543<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.1.1.5"><ttl>2.1.1.5 Fungal and Bacterial Resistance</ttl><brk></brk>
+<txt>Materials must be resistant to fungi and bacteria in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM G21<pre class="display_RID">&lt;/RID&gt;</pre></rid>, as applicable.</txt><brk></brk></spt>
+</spt></spt><spt outline="2.2"><ttl>2.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>CORNER GUARDS<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For medical facilities, corner guards must extend from floor to ceiling.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="2.2.1"><ttl>2.2.1 Resilient Corner Guards</ttl><brk></brk>
+<txt>Corner guard units must be <div class="brackets">[flush mounted]</div> <div class="brackets">[surface mounted]</div> type, radius formed to profile shown. Corner guards 
+must <div class="brackets">[extend from floor to ceiling.]</div> <div class="brackets">[be <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high.]</div> Mounting hardware, cushions, and base plates 
+must be furnished. Assembly must consist of a snap-on corner guard formed from high impact resistant resilient 
+material, mounted on a continuous aluminum retainer. Extruded aluminum retainer must conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM B221<pre class="display_RID">&lt;/RID&gt;</pre></rid>, alloy 
+6063, temper T5 or T6. Provide aluminum components that contain a minimum of 35 percent recycled content. Provide 
+data identifying percentage of <sub><pre class="display_SUB">&lt;SUB&gt;</pre>recycled content for aluminum component of corner guards<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>. Flush mounted type 
+guards must act as a stop for adjacent wall finish material. Factory fabricated end closure caps must be furnished 
+for top and bottom of surface mounted corner guards. Flush mounted corner guards installed in fire rated wall 
+must maintain the rating of the wall. Insulating materials that are an integral part of the corner guard system 
+must be provided by the manufacturer of the corner guard system. Exposed metal portions of fire rated assemblies 
+must have a paintable surface.</txt><brk></brk></spt>
+<spt outline="2.2.2"><ttl>2.2.2 Stainless Steel Corner Guards</ttl><brk></brk>
+<txt>Stainless steel corner guards must be fabricated of <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre> 1.3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 16 gauge<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div><div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre> 0.9 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 18 gauge<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> thick material conforming 
+to <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM A240/A240M<pre class="display_RID">&lt;/RID&gt;</pre></rid>, type 302 or 304. Provide stainless steel base material that contains a minimum of 60 percent 
+recycled content. Provide data identifying percentage of <sub><pre class="display_SUB">&lt;SUB&gt;</pre>recycled content for steel component of corner guards<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
+. Corner guards must <div class="brackets">[extend from floor to ceiling.]</div> <div class="brackets">[be <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high.]</div> Corner guard must be formed 
+to dimensions shown.</txt><brk></brk></spt>
+</spt><spt outline="2.3"><ttl>2.3 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>WALL GUARDS (BUMPER GUARDS)<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<spt outline="2.3.1"><ttl>2.3.1 Wall Guards, Combination Handrail/Wall Guards and Handrails</ttl><brk></brk>
+<txt>Wall guards, combination handrail/wall guards, and handrails must be provided with prefabricated end closure 
+caps, inside and outside corners, concealed splices, cushions, mounting hardware and other accessories standard 
+with the manufacturer. Extruded aluminum retainers must conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM B221<pre class="display_RID">&lt;/RID&gt;</pre></rid>, alloy 6063, temper T5 or T6. 
+Provide aluminum components that contain a minimum of 35 percent recycled content. Provide data identifying 
+percentage of <sub><pre class="display_SUB">&lt;SUB&gt;</pre>recycled content for aluminum component of wall guards, combination handrail/wall guard and handrails<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
+. End caps and corners must be field adjustable to assure close alignment with handrails and wall guards. <div class="brackets">[Wall 
+guards]</div> <div class="brackets">[Combination handrail/wall guards]</div> must have profile <div class="brackets">[as shown]</div> <div class="brackets">[as shown with <div class="brackets">[vinyl]</div> <div class="brackets">[carpet]</div> <div class="brackets">[_____]</div> 
+inserts]</div>.</txt><brk></brk></spt>
+<spt outline="2.3.2"><ttl>2.3.2 Wall Guards/Bed Locators</ttl><brk></brk>
+<txt>Wall guards must consist of snap-on covers of high impact resistant resilient material, minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 1.98 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.078 
+inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick, mounted over<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[50]</div> <div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[2]</div> <div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide aluminum, minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 1.57 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.062 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick retainer, 
+anchored to wall at maximum<met><pre class="display_MET">&lt;MET&gt;</pre> 600 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 24 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center. Provide aluminum components that contain a minimum of 
+35 percent recycled content. Provide data identifying percentage of <sub><pre class="display_SUB">&lt;SUB&gt;</pre>recycled content for aluminum component 
+of wall guards/bed locators<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt><brk></brk></spt>
+<spt outline="2.3.3"><ttl>2.3.3 Combination Handrail/Wall Guards</ttl><brk></brk>
+<txt>Combination handrail/wall guards must consist of snap-on covers of high impact resistant resilient material, 
+minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 1.98 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.078 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick, on a continuous, extruded aluminum retainer, minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 1.83 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.072 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick 
+anchored to wall at maximum<met><pre class="display_MET">&lt;MET&gt;</pre> 800 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 32 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center. Provide aluminum components that contain a minimum of 
+35 percent recycled content. Provide data identifying percentage of <sub><pre class="display_SUB">&lt;SUB&gt;</pre>recycled content for aluminum component 
+of combination handrail/wall guards<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt><brk></brk></spt>
+<spt outline="2.3.4"><ttl>2.3.4 Handrails</ttl><brk></brk>
+<txt>Handrails must consist of snap-on covers of high impact resistant resilient material, minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 1.98 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.078 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
+ thick on a continuous extruded aluminum retainer, minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 1.83 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.072 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick anchored to wall at maximum<met><pre class="display_MET">&lt;MET&gt;</pre>
+ 800 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 32 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center. Provide aluminum components that contain a minimum of 35 percent recycled content. 
+Provide data identifying percentage of <sub><pre class="display_SUB">&lt;SUB&gt;</pre>recycled content for aluminum component of handrails<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>. Handrails must 
+be provided with prefabricated end closure caps, inside and outside corners, concealed splices, cushions, mounting 
+hardware and other accessories standard with the manufacturer. End caps and corners must be field adjustable 
+to assure close alignment with handrails.</txt><brk></brk></spt>
+</spt><spt outline="2.4"><ttl>2.4 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>DOOR PROTECTORS<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt><div class="brackets">[Door]</div> <div class="brackets">[Door envelope]</div> <div class="brackets">[Door knob]</div> <div class="brackets">[and]</div> <div class="brackets">[door frame]</div> protection items must consist of high impact resistant 
+acrylic vinyl or polyvinyl chloride resilient material, minimum <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>1.52 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.060 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick for doors]</div> <div class="brackets">[and]</div> <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>0.89 
+mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.035 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick for door frames]</div>. Coordinate door and door frame protection material requirements with door 
+and frame suppliers to insure fit for all components and color matching with other resilient materials. Provide 
+adhesive as recommended by resilient material manufacturer.</txt><brk></brk></spt>
+<spt outline="2.5"><ttl>2.5 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>WALL COVERING/PANELS<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Recommended locations for various thicknesses of rigid wall covering/panels 
+are as follows: <met><pre class="display_MET">&lt;MET&gt;</pre> 0.50 to 1.02 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.022 to 0.040 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick for lobbies and elevator 
+areas,<met><pre class="display_MET">&lt;MET&gt;</pre> 1.52 to 2.03 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.060 to 0.080 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick for service corridors, and<met><pre class="display_MET">&lt;MET&gt;</pre> 
+2.38 to 3.1 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.093 to 0.125 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick for loading dock areas. A<met><pre class="display_MET">&lt;MET&gt;</pre> 9.53 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 
+0.375 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick composite wall panel is recommended for installation over existing 
+substrates such as ceramic tile, masonry block, or damaged plaster/drywall.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide wall covering/panels consisting of high impact rigid acrylic vinyl or polyvinyl chloride resilient material. 
+Panel sizes must be<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[600 mm x 1220 mm]</div><pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[2 x 4 feet]</div><pre class="display_ENG">&lt;/ENG&gt;</pre></eng> <div class="brackets">[_____]</div>. Submit fire rating and extinguishing test results 
+for resilient material. Also submit statements attesting that the items comply with specified fire and safety 
+code requirements. Provide wall covering material used on the interior of the building (defined as inside of 
+the weatherproofing system) that meets either emissions requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>CDPH SECTION 01350<pre class="display_RID">&lt;/RID&gt;</pre></rid> (use the office or 
+classroom requirements, regardless of space type) the VOC content requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1901<pre class="display_RID">&lt;/RID&gt;</pre></rid> (use the office 
+or classroom requirements, regardless of space type) and formaldehyde emission class F**** per <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 6909<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide 
+certification or validation of <sub><pre class="display_SUB">&lt;SUB&gt;</pre>indoor air quality for wall covering/panels<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt><brk></brk>
+<spt outline="2.5.1"><ttl>2.5.1 Rigid Vinyl Acrylic Wall Covering</ttl><brk></brk>
+<txt>Wall covering thickness must be<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[0.56]</div> <div class="brackets">[0.71]</div> <div class="brackets">[1.02]</div> <div class="brackets">[1.52]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[0.022]</div> <div class="brackets">[0.028]</div> <div class="brackets">[0.040]</div> <div class="brackets">[0.375]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.</txt><brk></brk></spt>
+<spt outline="2.5.2"><ttl>2.5.2 High Impact Wall Panels</ttl><brk></brk>
+<txt>Wall panel face and edge thickness must be<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[0.56]</div> <div class="brackets">[0.71]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[0.022]</div> <div class="brackets">[0.028]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Panel face must be factory 
+banded to a<met><pre class="display_MET">&lt;MET&gt;</pre> 9.53 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.375 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick fiberboard core. The backside of the panel must be laminated with a moisture 
+resistant vapor barrier.</txt><brk></brk></spt>
+</spt><spt outline="2.6"><ttl>2.6 TRIM, FASTENERS AND ANCHORS</ttl><brk></brk>
+<txt>Provide vinyl trim, fasteners and anchors for each specific installation as shown.</txt><brk></brk></spt>
+<spt outline="2.7"><ttl>2.7 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>FINISH<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Submit <div class="brackets">[three]</div> <div class="brackets">[_____]</div> samples indicating color and texture of materials requiring color and finish.</txt><brk></brk>
+<spt outline="2.7.1"><ttl>2.7.1 Aluminum Finish</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: On small projects, specify finish of aluminum by using description and 
+not the Aluminum Association designations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Finish for aluminum must be in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>AA DAF45<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Exposed aluminum must be designation <div class="brackets">[<div class="brackets">[AA-C22A31]</div> <div class="brackets">[_____]</div> 
+chemically etched medium matte, with clear anodic coating]</div> <div class="brackets">[<div class="brackets">[AA-C22A32]</div> <div class="brackets">[_____]</div> chemically etched medium matte 
+with integrally colored anodic coating]</div> class II architectural coating<met><pre class="display_MET">&lt;MET&gt;</pre> 0.010 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.4 mil<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick. Concealed aluminum 
+shall be mill finish as fabricated, uniform in natural color and free from surface blemishes.</txt><brk></brk></spt>
+<spt outline="2.7.2"><ttl>2.7.2 Stainless Steel Finish</ttl><brk></brk>
+<txt>Finish for stainless steel must be in accordance with <div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM A240/A240M<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Type 302 or 304]</div> <div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>NAAMM AMP 500<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>, finish 
+number 4.</txt><brk></brk></spt>
+<spt outline="2.7.3"><ttl>2.7.3 Resilient Material Finish</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Coordinate resilient finishes with manufacturers. Certain finishes and 
+textures are not available from some manufacturers.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Finish for resilient material must be <div class="brackets">[embossed <div class="brackets">[velour]</div> <div class="brackets">[stipple]</div> <div class="brackets">[_____]</div>]</div> <div class="brackets">[<div class="brackets">[fake woodgrain]</div> <div class="brackets">[high gloss vinyl]</div>]</div> 
+texture with colors in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>SAE J1545<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+</spt><spt outline="2.8"><ttl>2.8 ADHESIVES</ttl><brk></brk>
+<txt>Adhesive for resilient material must be in accordance with manufacturers recommendations. Provide sealants and 
+non-aerosol adhesive products used on the interior of the building (defined as inside of the weatherproofing 
+system) that meet either emissions requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>CDPH SECTION 01350<pre class="display_RID">&lt;/RID&gt;</pre></rid> (limit requirements for either office or 
+classroom spaces regardless of space type) the VOC content requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1901<pre class="display_RID">&lt;/RID&gt;</pre></rid> (use the office or classroom 
+requirements, regardless of space type) and formaldehyde emission class F**** per <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 6909<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide certification 
+or validation of <sub><pre class="display_SUB">&lt;SUB&gt;</pre>indoor air quality for adhesives<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt><brk></brk></spt>
+<spt outline="2.9"><ttl>2.9 COLOR</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Editing of color reference sentence(s) must be coordinated with the Government. 
+Generally Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>09 06 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SCHEDULES FOR FINISHES or drawing is used when the 
+project is designed by an Architect or Interior designer. Color must be selected 
+from manufacturers standard colors or identified as a manufacturers color in 
+this specification only when the project is very simple and has minimal finishes.<brk></brk>
+When the Government directs that color be located in the drawings a note must 
+be added that states: "Where color is shown as being specific to one manufacturer, 
+an equivalent color by another manufacturer may be submitted for approval. 
+Manufacturers and materials specified are not intended to limit the selection 
+of equal colors from other manufacturers. The word "color" as used herein includes 
+surface color and pattern."<brk></brk>
+Prior to specifying a custom color finish, research to determine if additional 
+cost and lead time is feasible. Note there is often a minimum order requirement; 
+this requirement will also affect future orders.<brk></brk>
+When a manufacturer's name, stock number, pattern, and color is used, be certain 
+that the product conforms to this specification, as edited.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Color must be <div class="brackets">[in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>09 06 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SCHEDULES FOR FINISHES.]</div> <div class="brackets">[as indicated.]</div> <div class="brackets">[selected from manufacturers 
+standard colors.]</div> <div class="brackets">[<div class="brackets">[______.]</div> Color listed is not intended to limit the selection of equal colors from other 
+manufacturers.]</div></txt><brk></brk></spt>
+</prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 INSTALLATION</ttl><brk></brk>
+<txt>Do not install items that show visual evidence of biological growth.</txt><brk></brk>
+<spt outline="3.1.1"><ttl>3.1.1 Corner Guards and Wall Guards (Bumper Guards)</ttl><brk></brk>
+<txt>Material must be mounted at location indicated in accordance with manufacturer's recommendations.</txt><brk></brk></spt>
+<spt outline="3.1.2"><ttl>3.1.2 Door, Door Frame Protectors, and Wall Panels</ttl><brk></brk>
+<txt>Surfaces to receive protection must be clean, smooth, and free of obstructions. Protectors must be installed 
+after frames are in place, but prior to hanging of doors, in accordance with manufacturer's specific instructions. 
+Adhesives must be applied in controlled environment in accordance with manufacturer's recommendations. Protection 
+for fire doors and frames must be installed in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 80<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="3.1.3"><ttl>3.1.3 Stainless Steel Guards</ttl><brk></brk>
+<lst indent="-0.33">a. Mount guards on external corners of interior walls, partitions and columns as <div class="brackets">[shown]</div> <div class="brackets">[in accordance 
+with manufacturer's recommendations]</div>.</lst><brk></brk>
+<lst indent="-0.33">b. Where corner guards are installed on walls, partitions or columns finished with plaster or ceramic 
+tile, <div class="brackets">[anchor corner guards as indicated]</div> <div class="brackets">[provide continuous<met><pre class="display_MET">&lt;MET&gt;</pre> 1.5 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 16 gage<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick, perforated, galvanized 
+z-shape steel anchors welded to back edges of corner guards and <div class="brackets">[wired to metal studs]</div> <div class="brackets">[expansion bolted 
+to concrete or masonry with four<met><pre class="display_MET">&lt;MET&gt;</pre> 10 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> diameter bolts, spaced<met><pre class="display_MET">&lt;MET&gt;</pre> 400 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 16 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on centers]</div>]</div>. 
+Coat back surfaces of corner guards, where shown, with a non-flammable, sound deadening material. Corner 
+guards must overlap finish plaster surfaces.</lst><brk></brk>
+<lst indent="-0.33">c. Where corner guards are installed on exposed structural glazed facing tile units or masonry wall, 
+partitions or columns, <div class="brackets">[anchor corner guards as indicated]</div> <div class="brackets">[anchor corner guards to existing walls with<met><pre class="display_MET">&lt;MET&gt;</pre>
+ 6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> oval head stainless steel countersunk expansion or toggle bolts]</div> <div class="brackets">[anchor corner guards 
+with four nominal<met><pre class="display_MET">&lt;MET&gt;</pre> 1.3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.0516 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick, adjustable galvanized steel anchors, spaced as shown]</div>. Grout 
+spaces solid between guards and backing with portland cement and sand mortar.</lst><brk></brk>
+<lst indent="-0.33">d. Where corner guards are installed on gypsum board, clean surfaces and anchor guards with a neoprene 
+solvent-type contact adhesive specifically manufactured for use on gypsum board construction. Remove 
+excess adhesive from the guard edges and allow to cure undisturbed for 24 hours.</lst><brk></brk>
+<lst indent="-0.33">e. For wall guards, space brackets at no more than<met><pre class="display_MET">&lt;MET&gt;</pre> 900 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on centers and anchor to the wall in 
+accordance with the manufacturer's installation instructions.</lst><brk></brk></spt>
+</spt></prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

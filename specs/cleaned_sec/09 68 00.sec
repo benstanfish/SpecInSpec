@@ -1,161 +1,161 @@
-<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
-<HDR><AST/><BRK/>
-USACE / NAVFAC / AFCEC / NASA                UFGS-09 68 00 (November 2017)<BRK/>
-                                             Change 1 - 08/18<BRK/>
-                                             ----------------------------<BRK/>
-Preparing Activity:  <PRA>USACE</PRA>                   Superseding<BRK/>
-                                             UFGS-09 68 00 (August 2016)<BRK/>
-<BRK/>
-<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
-<BRK/>
-<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK/>
-<AST/><BRK/></HDR>
-<BRK/>
-<SCN>SECTION 09 68 00</SCN><BRK/>
-<BRK/>
-<STL>CARPETING</STL><BRK/>
-<DTE>11/17</DTE><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><BRK />
+<HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                UFGS-09 68 00 (November 2017)<BRK />
+                                             Change 1 - 08/18<BRK />
+                                             ----------------------------<BRK />
+Preparing Activity:  <PRA>USACE</PRA>                   Superseding<BRK />
+                                             UFGS-09 68 00 (August 2016)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 09 68 00</SCN><BRK />
+<BRK />
+<STL>CARPETING</STL><BRK />
+<DTE>11/17</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This guide specification has been edited to cover the minimum requirements 
 and include Japanese products, where feasible, for a standard Japan Engineer 
 District project.  The Designer of Record (DOR) shall tailor as applicable to 
-meet project specific requirements.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<NTE><BRK/>
-<AST/><BRK/>
+meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This guide specification covers the requirements for <SCP>broadloom carpet, 
-modular tile carpet, and entrance carpet.</SCP><BRK/>
-<BRK/>
+modular tile carpet, and entrance carpet.</SCP><BRK />
+<BRK />
 This section is intended for floor coverings only, and should not be used to 
 specify carpeting installed on wall or ceiling surfaces.  Where carpeting is 
-to be used on surfaces other than floors, refer to Section <SRF>09 72 00</SRF> WALLCOVERINGS.<BRK/>
-<BRK/>
+to be used on surfaces other than floors, refer to Section <SRF>09 72 00</SRF> WALLCOVERINGS.<BRK />
+<BRK />
 Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
 Standard when editing this guide specification or preparing new project specification 
 sections.  Edit this guide specification for project specific requirements by 
 adding, deleting, or revising text.  For bracketed items, choose applicable 
-item(s) or insert appropriate information.<BRK/>
-<BRK/>
+item(s) or insert appropriate information.<BRK />
+<BRK />
 Remove information and requirements not required in respective project, whether 
-or not brackets are present.<BRK/>
-<BRK/>
+or not brackets are present.<BRK />
+<BRK />
 Comments, suggestions and recommended changes for this guide specification are 
-welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
-<BRK/>
-<SPT><TTL>REFERENCES</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
 the guide specification.  The publications are referred to in the text by basic 
 designation only and listed in this paragraph by organization, designation, 
-date, and title.<BRK/>
-<BRK/>
+date, and title.<BRK />
+<BRK />
 Use the Reference Wizard's Check Reference feature when you add a Reference 
 Identifier (RID) outside of the Section's Reference Article to automatically 
 place the reference in the Reference Article.  Also use the Reference Wizard's 
-Check Reference feature to update the issue dates.<BRK/>
-<BRK/>
+Check Reference feature to update the issue dates.<BRK />
+<BRK />
 References not used in the text will automatically be deleted from this section 
 of the project specification when you choose to reconcile references in the 
-publish print process.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
-referred to within the text by the basic designation only.</TXT><BRK/>
-<BRK/>
-<REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK/>
-<BRK/>
+referred to within the text by the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK />
+<BRK />
 <ADD><RID>ASTM D2859</RID><RTL>(2016) Standard Test Method for Ignition Characteristics 
-of Finished Textile Floor Covering Materials</RTL><BRK/>
-<BRK/></ADD>
+of Finished Textile Floor Covering Materials</RTL><BRK />
+<BRK /></ADD>
 <RID>ASTM E648</RID><RTL>(2017a) Standard Test Method for Critical Radiant 
 Flux of Floor-Covering Systems Using a Radiant 
-Heat Energy Source</RTL><ADD><BRK/></ADD>
-<BRK/></REF>
-<ADD><REF><ORG>CALIFORNIA DEPARTMENT OF PUBLIC HEALTH (CDPH)</ORG><BRK/>
-<BRK/>
+Heat Energy Source</RTL><ADD><BRK /></ADD>
+<BRK /></REF>
+<ADD><REF><ORG>CALIFORNIA DEPARTMENT OF PUBLIC HEALTH (CDPH)</ORG><BRK />
+<BRK />
 <RID>CDPH SECTION 01350</RID><RTL>(2017; Version 1.2) Standard Method for the 
 Testing and Evaluation of Volatile Organic Chemical 
 Emissions from Indoor Sources using Environmental 
-Chambers</RTL><BRK/>
-<BRK/></REF>
-</ADD><REF><ORG>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION (ISO)</ORG><BRK/>
-<BRK/>
+Chambers</RTL><BRK />
+<BRK /></REF>
+</ADD><REF><ORG>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION (ISO)</ORG><BRK />
+<BRK />
 <RID>ISO 2551</RID><RTL>(1981) Machine-made Textile Floor Coverings 
 - Determination of Dimensional Changes Due to 
-the Effects of Varied Water and Heat Conditions</RTL><BRK/>
-<BRK/></REF>
-<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK/>
-<BRK/>
+the Effects of Varied Water and Heat Conditions</RTL><BRK />
+<BRK /></REF>
+<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK />
+<BRK />
 <RID>JIS A 1125</RID><RTL>(2015) Methods Of Test For Moisture Content 
 Of Aggregate And Surface Moisture In Aggregate 
-By Drying</RTL><BRK/>
-<BRK/>
+By Drying</RTL><BRK />
+<BRK />
 <RID>JIS A 1901-1</RID><RTL>(2015) Determination of the emission of volatile 
 organic compounds and aldehydes by building 
 products -- Sampling, preparation of test specimens 
 and testing condition -- Part 1: Boards, wallpaper 
-and floor materials</RTL><BRK/>
-<BRK/>
+and floor materials</RTL><BRK />
+<BRK />
 <RID>JIS A 5536</RID><RTL>(2015) Adhesives for Resilient Textile or Laminate 
-Floor Coverings</RTL><BRK/>
-<BRK/>
+Floor Coverings</RTL><BRK />
+<BRK />
 <RID>JIS K 2265-1</RID><RTL>(2007)<ADD> </ADD>Determination of flash point - Part 1: 
-Tag closed cup method</RTL><BRK/>
-<BRK/>
+Tag closed cup method</RTL><BRK />
+<BRK />
 <RID>JIS K 7134</RID><RTL>(1999)Cellular rubber and plastics - Determination 
-of dynamic cushioning performance</RTL><BRK/>
-<BRK/>
-<RID>JIS L 0805</RID><RTL>(2005)Gray Scale for Assessing Staining</RTL><BRK/>
-<BRK/>
-<RID>JIS L 0849</RID><RTL>(2013) Test Methods for color fastness to rubbing</RTL><BRK/>
-<BRK/>
+of dynamic cushioning performance</RTL><BRK />
+<BRK />
+<RID>JIS L 0805</RID><RTL>(2005)Gray Scale for Assessing Staining</RTL><BRK />
+<BRK />
+<RID>JIS L 0849</RID><RTL>(2013) Test Methods for color fastness to rubbing</RTL><BRK />
+<BRK />
 <RID>JIS L 1021-3</RID><RTL>(2007)Textile floor coverings - Part 3: Determination 
-of thickness</RTL><BRK/>
-<BRK/>
+of thickness</RTL><BRK />
+<BRK />
 <RID>JIS L 1021-4</RID><RTL>(2007)Textile floor coverings - Part 4: Methods 
-for determination of mass</RTL><BRK/>
-<BRK/>
+for determination of mass</RTL><BRK />
+<BRK />
 <RID>JIS L 1021-5</RID><RTL>(2007)Textile floor coverings - Part 5: Determination 
-of number of tufts and/or loops per unit.</RTL><BRK/>
-<BRK/>
+of number of tufts and/or loops per unit.</RTL><BRK />
+<BRK />
 <RID>JIS L 1021-10</RID><RTL>(2007)Textiles floor coverings - Part 10: Test 
 Methods for dimensional changes due to water 
-and heat effects</RTL><BRK/>
-<BRK/>
+and heat effects</RTL><BRK />
+<BRK />
 <RID>JIS L 1021-13</RID><RTL>(2007)Textile floor coverings - Part 13: Assessment 
-of changes in appearance</RTL><BRK/>
-<BRK/>
-<RID>JIS L 1902</RID><RTL>(2015)Antimicrobial Fabric Test</RTL><BRK/>
-<BRK/>
-<RID>JIS L 4405</RID><RTL>(2008) Tufted Pile Carpet</RTL><BRK/>
-<BRK/>
-<RID>JIS L 4406</RID><RTL>(2008) Tile Carpet</RTL><BRK/>
-<BRK/></REF>
+of changes in appearance</RTL><BRK />
+<BRK />
+<RID>JIS L 1902</RID><RTL>(2015)Antimicrobial Fabric Test</RTL><BRK />
+<BRK />
+<RID>JIS L 4405</RID><RTL>(2008) Tufted Pile Carpet</RTL><BRK />
+<BRK />
+<RID>JIS L 4406</RID><RTL>(2008) Tile Carpet</RTL><BRK />
+<BRK /></REF>
 <REF><ORG><DEL>MINISTRY OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM, GOVERNMENT OF JAPAN (MLIT)</DEL><ADD>MINISTRY 
-OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM (MLIT)</ADD></ORG><BRK/>
-<BRK/>
+OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM (MLIT)</ADD></ORG><BRK />
+<BRK />
 <RID>MLIT SS Chapter 19</RID><RTL>(2019) Public Building Construction Standard 
 Specifications Chapter 19: Interior Finishing 
-Works</RTL><BRK/>
-<BRK/></REF>
-</SPT><SPT><TTL>SUBMITTALS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+Works</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
 PROCEDURES and edit the following list to reflect only the submittals required 
-for the project.<BRK/>
-<BRK/>
+for the project.<BRK />
+<BRK />
 The Guide Specification technical editors have designated those items that require 
 Government approval, due to their complexity or criticality, with a "G."  Generally, 
 other submittal items can be reviewed by the Contractor's Quality Control System.  
-Only add a “G” to an item, if the submittal is sufficiently important or complex 
-in context of the project.<BRK/>
-<BRK/>
+Only add a &#8220;G&#8221; to an item, if the submittal is sufficiently important or complex 
+in context of the project.<BRK />
+<BRK />
 For submittals requiring Government approval on Army projects, a code of up 
 to three characters within the submittal tags may be used following the "G" 
 designation to indicate the approving authority.  Codes for Army projects using 
@@ -163,52 +163,52 @@ the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO"
 for District Office (Engineering Division or other organization in the District 
 Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
 Office.  Codes following the "G" typically are not used for Navy, Air Force, 
-and NASA projects.<BRK/>
-<BRK/>
+and NASA projects.<BRK />
+<BRK />
 The "S" following a submittal item indicates that the submittal is required 
 for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
 in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
-submittal under the SD number that best describes the submittal item.<BRK/>
-<BRK/>
+submittal under the SD number that best describes the submittal item.<BRK />
+<BRK />
 Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
-the second bracketed item for Army projects.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+the second bracketed item for Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
 are for [Contractor Quality Control approval.] [information only.  When used, a designation following the "G" 
 designation identifies the office that will review the submittal for the Government.]  Submittals with an "S" 
 are for inclusion in the Sustainability eNotebook, in conformance to Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
-Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
-<BRK/>
-<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Installation Drawings</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK/>
-<BRK/>
-<LST><SUB>SD-10 Operation and Maintenance Data</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Cleaning and Protection</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Maintenance Service</SUB></ITM><BRK/>
-<BRK/>
-<ADD><ITM><SUB>Maintenance Service Information</SUB></ITM><BRK/>
-<BRK/></ADD>
-<LST><SUB>SD-11 Closeout Submittals</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Warranty</SUB></ITM><BRK/>
-<BRK/></SPT>
-<SPT><TTL>CERTIFICATIONS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Indoor Air Quality Certifications</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Floor Covering Materials</TTL><BRK/>
-<BRK/>
+Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Installation Drawings</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-10 Operation and Maintenance Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Cleaning and Protection</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Maintenance Service</SUB></ITM><BRK />
+<BRK />
+<ADD><ITM><SUB>Maintenance Service Information</SUB></ITM><BRK />
+<BRK /></ADD>
+<LST><SUB>SD-11 Closeout Submittals</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Warranty</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>CERTIFICATIONS</TTL><BRK />
+<BRK />
+<SPT outline="1.3.1"><TTL>Indoor Air Quality Certifications</TTL><BRK />
+<BRK />
+<SPT outline="1.3.1.1"><TTL>Floor Covering Materials</TTL><BRK />
+<BRK />
 <TXT>Provide products certified to meet indoor air quality requirements by providing the certification or validation 
 by other third-party program that products meet the requirements of this Section.  Provide current product certification 
 documentation from certification body.  When product does not have certification, provide validation that product 
-meets the indoor air quality product requirements cited herein.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></SPT><SPT><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK/>
-<BRK/>
+meets the indoor air quality product requirements cited herein.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="1.4"><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK />
+<BRK />
 <TXT>Deliver materials to the site in the manufacturer's original wrappings and packages clearly labeled with the 
 manufacturer's name, brand name, size, dye lot number, and related information.  Remove materials from packaging 
 and store them in a clean, dry, well ventilated area (100 percent outside air supply, minimum of 1.5 air changes 
@@ -216,40 +216,40 @@ per hour, and no recirculation), protected from damage, soiling, and moisture, a
 and residues, and maintain at a temperature above<MET> 16 degrees C</MET><ENG> 60 degrees F</ENG> for 2 days prior to installation.  
 Do not store carpet or carpet tiles with materials which have high emissions of volatile organic compounds (VOCs) 
 or other contaminants, including paints and adhesives.  Do not store carpet near materials that may off gas or 
-emit harmful fumes, such as kerosene heaters, fresh paint, or adhesives.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>AMBIENT CONDITIONS</TTL><BRK/>
-<BRK/>
+emit harmful fumes, such as kerosene heaters, fresh paint, or adhesives.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5"><TTL>AMBIENT CONDITIONS</TTL><BRK />
+<BRK />
 <TXT>Maintain areas in which carpeting is to be installed at a temperature above<MET> 16 degrees C</MET><ENG> 60 degrees F</ENG> and below<MET>
  32 degrees C</MET><ENG> 90 degrees F</ENG> for 2 days before installation, during installation, and for 2 days after installation.  
 Provide temporary ventilation during work of this section.  Maintain a minimum temperature of<MET> 13 degrees C</MET><ENG> 55 
-degrees F</ENG> thereafter for the duration of the contract.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL><SUB>WARRANTY</SUB></TTL><BRK/>
-<BRK/>
+degrees F</ENG> thereafter for the duration of the contract.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6"><TTL><SUB>WARRANTY</SUB></TTL><BRK />
+<BRK />
 <TXT>Provide manufacturer's standard performance guarantees or warranties including minimum ten year wear warranty, 
-two year material and workmanship and ten year tuft bind and delamination.</TXT><BRK/>
-<BRK/></SPT>
-</PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>CARPET</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+two year material and workmanship and ten year tuft bind and delamination.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>CARPET</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  If more than one carpet type is required for a project, use a separate 
 paragraph for each carpet type.  Designate each carpet type with a letter or 
 number symbol.  Use the same designations to key carpets to locations on the 
-drawings and in Section <SRF>09 06 00</SRF> SCHEDULES FOR FINISHES.</NPR><BRK/>
-<BRK/>
+drawings and in Section <SRF>09 06 00</SRF> SCHEDULES FOR FINISHES.</NPR><BRK />
+<BRK />
 <NPR>ADA Requirements:  Carpet must be securely attached; have a firm cushion, or 
 backing, or no cushion; and have a level loop, textured loop, level cut pile, 
 or level cut/uncut pile texture.  The maximum thickness should be<MET> 13 mm</MET><ENG> 1/2 
 inch</ENG>.  Fasten exposed edges of carpet to floor surfaces and have trim along 
-the entire length of the exposed edge.</NPR><BRK/>
-<BRK/>
+the entire length of the exposed edge.</NPR><BRK />
+<BRK />
 <NPR>Nylon fiber is typically abrasion resistant and durable in all pile configurations 
 using filament fiber, has good stain removal characteristics, and is recommended 
-for commercial installations.</NPR><BRK/>
-<BRK/>
+for commercial installations.</NPR><BRK />
+<BRK />
 <NPR>Triexta (PTT) fiber is recommended for residential installations.  Some PTT 
 fiber made outside the US can be used in commercial applications, but specification 
 of these products must comply with the Buy America Act when applicable.  Triexta 
@@ -257,328 +257,328 @@ is marketed as offering excellent durability, resiliency and crush resistance.
 Permanent stain resistance, bleach resistance and colorfastness built into the 
 fiber helps to make triexta carpets easy to clean and can extend the life of 
 the carpet.  It is important to note that long term performance of triexta fiber 
-has not yet been tested.  </NPR><BRK/>
-<BRK/>
+has not yet been tested.  </NPR><BRK />
+<BRK />
 <NPR>Polyethylene terephthalate (PET) recycled polyester fiber has permanent fade 
 resistance, is permanently colorfast, has a permanent stain resistance which 
 is higher than other type fibers, is impervious to harsh chemicals, and has 
 the lowest static buildup.  PET type polyester carpet, once crushed under continued 
 high pressure, is less likely than nylon carpet to rebound.  PET carpet is not 
 recommended for severe and moderate wear level areas and should be limited to 
-light wear areas.</NPR><BRK/>
-<BRK/>
+light wear areas.</NPR><BRK />
+<BRK />
 <NPR>Wool is a natural fiber, which is inherently flame resistant, forming a char 
 that will neither melt nor drip.  Wool is also rapidly renewable and resilient, 
 and due to the scaly character of its fiber it scatters optical light, thus 
 reducing soiling visibility.  Wool is highly recommended for shipboard use due 
-to it being inherently flame resistant.</NPR><BRK/>
-<BRK/>
+to it being inherently flame resistant.</NPR><BRK />
+<BRK />
 <NPR>Wool, cotton, jute, hemp and sisal carpets may not meet accepted performance 
 requirements of commercial carpet.  Verify suitability, availability and adequate 
-competition before specifying these products.</NPR><BRK/>
-<BRK/>
+competition before specifying these products.</NPR><BRK />
+<BRK />
 <NPR>Flexible and modular components, like carpet tile, reduce the labor and materials 
-costs related to operations and maintenance, churn, and future renovations.</NPR><BRK/>
-<BRK/>
+costs related to operations and maintenance, churn, and future renovations.</NPR><BRK />
+<BRK />
 <NPR>Continuous dye process uses two to three times less water than batch dyeing 
-during manufacture.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+during manufacture.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Furnish first quality carpet that is free of visual blemishes, streaks, poorly dyed areas, fuzzing of pile yarn, 
 spots or stains, and other physical and manufacturing defects.  Provide carpet materials and treatments as reasonably 
 nonallergenic and free of other recognized health hazards.  Provide a static control construction on all grade 
 carpets which gives adequate durability and performance.  Submit manufacturer's catalog data and printed documentation 
 stating physical characteristics, durability, resistance to fading, and flame resistance characteristics for 
 each type of carpet material and installation accessory.  Submit manufacturer's Product Data for 1) Carpet, 2) 
-Moldings, and 3) Carpet Cushion.  Also, submit Samples of the following:</TXT><BRK/>
-<BRK/>
+Moldings, and 3) Carpet Cushion.  Also, submit Samples of the following:</TXT><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  Carpet:  [Two] [_____] "Production Quality" samples<MET> 450 by 450 mm</MET><ENG> 18 by 18 inches</ENG> of each carpet 
-proposed for use, showing quality, pattern, and color specified</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Moldings:  [Two] [_____] samples of each type minimum<MET> 300 mm</MET><ENG> 12 inches</ENG> long</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Carpet Cushion:  [Two] [_____] samples minimum<MET> 150 by 150 mm</MET><ENG> 6 by 6 inches</ENG> </LST><BRK/>
-<BRK/>
-<SPT><TTL>Indoor Air Quality Requirements</TTL><BRK/>
-<BRK/>
+proposed for use, showing quality, pattern, and color specified</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Moldings:  [Two] [_____] samples of each type minimum<MET> 300 mm</MET><ENG> 12 inches</ENG> long</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Carpet Cushion:  [Two] [_____] samples minimum<MET> 150 by 150 mm</MET><ENG> 6 by 6 inches</ENG> </LST><BRK />
+<BRK />
+<SPT outline="2.1.1"><TTL>Indoor Air Quality Requirements</TTL><BRK />
+<BRK />
 <TXT>Products must meet emissions requirements of <RID>CDPH SECTION 01350</RID>.  Provide certification or validation of indoor 
-air quality for carpet.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Physical Characteristics for [Broadloom] [Modular Tile] [Entrance] Carpet</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+air quality for carpet.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2"><TTL>Physical Characteristics for [Broadloom] [Modular Tile] [Entrance] Carpet</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Copy this paragraph including subparagraphs if more than one carpet is 
 specified.  Designate each carpet type with a letter or number symbol.  Use 
 the same designations to key carpets to locations on the drawings or in Section 
-<SRF>09 06 00</SRF> SCHEDULES FOR FINISHES.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<SPT><TTL>Carpet Construction</TTL><BRK/>
-<BRK/>
-<TXT>[Tufted] [Woven] [Bonded] [Needlebond] [Needle Felt] [_____]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Type</TTL><BRK/>
-<BRK/>
+<SRF>09 06 00</SRF> SCHEDULES FOR FINISHES.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="2.1.2.1"><TTL>Carpet Construction</TTL><BRK />
+<BRK />
+<TXT>[Tufted] [Woven] [Bonded] [Needlebond] [Needle Felt] [_____]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.2"><TTL>Type</TTL><BRK />
+<BRK />
 <TXT>[Broadloom<MET> [3.6] [1.8] m</MET><ENG> [12] [6] feet</ENG> minimum usable carpet width [with exception of corridors] [and] [stairs] 
 [_____].][Modular tile<MET> [450 by 450] [500 by 500] [600 by 600] [914 by 305] [1219 by 305] [_____] mm square</MET><ENG> [18 
 by 18] [20 by 20] [24 by 24] [36 by 12] [48 by 12] [_____] inch square</ENG> with 0.15 percent growth/shrink rate in 
 accordance with <RID>ISO 2551</RID> or <RID>JIS L 1021-10</RID>.]  [Entrance<MET> [450 by 450] [_____] mm</MET><ENG> [18 by 18] [_____] inch</ENG> square<MET>
- [3.6] [1.8] m</MET><ENG> [12] [6] feet</ENG> width [_____] mat size.]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Pile Type</TTL><BRK/>
-<BRK/>
-<TXT>[Level-loop] [Multilevel loop] [Cut and loop] [Frieze] [Cut pile] [Random sheared] [Level tip shear]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Pile Fiber</TTL><BRK/>
-<BRK/>
-<TXT>Commercial 100 percent branded (federally registered trademark) [nylon continuous filament] [nylon staple].</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Gauge or Pitch</TTL><BRK/>
-<BRK/>
-<TXT>Minimum [_____]<MET> mm</MET><ENG> inch</ENG> in accordance with <RID>JIS L 1021-5</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Stitches or Rows/Wires</TTL><BRK/>
-<BRK/>
-<TXT>Minimum [_____] per<MET> square meter</MET><ENG> square inch</ENG></TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Surface Pile Weight</TTL><BRK/>
-<BRK/>
+ [3.6] [1.8] m</MET><ENG> [12] [6] feet</ENG> width [_____] mat size.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.3"><TTL>Pile Type</TTL><BRK />
+<BRK />
+<TXT>[Level-loop] [Multilevel loop] [Cut and loop] [Frieze] [Cut pile] [Random sheared] [Level tip shear]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.4"><TTL>Pile Fiber</TTL><BRK />
+<BRK />
+<TXT>Commercial 100 percent branded (federally registered trademark) [nylon continuous filament] [nylon staple].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.5"><TTL>Gauge or Pitch</TTL><BRK />
+<BRK />
+<TXT>Minimum [_____]<MET> mm</MET><ENG> inch</ENG> in accordance with <RID>JIS L 1021-5</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.6"><TTL>Stitches or Rows/Wires</TTL><BRK />
+<BRK />
+<TXT>Minimum [_____] per<MET> square meter</MET><ENG> square inch</ENG></TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.7"><TTL>Surface Pile Weight</TTL><BRK />
+<BRK />
 <TXT>Minimum [_____]<MET> kg/square meter</MET><ENG> ounces per square yard</ENG>.  This does not include weight of backings.  Determine 
-weight in accordance with <RID>JIS L 1021-4</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Pile Thickness</TTL><BRK/>
-<BRK/>
-<TXT>Minimum [_____]<MET> mm</MET><ENG> inch</ENG> in accordance with <RID>JIS L 1021-3</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Pile Density</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Pile Density = 36 x Pile Weight/Pile Thickness.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>Minimum [_____]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Dye Method</TTL><BRK/>
-<BRK/>
-<TXT>[Solution dyed] [Stock dyed] [Yarn (or Skein) dyed] [Piece dyed] [Space dyed] [Continuous dyed]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Backing Materials</TTL><BRK/>
-<BRK/>
+weight in accordance with <RID>JIS L 1021-4</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.8"><TTL>Pile Thickness</TTL><BRK />
+<BRK />
+<TXT>Minimum [_____]<MET> mm</MET><ENG> inch</ENG> in accordance with <RID>JIS L 1021-3</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.9"><TTL>Pile Density</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Pile Density = 36 x Pile Weight/Pile Thickness.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Minimum [_____]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.10"><TTL>Dye Method</TTL><BRK />
+<BRK />
+<TXT>[Solution dyed] [Stock dyed] [Yarn (or Skein) dyed] [Piece dyed] [Space dyed] [Continuous dyed]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.11"><TTL>Backing Materials</TTL><BRK />
+<BRK />
 <TXT>Provide primary backing materials like [those customarily used and accepted by the trade for each type of carpet] 
 [polypropylene] [synthetic material]  [rubber] [jute] [cotton] [_____].  Provide secondary backing to suit project 
-requirements of those customarily used and accepted by the trade for each type of carpet.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Attached Cushion</TTL><BRK/>
-<BRK/>
+requirements of those customarily used and accepted by the trade for each type of carpet.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.12"><TTL>Attached Cushion</TTL><BRK />
+<BRK />
 <TXT>Provide an attached cushion [chemically frothed polyurethane with minimum weight of<MET> 0.610 kg/sq. m</MET><ENG> 18 oz/sq. 
 yard</ENG>, minimum density of<MET> 176 kg/cubic m</MET><ENG> 11 lb/cubic foot</ENG>] [mechanically frothed polyurethane with minimum weight 
 of<MET> 0.745 kg/sq. m</MET><ENG> 22 oz/sq. yard</ENG>, minimum density of<MET> 224 kg/cubic m</MET><ENG> 14 lb/cubic foot</ENG>, minimum thickness of<MET> 2.5 
 mm</MET><ENG> 0.100 inch</ENG>, and maximum compression resistance of<MET> 34.5 kPa</MET><ENG> 5 psi</ENG>, and compression set of 15 percent in accordance 
 with <RID>JIS K 7134</RID>].  Do not exceed the maximum ash content of 50 percent.  Pass the accelerated aging test in accordance 
-with [<RID>JIS K 7134</RID>] for the cushion.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></SPT><SPT><TTL>PERFORMANCE REQUIREMENTS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Texture Appearance Retention Rating (TARR)</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+with [<RID>JIS K 7134</RID>] for the cushion.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="2.2"><TTL>PERFORMANCE REQUIREMENTS</TTL><BRK />
+<BRK />
+<SPT outline="2.2.1"><TTL>Texture Appearance Retention Rating (TARR)</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Use the chart below to identify the recommended minimum use TARR traffic 
 level classification that corresponds to the end-use application.  These classifications 
 are based on typical usage.  Use a higher classification if traffic exposure 
 is expected to be greater than usual.  Provide a TARR traffic level classification 
-for each carpet used on a project.<BRK/>
-<BRK/>
-<HL1>END-USE CLASSIFICATION CHART</HL1><BRK/>
-  <HL2>End-Use Application</HL2>                   <HL2>Minimum Use <BRK/>
-                                       Classification</HL2><BRK/>
-BANKS/CREDIT UNIONS<BRK/>
-  Entrances and customer banking space        Severe<BRK/>
-  Open office space, private offices           Heavy<BRK/>
-<BRK/>
-BOWLING ALLEYS<BRK/>
-  Concourses (excluding food service,<BRK/>
-   working and storage areas)                 Severe<BRK/>
-<BRK/>
-CHAPELS AND OTHER RELIGIOUS FACILITIES<BRK/>
-  Educational wing, worship areas              Heavy<BRK/>
-<BRK/>
-CHILD CARE CENTERS<BRK/>
-  All areas                                   Severe<BRK/>
-<BRK/>
-CLUBS<BRK/>
-  All areas                                   Severe<BRK/>
-<BRK/>
-HOUSING<BRK/>
-  <HL2>Single Family</HL2><BRK/>
-  Family rooms,living rooms,dining rooms       Heavy<BRK/>
-  Sleeping rooms                               Heavy<BRK/>
-  Combination living/sleeping rooms            Heavy<BRK/>
-<BRK/>
-  <HL2>Multi-Family</HL2><BRK/>
-  Common areas (lobbies,lounges)              Severe<BRK/>
-  Corridors                                   Severe<BRK/>
-  Family rooms,living rooms,dining rooms       Heavy<BRK/>
-  Multi-purpose areas                         Severe<BRK/>
-  Sleeping rooms                               Heavy<BRK/>
-  Combination living/sleeping rooms            Heavy<BRK/>
-<BRK/>
-LABORATORY/RESEARCH FACILITIES<BRK/>
-  Computer work areas                         Severe<BRK/>
-  Closed private office                        Heavy<BRK/>
-  Open work areas, dry labs                   Severe<BRK/>
-<BRK/>
-LIBRARIES<BRK/>
-  Conference rooms, corridors                 Severe<BRK/>
-<BRK/>
-LODGING FACILITIES/DORMITORIES<BRK/>
-  Conference rooms                            Severe<BRK/>
-  Combination living/sleeping rooms           Severe<BRK/>
-  Dining facilities                           Severe<BRK/>
-  Offices                                      Heavy<BRK/>
-  Public areas(lobbies,lounges,TV rooms,<BRK/>
-   day rooms)                                 Severe<BRK/>
-  Sleeping rooms                               Heavy<BRK/>
-<BRK/>
-MEDICAL FACILITIES <BRK/>
-(excluding patient treatment areas)<BRK/>
-  Assisted living areas,classrooms             Heavy<BRK/>
-  Chapels, consultation rooms                  Heavy<BRK/>
-  Clinical waiting areas (outpatient,<BRK/>
-   pharmacy,ancillary zone only)              Severe<BRK/>
-  Corridors,dining areas,elevators            Severe<BRK/>
-  Entrance areas<BRK/>
-   (entry mats should be used)                Severe<BRK/>
-  Libraries                                    Heavy<BRK/>
-  Lobbies                                     Severe<BRK/>
-  Lounges                                      Heavy<BRK/>
-  Offices (private,semi-private)              Severe<BRK/>
-  Patient rooms                                Heavy<BRK/>
-  Playrooms (OB/GYN,Pediatric clinics)        Severe<BRK/>
-  Staff sleeping and watch areas               Heavy<BRK/>
-<BRK/>
-MILITARY HOUSING<BRK/>
-  <HL2>Family Housing</HL2><BRK/>
-  Flag                                         Heavy<BRK/>
-  Single unit                                  Heavy<BRK/>
-  Multi-unit (corridors,sleeping/living <BRK/>
-   rooms)                                      Heavy<BRK/>
-  Multi-unit (public areas,lobbies,lounges)   Severe<BRK/>
-<BRK/>
-  <HL2>Bachelor Officer Quarters</HL2><BRK/>
-  Sleeping/living rooms                        Heavy<BRK/>
-  Public areas (lobbies,lounges)              Severe<BRK/>
-  Dining Facilities                           Severe<BRK/>
-  Offices                                      Heavy<BRK/>
-<BRK/>
-  <HL2>Bachelor Enlisted Quarters</HL2><BRK/>
-  Sleeping/living rooms                       Severe<BRK/>
-  Public areas (lobbies,lounges)              Severe<BRK/>
-  Dining Facilities                           Severe<BRK/>
-  Offices                                      Heavy<BRK/>
-<BRK/>
-MUSIC OR DRAMA CENTERS<BRK/>
-  All areas                                   Severe<BRK/>
-<BRK/>
-OFFICES (including administrative areas)<BRK/>
-  Closed private offices                       Heavy<BRK/>
-  Corridors                                   Severe<BRK/>
-  Conference rooms                             Heavy<BRK/>
-  Open plan office (circulation areas)        Severe<BRK/>
-  Open plan office (work areas)                Heavy<BRK/>
-<BRK/>
-RESTAURANTS (excluding work spaces)<BRK/>
-  Dining areas                                Severe<BRK/>
-  Cafeteria-type dining areas,enlisted <BRK/>
-   canteens                                   Severe<BRK/>
-  Office areas                                 Heavy<BRK/>
-<BRK/>
-RETAIL STORES<BRK/>
-  Offices                                      Heavy<BRK/>
-  Restaurant and cafeteria dining areas       Severe<BRK/>
-  Sales areas                                 Severe<BRK/>
-<BRK/>
-THEATERS<BRK/>
-  All areas                                   Severe<BRK/>
-<BRK/>
-TRAINING BUILDINGS/EDUCATIONAL FACILITIES <BRK/>
-(including dependents' schools)<BRK/>
-  Classrooms,corridors                        Severe<BRK/>
-  Staff/administration offices                 Heavy<BRK/>
-<BRK/>
-YOUTH CENTERS<BRK/>
-  All areas                                   Severe</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+for each carpet used on a project.<BRK />
+<BRK />
+<HL1>END-USE CLASSIFICATION CHART</HL1><BRK />
+  <HL2>End-Use Application</HL2>                   <HL2>Minimum Use <BRK />
+                                       Classification</HL2><BRK />
+BANKS/CREDIT UNIONS<BRK />
+  Entrances and customer banking space        Severe<BRK />
+  Open office space, private offices           Heavy<BRK />
+<BRK />
+BOWLING ALLEYS<BRK />
+  Concourses (excluding food service,<BRK />
+   working and storage areas)                 Severe<BRK />
+<BRK />
+CHAPELS AND OTHER RELIGIOUS FACILITIES<BRK />
+  Educational wing, worship areas              Heavy<BRK />
+<BRK />
+CHILD CARE CENTERS<BRK />
+  All areas                                   Severe<BRK />
+<BRK />
+CLUBS<BRK />
+  All areas                                   Severe<BRK />
+<BRK />
+HOUSING<BRK />
+  <HL2>Single Family</HL2><BRK />
+  Family rooms,living rooms,dining rooms       Heavy<BRK />
+  Sleeping rooms                               Heavy<BRK />
+  Combination living/sleeping rooms            Heavy<BRK />
+<BRK />
+  <HL2>Multi-Family</HL2><BRK />
+  Common areas (lobbies,lounges)              Severe<BRK />
+  Corridors                                   Severe<BRK />
+  Family rooms,living rooms,dining rooms       Heavy<BRK />
+  Multi-purpose areas                         Severe<BRK />
+  Sleeping rooms                               Heavy<BRK />
+  Combination living/sleeping rooms            Heavy<BRK />
+<BRK />
+LABORATORY/RESEARCH FACILITIES<BRK />
+  Computer work areas                         Severe<BRK />
+  Closed private office                        Heavy<BRK />
+  Open work areas, dry labs                   Severe<BRK />
+<BRK />
+LIBRARIES<BRK />
+  Conference rooms, corridors                 Severe<BRK />
+<BRK />
+LODGING FACILITIES/DORMITORIES<BRK />
+  Conference rooms                            Severe<BRK />
+  Combination living/sleeping rooms           Severe<BRK />
+  Dining facilities                           Severe<BRK />
+  Offices                                      Heavy<BRK />
+  Public areas(lobbies,lounges,TV rooms,<BRK />
+   day rooms)                                 Severe<BRK />
+  Sleeping rooms                               Heavy<BRK />
+<BRK />
+MEDICAL FACILITIES <BRK />
+(excluding patient treatment areas)<BRK />
+  Assisted living areas,classrooms             Heavy<BRK />
+  Chapels, consultation rooms                  Heavy<BRK />
+  Clinical waiting areas (outpatient,<BRK />
+   pharmacy,ancillary zone only)              Severe<BRK />
+  Corridors,dining areas,elevators            Severe<BRK />
+  Entrance areas<BRK />
+   (entry mats should be used)                Severe<BRK />
+  Libraries                                    Heavy<BRK />
+  Lobbies                                     Severe<BRK />
+  Lounges                                      Heavy<BRK />
+  Offices (private,semi-private)              Severe<BRK />
+  Patient rooms                                Heavy<BRK />
+  Playrooms (OB/GYN,Pediatric clinics)        Severe<BRK />
+  Staff sleeping and watch areas               Heavy<BRK />
+<BRK />
+MILITARY HOUSING<BRK />
+  <HL2>Family Housing</HL2><BRK />
+  Flag                                         Heavy<BRK />
+  Single unit                                  Heavy<BRK />
+  Multi-unit (corridors,sleeping/living <BRK />
+   rooms)                                      Heavy<BRK />
+  Multi-unit (public areas,lobbies,lounges)   Severe<BRK />
+<BRK />
+  <HL2>Bachelor Officer Quarters</HL2><BRK />
+  Sleeping/living rooms                        Heavy<BRK />
+  Public areas (lobbies,lounges)              Severe<BRK />
+  Dining Facilities                           Severe<BRK />
+  Offices                                      Heavy<BRK />
+<BRK />
+  <HL2>Bachelor Enlisted Quarters</HL2><BRK />
+  Sleeping/living rooms                       Severe<BRK />
+  Public areas (lobbies,lounges)              Severe<BRK />
+  Dining Facilities                           Severe<BRK />
+  Offices                                      Heavy<BRK />
+<BRK />
+MUSIC OR DRAMA CENTERS<BRK />
+  All areas                                   Severe<BRK />
+<BRK />
+OFFICES (including administrative areas)<BRK />
+  Closed private offices                       Heavy<BRK />
+  Corridors                                   Severe<BRK />
+  Conference rooms                             Heavy<BRK />
+  Open plan office (circulation areas)        Severe<BRK />
+  Open plan office (work areas)                Heavy<BRK />
+<BRK />
+RESTAURANTS (excluding work spaces)<BRK />
+  Dining areas                                Severe<BRK />
+  Cafeteria-type dining areas,enlisted <BRK />
+   canteens                                   Severe<BRK />
+  Office areas                                 Heavy<BRK />
+<BRK />
+RETAIL STORES<BRK />
+  Offices                                      Heavy<BRK />
+  Restaurant and cafeteria dining areas       Severe<BRK />
+  Sales areas                                 Severe<BRK />
+<BRK />
+THEATERS<BRK />
+  All areas                                   Severe<BRK />
+<BRK />
+TRAINING BUILDINGS/EDUCATIONAL FACILITIES <BRK />
+(including dependents' schools)<BRK />
+  Classrooms,corridors                        Severe<BRK />
+  Staff/administration offices                 Heavy<BRK />
+<BRK />
+YOUTH CENTERS<BRK />
+  All areas                                   Severe</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide carpet with a greater than or equal to [3.0 (Heavy)] [3.5 (Severe)] TARR traffic level classification 
-in accordance with <RID>JIS L 1021-13</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Static Control</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+in accordance with <RID>JIS L 1021-13</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2"><TTL>Static Control</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Specify static control to meet project requirements.  Installations for 
 critical areas such as computer rooms will use the 2.0 kV requirements.  Static 
 protected carpets for most commercial installations are normally rated at 3.5 
-kV.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+kV.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide static control to permanently regulate static buildup to less than [3.5] [2.0] [_____] kV when tested 
-at 20 percent relative humidity and<MET> 21 degrees C</MET><ENG> 70 degrees F</ENG> in accordance with <RID>JIS L 4406</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Flammability and Critical Radiant Flux Requirements</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+at 20 percent relative humidity and<MET> 21 degrees C</MET><ENG> 70 degrees F</ENG> in accordance with <RID>JIS L 4406</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.3"><TTL>Flammability and Critical Radiant Flux Requirements</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Choice of critical radiant flux level as it applies to building type 
 and area of application will be made in accordance with the latest edition of 
 NFPA 101.  Wherever the use of Class II (0.22) watts finish is required, Class 
-I (0.45) watts will be permitted.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+I (0.45) watts will be permitted.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Comply with <ADD><RID>ASTM D2859</RID> or </ADD><RID>ASTM E648</RID>.  Provide carpet in corridors and exits with a minimum average critical radiant 
 flux of [0.22] [0.45] watts per square centimeter when tested in accordance with <ADD><RID>ASTM D2859</RID> or </ADD><RID>ASTM E648</RID>.  Flame 
 time earlier than 20 seconds, burned yarn shorter than 10 mm in accordance with <RID>JIS L 4406</RID>. Carpet shall be flameproof 
-in accordance with Japan Fire Defense Law and prescribed in Fire Service Act (Act No. 186 of 1948).</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Tuft Bind</TTL><BRK/>
-<BRK/>
+in accordance with Japan Fire Defense Law and prescribed in Fire Service Act (Act No. 186 of 1948).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.4"><TTL>Tuft Bind</TTL><BRK />
+<BRK />
 <TXT>Comply with <RID>JIS L 4405</RID> for tuft bind force required to pull a tuft or loop free from carpet backing with a minimum 
 [<MET>40 N </MET><ENG>10 pound </ENG>average force for loop pile broadloom] [<MET>18 N </MET><ENG>3 pound </ENG>average force for cut pile broadloom] [<MET>36 
 N </MET><ENG>8 pound </ENG>average force for modular carpet tile]. Provide tuft bind force required to pull a tuft or loop free 
-from carpet backing with a minimum 24.5 N average force for loop pile in accordance with <RID>JIS L 4406</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Colorfastness to Crocking</TTL><BRK/>
-<BRK/>
-<TXT>Comply dry and wet crocking with <RID>JIS L 0849</RID> for all colors.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Colorfastness to Light</TTL><BRK/>
-<BRK/>
-<TXT>Comply colorfastness to light with <RID>JIS L 0805</RID>/ <RID>JIS L 4406</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Colorfastness to Water</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Include this test when specifying carpet constructed of yarn dyed fibers.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+from carpet backing with a minimum 24.5 N average force for loop pile in accordance with <RID>JIS L 4406</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.5"><TTL>Colorfastness to Crocking</TTL><BRK />
+<BRK />
+<TXT>Comply dry and wet crocking with <RID>JIS L 0849</RID> for all colors.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.6"><TTL>Colorfastness to Light</TTL><BRK />
+<BRK />
+<TXT>Comply colorfastness to light with <RID>JIS L 0805</RID>/ <RID>JIS L 4406</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.7"><TTL>Colorfastness to Water</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Include this test when specifying carpet constructed of yarn dyed fibers.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Comply colorfastness to water with <RID>JIS L 1021-10</RID> and with a minimum 4.0 gray scale rating and a minimum 4.0 transfer 
-scale rating.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Delamination Strength</TTL><BRK/>
-<BRK/>
-<TXT>Provide delamination strength for tufted carpet with a secondary back of minimum<MET> 440 N/m</MET><ENG> 2.5 lbs/inch</ENG>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Antimicrobial</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+scale rating.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.8"><TTL>Delamination Strength</TTL><BRK />
+<BRK />
+<TXT>Provide delamination strength for tufted carpet with a secondary back of minimum<MET> 440 N/m</MET><ENG> 2.5 lbs/inch</ENG>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.9"><TTL>Antimicrobial</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Include when required for a specific use such as child care, dining facilities 
-or hospitals.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+or hospitals.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Nontoxic antimicrobial treatment in accordance with <RID>JIS L 1902</RID> guaranteed by the carpet manufacturer to last 
-the life of the carpet.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>CARPET CUSHION</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+the life of the carpet.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3"><TTL>CARPET CUSHION</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Carpet cushions are EPA designated products for recycled content.  Use 
 materials with recycled content where appropriate for use.  Verify suitability, 
 availability within the region, cost effectiveness and adequate competition 
@@ -587,147 +587,147 @@ before specifying product recycled content requirements. A resource that can
 be used to identify products with recycle content is the "Comprehensive Procurement 
 Guidelines (CPG)" page within the EPA's website at http://www.epa.gov. Other 
 products with recycled content are also acceptable when meeting all requirements 
-of this specification.</NPR><BRK/>
-<BRK/>
+of this specification.</NPR><BRK />
+<BRK />
 <NPR>Research shows the product is available from US national manufacturers above 
 the minimum recycled content percentages shown below.  Some manufacturers and 
 regions have higher percentages. Based on research, insert desired minimum percentages 
-into the empty set of brackets.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Select the appropriate carpet cushion.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-[<SPT><TTL>Fiber Cushion</TTL><BRK/>
-<BRK/>
+into the empty set of brackets.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Select the appropriate carpet cushion.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+[<SPT outline="2.3.1"><TTL>Fiber Cushion</TTL><BRK />
+<BRK />
 <TXT>[Rubberized hair, mothproofed and sterilized] [Rubberized jute [with minimum 40 percent recycled content], mothproofed 
-and sterilized] [Synthetic with minimum [___] percent recycled content] [Resinated, recycled textile].</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Weight</TTL><BRK/>
-<BRK/>
-<TXT><MET>[_____] g/sq.m</MET><ENG>[_____] oz./sq. yd.</ENG></TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Thickness</TTL><BRK/>
-<BRK/>
-<TXT><MET>[_____] mm</MET><ENG>[_____] inches</ENG> plus 5 percent maximum</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Density</TTL><BRK/>
-<BRK/>
-<TXT><MET>[_____] kg/cu.m</MET><ENG>[_____] lb/cu.ft.</ENG></TXT><BRK/>
-<BRK/></SPT>
-</SPT>][<SPT><TTL>Rubber Cushion</TTL><BRK/>
-<BRK/>
-<TXT>[Flat] [Rippled waffle] [Textured flat] [Reinforced] [, with minimum 60 percent recycled content.]</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Weight</TTL><BRK/>
-<BRK/>
-<TXT><MET>[_____] g/sq.m</MET><ENG>[_____] oz./sq. yd.</ENG></TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Thickness</TTL><BRK/>
-<BRK/>
-<TXT><MET>[_____] mm</MET><ENG>[_____] inches</ENG> plus 5 percent maximum</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Density</TTL><BRK/>
-<BRK/>
-<TXT><MET>[_____] kg/cu.m</MET><ENG>[_____] lb/cu.ft.</ENG></TXT><BRK/>
-<BRK/></SPT>
-</SPT>][<SPT><TTL>Polyurethane-Foam Cushion</TTL><BRK/>
-<BRK/>
-<TXT>[Grafted prime] [Densified] [Bonded] [Mechanically frothed] [, with minimum 15 percent recycled content].</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Thickness</TTL><BRK/>
-<BRK/>
-<TXT><MET>[_____] mm</MET><ENG>[_____] inches</ENG> plus 5 percent maximum</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Density</TTL><BRK/>
-<BRK/>
-<TXT>[_____] kg/cu.m<ENG>[_____] lb/cu.ft.</ENG></TXT><BRK/>
-<BRK/></SPT>
-</SPT>]<SPT><TTL>Performance Requirements - Critical Radiant Flux</TTL><BRK/>
-<BRK/>
+and sterilized] [Synthetic with minimum [___] percent recycled content] [Resinated, recycled textile].</TXT><BRK />
+<BRK />
+<SPT outline="2.3.1.1"><TTL>Weight</TTL><BRK />
+<BRK />
+<TXT><MET>[_____] g/sq.m</MET><ENG>[_____] oz./sq. yd.</ENG></TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.1.2"><TTL>Thickness</TTL><BRK />
+<BRK />
+<TXT><MET>[_____] mm</MET><ENG>[_____] inches</ENG> plus 5 percent maximum</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.1.3"><TTL>Density</TTL><BRK />
+<BRK />
+<TXT><MET>[_____] kg/cu.m</MET><ENG>[_____] lb/cu.ft.</ENG></TXT><BRK />
+<BRK /></SPT>
+</SPT>][<SPT outline="2.3.2"><TTL>Rubber Cushion</TTL><BRK />
+<BRK />
+<TXT>[Flat] [Rippled waffle] [Textured flat] [Reinforced] [, with minimum 60 percent recycled content.]</TXT><BRK />
+<BRK />
+<SPT outline="2.3.2.1"><TTL>Weight</TTL><BRK />
+<BRK />
+<TXT><MET>[_____] g/sq.m</MET><ENG>[_____] oz./sq. yd.</ENG></TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.2.2"><TTL>Thickness</TTL><BRK />
+<BRK />
+<TXT><MET>[_____] mm</MET><ENG>[_____] inches</ENG> plus 5 percent maximum</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.2.3"><TTL>Density</TTL><BRK />
+<BRK />
+<TXT><MET>[_____] kg/cu.m</MET><ENG>[_____] lb/cu.ft.</ENG></TXT><BRK />
+<BRK /></SPT>
+</SPT>][<SPT outline="2.3.3"><TTL>Polyurethane-Foam Cushion</TTL><BRK />
+<BRK />
+<TXT>[Grafted prime] [Densified] [Bonded] [Mechanically frothed] [, with minimum 15 percent recycled content].</TXT><BRK />
+<BRK />
+<SPT outline="2.3.3.1"><TTL>Thickness</TTL><BRK />
+<BRK />
+<TXT><MET>[_____] mm</MET><ENG>[_____] inches</ENG> plus 5 percent maximum</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.3.2"><TTL>Density</TTL><BRK />
+<BRK />
+<TXT>[_____] kg/cu.m<ENG>[_____] lb/cu.ft.</ENG></TXT><BRK />
+<BRK /></SPT>
+</SPT>]<SPT outline="2.3.4"><TTL>Performance Requirements - Critical Radiant Flux</TTL><BRK />
+<BRK />
 <TXT>Provide carpet cushion in corridors and exits with a minimum average critical radiant flux of [0.22][0.45] watts 
-per square centimeter when tested in accordance with <RID>ASTM E648</RID>.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>ADHESIVES AND CONCRETE PRIMER</TTL><BRK/>
-<BRK/>
+per square centimeter when tested in accordance with <RID>ASTM E648</RID>.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.4"><TTL>ADHESIVES AND CONCRETE PRIMER</TTL><BRK />
+<BRK />
 <TXT>Comply with applicable regulations regarding toxic and hazardous materials.  Provide water resistant, mildew 
 resistant, nonflammable, and nonstaining adhesives and concrete primers for carpet installation as required by 
 the carpet manufacturer.  Provide release adhesive for modular tile carpet as recommended by the carpet manufacturer.  
 Provide adhesives flashpoint of minimum<MET> 60 degrees C</MET><ENG> 140 degrees F</ENG> in accordance with <RID>JIS K 2265-1</RID>.  Non-aerosol 
 adhesive, aerosol adhesives, and concrete primer products used on the interior of the building (defined as inside 
-of the weatherproofing system) must meet emission requirements of F 4-Star.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>MOLDINGS</TTL><BRK/>
-<BRK/>
+of the weatherproofing system) must meet emission requirements of F 4-Star.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5"><TTL>MOLDINGS</TTL><BRK />
+<BRK />
 <TXT>Provide carpet moldings where floor covering material changes or carpet edge does not abut a vertical surface.  
 Provide [a heavy-duty [vinyl] [rubber] molding designed for the type of carpet being installed.  Provide floor 
 flange of a minimum<MET> [38 mm]</MET><ENG> [1 1/2 inches]</ENG> wide.  Provide color to match [resilient base] [_____].] [an aluminum 
 molding, pinless clamp-down type, designed for the type of carpet being installed.  Provide [natural color anodized] 
 [prefinished color [_____] finish.  Provide a floor flange of a minimum<MET> 38 mm</MET><ENG> 1-1/2 inch</ENG> wide and face a minimum<MET>
- 16 mm</MET><ENG> 5/8 inch</ENG> wide.]]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>TAPE</TTL><BRK/>
-<BRK/>
+ 16 mm</MET><ENG> 5/8 inch</ENG> wide.]]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.6"><TTL>TAPE</TTL><BRK />
+<BRK />
 <TXT>Provide tape for seams as recommended by the carpet manufacturer for the type of seam used in broadloom installation.  
 Seam sealant must have a maximum VOC content of no more than 50 grams/liter.  Do not use sealants that contain 
-1,1,1-trichloroethane or toluene.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>COLOR, TEXTURE, AND PATTERN</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+1,1,1-trichloroethane or toluene.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7"><TTL>COLOR, TEXTURE, AND PATTERN</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE: Coordinate editing of color reference sentence(s) with the Government.  
 Generally the Section <SRF>09 06 00</SRF> SCHEDULES FOR FINISHES or drawings are used when 
 the project is designed by an Architect or Interior designer.  Select color 
 from manufacturer's standard colors or identified in this specification only 
-when the project has minimal finishes.<BRK/>
-<BRK/>
+when the project has minimal finishes.<BRK />
+<BRK />
 When the government directs that color be located in the drawings, add a note 
 that states:  "Where color is shown as being specific to one manufacturer, an 
 equivalent color by another manufacturer may be submitted for approval.  Manufacturers 
 and materials specified are not intended to limit the selection of equal colors 
 from other manufacturers.  The word "color" as used herein includes surface 
-color and pattern."<BRK/>
-<BRK/>
-When more than one type, pattern or color is specified identify location.<BRK/>
-<BRK/>
+color and pattern."<BRK />
+<BRK />
+When more than one type, pattern or color is specified identify location.<BRK />
+<BRK />
 When a manufacturer's name, stock number, pattern, and color is specified for 
-color, be certain that the product conforms to the specification, as edited. </NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>Provide color, texture, and pattern in accordance with this section or as indicated on the drawings.</TXT><BRK/>
-<BRK/></SPT>
-</PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
-<BRK/>
-<SPT><TTL>SURFACE PREPARATION</TTL><BRK/>
-<BRK/>
+color, be certain that the product conforms to the specification, as edited. </NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide color, texture, and pattern in accordance with this section or as indicated on the drawings.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>SURFACE PREPARATION</TTL><BRK />
+<BRK />
 <TXT>Do not install carpet on surfaces that are unsuitable and will prevent a proper installation.  Prepare subfloor 
 in accordance with flooring manufacturer's recommended instructions.  Repair holes, cracks, depressions, or rough 
 areas using material recommended by the carpet or adhesive manufacturer.  Free floor of any foreign materials 
 and sweep clean.  Before beginning work, test subfloor with glue and carpet to determine "open time" and bond.  
 Submit [three] [_____] copies of the manufacturer's printed Installation instructions for the carpet, including 
-Surface Preparation, seaming techniques, and recommended adhesives and tapes.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL><TST>MOISTURE AND ALKALINITY TESTS</TST></TTL><BRK/>
-<BRK/>
+Surface Preparation, seaming techniques, and recommended adhesives and tapes.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2"><TTL><TST>MOISTURE AND ALKALINITY TESTS</TST></TTL><BRK />
+<BRK />
 <TXT>Test concrete slab for moisture content in accordance with <RID>JIS A 1125</RID>.  Conform to manufacturer recommendations 
 for pH level and alkalinity of the concrete substrate.  Submit [three] [_____] copies of reports of Moisture 
 and Alkalinity Tests including content of concrete slab stating date of test, person conducting the test, and 
-the area tested.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>PREPARATION OF CONCRETE SUBFLOOR</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+the area tested.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3"><TTL>PREPARATION OF CONCRETE SUBFLOOR</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Coordinate need for sealing of concrete slab with project requirements 
-such as wet conditions which might occur in hospital care.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+such as wet conditions which might occur in hospital care.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Do not commence installation of the carpeting until concrete substrate is at least 90 days old.  Prepare the 
 concrete surfaces in accordance with the carpet manufacturer's instructions.  Match carpet, when required, and 
-adhesives to prevent off-gassing to a type of curing compounds, leveling agents, and concrete sealer.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>INSTALLATION</TTL><BRK/>
-<BRK/>
+adhesives to prevent off-gassing to a type of curing compounds, leveling agents, and concrete sealer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4"><TTL>INSTALLATION</TTL><BRK />
+<BRK />
 <TXT>Installation shall comply with <RID>MLIT SS Chapter 19</RID>. Isolate area of installation from rest of building.  Perform 
 all work by manufacturer's approved installers.  Conduct installation in accordance with the manufacturer's printed 
 instructions.  Protect edges of carpet meeting hard surface flooring with molding and install in accordance with 
@@ -737,12 +737,12 @@ ventilation during installation and for at least 72 hours following installation
 of furniture or equipment in carpeted area for 24 hours after installation.  Complete other work which would 
 damage the carpet prior to installation of carpet.  Submit [three] [_____] copies of <SUB>Installation Drawings</SUB> for 
 1) Carpet, 2) Carpet Cushion, and 3) Moldings indicating areas receiving carpet, carpet types, patterns, direction 
-of pile, location of seams, and locations of edge molding.</TXT><BRK/>
-<BRK/>
-<TXT>Do not install building construction materials that show visual evidence of biological growth.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Broadloom Installation</TTL><BRK/>
-<BRK/>
+of pile, location of seams, and locations of edge molding.</TXT><BRK />
+<BRK />
+<TXT>Do not install building construction materials that show visual evidence of biological growth.</TXT><BRK />
+<BRK />
+<SPT outline="3.4.1"><TTL>Broadloom Installation</TTL><BRK />
+<BRK />
 <TXT>Install broadloom carpet [direct glue down] [pre-applied adhesive glue down] smooth, uniform, and secure, with 
 a minimum of seams.  Apply regular, unnoticeable, and treated seams with a seam adhesive.  Run side seams toward 
 the light, where practical, and where such layout does not increase the number of seams.  Install breadths parallel, 
@@ -750,90 +750,90 @@ with carpet pile in the same direction.  Match patterns accurately.  Neatly cut 
 columns and ducts securely.  Locate seams at doorways parallel to and centered directly under doors.  Do not 
 make seams perpendicular to doors or at pivot points.  Provide seams at changes in directions of corridors to 
 follow the wall line parallel to the carpet direction.  Lay the carpet lengthwise down the corridors with widths 
-less than<MET> 1.8 m</MET><ENG> 6 feet</ENG>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Modular Tile Installation</TTL><BRK/>
-<BRK/>
+less than<MET> 1.8 m</MET><ENG> 6 feet</ENG>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.2"><TTL>Modular Tile Installation</TTL><BRK />
+<BRK />
 <TXT>Install modular tiles with [releasable] [manufacturer approved adhesive tab system] [permanent vinyl-compatible] 
 [_____] adhesive and snug joints.  Use [monolithic] [1/4 turn] [ashlar] [brick] [herringbone] [random] [_____] 
 installation method.  Comply with manufacturer installation instructions for required drying time of releasable 
 adhesive so it sets up properly.  Provide accessibility to the subfloor where required.  Carpet tile on stairs 
 and sloped surfaces must be installed with a more permanent installation method in accordance with the manufacturer's 
-instructions and with manufacturer recommended adhesives for this application. </TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Entrance Carpet Installation</TTL><BRK/>
-<BRK/>
+instructions and with manufacturer recommended adhesives for this application. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.3"><TTL>Entrance Carpet Installation</TTL><BRK />
+<BRK />
 <TXT>[Install tiles with [permanent vinyl-compatible] [releasable] adhesive and snug joints.  Use [monolithic] [1/4 
 turn] [ashlar] [brick] [random] installation method.]  [Install roll goods [direct glue down] [pre-applied adhesive 
 glue down] and smooth, uniform, and secure, with a minimum of seams.  Prepare regular, unnoticeable, and treated 
 seams with a seam adhesive.  Install breadths parallel, with carpet pile in the same direction.  Match patterns 
 accurately.  Neatly cut and fit, securely, cutouts at door jambs, columns, and ducts.  Locate seams at doorways 
 parallel to and centered directly under doors.  Do not make seams perpendicular to doors or at pivot points.]  
-[Cut mats to specified size and finish them with a tapered vinyl edge that is glued and sewn on.]</TXT><BRK/>
-<BRK/></SPT>
-[<SPT><TTL>Stretch-in Installation</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+[Cut mats to specified size and finish them with a tapered vinyl edge that is glued and sewn on.]</TXT><BRK />
+<BRK /></SPT>
+[<SPT outline="3.4.4"><TTL>Stretch-in Installation</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Installation with tack strips (stretch in method) over cushion can avoid 
 potential adhesive interaction with carpet backing.  It is appropriate for residential 
 and hospitality settings, in which rooms are relatively small and separate cushion 
-is used; but not feasible in large, open spaces.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+is used; but not feasible in large, open spaces.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide carpet tack strips wherever carpeting abuts vertical surfaces.  Install tackless carpet stripping by 
 nailing.  Place carpet cushion face-up, as recommended by cushion manufacturer, over entire floor area to be 
 carpeted with joints butted.  Do not use adhesives to attach carpet, cushion, or substrate.  Comply with carpet 
 manufacturer's instructions for installation.  Attach rubber or metal edge strip to substrate with adhesive for 
-transition when carpet meets other flooring materials or to finish carpet edge when required.</TXT><BRK/>
-<BRK/></SPT>
-]</SPT><SPT><TTL><SUB>CLEANING AND PROTECTION</SUB></TTL><BRK/>
-<BRK/>
+transition when carpet meets other flooring materials or to finish carpet edge when required.</TXT><BRK />
+<BRK /></SPT>
+]</SPT><SPT outline="3.5"><TTL><SUB>CLEANING AND PROTECTION</SUB></TTL><BRK />
+<BRK />
 <TXT>Submit [three] [_____] copies of carpet manufacturer's maintenance instructions describing recommended type of 
-cleaning equipment and material, spotting and cleaning methods, and cleaning cycles.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Cleaning</TTL><BRK/>
-<BRK/>
+cleaning equipment and material, spotting and cleaning methods, and cleaning cycles.</TXT><BRK />
+<BRK />
+<SPT outline="3.5.1"><TTL>Cleaning</TTL><BRK />
+<BRK />
 <TXT>As specified in Section <SRF>01 78 00</SRF> CLOSEOUT SUBMITTALS.  After installation of the carpet, remove debris, scraps, 
 and other foreign matter.  Remove soiled spots and adhesive from the face of the carpet with appropriate spot 
 remover.  Cut off and remove protruding face yarn.  Vacuum carpet clean with a high-efficiency particulate air 
-(HEPA) filtration vacuum.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Protection</TTL><BRK/>
-<BRK/>
+(HEPA) filtration vacuum.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5.2"><TTL>Protection</TTL><BRK />
+<BRK />
 <TXT>Protect the installed carpet from soiling and damage with heavy, reinforced, nonstaining kraft paper, plywood, 
 or hardboard sheets.  Lap and secure edges of kraft paper protection to provide a continuous cover.  Restrict 
-traffic for at least 48 hours.  Remove protective covering when directed by the Contracting Officer.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>REMNANTS</TTL><BRK/>
-<BRK/>
+traffic for at least 48 hours.  Remove protective covering when directed by the Contracting Officer.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.6"><TTL>REMNANTS</TTL><BRK />
+<BRK />
 <TXT>Manage waste as specified in the Waste Management Plan.  [Provide remnants remaining from the installation, consisting 
 of scrap pieces more than<MET> 600 mm</MET><ENG> 2 feet</ENG> in dimension with more than<MET> 0.6 square meters</MET><ENG> 6 square feet</ENG> total [to 
 the Government] [to local non-profit such as Habitat for Humanity as directed by the Government]].  [Set aside 
 and return non-retained scraps to manufacturer for recycling into new product] [Remove non-retained scraps from 
-site and recycle appropriately].</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>MAINTENANCE</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Extra Materials</TTL><BRK/>
-<BRK/>
+site and recycle appropriately].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.7"><TTL>MAINTENANCE</TTL><BRK />
+<BRK />
+<SPT outline="3.7.1"><TTL>Extra Materials</TTL><BRK />
+<BRK />
 <TXT>Provide extra material from same dye lot consisting of [full width continuous broadloom] [and] [uncut carpet 
 tiles] for future maintenance.  Provide a minimum of [three] [_____] percent of total<MET> square meters</MET><ENG> square yards</ENG>
- of each carpet type, pattern, and color.  [Furnish [three] [____] percent extra of total adhesive tabs.]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL><SUB>Maintenance Service<ADD> Information</ADD></SUB></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+ of each carpet type, pattern, and color.  [Furnish [three] [____] percent extra of total adhesive tabs.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.7.2"><TTL><SUB>Maintenance Service<ADD> Information</ADD></SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Maintenance agreements are standard practice in the building industry.  
 Under a green lease, when the customer no longer requires the use of the particular 
 product or requires an updated model, the manufacturer is obligated to reclaim 
-it and refurbish it or disassemble it for recycling as appropriate.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+it and refurbish it or disassemble it for recycling as appropriate.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Collect<ADD> <SUB>Maintenance Service</SUB></ADD> information from the manufacturer about [maintenance agreement] [green lease] options, 
 and submit to Contracting Officer.  Service <ADD>options </ADD>must reclaim materials for recycling and/or reuse.  Service <ADD>
 options </ADD>must not landfill or burn reclaimed materials. <DEL> </DEL><ADD> </ADD>When such a service is not available, seek local recyclers 
 to reclaim the materials.  Submit documentation of manufacturer's [maintenance agreement] [take-back program] 
 [green lease] for carpet.  Include contact information, summary of procedures, and the limitations and conditions 
-applicable to the project.  Indicate manufacturer's commitment to reclaim materials for recycling and reuse.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></PRT>    <END/><BRK/></SEC>
+applicable to the project.  Indicate manufacturer's commitment to reclaim materials for recycling and reuse.</TXT><BRK />
+<BRK /></SPT>
+</SPT></PRT>    <END /><BRK /></SEC>

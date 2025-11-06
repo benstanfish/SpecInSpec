@@ -1,0 +1,3440 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>07 60 00.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">07 60 00</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:54</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-07 60 00 (May 2017)<brk></brk>
+ Change 2 - 11/18<brk></brk>
+ ---------------------------<brk></brk>
+Preparing Activity: <pra>NAVFAC</pra> Superseding<brk></brk>
+ UFGS-07 60 00 (August 2008)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+References are in agreement with UMRL dated July 2019<brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 07 60 00</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>FLASHING AND SHEET METAL<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>05/17</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification has been edited to cover the minimum requirements and include Japanese products, 
+where feasible, for a standard Japan Engineer District project. The Designer of Record (DOR) shall tailor as 
+applicable to meet project specific requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>flashing and sheet metal work including gutters and 
+downspouts, scuppers, splash pans, and sheet metal roofing</scp>.<brk></brk>
+Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections. Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text. For bracketed items, choose applicable item(s) or insert 
+appropriate information.<brk></brk>
+Remove information and requirements not required in respective project, whether or not brackets are present.<brk></brk>
+Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The specified sheet metal roofing is the type commonly used for on-site fabrication which does not include 
+factory fabricated or preformed metal roofing. Preformed metal roofing is covered in other Division 7 sections. 
+Gravity roof ventilators, roof scuttles, louvers, and similar items are not included in this section. This guide 
+specification requires extensive editing when used with single ply roof systems in order to assure compatibility.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Show details of sheet metalwork on project drawings in accordance with the appropriate details in the Architectural 
+Sheet Metal Manual of the Sheet Metal and Air Conditioning Contractors National Association (SMACNA) 1793.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Coordinate specifications with the drawings so that drawing details and SMACNA 1793 requirements do not conflict 
+or repeat. Delete references to SMACNA 1793 when requirements are detailed on the drawings.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: On the drawings, show:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>1. Sheet metal roofing assembly, profile, extent, and slope. Specifying metal roofing for low slope (less than 
+2:12 pitch) roofs is discouraged due to a propensity of metal roofs to leak at lower pitches. Consider other 
+roof assemblies for 2:12 and lower slopes.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>2. Roof drain, base, counter open valley, and eave flashings<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>3. fascia, drip edges, miscellaneous trim.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>4. Gutters and downspouts.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>5. Expansion joint details - (interior and exterior) at walls, ceilings, floors, roof, and parapets. Provide 
+isometric details for expansion joint intersections.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Sheet metal color must be durable and long lasting and resist fading and chalking. Specify products such 
+as coated steel, anodized aluminum, or baked enamel. Painting in the field, other than touch-ups are prohibited. 
+This does not preclude the use of natural materials such as copper or aluminum, however avoid the use of copper 
+where drainage from copper will pass over exposed masonry, stonework, or other metal surfaces.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Galvanized steel is not permitted as an option to other metals specified. Galvanized steel may be specified for 
+temporary structures or where it may be satisfactory due to climatic conditions. Where galvanized steel is specified, 
+make changes to the text as follows:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Paragraph REFERENCES:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>ASTM A653/A653M<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>(Galvanized) by the Hot-Dip Process,<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Commercial Quality<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Paragraph MATERIALS Add: Galvanized Steel: ASTM A653/A653M, Coating G90.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Paragraph PROTECTION OF ALUMINUM: Require galvanized steel to be treated the same as aluminum, i.e., separated 
+from copper or protected.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Paragraph CONNECTIONS AND JOINTING: Require galvanized steel to be soldered.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Paragraph EXPANSION JOINTS: Expansion joints to be spaced at<met><pre class="display_MET">&lt;MET&gt;</pre> 12.0 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 40 foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> intervals for galvanized steel.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of the guide specification. The publications 
+are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
+date, and title.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Use the Reference Wizard's Check Reference feature when you add a Reference Identifier (RID) outside of the Section's 
+Reference Article to automatically place the reference in the Reference Article. Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>References not used in the text will automatically be deleted from this section of the project specification when 
+you choose to reconcile references in the publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are referred to within the text by 
+the basic designation only.</txt><brk></brk>
+<ref><del><pre class="display_DEL">&lt;DEL&gt;</pre><org>JAPANESE INDUSTRIAL STANDARDS (JIS)</org><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><org>JAPANESE STANDARDS ASSOCIATION (JSA)</org><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 6021<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2011) Liquid-applied Compounds for Waterproofing Membrane Coatings of Buildings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3302<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2019) Hot Dip Zinc Coated Steel Sheet and Strip<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2022) Hot Dip Zinc Coated Steel 
+Sheet and Strip<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 3100<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018) Copper and Copper Alloy Sheets, Plates and Strips<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 4305<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Cold-Rolled Stainless Steel Plate, Sheet and Strip (Amendment 1)<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 4000<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017) Aluminium and Aluminium Alloy Sheets, Strips and Plates (Amendment 1)<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017) 
+Aluminium and Aluminium Alloy Sheets, Strips and Plates (Amendment 1)<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 4040<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Aluminum and Aluminum Alloy Bars and Wires<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 2208<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2009) Asphalt Emulsion<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 5602<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2008) Determination of Reflectance of Solar Radiation by Paint Film<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 5675<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2008) High Solar Reflectance Paint for Roof<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 6720<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2008) Plastics-Vinyl Chloride Homopolymers and Copolymers (PVC)<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3282<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017) Solder-Chemical Composition and Shape<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3604<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) Inert Gas Arc Welding Standard for Aluminum<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.2"><ttl>1.2 GENERAL REQUIREMENTS</ttl><brk></brk>
+<txt>Finished sheet metal assemblies must form a weathertight enclosure without waves, warps, buckles, fastening stresses or distortion, while allowing 
+for expansion and contraction without damage to the system. The sheet metal installer is responsible for cutting, fitting, drilling, and other 
+operations in connection with sheet metal modifications required to accommodate the work of other trades. Coordinate installation of sheet metal 
+items used in conjunction with roofing with roofing work to permit continuous, uninterrupted roofing operations.</txt><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review Submittal Description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G." Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System. Only add a "G" to an item, if the submittal is sufficiently important or complex in context 
+of the project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
+tags may be used following the "G" designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" for District Office (Engineering 
+Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
+for Project Office. Codes following the "G" typically are not used for Navy, Air Force, and NASA projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>The "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook to 
+fulfill federally mandated sustainable requirements in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Locate the "S" submittal under the SD number that best describes the submittal item.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Choose the first bracketed item for Navy, Air Force and NASA projects, or choose the second bracketed item for 
+Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are <div class="brackets">[for Contractor Quality Control 
+approval.]</div><div class="brackets">[for information only. When used, a designation following the "G" designation identifies the office that will review the submittal for 
+the Government.]</div> Submittals with an "S" are for inclusion in the Sustainability eNotebook, in conformance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY 
+REPORTING. Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-02 Shop Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Exposed Sheet Metal<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> Coverings; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Gutters<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Downspouts<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Expansion Joints<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Gravel Stops and fascia<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Splash Pans<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Flashing for Roof Drains<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Base Flashing<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Counterflashing<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Flashing at Roof Penetrations and Equipment Supports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Scuppers<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Copings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Drip Edges<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Conductor Heads<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Open Valley Flashing<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Eave Flashing<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-08 Manufacturer's Instructions<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Instructions for Installation<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Quality Control Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-10 Operation and Maintenance Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Cleaning and Maintenance<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></spt>
+<spt outline="1.4"><ttl>1.4 MISCELLANEOUS REQUIREMENTS</ttl><brk></brk>
+<spt outline="1.4.1"><ttl>1.4.1 Product Data</ttl><brk></brk>
+<txt>Indicate thicknesses, dimensions, fastenings, anchoring methods, expansion joints, and other provisions necessary for thermal expansion and contraction. 
+Scaled manufacturer's catalog data may be submitted for factory fabricated items.</txt><brk></brk></spt>
+<spt outline="1.4.2"><ttl>1.4.2 Finish Samples </ttl><brk></brk>
+<txt>Submit two color charts and two finish sample chips from manufacturer's standard color and finish options for each type of finish indicated.</txt><brk></brk></spt>
+<spt outline="1.4.3"><ttl>1.4.3 Operation and Maintenance Data</ttl><brk></brk>
+<txt>Submit detailed <sub><pre class="display_SUB">&lt;SUB&gt;</pre>instructions for installation<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> and quality control during installation, <sub><pre class="display_SUB">&lt;SUB&gt;</pre>cleaning and maintenance<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>, for each type of assembly indicated.</txt><brk></brk></spt>
+</spt><spt outline="1.5"><ttl>1.5 DELIVERY, HANDLING, AND STORAGE</ttl><brk></brk>
+<txt>Package and protect materials during shipment. Uncrate and inspect materials for damage, dampness, and wet-storage stains upon delivery to the 
+job site. Remove from the site and replace damaged materials that cannot be restored to like-new condition. Handle sheet metal items to avoid 
+damage to surfaces, edges, and ends. Store materials in dry, weather-tight, ventilated areas until installation.</txt><brk></brk></spt>
+</prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<spt outline="2.1"><ttl>2.1 RECYCLED CONTENT</ttl><brk></brk>
+<txt>Provide products with recycled content. Provide data for each product with recycled content, identifying percentage of recycled content.</txt><brk></brk></spt>
+<spt outline="2.2"><ttl>2.2 MATERIALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Permit use of optional materials to extent that project design, relative costs, local environmental conditions, 
+and commercial availability permit. Relative costs for materials listed in <att>Table I</att> range from 100 as index for 
+stainless steel followed by terne-coated steel, zinc-coated steel, and copper in that order down to approximately 
+50 for aluminum, based on weights, gages and thicknesses indicated. Specify exposed sheet metal in materials 
+indicated except where additions to buildings require matching of existing and if the appearance of the building 
+would be detrimentally affected by use of a different material. Use aluminum to match existing exposed zinc-alloy 
+or galvanized metal, except in highly corrosive environments such as in and around industrial buildings, coastal 
+areas, and areas that experience high winds or sand abrasion. Where Contractor's choice is limited because of 
+above conditions, revise accordingly. Delete items that do not apply. Weights and thicknesses listed are minimum 
+for items described. If greater weights and thicknesses are justified by unusual local conditions, modify accordingly.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: If material is not specified, Contractor will have a choice of aluminum, copper or stainless steel, as listed 
+in SMACNA 1793 and not prohibited herein. If the material is specified, delete all other sheet metal specifications 
+listed in this section.<brk></brk>
+The minimum thicknesses specified in SMACNA 1793 may be increased and other materials may be used if justified 
+by local conditions.<brk></brk>
+If galvanized steel is required for temporary facilities, delete "galvanized steel" from the first sentence below.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: In humid locations or project locations with Environmental Severity Classifications (ESC) of C3 thru C5, 
+in an atmosphere laden with salt spray, stainless steel is recommended. Where salt spray is not severe, flashings, 
+gutters, and downspouts may be of stainless steel, aluminum alloy (3003-N14), or copper. Humid locations are 
+those in ASHRAE climate zones 0A, 1A, 2A, 3A, 3C, 4C and 5C (as identified in ASHRAE 90.1). See UFC 1-200-01 
+for determination of ESC for project locations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Do not use lead, lead-coated metal, or galvanized steel. Different items need not be of the same metal, except that<div class="brackets">[ if copper is selected for 
+any exposed item, all exposed items must be copper, and that]</div> contact between dissimilar metals must be avoided.</txt><brk></brk>
+<txt>Furnish sheet metal items in<met><pre class="display_MET">&lt;MET&gt;</pre> 2400 to 3000 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 8 to 10 foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> lengths. Single pieces less than<met><pre class="display_MET">&lt;MET&gt;</pre> 2400 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 8 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> long may be used to connect to factory-fabricated 
+inside and outside corners, and at ends of runs. Factory fabricate corner pieces with minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> legs. Provide accessories and other 
+items essential to complete the sheet metal installation. Provide accessories made of the same or compatible materials as the items to which they 
+are applied. Fabricate sheet metal items of the materials specified below and to the gage, thickness, or weight shown in Table I at the end of 
+this section. Provide sheet metal items with mill finish unless specified otherwise. Where more than one material is listed for a particular 
+item in Table I, each is acceptable and may be used, except as follows:</txt><brk></brk>
+<spt outline="2.2.1"><ttl>2.2.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Exposed Sheet Metal<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> Items</ttl><brk></brk>
+<txt>Must be of the same material. Consider the following as exposed sheet metal: gutters, including hangers; downspouts; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>gravel stops and fascia<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; 
+cap, valley, steeped, base, and eave flashings and related accessories.</txt><brk></brk></spt>
+<spt outline="2.2.2"><ttl>2.2.2 Drainage</ttl><brk></brk>
+<txt>Do not use copper for an exposed item if drainage from that item will pass over exposed masonry, stonework or other metal surfaces. In addition 
+to the metals listed in Table I, lead-coated copper may be used for such items.</txt><brk></brk></spt>
+<spt outline="2.2.3"><ttl>2.2.3 Copper, Sheet and Strip</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 3100<pre class="display_RID">&lt;/RID&gt;</pre></rid>, cold-rolled temper (standard).</txt><brk></brk></spt>
+<spt outline="2.2.4"><ttl>2.2.4 Lead Sheet</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: In humid locations or project locations with Environmental Severity Classifications (ESC) of C3 thru C5, 
+lead sheet is recommended for plumbing vents and other pipe penetrations through the roof. Humid locations are 
+those in ASHRAE climate zones 0A, 1A, 2A, 3A, 3C, 4C and 5C (as identified in ASHRAE 90.1). See UFC 1-200-01 
+for determination of ESC for project locations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in a minimum weight of<met><pre class="display_MET">&lt;MET&gt;</pre> 19.6 kilograms per square meter<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 pounds per square foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.</txt><brk></brk></spt>
+<spt outline="2.2.5"><ttl>2.2.5 Steel Sheet, Zinc-Coated (Galvanized)</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Factory-applied color coating on sheet aluminum and galvanized steel may be used on building additions 
+where necessary to match existing galvanized or other exposed painted metal work. This coating may also be used 
+on sheet aluminum and galvanized steel surfaces of new buildings where a long-life exterior color finish is desired.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3302<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.2.6"><ttl>2.2.6 Zinc Sheet and Strip</ttl><brk></brk>
+<txt>Provide a minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 0.61 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.024 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick.</txt><brk></brk></spt>
+<spt outline="2.2.7"><ttl>2.2.7 Stainless Steel</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Factory-applied color coating on sheet aluminum and galvanized steel may be used on building additions 
+where necessary to match existing galvanized or other exposed painted metal work. This coating may also be used 
+on sheet aluminum and galvanized steel surfaces of new buildings where a long-life exterior color finish is desired. 
+Finishes are described in SMACNA Arch Manual. See ASTM A48/A48M for other than standard mill finishes.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 4305<pre class="display_RID">&lt;/RID&gt;</pre></rid>, SUS302, 304 or SUS304, 2D Finish, fully annealed, dead-soft temper.</txt><brk></brk></spt>
+<spt outline="2.2.8"><ttl>2.2.8 Terne-Coated Steel</ttl><brk></brk>
+<txt>Provide a minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 350 by 500 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 14 by 20 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> with minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 18 kilogram<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 40 pound<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> coating per double base box.</txt><brk></brk></spt>
+<spt outline="2.2.9"><ttl>2.2.9 Aluminum Alloy Sheet and Plate</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Factory-applied color coating on sheet aluminum and galvanized steel may be used on building additions 
+where necessary to match existing galvanized or other exposed painted metal work. This coating may also be used 
+on sheet aluminum and galvanized steel surfaces of new buildings where a long-life exterior color finish is desired.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Do not use less than<met><pre class="display_MET">&lt;MET&gt;</pre> 0.813 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.032-inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick material in humid locations or project locations with Environmental 
+Severity Classifications (ESC) of C3 thru C5. In hurricane and typhoon areas, ensure aluminum thickness is not 
+less than<met><pre class="display_MET">&lt;MET&gt;</pre> 1.651 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.065 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> where exposed to the direct wind. Humid locations are those in ASHRAE climate 
+zones 0A, 1A, 2A, 3A, 3C, 4C and 5C (as identified in ASHRAE 90.1). See UFC 1-200-01 for determination of ESC 
+for project locations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 4000<pre class="display_RID">&lt;/RID&gt;</pre></rid> <div class="brackets">[anodized <div class="brackets">[clear]</div> <div class="brackets">[color <div class="brackets">[_____]</div><div class="brackets">[_____]</div>]</div>]</div> form alloy, and temper appropriate for use. Provide material not 
+less than<div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre> 0.813 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.032-in<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div><div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre> 1.651 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.065-in<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> in thickness.</txt><brk></brk>
+<div class="brackets">[<spt outline="2.2.9.1"><ttl>2.2.9.1 Alclad</ttl><brk></brk>
+<txt>When fabricated of aluminum, fabricate the following items with Alclad 3003, Alclad 3004, or Alclad 3005, clad on <div class="brackets">[one side]</div><div class="brackets">[both sides]</div> unless 
+otherwise indicated.</txt><brk></brk>
+<lst indent="-0.33">a. Gutters, downspouts, and hangers</lst><brk></brk>
+<lst indent="-0.33">b. Gravel stops and fascia</lst><brk></brk>
+<lst indent="-0.33">c. Flashing</lst><brk></brk></spt>
+]</div></spt><spt outline="2.2.10"><ttl>2.2.10 Finishes</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: If a cool roof is required, there are a number of methods by which to specify requirements; three are indicated 
+below, as contractor options.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Low slope (pitches of 2:12 or less) metal roofs are not recommended, however, if specified, cool roof criteria 
+is provided herein.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Cool roof colors are not necessarily light colors anymore. This has to do with the arrangement of ions 
+in the finish coating which result in high reflectance and emissivity values. High values indicate finishes best 
+suited to save cooling energy and to reduce heat island effect. Such coatings are readily available from most 
+manufacturers for nominal upcharges; look for 'cool' series colors and product data.<brk></brk>
+The three paths to cool roofs are described below. Values indicating compliance are generally indicated in manufacturer's 
+product data.<brk></brk>
+1) Energy Star Certification:<brk></brk>
+Energy Star sets Initial Solar Reflectance and Initial Emissivity as its criteria for cool roof approval. Low 
+slope roof finishes certified by Energy Star are required to have greater than or equal to 0.65 Initial Solar 
+Reflectance; steep slope roofs (pitches steeper than 2:12)are required to have greater than or equal to 0.25 Initial 
+Solar Reflectance. While Energy Star indicates Initial Emissivity values of certified products, it does not set 
+threshold criteria. A higher emissivity number is more energy efficient. The current list is available at: <url>
+https://www.energystar.gov/productfinder/product/certified-roof-products/results</url><brk></brk>
+2) ASHRAE 189.1 Compliance:<brk></brk>
+The American Society for Heating, Refrigeration and Air-Conditioning Engineers (ASHRAE) standard 189.1, "Standard 
+for the Design of High Performance Green Buildings" (2011 version) specifies a solar reflective index (SRI) of 
+78 for low slope cool roofs and 29 for steep slope cool roofs. SRI is a calculation that combines reflectivity 
+and emissivity into a single metric. Newer versions of ASHRAE 189.1 use 3-year aged values, however, many manufacturers 
+have not completed testing of aged values and therefore are not yet able to include it in their product data.<brk></brk>
+3) ASHRAE 90.1 Compliance:<brk></brk>
+UFC 3-110-03 Roofing requires that cool roofs meet ASHRAE 90.1 (2010 version) Chapter 5 values for cool roofing. 
+The requirements of this standard are included herein, however, this method does not appear to differentiate roof 
+angle to the sun (slope) and uses only aged values.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide exposed exterior sheet metal and aluminum with a baked on, factory applied color coating of polyvinylidene fluoride (PVF2) or approved 
+equal fluorocarbon coating. Dry film thickness of coatings must be<met><pre class="display_MET">&lt;MET&gt;</pre> 0.020 to 0.033 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.8 to 1.3 mils<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Color to be selected from <div class="brackets">[manufacturer's 
+full range of "cool roof" color choices]</div><div class="brackets">[manufacturer's standard range of color choices]</div><div class="brackets">[manufacturer's full range of color choices]</div><div class="brackets">[as indicated 
+on the Drawings]</div>. Field applications of color coatings are prohibited and will be rejected.</txt><brk></brk></spt>
+<spt outline="2.2.11"><ttl>2.2.11 Cool Roof Finishes</ttl><brk></brk>
+<txt>Provide cool roof finish coatings and colors in accordance with one of the following methods of analysis:</txt><brk></brk>
+<spt outline="2.2.11.1"><ttl>2.2.11.1 JIS K 5602 and JIS K 5675</ttl><brk></brk>
+<txt>Provide roof finishes having minimum initial solar reflectance of <div class="brackets">[40]</div><div class="brackets">[50]</div> when tested in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 5602<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 5675<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+</spt><spt outline="2.2.12"><ttl>2.2.12 Aluminum Alloy, Extruded Bars, Rods, Shapes, and Tubes</ttl><brk></brk>
+<txt><rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 4040<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.2.13"><ttl>2.2.13 Solder</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3282<pre class="display_RID">&lt;/RID&gt;</pre></rid>, 95-5 tin-antimony.</txt><brk></brk></spt>
+<spt outline="2.2.14"><ttl>2.2.14 Reglets</ttl><brk></brk>
+<spt outline="2.2.14.1"><ttl>2.2.14.1 Polyvinyl Chloride Reglets</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 6720<pre class="display_RID">&lt;/RID&gt;</pre></rid>,<met><pre class="display_MET">&lt;MET&gt;</pre> 1.9 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.075 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> minimum thickness.</txt><brk></brk></spt>
+<spt outline="2.2.14.2"><ttl>2.2.14.2 Metal Reglets</ttl><brk></brk>
+<txt>Provide factory fabricated caulked type or friction type reglets with a minimum opening of<met><pre class="display_MET">&lt;MET&gt;</pre> 6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and a depth of<met><pre class="display_MET">&lt;MET&gt;</pre> 30 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, as approved.</txt><brk></brk>
+<spt outline="2.2.14.2.1"><ttl>2.2.14.2.1 Caulked Reglets</ttl><brk></brk>
+<txt>Provide with rounded edges, temporary reinforcing cores, and accessories as required for securing to adjacent construction. Provide built-up mitered 
+corner pieces for inside and outside corners.</txt><brk></brk></spt>
+<spt outline="2.2.14.2.2"><ttl>2.2.14.2.2 Friction Reglets</ttl><brk></brk>
+<txt>Provide with flashing receiving slots not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 16 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> deep,<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> jointing tongues, and upper and lower anchoring flanges 
+installed at<met><pre class="display_MET">&lt;MET&gt;</pre> 600 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 24 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> maximum snap-lock type receiver.</txt><brk></brk></spt>
+</spt></spt><spt outline="2.2.15"><ttl>2.2.15 Scuppers</ttl><brk></brk>
+<txt>Line interiors of scupper openings with sheet metal. Provide a drip edge at bottom edges with returns of not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> against 
+the face of the outside wall at the top and sides. Provide the perimeter of the lining approximately<met><pre class="display_MET">&lt;MET&gt;</pre> 13 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> less than the perimeter of 
+the scupper.</txt><brk></brk></spt>
+<spt outline="2.2.16"><ttl>2.2.16 Conductor Heads</ttl><brk></brk>
+<txt>Provide conductor heads and screens in the same material as downspouts. Provide outlet tubes not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> long.</txt><brk></brk></spt>
+<spt outline="2.2.17"><ttl>2.2.17 Splash Pans</ttl><brk></brk>
+<txt>Provide splash pans where downspouts discharge onto roof surfaces and at locations indicated. Unless otherwise indicated, provide pans not less 
+than<met><pre class="display_MET">&lt;MET&gt;</pre> 600 mm long by 450 mm wide<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 24 inches long by 18 inches wide<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> with metal ribs across bottoms of pans. Provide sides of pans with vertical baffles 
+not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high in the front, and<met><pre class="display_MET">&lt;MET&gt;</pre> 100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high in the back.</txt><brk></brk></spt>
+<spt outline="2.2.18"><ttl>2.2.18 Copings</ttl><brk></brk>
+<txt>Unless otherwise indicated, provide copings in copper sheets,<met><pre class="display_MET">&lt;MET&gt;</pre> 2400 or 3000 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 8 or 10 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> long, joined by a<met><pre class="display_MET">&lt;MET&gt;</pre> 20 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> locked and soldered 
+seam.</txt><brk></brk></spt>
+<spt outline="2.2.19"><ttl>2.2.19 Bituminous Plastic Cement</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 6021<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.2.20"><ttl>2.2.20 Roofing Felt</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The two types of asphalt-saturated felts are: type I which is commonly called No. 15 asphalt felt, and 
+type II which is commonly called No. 30. These numbers no longer refer to product weights; see ASTM D2526 for 
+more information. Edit paragraph as necessary to fit project requirements. <pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with A6005 <div class="brackets">[Asphalt Felt]</div> or <div class="brackets">[Asphalt Roofing]</div>.</txt><brk></brk></spt>
+<spt outline="2.2.21"><ttl>2.2.21 Asphalt Primer</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 2208<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.2.22"><ttl>2.2.22 Fasteners</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: In humid locations or project locations with Environmental Severity Classifications (ESC) of C3 thru C5, 
+use stainless steel nails, bolts and fasteners. Humid locations are those in ASHRAE climate zones 0A, 1A, 2A, 
+3A, 3C, 4C and 5C (as identified in ASHRAE 90.1). See UFC 1-200-01 for determination of ESC for project locations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Use the same metal as, or a metal compatible with the item fastened.<div class="brackets">[ Use stainless steel fasteners to fasten.]</div> Confirm compatibility of fasteners 
+and items to be fastened to avoid galvanic corrosion due to dissimilar materials.</txt><brk></brk></spt>
+</spt></prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 INSTALLATION</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: On-site fabricated flat copper, zinc, or terne-coated steel metal roofing is not included in text of this 
+guide specification because it is infrequently used. These materials do not require field painting. (However, 
+if terne plate is used, field painting must be specified: one coat of iron oxide paint on underside before application, 
+and on exposed surfaces after application. Exposed surfaces also require finish coat of compatible exterior oil 
+paint over iron oxide paint). If design requires this type of metal roofing, edit subsections below as necessary.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="3.1.1"><ttl>3.1.1 Metal Roofing</ttl><brk></brk>
+<div class="brackets">[<spt outline="3.1.1.1"><ttl>3.1.1.1 [Flat Copper,] [Zinc,] [Terne-coated Steel] Roofing</ttl><brk></brk>
+<txt>Before applying roofing, cover deck with rosin-sized roofing felt. Lap<met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> at joints and secure in place with roofing nails. Using solder 
+of equal parts tin and lead, solder slowly with well-heated irons to thoroughly heat sheet and completely sweat solder through full width of seam.<div class="brackets">[ 
+Tin edges of copper to be soldered at least<met><pre class="display_MET">&lt;MET&gt;</pre> 20 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> before sheets are locked.]</div><div class="brackets">[ Use stainless nails in terne-coated steel]</div>; <div class="brackets">[in copper, 
+use solid copper or bronze roofing nails]</div><div class="brackets">[ in zinc, use zinc-coated roofing nails.]</div> Where roof decks abut vertical surfaces, turn metal roofing 
+up vertical surfaces about<met><pre class="display_MET">&lt;MET&gt;</pre> 200 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> where practicable; where vertical surfaces are covered with applied materials, turn up roofing behind 
+applied materials. Use standing-seam method for roofs having rise of more than<met><pre class="display_MET">&lt;MET&gt;</pre> one in four<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inch per foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, and use flat-seam method when rise 
+is<met><pre class="display_MET">&lt;MET&gt;</pre> one in four<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inch per foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> or less. Walking not permitted directly on metal roofs; provide approved walkways.</txt><brk></brk></spt>
+]</div><div class="brackets">[<spt outline="3.1.1.2"><ttl>3.1.1.2 Standing-seam Method</ttl><brk></brk>
+<txt>Make standing seams parallel with slope of roof. Fabricate sheets into long lengths at shop by locking short dimensions together and thoroughly 
+soldering joints thus formed. In applying metal, turn up one edge of course at each side seam at right angles<met><pre class="display_MET">&lt;MET&gt;</pre> 40 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1.5 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Then install<met><pre class="display_MET">&lt;MET&gt;</pre> 50 
+by 75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 by 3 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> cleats spaced<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> apart by fastening one end of each cleat to roof with two<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> long nails and folding 
+roof end back over nail heads. Turn end adjoining turned-up side seam up over upstanding edge of course. Turn up adjoining edge of next course<met><pre class="display_MET">&lt;MET&gt;</pre>
+ 45 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1.75 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and abutting upstanding edges locked, turned over, and flattened against one side of standing seam. Make standing seams straight, 
+rounded neatly at the top edges, and stand about<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> above roof deck. All sheets must be same length, except as required to complete 
+run or maintain pattern. Locate transverse joints of each panel half way between joints in adjacent sheets. Align joints of alternate sheets 
+horizontally to produce uniform pattern.</txt><brk></brk></spt>
+]</div><div class="brackets">[<spt outline="3.1.1.3"><ttl>3.1.1.3 Flat-seam Method</ttl><brk></brk>
+<txt>Lay metal so short dimension is parallel to gutter or eave lines and so water will flow over and not into seams. Make seams by turning edges of 
+sheet<met><pre class="display_MET">&lt;MET&gt;</pre> 20 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and lock and solder together. If sheets are laid one at a time, secure to roof deck with cleats, using three cleats to each 
+sheet, two on long side and one on short side. Use cleats<met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide, hooked over<met><pre class="display_MET">&lt;MET&gt;</pre> 20 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> upturned edges of sheets, and nail to 
+roof deck with two<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> long nails. Turn back roof end of cleat over nail heads before next sheet is applied. If desired, sheets may 
+be made into long lengths at shop by locking short dimensions together and soldering seams thus formed. Turn long lengths<met><pre class="display_MET">&lt;MET&gt;</pre> 20 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, and 
+secure each length to roof deck by cleats spaced<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> apart. Mallet and solder seams after pans are in place. All sheets to be same 
+length, except as required to complete run or maintain pattern. Locate transverse joints of each panel half way between joints in adjacent sheets. 
+Align joints of alternate sheets horizontally to produce uniform pattern.</txt><brk></brk></spt>
+]</div></spt><spt outline="3.1.2"><ttl>3.1.2 Workmanship</ttl><brk></brk>
+<txt>Make lines and angles sharp and true. Free exposed surfaces from visible wave, warp, buckle, and tool marks. Fold back exposed edges neatly to 
+form a<met><pre class="display_MET">&lt;MET&gt;</pre> 13 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> hem on the concealed side. Make sheet metal exposed to the weather watertight with provisions for expansion and contraction.</txt><brk></brk>
+<txt>Make surfaces to receive sheet metal plumb and true, clean, even, smooth, dry, and free of defects and projections. Provide sheet metal flashing 
+in the angles formed where roof decks abut walls, curbs, ventilators, pipes, or other vertical surfaces and wherever indicated and necessary to 
+make the work watertight. Join sheet metal items together as shown in <att>Table II</att>.</txt><brk></brk></spt>
+<spt outline="3.1.3"><ttl>3.1.3 Nailing</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: In humid locations or project locations with Environmental Severity Classifications (ESC) of C4 and C5, 
+include the last sentence in the paragraph below for wind-resistant installations. Humid locations are those 
+in ASHRAE climate zones 0A, 1A, 2A, 3A, 3C, 4C and 5C (as identified in ASHRAE 90.1). See UFC 1-200-01 for determination 
+of ESC for project locations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Confine nailing of sheet metal generally to sheet metal having a maximum width of<met><pre class="display_MET">&lt;MET&gt;</pre> 450 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 18 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Confine nailing of flashing to one edge only. 
+Space nails evenly not over<met><pre class="display_MET">&lt;MET&gt;</pre> 75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center and approximately<met><pre class="display_MET">&lt;MET&gt;</pre> 13 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> from edge unless otherwise specified or indicated. Face nailing 
+will not be permitted. Where sheet metal is applied to other than wood surfaces, include in shop drawings, the locations for sleepers and nailing 
+strips required to secure the work.<div class="brackets">[ Secure flashing at one-half the normal interval to ensure a wind-resistant installation.]</div></txt><brk></brk></spt>
+<spt outline="3.1.4"><ttl>3.1.4 Cleats</ttl><brk></brk>
+<txt>Provide cleats for sheet metal<met><pre class="display_MET">&lt;MET&gt;</pre> 450 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 18 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and over in width. Space cleats evenly not over<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center unless otherwise specified 
+or indicated. Unless otherwise specified, provide cleats of<met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm wide by 75 mm long<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 inches wide by 3 inches long<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and of the same material and 
+thickness as the sheet metal being installed. Secure one end of the cleat with two nails and the cleat folded back over the nailheads. Lock the 
+other end into the seam. <div class="brackets">[Where the fastening is to be made to concrete or masonry, use screws and drive in expansion shields set in concrete 
+or masonry. ]</div>Pre-tin cleats for soldered seams.</txt><brk></brk></spt>
+<spt outline="3.1.5"><ttl>3.1.5 Bolts, Rivets, and Screws</ttl><brk></brk>
+<txt>Install bolts, rivets, and screws where indicated or required. Provide compatible washers where required to protect surface of sheet metal and 
+to provide a watertight connection. Provide mechanically formed joints in aluminum sheets<met><pre class="display_MET">&lt;MET&gt;</pre> 1.0 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.040 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> or less in thickness.</txt><brk></brk></spt>
+<spt outline="3.1.6"><ttl>3.1.6 Seams</ttl><brk></brk>
+<txt>Straight and uniform in width and height with no solder showing on the face.</txt><brk></brk>
+<spt outline="3.1.6.1"><ttl>3.1.6.1 Flat-lock Seams</ttl><brk></brk>
+<txt>Finish not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 20 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide.</txt><brk></brk></spt>
+<spt outline="3.1.6.2"><ttl>3.1.6.2 Lap Seams</ttl><brk></brk>
+<txt>Finish soldered seams not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide. Overlap seams not soldered, not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.</txt><brk></brk></spt>
+<spt outline="3.1.6.3"><ttl>3.1.6.3 Loose-Lock Expansion Seams</ttl><brk></brk>
+<txt>Not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide; provide minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> movement within the joint. Completely fill the joints with the specified sealant, 
+applied at not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick bed.</txt><brk></brk></spt>
+<spt outline="3.1.6.4"><ttl>3.1.6.4 Standing Seams</ttl><brk></brk>
+<txt>Not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high, double locked without solder.</txt><brk></brk></spt>
+<spt outline="3.1.6.5"><ttl>3.1.6.5 Flat Seams</ttl><brk></brk>
+<txt>Make seams in the direction of the flow.</txt><brk></brk></spt>
+</spt><spt outline="3.1.7"><ttl>3.1.7 Soldering</ttl><brk></brk>
+<txt>Where soldering is specified, apply to copper, terne-coated stainless steel, zinc-coated steel, and stainless steel items. Pre-tin edges of sheet 
+metal before soldering is begun. Seal the joints in aluminum sheets of <met><pre class="display_MET">&lt;MET&gt;</pre>1.0 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.040 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> or less in thickness with specified sealants. Do not 
+solder aluminum.</txt><brk></brk>
+<spt outline="3.1.7.1"><ttl>3.1.7.1 Edges</ttl><brk></brk>
+<txt>Scrape or wire-brush the edges of lead-coated material to be soldered to produce a bright surface. Flux brush the seams in before soldering. 
+Treat with soldering acid flux the edges of stainless steel to be pre-tinned. Seal the joints in aluminum sheets of<met><pre class="display_MET">&lt;MET&gt;</pre> 1.0 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.040 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> or less 
+in thickness with specified sealants. Do not solder aluminum.</txt><brk></brk></spt>
+</spt><spt outline="3.1.8"><ttl>3.1.8 Welding and Mechanical Fastening</ttl><brk></brk>
+<txt>Use welding for aluminum of thickness greater than<met><pre class="display_MET">&lt;MET&gt;</pre> 1.0 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.040 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Aluminum<met><pre class="display_MET">&lt;MET&gt;</pre> 1.0 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.040 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> or less in thickness must be butted and the space 
+backed with formed flashing plate; or lock joined, mechanically fastened, and filled with sealant as recommended by the aluminum manufacturer.</txt><brk></brk>
+<spt outline="3.1.8.1"><ttl>3.1.8.1 Welding of Aluminum</ttl><brk></brk>
+<txt>Use welding of the inert gas, shield-arc type. For procedures, appearance and quality of welds, and the methods used in correcting welding work, 
+conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3604<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="3.1.8.2"><ttl>3.1.8.2 Mechanical Fastening of Aluminum</ttl><brk></brk>
+<txt>Use No. 12, aluminum alloy, sheet metal screws or other suitable aluminum alloy or stainless steel fasteners. Drive fasteners in holes made with 
+a No. 26 drill in securing side laps, end laps, and flashings. Space fasteners<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> maximum on center. Where end lap fasteners are 
+required to improve closure, locate the end lap fasteners not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> from the end of the overlapping sheet.</txt><brk></brk></spt>
+</spt><spt outline="3.1.9"><ttl>3.1.9 Protection from Contact with Dissimilar Materials</ttl><brk></brk>
+<spt outline="3.1.9.1"><ttl>3.1.9.1 Copper or Copper-bearing Alloys</ttl><brk></brk>
+<txt>Paint with heavy-bodied bituminous paint surfaces in contact with dissimilar metal, or separate the surfaces by means of moistureproof building 
+felts.</txt><brk></brk></spt>
+<spt outline="3.1.9.2"><ttl>3.1.9.2 Aluminum</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: In humid locations or project locations with Environmental Severity Classifications (ESC) of C3 thru C5, 
+insert the last sentence. Humid locations are those in ASHRAE climate zones 0A, 1A, 2A, 3A, 3C, 4C and 5C (as 
+identified in ASHRAE 90.1). See UFC 1-200-01 for determination of ESC for project locations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Do not allow aluminum surfaces in direct contact with other metals except stainless steel, zinc, or zinc coating. Where aluminum contacts another 
+metal, paint the dissimilar metal with a primer followed by two coats of aluminum paint. Where drainage from a dissimilar metal passes over aluminum, 
+paint the dissimilar metal with a non-lead pigmented paint.<div class="brackets">[ Aluminum may be used over concrete construction, provided that required reglets are 
+of stainless steel and aluminum surface in contact with concrete or masonry is coated with bituminous paint or zinc chromate primer.]</div></txt><brk></brk></spt>
+<spt outline="3.1.9.3"><ttl>3.1.9.3 Metal Surfaces</ttl><brk></brk>
+<txt>Paint surfaces in contact with mortar, concrete, or other masonry materials with alkali-resistant coatings such as heavy-bodied bituminous paint.</txt><brk></brk></spt>
+<spt outline="3.1.9.4"><ttl>3.1.9.4 Wood or Other Absorptive Materials</ttl><brk></brk>
+<txt>Paint surfaces that may become repeatedly wet and in contact with metal with two coats of aluminum paint or a coat of heavy-bodied bituminous paint.</txt><brk></brk></spt>
+</spt><spt outline="3.1.10"><ttl>3.1.10 Expansion and Contraction</ttl><brk></brk>
+<txt>Provide expansion and contraction joints at not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 9750 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 32 foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> intervals for aluminum and at not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 12 meter<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 40 foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> intervals 
+for other metals. Provide an additional joint where the distance between the last expansion joint and the end of the continuous run is more than 
+half the required interval. Space joints evenly. Join extruded aluminum gravel stops and fascia by expansion and contraction joints spaced not 
+more than<met><pre class="display_MET">&lt;MET&gt;</pre> 3600 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> apart.</txt><brk></brk></spt>
+<spt outline="3.1.11"><ttl>3.1.11 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Base Flashing<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Bracketed first sentence applies only to shingled roofs. Do not include for built-up roofing. Normally, 
+only bituminous base flashing should be specified with built-up roofing. Limit use of metal base flashing to 
+locations where flashing is subject to damage by foot traffic and to runs of<met><pre class="display_MET">&lt;MET&gt;</pre> 6000 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 20 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> or less when used 
+with built-up roofing. Flashing for heating, plumbing, and electrical equipment should be specified in the appropriate 
+sections.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><div class="brackets">[Lay the base flashings with each course of the roof covering, shingle fashion, where practicable, where sloped roofs abut chimneys, curbs, walls, 
+or other vertical surfaces. ]</div>Extend up vertical surfaces of the flashing not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 200 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 8 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> under 
+the roof covering. Where finish wall coverings form a counterflashing, extend the vertical leg of the flashing up behind the applied wall covering 
+not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 150 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Overlap the flashing strips <div class="brackets">[or shingles]</div> with the previously laid flashing not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Fasten 
+the strips <div class="brackets">[or shingles]</div> at their upper edge to the deck. Horizontal flashing at vertical surfaces must extend vertically above the roof surface 
+and fastened at their upper edge to the deck a minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 150 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center with <div class="brackets">[large headed aluminum roofing nails]</div> <div class="brackets">[hex headed, galvanized 
+shielded screws]</div> a minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 150 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> lap of any surface. Solder end laps and provide for expansion and contraction. Extend the metal flashing 
+over crickets at the up-slope side of <div class="brackets">[chimneys,]</div> <div class="brackets">[curbs,]</div> <div class="brackets">[and similar]</div> vertical surfaces extending through sloping roofs, the metal flashings. 
+Extend the metal flashings onto the roof covering not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 115 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4.5 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> at the lower side of <div class="brackets">[dormer walls,]</div> <div class="brackets">[chimneys,]</div> <div class="brackets">[and similar]</div> 
+vertical surfaces extending through the roof decks. Install and fit the flashings so as to be completely weathertight. Provide factory-fabricated 
+base flashing for interior and exterior corners. Do not use metal base flashing on built-up roofing.</txt><brk></brk></spt>
+<spt outline="3.1.12"><ttl>3.1.12 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Counterflashing<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Except where indicated or specified otherwise, insert counterflashing in reglets located from<met><pre class="display_MET">&lt;MET&gt;</pre> 230 to 250 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 9 to 10 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> above roof decks, extend 
+down vertical surfaces over upturned vertical leg of base flashings not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Fold the exposed edges of counterflashings<met><pre class="display_MET">&lt;MET&gt;</pre> 13 
+mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Where stepped counterflashings are required, they may be installed in short lengths a minimum <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>200 mm by 200 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>8 inches by 8 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
+]</div><div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>200 mm by 250 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>8 inches by 8 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> or may be of the preformed single piece type. Provide end laps in counterflashings not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>
+ 3 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and make it weathertight with plastic cement. Do not make lengths of metal counterflashings exceed<met><pre class="display_MET">&lt;MET&gt;</pre> 3000 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 10 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Form flashings 
+to the required shapes before installation. Factory form corners not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> from the angle. Secure the flashings in the reglets 
+with lead wedges and space not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 450 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 18 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> apart; on<div class="brackets">[ chimneys and]</div><div class="brackets">[ stair/elevator towers]</div> short runs, place wedges closer together. 
+Fill caulked-type reglets or raked joints which receive counterflashing with caulking compound. Turn up the concealed edge of counterflashings 
+built into masonry or concrete walls not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and extend not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> into the walls. Install counterflashing 
+to provide a spring action against base flashing.<div class="brackets">[ Where bituminous base flashings are provided, extend down the counter flashing as close as 
+practicable to the top of the cant strip. Factory form counter flashing to provide spring action against the base flashing.]</div></txt><brk></brk></spt>
+<spt outline="3.1.13"><ttl>3.1.13 Metal Reglets</ttl><brk></brk>
+<txt>Keep temporary cores in place during installation. Ensure factory fabricated caulked type or friction type, reglets have a minimum opening of<met><pre class="display_MET">&lt;MET&gt;</pre> 
+6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and a minimum depth of<met><pre class="display_MET">&lt;MET&gt;</pre> 30 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, when installed.</txt><brk></brk>
+<spt outline="3.1.13.1"><ttl>3.1.13.1 Caulked Reglets</ttl><brk></brk>
+<txt>Wedge flashing in reglets with lead wedges every<met><pre class="display_MET">&lt;MET&gt;</pre> 450 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 18 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, caulked full and solid with an approved compound.</txt><brk></brk></spt>
+<spt outline="3.1.13.2"><ttl>3.1.13.2 Friction Reglets</ttl><brk></brk>
+<txt>Install flashing snap lock receivers at<met><pre class="display_MET">&lt;MET&gt;</pre> 600 mm by 600 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 24 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center maximum. When flashing has been inserted the full depth of the slot, 
+caulk the slot, lock <div class="brackets">[with wedges]</div>, and fill with sealant.</txt><brk></brk></spt>
+</spt><spt outline="3.1.14"><ttl>3.1.14 Polyvinyl Chloride Reglets for Temporary Construction</ttl><brk></brk>
+<txt>Rigid polyvinyl chloride reglets may be provided in lieu of metal reglets for temporary construction.</txt><brk></brk></spt>
+<spt outline="3.1.15"><ttl>3.1.15 Gravel Stops and fascia</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: On projects having smooth surfaced roofs, the upstanding leg of the gravel stop may be omitted. Specify 
+in the appropriate roofing section. Coordinate installation requirements for sheet metal gravel stops and fascia 
+with the referenced roofing section.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Prefabricate in the shapes and sizes indicated and in lengths not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 2400 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 8 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Extend flange at least<met><pre class="display_MET">&lt;MET&gt;</pre> 100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> onto roofing. 
+Provide prefabricated, mitered corners internal and external corners. Install gravel stops and fascia after all plies of the roofing membrane 
+have been applied, but before the flood coat of bitumen is applied. Prime roof flange of gravel stops and fascia on both sides with an asphalt 
+primer. After primer has dried, set flange on roofing membrane and strip-in. Nail flange securely to wood nailer with large-head, barbed-shank 
+roofing nails<met><pre class="display_MET">&lt;MET&gt;</pre> 38 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1.5 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> long spaced not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center, in two staggered rows.</txt><brk></brk>
+<spt outline="3.1.15.1"><ttl>3.1.15.1 Edge Strip</ttl><brk></brk>
+<txt>Hook the lower edge of fascia at least<met><pre class="display_MET">&lt;MET&gt;</pre> 20 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> over a continuous strip of the same material bent outward at an angle not more than 45 degrees 
+to form a drip. Nail hook strip to a wood nailer at<met><pre class="display_MET">&lt;MET&gt;</pre> 150 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> maximum on center. Where fastening is made to concrete or masonry, use screws 
+spaced<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center driven in expansion shields set in the concrete or masonry. Where horizontal wood nailers are slotted to provide 
+for insulation venting, install strips to prevent obstruction of vent slots. Where necessary, install strips over<met><pre class="display_MET">&lt;MET&gt;</pre> 2 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/16 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick compatible 
+spacer or washers.</txt><brk></brk></spt>
+<spt outline="3.1.15.2"><ttl>3.1.15.2 Joints</ttl><brk></brk>
+<txt>Leave open the section ends of gravel stops and fascia<met><pre class="display_MET">&lt;MET&gt;</pre> 6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and backed with a formed flashing plate, mechanically fastened in place and 
+lapping each section end a minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> set laps in plastic cement. Face nailing will not be permitted. Install prefabricated aluminum 
+gravel stops and fascia in accordance with the manufacturer's printed instructions and details.</txt><brk></brk></spt>
+</spt><spt outline="3.1.16"><ttl>Metal 3.1.16 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Drip Edges<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Provide a metal drip edge, designed to allow water run-off to drip free of underlying construction, at eaves and rakes prior to the application 
+of roofing shingles. Apply directly on the wood deck at the eaves and over the underlay along the rakes. Extend back from the edge of the deck 
+not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and secure with compatible nails spaced not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 250 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 10 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center along upper edge.</txt><brk></brk></spt>
+<spt outline="3.1.17"><ttl>3.1.17 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Gutters<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Where it is local practice to omit gutters because of glaciation and ice damage, eave flashing should be 
+provided in accordance with paragraph EAVE FLASHING.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The hung type of shape indicated and supported on underside by brackets that permit free thermal movement of the gutter. Provide gutters in sizes 
+indicated complete with mitered corners, end caps, outlets, brackets, and other accessories necessary for installation. Bead with hemmed edge 
+or reinforce the outer edge of gutter with a stiffening bar not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 20 by 5 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 by 3/16 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of material compatible with gutter. Fabricate 
+gutters in sections not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 2400 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 8 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Lap the sections a minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> in the direction of flow or provide with concealed 
+splice plate<met><pre class="display_MET">&lt;MET&gt;</pre> 150 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> minimum. Join the gutters, other than aluminum, by riveted and soldered joints. Join aluminum gutters with riveted 
+sealed joints. Provide expansion-type slip joints midway between outlets. Install gutters below slope line of the roof so that snow and ice can 
+slide clear. Support gutters on<div class="brackets">[ adjustable hangers spaced not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 750 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 30 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center]</div><div class="brackets">[ as indicated]</div><div class="brackets">[ by continuous cleats]</div><div class="brackets">[ and]</div><div class="brackets">[ 
+or]</div><div class="brackets">[ by cleats spaced not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 900 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 36 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> apart]</div>. Adjust gutters to slope uniformly to outlets, with high points occurring midway between 
+outlets. Fabricate hangers and fastenings from compatible metals.</txt><brk></brk></spt>
+<spt outline="3.1.18"><ttl>3.1.18 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Downspouts<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For additions to existing buildings, downspouts may be specified to match the design of the existing portion 
+of the building.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Space supports for downspouts according to the manufacturer's recommendation for the <div class="brackets">[wood]</div><div class="brackets">[ masonry]</div> or <div class="brackets">[steel]</div> substrate. Types, shapes and 
+sizes are indicated. Provide complete including elbows and offsets. Provide downspouts in approximately<met><pre class="display_MET">&lt;MET&gt;</pre> 3000 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 10 foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> lengths. Provide end 
+joints to telescope not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 13 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and lock longitudinal joints. Provide gutter outlets with wire ball strainers for each outlet. 
+Provide strainers to fit tightly into outlets and be of the same material used for gutters. Keep downspouts not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> away 
+from walls. Fasten to the walls at top, bottom, and at an intermediate point not to exceed<met><pre class="display_MET">&lt;MET&gt;</pre> 1500 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center with leader straps or concealed 
+rack-and-pin type fasteners. Form straps and fasteners of metal compatible with the downspouts.</txt><brk></brk>
+<spt outline="3.1.18.1"><ttl>3.1.18.1 Terminations</ttl><brk></brk>
+<txt>Neatly fit into the drainage connection the downspouts terminating in drainage lines and fill the joints with a portland cement mortar cap sloped 
+away from the downspout. Provide downspouts terminating in splash blocks with elbow-type fittings. Provide splash pans as specified.</txt><brk></brk></spt>
+</spt><spt outline="3.1.19"><ttl>3.1.19 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Flashing for Roof Drains<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Provide a<met><pre class="display_MET">&lt;MET&gt;</pre> 750 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 30 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> square sheet indicated. Taper insulation to drain from<met><pre class="display_MET">&lt;MET&gt;</pre> 600 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 24 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> out. Set flashing on finished felts in a full 
+bed of asphalt roof cement. Heavily coat the drain flashing ring with asphalt roof cement. Clamp the roof membrane, flashing sheet, and stripping 
+felt in the drain clamping ring. Secure clamps so that felts and drain flashing are free of wrinkles and folds.</txt><brk></brk></spt>
+<spt outline="3.1.20"><ttl>3.1.20 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Scuppers<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Extend the scupper liner through and project outside of, the wall it penetrates to form a bottom drip edge against the face of the wall. Fold 
+outside edges under<met><pre class="display_MET">&lt;MET&gt;</pre> 13 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on all sides. Join the top and sides of the lining on the roof deck side to a closure flange by a locked and 
+soldered joint. Join the bottom edge by a locked and soldered joint to the closure flange, where required, form with a ridge to act as a gravel 
+stop around the scupper inlet. Provide surfaces to receive the scupper lining and coat with bituminous plastic cement.</txt><brk></brk></spt>
+<spt outline="3.1.21"><ttl>3.1.21 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Conductor Heads<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Set the depth of the top opening equal to two-thirds of the width or the conductor head. Flat-lock solder seams. Where conductor heads are used 
+in conjunction with scuppers, set the conductor a minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wider than the scupper. Attach conductor heads to the wall with masonry 
+fasteners. Securely fasten screens to heads.</txt><brk></brk></spt>
+<spt outline="3.1.22"><ttl>3.1.22 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Splash Pans<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Install splash pans lapped with horizontal roof flanges not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide to form a continuous surface. Bend the rear flange 
+of the pan to contour of can't strip and extend up<met><pre class="display_MET">&lt;MET&gt;</pre> 150 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> under the side wall covering or to height of base flashing under counterflashing. 
+Bed the pans and roof flanges in plastic bituminous cement and strip-flash as specified.</txt><brk></brk></spt>
+<spt outline="3.1.23"><ttl>3.1.23 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Open Valley Flashing<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Provide valley flashing free of longitudinal seams, of width sufficient to extend not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 150 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> under the roof covering on each 
+side. Provide a<met><pre class="display_MET">&lt;MET&gt;</pre> 13 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> fold on each side of the valley flashing. Lap the sheets not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 150 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> in the direction of flow 
+and secure to roofing construction with cleats attached to the fold on each side. Nail the tops of sheets to roof sheathing. Space the cleats 
+not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center. Provide exposed flashing not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> in width at the top and increase<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
+ in width for each additional<met><pre class="display_MET">&lt;MET&gt;</pre> 2400 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 8 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> in length. Where the slope of the valley is<met><pre class="display_MET">&lt;MET&gt;</pre> one in 2.67 or less<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4.5 inches or less per foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, or the 
+intersecting roofs are on different slopes, provide an inverted V-joint,<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high, along the centerline of the valley; and extend the 
+edge of the valley sheets<met><pre class="display_MET">&lt;MET&gt;</pre> 200 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 8 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> under the roof covering on each side.</txt><brk></brk>
+<txt>Valley flashing for asphalt shingle roofs is specified in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>07 31 13<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> ASPHALT SHINGLES.</txt><brk></brk></spt>
+<spt outline="3.1.24"><ttl>3.1.24 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Eave Flashing<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>One piece in width, applied in<met><pre class="display_MET">&lt;MET&gt;</pre> 2400 to 3000 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 8 to 10 foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> lengths with expansion joints spaced as specified in paragraph EXPANSION AND CONTRACTION. 
+Provide a<met><pre class="display_MET">&lt;MET&gt;</pre> 20 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> continuous fold in the upper edge of the sheet to engage cleats spaced not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 250 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 10 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center. Locate 
+the upper edge of flashing not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 450 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 18 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> from the outside face of the building, measured along the roof slope. Fold lower edge 
+of the flashing over and loose-lock into a continuous edge strip on the fascia. Where eave flashing intersects metal valley flashing, secure with<met><pre class="display_MET">&lt;MET&gt;</pre>
+ 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> flat locked joints with cleats that are<met><pre class="display_MET">&lt;MET&gt;</pre> 250 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 10 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center.</txt><brk></brk></spt>
+<spt outline="3.1.25"><ttl>3.1.25 Sheet Metal Covering on Flat, Sloped, or Curved Surfaces</ttl><brk></brk>
+<txt>Except as specified or indicated otherwise, cover and flash all minor flat, sloped, or curved surfaces such as crickets, bulkheads, dormers and 
+small decks with metal sheets of the material used for flashing; maximum size of sheets,<met><pre class="display_MET">&lt;MET&gt;</pre> 375 by 455 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 16 by 18 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Fasten sheets to sheathing 
+with metal cleats. Lock seams and solder. Lock aluminum seams as recommended by aluminum manufacturer. Provide an underlayment of roofing felt 
+for all sheet metal covering.</txt><brk></brk></spt>
+<spt outline="3.1.26"><ttl>3.1.26 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Expansion Joints<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The contract drawings should contain details of building expansion joints at walls, ceiling, floors, roof, 
+and parapets. Include exterior and interior details. Provide isometric detailing for expansion joints intersections.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide expansion joints for roofs, walls, and floors as <div class="brackets">[specified]</div> <div class="brackets">[indicated]</div>. Provide <div class="brackets">[expansion joints in continuous sheet metal at <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>12 meter<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>
+40 foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> intervals for copper and stainless steel]</div> <div class="brackets">[and at<met><pre class="display_MET">&lt;MET&gt;</pre> 9750 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 32 foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> intervals for aluminum]</div>, <div class="brackets">[aluminum gravel stops and fascia which must 
+have expansion joints at not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 3600 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12 foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> spacing]</div>. Provide evenly spaced joints. Provide an additional joint where the distance 
+between the last expansion joint and the end of the continuous run is more than half the required interval spacing]</div>. Conform to the requirements 
+of Table I.</txt><brk></brk>
+<spt outline="3.1.26.1"><ttl>3.1.26.1 Roof Expansion Joints</ttl><brk></brk>
+<txt>Consist of curb with wood nailing members on each side of joint, bituminous base flashing, metal counterflashing, and metal joint cover. Bituminous 
+base flashing is specified in Roofing Section. Provide counterflashing as specified in paragraph COUNTERFLASHING, except as follows: Provide 
+counterflashing with vertical leg of suitable depth to enable forming into a horizontal continuous cleat. Secure the inner edge to the nailing 
+member. Make the outer edge projection not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> for flashing on one side of the expansion joint and be less than the width 
+of the expansion joint plus<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> for flashing on the other side of the joint. Hook the expansion joint cover over the projecting outer 
+edges of counterflashing. Provide roof joint with a joint cover of the width indicated. Hook and lock one edge of the joint cover over the shorter 
+projecting flange of the continuous cleat, and the other edge hooked over and loose locked with the longer projecting flange. Joints are specified 
+in Table II.</txt><brk></brk></spt>
+<spt outline="3.1.26.2"><ttl>3.1.26.2 Floor and Wall Expansion Joints</ttl><brk></brk>
+<txt>Provide U-shape with extended flanges for expansion joints in concrete and masonry walls and in floor slabs.</txt><brk></brk></spt>
+</spt><spt outline="3.1.27"><ttl>3.1.27 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Flashing at Roof Penetrations and Equipment Supports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Insert appropriate Section number and title in the blank below using format in accordance with UFC 1-300-02, 
+Unified Facilities Guide Specifications (UFGS) Format Standard.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide metal flashing for all pipes, ducts, and conduits projecting through the roof surface and for equipment supports, guy wire anchors, and 
+similar items supported by or attached to the roof deck. Goose-necks, rain hoods, power roof ventilators, and <div class="brackets">[_____]</div> are specified in <div class="brackets">[_____]</div>.</txt><brk></brk></spt>
+<spt outline="3.1.28"><ttl>3.1.28 Single Pipe Vents</ttl><brk></brk>
+<txt>See Table I, footnote (d). Set flange of sleeve in bituminous plastic cement and nail<met><pre class="display_MET">&lt;MET&gt;</pre> 75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center. Bend the top of sleeve over and 
+extend down into the vent pipe a minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. For long runs or long rises above the deck, where it is impractical to cover the vent 
+pipe with lead, use a two-piece formed metal housing. Set metal housing with a metal sleeve having a<met><pre class="display_MET">&lt;MET&gt;</pre> 100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> roof flange in bituminous 
+plastic cement and nailed<met><pre class="display_MET">&lt;MET&gt;</pre> 75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center. Extend sleeve a minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 200 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 8 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> above the roof deck and lapped a minimum of<met><pre class="display_MET">&lt;MET&gt;</pre> 75 
+mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> by a metal hood secured to the vent pipe by a draw band. Seal the area of hood in contact with vent pipe with an approved sealant.</txt><brk></brk></spt>
+<spt outline="3.1.29"><ttl>3.1.29 Stepped Flashing</ttl><brk></brk>
+<txt>Provide stepped flashing where sloping roofs surfaced with shingles abut vertical surfaces. Place separate pieces of base flashing in alternate 
+shingle courses.</txt><brk></brk></spt>
+<spt outline="3.1.30"><ttl>3.1.30 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Copings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Provide coping with locked and soldered seam. Terminate outer edges in edge strips. Install with sealed <div class="brackets">[lap joints]</div><div class="brackets">[cover plate joints]</div><div class="brackets">[standing 
+seam joints]</div> as indicated.</txt><brk></brk></spt>
+</spt><spt outline="3.2"><ttl>3.2 PAINTING</ttl><brk></brk>
+<txt>Touch ups in the field may be applied only after metal substrates have been cleaned and pretreated in accordance with manufacturer's written instructions 
+and products.</txt><brk></brk>
+<txt>Field-paint sheet metal for separation of dissimilar materials.</txt><brk></brk>
+<div class="brackets">[<spt outline="3.2.1"><ttl>3.2.1 Aluminum Surfaces</ttl><brk></brk>
+<txt>Clean with solvent and apply one coat of zinc-molybdate primer and one coat of aluminum paint.</txt><brk></brk></spt>
+]</div></spt><spt outline="3.3"><ttl>3.3 CLEANING</ttl><brk></brk>
+<txt>Clean exposed sheet metal work at completion of installation. Remove grease and oil films, handling marks, contamination from steel wool, fittings 
+and drilling debris, and scrub-clean. Free the exposed metal surfaces of dents, creases, waves, scratch marks, and solder or weld marks.</txt><brk></brk></spt>
+<spt outline="3.4"><ttl>3.4 REPAIRS TO FINISH</ttl><brk></brk>
+<txt>Scratches, abrasions, and minor surface defects of finish may be repaired in accordance with the manufacturer's printed instructions and as approved. 
+Repair damaged surfaces caused by scratches, blemishes, and variations of color and surface texture. Replace items which cannot be repaired.</txt><brk></brk></spt>
+<div class="brackets">[<spt outline="3.5"><ttl>3.5 FIELD QUALITY CONTROL</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: When justified, and similar requirements are not established for Contractor Quality Control specified in 
+other sections, add the following requirement at the end of paragraph FIELD QUALITY CONTROL:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>"A roofing technician responsible directly to the Contractor and experienced in construction of the specified 
+type of roofing system and related work must perform quality control functions and be present on site during roofing 
+installations."<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<tst><txt>Establish and maintain a <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Quality Control Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> for sheet metal used in conjunction with roofing to assure compliance of the installed sheet metalwork 
+with the contract requirements. Remove work that is not in compliance with the contract and replace or correct. Include quality control, but 
+not be limited to, the following:</txt><brk></brk>
+<lst indent="-0.33">a. Observation of environmental conditions; number and skill level of sheet metal workers; condition of substrate.</lst><brk></brk>
+<lst indent="-0.33">b. Verification that specified material is provided and installed.</lst><brk></brk>
+<lst indent="-0.33">c. Inspection of sheet metalwork, for proper size(s) and thickness(es), fastening and joining, and proper installation.</lst></tst><brk></brk>
+<spt outline="3.5.1"><ttl>3.5.1 Procedure</ttl><brk></brk>
+<txt>Submit for approval prior to start of roofing work. Include a checklist of points to be observed. Document the actual quality control observations 
+and inspections. Furnish a copy of the documentation to the Contracting Officer at the end of each day.</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Metal gauges listed in the following tables are applicable to light commercial and residential types and 
+uses. Compare metal thickness stated herein with the requirements of SMACNA 1793 and edit these tables using 
+the more stringent requirement of the two. Gauges of metal gutters in the following tables are only applicable 
+to gutters less than<met><pre class="display_MET">&lt;MET&gt;</pre> 150 mm by 150 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 inches by 6 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Use SMACNA 1793 for commercial gutters of larger 
+sizes.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<met><pre class="display_MET">&lt;MET&gt;</pre><tab headerrows="2">
+<wbk>
+<sts></sts>
+<tda columncount="6" rowcount="39">
+<col autowidth="0" width="132.00"/>
+<col autowidth="0" width="83.25"/>
+<col autowidth="0" width="75.75"/>
+<col autowidth="0" width="81.75"/>
+<col autowidth="0" width="106.50"/>
+<col autowidth="0" width="105.75"/>
+<row autoheight="0" height="21.00">
+<cel mergeacross="5">
+<dta type="STRING"><hl4>TABLE I. SHEET METAL WEIGHTS, THICKNESSES, AND GAGES</hl4></dta>
+</cel>
+</row>
+<row autoheight="0" height="71.25">
+<cel>
+<dta type="STRING">Sheet Metal Items</dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[Copper kilograms per square meter]</div></dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[Aluminum, mm]</div></dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[Stainless Steel, mm]</div></dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[Terne-Coated Stainless Steel, mm]</div></dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[Zinc-Coated Steel, mm]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel mergeacross="5">
+<dta type="STRING"><div class="brackets">[Building Expansion Joints]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Cover]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">0.81</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.6</dta>
+</cel>
+</row>
+<row autoheight="0" height="48.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Waterstop-bellows or flanged, U-type.]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="59.25">
+<cel>
+<dta type="STRING"><div class="brackets">[Covering on minor flat, pitched or curved surfaces]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">6.125</dta>
+</cel>
+<cel>
+<dta type="STRING">1.02</dta>
+</cel>
+<cel>
+<dta type="STRING">0.46</dta>
+</cel>
+<cel>
+<dta type="STRING">0.46</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="33.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Downspouts and leaders]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">0.81</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.6</dta>
+</cel>
+</row>
+<row autoheight="0" height="48.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Downspout clips and anchors]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">1.02 clip<brk></brk>3.175 anchor</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="33.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Downspout straps, 50 mm]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">14.7 (a)</dta>
+</cel>
+<cel>
+<dta type="STRING">1.52</dta>
+</cel>
+<cel>
+<dta type="STRING">1.27</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Conductor heads]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">0.81</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Scupper lining]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">6.125</dta>
+</cel>
+<cel>
+<dta type="STRING">0.81</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="33.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Strainers, wire diameter or gage]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.0 gage</dta>
+</cel>
+<cel>
+<dta type="STRING">3.66 diameter</dta>
+</cel>
+<cel>
+<dta type="STRING">2.77 diameter</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel mergeacross="5">
+<dta type="STRING"><div class="brackets">[Flashings:]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Base]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">6.125</dta>
+</cel>
+<cel>
+<dta type="STRING">1.02</dta>
+</cel>
+<cel>
+<dta type="STRING">0.46</dta>
+</cel>
+<cel>
+<dta type="STRING">0.46</dta>
+</cel>
+<cel>
+<dta type="STRING">0.6</dta>
+</cel>
+</row>
+<row autoheight="0" height="33.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Cap (Counter-flashing)]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">0.81</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.5</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Eave]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.6</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Spandrel beam]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">3.1</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">0.25</dta>
+</cel>
+<cel>
+<dta type="STRING">0.25</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Bond barrier]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Stepped]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">0.81</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Valley]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">0.81</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Roof drain]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9 (b)</dta>
+</cel>
+<cel></cel>
+<cel></cel>
+<cel></cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel mergeacross="5">
+<dta type="STRING"><div class="brackets">[Pipe vent sleave (d)]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Coping]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel mergeacross="5">
+<dta type="STRING"><div class="brackets">[Gravel stops and fascia:]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Extrusions]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">1.91</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Sheets, corrugated]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">0.81</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Sheets, smooth]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">6.125</dta>
+</cel>
+<cel>
+<dta type="STRING">1.27</dta>
+</cel>
+<cel>
+<dta type="STRING">0.46</dta>
+</cel>
+<cel>
+<dta type="STRING">0.46</dta>
+</cel>
+<cel>
+<dta type="STRING">0.6</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Edge strip]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">7.35</dta>
+</cel>
+<cel>
+<dta type="STRING">1.27</dta>
+</cel>
+<cel>
+<dta type="STRING">0.635</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel mergeacross="5">
+<dta type="STRING"><div class="brackets">[Gutters:]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Gutter section]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">0.81</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.6</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Continuous cleat]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">0.81</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.6</dta>
+</cel>
+</row>
+<row autoheight="0" height="33.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Hangers, dimensions]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">25 mm by 3 mm (a)</dta>
+</cel>
+<cel>
+<dta type="STRING">25 mm by 2 mm (c)</dta>
+</cel>
+<cel>
+<dta type="STRING">25 mm by 1 mm</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="33.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Joint Cover plates (See Table II)]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">0.81</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.38</dta>
+</cel>
+<cel>
+<dta type="STRING">0.6</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Reglets (c)]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">3.1</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">0.25</dta>
+</cel>
+<cel>
+<dta type="STRING">0.25</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING"><div class="brackets">[Splash pans]</div></dta>
+</cel>
+<cel>
+<dta type="STRING">4.9</dta>
+</cel>
+<cel>
+<dta type="STRING">1.02</dta>
+</cel>
+<cel>
+<dta type="STRING">0.46</dta>
+</cel>
+<cel>
+<dta type="STRING">0.46</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel mergeacross="5">
+<dta type="STRING">(a) Brass.</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel mergeacross="5">
+<dta type="STRING">(b) May be lead weighing 19.6 kilograms per square meter.</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel mergeacross="5">
+<dta type="STRING">(c) May be polyvinyl chloride.</dta>
+</cel>
+</row>
+<row autoheight="0" height="102.75">
+<cel mergeacross="5">
+<dta type="STRING">(d) 12.25 kilogram minimum lead sleeve with 100 mm flange. Where lead sleeve is impractical, refer to paragraph SINGLE PIPE VENTS for optional material.</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab><brk></brk><pre class="display_MET">&lt;/MET&gt;</pre></met>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre><brk></brk>
+<tab headerrows="2">
+<wbk>
+<sts>
+<sty sid="s50">
+<aln vertical="BOTTOM"></aln>
+</sty>
+</sts>
+<tda columncount="6" rowcount="39">
+<col autowidth="0" styleid="s50" width="105.75"/>
+<col autowidth="0" styleid="s50" width="57.75"/>
+<col autowidth="0" width="63.75"/>
+<col autowidth="0" width="69.00"/>
+<col autowidth="0" width="87.00"/>
+<col autowidth="0" width="84.75"/>
+<row autoheight="0" height="22.50">
+<cel mergeacross="5" styleid="s50">
+<dta type="STRING"><hl4>TABLE I. SHEET METAL WEIGHTS, THICKNESSES, AND GAGES</hl4></dta>
+</cel>
+</row>
+<row autoheight="0" height="72.00">
+<cel styleid="s50">
+<dta type="STRING">Sheet Metal Items</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Copper kilograms per square foot]</div></dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[Aluminum, inch]</div></dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[Stainless Steel, inch]</div></dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[Terne-Coated Stainless Steel, inch]</div></dta>
+</cel>
+<cel>
+<dta type="STRING"><div class="brackets">[Zinc-Coated Steel, U.S. Std. Gage]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel mergeacross="5" styleid="s50">
+<dta type="STRING"><div class="brackets">[Building Expansion Joints]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Cover]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">.032</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">24</dta>
+</cel>
+</row>
+<row autoheight="0" height="48.00">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Waterstop-bellows or flanged, U-type.]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="60.00">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Covering on minor flat, pitched or curved surfaces]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">20</dta>
+</cel>
+<cel>
+<dta type="STRING">.040</dta>
+</cel>
+<cel>
+<dta type="STRING">.018</dta>
+</cel>
+<cel>
+<dta type="STRING">.018</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="34.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Downspouts and leaders]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">.032</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">24</dta>
+</cel>
+</row>
+<row autoheight="0" height="48.00">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Downspout clips and anchors]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">.040 clip<brk></brk>.125 anchor</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="34.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Downspout straps, 2-inch]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">48 (a)</dta>
+</cel>
+<cel>
+<dta type="STRING">.060</dta>
+</cel>
+<cel>
+<dta type="STRING">.050</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Conductor heads]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">.032</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Scupper lining]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">20</dta>
+</cel>
+<cel>
+<dta type="STRING">.032</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="34.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Strainers, wire diameter or gage]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">No. 9 gage</dta>
+</cel>
+<cel>
+<dta type="STRING">.144 diameter</dta>
+</cel>
+<cel>
+<dta type="STRING">.109 diameter</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel mergeacross="5" styleid="s50">
+<dta type="STRING"><div class="brackets">[Flashings:]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Base]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">20</dta>
+</cel>
+<cel>
+<dta type="STRING">.040</dta>
+</cel>
+<cel>
+<dta type="STRING">.018</dta>
+</cel>
+<cel>
+<dta type="STRING">.018</dta>
+</cel>
+<cel>
+<dta type="STRING">24</dta>
+</cel>
+</row>
+<row autoheight="0" height="34.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Cap (Counter-flashing)]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">.032</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">26</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Eave]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">24</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Spandrel beam]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">10</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">.010</dta>
+</cel>
+<cel>
+<dta type="STRING">.010</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Bond barrier]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Stepped]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">.032</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Valley]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">.032</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Roof drain]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16 (b)</dta>
+</cel>
+<cel></cel>
+<cel></cel>
+<cel></cel>
+<cel></cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel mergeacross="5" styleid="s50">
+<dta type="STRING"><div class="brackets">[Pipe vent sleave (d)]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Coping]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel mergeacross="5" styleid="s50">
+<dta type="STRING"><div class="brackets">[Gravel stops and fascia:]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Extrusions]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">.075</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="34.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Sheets, corrugated]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">.032</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Sheets, smooth]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">20</dta>
+</cel>
+<cel>
+<dta type="STRING">.050</dta>
+</cel>
+<cel>
+<dta type="STRING">.018</dta>
+</cel>
+<cel>
+<dta type="STRING">.018</dta>
+</cel>
+<cel>
+<dta type="STRING">24</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Edge strip]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">24</dta>
+</cel>
+<cel>
+<dta type="STRING">.050</dta>
+</cel>
+<cel>
+<dta type="STRING">.025</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel mergeacross="5" styleid="s50">
+<dta type="STRING"><div class="brackets">[Gutters:]</div></dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Gutter section]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">.032</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">24</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Continuous cleat]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">.032</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">24</dta>
+</cel>
+</row>
+<row autoheight="0" height="48.00">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Hangers, dimensions]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">1 inch by 1/8 inch (a)</dta>
+</cel>
+<cel>
+<dta type="STRING">1 inch by .080 inch (c)</dta>
+</cel>
+<cel>
+<dta type="STRING">1 inch by .037 inch</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="48.00">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Joint Cover plates (See Table II)]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">.032</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">.015</dta>
+</cel>
+<cel>
+<dta type="STRING">24</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Reglets (c)]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">10</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+<cel>
+<dta type="STRING">.010</dta>
+</cel>
+<cel>
+<dta type="STRING">.010</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING"><div class="brackets">[Splash pans]</div></dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">16</dta>
+</cel>
+<cel>
+<dta type="STRING">.040</dta>
+</cel>
+<cel>
+<dta type="STRING">.018</dta>
+</cel>
+<cel>
+<dta type="STRING">.018</dta>
+</cel>
+<cel>
+<dta type="STRING">-</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel mergeacross="5" styleid="s50">
+<dta type="STRING">(a) Brass.</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel mergeacross="5" styleid="s50">
+<dta type="STRING">(b) May be lead weighing 4 pounds per square foot.</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel mergeacross="5" styleid="s50">
+<dta type="STRING">(c) May be polyvinyl chloride.</dta>
+</cel>
+</row>
+<row autoheight="0" height="95.25">
+<cel mergeacross="5" styleid="s50">
+<dta type="STRING">(d) 2.5 pound minimum lead sleeve with 4 inch flange. Where lead sleeve is impractical, refer to paragraph SINGLE PIPE VENTS for optional material.</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl></tab><pre class="display_ENG">&lt;/ENG&gt;</pre></eng><brk></brk>
+<met><pre class="display_MET">&lt;MET&gt;</pre><tab headerrows="3">
+<wbk>
+<sts></sts>
+<tda columncount="4" rowcount="19">
+<col autowidth="0" width="134.25"/>
+<col autowidth="0" width="156.00"/>
+<col autowidth="0" width="143.25"/>
+<col autowidth="0" width="151.50"/>
+<row autoheight="0" height="21.00">
+<cel mergeacross="3">
+<dta type="STRING"><hl4>TABLE II. SHEET METAL JOINTS</hl4></dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel mergeacross="3">
+<dta type="STRING"><hl4>TYPE OF JOINT</hl4></dta>
+</cel>
+</row>
+<row autoheight="0" height="71.25">
+<cel>
+<dta type="STRING">Item Designation</dta>
+</cel>
+<cel>
+<dta type="STRING">Copper, Terne-Coated Stainless Steel, Zinc-Coated Steel and Stainless Steel</dta>
+</cel>
+<cel>
+<dta type="STRING">Aluminum</dta>
+</cel>
+<cel>
+<dta type="STRING">Remarks</dta>
+</cel>
+</row>
+<row autoheight="0" height="71.25">
+<cel>
+<dta type="STRING">Joint cap for building expansion seam, cleated joint at roof</dta>
+</cel>
+<cel>
+<dta type="STRING">30 mm single lock, standing seam, cleated</dta>
+</cel>
+<cel>
+<dta type="STRING">30 mm single lock, standing</dta>
+</cel>
+<cel>
+<dta type="STRING">--</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel mergeacross="3">
+<dta type="STRING">Flashings</dta>
+</cel>
+</row>
+<row autoheight="0" height="143.25">
+<cel>
+<dta type="STRING">Base</dta>
+</cel>
+<cel>
+<dta type="STRING">25 mm<brk></brk>75 mm lap for expansion joint</dta>
+</cel>
+<cel>
+<dta type="STRING">25 mm flat locked, soldered; sealed; 75 mm lap for expansion joint</dta>
+</cel>
+<cel>
+<dta type="STRING">Aluminum manufacturer's recommended hard setting sealant for locked aluminum joints. Fill each metal expansion joint with a joint sealing compound.</dta>
+</cel>
+</row>
+<row autoheight="0" height="47.25">
+<cel>
+<dta type="STRING">Cap-in reglet</dta>
+</cel>
+<cel>
+<dta type="STRING">75 mm lap</dta>
+</cel>
+<cel>
+<dta type="STRING">75 mm lap</dta>
+</cel>
+<cel>
+<dta type="STRING">Seal groove with joint sealing compound.</dta>
+</cel>
+</row>
+<row autoheight="0" height="47.25">
+<cel>
+<dta type="STRING">Reglets</dta>
+</cel>
+<cel>
+<dta type="STRING">Butt joint</dta>
+</cel>
+<cel>
+<dta type="STRING">--</dta>
+</cel>
+<cel>
+<dta type="STRING">Seal reglet groove with joint sealing compound.</dta>
+</cel>
+</row>
+<row autoheight="0" height="81.00">
+<cel>
+<dta type="STRING">Eave</dta>
+</cel>
+<cel>
+<dta type="STRING">25 mm flat locked, cleated. 25 mm loose locked, sealed expansion joint, cleated.</dta>
+</cel>
+<cel>
+<dta type="STRING">25 mm flat locked, locked, cleated 25 mm loose locked, sealed expansion joints, cleated</dta>
+</cel>
+<cel>
+<dta type="STRING">Same as base flashing.</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING">Stepped</dta>
+</cel>
+<cel>
+<dta type="STRING">75 mm lap</dta>
+</cel>
+<cel>
+<dta type="STRING">75 mm lap</dta>
+</cel>
+<cel>
+<dta type="STRING">--</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING">Valley</dta>
+</cel>
+<cel>
+<dta type="STRING">150 mm lap cleated</dta>
+</cel>
+<cel>
+<dta type="STRING">150 mm lap cleated</dta>
+</cel>
+<cel>
+<dta type="STRING">--</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel>
+<dta type="STRING">Edge strip</dta>
+</cel>
+<cel>
+<dta type="STRING">Butt</dta>
+</cel>
+<cel>
+<dta type="STRING">Butt</dta>
+</cel>
+<cel>
+<dta type="STRING">--</dta>
+</cel>
+</row>
+<row autoheight="0" height="21.00">
+<cel mergeacross="3">
+<dta type="STRING">Gravel stops:</dta>
+</cel>
+</row>
+<row autoheight="0" height="47.25">
+<cel>
+<dta type="STRING">Extrusions</dta>
+</cel>
+<cel>
+<dta type="STRING">--</dta>
+</cel>
+<cel>
+<dta type="STRING">Butt with 13 mm space</dta>
+</cel>
+<cel>
+<dta type="STRING">Use sheet flashing beneath and a cover plate</dta>
+</cel>
+</row>
+<row autoheight="0" height="33.00">
+<cel>
+<dta type="STRING">Sheet, smooth</dta>
+</cel>
+<cel>
+<dta type="STRING">Butt with 6 mm space</dta>
+</cel>
+<cel>
+<dta type="STRING">Butt with 6 mm space</dta>
+</cel>
+<cel>
+<dta type="STRING">Use sheet flashing backup plate.</dta>
+</cel>
+</row>
+<row autoheight="0" height="59.25">
+<cel>
+<dta type="STRING">Sheet, corrugated</dta>
+</cel>
+<cel>
+<dta type="STRING">Butt with 6 mm space</dta>
+</cel>
+<cel>
+<dta type="STRING">Butt with 6 mm space</dta>
+</cel>
+<cel>
+<dta type="STRING">Use sheet flashing beneath and a cover plate or a combination unit</dta>
+</cel>
+</row>
+<row autoheight="0" height="71.25">
+<cel>
+<dta type="STRING">Gutters</dta>
+</cel>
+<cel>
+<dta type="STRING">40 mm lap, riveted and soldered</dta>
+</cel>
+<cel>
+<dta type="STRING">25 mm flat locked riveted and sealed</dta>
+</cel>
+<cel>
+<dta type="STRING">Aluminum producers recommended hard setting sealant for locked aluminum joints.</dta>
+</cel>
+</row>
+<row autoheight="0" height="33.00">
+<cel mergeacross="3">
+<dta type="STRING">(a) Provide a 75 mm lap elastomeric flashing with manufacturer's recommended sealant.</dta>
+</cel>
+</row>
+<row autoheight="0" height="59.25">
+<cel mergeacross="3">
+<dta type="STRING">(b) Seal Polyvinyl chloride reglet with manufacturer's recommended sealant.</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl></tab><pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre><tab headerrows="3">
+<wbk>
+<sts>
+<sty sid="s50">
+<aln vertical="BOTTOM"></aln>
+</sty>
+</sts>
+<tda columncount="4" rowcount="19">
+<col autowidth="0" styleid="s50" width="107.25"/>
+<col autowidth="0" styleid="s50" width="124.50"/>
+<col autowidth="0" width="114.75"/>
+<col autowidth="0" width="121.50"/>
+<row autoheight="0" height="22.50">
+<cel mergeacross="3" styleid="s50">
+<dta type="STRING"><hl4>TABLE II. SHEET METAL JOINTS</hl4></dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel mergeacross="3" styleid="s50">
+<dta type="STRING"><hl4>TYPE OF JOINT</hl4></dta>
+</cel>
+</row>
+<row autoheight="0" height="72.00">
+<cel styleid="s50">
+<dta type="STRING">Item Designation</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Copper, Terne-Coated Stainless Steel, Zinc-Coated Steel and Stainless Steel</dta>
+</cel>
+<cel>
+<dta type="STRING">Aluminum</dta>
+</cel>
+<cel>
+<dta type="STRING">Remarks</dta>
+</cel>
+</row>
+<row autoheight="0" height="72.00">
+<cel styleid="s50">
+<dta type="STRING">Joint cap for building expansion seam, cleated joint at roof</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">1.25 inch single lock, standing seam, cleated</dta>
+</cel>
+<cel>
+<dta type="STRING">1.25 inch single lock, standing</dta>
+</cel>
+<cel>
+<dta type="STRING">--</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel mergeacross="3" styleid="s50">
+<dta type="STRING">Flashings</dta>
+</cel>
+</row>
+<row autoheight="0" height="144.00">
+<cel styleid="s50">
+<dta type="STRING">Base</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">One inch<brk></brk>3 inch lap for expansion joint</dta>
+</cel>
+<cel>
+<dta type="STRING">One inch flat locked, soldered; sealed; 3 inch lap for expansion joint</dta>
+</cel>
+<cel>
+<dta type="STRING">Aluminum manufacturer's recommended hard setting sealant for locked aluminum joints. Fill each metal expansion joint with a joint sealing compound.</dta>
+</cel>
+</row>
+<row autoheight="0" height="48.00">
+<cel styleid="s50">
+<dta type="STRING">Cap-in reglet</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">3 inch lap</dta>
+</cel>
+<cel>
+<dta type="STRING">3 inch lap</dta>
+</cel>
+<cel>
+<dta type="STRING">Seal groove with joint sealing compound.</dta>
+</cel>
+</row>
+<row autoheight="0" height="48.00">
+<cel styleid="s50">
+<dta type="STRING">Reglets</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Butt joint</dta>
+</cel>
+<cel>
+<dta type="STRING">--</dta>
+</cel>
+<cel>
+<dta type="STRING">Seal reglet groove with joint sealing compound.</dta>
+</cel>
+</row>
+<row autoheight="0" height="83.25">
+<cel styleid="s50">
+<dta type="STRING">Eave</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">One inch flat locked, cleated. One inch loose locked, sealed expansion joint, cleated.</dta>
+</cel>
+<cel>
+<dta type="STRING">One inch flat locked, locked, cleated one inch loose locked, sealed expansion joints, cleated</dta>
+</cel>
+<cel>
+<dta type="STRING">Same as base flashing.</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING">Stepped</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">3 inch lap</dta>
+</cel>
+<cel>
+<dta type="STRING">3 inch lap</dta>
+</cel>
+<cel>
+<dta type="STRING">--</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING">Valley</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">6 inch lap cleated</dta>
+</cel>
+<cel>
+<dta type="STRING">6 inch lap cleated</dta>
+</cel>
+<cel>
+<dta type="STRING">--</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel styleid="s50">
+<dta type="STRING">Edge strip</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Butt</dta>
+</cel>
+<cel>
+<dta type="STRING">Butt</dta>
+</cel>
+<cel>
+<dta type="STRING">--</dta>
+</cel>
+</row>
+<row autoheight="0" height="22.50">
+<cel mergeacross="3" styleid="s50">
+<dta type="STRING">Gravel stops:</dta>
+</cel>
+</row>
+<row autoheight="0" height="48.00">
+<cel styleid="s50">
+<dta type="STRING">Extrusions</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">--</dta>
+</cel>
+<cel>
+<dta type="STRING">Butt with 1/2 inch space</dta>
+</cel>
+<cel>
+<dta type="STRING">Use sheet flashing beneath and a cover plate</dta>
+</cel>
+</row>
+<row autoheight="0" height="34.50">
+<cel styleid="s50">
+<dta type="STRING">Sheet, smooth</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Butt with 1/4 inch space</dta>
+</cel>
+<cel>
+<dta type="STRING">Butt with 1/4 inch space</dta>
+</cel>
+<cel>
+<dta type="STRING">Use sheet flashing backup plate.</dta>
+</cel>
+</row>
+<row autoheight="0" height="60.00">
+<cel styleid="s50">
+<dta type="STRING">Sheet, corrugated</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Butt with 1/4 inch space</dta>
+</cel>
+<cel>
+<dta type="STRING">Butt with 1/4 inch space</dta>
+</cel>
+<cel>
+<dta type="STRING">Use sheet flashing beneath and a cover plate or a combination unit</dta>
+</cel>
+</row>
+<row autoheight="0" height="72.00">
+<cel styleid="s50">
+<dta type="STRING">Gutters</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">1.5 inch lap, riveted and soldered</dta>
+</cel>
+<cel>
+<dta type="STRING">One inch flat locked riveted and sealed</dta>
+</cel>
+<cel>
+<dta type="STRING">Aluminum producers recommended hard setting sealant for locked aluminum joints.</dta>
+</cel>
+</row>
+<row autoheight="0" height="34.50">
+<cel mergeacross="3" styleid="s50">
+<dta type="STRING">(a) Provide a 3 inch lap elastomeric flashing with manufacturer's recommended sealant.</dta>
+</cel>
+</row>
+<row autoheight="0" height="37.50">
+<cel mergeacross="3" styleid="s50">
+<dta type="STRING">(b) Seal Polyvinyl chloride reglet with manufacturer's recommended sealant.</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl></tab><pre class="display_ENG">&lt;/ENG&gt;</pre></eng><brk></brk></spt>
+</spt>]</div></prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

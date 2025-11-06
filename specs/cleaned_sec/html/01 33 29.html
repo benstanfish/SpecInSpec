@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>01 33 29.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">01 33 29</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:49</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-01 33 29 (February 2021)<brk></brk>
+ --------------------------------<brk></brk>
+Preparing Activity: <pra>NAVFAC</pra> Superseding<brk></brk>
+ UFGS-01 33 29 (February 2017)<brk></brk>
+ UFGS-01 33 29.05 20 (March 2019)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated April 2021</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 01 33 29</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>SUSTAINABILITY REQUIREMENTS AND REPORTING<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>02/21</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>providing sustainability 
+documentation for Guiding Principles Validation (GPV) and Third Party Certification 
+(TPC)</scp>. GPV is equivalent to meeting the requirements of UFC 1-200-02 "HIGH 
+PERFORMANCE AND SUSTAINABLE BUILDING REQUIREMENTS." All projects must meet 
+the requirements of UFC 1-200-02.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>This guide specification includes tailoring for both DESIGN-BUILD and DESIGN-BID-BUILD.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>This guide specification includes tailoring for ARMY. Deselect the ARMY tailoring 
+option for Navy-executed projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Use a properly edited version of this guide specification for projects that 
+contain one or more buildings that meet one of the following:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>a) For Army and Navy, new buildings or stand-alone additions greater than or 
+equal to 10,000 SF; for Air Force, all new buildings or stand-alone additions.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>b) Comprehensive replacement in an existing building that is greater than or 
+equal to 10,000 SF, with total cost (includes new work, renovation, operations 
+and maintenance, sustainment, restoration, and modernization associated with 
+and existing building renovation) greater than $3M and 50-percent or more Estimated 
+Replacement Cost (ERC).<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Use the HPSB Checklist for the Service who will maintain the building asset 
+in their Real Property Record. Complete an HPSB Checklist for each applicable 
+building in the project, before attaching to this specification. Checklist(s) 
+must be completely filled out before being used in a solicitation. Check with 
+the user Command for additional requirements. Each Component’s HPSB Checklist 
+may be found at: <url href="https://www.wbdg.org/ffc/dod/tri-services-sustainability-program/tracking-reporting">https://www.wbdg.org/ffc/dod/tri-services-<brk></brk>
+sustainability-program/tracking-reporting</url><pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>(Where Internet address appears on multiple lines, copy full address into Internet 
+browser.)<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections. Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text. For bracketed items, choose applicable 
+item(s) or insert appropriate information.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Remove information and requirements not required in respective project, whether 
+or not brackets are present.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of 
+the guide specification. The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article. Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are 
+referred to within the text by the basic designation only.</txt><brk></brk>
+<ref><org>COUNCIL ON ENVIRONMENTAL QUALITY (CEQ) (WHITE HOUSE)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>HPSB Guiding Principles<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) Guiding Principles for Sustainable Federal 
+Buildings and Determining Compliance with the 
+Guiding Principles for Sustainable Federal Buildings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl></ref><brk></brk>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre><ref><org>GREEN BUILDING INITIATIVE (GBI)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>GBI DOD GP Compliance<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017) GBI Department of Defense Guiding Principles 
+Compliance Program for New Construction<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<pre class="display_ADD">&lt;/ADD&gt;</pre></add><ref><org>GREEN BUSINESS CERTIFICATION INC. (GBCI)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>GP Assessment (DOD)<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>Guiding Principles Assessment for Department 
+of Defense<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>INTERNATIONAL CODE COUNCIL (ICC)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ICC IGCC<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018) International Green Construction Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>SHEET METAL AND AIR CONDITIONING CONTRACTORS' NATIONAL ASSOCIATION (SMACNA)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ANSI/SMACNA 008<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2007) IAQ Guidelines for Occupied Buildings 
+Under Construction, 2nd Edition<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>U.S. DEPARTMENT OF DEFENSE (DOD)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 1-200-02<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2020) High Performance and Sustainable Building 
+Requirements<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 3-210-10<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015; with Change 3, 2020) Low Impact Development<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>U.S. DEPARTMENT OF ENERGY (DOE)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>Energy Star<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(1992; R 2006) Energy Star Energy Efficiency 
+Labeling System (FEMP)<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>U.S. GREEN BUILDING COUNCIL (USGBC)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>LEED v4 BD+C<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>LEED v4 Building Design and Construction<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl></ref><brk></brk></spt>
+<spt outline="1.2"><ttl>1.2 SUMMARY</ttl><brk></brk>
+<txt>This section includes requirements for Sustainability documentation and reporting submittals per the federally 
+mandated High Performance and Sustainable Building (HPSB) or HPSB "Guiding Principles" (GP),<div class="brackets">[ and Third Party 
+Certification (TPC) requirements,]</div> in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 1-200-02<pre class="display_RID">&lt;/RID&gt;</pre></rid> High Performance and Sustainable Building 
+Requirements.</txt><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review Submittal Description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL 
+PROCEDURES and edit the following list, and corresponding submittal items in 
+the text, to reflect only the submittals required for the project. The Guide 
+Specification technical editors have classified those items that require Government 
+approval, due to their complexity or criticality, with a "G." Generally, other 
+submittal items can be reviewed by the Contractor's Quality Control System. 
+Only add a "G" to an item if the submittal is sufficiently important or complex 
+in context of the project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre><tai opt="ARMY">For Army projects, fill in the empty brackets following the "G" classification, 
+with a code of up to three characters to indicate the approving authority. 
+Codes for Army projects using the Resident Management System (RMS) are: "AE" 
+for Architect-Engineer; "DO" for District Office (Engineering Division or other 
+organization in the District Office); "AO" for Area Office; "RO" for Resident 
+Office; and "PO" for Project Office. </tai>Codes following the "G" typically are 
+not used for Navy, Air Force, and NASA projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>The "S" classification indicates submittals required as proof of compliance 
+for sustainability Guiding Principles Validation or Third Party Certification 
+and as described in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Sustainability requirements have been identified in many of the technical 
+performance sections. Include additional sustainability requirements throughout 
+the technical specification sections according to goals of this project. Identify 
+products and other submittals required for Guiding Principle Validation (GPV) 
+and Third Party Certification (TPC) where applicable, with an "S" next to the 
+submittal item. Use the following format to add submittal items in the technical 
+sections to comply with the requirements of this section:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>&lt;ITM&gt;&lt;SUB&gt;Insert Submittal Item&lt;/SUB&gt;; &lt;SUB&gt;S&lt;/SUB&gt;&lt;/ITM&gt;<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Make corresponding edits in technical sections' Part 1, Part 2 Products or in 
+Part 3 Execution to differentiate those pieces of equipment, products, or activities 
+related to GPV and TPC.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose the following bracketed paragraph for all projects except Navy-executed 
+DESIGN-BUILD.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Choose the first bracketed item for Navy, Air Force, and NASA projects, or choose 
+the second bracketed item for Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<del><pre class="display_DEL">&lt;DEL&gt;</pre><div class="brackets">[<pre class="display_DEL">&lt;/DEL&gt;</pre></div></del><txt>Government approval is required for submittals with a "G" classification. Submittals not having a "G" classification 
+are for Contractor Quality Control approval. Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL 
+PROCEDURES:</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For Air Force only: For every Air Force DESIGN-BUILD project, keep all 
+bracketed SD-01, SD-05, and SD-11 submittals. For every Air Force DESIGN-BID-BUILD 
+project, keep all SD-01 and SD-11 submittals<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Add other Checklist and Sustainability eNotebook submittals to match the number 
+of design submissions, based on the project scope, and add requirements paragraphs 
+in Part 1.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-01 Preconstruction Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For Navy projects in the NAVFAC PAC Area of Operation only: remove the 
+"G" designation from all SD-01 Preconstruction Submittals.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Sustainability Action Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For DESIGN-BID-BUILD projects, delete the following submittal if it is 
+not part of the contractor's scope.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-11 Closeout Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>High Performance and Sustainable Building Checklist<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Final Sustainability eNotebook<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Amended Final Sustainability eNotebook<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose bracketed option for "Third Party Certification Certificate, Assessment, 
+or Validation and Compliance Report" for TPC projects that require the Contractor 
+to obtain the TPC certification.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Third Party Certification Certificate, Assessment, or Validation and Compliance Report<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Amended Final High Performance And Sustainable Building Checklist<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>;<sub><pre class="display_SUB">&lt;SUB&gt;</pre> G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+]</div></spt><spt outline="1.4"><ttl>1.4 GUIDING PRINCIPLES VALIDATION (GPV)</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: GUIDING PRINCIPLES VALIDATION (GPV) is required in accordance with UFC 
+1-200-02 HIGH PERFORMANCE SUSTAINABLE BUILDING REQUIREMENTS and the notes under 
+this specification's title above.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Complete Preliminary HPSB Checklist and include at the end of this specification. 
+For projects with multiple buildings, attach HPSB Checklist for each building. 
+See the notes under this specification's title above.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide the following sustainability activities and documentation to verify achievement of <rid><pre class="display_RID">&lt;RID&gt;</pre>HPSB Guiding Principles<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ Validation (GPV):</txt><brk></brk>
+<spt outline="1.4.1"><ttl>1.4.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Sustainability Action Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Include the following information in the Sustainability Action Plan:</txt><brk></brk>
+<lst indent="-0.33">a. Analysis of each <rid><pre class="display_RID">&lt;RID&gt;</pre>HPSB Guiding Principles<pre class="display_RID">&lt;/RID&gt;</pre></rid> and how project will comply. Final government approved 
+narrative(s) must be included in the HPSB Checklist submittal.</lst><brk></brk>
+<lst indent="-0.33">b. Name and contact information for: Contractor's Point of Contact (POC) ensuring sustainability goals 
+are accomplished and documentation is assembled.<del><pre class="display_DEL">&lt;DEL&gt;</pre> For TPC that include on-site visit by third party representative, 
+provide list of required attendees<pre class="display_DEL">&lt;/DEL&gt;</pre></del></lst><brk></brk>
+<lst indent="-0.33"><del><pre class="display_DEL">&lt;DEL&gt;</pre>b<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>c<pre class="display_ADD">&lt;/ADD&gt;</pre></add>. HPSB Checklist. No changes to the HPSB Checklist are allowed without approval from the Contracting 
+Officer, in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL REQUIREMENTS. Immediately bring to the attention 
+of the Contracting Officer any project changes that impact meeting the approved <rid><pre class="display_RID">&lt;RID&gt;</pre>HPSB Guiding Principles<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ for this project. Demonstrate the change will not increase the life-cycle cost and maintains or improves 
+the building performance.</lst><brk></brk>
+<lst indent="-0.33"><add><pre class="display_ADD">&lt;ADD&gt;</pre>d<pre class="display_ADD">&lt;/ADD&gt;</pre></add><del><pre class="display_DEL">&lt;DEL&gt;</pre>c<pre class="display_DEL">&lt;/DEL&gt;</pre></del>. Documentation of all work required to incorporate the applicable <rid><pre class="display_RID">&lt;RID&gt;</pre>HPSB Guiding Principles<pre class="display_RID">&lt;/RID&gt;</pre></rid> requirements 
+indicated on the HPSB Checklist and in this contract.</lst><brk></brk>
+<lst indent="-0.33"><del><pre class="display_DEL">&lt;DEL&gt;</pre>c<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>e<pre class="display_ADD">&lt;/ADD&gt;</pre></add>. Indoor Air Quality plan.</lst><add><pre class="display_ADD">&lt;ADD&gt;</pre><brk></brk>
+<txt>For each designated construction related HPSB Guiding Principles Requirement that is not achieved, provide a 
+narrative explaining how the mission or activity precludes achieving the specific sustainability requirement 
+or goal. Include final, government approved narratives with the HPSB checklist.</txt><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk></spt>
+</spt><spt outline="1.5"><ttl>1.5 SUSTAINABILITY SUBMITTALS</ttl><brk></brk>
+<spt outline="1.5.1"><ttl>1.5.1 High Performance Sustainable Building (HPSB) Checklist</ttl><brk></brk>
+<txt>Provide construction documentation that provides proof of, and supports compliance with, the completed HPSB Checklist. 
+Submit updated HPSB Checklist with each Sustainability eNotebook submittal. Include the final HPSB Checklist(s) 
+with the interim DD1354 Real Property Record Submittal.</txt><brk></brk></spt>
+<spt outline="1.5.2"><ttl>1.5.2 Sustainability eNotebook</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the bracketed TPC phrases for projects required to obtain TPC.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The Sustainability eNotebook is an electronic organizational file that serves as a repository for all required 
+sustainability submittals. To support documentation of compliance with an approved HPSB<div class="brackets">[ and TPC]</div> checklist, 
+provide and maintain a comprehensive and current Sustainability eNotebook. Include all required data in Sustainability 
+eNotebook, to support full compliance with the <rid><pre class="display_RID">&lt;RID&gt;</pre>HPSB Guiding Principles<pre class="display_RID">&lt;/RID&gt;</pre></rid> Requirements, including:</txt><brk></brk>
+<del><pre class="display_DEL">&lt;DEL&gt;</pre><lst indent="-0.33">a. HPSB checklist</lst><pre class="display_DEL">&lt;/DEL&gt;</pre></del><brk></brk>
+<lst indent="-0.33"><del><pre class="display_DEL">&lt;DEL&gt;</pre>b<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>a<pre class="display_ADD">&lt;/ADD&gt;</pre></add>. Sustainability Action Plan</lst><brk></brk>
+<lst indent="-0.33"><add><pre class="display_ADD">&lt;ADD&gt;</pre>b<pre class="display_ADD">&lt;/ADD&gt;</pre></add><del><pre class="display_DEL">&lt;DEL&gt;</pre>c<pre class="display_DEL">&lt;/DEL&gt;</pre></del>. Calculations</lst><brk></brk>
+<lst indent="-0.33"><add><pre class="display_ADD">&lt;ADD&gt;</pre>c<pre class="display_ADD">&lt;/ADD&gt;</pre></add><del><pre class="display_DEL">&lt;DEL&gt;</pre>d<pre class="display_DEL">&lt;/DEL&gt;</pre></del>. Labels</lst><brk></brk>
+<lst indent="-0.33"><del><pre class="display_DEL">&lt;DEL&gt;</pre>e<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>d<pre class="display_ADD">&lt;/ADD&gt;</pre></add>. Sustainability submittals</lst><add><pre class="display_ADD">&lt;ADD&gt;</pre><brk></brk>
+<div class="brackets">[<lst indent="-0.33">e. HPSB checklist</lst><brk></brk>
+]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add><div class="brackets">[<lst indent="-0.33">f. Certifications, assessments, or validations and compliance report</lst><brk></brk>
+]</div><div class="brackets">[<lst indent="-0.33">g. TPC documentation required in paragraph THIRD PARTY CERTIFICATION (TPC).</lst><brk></brk>
+]</div><spt outline="1.5.2.1"><ttl>1.5.2.1 Sustainability eNotebook Format</ttl><brk></brk>
+<txt>Provide Sustainability eNotebook in the form of an Adobe PDF file; bookmark each <rid><pre class="display_RID">&lt;RID&gt;</pre>HPSB Guiding Principles<pre class="display_RID">&lt;/RID&gt;</pre></rid> Requirement<div class="brackets">[, 
+TPC requirement,]</div> and sub-bookmark at each document. Match format to <rid><pre class="display_RID">&lt;RID&gt;</pre>HPSB Guiding Principles<pre class="display_RID">&lt;/RID&gt;</pre></rid> numbering system 
+indicated herein. Maintain up-to-date information, such as spreadsheets, templates, with each current submittals.<div class="brackets">[ 
+For TPC projects, provide a second Table of Contents using TPC numbering system, for maintaining documentation 
+unique to TPC.]</div></txt><brk></brk>
+<txt>Contracting Officer may deduct from the monthly progress payment accordingly if Sustainability eNotebook information 
+is not current and on track per project goals.</txt><brk></brk></spt>
+<spt outline="1.5.2.2"><ttl>1.5.2.2 Sustainability eNotebook Submittal Schedule</ttl><brk></brk>
+<txt>Provide Sustainability eNotebook Submittals at the following milestones of the project:</txt><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose submittal paragraphs, based on scope of project. In each of the 
+following paragraphs, include the first bracketed phrase for projects required 
+to obtain TPC.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For projects required to obtain TPC, include the bracketed paragraph 
+when seeking approval of TPC design requirements. This is the preferred method 
+to obtain TPC, and it is preferred this report is obtained prior to construction 
+award. For DESIGN-BID-BUILD projects, delete this report if it is not part 
+of the contractor's scope.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the bracketed phrases for projects required to obtain TPC.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the first bracketed phrase for projects required to obtain TPC.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Include the second bracketed phrase for Navy-executed DESIGN-BUILD only.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<lst indent="-0.33">a. <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Final Sustainability eNotebook<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<lst indent="-0.33"> Submit updated Sustainability eNotebook with updated <sub><pre class="display_SUB">&lt;SUB&gt;</pre>High Performance and Sustainable Building Checklist<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
+<div class="brackets">[ with TPC Checklist]</div> at Beneficial Occupancy Date (BOD). Final progress payment retainage may be held 
+by Contracting Officer until Final Sustainability construction phase documentation is complete.</lst><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the following paragraph when an amended Sustainability eNotebook 
+is required (due to post-construction activities such as commissioning). Include 
+the first bracketed phrase for projects required to obtain TPC.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<lst indent="-0.33">b. <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Amended Final Sustainability eNotebook<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<lst indent="-0.33"> Amend and resubmit the Amended Final Sustainability eNotebook with <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Amended Final High Performance 
+and Sustainable Building Checklist<pre class="display_SUB">&lt;/SUB&gt;</pre></sub><div class="brackets">[ and amended TPC Checklist]</div>, to include post-occupancy corrections, 
+updates, and requirements. Final progress payment retainage may be held by Contracting Officer until 
+amended final sustainability documentation is complete. Submit the Amended Final Sustainability eNotebook 
+Submittal on DVDs to the Contracting Officer no later than 30 days after final GP<div class="brackets">[, TPC]</div> determination.</lst><brk></brk>
+]</div></spt></spt></spt><spt outline="1.6"><ttl>1.6 DOCUMENTATION REQUIREMENTS</ttl><brk></brk>
+<lst indent="-0.33">a. Incorporate each of the applicable <rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 1-200-02<pre class="display_RID">&lt;/RID&gt;</pre></rid> <rid><pre class="display_RID">&lt;RID&gt;</pre>HPSB Guiding Principles<pre class="display_RID">&lt;/RID&gt;</pre></rid> requirements into project 
+and provide documentation that proves compliance with each listed requirement. For life-cycle cost analysis 
+requirements, one document with all analyses is acceptable, with Contracting Officer approval.</lst><brk></brk>
+<lst indent="-0.33">b. For the following items, Japanese acceptable alternatives are listed. For all other items, see UFC 
+1-200-02.</lst><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The following subparagraphs provide Guiding Principle Requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Choose requirements that can be fully achieved, or partially achieved to the 
+greatest degree possible. For partially achievable requirements, track them 
+as "yes" only with one of the following justifications:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>1. Life-cycle cost-effectiveness and energy model;<brk></brk>
+2. Mission restriction (ex: 24/7 operation);<brk></brk>
+3. Location/regional restriction (ex: availability of high-efficiency equipment service);<brk></brk>
+4. Locale restriction (ex: proximity of existing buildings restricts daylighting).<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Delete requirements that are not applicable to the project. Non-applicability 
+requires one of the following justifications:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>1. Life-cycle cost-effectiveness and energy model;<brk></brk>
+2. Mission exclusion (ex: no daylighting in a theater or a SCIF);<brk></brk>
+3. Location/regional exclusion (ex: no local recycling facility); or<brk></brk>
+4. Locale exclusion (ex: there is no steam to meter).<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="1.6.1"><ttl>1.6.1 Energy Efficient Products</ttl><brk></brk>
+<txt>Products do not have to have the <rid><pre class="display_RID">&lt;RID&gt;</pre>Energy Star<pre class="display_RID">&lt;/RID&gt;</pre></rid> label, but they shall have Federal Energy Management Program (FEMP) 
+recommended efficiencies. Energy efficient products can be referenced at: <url>https://www.energy.gov/eere/femp/federal-energy-management-program</url>
+ and <url>http://www.energystar.gov/</url>.</txt><brk></brk></spt>
+<spt outline="1.6.2"><ttl>1.6.2 Indoor Water Use</ttl><brk></brk>
+<txt>Products do not have to have the EPA WaterSense label, but they shall comply with WaterSense efficiency requirements.</txt><brk></brk></spt>
+<spt outline="1.6.3"><ttl>1.6.3 Reduce Volatile Organic Compounds (VOC) (Low-Emitting Materials)</ttl><brk></brk>
+<txt>F 4-Star and 4VOC combined ratings are acceptable Japanese alternatives for low-VOC materials. For Construction 
+submittal documentation, provide certifications or labels that demonstrate compliance with cited requirements.</txt><brk></brk></spt>
+<div class="brackets">[<spt outline="1.6.4"><ttl>1.6.4 Additional Sustainability Requirements</ttl><brk></brk>
+<txt>Provide the additional sustainability requirements cited in this paragraph.</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: In addition to GPV and Sustainability eNotebook, Third Party Certification 
+(TPC) is required for projects that meet the thresholds cited in Table 1-1 of 
+UFC 1-200-02.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>1. New building or stand-alone addition greater than or equal to 10,000 SF, 
+with construction cost greater than $3M.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>2. Comprehensive replacement in an existing building that is greater than or 
+equal to 10,000 SF, with total cost greater than $3M and 50-percent or more 
+ERC.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>TPC is the generic term for a third party product that provides either certification 
+of the third party vendor's proprietary product requirements (examples LEED, 
+Green Globes), or a validation program by the third party vendor that UFC 1-200-02 
+requirements have been met (examples: Guiding Principles Assessment, Guiding 
+Principles Compliance).<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For each building that meets item 1 or item 2 above, choose one of the following 
+paragraphs titled "Third Party Certification (TPC) Documentation" below, based 
+on how TPC is executed, and delete the others.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<tai opt="DESIGN-BID-BUILD"><div class="brackets">[<spt><ttl>Third Party Certification (TPC) Documentation</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose this DESIGN-BID-BUILD "Third Party Certification (TPC) Documentation" 
+paragraph for Third Party Certification, assessment, or validation when the 
+Designer of Record is responsible for the entire TPC process, with the Construction 
+Contractor providing the construction documentation. This is the preferred 
+method of TPC execution for DESIGN-BID-BUILD (DBB) Delete the other DESIGN-BID-BUILD 
+"Third Party Certification (TPC) Documentation" paragraph option.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Third Party Certification certificate, assessment, or validation, and compliance report requirements are in addition 
+to all requirements under header above GUIDING PRINCIPLES VALIDATION (GPV).</txt><brk></brk>
+<spt><ttl>TPC Registration</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose the rating system below that best assists with Guiding Principles 
+Validation, complies with Component policy, and delete the others.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Obtain, fill out, and include TPC checklist with this section. For projects 
+with multiple buildings, attach TPC Checklist for each building that requires 
+TPC.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For certifications, assessments or validations that include a plaque, include 
+the bracketed phrase in the first paragraph.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For Air Force ONLY: Choose one of the following methods for executing TPC:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>a. For Guiding Principles Assessment for Department of Defense (by GBCI), choose 
+"GP Assessment (DOD)", use only DOD version, and ask for it when registering.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>b. For Green Building Initiative (GBI) "Department of Defense Guiding Principles 
+Compliance", or "GBI DOD GP Compliance", use only DOD version, and ask for it 
+when registering.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For Army projects ONLY: Choose only the following method for executing TPC:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>a. For USGBC LEED v4, choose "LEED v4 BD+C", and enter "Silver" in the bracket. 
+For use of alternate certification systems, a waiver must be submitted per the 
+current Army Sustainable Design and Development Policy.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For Navy ONLY: Choose one of the following methods for executing TPC:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>a. For USGBC LEED v4, choose "LEED v4 BD+C", and enter the target level in 
+the bracket.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>b. For Guiding Principles Assessment for Department of Defense (by GBCI), choose 
+"GP Assessment (DOD)", use only DOD version, and ask for it when registering.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>c. For Green Building Initiative (GBI) "Department of Defense Guiding Principles 
+Compliance", or "GBI GP DOD Compliance", use only DOD version, and ask for it 
+when registering.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>d. For Green Building Initiative (GBI) Green Globes, choose "GBI Green Globes 
+for NC", and enter the target level in the bracket.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>e. For an alternate certification system, use only those that comply with the 
+minimum requirements of 10 CFR 433.300 Subpart C — Green Building Certification 
+for Federal Buildings, and insert the name of the compliant system in the empty 
+bracket. Facilities Engineering Command (FEC) Capital Improvements (CI) Core 
+must authorize the use of alternative system.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>This project has been designed for, and must be constructed to achieve <div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>LEED v4 BD+C<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div><div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>GP Assessment (DOD)<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>GBI DOD GP Compliance<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add>. Project is already registered with the TPC Organization. Provide construction related sustainability documentation, 
+in the format required by the TPC Organization, to the Contracting Officer for approval, and for final approval 
+by the TPC organization. Third Party Certification is met when Government receives TPC organization certificate, 
+assessment, or validation and compliance report. Execute the following:</txt><brk></brk>
+<lst indent="-0.33">a. Refer to TPC Checklist at the end of this specification section. (Multiple checklists indicate multiple 
+buildings that require TPC.)</lst><brk></brk>
+<lst indent="-0.33">b. Immediately bring to the attention of the Contracting Officer any project changes that impact meeting 
+the approved TPC Requirements for this project. Demonstrate the change will not increase the life-cycle 
+cost and maintains or improves the building performance.</lst><brk></brk>
+<lst indent="-0.33">c. Complete all work required to incorporate the applicable TPC Requirements.</lst><brk></brk>
+<lst indent="-0.33">d. Maintain the construction related information in the Sustainability eNotebook pertaining to additions 
+and changes to the approved sustainability requirements. Maintain the Sustainability eNotebook in electronic 
+format. For more explanation, refer to paragraph SUSTAINABILITY eNOTEBOOK. Provide the following components 
+in the Sustainability eNotebook, in addition to the GPV components above:</lst><brk></brk>
+<itm indent="-0.33">(1) TPC Checklist</itm><brk></brk>
+<itm indent="-0.33">(2) Provide construction documentation required to achieve third party certification</itm><brk></brk>
+<lst indent="-0.33">e. Provide the following information in the Sustainability Action Plan. Provide this TPC information 
+in addition to the GPV Action Plan items above:</lst><brk></brk>
+<itm indent="-0.33">(1) Planned method to achieve each TPC requirement.</itm><brk></brk>
+<itm indent="-0.33">(2) For each TPC requirement that is attempted but not achieved, provide narrative explaining 
+how mission or activity precludes achieving specific sustainability requirement or goal. Provide 
+analysis of particular requirement and level to which project is able to comply.</itm><brk></brk>
+<itm indent="-0.33">(3) Provide name and contact information for: Sustainability Point of Contact (POC) and other 
+names of sustainability professionals responsible for ensuring TPC sustainability goals are 
+accomplished and documentation is assembled. Sustainability POCs are also responsible for ensuring 
+GPV required in paragraph GUIDING PRINCIPLES VALIDATION (GPV) above.</itm><brk></brk>
+<lst indent="-0.33">f. Bear all costs associated with construction changes that affect sustainability design requirements, 
+constructing, demonstrating, and documenting that project complies with approved TPC requirements, including 
+but not limited to:</lst><brk></brk>
+<itm indent="-0.33">(1) TPC coordination with Government's AE and other consultants, TPC website requirements, and 
+management for construction related documentation.</itm><brk></brk>
+<itm indent="-0.33">(2) Construction work required to incorporate TPC requirements.</itm><brk></brk>
+<itm indent="-0.33">(3) Submittals required to demonstrate compliance with Government approved TPC checklists.</itm><brk></brk>
+<itm indent="-0.33">(4) Documentation illustrating compliance with TPC requirements and additional documentation 
+required by the TPC.</itm><brk></brk>
+<lst indent="-0.33">g. Provide all calculations, product data, and certifications, assessments, or validations required 
+in this contract to demonstrate compliance with the TPC Requirements of this section.</lst><brk></brk></spt>
+</spt>]</div></tai><tai opt="DESIGN-BID-BUILD"><div class="brackets">[<spt><ttl>Third Party Certification (TPC) Documentation</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose this DESIGN-BID-BUILD "Third Party Certification (TPC) Documentation" 
+paragraph, if the Construction Contractor is responsible for achieving the final 
+TPC. Use of this method is discouraged. Delete the previous DESIGN-BID-BUILD 
+"Third Party Certification (TPC) Documentation" paragraph option.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Third Party Certification certificate, assessment, or validation, and compliance report requirements are in addition 
+to all requirements under header above GUIDING PRINCIPLES VALIDATION (GPV).</txt><brk></brk>
+<div class="brackets">[<spt><ttl>TPC Registration Required</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose this bracketed paragraph if the Designer of Record (DOR) has not 
+registered the project with a TPC organization, and the Construction Contractor 
+must do so. Delete the second bracketed paragraph.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose the rating system below that best assists with Guiding Principles 
+Validation complies with Component policy and delete the others.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Obtain, fill out, and include TPC checklist with this section. For projects 
+with multiple buildings, attach TPC Checklist for each building that requires 
+TPC.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For certifications, assessments, or validations that include a plaque, include 
+the bracketed phrases below.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For Air Force ONLY: Choose one of the following methods for executing TPC:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>a. For Guiding Principles Assessment by USGBC/GBCI (DOD Version), choose "GBCI 
+GP Assessment", use only DOD version, and ask for it when registering.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>b. For Green Building Initiative (GBI) "Department of Defense Guiding Principles 
+Compliance", or "GBI GP DOD Compliance", use only DOD version, and ask for it 
+when registering.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For Army projects ONLY: Choose only the following method for executing TPC:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>a. For USGBC LEED v4, choose "LEED v4 BD+C", and enter "Silver" in the bracket. 
+For use of alternate certification systems, a waiver must be submitted per the 
+current Army Sustainable Design and Development Policy.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For Navy ONLY: Choose one of the following methods for executing TPC:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>a. For USGBC LEED v4, choose "LEED v4 BD+C", and enter the target level in 
+the bracket.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>b. For Guiding Principles Assessment for Department of Defense (by GBCI), choose 
+"GP Assessment (DOD)", use only DOD version, and ask for it when registering.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>c. For Green Building Initiative (GBI) "Department of Defense Guiding Principles 
+Compliance", or "GBI GP DOD Compliance", use only DOD version, and ask for it 
+when registering.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>d. For Green Building Initiative (GBI) Green Globes, choose "GBI Green Globes 
+for NC", and enter the target level in the bracket.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>e. For an alternate certification system, use only those that comply with the 
+minimum requirements of 10 CFR 433.300 Subpart C — Green Building Certification 
+for Federal Buildings, and insert the name of the compliant system in the empty 
+bracket. Facilities Engineering Command (FEC) Capital Improvements (CI) Core 
+must authorize the use of alternative system.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Pay all fees associated with registration and achievement of Third Party Certification (TPC), by meeting all 
+TPC and project requirements to achieve <div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>LEED v4 BD+C<pre class="display_RID">&lt;/RID&gt;</pre></rid> <div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>GP Assessment (DOD)<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div> sustainability certification, assessment, 
+or validation. Third Party Certification is met when Government receives TPC organization certificate, assessment, 
+or validation and compliance report</div></txt><brk></brk>
+<txt>Register project with TPC organization using the following format and content:</txt><brk></brk>
+<lst indent="-0.33">a. Project Title First Line: Building Owner (US Army, US Air Force, US Navy or US Marine Corps), Building 
+Name (if known)</lst><brk></brk>
+<lst indent="-0.33">b. Project Title Second Line: MILCON P#, DD1391 Project Name</lst><brk></brk>
+<lst indent="-0.33">c. Project Address: UIC (Installation code), Category code, RPUID (Real Property Unique Identifier) 
+Number</lst><brk></brk>
+<lst indent="-0.33">d. Project Owner Organization: US Army, US Air Force, US Navy or US Marine Corps</lst><brk></brk>
+<lst indent="-0.33">e. Primary Contact, Project Owner: Component Project Manager</lst><brk></brk>
+<lst indent="-0.33">f. Building Owner Organization: US Army, US Air Force, US Navy or US Marine Corps</lst><brk></brk>
+<lst indent="-0.33">g. Building Owner Organization Project Number</lst><brk></brk>
+<lst indent="-0.33">h. Additional Contact, Building Owner: Department of Public Works, Public Works Officer, Base Civil 
+Engineer, or Designee</lst><brk></brk></spt>
+]</div><div class="brackets">[<spt><ttl>TPC Already Registered</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose this bracketed paragraph if the DOR has registered the project 
+with a TPC organization and will pass the responsibility for final TPC documentation 
+and certification, assessment, or validation to the Construction Contractor. 
+Delete the previous bracketed paragraph.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Obtain, fill out, and include TPC checklist with this section. For projects 
+with multiple buildings, attach TPC Checklist for each building that requires 
+TPC.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For certifications, assessments, or validations that include a plaque, include 
+the bracketed phrases below.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Project is already registered with TPC organization to achieve <div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>LEED v4 BD+C<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div> <div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>GP Assessment (DOD)<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>GBI DOD GP Compliance<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add>. When applicable, request TPC online access turnover from Government. Manage and provide all documentation 
+for requirements of TPC and obtain Final Certification or validation. Third Party Certification is met when 
+Government receives TPC organization certificate, assessment, or validation and compliance report.</txt><brk></brk></spt>
+]</div><spt><ttl>TPC Management and Certification</ttl><brk></brk>
+<txt>Execute the following TPC Certification, assessment, or validation requirements:</txt><brk></brk>
+<lst indent="-0.33">a. Refer to TPC Checklist at the end of this specification section. (Multiple checklists indicate multiple 
+buildings that require TPC.)</lst><brk></brk>
+<lst indent="-0.33">b. Immediately bring to the attention of the Contracting Officer any project changes that impact meeting 
+the approved TPC Requirements for this project. Demonstrate the change will not increase the life-cycle 
+cost and maintains or improves the building performance.</lst><brk></brk>
+<lst indent="-0.33">c. Complete all work required to incorporate the applicable TPC Requirements.</lst><brk></brk>
+<lst indent="-0.33">d. Maintain the construction related information in the Sustainability eNotebook pertaining to additions 
+and changes to the approved sustainability requirements. When construction changes are made that affect 
+design sustainability requirements, provide all required updates to affected design requirements and 
+update in the Sustainability eNotebook. Maintain the Sustainability eNotebook in electronic format. 
+For more explanation, refer to paragraph SUSTAINABILITY eNOTEBOOK. Provide the following components 
+in the Sustainability eNotebook, in addition to the GPV components above:</lst><brk></brk>
+<itm indent="-0.33">(1) TPC Checklist</itm><brk></brk>
+<itm indent="-0.33">(2) Completed TPC forms. Transmit by the method required by the TPC organization.</itm><brk></brk>
+<itm indent="-0.33">(3) Copy of all correspondence with the TPC organization including proof of TPC registration</itm><brk></brk>
+<itm indent="-0.33">(4) Documentation illustrating compliance with TPC requirements and additional documentation 
+as requested by the TPC</itm><brk></brk>
+<itm indent="-0.33">(5) TPC Award Certificate, assessment, or validation and compliance report.</itm><brk></brk>
+<lst indent="-0.33">e. Provide the following information in the Sustainability Action Plan. Provide this TPC information 
+in addition to the Sustainability Action Plan items above:</lst><brk></brk>
+<itm indent="-0.33">(1) Planned method to achieve each TPC requirement.</itm><brk></brk>
+<itm indent="-0.33">(2) For each TPC requirement that is attempted but not achieved, provide narrative explaining 
+how mission or activity precludes achieving specific sustainability requirement or goal. Provide 
+analysis of particular requirement and level to which project is able to comply.</itm><brk></brk>
+<itm indent="-0.33">(3) Provide name and contact information for: Sustainability point of contact (POC) and other 
+names of sustainability professionals responsible for ensuring TPC sustainability goals are 
+accomplished and documentation is assembled. Sustainability POCs are also responsible for ensuring 
+GPV required in paragraph GUIDING PRINCIPLES VALIDATION (GPV) above.</itm><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For certifications, assessments, or validations that include a plaque, 
+included the bracketed phrase.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<lst indent="-0.33">f. Bear all costs associated with construction changes that affect sustainability design requirements, 
+constructing, demonstrating, and documenting that project complies with approved TPC requirements, including 
+but not limited to:</lst><brk></brk>
+<itm indent="-0.33">(1) Final TPC review, certification, assessment, or validation fees.</itm><brk></brk>
+<itm indent="-0.33">(2) Online (or offline with secure facilities) TPC management and documentation.</itm><brk></brk>
+<itm indent="-0.33">(3) Obtaining TPC certification or validation based on Government-approved sustainability goals.</itm><brk></brk>
+<itm indent="-0.33">(4) Construction work required to incorporate TPC requirements.</itm><brk></brk>
+<itm indent="-0.33">(5) Submittals required to demonstrate compliance with Government approved TPC checklists.</itm><brk></brk>
+<lst indent="-0.33">g. Provide all calculations, product data, and certifications, assessments, or validations required 
+in this specification to demonstrate compliance with the TPC Requirements.</lst><brk></brk>
+<lst indent="-0.33">h. Provide all TPC management and documentation. Transmit TPC requirements by the method required by 
+TPC organization.</lst><brk></brk>
+<lst indent="-0.33">i. Provide all required responses to third party organization.</lst><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the bracketed paragraph below for TPC that includes required 
+site visit by a TPC representative (this is typically required for GBI provided 
+TPC). The Government Executing Agent's Project Manager is responsible to coordinate 
+the TPC site visit. Project Manager must coordinate with the TPC representative, 
+Design Manager, and Construction Manager to determine participating team members. 
+Include commissioning provider on applicable projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<lst indent="-0.33">j. Facilitate and participate in required TPC site visit. Coordinate with the Contract Officer to determine 
+participating team members. Include Commissioning provider on applicable projects.</lst><brk></brk>
+]</div><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose the following paragraph for TPC that includes a certificate, assessment, 
+or validation. For TPC that include a plaque, include the bracketed phrases.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<div class="brackets">[<lst indent="-0.33">k. Provide TPC Certificate, assessment, or validation. Provide TPC compliance report that includes level 
+achieved and reasons for non-compliance or not applicable elements. Use format below to create the Certificate, 
+assessment or validation, compliance report, and Letter of Congratulations (when provided). Forward 
+to parties designated by Contracting Officer:</lst><brk></brk>
+<itm indent="-0.33">(1) Certificate, Assessment or Validation:</itm><brk></brk>
+<itm indent="-0.33"> Project Title, first line: P-(X); Form DD1391 Project Name).</itm><brk></brk>
+<itm indent="-0.33"> Project Title, second line: UIC (Installation code)</itm><brk></brk>
+<itm indent="-0.33">(2) Letter Congratulations (when provided): Address letter to Facility's Installation Commander 
+Name. Address the letter to an individual person.</itm><brk></brk>
+<itm indent="-0.33">(3) Compliance Report: Title page must cite Project title: P-(X); (1391 Project Name); Final 
+Building Name if known; UIC (installation code); Owner Service; User organization if known; 
+date of compliance. Include TPC scoresheet if applicable.</itm><brk></brk>
+]</div><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose first bracket for Air Force projects and delete the others. Choose 
+second bracket for Army projects and delete the others. Choose third bracket 
+for Navy projects and delete the others.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<lst indent="-0.33">l. Once Final Certification is achieved, turn over Administrative rights to online TPC to the <div class="brackets">[Base 
+Civil Engineer]</div> <div class="brackets">[Department of Public Works]</div> <div class="brackets">[Public Works Office]</div> or designee, contact information provided 
+by the Contracting Officer.</lst><brk></brk></spt>
+</spt>]</div></tai></spt>]</div><div class="brackets">[<spt outline="1.6.5"><ttl>1.6.5 Additional Sustainability Requirements</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include this bracketed paragraph when there are additional sustainability 
+requirements, including additional TPC requirements. TPC optional requirements 
+that align with HPSB requirements are mandatory. Add them as requirements in 
+the following paragraph. Coordinate language throughout affected UFGS Sections 
+in this project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The following requirements are included, as required by the project scope or the applied sustainability Third 
+Party Certification program:</txt><brk></brk>
+<txt><div class="brackets">[_____]</div></txt><brk></brk></spt>
+]</div></spt></prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<txt>Not used.</txt><brk></brk></prt>
+<prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 SUSTAINABILITY COORDINATION</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose all the bracketed options below for projects required to obtain 
+TPC certification, assessment, or validation.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide sustainability focus and coordination at all meetings to achieve sustainability goals. Coordinate meeting 
+requirements with other UFGS Sections meeting requirements in this project. Ensure the designated <div class="brackets">[TPC accredited 
+]</div>sustainability professional responsible for GP <div class="brackets">[and TPC ]</div>documentation participates in these meetings to coordinate 
+documentation completion. Review GP<div class="brackets">[ and TPC]</div> sustainability requirements, HPSB Checklist<div class="brackets">[ and TPC]</div> documentation, 
+Sustainability Action Plan, and completeness status of Sustainability eNotebook<div class="brackets">[, and TPC status]</div> at the following 
+meetings:</txt><brk></brk>
+<lst indent="-0.33">a. Pre-Construction Conference</lst><brk></brk>
+<lst indent="-0.33">b. Construction Quality Control Meetings</lst><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose the following bracketed sentences for TPC that require on-site 
+visit.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<lst indent="-0.33">c. Facility Turnover Meetings</lst><brk></brk>
+<lst indent="-0.33"> Conduct review no later than 60 days before final turnover and identify any outstanding issues that 
+affect correct completion of all documentation<div class="brackets">[ and final TPC certification, assessment or validation]</div>, 
+and actions that will achieve requirements. Conduct corrective actions prior to turnover, to ensure all 
+requirements are achieved.</lst><brk></brk></spt>
+<div class="brackets">[<spt outline="3.2"><ttl>3.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>THIRD PARTY CERTIFICATION CERTIFICATE, ASSESSMENT, OR VALIDATION AND COMPLIANCE REPORT<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose this bracketed paragraph for projects that require the Contractor 
+to obtain the TPC certification.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For certifications, assessments, or validations that include a plaque, include 
+the bracketed phrase for the plaques.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Finalize the process requirements and obtain the TPC Certificate, assessment, or validation, and compliance report, 
+indicating completion of the project's sustainability goals. Include TPC compliance report with final TPC scoresheet 
+as applicable.</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose the first bracketed sentence when the contract documents give specific 
+instruction for placement of the plaque.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Choose the second bracketed sentence if the Contracting Officer has verified 
+the building occupant wants a framed certificate, assessment, or validation, 
+and what kind of framing.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For certification that include a plaque, include the last bracketed phrase.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><div class="brackets">[Provide one original framed copy of the certificate, assessment, or validation, mounted in<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> deep 
+metal frames, with double matt, and wire hangers, in location approved by Contracting Officer. ]</div>Deliver <div class="brackets">[one]</div><div class="brackets">[_____]</div> 
+original certificate, assessment, or validation, and compliance report to Contractor Officer, unless otherwise 
+instructed.</txt><add><pre class="display_ADD">&lt;ADD&gt;</pre><brk></brk><pre class="display_ADD">&lt;/ADD&gt;</pre></add>
+<pge></pge></spt><add><pre class="display_ADD">&lt;ADD&gt;</pre>]</add></div><pre class="display_ADD">&lt;/ADD&gt;</pre><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Attach completed draft "High Performance and Sustainable Building (HPSB) Checklist". 
+For Army and Navy, this is required when project exceeds threshold defined in 
+notes under this section’s title. For Air Force, this is required for every 
+project. For projects with multiple buildings, attach completed draft HPSB 
+Checklist for each building.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Attach completed draft TPC checklist. This is required when project exceeds 
+threshold defined in <ned></ned>note above the paragraph THIRD PARTY CERTIFICATION (TPC) 
+DOCUMENTATION. For projects with multiple buildings, attach completed draft 
+TPC Checklist for each building that requires TPC.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk></prt>
+<end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

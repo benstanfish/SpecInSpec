@@ -1,251 +1,251 @@
-<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
-<HDR><AST/><BRK/>
-USACE / NAVFAC / AFCEC / NASA                 UFGS-32 11 20 (August 2017)<BRK/>
-                                               ---------------------------<BRK/>
-Preparing Activity:  <PRA>USACE</PRA>                     Superseding<BRK/>
-                                               UFGS-32 11 16 (August 2008)<BRK/>
-<BRK/>
-<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
-<BRK/>
-<HL4>References are in agreement with UMRL dated January 2019</HL4><BRK/>
-<BRK/>
-<AST/><BRK/></HDR>
-<BRK/>
-<SCN>SECTION 32 11 20</SCN><BRK/>
-<BRK/>
-<STL>BASE COURSE FOR RIGID AND SUBBASES FOR FLEXIBLE PAVING</STL><BRK/>
-<DTE>08/17</DTE><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><BRK />
+<HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                 UFGS-32 11 20 (August 2017)<BRK />
+                                               ---------------------------<BRK />
+Preparing Activity:  <PRA>USACE</PRA>                     Superseding<BRK />
+                                               UFGS-32 11 16 (August 2008)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated January 2019</HL4><BRK />
+<BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 32 11 20</SCN><BRK />
+<BRK />
+<STL>BASE COURSE FOR RIGID AND SUBBASES FOR FLEXIBLE PAVING</STL><BRK />
+<DTE>08/17</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This guide specification has been edited to cover the minimum requirements and include Japanese products, 
 where feasible, for a standard Japan Engineer District project.  The Designer of Record (DOR) shall tailor as 
-applicable to meet project specific requirements.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<NTE><BRK/>
-<AST/><BRK/>
+applicable to meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This guide specification covers the requirements for <SCP>subbase and rigid base courses for airfield pavements, 
-roads and streets.</SCP><BRK/>
-<BRK/>
+roads and streets.</SCP><BRK />
+<BRK />
 Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
 specification or preparing new project specification sections.  Edit this guide specification for project specific 
-requirements by adding, deleting, or revising text.<BRK/>
-<BRK/>
-Remove information and requirements not required in respective project.<BRK/>
-<BRK/>
+requirements by adding, deleting, or revising text.<BRK />
+<BRK />
+Remove information and requirements not required in respective project.<BRK />
+<BRK />
 Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
-as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This guide specification is applicable to subbase courses for airfield pavements, roads and streets.  This 
 specification will be used for any subbase course that has a design California bearing ratio (CBR) between 20 
-and 50.</NPR><BRK/>
-<BRK/>
-<NPR>This specification may also be used for:</NPR><BRK/>
-<BRK/>
+and 50.</NPR><BRK />
+<BRK />
+<NPR>This specification may also be used for:</NPR><BRK />
+<BRK />
 <NPR>a.  The base course directly beneath the bituminous surface of a pavement design for roads and streets where the 
-required CBR value of the material is 50 or more.</NPR><BRK/>
-<BRK/>
-<NPR>b.  The base course beneath rigid pavements.</NPR><BRK/>
-<BRK/>
+required CBR value of the material is 50 or more.</NPR><BRK />
+<BRK />
+<NPR>b.  The base course beneath rigid pavements.</NPR><BRK />
+<BRK />
 <NPR>When this guide specification is used for aggregate base course under rigid pavement, section title of the project 
 specification will be:  BASE COURSE FOR RIGID PAVING and the words "rigid pavement base course" selected throughout.  
 When this guide specification is used in combination for a subbase course under flexible pavements and a base 
 course under rigid pavements, the section title will be:  BASE COURSE FOR RIGID AND SUBBASES FOR FLEXIBLE PAVING 
-and the words "or rigid pavement base course" will be included after "subbase" throughout.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<NTE><BRK/>
-<AST/><BRK/>
+and the words "or rigid pavement base course" will be included after "subbase" throughout.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This guide specification has been edited to cover the minimum requirements for a basic Japan Engineer District 
-project. Designer shall tailor as applicable to meet project specific requirement.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<SPT><TTL>REFERENCES</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+project. Designer shall tailor as applicable to meet project specific requirement.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This paragraph is used to list the publications cited in the text of the guide specification.  The publications 
 are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
-date, and title.<BRK/>
-<BRK/>
+date, and title.<BRK />
+<BRK />
 Use the Reference Wizard's Check Reference feature when you add a RID outside of the Section's Reference Article 
 to automatically place the reference in the Reference Article.  Also use the Reference Wizard's Check Reference 
-feature to update the issue dates.<BRK/>
-<BRK/>
+feature to update the issue dates.<BRK />
+<BRK />
 References not used in the text will automatically be deleted from this section of the project specification when 
-you choose to reconcile references in the publish print process.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+you choose to reconcile references in the publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are referred to within the text by 
-the basic designation only.</TXT><BRK/>
-<BRK/>
-<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK/>
-<BRK/>
-<RID>JIS A 1102</RID><RTL>(2014) Method of Test for Sieve Analysis of Aggregates</RTL><BRK/>
-<BRK/>
-<RID>JIS A 1103</RID><RTL>(2014) Method of Test for Amount of Material Passing Test Sieve 75 µm in Aggregates</RTL><BRK/>
-<BRK/>
-<RID>JIS A 1104</RID><RTL>(2006) Methods of Test for Density and Water Absorption of Fine Aggregates</RTL><BRK/>
-<BRK/>
+the basic designation only.</TXT><BRK />
+<BRK />
+<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK />
+<BRK />
+<RID>JIS A 1102</RID><RTL>(2014) Method of Test for Sieve Analysis of Aggregates</RTL><BRK />
+<BRK />
+<RID>JIS A 1103</RID><RTL>(2014) Method of Test for Amount of Material Passing Test Sieve 75 &#181;m in Aggregates</RTL><BRK />
+<BRK />
+<RID>JIS A 1104</RID><RTL>(2006) Methods of Test for Density and Water Absorption of Fine Aggregates</RTL><BRK />
+<BRK />
 <RID>JIS A 1121</RID><RTL>(2007) Method of Test for Resistance to Abrasion of Coarse Aggregate by Use of 
-the Los Angeles Machine</RTL><BRK/>
-<BRK/>
-<RID>JIS A 1201</RID><RTL>(2009) Practise for Preparing Disturbed Soil Samples for Soil Testing</RTL><BRK/>
-<BRK/>
-<RID>JIS A 1205</RID><RTL>(2009) Test Method for Liquid Limit and Plastic Limit of Soils</RTL><BRK/>
-<BRK/>
-<RID>JIS A 1210</RID><RTL>(2009) Test Method for Soil Compaction Using a Rammer</RTL><BRK/>
-<BRK/>
-<RID>JIS A 1214</RID><RTL>(2013) Test Method for Soil Density by the Sand Replacement Method</RTL><BRK/>
-<BRK/>
-<RID>JIS A 5001</RID><RTL>(2008) Crushed Stone for Road Construction</RTL><BRK/>
-<BRK/>
-<RID>JIS Z 8801</RID><RTL>(2006) Test Sieves Part 1: Test Sieves of Metal Wire Cloth</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG><DEL>JAPANESE GEOTECHNICAL SOCIETY (JGS)</DEL><ADD>JAPANESE GEOTECHNICAL SOCIETY (JGS)</ADD></ORG><BRK/>
-<BRK/>
-<RID>JGS 0051</RID><RTL>(2000) Method of Classification of Geomaterials for Engineering Purposes</RTL><BRK/>
-<BRK/></REF>
-</SPT><SPT><TTL>DEGREE OF COMPACTION</TTL><BRK/>
-<BRK/>
+the Los Angeles Machine</RTL><BRK />
+<BRK />
+<RID>JIS A 1201</RID><RTL>(2009) Practise for Preparing Disturbed Soil Samples for Soil Testing</RTL><BRK />
+<BRK />
+<RID>JIS A 1205</RID><RTL>(2009) Test Method for Liquid Limit and Plastic Limit of Soils</RTL><BRK />
+<BRK />
+<RID>JIS A 1210</RID><RTL>(2009) Test Method for Soil Compaction Using a Rammer</RTL><BRK />
+<BRK />
+<RID>JIS A 1214</RID><RTL>(2013) Test Method for Soil Density by the Sand Replacement Method</RTL><BRK />
+<BRK />
+<RID>JIS A 5001</RID><RTL>(2008) Crushed Stone for Road Construction</RTL><BRK />
+<BRK />
+<RID>JIS Z 8801</RID><RTL>(2006) Test Sieves Part 1: Test Sieves of Metal Wire Cloth</RTL><BRK />
+<BRK /></REF>
+<REF><ORG><DEL>JAPANESE GEOTECHNICAL SOCIETY (JGS)</DEL><ADD>JAPANESE GEOTECHNICAL SOCIETY (JGS)</ADD></ORG><BRK />
+<BRK />
+<RID>JGS 0051</RID><RTL>(2000) Method of Classification of Geomaterials for Engineering Purposes</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>DEGREE OF COMPACTION</TTL><BRK />
+<BRK />
 <TXT>Degree of compaction required is expressed as a percentage of the maximum laboratory dry density obtained by the test procedure presented in <RID>JIS A 1210</RID>
- abbreviated as a percent of laboratory maximum dry density.  </TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>SUBMITTALS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+ abbreviated as a percent of laboratory maximum dry density.  </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES and edit the following 
-list to reflect only the submittals required for the project.<BRK/>
-<BRK/>
+list to reflect only the submittals required for the project.<BRK />
+<BRK />
 The Guide Specification technical editors have designated those items that require Government approval, due to 
 their complexity or criticality, with a "G."  Generally, other submittal items can be reviewed by the Contractor's 
-Quality Control System.  Only add a “G” to an item, if the submittal is sufficiently important or complex in context 
-of the project.<BRK/>
-<BRK/>
+Quality Control System.  Only add a &#8220;G&#8221; to an item, if the submittal is sufficiently important or complex in context 
+of the project.<BRK />
+<BRK />
 For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
 tags may be used following the "G" designation to indicate the approving authority.  Codes for Army projects using 
 the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" for District Office (Engineering 
 Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
-for Project Office.  Codes following the "G" typically are not used for Navy and Air Force projects.<BRK/>
-<BRK/>
+for Project Office.  Codes following the "G" typically are not used for Navy and Air Force projects.<BRK />
+<BRK />
 The "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook to 
 fulfill federally mandated sustainable requirements in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
-Locate the "S" submittal under the SD number that best describes the submittal item.<BRK/>
-<BRK/></NPR>
-<BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+Locate the "S" submittal under the SD number that best describes the submittal item.<BRK />
+<BRK /></NPR>
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are for information only.  When 
 used, a designation following the "G" designation identifies the office that will review the submittal for the Government.  Submittals with an 
 "S" are for inclusion in the Sustainability eNotebook, in conformance to Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Submit the following in accordance 
-with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
-<BRK/>
-<LST><SUB>SD-03 Product Data</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Plant, Equipment, and Tools</SUB></ITM><BRK/>
-<BRK/>
-<LST><SUB>SD-06 Test Reports</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Initial Tests</SUB>; <SUB>G</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>In-Place Tests</SUB>; <SUB>G</SUB></ITM><BRK/>
-<BRK/></SPT>
-<SPT><TTL>EQUIPMENT, TOOLS, AND MACHINES</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-03 Product Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Plant, Equipment, and Tools</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Initial Tests</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>In-Place Tests</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.4"><TTL>EQUIPMENT, TOOLS, AND MACHINES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  If desirable, requirements for types of equipment applicable to methods of construction based on local 
-conditions will be included.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+conditions will be included.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>All <SUB>plant, equipment, and tools</SUB> used in the performance of the work will be subject to approval by the Contracting Officer before the work is started. 
 Maintain all plant, equipment, and tools in satisfactory working condition at all times.  Submit a list of proposed equipment, including descriptive 
 data.  Use equipment capable of minimizing segregation, producing the required compaction, meeting grade controls, thickness control, and smoothness 
-requirements as set forth herein.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>QUALITY ASSURANCE</TTL><BRK/>
-<BRK/>
+requirements as set forth herein.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5"><TTL>QUALITY ASSURANCE</TTL><BRK />
+<BRK />
 <TXT>Sampling and testing are the responsibility of the Contractor.  Perform sampling and testing using a laboratory approved in accordance with Section <TAI OPT="AIR FORCE,ARMY">
 <SRF>01 45 00.00 10</SRF></TAI><TAI OPT="NAVY"><SRF>01 45 00.00 20</SRF></TAI><TAI OPT="NASA"><SRF>01 45 00.00 40</SRF></TAI> QUALITY CONTROL.  Work requiring testing will not be permitted until the testing laboratory has been 
 inspected and approved.  Test the materials to establish compliance with the specified requirements and perform testing at the specified frequency.  
 The Contracting Officer may specify the time and location of the tests.  Furnish copies of test results to the Contracting Officer within 24 hours 
-of completion of the tests.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Sampling</TTL><BRK/>
-<BRK/>
-<TXT>Take samples for laboratory testing in conformance with <RID>JIS A 1201</RID>.  When deemed necessary, the sampling will be observed by the Contracting Officer.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Tests</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Sieve Analysis</TTL><BRK/>
-<BRK/>
-<TXT>Perform sieve analysis in conformance with <RID>JIS A 1103</RID> and <RID>JIS A 1102</RID> using sieves conforming to <RID>JIS Z 8801</RID>.    </TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Liquid Limit and Plasticity Index</TTL><BRK/>
-<BRK/>
-<TXT>Determine liquid limit and plasticity index in accordance with <RID>JIS A 1205</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Moisture-Density Determinations</TTL><BRK/>
-<BRK/>
-<TXT>Determine the laboratory maximum dry density and optimum moisture in accordance with paragraph DEGREE OF COMPACTION.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Field Density Tests</TTL><BRK/>
-<BRK/>
-<TXT>Measure field density in accordance with <RID>JIS A 1214</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Wear Test</TTL><BRK/>
-<BRK/>
-<TXT>Perform wear tests on subbase course and or rigid pavement base course material in conformance with <RID>JIS A 1121</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Weight of Slag</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  This paragraph will be omitted when it is highly unlikely that slag will be supplied.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>Determine weight per cubic<MET> meter</MET><ENG> foot</ENG> of slag in accordance with <RID>JIS A 1104</RID>.<BRK/>
-<BRK/></TXT>
-</SPT></SPT></SPT><SPT><TTL>ENVIRONMENTAL REQUIREMENTS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+of completion of the tests.</TXT><BRK />
+<BRK />
+<SPT outline="1.5.1"><TTL>Sampling</TTL><BRK />
+<BRK />
+<TXT>Take samples for laboratory testing in conformance with <RID>JIS A 1201</RID>.  When deemed necessary, the sampling will be observed by the Contracting Officer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.2"><TTL>Tests</TTL><BRK />
+<BRK />
+<SPT outline="1.5.2.1"><TTL>Sieve Analysis</TTL><BRK />
+<BRK />
+<TXT>Perform sieve analysis in conformance with <RID>JIS A 1103</RID> and <RID>JIS A 1102</RID> using sieves conforming to <RID>JIS Z 8801</RID>.    </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.2.2"><TTL>Liquid Limit and Plasticity Index</TTL><BRK />
+<BRK />
+<TXT>Determine liquid limit and plasticity index in accordance with <RID>JIS A 1205</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.2.3"><TTL>Moisture-Density Determinations</TTL><BRK />
+<BRK />
+<TXT>Determine the laboratory maximum dry density and optimum moisture in accordance with paragraph DEGREE OF COMPACTION.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.2.4"><TTL>Field Density Tests</TTL><BRK />
+<BRK />
+<TXT>Measure field density in accordance with <RID>JIS A 1214</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.2.5"><TTL>Wear Test</TTL><BRK />
+<BRK />
+<TXT>Perform wear tests on subbase course and or rigid pavement base course material in conformance with <RID>JIS A 1121</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.2.6"><TTL>Weight of Slag</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph will be omitted when it is highly unlikely that slag will be supplied.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Determine weight per cubic<MET> meter</MET><ENG> foot</ENG> of slag in accordance with <RID>JIS A 1104</RID>.<BRK />
+<BRK /></TXT>
+</SPT></SPT></SPT><SPT outline="1.6"><TTL>ENVIRONMENTAL REQUIREMENTS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This paragraph may be deleted in localities where freezing temperatures do not occur, and elsewhere when 
 it is definitely known that the work will not be carried on during periods when such temperatures are to be expected.  
 Otherwise, this requirement will be retained, but the protective measures specified may be modified to suit local 
-conditions and individual project requirements.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+conditions and individual project requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Perform construction when the atmospheric temperature is above<MET> 2 degrees C</MET><ENG> 35 degrees F</ENG>.  When the temperature falls below<MET> 2 degrees C</MET><ENG> 35 degrees 
 F</ENG>, protect all completed areas by approved methods against detrimental effects of freezing.  Correct completed areas damaged by freezing, rainfall, 
-or other weather conditions to meet specified requirements.</TXT><BRK/>
-<BRK/></SPT>
-</PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>MATERIALS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Flexible Paving Subbase Course</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Specify the aggregate gradation as recommended by Japan Road Association.</NPR><BRK/>
-<AST/></NTE><BRK/>
+or other weather conditions to meet specified requirements.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>MATERIALS</TTL><BRK />
+<BRK />
+<SPT outline="2.1.1"><TTL>Flexible Paving Subbase Course</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify the aggregate gradation as recommended by Japan Road Association.</NPR><BRK />
+<AST /></NTE><BRK />
 <TXT>Provide aggregates conforming to <RID>JIS A 5001</RID>, C-30/RC-30 and C-40/RC-40consisting of crushed stone or slag, gravel, shell, sand, or other sound, 
 durable, approved materials processed and blended or naturally combined.  Provide aggregates which are free from lumps and balls of clay, organic 
 matter, objectionable coatings, and other foreign material.  The percentage of loss of material retained on the<MET> 4.75 mm</MET><ENG> No. 4</ENG> sieve must not exceed 
 50 percent after 500 revolutions when tested in accordance with <RID>JIS A 1121</RID>.  Provide aggregate that is reasonably uniform in density and quality.  
 Provide slag that is an air-cooled, blast-furnace product having a dry weight of not less than<MET> 1050 kg/cubic meter</MET><ENG> 65 pcf</ENG>.  Provide aggregates 
-with a maximum size of <MET>37.5 mm</MET><ENG> inch</ENG> for C-40/RC-40 and <MET>31.5 mm</MET> for C-30/RC-30 and within the limits specified as follows:</TXT><BRK/>
-<MET><TBL><THD><BRK/>
-<HL4>Maximum Allowable Percentage by Weight</HL4><BRK/>
-<HL4>Passing Square-Mesh Sieve</HL4><BRK/>
-<HL4>_______________________________________</HL4><BRK/>
-<BRK/>
-  </THD></TBL></MET><BRK/>
+with a maximum size of <MET>37.5 mm</MET><ENG> inch</ENG> for C-40/RC-40 and <MET>31.5 mm</MET> for C-30/RC-30 and within the limits specified as follows:</TXT><BRK />
+<MET><TBL><THD><BRK />
+<HL4>Maximum&#160;Allowable&#160;Percentage&#160;by&#160;Weight</HL4><BRK />
+<HL4>Passing&#160;Square-Mesh&#160;Sieve</HL4><BRK />
+<HL4>_______________________________________</HL4><BRK />
+<BRK />
+&#160;&#160;</THD></TBL></MET><BRK />
 <TAB BORDERS="0">
 <WBK>
-   <STS/>
+   <STS />
    <TDA COLUMNCOUNT="3" ROWCOUNT="9">
-      <COL AUTOWIDTH="0" WIDTH="156.00"/>
-      <COL AUTOWIDTH="0" WIDTH="156.00"/>
-      <COL AUTOWIDTH="0" WIDTH="155.25"/>
+      <COL AUTOWIDTH="0" WIDTH="156.00" />
+      <COL AUTOWIDTH="0" WIDTH="156.00" />
+      <COL AUTOWIDTH="0" WIDTH="155.25" />
       <ROW AUTOHEIGHT="0" HEIGHT="24.00">
          <CEL>
 <DTA TYPE="STRING">Sieve Designation (mm)</DTA>
@@ -347,55 +347,55 @@ with a maximum size of <MET>37.5 mm</MET><ENG> inch</ENG> for C-40/RC-40 and <ME
       </ROW>
    </TDA>
 </WBK>
-<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB><BRK/>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK />
 <TXT>  The portion of any blended component and of the completed course passing the<MET> 0.425 mm</MET><ENG> No. 40 sieve</ENG> must be either nonplastic or have a liquid 
-limit not greater than 25 and a plasticity index not greater than 5.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Rigid Pavement Base Course</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Specify the aggregate gradation as recommended by Japan Road Association.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>Provide aggregates for rigid pavement base course as specified for flexible paving subbase course.<BRK/></TXT>
-<BRK/></SPT>
-</SPT><SPT><TTL>TESTS, INSPECTIONS, AND VERIFICATIONS</TTL><BRK/>
-<BRK/>
-<SPT><TTL><SUB>Initial Tests</SUB></TTL><BRK/>
-<BRK/>
+limit not greater than 25 and a plasticity index not greater than 5.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2"><TTL>Rigid Pavement Base Course</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify the aggregate gradation as recommended by Japan Road Association.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide aggregates for rigid pavement base course as specified for flexible paving subbase course.<BRK /></TXT>
+<BRK /></SPT>
+</SPT><SPT outline="2.2"><TTL>TESTS, INSPECTIONS, AND VERIFICATIONS</TTL><BRK />
+<BRK />
+<SPT outline="2.2.1"><TTL><SUB>Initial Tests</SUB></TTL><BRK />
+<BRK />
 <TXT>Perform one of each of the following tests on the proposed material prior to commencing construction to demonstrate that the proposed material 
-meets all specified requirements prior to installation.  Complete this testing for each source if materials from more than one source are proposed.</TXT><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Sieve Analysis .</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Liquid limit and plasticity index.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Moisture-density relationship.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">d.  Wear.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">e.  Weight per cubic<MET> meter</MET><ENG> foot</ENG> of Slag.</LST><BRK/>
-<BRK/>
-<TXT>Submit certified copies of test results for approval not less than 30 days before material is required for the work.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Approval of Material</TTL><BRK/>
-<BRK/>
-<TXT>Tentative approval of material will be based on initial test results.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
-<BRK/>
-<SPT><TTL>GENERAL REQUIREMENTS</TTL><BRK/>
-<BRK/>
-Provide adequate drainage during the entire period of construction to prevent water from collecting or standing on the working area.<BRK/>
-<BRK/></SPT>
-<SPT><TTL>STOCKPILING MATERIAL</TTL><BRK/>
-<BRK/>
+meets all specified requirements prior to installation.  Complete this testing for each source if materials from more than one source are proposed.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Sieve Analysis .</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Liquid limit and plasticity index.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Moisture-density relationship.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Wear.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Weight per cubic<MET> meter</MET><ENG> foot</ENG> of Slag.</LST><BRK />
+<BRK />
+<TXT>Submit certified copies of test results for approval not less than 30 days before material is required for the work.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2"><TTL>Approval of Material</TTL><BRK />
+<BRK />
+<TXT>Tentative approval of material will be based on initial test results.</TXT><BRK />
+<BRK /></SPT>
+</SPT></PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>GENERAL REQUIREMENTS</TTL><BRK />
+<BRK />
+Provide adequate drainage during the entire period of construction to prevent water from collecting or standing on the working area.<BRK />
+<BRK /></SPT>
+<SPT outline="3.2"><TTL>STOCKPILING MATERIAL</TTL><BRK />
+<BRK />
 <TXT>Clear and level storage sites prior to stockpiling of material.  Stockpile all materials, including approved material available from excavation 
 and grading, in the manner and at the locations designated.  Stockpile aggregates on the cleared and leveled areas designated by the Contracting 
-Officer to prevent segregation.  Stockpile materials obtained from different sources separately.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>PREPARATION OF UNDERLYING COURSE OR SUBGRADE</TTL><BRK/>
-<BRK/>
+Officer to prevent segregation.  Stockpile materials obtained from different sources separately.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3"><TTL>PREPARATION OF UNDERLYING COURSE OR SUBGRADE</TTL><BRK />
+<BRK />
 <TXT>Clean the underlying course or subgrade of all foreign substances prior to constructing the subbase or rigid pavement base course.  Do not construct 
 subbase or rigid pavement base course on underlying course or subgrade that is frozen.  Construct the surface of the underlying course or subgrade 
 to meet specified compaction and surface tolerances.  Correct ruts or soft yielding spots in the underlying courses, areas having inadequate compaction, 
@@ -404,31 +404,31 @@ approved material, reshaping to line and grade, and recompacting to specified de
 containing sands or gravels, as defined in <RID>JGS 0051</RID>, stabilize the surface prior to placement of the overlying course.  Stabilize by mixing the 
 overlying course material into the underlying course and compacting by approved methods.  Consider the stabilized material as part of the underlying 
 course and meet all requirements of the underlying course.  Do not allow traffic or other operations to disturb the finished underlying course 
-and maintain in a satisfactory condition until the overlying course is placed.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>GRADE CONTROL</TTL><BRK/>
-<BRK/>
+and maintain in a satisfactory condition until the overlying course is placed.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4"><TTL>GRADE CONTROL</TTL><BRK />
+<BRK />
 <TXT>Provide a finished and completed subbase and rigid pavement base courses  conforming to the lines, grades, and cross sections shown.  Place line 
-and grade stakes as necessary for control.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>MIXING AND PLACING MATERIALS</TTL><BRK/>
-<BRK/>
+and grade stakes as necessary for control.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5"><TTL>MIXING AND PLACING MATERIALS</TTL><BRK />
+<BRK />
 <TXT>Mix and place the materials to obtain uniformity of the material at the water content specified.  Make such adjustments in mixing or placing procedures 
 or in equipment as may be directed to obtain the true grades, to minimize segregation and degradation, to reduce or accelerate loss or increase 
-of water, and to insure a satisfactory subbase course.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>LAYER THICKNESS</TTL><BRK/>
-<BRK/>
+of water, and to insure a satisfactory subbase course.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.6"><TTL>LAYER THICKNESS</TTL><BRK />
+<BRK />
 <TXT>Compact the completed course to the thickness indicated.  No individual layer may be thicker than<MET> 150 mm</MET><ENG> 6 inches</ENG> nor be thinner than<MET> 75 mm</MET><ENG> 3 inches</ENG>
  in compacted thickness. Compact the course(s) to a total thickness that is within<MET> 13 mm</MET><ENG> 1/2 inch</ENG> of the thickness indicated.  Where the measured 
 thickness is more than<MET> 13 mm</MET><ENG> 1/2 inch</ENG> deficient, correct such areas by scarifying, adding new material of proper gradation, reblading, and recompacting 
 as directed.  Where the measured thickness is more than<MET> 13 mm </MET><ENG> 1/2 inch</ENG> thicker than indicated, the course will be considered as conforming to 
 the specified thickness requirements.  The average job thickness will be the average of all thickness measurements taken for the job and must be 
 within<MET> 6 mm </MET><ENG> 1/4 inch</ENG> of the thickness indicated.  Measure the total thickness of the course(s) at intervals of one measurement for each 500 square<MET>
- meters</MET><ENG> yards</ENG> of completed course.  Measure total thickness using <MET> 75 mm</MET><ENG> 3 inch</ENG> diameter test holes penetrating the completed course.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>COMPACTION</TTL><BRK/>
-<BRK/>
+ meters</MET><ENG> yards</ENG> of completed course.  Measure total thickness using <MET> 75 mm</MET><ENG> 3 inch</ENG> diameter test holes penetrating the completed course.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.7"><TTL>COMPACTION</TTL><BRK />
+<BRK />
 <TXT>Compact each layer of the material, as specified, with approved compaction equipment.  Maintain water content during the compaction procedure to 
 within plus or minus 2 percent of optimum water content determined from laboratory tests as specified in this Section.  Begin rolling at the outside 
 edge of the surface and proceed to the center, overlapping on successive trips at least one-half the width of the roller.  Slightly vary the length 
@@ -438,83 +438,83 @@ through the full depth to at least 100 percent of laboratory maximum density.  C
 compacted through the full depth to at least 95  percent of laboratory maximum density.  Make such adjustments in compacting or finishing procedures 
 as may be directed by the Contracting Officer to obtain true grades, to minimize segregation and degradation, to reduce or increase water content, 
 and to ensure a satisfactory subbase and rigid pavement base course.  Remove any materials that are found to be unsatisfactory and replace with 
-satisfactory material or rework, as directed, to meet the requirements of this specification.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>PROOF ROLLING</TTL><BRK/>
-<BRK/>
+satisfactory material or rework, as directed, to meet the requirements of this specification.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.8"><TTL>PROOF ROLLING</TTL><BRK />
+<BRK />
 <TXT>In addition to the compaction specified, proof roll subbase course under a flexible airfield pavement in areas designated on the drawings by application 
 of 30 coverages for Class IV runways, 8 coverages for runways that support fighter aircraft only, and 4 coverages to all other paved areas,  of 
 a heavy pneumatic-tired roller having four or more tires abreast, each tire loaded to a minimum of<MET> 13,600 kg</MET><ENG> 30,000 pounds</ENG> and inflated to a minimum 
 of<MET> 862 kPa</MET><ENG> 125 psi</ENG>.  A coverage is defined as the application of one tire print over the designated area.  In the areas designated, apply proof 
 rolling to the top layer of the completed subbase course.  Maintain water content of the top layer of the subbase course as specified in paragraph 
 COMPACTION from start of compaction to completion of proof rolling.  Remove any subbase course materials that produce unsatisfactory results by 
-proof rolling and replace with satisfactory materials.  Then recompact and proof roll to meet specifications.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>EDGES OF SUBBASE AND RIGID PAVEMENT BASE COURSE</TTL><BRK/>
-<BRK/>
+proof rolling and replace with satisfactory materials.  Then recompact and proof roll to meet specifications.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.9"><TTL>EDGES OF SUBBASE AND RIGID PAVEMENT BASE COURSE</TTL><BRK />
+<BRK />
 <TXT>Place approved material along the outer edges of the subbase and rigid pavement base course in sufficient quantity to compact to the thickness 
 of the course being constructed.  When the course is being constructed in two or more layers, simultaneously roll and compact at least a<MET> 600 mm</MET><ENG>
- 2 foot</ENG> width of this shoulder material with the rolling and compacting of each layer of the subbase and rigid pavement base course, as directed.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>FINISHING</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Delete paragraph if rigid pavement base course is not included in the project.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+ 2 foot</ENG> width of this shoulder material with the rolling and compacting of each layer of the subbase and rigid pavement base course, as directed.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.10"><TTL>FINISHING</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete paragraph if rigid pavement base course is not included in the project.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Finish the surface of the top layer of rigid pavement base course after final compaction and proof rolling by cutting any overbuild to grade and 
 rolling with a steel-wheeled roller.  Do not add thin layers of material to the top layer of rigid pavement base course to meet grade.  If the 
 elevation of the top layer of rigid pavement base course is<MET> 13 mm</MET><ENG> 1/2 inch</ENG> or more below grade, scarify the top layer to a depth of at least<MET> 75 
 mm</MET><ENG> 3 inches</ENG> and blend new material in and compact and proof roll to bring to grade.  Make adjustments to rolling and finishing procedures as directed 
 by the Contracting Officer to minimize segregation and degradation, obtain grades, maintain moisture content, and insure an acceptable rigid pavement 
 base course.  Should the surface become rough, corrugated, uneven in texture, or traffic marked prior to completion, scarify the unsatisfactory 
-portion and rework and recompact it or replace as directed.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>SMOOTHNESS TEST</TTL><BRK/>
-<BRK/>
+portion and rework and recompact it or replace as directed.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.11"><TTL>SMOOTHNESS TEST</TTL><BRK />
+<BRK />
 <TXT>Construct the top layer so that the surface shows no deviations in excess of<MET> 10 mm</MET><ENG> 3/8 inch</ENG> when tested with a<MET> 3.00 m</MET><ENG> 12 foot</ENG> straightedge.  Take 
 measurements in successive positions parallel to the centerline of the area to be paved.  Also take measurements perpendicular to the centerline 
 at<MET> 15 meter</MET><ENG> [50] [_____] foot</ENG> intervals.  Correct deviations exceeding this amount by removing material and replacing with new material, or by 
-reworking existing material and compacting it to meet these specifications.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>FIELD QUALITY CONTROL</TTL><BRK/>
-<BRK/>
-<SPT><TTL><SUB>In-Place Tests</SUB></TTL><BRK/>
-<BRK/>
+reworking existing material and compacting it to meet these specifications.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.12"><TTL>FIELD QUALITY CONTROL</TTL><BRK />
+<BRK />
+<SPT outline="3.12.1"><TTL><SUB>In-Place Tests</SUB></TTL><BRK />
+<BRK />
 <TXT>Perform one of each of the following tests on samples taken from the placed and compacted subbase and rigid pavement base course.  Take samples 
-and test at the rates indicated.</TXT><BRK/>
-<BRK/>
+and test at the rates indicated.</TXT><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  Perform density tests on every lift of material placed and at a frequency of one set of tests for every 500  square<MET> meters</MET><ENG> yards</ENG>, or 
-portion thereof, of completed area.</LST><BRK/>
-<BRK/>
+portion thereof, of completed area.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  Perform sieve analysis  on every lift of material placed and at a frequency of one sieve analysis for every 1,000  square<MET> meters</MET><ENG> yards</ENG>
-, or portion thereof, of material placed.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Perform liquid limit and plasticity index tests at the same frequency as the sieve analysis.</LST><BRK/>
-<BRK/>
+, or portion thereof, of material placed.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Perform liquid limit and plasticity index tests at the same frequency as the sieve analysis.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">d.  Measure the thickness of each course at intervals providing at least one measurement for each 500  square<MET> meters</MET><ENG> yards</ENG> or part thereof.  
-Measure the thickness using test holes, at least<MET> 75 mm</MET><ENG> 3 inches</ENG> in diameter through the course.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Approval of Material</TTL><BRK/>
-<BRK/>
+Measure the thickness using test holes, at least<MET> 75 mm</MET><ENG> 3 inches</ENG> in diameter through the course.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.12.2"><TTL>Approval of Material</TTL><BRK />
+<BRK />
 <TXT>Final approval of the materials will be based on tests for gradation, liquid limit, and plasticity index performed on samples taken from the completed 
-and fully compacted course(s).</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>TRAFFIC</TTL><BRK/>
-<BRK/>
+and fully compacted course(s).</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.13"><TTL>TRAFFIC</TTL><BRK />
+<BRK />
 <TXT>Do not allow traffic on the completed subbase and rigid pavement base coursefor airfield pavements.   For roads, do not allow heavy equipment on 
 the completed rigid pavement base course except when necessary for construction.  When it is necessary for heavy equipment to travel on the completed 
-rigid pavement base course, protect the area against marring or damage to the completed work.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>MAINTENANCE</TTL><BRK/>
-<BRK/>
+rigid pavement base course, protect the area against marring or damage to the completed work.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.14"><TTL>MAINTENANCE</TTL><BRK />
+<BRK />
 <TXT>Maintain the completed course in a satisfactory condition until the full pavement section is completed and accepted.  Immediately repair any defects 
 and repeat repairs as often as necessary to keep the area intact.  Retest any course that was not paved over prior to the onset of winter to verify 
 that it still complies with the requirements of this specification.  Rework or replace any area that is damaged as necessary to comply with this 
-specification.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>DISPOSAL OF UNSATISFACTORY MATERIALS</TTL><BRK/>
-<BRK/>
-<TXT>Dispose of any unsuitable materials that have been removed as directed .  No additional payments will be made for materials that have to be replaced.</TXT><BRK/>
-<BRK/></SPT>
-</PRT>    <END/><BRK/></SEC>
+specification.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.15"><TTL>DISPOSAL OF UNSATISFACTORY MATERIALS</TTL><BRK />
+<BRK />
+<TXT>Dispose of any unsuitable materials that have been removed as directed .  No additional payments will be made for materials that have to be replaced.</TXT><BRK />
+<BRK /></SPT>
+</PRT>    <END /><BRK /></SEC>

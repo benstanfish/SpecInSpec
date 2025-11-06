@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>05 05 23.16.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">05 05 23.16</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:52</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><brk></brk>
+<hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-05 05 23.16 (August 2018)<brk></brk>
+ -----------------------------<brk></brk>
+Preparing Activity: <pra>USACE</pra> Superseding<brk></brk>
+ UFGS-05 05 23.16 (May 2014)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated April 2019</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 05 05 23.16</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>STRUCTURAL WELDING<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>08/18</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project. The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>(1) qualifying welding 
+procedures, welders and welding operators, and (2) the fabrication, welding 
+and inspection of carbon steel, low alloy steel, extra-high-strength quenched 
+and tempered low alloy steels, and austenitic stainless steel materials for 
+structural steel for buildings, other structures and non-structural use</scp>.<brk></brk>
+Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections. Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text. For bracketed items, choose applicable 
+item(s) or insert appropriate information.<brk></brk>
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<brk></brk>
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This specification can be used for other structures with similar types 
+of live loads by implementing the requirements of AWS D1.1/D1.1M, as applicable, 
+in the design of the weldments, and deleting the references to AISC Specification 
+for the Design, Fabrication and Erection of Structural Steel for Buildings.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of 
+the guide specification. The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<brk></brk>
+Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article. Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<brk></brk>
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are 
+referred to within the text by the basic designation only.</txt><brk></brk>
+<ref><org>AMERICAN INSTITUTE OF STEEL CONSTRUCTION (AISC)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 360<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) Specification for Structural Steel Buildings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>AMERICAN WELDING SOCIETY (AWS)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AWS A2.4<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2012) Standard Symbols for Welding, Brazing 
+and Nondestructive Examination<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015; Errata 1 2015; Errata 2 2016) Structural 
+Welding Code - Steel<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2020; Errata 1 2021) Structural 
+Welding Code - Steel<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.3/D1.3M<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018) Structural Welding Code - Sheet Steel<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.4/D1.4M<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2011) Structural Welding Code - Reinforcing 
+Steel<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) Structural Welding Code—Seismic Supplement<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org><del><pre class="display_DEL">&lt;DEL&gt;</pre>JAPANESE ARCHITECTURAL STANDARD SPECIFICATIONS (JASS)<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>ARCHITECTURAL INSTITUTE OF JAPAN (AIJ)<pre class="display_ADD">&lt;/ADD&gt;</pre></add></org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Structural Steelwork Specification for 
+Building Construction<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><del><pre class="display_DEL">&lt;DEL&gt;</pre><org>JAPANESE INDUSTRIAL STANDARDS (JIS)</org><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><org>JAPANESE STANDARDS ASSOCIATION (JSA)</org><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 2305<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2013) Non-destructive Testing - Qualification 
+and Certification of Personnel<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 2320<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2007) Non-destructive Testing - Magnetic Particle 
+Testing<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 2343<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2001) Non-destructive Testing - Penetrant Testing<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3021<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) Welding and Allied Processes - Symbolic 
+Representation<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3400<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2013) Quality Requirements for Fusion Welding 
+of Metallic Materials<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3420<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2003) Specification and Approval of Welding 
+Procedures for Metallic Materials - General 
+Rules<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3801<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018) Standard Qualification Test and Acceptance 
+Requirements for Manual Welding Technique<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3841<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018) <del><pre class="display_DEL">&lt;DEL&gt;</pre>Test Method and Criteria in Semi-Automatic 
+Welding Technology Certification<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>Standard Qualification 
+Test and Acceptance Requirements for Semi-Automatic 
+Welding Technique<pre class="display_ADD">&lt;/ADD&gt;</pre></add><pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3881<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2014) Standard Qualification Procedure for 
+Gas Pressure Welding Technique of Steel Bars 
+for Concrete Reinforcement<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org><del><pre class="display_DEL">&lt;DEL&gt;</pre>MINISTRY OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM, GOVERNMENT OF JAPAN (MLIT)<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>MINISTRY 
+OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM (MLIT)<pre class="display_ADD">&lt;/ADD&gt;</pre></add></org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2019) Public Building Construction Standard 
+Specifications - Ch.7 Steel Frame Work<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org><del><pre class="display_DEL">&lt;DEL&gt;</pre>JAPAN WELDING ENGINEERING SOCIETY (JWES)<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>THE JAPAN WELDING ENGINEERING SOCIETY (JWES)<pre class="display_ADD">&lt;/ADD&gt;</pre></add></org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>WES 9009<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2007) Safety and Health in Welding, Thermal 
+Cutting, and Allied Processes Parts 1 through 
+6<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.2"><ttl>1.2 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review submittal description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.<brk></brk>
+The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G." Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System. 
+Only add a “G” to an item, if the submittal is sufficiently important or complex 
+in context of the project.<brk></brk>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are for <div class="brackets">[Contractor Quality Control approval.]</div> <div class="brackets">[information only. When used, a designation following the "G" 
+designation identifies the office that will review the submittal for the Government.]</div> Submit the following in 
+accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-01 Preconstruction Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Welding Quality Assurance Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-03 Product Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Welding Procedure Qualifications<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Welder, Welding Operator, and Tacker Qualification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Previous Qualifications<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Pre-Qualified Procedures<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Welding Electrodes and Rods<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-06 Test Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Nondestructive Testing<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Weld Inspection Log<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-07 Certificates<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Certified Welding Inspector<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Nondestructive Testing Personnel<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 QUALITY ASSURANCE</ttl><brk></brk>
+<txt>Except for pre-qualified (in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3420<pre class="display_RID">&lt;/RID&gt;</pre></rid>) and previously qualified procedures, each 
+Contractor performing welding must record in detail and qualify the welding procedure specification for any welding 
+procedure followed in the fabrication of weldments. Conform <sub><pre class="display_SUB">&lt;SUB&gt;</pre>welding procedure qualifications<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> to <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+<div class="brackets">[, <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3420<pre class="display_RID">&lt;/RID&gt;</pre></rid> and to the specifications in this section. Submit for approval copies 
+of the welding procedure specification and the procedure qualification records for each type of welding being 
+performed. Submission of the welder, welding operator, or tacker qualification test records is also required. 
+Approval of any procedure, however, does not relieve the Contractor of the sole responsibility for producing 
+a finished structure meeting all the specified requirements. Submit this information on the forms in Annex M 
+of <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid> or in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3420<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Individually identify and clearly reference on the detail 
+drawings and erection drawings all welding procedure specifications, or suitably key them to the contract drawings. 
+In case of conflict between this specification and <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3420<pre class="display_RID">&lt;/RID&gt;</pre></rid>, this specification 
+governs.</txt><brk></brk>
+<spt outline="1.3.1"><ttl>1.3.1 General Requirements</ttl><brk></brk>
+<txt>Fabricate work in MLIT Certified Fabrication Plant. Erect work by MLIT Certified Erector.</txt><brk></brk>
+<lst indent="-0.33">a. For Structural Projects, provide documentation of the following:</lst><brk></brk>
+<itm indent="-0.33">(1) Component Thickness<met><pre class="display_MET">&lt;MET&gt;</pre> 3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and greater: Qualification documents (WPS, PQR, and WPQ) 
+in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3420<pre class="display_RID">&lt;/RID&gt;</pre></rid> <div class="brackets">[and <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>.</itm><brk></brk>
+<itm indent="-0.33">(2) Component Thickness Less than<met><pre class="display_MET">&lt;MET&gt;</pre> 3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>: Qualification documents (WPS, PQR, and WPQ) 
+in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.3/D1.3M<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3420<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</itm><brk></brk>
+<itm indent="-0.33">(3) Reinforcing Steel: Qualification documents (WPS, PQR, and WPQ) in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.4/D1.4M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ or <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3881<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</itm><brk></brk></spt>
+<spt outline="1.3.2"><ttl>1.3.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Previous Qualifications<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Welding procedures previously qualified by test in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>, may be accepted for this contract 
+without re-qualification, upon receipt of the test results, if the following conditions are met:</txt><brk></brk>
+<lst indent="-0.33">a. Testing was performed by an approved testing laboratory, technical consultant, or the Contractor's 
+approved quality control organization.</lst><brk></brk>
+<lst indent="-0.33">b. The qualified welding procedure conforms to the requirements of this specification and is applicable 
+to welding conditions encountered under this contract.</lst><brk></brk>
+<lst indent="-0.33">c. The welder, welding operator, and tacker qualification tests conform to the requirements of this 
+specification and are applicable to welding conditions encountered under this contract.</lst><brk></brk></spt>
+<spt outline="1.3.3"><ttl>1.3.3 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Pre-qualified Procedures<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Welding procedures which are considered pre-qualified as specified in <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> will be accepted without further 
+qualification. Submit for approval a listing or an annotated drawing to indicate the joints not pre-qualified. 
+Procedure qualification is mandatory for these joints. <div class="brackets">[No pre-qualified welding procedures are allowed. Qualify 
+the welding procedures and welders by tests prescribed in the applicable code or specification not withstanding 
+the fact the code or specification may allow pre-qualified procedures.]</div></txt><brk></brk></spt>
+<spt outline="1.3.4"><ttl>1.3.4 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Welder, Welding Operator, and Tacker Qualification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Insert additional requirements if necessary. Determine and specify the 
+methods of nondestructive testing required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Each welder, welding operator, and tacker assigned to work on this contract must be qualified in accordance with 
+the applicable requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3801<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3841<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div> and as specified in this section. 
+Welders, welding operators, and tackers who make acceptable procedure qualification test welds will be considered 
+qualified for the welding procedure used within the applicable essential variables for welder qualification.</txt><brk></brk>
+<spt outline="1.3.4.1"><ttl>1.3.4.1 Previous Personnel Qualifications</ttl><brk></brk>
+<txt>At the discretion of the Contracting Officer, welders, welding operators, and tackers qualified by test within 
+the previous 6 months may be accepted for this contract without re-qualification if all the following conditions 
+are met:</txt><brk></brk>
+<lst indent="-0.33">a. Copies of the welding procedure specifications, the procedure qualification test records, and the 
+welder, welding operator, and tacker qualification test records are submitted and approved in accordance 
+with the specified requirements for detail drawings.</lst><brk></brk>
+<lst indent="-0.33">b. Testing was performed by an approved testing laboratory, technical consultant, or the Contractor's 
+approved quality control organization.</lst><brk></brk>
+<lst indent="-0.33">c. The welder, welding operator, and tacker qualification tests conform to the requirements of this 
+specification and are applicable to welding conditions encountered under this contract.</lst><brk></brk></spt>
+<spt outline="1.3.4.2"><ttl>1.3.4.2 Certificates</ttl><brk></brk>
+<txt>Before assigning any welder, welding operator, or tacker to work under this contract, submit the names and certification 
+that each individual is qualified as specified. State in the certification the type of welding and positions 
+for which the welder, welding operator, or tacker is qualified, the code and procedure under which the individual 
+is qualified, the date qualified, and the name of the firm and person certifying the qualification tests. Keep 
+the certification current, on file, and furnish 3 copies.</txt><brk></brk></spt>
+<spt outline="1.3.4.3"><ttl>1.3.4.3 Renewal of Qualification</ttl><brk></brk>
+<txt>Re-qualification of a welder or welding operator is required under any of the following conditions:</txt><brk></brk>
+<lst indent="-0.33">a. It has been more than 6 months since the welder or welding operator has used the specific welding 
+process for which he is qualified.</lst><brk></brk>
+<lst indent="-0.33">b. There is specific reason to question the welder or welding operator's ability to make welds that 
+meet the requirements of these specifications.</lst><brk></brk>
+<lst indent="-0.33">c. The welder or welding operator was qualified by an employer other than those firms performing work 
+under this contract, and a qualification test has not been taken within the past 12 months. Submit as 
+evidence of conformance all records showing periods of employment, name of employer where welder, or 
+welding operator, was last employed, and the process for which qualified.</lst><brk></brk>
+<lst indent="-0.33">d. A tacker who passes the qualification test is considered eligible to perform tack welding indefinitely 
+in the positions and with the processes for which he/she is qualified, unless there is some specific 
+reason to question the tacker's ability or there has been a gap greater than 6 months since he/she last 
+used the process. In such a case, the tacker is required to pass the prescribed tack welding test.</lst><brk></brk></spt>
+</spt><spt outline="1.3.5"><ttl>1.3.5 Inspector Qualification</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Insert additional requirements if necessary. Determine and specify the 
+methods of nondestructive testing required. If quality control inspection is 
+to be the responsibility of the Government, delete this paragraph.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Submit certificates indicating that <sub><pre class="display_SUB">&lt;SUB&gt;</pre>certified welding inspector<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>s meet the requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Submit qualifications 
+for <sub><pre class="display_SUB">&lt;SUB&gt;</pre>nondestructive testing personnel<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> in accordance with the requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 2305<pre class="display_RID">&lt;/RID&gt;</pre></rid> Levels 1 or 2 in the applicable 
+nondestructive testing method. Level I inspectors must have direct supervision of a Level II inspector.</txt><brk></brk></spt>
+<spt outline="1.3.6"><ttl>1.3.6 Symbols and Safety</ttl><brk></brk>
+<txt>Use symbols in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS A2.4<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3021<pre class="display_RID">&lt;/RID&gt;</pre></rid>, unless otherwise indicated. Follow safe welding practices 
+and safety precautions during welding in conformance with <rid><pre class="display_RID">&lt;RID&gt;</pre>WES 9009<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+</spt></prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<spt outline="2.1"><ttl>2.1 SYSTEM DESCRIPTION</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Check the drawings to ensure that any supplementary information required 
+by the paragraph has been shown and that there is no conflict between the drawings 
+and the specifications. Clearly show on the drawings complete information about 
+location, type, size, and extent of all welds and nondestructive testing, where 
+required. When welding is to be covered by more than one section in the contract 
+specifications, this section covers all structural welding; the other sections 
+cover the utilities or special equipment required inside the structure. Welding 
+of utilities or special equipment to structural members must be done carefully 
+so that the overall structure is not weakened. Clearly show on the drawings 
+or cover by the contract specification the extent of the welding required. 
+Revise this paragraph to clearly define the welding that is covered. Specify 
+the strength of the base material on drawings or other section of the specifications.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Specify on the drawings or the text of the specifications the weld requirements: 
+tensile strength, elongation, shear strength, size, length, type, and location.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Include bracketed sentence for Design-Build projects only.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><div class="brackets">[Conform the design of welded connections to <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 360<pre class="display_RID">&lt;/RID&gt;</pre></rid>, unless otherwise indicated or specified. ]</div>Material with 
+welds will not be accepted unless the welding is specified or indicated on the drawings, in conformance to <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ or <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT-SS Chapter 7<pre class="display_RID">&lt;/RID&gt;</pre></rid>, or otherwise approved. Perform welding as specified in this section, except where additional 
+requirements are shown on the drawings or are specified in other sections. Do not commence welding until welding 
+procedures, inspectors, nondestructive testing personnel, welders, welding operators, and tackers have been qualified 
+and the submittals approved by the Contracting Officer. Perform all testing at or near the work site. Maintain 
+records of the test results obtained in welding procedure, welder, welding operator, and tacker performance qualifications.</txt><brk></brk>
+<spt outline="2.1.1"><ttl>2.1.1 Pre-erection Conference</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use ASTM A992/A992M steel for all buildings which have groove welds in 
+their lateral force resisting systems, and are either in Seismic Design Categories 
+D, E and F or in Category C and are Risk Category III; this and the following 
+paragraph will be retained for this type of building.<brk></brk>
+ASTM A992/A992M which covers W shapes (rolled wide flange shapes) intended for 
+use for all buildings which have groove welds in their lateral force resisting 
+systems, and are either in Seismic Design Categories D, E and F or in Category 
+C and are Risk Category III will likely not be available in Japan. The Engineer 
+of Record shall be aware of the available Japanese H steel sizes and design 
+accordingly, utilizing the appropriate steel material JIS G 3136, SN490B, 325 
+MPa Yield Strength. JIS G 3136, SN490B steel is recommended for steel used in 
+lateral force resisting systems with groove welds. Paragraphs 2.1.1 and 2.2 
+will be retained for this type of building.<brk></brk>
+Government personnel attending the pre-erection conference should include all 
+field Quality Assurance (QA) inspectors, the building designer, the Engineer 
+of Record (EOR) (if different form the designer) and the Project Manger (PM).<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Hold a pre-erection conference prior to the start of the field welding, to bring all affected parties together 
+and to gain a naturally clear understanding of the project and the Welding Procedure Specifications (WPS) (submitted 
+for all welding, including welding done using pre-qualified procedures). Mandatory attendance is required by 
+all Contractor's welding production and inspection personnel and appropriate Government personnel. Include as 
+items for discussion: responsibilities of various parties; welding procedures and processes to be followed; 
+welding sequence (both within a joint and joint sequence within the building); inspection requirements and procedures, 
+both visual and nondestructive testing; welding schedule; and other items deemed necessary by the attendees.</txt><brk></brk></spt>
+</spt><spt outline="2.2"><ttl>2.2 WELDING EQUIPMENT AND MATERIALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Normally, the Contractor (fabricator) selects the specific electrode 
+material for weldments based on the WPS for the project. If in special cases 
+the selection of the proper electrode is critical to the design, the designer 
+may specify the electrode to be used in this or other sections. In special 
+cases, it may also be necessary to specify the welding process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide all welding equipment, welding electrodes and rods, welding wire, and fluxes capable of producing satisfactory 
+welds when used by a qualified welder or welding operator. <div class="brackets">[Use <div class="brackets">[_____]</div> welding electrodes.]</div> <div class="brackets">[Perform welding 
+using the <div class="brackets">[_____]</div> process.]</div> Provide welding equipment and materials that comply with the applicable requirements 
+of <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid><div class="brackets">[ and <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>. Submit product data on <sub><pre class="display_SUB">&lt;SUB&gt;</pre>welding electrodes and rods<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt><brk></brk></spt>
+</prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 WELDING OPERATIONS</ttl><brk></brk>
+<spt outline="3.1.1"><ttl>3.1.1 Requirements</ttl><brk></brk>
+<txt>Conform workmanship and techniques for welded construction to the requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3400<pre class="display_RID">&lt;/RID&gt;</pre></rid><div class="brackets">[, <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ and <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 360<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>. <div class="brackets">[When <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 3400<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 360<pre class="display_RID">&lt;/RID&gt;</pre></rid> specification conflict, the requirements 
+of <rid><pre class="display_RID">&lt;RID&gt;</pre>AISC 360<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid> govern.]</div></txt><brk></brk></spt>
+<spt outline="3.1.2"><ttl>3.1.2 Identification</ttl><brk></brk>
+<txt>Identify all welds in one of the following ways:</txt><brk></brk>
+<lst indent="-0.33">a. Submit written records to indicate the location of welds made by each welder, welding operator, or 
+tacker.</lst><brk></brk>
+<lst indent="-0.33">b. Identify all work performed by each welder, welding operator, or tacker with an assigned number, 
+letter, or symbol to identify welds made by that individual. The Contracting Officer may require welders, 
+welding operators, and tackers to apply their symbol next to the weld by means of rubber stamp, felt-tipped 
+marker with waterproof ink, or other methods that do not cause an indentation in the metal. Place the 
+identification mark for seam welds adjacent to the weld at<met><pre class="display_MET">&lt;MET&gt;</pre> 1 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> intervals. Identification with 
+die stamps or electric etchers is not allowed.</lst><brk></brk></spt>
+</spt><spt outline="3.2"><ttl>3.2 QUALITY CONTROL</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: AWS D1.1 requires 100% visual inspection of all welds. The requirement 
+to utilize a Certified Welding Inspector to perform visual inspection is included 
+in the specification as AWS does not require this inspection be performed by 
+a Certified Welding Inspector. AWS D1.1 does not require NDT for any welds. 
+The engineer or specification writer must specify what welds require NDT in 
+addition to visual. The methods of nondestructive testing required must be 
+determined and specified by the designer. Determine the type of nondestructive 
+testing (NDT) method to be used, considering joint design, material thickness, 
+and accessibility to the joint. UT and RT are volumetric testing methods applicable 
+to CJP groove welds. PT and MT are nonvolumetric testing methods applicable 
+for PJP and Fillet welds. Determine joints critical to the structure which 
+should be subjected to additional NDT. Clearly indicate in the specifications 
+or on the drawings which welded joints require 100 percent NDT, which joints 
+require random inspection, and which NDT method(s) are to be used for each joint.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>The percentage of joints tested should be randomized throughout the structure 
+unless specific locations require NDT as determined by the engineer of record. 
+Joints not inspected by magnetic particle, liquid penetrant, or ultrasonic or 
+radiographic methods are subject to visual inspections only. If quality control 
+is to be primarily the Contractor's responsibility and the inspection and tests 
+are adequately called out, then acceptance by the Government can rely on the 
+Contractor's work and records -- with some spot checking to verify the results.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>If the Contractor must perform nondestructive inspection other than visual, 
+or inspection other than that covered by Section 6 of AWS D1.1/D1.1M, add these 
+requirements to this paragraph. Clearly show the extent of inspection either 
+on the drawings or by this or other sections of the specifications. Edit the 
+bracketed portion of the paragraph to define the extent of nondestructive testing 
+required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>All welded connections per AWS D1.1 will be tested to the static acceptance 
+criteria by default. Connections that require testing to cyclic criteria must 
+be specified by the engineer of record.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Perform testing using an approved inspection or testing laboratory or technical consultant; or if approved, the 
+Contractor's inspection and testing personnel may be used instead of the commercial inspection or testing laboratory 
+or technical consultant. A Certified Welding Inspector must perform visual inspection on 100 percent of all 
+welds. Document this inspection in the Visual <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Weld Inspection Log<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>. Test <div class="brackets">[50]</div><div class="brackets">[_____]</div> percent of CJP welds using 
+ultrasonic testing per Table <div class="brackets">[6.2]</div> <div class="brackets">[or 6.3]</div> of <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Randomly test <div class="brackets">[50]</div><div class="brackets">[_____]</div> percent of all PJP and 
+fillet welds or as indicated by magnetic particle or dye penetrant testing. Verify the welds conform to paragraph 
+STANDARDS OF ACCEPTANCE. Conform procedures and techniques for inspection with applicable requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+<div class="brackets">[, <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>, <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 2343<pre class="display_RID">&lt;/RID&gt;</pre></rid>, and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z 2320<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Submit a <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Welding Quality Assurance Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> and records of tests 
+and inspections.</txt><brk></brk></spt>
+<spt outline="3.3"><ttl>3.3 STANDARDS OF ACCEPTANCE</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Specify on the drawings or the text of the contract specifications must 
+specify the weld requirements: tensile strength, elongation, shear strength, 
+size, length, type, and location. Identify in the contract drawings complete 
+penetration welds subject to primary tensile stress or cyclic loading for the 
+purpose of selecting the correct NDT acceptance criteria.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Conform dimensional tolerances for welded construction, details of welds, and quality of welds with the applicable 
+requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid><div class="brackets">[, <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div> and the contract drawings. Submit all records of <sub><pre class="display_SUB">&lt;SUB&gt;</pre>nondestructive testing<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>
+.</txt><brk></brk>
+<spt outline="3.3.1"><ttl>3.3.1 Nondestructive Testing</ttl><brk></brk>
+<txt>The welding is subject to inspection and tests in the mill, shop, and field. Inspection and tests in the mill 
+or shop do not relieve the Contractor of the responsibility to furnish weldments of satisfactory quality. When 
+materials or workmanship do not conform to the specification requirements, the Government reserves the right 
+to reject material or workmanship or both at any time before final acceptance of the structure containing the 
+weldment. Any indication of a defect is regarded as a defect, unless re-evaluation by nondestructive methods 
+or by surface conditioning shows that no unacceptable defect is present. Submit all records of nondestructive 
+testing in accordance with paragraph STANDARDS OF ACCEPTANCE.</txt><brk></brk></spt>
+<spt outline="3.3.2"><ttl>3.3.2 Destructive Tests</ttl><brk></brk>
+<txt>Make all repairs when metallographic specimens are removed from any part of a structure. Employ only qualified 
+welders or welding operators, and use the proper joints and welding procedures, including peening or heat treatment 
+if required, to develop the full strength of the members and joints cut and to relieve residual stress.</txt><brk></brk></spt>
+</spt><spt outline="3.4"><ttl>3.4 GOVERNMENT INSPECTION AND TESTING</ttl><brk></brk>
+<txt>In addition to the inspection and tests performed by the Contractor for quality control, the Government will 
+perform inspection and testing for acceptance to the extent determined by the Contracting Officer. The work 
+may be performed by the Government's own forces or under a separate contract for inspection and testing. The 
+Government reserves the right to perform supplemental nondestructive and destructive tests to determine compliance 
+with paragraph STANDARDS OF ACCEPTANCE.</txt><brk></brk></spt>
+<spt outline="3.5"><ttl>3.5 CORRECTIONS AND REPAIRS</ttl><brk></brk>
+<txt>If inspection or testing indicates defects in the weld joints, repair defective welds using a qualified welder 
+or welding operator as applicable. Conduct corrections in accordance with the requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ or <rid><pre class="display_RID">&lt;RID&gt;</pre>JASS 6<pre class="display_RID">&lt;/RID&gt;</pre></rid><div class="brackets">[, <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.8/D1.8M<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div> and the specifications. Repair all defects in accordance with the approved procedures. 
+Repair defects discovered between passes before additional weld material is deposited. Wherever a defect is 
+removed and repair by welding is not required, blend the affected area into the surrounding surface to eliminate 
+sharp notches, crevices, or corners. After a defect is thought to have been removed, and before re-welding, 
+examine the area by suitable methods to ensure that the defect has been eliminated. Repaired welds must meet 
+the inspection requirements for the original welds.</txt><brk></brk></spt>
+<ned></ned></prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

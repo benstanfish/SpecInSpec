@@ -1,93 +1,93 @@
-<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
-<BRK/>
-<SCN>SECTION 01 33 16</SCN><BRK/>
-<BRK/>
-<STL>DESIGN AFTER AWARD</STL><BRK/>
-<BRK/>
-<PRT><TTL>PART 1   GENERAL </TTL><BRK/>
-<BRK/>
-<SPT><TTL>REFERENCES</TTL><BRK/>
-<BRK/>
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><BRK />
+<BRK />
+<SCN>SECTION 01 33 16</SCN><BRK />
+<BRK />
+<STL>DESIGN AFTER AWARD</STL><BRK />
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL </TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<BRK />
 <TXT>The publications listed below form a part of this section to the extent referenced.  The publications are referred 
-to within the text by the basic designation only.</TXT><BRK/>
-<BRK/>
-<REF><ORG>U.S. DEPARTMENT OF DEFENSE (DOD)</ORG><BRK/>
-<BRK/>
+to within the text by the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>U.S. DEPARTMENT OF DEFENSE (DOD)</ORG><BRK />
+<BRK />
 <RID>MIL-STD 3007</RID><RTL>Standard Practice For Unified Facilities Criteria 
-And Unified Facilities Guide Specifications </RTL><BRK/>
-<BRK/>
-<RID>UFC 1-200-01</RID><RTL>(2020) DoD Building Code</RTL><BRK/>
-<BRK/>
+And Unified Facilities Guide Specifications </RTL><BRK />
+<BRK />
+<RID>UFC 1-200-01</RID><RTL>(2020) DoD Building Code</RTL><BRK />
+<BRK />
 <RID>UFC 3-301-01</RID><DEL><RTL>(2019) Structural Engineering</RTL></DEL><ADD><RTL>(2023; with Change 
-1, 2023) Structural Engineering</RTL></ADD><BRK/>
-<BRK/>
+1, 2023) Structural Engineering</RTL></ADD><BRK />
+<BRK />
 <RID>UFC 3-600-01</RID><DEL><RTL>(2016; Change 4) Fire Protection Engineering 
 for Facilities</RTL></DEL><ADD><RTL>(2016; with Change 6, 2021) Fire 
-Protection Engineering for Facilities</RTL></ADD><BRK/>
-<BRK/>
+Protection Engineering for Facilities</RTL></ADD><BRK />
+<BRK />
 <RID>UFC 4-010-01</RID><DEL><RTL>(2018; Change 1) DoD Minimum Antiterrorism Standards 
 for Buildings</RTL></DEL><ADD><RTL>(2018; with Change 1, 2020) DoD 
-Minimum Antiterrorism Standards for Buildings</RTL></ADD><BRK/>
-<BRK/></REF>
-<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK/>
-<BRK/>
-<RID>NFPA 101</RID><RTL>(2021) Life Safety Code</RTL><BRK/>
-<BRK/>
-<RID>NFPA 72</RID><RTL>(2022) National Fire Alarm and Signaling Code</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG>U.S. ARMY CORPS OF ENGINEERS (USACE)</ORG><BRK/>
-<BRK/>
-<RID>ER 1110-345-122</RID><RTL>(1999) Interior Design</RTL><BRK/>
-<BRK/>
-<RID>ER 1110-345-700</RID><RTL>(1997) Design Analysis, Drawings and Specifications</RTL><BRK/>
-<BRK/>
+Minimum Antiterrorism Standards for Buildings</RTL></ADD><BRK />
+<BRK /></REF>
+<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK />
+<BRK />
+<RID>NFPA 101</RID><RTL>(2021) Life Safety Code</RTL><BRK />
+<BRK />
+<RID>NFPA 72</RID><RTL>(2022) National Fire Alarm and Signaling Code</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. ARMY CORPS OF ENGINEERS (USACE)</ORG><BRK />
+<BRK />
+<RID>ER 1110-345-122</RID><RTL>(1999) Interior Design</RTL><BRK />
+<BRK />
+<RID>ER 1110-345-700</RID><RTL>(1997) Design Analysis, Drawings and Specifications</RTL><BRK />
+<BRK />
 <RID>PDC TR 12-08</RID><RTL>(2013) Standoff Distances for Japanese Conventional 
-Construction</RTL><BRK/>
-<BRK/>
+Construction</RTL><BRK />
+<BRK />
 <RID>TR-06-X</RID><RTL>(2012) A/E/C (Architectural, Engineering, and 
-Construction) CADD Standard - Release 5.0</RTL><BRK/>
-<BRK/></REF>
-</SPT><ADD><SPT><TTL>SUBMITTALS</TTL><BRK/>
-<BRK/>
+Construction) CADD Standard - Release 5.0</RTL><BRK />
+<BRK /></REF>
+</SPT><ADD><SPT><TTL>SUBMITTALS</TTL><BRK />
+<BRK />
 <TXT>Designer of Record Approval and Government Conformance Review is required for submittals with a "R" designation. 
-Submit the following in accordance with Section <SRF>01 33 00 </SRF>SUBMITTAL PROCEDURES:</TXT><BRK/>
-<BRK/>
-<LST><SUB>SD-05 Design Data</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Concept (35%) Design Submittal</SUB>; <SUB>R</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Intermediate (65%) Design Submittal</SUB>; <SUB>R</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Final (95%) Design Submittal</SUB>; <SUB>R</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Final Backcheck (100%) Design Submittal</SUB>; <SUB>R</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>"Cleared For Construction" Submittal</SUB>; <SUB>R</SUB></ITM><BRK/>
-<BRK/></SPT>
-</ADD><SPT><TTL>GENERAL DESCRIPTION</TTL><BRK/>
-<BRK/>
+Submit the following in accordance with Section <SRF>01 33 00 </SRF>SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-05 Design Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Concept (35%) Design Submittal</SUB>; <SUB>R</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Intermediate (65%) Design Submittal</SUB>; <SUB>R</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Final (95%) Design Submittal</SUB>; <SUB>R</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Final Backcheck (100%) Design Submittal</SUB>; <SUB>R</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>"Cleared For Construction" Submittal</SUB>; <SUB>R</SUB></ITM><BRK />
+<BRK /></SPT>
+</ADD><SPT outline="1.2"><TTL>GENERAL DESCRIPTION</TTL><BRK />
+<BRK />
 <TXT>This section lists items that must be submitted for review at various milestones following award of a Design-Build 
-Contract.</TXT><BRK/>
-<BRK/>
+Contract.</TXT><BRK />
+<BRK />
 <TXT>Design submittals are required at the [Concept stage, ][Intermediate stage, ][Final stage, ][and Final Backcheck 
-stage].  The requirements for each design stage are listed hereinafter.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>DESIGNER</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Designer Of Record (DOR) Identification</TTL><BRK/>
-<BRK/>
+stage].  The requirements for each design stage are listed hereinafter.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>DESIGNER</TTL><BRK />
+<BRK />
+<SPT outline="1.3.1"><TTL>Designer Of Record (DOR) Identification</TTL><BRK />
+<BRK />
 <TXT>Identify a DOR for each design area.  Minimum requirements of the DORs shall be as indicated in following experience 
-matrix.  Submit a list of DORs to the Contracting Officer's Representative.</TXT><BRK/>
+matrix.  Submit a list of DORs to the Contracting Officer's Representative.</TXT><BRK />
 [<TAB HEADERROWS="2">
 <WBK>
    <STS>
       <STY SID="s50">
-         <ALN HORIZONTAL="CENTER"/>
+         <ALN HORIZONTAL="CENTER" />
       </STY>
    </STS>
    <TDA COLUMNCOUNT="2" ROWCOUNT="12">
-      <COL AUTOWIDTH="0" WIDTH="186.00"/>
-      <COL AUTOWIDTH="0" WIDTH="340.50"/>
+      <COL AUTOWIDTH="0" WIDTH="186.00" />
+      <COL AUTOWIDTH="0" WIDTH="340.50" />
       <ROW AUTOHEIGHT="0" HEIGHT="23.25">
          <CEL MERGEACROSS="1" STYLEID="s50">
 <DTA TYPE="STRING">Experience Matrix</DTA>
@@ -146,7 +146,7 @@ matrix.  Submit a list of DORs to the Contracting Officer's Representative.</TXT
 <DTA TYPE="STRING">Fire Protection</DTA>
          </CEL>
          <CEL>
-<DTA TYPE="STRING">Registered U.S. Professional Engineer who has passed the fire protection<BRK/>engineering written examination administered by the National Council of<BRK/>Examiners and Surveying (NCEES) and has a minimum of four (4) years of<BRK/>relevant fire protection engineering experience. <BRK/></DTA>
+<DTA TYPE="STRING">Registered U.S. Professional Engineer who has passed the fire protection<BRK />engineering written examination administered by the National Council of<BRK />Examiners and Surveying (NCEES) and has a minimum of four (4) years of<BRK />relevant fire protection engineering experience. <BRK /></DTA>
          </CEL>
       </ROW>
       <ROW AUTOHEIGHT="0" HEIGHT="84.00">
@@ -183,51 +183,51 @@ matrix.  Submit a list of DORs to the Contracting Officer's Representative.</TXT
       </ROW>
    </TDA>
 </WBK>
-<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
-<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
-<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
-<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB><BRK/>
-<BRK/>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK />
+<BRK />
 <TXT>For Architecture and Structural Engineering, the highest level of qualification is specified.  For Mechanical 
 Engineering, qualification of Kenchiku Setsubishi is higher than 1st class Kankouji Sekou Kanrigishi, and therefore 
 acceptable.  For Civil and Geotechnical Engineering, Gijutsushi is higher in qualifications than RCCM, and therefore 
-acceptable.</TXT>]<BRK/>
-<BRK/></SPT>
-<SPT><TTL>DOR Responsibilities</TTL><BRK/>
-<BRK/>
+acceptable.</TXT>]<BRK />
+<BRK /></SPT>
+<SPT outline="1.3.2"><TTL>DOR Responsibilities</TTL><BRK />
+<BRK />
 <TXT>Each DOR shall be responsible for ensuring integrity of their design and design integration in all construction 
-submittals and extensions to design developed by others, such as the Contractor, subcontractors, or suppliers.</TXT><BRK/>
-<BRK/>
+submittals and extensions to design developed by others, such as the Contractor, subcontractors, or suppliers.</TXT><BRK />
+<BRK />
 <TXT>All construction drawings and design calculations of the Contractor and any changes to these documents shall 
 be affixed with the registration stamp (seal) of the DOR and that of all consultants, as appropriate, (i.e. structural, 
 civil, mechanical and fire protection engineers) before submittal for review.  Approval shall be indicated on 
 all documents by having the professional stamp/seal of the architect or engineer with personal signature over 
-same appearing on all sheets as applicable to their specialties.</TXT><BRK/>
-<BRK/>
+same appearing on all sheets as applicable to their specialties.</TXT><BRK />
+<BRK />
 <TXT>Each DOR shall review and approve all construction submittals and extensions to design, in accordance with the 
 procedures described in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES.  Each DOR shall be responsible for reviewing Requests 
-for Information (RFI), applicable to their area of design responsibility, prior to submission to the Government.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>SEQUENCE OF DESIGN AND CONSTRUCTION</TTL><BRK/>
-<BRK/>
+for Information (RFI), applicable to their area of design responsibility, prior to submission to the Government.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.4"><TTL>SEQUENCE OF DESIGN AND CONSTRUCTION</TTL><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  After receipt of the Contract Notice to Proceed (NTP) the Contractor shall initiate design, comply 
 with all design submission requirements as covered under Division 01 General Requirements, and obtain 
 Government review of each submission.  No construction shall be started until the Government reviews 
 the Final Backcheck Design submission and determines it satisfactory for purposes of beginning construction.  
 The COR shall notify the Contractor when the design is cleared for construction.  The Government shall 
 not grant any time extension for any design resubmittal required when, in the opinion of the ACO or COR, 
-the initial submission failed to meet the minimum quality requirements as set forth in the Contract.</LST><BRK/>
-<BRK/>
+the initial submission failed to meet the minimum quality requirements as set forth in the Contract.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  If the Government allows the Contractor to proceed with limited construction based on pending minor 
 revisions to the reviewed Final Backcheck Design submission, no payment shall be made for any in-place 
 construction related to the pending revisions until they are completed, resubmitted and are satisfactory 
-to the Government.</LST><BRK/>
-<BRK/>
+to the Government.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  No payment shall be made for any in-place construction until all required submittals have been made, 
-reviewed and are satisfactory to the Government.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>CONTRACTOR'S ROLE DURING DESIGN</TTL><BRK/>
-<BRK/>
+reviewed and are satisfactory to the Government.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="1.5"><TTL>CONTRACTOR'S ROLE DURING DESIGN</TTL><BRK />
+<BRK />
 <TXT>The Contractor's construction management key personnel shall be actively involved during the design process to 
 effectively integrate the design and construction requirements of this Contract.  In addition to the typical 
 required construction activities, the Contractor's involvement includes, but is not limited to actions such as: 
@@ -237,96 +237,96 @@ integrating the shop drawing and installation drawing process into the design, e
 acquisition programs to meet critical schedules, effectively interfacing the construction QC program with the 
 design QC program, and maintaining and providing the design team with accurate, up-to-date redline and as-built 
 documentation.  The Contractor shall require and manage the active involvement of key trade subcontractors in 
-the above activities.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>DESIGN TIMELINE</TTL><BRK/>
-<BRK/>
+the above activities.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6"><TTL>DESIGN TIMELINE</TTL><BRK />
+<BRK />
 <TXT>As indicated in Section [<SRF>01 32 01.00 10</SRF> PROJECT SCHEDULE][<SRF>01 32 16.00 20</SRF> SMALL PROJECT CONSTRUCTION SCHEDULES], 
 the Contractor shall submit for approval, a complete design schedule with all submittals and review times indicated 
 in calendar dates.  Update this schedule in accordance with [<SRF>01 32 01.00 10</SRF> PROJECT SCHEDULE][<SRF>01 32 16.00 20</SRF> 
 SMALL PROJECT CONSTRUCTION SCHEDULES].  No design submittals shall be reviewed or evaluated until after receipt 
-and acceptance of the proposed design/review schedule.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>DEVIATING FROM THE ACCEPTED DESIGN</TTL><BRK/>
-<BRK/>
+and acceptance of the proposed design/review schedule.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.7"><TTL>DEVIATING FROM THE ACCEPTED DESIGN</TTL><BRK />
+<BRK />
 <TXT>The Contractor must obtain the approval of the Designer of Record and the Government's concurrence for any Contractor 
 proposed revision to the professionally stamped and sealed and Government reviewed and concurred design, before 
-proceeding with the revision.</TXT><BRK/>
-<BRK/>
+proceeding with the revision.</TXT><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  The Government reserves the right to non-concur with any revisions to the design, which may impact 
 furniture, furnishings or equipment selections or operations decisions that were made, based on the reviewed 
-and concurred design.</LST><BRK/>
-<BRK/>
+and concurred design.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  Any revisions to the design, which deviates from the Contract requirements (i.e., the RFP and the 
 accepted proposal), will require a modification, pursuant to the Changes clause, in addition to Government 
-concurrence.  The Government reserves the right to disapprove such a revision.</LST><BRK/>
-<BRK/>
+concurrence.  The Government reserves the right to disapprove such a revision.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  Unless the Government initiates a change to the Contract requirements, or the Government determines 
 that the Government furnished design criteria are incorrect and must be revised, any Contractor initiated 
 proposed change to the Contract requirements, resulting in additional cost, shall strictly be at the 
-Contractor's expense.</LST><BRK/>
-<BRK/>
+Contractor's expense.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">d.  The Contractor shall track all approved revisions to the reviewed and accepted design and shall incorporate 
 them into the as-built design documentation, in accordance with agreed procedures.  The Designer of Record 
 shall document its professional concurrence on the as-builts for any revisions to the stamped and sealed 
-drawings and specifications.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>DESIGN CONFERENCES</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Pre-Performance</TTL><BRK/>
-<BRK/>
+drawings and specifications.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="1.8"><TTL>DESIGN CONFERENCES</TTL><BRK />
+<BRK />
+<SPT outline="1.8.1"><TTL>Pre-Performance</TTL><BRK />
+<BRK />
 <TXT>As part of the Pre-Performance Conference conducted after the Contract award, key representatives of the Government 
 and the Contractor shall review the design submission and review procedures specified herein, discuss the preliminary 
 design schedule and provisions for phase completion of the D-B documents with construction activities (fast tracking), 
 as appropriate, meet with Corps of Engineers Design Review personnel and key Using Agency points of contact and 
-any other appropriate pre-design discussion items.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Design Charrette</TTL><BRK/>
-<BRK/>
+any other appropriate pre-design discussion items.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.8.2"><TTL>Design Charrette</TTL><BRK />
+<BRK />
 <TXT>After award of the Contract, the Contractor shall visit the site and conduct extensive interviews, and problem 
 solving discussions with the individual users, base personnel, Corps of Engineers personnel to acquire all necessary 
 site information, review user options, and discuss user needs.  The Contractor shall document all discussions.  
 Additionally, the Contractor shall schedule and perform a Design Charrette which is a condensed design meeting 
 with all stakeholders present, if required by the Contract SOW.  The design scope shall be finalized as direct 
-result of these meetings.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Design Review Conferences</TTL><BRK/>
-<BRK/>
+result of these meetings.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.8.3"><TTL>Design Review Conferences</TTL><BRK />
+<BRK />
 <TXT>Review conferences shall be held either on-base or Corps of Engineer's Office for each design submittal.  The 
 Contractor shall bring the personnel that developed the design submittal to the review conference.  The conferences 
-shall take place approximately one week after the review is complete.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>POST REVIEW CONFERENCE ACTION</TTL><BRK/>
-<BRK/>
+shall take place approximately one week after the review is complete.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.9"><TTL>POST REVIEW CONFERENCE ACTION</TTL><BRK />
+<BRK />
 <TXT>Copies of comments, annotated with comment action agreed on, shall be made available to all parties before the 
 conference adjourns.  Unresolved problems shall be resolved by immediate follow-on action at the end of conferences.  
 Valid comments shall be incorporated.  After receipt of Final Backcheck design documents upon incorporation of 
 backcheck comments, the Contractor may proceed with site and building development activities within the parameters 
 set forth in the Contract and accepted design submittal.  The Government, however, reserves the right to reject 
 design document submittals if comments are significant (in the opinion of the Government, it does not comply 
-with the Contract documents nor the level of quality implied).</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>CONFERENCE RECORDS</TTL><BRK/>
-<BRK/>
+with the Contract documents nor the level of quality implied).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.10"><TTL>CONFERENCE RECORDS</TTL><BRK />
+<BRK />
 <TXT>The Contractor shall within three (3) working days after each conference or discussion, prepare a written record 
 of the meeting and/or discussions and submit to the Japan Engineer District Resident Engineer/Contracting Officer 
 Representative identified in the Contract.  The written report shall include the project name, Contract number, 
 subject, the name of the participants, an outline of discussions, the recommendations, and conclusions.  All 
 meetings, site visits, review conferences, and telephonic discussions require written records.  The Contractor 
 shall also provide copies of conference records to the designated Administrative Contracting Officer identified 
-for the Contract.  Number each written record for the particular project under design in consecutive order.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>DESIGN SUBMITTALS</TTL><BRK/>
-<BRK/>
-<TXT>The Contractor shall follow the requirements outlined below for all submittals.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Guidance, References, and Precedence</TTL><BRK/>
-<BRK/>
+for the Contract.  Number each written record for the particular project under design in consecutive order.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.11"><TTL>DESIGN SUBMITTALS</TTL><BRK />
+<BRK />
+<TXT>The Contractor shall follow the requirements outlined below for all submittals.</TXT><BRK />
+<BRK />
+<SPT outline="1.11.1"><TTL>Guidance, References, and Precedence</TTL><BRK />
+<BRK />
 <TXT>The design shall comply with Department of Defense Uniform Facilities Criteria (UFC), Component Service (Air 
 Force, Army, Navy) Design Standards, the appropriate Installation Design Guide, and the US Army Corps of Engineers 
 planning, design, and construction directive.  In the event of conflict between documents and references, precedence 
-shall be given to the following in descending order.</TXT><BRK/>
-<BRK/>
+shall be given to the following in descending order.</TXT><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  Unified Facilities Criteria (UFC) system prescribed by <RID>MIL-STD 3007</RID>, which provides planning, design, 
 construction, operations, and maintenance criteria, and applies to all Department of Defense (DoD) commands.  
 UFC are distributed in electronic media from the Whole Building Design Guide (WBDG) website: http://www.wbdg.org/ccb/browse_cat.php?c=4.  <RID>
@@ -334,45 +334,45 @@ UFC 1-200-01</RID> provides guidance for the use of model building codes for des
 facilities.  Public Law 104-113, National Technology Transfer and Advancement Act of 1995, requires federal 
 use of private sector consensus standards wherever practicable.  The goal of the law is to reduce reliance 
 on Federal standards by using industry standards when there is potential to simplify contracting, increase 
-timeliness and cost effectiveness, and promote the safety and welfare of users.</LST><BRK/>
-<BRK/>
+timeliness and cost effectiveness, and promote the safety and welfare of users.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  The Service Component Design Standards provide common facility and infrastructure standards for the 
 relevant Service Component installations.  The appropriate installation design standards in conjunction 
 with mission requirements and technical designs and specifications, define requirements for installation 
 maintenance, repair, and construction projects.  The Installation Design Standards and Installation Design 
 Guides improve the functional and visual aspects of the installation.  The Installation Design Standards 
-follow the concept established in the Joint Service Unified Facilities Criteria Installation Design Manual.</LST><BRK/>
-<BRK/>
+follow the concept established in the Joint Service Unified Facilities Criteria Installation Design Manual.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  Federal and Industry Standards.  All applicable Federal and local industry standards referenced in 
 the scope of work, including those not referenced or listed, constitute criteria for the design of this 
-project, unless otherwise indicated.  Applicable Japanese standards may apply.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Quantity of Design Submittals</TTL><BRK/>
-<BRK/>
+project, unless otherwise indicated.  Applicable Japanese standards may apply.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="1.11.2"><TTL>Quantity of Design Submittals</TTL><BRK />
+<BRK />
 <TXT>Submit the documents listed and generally described hereinafter to the Government. Each submittal shall be accompanied 
 by two (2) electronic copies of all documentation and drawings to be provided.  The electronic copies shall consist 
 of standard type word processing, spreadsheet, and CAD (AutoCAD or MicroStation) files. The delivery address, 
-quantity and type of the required hardcopy submittals are identified in the table below.</TXT><BRK/>
-<BRK/>
+quantity and type of the required hardcopy submittals are identified in the table below.</TXT><BRK />
+<BRK />
 <DEL>[</DEL><TAB>
 <WBK>
    <STS>
       <STY SID="s50">
-         <ALN VERTICAL="BOTTOM"/>
+         <ALN VERTICAL="BOTTOM" />
       </STY>
    </STS>
    <TDA COLUMNCOUNT="5" ROWCOUNT="4">
-      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="313.50"/>
-      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="111.75"/>
-      <COL AUTOWIDTH="0" WIDTH="108.75"/>
-      <COL AUTOWIDTH="0" WIDTH="57.75"/>
-      <COL AUTOWIDTH="0" WIDTH="110.25"/>
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="313.50" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="111.75" />
+      <COL AUTOWIDTH="0" WIDTH="108.75" />
+      <COL AUTOWIDTH="0" WIDTH="57.75" />
+      <COL AUTOWIDTH="0" WIDTH="110.25" />
       <ROW AUTOHEIGHT="0" HEIGHT="48.00">
          <CEL STYLEID="s50">
 <DTA TYPE="STRING">Activity and Address</DTA>
          </CEL>
          <CEL STYLEID="s50">
-<DTA TYPE="STRING">Drawing set <BRK/>(Size A1)</DTA>
+<DTA TYPE="STRING">Drawing set <BRK />(Size A1)</DTA>
          </CEL>
          <CEL>
 <DTA TYPE="STRING">Design Analysis</DTA>
@@ -382,12 +382,12 @@ quantity and type of the required hardcopy submittals are identified in the tabl
 s</DTA>
          </CEL>
          <CEL>
-<DTA TYPE="STRING">Other<BRK/>Documents</DTA>
+<DTA TYPE="STRING">Other<BRK />Documents</DTA>
          </CEL>
       </ROW>
       <ROW AUTOHEIGHT="0" HEIGHT="84.00">
          <CEL STYLEID="s50">
-<DTA TYPE="STRING"><ADD>[]Resident Office<BRK/>ATTN: []<BRK/>[Type in mailing address]<BRK/>DSN: 315-[]-[]<BRK/>COMM: 81-[]-[]-[]<BRK/>EMAIL: []@usace.army.mil</ADD></DTA>
+<DTA TYPE="STRING"><ADD>[]Resident Office<BRK />ATTN: []<BRK />[Type in mailing address]<BRK />DSN: 315-[]-[]<BRK />COMM: 81-[]-[]-[]<BRK />EMAIL: []@usace.army.mil</ADD></DTA>
          </CEL>
          <CEL STYLEID="s50">
 <DTA TYPE="STRING"><ADD>[1]</ADD></DTA>
@@ -438,30 +438,30 @@ s</DTA>
       </ROW>
    </TDA>
 </WBK>
-<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
-<BRL/><BRL/></TAB><DEL>]<BRK/>
-<BRK/></DEL>
-<ADD><BRK/></ADD>
-<BRK/></SPT>
-<SPT><TTL>Delivery of Design Submittals</TTL><BRK/>
-<BRK/>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /></TAB><DEL>]<BRK />
+<BRK /></DEL>
+<ADD><BRK /></ADD>
+<BRK /></SPT>
+<SPT outline="1.11.3"><TTL>Delivery of Design Submittals</TTL><BRK />
+<BRK />
 <TXT>Mail or hand deliver all design submittals to the Government during design and construction. For mail delivery 
 use an overnight mailing service.  The Government shall furnish the Contractor addresses where each copy shall 
-be delivered after Contract award.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Transmittal Letter</TTL><BRK/>
-<BRK/>
+be delivered after Contract award.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.11.4"><TTL>Transmittal Letter</TTL><BRK />
+<BRK />
 <TXT>Each design submittal shall have a transmittal letter accompanying it indicating the date, design percentage, 
-type of submittal, list of items submitted, transmittal number, and point of contact with telephone number.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Late Design Submittal</TTL><BRK/>
-<BRK/>
+type of submittal, list of items submitted, transmittal number, and point of contact with telephone number.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.11.5"><TTL>Late Design Submittal</TTL><BRK />
+<BRK />
 <TXT>If a design submittal is over one (1) day late in accordance with the latest design schedule, the Government 
 review period may be extended 7 calendar days.  The review conference shall be held the week after the new period.  
-Submittal date revisions must be made in writing at least one (1) week prior to the affected submittal schedules.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>GOVERNMENT REVIEW</TTL><BRK/>
-<BRK/>
+Submittal date revisions must be made in writing at least one (1) week prior to the affected submittal schedules.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.12"><TTL>GOVERNMENT REVIEW</TTL><BRK />
+<BRK />
 <TXT>After receipt of submittals, the Government shall be allowed twenty-one (21) calendar days to review and comment 
 on each Intermediate and Final Design submittal, except as noted below.  The Final Backcheck design submittal 
 shall permit the Government fourteen (14) calendar days to review and ensure the Final Design submittal was updated.  
@@ -476,146 +476,146 @@ cautioned in that if he believes the action required by any comment exceeds the 
 that he should take no action and notify the COR in writing immediately.  Review conferences shall be held for 
 each design submittal at the project's location.  The Contractor shall bring the personnel that developed the 
 design submittal to the review conference.  These conferences shall take place approximately one week after the 
-twenty-one (21) day review period.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>ProjNet (DrChecks)</TTL><BRK/>
-<BRK/>
-<TXT>Although the Contractor may use its own internal system for overall design<BRK/>
-configuration management, the Government and the Contractor shall use the<BRK/>
-DrChecks Design Review and Checking System to initiate, respond to,<BRK/>
-resolve and track Government design compliance review comments.  This<BRK/>
-system may be useful for other data which needs to be interactive or<BRK/>
+twenty-one (21) day review period.</TXT><BRK />
+<BRK />
+<SPT outline="1.12.1"><TTL>ProjNet (DrChecks)</TTL><BRK />
+<BRK />
+<TXT>Although the Contractor may use its own internal system for overall design<BRK />
+configuration management, the Government and the Contractor shall use the<BRK />
+DrChecks Design Review and Checking System to initiate, respond to,<BRK />
+resolve and track Government design compliance review comments.  This<BRK />
+system may be useful for other data which needs to be interactive or<BRK />
 otherwise available for shared use and retrieval. The Contractor shall check the Design Quality Lessons learned 
-(DQLL) through DrChecks and incorporate any applicable Lessons Learned into the design of this project.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Tracking Comments in DrChecks</TTL><BRK/>
-<BRK/>
+(DQLL) through DrChecks and incorporate any applicable Lessons Learned into the design of this project.</TXT><BRK />
+<BRK />
+<SPT outline="1.12.1.1"><TTL>Tracking Comments in DrChecks</TTL><BRK />
+<BRK />
 <TXT>Throughout the design process, the DB Contractor shall enter, track, and back-check comments using the DrChecks 
 system. DOR shall annotate their own discipline specific comments timely to indicate exactly what action will 
-be taken or why the action is not required.  Merely stating “concur” or “will comply” or is not considered a 
-satisfactory response.  Comments considered critical by the conference participants shall be flagged as such.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>DrChecks Review Comments</TTL><BRK/>
-<BRK/>
+be taken or why the action is not required.  Merely stating &#8220;concur&#8221; or &#8220;will comply&#8221; or is not considered a 
+satisfactory response.  Comments considered critical by the conference participants shall be flagged as such.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.12.1.2"><TTL>DrChecks Review Comments</TTL><BRK />
+<BRK />
 <TXT>The DB Contractor shall monitor DrChecks to assure all comments are annotated and agreed to by the designers 
 and reviewers prior to the next submittal.  The DrChecks comments and responses shall be printed and included 
-in the design analysis for record.<BRK/>
-<BRK/>
+in the design analysis for record.<BRK />
+<BRK />
 Conference participants (reviewers) will expect coordination between Design Analysis calculations and the submitted 
-design.  Reviewers will also focus on the design submittal's satisfaction of the contract requirements.<BRK/>
-<BRK/>
+design.  Reviewers will also focus on the design submittal's satisfaction of the contract requirements.<BRK />
+<BRK />
 The DOR shall answer each comment in DrChecks with a formal response prior to the next submittal, clearly indicating 
 what action will be taken and what drawing/spec will change.  DOR are encouraged to directly contact reviewers 
 to discuss and agree to the formal comment responses rather than relying only on DrChecks and review meetings 
 to discuss comments.  With the next design conference, reviewers will back-check answers to the comments against 
-the submittal, in addition to reviewing additional design work.<BRK/>
-<BRK/>
+the submittal, in addition to reviewing additional design work.<BRK />
+<BRK />
 Comments that, in the DB Contractor's opinion, require effort outside the scope of the contract shall be clearly 
 indicated as such in DrChecks.  The DB Contractor shall not proceed with work outside the contract until a modification 
-to the contract is properly executed, if one is necessary.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>DrChecks Initial Account Set-Up</TTL><BRK/>
-<BRK/>
+to the contract is properly executed, if one is necessary.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.12.1.3"><TTL>DrChecks Initial Account Set-Up</TTL><BRK />
+<BRK />
 <TXT>To initialize an office's use of DrChecks, choose a contact person within the office to call the DrChecks Help 
 Desk at 800-428-4357, M-F, 8AM-5PM, Central time.  This POC will be given an office password to distribute to 
 others in the office.  Individuals can then go to the hyperlink at {http://www.projnet.org} and register as a 
-first time user.  Upon registration, each user will be given a personal password to the DrChecks system.<BRK/>
-<BRK/>
-Once the office and individuals are registered, the US Army Corps of Engineers’s project manager or lead reviewer 
+first time user.  Upon registration, each user will be given a personal password to the DrChecks system.<BRK />
+<BRK />
+Once the office and individuals are registered, the US Army Corps of Engineers&#8217;s project manager or lead reviewer 
 will assign the individuals and/or offices to the specific project for review.  At this point, persons assigned 
-can make comments, annotate comments, and close comments, depending on their particular assignment.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>DrChecks Comment Evaluation</TTL><BRK/>
-<BRK/>
-<TXT>The role of the DOR is to evaluate and respond to the comments entered by the reviewer.  To respond to comments:</TXT><BRK/>
-<BRK/>
-<LST>1.  Log into DrChecks.</LST><BRK/>
-<BRK/>
-<LST>2.  Click on the appropriate project.</LST><BRK/>
-<BRK/>
-<LST>3.  Under “Evaluate” click on the number under “Pending”.</LST><BRK/>
-<BRK/>
+can make comments, annotate comments, and close comments, depending on their particular assignment.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.12.1.4"><TTL>DrChecks Comment Evaluation</TTL><BRK />
+<BRK />
+<TXT>The role of the DOR is to evaluate and respond to the comments entered by the reviewer.  To respond to comments:</TXT><BRK />
+<BRK />
+<LST>1.  Log into DrChecks.</LST><BRK />
+<BRK />
+<LST>2.  Click on the appropriate project.</LST><BRK />
+<BRK />
+<LST>3.  Under &#8220;Evaluate&#8221; click on the number under &#8220;Pending&#8221;.</LST><BRK />
+<BRK />
 <LST>4.  Locate the comments that require your evaluation. (Note: If you know the comment number you can use 
-the Jump to ID on the left hand side in DrChecks; enter the number and click on go.)</LST><BRK/>
-<BRK/>
+the Jump to ID on the left hand side in DrChecks; enter the number and click on go.)</LST><BRK />
+<BRK />
 <LST>5.  Select the appropriate evaluation (concur, non-concur, for information only, or check and resolve) 
-and add the response.</LST><BRK/>
-<BRK/>
+and add the response.</LST><BRK />
+<BRK />
 <LST>6.  Click on the Add button. The evaluation will be added to the database and a fresh screen will appear 
-with the next comment.</LST><BRK/>
-<BRK/>
-<LST>7.  Once evaluations are all entered, exit DrChecks by choosing "My Account" and then Logout.</LST><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>Contractor Actions</TTL><BRK/>
-<BRK/>
+with the next comment.</LST><BRK />
+<BRK />
+<LST>7.  Once evaluations are all entered, exit DrChecks by choosing "My Account" and then Logout.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.12.2"><TTL>Contractor Actions</TTL><BRK />
+<BRK />
 <TXT>The disposition of each Government review comment must be clearly annotated.  Merely stating "concur" or "will 
 comply" is not considered an adequate indication of actions taken.  Not-in-scope comments annotated by the Contractor 
-must be discussed with the Government within five (5) working days.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Design Responsibility and Compliance</TTL><BRK/>
-<BRK/>
+must be discussed with the Government within five (5) working days.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.12.3"><TTL>Design Responsibility and Compliance</TTL><BRK />
+<BRK />
 <TXT>Regardless of Government review and comment on design submittals, the Contractor shall be responsible for compliance 
 with all requirements of the RFP and accepted Proposal.  Should any non-compliance be discovered during design 
 and/or construction, the Contractor shall be responsible for providing corrective action at no additional cost 
-and/or time impact to the Government in order to comply with the requirements of the Contract.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>DESIGN ANALYSIS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>General</TTL><BRK/>
-<BRK/>
-<TXT>Design Analysis format shall follow guidance from <RID>ER 1110-345-700</RID>, Appendix B located on Corps of Engineers website: http://www.publications.usace.army.mil/Portals/76/Publications/<BRK/>
-EngineerRegulations/ER_1110-345-700.pdf.  <BRK/>
-This shall exclude part 6 "Exceptions to Appendix B, Requirements."</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Format</TTL><BRK/>
-<BRK/>
+and/or time impact to the Government in order to comply with the requirements of the Contract.</TXT><BRK />
+<BRK /></SPT>
+</SPT></PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>DESIGN ANALYSIS</TTL><BRK />
+<BRK />
+<SPT outline="2.1.1"><TTL>General</TTL><BRK />
+<BRK />
+<TXT>Design Analysis format shall follow guidance from <RID>ER 1110-345-700</RID>, Appendix B located on Corps of Engineers website: http://www.publications.usace.army.mil/Portals/76/Publications/<BRK />
+EngineerRegulations/ER_1110-345-700.pdf.  <BRK />
+This shall exclude part 6 "Exceptions to Appendix B, Requirements."</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2"><TTL>Format</TTL><BRK />
+<BRK />
 <TXT>Use standard A4 size or 8.5 inch by 11 inch paper except that larger sheets may be used when required for graphs 
 or other special calculation forms.  All sheets shall be in reproducible form.  The material may be typewritten, 
 hand lettered, handwritten, or a combination thereof, provided it is legible.  Side margins shall be 1 inch minimum 
 to permit side binding and head to head printing.  Bottom margins shall be a minimum of 1 inch with page numbers 
-centered.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Organization</TTL><BRK/>
-<BRK/>
+centered.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.3"><TTL>Organization</TTL><BRK />
+<BRK />
 <TXT>The design analysis shall be sequentially numbered and bound under a cover indicating the name of the facility 
 and project number.  The design analysis shall be further classified by the submittal stage.  All portions of 
-the design analysis shall be organized and bound by relevant topics.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Design Computations</TTL><BRK/>
-<BRK/>
+the design analysis shall be organized and bound by relevant topics.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.4"><TTL>Design Computations</TTL><BRK />
+<BRK />
 <TXT>Calculations are a part of the design analysis.  When they are voluminous, bind them separately from the narrative 
 part of the design analysis.  Present the design calculations in a clean and legible form incorporating a title 
 page and index for each volume.  Furnish a table of contents which shall be an index of the indices, when there 
 is more than one volume.  Identify the source of loading conditions, supplementary sketches, graphs, formulae, 
 and references.  Explain all assumptions and conclusions.  Calculation sheets shall carry the names or initials 
 of the computer and the checker and the dates of calculations and checking.  As part of the Contractor's Quality 
-Control System, no portion of the calculations shall be computed and checked by the same person.</TXT><BRK/>
-<BRK/>
+Control System, no portion of the calculations shall be computed and checked by the same person.</TXT><BRK />
+<BRK />
 <TXT>When ADPS are used to perform design calculations, the design analysis shall include descriptions of the computer 
 programs used and copies of the ADPS input data and output summaries.  When the computer output is large, it 
 may be divided into volumes at logical division points.  Precede each set of computer printouts by an index and 
 by a description of the computation performed.  If several sets of computations are submitted; they shall be 
 accompanied by a general table of contents in addition to the individual indices.  Include the following in the 
-description accompanying each set of ADPS printouts:</TXT><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Explain the design method, including assumptions, theories and formulae.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Include applicable diagrams, adequately identified.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  State exactly the computation performed by the computer.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">d.  Provide all necessary explanations of the computer printout format, symbols and abbreviations.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">e.  Use adequate and consistent notation.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">f.  Provide sufficient information to permit manual checks of the results.</LST><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>DRAWINGS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>General</TTL><BRK/>
-<BRK/>
+description accompanying each set of ADPS printouts:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Explain the design method, including assumptions, theories and formulae.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Include applicable diagrams, adequately identified.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  State exactly the computation performed by the computer.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Provide all necessary explanations of the computer printout format, symbols and abbreviations.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Use adequate and consistent notation.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Provide sufficient information to permit manual checks of the results.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.2"><TTL>DRAWINGS</TTL><BRK />
+<BRK />
+<SPT outline="2.2.1"><TTL>General</TTL><BRK />
+<BRK />
 <TXT>Prepare all drawings utilizing Computer-Aided Design and Drafting (CADD) software so that they are well arranged, 
 placed for ready reference and they present complete information.  The Contractor shall prepare all CADD files 
 drawings in compliance with the A/E/C CADD Standards (rel 6.0) dated August 2015 (referred to as the "CADD standard") 
@@ -628,565 +628,565 @@ list of abbreviations and symbols used in their respective drawings.  Do not use
 The design documents shall consist of drawings utilizing metric drawing sheets A1 (594 x 841 mm) or A2 (420 x 
 594 mm) format unless otherwise specified. The Contractor shall use standard Corps of Engineers title blocks 
 and borders on all drawings.  The Contractor shall submit all CADD files for A/E/C compliance verification and 
-a description of all drawings and drawing file names with each required design submittal.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Methods and Format</TTL><BRK/>
-<BRK/>
+a description of all drawings and drawing file names with each required design submittal.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2"><TTL>Methods and Format</TTL><BRK />
+<BRK />
 <TXT>Create all drawings utilizing metric units.  All CADD files shall utilize one of the following software applications 
-and the version specified (or the latest version):</TXT><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  AutoCAD 2013 (.dwg)</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  MicroStation V8 (.dgn)</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Use of Records Management Directory Structure</TTL><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  The main (root) folder shall be named after the P2 number of the project.</LST><BRK/>
-<BRK/>
+and the version specified (or the latest version):</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  AutoCAD 2013 (.dwg)</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  MicroStation V8 (.dgn)</LST><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.3"><TTL>Use of Records Management Directory Structure</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  The main (root) folder shall be named after the P2 number of the project.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  The folder names (under the root folder) are shown on table 2-1, page 13 of the CADD standard.  CADD 
 files shall then be properly organized in the applicable folder structure as described.  Table 2-1 shall 
-also serve as the sequence or order of drawings.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Model files shall be organized in a sub-folder (in each applicable discipline) called "resource".</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">d.  Sheet files shall be organized in the applicable discipline folder.</LST><BRK/>
-<BRK/>
+also serve as the sequence or order of drawings.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Model files shall be organized in a sub-folder (in each applicable discipline) called "resource".</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Sheet files shall be organized in the applicable discipline folder.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">e.  A subfolder called "PDF" shall be created under each applicable discipline folder to store design 
-.pdf files of each submittal percentage phase.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">f.  Only English language characters shall be used in the folder names.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">g.  The Contractor at their prerogative may delete folders that are not applicable to the design.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Use of A/E/C CADD File Naming System</TTL><BRK/>
-<BRK/>
-<TXT>For the purposes of simplicity model files and sheet files shall be named as described below:</TXT><BRK/>
-<BRK/>
+.pdf files of each submittal percentage phase.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Only English language characters shall be used in the folder names.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  The Contractor at their prerogative may delete folders that are not applicable to the design.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.4"><TTL>Use of A/E/C CADD File Naming System</TTL><BRK />
+<BRK />
+<TXT>For the purposes of simplicity model files and sheet files shall be named as described below:</TXT><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  Model files names shall have a minimum of ten characters (reference the CADD standard, figure 2-4, 
 page 12).  The first six characters shall be the project P2 number, followed by two characters for the 
 discipline designator, and the last two characters the model file type.  The last four characters of 
 the model file name is user definable and may be used at the Contractor's prerogative.  Only English 
-alphabet and numerical characters shall be used in file names (no kanji).</LST><BRK/>
-<BRK/>
+alphabet and numerical characters shall be used in file names (no kanji).</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  The sheet file name shall have a minimum of ten characters (reference the CADD Standard, figure 2-5, 
 page 18).  The first six characters shall be the project P2 number, followed by one character for the 
 discipline designator (the level 2 designator shall be used only when more than 99 sheets are needed 
 to subdivide the applicable discipline), and the last two characters the sheet sequence number.  The 
 last three characters of the sheet file name is user definable and shall be used in the event of an amendment 
-or modification.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Use of Reference or Xref Files</TTL><BRK/>
-<BRK/>
-<TXT>The use of reference or xrefs files during the design stage is at the discretion of the designers.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Drawing Sheet Assembly</TTL><BRK/>
-<BRK/>
+or modification.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.5"><TTL>Use of Reference or Xref Files</TTL><BRK />
+<BRK />
+<TXT>The use of reference or xrefs files during the design stage is at the discretion of the designers.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.6"><TTL>Drawing Sheet Assembly</TTL><BRK />
+<BRK />
 <TXT>CADD drawings shall utilize model and sheet files (modelspace and paperspace) and shall be drawn in real world 
 units.  The drawings shall be Xref'd or referenced to a scale (see table 3-7, page 35 of the CADD standard) that 
 fits into the Government provided border sheet.  The Contractor shall utilize "Option 1" of a drawing sheet assembly 
 (see figure 2-2, page 10 of the CADD standard).  The border sheet shall remain at its original scale and only 
-one bordersheet (paperspace) per design file is allowed.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Use of True Type Fonts and Sizes</TTL><BRK/>
-<BRK/>
+one bordersheet (paperspace) per design file is allowed.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.7"><TTL>Use of True Type Fonts and Sizes</TTL><BRK />
+<BRK />
 <TXT>For file conversion purposes the standard font shall be Arial.ttf and simplex.ttf.  Fonts created by third parties 
 or the designers are not permitted.  Standard text sizes that may be used are 1.5 mm, 3 mm, 6 mm and 12 mm (text 
-height and width).</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Use of Standard Dimensioning and Terminator Symbols</TTL><BRK/>
-<BRK/>
+height and width).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.8"><TTL>Use of Standard Dimensioning and Terminator Symbols</TTL><BRK />
+<BRK />
 <TXT>All dimensioning shall be in millimeters (see figure 3-7 through 3-10, pages 38 and 39 of the CADD standard).  
 The preferred terminator for dimensioning shall be the architectural slash.  In the event that filled arrowheads 
-are selected ensure that the size of the arrowheads are at a ratio of 3:1 (see page 37 of the CADD standard).</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Use of Standard Abbreviations</TTL><BRK/>
-<BRK/>
+are selected ensure that the size of the arrowheads are at a ratio of 3:1 (see page 37 of the CADD standard).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.9"><TTL>Use of Standard Abbreviations</TTL><BRK />
+<BRK />
 <TXT>The use of abbreviations are for use when space is limited within a drawing sheet, otherwise it is recommended 
 the all the words are spelled out versus using abbreviations.  Approved abbreviations are available from the 
-National CADD Standard (NCS version 3.1)</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Use of Standard Symbols, Patterns, and Line Styles</TTL><BRK/>
-<BRK/>
+National CADD Standard (NCS version 3.1)</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.10"><TTL>Use of Standard Symbols, Patterns, and Line Styles</TTL><BRK />
+<BRK />
 <TXT>General symbols such as a two part detail, section and elevation bubbles are to be used.  Other approved symbols, 
-patterns, and line styles are located in Appendix D of the CADD Standards.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Government Provided Files</TTL><BRK/>
-<BRK/>
+patterns, and line styles are located in Appendix D of the CADD Standards.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.11"><TTL>Government Provided Files</TTL><BRK />
+<BRK />
 <TXT>The use of these files is free.  The U.S. Army Corps of Engineers (USACE) makes no warranty, impressed or implied, 
 with regards to the use of these files.  USACE shall not be liable for any errors or for incidental or consequential 
 damages in connection with the furnishing and performance of these files.  The COR shall furnish the Contractor 
-with the following:</TXT><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  A/E/C CADD Standards rel. 6.0 (Main text, Appendix A in pdf format)</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Japan Engineer District Title and border sheets (Size A1 and A2 in .dgn and .dwg format)</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  AutoCAD drawing template and MicroStation library files (.dwt and .dgnlib)</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">d.  A/E/C Cell and Block Libraries (.cel and .dwg)</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">e.  A/E/C Line Style Libraries (.rsc and .shx)</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">f.  A/E/C Pattern Libraries (.cel and .pat)</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Submittal Delivery Media and Format</TTL><BRK/>
-<BRK/>
-<TXT>Submit all Design Complete CADD files on the following media.</TXT><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Before a CADD file is copied on the delivery digital media, the following procedures shall be performed:</LST><BRK/>
-<BRK/>
+with the following:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  A/E/C CADD Standards rel. 6.0 (Main text, Appendix A in pdf format)</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Japan Engineer District Title and border sheets (Size A1 and A2 in .dgn and .dwg format)</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  AutoCAD drawing template and MicroStation library files (.dwt and .dgnlib)</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  A/E/C Cell and Block Libraries (.cel and .dwg)</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  A/E/C Line Style Libraries (.rsc and .shx)</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  A/E/C Pattern Libraries (.cel and .pat)</LST><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.12"><TTL>Submittal Delivery Media and Format</TTL><BRK />
+<BRK />
+<TXT>Submit all Design Complete CADD files on the following media.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Before a CADD file is copied on the delivery digital media, the following procedures shall be performed:</LST><BRK />
+<BRK />
 <ITM INDENT="-0.33">(1) Remove all extraneous graphics outside the border area of the sheet file.  Set the active 
-parameters to a standard setting or those in the Government-furnished template or seed file.</ITM><BRK/>
-<BRK/>
+parameters to a standard setting or those in the Government-furnished template or seed file.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(2) Include all files, both graphic and non-graphic, required for the project (i.e., color tables, 
 pen tables, font libraries, cell libraries, user command files, plot files, etc.).  All cells/blocks 
 not provided as Government-furnished materials must be provided to the Government as a part 
-of the electronic digital deliverables.</ITM><BRK/>
-<BRK/>
+of the electronic digital deliverables.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(3) Make sure that all support files such as those listed above are in the resource directory 
-and that model files do not include device or directory specifications.</ITM><BRK/>
-<BRK/>
+and that model files do not include device or directory specifications.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(4) Document any fonts, tables, etc., developed by the Contractor or not provided among the 
 Government-furnished materials.  The Contractor shall obtain Government approval before using 
-anything other than the Government's standard fonts, line styles, patterns, cells/blocks.</ITM><BRK/>
-<BRK/>
+anything other than the Government's standard fonts, line styles, patterns, cells/blocks.</ITM><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  A copy of all CADD data and files developed under this Contract shall be submitted to the Government 
 on electronic digital CAD media for approval by the Government at the Intermediate Design submittal phase, 
 the Final Design submittal stage, and at the Final Backcheck Design submittal phase as required unless 
-otherwise directed by the Contracting Officer.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  The external label for each electronic digital media shall contain, as a minimum, the following information:</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) The Project title, design submittal stage, and date.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) The format and version of operating system software.</ITM><BRK/>
-<BRK/>
+otherwise directed by the Contracting Officer.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  The external label for each electronic digital media shall contain, as a minimum, the following information:</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) The Project title, design submittal stage, and date.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) The format and version of operating system software.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(3) The name and version of utility software used for preparation (e.g., compression/decompression) 
-and copying files to the media.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(4) The A/E name and address.</ITM><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>SPECIFICATIONS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>General</TTL><BRK/>
-<BRK/>
+and copying files to the media.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(4) The A/E name and address.</ITM><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3"><TTL>SPECIFICATIONS</TTL><BRK />
+<BRK />
+<SPT outline="2.3.1"><TTL>General</TTL><BRK />
+<BRK />
 <TXT>The latest version of Unified Facilities Guide Specifications (UFGS), as established by CSI Manual of Practice, 
-shall be utilized, and can be obtained from the Whole Building Design Guide website http://www.wbdg.org/ccb/browse_cat.php?c=3.</TXT><BRK/>
-<BRK/>
+shall be utilized, and can be obtained from the Whole Building Design Guide website http://www.wbdg.org/ccb/browse_cat.php?c=3.</TXT><BRK />
+<BRK />
 <TXT>SpecsIntact is an automated specification processing system for use in preparing construction project specifications 
 from the UFGS.  The use of SpecsIntact is mandatory.  SpecsIntact can be downloaded at http://specsintact.ksc.nasa.gov/.  
 The Contractor shall submit SpecsIntact (.sec) files for marked-up and final specifications as required in the 
-Contract.</TXT><BRK/>
-<BRK/>
+Contract.</TXT><BRK />
+<BRK />
 <TXT>Federal Specs and MIL Specs have been phased out with a few exceptions.  Only those Federal and MIL specs in 
 the current editions of the UFGS may be used.  Industry standards (e.g. ASTM, ANSI) shall be used to the greatest 
 extent practicable for description of materials.  Japanese Industry Standards (e.g. JIS, JAS) are acceptable, 
 provided that the A-E can provide adequate documentation for COR's approval proving that the Japanese Industry 
 Standards are equivalent to the US Industry Standards.  A limited set of modified UFGS incorporating previously 
-identified and<BRK/>
-accepted Japanese standards and methods (also known as Japan Edited Specifications, or JES) can be found at https://www.poj.usace.army.mil/Business-With-Us/References/. <BRK/>
+identified and<BRK />
+accepted Japanese standards and methods (also known as Japan Edited Specifications, or JES) can be found at https://www.poj.usace.army.mil/Business-With-Us/References/. <BRK />
 When standards are not available for an item, specify by performance criteria instead.  Proprietary items are 
-not allowed.</TXT><BRK/>
-<BRK/>
+not allowed.</TXT><BRK />
+<BRK />
 <TXT>At the Intermediate and Final Design submittal stages, submit edited specifications in marked-up or redlined 
-format.  At the Final Backcheck Design submittal stage, execute all previous revisions.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Submittal Register</TTL><BRK/>
-<BRK/>
+format.  At the Final Backcheck Design submittal stage, execute all previous revisions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.2"><TTL>Submittal Register</TTL><BRK />
+<BRK />
 <TXT>A Submittal Register indicating the submittal requirements during the construction phase must be prepared by 
 the A-E using SpecsIntact during the design phase of the Contract.  The A-E shall be responsible for listing 
 all required submittals necessary to insure the project requirements are complied with.  The Register shall identify 
 submittal items such as shop drawings, manufacturer's literature, certificates of compliance, material samples, 
 guarantees, test results, etc. that the Contractor shall submit for review and/or approval action during the 
 life of the construction Contract.  The A-E shall include the Submittal Register as an attachment to Section 
-<SRF>01 33 00</SRF> SUBMITTAL PROCEDURES with the specifications.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
-<BRK/>
-<SPT><TTL><SUB>CONCEPT (35%) DESIGN SUBMITTAL</SUB></TTL><BRK/>
-<BRK/>
-<TXT>The A-E shall prepare the Concept Design based on the discussions and decisions made at the design charrette.</TXT><BRK/>
-<BRK/>
+<SRF>01 33 00</SRF> SUBMITTAL PROCEDURES with the specifications.</TXT><BRK />
+<BRK /></SPT>
+</SPT></PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL><SUB>CONCEPT (35%) DESIGN SUBMITTAL</SUB></TTL><BRK />
+<BRK />
+<TXT>The A-E shall prepare the Concept Design based on the discussions and decisions made at the design charrette.</TXT><BRK />
+<BRK />
 <TXT>The Concept Design goal is to demonstrate that the A-E has a thorough understanding of the scope of the project 
 and the owner's requirements, as discussed at the design charrette.  At the Concept Design stage, the A-E shall 
 confirm all CADD requirements (i.e.: sheet numbering, sheet size, A/E/C CADD &amp; USACE standards) with the 
-POJ CADD center.</TXT><BRK/>
-<BRK/>
-<TXT>Concept Design submittal shall consist of, but not limited to, the following:</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Design Drawings</TTL><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Title and general sheets with preliminary haul route.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Project site plan &amp; area site plan.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Construction notes and legend pages (all disciplines); Phasing plan, if required.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">d.  Preliminary Building Life Safety Code Analysis.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">e.  Civil</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Project site plan, including required standoff setbacks.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) Area site plan.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(3) General Preliminary Exterior Utility Plans.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(4) Complete subsurface investigation and analysis.</ITM> <BRK/>
-<BRK/>
-<LST INDENT="-0.33">f.  Architectural</LST><BRK/>
-<BRK/>
+POJ CADD center.</TXT><BRK />
+<BRK />
+<TXT>Concept Design submittal shall consist of, but not limited to, the following:</TXT><BRK />
+<BRK />
+<SPT outline="3.1.1"><TTL>Design Drawings</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Title and general sheets with preliminary haul route.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Project site plan &amp; area site plan.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Construction notes and legend pages (all disciplines); Phasing plan, if required.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Preliminary Building Life Safety Code Analysis.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Civil</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Project site plan, including required standoff setbacks.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) Area site plan.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3) General Preliminary Exterior Utility Plans.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(4) Complete subsurface investigation and analysis.</ITM> <BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Architectural</LST><BRK />
+<BRK />
 <ITM INDENT="-0.33">(1) Architectural Plans that consider functional relationships, work area use, security requirements 
-and traffic flow patterns.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) General Preliminary Building code/life safety code analysis diagrams.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(3) Exterior elevations showing principal shapes, fenestrations and exterior finishes.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(4) Building sections.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(5) General interior finish selections.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">g. Structural</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) General Preliminary Blast Requirements for Exterior Windows and Doors.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">h.  Mechanical/Plumbing</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) General Preliminary HVAC, plumbing layouts, including equipment capacities and sizes.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">i.  Electrical and Telecommunication</LST><BRK/>
-<BRK/>
+and traffic flow patterns.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) General Preliminary Building code/life safety code analysis diagrams.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3) Exterior elevations showing principal shapes, fenestrations and exterior finishes.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(4) Building sections.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(5) General interior finish selections.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">g. Structural</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) General Preliminary Blast Requirements for Exterior Windows and Doors.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  Mechanical/Plumbing</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) General Preliminary HVAC, plumbing layouts, including equipment capacities and sizes.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">i.  Electrical and Telecommunication</LST><BRK />
+<BRK />
 <ITM INDENT="-0.33">(1) General Preliminary electrical, and information systems layout, including equipment capacities 
-and sizes.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">j.  Fire Protection</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Fire Alarm Control Panel configuration, Riser configuration, pipe size and configuration.</ITM><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Specifications</TTL><BRK/>
-<BRK/>
-<TXT>List of Technical Specification sections that will be included in the intermediate submittal.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Design Analysis</TTL><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Concept Design Analysis</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Include a discussion of existing conditions and project goals.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) List design assumptions, design calculations referenced criteria, and show initial calculations.</ITM><BRK/>
-<BRK/>
+and sizes.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">j.  Fire Protection</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Fire Alarm Control Panel configuration, Riser configuration, pipe size and configuration.</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.2"><TTL>Specifications</TTL><BRK />
+<BRK />
+<TXT>List of Technical Specification sections that will be included in the intermediate submittal.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.3"><TTL>Design Analysis</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Concept Design Analysis</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Include a discussion of existing conditions and project goals.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) List design assumptions, design calculations referenced criteria, and show initial calculations.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(3) Include placeholder sections for topics not required in the concept submittal, but needed 
-for the intermediate submittal.</ITM><BRK/>
-<BRK/>
+for the intermediate submittal.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(4) Narrative description of the approach used and basis for AT measures, and a narrative description 
-of those measures in accordance with <RID>UFC 4-010-01</RID>.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(5) Life Safety &amp; Fire protection analysis in accordance with <RID>UFC 3-600-01</RID>.</ITM><BRK/>
-<BRK/>
+of those measures in accordance with <RID>UFC 4-010-01</RID>.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(5) Life Safety &amp; Fire protection analysis in accordance with <RID>UFC 3-600-01</RID>.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(6) Discussion of types and capacities of HVAC systems, including a description of the selected 
-system.</ITM><BRK/>
-<BRK/>
+system.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(7) Discussion of types and capacities of primary electrical power, conduit, information systems, 
-lighting, and other systems considered, including a description of the selected systems.</ITM><BRK/>
-<BRK/>
+lighting, and other systems considered, including a description of the selected systems.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(8) Description of the foundation, including any special requirements such as drilled piers, 
-pilings, and support facilities.</ITM><BRK/>
-<BRK/>
+pilings, and support facilities.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(9) Site analysis that discusses the opportunities and constraints of the site and include the 
-recommendations from the IDG/Installation.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(10)Hazard analysis (lead<DEL> </DEL><ADD>-</ADD>based paint, asbestos, etc., if required).</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(11)Preliminary erosion control analysis.</ITM><BRK/>
-<BRK/>
+recommendations from the IDG/Installation.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(10)Hazard analysis (lead<DEL> </DEL><ADD>-</ADD>based paint, asbestos, etc., if required).</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(11)Preliminary erosion control analysis.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(12)Preliminary plant material analysis that reflects the selection of plant material native 
-to the project area, if required.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(13)Life cycle cost analysis.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(14)Building energy simulations, energy conservation studies, and design energy use calculations.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(15)Corrosion mitigation plan, if required.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(16)Site specific traffic analysis.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(17)List of materials and methods of construction to be used.</ITM><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Cost Estimate</TTL><BRK/>
-<BRK/>
-<TXT>Current working estimate.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL><SUB>INTERMEDIATE (65%) DESIGN SUBMITTAL</SUB></TTL><BRK/>
-<BRK/>
+to the project area, if required.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(13)Life cycle cost analysis.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(14)Building energy simulations, energy conservation studies, and design energy use calculations.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(15)Corrosion mitigation plan, if required.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(16)Site specific traffic analysis.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(17)List of materials and methods of construction to be used.</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.4"><TTL>Cost Estimate</TTL><BRK />
+<BRK />
+<TXT>Current working estimate.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2"><TTL><SUB>INTERMEDIATE (65%) DESIGN SUBMITTAL</SUB></TTL><BRK />
+<BRK />
 <TXT>Prepare the Intermediate Design and technical specifications based on Concept Design, project criteria and general 
-instructions.</TXT><BRK/>
-<BRK/>
+instructions.</TXT><BRK />
+<BRK />
 <TXT>The Intermediate Design effort shall be a continuation of the Concept Design.  The Intermediate Design goals 
 are to show the project is on schedule and at an acceptable level of quality and completeness and demonstrate 
 that A-E's QC process is functioning properly.  Submit all QC documentation with the Intermediate Design submittal.  
-Complete coordination amongst design disciplines shall be conducted to review and resolve design conflicts.</TXT><BRK/>
-<BRK/>
-<TXT>Intermediate Design shall consist of, but not limited to, the following:</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Design Drawings</TTL><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Title and general sheets with haul route.</LST> <BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Project site plan &amp; area site plan.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Construction notes and legend pages (all disciplines); Phasing plan, if required.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">d.  Building Life Safety Code &amp; Fire Protection Plans including Building Code and Occupancy Analysis.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">e.  Complete Discipline coordination of the design.</LST><BRK/>
-   <BRK/>
-<LST INDENT="-0.33">f.  Civil</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Existing conditions (topography).</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) Demolition plan.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(3) Site plan.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(4) Grading plan.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(5) Road sections, plans, and profiles.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(6) Utility plans and profiles.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(7) Civil and site profiles.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(8) Geotechnical boring logs.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">g.  Architectural</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Architectural Floor Plans.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) Reflected Ceiling Plans.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(3) Roof Plans.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(4) Furniture/Equipment Floor Plans and Schedules.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(5) Exterior elevations.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(6) Building sections.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(7) Wall sections.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(8) Partition Types.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(9) Air barrier plans and details.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(10)Interior elevations.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(11)Door &amp; window types/schedules and details.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(12)Blast requirements for Exterior Windows and Doors, details.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(13)Room Finish Materials and Schedule.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(14)Miscellaneous Details.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(15)Signage Plans and Schedules.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">h.  Structural</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Foundation plans.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) Floor framing plans.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(3) Roof framing plans.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(4) Foundation Schedule and details.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(5) Wall sections and details.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(6) Column Schedules and details.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(7) Beam/Girder Schedules and details.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(8) Slab Schedules and details.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(9) Building sections.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">i.  Mechanical</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Site Plans.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) HVAC Plans.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(3) Piping Plans.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(4) Sections.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(5) Equipment Control Sequences.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(6) DDC points list.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(7) Equipment Schedules.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(8) Isometrics.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(9) Riser Diagrams.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(10)Schematics.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(11)Details.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">j.  Plumbing</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Site Plans.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) Plumbing Plans.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(3) Sections.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(4) Equipment Control Sequences.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(5) Fixture Schedules.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(6) Isometrics/Riser Diagrams.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(7) Details.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">k.  Electrical</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Electrical Legend.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) Existing Electrical Site plan, indicating power, lighting.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(3) Exterior Demolition Plan.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(4) Plan view, indicating the interior electrical power plan, <BRK/>
-including receptacles, HVAC equipment, and specialty items needing power.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(5) Plan view, indicating the interior light fixture layout.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(6) Preliminary Light fixture schedule.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(7) Preliminary Electrical one line diagram.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(8) Preliminary one line diagram for any auxiliary systems.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">l.  Telecommunication</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Existing Telecommunication Site plan.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) Exterior Demolition Plan.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(3) Interior Telecommunication Plan.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(4) Preliminary Telecommunication one-line diagrams.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">m.  Fire Protection</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Fire Suppression general notes and legend.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) Fire Alarm &amp; Mass Notification general notes and legend.</ITM>  <BRK/>
- <BRK/>
-   <ITM INDENT="-0.33">(3) Fire Protection site plans.</ITM><BRK/>
-<BRK/>
-   <ITM INDENT="-0.33">(4) Fire Suppression details.</ITM><BRK/>
-<BRK/>
-   <ITM INDENT="-0.33">(5) Fire alarm plans and details.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">n.  Food Service (as required)</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Equipment Plans and Schedules.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) Details.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">o.  Audio/Video (as required)</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) AV Plans and Schedules.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(2) Details.</ITM><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Technical Specifications</TTL><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Inter<ADD>i</ADD>m set of Technical Specifications.</LST><BRK/>
- <BRK/>
+Complete coordination amongst design disciplines shall be conducted to review and resolve design conflicts.</TXT><BRK />
+<BRK />
+<TXT>Intermediate Design shall consist of, but not limited to, the following:</TXT><BRK />
+<BRK />
+<SPT outline="3.2.1"><TTL>Design Drawings</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Title and general sheets with haul route.</LST> <BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Project site plan &amp; area site plan.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Construction notes and legend pages (all disciplines); Phasing plan, if required.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Building Life Safety Code &amp; Fire Protection Plans including Building Code and Occupancy Analysis.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Complete Discipline coordination of the design.</LST><BRK />
+   <BRK />
+<LST INDENT="-0.33">f.  Civil</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Existing conditions (topography).</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) Demolition plan.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3) Site plan.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(4) Grading plan.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(5) Road sections, plans, and profiles.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(6) Utility plans and profiles.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(7) Civil and site profiles.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(8) Geotechnical boring logs.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  Architectural</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Architectural Floor Plans.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) Reflected Ceiling Plans.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3) Roof Plans.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(4) Furniture/Equipment Floor Plans and Schedules.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(5) Exterior elevations.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(6) Building sections.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(7) Wall sections.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(8) Partition Types.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(9) Air barrier plans and details.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(10)Interior elevations.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(11)Door &amp; window types/schedules and details.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(12)Blast requirements for Exterior Windows and Doors, details.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(13)Room Finish Materials and Schedule.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(14)Miscellaneous Details.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(15)Signage Plans and Schedules.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  Structural</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Foundation plans.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) Floor framing plans.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3) Roof framing plans.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(4) Foundation Schedule and details.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(5) Wall sections and details.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(6) Column Schedules and details.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(7) Beam/Girder Schedules and details.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(8) Slab Schedules and details.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(9) Building sections.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">i.  Mechanical</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Site Plans.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) HVAC Plans.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3) Piping Plans.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(4) Sections.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(5) Equipment Control Sequences.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(6) DDC points list.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(7) Equipment Schedules.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(8) Isometrics.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(9) Riser Diagrams.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(10)Schematics.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(11)Details.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">j.  Plumbing</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Site Plans.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) Plumbing Plans.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3) Sections.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(4) Equipment Control Sequences.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(5) Fixture Schedules.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(6) Isometrics/Riser Diagrams.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(7) Details.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">k.  Electrical</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Electrical Legend.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) Existing Electrical Site plan, indicating power, lighting.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3) Exterior Demolition Plan.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(4) Plan view, indicating the interior electrical power plan, <BRK />
+including receptacles, HVAC equipment, and specialty items needing power.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(5) Plan view, indicating the interior light fixture layout.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(6) Preliminary Light fixture schedule.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(7) Preliminary Electrical one line diagram.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(8) Preliminary one line diagram for any auxiliary systems.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">l.  Telecommunication</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Existing Telecommunication Site plan.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) Exterior Demolition Plan.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3) Interior Telecommunication Plan.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(4) Preliminary Telecommunication one-line diagrams.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">m.  Fire Protection</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Fire Suppression general notes and legend.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) Fire Alarm &amp; Mass Notification general notes and legend.</ITM>  <BRK />
+ <BRK />
+   <ITM INDENT="-0.33">(3) Fire Protection site plans.</ITM><BRK />
+<BRK />
+   <ITM INDENT="-0.33">(4) Fire Suppression details.</ITM><BRK />
+<BRK />
+   <ITM INDENT="-0.33">(5) Fire alarm plans and details.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">n.  Food Service (as required)</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Equipment Plans and Schedules.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) Details.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">o.  Audio/Video (as required)</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) AV Plans and Schedules.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) Details.</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.2"><TTL>Technical Specifications</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Inter<ADD>i</ADD>m set of Technical Specifications.</LST><BRK />
+ <BRK />
 <ITM INDENT="-0.33">(1) Technical specifications shall incorporate all comments and revisions from the previous 
-submission.</ITM>  <BRK/>
-<BRK/>
+submission.</ITM>  <BRK />
+<BRK />
 <LST INDENT="-0.33">b.  Specifications shall include the submittal register (ENG Form 4288) in .csv and .pdf format in this 
-and all subsequent submittals.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Draft 1354 property form shall be submitted for review.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Design Analysis</TTL><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Intermediate Design Analysis</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Include a discussion of existing conditions and project goals.</ITM>  <BRK/>
- <BRK/>
+and all subsequent submittals.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Draft 1354 property form shall be submitted for review.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.3"><TTL>Design Analysis</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Intermediate Design Analysis</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Include a discussion of existing conditions and project goals.</ITM>  <BRK />
+ <BRK />
 <ITM INDENT="-0.33">(2) List design assumptions, design calculations referenced criteria, and show initial calculations 
-and manufacturer's material and equipment information.</ITM> <BRK/>
-<BRK/>
+and manufacturer's material and equipment information.</ITM> <BRK />
+<BRK />
 <ITM INDENT="-0.33">(3) Narrative description of the approach used and basis for AT measures, and a narrative description 
-of those measures in accordance with <RID>UFC 4-010-01</RID> and <RID>PDC TR 12-08</RID>.</ITM> <BRK/>
-<BRK/>
+of those measures in accordance with <RID>UFC 4-010-01</RID> and <RID>PDC TR 12-08</RID>.</ITM> <BRK />
+<BRK />
 <ITM INDENT="-0.33">(4) Life Safety &amp; Fire protection analysis including hydraulic calculations in accordance 
-with <RID>UFC 3-600-01</RID>.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(5) Designed HVAC systems types and capacities, including a description of the selected system.</ITM><BRK/>
-<BRK/>
+with <RID>UFC 3-600-01</RID>.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(5) Designed HVAC systems types and capacities, including a description of the selected system.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(6) Designed primary electrical power types and capacities, conduit, information systems, lighting, 
-and other systems considered, including a description of the selected systems.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(7) Designed information systems requirements.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(8) Designed food service requirements (as required).</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(9) Designed audio/visual requirements (as required).</ITM><BRK/>
-<BRK/>
+and other systems considered, including a description of the selected systems.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(7) Designed information systems requirements.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(8) Designed food service requirements (as required).</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(9) Designed audio/visual requirements (as required).</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(10)Designed foundation, including any special requirements such as drilled piers, pilings, 
-and support facilities.</ITM><BRK/>
-<BRK/>
+and support facilities.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(11)Site analysis that discusses the opportunities and constraints of the site and include the 
-recommendations from the IDG/Installation.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(12)Hazard analysis, if required.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(13)Erosion control analysis.</ITM><BRK/>
-<BRK/>
+recommendations from the IDG/Installation.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(12)Hazard analysis, if required.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(13)Erosion control analysis.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(14)Landscaping planting plan and a plant material analysis that reflects the selection of plant 
-material native to the project area, if required.</ITM>   <BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(15)Life cycle cost analysis.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(16)Building energy simulations, energy conservation studies, and design energy use calculations.</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(17)Corrosion mitigation plan (as required).</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(18)Economic analyses.</ITM><BRK/>
-<BRK/>
+material native to the project area, if required.</ITM>   <BRK />
+<BRK />
+<ITM INDENT="-0.33">(15)Life cycle cost analysis.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(16)Building energy simulations, energy conservation studies, and design energy use calculations.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(17)Corrosion mitigation plan (as required).</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(18)Economic analyses.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(19)Justification for use of all U.S. materials/equipment specified in the design to be used 
-in construction when local materials/equipment are excluded.</ITM> <BRK/>
-<BRK/>
-[<LST INDENT="-0.33">b.  Provide completed LEED Checklist.</LST>]<BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Provide a copy of the project's DD Form 1391.</LST><BRK/>
-<BRK/>
+in construction when local materials/equipment are excluded.</ITM> <BRK />
+<BRK />
+[<LST INDENT="-0.33">b.  Provide completed LEED Checklist.</LST>]<BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Provide a copy of the project's DD Form 1391.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">d.  For Renovation Projects: Discussion on property replacement values versus plant replacement values 
 of the existing building(s) and associated implementation triggers for Seismic (<RID>UFC 3-301-01</RID>) and Anti-Terrorism 
-(<RID>UFC 4-010-01</RID>) requirements.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Cost Estimate</TTL><BRK/>
-<BRK/>
-<TXT>Current working estimate for budget purposes and back-up cost data and price quotes.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Quality Control</TTL><BRK/>
-<BRK/>
+(<RID>UFC 4-010-01</RID>) requirements.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.4"><TTL>Cost Estimate</TTL><BRK />
+<BRK />
+<TXT>Current working estimate for budget purposes and back-up cost data and price quotes.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.5"><TTL>Quality Control</TTL><BRK />
+<BRK />
 <TXT>Submit completed Detail Check Review (DCR) and Independent Technical Review (ITR) documents to include: Completed 
-DCR checklists, completed ITR annotated comment sheets in accordance with the project's Scope of Work.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL><SUB>FINAL (95%) DESIGN SUBMITTAL</SUB></TTL><BRK/>
-<BRK/>
-<TXT>The A-E shall prepare the Final Design based on the Intermediate Design, project criteria and general instructions.</TXT><BRK/>
-<BRK/>
+DCR checklists, completed ITR annotated comment sheets in accordance with the project's Scope of Work.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.3"><TTL><SUB>FINAL (95%) DESIGN SUBMITTAL</SUB></TTL><BRK />
+<BRK />
+<TXT>The A-E shall prepare the Final Design based on the Intermediate Design, project criteria and general instructions.</TXT><BRK />
+<BRK />
 <TXT>The Final Design effort shall be a complete design incorporating and resolving all previous review comments.  
 Complete coordination amongst design disciplines shall be conducted to review and resolve any and all design 
 conflicts.  A-E shall conduct a full Quality Control review prior to the submittal of the Final Design.  A-E 
@@ -1194,127 +1194,127 @@ QC review shall consist of a full Detail Check and Independent Technical Review.
 is the last full review of the Contract documents by the Government.  Any significant new information included 
 in this submittal that is not a direct result of a review comment shall be brought to the attention of the reviewer(s) 
 and USACE Project Manager.  Provide a brief description of the new information.  The design shall be within the 
-project's programmed amount.</TXT><BRK/>
-<BRK/>
+project's programmed amount.</TXT><BRK />
+<BRK />
 <TXT>All disciplines and specialty systems shall be designed and detailed to provide clear design intent.  Design 
-analysis shall include representative sample manufacturer's product information.</TXT><BRK/>
-<BRK/>
-<TXT>Final Design shall consist of, but not limited, to the following:</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Design Drawings</TTL><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Title and general sheets with haul route.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Project site plan &amp; area site plan.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Construction notes and legend pages (all disciplines); Phasing plan (as required).</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">d.  Building Life Safety Code &amp; Fire Protection Plans including Occupancy Analysis.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">e.  Complete Discipline Coordinate of the design.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">f.  Civil</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Completed set of Civil drawings.</ITM><BRK/>
-   <BRK/>
-   <LST INDENT="-0.33">g.  Architectural</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Completed set of Architectural drawings.</ITM><BRK/>
-   <BRK/>
-<LST INDENT="-0.33">h.  Structural</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Completed set of Structural drawings.</ITM><BRK/>
-   <BRK/>
-<LST INDENT="-0.33">i.  Mechanical &amp; Plumbing</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Completed set of Mechanical and Plumbing drawings.</ITM><BRK/>
-   <BRK/>
-<LST INDENT="-0.33">j.  Electrical &amp; Telecommunication</LST> <BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Completed set of Electrical and Telecommunication drawings.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">k.  Fire Protection</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Completed set of Fire Protection drawings.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">l.  Food Service (as required)</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Completed set of Food Service drawings.</ITM><BRK/>
-<BRK/>
-<LST INDENT="-0.33">m.  Audio/Video (as required)</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Completed set of Audio/Visual drawings.</ITM><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Technical Specifications</TTL><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Completed set of Technical Specifications.</LST><BRK/>
- <BRK/>
+analysis shall include representative sample manufacturer's product information.</TXT><BRK />
+<BRK />
+<TXT>Final Design shall consist of, but not limited, to the following:</TXT><BRK />
+<BRK />
+<SPT outline="3.3.1"><TTL>Design Drawings</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Title and general sheets with haul route.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Project site plan &amp; area site plan.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Construction notes and legend pages (all disciplines); Phasing plan (as required).</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Building Life Safety Code &amp; Fire Protection Plans including Occupancy Analysis.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Complete Discipline Coordinate of the design.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Civil</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Completed set of Civil drawings.</ITM><BRK />
+   <BRK />
+   <LST INDENT="-0.33">g.  Architectural</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Completed set of Architectural drawings.</ITM><BRK />
+   <BRK />
+<LST INDENT="-0.33">h.  Structural</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Completed set of Structural drawings.</ITM><BRK />
+   <BRK />
+<LST INDENT="-0.33">i.  Mechanical &amp; Plumbing</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Completed set of Mechanical and Plumbing drawings.</ITM><BRK />
+   <BRK />
+<LST INDENT="-0.33">j.  Electrical &amp; Telecommunication</LST> <BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Completed set of Electrical and Telecommunication drawings.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">k.  Fire Protection</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Completed set of Fire Protection drawings.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">l.  Food Service (as required)</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Completed set of Food Service drawings.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">m.  Audio/Video (as required)</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Completed set of Audio/Visual drawings.</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.2"><TTL>Technical Specifications</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Completed set of Technical Specifications.</LST><BRK />
+ <BRK />
 <ITM INDENT="-0.33">(1) Technical specifications shall incorporate all comments and revisions from the previous 
-submission.</ITM>  <BRK/>
-<BRK/>
+submission.</ITM>  <BRK />
+<BRK />
 <LST INDENT="-0.33">b.  Specifications shall include the submittal register (ENG Form 4288) in .csv and .pdf format in this 
-and all subsequent submittals.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Draft 1354 property form shall be submitted for review.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Design Analysis</TTL><BRK/>
-<BRK/>
-   <LST INDENT="-0.33">a.  Final Design Analysis</LST><BRK/>
-   <BRK/>
-<ITM INDENT="-0.33">(1) Completed Design Analysis incorporating all comments and revisions from the previous submission.</ITM><BRK/>
-<BRK/>
- [ [[<LST INDENT="-0.33">b.  Provide completed LEED Checklist.</LST> ]   <BRK/>
-   <BRK/>
-<LST INDENT="-0.33">c.  Provide a copy of the project DD Form 1391.</LST><BRK/>
-<BRK/>
+and all subsequent submittals.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Draft 1354 property form shall be submitted for review.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.3"><TTL>Design Analysis</TTL><BRK />
+<BRK />
+   <LST INDENT="-0.33">a.  Final Design Analysis</LST><BRK />
+   <BRK />
+<ITM INDENT="-0.33">(1) Completed Design Analysis incorporating all comments and revisions from the previous submission.</ITM><BRK />
+<BRK />
+ [ [[<LST INDENT="-0.33">b.  Provide completed LEED Checklist.</LST> ]   <BRK />
+   <BRK />
+<LST INDENT="-0.33">c.  Provide a copy of the project DD Form 1391.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">d.  For Renovation Projects:  Discussion on Property Replacement Values versus plant replacement values 
 of the existing building(s) and associated implementation triggers for Seismic (<RID>UFC 3-301-01</RID>) and Anti-Terrorism 
-(<RID>UFC 4-010-01</RID>) requirements.</LST> <BRK/>
-<BRK/></SPT>
-<SPT><TTL>Cost Estimate</TTL><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Final working cost estimate with all back-up data, vendor estimates, etc.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Quality Control</TTL><BRK/>
-<BRK/>
+(<RID>UFC 4-010-01</RID>) requirements.</LST> <BRK />
+<BRK /></SPT>
+<SPT outline="3.3.4"><TTL>Cost Estimate</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Final working cost estimate with all back-up data, vendor estimates, etc.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.5"><TTL>Quality Control</TTL><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  Submit Detail Check Review (DCR) and Independent Technical Review (ITR) documents to include:  Completed 
-DCR checklists, completed ITR annotated comment sheets in accordance with the project Scope of Work.</LST><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL><SUB>FINAL BACKCHECK (100%) DESIGN SUBMITTAL</SUB></TTL><BRK/>
-<BRK/>
+DCR checklists, completed ITR annotated comment sheets in accordance with the project Scope of Work.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.4"><TTL><SUB>FINAL BACKCHECK (100%) DESIGN SUBMITTAL</SUB></TTL><BRK />
+<BRK />
 <TXT>The A-E shall prepare the Final Backcheck Design submittal based on the Final Design, project criteria and general 
-instructions.</TXT><BRK/>
-<BRK/>
+instructions.</TXT><BRK />
+<BRK />
 <TXT>The Final Backcheck Design submittal shall be complete in every respect, from the Government's perspective.  
 The drawings shall show the name of the reviewer and signature of the Principal of the firm responsible for the 
 design as testimony that this submittal has been reviewed.  The submittal shall incorporate all previous review 
 comments.  A-E shall provide a response indicating the reason for not incorporating any non-concurred comments.  
-The A-E shall submit a complete response to all previous review comments in DrChecks with the submission.</TXT><BRK/>
-<BRK/>
-<TXT>Final Backcheck Design shall consist of, but not limited to, the following:</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Design Drawings</TTL><BRK/>
-<BRK/>
-<TXT>Complete final design construction drawings.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Technical Specifications</TTL><BRK/>
-<BRK/>
-<TXT>Completed set of final technical specifications.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Design Analysis</TTL><BRK/>
-<BRK/>
-<TXT>Complete final design analysis.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Cost Estimate</TTL><BRK/>
-<BRK/>
-<TXT>Complete final working cost estimate.</TXT><DEL><BRK/></DEL>
-<BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL><DEL>"</DEL><SUB><DEL>CLEARED FOR CONSTRUCTION" SUBMITTAL</DEL><ADD>"CLEARED FOR CONSTRUCTION" SUBMITTAL</ADD></SUB></TTL><BRK/>
-<BRK/>
+The A-E shall submit a complete response to all previous review comments in DrChecks with the submission.</TXT><BRK />
+<BRK />
+<TXT>Final Backcheck Design shall consist of, but not limited to, the following:</TXT><BRK />
+<BRK />
+<SPT outline="3.4.1"><TTL>Design Drawings</TTL><BRK />
+<BRK />
+<TXT>Complete final design construction drawings.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.2"><TTL>Technical Specifications</TTL><BRK />
+<BRK />
+<TXT>Completed set of final technical specifications.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.3"><TTL>Design Analysis</TTL><BRK />
+<BRK />
+<TXT>Complete final design analysis.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.4"><TTL>Cost Estimate</TTL><BRK />
+<BRK />
+<TXT>Complete final working cost estimate.</TXT><DEL><BRK /></DEL>
+<BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.5"><TTL><DEL>"</DEL><SUB><DEL>CLEARED FOR CONSTRUCTION" SUBMITTAL</DEL><ADD>"CLEARED FOR CONSTRUCTION" SUBMITTAL</ADD></SUB></TTL><BRK />
+<BRK />
 <TXT>DOR shall submit one (1) hard copy Japanese-style folded and bound sets of A3 size drawings and A4 specifications.  
 Submittal shall be provided to the Resident Office at the Pre-Construction meeting.  "Cleared For Construction" 
 Submittal is defined as the complete, government-approved set of drawings and specifications that can be used 
-by the Contractor to build and complete the project.<BRK/>
-<BRK/></TXT>
-</SPT></PRT><END/><BRK/></SEC>
+by the Contractor to build and complete the project.<BRK />
+<BRK /></TXT>
+</SPT></PRT><END /><BRK /></SEC>

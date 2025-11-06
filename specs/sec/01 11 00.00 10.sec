@@ -1,91 +1,91 @@
-<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
-<BRK/>
-<SCN>SECTION 01 11 00.00 10</SCN><BRK/>
-<BRK/>
-<STL>GENERAL CONTRACT REQUIREMENTS</STL><BRK/>
-<BRK/>
-<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
-<BRK/>
-<SPT><TTL>DEFINITIONS</TTL><BRK/>
-<BRK/>
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><BRK />
+<BRK />
+<SCN>SECTION 01 11 00.00 10</SCN><BRK />
+<BRK />
+<STL>GENERAL CONTRACT REQUIREMENTS</STL><BRK />
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>DEFINITIONS</TTL><BRK />
+<BRK />
 <TXT>The term "Government" refers to "United States Government" whenever the term "Government" appears in this Contract, 
-unless otherwise indicated within the Contract.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>REFERENCES</TTL><BRK/>
-<BRK/>
+unless otherwise indicated within the Contract.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2"><TTL>REFERENCES</TTL><BRK />
+<BRK />
 <TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
-referred to within the text by the basic designation only.</TXT><BRK/>
-<BRK/>
-<REF><ORG>AMERICAN SOCIETY OF HEATING, REFRIGERATING AND AIR-CONDITIONING ENGINEERS (ASHRAE)</ORG><BRK/>
-<BRK/>
+referred to within the text by the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>AMERICAN SOCIETY OF HEATING, REFRIGERATING AND AIR-CONDITIONING ENGINEERS (ASHRAE)</ORG><BRK />
+<BRK />
 <RID>ASHRAE 189.1</RID><RTL>(2017) Standard for the Design of High-Performance 
 Green Buildings Except Low-Rise Residential 
-Buildings</RTL><BRK/>
-<BRK/>
+Buildings</RTL><BRK />
+<BRK />
 <RID>ASHRAE 52.2</RID><RTL>(2017) Method of Testing General Ventilation 
 Air-Cleaning Devices for Removal Efficiency 
-by Particle Size</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK/>
-<BRK/>
-<BRK/>
+by Particle Size</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK />
+<BRK />
+<BRK />
 <RID>ASTM D6245</RID><DEL><RTL>(2021) Using Indoor Carbon Dioxide Concentrations 
 to Evaluate Indoor Air Quality and Ventilation</RTL></DEL><ADD><RTL>
 (2012) Using Indoor Carbon Dioxide Concentrations 
-to Evaluate Indoor Air Quality and Ventilation</RTL></ADD><BRK/>
-<BRK/>
+to Evaluate Indoor Air Quality and Ventilation</RTL></ADD><BRK />
+<BRK />
 <RID>ASTM D6345</RID><DEL><RTL>(2010) Selection of Methods for Active, Integrative 
 Sampling of Volatile Organic Compounds in Air</RTL></DEL><ADD><RTL>
 (2010) Standard Guide for Selection of Methods 
 for Active, Integrative Sampling of Volatile 
-Organic Compounds in Air</RTL></ADD><BRK/>
-<BRK/>
-<BRK/></REF>
-<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK/>
-<BRK/>
+Organic Compounds in Air</RTL></ADD><BRK />
+<BRK />
+<BRK /></REF>
+<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK />
+<BRK />
 <RID>NFPA 10</RID><DEL><RTL>(2022) Standard for Portable Fire Extinguishers</RTL></DEL><ADD><RTL>
 (2022; ERTA 1 2021) Standard for Portable Fire 
-Extinguishers</RTL><BRK/></ADD>
-<DEL><BRK/></DEL>
-<BRK/>
+Extinguishers</RTL><BRK /></ADD>
+<DEL><BRK /></DEL>
+<BRK />
 <RID>NFPA 241</RID><RTL>(2022) Standard for Safeguarding Construction, 
-Alteration, and Demolition Operations</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG>SHEET METAL AND AIR CONDITIONING CONTRACTORS' NATIONAL ASSOCIATION (SMACNA)</ORG><BRK/>
-<BRK/>
+Alteration, and Demolition Operations</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>SHEET METAL AND AIR CONDITIONING CONTRACTORS' NATIONAL ASSOCIATION (SMACNA)</ORG><BRK />
+<BRK />
 <RID>ANSI/SMACNA 008</RID><RTL>(2007) IAQ Guidelines for Occupied Buildings 
-Under Construction, 2nd Edition</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG>U.S. ARMY CORPS OF ENGINEERS (USACE)</ORG><BRK/>
-<BRK/>
+Under Construction, 2nd Edition</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. ARMY CORPS OF ENGINEERS (USACE)</ORG><BRK />
+<BRK />
 <RID>EM 385-1-1</RID><DEL><RTL>(2014) Safety and Health Requirements Manual</RTL></DEL><ADD><RTL>
- Safety -- Safety and Health Requirements Manual</RTL></ADD><BRK/>
-<BRK/></REF>
-<TAI OPT="NAVY"><REF><ORG>U.S. NAVAL FACILITIES ENGINEERING COMMAND (NAVFAC)</ORG><BRK/>
-<BRK/>
-<RID>NAVFAC P-307</RID><RTL>(2016) Weight Handling Program Management</RTL><BRK/>
-<BRK/>
-<RID>CFAS Instruction 5532.2D</RID><RTL>Base Access Control</RTL><BRK/>
-<BRK/>
-<RID>NAF Atsugi Instruction 5532.2D</RID><RTL>Base Access Control</RTL><BRK/>
-<BRK/></REF>
-</TAI><TAI OPT="ARMY"><REF><ORG>U.S. ARMY GARRISON JAPAN (USAG-J)</ORG><BRK/>
-<BRK/>
-<RID>Regulation 190-13</RID><RTL>(2013) Installation Access and Control Procedures</RTL><BRK/>
-<BRK/></REF>
-</TAI></SPT><SPT><TTL>SUBMITTALS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+ Safety -- Safety and Health Requirements Manual</RTL></ADD><BRK />
+<BRK /></REF>
+<TAI OPT="NAVY"><REF><ORG>U.S. NAVAL FACILITIES ENGINEERING COMMAND (NAVFAC)</ORG><BRK />
+<BRK />
+<RID>NAVFAC P-307</RID><RTL>(2016) Weight Handling Program Management</RTL><BRK />
+<BRK />
+<RID>CFAS Instruction 5532.2D</RID><RTL>Base Access Control</RTL><BRK />
+<BRK />
+<RID>NAF Atsugi Instruction 5532.2D</RID><RTL>Base Access Control</RTL><BRK />
+<BRK /></REF>
+</TAI><TAI OPT="ARMY"><REF><ORG>U.S. ARMY GARRISON JAPAN (USAG-J)</ORG><BRK />
+<BRK />
+<RID>Regulation 190-13</RID><RTL>(2013) Installation Access and Control Procedures</RTL><BRK />
+<BRK /></REF>
+</TAI></SPT><SPT outline="1.3"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
 PROCEDURES and edit the following list to reflect only the submittals required 
-for the project.<BRK/>
-<BRK/>
+for the project.<BRK />
+<BRK />
 The Guide Specification technical editors have designated those items that require 
 Government approval, due to their complexity or criticality, with a "G."  Generally, 
 other submittal items can be reviewed by the Contractor's Quality Control System.  
-Only add a “G” to an item, if the submittal is sufficiently important or complex 
-in context of the project.<BRK/>
-<BRK/>
+Only add a &#8220;G&#8221; to an item, if the submittal is sufficiently important or complex 
+in context of the project.<BRK />
+<BRK />
 For submittals requiring Government approval on Army projects, a code of up 
 to three characters within the submittal tags may be used following the "G" 
 designation to indicate the approving authority.  Codes for Army projects using 
@@ -93,38 +93,38 @@ the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO"
 for District Office (Engineering Division or other organization in the District 
 Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
 Office.  Codes following the "G" typically are not used for Navy, Air Force, 
-and NASA projects.<BRK/>
-<BRK/>
+and NASA projects.<BRK />
+<BRK />
 Use the "S" classification only in SD-11 Closeout Submittals.  The "S" following 
 a submittal item indicates that the submittal is required for the Sustainability 
 Notebook to fulfill federally mandated sustainable requirements in accordance 
-with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.<BRK/>
-<BRK/>
+with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.<BRK />
+<BRK />
 Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
-the second bracketed item for Army projects.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+the second bracketed item for Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Government approval is required for submittals with a "G" designation; <TAI OPT="DESIGN-BID-BUILD">submittals not having a "G" designation 
 are for information only</TAI><TAI OPT="DESIGN-BUILD">submittals not having a "G" designation are for Contractor Quality Control or Designer 
-of Record approval</TAI>. Submit the following in accordance with Section <SRF>01 33 00 </SRF>SUBMITTAL PROCEDURES:</TXT><BRK/>
-<BRK/>
-<LST><SUB>SD-01 Preconstruction Submittals</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Initial Site Conditions Photos</SUB></ITM><BRK/>
-<ITM><SUB>Key Personnel Qualifications</SUB>; <SUB>G</SUB></ITM><BRK/>
-<TAI OPT="BOOK STYLE CONFORMED SET">[<ITM><SUB>Conformed Drawings Submittal</SUB></ITM>]</TAI><BRK/>
-<TAI OPT="INDOOR AIR QUALITY PLAN">[<ITM><SUB>INDOOR AIR QUALITY (IAQ) MANAGEMENT PLAN</SUB>; <SUB>G</SUB></ITM>]</TAI><BRK/>
-<BRK/>
-<LST><SUB>SD-07 Certificates</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Monthly Progress Photos</SUB>; </ITM><BRK/>
-<BRK/>
-<LST><SUB>SD-11 Closeout Submittals</SUB></LST><BRK/>
-<BRK/>
-[<ITM><SUB>Construction Completion Photos</SUB>; </ITM>]<BRK/>
-<BRK/></SPT>
-<SPT><TTL>ACCEPTABLE ALTERNATIVE JAPANESE STANDARDS</TTL><BRK/>
-<BRK/>
+of Record approval</TAI>. Submit the following in accordance with Section <SRF>01 33 00 </SRF>SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-01 Preconstruction Submittals</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Initial Site Conditions Photos</SUB></ITM><BRK />
+<ITM><SUB>Key Personnel Qualifications</SUB>; <SUB>G</SUB></ITM><BRK />
+<TAI OPT="BOOK STYLE CONFORMED SET">[<ITM><SUB>Conformed Drawings Submittal</SUB></ITM>]</TAI><BRK />
+<TAI OPT="INDOOR AIR QUALITY PLAN">[<ITM><SUB>INDOOR AIR QUALITY (IAQ) MANAGEMENT PLAN</SUB>; <SUB>G</SUB></ITM>]</TAI><BRK />
+<BRK />
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Monthly Progress Photos</SUB>; </ITM><BRK />
+<BRK />
+<LST><SUB>SD-11 Closeout Submittals</SUB></LST><BRK />
+<BRK />
+[<ITM><SUB>Construction Completion Photos</SUB>; </ITM>]<BRK />
+<BRK /></SPT>
+<SPT outline="1.4"><TTL>ACCEPTABLE ALTERNATIVE JAPANESE STANDARDS</TTL><BRK />
+<BRK />
 <TXT><TAI OPT="DESIGN-BID-BUILD">Where indicated in the technical specifications REFERENCES paragraphs, acceptable Japanese standards are listed 
 which are considered acceptable alternatives to the US Standards within the Contract Specifications.  Contract 
 specifications authorize the use of specified acceptable alternative Japanese standards.  </TAI><TAI OPT="DESIGN-BUILD">A limited set of modified 
@@ -138,57 +138,57 @@ Officer for consideration as acceptable alternatives after award using the varia
 in Section 01 33 00 SUBMITTAL PROCEDURES. Prior to the use of such proposed additional alternative Japanese standards, 
 written approval by the Contracting Officer is required. Incorporation of methods, materials, and equipment that 
 will promote cost-effective and timely maintenance, and that are otherwise authorized by the contract, is highly 
-encouraged.</TXT><BRK/>
-<BRK/></SPT>
-[<SPT><TTL>GOVERNMENT FURNISHED CONTRACTOR INSTALLED ITEMS</TTL><BRK/>
-<BRK/>
+encouraged.</TXT><BRK />
+<BRK /></SPT>
+[<SPT outline="1.5"><TTL>GOVERNMENT FURNISHED CONTRACTOR INSTALLED ITEMS</TTL><BRK />
+<BRK />
 <TXT>Attachment 01 11 00.00 10-A "Government Furnished Property" provides the items that shall be Government Furnished, 
-Contractor Installed (GFCI).</TXT><BRK/>
-<BRK/></SPT>
-]<SPT><TTL>MANDATORY U.S. TESTED PRODUCTS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+Contractor Installed (GFCI).</TXT><BRK />
+<BRK /></SPT>
+]<SPT outline="1.6"><TTL>MANDATORY U.S. TESTED PRODUCTS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Taken from FY16 C-130J Flight Simulator Facility project, confirm if 
-this is to be standard language for all projects.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+this is to be standard language for all projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>The following items shall meet U.S. testing methods (e.g. UL listed, FM approved, ASTM, etc.) and shall be labeled 
-as required.  These items shall not be substituted with Japanese testing methods (e.g. JIS, JASS, etc.) for certification:</TXT><BRK/>
-<BRK/>
+as required.  These items shall not be substituted with Japanese testing methods (e.g. JIS, JASS, etc.) for certification:</TXT><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  Fire suppression systems, including valves, alarm valves, sprinklers<DEL>(pipes and fittings of Japanese 
 manufacturer may meet the function requirements)</DEL>.  Fire suppression systems includes wet chemical, dry 
-chemical, mist, deluge, pre-action, foam, and clean agent, in addition to standard sprinkler systems.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Fire pumps, including motors, controllers, drives, and valves.</LST><BRK/>
-<BRK/>
+chemical, mist, deluge, pre-action, foam, and clean agent, in addition to standard sprinkler systems.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Fire pumps, including motors, controllers, drives, and valves.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  Fire alarm and mass notification systems, including panels, initiating devices, notification appliances, 
-smoke alarms<DEL> (conductors and conduits of Japanese manufacturer may meet the functional requirements)</DEL>.</LST><BRK/>
-<BRK/>
+smoke alarms<DEL> (conductors and conduits of Japanese manufacturer may meet the functional requirements)</DEL>.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">d.  Engineering technician requirements for development of fire suppression systems and alarm system 
-shop drawings, calculations, and material submittals.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">e.  Fire doors, smoke doors, and frames.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">f.  Fire dampers and smoke dampers.</LST><BRK/>
-<BRK/>
+shop drawings, calculations, and material submittals.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Fire doors, smoke doors, and frames.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Fire dampers and smoke dampers.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">g.  Interior finishes with flame spread and smoke development ratings required for installation of rated 
-assemblies.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">h.  Insulation with flame spread and smoke development ratings.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">i.  Fire proofing and fire stopping materials.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">j.  Plenum rated cables.</LST><BRK/>
-<BRK/>
+assemblies.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  Insulation with flame spread and smoke development ratings.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">i.  Fire proofing and fire stopping materials.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">j.  Plenum rated cables.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">k.  Domestic water supply piping in the building and plumbing fixtures that directly dispense potable 
-drinking water (NSF stamped and/or<BRK/>
+drinking water (NSF stamped and/or<BRK />
 labeled). <DEL>Japanese plumbing fixtures</DEL><ADD>Plumbing fixtures conforming to Japanese standards</ADD> that do not directly 
 dispense potable drinking water are allowed, such as urinals and water closets<ADD>, bath and shower faucets, 
-utility/janitor faucets, lavatories and sinks</ADD>.</LST><ADD><BRK/></ADD>
-<BRK/>
-<BRK/></SPT>
-<SPT><TTL><SUB>KEY PERSONNEL QUALIFICATIONS</SUB></TTL><BRK/>
-<BRK/>
+utility/janitor faucets, lavatories and sinks</ADD>.</LST><ADD><BRK /></ADD>
+<BRK />
+<BRK /></SPT>
+<SPT outline="1.7"><TTL><SUB>KEY PERSONNEL QUALIFICATIONS</SUB></TTL><BRK />
+<BRK />
 <TXT>The Contractor's Project Key personnel shall not be assigned duties to any other Contracts (excluding the project 
 manager) without approval from the Contracting Officer.  [The Project Superintendent, CQC System Manager, and 
 Site Safety Health Officer shall all be separate persons, and shall not have other duties assigned.] [One person 
@@ -199,66 +199,66 @@ Contractor shall submit in writing to the Contracting Officer an organizational 
 background history of the proposed Key Personnel for approval.  The Contracting Officer shall have the explicit 
 right to determine acceptability (or rejection) of the proposed individuals.  In addition, the Contractor shall 
 be responsible to replace said individuals upon notification by the Government should performance become inadequate 
-during the Contract period.  Key Personnel shall attend the Preconstruction conference.</TXT><BRK/>
-<BRK/>
-[<SPT><TTL>Program Manager</TTL><BRK/>
-<BRK/>
+during the Contract period.  Key Personnel shall attend the Preconstruction conference.</TXT><BRK />
+<BRK />
+[<SPT outline="1.7.1"><TTL>Program Manager</TTL><BRK />
+<BRK />
 <TXT>The Program Manager is responsible for the overall management of the Contract.  The Program Manager shall have 
 a minimum of [five (5)] years experience in the administration of construction Contracts on construction projects 
 similar in size and scope to this Contract, and shall have a thorough knowledge of the duties of key management 
-personnel assigned to this Contract.</TXT><BRK/>
-<BRK/></SPT>
-]<SPT><TTL>Project Manager</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+personnel assigned to this Contract.</TXT><BRK />
+<BRK /></SPT>
+]<SPT outline="1.7.2"><TTL>Project Manager</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Input field of expertise from Construction Memo placed here. Fields of 
 expertise can include, but are not limited to civil, architectural, structural, 
-mechanical, electrical, fire protection, etc.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+mechanical, electrical, fire protection, etc.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>The Project Manager shall have a minimum of [five (5)] years experience as a Project Manager on construction 
 projects [containing [___] components ]similar in size and scope to this Contract.  The Project Manager shall 
 maintain oversight of Contract proposals prepared by the Contractor staff and be authorized to negotiate Contract 
 terms and sign Contract documents on behalf of the Contractor.  The project manager does not need to be present 
 on the site daily, but shall attend weekly progress meetings and be available on site within 24 hours upon request.  
-Project Manager [shall not have other duties assigned][Project Manager may have other duties assigned].</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Project Superintendent (Supervisor)</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+Project Manager [shall not have other duties assigned][Project Manager may have other duties assigned].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.7.3"><TTL>Project Superintendent (Supervisor)</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Input field of expertise from Construction Memo placed here. Fields of 
 expertise can include, but are not limited to civil, architectural, structural, 
-mechanical, electrical, fire protection, etc.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+mechanical, electrical, fire protection, etc.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>The Project Superintendent shall be on the work site when on-site work is being performed and shall be available 
 to the Contracting Officer or his representatives upon request.  The Project Superintendent shall have overall 
 responsibility for all operations at the job site and be authorized to make decisions, negotiate Contract terms 
 and sign Contract documents on behalf of the Contractor.  The Project Superintendent shall have a minimum of 
 [five (5)] years experience as a superintendent on construction projects [containing [___] components ]similar 
-in size and scope to this Contract[.][, and have at least one the following qualifications:]</TXT><BRK/>
-<BRK/>
+in size and scope to this Contract[.][, and have at least one the following qualifications:]</TXT><BRK />
+<BRK />
 [<LST INDENT="-0.33">a.  U.S. Registered Structural Engineer or U.S. Registered Architect or 1 Kyu Kenchikushi (1st Class 
-Qualified Architect).</LST><BRK/>
-<BRK/>
+Qualified Architect).</LST><BRK />
+<BRK />
 ][<LST INDENT="-0.33">b.  U.S. Registered Civil Engineer or 1 Kyu Doboku Sekou Kanrigishi (1st Class Civil Engineering Works 
-Management Engineer).</LST><BRK/>
-<BRK/>
+Management Engineer).</LST><BRK />
+<BRK />
 ][<LST INDENT="-0.33">c.  U.S. Registered Mechanical or Electrical Engineer or 1 Kyu Kankouji Sekou Kanrigishi (1st Class Building 
-Mechanical and Electrical Engineer).</LST><BRK/>
-<BRK/>
+Mechanical and Electrical Engineer).</LST><BRK />
+<BRK />
 ][<LST INDENT="-0.33">d.  U.S. Registered Electrical Engineer or 1 Kyu Denkikouji Sekou Kanrigishi (1st Class Electric Construction 
-Management Engineer).</LST><BRK/>
-<BRK/>
+Management Engineer).</LST><BRK />
+<BRK />
 ][<LST INDENT="-0.33">e.  U.S. Bachelors Degree in Construction Management or 1 Kyu Kenchiku Sekou Kanrigishi (1st Class Building 
-Construction Management Engineer)</LST><BRK/>
-<BRK/>
-][<LST INDENT="-0.33">f.  U.S. Bachelors Degree in Construction Management or AI*DD Sougoushu (AI*DD Construction Engineer).</LST><BRK/>
-<BRK/>
-]<DEL>[<LST INDENT="-0.33">g.  U.S. Registered Fire Protection Engineer.</LST><BRK/>
-<BRK/>
-]</DEL></SPT><SPT><TTL>English Speaking Representative (Interpreter)</TTL><BRK/>
-<BRK/>
+Construction Management Engineer)</LST><BRK />
+<BRK />
+][<LST INDENT="-0.33">f.  U.S. Bachelors Degree in Construction Management or AI*DD Sougoushu (AI*DD Construction Engineer).</LST><BRK />
+<BRK />
+]<DEL>[<LST INDENT="-0.33">g.  U.S. Registered Fire Protection Engineer.</LST><BRK />
+<BRK />
+]</DEL></SPT><SPT outline="1.7.4"><TTL>English Speaking Representative (Interpreter)</TTL><BRK />
+<BRK />
 <TXT>At all times during the Contract period the Contractor shall have an employee capable of fluent bilingual speech 
 in the Japanese and English languages at the job site.  The bilingual interpreter shall have the capability to 
 receive and issue concise and technical explanation and instructions between the Government representative(s) 
@@ -268,24 +268,24 @@ Officer<DEL>'s Representative</DEL> the qualifications and background history of
 The Contracting Officer shall have the explicit right to determine acceptability or rejection of the proposed 
 individual.  In addition, the Contractor shall be responsible to replace said individual upon notification by 
 the Government should performance become inadequate during the Contract period.  The interpreter shall attend 
-the preconstruction conference.<ADD>  Interpreter shall not have other duties assigned.  </ADD></TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Contractor Quality Control</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Contractor Quality Control System Manager (CQCSM)</TTL><BRK/>
-<BRK/>
+the preconstruction conference.<ADD>  Interpreter shall not have other duties assigned.  </ADD></TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.7.5"><TTL>Contractor Quality Control</TTL><BRK />
+<BRK />
+<SPT outline="1.7.5.1"><TTL>Contractor Quality Control System Manager (CQCSM)</TTL><BRK />
+<BRK />
 <TXT>The CQC System Manager is required to be a graduate of an accredited college with an engineering, architecture, 
 or construction management degree, with a minimum of [5] years construction experience on construction of similar 
 size and scope to this Contract. Refer to Section <SRF>01 45 00.00 10</SRF> QUALITY CONTROL, Paragraph "CQC System Manager" 
-for additional requirements.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Contractor Quality Control Personnel</TTL><BRK/>
-<BRK/>
+for additional requirements.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.7.5.2"><TTL>Contractor Quality Control Personnel</TTL><BRK />
+<BRK />
 <TXT>The following Contractor Quality Control (CQC) Personnel are required:[Civil, ][Mechanical, ][Electrical, ][Structural, 
 ][Architectural, ][Fire Protection, ][Communications, ][Environmental, ][Submittals, ][Occupied Family Housing, 
 ][Concrete, Pavements, and Soils, ][Testing, Adjusting, and Balancing, ][Design Quality Control Manager ].  All 
-other specialties in section 01 45 00.00 10 not identified in this paragraph does not apply to this project.</TXT><BRK/>
-<BRK/>
+other specialties in section 01 45 00.00 10 not identified in this paragraph does not apply to this project.</TXT><BRK />
+<BRK />
 <TXT>See Section <SRF>01 45 00.00 10</SRF> QUALITY CONTROL for qualification requirements for CQC personnel. These individuals 
 or specialized technical companies [must be directly employed by the prime Contractor and can not be employed 
 by a supplier or subcontractor on this project][may be employed by the prime contractor or a subcontractor on 
@@ -293,187 +293,187 @@ this project]. These individuals [shall have no other duties other than quality 
 but need to be allowed sufficient time to perform the specialized personnel's assigned quality control duties 
 as described in the Quality Control Plan]. [A single person can cover more than one area provided that the single 
 person is qualified to perform quality control activities in each designated and that workload allows.][A single 
-person cannot cover more than one area].</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>Site Safety and Health Officer (SSHO)</TTL><BRK/>
-<BRK/>
-<TXT>See Section <SRF>01 35 26</SRF> GOVERNMENTAL SAFETY REQUIREMENTS.</TXT><BRK/>
-<BRK/></SPT>
-[<SPT><TTL>[SUSTAINABILITY REPRESENTATIVE][TPC SUSTAINABILITY PROFESSIONAL]</TTL><BRK/>
-<BRK/>
-<TXT>See Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.</TXT><BRK/>
-<BRK/></SPT>
-]<ADD>[<SPT><TTL>[Protective Coating Specialist (PCS)]</TTL><BRK/>
-<BRK/>
-<TXT>See Section <SRF>09 97 13.27</SRF> HIGH PERFORMANCE COATING FOR STEEL STRUCTURES.</TXT><BRK/>
-<BRK/></SPT>
-]</ADD><TAI OPT="ARMY"><SPT><TTL>Pass Coordinator</TTL><BRK/>
-<BRK/>
+person cannot cover more than one area].</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.7.6"><TTL>Site Safety and Health Officer (SSHO)</TTL><BRK />
+<BRK />
+<TXT>See Section <SRF>01 35 26</SRF> GOVERNMENTAL SAFETY REQUIREMENTS.</TXT><BRK />
+<BRK /></SPT>
+[<SPT outline="1.7.7"><TTL>[SUSTAINABILITY REPRESENTATIVE][TPC SUSTAINABILITY PROFESSIONAL]</TTL><BRK />
+<BRK />
+<TXT>See Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.</TXT><BRK />
+<BRK /></SPT>
+]<ADD>[<SPT><TTL>[Protective Coating Specialist (PCS)]</TTL><BRK />
+<BRK />
+<TXT>See Section <SRF>09 97 13.27</SRF> HIGH PERFORMANCE COATING FOR STEEL STRUCTURES.</TXT><BRK />
+<BRK /></SPT>
+]</ADD><TAI OPT="ARMY"><SPT><TTL>Pass Coordinator</TTL><BRK />
+<BRK />
 <TXT>A person on the contractor's staff who is familiar with the requirements of USAG-J <RID>Regulation 190-13</RID>, Individual 
 and Vehicle Access Pass Procedures, and USAG-J vehicle security inspection procedures.  The Pass Coordinator 
 must be able to obtain a DBIDS access pass with escort privileges and may be required to escort other contract 
 personnel.  Although a TOEIC score is not required, the Pass Coordinator must be able to understand pass requirements 
-and complete pass application forms in the English language.</TXT><BRK/>
-<BRK/></SPT>
-</TAI></SPT><SPT><TTL>TIME EXTENSIONS FOR UNUSUALLY SEVERE WEATHER </TTL><BRK/>
-<BRK/>
+and complete pass application forms in the English language.</TXT><BRK />
+<BRK /></SPT>
+</TAI></SPT><SPT outline="1.8"><TTL>TIME EXTENSIONS FOR UNUSUALLY SEVERE WEATHER </TTL><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  This paragraph specifies the procedure for determination of time extensions for unusually severe 
 weather in accordance with the Contract clause entitled "DEFAULT (FIXED-PRICE CONSTRUCTION)".  In order 
 for the Contracting Officer to award a time extension under this clause, the following conditions must 
-be satisfied:</LST><BRK/>
-<BRK/>
+be satisfied:</LST><BRK />
+<BRK />
 <ITM INDENT="-0.33">(1) The weather experienced at the project site during the Contract period must be found to 
 be unusually severe, that is, more severe than the adverse weather anticipated for the project 
-location during any given month.</ITM><BRK/>
-<BRK/>
+location during any given month.</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(2) The unusually severe weather must actually cause a delay to the completion of the project.  
-The delay must be beyond the control and without the fault or negligence of the Contractor.</ITM><BRK/>
-<BRK/>
+The delay must be beyond the control and without the fault or negligence of the Contractor.</ITM><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  The listing below defines the monthly anticipated adverse weather days for the Contract period and 
 is based upon 20th Weather Squadron (MAC), U.S. Air Force; Iwakuni U.S. Marine Corps Air Station, Weather 
 Service; Sasebo Naval Pacific Meteorology and Oceanography Detachment; JASDF (Japan Air Self Defense 
 Force), or similar data for the geographic location of the project.  (More specific information may be 
-obtained as specified under Special Contract Requirements Clause entitled "Physical Data.")</LST><BRK/>
-<BRK/>
-<HL4><TXT>MONTHLY ANTICIPATED ADVERSE WEATHER DELAYS</TXT></HL4><BRK/>
-<HL4><TXT>WORK DAYS BASED ON (5) DAY WORK WEEK</TXT></HL4><BRK/>
-<BRK/>
-<TXT>     Misawa-area Kanto Plain   Iwakuni     Okinawa      Sasebo      Osaka</TXT><BRK/>
-<BRK/>
-<TXT>JAN       8           1           2           5           7           4</TXT><BRK/>
-<TXT>FEB       9           3           4           7           6           4</TXT><BRK/>
-<TXT>MAR       6           6           7           8           7           5</TXT><BRK/>
-<TXT>APR       3           6           6           6           7           4</TXT><BRK/>
-<TXT>MAY       4           4           6           6           6           4</TXT><BRK/>
-<TXT>JUN       5           9           8           6          12           5</TXT><BRK/>
-<TXT>JUL       6           6           6           6           9           4</TXT><BRK/>
-<TXT>AUG       6           6           5           9           9           3</TXT><BRK/>
-<TXT>SEP       6           7           6           7           9           4</TXT><BRK/>
-<TXT>OCT       4           5           4           4           8           4</TXT><BRK/>
-<TXT>NOV       6           4           4           4           5           3</TXT><BRK/>
-<TXT>DEC       7           1           3           5           5           3</TXT><BRK/>
-<BRK/>
+obtained as specified under Special Contract Requirements Clause entitled "Physical Data.")</LST><BRK />
+<BRK />
+<HL4><TXT>MONTHLY ANTICIPATED ADVERSE WEATHER DELAYS</TXT></HL4><BRK />
+<HL4><TXT>WORK DAYS BASED ON (5) DAY WORK WEEK</TXT></HL4><BRK />
+<BRK />
+<TXT>     Misawa-area Kanto Plain   Iwakuni     Okinawa      Sasebo      Osaka</TXT><BRK />
+<BRK />
+<TXT>JAN       8           1           2           5           7           4</TXT><BRK />
+<TXT>FEB       9           3           4           7           6           4</TXT><BRK />
+<TXT>MAR       6           6           7           8           7           5</TXT><BRK />
+<TXT>APR       3           6           6           6           7           4</TXT><BRK />
+<TXT>MAY       4           4           6           6           6           4</TXT><BRK />
+<TXT>JUN       5           9           8           6          12           5</TXT><BRK />
+<TXT>JUL       6           6           6           6           9           4</TXT><BRK />
+<TXT>AUG       6           6           5           9           9           3</TXT><BRK />
+<TXT>SEP       6           7           6           7           9           4</TXT><BRK />
+<TXT>OCT       4           5           4           4           8           4</TXT><BRK />
+<TXT>NOV       6           4           4           4           5           3</TXT><BRK />
+<TXT>DEC       7           1           3           5           5           3</TXT><BRK />
+<BRK />
 <TXT>The above schedule of anticipated adverse weather days shall constitute the base line for monthly (or portion 
-thereof) weather time evaluations.</TXT><BRK/>
-<BRK/>
+thereof) weather time evaluations.</TXT><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  Upon acknowledgment of the Notice-to-Proceed (NTP) and continuing throughout the Contract, the Contractor 
 shall record on the daily CQC report, the occurrence of adverse weather and resultant impact to normally 
 scheduled work.  Actual adverse weather delay days must prevent work on critical activities for 50 percent 
-or more of the Contractor's scheduled work day.</LST><BRK/>
-<BRK/>
+or more of the Contractor's scheduled work day.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">d.  The number of actual adverse weather delay days shall include days impacted by actual adverse weather 
 (even if adverse weather occurred in previous month), be calculated chronologically from the first to 
 the last day of each month, and be recorded as full days.  If the number of actual adverse weather delay 
 days exceeds the number of days anticipated in paragraph (b), above, the Contracting Officer shall convert 
 any qualifying delays to calendar days, giving full consideration for equivalent fair weather work days, 
-and issue a modification in accordance with the Contract clause entitled "DEFAULT (FIXED PRICE CONSTRUCTION)".</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">e.  For all work under this Contract, adverse weather is defined as:</LST><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(1) Rainfall - Number of occurrences of precipitation greater than or equal to 0.10 inches (2.54mm).</ITM><BRK/>
-<BRK/>
+and issue a modification in accordance with the Contract clause entitled "DEFAULT (FIXED PRICE CONSTRUCTION)".</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  For all work under this Contract, adverse weather is defined as:</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Rainfall - Number of occurrences of precipitation greater than or equal to 0.10 inches (2.54mm).</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(2) Snowfall - Number of occurrences of precipitation greater than or equal to 1.00 inches (25.4mm). 
-(Not applicable to Okinawa Area)</ITM><BRK/>
-<BRK/>
+(Not applicable to Okinawa Area)</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(3) Cold Temperature - Number of occurrences when daily maximum temperature does not exceed 
 the monthly mean low temperature or 32 degrees Fahrenheit (0 degrees Celsius), whichever is 
-lower.  (Not applicable to Okinawa Area)</ITM><BRK/>
-<BRK/>
+lower.  (Not applicable to Okinawa Area)</ITM><BRK />
+<BRK />
 <ITM INDENT="-0.33">(4) Concurrence between snowfall and cold temperature is 80 percent, i.e. 80 percent of the 
-time snow falls, the temperature is "cold".</ITM><BRK/>
-<BRK/>
-<ITM INDENT="-0.33">(5) Wind - Number of occurrences when the wind is gusting 30 knots (56 kilometers/hour) or greater.</ITM><BRK/>
-<BRK/>
+time snow falls, the temperature is "cold".</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(5) Wind - Number of occurrences when the wind is gusting 30 knots (56 kilometers/hour) or greater.</ITM><BRK />
+<BRK />
 <LST INDENT="-0.33">f.  The Contractor's schedule must reflect the above anticipated adverse weather delays on all weather-dependent 
-activities.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>PERMITS AND RESPONSIBILITIES</TTL><BRK/>
-<BRK/>
+activities.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="1.9"><TTL>PERMITS AND RESPONSIBILITIES</TTL><BRK />
+<BRK />
 <TXT>The Contractor shall, without additional expense to the Government, be responsible for obtaining any necessary 
 licenses and permits, and for complying with any laws, codes, and regulations (including the requirements of 
 material, prefectural, and local Government of Japan, and associated military installation) applicable to the 
 performance of work.  The Contractor shall also be responsible for all damages to persons or property that occur 
 as a result of the Contractor's fault or negligence.  These damages shall be repaired or replaced by the Contractor 
 at no cost to the Government. The Contractor shall take proper safety and health precautions to protect all work 
-and workers.</TXT><BRK/>
-<BRK/>
+and workers.</TXT><BRK />
+<BRK />
 <TXT>Submit a schedule of planned road closures to the Contracting Officer with the initial project schedule.  Notification 
 of specific road closures shall be in writing to the Contracting Officer not less than thirty (30) calendar days 
 in advance of the intended closure.  The road closure request shall include the planned traffic control measures 
 as well as the general information about the closure.  All road closures shall be coordinated with base officials 
 and are subject to base requirements.  No road closure shall be permitted until the Contractor receives written 
 approval from the Contracting Officer.  Full road closures is generally not permitted (at least one way traffic 
-shall always be provided).</TXT><BRK/>
-<BRK/>
-<TAI OPT="NAHA PORT"><SPT><TTL>Naha Port Authority (NPA) Work Permit</TTL><BRK/>
-<BRK/>
+shall always be provided).</TXT><BRK />
+<BRK />
+<TAI OPT="NAHA PORT"><SPT><TTL>Naha Port Authority (NPA) Work Permit</TTL><BRK />
+<BRK />
 <TXT>The Contractor shall obtain a Harbor Facility Usage Permission Application (Form Number 5), also known as the 
-"Kowan Shisetsu Shiyou Kyoka Shinseisho" permit form addressed to the Naha Port Authority Administrator.</TXT><BRK/>
-<BRK/>
+"Kowan Shisetsu Shiyou Kyoka Shinseisho" permit form addressed to the Naha Port Authority Administrator.</TXT><BRK />
+<BRK />
 <TXT>The submission shall include basic information regarding the Contractor's point of contact information, project 
 title, description of work, and usage area information, as well as a work plan (to include scheduling), emergency 
-contact plan, and protection plans.  Application shall be hand delivered to:</TXT><BRK/>
-<BRK/>
-<LST>Naha Port Authority<BRK/>
-General Affairs Division<BRK/>
-2-1 Tondocho (2nd Floor)<BRK/>
-Naha City, Okinawa Prefecture<BRK/>
-900-0035</LST><BRK/>
-<BRK/>
+contact plan, and protection plans.  Application shall be hand delivered to:</TXT><BRK />
+<BRK />
+<LST>Naha Port Authority<BRK />
+General Affairs Division<BRK />
+2-1 Tondocho (2nd Floor)<BRK />
+Naha City, Okinawa Prefecture<BRK />
+900-0035</LST><BRK />
+<BRK />
 <TXT>The NPA will require scheduling coordination and due consideration to all Naha Commercial Port end users and 
 coordination with other stakeholders, such as the Local Fisheries Association, to ensure that stakeholder operations 
 are not negatively impacted by the proposed activity and ensure that appropriate coordination is performed by 
 the construction activity proponent.  The final Harbor Facility Usage Permit Application will be authorized by 
-the Okinawa Prefectural Governor's office.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Work Application Package</TTL><BRK/>
-<BRK/>
+the Okinawa Prefectural Governor's office.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Work Application Package</TTL><BRK />
+<BRK />
 <TXT>In accordance with Article 31 of the GOJ Act on Port Regulations "Kou Sokuhou", the Contractor shall submit a 
 Work Application Package known as a "Koji Sagyou Kyoka Shinseisho" for review and approval by the Maritime Traffic 
 Division Office of the Japan Coast Guard (JCG) at Naha.  A physical printed out copy shall be hand delivered 
-to the following address:</TXT><BRK/>
-<BRK/>
-<LST>Japan Coast Guard<BRK/>
-Naha Coast Guard Office<BRK/>
-Maritime Traffic Division<BRK/>
-2-11-1 Minatomachi<BRK/>
-Naha City, Okinawa Prefecture<BRK/>
-900-8548</LST><BRK/>
-<BRK/>
+to the following address:</TXT><BRK />
+<BRK />
+<LST>Japan Coast Guard<BRK />
+Naha Coast Guard Office<BRK />
+Maritime Traffic Division<BRK />
+2-11-1 Minatomachi<BRK />
+Naha City, Okinawa Prefecture<BRK />
+900-8548</LST><BRK />
+<BRK />
 <TXT>This application shall contain project safety information, work planning and scheduling, emergency management 
 information as well as copies of all pertinent certifications and licenses (e.g. boat licenses, commercial diver's 
 certifications, etc.)  The minimum application review period is 30 days, although in the case of complicated 
-work sites, review of work permit application packages by the JCG may take longer.</TXT><BRK/>
-<BRK/>
+work sites, review of work permit application packages by the JCG may take longer.</TXT><BRK />
+<BRK />
 <TXT>The Naha Coast Guard Office normally does not accept a work permit package from a Contractor until approval of 
 work is formalized first with the NPA.  Therefore, ample time must be secured for the dredging Contractor to 
 clear both NPA and JCG Naha Coast Guard Office work permitting processes during the pre-construction phase of 
-the dredging project.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Safety Panel and Committee (SPC)</TTL><BRK/>
-<BRK/>
+the dredging project.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Safety Panel and Committee (SPC)</TTL><BRK />
+<BRK />
 <TXT>As part of the work permitting process, the Contractor shall also participate in a Safety Panel and Committee 
 (SPC).  This SPC is required by the Japan Coast Guard, and shall be facilitated by a consultant hired by the 
 Okinawa Defense Bureau.  Intent of the SPC is to provide a forum under which all stakeholder and port operator 
 concerns can be identified and addressed.  The Contractor shall attend and present proposed safety, environmental, 
-and operational plans at the forum.</TXT><BRK/>
-<BRK/></SPT>
-</TAI></SPT><SPT><TTL>SPECIAL CONTRACT REQUIREMENTS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Meetings</TTL><BRK/>
-<TAI OPT="DESIGN-BUILD"><BRK/>
+and operational plans at the forum.</TXT><BRK />
+<BRK /></SPT>
+</TAI></SPT><SPT outline="1.10"><TTL>SPECIAL CONTRACT REQUIREMENTS</TTL><BRK />
+<BRK />
+<SPT outline="1.10.1"><TTL>Meetings</TTL><BRK />
+<TAI OPT="DESIGN-BUILD"><BRK />
 <LST INDENT="-0.33">a.  Predesign Conference.  A predesign conference per FAR 42.503 shall be held.  The chairperson shall 
 be the Contracting Officer or his/her designee.  The chairperson shall be responsible for providing minutes 
-of the meeting.</LST><BRK/>
-<BRK/>
+of the meeting.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  Preconstruction Conference.  A Preconstruction Conference per FAR 42.503 shall be held.  The chairperson 
 shall be the Contracting Officer or his/her designee.  The chairperson shall be responsible for providing 
-minutes of the meeting.</LST><BRK/></TAI>
-<BRK/>
+minutes of the meeting.</LST><BRK /></TAI>
+<BRK />
 <TAI OPT="DESIGN-BID-BUILD"><LST INDENT="-0.33">a.  Post Award Orientation.  A post award orientation (often referred to as a Preconstruction Conference) 
 per FAR 42.503 shall be held.  The chairperson shall be the Contracting Officer or his/her designee.  
-The chairperson shall be responsible for providing minutes of the meeting.</LST><BRK/></TAI>
-<BRK/>
+The chairperson shall be responsible for providing minutes of the meeting.</LST><BRK /></TAI>
+<BRK />
 <LST INDENT="-0.33">b.  Weekly Progress Meetings.  A weekly progress meeting shall be conducted, with the day, time, and 
 location to be determined at the Preconstruction Conference.  The Contractor's Project Manager, Superintendent, 
 Interpreter, and Quality Control Manager shall attend.  Representatives from the Government may include, 
@@ -482,8 +482,8 @@ Office personnel, and Project Manager.  The Contractor shall be prepared to disc
 the previous week, work currently in progress, and work forecasted for the following week, as well as 
 the status of any construction issues and open action items.  Provide the meeting agenda for review 24 
 hours prior to the meeting, take notes during the meeting, and provide electronic copies of the meeting 
-minutes in English within 24 hours of the progress meeting for review.</LST><BRK/>
-<BRK/>
+minutes in English within 24 hours of the progress meeting for review.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  Red Zone Meeting.  A Red Zone meeting shall be conducted for Contracts with a value in excess of 
 55,000,000 JPY or those deemed sufficiently complex by the Contracting Officer to warrant one.  The purpose 
 of the Red Zone meeting is to discuss closeout requirements for the contract and to establish a timeline 
@@ -492,15 +492,15 @@ The meeting is a good time for the Contractor to gain approval on format for ite
 and Maintenance manuals, the equipment-in-place list, the warranty plan, and any other items.  The Initial 
 Red Zone is typically scheduled when project reached 75 percent completion milestone.  Provide the meeting 
 agenda for review 24 hours prior to the meeting, take notes during the meeting, and provide electronic 
-copies of the meeting minutes in English within 24 hours of the Red Zone meeting.</LST><BRK/>
-<BRK/>
+copies of the meeting minutes in English within 24 hours of the Red Zone meeting.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">d.  Safety and Quality Control Meetings.  Safety and quality control meetings shall be held as needed 
 and determined by the Contractor.  See Section <SRF>01 35 26</SRF> GOVERNMENTAL SAFETY REQUIREMENTS and Section 
-<SRF>01 45 00.00 10</SRF> USACE QUALITY CONTROL for specific requirements.</LST><BRK/>
-<BRK/>
+<SRF>01 45 00.00 10</SRF> USACE QUALITY CONTROL for specific requirements.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">e.  Construction Waste Management Meetings.  See Section <SRF>01 74 19</SRF> CONSTRUCTION AND DEMOLITION WASTE MANAGEMENT 
-for requirements.</LST><BRK/>
-<BRK/>
+for requirements.</LST><BRK />
+<BRK />
 <TAI OPT="DESIGN-BUILD"><LST INDENT="-0.33">f.  Monthly Design Progress Meetings.  A monthly design progress meeting shall be conducted, with the 
 day, time, and location to be determined at the project kickoff meeting.  The Contractor's Design team, 
 Interpreter, and Design Quality Control manager shall attend.  Representatives from the Government may 
@@ -509,103 +509,103 @@ shall be prepared to discuss work completed during the previous week, work curre
 work forecasted for the following week, as well as the status of any design issues and open action items.  
 Provide the meeting agenda for review 24 hours prior to the meeting, take notes during the meeting, and 
 provide electronic copies of the meeting minutes in English within 24 hours of the progress meeting for 
-review.</LST><BRK/>
-<BRK/></TAI>
-</SPT><TAI OPT="BOOK STYLE CONFORMED SET">[<SPT><TTL><SUB>Conformed Drawings Submittal</SUB></TTL><BRK/>
-<BRK/>
+review.</LST><BRK />
+<BRK /></TAI>
+</SPT><TAI OPT="BOOK STYLE CONFORMED SET">[<SPT><TTL><SUB>Conformed Drawings Submittal</SUB></TTL><BRK />
+<BRK />
 <TXT>Contractor shall submit one (1) hard copy Japanese-style folded and bound set of conformed A3 size drawings.  
 Submittal shall be provided to the Resident Office at the Pre-Construction meeting.  Conformed drawings are defined 
 as the original advertised drawings with amended drawing sheets replaced in-kind with the corresponding original 
 sheet number.  If applicable, add new sheets and remove deleted sheets in accordance with amendment instructions.  
 If multiple amendments are issued, supersede any  previously amended drawing so that only the highest numbered 
-amendment drawing is included.</TXT>  <BRK/>
-<BRK/></SPT>
-]</TAI><TAI OPT="INDOOR AIR QUALITY PLAN"><SPT><TTL>CONSTRUCTION <SUB>INDOOR AIR QUALITY (IAQ) MANAGEMENT PLAN</SUB></TTL><BRK/>
-<BRK/>
+amendment drawing is included.</TXT>  <BRK />
+<BRK /></SPT>
+]</TAI><TAI OPT="INDOOR AIR QUALITY PLAN"><SPT><TTL>CONSTRUCTION <SUB>INDOOR AIR QUALITY (IAQ) MANAGEMENT PLAN</SUB></TTL><BRK />
+<BRK />
 <TXT>Submit an IAQ Management Plan within 15 days after Notice to Proceed and not less than 10 days before the preconstruction 
 meeting.  The Plan shall include IAQ management practices implemented during construction and preoccupancy phases 
 and describe how each requirement in <RID>ANSI/SMACNA 008</RID> [and TPC requirements ]will be met, addressed, and managed 
-on the job site. The plan shall cover the following additional items:</TXT><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Identify the key players and person(s) responsible for implementing the plan.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Specify procedures for protecting stored and installed absorptive materials from moisture damage.</LST><BRK/>
-<BRK/>
+on the job site. The plan shall cover the following additional items:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Identify the key players and person(s) responsible for implementing the plan.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Specify procedures for protecting stored and installed absorptive materials from moisture damage.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  Prohibit the use of tobacco products inside the building and within 7.5 meters (50 feet) of the building 
 entrance at all times during construction. Consider prohibiting smoking on the entire job site. If smoking 
 will be allowed, locate on a site plan the designated locations and signage. Comply with the tobacco 
-use policy of the local jurisdiction.</LST><BRK/>
-<BRK/>
+use policy of the local jurisdiction.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">d.  Indicate whether air handlers will be operated during construction, and specify compliant filtration 
-procedures for permanent equipment that will be used.</LST><BRK/>
-<BRK/>
+procedures for permanent equipment that will be used.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">e.  Take photographs of each IAQ measure for documentation. Annotate photographs to indicate each IAQ 
 measure depicted and its general location. Provide photographs of the methods employed to protect stored 
-and installed absorptive materials from moisture damage during construction and preoccupancy.</LST><BRK/>
-<BRK/>
+and installed absorptive materials from moisture damage during construction and preoccupancy.</LST><BRK />
+<BRK />
 <TXT>Revise and resubmit the Plan as required by the Contracting Officer.  Make copies of the final plan available 
 to all workers on site.  Include provisions in the Plan to meet the requirements specified below and to ensure 
-safe, healthy air for construction workers and building occupants.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Requirements During Construction</TTL><BRK/>
-<BRK/>
+safe, healthy air for construction workers and building occupants.</TXT><BRK />
+<BRK />
+<SPT><TTL>Requirements During Construction</TTL><BRK />
+<BRK />
 <TXT>Provide for evaluation of indoor Carbon Dioxide concentrations in accordance with <RID>ASTM D6245</RID>.  Provide for evaluation 
 of volatile organic compounds (VOCs) in indoor air in accordance with <RID>ASTM D6345</RID>.  Use filters with a Minimum 
-Efficiency Reporting Value (MERV) of 8 in permanently installed air handlers during construction.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Control Measures</TTL><BRK/>
-<BRK/>
+Efficiency Reporting Value (MERV) of 8 in permanently installed air handlers during construction.</TXT><BRK />
+<BRK />
+<SPT><TTL>Control Measures</TTL><BRK />
+<BRK />
 <TXT>Meet or exceed the requirements of <RID>ANSI/SMACNA 008</RID>, Chapter 3, to help minimize contamination of the building 
-from construction activities.  The five requirements of this manual which must be adhered to are described below:</TXT><BRK/>
-<BRK/>
+from construction activities.  The five requirements of this manual which must be adhered to are described below:</TXT><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  HVAC protection: Isolate return side of HVAC system from surrounding environment to prevent construction 
-dust and debris from entering the duct work and spaces.</LST><BRK/>
-<BRK/>
+dust and debris from entering the duct work and spaces.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  Source control: Use low emitting paints and other finishes, sealants, adhesives, and other materials 
 as specified.  When available, cleaning products must have a low VOC content and be non-toxic to minimize 
 building contamination.  Utilize cleaning techniques that minimize dust generation.  Cycle equipment 
 off when not needed.  Prohibit idling motor vehicles where emissions could be drawn into building.  Designate 
-receiving/storage areas for incoming material that minimize IAQ impacts.</LST><BRK/>
-<BRK/>
+receiving/storage areas for incoming material that minimize IAQ impacts.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  Pathway interruption: When pollutants are generated use strategies such as 100 percent outside air 
-ventilation or erection of physical barriers between work and non-work areas to prevent contamination.</LST><BRK/>
-<BRK/>
+ventilation or erection of physical barriers between work and non-work areas to prevent contamination.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">d.  Housekeeping: Clean frequently to remove construction dust and debris.  Promptly clean up spills.  
 Remove accumulated water and keep work areas dry to discourage the growth of mold and bacteria.  Take 
-extra measures when hazardous materials are involved.</LST><BRK/>
-<BRK/>
+extra measures when hazardous materials are involved.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">e.  Scheduling: Control the sequence of construction to minimize the absorption of VOCs by other building 
-materials.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Moisture Contamination</TTL><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Remove accumulated water and keep work dry.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Use dehumidification to remove moist, humid air from a work area</LST>.<BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Do not use combustion heaters or generators inside the building.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">d.  Protect porous materials from exposure to moisture.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">e.  Remove and replace items which remain damp for more than a few hours.</LST><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>Requirements after Construction</TTL><BRK/>
-<BRK/>
-<TXT>After construction ends and prior to occupancy, conduct IAQ testing in accordance with <RID>ASHRAE 189.1</RID> Section 10.3.1.4.</TXT><BRK/>
-<BRK/>
+materials.</LST><BRK />
+<BRK /></SPT>
+<SPT><TTL>Moisture Contamination</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Remove accumulated water and keep work dry.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Use dehumidification to remove moist, humid air from a work area</LST>.<BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Do not use combustion heaters or generators inside the building.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Protect porous materials from exposure to moisture.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Remove and replace items which remain damp for more than a few hours.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT><TTL>Requirements after Construction</TTL><BRK />
+<BRK />
+<TXT>After construction ends and prior to occupancy, conduct IAQ testing in accordance with <RID>ASHRAE 189.1</RID> Section 10.3.1.4.</TXT><BRK />
+<BRK />
 <TXT>In the event that IAQ testing fails, conduct a building flush-out in accordance with <RID>ASHRAE 189.1</RID> Section 10.3.1.3[ 
 and TPC requirements]. The space shall be ventilated at a minimum rate of 1.5 Liters per second per square meter 
 of outdoor air while maintaining an internal temperature of at least 15 degrees C (60 degrees F) and no higher 
 than 27 degrees C (80 degrees F) and relative humidity no higher than 60%. Total air volume of outdoor air will 
 be determined by <RID>ASHRAE 189.1</RID> Section 10.3.1.4 Equation 10-1.  Total volume of outdoor air shall be approved 
-by the Contracting Office prior to building flush-out</TXT><BRK/>
-<BRK/>
+by the Contracting Office prior to building flush-out</TXT><BRK />
+<BRK />
 <TXT>Air contamination testing must be consistent with EPA's current Compendium of Methods for the Determination of 
 Air Pollutants in Ambient Air.  After building flush-out or testing and prior to occupancy, replace filtration 
-media. Filtration media must have a MERV of 13 as determined by <RID>ASHRAE 52.2</RID>.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></TAI></SPT><SPT><TTL>PROGRESS AND COMPLETION PHOTOGRAPHS</TTL><BRK/>
-<BRK/>
+media. Filtration media must have a MERV of 13 as determined by <RID>ASHRAE 52.2</RID>.</TXT><BRK />
+<BRK /></SPT>
+</SPT></TAI></SPT><SPT outline="1.11"><TTL>PROGRESS AND COMPLETION PHOTOGRAPHS</TTL><BRK />
+<BRK />
 <TXT>Photographically document site conditions prior to start of construction operations.  Provide monthly, and within 
 one month of the completion of work, digital photographs, 1600 by 1200 by 24 bit true color 300 DPI minimum resolution 
 in JPEG file format showing the sequence and progress of work.  Take a minimum of [20] digital photographs each 
@@ -613,25 +613,25 @@ week throughout the entire project[ and [20] digital photographs at completion o
 Site Conditions Photos</SUB>, <SUB>Monthly Progress Photos</SUB>[, and <SUB>Construction Completion Photos</SUB>]. Indicate photographs demonstrating 
 environmental procedures.  Provide photographs for each month in a separate monthly directory and name each file 
 to indicate its location on the view location sketch.  Include a date designator in file names.  Cross reference 
-submittals in the appropriate daily report.  Photographs provided are for unrestricted use by the Government.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>BASE REGULATIONS</TTL><BRK/>
-<BRK/>
+submittals in the appropriate daily report.  Photographs provided are for unrestricted use by the Government.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.12"><TTL>BASE REGULATIONS</TTL><BRK />
+<BRK />
 <TXT>The Contractor and Subcontractor(s) shall become familiar with and obey all base regulations, including fire, 
 traffic, safety, and security regulations.  All Contractors shall keep within the limits of the work (and avenues 
 of ingress and egress), and shall not enter any restricted areas unless required to do so and are cleared for 
-such entry.  The Contractor's equipment shall be conspicuously marked for identification.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Request for Contractor's Employee Passes and Vehicle Passes</TTL><BRK/>
-<BRK/>
+such entry.  The Contractor's equipment shall be conspicuously marked for identification.</TXT><BRK />
+<BRK />
+<SPT outline="1.12.1"><TTL>Request for Contractor's Employee Passes and Vehicle Passes</TTL><BRK />
+<BRK />
 <TXT>No employee or representative of the Contractor shall be admitted to the work site without a Contracting Officer's 
 furnished authorized admittance.  <TAI OPT="ARMY">Refer to USAG-J <RID>Regulation 190-13</RID>.  </TAI>Prior to the start of on-site work, submit 
 applications for base passes to the Contracting Officer for key employees (project manager, site supervisor, 
 interpreter, etc.) for long term DBIDS passes.    The Contractor<TAI OPT="ARMY"> (through the employment of a Pass Coordinator)</TAI>
 , with assistance from the Resident Office, is responsible for securing sufficient passes for other workers, 
 including subcontractor's employees and vehicles, required to access the base for the project duration.  Additional 
-personnel data shall also be furnished.</TXT><BRK/>
-<TAI OPT="ARMY"><BRK/>
+personnel data shall also be furnished.</TXT><BRK />
+<TAI OPT="ARMY"><BRK />
 <TXT>The Contractor shall use the USAG-J Form 1529 "EZ Pass" as the primary means of obtaining passes for all personnel 
 who do not qualify for DBIDS passes.  The USAG-J Form 1529 "EZ Pass" One Time/Multiple Access Roster must be 
 complete and submitted to the Provost Marshall Pass and Vehicle Registration Office a minimum of three (3) U.S. 
@@ -639,43 +639,43 @@ workdays prior to access.  The use of the USAG-J "one day" pass (AJ Form 47) sho
 for urgent situations.  Applicants for a "one day" pass may be required to wait for several hours for their pass 
 to be issued.  Contractor personnel applying for more than one (1) "one-day" pass within any 15-day period will 
 not be issued multiple one-day passes, and will instead be required to apply for access via the USAG-J Form 1529, 
-and wait three or more days for approval.</TXT><BRK/></TAI>
-<BRK/>
+and wait three or more days for approval.</TXT><BRK /></TAI>
+<BRK />
 <TXT>Provide all information required for background checks to meet base access requirements to be accomplished by 
 Base Provost Marshal Office, Director of Emergency Services or Security Office.  Contractor workforce must comply 
 with all personal identity verification requirements as directed by DOD, HQDA and/or local policy.  The Government 
 reserves the right to make changes to the Contractor security requirements or processes due to a change in the 
-Force Protection Condition (FPCON).</TXT><BRK/>
-<TAI OPT="NAVY"><BRK/>
-<TXT>In addition to security requirements, cranes, delivery "unic"<BRK/>
-trucks, forklifts, backhoes, and other equipment capable of<BRK/>
-vertical lift operations must comply with NAVFAC rules for access<BRK/>
-to the base.  Refer to <RID>NAVFAC P-307</RID>.  The operator must submit<BRK/>
-a P-1 Pass request and submit the equipment, its records, and<BRK/>
-operator records for inspection by Public Works prior to the<BRK/>
-initial entry onto base property.  Vehicle passes for vertical<BRK/>
-lift equipment must be renewed monthly with Public Works as long<BRK/>
-as the equipment remains on base property.</TXT><BRK/></TAI>
-<BRK/>
+Force Protection Condition (FPCON).</TXT><BRK />
+<TAI OPT="NAVY"><BRK />
+<TXT>In addition to security requirements, cranes, delivery "unic"<BRK />
+trucks, forklifts, backhoes, and other equipment capable of<BRK />
+vertical lift operations must comply with NAVFAC rules for access<BRK />
+to the base.  Refer to <RID>NAVFAC P-307</RID>.  The operator must submit<BRK />
+a P-1 Pass request and submit the equipment, its records, and<BRK />
+operator records for inspection by Public Works prior to the<BRK />
+initial entry onto base property.  Vehicle passes for vertical<BRK />
+lift equipment must be renewed monthly with Public Works as long<BRK />
+as the equipment remains on base property.</TXT><BRK /></TAI>
+<BRK />
 <TXT>Upon completion of this Contract, return all employee and vehicle passes to the base, and obtain a certification 
-of receipt.  Final payment shall be withheld until all passes have been returned.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>No Smoking Policy</TTL><BRK/>
-<BRK/>
+of receipt.  Final payment shall be withheld until all passes have been returned.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.12.2"><TTL>No Smoking Policy</TTL><BRK />
+<BRK />
 <TXT>Smoking is prohibited  on installations except in designated smoking areas.  This applies to existing buildings, 
 buildings under construction, and buildings under renovation.  Discarding tobacco materials other than into designated 
 tobacco receptacles is considered littering and is subject to fines.  The Contracting Officer shall identify 
-designated smoking areas.</TXT><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  MEC and UXO Paragraphs</NPR><BRK/>
+designated smoking areas.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  MEC and UXO Paragraphs</NPR><BRK />
 Parapgraph "Munitions and Explosives of Concern (MEC)" applies to all locations EXCEPT KADENA. Paragraph "Unexploded 
 Ordnance (UXO) Procedures on Kadena Air Base" applies to KADENA only. For CAMP FOSTER include the paragraph 
-"Munitions and Explosives of Concern (MEC)" and the paragraph "Additional Requirements for Camp Foster."<BRK/>
-<AST/><BRK/></NTE>
-<BRK/></SPT>
-<SPT><TAI OPT="AIR FORCE,ARMY,ARMY-OKINAWA,MARINE CORPS IN OKINAWA,NAVY,OKINAWA AO"><TTL>Munitions and Explosives of Concern (MEC)</TTL><BRK/>
-<BRK/>
+"Munitions and Explosives of Concern (MEC)" and the paragraph "Additional Requirements for Camp Foster."<BRK />
+<AST /><BRK /></NTE>
+<BRK /></SPT>
+<SPT outline="1.12.3"><TAI OPT="AIR FORCE,ARMY,ARMY-OKINAWA,MARINE CORPS IN OKINAWA,NAVY,OKINAWA AO"><TTL>Munitions and Explosives of Concern (MEC)</TTL><BRK />
+<BRK />
 <TXT>Munitions and Explosives of Concern (MEC): Unexploded Ordnance (UXO), Material Presenting a Potential Explosive 
 Hazard (MPPEH), Chemical Agents (CA), or Discarded Military Munitions (DMM) on jobsites shall be treated as extremely 
 dangerous and must be reported immediately. Follow the 3Rs: RECOGNIZE, RETREAT, and REPORT. In the event MEC 
@@ -684,25 +684,25 @@ Representative.  Contractor shall provide dispatch and Contracting Officer's Rep
 of the item. Contractor personnel shall stop work in the immediate vicinity of the discovery and maintain a minimum 
 distance of 300 meters from the item. Contractor shall maintain flexibility in redirecting personnel and work 
 effort in the event that items possessing an explosive hazard are discovered and construction personnel are excluded 
-from areas during the destruction/removal process.<BRK/></TXT>
-</TAI><BRK/>
-<TAI OPT="MARINE CORPS IN OKINAWA"><SPT><TTL>Additional Requirements for Camp Foster</TTL><BRK/>
-<BRK/>
+from areas during the destruction/removal process.<BRK /></TXT>
+</TAI><BRK />
+<TAI OPT="MARINE CORPS IN OKINAWA"><SPT><TTL>Additional Requirements for Camp Foster</TTL><BRK />
+<BRK />
 <TXT>All workers on site involved in the earthwork, in any manner, must attend a UXO brief on Marine Camp Foster. 
 Upon completion of the brief, the worker will receive a laminated card verifying that they attended the brief.  
 The card does not expire and is valid for all USACE construction contracts on Okinawa, but is non-transferrable 
 between workers.  The USACE team will help coordinate the training and assist with processing base access requests 
 for Marine Camp Foster as needed.  The brief is free of charge, but the contractor is responsible for all other 
 costs associated with transport, labor, and all other costs related to the training. The expected duration of 
-this training is two hours.</TXT><BRK/>
-<BRK/></SPT>
-</TAI></SPT><TAI OPT="KADENA AB"><SPT><TTL>Unexploded Ordnance (UXO) Procedures on Kadena Air Base</TTL><BRK/>
-<BRK/>
-<TXT>Kadena Air Base 718 CES/CEN assesses the area as UXO unlikely<BRK/>
-with a low probability of uncovering UXO's on the site.  However, since<BRK/>
-there is always a possibility of encountering UXOs anywhere on Okinawa,<BRK/>
-albeit unlikely at this location, excavations and other construction<BRK/>
-activities related earth work on the project site, require a measure of<BRK/>
+this training is two hours.</TXT><BRK />
+<BRK /></SPT>
+</TAI></SPT><TAI OPT="KADENA AB"><SPT><TTL>Unexploded Ordnance (UXO) Procedures on Kadena Air Base</TTL><BRK />
+<BRK />
+<TXT>Kadena Air Base 718 CES/CEN assesses the area as UXO unlikely<BRK />
+with a low probability of uncovering UXO's on the site.  However, since<BRK />
+there is always a possibility of encountering UXOs anywhere on Okinawa,<BRK />
+albeit unlikely at this location, excavations and other construction<BRK />
+activities related earth work on the project site, require a measure of<BRK />
 caution. The Ground Penetrating Radar (GPR) survey specified in <SRF>01 35 26</SRF> paragraph "Utilities Within and Under 
 Concrete, Bituminous Asphalt, and Other Impervious Surfaces" for the identification of underground utilities 
 will identify anomalies.  Best practices of conducting GPR surveys are to repeat them in areas greater than the 
@@ -710,12 +710,12 @@ used method's level of detection (LOD), down to a depth of 2 meters, to ensure n
 objects are present. If suspected UXOs are identified, the construction team needs to follow the standard UXO 
 notification procedures per the Kadena policies identified in attachment 01 11 00.00 10-[B] "UXO Emergency Mitigation 
 Steps and Survey Policies." The contact number for the Emergency Dispatch Center for Kadena Air Base is 098-934-5911. 
-See the following website for additional information: <URL>www.kadena.af.mil/About-Us/Emergency-Actions/</URL>.</TXT><BRK/>
-<BRK/></SPT>
-</TAI></SPT><SPT><TTL>ORDER OF WORK</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Schedule</TTL><BRK/>
-<BRK/>
+See the following website for additional information: <URL>www.kadena.af.mil/About-Us/Emergency-Actions/</URL>.</TXT><BRK />
+<BRK /></SPT>
+</TAI></SPT><SPT outline="1.13"><TTL>ORDER OF WORK</TTL><BRK />
+<BRK />
+<SPT outline="1.13.1"><TTL>Schedule</TTL><BRK />
+<BRK />
 <TXT>Schedule all work to cause the least amount of interference with activity operations.  Permission to interrupt 
 any activity or roads shall be requested in writing a minimum of 30 calendar days prior to the desired date of 
 interruption.  Interruptions of activities, roads, and utility services shall be allowed only when they will 
@@ -723,74 +723,74 @@ not cause interference with the operations of the activity.  The Contractor shal
 property all Contractor generated debris at the end of each shift, or more frequently if required, to keep the 
 space usable.  Upon award of this Contract, the Contractor shall begin and complete all required work; ready 
 for use and including cleanup, within the time period specified on this Contract.  All work scheduled in occupied 
-areas shall be accomplished in such a manner as to cause the least possible inconvenience to the occupants.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Working Hours</TTL><BRK/>
-<BRK/>
+areas shall be accomplished in such a manner as to cause the least possible inconvenience to the occupants.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.13.2"><TTL>Working Hours</TTL><BRK />
+<BRK />
 <TXT>Normal Working Hours and Days are Monday through Friday, 0800 hours through 1700 hours. Saturday work is allowed 
 on this contract and does not require additional approvals. Notify the Contracting Officer at least three days 
-in advance when scheduling Saturday work.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Noise and Vibration</TTL><BRK/>
-<BRK/>
+in advance when scheduling Saturday work.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.13.3"><TTL>Noise and Vibration</TTL><BRK />
+<BRK />
 <TXT>Noise greater than 70 decibels and vibration producing work in occupied buildings shall be conducted outside 
-core school/business hours (0700 - 1430) unless written permission is given by the Contracting Officer.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Work Outside of Regular Hours</TTL><BRK/>
-<BRK/>
+core school/business hours (0700 - 1430) unless written permission is given by the Contracting Officer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.13.4"><TTL>Work Outside of Regular Hours</TTL><BRK />
+<BRK />
 <TXT>If the Contractor desires to carry on work outside the regular hours, on Sundays, or holidays, a written application 
 shall be submitted to the Contracting Officer or his representative for approval.  The Contractor shall allow 
 three working days notice to enable satisfactory arrangements to be made by the Government for inspecting the 
 work in progress.  If work is to be accomplished after daylight hours, the Contractor shall illuminate the area 
 in a manner approved by the Contracting Officer or their representative and in accordance with <RID>EM 385-1-1</RID>.  Unless 
 directed by a Contracting Officer, work accomplished outside regular working hours shall be at no additional 
-cost to the Government.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><TAI OPT="NAVY"><SPT><TTL>NUCLEAR DENSOMETER TESTING</TTL><BRK/>
-<BRK/>
+cost to the Government.</TXT><BRK />
+<BRK /></SPT>
+</SPT><TAI OPT="NAVY"><SPT><TTL>NUCLEAR DENSOMETER TESTING</TTL><BRK />
+<BRK />
 <TXT>Nuclear densometer testing and all forms of radiography are not permitted on U.S. Navy installations in Japan 
-because such testing may interfere with Government of Japan monitoring activities.</TXT><BRK/>
-<BRK/></SPT>
-</TAI><SPT><TTL>FIRE PREVENTION DURING CONSTRUCTION</TTL><BRK/>
-<BRK/>
-<SPT><TTL>General</TTL><BRK/>
-<BRK/>
+because such testing may interfere with Government of Japan monitoring activities.</TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="1.14"><TTL>FIRE PREVENTION DURING CONSTRUCTION</TTL><BRK />
+<BRK />
+<SPT outline="1.14.1"><TTL>General</TTL><BRK />
+<BRK />
 <TXT>Comply with all pertinent fire prevention provisions of the US Army Corps of Engineers Manual <RID>EM 385-1-1</RID>, <RID>NFPA 241</RID>
  and shall follow the Installation fire regulations.  Prior to commencement of welding or other hot work operations, 
-obtain approval from the Installation Fire Chief.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Supply</TTL><BRK/>
-<BRK/>
+obtain approval from the Installation Fire Chief.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.14.2"><TTL>Supply</TTL><BRK />
+<BRK />
 <TXT>No more than one day's supply of paint, paint materials, or compounds shall be allowed within the area of the 
 building, and shall be removed from the job site after each working day.  No gasoline or similar low flash point 
 flammable liquid shall be allowed within the building area. After proper coordination with the Facility's Emergency 
 Services (to confirm the maximum allowable quantities and location of storage), storage of additional product 
-may be authorized.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Fire Extinguishers</TTL><BRK/>
-<BRK/>
+may be authorized.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.14.3"><TTL>Fire Extinguishers</TTL><BRK />
+<BRK />
 <TXT>Provide, as a minimum, the number, size, and type of fire extinguishers in accordance with the latest <RID>NFPA 10</RID>
 .  The Contractor shall comply with the Installation Fire Chief's policies if they are more stringent than <RID>NFPA 10</RID>
 .  Fire extinguishers shall remain the property of the Contractor and shall be removed upon completion of the 
-project.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Housekeeping</TTL><BRK/>
-<BRK/>
-<TXT>Accumulations of combustible material shall be removed from the building area on a daily basis.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Handling of Gasoline</TTL><BRK/>
-<BRK/>
+project.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.14.4"><TTL>Housekeeping</TTL><BRK />
+<BRK />
+<TXT>Accumulations of combustible material shall be removed from the building area on a daily basis.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.14.5"><TTL>Handling of Gasoline</TTL><BRK />
+<BRK />
 <TXT>Gasoline shall be stored in industry standard approved safety containers.  Adequate ventilation shall be provided 
 to safely dispose of flammable vapors where flammable liquids are utilized.  Gasoline powered equipment shall 
-be refueled a minimum 6 meters away from the building area.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Notification of Fire</TTL><BRK/>
-<BRK/>
+be refueled a minimum 6 meters away from the building area.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.14.6"><TTL>Notification of Fire</TTL><BRK />
+<BRK />
 <TXT>Be familiar with methods for notifying the Installation Fire Department.  The Installation's fire poster shall 
-be posted in conspicuous locations and at telephones in construction shacks.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>CONTRACTOR FURNISHED MATERIAL AND WORKMANSHIP</TTL><BRK/>
-<BRK/>
+be posted in conspicuous locations and at telephones in construction shacks.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.15"><TTL>CONTRACTOR FURNISHED MATERIAL AND WORKMANSHIP</TTL><BRK />
+<BRK />
 <TXT>The Contractor shall furnish all materials necessary for performance of the work of this contract unless otherwise 
 specified.  Materials procured shall be new and shall meet any specifications and standards listed in these specifications.  
 If no specification for a material needed to perform this contract are stated, the material shall be new, of 
@@ -798,18 +798,18 @@ acceptable industrial grade and quality, equal to or better than the manufacture
 being repaired or replaced, and will be compatible with existing materials and systems.  All materials provided 
 under this contract shall be free of asbestos, lead in paint, and PCB.  The Contracting Officer reserves the 
 right to request submittal of any material being provided under this contract.  The Contracting Officer shall 
-make the final determination of the acceptability of any material used on this contract.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>CORRESPONDENCE</TTL><BRK/>
-<BRK/>
+make the final determination of the acceptability of any material used on this contract.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.16"><TTL>CORRESPONDENCE</TTL><BRK />
+<BRK />
 <TXT>All correspondence addressed to the Government shall be made through serialized letters furnished with one original 
 and two copies.  Serialized letters shall begin with the number S-0001 and shall be continuous without a break 
 in numbering.  Serialized letters shall include the contract title and number, date, subject, and shall be signed 
-by an authorized representative of the Contractor.</TXT><BRK/>
-<BRK/></SPT>
-</PRT><PRT><TTL>PART 2   PRODUCTS</TTL><TXT> (NOT USED)</TXT><BRK/>
-<BRK/></PRT>
-<PRT><TTL>PART 3   EXECUTION</TTL><TXT> (NOT USED)</TXT><BRK/>
-<BRK/>
-<BRK/></PRT>
-   <END/><BRK/></SEC>
+by an authorized representative of the Contractor.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><TXT> (NOT USED)</TXT><BRK />
+<BRK /></PRT>
+<PRT outline="3"><TTL>PART 3   EXECUTION</TTL><TXT> (NOT USED)</TXT><BRK />
+<BRK />
+<BRK /></PRT>
+   <END /><BRK /></SEC>

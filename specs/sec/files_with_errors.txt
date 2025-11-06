@@ -1,0 +1,25 @@
+Files with errors that could not be processed:
+01 32 01.00 10.sec	Exception occured: not well-formed (invalid token): line 33, column 30
+01 35 26.sec	Exception occured: mismatched tag: line 664, column 78
+01 42 00.sec	Exception occured: mismatched tag: line 632, column 72
+01 45 00.00 10.sec	Exception occured: not well-formed (invalid token): line 364, column 175
+02 61 13.sec	Exception occured: not well-formed (invalid token): line 35, column 30
+02 81 00.sec	Exception occured: not well-formed (invalid token): line 30, column 30
+02 83 00.sec	Exception occured: not well-formed (invalid token): line 1632, column 35
+05 51 00.sec	Exception occured: not well-formed (invalid token): line 35, column 30
+06 10 00.sec	Exception occured: not well-formed (invalid token): line 35, column 30
+06 20 00.sec	Exception occured: not well-formed (invalid token): line 31, column 30
+06 61 16.sec	Exception occured: not well-formed (invalid token): line 33, column 30
+07 05 23.sec	Exception occured: not well-formed (invalid token): line 29, column 30
+07 21 16.sec	Exception occured: not well-formed (invalid token): line 35, column 30
+07 27 10.00 10.sec	Exception occured: not well-formed (invalid token): line 31, column 30
+08 31 00.sec	Exception occured: not well-formed (invalid token): line 134, column 41
+08 41 13.sec	Exception occured: not well-formed (invalid token): line 31, column 30
+08 51 23.sec	Exception occured: not well-formed (invalid token): line 35, column 30
+08 91 00.sec	Exception occured: not well-formed (invalid token): line 29, column 30
+14 21 23.sec	Exception occured: not well-formed (invalid token): line 36, column 35
+22 00 00.sec	Exception occured: not well-formed (invalid token): line 387, column 67
+26 05 48.00 10.sec	Exception occured: not well-formed (invalid token): line 29, column 30
+26 29 23.sec	Exception occured: not well-formed (invalid token): line 35, column 30
+26 41 00.sec	Exception occured: not well-formed (invalid token): line 29, column 30
+31 21 13.sec	Exception occured: not well-formed (invalid token): line 33, column 30

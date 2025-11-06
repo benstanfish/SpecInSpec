@@ -119,91 +119,86 @@ def make_subfolder(a_path:str, subfolder_name:str) -> str:
     return new_path
 
 
-def process_sec_file(sec_path:str) -> dict:
-
-    try:
+def process_sec_file(sec_path:str, output_path:str='') -> dict:
 
         tree = ET.parse(sec_path)
         root = tree.getroot()
 
-        if root.tag == 'SEC':
+        number_sections_recursively(root)
 
-            number_sections_recursively(root)
+        with open(sec_path, 'wb') as file:
+            file.write(ET.tostring(root))
 
-            with open(sec_path, 'wb') as file:
-                file.write(ET.tostring(root))
+        try:
+            _section = root.find('SCN').text.replace('SECTION ', '').strip()
+        except:
+            _section = 'Section number not found'
+        try:
+            _title = root.find('STL').text.title().strip()
+        except:
+            _title = 'Section title not found'
+        try:
+            _date = root.find('DTE').text.strip()
+        except:
+            _date = ''
 
-            try:
-                _section = root.find('SCN').text.replace('SECTION ', '').strip()
-            except:
-                _section = 'Section number not found.'
-            try:
-                _title = root.find('STL').text.title().strip()
-            except:
-                _title = 'Section title not found.'
-            try:
-                _date = root.find('DTE').text.strip()
-            except:
-                _date = ''
+        section_info = {
+            'section': _section,
+            'title': _title,
+            'date': _date,
+            'run_date': get_timestamp()
+        }
 
-            section_info = {
-                'section': _section,
-                'title': _title,
-                'date': _date,
-                'run_date': get_timestamp()
-            }
+        with open(sec_path, 'r') as file:
+            content = file.read()
 
-            with open(sec_path, 'r') as file:
-                content = file.read()
+        display_tags = ['NTE', 'NPR', 'ENG', 'MET', 'RID', 'RTL', 'ADD', 'DEL', 'SRF', 'STL', 'SUB']
+        for display_tag in display_tags:
+            content = add_display_tags(tag_name=display_tag, all_text=content)
+        content = wrap_brackets_in_span(content)
+        content = clean_sec_string(content, brk_replaced=False)
 
-            display_tags = ['NTE', 'NPR', 'ENG', 'MET', 'RID', 'RTL', 'ADD', 'DEL', 'SRF', 'STL', 'SUB']
-            for display_tag in display_tags:
-                content = add_display_tags(tag_name=display_tag, all_text=content)
-            content = wrap_brackets_in_span(content)
-            content = clean_sec_string(content, brk_replaced=False)
+        html_fragment = BeautifulSoup(content, 'html.parser')
 
-            html_fragment = BeautifulSoup(content, 'html.parser')
+        html_template = './src/htmlrsx/template.html'
 
-            html_template = './src/html/template.html'
-
+        if output_path:
+            html_folder = output_path
+        else:
             html_folder = make_subfolder(sec_path, 'html')
 
-            html_path = os.path.join(os.path.abspath(html_folder), f"{section_info['section']}.html")
-            html_file = shutil.copy(html_template, html_path)
+        html_path = os.path.join(os.path.abspath(html_folder), f"{section_info['section']}.html")
+        html_file = shutil.copy(html_template, html_path)
 
-            with open(html_file, 'r') as file:
-                html_content = file.read()
+        with open(html_file, 'r') as file:
+            html_content = file.read()
 
-            soup = BeautifulSoup(html_content, 'html.parser')
-            soup.find('title').string = section_info['section'] + '.sec Viewer'
-            soup.find('main').append(html_fragment)
+        soup = BeautifulSoup(html_content, 'html.parser')
+        soup.find('title').string = section_info['section'] + '.sec Viewer'
+        soup.find('main').append(html_fragment)
 
-            soup.find('span', class_='this_section_number').append(section_info['section'])
-            soup.find('span', class_='create_date').append(get_timestamp())
+        soup.find('span', class_='this_section_number').append(section_info['section'])
+        soup.find('span', class_='create_date').append(get_timestamp())
 
-            with open('./src/html/reboot.css', 'r') as file:
-                css_reboot = file.read()
+        with open('./src/htmlrsx/reboot.css', 'r') as file:
+            css_reboot = file.read()
 
-            with open('./src/html/style.css', 'r') as file:
-                css_styles = file.read()
+        with open('./src/htmlrsx/style.css', 'r') as file:
+            css_styles = file.read()
 
-            with open('./src/html/scripts.js', 'r') as file:
-                js_scripts = file.read()
+        with open('./src/htmlrsx/scripts.js', 'r') as file:
+            js_scripts = file.read()
 
-            soup.find(id='reboot').append(css_reboot)
-            soup.find(id='styles').append(css_styles)
-            soup.find(id='scripts').append(js_scripts)
+        soup.find(id='reboot').append(css_reboot)
+        soup.find(id='styles').append(css_styles)
+        soup.find(id='scripts').append(js_scripts)
 
-            soup = update_html_outline(soup)
-            soup.prettify()
+        soup = update_html_outline(soup)
+        soup.prettify()
 
-            with open(html_file, 'w', encoding='utf-8') as file:
-                file.write(str(soup))
+        with open(html_file, 'w', encoding='utf-8') as file:
+            file.write(str(soup))
 
-            return section_info
-        else:
-            return {}
-    except:
-        return {}
-    
+        return section_info
+
 

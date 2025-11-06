@@ -1,0 +1,2131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>08 71 00.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">08 71 00</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:55</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-08 71 00 (February 2016)<brk></brk>
+ Change 2 - 11/18<brk></brk>
+ -----------------------------<brk></brk>
+Preparing Activity: <pra>NAVFAC</pra> Superseding<brk></brk>
+ UFGS-08 71 00 (August 2008)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated April 2019</hl4><brk></brk>
+<ast><hr/></ast></hdr><brk></brk>
+<scn>SECTION 08 71 00</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>DOOR HARDWARE<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>02/16</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project. The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>finish hardware 
+for permanent structures</scp>. All items of finish hardware necessary for completion 
+of the project and not specified in other sections should be included in this 
+section.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections. Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text. For bracketed items, choose applicable 
+item(s) or insert appropriate information.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Remove information and requirements not required in respective project, whether 
+or not brackets are present.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: On the drawings, show:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>1. Location, class, and hourly rating of fire doors;<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>2. Location and installation details for blocking behind door stops (wall bumpers) 
+mounted on wallboard partitions; and<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>3. Either hardware set numbers (e.g. HW-2) in the door schedule, or list doors 
+by number in each hardware set.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of 
+the guide specification. The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article. Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are 
+referred to within the text by the basic designation only.</txt><brk></brk>
+<ref><del><pre class="display_DEL">&lt;DEL&gt;</pre><org>JAPANESE INDUSTRIAL STANDARDS (JIS)</org><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><org>JAPANESE STANDARDS ASSOCIATION (JSA)</org><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1510-2<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2019) Test Method for Door Fittings - Part 
+2: Fittings for Doors<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1510-3<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2001) Test Methods for Door Fittings - Part 
+3: Floor Concealed Door Closers, Door Closers 
+and Hinge Closers<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1516<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(1998) Windows and Doorsets - Air Permeability 
+Test<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1541-1<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) Building Hardware - Locks and Latches 
+- Part 1: Test Methods for Locks and Latches<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1541-2<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) Building Hardware - Locks and Latches 
+- Part 2: Methods of the Presentation and Grade 
+of Criteria for Practical Performance Item<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1525<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(1996) Doorsets - Repeated and Opening and Closing 
+Test<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1551<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2014) Test Method for Automatic Door Opener<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 4702<pre class="display_RID">&lt;/RID&gt;</pre></rid> <rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>15<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Doorsets<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 4721<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2005) Automatic Revolving Door - Safety<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 4722<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017) Power Operated Pedestrian Door Sets - 
+Safety<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5756<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2013) Preformed Gaskets Used in Buildings - 
+Classification, Specifications and Test Methods<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 101<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018; TIA 18-1; TIA 18-2; TIA 18-3) Life Safety 
+Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2021; TIA 21-1) Life Safety Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 252<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>17<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>22<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Standard Methods of Fire Tests of Door 
+Assemblies<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 70<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017; ERTA 1-2 2017; TIA 17-1; TIA 17-2; TIA 
+17-3; TIA 17-4; TIA 17-5; TIA 17-6; TIA 17-7; 
+TIA 17-8; TIA 17-9; TIA 17-10; TIA 17-11; TIA 
+17-12; TIA 17-13; TIA 17-14; TIA 17-15; TIA 
+17-16; TIA 17-17 ) National Electrical Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2023; 
+ERTA 7 2023; TIA 23-15) National Electrical 
+Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 72<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2019; TIA 19-1; ERTA 2019) National Fire Alarm 
+and Signaling Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2022; ERTA 22-1) National 
+Fire Alarm and Signaling Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 80<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>16; TIA 16-1<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>22<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Standard for Fire Doors and 
+Other Opening Protectives<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>36 CFR 1191<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>Americans with Disabilities Act (ADA) Accessibility 
+Guidelines for Buildings and Facilities; Architectural 
+Barriers Act (ABA) Accessibility Guidelines<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>UNDERWRITERS LABORATORIES (UL)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>UL 14C<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2006; Reprint Jul 2017) UL Standard for Safety 
+Swinging Hardware for Standard Tin-Clad Fire 
+Doors Mounted Singly and in Pairs<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>UL 437<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2013) Standard for Key Locks<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>UL Bld Mat Dir<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(updated continuously online) Building Materials 
+Directory<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.2"><ttl>1.2 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review Submittal Description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G." Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System. 
+Only add a "G" to an item, if the submittal is sufficiently important or complex 
+in context of the project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office. Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. Locate the "S" 
+submittal under the SD number that best describes the submittal item.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: If sustainable door hardware is available, choose bracketed option.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are <div class="brackets">[for Contractor Quality Control approval.]</div><div class="brackets">[for information only. When used, a designation following the 
+"G" designation identifies the office that will review the submittal for the Government.]</div> Submittals with an 
+"S" are for inclusion in the Sustainability eNotebook, in conformance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-02 Shop Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Manufacturer's Detail Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Verification of Existing Conditions<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Hardware Schedule<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Keying System<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For special hardware items requiring shop drawings, add submittal requirement 
+for SD-04, Drawings. Do not require shop drawings for standard commercial hardware.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-08 Manufacturer's Instructions<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Installation<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-10 Operation and Maintenance Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Hardware Schedule<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> Items, Data Package 1; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-11 Closeout Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Key Bitting<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 SHOP DRAWINGS</ttl><brk></brk>
+<txt>Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>manufacturer's detail drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> indicating all hardware assembly components and interface with adjacent 
+construction.<div class="brackets">[ Indicate power components and wiring coordination for electrified hardware.]</div> Base shop drawings 
+on verified field measurements and include <sub><pre class="display_SUB">&lt;SUB&gt;</pre>verification of existing conditions<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt><brk></brk></spt>
+<spt outline="1.4"><ttl>1.4 PRODUCT DATA</ttl><brk></brk>
+<txt>Indicate fire-ratings at applicable components. Provide documentation of ABA/ADA accessibility compliance of 
+applicable components, as required by <rid><pre class="display_RID">&lt;RID&gt;</pre>36 CFR 1191<pre class="display_RID">&lt;/RID&gt;</pre></rid> Appendix D - Technical.</txt><brk></brk></spt>
+<spt outline="1.5"><ttl>1.5 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>HARDWARE SCHEDULE<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Prepare and submit hardware schedule in the following form:</txt><brk></brk>
+<tab headerrows="0" width="94">
+<wbk>
+<sts></sts>
+<tda columncount="9" rowcount="1">
+<col autowidth="0" width="66.75"/>
+<col autowidth="0" width="63.75"/>
+<col autowidth="0" width="42.75"/>
+<col autowidth="0" width="75.75"/>
+<col autowidth="0" width="50.25"/>
+<col autowidth="0" width="57.75"/>
+<col autowidth="0" width="57.00"/>
+<col autowidth="0" width="53.25"/>
+<col autowidth="0" width="81.00"/>
+<row autoheight="0" height="107.25">
+<cel>
+<dta type="STRING">Hardware Item</dta>
+</cel>
+<cel>
+<dta type="STRING">Quantity</dta>
+</cel>
+<cel>
+<dta type="STRING">Size</dta>
+</cel>
+<cel>
+<dta type="STRING">Reference Publi-<brk></brk>cation Type No.</dta>
+</cel>
+<cel>
+<dta type="STRING">Finish</dta>
+</cel>
+<cel>
+<dta type="STRING">Mfr Name and Catalog No.</dta>
+</cel>
+<cel>
+<dta type="STRING">Key Control Symbols</dta>
+</cel>
+<cel>
+<dta type="STRING">UL Mark (If fire- rated and listed)</dta>
+</cel>
+<cel>
+<dta type="STRING">BHMA Finish Desig-<brk></brk>nation</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab><brk></brk>
+<txt>In addition, submit hardware schedule data package 1 in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 78 23<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> OPERATION AND MAINTENANCE 
+DATA.</txt><brk></brk></spt>
+<spt outline="1.6"><ttl>1.6 KEY BITTING CHART REQUIREMENTS</ttl><brk></brk>
+<spt outline="1.6.1"><ttl>1.6.1 Requirements</ttl><brk></brk>
+<txt>Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>key bitting<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> charts to the Contracting Officer prior to completion of the work. Include:</txt><brk></brk>
+<lst indent="-0.33">a. Complete listing of all keys.</lst><brk></brk>
+<lst indent="-0.33">b. Complete listing of all key cuts.</lst><brk></brk>
+<lst indent="-0.33">c. Tabulation showing which key fits which door.</lst><brk></brk>
+<lst indent="-0.33">d. Copy of floor plan showing doors and door numbers.</lst><brk></brk>
+<lst indent="-0.33">e. Listing of 20 percent more key cuts than are presently required in each master system.</lst><brk></brk></spt>
+</spt><spt outline="1.7"><ttl>1.7 QUALITY ASSURANCE</ttl><brk></brk>
+<spt outline="1.7.1"><ttl>1.7.1 Hardware Manufacturers and Modifications</ttl><brk></brk>
+<txt>Provide, as far as feasible, locks, hinges,<div class="brackets">[ pivots,]</div> and closers of one lock, hinge,<div class="brackets">[ pivot,]</div> or closer manufacturer's 
+make. Modify hardware as necessary to provide features indicated or specified.</txt></spt><brk></brk>
+<spt outline="1.7.2"><ttl>1.7.2 Key Shop Drawings Coordination Meeting</ttl><brk></brk>
+<txt>Prior to the submission of the key shop drawing, the Contracting Officer, Contractor, Door Hardware Subcontractor, 
+using Activity and Base Locksmith must meet to discuss and coordinate key requirements for the facility.</txt><brk></brk></spt>
+</spt><spt outline="1.8"><ttl>1.8 DELIVERY, STORAGE, AND HANDLING</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Whenever construction master keying is required, permanent keys (and 
+removable cores) should be sent directly to the Contracting Officer.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Deliver hardware in original individual containers, complete with necessary appurtenances including fasteners 
+and instructions. Mark each individual container with item number as shown on hardware schedule.<div class="brackets">[ <tst>Deliver permanent 
+keys<div class="brackets">[ and removable cores]</div> to the Contracting Officer, either directly or by certified mail. Deliver construction 
+master keys with the locks.</tst>]</div></txt><brk></brk></spt>
+</prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<spt outline="2.1"><ttl>2.1 TEMPLATE HARDWARE</ttl><brk></brk>
+<txt>Hardware applied to metal <div class="brackets">[or to prefinished ]</div>doors must be manufactured using a template. Provide templates 
+to door and frame manufacturers in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1510-2<pre class="display_RID">&lt;/RID&gt;</pre></rid> for template hinges. Coordinate hardware items 
+to prevent interference with other hardware.</txt><brk></brk></spt>
+<spt outline="2.2"><ttl>2.2 HARDWARE FOR FIRE DOORS AND EXIT DOORS</ttl><brk></brk>
+<txt>Provide all hardware necessary to meet the requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 72<pre class="display_RID">&lt;/RID&gt;</pre></rid> for door alarms, <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 80<pre class="display_RID">&lt;/RID&gt;</pre></rid> for fire doors, <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 101<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ for exit doors, <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 252<pre class="display_RID">&lt;/RID&gt;</pre></rid> for fire tests of door assemblies, ABA/ADA accessibility requirements, and all other 
+requirements indicated, even if such hardware is not specifically mentioned in paragraph HARDWARE SCHEDULE.<div class="brackets">[ 
+Provide swinging hardware for tin-clad fire doors in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>UL 14C<pre class="display_RID">&lt;/RID&gt;</pre></rid>.]</div> Provide Underwriters Laboratories, 
+Inc. labels for such hardware in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>UL Bld Mat Dir<pre class="display_RID">&lt;/RID&gt;</pre></rid> or equivalent labels in accordance with another 
+testing laboratory approved in writing by the Contracting Officer.</txt><brk></brk></spt>
+<spt outline="2.3"><ttl>2.3 HARDWARE ITEMS</ttl><brk></brk>
+<txt>Clearly and permanently mark with the manufacturer's name or trademark, hinges, pivots, locks, latches, exit 
+devices, bolts and closers where the identifying mark is visible after the item is installed. For closers with 
+covers, the name or trademark may be beneath the cover. Coordinate electrified door hardware components with 
+corresponding components specified in Division 28 ELECTRONIC SECURITY SYSTEMS (ESS).</txt><brk></brk>
+<spt outline="2.3.1"><ttl>2.3.1 Hinges</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1510-3<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide hinges that are<met><pre class="display_MET">&lt;MET&gt;</pre> 114 by 114 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4-1/2 by 4-1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> unless otherwise 
+indicated. Construct loose pin hinges for interior doors and reverse-bevel exterior doors so that pins are non-removable 
+when door is closed. Other anti-friction bearing hinges may be provided in lieu of ball bearing hinges.</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use full-mortise (butt) hinges except where special types are required. 
+Use swing-clear hinges where necessary to keep door opening completely clear 
+when door is opened 90 to 95 degrees. Use wide-throw hinges where necessary 
+to keep door leaf clear of wall, casings, jambs, or reveals. Use antifriction-bearing 
+hinges on high-frequency or extra-heavy doors, and on doors equipped with closers. 
+Use plain-bearing hinges on low-frequency doors up to<met><pre class="display_MET">&lt;MET&gt;</pre> 900 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide and 
+without closers. Use hospital tips in neuropsychiatric areas of medical facilities. 
+In general, full-mortise hinges for interior doors should be steel with BHMA 
+600 finish (primed for painting). Hinges on natural wood or plastic surfaced 
+interior doors should be steel with BHMA 652 finish (satin chromium plated) 
+or BHMA 639 finish (satin bronze plated) to match finish of other door hardware. 
+Hinges for exterior doors should be stainless steel finish or solid brass or 
+bronze with BHMA 626 finish. Use stainless steel with finish on all exterior 
+hinges in humid conditions or project locations with Environmental Severity 
+Classifications (ESC) of C3 thru C5. Humid locations are those in ASHRAE climate 
+zones 0A, 1A, 2A, 3A, 3C, 4C and 5C (as identified in ASHRAE 90.1). See UFC 
+1-200-01 for determination of ESC for project locations. Provide interior hinges 
+at project locations with ESC classifications of C3 thru C5 of cast or forged 
+bronze or stainless steel, Type 302 or 304. Fire rated doors must have base 
+metal of steel or stainless steel. Plated steel hinges may rust if used on 
+exterior doors. Use two hinges for doors<met><pre class="display_MET">&lt;MET&gt;</pre> 1500 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 60 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> or less in height 
+and one additional hinge for each additional<met><pre class="display_MET">&lt;MET&gt;</pre> 750 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 30 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> (or fraction thereof) 
+of door height.<brk></brk>
+1. Select and size hinges for lead lined, unusually heavy, and high-frequency 
+doors on an individual basis.<brk></brk>
+2. The<met><pre class="display_MET">&lt;MET&gt;</pre> 114 by 114 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4-1/2 by 4-1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> listed is for<met><pre class="display_MET">&lt;MET&gt;</pre> 44 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> doors 
+up to<met><pre class="display_MET">&lt;MET&gt;</pre> 915 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide and with up to<met><pre class="display_MET">&lt;MET&gt;</pre> 20 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> trim projection, and 
+covers the majority of openings. For other doors, determine hinge width in 
+accordance with:<brk></brk>
+Twice the door thickness plus trim projection, minus<met><pre class="display_MET">&lt;MET&gt;</pre> 13 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, or 2(t 
+plus p) minus 1/2. If answer falls between regular hinge sizes, use nearest 
+larger size. Formula is for hinges set back<met><pre class="display_MET">&lt;MET&gt;</pre> 6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> from edge of door.<brk></brk><pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
+<brk></brk>
+<met><pre class="display_MET">&lt;MET&gt;</pre><tab headerrows="2">
+<wbk>
+<sts></sts>
+<tda columncount="3" rowcount="10">
+<col autowidth="0" width="187.50"/>
+<col autowidth="0" width="187.50"/>
+<col autowidth="0" width="187.50"/>
+<row autoheight="0" height="24.00">
+<cel mergeacross="2">
+<dta type="STRING"><hl4>Hinge Sizes Chart</hl4></dta>
+</cel>
+</row>
+<row autoheight="0" height="35.25">
+<cel>
+<dta type="STRING">Thickness of Doors in mm</dta>
+</cel>
+<cel>
+<dta type="STRING">Width of Doors in mm</dta>
+</cel>
+<cel>
+<dta type="STRING">Height of Hinges (Length of Joint) in mm</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">22 to 29 screen</dta>
+</cel>
+<cel>
+<dta type="STRING">To 915</dta>
+</cel>
+<cel>
+<dta type="STRING">76</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">35</dta>
+</cel>
+<cel>
+<dta type="STRING">To 815</dta>
+</cel>
+<cel>
+<dta type="STRING">89</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">35</dta>
+</cel>
+<cel>
+<dta type="STRING">Over 815 to 940</dta>
+</cel>
+<cel>
+<dta type="STRING">102</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">44</dta>
+</cel>
+<cel>
+<dta type="STRING">To 915</dta>
+</cel>
+<cel>
+<dta type="STRING">114</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">44</dta>
+</cel>
+<cel>
+<dta type="STRING">Over 915 to 1220</dta>
+</cel>
+<cel>
+<dta type="STRING">127 Heavy Weight</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">44</dta>
+</cel>
+<cel>
+<dta type="STRING">Over 1220</dta>
+</cel>
+<cel>
+<dta type="STRING">152 Heavy Weight</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">51, 57, and 64</dta>
+</cel>
+<cel>
+<dta type="STRING">To 1065</dta>
+</cel>
+<cel>
+<dta type="STRING">127 Heavy Weight</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">51, 57, and 64</dta>
+</cel>
+<cel>
+<dta type="STRING">Over 1065</dta>
+</cel>
+<cel>
+<dta type="STRING">152 Heavy Weight</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl></tab><brk></brk><pre class="display_MET">&lt;/MET&gt;</pre></met>
+<brk></brk>
+<eng><pre class="display_ENG">&lt;ENG&gt;</pre><tab headerrows="2">
+<wbk>
+<sts>
+<sty sid="s50">
+<aln vertical="BOTTOM"></aln>
+</sty>
+</sts>
+<tda columncount="3" rowcount="10">
+<col autowidth="0" styleid="s50" width="150.00"/>
+<col autowidth="0" styleid="s50" width="150.00"/>
+<col autowidth="0" width="150.00"/>
+<row autoheight="0" height="24.00">
+<cel mergeacross="2" styleid="s50">
+<dta type="STRING"><hl4>Hinge Sizes Chart</hl4></dta>
+</cel>
+</row>
+<row autoheight="0" height="34.50">
+<cel styleid="s50">
+<dta type="STRING">Thickness of Doors in inches</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Width of Doors in inches</dta>
+</cel>
+<cel>
+<dta type="STRING">Height of Hinges (Length of Joint) in inches</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">7/8 to 1-1/8 screen</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">To 36</dta>
+</cel>
+<cel>
+<dta type="STRING">3</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">1-3/8</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">To 32</dta>
+</cel>
+<cel>
+<dta type="STRING">3-1/2</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">1-3/8</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Over 32 to 37</dta>
+</cel>
+<cel>
+<dta type="STRING">4</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">1-3/4</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">To 36</dta>
+</cel>
+<cel>
+<dta type="STRING">4-1/2</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">1-3/4</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Over 36 to 48</dta>
+</cel>
+<cel>
+<dta type="STRING">5 Heavy Weight</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">1-3/4</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Over 48</dta>
+</cel>
+<cel>
+<dta type="STRING">6 Heavy Weight</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">2, 2-1/4 and 2-1/2</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">To 42</dta>
+</cel>
+<cel>
+<dta type="STRING">5 Heavy Weight</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.75">
+<cel styleid="s50">
+<dta type="STRING">2, 2-1/4 and 2-1/2</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Over 42</dta>
+</cel>
+<cel>
+<dta type="STRING">6 Heavy Weight</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl><brl></brl><brl></brl></tab><pre class="display_ENG">&lt;/ENG&gt;</pre></eng><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<spt outline="2.3.1.1"><ttl>2.3.1.1 Protection Devices</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: In accordance with UFC 4-740-14 Design: Child Development Centers provide 
+finger guards to protect children's fingers from being crushed or injured in 
+the hinge space of a door or gate.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide full height hand and finger protection device at the hinge-side area opening of doors and gates. Provide 
+hinge-side protection devices on both sides of doors and gates, covering hinges and space between door and frame 
+when doors are in the open position. The installed device must push hand and fingers out of the opening and 
+away from a crushing hazard.</txt><brk></brk></spt>
+]</div></spt><spt outline="2.3.2"><ttl>2.3.2 Continuous Hinges</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For heavy duty doors, where required. Coordinate with security door 
+specifications.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Where continuous hinges are required, provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1510-2<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.3.3"><ttl>2.3.3 Pivots</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For extra heavy doors, pivots are sometimes preferable to hinges, particularly 
+on entrance doors and lead-lined doors.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1510-3<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.3.4"><ttl>2.3.4 Spring Hinges</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use spring hinges only where closers are not practicable and for gates 
+at counters. Ensure that specified spring hinges are large enough and strong 
+enough to serve their purpose adequately. See manufacturers catalogs for recommendations 
+on sizes, quantities, and styles of spring hinges.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1510-3<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.3.5"><ttl>2.3.5 Locks and Latches</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Specify Series 1000, in paragraph MORTISE LOCKS AND LATCHES, for hollow 
+metal doors where security is a major factor.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For BEQ sleeping room doors, use heavy-duty pushbutton combination locks with 
+keyed cylinder bypass. Check with activity housing managers to determine preference.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For doors between sleeping room and shared bath, use a privacy lock, and a deadlock, 
+(key by thumb turn) keyed like the sleeping room entrance door and with the 
+key on the bathroom side.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose the applicable paragraph(s) from the following.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Insert this paragraph into all locks and locksets in humid conditions 
+or project locations with Environmental Severity Classifications (ESC) of C3 
+thru C5. Humid locations are those in ASHRAE climate zones 0A, 1A, 2A, 3A, 
+3C, 4C and 5C (as identified in ASHRAE 90.1). See UFC 1-200-01 for determination 
+of ESC for project locations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<lst indent="-0.33">a. At exterior locations provide locksets of full stainless steel type 302 or 304 construction including 
+fronts, strike, escutcheons, knobs, bolts and all interior working parts. Marine Grade I, fully non-ferrous.</lst><brk></brk>
+<lst indent="-0.33">b. In non-air-conditioned interior environments or humid interior environments, provide interior locksets 
+on the same Marine Grade I, fully non-ferrous as exterior locksets.</lst><brk></brk>
+]</div><spt outline="2.3.5.1"><ttl>2.3.5.1 Mortise Locks and Latches</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1541-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>.<div class="brackets">[ Provide factory installed lead lining in locks for lead shielded doors.]</div><div class="brackets">[ 
+Provide mortise locks with escutcheons not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 178 by 57 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 7 by 2-1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> with a bushing at least<met><pre class="display_MET">&lt;MET&gt;</pre> 6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>
+ 1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> long. Cut escutcheons to fit cylinders and provide trim items with straight, beveled, or smoothly 
+rounded sides, corners, and edges.]</div> Provide knobs and roses of mortise locks with screwless shanks and no exposed 
+screws.</txt><brk></brk></spt>
+<spt outline="2.3.5.2"><ttl>2.3.5.2 Bored Locks and Latches</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 4702<pre class="display_RID">&lt;/RID&gt;</pre></rid>.<div class="brackets">[ Provide factory installed lead lining in locks for lead -shielded doors.]</div></txt><brk></brk></spt>
+<spt outline="2.3.5.3"><ttl>2.3.5.3 Residential Bored Locks and Latches</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For temporary buildings and family housing only. Delete if not applicable.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 4702<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Install locks for exterior doors with threaded roses or concealed machine 
+screws.</txt><brk></brk></spt>
+<div class="brackets">[<spt outline="2.3.5.4"><ttl>2.3.5.4 Interconnected Locks and Latches</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For exterior doors in family housing units only.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1541-2<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+]</div><spt outline="2.3.5.5"><ttl>2.3.5.5 Hospital Latches</ttl><brk></brk>
+<txt>Push-pull latch set as required to meet operational requirements,<met><pre class="display_MET">&lt;MET&gt;</pre> 13 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> throw, <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>70 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>2-3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>127 
+mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>5 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> backset, to fit 161 cutout. Cover approximately<met><pre class="display_MET">&lt;MET&gt;</pre> 64 by 140 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2-1/2 by 5-1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, handle approximately<met><pre class="display_MET">&lt;MET&gt;</pre>
+ 38 by 114 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-1/2 by 4-1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, projection approximately<met><pre class="display_MET">&lt;MET&gt;</pre> 64 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2-1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, covers and handles of stainless 
+steel finish, engraved "PUSH" and "PULL" on handles, push handle pointing up, pull handle pointing down.</txt><brk></brk></spt>
+<spt outline="2.3.5.6"><ttl>2.3.5.6 Auxiliary Locks</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete if not applicable.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide lock having a <div class="brackets">[latch bolt]</div> or <div class="brackets">[dead bolt]</div> operated by a <div class="brackets">[key]</div>, <div class="brackets">[paddle <div class="brackets">[and]</div> <div class="brackets">[and/or]</div> turn]</div>, which is 
+used in addition to a primary lock or latching device to meet operational requirements.</txt><brk></brk></spt>
+<spt outline="2.3.5.7"><ttl>2.3.5.7 Combination Locks</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For medical projects only, include the first bracketed option.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><div class="brackets">[Key pharmacy door locks separately from building master key system. ]</div>Heavy-duty, mechanical combination lockset 
+with five push buttons, standard sized knobs,<met><pre class="display_MET">&lt;MET&gt;</pre> 20 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> deadlocking latch,<met><pre class="display_MET">&lt;MET&gt;</pre> 70 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2-3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> backset. Locks 
+to operate by pressing two or more of the buttons in unison or individually in the proper sequence. Inside knob 
+operates the latch. Provide a keyed cylinder on the interior to permit setting the combination.<div class="brackets">[ Provide a 
+keyed <div class="brackets">[removable core ]</div>cylinder on the exterior to permit bypassing the combination.]</div><div class="brackets">[ Provide a thumb turn 
+on the interior to activate passage set function so that outside knob operates latch without using the combination.]</div></txt><brk></brk></spt>
+</spt><spt outline="2.3.6"><ttl>2.3.6 Exit Devices</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Due to the difficulty in securing exit devices against unauthorized use, 
+they should only be specified where required by NFPA 101. Use single exit doors 
+with locksets in preference to pairs of doors. When pairs are required, specify 
+removable mullions and rim type devices. Vertical rod devices require use of 
+an overlapping astragal and door coordinator for security and fire protection. 
+They should be used only where mullions are not feasible.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Insert the last bracketed paragraph for all exit devices in humid conditions 
+or project locations with Environmnental Severity Classifications (ESC) of C3 
+thru C5. Humid locations are those in ASHRAE climate zones 0A, 1A, 2A, 3A, 
+3C, 4C and 5C (as identified in ASHRAE 90.1). See UFC 1-200-01 for determination 
+of ESC for project locations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide adjustable strikes for rim type and vertical rod devices. Provide open back strikes for pairs of doors 
+with mortise and vertical rod devices. Provide <div class="brackets">[touch bars in lieu of conventional crossbars and arms.]</div><div class="brackets">[ Provide 
+escutcheons not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 178 by 57 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 7 by 2-1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.]</div></txt><brk></brk>
+<div class="brackets">[<txt>Use stainless steel or bronze base metal with plated finishes. Also include stainless steel fasteners and screws.</txt><brk></brk>
+]</div></spt><spt outline="2.3.7"><ttl>2.3.7 Exit Locks With Alarm</ttl><brk></brk>
+<txt>Provide <div class="brackets">[with full width horizontal actuating bar]</div> for single doors; Type E0431 <div class="brackets">[with actuating bar]</div> or E0471 
+<div class="brackets">[with actuating bar and top and bottom bolts, both leaves active]</div> for pairs of doors, unless otherwise specified.<div class="brackets">[ 
+Provide terminals for connection to remote indicating panel.]</div><div class="brackets">[ Provide outside control key.]</div> Provide door alarms 
+integrated with the fire alarm system in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 72<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.3.8"><ttl>2.3.8 Cylinders and Cores</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: When an extension of an existing system is required, the manufacturer's 
+name and type of locks should be indicated. Confirm existing hardware requirements 
+with Contracting Officer's Representative (COR). Requirements may include but 
+are not limited to interchangeable cores, product level of quality, compatibility, 
+if any, with other manufacturers' hardware components.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Specify the system which will best meet the activity's needs without restricting 
+competition.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><div class="brackets">[Provide cylinders and cores for new locks, including locks provided under other sections of this specification. 
+]</div>Provide cylinders and cores with <div class="brackets">[six]</div> <div class="brackets">[seven]</div> pin tumblers. Provide cylinders from the products of one manufacturer, 
+and provide cores from the products of one manufacturer.<div class="brackets">[ Rim cylinders, mortise cylinders, and knobs of bored 
+locksets have interchangeable cores which are removable by special control keys. Stamp each interchangeable 
+core with a key control symbol in a concealed place on the core.]</div></txt><brk></brk>
+<div class="brackets">[<txt>Provide cylinders for new locks, including locks provided under other sections of this specification. Provide 
+fully compatible cylinders of Grade 1 products from products of one manufacturer with interchangeable cores that 
+are removable by a special control key. Factory set the cores with <div class="brackets">[six]</div> <div class="brackets">[seven]</div> pin tumblers. Submit a core 
+code sheet with the cores. Provide master keyed cores in one system for this project. Provide construction 
+interchangeable cores.</txt><brk></brk>
+]</div><div class="brackets">[<txt>For medical projects, key pharmacy door locks separately from building master key system.</txt><brk></brk>
+]</div><spt outline="2.3.8.1"><ttl>2.3.8.1 High Security Cylinders</ttl><brk></brk>
+<txt>Provide high security cylinder with locking technology that limits the duplication of unauthorized keys or unauthorized 
+electronic credentials that would operate the locks. High security cylinder must be able to stand up to forcing, 
+drilling, sawing, prying, pulling, plug driving, picking and have corrosion resistance. <div class="brackets">[High security cylinder 
+to comply with <rid><pre class="display_RID">&lt;RID&gt;</pre>UL 437<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>.</txt><brk></brk></spt>
+</spt><spt outline="2.3.9"><ttl>2.3.9 Push Button Mechanisms</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1541-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.3.10"><ttl>2.3.10 Electrified Hardware</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Coordinate electrified hardware operation and specific backup power requirements 
+with site safety personnel, site fire authority, and applicable life safety 
+codes. Determine whether signal switches are required for the particular site 
+application.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Comply with the requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 70<pre class="display_RID">&lt;/RID&gt;</pre></rid> for wiring of electrified hardware.</txt><brk></brk>
+<spt outline="2.3.10.1"><ttl>2.3.10.1 Electric Strikes and Frame Mounted Actuators</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Specify electric strikes and lock functionality when power fails. Choose 
+one of three bracketed choices (release automatically, remain secure or remain 
+maintained).<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide electric strikes and actuators as required to meet operational requirements. Provide electric strikes 
+that <div class="brackets">[release automatically]</div> <div class="brackets">[remain secure]</div> <div class="brackets">[remain maintained]</div> during power failure.<div class="brackets">[ Provide a separate power 
+supply for electric strikes, other locking devices and ancillary parts.]</div><div class="brackets">[ Provide battery backup for continued 
+operation during power failure.]</div> Provide strikes and actuators with a minimum opening force of<met><pre class="display_MET">&lt;MET&gt;</pre> 101 kilonewtons 
+(kN)<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2300 pounds<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.</txt><brk></brk>
+<txt>Provide facility interface devices that use direct current (dc) power to energize the solenoids. Provide electric 
+strikes and actuators that incorporate end-of-line resistors to facilitate line supervision by the system. If 
+not incorporated into the electric strike or local controller, provide metal oxide resistors (MOVs) to protect 
+the controller from reverse current surges.</txt><brk></brk>
+<spt outline="2.3.10.1.1"><ttl>2.3.10.1.1 Solenoid</ttl><brk></brk>
+<txt>Provide actuating solenoid for strikes and actuators that are rated for continuous duty, cannot dissipate more 
+than 12 Watts and must operate on 12 or 24 Volts dc. Inrush current cannot exceed 1 ampere and the holding current 
+cannot be greater than 500 milliamperes. Actuating solenoid must move from fully secure to fully open positions 
+in less than 500 milliseconds.</txt><brk></brk></spt>
+<spt outline="2.3.10.1.2"><ttl>2.3.10.1.2 Signal Switches</ttl><brk></brk>
+<txt>Provide strikes and actuators with signal switches to indicate to the system when the bolt is not engaged or 
+the strike mechanism is unlocked. Signal switches must report a forced entry to the system.</txt><brk></brk></spt>
+<spt outline="2.3.10.1.3"><ttl>2.3.10.1.3 Tamper Resistance</ttl><brk></brk>
+<div class="brackets">[<txt>Provide strike guards that prevent tampering with the latch bolt of the locking hardware or the latch bolt keeper 
+of the electric strike. Strike guards to bolt through the door using tamper resistant screws. Provide strike 
+guards made of<met><pre class="display_MET">&lt;MET&gt;</pre> 3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick brass and that are<met><pre class="display_MET">&lt;MET&gt;</pre> 286 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 11-1/14 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high by<met><pre class="display_MET">&lt;MET&gt;</pre> 41 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-5/8 inch wide<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, with 
+a minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 4 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5/32 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide offset.</txt><brk></brk>
+]</div></spt><spt outline="2.3.10.1.4"><ttl>2.3.10.1.4 Coordination</ttl><brk></brk>
+<txt>Provide electric strikes and actuators of a size, weight and profile compatible with each specified door frame. 
+Field verify installation clearances prior to procurement.</txt><brk></brk></spt>
+<spt outline="2.3.10.1.5"><ttl>2.3.10.1.5 Mounting Method</ttl><brk></brk>
+<txt>Provide electric strikes and actuators suitable for use with single and double doors, with mortise or rim type 
+hardware specified, and for right or left hand mounting as specified. In double door installations, locate the 
+lock in the active leaf and monitor the fixed leaf.</txt><brk></brk></spt>
+</spt><spt outline="2.3.10.2"><ttl>2.3.10.2 Electrified Mortise Locks</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Electrified mortise locks provide an excellent solution for stairwell 
+doors that require positive latching when unlocked. A power transfer hinge 
+or raceway is required to get power and signal wire from the door to the doorframe 
+for a secure and fully enclosed connection to the access control system. Specify 
+power transfer hinges for doors with electrified hardware.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide electrified mortise locks that <div class="brackets">[release automatically]</div> <div class="brackets">[remain secure]</div> <div class="brackets">[remain maintained]</div> during power 
+failure. Provide facility interface devices that use dc power to energize solenoids. Provide solenoids, resisters, 
+and signal switches in accordance with paragraph ELECTRIC STRIKES AND FRAME MOUNTED ACTUATORS.</txt><brk></brk>
+<spt outline="2.3.10.2.1"><ttl>2.3.10.2.1 Power Transfer Hinges</ttl><brk></brk>
+<txt>Provide power transfer hinges with each electrified lock that route power and monitoring signals from the lockset 
+to the door frame. Coordinate power transfer hinges with door frames.</txt><brk></brk></spt>
+</spt><spt outline="2.3.10.3"><ttl>2.3.10.3 Card Readers and Keypad Access Control Hardware</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Verify card readers are compatible with card type. Coordinate this section 
+with Division 28 ELECTRONIC SECURITY SYSTEMS (ESS) requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide devices that are tamper alarmed, tamper and vandal resistant, solid state, and do not contain electronics 
+which could compromise the access control subsystem should the subsystem be attacked. Provide surface, semi-flush, 
+pedestal, or weatherproof mountable devices as specified for each individual location.<div class="brackets">[ Each device to contain 
+a visual display, either mounted on the face, or on an integral part of the device, to indicate access or exit 
+request processing, request approval, and request denial.]</div> Provide <div class="brackets">[proximity]</div> <div class="brackets">[insertion]</div> <div class="brackets">[swipe through]</div> type 
+card readers capable of reading <div class="brackets">[magnetic stripe]</div> <div class="brackets">[high coercivity magnetic stripe]</div> <div class="brackets">[Wiegand]</div> <div class="brackets">[Hollerith]</div> <div class="brackets">[proximity]</div>
+<div class="brackets">[Transmissive Infrared]</div> <div class="brackets">[Keypad]</div> <div class="brackets">[<div class="brackets">[_____]</div>/Keypad]</div> <div class="brackets">[Smart Card]</div> <div class="brackets">[Biometric]</div> <div class="brackets">[_____]</div> type access control cards. 
+Provide keypads that contain an integral 12-digit tactile keyboard with digits <div class="brackets">[arranged in numerical order]</div>. 
+Provide keypads that are <div class="brackets">[a standalone device]</div> <div class="brackets">[or]</div> <div class="brackets">[integrated into the card reader]</div>. Coordinate access control 
+hardware with corresponding devices and systems specified in Division 28 ELECTRONIC SECURITY SYSTEMS (ESS).</txt><brk></brk></spt>
+<spt outline="2.3.10.4"><ttl>2.3.10.4 Power Operated Pedestrian Door Hardware</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 4722<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.3.10.5"><ttl>2.3.10.5 Release Devices</ttl><brk></brk>
+<txt>In accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1510-3<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk>
+<spt outline="2.3.10.5.1"><ttl>2.3.10.5.1 Closer Holders</ttl><brk></brk>
+<txt>Provide <div class="brackets">[floor]</div> <div class="brackets">[door]</div> <div class="brackets">[header]</div> mounted closer holder devices connected by <div class="brackets">[separate releasing]</div> <div class="brackets">[integral releasing]</div> 
+to <div class="brackets">[fire]</div> <div class="brackets">[smoke]</div> detecting devices.</txt><brk></brk></spt>
+<spt outline="2.3.10.5.2"><ttl>2.3.10.5.2 Release Devices</ttl><brk></brk>
+<txt>Provide <div class="brackets">[wall]</div> <div class="brackets">[floor]</div> <div class="brackets">[door]</div> mounted <div class="brackets">[Electromagnetic]</div> <div class="brackets">[electromechanical]</div> <div class="brackets">[free swinging]</div> release devices connected 
+to <div class="brackets">[fire]</div> <div class="brackets">[smoke]</div> detecting devices.</txt><brk></brk></spt>
+</spt><spt outline="2.3.10.6"><ttl>2.3.10.6 Power Assist and Low Energy Power Operated Doors</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 4722<pre class="display_RID">&lt;/RID&gt;</pre></rid>. </txt><brk></brk></spt>
+<spt outline="2.3.10.7"><ttl>2.3.10.7 Electromagnetic Locks</ttl><brk></brk>
+<txt>Provide electromagnetic locks that do not contain any moving parts and depend solely upon electromagnetism to 
+secure a portal by generating at least<met><pre class="display_MET">&lt;MET&gt;</pre> 5.3 kN<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1200 pounds<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of holding force. The lock must interface with the 
+local processors without external, internal or functional alteration of the local processor. The electromagnetic 
+lock must incorporate an end of line resistor to facilitate line supervision by the system. Provide metal-oxide 
+resistors (MOVs) to protect controllers from reverse current surges, if not incorporated into the electromagnetic 
+lock or local controller.</txt><brk></brk>
+<spt outline="2.3.10.7.1"><ttl>2.3.10.7.1 Armature</ttl><brk></brk>
+<txt>Provide electromagnetic locks with internal circuitry to eliminate residual magnetism and inductive kickback. 
+Provide atuating armature that operates on 12 or 24 Volts dc and cannot dissipate more than 12 Watts. Holding 
+current must be less than 500 milliamperes. Actuating armature must take less than 300 milliseconds to change 
+the status of the lock from fully secure to fully open or fully open to fully secure.</txt><brk></brk></spt>
+<spt outline="2.3.10.7.2"><ttl>2.3.10.7.2 Tamper Resistance</ttl><brk></brk>
+<txt>Provide lock mechanism encased in hardened guard barriers to deter forced entry.</txt><brk></brk></spt>
+<spt outline="2.3.10.7.3"><ttl>2.3.10.7.3 Mounting Method</ttl><brk></brk>
+<txt>Provide electromagnetic lock suitable for use with single and double door with mortise or rim type hardware and 
+compatible with right or left hand mounting.</txt><brk></brk></spt>
+</spt><spt outline="2.3.10.8"><ttl>2.3.10.8 Delayed Egress Locking System</ttl><brk></brk>
+<txt>Provide delayed egress product capable of allowing the door to be opened by actuating the lock which is equipped 
+with a 15-second maximum delayed feature including a zero-to-three second pre-delay. The door shall be allowed 
+to close by action of the door closer. Electrically re-lock the system so that the time delay is operative. 
+A force, not to exceed 67 N, shall be continuously applied on the door or release device allowing the door to 
+be opened after not more than 15 seconds.</txt><brk></brk></spt>
+<spt outline="2.3.10.9"><ttl>2.3.10.9 Power and Manual Operated Revolving Pedestrian Doors</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1551<pre class="display_RID">&lt;/RID&gt;</pre></rid> for powered revolving pedestrian doors and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 4721<pre class="display_RID">&lt;/RID&gt;</pre></rid> for manual operated 
+revolving pedestrian doors.</txt><brk></brk></spt>
+</spt><spt outline="2.3.11"><ttl>2.3.11 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Keying System<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Do not require higher levels of master keying than necessary because 
+each level decreases the security of the locks. Specify a construction system 
+where necessary to ensure security after construction is complete.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide<div class="brackets">[ a <div class="brackets">[great]</div><div class="brackets">[grand]</div> master keying system]</div><div class="brackets">[ an extension of the existing keying system. Existing locks 
+were manufactured by <div class="brackets">[_____]</div> and <div class="brackets">[do not]</div> have interchangeable cores.]</div><div class="brackets">[ Provide<div class="brackets">[ a construction master keying 
+system]</div><div class="brackets">[ construction interchangeable cores]</div>.]</div><div class="brackets">[ Provide key cabinet as specified.]</div></txt><brk></brk></spt>
+<spt outline="2.3.12"><ttl>2.3.12 Lock Trim</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For facilities that have not been certified as accessible only to able-bodied 
+personnel, specify lever handles for doors that will be accessible to disabled 
+persons and knurled or abrasive coated knobs and lever handles for doors that 
+are accessible to the visually impaired and that lead to dangerous areas. When 
+only lever handles will be required, delete the paragraph KNOBS AND ROSES and 
+the first bracket statement in the paragraph LEVER HANDLES.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide cast, forged, or heavy wrought construction and commercial plain design for lock trim.</txt><brk></brk>
+<spt outline="2.3.12.1"><ttl>2.3.12.1 Knobs and Roses</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 4702<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1541-1<pre class="display_RID">&lt;/RID&gt;</pre></rid> for knobs, roses, and escutcheons. For unreinforced knobs, 
+roses, and escutcheons, provide a<met><pre class="display_MET">&lt;MET&gt;</pre> 1.25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.050 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thickness. For reinforced knobs, roses, and escutcheons, 
+provide an outer shell thickness of<met><pre class="display_MET">&lt;MET&gt;</pre> 0.89 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.035 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and a combined total thickness of<met><pre class="display_MET">&lt;MET&gt;</pre> 1.78 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.070 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, 
+except at knob shanks. Provide knob shanks<met><pre class="display_MET">&lt;MET&gt;</pre> 1.52 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.060 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick.</txt><brk></brk></spt>
+<spt outline="2.3.12.2"><ttl>2.3.12.2 Lever Handles</ttl><brk></brk>
+<txt>Provide lever handles <div class="brackets">[where indicated in the Hardware Schedule]</div>. Provide lever handle locks with a breakaway 
+feature (such as a weakened spindle or a shear key) to prevent irreparable damage to the lock when force in excess 
+of that specified in <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1541-1<pre class="display_RID">&lt;/RID&gt;</pre></rid> is applied to the lever handle. Provide lever handles return to within<met><pre class="display_MET">&lt;MET&gt;</pre> 13 
+mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of the door face.</txt><brk></brk></spt>
+<spt outline="2.3.12.3"><ttl>2.3.12.3 Texture</ttl><brk></brk>
+<txt>Provide knurled or abrasive coated knobs or lever handles for doors which are accessible to blind persons and 
+which lead to dangerous areas.</txt><brk></brk></spt>
+</spt><spt outline="2.3.13"><ttl>2.3.13 Keys</ttl><brk></brk>
+<txt><div class="brackets">[Furnish]</div><div class="brackets">[Provide]</div> one file key, one duplicate key, and one working key for each key change <div class="brackets">[and for each master 
+<div class="brackets">[and grand master]</div> keying system]</div>. <div class="brackets">[Furnish]</div><div class="brackets">[Provide]</div> one additional working key for each lock of each keyed-alike 
+group.<div class="brackets">[ <div class="brackets">[Furnish]</div><div class="brackets">[Provide]</div> two additional keys for each sleeping room.]</div><div class="brackets">[ <div class="brackets">[Furnish]</div><div class="brackets">[Provide]</div> <div class="brackets">[<div class="brackets">[_____]</div> great 
+grand master keys,]</div> <div class="brackets">[<div class="brackets">[_____]</div> construction master keys,]</div> <div class="brackets">[and <div class="brackets">[_____]</div> control keys for removable cores]</div>.]</div><div class="brackets">[ <div class="brackets">[Furnish]</div><div class="brackets">[Provide]</div> 
+a quantity of key blanks equal to 20 percent of the total number of file keys.]</div> Stamp each key with appropriate 
+key control symbol and "U.S. property - do not duplicate." Do not place room number on keys.</txt><brk></brk></spt>
+<spt outline="2.3.14"><ttl>2.3.14 Door Bolts</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use chain and foot bolts for exceptionally high doors and where use of 
+flush bolts is impracticable.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 4702<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide dustproof strikes for bottom bolts, except at doors having metal 
+thresholds. Provide automatic latching flush bolts to meet operational requirements.</txt><brk></brk></spt>
+<spt outline="2.3.15"><ttl>2.3.15 Closers</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use closers Type C02011 with o.f. PT 4C for surface applications, except 
+use parallel arm closers, C02021, on outswinging exterior doors. Specify holder 
+arms, C02051 and C02061, where doors must be held open from 90 degrees to 135 
+degrees, or to 180 degrees where desired. Do not use holder arms for fire-rated 
+doors. Use overhead concealed closers on main entrance doors of monumental 
+buildings, double-acting doors, and for other openings where concealment is 
+necessary. Avoid overhead concealed closers with wood doors. Where they cannot 
+be avoided, modify section on wood doors to require a<met><pre class="display_MET">&lt;MET&gt;</pre> 125 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> head rail. 
+Avoid use of floor-concealed closers, but where required, ascertain that floor 
+slab design will not interfere with closer case.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Insert the bracketed paragraph for all doors in humid conditions or project 
+locations with Environmnental Severity Classifications (ESC) of C3 thru C5. 
+Humid locations are those in ASHRAE climate zones 0A, 1A, 2A, 3A, 3C, 4C and 
+5C (as identified in ASHRAE 90.1). See UFC 1-200-01 for determination of ESC 
+for project locations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1510-3<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide with brackets, arms, mounting devices, fasteners, <div class="brackets">[full size 
+covers, except at storefront mounting,]</div> <div class="brackets">[pivots,]</div> <div class="brackets">[cement cases,]</div> and other features necessary for the particular 
+application. Size closers in accordance with manufacturer's printed recommendations, or provide multi-size closers, 
+Sizes 1 through 6, and list sizes in the Hardware Schedule. Provide manufacturer's 10 year warranty.</txt><brk></brk>
+<div class="brackets">[<txt>Use stainless steel inside bracketed or door mounted closers on exterior doors. Non-ferrous closers, such as 
+aluminum or cast bronze, are permissible where door utilization is minimal. On interior doors use closers of 
+302 or 304 stainless steel or non-ferrous materials. On surface-mounted closers use or apply rust inhibiting 
+finish on all ferrous parts. Also apply this finish on concealed closers.</txt><brk></brk>
+]</div><spt outline="2.3.15.1"><ttl>2.3.15.1 Identification Marking</ttl><brk></brk>
+<txt>Engrave each closer with manufacturer's name or trademark, date of manufacture, and manufacturer's size designation 
+in locations that will be visible after installation.</txt><brk></brk></spt>
+</spt><spt outline="2.3.16"><ttl>2.3.16 Overhead Holders</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use overhead holders for doors which will not swing 180 degrees and where 
+there is no adjacent wall to accommodate wall type holder and stop. If holder 
+must be on outside of doors, specify bronze with satin chrome finish. Overhead 
+holders can be specified as "Stop Only" where the hold open feature is not desirable.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1510-3<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.3.17"><ttl>2.3.17 Door Protection Plates</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use pulls attached to plates. Use<met><pre class="display_MET">&lt;MET&gt;</pre> 200 by 400 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 8 by 16 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> push plates 
+where door design permits. Use push bars or push and pull bars on all-glass 
+doors. Use kick plates for push sides of doors equipped with closers. Use 
+door plates in high traffic areas and where damage from rolling carts, shoe 
+scuffs, and other potential damage to the bottom of doors is likely. Use door 
+plates for hospital and clinic environments. Use armor plates on heavy-duty 
+doors where hand trucks or other heavy objects regularly passing through the 
+door could cause damage.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 4702<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk>
+<spt outline="2.3.17.1"><ttl>2.3.17.1 Sizes of [Armor] [Mop] [and] Kick Plates</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: NFPA 80 requires that door plates be not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 400 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 16 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high. 
+Where wheelchair traffic is anticipated, kick plates should be<met><pre class="display_MET">&lt;MET&gt;</pre> 400 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 16 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
+ high.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><met><pre class="display_MET">&lt;MET&gt;</pre>50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> less than door width for single doors;<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> less than door width for pairs of doors. Provide 
+<div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[200]</div> <div class="brackets">[1200]</div> mm <pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre><div class="brackets">[8]</div> <div class="brackets">[10]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> kick plates for flush doors]</div> <div class="brackets">[and]</div> <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>125 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> less than height of bottom rail 
+for panel doors]</div>. Provide a minimum<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[900]</div> <div class="brackets">[1200]</div> <div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[36]</div> <div class="brackets">[48]</div> <div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> armor plates for flush doors 
+<div class="brackets">[and]</div> completely cover lower panels of panel doors, except<met><pre class="display_MET">&lt;MET&gt;</pre> 400 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 16 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high armor plates on fire doors. Provide<met><pre class="display_MET">&lt;MET&gt;</pre>
+<div class="brackets">[100]</div> <div class="brackets">[150]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[4]</div> <div class="brackets">[6]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> mop plates.</txt><brk></brk></spt>
+<spt outline="2.3.17.2"><ttl>2.3.17.2 Edge Guards</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Edge guards should be detailed on drawings; stipulate items such as material, 
+gauge, and dimensions. Use edge guards in addition to armor plates on heavy-duty 
+doors where hand trucks or other heavy objects passing through could damage 
+doors. They are not required at hinge stiles on doors equipped with "swing 
+clear" hinges.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Stainless steel, of same height as armor plates. Apply to <div class="brackets">[hinge stile]</div> <div class="brackets">[lock stile]</div> <div class="brackets">[meeting stiles]</div>.</txt><brk></brk></spt>
+</spt><spt outline="2.3.18"><ttl>2.3.18 Door Stops and Silencers</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Specify wall bumpers wherever practical, except where they would be mounted 
+on stud walls or partitions. Use floor stops only where necessary to prevent 
+doors from hitting towel bars or similar items, as they create stumbling hazards 
+and interfere with floor cleaning equipment.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 4702<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide three silencers for each single door, two for each pair.</txt><brk></brk></spt>
+<spt outline="2.3.19"><ttl>2.3.19 Padlocks</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: See referenced specification for types, grades and options available.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide padlock of <div class="brackets">[solid extruded brass]</div> <div class="brackets">[stainless steel]</div>. <div class="brackets">[Shackle to be cut-resistant]</div>. Provide lock functions 
+consisting of <div class="brackets">[key retained]</div>, <div class="brackets">[non-key retained]</div>, <div class="brackets">[frangible shackle]</div>, <div class="brackets">[double lockout]</div>, <div class="brackets">[weather cover]</div>, <div class="brackets">[car 
+seal slot]</div>.</txt><brk></brk></spt>
+<spt outline="2.3.20"><ttl>2.3.20 Thresholds</ttl><brk></brk>
+<txt>Use vinyl or silicone rubber insert in face of stop, for exterior doors opening out, unless specified otherwise.</txt><brk></brk></spt>
+<spt outline="2.3.21"><ttl>2.3.21 Weatherstripping Gasketing</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Weatherstripping is also specified in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>08 11 13<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> STEEL DOORS AND 
+FRAMES Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>08 11 16<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> ALUMINUM DOORS AND FRAMES and Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>08 14 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> WOOD 
+DOORS. Coordinate requirements to avoid conflict and duplication. Do not use 
+interlocking type or spring tension type on metal doors and frames.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Maximum air leakage rates are<met><pre class="display_MET">&lt;MET&gt;</pre> 2.19 by 10-5 cms per sq m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.5 cfm per sq. 
+ft.<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of door area for residential swinging doors and<met><pre class="display_MET">&lt;MET&gt;</pre> 5.48 by 10-5 cms per sq 
+m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1.25 cfm per sq. ft.<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of door area for non-residential swinging doors.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5756<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide the type and function designation where specified in paragraph 
+HARDWARE SCHEDULE. Provide a set to include head and jamb seals<div class="brackets">[, sweep strips,]</div> <div class="brackets">[and, for pairs of doors, astragals]</div>. 
+Air leakage of weatherstripped doors not to exceed<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[2.19 by 10-5]</div> <div class="brackets">[5.48 by 10-5]</div> cms<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[0.5]</div> <div class="brackets">[1.25]</div> cubic feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> 
+per minute of air per square<met><pre class="display_MET">&lt;MET&gt;</pre> meter<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of door area when tested in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1516<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide weatherstripping 
+with one of the following:</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: At exterior doors, retainers at sills are necessary for air leakage and 
+for weather and vermin protection.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="2.3.21.1"><ttl>2.3.21.1 Extruded Aluminum Retainers</ttl><brk></brk>
+<txt>Extruded aluminum retainers not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 1.25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.050 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wall thickness with vinyl, neoprene, silicone rubber, 
+or polyurethane inserts. Provide <div class="brackets">[clear (natural)]</div> <div class="brackets">[bronze]</div> anodized aluminum.</txt><brk></brk></spt>
+<spt outline="2.3.21.2"><ttl>2.3.21.2 Interlocking Type</ttl><brk></brk>
+<txt>Zinc or bronze not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 0.45 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.018 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick.</txt><brk></brk></spt>
+<spt outline="2.3.21.3"><ttl>2.3.21.3 Spring Tension Type</ttl><brk></brk>
+<txt>Spring bronze or stainless steel not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 0.20 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.008 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick.</txt><brk></brk></spt>
+</spt><spt outline="2.3.22"><ttl>2.3.22 [Lightproofing] [and] [Soundproofing] Gasketing</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5756<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide adjustable doorstops at heads,jambs and automatic door bottoms 
+in accordance with the hardware set, of extruded aluminum, <div class="brackets">[clear (natural)]</div> <div class="brackets">[bronze]</div> anodized, surface applied, 
+with vinyl fin seals between plunger and housing. Provide doorstops with solid neoprene tube, silicone rubber, 
+or closed cell sponge gasket. Provide door bottoms with adjustable operating rod and silicone rubber or closed 
+cell sponge neoprene gasket. Provide doorstops that are mitered at corners. Provide type and function designation 
+where specified in paragraph HARDWARE SETS.</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: At exterior doors that are not protected by a horizontal projection such 
+as an awning, roof, or eave, specify rain drips that overlap each side of each 
+door at the head of such exposed doors by choosing the bracketed item below.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk></spt>
+<spt outline="2.3.23"><ttl>2.3.23 Rain Drips</ttl><brk></brk>
+<txt>Provide extruded aluminum rain drips, not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 2.03 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.08 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick, <div class="brackets">[clear anodized]</div> <div class="brackets">[bronze anodized]</div>
+<div class="brackets">[factory painted]</div> <div class="brackets">[factory primed]</div> finish. Provide the manufacturer's full range of color choices to the Contracting 
+Officer for color selection.<div class="brackets">[ Provide rain drips with a<met><pre class="display_MET">&lt;MET&gt;</pre> 102 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> overlap on each side of each exterior 
+door that is not protected by an awning, roof, eave or other horizontal projection.]</div> Set drips in sealant and 
+fasten with stainless steel screws.</txt><brk></brk>
+<spt outline="2.3.23.1"><ttl>2.3.23.1 Door Rain Drips</ttl><brk></brk>
+<txt>Approximately<met><pre class="display_MET">&lt;MET&gt;</pre> 38 mm high by 16 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-1/2 inch high by 5/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> projection. Align bottom with bottom edge of door.</txt><brk></brk></spt>
+<spt outline="2.3.23.2"><ttl>2.3.23.2 Overhead Rain Drips</ttl><brk></brk>
+<txt>Approximately<met><pre class="display_MET">&lt;MET&gt;</pre> 38 mm high by 64 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-1/2 inch high by 2-1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> projection. Align bottom with door frame rabbet.</txt><brk></brk></spt>
+</spt><spt outline="2.3.24"><ttl>2.3.24 Auxiliary Hardware (Other than locks)</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 4702<pre class="display_RID">&lt;/RID&gt;</pre></rid>. </txt><brk></brk></spt>
+<spt outline="2.3.25"><ttl>2.3.25 Sliding and Folding Door Hardware</ttl><brk></brk>
+<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1525<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Finishes to match other hardware specified herein.</txt><brk></brk></spt>
+<spt outline="2.3.26"><ttl>2.3.26 Special Tools</ttl><brk></brk>
+<txt>Provide special tools, such as spanner and socket wrenches and dogging keys, as required to service and adjust 
+hardware items.</txt><brk></brk></spt>
+</spt><spt outline="2.4"><ttl>2.4 FASTENERS</ttl><brk></brk>
+<txt>Provide fasteners of type, quality, size, and quantity appropriate to the specific application. Fastener finish 
+to match hardware. Provide stainless steel or nonferrous metal fasteners in locations exposed to weather. Verify 
+metals in contact with one another are compatible and will avoid galvanic corrosion when exposed to weather.</txt><brk></brk></spt>
+<spt outline="2.5"><ttl>2.5 FINISHES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose one of the following options. Choose the first option for new 
+buildings. Choose the second option only where necessary to match the finish 
+on existing hardware.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use stainless steel in bathroom and toilet locations and in project locations 
+with Environmental Severity Classifications (ESC) of C3 through C5. See UFC 
+1-200-01 for determination of ESC for project locations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1541-2<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide hardware in satin stainless steel, unless specified otherwise. 
+Provide items not manufactured in stainless steel in satin chromium plated over brass or bronze, except <div class="brackets">[aluminum 
+paint]</div> <div class="brackets">[prime coat]</div> finish for surface door closers, and except satin chromium plated <div class="brackets">[primed for painting]</div> for 
+steel hinges. Provide hinges for exterior doors in stainless steel finish <div class="brackets">[or chromium plated brass or bronze 
+finish]</div>. Furnish exit devices in satin chrome finish in lieu of stainless steel finish <div class="brackets">[except where specified 
+under paragraph HARDWARE SETS]</div>. Match exposed parts of concealed closers to lock and door trim. Match hardware 
+finish for aluminum doors to the doors.</txt><brk></brk>
+]</div><div class="brackets">[<txt>Provide in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1541-2<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide hardware in satin bronze, unless specified otherwise. Finish 
+surface door closers <div class="brackets">[bronze paint]</div> <div class="brackets">[prime coat]</div> finish. Provide steel hinges in <div class="brackets">[satin bronze plated]</div> <div class="brackets">[primed 
+for painting]</div>. Provide exposed parts of concealed closers finish to match lock and door trim. Match hardware 
+finish for aluminum doors to match the doors. Provide hardware showing on interior of <div class="brackets">[bathrooms]</div> <div class="brackets">[shower rooms]</div>
+<div class="brackets">[toilet rooms]</div> <div class="brackets">[washrooms]</div> <div class="brackets">[laundry rooms]</div> <div class="brackets">[and kitchens]</div> in bright stainless steel or bright chromium plated.</txt><brk></brk>
+]</div></spt><spt outline="2.6"><ttl>2.6 KEY CABINET AND CONTROL SYSTEM</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Key cabinets hold keys on panels. Systems include materials and devices 
+for recording and cross-referencing data on use and location of locks and keys.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide in accordance with project requirements, <div class="brackets">[<div class="brackets">[(25 hooks)]</div> <div class="brackets">[(125 hooks)]</div> <div class="brackets">[(150 hooks)]</div> <div class="brackets">[(600 hooks)]</div> <div class="brackets">[(700 
+hooks)]</div>.]</div> <div class="brackets">[Type required to yield a capacity (number of hooks) 50 percent greater than the number of key changes 
+used for door locks.]</div></txt><brk></brk></spt>
+</prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>INSTALLATION<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Provide hardware in accordance with manufacturers' printed installation instructions. Fasten hardware to wood 
+surfaces with full-threaded wood screws or sheet metal screws. Provide machine screws set in expansion shields 
+for fastening hardware to solid concrete and masonry surfaces. Provide toggle bolts where required for fastening 
+to hollow core construction. Provide through bolts where necessary for satisfactory installation.</txt><brk></brk>
+<spt outline="3.1.1"><ttl>3.1.1 Weatherstripping Installation</ttl><brk></brk>
+<txt>Provide full contact, weathertight seals that allow operation of doors without binding the weatherstripping.</txt><brk></brk>
+<spt outline="3.1.1.1"><ttl>3.1.1.1 Stop Applied Weatherstripping</ttl><brk></brk>
+<txt>Fasten in place with color matched sheet metal screws not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 225 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 9 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center after doors and frames 
+have been finish painted.</txt><brk></brk></spt>
+<spt outline="3.1.1.2"><ttl>3.1.1.2 Interlocking Type Weatherstripping</ttl><brk></brk>
+<txt>Provide interlocking, self adjusting type on heads and jambs and flexible hook type at sills. Nail weatherstripping 
+to door<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center and to heads and jambs at<met><pre class="display_MET">&lt;MET&gt;</pre> 100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center.</txt><brk></brk></spt>
+<spt outline="3.1.1.3"><ttl>3.1.1.3 Spring Tension Type Weatherstripping</ttl><brk></brk>
+<txt>Provide spring tension type on heads and jambs. Provide bronze nails with bronze. Provide stainless steel nails 
+with stainless steel. Space nails not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 38 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> on center.</txt><brk></brk></spt>
+</spt><spt outline="3.1.2"><ttl>3.1.2 [Lightproofing] [and] [Soundproofing] Installation</ttl><brk></brk>
+<txt>Provide as specified for stop applied weatherstripping.</txt><brk></brk></spt>
+<spt outline="3.1.3"><ttl>3.1.3 Threshold Installation</ttl><brk></brk>
+<txt>Extend thresholds the full width of the opening and notch end for jamb stops. Set thresholds in a full bed of 
+sealant and anchor to floor with cadmium-plated, countersunk, steel screws<div class="brackets">[ in expansion sleeves]</div>. For aluminum 
+thresholds placed on top of concrete surfaces, coat the underside surfaces that are in contact with the concrete 
+with fluid applied waterproofing as a separation measure prior to placement.</txt><brk></brk></spt>
+</spt><spt outline="3.2"><ttl>3.2 FIRE DOORS AND EXIT DOORS</ttl><brk></brk>
+<txt>Provide hardware in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 72<pre class="display_RID">&lt;/RID&gt;</pre></rid> for door alarms, <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 80<pre class="display_RID">&lt;/RID&gt;</pre></rid> for fire doors, <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 101<pre class="display_RID">&lt;/RID&gt;</pre></rid> for exit doors, 
+and <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 252<pre class="display_RID">&lt;/RID&gt;</pre></rid> for fire tests of door assemblies. <div class="brackets">[Provide tin-clad fire doors in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>UL 14C<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>.</txt><brk></brk></spt>
+<spt outline="3.3"><ttl>3.3 HARDWARE LOCATIONS</ttl><brk></brk>
+<txt>Provide as indicated or specified otherwise.</txt><brk></brk>
+<lst indent="-0.33">a. Kick and Armor Plates: Push side of single-acting doors. Both sides of double-acting doors.</lst><brk></brk>
+<lst indent="-0.33">b. Mop Plates: Bottom flush with bottom of door.</lst><brk></brk></spt>
+<spt outline="3.4"><ttl>3.4 KEY CABINET AND CONTROL SYSTEM</ttl><brk></brk>
+<txt>Locate where <div class="brackets">[directed]</div><div class="brackets">[indicated]</div>. Tag one set of file keys and one set of duplicate keys. Place other keys 
+in appropriately marked envelopes, or tag each key. Provide complete instructions for setup and use of key control 
+system. On tags and envelopes, indicate door and room numbers or master or grand master key.</txt><brk></brk></spt>
+<spt outline="3.5"><ttl>3.5 FIELD QUALITY CONTROL</ttl><brk></brk>
+<txt>After installation, protect hardware from paint, stains, blemishes, and other damage until acceptance of work. 
+Submit notice of testing 15 days before scheduled, so that testing can be witnessed by the Contracting Officer. 
+Adjust hinges, locks, latches, bolts, holders, closers, and other items to operate properly. <tst>Demonstrate that 
+permanent keys operate respective locks, and give keys to the Contracting Officer.</tst> Correct, repair, and finish, 
+errors in cutting and fitting and damage to adjoining work.</txt><brk></brk></spt>
+<spt outline="3.6"><ttl>3.6 HARDWARE SETS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Coordinate this section with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>08 11 16<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> ALUMINUM DOORS AND FRAMES.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Either list hardware set numbers on the drawings or list doors by number in 
+each hardware set.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide <div class="brackets">[hardware for aluminum doors under this section. Deliver Hardware templates and hardware, except field 
+applied hardware, to the aluminum door and frame manufacturer for use in fabricating doors and frames.]</div></txt><brk></brk></spt>
+</prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

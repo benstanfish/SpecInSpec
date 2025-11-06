@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>02 84 16.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">02 84 16</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:52</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-02 84 16 (April 2006)<brk></brk>
+ --------------------------<brk></brk>
+Preparing Activity: <pra>NAVFAC</pra> Replacing without change <brk></brk>
+ UFGS-13286 (August 2004)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATION</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated April 2017</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 02 84 16</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>HANDLING OF LIGHTING BALLASTS AND LAMPS CONTAINING PCBS AND MERCURY<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<hl4>01/24</hl4><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>requirements for removal and disposal of polychlorinated 
+biphenyl (PCB) containing lighting ballasts and mercury containing lamps, and the handling of resulting wastes</scp>.<brk></brk>
+Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections. Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text. For bracketed items, choose applicable item(s) or insert 
+appropriate information.<brk></brk>
+Remove information and requirements not required in respective project, whether or not brackets are present.<brk></brk>
+Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Do not use this section if, in addition to ballasts, other PCB removal and disposal is included in the 
+job, but use Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>02 84 33<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> REMOVAL AND DISPOSAL OF POLYCHLORINATED BIPHENYLS (PCBS) and include the removal 
+and disposal of the ballasts in that section. Also, use Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>02 84 33<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> where a significant number of ballasts 
+are known to be leaking.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of the guide specification. The publications 
+are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
+date, and title.<brk></brk>
+Use the Reference Wizard's Check Reference feature when you add a Reference Identifier (RID) outside of the Section's 
+Reference Article to automatically place the reference in the Reference Article. Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<brk></brk>
+References not used in the text will automatically be deleted from this section of the project specification when 
+you choose to reconcile references in the publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are referred to within the text by 
+the basic designation only.</txt><brk></brk>
+<ref><org><del><pre class="display_DEL">&lt;DEL&gt;</pre>JAPAN MINISTRY OF THE ENVIRONMENT(MOE)<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>MINISTRY OF THE ENVIRONMENT GOVERNMENT OF JAPAN (MOE)<pre class="display_ADD">&lt;/ADD&gt;</pre></add></org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>Act No. 137<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(1970, Amended 1991 and 2006) Waste Management and Public Cleansing Law<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl></ref><brk></brk>
+<ref><org>U.S. DEPARTMENT OF DEFENSE (DOD)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(Apr 202<add><pre class="display_ADD">&lt;ADD&gt;</pre>4<pre class="display_ADD">&lt;/ADD&gt;</pre></add><del><pre class="display_DEL">&lt;DEL&gt;</pre>2<pre class="display_DEL">&lt;/DEL&gt;</pre></del>) Japan Environmental Governing Standards<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl></ref><brk></brk></spt>
+<spt outline="1.2"><ttl>1.2 REQUIREMENTS</ttl><brk></brk>
+<txt>Removal and disposal of PCB containing lighting ballasts and associated mercury-containing lamps. Contractor may encounter leaking PCB ballasts. 
+PCB ballasts and/or mercury containing lighting fixtures or other equipment may be encountered in additional locations not listed in the drawings 
+or the project Hazardous Materials Inspection Report(s). Inspect, confirm, and identify all PCB-containing ballasts and any other PCB-containing, 
+mercury-containing, or otherwise hazardous material as part of project work.</txt><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 DEFINITIONS</ttl><brk></brk>
+<spt outline="1.3.1"><ttl>1.3.1 IH/PQP</ttl><brk></brk>
+<txt>Industrial Hygienist/Private Qualified Person required by the Contractor.</txt><brk></brk></spt>
+<spt outline="1.3.2"><ttl>1.3.2 Leak</ttl><brk></brk>
+<txt>Leak or leaking means any instance in which a PCB article, PCB container, or PCB equipment has any PCBs on any portion of its external surface.</txt><brk></brk></spt>
+<spt outline="1.3.3"><ttl>1.3.3 Lamps</ttl><brk></brk>
+<txt>Lamp is defined as the bulb or tube portion of an electric lighting device. A lamp is specifically designed to produce radiant energy, most often 
+in the ultraviolet, visible, and infra-red regions of the electromagnetic <brk></brk>
+spectrum. Examples of common universal waste electric lamps include, <brk></brk>
+but are not limited to, fluorescent, high intensity discharge, neon, <brk></brk>
+mercury vapor, high pressure sodium, and metal halide lamps.<brk></brk></txt>
+<brk></brk></spt>
+<spt outline="1.3.4"><ttl>1.3.4 Polychlorinated Biphenyls (PCBs)</ttl><brk></brk>
+<txt>PCBs as used in this specification shall mean the same as PCBs, PCB containing lighting ballast, and PCB container, as defined in <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Chapter 
+7, Polychlorinated Biphenyls</txt><brk></brk></spt>
+<spt outline="1.3.5"><ttl>1.3.5 Spill</ttl><brk></brk>
+<txt>Spill means both intentional and unintentional spills, leaks, and other uncontrolled discharges when the release results in any quantity of PCBs 
+running off or about to run off the external surface of the equipment or other PCB source, as well as the contamination resulting from those releases.</txt><brk></brk></spt>
+<brk></brk></spt>
+<spt outline="1.4"><ttl>1.4 QUALITY ASSURANCE</ttl><brk></brk>
+<spt outline="1.4.1"><ttl>1.4.1 Regulatory Requirements</ttl><brk></brk>
+<txt>Perform PCB related work in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <rid><pre class="display_RID">&lt;RID&gt;</pre>Act No. 137<pre class="display_RID">&lt;/RID&gt;</pre></rid>, and other applicable US Federal, GOJ, and local laws and regulations. Perform mercury-containing 
+lamps storage and transport in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <rid><pre class="display_RID">&lt;RID&gt;</pre>Act No. 137<pre class="display_RID">&lt;/RID&gt;</pre></rid>, and other applicable US Federal, GOJ, and local laws and regulations. </txt><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Remove the PCB and Lamp Disposal Plan from the PCB and Lamp Management and Disposal Plan for Kadena AB 
+projects, as it is contained in the PCB and Lamp Removal and Disposal Work Plan.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="1.4.1.1"><ttl>1.4.1.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>PCB and Lamp Management and Disposal Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Prior to handling any PCB items, the Contractor shall submit a PCB and Lamp Management and Disposal Plan. The submitted plan shall include the 
+PCB and Lamp Removal <tai opt="KADENA AF BASE">and Disposal</tai> Work Plan, <div class="brackets">[PCB and Lamp Disposal Plan]</div>, Qualifications of the IH/PQP, and Japan Industrial Waste Collection 
+and Transport Permit.</txt><brk></brk></spt>
+<brk></brk></spt>
+<spt outline="1.4.2"><ttl>1.4.2 Training</ttl><brk></brk>
+<txt>Industrial Hygienist/Private Qualified Person (IH/PQP) shall instruct and certify the training of all persons involved in the removal of PCB containing 
+lighting ballasts and mercury-containing lamps. The instruction shall include: The dangers of PCB and mercury exposure, decontamination, safe work 
+practices, and applicable OSHA and EPA, <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid>, GOJ, and prefectural regulations. <brk></brk>
+The IH/PQP shall review and approve the PCB and Mercury-Containing Lamp Removal Work Plans and temporary on-site Storage Plans.</txt><brk></brk></spt>
+<spt outline="1.4.3"><ttl>1.4.3 Regulation Documents</ttl><brk></brk>
+<txt>Maintain at all times one copy each at the office and one copy each in view at the job site of pertinent JEGS Chapter 16, Hazardous Waste and Chapter 
+7, Polychlorinated Biphenyls, <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid> Appendix 1, and a copy of the Contractor PCB and Lamp Removal and Disposal Work Plan.</txt><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose one of two bracketed paragraphs only. Choose second bracketed item for Kadena AB projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk></spt>
+<spt outline="1.4.4"><ttl>1.4.4 Qualifications of IH/PQP</ttl><brk></brk>
+<txt>An industrial hygienist/private qualified person (IH/PQP) hired by the Contractor shall be a registered Architect, Professional Engineer (licensed), 
+or US Certified Industrial Hygienist and having demonstrable experience in hazardous materials management (i.e. lighting ballasts and lamps containing 
+PCBs or mercury), who is trained in the recognition and control of hazardous chemical related hazards, and has the authority to take prompt corrective 
+actions to control the hazard. An IH/PQP must have working knowledge of applicable GOJ, Federal, local prefecture, and JEGS regulations as well 
+as occupational safety and health regulations and shall be capable of recognizing chemical hazards associated with lighting ballasts, lamps, and 
+other similar building equipment or materials.<brk></brk>
+<div class="brackets">[Submit, as an attachment to the PCB and Lamp Management and Disposal Plan, the name, address, and telephone number of the Industrial Hygienist/Private 
+Qualified Person selected to perform the duties in paragraph entitled "Industrial Hygienist/Private Qualified Person (IH/PQP)." Submit training 
+certification that the Industrial Hygienist/Private Qualified Person is qualified, including certification number and date of certification or 
+re certification.]</div><div class="brackets">[The IH/PQP shall have at least 2 years of on the job experience in hazardous materials and hazardous waste management and have 
+working knowledge of the <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid>, GOJ, as well as US and Japanese occupational safety and health regulations. The IH/PQP shall have knowledge in detecting, 
+identifying, and evaluating existing or potential hazardous conditions related to PCB-containing light ballasts and mercury-containing lamps and 
+other similar building equipment or materials. The IH/PQP may be considered qualified if he/she is either a certified Industrial Hygienist or is 
+a Private Qualified Person with adequate prerequisite experience and knowledge as listed in this section.]</div></txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose one of two bracketed items. For Kadena AB projects, choose <div class="brackets">[14]</div> calendar days <div class="brackets">[prior to removal 
+work]</div>. For all other projects, select <div class="brackets">[20]</div> calendar days <div class="brackets">[after receipt of Notice to Proceed]</div> unless instructed 
+otherwise by Installation Environmental Office.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk></spt>
+<spt outline="1.4.5"><ttl>1.4.5 PCB and Lamp Removal and Disposal Work Plan</ttl><brk></brk>
+<txt>Submit a job-specific plan to be incorporated within the PCB and Lamp Management and Disposal Plan within <div class="brackets">[20]</div> <div class="brackets">[14]</div><div class="brackets">[_____]</div> calendar days after 
+<div class="brackets">[receipt of Notice to Proceed]</div><div class="brackets">[prior to removal work]</div> explaining the work procedures to be used in the removal, packaging, and storage of PCB-containing 
+lighting ballasts and associated mercury-containing lamps. <brk></brk>
+Include in the plan: Requirements for Personal Protective Equipment (PPE), spill cleanup procedures and equipment, eating, smoking and restroom procedures. <brk></brk>
+The Plan shall comply with applicable requirements of Federal, <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid>, GOJ and prefectural PCB and mercury-related regulations. The plan shall be 
+approved and signed by the IH/PQP. Obtain approval of the plan by the Contracting Officer prior to the start of PCB and/or lamp removal work.</txt><brk></brk>
+<tai opt="KADENA AF BASE"><txt>All US-made ballasts, even those marked “NO-PCB” shall be turned in to the 718 CES/CEIE PCB Storage section. Call DSN 634-2600 5-days prior to 
+delivery to schedule a drop off.<brk></brk>
+The plan shall address:</txt><brk></brk>
+<lst indent="-0.33">a. Estimate the quantity of ballasts to be delivered to Bldg 3625.</lst><brk></brk>
+<lst indent="-0.33">b. Estimate the quantity of mercury-containing lamps to be disposed or recycled at a certified commercial facility.</lst><brk></brk>
+<lst indent="-0.33">c. List the names and qualifications of each Contractor that will be transporting, storing, recycling and disposing of the toxic wastes.</lst><brk></brk>
+<lst indent="-0.33">d. Furnish a copy of current prefecture-issued waste permit showing that each company is certified by the prefecture to transport and 
+dispose/recycle mercury-containing lamps or other waste.</lst><brk></brk>
+<lst indent="-0.33">e. Names and qualifications (experience and training) of personnel who<brk></brk>
+will be working on-site with PCB and mercury-containing lamp wastes.</lst><brk></brk>
+<lst indent="-0.33">f. Spill prevention, containment, and cleanup contingency measures to be implemented.</lst><brk></brk>
+<lst indent="-0.33">g. Schedule for PCB and mercury-containing lamp waste removal, containment, storage, transportation, disposal and or recycling. Wastes 
+shall be cleaned up and containerized daily.</lst><brk></brk>
+<lst indent="-0.33">h. When submitting the Environmental Protection Plan (EPP) in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 57 19.01<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> TEMPORARY ENVIRONMENTAL CONTROLS, under 
+the paragraphs pertaining to PCBs, state that the PCB and Lamp Removal <tai opt="KADENA AF BASE">and Disposal </tai>Work Plan will be submitted separately.</lst></tai><brk></brk></spt>
+<div class="brackets">[<spt outline="1.4.6"><ttl>1.4.6 PCB and Lamp Disposal Plan</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Required even if disposal is available through Government. Inventory, qualification, spill prevention 
+requirements still apply.<brk></brk>
+Delete this paragraph for Kadena AB projects, as information is covered in para 1.4.5 for Kadena AB projects. 
+Include this para for all other projects. Coordinate with the Installation Environmental Office and edit the 
+number of days as appropriate depending on the complexity of the PCB and Lamp Disposal effort and the time required 
+for review/approval of the Plant.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Submit a PCB and lamp Disposal Plan to be incorporated within the PCB and Lamp Management and Disposal Plan, within <div class="brackets">[45]</div> <div class="brackets">[_____]</div> calendar days 
+after <div class="brackets">[receipt of Notice to Proceed]</div><div class="brackets">[prior to removal work]</div>. The PCB and Lamp Disposal Plan shall comply with applicable requirements of the <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ and applicable U.S. federal, GOJ, and local prefecture and JEGS PCB regulations and address:</txt><brk></brk>
+<lst indent="-0.33">a. Estimated quantities of wastes to be generated, disposed of, and recycled.</lst><brk></brk>
+<lst indent="-0.33">b. Names and qualifications of each Contractor that will be transporting, storing, treating, and disposing of the wastes. Include the 
+facility location. Furnish two copies of PCB and mercury-containing lamp waste permit applications and pertinent identification numbers, 
+as required.</lst><brk></brk>
+<lst indent="-0.33">c. Names and qualifications (experience and training) of personnel who will be working on-site with PCB and mercury-containing lamp wastes.</lst><brk></brk>
+<lst indent="-0.33">d. Spill prevention, containment, and cleanup contingency measures to be implemented.</lst><brk></brk>
+<lst indent="-0.33">e. Work plan and schedule for PCB and mercury-containing lamp waste removal, containment, storage, transportation, disposal and or recycling. 
+Wastes shall be cleaned up and containerized daily.</lst><brk></brk></spt>
+]</div><spt outline="1.4.7"><ttl>1.4.7 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Notification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Notify the Contracting Officer 20 days prior to the start of PCB removal work.</txt><brk></brk></spt>
+</spt><spt outline="1.5"><ttl>1.5 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review Submittal Description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project. <brk></brk>
+The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G". Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System. Only add a “G” to an item, if the submittal is sufficiently important or complex in 
+context of the project.<brk></brk>
+For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
+tags may be used following the "G" designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" for District Office (Engineering 
+Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
+for Project Office. Codes following the "G" typically are not used for Navy, Air Force, and NASA projects.<brk></brk>
+Use the "S" classification only in SD-11 Closeout Submittals. The "S" following a submittal item indicates that 
+the submittal is required for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING.<brk></brk>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose the second bracketed item for 
+Army projects. This should be taken care of with the tailoring opton.<brk></brk>
+For SD-11 Closeout Submittals, chose one of the two bracketed lists. <pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are <div class="brackets">[for Contractor Quality Control 
+approval.]</div><div class="brackets">[for information only. When used, a designation following the "G" designation identifies the office that will review the submittal for 
+the Government.]</div> Submittals with an "S" are for inclusion in the Sustainability eNotebook, in conformance to Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-01 Preconstruction Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Notification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>PCB and Lamp Management and Disposal Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-11 Closeout Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Transporter certification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> ; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub><tai opt="ARMY"><div class="brackets">[, <div class="brackets">[_____]</div>]</div></tai></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Certification of Decontamination<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div><brk></brk>
+<tai opt="KADENA AF BASE"><itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Copy E of the Japan Hazardous Waste Manifest<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; G. Submit to the Government before application for payment within 30 days of the 
+date that the disposal of the PCB and mercury-containing lamp waste identified on the manifest was completed.</itm></tai><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Disposal Request Form<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div><brk></brk>
+<tai opt="KADENA AF BASE"><div class="brackets">[</div></tai><tai opt="KADENA AF BASE"><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Signed Ballast Turn-in (at Bldg 3625) Sheet<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm></tai><brk></brk>
+]</spt><spt outline="1.6"><ttl>1.6 ENVIRONMENTAL REQUIREMENTS</ttl><brk></brk>
+<txt>Use special clothing:</txt><brk></brk>
+<lst indent="-0.33">a. Disposable gloves (polyethylene)</lst><brk></brk>
+<lst indent="-0.33">b. Eye protection</lst><brk></brk>
+<lst indent="-0.33">c. PPE as required by IH/PQP</lst><brk></brk></spt>
+<spt outline="1.7"><ttl>1.7 SCHEDULING</ttl><brk></brk>
+<txt>Notify the Contracting Officer 20 days prior to the start of PCB and mercury-containing lamp removal work.</txt><brk></brk></spt>
+</prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<txt>Not used.</txt><brk></brk></prt>
+<prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 WORK PROCEDURE</ttl><brk></brk>
+<txt>Furnish labor, materials, services, and equipment necessary for the removal of PCB containing lighting ballasts, associated mercury-containing 
+fluorescent lamps, and high intensity discharge (HID) lamps in accordance with the JEGS, applicable GOJ and local, prefectural regulations. Do 
+not expose PCBs to open flames or other high temperature sources since toxic decomposition by-products may be produced. Do not break mercury containing 
+fluorescent lamps or high intensity discharge lamps.</txt><brk></brk>
+<spt outline="3.1.1"><ttl>3.1.1 Work Operations</ttl><brk></brk>
+<txt>Ensure that work operations or processes involving PCB or PCB-contaminated materials are conducted in accordance with the JEGS, applicable U.S. 
+Federal, GOJ, and local laws and regulations, and the applicable requirements of this section, including but not limited to:</txt><brk></brk>
+<lst indent="-0.33">a. Obtaining suitable PCB and mercury-containing lamp storage sites.</lst><brk></brk>
+<lst indent="-0.33">b. Notifying Contracting Officer prior to commencing the operation.</lst><brk></brk>
+<lst indent="-0.33">c. Reporting leaks and spills to the Contracting Officer.</lst><brk></brk>
+<lst indent="-0.33">d. Cleaning up spills.</lst><brk></brk>
+<lst indent="-0.33">e. Inspecting PCB and PCB-contaminated items and waste containers for leaks and forwarding copies of inspection reports to the Contracting 
+Officer.</lst><brk></brk>
+<lst indent="-0.33">f. Maintaining inspection, inventory and spill records.</lst><brk></brk></spt>
+</spt><spt outline="3.2"><ttl>3.2 PCB SPILL CLEANUP REQUIREMENTS</ttl><brk></brk>
+<spt outline="3.2.1"><ttl>3.2.1 PCB Spills</ttl><brk></brk>
+<txt><tai opt="MARINE CORPS IN OKINAWA">The Contractor shall respond to spills of PCB-containing materials by following Attachment 02 84 16-A.</tai> Immediately report to the Contracting Officer 
+any PCB spills. <tai opt="MARINE CORPS IN OKINAWA">The Contractor is responsible to keep emergency spill kits kept within walking distance from the job site in accordance to requirements 
+in Attachment 02 84 16-B.</tai></txt><brk></brk></spt>
+<spt outline="3.2.2"><ttl>3.2.2 PCB Spill Control Area</ttl><brk></brk>
+<txt>Rope off an area around the edges of a PCB leak or spill and post a bilingual "PCB Spill Authorized Personnel Only" caution sign in English and 
+Japanese. Immediately transfer leaking items to a drip pan or other container.</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose one of two bracketed paragraphs only. Choose first bracketed item for Kadena AB projects. <pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk></spt>
+<spt outline="3.2.3"><ttl>3.2.3 PCB Spill Cleanup</ttl><brk></brk>
+<txt>Initiate cleanup of spills as soon as possible, but no later than 24 hours of its discovery. <div class="brackets">[Mop up the liquid with rags or other conventional 
+absorbent. The cleanup materials such as absorbents shall be properly contained and turned over as PCB waste with the ballasts. ]</div><div class="brackets">[Mop up the liquid 
+with rags or other conventional absorbent. The spent absorbent shall be properly contained and turned over <tai opt="MARINE CORPS IN OKINAWA">to the MCB Butler Environmental Support 
+Team (EST) </tai>as solid PCB waste.<tai opt="MARINE CORPS IN OKINAWA"> Follow all requirements in Attachment 02 84 16-B.</tai>]</div></txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Remove the paragraph titled "Records and Certification" for Kadena AB Projects<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk></spt>
+<div class="brackets">[<spt outline="3.2.4"><ttl>3.2.4 Records and Certification</ttl><brk></brk>
+<txt>Document the cleanup with records of decontamination in accordance with the <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid> Chapter 7, Polychlorinated Biphenyls and applicable US Federal, 
+GOJ, and prefectural requirements for PCB Spill Cleanup. Provide test results of cleanup and <sub><pre class="display_SUB">&lt;SUB&gt;</pre>certification of decontamination<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>.</txt></spt>]</div></spt><brk></brk>
+<spt outline="3.3"><ttl>3.3 REMOVAL</ttl><brk></brk>
+<spt outline="3.3.1"><ttl>3.3.1 Ballasts</ttl><brk></brk>
+<tai opt="KADENA AF BASE"><txt>For removed ballasts that are not leaking, up to 300 ballasts may be stored on wooden or plastic pallets on-site for up to 30 days prior to delivery.</txt><brk></brk>
+<txt>Ballasts that are leaking must be immediately stored in leak-proof drip pans, buckets, or double bagged in nitrile bags and stored in a secure 
+area that is not exposed to rainfall. Mark the storage area in English and Japanese in accordance with JEGS and Japan national and prefectural regulation. <brk></brk>
+Any PCB oil that has contaminated the ballast mount or other fixtures must be cleaned or removed and turned in with the ballasts. Prior to transport 
+for disposal, the contractor shall segregate Japanese ballasts from US ballasts. <brk></brk>
+All non-Japanese ballasts, including those with a "NO PCB" label shall be<brk></brk>
+assumed to contain as high as 49 ppm and shall be handled, stored,<brk></brk>
+transported, and disposed of as PCB ballasts. The contractor shall segregate by country of manufacture/origin and deliver<brk></brk>
+all non-Japanese ballasts to the 718 CES/CEIE Environmental Office at Bldg<brk></brk>
+3625. Ballasts may be delivered between 0800 and 1200 on any Friday except<brk></brk>
+for federal holidays. Call DSN 634-2600 a minimum of 5-days prior to<brk></brk>
+delivery to request forklift unloading assistance.<brk></brk>
+For Japanese-made ballasts, the Contractor shall segregate regulated PCB<brk></brk>
+ballasts from non-regulated ballasts according to GOJ and prefectural<brk></brk>
+regulations. Information to discriminate between regulated and<brk></brk>
+non-regulated ballasts can be obtained from:<brk></brk>
+https://www.env.go.jp/recycle/poly/<brk></brk>
+https://www.env.go.jp/recycle/poly/law/no_14091618.pdf<brk></brk>
+Regulated PCB ballasts shall be delivered to the 718 CES/CEIE Environmental<brk></brk>
+Office at Bldg 3625. Non-regulated Japanese ballasts become property of<brk></brk>
+the contractor and shall be disposed of in accordance with GOJ and<brk></brk>
+prefectural regulations. In the submitted PCB and Lamp Removal &amp; Disposal<brk></brk>
+Work Plan, clearly state how non-regulated Japanese ballasts will be<brk></brk>
+disposed.<brk></brk>
+A copy of the <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Signed Ballast Turn-in (at Bldg 3625) Sheet<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> shall be submitted to the COR.</txt></tai><brk></brk>
+<txt>Light ballasts may still contain PCBs even where a "No PCB" label exists on the ballast due to regulatory differences between U.S. and GOJ definitions 
+for "PCB Free". <div class="brackets">[Regardless of PCB concentration, manufacturer, country of origin, all light ballasts shall be segregated by country of manufacture/origin, 
+removed, containerized, and turned into the Installation Environmental Division<tai opt="MARINE CORPS IN OKINAWA">, in accordance with Attachment 02 84 16-B</tai>.]</div> PCB abatement or handling 
+shall be in accordance with JEGS Chapter 7<tai opt="MARINE CORPS IN OKINAWA"> and Attachment 02 84 16-B</tai>. <brk></brk>
+The Contractor shall identify all project ballasts that contain and do not contain PCBs or are suspect to contain PCBs. The Contractor shall submit 
+the PCB ballast list (to include suspect PCB ballasts) to the Contracting Officer Representative (COR). PCB containing ballasts and suspect PCB 
+containing ballasts shall be segregated by country of manufacture.<brk></brk>
+The following procedures for US manufactured and Japan manufactured ballasts shall be used in the identification of PCB ballasts and described 
+in this section.</txt><brk></brk>
+<spt outline="3.3.1.1"><ttl>3.3.1.1 For US Manufactured Ballasts</ttl><brk></brk>
+<txt>US manufactured ballasts shall not be mixed with Japan manufactured ballasts. The Contractor shall segregate and palletize US manufactured ballasts 
+separately from Japan manufactured ballasts<tai opt="MARINE CORPS IN OKINAWA"> at the point of generation for subsequent turn in to the MCB Butler EST (HW/PCB Program Manager, 098-970-3139 
+or 098-970-5790). All ballasts, including "No PCB" labeled ballasts and non-PCB containing ballasts, shall be containerized and turned into the 
+MCB Butler EST</tai>.</txt><brk></brk></spt>
+<spt outline="3.3.1.2"><ttl>3.3.1.2 For Japan Manufactured Ballasts</ttl><brk></brk>
+<txt>The Contractor shall carefully examine the ballast to identify the manufacturer name and year made. Consult with the manufacturer to identify 
+any presence of PCBs. If absence of PCB cannot be confirmed, assume and treat the ballast as a PCB item.</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete this bracketed section if paragraph 3.3.1.2 above is included due to redundancy<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><div class="brackets">[Japan manufactured ballasts shall not be mixed with US manufactured ballasts. The Contractor shall segregate and palletize Japan manufactured 
+ballasts separately from US manufactured ballasts<tai opt="MARINE CORPS IN OKINAWA"> at the point of generation for subsequent turn in to the MCB Butler EST (HW/PCB Program Manager, 
+098-970-3139 or 098-970-5790)</tai>]</div>.</txt><brk></brk></spt>
+<spt outline="3.3.1.3"><ttl>3.3.1.3 For Unmarked/Unlabeled Ballasts</ttl><brk></brk>
+<txt>The Contractor shall treat all unmarked/unlabeled ballasts as suspect PCB-containing materials<tai opt="KADENA AF BASE"> and deliver to Bldg 3625</tai>. Segregate unmarked/unlabeled 
+ballasts from other US or Japanese manufactured items.<tai opt="MARINE CORPS IN OKINAWA"> The Contractor shall contact the MCB Butler EST (HW/PCB Program Manager, 098-970-3139 or 
+098-970-5790) to establish proper procedures for the management of unmarked/unlabeled ballasts.</tai></txt></spt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<hls><npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose one of two bracketed items only. Choose second bracketed items for Kadena AB projects. For the 
+paragraph title, choose <div class="brackets">[Fluorescent Lamps]</div> for Kadena AB projects. Choose the second bracketed paragraph for 
+Kadena AB projects. <pre class="display_NPR">&lt;/NPR&gt;</pre></npr></hls><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk></spt>
+<spt outline="3.3.2"><ttl>3.3.2 [Fluorescent Light Tubes (Bulbs)][Fluorescent Lamps]</ttl><brk></brk>
+<div class="brackets">[<txt>The Contractor shall carefully remove and store fluorescent light bulbs in a manner such that they remain intact. Fluorescent light tubes suspect 
+for containing mercury shall be handled and disposed of by the Contractor in accordance to all GOJ, Federal, local prefectural laws and regulations 
+and the <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid>. In the event of a lighting tube/lamp breaking, sweep and place waste in double plastic taped bags and dispose of as appropriate 
+to GOJ, Federal, local prefecture laws and regulations and the <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt>]</div><brk></brk>
+<txt><div class="brackets">[Remove lighting lamps from the lighting fixture and carefully place into<brk></brk>
+appropriate containers in accordance with JEGS, GOJ, and prefecture<brk></brk>
+regulations. In the event of a lighting lamp breakage, sweep and place<brk></brk>
+waste in double plastic taped bags, place in appropriate containers, and<brk></brk>
+dispose together with the lamps.]</div></txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For paras 3.41 and 3.42, choose one of two bracketed items only. Choose second bracketed items for Kadena 
+AB projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk></spt>
+</spt><spt outline="3.4"><ttl>3.4 STORAGE FOR DISPOSAL</ttl><brk></brk>
+<spt outline="3.4.1"><ttl>3.4.1 Storage Containers for PCBs</ttl><brk></brk>
+<txt><div class="brackets">[Store PCB in containers as required by <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid> and applicable US Federal, GOJ, and local requirements for PCBs and/or PCB related materials]</div><div class="brackets">[Store 
+ballasts in accordance with JEGS and this section. Ballasts must be in secondary containment that is not exposed to rainfall]</div>.</txt><brk></brk></spt>
+<spt outline="3.4.2"><ttl>3.4.2 Storage Containers for Lamps</ttl><brk></brk>
+<txt><div class="brackets">[Store mercury containing lamps in appropriate containers. The boxes shall be stored and labeled for transport in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Act No. 
+137, the MOE Waste Management, and Public Cleansing Law, and applicable US Federal, GOJ, and local requirements.]</div><div class="brackets">[Store and mark containers for 
+lamps in accordance with JEGS, GOJ, and prefecture regulation.]</div></txt><brk></brk></spt>
+<spt outline="3.4.3"><ttl>3.4.3 Labeling of Waste Containers</ttl><brk></brk>
+<txt>In accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Chapter 7, prominently label in both English and Japanese with the following:</txt><brk></brk>
+<lst indent="-0.33">a. Date the item was placed in storage and the name of the cognizant activity/building.</lst><brk></brk>
+<lst indent="-0.33">b. Identification of items, warning against improper disposal and handling, and phone number in case of spills, conforming to <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Affix 
+labels to PCB waste containers.</lst><brk></brk>
+<lst indent="-0.33">c. Label mercury-containing lamp waste in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid> and Act No. 137, the MOE Waste Management and Public Cleansing Law. Affix 
+labels to all lighting waste containers.</lst><brk></brk></spt>
+</spt><spt outline="3.5"><ttl>3.5 DISPOSAL [PERMITS][/TURNOVER]</ttl><brk></brk>
+<spt outline="3.5.1"><ttl>3.5.1 Japan Specially Controlled Hazardous Waste Disposal Permit</ttl><brk></brk>
+<txt>In the submitted PCB and Lamp Management and Disposal plan, include a copy of the Japan Specially Controlled Industrial Waste (SCIW) Permit (“Tokubetsu 
+Kanri Haikibutsu Shobungyou Kyoka”) for the disposal or recycling facility where the mercury-containing lamps will be disposed. The permit must 
+specifically say that the firm is authorized to accept mercury.</txt></spt><brk></brk>
+<spt outline="3.5.2"><ttl>3.5.2 Japan Industrial Waste Collection and Transport Permit</ttl><brk></brk>
+<txt>In the submitted PCB and Lamp Management and Disposal plan, include a copy of the Japan Industrial Waste Collection and Transport Permit (“Sangyou 
+Haikibutsu Shuushuu Unpangyou Kyoka”) for the transportation of mercury-contaminated wastes from the installation.</txt></spt><brk></brk>
+<tai opt="KADENA AF BASE"><spt><ttl>Japan Hazardous Waste Manifest (JHWM)</ttl><brk></brk>
+<txt>A minimum of 5-days prior to the scheduled transportation of mercury containing lamps or other PCB containing ballasts from the installation, contact 
+the <div class="brackets">[718 CES/CEIE Environmental Section 634-2600]</div> to schedule a pre-transportation inspection. A government representative will inspect, annotate 
+the (JHWM), and authorize the shipment. No toxic wastes shall be transported off the installation without the approval of a US government representative.<brk></brk>
+Within 60-days after the date of transportation of hazardous waste from the installation, submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Copy E of the Japan Hazardous Waste Manifest<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> bearing 
+the signature/stamp of the final mercury waste disposal/recycling facility as an SD-11 closeout submittal. <brk></brk>
+For SCIW shipments to disposal facilities outside the prefecture, the manifest must be the "tsumikae" type manifest to allow multiple Chain of 
+Custody entries. <brk></brk>
+Contract final payment will not be approved by the COR until the Copy E is submitted.<brk></brk>
+Contractors failing to submit Copy E of the JHWM may be reported to United States Forces Japan (USFJ) and the Ministry of the Environment.]</txt></spt></tai><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Edit paragraphs DISPOSAL/TURNOVER and TURNOVER PROCEDURES accordingly based on specific Installation Requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><div class="brackets">[Turn in mercury-containing lamps, ballasts, and other PCB or mercury-containing materials to the Installation Environmental Division. Contact 
+Installation Environmental Division at <div class="brackets">[phone number]</div> at least <div class="brackets">[5]</div> working days in advance to make arrangements for delivery of these materials 
+to the storage site.<brk></brk>
+Do not dispose of mercury or PCB related materials at an off Government facility. Do not consider US manufactured light ballasts with "No PCBs" 
+labeling to contain PCBs less than Japan regulatory limits and always acquire PCB content related information from the manufacturer. All ballasts, 
+regardless of PCB or non-PCB containing types, shall be turned into the Installation Environmental Division per the turnover procedures stated 
+in paragraph TURNOVER PROCEDURES.</div></txt><brk></brk>
+<spt outline="3.5.3"><ttl>3.5.3 Turnover Procedures</ttl><brk></brk>
+<lst indent="-0.33">a. Segregate ballasts by manufacturer.</lst><brk></brk>
+<lst indent="-0.33">b. Visit the websites of the manufacturers to verify if the ballasts contain PCB or not by product model number, product color, etc. 
+Certificates shall be obtained stating that the ballast does not contain PCB. If the ballast does not contain PCB in accordance with the 
+certificate, then the ballast should not be turned over to the installation.</lst><brk></brk>
+<lst indent="-0.33">c. Sort the ballast in cardboard cases by Non-PCB, PCB containing, unknown for each manufacturer and country of origin.</lst><brk></brk>
+<lst indent="-0.33">d. Bring ballasts to the Installation Environmental Division with certificates and supporting documents.</lst><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete the paragraph, titled "Transporter Certification" for Kadena AB projects<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk></spt>
+<div class="brackets">[<spt outline="3.5.4"><ttl>3.5.4 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Transporter Certification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Comply with disposal and transportation requirements outlined in the <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Before transporting the PCB waste, prepare a Disposal Request Form 
+for acknowledgement of acceptance of the PCB waste from the Government. Return a duly signed copy to the Government before leaving the Installation 
+Environmental Division. Ensure that the Disposal Request Form accompanies the PCB or mercury-containing waste at all times. </txt><brk></brk></spt>
+]</div><spt outline="3.5.5"><ttl>3.5.5 Disposal by the Government</ttl><brk></brk>
+<txt>Comply with disposal and transportation requirements outlined in the <rid><pre class="display_RID">&lt;RID&gt;</pre>JEGS<pre class="display_RID">&lt;/RID&gt;</pre></rid> Chapter 16 and Chapter 7. Load and haul PCBs to the Installation Environmental 
+Division.</txt><brk></brk>
+<spt outline="3.5.5.1"><ttl>3.5.5.1 Delivery</ttl><brk></brk>
+<txt>Contact Installation Environmental Division at <div class="brackets">[phone number]</div>at least <div class="brackets">[5]</div> working days in advance to make arrangements for delivery of PCB or mercury-containing 
+items to the storage site.</txt><brk></brk></spt>
+<div class="brackets">[<spt outline="3.5.5.2"><ttl>3.5.5.2 Disposal Request Form</ttl><brk></brk>
+<txt>Prepare <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Disposal Request Form<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> , which will accompany the PCB to the storage site. Contact Installation Environmental Division for a copy of the 
+latest Disposal Request Form version. Ensure that a responsible person from the activity that owns the PCB signs the Disposal Request Form.]</txt></spt></div><brk></brk></spt>
+]</spt></prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>01 78 23.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">01 78 23</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:51</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><brk></brk>
+<scn>SECTION 01 78 23</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>OPERATION AND MAINTENANCE DATA<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are referred to within the text by 
+the basic designation only.</txt><brk></brk>
+<ref><org>ASTM INTERNATIONAL (ASTM)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E1971<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2005; R 2011) Stewardship for the Cleaning of Commercial and Institutional Buildings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.2"><ttl>1.2 SUBMITTALS</ttl><brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; <tai opt="DESIGN-BID-BUILD">submittals not having a "G" designation are for information only</tai><tai opt="DESIGN-BUILD">submittals 
+not having a "G" designation are for Contractor Quality Control or Designer of Record approval</tai>. Submit the following in accordance with Section 
+<srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf>SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-10 Operation and Maintenance Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>O&amp;M Database<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Training Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Training Outline<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Training Content<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-11 Closeout Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Training Video Recording<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Validation of Training Completion<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 OPERATION AND MAINTENANCE DATA</ttl><brk></brk>
+<txt>Submit Operation and Maintenance (O&amp;M) Data for the provided equipment, product, or system, defining the importance of system interactions, 
+troubleshooting, and long-term preventive operation and maintenance. Compile, prepare, and aggregate O&amp;M data to include clarifying and updating 
+the original sequences of operation to as-built conditions. Organize and present information in sufficient detail to clearly explain O&amp;M requirements 
+at the system, equipment, component, and subassembly level. Include an index preceding each submittal. Submit in accordance with this section 
+and Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES.</txt><brk></brk>
+<spt outline="1.3.1"><ttl>1.3.1 Package Quality</ttl><brk></brk>
+<txt>Documents must be fully legible. Operation and Maintenance data must be consistent with the manufacturer's standard brochures, schematics, printed 
+instructions, general operating procedures, and safety precautions.</txt><brk></brk></spt>
+<spt outline="1.3.2"><ttl>1.3.2 Package Content</ttl><brk></brk>
+<txt>Provide data package content in both English and Japanese, and in accordance with paragraph SCHEDULE OF OPERATION AND MAINTENANCE DATA PACKAGES. 
+Comply with the data package requirements specified in the individual technical sections, including the content of the packages and addressing 
+each product, component, and system designated for data package submission, except as follows. Use Data Package 5 for commissioned items without 
+a specified data package requirement in the individual technical sections. Provide a Data Package 5 instead of Data Package 1 or 2, as specified 
+in the individual technical section, for items that are commissioned.</txt><brk></brk></spt>
+<spt outline="1.3.3"><ttl>1.3.3 Changes to Submittals</ttl><brk></brk>
+<txt>Provide manufacturer-originated changes or revisions to submitted data if a component of an item is so affected subsequent to acceptance of the 
+O&amp;M Data. Submit changes, additions, or revisions required by the Contracting Officer for final acceptance of submitted data within 30 calendar 
+days of the notification of this change requirement.</txt><brk></brk></spt>
+<div class="brackets">[<spt outline="1.3.4"><ttl>1.3.4 Commissioning Authority Review and Approval</ttl><brk></brk>
+<txt>Submit the commissioned systems and equipment submittals to the Commissioning Authority (CxA) to review for completeness and applicability. Obtain 
+validation from the CxA that the systems and equipment provided meet the requirements of the Contract documents and design intent, particularly 
+as they relate to functionality, energy performance, water performance, maintainability, sustainability, system cost, indoor environmental quality, 
+and local environmental impacts. The CxA communicates deficiencies to the Contracting Officer. Submit the O&amp;M manuals to the Contracting 
+Officer upon a successful review of the corrections, and with the CxA recommendation for approval and acceptance of these O&amp;M manuals. This 
+work is in addition to the normal review procedures for O&amp;M data.</txt><brk></brk></spt>
+]</div></spt><spt outline="1.4"><ttl>1.4 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>O&amp;M DATABASE<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Develop an editable, electronic spreadsheet based on the equipment in the Operation and Maintenance Manuals that contains the information required 
+to start a preventive maintenance program. As a minimum, provide list of system equipment, location installed, warranty expiration date, manufacturer, 
+model, and serial number.</txt><brk></brk></spt>
+<spt outline="1.5"><ttl>1.5 OPERATION AND MAINTENANCE MANUAL FILE FORMAT</ttl><brk></brk>
+<txt>Assemble data packages into electronic Operation and Maintenance Manuals. Assemble each manual into a composite electronically indexed file using 
+the most current version of Adobe Acrobat or similar software capable of producing PDF file format. Provide compact disks (CD) or data digital 
+versatile disk (DVD) as appropriate, so that each one contains operation, maintenance and record files, project record documents, and training 
+videos. Include a complete electronically linked operation and maintenance directory.</txt><brk></brk>
+<spt outline="1.5.1"><ttl>1.5.1 Organization</ttl><brk></brk>
+<txt>Bookmark Product and Drawing Information documents using the current version of CSI Masterformat numbering system, and arrange submittals using 
+the specification sections as a structure. Use CSI Masterformat and UFGS numbers along with descriptive bookmarked titles that explain the content 
+of the information that is being bookmarked.</txt><brk></brk></spt>
+<spt outline="1.5.2"><ttl>1.5.2 CD or DVD Label and Disk Holder or Case</ttl><brk></brk>
+<txt>Provide the following information on the disk label and disk holder or case:</txt><brk></brk>
+<lst indent="-0.33">a. Building Number.</lst><brk></brk>
+<lst indent="-0.33">b. Project Title.</lst><brk></brk>
+<lst indent="-0.33">c. Activity and Location.</lst><brk></brk>
+<lst indent="-0.33">d. Construction Contract Number.</lst><brk></brk>
+<lst indent="-0.33">e. Prepared For: (Contracting Agency).</lst><brk></brk>
+<lst indent="-0.33">f. Prepared By: (Name, title, phone number and email address).</lst><brk></brk>
+<lst indent="-0.33">g. Include the disk content on the disk label.</lst><brk></brk>
+<lst indent="-0.33">h. Date.</lst><brk></brk>
+<lst indent="-0.33">i. Virus scanning program used.</lst><brk></brk></spt>
+</spt><spt outline="1.6"><ttl>1.6 TYPES OF INFORMATION REQUIRED IN O&amp;M DATA PACKAGES</ttl><brk></brk>
+<txt>The following are a detailed description of the data package items listed in paragraph SCHEDULE OF OPERATION AND MAINTENANCE DATA PACKAGES.</txt><brk></brk>
+<spt outline="1.6.1"><ttl>1.6.1 Operating Instructions</ttl><brk></brk>
+<txt>Provide specific instructions, procedures, and illustrations for the following phases of operation for the installed model and features of each 
+system:</txt><brk></brk>
+<spt outline="1.6.1.1"><ttl>1.6.1.1 Safety Precautions and Hazards</ttl><brk></brk>
+<txt>List personnel hazards and equipment or product safety precautions for operating conditions. List all residual hazards identified in the Activity 
+Hazard Analysis provided under Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 35 26<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> GOVERNMENT SAFETY REQUIREMENTS. Provide recommended safeguards for each identified hazard.</txt><brk></brk></spt>
+<spt outline="1.6.1.2"><ttl>1.6.1.2 Operator Prestart</ttl><brk></brk>
+<txt>Provide procedures required to install, set up, and prepare each system for use.</txt><brk></brk></spt>
+<spt outline="1.6.1.3"><ttl>1.6.1.3 Startup, Shutdown, and Post-Shutdown Procedures</ttl><brk></brk>
+<txt>Provide narrative description for Startup, Shutdown and Post-shutdown operating procedures including the control sequence for each procedure.</txt><brk></brk></spt>
+<spt outline="1.6.1.4"><ttl>1.6.1.4 Normal Operations</ttl><brk></brk>
+<txt>Provide Control Diagrams with data to explain operation and control of systems and specific equipment. Provide narrative description of Normal 
+Operating Procedures.</txt><brk></brk></spt>
+<spt outline="1.6.1.5"><ttl>1.6.1.5 Emergency Operations</ttl><brk></brk>
+<txt>Provide Emergency Procedures for equipment malfunctions to permit a short period of continued operation or to shut down the equipment to prevent 
+further damage to systems and equipment. Provide Emergency Shutdown Instructions for fire, explosion, spills, or other foreseeable contingencies. 
+Provide guidance and procedures for emergency operation of utility systems including required valve positions, valve locations and zones or portions 
+of systems controlled.</txt><brk></brk></spt>
+<spt outline="1.6.1.6"><ttl>1.6.1.6 Operator Service Requirements</ttl><brk></brk>
+<txt>Provide instructions for services to be performed by the operator such as lubrication, adjustment, inspection, and recording gauge readings.</txt><brk></brk></spt>
+<spt outline="1.6.1.7"><ttl>1.6.1.7 Environmental Conditions</ttl><brk></brk>
+<txt>Provide a list of Environmental Conditions (temperature, humidity, and other relevant data) that are best suited for the operation of each product, 
+component or system. Describe conditions under which the item equipment should not be allowed to run.</txt><brk></brk></spt>
+<spt outline="1.6.1.8"><ttl>1.6.1.8 Operating Log</ttl><brk></brk>
+<txt>Provide forms, sample logs, and instructions for maintaining necessary operating records.</txt><brk></brk></spt>
+<spt outline="1.6.1.9"><ttl>1.6.1.9 Additional Requirements for HVAC Control Systems</ttl><brk></brk>
+<txt>Provide Data Package 5 and the following for control systems:</txt><brk></brk>
+<lst indent="-0.33">a. Narrative description on how to perform and apply functions, features, modes, and other operations, including unoccupied operation, 
+seasonal changeover, manual operation, and alarms. Include detailed technical manual for programming and customizing control loops and 
+algorithms.</lst><brk></brk>
+<lst indent="-0.33">b. Full as-built sequence of operations.</lst><brk></brk>
+<lst indent="-0.33">c. Copies of checkout tests and calibrations performed by the Contractor (not Cx tests).</lst><brk></brk>
+<lst indent="-0.33">d. Full points list. Provide a listing of rooms with the following information for each room:</lst><brk></brk>
+<itm indent="-0.33">(1) Floor.</itm><brk></brk>
+<itm indent="-0.33">(2) Room number.</itm><brk></brk>
+<itm indent="-0.33">(3) Room name.</itm><brk></brk>
+<itm indent="-0.33">(4) Air handler unit ID.</itm><brk></brk>
+<itm indent="-0.33">(5) Reference drawing number.</itm><brk></brk>
+<itm indent="-0.33">(6) Air terminal unit tag ID.</itm><brk></brk>
+<itm indent="-0.33">(7) Heating or cooling valve tag ID.</itm><brk></brk>
+<itm indent="-0.33">(8) Minimum cfm.</itm><brk></brk>
+<itm indent="-0.33">(9) Maximum cfm.</itm><brk></brk>
+<lst indent="-0.33">e. Full print out of all schedules and set points after testing and acceptance of the system.</lst><brk></brk>
+<lst indent="-0.33">f. Full as-built print out of software program.</lst><brk></brk>
+<lst indent="-0.33">g. Marking of system sensors and thermostats on the as-built floor plan and mechanical drawings with their control system designations.</lst><brk></brk></spt>
+</spt><spt outline="1.6.2"><ttl>1.6.2 Preventive Maintenance</ttl><brk></brk>
+<txt>Provide the following information for preventive and scheduled maintenance to minimize repairs for the installed model and features of each system. 
+Include potential environmental and indoor air quality impacts of recommended maintenance procedures and materials.</txt><brk></brk>
+<spt outline="1.6.2.1"><ttl>1.6.2.1 Lubrication Data</ttl><brk></brk>
+<txt>Include the following preventive maintenance lubrication data, in addition to instructions for lubrication required under paragraph OPERATOR SERVICE 
+REQUIREMENTS:</txt><brk></brk>
+<lst indent="-0.33">a. A table showing recommended lubricants for specific temperature ranges and applications.</lst><brk></brk>
+<lst indent="-0.33">b. Charts with a schematic diagram of the equipment showing lubrication points, recommended types and grades of lubricants, and capacities.</lst><brk></brk>
+<lst indent="-0.33">c. A Lubrication Schedule showing service interval frequency.</lst><brk></brk></spt>
+<spt outline="1.6.2.2"><ttl>1.6.2.2 Preventive Maintenance Plan, Schedule, and Procedures</ttl><brk></brk>
+<txt>Provide manufacturer's schedule for routine preventive maintenance, inspections, condition monitoring (predictive tests) and adjustments required 
+to ensure proper and economical operation and to minimize repairs. Provide instructions stating when the systems shall be retested. Provide manufacturer's 
+projection of preventive maintenance work-hours on a daily, weekly, monthly, and annual basis including craft requirements by type of craft. For 
+periodic calibrations, provide manufacturer's specified frequency and procedures for each separate operation.</txt><brk></brk>
+<lst indent="-0.33">a. Define the anticipated time required to perform each of each test (work-hours), test apparatus, number of personnel identified by responsibility, 
+and a testing validation procedure permitting the record operation capability requirements within the schedule. Provide a remarks column 
+for the testing validation procedure referencing operating limits of time, pressure, temperature, volume, voltage, current, acceleration, 
+velocity, alignment, calibration, adjustments, cleaning, or special system notes. Delineate procedures for preventive maintenance, inspection, 
+adjustment, lubrication and cleaning necessary to minimize repairs.</lst><brk></brk>
+<lst indent="-0.33">b. Repair requirements must inform operators how to check out, troubleshoot, repair, and replace components of the system. Include electrical 
+and mechanical schematics and diagrams and diagnostic techniques necessary to enable operation and troubleshooting of the system after 
+acceptance.</lst><brk></brk></spt>
+<spt outline="1.6.2.3"><ttl>1.6.2.3 Cleaning Recommendations</ttl><brk></brk>
+<txt>Provide environmentally preferable cleaning recommendations in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E1971<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+</spt><spt outline="1.6.3"><ttl>1.6.3 Repair</ttl><brk></brk>
+<txt>Provide manufacturer's recommended procedures and instructions for correcting problems and making repairs for the installed model and features 
+of each system. Include potential environmental and indoor air quality impacts of recommended maintenance procedures and materials.</txt><brk></brk>
+<spt outline="1.6.3.1"><ttl>1.6.3.1 Troubleshooting Guides and Diagnostic Techniques</ttl><brk></brk>
+<txt>Provide step-by-step procedures to promptly isolate the cause of typical malfunctions. Describe clearly why the checkout is performed and what 
+conditions are to be sought. Identify tests or inspections and test equipment required to determine whether parts and equipment may be reused 
+or require replacement.</txt><brk></brk></spt>
+<spt outline="1.6.3.2"><ttl>1.6.3.2 Wiring Diagrams and Control Diagrams</ttl><brk></brk>
+<txt>Provide point-to-point drawings of wiring and control circuits including factory-field interfaces. Provide a complete and accurate depiction of 
+the actual job specific wiring and control work. On diagrams, number electrical and electronic wiring and pneumatic control tubing and the terminals 
+for each type, identically to actual installation configuration and numbering.</txt><brk></brk></spt>
+<spt outline="1.6.3.3"><ttl>1.6.3.3 Repair Procedures</ttl><brk></brk>
+<txt>Provide instructions and a list of tools required to repair or restore the product or equipment to proper condition or operating standards.</txt><brk></brk></spt>
+<spt outline="1.6.3.4"><ttl>1.6.3.4 Removal and Replacement Instructions</ttl><brk></brk>
+<txt>Provide step-by-step procedures and a list of required tools and supplies for removal, replacement, disassembly, and assembly of components, assemblies, 
+subassemblies, accessories, and attachments. Provide tolerances, dimensions, settings and adjustments required. Use a combination of text and 
+illustrations.</txt><brk></brk></spt>
+<spt outline="1.6.3.5"><ttl>1.6.3.5 Spare Parts and Supply Lists</ttl><brk></brk>
+<txt>Provide lists of spare parts and supplies required for repair to ensure continued service or operation without unreasonable delays. Special consideration 
+is required for facilities at remote locations. List spare parts and supplies that have a long lead-time to obtain.</txt><brk></brk></spt>
+<spt outline="1.6.3.6"><ttl>1.6.3.6 Repair Work-Hours</ttl><brk></brk>
+<txt>Provide manufacturer's projection of repair work-hours including requirements by type of craft. Identify, and tabulate separately, repair that 
+requires the equipment manufacturer to complete or to participate.</txt><brk></brk></spt>
+</spt><spt outline="1.6.4"><ttl>1.6.4 Real Property Equipment</ttl><brk></brk>
+<txt>Provide a list of installed equipment furnished under this Contract. Include all information usually listed on manufacturer's name plate. In 
+the "EQUIPMENT-IN-PLACE LIST" include, as applicable, the following for each piece of equipment installed: description of item, location (by room 
+number), model number, serial number, capacity, name and address of manufacturer, name and address of equipment supplier, condition, spare parts 
+list, manufacturer's catalog, and warranty. Submit the final list 30 days after transfer of the completed facility.</txt><brk></brk>
+<txt>Key the designations to the related area depicted on the Contract drawings. List the following data:</txt><brk></brk>
+<txt> RECORD OF DESIGNATED EQUIPMENT AND MATERIALS DATA</txt><brk></brk>
+<txt>Description Specification Manufacturer Composition Where Used</txt> <brk></brk>
+<txt> Section and Catalog, and Size</txt><brk></brk>
+<txt> Model, and</txt><brk></brk>
+<txt> Serial Number</txt> <brk></brk></spt>
+<spt outline="1.6.5"><ttl>1.6.5 Appendices</ttl><brk></brk>
+<txt>Provide information required below and information not specified in the preceding paragraphs but pertinent to the maintenance or operation of the 
+product or equipment. Include the following:</txt><brk></brk>
+<spt outline="1.6.5.1"><ttl>1.6.5.1 Product Submittal Data</ttl><brk></brk>
+<txt>Provide a copy of SD-03 Product Data submittals documented with the required approval.</txt><brk></brk></spt>
+<spt outline="1.6.5.2"><ttl>1.6.5.2 Manufacturer's Instructions</ttl><brk></brk>
+<txt>Provide a copy of SD-08 Manufacturer's Instructions submittals documented with the required approval.</txt><brk></brk></spt>
+<spt outline="1.6.5.3"><ttl>1.6.5.3 O&amp;M Submittal Data</ttl><brk></brk>
+<txt>Provide a copy of SD-10 Operation and Maintenance Data submittals documented with the required approval.</txt><brk></brk></spt>
+<spt outline="1.6.5.4"><ttl>1.6.5.4 Parts Identification</ttl><brk></brk>
+<txt>Provide identification and coverage for the parts of each component, assembly, subassembly, and accessory of the end items subject to replacement. 
+Include special hardware requirements, such as requirement to use high-strength bolts and nuts. Identify parts by make, model, serial number, 
+and source of supply to allow reordering without further identification. Provide clear and legible illustrations, drawings, and exploded views 
+to enable easy identification of the items. When illustrations omit the part numbers and description, both the illustrations and separate listing 
+must show the index, reference, or key number that shall cross-reference the illustrated part to the listed part. Group the parts shown in the 
+listings by components, assemblies, and subassemblies in accordance with the manufacturer's standard practice. Parts data may cover more than 
+one model or series of equipment, components, assemblies, subassemblies, attachments, or accessories, such as typically shown in a master parts 
+catalog.</txt><brk></brk></spt>
+<spt outline="1.6.5.5"><ttl>1.6.5.5 Warranty Information</ttl><brk></brk>
+<txt>List and explain the various warranties and clearly identify the servicing and technical precautions prescribed by the manufacturers or Contract 
+documents in order to keep warranties in force. Include warranty information for primary componentsof the system. Provide copies of warranties 
+required by Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 78 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> CLOSEOUT SUBMITTALS.</txt><brk></brk></spt>
+<spt outline="1.6.5.6"><ttl>1.6.5.6 Extended Warranty Information</ttl><brk></brk>
+<txt>List all warranties for products, equipment, components, and sub-components whose duration exceeds one year. For each warranty listed, indicate 
+the applicable specification section, duration, start date, end date, and the point of contact for warranty fulfillment. Also, list or reference 
+the specific operation and maintenance procedures that must be performed to keep the warranty valid. Provide copies of warranties required by 
+Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 78 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> CLOSEOUT SUBMITTALS.</txt><brk></brk></spt>
+<spt outline="1.6.5.7"><ttl>1.6.5.7 Personnel Training Requirements</ttl><brk></brk>
+<txt>Provide information available from the manufacturers that is needed for use in training designated personnel to properly operate and maintain 
+the equipment and systems.</txt><brk></brk></spt>
+<spt outline="1.6.5.8"><ttl>1.6.5.8 Testing Equipment and Special Tool Information</ttl><brk></brk>
+<txt>Include information on test equipment required to perform specified tests and on special tools needed for the operation, maintenance, and repair 
+of components. Provide final set points.</txt><brk></brk></spt>
+<spt outline="1.6.5.9"><ttl>1.6.5.9 Testing and Performance Data</ttl><brk></brk>
+<txt>Include completed prefunctional checklists, functional performance test forms, and monitoring reports. Include recommended schedule for retesting 
+and blank test forms. Provide final set points.</txt><brk></brk></spt>
+<spt outline="1.6.5.10"><ttl>1.6.5.10 Field Test Reports</ttl><brk></brk>
+<txt>Provide a copy of Field Test Reports (SD-06) submittals documented with the required approval.</txt><brk></brk></spt>
+<spt outline="1.6.5.11"><ttl>1.6.5.11 Contractor Information</ttl><brk></brk>
+<txt>Provide a list that includes the name, address, and telephone number of the General Contractor and each Subcontractor who installed the product 
+or equipment, or system. For each item, also provide the name address and telephone number of the manufacturer's representative and service organization 
+that can provide replacements most convenient to the project site. Provide the name, address, and telephone number of the product, equipment, 
+and system manufacturers.</txt><brk></brk></spt>
+</spt></spt><spt outline="1.7"><ttl>1.7 SCHEDULE OF OPERATION AND MAINTENANCE DATA PACKAGES</ttl><brk></brk>
+<txt>Provide the O&amp;M data packages specified in individual technical sections. The information required in each type of data package follows:</txt><brk></brk>
+<spt outline="1.7.1"><ttl>1.7.1 Data Package 1</ttl><brk></brk>
+<lst indent="-0.33">a. Safety precautions and hazards.</lst><brk></brk>
+<lst indent="-0.33">b. Cleaning recommendations.</lst><brk></brk>
+<lst indent="-0.33">c. Maintenance and repair procedures.</lst><brk></brk>
+<lst indent="-0.33">d. Warranty information.</lst><brk></brk>
+<lst indent="-0.33">e. Extended warranty information.</lst><brk></brk>
+<lst indent="-0.33">f. Contractor information.</lst><brk></brk>
+<lst indent="-0.33">g. Spare parts and supply list.</lst><brk></brk></spt>
+<spt outline="1.7.2"><ttl>1.7.2 Data Package 2</ttl><brk></brk>
+<lst indent="-0.33">a. Safety precautions and hazards.</lst><brk></brk>
+<lst indent="-0.33">b. Normal operations.</lst><brk></brk>
+<lst indent="-0.33">c. Environmental conditions.</lst><brk></brk>
+<lst indent="-0.33">d. Lubrication data.</lst><brk></brk>
+<lst indent="-0.33">e. Preventive maintenance plan, schedule, and procedures.</lst><brk></brk>
+<lst indent="-0.33">f. Cleaning recommendations.</lst><brk></brk>
+<lst indent="-0.33">g. Maintenance and repair procedures.</lst><brk></brk>
+<lst indent="-0.33">h. Removal and replacement instructions.</lst><brk></brk>
+<lst indent="-0.33">i. Spare parts and supply list.</lst><brk></brk>
+<lst indent="-0.33">j. Parts identification.</lst><brk></brk>
+<lst indent="-0.33">k. Warranty information.</lst><brk></brk>
+<lst indent="-0.33">l. Extended warranty information.</lst><brk></brk>
+<lst indent="-0.33">m. Contractor information.</lst><brk></brk></spt>
+<spt outline="1.7.3"><ttl>1.7.3 Data Package 3</ttl><brk></brk>
+<lst indent="-0.33">a. Safety precautions and hazards.</lst><brk></brk>
+<lst indent="-0.33">b. Operator prestart.</lst><brk></brk>
+<lst indent="-0.33">c. Startup, shutdown, and post-shutdown procedures.</lst><brk></brk>
+<lst indent="-0.33">d. Normal operations.</lst><brk></brk>
+<lst indent="-0.33">e. Emergency operations.</lst><brk></brk>
+<lst indent="-0.33">f. Environmental conditions.</lst><brk></brk>
+<lst indent="-0.33">g. Operating log.</lst><brk></brk>
+<lst indent="-0.33">h. Lubrication data.</lst><brk></brk>
+<lst indent="-0.33">i. Preventive maintenance plan, schedule, and procedures.</lst><brk></brk>
+<lst indent="-0.33">j. Cleaning recommendations.</lst><brk></brk>
+<lst indent="-0.33">k. Troubleshooting guides and diagnostic techniques.</lst><brk></brk>
+<lst indent="-0.33">l. Wiring diagrams and control diagrams.</lst><brk></brk>
+<lst indent="-0.33">m. Maintenance and repair procedures.</lst><brk></brk>
+<lst indent="-0.33">n. Removal and replacement instructions.</lst><brk></brk>
+<lst indent="-0.33">o. Spare parts and supply list.</lst><brk></brk>
+<lst indent="-0.33">p. Product submittal data.</lst><brk></brk>
+<lst indent="-0.33">q. O&amp;M submittal data.</lst><brk></brk>
+<lst indent="-0.33">r. Parts identification.</lst><brk></brk>
+<lst indent="-0.33">s. Warranty information.</lst><brk></brk>
+<lst indent="-0.33">t. Extended warranty information.</lst><brk></brk>
+<lst indent="-0.33">u. Testing equipment and special tool information.</lst><brk></brk>
+<lst indent="-0.33">v. Testing and performance data.</lst><brk></brk>
+<lst indent="-0.33">w. Contractor information.</lst><brk></brk>
+<lst indent="-0.33">x. Field test reports.</lst><brk></brk></spt>
+<spt outline="1.7.4"><ttl>1.7.4 Data Package 4</ttl><brk></brk>
+<lst indent="-0.33">a. Safety precautions and hazards.</lst><brk></brk>
+<lst indent="-0.33">b. Operator prestart.</lst><brk></brk>
+<lst indent="-0.33">c. Startup, shutdown, and post-shutdown procedures.</lst><brk></brk>
+<lst indent="-0.33">d. Normal operations.</lst><brk></brk>
+<lst indent="-0.33">e. Emergency operations.</lst><brk></brk>
+<lst indent="-0.33">f. Operator service requirements.</lst><brk></brk>
+<lst indent="-0.33">g. Environmental conditions.</lst><brk></brk>
+<lst indent="-0.33">h. Operating log.</lst><brk></brk>
+<lst indent="-0.33">i. Lubrication data.</lst><brk></brk>
+<lst indent="-0.33">j. Preventive maintenance plan, schedule, and procedures.</lst><brk></brk>
+<lst indent="-0.33">k. Cleaning recommendations.</lst><brk></brk>
+<lst indent="-0.33">l. Troubleshooting guides and diagnostic techniques.</lst><brk></brk>
+<lst indent="-0.33">m. Wiring diagrams and control diagrams.</lst><brk></brk>
+<lst indent="-0.33">n. Repair procedures.</lst><brk></brk>
+<lst indent="-0.33">o. Removal and replacement instructions.</lst><brk></brk>
+<lst indent="-0.33">p. Spare parts and supply list.</lst><brk></brk>
+<lst indent="-0.33">q. Repair work-hours.</lst><brk></brk>
+<lst indent="-0.33">r. Product submittal data.</lst><brk></brk>
+<lst indent="-0.33">s. O&amp;M submittal data.</lst><brk></brk>
+<lst indent="-0.33">t. Parts identification.</lst><brk></brk>
+<lst indent="-0.33">u. Warranty information.</lst><brk></brk>
+<lst indent="-0.33">v. Extended warranty information.</lst><brk></brk>
+<lst indent="-0.33">w. Personnel training requirements.</lst><brk></brk>
+<lst indent="-0.33">x. Testing equipment and special tool information.</lst><brk></brk>
+<lst indent="-0.33">y. Testing and performance data.</lst><brk></brk>
+<lst indent="-0.33">z. Contractor information.</lst><brk></brk>
+<lst indent="-0.33">aa. Field test reports.</lst><brk></brk></spt>
+<spt outline="1.7.5"><ttl>1.7.5 Data Package 5</ttl><brk></brk>
+<lst indent="-0.33">a. Safety precautions and hazards.</lst><brk></brk>
+<lst indent="-0.33">b. Operator prestart.</lst><brk></brk>
+<lst indent="-0.33">c. Start-up, shutdown, and post-shutdown procedures.</lst><brk></brk>
+<lst indent="-0.33">d. Normal operations.</lst><brk></brk>
+<lst indent="-0.33">e. Environmental conditions.</lst><brk></brk>
+<lst indent="-0.33">f. Preventive maintenance plan, schedule, and procedures.</lst><brk></brk>
+<lst indent="-0.33">g. Troubleshooting guides and diagnostic techniques.</lst><brk></brk>
+<lst indent="-0.33">h. Wiring and control diagrams.</lst><brk></brk>
+<lst indent="-0.33">i. Maintenance and repair procedures.</lst><brk></brk>
+<lst indent="-0.33">j. Removal and replacement instructions.</lst><brk></brk>
+<lst indent="-0.33">k. Spare parts and supply list.</lst><brk></brk>
+<lst indent="-0.33">l. Product submittal data.</lst><brk></brk>
+<lst indent="-0.33">m. Manufacturer's instructions.</lst><brk></brk>
+<lst indent="-0.33">n. O&amp;M submittal data.</lst><brk></brk>
+<lst indent="-0.33">o. Parts identification.</lst><brk></brk>
+<lst indent="-0.33">p. Testing equipment and special tool information.</lst><brk></brk>
+<lst indent="-0.33">q. Warranty information.</lst><brk></brk>
+<lst indent="-0.33">r. Extended warranty information.</lst><brk></brk>
+<lst indent="-0.33">s. Testing and performance data.</lst><brk></brk>
+<lst indent="-0.33">t. Contractor information.</lst><brk></brk>
+<lst indent="-0.33">u. Field test reports.</lst><brk></brk>
+<lst indent="-0.33">v. Additional requirements for HVAC control systems.</lst><brk></brk></spt>
+</spt></prt><prt outline="2"><ttl>PART 2 PRODUCTS (NOT USED)</ttl><brk></brk></prt>
+<prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 TRAINING</ttl><brk></brk>
+<txt>Prior to acceptance of the facility by the Contracting Officer for Beneficial Occupancy, provide comprehensive training conducted in English for 
+the systems and equipment specified in the technical specifications. The training must be targeted for the Facilities Management Specialist, building 
+maintenance personnel, and applicable building occupants. Instructors must be well-versed in the particular systems that they are presenting. 
+Address aspects of the Operation and Maintenance Manual submitted in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 78 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> CLOSEOUT SUBMITTALS. Training must include 
+classroom or field lectures based on the system operating requirements. Notify the Contracting Officer in writing seven (7) calendar days prior 
+of the scheduled instructional services. The location of classroom training requires approval by the Contracting Officer.</txt><brk></brk>
+<spt outline="3.1.1"><ttl>3.1.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Training Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Submit a written training plan to the Contracting Officer for approval at least 60 calendar days prior to the scheduled training.<div class="brackets">[ Training plan 
+must be approved by the Commissioning Authority (CxA) prior to forwarding to the Contracting Officer. Also, coordinate the training schedule with 
+the Contracting Officer and CxA.]</div> Include within the plan the following elements:</txt><brk></brk>
+<lst indent="-0.33">a. Equipment included in training.</lst><brk></brk>
+<lst indent="-0.33">b. Intended audience.</lst><brk></brk>
+<lst indent="-0.33">c. Location of training.</lst><brk></brk>
+<lst indent="-0.33">d. Dates of training.</lst><brk></brk>
+<lst indent="-0.33">e. Objectives.</lst><brk></brk>
+<lst indent="-0.33">f. Outline of the information to be presented and subjects covered including description.</lst><brk></brk>
+<lst indent="-0.33">g. Start and finish times and duration of training on each subject.</lst><brk></brk>
+<lst indent="-0.33">h. Methods (e.g. classroom lecture, video, site walk-through, actual operational demonstrations, written handouts).</lst><brk></brk>
+<lst indent="-0.33">i. Instructor names and instructor qualifications for each subject.</lst><brk></brk>
+<lst indent="-0.33">j. List of texts and other materials to be furnished by the Contractor that are required to support training.</lst><brk></brk>
+<lst indent="-0.33">k. Description of proposed software to be used for video recording of training sessions.</lst><brk></brk></spt>
+<spt outline="3.1.2"><ttl>3.1.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Training Content<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>The core of this training must be based on manufacturer's recommendations and the operation and maintenance information.<div class="brackets">[ The CxA is responsible 
+for overseeing and approving the content and adequacy of the training.]</div> Spend 95 percent of the instruction time during the presentation on the 
+OPERATION AND MAINTENANCE DATA. Include the following for each system training presentation:</txt><brk></brk>
+<lst indent="-0.33">a. Start-up, normal operation, shutdown, unoccupied operation, seasonal changeover, manual operation, controls set-up and programming, 
+troubleshooting, and alarms.</lst><brk></brk>
+<lst indent="-0.33">b. Relevant health and safety issues.</lst><brk></brk>
+<lst indent="-0.33">c. Discussion of how the feature or system is environmentally responsive. Advise adjustments and optimizing methods for energy conservation.</lst><brk></brk>
+<lst indent="-0.33">d. Design intent.</lst><brk></brk>
+<lst indent="-0.33">e. Use of O&amp;M Manual Files.</lst><brk></brk>
+<lst indent="-0.33">f. Review of control drawings and schematics.</lst><brk></brk>
+<lst indent="-0.33">g. Interactions with other systems.</lst><brk></brk>
+<lst indent="-0.33">h. Special maintenance and replacement sources.</lst><brk></brk>
+<lst indent="-0.33">i. Tenant interaction issues.</lst><brk></brk></spt>
+<spt outline="3.1.3"><ttl>3.1.3 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Training Outline<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Provide the Operation and Maintenance Manual Files (Bookmarked PDF) and a written course outline listing the major and minor topics to be discussed 
+by the instructor on each day of the course to each trainee in the course. Provide the course outline 14 calendar days prior to the training.</txt><brk></brk></spt>
+<spt outline="3.1.4"><ttl>3.1.4 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Training Video Recording<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Record classroom training session(s) on video. Provide to the Contracting Officer two copies of the training session(s) in DVD video recording 
+format. Capture within the recording, in video and audio, the instructors' training presentations including question and answer periods with the 
+attendees. The recording camera(s) must be attended by a person during the recording sessions to assure proper size of exhibits and projections 
+during the recording are visible and readable when viewed as training.</txt><brk></brk></spt>
+<spt outline="3.1.5"><ttl>3.1.5 Unresolved Questions from Attendees</ttl><brk></brk>
+<txt>If, at the end of the training course, there are questions from attendees that remain unresolved, the instructor must send the answers, in writing, 
+to the Contracting Officer for transmittal to the attendees, and the training video must be modified to include the appropriate clarifications.</txt><brk></brk></spt>
+<spt outline="3.1.6"><ttl>3.1.6 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Validation of Training Completion<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Ensure that each attendee at each training session signs a class roster daily to confirm Government participation in the training. At the completion 
+of training, submit a signed validation letter that includes a sample record of training for reporting what systems were included in the training, 
+who provided the training, when and where the training was performed, and copies of the signed class rosters. Provide two copies of the validation 
+to the Contracting Officer, and one copy to the Operation and Maintenance Manual Preparer for inclusion into the Manual's documentation.</txt><brk></brk></spt>
+<spt outline="3.1.7"><ttl>3.1.7 Quality Control Coordination</ttl><brk></brk>
+<txt>Coordinate this training with<div class="brackets">[ the CxA in accordance with]</div> Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 45 00.00 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> QUALITY CONTROL.</txt><brk></brk>
+<brk></brk></spt>
+</spt></prt><end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

@@ -1,162 +1,162 @@
-<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
-<HDR><AST/><BRK/>
-USACE / NAVFAC / AFCEC / NASA                  UFGS-10 26 00 (August 2017)<BRK/>
-                                               Change 2 - 08/18<BRK/>
-                                               ---------------------------<BRK/>
-Preparing Activity:  <PRA>USACE</PRA>                     Superseding<BRK/>
-                                               UFGS-10 26 00(August 2010)<BRK/>
-<BRK/>
-<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
-<BRK/>
-<HL4>References are in agreement with UMRL dated January 2020</HL4><BRK/>
-<AST/><BRK/></HDR>
-<BRK/>
-<SCN>SECTION 10 26 00</SCN><BRK/>
-<BRK/>
-<STL>WALL AND DOOR PROTECTION</STL><BRK/>
-<DTE>08/17</DTE><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><BRK />
+<HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                  UFGS-10 26 00 (August 2017)<BRK />
+                                               Change 2 - 08/18<BRK />
+                                               ---------------------------<BRK />
+Preparing Activity:  <PRA>USACE</PRA>                     Superseding<BRK />
+                                               UFGS-10 26 00(August 2010)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated January 2020</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 10 26 00</SCN><BRK />
+<BRK />
+<STL>WALL AND DOOR PROTECTION</STL><BRK />
+<DTE>08/17</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This guide specification covers the requirements for <SCP>corner guards, wall 
-guards (bumper guards), door protectors, and wall panels</SCP>.<BRK/>
-<BRK/>
+guards (bumper guards), door protectors, and wall panels</SCP>.<BRK />
+<BRK />
 Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
 Standard when editing this guide specification or preparing new project specification 
 sections.  Edit this guide specification for project specific requirements by 
 adding, deleting, or revising text.  For bracketed items, choose applicable 
-item(s) or insert appropriate information.<BRK/>
-<BRK/>
+item(s) or insert appropriate information.<BRK />
+<BRK />
 Remove information and requirements not required in respective project, whether 
-or not brackets are present.<BRK/>
-<BRK/>
+or not brackets are present.<BRK />
+<BRK />
 Comments, suggestions and recommended changes for this guide specification are 
-welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Army facilities not excluded by TI 800-01 Design Criteria will be accessible 
 in accordance with 36 CFR, Part 1191, Americans with Disabilities Act (ADA) 
-Accessibility Guidelines for Buildings and Facilities.</NPR><BRK/>
-<BRK/>
+Accessibility Guidelines for Buildings and Facilities.</NPR><BRK />
+<BRK />
 <NPR>Drawings should show basic profiles and details but should not be so explicit 
 as to become proprietary in nature.  The following information must be shown 
-on the project drawings:</NPR><BRK/>
-<BRK/>
-<NPR>1.  Locations of wall and corner guards.</NPR><BRK/>
-<BRK/>
-<NPR>2.  Locations of handrails, wall panels, and door protectors.</NPR><BRK/>
-<BRK/>
-<NPR>3.  Mounting and anchorage details, and dimensions.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<SPT><TTL>REFERENCES</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+on the project drawings:</NPR><BRK />
+<BRK />
+<NPR>1.  Locations of wall and corner guards.</NPR><BRK />
+<BRK />
+<NPR>2.  Locations of handrails, wall panels, and door protectors.</NPR><BRK />
+<BRK />
+<NPR>3.  Mounting and anchorage details, and dimensions.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
 the guide specification.  The publications are referred to in the text by basic 
 designation only and listed in this paragraph by organization, designation, 
-date, and title.<BRK/>
-<BRK/>
+date, and title.<BRK />
+<BRK />
 Use the Reference Wizard's Check Reference feature when you add a RID outside 
 of the Section's Reference Article to automatically place the reference in the 
 Reference Article.  Also use the Reference Wizard's Check Reference feature 
-to update the issue dates.<BRK/>
-<BRK/>
+to update the issue dates.<BRK />
+<BRK />
 References not used in the text will automatically be deleted from this section 
 of the project specification when you choose to reconcile references in the 
-publish print process.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
-referred to within the text by the basic designation only.</TXT><BRK/>
-<BRK/>
-<REF><ORG>ALUMINUM ASSOCIATION (AA)</ORG><BRK/>
-<BRK/>
+referred to within the text by the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>ALUMINUM ASSOCIATION (AA)</ORG><BRK />
+<BRK />
 <RID>AA DAF45</RID><RTL>(2003; Reaffirmed 2009) Designation System for 
-Aluminum Finishes</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK/>
-<BRK/>
+Aluminum Finishes</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK />
+<BRK />
 <RID>ASTM A240/A240M</RID><RTL>(20<DEL>18</DEL><ADD>22</ADD>) Standard Specification for Chromium 
 and Chromium-Nickel Stainless Steel Plate, Sheet, 
 and Strip for Pressure Vessels and for General 
-Applications</RTL><BRK/>
-<BRK/>
+Applications</RTL><BRK />
+<BRK />
 <RID>ASTM B221</RID><RTL>(20<DEL>14</DEL><ADD>21</ADD>) Standard Specification for Aluminum 
 and Aluminum-Alloy Extruded Bars, Rods, Wire, 
-Profiles, and Tubes</RTL><BRK/>
-<BRK/>
+Profiles, and Tubes</RTL><BRK />
+<BRK />
 <RID>ASTM D256</RID><RTL>(2010; R 2018) Standard Test Methods for Determining 
-the Izod Pendulum Impact Resistance of Plastics</RTL><BRK/>
-<BRK/>
+the Izod Pendulum Impact Resistance of Plastics</RTL><BRK />
+<BRK />
 <RID>ASTM D543</RID><RTL>(2014) Standard Practices for Evaluating the 
-Resistance of Plastics to Chemical Reagents</RTL><BRK/>
-<BRK/>
+Resistance of Plastics to Chemical Reagents</RTL><BRK />
+<BRK />
 <RID>ASTM D635</RID><RTL>(2018) Standard Test Method for Rate of Burning 
 and/or Extent and Time of Burning of Plastics 
-in a Horizontal Position</RTL><BRK/>
-<BRK/>
+in a Horizontal Position</RTL><BRK />
+<BRK />
 <RID>ASTM E84</RID><DEL><RTL>(2018a) Standard Test Method for Surface Burning 
 Characteristics of Building Materials</RTL></DEL><ADD><RTL>(2023) 
 Standard Test Method for Surface Burning Characteristics 
-of Building Materials</RTL></ADD><BRK/>
-<BRK/>
+of Building Materials</RTL></ADD><BRK />
+<BRK />
 <RID>ASTM G21</RID><DEL><RTL>(2015) Standard Practice for Determining Resistance 
 of Synthetic Polymeric Materials to Fungi</RTL></DEL><ADD><RTL>(2015; 
 R 2021; E 2021) Standard Practice for Determining 
 Resistance of Synthetic Polymeric Materials 
-to Fungi</RTL></ADD><BRK/>
-<BRK/></REF>
-<ADD><REF><ORG>CALIFORNIA DEPARTMENT OF PUBLIC HEALTH (CDPH)</ORG><BRK/>
-<BRK/>
+to Fungi</RTL></ADD><BRK />
+<BRK /></REF>
+<ADD><REF><ORG>CALIFORNIA DEPARTMENT OF PUBLIC HEALTH (CDPH)</ORG><BRK />
+<BRK />
 <RID>CDPH SECTION 01350</RID><RTL>(2017; Version 1.2) Standard Method for the 
 Testing and Evaluation of Volatile Organic Chemical 
 Emissions from Indoor Sources using Environmental 
-Chambers</RTL><BRK/>
-<BRK/></REF>
-</ADD><REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK/>
-<BRK/>
+Chambers</RTL><BRK />
+<BRK /></REF>
+</ADD><REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK />
+<BRK />
 <RID>JIS A 1901</RID><RTL>(2015) Determination of the Emission of Volatile 
 Organic Compounds and Aldehydes by Building 
-Products - Small Chamber Test Method</RTL><BRK/>
-<BRK/>
+Products - Small Chamber Test Method</RTL><BRK />
+<BRK />
 <RID>JIS A 6909</RID><RTL>(20<DEL>14</DEL><ADD>21</ADD>) Coating Materials for Textured Finishes 
-of Buildings</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG>NATIONAL ASSOCIATION OF ARCHITECTURAL METAL MANUFACTURERS (NAAMM)</ORG><BRK/>
-<BRK/>
-<RID>NAAMM AMP 500</RID><RTL>(2006) Metal Finishes Manual</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK/>
-<BRK/>
+of Buildings</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>NATIONAL ASSOCIATION OF ARCHITECTURAL METAL MANUFACTURERS (NAAMM)</ORG><BRK />
+<BRK />
+<RID>NAAMM AMP 500</RID><RTL>(2006) Metal Finishes Manual</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK />
+<BRK />
 <RID>NFPA 80</RID><RTL>(20<DEL>16; TIA 16-1</DEL><ADD>22</ADD>) Standard for Fire Doors and 
-Other Opening Protectives</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG>SCIENTIFIC CERTIFICATION SYSTEMS (SCS)</ORG><BRK/>
-<BRK/>
-<RID>SCS</RID><RTL>SCS Global Services (SCS) Indoor Advantage</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG>SOCIETY OF AUTOMOTIVE ENGINEERS INTERNATIONAL (SAE)</ORG><BRK/>
-<BRK/>
+Other Opening Protectives</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>SCIENTIFIC CERTIFICATION SYSTEMS (SCS)</ORG><BRK />
+<BRK />
+<RID>SCS</RID><RTL>SCS Global Services (SCS) Indoor Advantage</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>SOCIETY OF AUTOMOTIVE ENGINEERS INTERNATIONAL (SAE)</ORG><BRK />
+<BRK />
 <RID>SAE J1545</RID><RTL>(2005; R 2014) Instrumental Color Difference 
 Measurement for Exterior Finishes, Textiles 
-and Colored Trim</RTL><BRK/>
-<BRK/></REF>
-</SPT><SPT><TTL>SUBMITTALS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+and Colored Trim</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
 PROCEDURES and edit the following list to reflect only the submittals required 
-for the project.<BRK/>
-<BRK/>
+for the project.<BRK />
+<BRK />
 The Guide Specification technical editors have designated those items that require 
 Government approval, due to their complexity or criticality, with a "G."  Generally, 
 other submittal items can be reviewed by the Contractor's Quality Control System.  
-Only add a “G” to an item, if the submittal is sufficiently important or complex 
-in context of the project.<BRK/>
-<BRK/>
+Only add a &#8220;G&#8221; to an item, if the submittal is sufficiently important or complex 
+in context of the project.<BRK />
+<BRK />
 For submittals requiring Government approval on Army projects, a code of up 
 to three characters within the submittal tags may be used following the "G" 
 designation to indicate the approving authority.  Codes for Army projects using 
@@ -164,166 +164,166 @@ the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO"
 for District Office (Engineering Division or other organization in the District 
 Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
 Office.  Codes following the "G" typically are not used for Navy, Air Force, 
-and NASA projects.<BRK/>
-<BRK/>
+and NASA projects.<BRK />
+<BRK />
 The "S" following a submittal item indicates that the submittal is required 
 for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
 in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
-submittal under the SD number that best describes the submittal item.<BRK/>
-<BRK/>
+submittal under the SD number that best describes the submittal item.<BRK />
+<BRK />
 Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
-the second bracketed item for Army projects.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+the second bracketed item for Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
 are for [Contractor Quality Control approval.] [information only.  When used, a designation following the "G" 
 designation identifies the office that will review the submittal for the Government.]  Submittals with an "S" 
 are for inclusion in the Sustainability eNotebook, in conformance to Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
-Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
-<BRK/>
-<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Corner Guards</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Wall Guards (Bumper Guards)</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Door Protectors</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Wall Covering/Panels</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
-<BRK/>
-<LST><SUB>SD-03 Product Data</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Corner Guards</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Wall Guards (Bumper Guards)</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Door Protectors</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Wall Covering/Panels</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
-<BRK/>
-[<ITM><SUB>Recycled content for aluminum component of corner guards</SUB>; <SUB>S</SUB></ITM>]<BRK/>
-<BRK/>
-[<ITM><SUB>Recycled content for steel component of corner guards</SUB>; <SUB>S</SUB></ITM>]<BRK/>
-<BRK/>
+Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Corner Guards</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Wall Guards (Bumper Guards)</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Door Protectors</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Wall Covering/Panels</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-03 Product Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Corner Guards</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Wall Guards (Bumper Guards)</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Door Protectors</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Wall Covering/Panels</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+[<ITM><SUB>Recycled content for aluminum component of corner guards</SUB>; <SUB>S</SUB></ITM>]<BRK />
+<BRK />
+[<ITM><SUB>Recycled content for steel component of corner guards</SUB>; <SUB>S</SUB></ITM>]<BRK />
+<BRK />
 [<ITM><SUB>Recycled content for aluminum component of wall guards, Combination Handrail/Wall guard and 
-handrails</SUB>; <SUB>S</SUB></ITM>]<BRK/>
-<BRK/>
-[<ITM><SUB>Recycled content for aluminum component of wall guards/bed locators</SUB>; <SUB>S</SUB></ITM>]<BRK/>
-<BRK/>
-[<ITM><SUB>Recycled content for aluminum component of combination handrail/wall guards</SUB>; <SUB>S</SUB></ITM>]<BRK/>
-<BRK/>
-[<ITM><SUB>Recycled content for aluminum component of handrails</SUB>; <SUB>S</SUB></ITM>]<BRK/>
-<BRK/>
-<LST><SUB>SD-04 Samples</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Finish</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
-<BRK/>
-<LST><SUB>SD-06 Test Reports</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Corner Guards</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Wall Guards (Bumper Guards)</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Door Protectors</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Wall Covering/Panels</SUB></ITM><BRK/>
-<BRK/>
-<LST><SUB>SD-07 Certificates</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Corner Guards</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Wall Guards (Bumper Guards)</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Door Protectors</SUB></ITM><BRK/>
-<BRK/>
-[<ITM><SUB>Indoor air quality for wall covering/panels</SUB>; <SUB>S</SUB></ITM>]<BRK/>
-<BRK/>
-[<ITM><SUB>Indoor air quality for adhesives</SUB>; <SUB>S</SUB></ITM>]<BRK/>
-<BRK/></SPT>
-<SPT><TTL>CERTIFICATIONS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Indoor Air Quality</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Wall Covering/Panels</TTL><BRK/>
-<BRK/>
+handrails</SUB>; <SUB>S</SUB></ITM>]<BRK />
+<BRK />
+[<ITM><SUB>Recycled content for aluminum component of wall guards/bed locators</SUB>; <SUB>S</SUB></ITM>]<BRK />
+<BRK />
+[<ITM><SUB>Recycled content for aluminum component of combination handrail/wall guards</SUB>; <SUB>S</SUB></ITM>]<BRK />
+<BRK />
+[<ITM><SUB>Recycled content for aluminum component of handrails</SUB>; <SUB>S</SUB></ITM>]<BRK />
+<BRK />
+<LST><SUB>SD-04 Samples</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Finish</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Corner Guards</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Wall Guards (Bumper Guards)</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Door Protectors</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Wall Covering/Panels</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Corner Guards</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Wall Guards (Bumper Guards)</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Door Protectors</SUB></ITM><BRK />
+<BRK />
+[<ITM><SUB>Indoor air quality for wall covering/panels</SUB>; <SUB>S</SUB></ITM>]<BRK />
+<BRK />
+[<ITM><SUB>Indoor air quality for adhesives</SUB>; <SUB>S</SUB></ITM>]<BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>CERTIFICATIONS</TTL><BRK />
+<BRK />
+<SPT outline="1.3.1"><TTL>Indoor Air Quality</TTL><BRK />
+<BRK />
+<SPT outline="1.3.1.1"><TTL>Wall Covering/Panels</TTL><BRK />
+<BRK />
 <TXT>Provide sheet and high impact resistant resilient materials certified to meet indoor air quality requirements 
 of <RID>JIS A 1901</RID> (use the office or classroom requirements, regardless of space type) and formaldehyde emission 
 class F**** per <RID>JIS A 6909</RID>.  Provide current product certification documentation from certification body.  When 
 product does not have certification, provide validation that product meets the indoor air quality product requirements 
-cited herein.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Adhesives and Sealants</TTL><BRK/>
-<BRK/>
+cited herein.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3.1.2"><TTL>Adhesives and Sealants</TTL><BRK />
+<BRK />
 <TXT>Provide products certified to meet indoor air quality requirements of <RID>JIS A 1901</RID> (use the office or classroom 
 requirements, regardless of space type) and formaldehyde emission class F**** per <RID>JIS A 6909</RID>.  Provide current 
 product certification documentation from certification body  When product does not have certification, provide 
-validation that product meets the indoor air quality product requirements cited herein..</TXT><BRK/>
-<BRK/></SPT>
-</SPT></SPT><SPT><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK/>
-<BRK/>
+validation that product meets the indoor air quality product requirements cited herein..</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="1.4"><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK />
+<BRK />
 <TXT>Deliver materials to the project site in manufacturer's original unopened containers with seals unbroken and 
 labels and trademarks intact.  Keep materials dry, protected from weather and damage, and stored under cover.  
-Materials must be stored at approximately<MET> 21 degrees C</MET><ENG> 70 degrees F</ENG> for at least 48 hours prior to installation.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>WARRANTY</TTL><BRK/>
-<BRK/>
-<TXT>Provide manufacturer's standard performance guarantees or warranties that extend beyond a 1 year period.</TXT><BRK/>
-<BRK/></SPT>
-</PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>STANDARD PRODUCTS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+Materials must be stored at approximately<MET> 21 degrees C</MET><ENG> 70 degrees F</ENG> for at least 48 hours prior to installation.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5"><TTL>WARRANTY</TTL><BRK />
+<BRK />
+<TXT>Provide manufacturer's standard performance guarantees or warranties that extend beyond a 1 year period.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>STANDARD PRODUCTS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  All paragraphs must be carefully edited because of the broad number of 
-possible requirements and the diverse combinations available with these products.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+possible requirements and the diverse combinations available with these products.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>To the maximum extent possible, corner guards, door and door frame protectors, wall guards (bumper guards), wall 
 panels and wall covering must be the standard products of a single manufacturer and must be furnished as detailed.  
 Drawings show general configuration of products required, and items differing in minor details from those shown 
-will be acceptable.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Resilient Material</TTL><BRK/>
-<BRK/>
+will be acceptable.</TXT><BRK />
+<BRK />
+<SPT outline="2.1.1"><TTL>Resilient Material</TTL><BRK />
+<BRK />
 <TXT>Provide resilient material consisting of high impact resistant extruded acrylic vinyl, polyvinyl chloride, or 
-injection molded thermal plastic conforming to the following:</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Minimum Impact Resistance</TTL><BRK/>
-<BRK/>
+injection molded thermal plastic conforming to the following:</TXT><BRK />
+<BRK />
+<SPT outline="2.1.1.1"><TTL>Minimum Impact Resistance</TTL><BRK />
+<BRK />
 <TXT>Minimum impact resistance must be<MET> 960.8 N-m/m</MET><ENG> 18 ft-lbs/sq. inch</ENG> when tested in accordance with <RID>ASTM D256</RID>, (Izod 
-impact, ft-lbs per sq inch notched).</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Fire Rating</TTL><BRK/>
-<BRK/>
+impact, ft-lbs per sq inch notched).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.1.2"><TTL>Fire Rating</TTL><BRK />
+<BRK />
 <TXT>Fire rating must be Class 1 when tested in accordance with <RID>ASTM E84</RID>, having a maximum flame spread of 25 and 
 a smoke developed rating of 450 or less.  Material must be rated self extinguishing when tested in accordance 
 with <RID>ASTM D635</RID>.  Material must be labeled and tested by an approved nationally known testing laboratory.  Resilient 
 material used for protection on fire rated doors and frames must be listed by the testing laboratory performing 
 the tests.  Resilient material installed on fire rated wood/steel door and frame assemblies must have been tested 
 on similar type assemblies.  Test results of material tested on any other combination of door/frame assembly 
-will not be acceptable.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Integral Color</TTL><BRK/>
-<BRK/>
+will not be acceptable.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.1.3"><TTL>Integral Color</TTL><BRK />
+<BRK />
 <TXT>Colored components must have integral color and must be matched in accordance with <RID>SAE J1545</RID> to within plus or 
-minus 1.0 on the CIE-LCH scales.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Chemical and Stain Resistance</TTL><BRK/>
-<BRK/>
-<TXT>Materials must be resistant to chemicals and stains reagents in accordance with <RID>ASTM D543</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Fungal and Bacterial Resistance</TTL><BRK/>
-<BRK/>
-<TXT>Materials must be resistant to fungi and bacteria in accordance with <RID>ASTM G21</RID>, as applicable.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></SPT><SPT><TTL><SUB>CORNER GUARDS</SUB></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  For medical facilities, corner guards must extend from floor to ceiling.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<SPT><TTL>Resilient Corner Guards</TTL><BRK/>
-<BRK/>
+minus 1.0 on the CIE-LCH scales.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.1.4"><TTL>Chemical and Stain Resistance</TTL><BRK />
+<BRK />
+<TXT>Materials must be resistant to chemicals and stains reagents in accordance with <RID>ASTM D543</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.1.5"><TTL>Fungal and Bacterial Resistance</TTL><BRK />
+<BRK />
+<TXT>Materials must be resistant to fungi and bacteria in accordance with <RID>ASTM G21</RID>, as applicable.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="2.2"><TTL><SUB>CORNER GUARDS</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For medical facilities, corner guards must extend from floor to ceiling.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="2.2.1"><TTL>Resilient Corner Guards</TTL><BRK />
+<BRK />
 <TXT>Corner guard units must be [flush mounted] [surface mounted] type, radius formed to profile shown.  Corner guards 
 must [extend from floor to ceiling.] [be [_____]<MET> mm</MET><ENG> feet</ENG> high.]  Mounting hardware, cushions, and base plates 
 must be furnished.  Assembly must consist of a snap-on corner guard formed from high impact resistant resilient 
@@ -334,20 +334,20 @@ guards must act as a stop for adjacent wall finish material.  Factory fabricated
 for top and bottom of surface mounted corner guards.  Flush mounted corner guards installed in fire rated wall 
 must maintain the rating of the wall.  Insulating materials that are an integral part of the corner guard system 
 must be provided by the manufacturer of the corner guard system.  Exposed metal portions of fire rated assemblies 
-must have a paintable surface.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Stainless Steel Corner Guards</TTL><BRK/>
-<BRK/>
+must have a paintable surface.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2"><TTL>Stainless Steel Corner Guards</TTL><BRK />
+<BRK />
 <TXT>Stainless steel corner guards must be fabricated of [<MET> 1.3 mm</MET><ENG> 16 gauge</ENG>][<MET> 0.9 mm</MET><ENG> 18 gauge</ENG>] thick material conforming 
 to <RID>ASTM A240/A240M</RID>, type 302 or 304.  Provide stainless steel base material that contains a minimum of 60 percent 
 recycled content.  Provide data identifying percentage of <SUB>recycled content for steel component of corner guards</SUB>
 .  Corner guards must [extend from floor to ceiling.] [be [_____]<MET> mm</MET><ENG> feet</ENG> high.]  Corner guard must be formed 
-to dimensions shown.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL><SUB>WALL GUARDS (BUMPER GUARDS)</SUB></TTL><BRK/>
-<BRK/>
-<SPT><TTL>Wall Guards, Combination Handrail/Wall Guards and Handrails</TTL><BRK/>
-<BRK/>
+to dimensions shown.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3"><TTL><SUB>WALL GUARDS (BUMPER GUARDS)</SUB></TTL><BRK />
+<BRK />
+<SPT outline="2.3.1"><TTL>Wall Guards, Combination Handrail/Wall Guards and Handrails</TTL><BRK />
+<BRK />
 <TXT>Wall guards, combination handrail/wall guards, and handrails must be provided with prefabricated end closure 
 caps, inside and outside corners, concealed splices, cushions, mounting hardware and other accessories standard 
 with the manufacturer.  Extruded aluminum retainers must conform to <RID>ASTM B221</RID>, alloy 6063, temper T5 or T6.  
@@ -355,53 +355,53 @@ Provide aluminum components that contain a minimum of 35 percent recycled conten
 percentage of <SUB>recycled content for aluminum component of wall guards, combination handrail/wall guard and handrails</SUB>
 .  End caps and corners must be field adjustable to assure close alignment with handrails and wall guards.  [Wall 
 guards] [Combination handrail/wall guards] must have profile [as shown] [as shown with [vinyl] [carpet] [_____] 
-inserts].</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Wall Guards/Bed Locators</TTL><BRK/>
-<BRK/>
+inserts].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.2"><TTL>Wall Guards/Bed Locators</TTL><BRK />
+<BRK />
 <TXT>Wall guards must consist of snap-on covers of high impact resistant resilient material, minimum<MET> 1.98 mm</MET><ENG> 0.078 
 inch</ENG> thick, mounted over<MET> [50] [_____] mm</MET><ENG> [2] [_____] inch</ENG> wide aluminum, minimum<MET> 1.57 mm</MET><ENG> 0.062 inch</ENG> thick retainer, 
 anchored to wall at maximum<MET> 600 mm</MET><ENG> 24 inches</ENG> on center.  Provide aluminum components that contain a minimum of 
 35 percent recycled content.  Provide data identifying percentage of <SUB>recycled content for aluminum component 
-of wall guards/bed locators</SUB>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Combination Handrail/Wall Guards</TTL><BRK/>
-<BRK/>
+of wall guards/bed locators</SUB>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.3"><TTL>Combination Handrail/Wall Guards</TTL><BRK />
+<BRK />
 <TXT>Combination handrail/wall guards must consist of snap-on covers of high impact resistant resilient material, 
 minimum<MET> 1.98 mm</MET><ENG> 0.078 inch</ENG> thick, on a continuous, extruded aluminum retainer, minimum<MET> 1.83 mm</MET><ENG> 0.072 inch</ENG> thick 
 anchored to wall at maximum<MET> 800 mm</MET><ENG> 32 inches</ENG> on center.  Provide aluminum components that contain a minimum of 
 35 percent recycled content.  Provide data identifying percentage of <SUB>recycled content for aluminum component 
-of combination handrail/wall guards</SUB>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Handrails</TTL><BRK/>
-<BRK/>
+of combination handrail/wall guards</SUB>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.4"><TTL>Handrails</TTL><BRK />
+<BRK />
 <TXT>Handrails must consist of snap-on covers of high impact resistant resilient material, minimum<MET> 1.98 mm</MET><ENG> 0.078 inch</ENG>
  thick on a continuous extruded aluminum retainer, minimum<MET> 1.83 mm</MET><ENG> 0.072 inch</ENG> thick anchored to wall at maximum<MET>
  800 mm</MET><ENG> 32 inches</ENG> on center.  Provide aluminum components that contain a minimum of 35 percent recycled content.  
 Provide data identifying percentage of <SUB>recycled content for aluminum component of handrails</SUB>.  Handrails must 
 be provided with prefabricated end closure caps, inside and outside corners, concealed splices, cushions, mounting 
 hardware and other accessories standard with the manufacturer.  End caps and corners must be field adjustable 
-to assure close alignment with handrails.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL><SUB>DOOR PROTECTORS</SUB></TTL><BRK/>
-<BRK/>
+to assure close alignment with handrails.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.4"><TTL><SUB>DOOR PROTECTORS</SUB></TTL><BRK />
+<BRK />
 <TXT>[Door] [Door envelope] [Door knob] [and] [door frame] protection items must consist of high impact resistant 
 acrylic vinyl or polyvinyl chloride resilient material, minimum [<MET>1.52 mm</MET><ENG> 0.060 inch</ENG> thick for doors] [and] [<MET>0.89 
 mm</MET><ENG> 0.035 inch</ENG> thick for door frames].  Coordinate door and door frame protection material requirements with door 
 and frame suppliers to insure fit for all components and color matching with other resilient materials.  Provide 
-adhesive as recommended by resilient material manufacturer.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL><SUB>WALL COVERING/PANELS</SUB></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+adhesive as recommended by resilient material manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5"><TTL><SUB>WALL COVERING/PANELS</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Recommended locations for various thicknesses of rigid wall covering/panels 
 are as follows: <MET> 0.50 to 1.02 mm</MET><ENG> 0.022 to 0.040 inch</ENG> thick for lobbies and elevator 
 areas,<MET> 1.52 to 2.03 mm</MET><ENG> 0.060 to 0.080 inch</ENG> thick for service corridors, and<MET> 
 2.38 to 3.1 mm</MET><ENG> 0.093 to 0.125 inch</ENG> thick for loading dock areas.  A<MET> 9.53 mm</MET><ENG> 
 0.375 inch</ENG> thick composite wall panel is recommended for installation over existing 
-substrates such as ceramic tile, masonry block, or damaged plaster/drywall.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+substrates such as ceramic tile, masonry block, or damaged plaster/drywall.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide wall covering/panels consisting of high impact rigid acrylic vinyl or polyvinyl chloride resilient material.  
 Panel sizes must be<MET> [600 mm x 1220 mm]</MET><ENG> [2 x 4 feet]</ENG> [_____].  Submit fire rating and extinguishing test results 
 for resilient material.  Also submit statements attesting that the items comply with specified fire and safety 
@@ -409,131 +409,131 @@ code requirements.  Provide wall covering material used on the interior of the b
 the weatherproofing system) that meets either emissions requirements of <RID>CDPH SECTION 01350</RID> (use the office or 
 classroom requirements, regardless of space type) the VOC content requirements of <RID>JIS A 1901</RID> (use the office 
 or classroom requirements, regardless of space type) and formaldehyde emission class F**** per <RID>JIS A 6909</RID>.  Provide 
-certification or validation of <SUB>indoor air quality for wall covering/panels</SUB>.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Rigid Vinyl Acrylic Wall Covering</TTL><BRK/>
-<BRK/>
-<TXT>Wall covering thickness must be<MET> [0.56] [0.71] [1.02] [1.52] mm</MET><ENG> [0.022] [0.028] [0.040] [0.375] inch</ENG>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>High Impact Wall Panels</TTL><BRK/>
-<BRK/>
+certification or validation of <SUB>indoor air quality for wall covering/panels</SUB>.</TXT><BRK />
+<BRK />
+<SPT outline="2.5.1"><TTL>Rigid Vinyl Acrylic Wall Covering</TTL><BRK />
+<BRK />
+<TXT>Wall covering thickness must be<MET> [0.56] [0.71] [1.02] [1.52] mm</MET><ENG> [0.022] [0.028] [0.040] [0.375] inch</ENG>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5.2"><TTL>High Impact Wall Panels</TTL><BRK />
+<BRK />
 <TXT>Wall panel face and edge thickness must be<MET> [0.56] [0.71] mm</MET><ENG> [0.022] [0.028] inch</ENG>.  Panel face must be factory 
 banded to a<MET> 9.53 mm</MET><ENG> 0.375 inch</ENG> thick fiberboard core.  The backside of the panel must be laminated with a moisture 
-resistant vapor barrier.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>TRIM, FASTENERS AND ANCHORS</TTL><BRK/>
-<BRK/>
-<TXT>Provide vinyl trim, fasteners and anchors for each specific installation as shown.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL><SUB>FINISH</SUB></TTL><BRK/>
-<BRK/>
-<TXT>Submit [three] [_____] samples indicating color and texture of materials requiring color and finish.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Aluminum Finish</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+resistant vapor barrier.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.6"><TTL>TRIM, FASTENERS AND ANCHORS</TTL><BRK />
+<BRK />
+<TXT>Provide vinyl trim, fasteners and anchors for each specific installation as shown.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7"><TTL><SUB>FINISH</SUB></TTL><BRK />
+<BRK />
+<TXT>Submit [three] [_____] samples indicating color and texture of materials requiring color and finish.</TXT><BRK />
+<BRK />
+<SPT outline="2.7.1"><TTL>Aluminum Finish</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  On small projects, specify finish of aluminum by using description and 
-not the Aluminum Association designations.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+not the Aluminum Association designations.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Finish for aluminum must be in accordance with <RID>AA DAF45</RID>.  Exposed aluminum must be designation [[AA-C22A31] [_____] 
 chemically etched medium matte, with clear anodic coating] [[AA-C22A32] [_____] chemically etched medium matte 
 with integrally colored anodic coating] class II architectural coating<MET> 0.010 mm</MET><ENG> 0.4 mil</ENG> thick.  Concealed aluminum 
-shall be mill finish as fabricated, uniform in natural color and free from surface blemishes.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Stainless Steel Finish</TTL><BRK/>
-<BRK/>
+shall be mill finish as fabricated, uniform in natural color and free from surface blemishes.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.2"><TTL>Stainless Steel Finish</TTL><BRK />
+<BRK />
 <TXT>Finish for stainless steel must be in accordance with [<RID>ASTM A240/A240M</RID>, Type 302 or 304] [<RID>NAAMM AMP 500</RID>], finish 
-number 4.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Resilient Material Finish</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+number 4.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.3"><TTL>Resilient Material Finish</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Coordinate resilient finishes with manufacturers.  Certain finishes and 
-textures are not available from some manufacturers.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+textures are not available from some manufacturers.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Finish for resilient material must be [embossed [velour] [stipple] [_____]] [[fake woodgrain] [high gloss vinyl]] 
-texture with colors in accordance with <RID>SAE J1545</RID>.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>ADHESIVES</TTL><BRK/>
-<BRK/>
+texture with colors in accordance with <RID>SAE J1545</RID>.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.8"><TTL>ADHESIVES</TTL><BRK />
+<BRK />
 <TXT>Adhesive for resilient material must be in accordance with manufacturers recommendations.  Provide sealants and 
 non-aerosol adhesive products used on the interior of the building (defined as inside of the weatherproofing 
 system) that meet either emissions requirements of <RID>CDPH SECTION 01350</RID> (limit requirements for either office or 
 classroom spaces regardless of space type) the VOC content requirements of <RID>JIS A 1901</RID> (use the office or classroom 
 requirements, regardless of space type) and formaldehyde emission class F**** per <RID>JIS A 6909</RID>.  Provide certification 
-or validation of <SUB>indoor air quality for adhesives</SUB>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>COLOR</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+or validation of <SUB>indoor air quality for adhesives</SUB>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9"><TTL>COLOR</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Editing of color reference sentence(s) must be coordinated with the Government.  
 Generally Section <SRF>09 06 00</SRF> SCHEDULES FOR FINISHES or drawing is used when the 
 project is designed by an Architect or Interior designer.  Color must be selected 
 from manufacturers standard colors or identified as a manufacturers color in 
-this specification only when the project is very simple and has minimal finishes.<BRK/>
-<BRK/>
+this specification only when the project is very simple and has minimal finishes.<BRK />
+<BRK />
 When the Government directs that color be located in the drawings a note must 
 be added that states:  "Where color is shown as being specific to one manufacturer, 
 an equivalent color by another manufacturer may be submitted for approval.  
 Manufacturers and materials specified are not intended to limit the selection 
 of equal colors from other manufacturers.  The word "color" as used herein includes 
-surface color and pattern."<BRK/>
-<BRK/>
+surface color and pattern."<BRK />
+<BRK />
 Prior to specifying a custom color finish, research to determine if additional 
 cost and lead time is feasible.  Note there is often a minimum order requirement; 
-this requirement will also affect future orders.<BRK/>
-<BRK/>
+this requirement will also affect future orders.<BRK />
+<BRK />
 When a manufacturer's name, stock number, pattern, and color is used, be certain 
-that the product conforms to this specification, as edited.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<BRK/>
+that the product conforms to this specification, as edited.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<BRK />
 <TXT>Color must be [in accordance with Section <SRF>09 06 00</SRF> SCHEDULES FOR FINISHES.] [as indicated.] [selected from manufacturers 
 standard colors.] [[______.]  Color listed is not intended to limit the selection of equal colors from other 
-manufacturers.]</TXT><BRK/>
-<BRK/></SPT>
-</PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
-<BRK/>
-<SPT><TTL>INSTALLATION</TTL><BRK/>
-<BRK/>
-<TXT>Do not install items that show visual evidence of biological growth.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Corner Guards and Wall Guards (Bumper Guards)</TTL><BRK/>
-<BRK/>
-<TXT>Material must be mounted at location indicated in accordance with manufacturer's recommendations.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Door, Door Frame Protectors, and Wall Panels</TTL><BRK/>
-<BRK/>
+manufacturers.]</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>INSTALLATION</TTL><BRK />
+<BRK />
+<TXT>Do not install items that show visual evidence of biological growth.</TXT><BRK />
+<BRK />
+<SPT outline="3.1.1"><TTL>Corner Guards and Wall Guards (Bumper Guards)</TTL><BRK />
+<BRK />
+<TXT>Material must be mounted at location indicated in accordance with manufacturer's recommendations.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.2"><TTL>Door, Door Frame Protectors, and Wall Panels</TTL><BRK />
+<BRK />
 <TXT>Surfaces to receive protection must be clean, smooth, and free of obstructions.  Protectors must be installed 
 after frames are in place, but prior to hanging of doors, in accordance with manufacturer's specific instructions.  
 Adhesives must be applied in controlled environment in accordance with manufacturer's recommendations.  Protection 
-for fire doors and frames must be installed in accordance with <RID>NFPA 80</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Stainless Steel Guards</TTL><BRK/>
-<BRK/>
+for fire doors and frames must be installed in accordance with <RID>NFPA 80</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.3"><TTL>Stainless Steel Guards</TTL><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  Mount guards on external corners of interior walls, partitions and columns as [shown] [in accordance 
-with manufacturer's recommendations].</LST><BRK/>
-<BRK/>
+with manufacturer's recommendations].</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  Where corner guards are installed on walls, partitions or columns finished with plaster or ceramic 
 tile, [anchor corner guards as indicated] [provide continuous<MET> 1.5 mm</MET><ENG> 16 gage</ENG> thick, perforated, galvanized 
 z-shape steel anchors welded to back edges of corner guards and [wired to metal studs] [expansion bolted 
 to concrete or masonry with four<MET> 10 mm</MET><ENG> 3/8 inch</ENG> diameter bolts, spaced<MET> 400 mm</MET><ENG> 16 inches</ENG> on centers]].  
 Coat back surfaces of corner guards, where shown, with a non-flammable, sound deadening material.  Corner 
-guards must overlap finish plaster surfaces.</LST><BRK/>
-<BRK/>
+guards must overlap finish plaster surfaces.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  Where corner guards are installed on exposed structural glazed facing tile units or masonry wall, 
 partitions or columns, [anchor corner guards as indicated] [anchor corner guards to existing walls with<MET>
  6 mm</MET><ENG> 1/4 inch</ENG> oval head stainless steel countersunk expansion or toggle bolts] [anchor corner guards 
 with four nominal<MET> 1.3 mm</MET><ENG> 0.0516 inch</ENG> thick, adjustable galvanized steel anchors, spaced as shown].  Grout 
-spaces solid between guards and backing with portland cement and sand mortar.</LST><BRK/>
-<BRK/>
+spaces solid between guards and backing with portland cement and sand mortar.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">d.  Where corner guards are installed on gypsum board, clean surfaces and anchor guards with a neoprene 
 solvent-type contact adhesive specifically manufactured for use on gypsum board construction.  Remove 
-excess adhesive from the guard edges and allow to cure undisturbed for 24 hours.</LST><BRK/>
-<BRK/>
+excess adhesive from the guard edges and allow to cure undisturbed for 24 hours.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">e.  For wall guards, space brackets at no more than<MET> 900 mm</MET><ENG> 3 feet</ENG> on centers and anchor to the wall in 
-accordance with the manufacturer's installation instructions.</LST><BRK/>
-<BRK/></SPT>
-</SPT></PRT>    <END/><BRK/></SEC>
+accordance with the manufacturer's installation instructions.</LST><BRK />
+<BRK /></SPT>
+</SPT></PRT>    <END /><BRK /></SEC>

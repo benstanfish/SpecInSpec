@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>10 21 13.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">10 21 13</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:56</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><brk></brk>
+<hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-10 21 13 (August 2017)<brk></brk>
+ Change 2 - 11/18<brk></brk>
+ ----------------------------<brk></brk>
+Preparing Activity: <pra>USACE</pra> Superseding<brk></brk>
+ UFGS-10 21 13 (January 2007)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated April 2019</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 10 21 13</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>TOILET COMPARTMENTS<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>08/17</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification has been edited to cover the minimum requirements and include Japanese products, 
+where feasible, for a standard Japan Engineer District project. The Designer of Record (DOR) shall tailor as 
+applicable to meet project specific requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>ceiling-hung, floor anchored, and overhead-braced 
+toilet partitions</scp>.<brk></brk>
+Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections. Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text. For bracketed items, choose applicable item(s) or insert 
+appropriate information.<brk></brk>
+Remove information and requirements not required in respective project, whether or not brackets are present.<brk></brk>
+Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Army facilities will meet the requirements of UFC 3-101-01 and will be accessible in accordance with 36 
+CFR 1191, Americans with Disabilities Act (ADA) Accessibility Guidelines for Buildings and Facilities.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Partition napkin disposal, toilet-tissue dispenser, grab bars, and other similar toilet-room accessories are specified 
+in a separate section. Coordinate partition cutouts and reinforcement as required for the specified accessories.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>If ceiling-hung toilet partitions are required for the project, coordinate with metal fabrications and shop drawings 
+for installation of indicated supporting members.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Include in the drawings:<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Locations and dimensions of the partitions, doors, pilasters, screens, and door swings.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Heights of the bottoms of enclosures and screens above the floor<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Method of support to be employed, using details where needed for clarity.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Provisions for attaching hardware to partitions.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>A schedule to identify the finish and color to be used.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of the guide specification. The publications 
+are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
+date, and title.<brk></brk>
+Use the Reference Wizard's Check Reference feature when you add a RID outside of the Section's Reference Article 
+to automatically place the reference in the Reference Article. Also use the Reference Wizard's Check Reference 
+feature to update the issue dates.<brk></brk>
+References not used in the text will automatically be deleted from this section of the project specification when 
+you choose to reconcile references in the publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are referred to within the text by 
+the basic designation only.</txt><brk></brk>
+<ref><org>INTERNATIONAL CODE COUNCIL (ICC)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ICC A117.1 COMM<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017) Standard and Commentary Accessible and Usable Buildings and Facilities<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><del><pre class="display_DEL">&lt;DEL&gt;</pre><org>JAPANESE INDUSTRIAL STANDARDS (JIS)</org><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><org>JAPANESE STANDARDS ASSOCIATION (JSA)</org><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1901<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Determination of the Emission of Volatile Organic Compounds and Aldehydes 
+by Building Products - Small Chamber Test Method<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3203<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(1988) Alloy Steel Forgings for Pressure Vessels for High-Temperature Service<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3302<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2019) Hot Dip Zinc Coated Steel Sheet and Strip<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2022) Hot Dip Zinc Coated Steel 
+Sheet and Strip<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 4304<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>12<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Hot-Rolled Stainless Steel Plate, Sheet and Strip<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 3100<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018) Copper and Copper Alloy Sheets, Plates and Strips<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 4040<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Aluminum and Aluminum Alloy Bars and Wires<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 5301<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2018) Zinc Alloy Die Castings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8601<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(1999) Anodic Oxide Coatings on Aluminum and Aluminum Alloys<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8617<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(1999) Electroplated Coatings of Nickel and Chromium<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8641<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>07<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) Hot Dip Galvanized Coatings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 6899<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Plastics-symbols and Abbreviations-Part 1: Basic Polymers and Their Properties<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>36 CFR 1191<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>Americans with Disabilities Act (ADA) Accessibility Guidelines for Buildings and 
+Facilities; Architectural Barriers Act (ABA) Accessibility Guidelines<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.2"><ttl>1.2 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review submittal description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project.<brk></brk>
+The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G." Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System. Only add a “G” to an item, if the submittal is sufficiently important or complex in context 
+of the project.<brk></brk>
+For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
+tags may be used following the "G" designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" for District Office (Engineering 
+Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
+for Project Office. Codes following the "G" typically are not used for Navy, Air Force, and NASA projects.<brk></brk>
+ The "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook 
+to fulfill federally mandated sustainable requirements in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Locate the "S" submittal under the SD number that best describes the submittal item.<brk></brk>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose the second bracketed item for 
+Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are for <div class="brackets">[Contractor Quality Control 
+approval.]</div> <div class="brackets">[information only. When used, a designation following the "G" designation identifies the office that will review the submittal for 
+the Government.]</div> Submittals with an "S" are for inclusion in the Sustainability eNotebook, in conformance to Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-02 Shop Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Fabrication Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Installation Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-07 Certificates<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Warranty<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-10 Operation and Maintenance Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Plastic Identification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 REGULATORY REQUIREMENTS</ttl><brk></brk>
+<txt>Conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>ICC A117.1 COMM<pre class="display_RID">&lt;/RID&gt;</pre></rid> code for access for the handicapped operation of toilet compartment door and hardware.</txt><brk></brk></spt>
+<spt outline="1.4"><ttl>1.4 DELIVERY, STORAGE, AND HANDLING</ttl><brk></brk>
+<txt>Deliver materials in the manufacturer's original unopened packages with the brand, item identification, and project reference clearly marked. 
+Store components in a dry location that is adequately ventilated; free from dust, water, other contaminants, and damage during delivery, storage, 
+and construction.</txt><brk></brk></spt>
+<spt outline="1.5"><ttl>1.5 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>WARRANTY<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Provide manufacturer's warranty to repair or replace defective materials and workmanship for a period of <div class="brackets">[one year]</div><div class="brackets">[____]</div> <div class="brackets">[years]</div> from date of 
+final acceptance of the work.</txt><brk></brk></spt>
+</prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Solid plastic partitions (solid phenolic, Finish 4, and solid polyethylene, Finish 5) should be used unless 
+not economically feasible. Painted metal (Finish 1) toilet enclosures, urinal screens, and room entrance screens 
+are suitable for use in installations where the partitions are subjected to normal usage and exposure conditions. 
+Composite materials are generally not recyclable at the end of their useful life. Any plastic or metal materials 
+used must contain recycled materials as indicated. Laminated plastic (Finish 3) toilet partitions will not be 
+used where severe water conditions will be encountered, such as where cleaning is to be performed by spraying 
+water.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Where toilet partitions are indicated for hard usage or severe exposure areas, finishes other than painted metal 
+(Finish 1) or laminated plastic (Finish 3) should be specified when their high initial cost can be justified through 
+life cycle cost. The least expensive painted metal finish is generally the least durable of the finishes listed 
+in CID A-A-60003. Laminated plastic (Finish 3) costs more than the painted metal and less than stainless steel 
+(Finish 2), solid phenolic (Finish 4), or solid polyethylene (Finish 5). Laminated plastic (Finish 3) finishes 
+are hard and smooth; resistant to wear, scratches, periodic moisture, impact, acids and alkalis, and cigarette burns.<brk></brk>
+Next to stainless steel (Finish 2), the solid plastics (phenolic and polyethylene) are the most durable finishes 
+available and should be used wherever economically feasible. When finishes other than painted metal (Finish 1) 
+are being considered, laminated plastic (Finish 3) should be the next logical choice, followed by solid plastics 
+and stainless steel (Finish 2), and solid phenolic (Finish 4). Polyethylene (Finish 5), stainless steel (Finish 
+2), and solid phenolic (Finish 4) are highly resistant to humidity, steam, detergents, cleaning chemicals and 
+corrosion. Interior fire and smoke finish classification must be addressed when materials other than metal partitions 
+are being considered. Edit the following paragraphs for styles and finishes.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Generally, floor-supported enclosures, Style A, will be used; and overhead braced enclosures, Style C, and overhead 
+braced-alcove, Style F, will be used when pilasters cannot be anchored into minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 76 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick structural 
+concrete. Ceiling hung enclosures, Style B, will be used only when the additional cost is justified for reasons 
+of sanitation or appearance. Ceiling hung enclosures, Style B, are not recommended by manufacturers when ceiling 
+height is greater than<met><pre class="display_MET">&lt;MET&gt;</pre> 2590 mm<pre class="display_MET">&lt;/MET&gt;</pre></met> <eng><pre class="display_ENG">&lt;ENG&gt;</pre>8 feet 6 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Urinal screens, when deemed necessary, may be any of the 6 styles 
+available, but the floor to ceiling hung screen, Style D, is the most justifiable for reasons of cost and sanitation. 
+Type II, Style D, room entrance screens are generally the most durable style due to the floor to ceiling post 
+support design. Edit as needed to meet project requirements.<brk></brk>
+If ceiling hung enclosures are to be used, details showing the structural steel channel support system should 
+be shown on the drawings. This section should be coordinated with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>10 28 13<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> TOILET ACCESSORIES and the 
+drawings regarding toilet enclosures which will have partition-mounted accessories attached to the panels.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Screens and enclosures that are thicker than standard panels last longer, especially in high-use or high-abuse 
+areas.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Do not use galvanized or enameled steel products for panels, brackets, fasteners, or compartment hardware in locations 
+where deployments may leave facilities unoccupied or without conditioned spaces for extended time periods, or 
+unconditioned spaces in either humid project locations or exterior project locations with Environmental Severity 
+Classifications (ESC) C4 and C5. Humid project locations are those in ASHRAE climate zones 0A, 1A, 2A, 3A, 3C, 
+4C and 5C (as identified in ASHRAE 90.1). See UFC 1-200-01 for determination of ESC for project locations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="2.1"><ttl>2.1 SYSTEM REQUIREMENTS</ttl><brk></brk>
+<txt>Provide a complete and usable toilet partition system, including toilet enclosures, room entrance screens, urinal screens, system of panels, hardware, 
+and support components. Furnish the partition system from a single manufacturer, with a standard product as shown in the most recent catalog data. 
+Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Fabrication Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> for metal toilet partitions and urinal screens consisting of fabrication and assembly details to be performed in the 
+factory. Submit manufacturer's Cleaning and Maintenance Instructions with Fabrication Drawings for review.</txt><brk></brk>
+<spt outline="2.1.1"><ttl>2.1.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Plastic Identification<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The marking system indicated below is intended to provide assistance in identification of products for 
+making subsequent decisions as to handling, recycling, or disposal.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Verify that plastic products to be incorporated into the project are labeled in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 6899<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Where products are not labeled, provide 
+product data indicating polymeric information in the Operation and Maintenance Manual.</txt><brk></brk>
+<lst indent="-0.33"><tab width="96">
+<wbk>
+<sts></sts>
+<tda columncount="2" rowcount="7">
+<col autowidth="0" width="69.75"/>
+<col autowidth="0" width="447.75"/>
+<row autoheight="0" height="20.25">
+<cel>
+<dta type="STRING">Type 1</dta>
+</cel>
+<cel>
+<dta type="STRING">Polyethylene Terephthalate (PET, PETE)</dta>
+</cel>
+</row>
+<row autoheight="0" height="20.25">
+<cel>
+<dta type="STRING">Type 2</dta>
+</cel>
+<cel>
+<dta type="STRING">High Density Polyethylene (HDPE)</dta>
+</cel>
+</row>
+<row autoheight="0" height="20.25">
+<cel>
+<dta type="STRING">Type 3</dta>
+</cel>
+<cel>
+<dta type="STRING">Vinyl (Polyvinyl Chloride or PVC)</dta>
+</cel>
+</row>
+<row autoheight="0" height="20.25">
+<cel>
+<dta type="STRING">Type 4</dta>
+</cel>
+<cel>
+<dta type="STRING">Low Density Polyethylene (LDPE)</dta>
+</cel>
+</row>
+<row autoheight="0" height="20.25">
+<cel>
+<dta type="STRING">Type 5</dta>
+</cel>
+<cel>
+<dta type="STRING">Polypropylene (PP)</dta>
+</cel>
+</row>
+<row autoheight="0" height="18.00">
+<cel>
+<dta type="STRING">Type 6</dta>
+</cel>
+<cel>
+<dta type="STRING">Polystyrene (PS)</dta>
+</cel>
+</row>
+<row autoheight="0" height="60.00">
+<cel>
+<dta type="STRING">Type 7</dta>
+</cel>
+<cel>
+<dta type="STRING">Other. Use of this code indicates that the package in question is made with a resin other than the six listed above, or is made of more than one resin listed above, and used in a multi-layer combination.</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab></lst><brk></brk></spt>
+</spt><spt outline="2.2"><ttl>2.2 MATERIALS</ttl><brk></brk>
+<spt outline="2.2.1"><ttl>2.2.1 Galvanized Steel Sheet</ttl><brk></brk>
+<txt>Provide galvanized steel sheet cold-rolled, stretcher-level, commercial quality material, conforming to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3302<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Conform surface preparation 
+of material for painting to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8617<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.2.2"><ttl>2.2.2 Sound-Deadening Cores</ttl><brk></brk>
+<txt>Provide sound deadening consisting of treated kraft paper honeycomb cores with a cell size of not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Resin-material content 
+must weigh not less than 11 percent of the finished core weight. Expanded cores must be faced on both sides with kraft paper.</txt><brk></brk></spt>
+<spt outline="2.2.3"><ttl>2.2.3 Anchoring Devices and Fasteners</ttl><brk></brk>
+<txt>Provide steel anchoring devices and fasteners hot-dipped galvanized after fabrication, in conformance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3302<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8641<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Conceal 
+all galvanized anchoring devices.</txt><brk></brk></spt>
+<spt outline="2.2.4"><ttl>2.2.4 Brackets</ttl><brk></brk>
+<txt>Wall brackets must be two-ear panel brackets, T-style, <met><pre class="display_MET">&lt;MET&gt;</pre>25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> stock. Provide stirrup style panel-to-pilaster brackets.</txt><brk></brk></spt>
+<spt outline="2.2.5"><ttl>2.2.5 Hardware and Fittings</ttl><brk></brk>
+<spt outline="2.2.5.1"><ttl>2.2.5.1 General Requirements</ttl><brk></brk>
+<txt>Conform hardware for the toilet partition system for the specified type and style of partitions. Provide hardware finish highly resistant to alkalis, 
+urine, and other common toilet room acids. Comply latching devices and hinges for handicap compartments with <rid><pre class="display_RID">&lt;RID&gt;</pre>36 CFR 1191<pre class="display_RID">&lt;/RID&gt;</pre></rid>; provide <div class="brackets">[chrome-plated 
+steel]</div> <div class="brackets">[ or ]</div> <div class="brackets">[stainless steel]</div> devices and hinges with door latches that operate without either tight grasping or twisting of the wrist of the 
+operator. Submit three samples of each item, including anchoring devices and fasteners. Approved hardware samples may be installed in the work 
+if properly identified.</txt><brk></brk>
+<txt><hl4><tab headerrows="0" width="89">
+<wbk>
+<sts>
+<sty sid="s50">
+<aln vertical="BOTTOM"></aln>
+</sty>
+</sts>
+<tda columncount="2" rowcount="6">
+<col autowidth="0" styleid="s50" width="231.75"/>
+<col autowidth="0" styleid="s50" width="288.00"/>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Material</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Conformance Standard</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Cold-rolled sheet steel</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 3203<pre class="display_RID">&lt;/RID&gt;</pre></rid>, commercial quality</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Zinc-base alloy</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 5301<pre class="display_RID">&lt;/RID&gt;</pre></rid> ZDC-1</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Brass</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 3100<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Alloy C26800</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Aluminum</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 4040<pre class="display_RID">&lt;/RID&gt;</pre></rid></dta>
+</cel>
+</row>
+<row autoheight="0" height="23.25">
+<cel styleid="s50">
+<dta type="STRING">Corrosion-resistant steel</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING"><rid><pre class="display_RID">&lt;RID&gt;</pre>JIS G 4304<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Type <div class="brackets">[SUS302]</div><div class="brackets">[SUS304]</div></dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab></hl4><brk></brk></txt>
+<brk></brk></spt>
+<spt outline="2.2.5.2"><ttl>2.2.5.2 Finishes</ttl><brk></brk>
+<div class="brackets">[<lst indent="-0.33">a. Chrome plating must conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8617<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</lst>]</div><brk></brk>
+<div class="brackets">[<lst indent="-0.33">b. Finish must conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8617<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Class I (Corrosion Protective Plasting), Type <div class="brackets">[I, Bright]</div> <div class="brackets">[II, Satin]</div>.</lst>]</div><brk></brk>
+<div class="brackets">[<lst indent="-0.33">c. Aluminum must have a clear anodic coating conforming to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8601<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</lst>]</div><brk></brk>
+<div class="brackets">[<lst indent="-0.33">d. Corrosion-resistant steel must have a No. 4 finish.</lst>]</div><brk></brk>
+<div class="brackets">[<lst indent="-0.33">e. Exposed fasteners must match the hardware and fittings.</lst>]</div><brk></brk></spt>
+</spt><spt outline="2.2.6"><ttl>2.2.6 Door Hardware</ttl><brk></brk>
+<spt outline="2.2.6.1"><ttl>2.2.6.1 Hinges</ttl><brk></brk>
+<txt>Hinges must be adjustable to hold in-swinging doors open at any angle up to 90 degrees and outswinging doors to 10 degrees. Provide self-lubricating 
+hinges with the indicated swing. Hinges must <div class="brackets">[be the surface-mounted type.]</div> <div class="brackets">[be the cutout-insert type.]</div> <div class="brackets">[have the following type of return movement:</div></txt><brk></brk>
+<div class="brackets">[<lst indent="-0.33">a. Gravity return movement</lst>]</div><brk></brk>
+<div class="brackets">[<lst indent="-0.33">b. Spring-action cam return movement</lst>]</div><brk></brk>
+<div class="brackets">[<lst indent="-0.33">c. Torsion-rod return movement]</lst></div>]<brk></brk></spt>
+<spt outline="2.2.6.2"><ttl>2.2.6.2 Latch and Pull</ttl><brk></brk>
+<txt>Latch and pull must be a combination rubber-faced door strike and keeper equipped with emergency access.</txt><brk></brk></spt>
+<spt outline="2.2.6.3"><ttl>2.2.6.3 Coat Hooks</ttl><brk></brk>
+<txt>Coat hooks must be combination units with hooks and rubber tipped pins.</txt><brk></brk></spt>
+</spt></spt><spt outline="2.3"><ttl>2.3 PARTITION PANELS AND DOORS</ttl><brk></brk>
+<txt>Fabricate partition panels and doors not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick with face sheets not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 1.006 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.0396 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick.</txt><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use materials with recycled content where appropriate for use. Verify suitability, availability within 
+the region, cost effectiveness and adequate competition before specifying product recycled content requirements.<brk></brk>
+Research shows painted steel, stainless steel, plastic laminate and solid polyethylene products are available 
+among US national manufacturers above the minimum recycled content percentages shown below.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><div class="brackets">[Provide painted steel toilet partitions and screens with recycled content of 27 percent minimum. Provide data identifying percentage of recycled 
+content for painted steel partitions and screens. ]</div><div class="brackets">[Provide stainless steel toilet partitions and screens with recycled content of 50 percent 
+minimum. Provide data identifying percentage of recycled content for stainless steel partitions and screens.]</div> <div class="brackets">[Provide plastic laminate toilet 
+partitions and screens with recycled content of 45 percent minimum. Provide data identifying percentage of recycled content for plastic laminate 
+partitions and screens.]</div> <div class="brackets">[Provide solid polyethylene toilet partitions and screens with recycled content of 30 percent minimum. Provide data identifying 
+percentage of recycled content for plastic, solid polyethylene partitions and screens.]</div> </txt><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Based on research, certain base materials such as Plastic Laminated Clad and Phenolic (Black Core) are 
+available from US national manufacturers as a reduced VOC product certified by Greenguard or SCS Global Services. 
+Retain one of the last bracketed sentences requiring products with indoor air quality certification when the designer 
+of record confirms local/regional availability of Greenguard or SCS products that does not impact cost effectiveness.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide laminated plastic and solid phenolic toilet partitions and urinal screens to meet the emissions requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1901<pre class="display_RID">&lt;/RID&gt;</pre></rid> (use the office 
+or classroom requirements, regardless of space type). <div class="brackets">[Provide certification or validation of indoor air quality for laminated plastic partitions 
+and screens. ]</div><div class="brackets">[Provide certification or validation of indoor air quality for solid phenolic, black core partitions and screens.]</div></txt><brk></brk>
+<spt outline="2.3.1"><ttl>2.3.1 Toilet Enclosures</ttl><brk></brk>
+<txt>Provide Style <div class="brackets">[A, floor supported]</div> <div class="brackets">[B, ceiling hung]</div> <div class="brackets">[C, overhead braced]</div> <div class="brackets">[F, overhead braced-alcove]</div>. Furnish width, length, and height of toilet 
+enclosures as shown. <div class="brackets">[Provide a width of<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.]</div> Finish surface of panels must be <div class="brackets">[painted metal, Finish 1]</div><div class="brackets">[stainless steel, Finish 2]</div><div class="brackets">[laminated 
+plastic, Finish 3]</div><div class="brackets">[solid phenolic, black core Finish 4]</div><div class="brackets">[solid phenolic, color through the core Finish 4A]</div><div class="brackets">[solid polyethylene, Finish 5]</div><div class="brackets">[_____]</div>; 
+water resistant; graffiti resistant; non-absorbent; <div class="brackets">[with plastic face sheets permanently fused to plastic core; <met><pre class="display_MET">&lt;MET&gt;</pre>6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> radius beveled edges]</div>. 
+Reinforce panels indicated to receive toilet paper holders or grab bars for mounting of the items required. Provide grab bars to withstand a bending 
+stress, shear stress, shear force, and a tensile force induced by<met><pre class="display_MET">&lt;MET&gt;</pre> 1112 N<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 250 lbf<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Grab bars must not rotate within their fittings.</txt><brk></brk></spt>
+<spt outline="2.3.2"><ttl>2.3.2 Room Entrance Screens</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete the following paragraphs when screens are not required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Length and height of room entrance screens will be shown on the drawings, using standard size panels and pilasters 
+to the maximum extent practicable.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide Style <div class="brackets">[A, floor anchored]</div> <div class="brackets">[B, ceiling hung braced]</div> <div class="brackets">[C, overhead braced]</div> <div class="brackets">[D, wall hung]</div> <div class="brackets">[_____]</div>. Provide finish surface of screens to be 
+<div class="brackets">[painted metal, Finish 1]</div><div class="brackets">[stainless steel, Finish 2]</div><div class="brackets">[laminated plastic, Finish 3]</div><div class="brackets">[solid phenolic, black core Finish 4]</div><div class="brackets">[solid phenolic, color through 
+the core Finish 4A]</div><div class="brackets">[solid polyethylene, Finish 5]</div><div class="brackets">[_____]</div>; water resistant; graffiti resistant; non-absorbent<div class="brackets">[; with plastic face sheets permanently 
+fused to plastic core; <met><pre class="display_MET">&lt;MET&gt;</pre>6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> radius beveled edges]</div>. Furnish length and height of screens as shown. <div class="brackets">[Provide thickness of<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.]</div> 
+Fabricate screens from the same types of panels, pilasters, and fittings as the toilet partitions.</txt><brk></brk></spt>
+<spt outline="2.3.3"><ttl>2.3.3 Urinal Screens</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use of urinal screens between individual urinals will be dependent on the function of the facility. Use 
+of urinal screens will normally be limited to those applications where sanitary protection is required, such as 
+between a urinal and an immediately adjacent lavatory. Style A screens should normally be between<met><pre class="display_MET">&lt;MET&gt;</pre> 600 to 900 
+mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 24 to 36 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide. Style E screens should normally be between<met><pre class="display_MET">&lt;MET&gt;</pre> 400 to 600 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 18 to 24 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide. Wall 
+hung, Style E, urinal screens will be used only where the supporting construction is masonry or concrete. Where 
+high use is expected, choose the last bracketed sentence.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide and conform urinal screens Style <div class="brackets">[A, floor supported]</div> <div class="brackets">[B, ceiling hung]</div> <div class="brackets">[C, overhead braced]</div> <div class="brackets">[D, floor to ceiling hung]</div> <div class="brackets">[E, floor to ceiling 
+post supported]</div>. Provide finish for surface of screens as <div class="brackets">[painted metal, Finish 1]</div><div class="brackets">[stainless steel, Finish 2]</div><div class="brackets">[laminated plastic, Finish 3]</div><div class="brackets">[solid 
+phenolic, black core Finish 4]</div><div class="brackets">[solid phenolic, color through the core Finish 4A]</div><div class="brackets">[solid polyethylene, Finish 5]</div><div class="brackets">[_____]</div>; water resistant; graffiti 
+resistant; non-absorbent; <div class="brackets">[with plastic face sheets permanently fused to plastic core; <met><pre class="display_MET">&lt;MET&gt;</pre>6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> radius beveled edges]</div>. Furnish width and 
+height of urinal screens as shown. <div class="brackets">[Provide thickness of<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.]</div> Secure wall hung urinal screens with <div class="brackets">[a minimum of three wall stirrup 
+brackets.]</div> <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>1050 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 42 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> long, continuous flanges.]</div> Fabricate screens from the same types of panels and pilasters as the toilet partitions. 
+Use corrosion-resistant stainless steel fittings and fasteners.</txt><brk></brk></spt>
+</spt><spt outline="2.4"><ttl>2.4 CEILING-HUNG PARTITIONS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete this paragraph if ceiling-mounted partitions are not required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Pilasters must be not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 31.75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick with face sheets not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 1.613 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.0635 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick. Anchoring device at the top 
+of the pilaster must be welded to the reinforced face sheets and must have not less than two<met><pre class="display_MET">&lt;MET&gt;</pre> 9.525 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> round threaded rods, lock washers, 
+and leveling-adjustment nuts. Anchoring device must be designed to transmit the strain and loading on the pilaster directly to the structural 
+support above without putting strain or loading on the finished ceiling. Trim piece at the top of the pilaster must be<met><pre class="display_MET">&lt;MET&gt;</pre> 76.2 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high and 
+fabricated from not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 0.762 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.030 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick stainless steel.</txt><brk></brk></spt>
+<spt outline="2.5"><ttl>2.5 FLOOR-ANCHORED PARTITIONS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete this paragraph if floor-supported partitions are not required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Pilasters must be not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 31.75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick with face sheets not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 1.613 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.0635 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick. Provide anchoring device 
+at the bottom of the pilaster consisting of a steel bar not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 12.7 by 22.2 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 by 7/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> welded to the reinforced face sheets and 
+having not less than two<met><pre class="display_MET">&lt;MET&gt;</pre> 9.5 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> round anchorage devices for securing to the floor slab. Provide anchorage devices complete with threaded 
+rods, expansion shields, lock washers, and leveling-adjustment nuts. Trim piece at the floor must be<met><pre class="display_MET">&lt;MET&gt;</pre> 76.2 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high and fabricated from not 
+less than<met><pre class="display_MET">&lt;MET&gt;</pre> 0.76 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.030 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick corrosion-resistant stainless steel.</txt><brk></brk></spt>
+<spt outline="2.6"><ttl>2.6 OVERHEAD-BRACED PARTITIONS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete this paragraph if overhead-braced partitions are not required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Pilasters must be not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 31.75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick with face sheets not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 1.0 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.0393 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick. Provide anchoring device at 
+the bottom of the pilaster consisting of a channel-shaped floor stirrup fabricated from not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 1.6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.0635 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick material and a leveling 
+bolt. Secure the stirrup to the pilaster with not less than a<met><pre class="display_MET">&lt;MET&gt;</pre> 4.76 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/16 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> bolt and nut after the pilaster is leveled. Secure the stirrup 
+to the floor with not less than two lead expansion shields and sheetmetal screws. Fabricate overhead brace from a continuous extruded aluminum 
+tube not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide by<met><pre class="display_MET">&lt;MET&gt;</pre> 38 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high, <met><pre class="display_MET">&lt;MET&gt;</pre>3.2 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.125-inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wall thickness. Finish must be clear anodized with a minimum 
+0.4 mils or thicker in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS H 8601<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Set and secure brace into the top of each pilaster. Fabricate<met><pre class="display_MET">&lt;MET&gt;</pre> 75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high trim piece 
+at the floor from not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 0.75 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.030 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick corrosion-resistant stainless steel.</txt><brk></brk></spt>
+<spt outline="2.7"><ttl>2.7 PILASTER SHOES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Designer must verify that products meeting the indicated minimum recycled content are available, preferably 
+from at least three sources, to ensure adequate competition. If not, write in suitable recycled content values 
+that reflect availability and competition. Use second option if Contractor is choosing recycled content products 
+in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre> In consideration of the high humidity environments specify stainless steel or HDPE materials that are consistent 
+with the panel and pilaster construction.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide shoes at pilasters to conceal floor-mounted anchorage. Pilaster shoes must be <div class="brackets">[aluminum]</div> <div class="brackets">[stainless steel]</div> <div class="brackets">[one piece molded HDPE]</div> <div class="brackets">[_____]</div>. 
+Height is a minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 76 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.</txt><brk></brk></spt>
+<spt outline="2.8"><ttl>2.8 HARDWARE</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: In consideration of the high humidity environments specify stainless steel hardware wherever possible 
+consistent with the manufacturer's product line.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide hardware for the toilet partition system for the specified type and style of partitions. <div class="brackets">[Provide hardware pre-drilled by manufacturer.]</div> 
+Use a hardware finish that is highly resistant to alkalis, urine, and other common toilet room acids. <div class="brackets">[Hardware includes: chrome plated non ferrous 
+cast pivot hinges, gravity type, adjustable for door close positioning; nylon bearings; <div class="brackets">[black anodized]</div> <div class="brackets">[chrome plated]</div> <div class="brackets">[______]</div> aluminum door 
+latch; door strike and keeper with rubber bumper; and cast alloy chrome plated coat hook and bumper, <div class="brackets">[_____]</div>.]</div> Provide latching devices and hinges 
+for handicap compartments complying with <rid><pre class="display_RID">&lt;RID&gt;</pre>36 CFR 1191<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <div class="brackets">[chrome-plated steel]</div> <div class="brackets">[or]</div> <div class="brackets">[stainless steel]</div> door latches that operate without either 
+tight grasping or twisting of the wrist of the operator. Use stainless steel, tamper proof type screws and bolts. Wall mounting brackets must 
+be continuous, full height, <div class="brackets">[aluminum]</div> <div class="brackets">[stainless steel]</div> <div class="brackets">[heavy duty plastic]</div> <div class="brackets">[_____]</div>, in accordance with toilet compartment manufacturer's instructions. 
+<div class="brackets">[Provide floor-mounted anchorage consisting of corrosion-resistant anchoring assemblies with threaded rods, lock washers, and leveling adjustment 
+nuts at pilasters for structural connection to floor.]</div></txt><brk></brk></spt>
+<spt outline="2.9"><ttl>2.9 COLORS AND FINISHES</ttl><brk></brk>
+<spt outline="2.9.1"><ttl>2.9.1 Colors</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: In areas where a high degree of damage, corrosion, and frequent replacement has been experienced or where, 
+for reasons of sanitation or appearance, additional cost is justified, partition finishes should be selected on 
+the basis of Life Cycle Cost Analysis (LCC). The LCC analysis should be performed for a period of not less than 
+ten years. For any project requiring non-combustible partitions, panels, screens, or door finishes, exclude finish 
+No. 5.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide manufacturer's standard color charts for color of finishes for toilet partition system components. <div class="brackets">[Color of pilaster shoes must match 
+the core of solid plastic compartments and screens.]</div> Submit three samples showing a finished edge on two adjacent sides and core construction, 
+each not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 304.8 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12-inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> square</txt><brk></brk></spt>
+<spt outline="2.9.2"><ttl>2.9.2 Finishes No. 1 Through No. 3</ttl><brk></brk>
+<txt>Conform partitions, panels, screen, and door finishes finished with <div class="brackets">[Finish No. 1, baked enamel]</div> <div class="brackets">[Finish No. 2, stainless steel]</div> <div class="brackets">[Finish No. 3, 
+laminated plastic]</div>.</txt><brk></brk></spt>
+<spt outline="2.9.3"><ttl>2.9.3 Finishes No.4 and No. 5</ttl><brk></brk>
+<txt>Provide solid plastic fabricated of <div class="brackets">[solid phenolic core with melamine facing sheets]</div> <div class="brackets">[or]</div> <div class="brackets">[polymer resins (polyethylene)]</div> formed under high pressure 
+rendering a single component section not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> one inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick. Colors must extend throughout the panel thickness. Provide exposed finish 
+surfaces: smooth, waterproof, non-absorbent, and resistant to staining and marking with pens, pencils, or other writing devices. Solid plastic 
+partitions must not show any sign of deterioration when immersed in the following chemicals and maintained at a temperature of<met><pre class="display_MET">&lt;MET&gt;</pre> 27 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 80 
+degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> for a minimum of 30 days:</txt><brk></brk>
+<lst indent="-0.33"><tab headerrows="0" width="81">
+<wbk>
+<sts>
+<sty sid="s50">
+<aln vertical="BOTTOM"></aln>
+</sty>
+</sts>
+<tda columncount="2" rowcount="12">
+<col autowidth="0" styleid="s50" width="195.75"/>
+<col autowidth="0" styleid="s50" width="240.00"/>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Acetic Acid (80 percent)</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Hydrochloric Acid (40 percent)</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Acetone</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Hydrogen Peroxide (30 percent)</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Ammonia (liquid)</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Isopropyl Alcohol</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Ammonia Phosphate</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Lactic Acid (25 percent)</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Bleach (12 percent)</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Lime Sulfur</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Borax</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Nicotine</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Brine</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Potassium Bromide</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Caustic Soda</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Soaps</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Chlorine Water</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Sodium Bicarbonate</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Citric Acid</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Trisodium Phosphate</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel styleid="s50">
+<dta type="STRING">Copper Chloride</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Urea; Urine</dta>
+</cel>
+</row>
+<row autoheight="0" height="23.25">
+<cel styleid="s50">
+<dta type="STRING">Core Oils</dta>
+</cel>
+<cel styleid="s50">
+<dta type="STRING">Vinegar</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl>
+<brl></brl><brl></brl></tab></lst><brk></brk></spt>
+</spt></prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 PREPARATION</ttl><brk></brk>
+<txt>Take field measurements prior to the preparation of drawing and fabrication to ensure proper fits. Verify that field measurements, surfaces, substrates 
+and conditions are as required, and ready to receive work. Verify correct spacing of plumbing fixtures. Verify correct location of built in framing, 
+anchorage, and bracing. Report in writing to Contracting Officer prevailing conditions that will adversely affect satisfactory execution of the 
+work of this section. Do not proceed with work until unsatisfactory conditions have been corrected.</txt><brk></brk></spt>
+<spt outline="3.2"><ttl>3.2 METAL PARTITION FABRICATION</ttl><brk></brk>
+<lst indent="-0.33">a. Fabricate metal Partition Panels, doors, screens, and pilasters required for the project from galvanized-steel face sheets with formed 
+edges. Face sheets must be pressure-laminated to the sound-deadening core with edges sealed with a continuous locking strip and corners 
+mitered and welded. Ground all welds smooth. Provide concealed reinforcement for installation of hardware, fittings, and accessories. 
+Surface of face sheets must be smooth and free from wave, warp, or buckle.</lst><brk></brk>
+<lst indent="-0.33">b. Before application of an enamel coating system, solvent-clean galvanized-steel surfaces to remove processing compounds, oils, and other 
+contaminants harmful to coating-system adhesion. After cleaning, coat the surfaces with a metal-pretreatment phosphate coating. After 
+pretreatment, finish exposed galvanized-steel surfaces with a baked-enamel coating system as specified.</lst><brk></brk>
+<lst indent="-0.33">c. Provide an enamel coating system consisting of a factory-applied baked acrylic enamel coating system. Coating system must be a durable, 
+washable, stain-resistant, mar-resistant finish.</lst><brk></brk></spt>
+<spt outline="3.3"><ttl>3.3 INSTALLATION</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Toilet partitions in barracks, and other hard usage areas, as well as those partitions on which grab bars 
+are to be mounted, will be bolted to walls. Through-bolting will be specified for these applications; except, 
+toggle bolts may be specified when through-bolting would be exposed in a finished room or would otherwise be unsuitable.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Select anchorage devices for types of wall construction as required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Do not install items that show visual evidence of biological growth. Install partitions rigid, straight, plumb, and level, with the panels centered 
+between the fixtures. Provide a panel clearance of not more than<met><pre class="display_MET">&lt;MET&gt;</pre> 13 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and secure the panels to walls and pilasters with not less than 
+two wall brackets attached near the top and bottom of the panel. Locate wall brackets so that holes for wall bolts occur in masonry or tile joints. 
+Secure Panels to pilasters with brackets matching the wall brackets. Provide for adjustment due to minor floor variations. Locate head rail joints 
+at pilaster center lines. Install adjacent components for consistency of line and plane. Equip each door with hinges, one door latch, and one 
+coat hook and bumper. Align hardware to uniform clearance at vertical edges of doors.</txt><brk></brk>
+<lst indent="-0.33">a. Secure panels to hollow plastered walls with toggle bolts using not less than<met><pre class="display_MET">&lt;MET&gt;</pre> M6x1<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4-20<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> screws of the length required for the wall 
+thickness. Toggle bolts must have a load-carrying strength of not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 2668.9 N<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 600 pounds<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> per anchor.</lst><brk></brk>
+<lst indent="-0.33">b. Secure panels to ceramic tile on hollow plastered walls or hollow concrete-masonry walls with toggle bolts using not less than<met><pre class="display_MET">&lt;MET&gt;</pre> M6x1<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>
+ 1/4-20<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> screws of the length required for the wall thickness. Toggle bolts must have a load-carrying strength of not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 2668.9 
+N<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 600 pounds<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> per anchor.</lst><brk></brk>
+<lst indent="-0.33">c. Secure panels to solid masonry or concrete with lead or brass expansion shields designed for use with not less than<met><pre class="display_MET">&lt;MET&gt;</pre> M6x1<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4-20<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> screws, 
+with a shield length of not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 38 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Expansion shields must have a load-carrying strength of not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 2668.9 N<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>
+ 600 pounds<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> per anchor.</lst><brk></brk>
+<lst indent="-0.33">d. Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Installation Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> for metal toilet partitions and urinal screens showing plans, elevations, details of construction, hardware, 
+reinforcing and blocking, fittings, mountings and escutcheons. Indicate on drawings the type of partition, location, mounting height, 
+cutouts, and reinforcement required for toilet-room accessories.</lst><brk></brk></spt>
+<spt outline="3.4"><ttl>3.4 CEILING-HUNG PARTITIONS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete this paragraph if ceiling-mounted partitions are not required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Secure pilasters to the structural support above with the anchorage device specified. Make all leveling devices readily accessible for leveling, 
+plumbing, and tightening the installation. Level the bottoms of doors with bottoms of pilasters when doors are in a closed position.</txt><brk></brk></spt>
+<spt outline="3.5"><ttl>3.5 FLOOR-ANCHORED PARTITIONS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete this paragraph if floor-anchored partitions are not required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Secure pilasters to the floor with the anchorage device specified. Make all leveling devices readily accessible for leveling, plumbing, and tightening 
+the installation. Level tops of doors with tops of pilasters when doors are in a closed position. Expansion shields must have a minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>
+ 2-inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> penetration into the concrete slab.</txt><brk></brk></spt>
+<spt outline="3.6"><ttl>3.6 OVERHEAD-BRACED PARTITIONS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Delete this paragraph if overhead-braced partitions are not required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Secure pilasters to the floor with the anchorage device specified. Make all leveling devices readily accessible for leveling, plumbing, and tightening 
+the installation. Secure overhead brace to the pilaster face with not less than two fasteners per face. Expansion shields must have a minimum<met><pre class="display_MET">&lt;MET&gt;</pre>
+ 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2-inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> penetration into the concrete slab. Make tops of doors parallel with the overhead brace when doors are in a closed position.</txt><brk></brk></spt>
+<spt outline="3.7"><ttl>3.7 FINAL ADJUSTMENT</ttl><brk></brk>
+<txt>After completion of the installation, make final adjustments to the pilaster-leveling devices, door hardware, and other working parts of the partition 
+assembly. Doors must have a uniform vertical edge clearance of approximately<met><pre class="display_MET">&lt;MET&gt;</pre> 5 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/16 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and must rest open at approximately 30 degrees when 
+unlatched.</txt><brk></brk></spt>
+<spt outline="3.8"><ttl>3.8 CLEANING</ttl><brk></brk>
+<txt>Baked enamel finish must be touched up with the same color of paint that was used for the finish. Clean all surfaces of the work, and adjacent 
+surfaces soiled as a result of the work, in an approved manner compliant with the manufacturer's <ned></ned>recommended cleaning and protection from damage 
+procedures until accepted. Remove all equipment, tools, surplus materials, and work debris from the site.</txt><brk></brk></spt>
+</prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

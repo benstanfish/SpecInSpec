@@ -1,91 +1,91 @@
-<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
-<HDR><AST/><BRK/>
-USACE / NAVFAC / AFCEC / NASA                  UFGS-31 00 00 (August 2008)<BRK/>
-                                               Change 1 - 11/15<BRK/>
-                                               ---------------------------<BRK/>
-Preparing Activity:  <PRA>USACE</PRA>                     Superseding<BRK/>
-                                               UFGS-31 00 00 (July 2006)<BRK/>
-<BRK/>
-<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
-<BRK/>
-<HL4>References are in agreement with UMRL dated January 2019</HL4><BRK/>
-<AST/><BRK/></HDR>
-<BRK/>
-<SCN>SECTION 31 00 00</SCN><BRK/>
-<BRK/>
-<STL>EARTHWORK</STL><BRK/>
-<DTE>08/08</DTE><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><BRK />
+<HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                  UFGS-31 00 00 (August 2008)<BRK />
+                                               Change 1 - 11/15<BRK />
+                                               ---------------------------<BRK />
+Preparing Activity:  <PRA>USACE</PRA>                     Superseding<BRK />
+                                               UFGS-31 00 00 (July 2006)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated January 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 31 00 00</SCN><BRK />
+<BRK />
+<STL>EARTHWORK</STL><BRK />
+<DTE>08/08</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This guide specification has been edited to cover the minimum requirements and include Japanese products, 
 where feasible, for a standard Japan Engineer District project.  The Designer of Record (DOR) shall tailor as 
-applicable to meet project specific requirements.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<NTE><BRK/>
-<AST/><BRK/>
+applicable to meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This guide specification covers the requirements for <SCP>earthwork activities for buildings, utilities, roadways, 
-railroads, and airfields</SCP>.<BRK/>
-<BRK/>
+railroads, and airfields</SCP>.<BRK />
+<BRK />
 Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
 specification or preparing new project specification sections.  Edit this guide specification for project specific 
 requirements by adding, deleting, or revising text.  For bracketed items, choose applicable item(s) or insert 
-appropriate information.<BRK/>
-<BRK/>
-Remove information and requirements not required in respective project, whether or not brackets are present.<BRK/>
-<BRK/>
+appropriate information.<BRK />
+<BRK />
+Remove information and requirements not required in respective project, whether or not brackets are present.<BRK />
+<BRK />
 Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
-as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<NTE><BRK/>
-<AST/><BRK/>
+as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This specification includes several sections related to utilities.  Coordination with utilities specifications 
-(i.e. 33 11 00 Water Utility Distribution Piping for water related utilities, etc.) may be required.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Consult with a soils engineer while editing this section to determine specific requirements for each job.</NPR><BRK/>
-<BRK/>
-<NPR>The following information will be indicated on the project drawings:</NPR><BRK/>
-<BRK/>
-<NPR>1.  Surface elevations, existing and new;</NPR><BRK/>
-<BRK/>
-<NPR>2.  Location of underground obstructions and existing utilities;</NPR><BRK/>
-<BRK/>
+(i.e. 33 11 00 Water Utility Distribution Piping for water related utilities, etc.) may be required.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Consult with a soils engineer while editing this section to determine specific requirements for each job.</NPR><BRK />
+<BRK />
+<NPR>The following information will be indicated on the project drawings:</NPR><BRK />
+<BRK />
+<NPR>1.  Surface elevations, existing and new;</NPR><BRK />
+<BRK />
+<NPR>2.  Location of underground obstructions and existing utilities;</NPR><BRK />
+<BRK />
 <NPR>3.  Location and record of soil borings and test pits.  Include ground water observations and topsoil thickness 
-encountered in boring, soil classifications, and properties such as moisture content and Atterberg limit determinations;</NPR><BRK/>
-<BRK/>
-<NPR>4.  Location of borrow and disposal area if located on Government property;</NPR><BRK/>
-<BRK/>
-<NPR>5.  Clearing stripping and grubbing limits, if different from clearing limits;</NPR><BRK/>
-<BRK/>
-<NPR>6.  Areas to be seeded;</NPR><BRK/>
-<BRK/>
-<NPR>7.  Hydrological data where available;</NPR><BRK/>
-<BRK/>
-<NPR>8.  Shoring and sheeting required (trench protection is specified in Corps of Engineers Manual EM 385-1-1); and</NPR><BRK/>
-<BRK/>
-<NPR>9.  Pipe trench excavation details.</NPR><BRK/>
-<BRK/>
-<NPR>10.  Location and limits of hard material (rocks);</NPR><BRK/>
-<BRK/>
+encountered in boring, soil classifications, and properties such as moisture content and Atterberg limit determinations;</NPR><BRK />
+<BRK />
+<NPR>4.  Location of borrow and disposal area if located on Government property;</NPR><BRK />
+<BRK />
+<NPR>5.  Clearing stripping and grubbing limits, if different from clearing limits;</NPR><BRK />
+<BRK />
+<NPR>6.  Areas to be seeded;</NPR><BRK />
+<BRK />
+<NPR>7.  Hydrological data where available;</NPR><BRK />
+<BRK />
+<NPR>8.  Shoring and sheeting required (trench protection is specified in Corps of Engineers Manual EM 385-1-1); and</NPR><BRK />
+<BRK />
+<NPR>9.  Pipe trench excavation details.</NPR><BRK />
+<BRK />
+<NPR>10.  Location and limits of hard material (rocks);</NPR><BRK />
+<BRK />
 <NPR>11.  Details of special construction such as under railroad and highways right-of-way requirements for jacking 
-and boring;</NPR><BRK/>
-<BRK/>
-<NPR>12.  Details of sewage absorption trenches, absorption pits, and subsurface drains.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<SPT><TTL>MEASUREMENT PROCEDURES</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+and boring;</NPR><BRK />
+<BRK />
+<NPR>12.  Details of sewage absorption trenches, absorption pits, and subsurface drains.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.1"><TTL>MEASUREMENT PROCEDURES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  These paragraphs will be deleted when lump sum payment for work under this section is desired and when 
 the work covered by this section is included in one lump sum contract price for the entire work covered by the 
-Invitation for Bids.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<SPT><TTL>Excavation</TTL><BRK/>
-<BRK/>
+Invitation for Bids.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.1.1"><TTL>Excavation</TTL><BRK />
+<BRK />
 <TXT>The unit of measurement for excavation <TAI OPT="BORROW">and borrow</TAI> will be the cubic<MET> meter</MET><ENG> yard</ENG>, computed by the average end area method from cross sections taken 
 before and after the excavation <TAI OPT="BORROW">and borrow</TAI> operations, including the excavation for ditches, gutters, and channel changes, when the material is 
 acceptably utilized or disposed of as herein specified.  The measurements will include authorized excavation of rock (except for piping trenches 
@@ -94,320 +94,320 @@ within the limits of the work; allowance will be made on the same basis for sele
 include the volume of subgrade material or other material that is scarified or plowed and reused in-place, and will not include the volume excavated 
 without authorization or the volume of any material used for purposes other than directed.  <TAI OPT="BORROW">The volume of overburden stripped from borrow pits 
 and the volume of excavation for ditches to drain borrow pits, unless used as borrow material, will not be measured for payment.</TAI>  The measurement 
-will not include the volume of any excavation performed prior to the taking of elevations and measurements of the undisturbed grade.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Piping Trench Excavation</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+will not include the volume of any excavation performed prior to the taking of elevations and measurements of the undisturbed grade.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.1.2"><TTL>Piping Trench Excavation</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This paragraph will be coordinated with the payment paragraphs of appropriate contract sections to ensure 
 that there are no dual payments or omission of payment for trench excavation.  There should be separate payment 
 items established for trench excavation for each different size of pipe in the contract.  Payment for trench excavation 
 for heat-distribution system and for underground electrical-distribution system may be excluded for payment from 
 this paragraph, and included in payment under the appropriate utility section, when the work is of such a nature 
-and extent and so clearly indicated that the excavation quantities involved can be estimated with reasonable accuracy.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+and extent and so clearly indicated that the excavation quantities involved can be estimated with reasonable accuracy.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Measure trench excavation by the number of linear<MET> meters</MET><ENG> feet</ENG> along the centerline of the trench and excavate to the depths and widths specified 
 for the particular size of pipe.  Replace unstable trench bottoms with a selected granular material.  Include the additional width at manholes 
 and similar structures, the furnishing, placing and removal of sheeting and bracing, pumping and bailing, and all incidentals necessary to complete 
-the work required by this section.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Rock Excavation for Trenches</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Delete this paragraph when not required in the project.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+the work required by this section.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.1.3"><TTL>Rock Excavation for Trenches</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete this paragraph when not required in the project.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Measure and pay for rock excavation by the number of cubic<MET> meters</MET><ENG> yards</ENG> of acceptably excavated rock material.  Measure the material in place, 
 but base volume on a maximum<MET> 750 mm</MET><ENG> 30 inches</ENG> width for pipes<MET> 300 mm</MET><ENG> 12 inches</ENG> in diameter or less, and a maximum width of<MET> 400 mm</MET><ENG> 16 inches</ENG> greater 
 than the outside diameter of the pipe for pipes over<MET> 300 mm</MET><ENG> 12 inches</ENG> in diameter.  Provide the measurement to include all authorized overdepth 
 rock excavation as determined by the Contracting Officer.  For manholes and other appurtenances, compute volumes of rock excavation on the basis 
-of<MET> 300 mm</MET><ENG> 1 foot</ENG> outside of the wall lines of the structures.</TXT><BRK/>
-<BRK/></SPT>
-<TAI OPT="TOPSOIL"><SPT><TTL>Topsoil Requirements</TTL><BRK/>
-<BRK/>
+of<MET> 300 mm</MET><ENG> 1 foot</ENG> outside of the wall lines of the structures.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="TOPSOIL"><SPT><TTL>Topsoil Requirements</TTL><BRK />
+<BRK />
 <TXT>Separate excavation, hauling, and spreading or piling of topsoil and related miscellaneous operations will be considered subsidiary obligations 
-of the Contractor, covered under the contract unit price for excavation.</TXT><BRK/>
-<BRK/></SPT>
-</TAI><SPT><TTL>Overhaul Requirements</TTL><BRK/>
-<BRK/>
+of the Contractor, covered under the contract unit price for excavation.</TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="1.1.4"><TTL>Overhaul Requirements</TTL><BRK />
+<BRK />
 <TXT>Allow the unit of measurement for overhaul to be the<MET> station-meter</MET><ENG> station-yard</ENG>.  The overhaul distance will be the distance in stations between 
 the center of volume of the overhaul material in its original position and the center of volume after placing, minus the free-haul distance in 
 stations.  The haul distance will be measured along the shortest route determined by the Contracting Officer as feasible and satisfactory.  <TAI OPT="BORROW">Do 
-no measure or waste unsatisfactory materials for overhaul where the length of haul for borrow is within the free-haul limits.</TAI></TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Select Granular Material</TTL><BRK/>
-<BRK/>
+no measure or waste unsatisfactory materials for overhaul where the length of haul for borrow is within the free-haul limits.</TAI></TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.1.5"><TTL>Select Granular Material</TTL><BRK />
+<BRK />
 <TXT>Measure select granular material in place as the actual cubic<MET> meters</MET><ENG> yards</ENG> replacing wet or unstable material in trench bottoms [within the limits 
 shown] [in authorized overdepth areas].  Provide unit prices which include furnishing and placing the granular material, excavation and disposal 
 of unsatisfactory material, and additional requirements for sheeting and bracing, pumping, bailing, cleaning, and other incidentals necessary to 
-complete the work.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>PAYMENT PROCEDURES</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+complete the work.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.2"><TTL>PAYMENT PROCEDURES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  When lump sum payment for work under this section is desired, these paragraphs will be revised accordingly.  
 These paragraphs will be deleted when the work covered by this section is included in one lump sum contract price 
 for the entire work covered by the Invitation for Bids.  Payment for overhaul will be separate from excavation <TAI OPT="BORROW">
-and borrow</TAI>.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>Payment will constitute full compensation for all labor, equipment, tools, supplies, and incidentals necessary to complete the work.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Classified Excavation</TTL><BRK/>
-<BRK/>
-<TXT>Classified excavation will be paid for at the contract unit prices per cubic<MET> meter</MET><ENG> yard</ENG> for common or rock excavation.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Piping Trench Excavation</TTL><BRK/>
-<BRK/>
+and borrow</TAI>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Payment will constitute full compensation for all labor, equipment, tools, supplies, and incidentals necessary to complete the work.</TXT><BRK />
+<BRK />
+<SPT outline="1.2.1"><TTL>Classified Excavation</TTL><BRK />
+<BRK />
+<TXT>Classified excavation will be paid for at the contract unit prices per cubic<MET> meter</MET><ENG> yard</ENG> for common or rock excavation.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2.2"><TTL>Piping Trench Excavation</TTL><BRK />
+<BRK />
 <TXT>Payment for trench excavation will constitute full payment for excavation and backfilling, [including specified overdepth] except in rock or unstable 
-trench bottoms.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Rock Excavation for Trenches</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Delete this paragraph when not required in the project.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+trench bottoms.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2.3"><TTL>Rock Excavation for Trenches</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete this paragraph when not required in the project.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Payment for rock excavation will be made in addition to the price bid for the trench excavation, and will include all necessary drilling and all 
 incidentals necessary to excavate and dispose of the rock.  Select granular material, used as backfill replacing rock excavation, will not be paid 
-for separately, but will be included in the unit price for rock excavation.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Unclassified Excavation</TTL><BRK/>
-<BRK/>
-<TXT>Unclassified excavation will be paid for at the contract unit price per cubic<MET> meter</MET><ENG> yard</ENG> for unclassified excavation.</TXT><BRK/>
-<BRK/></SPT>
-<TAI OPT="BORROW"><SPT><TTL>Classified Borrow</TTL><BRK/>
-<BRK/>
-<TXT>Classified borrow will be paid for at the contract unit prices per cubic<MET> meter</MET><ENG> yard</ENG> for common or rock borrow.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Unclassified Borrow</TTL><BRK/>
-<BRK/>
-<TXT>Unclassified borrow will be paid for at the contract unit price per cubic<MET> meter</MET><ENG> yard</ENG> for unclassified borrow.</TXT><BRK/>
-<BRK/></SPT>
-</TAI><SPT><TTL>Authorized Overhaul</TTL><BRK/>
-<BRK/>
+for separately, but will be included in the unit price for rock excavation.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2.4"><TTL>Unclassified Excavation</TTL><BRK />
+<BRK />
+<TXT>Unclassified excavation will be paid for at the contract unit price per cubic<MET> meter</MET><ENG> yard</ENG> for unclassified excavation.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="BORROW"><SPT><TTL>Classified Borrow</TTL><BRK />
+<BRK />
+<TXT>Classified borrow will be paid for at the contract unit prices per cubic<MET> meter</MET><ENG> yard</ENG> for common or rock borrow.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Unclassified Borrow</TTL><BRK />
+<BRK />
+<TXT>Unclassified borrow will be paid for at the contract unit price per cubic<MET> meter</MET><ENG> yard</ENG> for unclassified borrow.</TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="1.2.5"><TTL>Authorized Overhaul</TTL><BRK />
+<BRK />
 <TXT>The number of<MET> station-meters</MET><ENG> station-yards</ENG> of overhaul to be paid for will be the product of number of cubic<MET> meters</MET><ENG> yards</ENG> of overhaul material 
 measured in the original position, multiplied by the overhaul distance measured in stations of 100<MET> meters</MET><ENG> feet</ENG> and will be paid for at the contract 
-unit price per<MET> station-meter</MET><ENG> station-yard</ENG> for overhaul in excess of the free-haul limit as designated in paragraph DEFINITIONS.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Sheeting and Bracing</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Delete subparagraphs or items not required in the project.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>Sheeting and bracing, when shown or authorized by the Contracting Officer to be left in place, will be paid for as follows:  [_____].</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Timber Sheeting</TTL><BRK/>
-<BRK/>
+unit price per<MET> station-meter</MET><ENG> station-yard</ENG> for overhaul in excess of the free-haul limit as designated in paragraph DEFINITIONS.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2.6"><TTL>Sheeting and Bracing</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete subparagraphs or items not required in the project.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Sheeting and bracing, when shown or authorized by the Contracting Officer to be left in place, will be paid for as follows:  [_____].</TXT><BRK />
+<BRK />
+<SPT outline="1.2.6.1"><TTL>Timber Sheeting</TTL><BRK />
+<BRK />
 <TXT>Timber sheeting will be paid for as the number of board feet of lumber below finish grade measured in place prior to backfilling.  Include in the 
-measurement sheeting wasted when cut off between the finished grade and<MET> 300 mm</MET><ENG> 1 foot</ENG> below the finished grade.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Steel Sheeting and Soldier Piles</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+measurement sheeting wasted when cut off between the finished grade and<MET> 300 mm</MET><ENG> 1 foot</ENG> below the finished grade.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2.6.2"><TTL>Steel Sheeting and Soldier Piles</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  The blank will be filled with an appropriate number not greater than<MET> 1 m</MET><ENG> 3 feet</ENG>.  However, if the quantities 
 of sheeting involved are anticipated to be substantial, and since the cut off steel can be sold by the Contractor 
-as scrap, the whole part in brackets can be deleted and no payment provided for wasted cut off ends.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+as scrap, the whole part in brackets can be deleted and no payment provided for wasted cut off ends.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Steel sheeting, soldier piles, and steel bracing will be paid for according to the number of pounds of steel calculated.  Calculate the steel by 
 multiplying the measured in-place length in<MET> meters</MET><ENG> feet</ENG> below finish grade by the unit weight of the section in<MET> kg per meter</MET><ENG> pounds per foot</ENG>.  
 Obtain unit weight of rolled steel sections from recognized steel manuals.  [Included in the measurement sheeting wasted when cut off between the 
-finished grade and a distance of up to [_____]<MET> meters</MET><ENG> feet</ENG> below the finished grade.]</TXT><BRK/>
-<BRK/></SPT>
-</SPT></SPT><SPT><TTL>CRITERIA FOR BIDDING</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+finished grade and a distance of up to [_____]<MET> meters</MET><ENG> feet</ENG> below the finished grade.]</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="1.3"><TTL>CRITERIA FOR BIDDING</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  For most projects, the scope of earthwork can accurately be determined.  However, if earthwork is approximately 
-known, a unit price for earth work should be provided in the Bid Schedule.<BRK/>
-<BRK/>
+known, a unit price for earth work should be provided in the Bid Schedule.<BRK />
+<BRK />
 Unit-price items are multiplied by the approximated and stated quantity giving a sum that is then added to the 
 price for the rest of the work.  The result is a lump sum bid with automatic provision for payment or credit due 
 to variations in earthwork within 15 percent of that shown and bid upon.  Variations exceeding 15 percent of that 
 shown and bid upon will become the subject of negotiations in accordance with FAR 52.211-18 Variation in Estimated 
-Quantity.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>Base bids on the following criteria:</TXT><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Surface elevations are as indicated.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Pipes or other artificial obstructions, except those indicated, will not be encountered.</LST><BRK/>
-<BRK/>
+Quantity.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Base bids on the following criteria:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Surface elevations are as indicated.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Pipes or other artificial obstructions, except those indicated, will not be encountered.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  [Ground water elevations indicated by the boring log were those existing at the time subsurface investigations were made and do not 
 necessarily represent ground water elevation at the time of construction.] [Ground water elevation is [_____]<MET> meters</MET><ENG> feet</ENG> below existing 
-surface elevation.]</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">d.  [Ground water elevation is [_____]<MET> meters</MET><ENG> feet</ENG> below existing surface elevation.]</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">e.  [Material character is indicated by the boring logs.]</LST><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+surface elevation.]</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  [Ground water elevation is [_____]<MET> meters</MET><ENG> feet</ENG> below existing surface elevation.]</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  [Material character is indicated by the boring logs.]</LST><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Choose the following option if no boring information is available, or if the boring information is insufficient 
 to permit a bidder to develop an accurate estimate of hard material or rock to be encountered.  If hard material 
 or rock is to be encountered, the following option should be modified to include a percent figure or an approximate 
-depth at which hard material or rock will be encountered.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+depth at which hard material or rock will be encountered.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <LST INDENT="-0.33">f.  [Hard materials [and rock] [will not] [will] be encountered [in [_____] percent of the excavations] [at [_____]<MET> meter</MET><ENG> feet</ENG> below existing 
-surface elevations]].</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>REFERENCES</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+surface elevations]].</LST><BRK />
+<BRK /></SPT>
+<SPT outline="1.4"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This paragraph is used to list the publications cited in the text of the guide specification.  The publications 
 are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
-date, and title.<BRK/>
-<BRK/>
+date, and title.<BRK />
+<BRK />
 Use the Reference Wizard's Check Reference feature when you add a Reference Identifier (RID) outside of the Section's 
 Reference Article to automatically place the reference in the Reference Article.  Also use the Reference Wizard's 
-Check Reference feature to update the issue dates.<BRK/>
-<BRK/>
+Check Reference feature to update the issue dates.<BRK />
+<BRK />
 References not used in the text will automatically be deleted from this section of the project specification when 
-you choose to reconcile references in the publish print process.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+you choose to reconcile references in the publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are referred to within the text by 
-the basic designation only.</TXT><BRK/>
-<BRK/>
-<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK/>
-<BRK/>
-<RID>JIS A 1102</RID><RTL>(2014) Method of Test for Sieve Analysis of Aggregates</RTL><BRK/>
-<BRK/>
-<RID>JIS A 1103</RID><RTL>(2014) Method of Test for Amount of Material Passing Test Sieve 75 µm in Aggregates</RTL><BRK/>
-<BRK/>
-<RID>JIS A 1205</RID><RTL>(2009) Test Method for Liquid Limit and Plastic Limit of Soils</RTL><BRK/>
-<BRK/>
-<RID>JIS A 1210</RID><RTL>(2009) Test Method for Soil Compaction Using a Rammer</RTL><BRK/>
-<BRK/>
-<RID>JIS A 1211</RID><RTL>(2009) Test Methods for the California Bearing Ratio (CBR) of Soils in laboratory</RTL><BRK/>
-<BRK/>
-<RID>JIS A 1214</RID><RTL>(2013) Test Method for Soil Density by the Sand Replacement Method</RTL><BRK/>
-<BRK/>
-<RID>JIS A 1218</RID><RTL>(2013) Test Methods for Permeability of Saturated Soils</RTL><BRK/>
-<BRK/>
-<RID>JIS A 5001</RID><RTL>(2008) Crushed Stone for Road Construction</RTL><BRK/>
-<BRK/>
-<RID>JIS A 5005</RID><RTL>(2009) Crushed Stone and Manufactured Sand for Concrete</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG><DEL>JAPAN MINISTRY OF THE ENVIRONMENT (MOE)</DEL><ADD>MINISTRY OF THE ENVIRONMENT GOVERNMENT OF JAPAN (MOE)</ADD></ORG><BRK/>
-<BRK/>
-<RID>Notification No.46</RID><RTL>(2001) Environmental Quality Standards for Soil Contamination</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG><DEL>JAPANESE GEOTECHNICAL SOCIETY (JGS)</DEL><ADD>JAPANESE GEOTECHNICAL SOCIETY (JGS)</ADD></ORG><BRK/>
-<BRK/>
-<RID>JGS 0051</RID><RTL>(2000) Method of Classification of Geomaterials for Engineering Purposes</RTL><BRK/>
-<BRK/>
-<RID>JGS 1614</RID><RTL>(2003) Test Method for Soil Density Using Nuclear Gauge</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG>U.S. DEPARTMENT OF DEFENSE HEADQUARTERS, U.S. FORCES JAPAN (USFJ)</ORG><BRK/>
-<BRK/>
-<RID>JEGS</RID><RTL>(<DEL>2018</DEL><ADD>Apr 2024</ADD>) Japan Environmental Governing Standards</RTL><BRK/>
-<BRK/></REF>
-</SPT><SPT><TTL>DEFINITIONS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Delete definitions that will not be used in the specification text for a specific project.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<SPT><TTL>Satisfactory Materials</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+the basic designation only.</TXT><BRK />
+<BRK />
+<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK />
+<BRK />
+<RID>JIS A 1102</RID><RTL>(2014) Method of Test for Sieve Analysis of Aggregates</RTL><BRK />
+<BRK />
+<RID>JIS A 1103</RID><RTL>(2014) Method of Test for Amount of Material Passing Test Sieve 75 &#181;m in Aggregates</RTL><BRK />
+<BRK />
+<RID>JIS A 1205</RID><RTL>(2009) Test Method for Liquid Limit and Plastic Limit of Soils</RTL><BRK />
+<BRK />
+<RID>JIS A 1210</RID><RTL>(2009) Test Method for Soil Compaction Using a Rammer</RTL><BRK />
+<BRK />
+<RID>JIS A 1211</RID><RTL>(2009) Test Methods for the California Bearing Ratio (CBR) of Soils in laboratory</RTL><BRK />
+<BRK />
+<RID>JIS A 1214</RID><RTL>(2013) Test Method for Soil Density by the Sand Replacement Method</RTL><BRK />
+<BRK />
+<RID>JIS A 1218</RID><RTL>(2013) Test Methods for Permeability of Saturated Soils</RTL><BRK />
+<BRK />
+<RID>JIS A 5001</RID><RTL>(2008) Crushed Stone for Road Construction</RTL><BRK />
+<BRK />
+<RID>JIS A 5005</RID><RTL>(2009) Crushed Stone and Manufactured Sand for Concrete</RTL><BRK />
+<BRK /></REF>
+<REF><ORG><DEL>JAPAN MINISTRY OF THE ENVIRONMENT (MOE)</DEL><ADD>MINISTRY OF THE ENVIRONMENT GOVERNMENT OF JAPAN (MOE)</ADD></ORG><BRK />
+<BRK />
+<RID>Notification No.46</RID><RTL>(2001) Environmental Quality Standards for Soil Contamination</RTL><BRK />
+<BRK /></REF>
+<REF><ORG><DEL>JAPANESE GEOTECHNICAL SOCIETY (JGS)</DEL><ADD>JAPANESE GEOTECHNICAL SOCIETY (JGS)</ADD></ORG><BRK />
+<BRK />
+<RID>JGS 0051</RID><RTL>(2000) Method of Classification of Geomaterials for Engineering Purposes</RTL><BRK />
+<BRK />
+<RID>JGS 1614</RID><RTL>(2003) Test Method for Soil Density Using Nuclear Gauge</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. DEPARTMENT OF DEFENSE HEADQUARTERS, U.S. FORCES JAPAN (USFJ)</ORG><BRK />
+<BRK />
+<RID>JEGS</RID><RTL>(<DEL>2018</DEL><ADD>Apr 2024</ADD>) Japan Environmental Governing Standards</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.5"><TTL>DEFINITIONS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete definitions that will not be used in the specification text for a specific project.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.5.1"><TTL>Satisfactory Materials</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Satisfactory material will be defined in accordance with locally available materials, design slopes, etc., 
 and suitable classes, based on the geotechnical report, will be listed in the project specification in accordance 
 with JGS 0051.  Maximum rock size will be determined based on how thick the fill is and how it is going to be 
 accomplished.  As a rule of thumb, it should be no larger than 1/2 the allowable lift thickness.  Clay material 
-should be checked for expansive characteristics and this section should be edited accordingly.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+should be checked for expansive characteristics and this section should be edited accordingly.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Satisfactory materials comprise any materials classified by <RID>JGS 0051</RID> as G, G-M, G-C, [G-O], [G-V], GM, GC, [GO], [GV], S, S-M, S-C, [S-O], [S-V], 
 SM, SC, [SO], [SV], ML, MH, CL, CH, [OL], [OH], [OV], [VH1], [VH2].  Satisfactory materials for grading comprise stones less than<MET> 200 mm</MET><ENG> 8 inches</ENG>
-, except for fill material for pavements and railroads which comprise stones less than<MET> 75 mm</MET><ENG> 3 inches</ENG> in any dimension.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Unsatisfactory Materials</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+, except for fill material for pavements and railroads which comprise stones less than<MET> 75 mm</MET><ENG> 3 inches</ENG> in any dimension.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.2"><TTL>Unsatisfactory Materials</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Unsatisfactory material will be defined in accordance with locally available materials, design slopes, 
 etc., and unsuitable classes will be listed in the project specifications in accordance with JGS 0051.  This paragraph 
-should be edited to delete inapplicable materials.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+should be edited to delete inapplicable materials.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Materials which do not comply with the requirements for satisfactory materials are unsatisfactory.  Unsatisfactory materials also include man-made 
 fills; trash; refuse; backfills from previous construction; and material classified as satisfactory which contains root and other organic matter 
-or frozen material.  Notify the Contracting Officer when encountering any contaminated materials.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Cohesionless and Cohesive Materials</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+or frozen material.  Notify the Contracting Officer when encountering any contaminated materials.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.3"><TTL>Cohesionless and Cohesive Materials</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  When classification will be necessary during construction, determination of grain size for classification 
-will be specified to be made in conformance with JIS A 1102, JIS A 1103 and JIS A 1205.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+will be specified to be made in conformance with JIS A 1102, JIS A 1103 and JIS A 1205.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Cohesionless materials include materials classified in <RID>JGS 0051</RID> as G, G-M, G-C, S, S-M, S-C.  Cohesive materials include materials classified as 
 GC, SC, ML, CL, MH, CH.  Materials classified as GM, SM will be identified as cohesionless only when the fines are nonplastic.  Perform testing, 
-required for classifying materials, in accordance with <RID>JIS A 1205</RID>, <RID>JIS A 1102</RID> and <RID>JIS A 1103</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Degree of Compaction</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  JIS A 1210 will be used for maximum density determinations. </NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+required for classifying materials, in accordance with <RID>JIS A 1205</RID>, <RID>JIS A 1102</RID> and <RID>JIS A 1103</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.4"><TTL>Degree of Compaction</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  JIS A 1210 will be used for maximum density determinations. </NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Degree of compaction required, except as noted in the second sentence, is expressed as a percentage of the maximum density obtained by the test 
 procedure presented in <RID>JIS A 1210</RID> (Methods C,D,E - non repeating method) abbreviated as a percent of laboratory maximum density (Modified Proctor 
-Test).</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Overhaul</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+Test).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.5"><TTL>Overhaul</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This paragraph is to be deleted when the earthwork is to be paid for under a lump sum contract.  The blank 
-will be filled with the appropriate number of stations.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+will be filled with the appropriate number of stations.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Overhaul is the authorized transportation of satisfactory excavation or borrow materials in excess of the free-haul limit of [_____] stations.  
 Overhaul is the product of the quantity of materials hauled beyond the free-haul limit, and the distance such materials are hauled beyond the free-haul 
-limit, expressed in station<MET> meters</MET><ENG> yards</ENG>.</TXT><BRK/>
-<BRK/></SPT>
-<TAI OPT="TOPSOIL"><SPT><TTL>Topsoil</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+limit, expressed in station<MET> meters</MET><ENG> yards</ENG>.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="TOPSOIL"><SPT><TTL>Topsoil</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Additional requirements such as pH value and necessary soil conditioning, according to applicable provisions 
 of Sections <SRF>32 92 19</SRF> through <SRF>32 92 26</SRF>, should be inserted in this paragraph.  The depth of the topsoil should 
-be given in the text of the specification, preferably in this paragraph.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+be given in the text of the specification, preferably in this paragraph.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Material suitable for topsoils obtained from [offsite areas] [excavations] [areas indicated on the drawings] is defined as:  Natural, friable soil 
 representative of productive, well-drained soils in the area, free of subsoil, stumps, rocks larger than<MET> 25 mm</MET><ENG> one inch</ENG> diameter, brush, weeds, 
-toxic substances, and other material detrimental to plant growth.  Amend topsoil pH range to obtain a pH of 5.5 to 7.</TXT><BRK/>
-<BRK/></SPT>
-</TAI><SPT><TTL>Hard/Unyielding Materials</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+toxic substances, and other material detrimental to plant growth.  Amend topsoil pH range to obtain a pH of 5.5 to 7.</TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="1.5.6"><TTL>Hard/Unyielding Materials</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Stones should generally not exceed<MET> 75 mm</MET><ENG> 3 inches</ENG> in diameter.  However, pipe manufacturer's criteria, 
-if any, should be used.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+if any, should be used.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Hard/Unyielding materials comprise weathered rock, dense consolidated deposits, or conglomerate materials which are not included in the definition 
 of "rock" with stones greater than [_____]<MET> mm</MET><ENG> inch</ENG> in any dimension or as defined by the pipe manufacturer, whichever is smaller.  These materials 
-usually require the use of heavy excavation equipment, ripper teeth, or jack hammers for removal.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Rock</TTL><BRK/>
-<BRK/>
+usually require the use of heavy excavation equipment, ripper teeth, or jack hammers for removal.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.7"><TTL>Rock</TTL><BRK />
+<BRK />
 <TXT>Solid homogeneous interlocking crystalline material with firmly cemented, laminated, or foliated masses or conglomerate deposits, neither of which 
 can be removed without systematic drilling, drilling and the use of expansion jacks or feather wedges, or the use of backhoe-mounted pneumatic 
 hole punchers or rock breakers; also large boulders, buried masonry, or concrete other than pavement exceeding<MET> [0.375] [_____] cubic meter</MET><ENG> [1/2] 
 [_____] cubic yard</ENG> in volume.  Removal of hard material will not be considered rock excavation because of intermittent drilling that is performed 
-merely to increase production.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Unstable Material</TTL><BRK/>
-<BRK/>
-<TXT>Unstable materials are too wet to properly support the utility pipe, conduit, or appurtenant structure.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Select Granular Material</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+merely to increase production.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.8"><TTL>Unstable Material</TTL><BRK />
+<BRK />
+<TXT>Unstable materials are too wet to properly support the utility pipe, conduit, or appurtenant structure.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.9"><TTL>Select Granular Material</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  It is important to specify select material under footings and slabs to minimize settlement and to ensure 
 stability of a structure.  Consideration should be made of the sensitivity of the structure to total and/or differential 
 settlements related to the structural design.  This is particularly true of add-on structures and structures to 
@@ -417,47 +417,47 @@ within the range of<MET> 0.01 to 1.0 mm per second</MET><ENG> 0.002 to 0.20 feet
 and SP.  Indicate with cross sections or section details on the contract drawings the limits or extents of any 
 controlled fills or backfills.  Specify class of material that is acceptable in the fill or backfill giving preference 
 to any types available at or near the site.  Select appropriate values for Atterberg limits and percentage of 
-fines and specify maximum thickness of lifts for compaction.</NPR><BRK/>
-<BRK/>
+fines and specify maximum thickness of lifts for compaction.</NPR><BRK />
+<BRK />
 <NPR>For piping bedding the maximum size of aggregate should be not more than<MET> 8 mm per 100 mm</MET><ENG> 1 inch per foot</ENG> of pipe 
 diameter, or<MET> 75 mm</MET><ENG> 3 inches</ENG> maximum.  Refer to pipe manufacturer's criteria for more stringent requirements, if 
-any, on aggregate size and gradation.</NPR><BRK/>
-<BRK/>
+any, on aggregate size and gradation.</NPR><BRK />
+<BRK />
 <NPR>If suitable materials for this project are limited to materials classified as GW, GP, SW, or SP, delete the bracketed 
 sentences of this paragraph.  Coordinate requirements with a geotechnical engineer.  Select fill used for structures 
 should extend a minimum of<MET> 1.5 m</MET><ENG> 5 feet</ENG> outside the building foundation lines or other building elements gaining 
-support from the fill.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<SPT><TTL>General Requirements</TTL><BRK/>
-<BRK/>
+support from the fill.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.5.9.1"><TTL>General Requirements</TTL><BRK />
+<BRK />
 <TXT>Select granular material consist of materials classified as [G], [G-M], [G-C], [S], [S-M], [S-C] or [_____] by <RID>JGS 0051</RID> where indicated.  [The 
 liquid limit of such material must not exceed [35] [_____] percent when tested in accordance with <RID>JIS A 1205</RID>.  The plasticity index must not be 
 greater than [12] [_____] percent when tested in accordance with <RID>JIS A 1205</RID>, and not more than [35] [_____] percent by weight may be finer than<MET>
  75 micrometers</MET><ENG> No. 200</ENG> sieve when tested in accordance with <RID>JIS A 1103</RID>.]  [Provide a minimum coefficient of permeability of<MET> [0.01] [_____] mm 
-per second</MET><ENG> [0.002] [_____] feet per minute</ENG> when tested in accordance with <RID>JIS A 1218</RID>.]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>California Bearing Ratio Values</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Where California Bearing Ratio values are needed include the following paragraph:</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+per second</MET><ENG> [0.002] [_____] feet per minute</ENG> when tested in accordance with <RID>JIS A 1218</RID>.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.9.2"><TTL>California Bearing Ratio Values</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Where California Bearing Ratio values are needed include the following paragraph:</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>[Bearing Ratio:  Provide Design CBR ratio in accordance with <RID>JIS A 1211</RID> for a laboratory soaking period of not less than 4 days.  [Provide [_____] 
-percent maximum expansion.]  [Conform the combined material to the following sieve analysis:]]</TXT><BRK/>
+percent maximum expansion.]  [Conform the combined material to the following sieve analysis:]]</TXT><BRK />
 <TXT><TAB>
 <WBK>
    <STS>
       <STY SID="s50">
-         <ALN VERTICAL="BOTTOM"/>
+         <ALN VERTICAL="BOTTOM" />
       </STY>
       <STY SID="s51">
-         <ALN HORIZONTAL="CENTER" VERTICAL="BOTTOM"/>
+         <ALN HORIZONTAL="CENTER" VERTICAL="BOTTOM" />
       </STY>
    </STS>
    <TDA COLUMNCOUNT="2" ROWCOUNT="6">
-      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="228.75"/>
-      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="227.25"/>
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="228.75" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="227.25" />
       <ROW AUTOHEIGHT="0" HEIGHT="24.00">
          <CEL STYLEID="s51">
 <DTA TYPE="STRING">Sieve Size</DTA>
@@ -492,7 +492,7 @@ percent maximum expansion.]  [Conform the combined material to the following sie
       </ROW>
       <ROW AUTOHEIGHT="0" HEIGHT="24.00">
          <CEL STYLEID="s51">
-<DTA TYPE="STRING"><MET>425 µm</MET><ENG>No. 40</ENG></DTA>
+<DTA TYPE="STRING"><MET>425 &#181;m</MET><ENG>No. 40</ENG></DTA>
          </CEL>
          <CEL STYLEID="s51">
 <DTA TYPE="STRING">10 - 60</DTA>
@@ -500,7 +500,7 @@ percent maximum expansion.]  [Conform the combined material to the following sie
       </ROW>
       <ROW AUTOHEIGHT="0" HEIGHT="23.25">
          <CEL STYLEID="s51">
-<DTA TYPE="STRING"><MET>75 µm</MET><ENG>No. 200</ENG></DTA>
+<DTA TYPE="STRING"><MET>75 &#181;m</MET><ENG>No. 200</ENG></DTA>
          </CEL>
          <CEL STYLEID="s51">
 <DTA TYPE="STRING">5 - 25</DTA>
@@ -508,69 +508,69 @@ percent maximum expansion.]  [Conform the combined material to the following sie
       </ROW>
    </TDA>
 </WBK>
-<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB><BRK/></TXT>
-</SPT></SPT><SPT><TTL>Initial Backfill Material</TTL><BRK/>
-<BRK/>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK /></TXT>
+</SPT></SPT><SPT outline="1.5.10"><TTL>Initial Backfill Material</TTL><BRK />
+<BRK />
 <TXT>Initial backfill consists of select granular material or satisfactory materials free from rocks [_____]<MET> mm</MET><ENG> inches</ENG> or larger in any dimension or 
 free from rocks of such size as recommended by the pipe manufacturer, whichever is smaller.  When the pipe is coated or wrapped for corrosion protection, 
 free the initial backfill material of stones larger than [_____]<MET> mm</MET><ENG> inches</ENG> in any dimension or as recommended by the pipe manufacturer, whichever 
-is smaller.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Expansive Soils</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+is smaller.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.11"><TTL>Expansive Soils</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Additional laboratory testing and analysis might be needed to better define site specific expansive soils.  
 If expansive soils are anticipated at the construction site, this specification should be edited to ensure proper 
-construction techniques are undertaken per UFC 3-220-01.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Expansive soils may also be defined using the expansion ratio in accordance with JIS A 1211.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+construction techniques are undertaken per UFC 3-220-01.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Expansive soils may also be defined using the expansion ratio in accordance with JIS A 1211.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Expansive soils are defined as soils that have a plasticity index equal to or greater than [_____] when tested in accordance with <RID>JIS A 1205</RID> or 
-have expansion/swelling ratios equal to or greater than [____] when tested in accordance with <RID>JIS A 1211</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Nonfrost Susceptible (NFS) Material</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+have expansion/swelling ratios equal to or greater than [____] when tested in accordance with <RID>JIS A 1211</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.12"><TTL>Nonfrost Susceptible (NFS) Material</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Contract specifications for nonfrost-susceptible fill and backfill will follow the gradation requirements 
 recommended in UFC 3-250-01.  For fill under critical structures, materials with ML, MH, and CH classification 
 will be specified as unsatisfactory (if at all feasible from an economic or material-availability standpoint).  
 If such materials must be used, the specification will point out the critical nature of the materials and the 
 control difficulties to be anticipated.  Organic materials and topsoil having OL, OH, and Pt classification will 
-not be used in fill or backfill.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+not be used in fill or backfill.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Nonfrost susceptible material are a uniformly graded washed sand with a maximum particle size of [_____]<MET> mm</MET><ENG> inch</ENG> and less than 5 percent passing 
-the<MET> 0.075 mm</MET><ENG> No. 200</ENG> size sieve, and with not more than 3 percent by weight finer than 0.02 mm grain size.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Pile Supported Structure</TTL><BRK/>
-<BRK/>
-<TXT>As used herein, a structure where both the foundation and floor slab are pile supported.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>SYSTEM DESCRIPTION</TTL><BRK/>
-<BRK/>
+the<MET> 0.075 mm</MET><ENG> No. 200</ENG> size sieve, and with not more than 3 percent by weight finer than 0.02 mm grain size.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.13"><TTL>Pile Supported Structure</TTL><BRK />
+<BRK />
+<TXT>As used herein, a structure where both the foundation and floor slab are pile supported.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.6"><TTL>SYSTEM DESCRIPTION</TTL><BRK />
+<BRK />
 <TXT>Subsurface soil boring logs are [shown on the drawings] [appended to the SPECIAL CONTRACT REQUIREMENTS].  The subsoil investigation report and 
 samples of materials taken from subsurface investigations may be examined at [_____].  These data represent the best subsurface information available; 
-however, variations may exist in the subsurface between boring locations.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Classification of Excavation</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+however, variations may exist in the subsurface between boring locations.</TXT><BRK />
+<BRK />
+<SPT outline="1.6.1"><TTL>Classification of Excavation</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Inapplicable portions will be deleted.  Other classifications of excavation may be utilized as required. 
-All excavations shall meet SAFETY REQUIREMENTS in accordance with EM 385-1-1.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+All excavations shall meet SAFETY REQUIREMENTS in accordance with EM 385-1-1.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>[No consideration will be given to the nature of the materials, and all excavation will be designated as unclassified excavation.]  [Finish the 
-specified excavation on a classified basis, in accordance with the following designations and classifications.]</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Common Excavation</TTL><BRK/>
-<BRK/>
-<TXT>Include common excavation with the satisfactory removal and disposal of all materials not classified as rock excavation.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Rock Excavation</TTL><BRK/>
-<BRK/>
+specified excavation on a classified basis, in accordance with the following designations and classifications.]</TXT><BRK />
+<BRK />
+<SPT outline="1.6.1.1"><TTL>Common Excavation</TTL><BRK />
+<BRK />
+<TXT>Include common excavation with the satisfactory removal and disposal of all materials not classified as rock excavation.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6.1.2"><TTL>Rock Excavation</TTL><BRK />
+<BRK />
 <TXT>Submit notification of encountering rock in the project.  Include rock excavation with excavating, grading, disposing of material classified as 
 rock, and the satisfactory removal and disposal of boulders 1/2 cubic<MET> meter</MET><ENG> yard</ENG> or more in volume; solid rock; rock material that is in ledges, 
 bedded deposits, and unstratified masses, which cannot be removed without systematic drilling; firmly cemented conglomerate deposits possessing 
@@ -581,102 +581,102 @@ uncover such material and notify the Contracting Officer.  Do not proceed with t
 classified the materials as common excavation or rock excavation and has taken cross sections as required.  Failure on the part of the Contractor 
 to uncover such material, notify the Contracting Officer, and allow ample time for classification and cross sectioning of the undisturbed surface 
 of such material will cause the forfeiture of the Contractor's right of claim to any classification or volume of material to be paid for other 
-than that allowed by the Contracting Officer for the areas of work in which such deposits occur.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL><SUB>Dewatering Work Plan</SUB></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Include this paragraph where water levels will impact excavation operations.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>Submit procedures for accomplishing dewatering work.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>SUBMITTALS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+than that allowed by the Contracting Officer for the areas of work in which such deposits occur.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.6.2"><TTL><SUB>Dewatering Work Plan</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Include this paragraph where water levels will impact excavation operations.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Submit procedures for accomplishing dewatering work.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.7"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES and edit the following 
-list to reflect only the submittals required for the project.<BRK/>
-<BRK/>
+list to reflect only the submittals required for the project.<BRK />
+<BRK />
 The Guide Specification technical editors have designated those items that require Government approval, due to 
 their complexity or criticality, with a "G."  Generally, other submittal items can be reviewed by the Contractor's 
-Quality Control System.  Only add a “G” to an item, if the submittal is sufficiently important or complex in context 
-of the project.<BRK/>
-<BRK/>
+Quality Control System.  Only add a &#8220;G&#8221; to an item, if the submittal is sufficiently important or complex in context 
+of the project.<BRK />
+<BRK />
 For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
 tags may be used following the "G" designation to indicate the approving authority.  Codes for Army projects using 
 the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" for District Office (Engineering 
 Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
-for Project Office.  Codes following the "G" typically are not used for Navy, Air Force, and NASA projects.<BRK/>
-<BRK/>
+for Project Office.  Codes following the "G" typically are not used for Navy, Air Force, and NASA projects.<BRK />
+<BRK />
 The "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook to 
 fulfill federally mandated sustainable requirements in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
-Locate the "S" submittal under the SD number that best describes the submittal item.<BRK/>
-<BRK/>
+Locate the "S" submittal under the SD number that best describes the submittal item.<BRK />
+<BRK />
 Choose the first bracketed item for Navy, Air Force and NASA projects, or choose the second bracketed item for 
-Army projects.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are for [Contractor Quality Control 
 approval.] [information only.  When used, a designation following the "G" designation identifies the office that will review the submittal for 
 the Government.]  Submittals with an "S" are for inclusion in the Sustainability eNotebook, in conformance to Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
-Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
-<BRK/>
-<LST><SUB>SD-01 Preconstruction Submittals</SUB></LST><BRK/>
-<ITM><SUB>Shoring</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
-<ITM><SUB>Dewatering Work Plan</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
-<BRK/>
-<LST><SUB>SD-06 Test Reports</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Testing</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Borrow Site Testing</SUB></ITM><BRK/>
-<BRK/>
+Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-01 Preconstruction Submittals</SUB></LST><BRK />
+<ITM><SUB>Shoring</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<ITM><SUB>Dewatering Work Plan</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Testing</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Borrow Site Testing</SUB></ITM><BRK />
+<BRK />
 <ITM>  Within 24 hours of conclusion of physical tests, submit [_____] copies of test results, including calibration curves and results 
-of calibration tests.</ITM><BRK/>
-<BRK/></SPT>
-</PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>REQUIREMENTS FOR OFFSITE SOILS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+of calibration tests.</ITM><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>REQUIREMENTS FOR OFFSITE SOILS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Check with regional and local authorities as well as the activity to determine actual requirements of bracketed 
-items; values shown come from the Commonwealth of Virginia.  Remove this paragraph if not required by the project.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+items; values shown come from the Commonwealth of Virginia.  Remove this paragraph if not required by the project.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Test offsite soils brought in for use as backfill for Total Petroleum Hydrocarbons (TPH), Benzene, Toluene, Ethyl Benzene, and Xylene (BTEX) and 
 full Toxicity Characteristic Leaching Procedure (TCLP) including ignitability, corrosivity and reactivity. Perform tests and verify threshold values 
 in accordance with JAPAN Ministry of the Environment <RID>Notification No.46</RID> guidelines and <RID>JEGS</RID>. Provide <TST><SUB>Borrow Site Testing</SUB> for TPH, BTEX and TCLP 
 from a composite sample of material from the borrow site</TST>, with at least one test from each borrow site.  Do not bring material onsite until tests 
-have been approved by the Contracting Officer.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>BURIED WARNING AND IDENTIFICATION TAPE</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+have been approved by the Contracting Officer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2"><TTL>BURIED WARNING AND IDENTIFICATION TAPE</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Delete paragraph if tape is not required in the project.  The use of a plastic warning tape for identification 
 is mandatory for buried hazardous utilities such as electrical conduit, gas lines, fuel lines, high pressure nitrogen, 
 high pressure water and steam lines, domestic sewage force mains, industrial waste force mains and industrial 
 sewers carrying hazardous, explosive, or toxic waste.  Coordinate color codes with other specification sections 
-and conform, if possible, to local practice for identifying buried utilities.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+and conform, if possible, to local practice for identifying buried utilities.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide [polyethylene plastic] [and] [metallic core or metallic-faced, acid- and alkali-resistant, polyethylene plastic] warning tape manufactured 
 specifically for warning and identification of buried utility lines.  Provide tape on rolls, <MET>75 mm</MET><ENG> 3 inches</ENG> minimum width, color coded as specified 
 below for the intended utility with warning and identification imprinted in bold black letters continuously over the entire tape length.  Warning 
 and identification to read, "CAUTION, BURIED (intended service) LINE BELOW" or similar wording.  Provide permanent color and printing, unaffected 
-by moisture or soil.</TXT><BRK/>
+by moisture or soil.</TXT><BRK />
 <TXT><TAB WIDTH="67">
 <WBK>
    <STS>
       <STY SID="s50">
-         <ALN VERTICAL="BOTTOM"/>
+         <ALN VERTICAL="BOTTOM" />
       </STY>
       <STY SID="s51">
-         <ALN HORIZONTAL="CENTER" VERTICAL="BOTTOM"/>
+         <ALN HORIZONTAL="CENTER" VERTICAL="BOTTOM" />
       </STY>
    </STS>
    <TDA COLUMNCOUNT="2" ROWCOUNT="8">
-      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="99.75"/>
-      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="282.75"/>
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="99.75" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="282.75" />
       <ROW AUTOHEIGHT="0" HEIGHT="21.00">
          <CEL MERGEACROSS="1" STYLEID="s51">
 <DTA TYPE="STRING">Warning Tape Color Codes</DTA>
@@ -740,93 +740,93 @@ by moisture or soil.</TXT><BRK/>
       </ROW>
    </TDA>
 </WBK>
-<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB></TXT><BRK/>
-<BRK/>
-<SPT><TTL>Warning Tape for Metallic Piping</TTL><BRK/>
-<BRK/>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB></TXT><BRK />
+<BRK />
+<SPT outline="2.2.1"><TTL>Warning Tape for Metallic Piping</TTL><BRK />
+<BRK />
 <TXT>Provide acid and alkali-resistant polyethylene plastic tape conforming to the width, color, and printing requirements specified above, with a minimum 
 thickness of<MET> 0.08 mm</MET><ENG> 0.003 inch</ENG> and a minimum strength of<MET> 10.3 MPa</MET><ENG> 1500 psi</ENG> lengthwise, and<MET> 8.6 MPa</MET><ENG> 1250 psi</ENG> crosswise, with a maximum 350 percent 
-elongation.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Detectable Warning Tape for Non-Metallic Piping</TTL><BRK/>
-<BRK/>
+elongation.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2"><TTL>Detectable Warning Tape for Non-Metallic Piping</TTL><BRK />
+<BRK />
 <TXT>Provide polyethylene plastic tape conforming to the width, color, and printing requirements specified above, with a minimum thickness of<MET> 0.10 mm</MET><ENG>
  0.004 inch</ENG>, and a minimum strength of<MET> 10.3 MPa</MET><ENG> 1500 psi</ENG> lengthwise and<MET> 8.6 MPa</MET><ENG> 1250 psi</ENG> crosswise.  Manufacture tape with integral wires, foil 
 backing, or other means of enabling detection by a metal detector when tape is buried up to<MET> 920 mm</MET><ENG> 3 feet</ENG> deep.  Encase metallic element of the 
-tape in a protective jacket or provide with other means of corrosion protection.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>DETECTION WIRE FOR NON-METALLIC PIPING</TTL><BRK/>
-<BRK/>
-<TXT>Insulate a single strand, solid copper detection wire with a minimum of 12 AWG.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>MATERIAL FOR RIP-RAP</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+tape in a protective jacket or provide with other means of corrosion protection.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3"><TTL>DETECTION WIRE FOR NON-METALLIC PIPING</TTL><BRK />
+<BRK />
+<TXT>Insulate a single strand, solid copper detection wire with a minimum of 12 AWG.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4"><TTL>MATERIAL FOR RIP-RAP</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Make sure there is no duplication of rip-rap requirements between this and other specification sections.  
 In this paragraph refer to standard specifications for rip-rap if local specifications are satisfactory and available.  
-Delete this paragraph or subparagraphs not required in the project.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>Provide [Bedding material] [Grout] [Filter fabric] and rock conforming to [these requirements]  [[_____] local Standard] for construction indicated.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Bedding Material</TTL><BRK/>
-<BRK/>
+Delete this paragraph or subparagraphs not required in the project.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide [Bedding material] [Grout] [Filter fabric] and rock conforming to [these requirements]  [[_____] local Standard] for construction indicated.</TXT><BRK />
+<BRK />
+<SPT outline="2.4.1"><TTL>Bedding Material</TTL><BRK />
+<BRK />
 <TXT>Provide bedding material consisting of sand, gravel, or crushed rock, well graded, [or poorly graded] with a maximum particle size of<MET> 50 mm</MET><ENG> 2 inches</ENG>
 .  Compose material of tough, durable particles.  Allow fines passing the<MET> 75 micrometers</MET><ENG> No. 200</ENG> standard sieve with a plasticity index less than 
-six.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Grout</TTL><BRK/>
-<BRK/>
+six.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.2"><TTL>Grout</TTL><BRK />
+<BRK />
 <TXT>Provide durable grout composed of cement, water, an air-entraining admixture, and sand mixed in proportions of one part portland cement to [two] 
 [_____] parts of sand, sufficient water to produce a workable mixture, and an amount of admixture which will entrain sufficient air, as determined 
 by the Contracting Officer.  Mix grout in a concrete mixer.  Allow a sufficient mixing time to produce a mixture having a consistency permitting 
-gravity flow into the interstices of the rip-rap with limited spading and brooming.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Rock</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Adjust weights in brackets to fit application.  Take local practice into consideration.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+gravity flow into the interstices of the rip-rap with limited spading and brooming.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.3"><TTL>Rock</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Adjust weights in brackets to fit application.  Take local practice into consideration.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide rock fragments sufficiently durable to ensure permanence in the structure and the environment in which it is to be used.  Use rock fragments 
 free from cracks, seams, and other defects that would increase the risk of deterioration from natural causes.  Provide fragments sized so that 
 no individual fragment exceeds a weight of<MET> [68] [_____] kg</MET><ENG> [150] [_____] pounds</ENG> and that no more than 10 percent of the mixture, by weight, consists 
 of fragments weighing<MET> 0.91 kg</MET><ENG> 2 pounds</ENG> or less each.  Provide rock with a minimum specific gravity of [2.50] [_____].  Do not permit the inclusion 
-of more than trace [1 percent] [_____] quantities of dirt, sand, clay, and rock fines.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>CAPILLARY WATER BARRIER</TTL><BRK/>
-<BRK/>
+of more than trace [1 percent] [_____] quantities of dirt, sand, clay, and rock fines.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.5"><TTL>CAPILLARY WATER BARRIER</TTL><BRK />
+<BRK />
 <TXT>Provide capillary water barrier of clean, poorly graded crushed rock, crushed gravel, or uncrushed gravel placed beneath a building slab with or 
 without a vapor barrier to cut off the capillary flow of pore water to the area immediately below.  Conform to <RID>JIS A 5005</RID> for fine aggregate grading 
 with a maximum of 3 percent by weight passing <RID>JIS A 1103</RID>, <MET>75 micrometers</MET><ENG> No. 200</ENG> sieve, [or] [<MET>37.5 mm</MET><ENG> 1-1/2 inch</ENG> and no more than 2 percent by 
 weight passing the<MET> 4.75 mm</MET><ENG> No. 4</ENG> size sieve] [or coarse aggregate with "S-x" designation (where x is the maximum nominal gravel size) in accordance 
-with <RID>JIS A 5001</RID>].</TXT><BRK/>
-<BRK/></SPT>
-</PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Coordinate requirements with Section <SRF>31 11 00</SRF> CLEARING AND GRUBBING.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TAI OPT="TOPSOIL"><SPT><TTL>STRIPPING OF TOPSOIL</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+with <RID>JIS A 5001</RID>].</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Coordinate requirements with Section <SRF>31 11 00</SRF> CLEARING AND GRUBBING.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TAI OPT="TOPSOIL"><SPT><TTL>STRIPPING OF TOPSOIL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Topsoil will be separately excavated, stored, and used for surface finish in preparation for seeding, sodding, 
 or other planting, only where topsoil is definitely superior for grass and plant growth as compared with the remainder 
 of the excavated material.  Surface soil that is a heavy clay, predominantly sandy, or is lean in grass- and plant-growth 
 qualities, will not be saved.  The hauling, spreading, smoothing, and maintenance of the topsoil in preparation 
 for the seeding and planting operations are generally considered under a separate section, and therefore are not 
-considered in this specification.  The blank will be filled with the appropriate depth dimension.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+considered in this specification.  The blank will be filled with the appropriate depth dimension.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Where indicated or directed, strip topsoil to a depth of<MET> [100] [_____] mm</MET><ENG> [4] [_____] inches</ENG>.  Spread topsoil on areas already graded and prepared 
 for topsoil, or transported and deposited in stockpiles convenient to areas that are to receive application of the topsoil later, or at locations 
 indicated or specified.  Keep topsoil separate from other excavated materials, brush, litter, objectionable weeds, roots, stones larger than<MET> 50 
 mm</MET><ENG> 2 inches</ENG> in diameter, and other materials that would interfere with planting and maintenance operations.  [Stockpile in locations indicated] 
-[Remove from the site] any surplus of topsoil from excavations and gradings.</TXT><BRK/>
-<BRK/></SPT>
-</TAI><SPT><TTL>GENERAL EXCAVATION</TTL><BRK/>
-<BRK/>
+[Remove from the site] any surplus of topsoil from excavations and gradings.</TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="3.1"><TTL>GENERAL EXCAVATION</TTL><BRK />
+<BRK />
 <TXT>Perform excavation of every type of material encountered within the limits of the project to the lines, grades, and elevations indicated and as 
 specified.  Perform the grading in accordance with the typical sections shown and the tolerances specified in paragraph FINISHING.  Transport satisfactory 
 excavated materials and place in fill or embankment within the limits of the work.  Excavate unsatisfactory materials encountered within the limits 
@@ -835,47 +835,47 @@ as replacement in excavation.  Dispose surplus satisfactory excavated material n
 material storage or designated waste areas.  Dispose unsatisfactory excavated material in designated waste or spoil areas.  During construction, 
 perform excavation and fill in a manner and sequence that will provide proper drainage at all times.  Excavate material required for fill or embankment 
 in excess of that produced by excavation within the grading limits <TAI OPT="BORROW">from the borrow areas indicated or</TAI> from other approved areas selected by the 
-Contractor as specified.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Ditches, Gutters, and Channel Changes</TTL><BRK/>
-<BRK/>
+Contractor as specified.</TXT><BRK />
+<BRK />
+<SPT outline="3.1.1"><TTL>Ditches, Gutters, and Channel Changes</TTL><BRK />
+<BRK />
 <TXT>Finish excavation of ditches, gutters, and channel changes by cutting accurately to the cross sections, grades, and elevations shown on Drawing 
 Sheet No. [_____].  Do not excavate ditches and gutters below grades shown.  Backfill the excessive open ditch or gutter excavation with satisfactory, 
 thoroughly compacted, material or with suitable stone or cobble to grades shown.  Dispose excavated material as shown or as directed, except in 
 no case allow material be deposited a maximum<MET> 1 meter</MET><ENG> 4 feet</ENG> from edge of a ditch.  Maintain excavations free from detrimental quantities of leaves, 
-brush, sticks, trash, and other debris until final acceptance of the work.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Drainage Structures</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  The last two sentences will be removed except when pile foundations are to be used.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+brush, sticks, trash, and other debris until final acceptance of the work.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.2"><TTL>Drainage Structures</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  The last two sentences will be removed except when pile foundations are to be used.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Make excavations to the lines, grades, and elevations shown, or as directed.  Provide trenches and foundation pits of sufficient size to permit 
 the placement and removal of forms for the full length and width of structure footings and foundations as shown.  Clean rock or other hard foundation 
 material of loose debris and cut to a firm, level, stepped, or serrated surface.  Remove loose disintegrated rock and thin strata.  Do not disturb 
 the bottom of the excavation when concrete or masonry is to be placed in an excavated area.  Do not excavate to the final grade level until just 
 before the concrete or masonry is to be placed.  Where pile foundations are to be used, stop the excavation of each pit at an elevation<MET> 300 mm</MET><ENG> 
 1 foot</ENG> above the base of the footing, as specified, before piles are driven.  After the pile driving has been completed, remove loose and displaced 
-material and complete excavation, leaving a smooth, solid, undisturbed surface to receive the concrete or masonry.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Drainage</TTL><BRK/>
-<BRK/>
+material and complete excavation, leaving a smooth, solid, undisturbed surface to receive the concrete or masonry.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.3"><TTL>Drainage</TTL><BRK />
+<BRK />
 <TXT>Provide for the collection and disposal of surface and subsurface water encountered during construction.  Completely drain construction site during 
 periods of construction to keep soil materials sufficiently dry.  Construct storm drainage features (ponds/basins) at the earliest stages of site 
 development, and throughout construction grade the construction area to provide positive surface water runoff away from the construction activity 
 [and] [or] provide temporary ditches, swales, and other drainage features and equipment as required to maintain dry soils.  When unsuitable working 
 platforms for equipment operation and unsuitable soil support for subsequent construction features develop, remove unsuitable material and provide 
 new soil material as specified herein.  It is the responsibility of the Contractor to assess the soil and ground water conditions presented by 
-the plans and specifications and to employ necessary measures to permit construction to proceed.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Dewatering</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+the plans and specifications and to employ necessary measures to permit construction to proceed.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.4"><TTL>Dewatering</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Check depth of proposed utilities and foundations relative to the existing ground water elevation prior 
-to editing.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+to editing.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Control groundwater flowing toward or into excavations to prevent sloughing of excavation slopes and walls, boils, uplift and heave in the excavation 
 and to eliminate interference with orderly progress of construction.  Do not permit French drains, sumps, ditches or trenches within<MET> 0.9 m</MET><ENG> 3 feet</ENG>
  of the foundation of any structure, except with specific written approval, and after specific contractual provisions for restoration of the foundation 
@@ -883,18 +883,18 @@ area have been made.  Take control measures by the time the excavation reaches t
 material.  While the excavation is open, maintain the water level continuously, at least [_____]<MET> m</MET><ENG> feet</ENG> below the working level.  [Operate dewatering 
 system continuously until construction work below existing water levels is complete.  Submit performance records weekly.] [Measure and record performance 
 of dewatering system at same time each day by use of observation wells or piezometers installed in conjunction with the dewatering system.]  [Relieve 
-hydrostatic head in previous zones below subgrade elevation in layered soils to prevent uplift.]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Trench Excavation Requirements</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+hydrostatic head in previous zones below subgrade elevation in layered soils to prevent uplift.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.5"><TTL>Trench Excavation Requirements</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  The width of the trench below the top of the pipe will depend on the type of pipe used and soil conditions.  
 The pipe manufacturer's installation manual should provide this information, and if so, it will be followed.  
 In general, the width of trench will be<MET> 300 mm</MET><ENG> 12 inches</ENG> to<MET> 600 mm</MET><ENG> 24 inches</ENG>, plus pipe O.D. for smaller pipe 
 sizes, and<MET> 600 mm</MET><ENG> 24 inches</ENG> to<MET> 900 mm</MET><ENG> 36 inches</ENG> plus pipe O.D. for larger pipe sizes.  Sloping walls below the 
-top of the pipe are allowed for certain types of pipe in special ground conditions.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+top of the pipe are allowed for certain types of pipe in special ground conditions.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Excavate the trench as recommended by the manufacturer of the pipe to be installed.  Slope trench walls below the top of the pipe, or make vertical, 
 and of such width as recommended in the manufacturer's printed installation manual.  Provide vertical trench walls where no manufacturer's printed 
 installation manual is available.  Shore trench walls more than [_____]<MET> meters</MET><ENG> feet</ENG> high, cut back to a stable slope, or provide with equivalent 
@@ -904,47 +904,47 @@ affected by weather or moisture content.  Do not exceed the trench width below t
 for pipes of less than<MET> 600 mm</MET><ENG> 24 inches</ENG> inside diameter, and do not exceed<MET> 900 mm</MET><ENG> 36 inches</ENG> plus pipe outside diameter for sizes larger than<MET> 600 
 mm</MET><ENG> 24 inches</ENG> inside diameter.  Where recommended trench widths are exceeded, provide redesign, stronger pipe, or special installation procedures 
 by the Contractor.  The Contractor is responsible for the cost of redesign, stronger pipe, or special installation procedures without any additional 
-cost to the Government.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Bottom Preparation</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+cost to the Government.</TXT><BRK />
+<BRK />
+<SPT outline="3.1.5.1"><TTL>Bottom Preparation</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Stones<MET> 75 mm</MET><ENG> 3 inches</ENG> or greater should be removed.  However, pipe manufacturer's criteria, if any, should 
-be used.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+be used.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Grade the bottoms of trenches accurately to provide uniform bearing and support for the bottom quadrant of each section of the pipe.  Excavate 
 bell holes to the necessary size at each joint or coupling to eliminate point bearing.  Remove stones of [_____]<MET> mm</MET><ENG> inch</ENG> or greater in any dimension, 
-or as recommended by the pipe manufacturer, whichever is smaller, to avoid point bearing.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Removal of Unyielding Material</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Minimum of<MET> 100 mm</MET><ENG> 4 inches</ENG> should be removed to produce a suitable cushion for the pipe.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+or as recommended by the pipe manufacturer, whichever is smaller, to avoid point bearing.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.5.2"><TTL>Removal of Unyielding Material</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Minimum of<MET> 100 mm</MET><ENG> 4 inches</ENG> should be removed to produce a suitable cushion for the pipe.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Where [overdepth is not indicated and] unyielding material is encountered in the bottom of the trench, remove such material [_____]<MET> mm</MET><ENG> inch</ENG> below 
-the required grade and replaced with suitable materials as provided in paragraph BACKFILLING AND COMPACTION.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Removal of Unstable Material</TTL><BRK/>
-<BRK/>
+the required grade and replaced with suitable materials as provided in paragraph BACKFILLING AND COMPACTION.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.5.3"><TTL>Removal of Unstable Material</TTL><BRK />
+<BRK />
 <TXT>Where unstable material is encountered in the bottom of the trench, remove such material to the depth directed and replace it to the proper grade 
 with select granular material as provided in paragraph BACKFILLING AND COMPACTION.  When removal of unstable material is required due to the Contractor's 
 fault or neglect in performing the work, the Contractor is responsible for excavating the resulting material and replacing it without additional 
-cost to the Government.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Excavation for Appurtenances</TTL><BRK/>
-<BRK/>
+cost to the Government.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.5.4"><TTL>Excavation for Appurtenances</TTL><BRK />
+<BRK />
 <TXT>Provide excavation for manholes, catch-basins, inlets, or similar structures [sufficient to leave at least<MET> 300 mm</MET><ENG> 12 inches</ENG> clear between the outer 
 structure surfaces and the face of the excavation or support members.] [of sufficient size to permit the placement and removal of forms for the 
 full length and width of structure footings and foundations as shown.]  Clean rock or loose debris and cut to a firm surface either level, stepped, 
 or serrated, as shown or as directed.  Remove loose disintegrated rock and thin strata.  Specify removal of unstable material.  When concrete or 
 masonry is to be placed in an excavated area, take special care not to disturb the bottom of the excavation.  Do not excavate to the final grade 
-level until just before the concrete or masonry is to be placed.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Jacking, Boring, and Tunneling</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+level until just before the concrete or masonry is to be placed.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.5.5"><TTL>Jacking, Boring, and Tunneling</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  In situations where utility lines must be installed more than<MET> 5 to 7 meters</MET><ENG> 15 to 20 feet</ENG> below ground 
 surface, through embankments, under minor roads or parking areas, or where surface conditions make it difficult 
 or impractical to excavate open trenches, utility lines may be installed by jacking, boring, or tunneling as a 
@@ -953,109 +953,109 @@ or tunneling should be specified as mandatory alternatives.  This requirement wi
 must cross railroads, highways, primary access roads and airfield pavements.  Pipe and conduit smaller than 900 
 mm (36 inches) in diameter will normally be installed in smooth steel pipe casing.  Designing engineers must coordinate 
 with installation facility engineers to identify and validate utility crossings where jacking, boring, or tunneling 
-will be specified as mandatory.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+will be specified as mandatory.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Unless otherwise indicated, provide excavation by open cut except that sections of a trench may be jacked, bored, or tunneled if, in the opinion 
-of the Contracting Officer, the pipe, cable, or duct can be safely and properly installed and backfill can be properly compacted in such sections.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>Underground Utilities</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+of the Contracting Officer, the pipe, cable, or duct can be safely and properly installed and backfill can be properly compacted in such sections.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.1.6"><TTL>Underground Utilities</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Delete this paragraph in its entirety if no known utilities or subsurface construction is located below 
-or adjacent to work covered in this specification.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+or adjacent to work covered in this specification.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>The Contractor is responsible for movement of construction machinery and equipment over pipes and utilities during construction.  [Perform work 
 adjacent to non-Government utilities as indicated in accordance with procedures outlined by utility company.]  [Excavation made with power-driven 
 equipment is not permitted within<MET> [600] [_____] mm</MET><ENG> [2] [_____] feet</ENG> of known Government-owned utility or subsurface construction.  For work immediately 
 adjacent to or for excavations exposing a utility or other buried obstruction, excavate by hand.  Start hand excavation on each side of the indicated 
 obstruction and continue until the obstruction is uncovered or until clearance for the new grade is assured.  Support uncovered lines or other 
 existing work affected by the contract excavation until approval for backfill is granted by the Contracting Officer.]  Report damage to utility 
-lines or subsurface construction immediately to the Contracting Officer.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Structural Excavation</TTL><BRK/>
-<BRK/>
+lines or subsurface construction immediately to the Contracting Officer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.7"><TTL>Structural Excavation</TTL><BRK />
+<BRK />
 <TXT>Ensure that footing subgrades have been inspected and approved by the Contracting Officer prior to concrete placement.  Excavate to bottom of pile 
 cap prior to placing or driving piles, unless authorized otherwise by the Contracting Officer.  Backfill and compact over excavations and changes 
-in grade due to pile driving operations to 95 percent of <RID>JIS A 1210</RID> maximum density.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><TAI OPT="BORROW"><SPT><TTL>SELECTION OF BORROW MATERIAL</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+in grade due to pile driving operations to 95 percent of <RID>JIS A 1210</RID> maximum density.</TXT><BRK />
+<BRK /></SPT>
+</SPT><TAI OPT="BORROW"><SPT><TTL>SELECTION OF BORROW MATERIAL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Where a substantial quantity of borrow excavation is anticipated, the drawings and specifications will 
-indicate the location or locations within the project site, and the conditions under which borrow may be obtained.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+indicate the location or locations within the project site, and the conditions under which borrow may be obtained.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Select borrow material to meet the requirements and conditions of the particular fill or embankment for which it is to be used.  Obtain borrow 
 material from the borrow areas [shown on Drawing Sheet No. [_____]] [within the limits of the project site, selected by the Contractor] [or] [from 
 approved private sources].  Unless otherwise provided in the contract, the Contractor is responsible for obtaining the right to procure material, 
 pay royalties and other charges involved, and bear the expense of developing the sources, including rights-of-way for hauling from the owners.  
 Borrow material from approved sources on Government-controlled land may be obtained without payment of royalties.  Unless specifically provided, 
 do not obtain borrow within the limits of the project site without prior written approval.  Consider necessary clearing, grubbing, and satisfactory 
-drainage of borrow pits and the disposal of debris thereon related operations to the borrow excavation.</TXT><BRK/>
-<BRK/></SPT>
-</TAI><SPT><TTL>OPENING AND DRAINAGE OF EXCAVATION <TAI OPT="BORROW">AND BORROW PITS</TAI></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+drainage of borrow pits and the disposal of debris thereon related operations to the borrow excavation.</TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="3.2"><TTL>OPENING AND DRAINAGE OF EXCAVATION <TAI OPT="BORROW">AND BORROW PITS</TAI></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  The first sentence will be deleted when all work covered by Invitation for Bids is to be included in one 
-lump sum contract price.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+lump sum contract price.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Notify the Contracting Officer sufficiently in advance of the opening of any excavation or borrow pit <TAI OPT="BORROW">or borrow areas</TAI> to permit elevations and 
 measurements of the undisturbed ground surface to be taken.  Except as otherwise permitted, <TAI OPT="BORROW">excavate borrow pits and other</TAI> excavation areas providing 
 adequate drainage.  Transport overburden and other spoil material to designated spoil areas or otherwise dispose of as directed.  <TAI OPT="BORROW">Provide neatly 
 trimmed and drained borrow pits after the excavation is completed.</TAI>  Ensure that excavation of any area, <TAI OPT="BORROW">operation of borrow pits,</TAI> or dumping of 
-spoil material results in minimum detrimental effects on natural environmental conditions.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL><SUB>SHORING</SUB></TTL><BRK/>
-<BRK/>
-<SPT><TTL>General Requirements</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+spoil material results in minimum detrimental effects on natural environmental conditions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3"><TTL><SUB>SHORING</SUB></TTL><BRK />
+<BRK />
+<SPT outline="3.3.1"><TTL>General Requirements</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Include this paragraph when scope of work requires excavations which are greater than<MET> 1.5 m</MET><ENG> 5 feet</ENG> or where 
 it is known that in-situ soils lack the stability to hold near vertical faces.  Where sufficient room is available, 
 the Contractor may slope back trench walls rather than having to use a shoring system.  However, the Contractor 
 should not be given the opportunity to slope the faces of excavations in lieu of providing shoring unless all 
-the following conditions are met:</NPR><BRK/>
-<BRK/>
-<NPR>1.  The excavation is less than<MET> 6 m</MET><ENG> 20 feet</ENG> in depth.</NPR><BRK/>
-<BRK/>
-<NPR>2.  There are no adjacent structures, roads, or pavements that will affect the excavation.</NPR><BRK/>
-<BRK/>
-<NPR>3.  No equipment, stored material, or overlying material will affect the excavation.</NPR><BRK/>
-<BRK/>
-<NPR>4.  Vibration from equipment, traffic,  will not affect the excavation.</NPR><BRK/>
-<BRK/>
-<NPR>5.  There will be no ground water problems.</NPR><BRK/>
-<BRK/>
-<NPR>6.  Surcharges will not affect the excavation.</NPR><BRK/>
-<BRK/>
-<NPR>7.  Station operational considerations permit laying back the slopes of the excavation.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+the following conditions are met:</NPR><BRK />
+<BRK />
+<NPR>1.  The excavation is less than<MET> 6 m</MET><ENG> 20 feet</ENG> in depth.</NPR><BRK />
+<BRK />
+<NPR>2.  There are no adjacent structures, roads, or pavements that will affect the excavation.</NPR><BRK />
+<BRK />
+<NPR>3.  No equipment, stored material, or overlying material will affect the excavation.</NPR><BRK />
+<BRK />
+<NPR>4.  Vibration from equipment, traffic,  will not affect the excavation.</NPR><BRK />
+<BRK />
+<NPR>5.  There will be no ground water problems.</NPR><BRK />
+<BRK />
+<NPR>6.  Surcharges will not affect the excavation.</NPR><BRK />
+<BRK />
+<NPR>7.  Station operational considerations permit laying back the slopes of the excavation.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Submit a Shoring and Sheeting plan for approval 15 days prior to starting work.  Submit drawings and calculations, certified by a registered professional 
 engineer, describing the methods for shoring and sheeting of excavations.  Finish shoring, including sheet piling, and install as necessary to 
 protect workmen, banks, adjacent paving, structures, and utilities.  Remove shoring, bracing, and sheeting as excavations are backfilled, in a 
-manner to prevent caving.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Geotechnical Engineer</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+manner to prevent caving.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.2"><TTL>Geotechnical Engineer</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE: Where site conditions require extensive monitoring of excavations and water levels include the following 
-requirement.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+requirement.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Hire a Professional Geotechnical Engineer to provide inspection of excavations and soil/groundwater conditions throughout construction.  The Geotechnical 
 Engineer is responsible for performing pre-construction and periodic site visits throughout construction to assess site conditions.  The Geotechnical 
 Engineer is responsible for updating the excavation, sheeting and dewatering plans as construction progresses to reflect changing conditions and 
 submit an updated plan if necessary.  Submit a monthly written report, informing the Contractor and Contracting Officer of the status of the plan 
 and an accounting of the Contractor's adherence to the plan addressing any present or potential problems.  The Contracting Officer is responsible 
-for arranging meetings with the Geotechnical Engineer at any time throughout the contract duration.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>GRADING AREAS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+for arranging meetings with the Geotechnical Engineer at any time throughout the contract duration.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.4"><TTL>GRADING AREAS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  When spoil areas or borrow areas are within the limits of Government-controlled land, additional requirements 
 based on the following, and as appropriate for the project, will be included in the contract document.  Locations 
 of areas will be indicated, or the approximate distances from the project site will be specified.  Generally, 
@@ -1064,51 +1064,51 @@ no future construction is planned.  If economically justifiable, surplus suitabl
 or may be disposed of in areas where future construction is planned and where fill will be required.  Spoil materials 
 will be so placed and the worked portions of spoil areas and borrow areas will be so graded and shaped as to minimize 
 soil erosion, siltation of drainage channels, and damage to existing vegetation.  The degree of compaction will 
-be specified.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+be specified.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Where indicated, divide work into grading areas within which satisfactory excavated material will be placed in embankments, fills, and required 
 backfills.  Do not haul satisfactory material excavated in one grading area to another grading area except when so directed in writing.  Place 
 and grade stockpiles of satisfactory [and unsatisfactory] [and wasted materials] as specified.  Keep stockpiles in a neat and well drained condition, 
 giving due consideration to drainage at all times.  Clear, grub, and seal by rubber-tired equipment, the ground surface at stockpile locations; 
 separately stockpile excavated satisfactory and unsatisfactory materials.  Protect stockpiles of satisfactory materials from contamination which 
 may destroy the quality and fitness of the stockpiled material.  If the Contractor fails to protect the stockpiles, and any material becomes unsatisfactory, 
-remove and replace such material with satisfactory material from approved sources.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>FINAL GRADE OF SURFACES TO SUPPORT CONCRETE</TTL><BRK/>
-<BRK/>
+remove and replace such material with satisfactory material from approved sources.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5"><TTL>FINAL GRADE OF SURFACES TO SUPPORT CONCRETE</TTL><BRK />
+<BRK />
 <TXT>Do not excavate to final grade until just before concrete is to be placed.  [For pile foundations, stop the excavation at an elevation of from<MET> 
 150 to 300 mm</MET><ENG> 6 to 12 inches</ENG> above the bottom of the footing before driving piles.  After pile driving has been completed, complete the remainder 
 of the excavation to the elevations shown.] Only use excavation methods that will leave the foundation rock in a solid and unshattered condition.  
 Roughen the level surfaces, and cut the sloped surfaces, as indicated, into rough steps or benches to provide a satisfactory bond.  Protect shales 
-from slaking and all surfaces from erosion resulting from ponding or water flow.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>GROUND SURFACE PREPARATION</TTL><BRK/>
-<BRK/>
-<SPT><TTL>General Requirements</TTL><BRK/>
-<BRK/>
+from slaking and all surfaces from erosion resulting from ponding or water flow.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.6"><TTL>GROUND SURFACE PREPARATION</TTL><BRK />
+<BRK />
+<SPT outline="3.6.1"><TTL>General Requirements</TTL><BRK />
+<BRK />
 <TXT>Remove and replace unsatisfactory material with satisfactory materials, as directed by the Contracting Officer, in surfaces to receive fill or 
 in excavated areas.  Scarify the surface to a depth of<MET> 150 mm</MET><ENG> 6 inches</ENG> before the fill is started.  Plow, step, bench, or break up sloped surfaces 
 steeper than 1 vertical to 4 horizontal so that the fill material will bond with the existing material.  When subgrades are less than the specified 
 density, break up the ground surface to a minimum depth of<MET> 150 mm</MET><ENG> 6 inches</ENG>, pulverizing, and compacting to the specified density.  When the subgrade 
 is part fill and part excavation or natural ground, scarify the excavated or natural ground portion to a depth of<MET> 300 mm</MET><ENG> 12 inches</ENG> and compact 
-it as specified for the adjacent fill.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Frozen Material</TTL><BRK/>
-<BRK/>
+it as specified for the adjacent fill.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.6.2"><TTL>Frozen Material</TTL><BRK />
+<BRK />
 <TXT>Do not place material on surfaces that are muddy, frozen, or contain frost.  Finish compaction by sheepsfoot rollers, pneumatic-tired rollers, 
 steel-wheeled rollers, or other approved equipment well suited to the soil being compacted.  Moisten material as necessary [to plus or minus [_____] 
 percent of optimum moisture] [to provide the moisture content that will readily facilitate obtaining the specified compaction with the equipment 
-used].</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>UTILIZATION OF EXCAVATED MATERIALS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+used].</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.7"><TTL>UTILIZATION OF EXCAVATED MATERIALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Specifications covering excavated materials authorized to be wasted will usually include the provision 
 that the surface and side slopes formed from such material be shaped and sloped so as to provide for drainage 
-and for later seeding and mowing operations.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+and for later seeding and mowing operations.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Dispose unsatisfactory materials removing from excavations into designated waste disposal or spoil areas.  Use satisfactory material removed from 
 excavations, insofar as practicable, in the construction of fills, embankments, subgrades, shoulders, bedding (as backfill), and for similar purposes.  
 Submit procedure and location for disposal of unused satisfactory material.  <TAI OPT="BORROW">Submit proposed source of borrow material</TAI>.  Do not waste any satisfactory 
@@ -1116,42 +1116,42 @@ excavated material without specific written authorization.  Dispose of satisfact
 for surplus material storage or designated waste areas as directed.  Clear and grub newly designated waste areas on Government-controlled land 
 before disposal of waste material thereon.  Stockpile and use coarse rock from excavations for constructing slopes or embankments adjacent to streams, 
 or sides and bottoms of channels and for protecting against erosion.  Do not dispose excavated material to obstruct the flow of any stream, endanger 
-a partly finished structure, impair the efficiency or appearance of any structure, or be detrimental to the completed work in any way.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>BURIED TAPE AND DETECTION WIRE</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Buried Warning and Identification Tape</TTL><BRK/>
-<BRK/>
+a partly finished structure, impair the efficiency or appearance of any structure, or be detrimental to the completed work in any way.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.8"><TTL>BURIED TAPE AND DETECTION WIRE</TTL><BRK />
+<BRK />
+<SPT outline="3.8.1"><TTL>Buried Warning and Identification Tape</TTL><BRK />
+<BRK />
 <TXT>Provide buried utility lines with utility identification tape.  Bury tape<MET> 300 mm</MET><ENG> 12 inches</ENG> below finished grade; under pavements and slabs, bury 
-tape<MET> 150 mm</MET><ENG> 6 inches</ENG> below top of subgrade.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Buried Detection Wire</TTL><BRK/>
-<BRK/>
+tape<MET> 150 mm</MET><ENG> 6 inches</ENG> below top of subgrade.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.2"><TTL>Buried Detection Wire</TTL><BRK />
+<BRK />
 <TXT>Bury detection wire directly above non-metallic piping at a distance not to exceed<MET> 300 mm</MET><ENG> 12 inches</ENG> above the top of pipe.  Extend the wire continuously 
 and unbroken, from manhole to manhole.  Terminate the ends of the wire inside the manholes at each end of the pipe, with a minimum of<MET> 0.9 m</MET><ENG> 3 feet</ENG>
  of wire, coiled, remaining accessible in each manhole.  Furnish insulated wire over it's entire length.  Install wires at manholes between the 
 top of the corbel and the frame, and extend up through the chimney seal between the frame and the chimney seal.  For force mains, terminate the 
-wire in the valve pit at the pump station end of the pipe.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>BACKFILLING AND COMPACTION</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+wire in the valve pit at the pump station end of the pipe.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.9"><TTL>BACKFILLING AND COMPACTION</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  It is imperative to specify a high degree of compaction in fills under structures to minimize settlement 
 and to insure stability of a structure.  In addition to the criteria set forth in UFC 3-220-01, the following 
-factors will be considered in establishing the specific requirements:</NPR><BRK/>
-<BRK/>
+factors will be considered in establishing the specific requirements:</NPR><BRK />
+<BRK />
 <NPR>a.  The sensitivity of the structure to total and/or differential settlement as related to the structural design.  
-This is particularly true of structures to be founded partly on fill and partly on natural ground.</NPR><BRK/>
-<BRK/>
+This is particularly true of structures to be founded partly on fill and partly on natural ground.</NPR><BRK />
+<BRK />
 <NPR>b.  The ability of normal compaction equipment to produce the desired densities in existing or locally available 
 materials within a reasonable range of molding moisture content.  If considered essential, special equipment will 
-be specified.</NPR><BRK/>
-<BRK/>
+be specified.</NPR><BRK />
+<BRK />
 <NPR>c.  The compaction requirements for clean, cohesionless, granular materials will be generally higher than those 
 for cohesive materials because cohesionless materials readily consolidate when subjected to vibration.  For structures 
 with critical stability requirements and settlement limitations, the minimum density requirements may be altered.  
-If only a cohesionless soil or only a cohesive soil is used, the inapplicable values will be deleted.</NPR><BRK/>
-<BRK/>
+If only a cohesionless soil or only a cohesive soil is used, the inapplicable values will be deleted.</NPR><BRK />
+<BRK />
 <NPR>d.  The exception to required high degree of compaction in fills and backfills is in expansive soils (see UFC 
 3-220-01).  Where it is necessary to use materials having swelling characteristics, usually CL or CH classifications, 
 the specified degree of compaction will be related to laboratory test results for swelling under a considerable 
@@ -1159,258 +1159,258 @@ range of molding moisture and compactive effort.  In swelling soils, it is impor
 molding moisture range that will enable the soil to stay stable, striking a reasonable balance between potential 
 swell and excessive settlement under load, even at the expense of accepting a reduced bearing capacity.  A maximum 
 permissible density should be established to minimize swelling. If possible, soils with swelling characteristics 
-will be classified as unsatisfactory material, particularly under critical stability structures.</NPR><BRK/>
-<BRK/>
+will be classified as unsatisfactory material, particularly under critical stability structures.</NPR><BRK />
+<BRK />
 <NPR>e. JIS A 1210 (C,D,E, non-repeating methods) is satisfactory for establishing moisture density characteristics 
 of a material in most cases. The procedures and precautions in the subgrade compaction paragraphs of DM 21.3/UFC 
-3-260-02, will be considered in establishing minimum density requirements for a particular project.</NPR><BRK/>
-<BRK/>
+3-260-02, will be considered in establishing minimum density requirements for a particular project.</NPR><BRK />
+<BRK />
 <NPR>Modifications will be made to meet the backfill requirements for deep-seated or subsurface structures as discussed 
-in UFC 3-220-04FA.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+in UFC 3-220-04FA.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Place backfill adjacent to any and all types of structures, in successive horizontal layers of loose materia not more than<MET> 200 mm</MET><ENG> 8 inches</ENG> in depth.  
 Compact to at least 90 percent laboratory maximum density for cohesive materials or 95 percent laboratory maximum density for cohesionless materials 
 in accordance with <RID>JIS A 1210</RID>, to prevent wedging action or eccentric loading upon or against the structure.  Backfill material must be within 
-the range of -2 to +2 percent of optimum moisture content at the time of compaction.</TXT><BRK/>
-<BRK/>
+the range of -2 to +2 percent of optimum moisture content at the time of compaction.</TXT><BRK />
+<BRK />
 <TXT>Prepare ground surface on which backfill is to be placed and provide compaction requirements for backfill materials in conformance with the applicable 
 portions of paragraphs GROUND SURFACE PREPARATION.  Finish compaction by sheepsfoot rollers, pneumatic-tired rollers, steel-wheeled rollers, vibratory 
-compactors, or other approved equipment.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Trench Backfill</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+compactors, or other approved equipment.</TXT><BRK />
+<BRK />
+<SPT outline="3.9.1"><TTL>Trench Backfill</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Most pressure tests require backfilling to at least<MET> 600 mm</MET><ENG> 2 feet</ENG> over the pipe with the joints and couplings 
-left open for inspection.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+left open for inspection.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Backfill trenches to the grade shown.  [Backfill the trench to [_____]<MET> meters</MET><ENG> feet</ENG> above the top of pipe prior to performing the required pressure 
-tests.  Leave the joints and couplings uncovered during the pressure test.] [Do not backfill the trench until all specified tests are performed.]</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Replacement of Unyielding Material</TTL><BRK/>
-<BRK/>
-<TXT>Replace unyielding material removed from the bottom of the trench with select granular material or initial backfill material.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Replacement of Unstable Material</TTL><BRK/>
-<BRK/>
+tests.  Leave the joints and couplings uncovered during the pressure test.] [Do not backfill the trench until all specified tests are performed.]</TXT><BRK />
+<BRK />
+<SPT outline="3.9.1.1"><TTL>Replacement of Unyielding Material</TTL><BRK />
+<BRK />
+<TXT>Replace unyielding material removed from the bottom of the trench with select granular material or initial backfill material.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.9.1.2"><TTL>Replacement of Unstable Material</TTL><BRK />
+<BRK />
 <TXT>Replace unstable material removed from the bottom of the trench or excavation with select granular material placed in layers not exceeding<MET> 150 
-mm</MET><ENG> 6 inches</ENG> loose thickness.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Bedding and Initial Backfill</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+mm</MET><ENG> 6 inches</ENG> loose thickness.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.9.1.3"><TTL>Bedding and Initial Backfill</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Bedding is provided to level out any irregularities in the foundation and to assure uniform support along 
 the barrel of each pipe section.  Bedding is also constructed to distribute the load bearing reaction, due to 
 the weight of the backfill material, around the lower portion of the pipe.  If the pipe or conduit is placed directly 
 on a flat or shaped foundation, delete "bedding" from the title and from any reference in the paragraph.  If bedding 
 will be specified, determine type and thickness and show on the plans.  Specify compaction to 90 percent maximum 
-density for cohesionless soils, and 85 percent maximum density for cohesive soils.</NPR><BRK/>
-<BRK/>
+density for cohesionless soils, and 85 percent maximum density for cohesive soils.</NPR><BRK />
+<BRK />
 <NPR>Any locally available fine aggregate for concrete or asphalt mixtures will qualify as sand and may be specified 
 by local gradation and specification number.  Drawings (details) should clearly show where sand backfill or bedding 
-is required.</NPR><BRK/>
-<BRK/>
+is required.</NPR><BRK />
+<BRK />
 <NPR>Locally available coarse aggregate for concrete will suffice and may be specified by local gradation and specification 
 number.  Maximum size of aggregate should not be more than<MET> 25 mm per 300 mm</MET><ENG> one inch per foot</ENG> of pipe diameter 
 or<MET> 75 mm</MET><ENG> 3 inches</ENG> maximum.  Refer to pipe manufacturer's criteria for more stringent requirements, if any, on 
-aggregate size and gradation.  On drawings (details), clearly show where gravel backfill or bedding is required.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+aggregate size and gradation.  On drawings (details), clearly show where gravel backfill or bedding is required.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>[Provide bedding of the type and thickness shown.]  Place initial backfill material and compact it with approved tampers to a height of at least<MET>
  300 mm</MET><ENG> one foot</ENG> above the utility pipe or conduit.  Bring up the backfill evenly on both sides of the pipe for the full length of the pipe.  Take 
 care to ensure thorough compaction of the fill under the haunches of the pipe.  Except as specified otherwise in the individual piping section, 
 provide bedding for buried piping in accordance with as shown in design drawings, except as specified herein.  Compact backfill to top of pipe 
-to 90 percent of <RID>JIS A 1210</RID> maximum density.  Provide plastic piping with bedding to spring line of pipe.  Provide materials as follows:</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Class I</TTL><BRK/>
-<BRK/>
+to 90 percent of <RID>JIS A 1210</RID> maximum density.  Provide plastic piping with bedding to spring line of pipe.  Provide materials as follows:</TXT><BRK />
+<BRK />
+<SPT outline="3.9.1.3.1"><TTL>Class I</TTL><BRK />
+<BRK />
 <TXT>Angular, <MET>6 to 40 mm</MET><ENG> 0.25 to 1.5 inch</ENG>, graded stone, including a number of fill materials that have regional significance such as coral, slag, cinders, 
-crushed stone, and crushed shells.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Class II</TTL><BRK/>
-<BRK/>
+crushed stone, and crushed shells.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.9.1.3.2"><TTL>Class II</TTL><BRK />
+<BRK />
 <TXT>Coarse sands and gravels with maximum particle size of<MET> 40 mm</MET><ENG> 1.5 inch</ENG>, including various graded sands and gravels containing small percentages 
 of fines, generally granular and noncohesive, either wet or dry.  Soil Types G, G-M, G-C, S, S-M, S-C are included in this class as specified in <RID>
-JGS 0051</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Sand</TTL><BRK/>
-<BRK/>
+JGS 0051</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.9.1.3.3"><TTL>Sand</TTL><BRK />
+<BRK />
 <TXT>Clean, coarse-grained sand classified as [_____] in accordance with Section <SRF>31 23 00.00 20</SRF> EXCAVATION AND FILL, [gradation [_____] of the  [local 
-Standard] or [S], [S-M], [S-C] by <RID>JGS 0051</RID> for [bedding] [and] [backfill] [as indicated]].</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Gravel and Crushed Stone</TTL><BRK/>
-<BRK/>
+Standard] or [S], [S-M], [S-C] by <RID>JGS 0051</RID> for [bedding] [and] [backfill] [as indicated]].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.9.1.3.4"><TTL>Gravel and Crushed Stone</TTL><BRK />
+<BRK />
 <TXT>Clean, coarsely graded natural gravel, crushed stone or a combination thereof identified as [_____] in accordance with Section <SRF>31 23 00.00 20</SRF> EXCAVATION 
 AND FILL, [gradation [_____] of the [DOT] [State Standard]] or having a classification of  [G], [G-M], [G-C] in accordance with <RID>JGS 0051</RID> for [bedding] 
-[and] [backfill] [as indicated].  [Do not exceed maximum particle size of<MET> [75] [_____] mm</MET><ENG> [3] [_____] inches</ENG>.]</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>Final Backfill</TTL><BRK/>
-<BRK/>
+[and] [backfill] [as indicated].  [Do not exceed maximum particle size of<MET> [75] [_____] mm</MET><ENG> [3] [_____] inches</ENG>.]</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.9.1.4"><TTL>Final Backfill</TTL><BRK />
+<BRK />
 <TXT>Fill the remainder of the trench, except for special materials for roadways, railroads and airfields, with satisfactory material.  Place backfill 
-material and compact as follows:</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Roadways, Railroads, and Airfields</TTL><BRK/>
-<BRK/>
-<TXT>Place backfill up to the required elevation as specified.  Do not permit water flooding or jetting methods of compaction.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Sidewalks, Turfed or Seeded Areas and Miscellaneous Areas</TTL><BRK/>
-<BRK/>
+material and compact as follows:</TXT><BRK />
+<BRK />
+<SPT outline="3.9.1.4.1"><TTL>Roadways, Railroads, and Airfields</TTL><BRK />
+<BRK />
+<TXT>Place backfill up to the required elevation as specified.  Do not permit water flooding or jetting methods of compaction.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.9.1.4.2"><TTL>Sidewalks, Turfed or Seeded Areas and Miscellaneous Areas</TTL><BRK />
+<BRK />
 <TXT>Deposit backfill in layers of a maximum of<MET> 300 mm</MET><ENG> 12 inches</ENG> loose thickness, and compact it to 85 percent maximum density for cohesive soils and 
 90 percent maximum density for cohesionless soils.  [Allow water flooding or jetting methods of compaction for granular noncohesive backfill material.  
 Do not allow water jetting to penetrate the initial backfill.] [Do not permit compaction by water flooding or jetting.]  Apply this requirement 
-to all other areas not specifically designated above.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></SPT><SPT><TTL>Backfill for Appurtenances</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+to all other areas not specifically designated above.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="3.9.2"><TTL>Backfill for Appurtenances</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  The number of days the concrete is allowed to cure before backfilling the structure will depend on the 
-type of mix and the concrete strength requirements specified.  Three days would be considered as a minimum.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+type of mix and the concrete strength requirements specified.  Three days would be considered as a minimum.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>After the manhole, catchbasin, inlet, or similar structure has been constructed [and the concrete has been allowed to cure for [_____] days], place 
 backfill in such a manner that the structure is not be damaged by the shock of falling earth.  Deposit the backfill material, compact it as specified 
-for final backfill, and bring up the backfill evenly on all sides of the structure to prevent eccentric loading and excessive stress.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>SPECIAL REQUIREMENTS</TTL><BRK/>
-<BRK/>
-<TXT>Special requirements for both excavation and backfill relating to the specific utilities are as follows:</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Gas Distribution</TTL><BRK/>
-<BRK/>
+for final backfill, and bring up the backfill evenly on all sides of the structure to prevent eccentric loading and excessive stress.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.10"><TTL>SPECIAL REQUIREMENTS</TTL><BRK />
+<BRK />
+<TXT>Special requirements for both excavation and backfill relating to the specific utilities are as follows:</TXT><BRK />
+<BRK />
+<SPT outline="3.10.1"><TTL>Gas Distribution</TTL><BRK />
+<BRK />
 <TXT>Excavate trenches to a depth that will provide a minimum<MET> 450 mm</MET><ENG> 18 inches</ENG> of cover in rock excavation and a minimum<MET> 600 mm</MET><ENG> 24 inch</ENG> of cover in 
-other excavation.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Water Lines</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+other excavation.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.10.2"><TTL>Water Lines</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Minimum depth of cover will be that required for frost penetration in the region and for safe operation 
-of the utility.  For fire protection yard mains, coordinate with the project's fire protection engineer.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+of the utility.  For fire protection yard mains, coordinate with the project's fire protection engineer.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Excavate trenches to a depth that provides a minimum cover of [_____]<MET> meters</MET><ENG> feet</ENG> from the existing ground surface, or from the indicated finished 
-grade, whichever is lower, to the top of the pipe.  [For fire protection yard mains or piping, an additional [_____]<MET> mm</MET><ENG> inch</ENG> of cover is required.]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Heat Distribution System</TTL><BRK/>
-<BRK/>
-<TXT>Free initial backfill material of stones larger than<MET> 6.3 mm</MET><ENG> 1/4 inch</ENG> in any dimension.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Electrical Distribution System</TTL><BRK/>
-<BRK/>
-<TXT>Provide a minimum cover of<MET> 600 mm</MET><ENG> 24 inches</ENG> from the finished grade to direct burial cable and conduit or duct line, unless otherwise indicated.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Sewage Absorption Trenches or Pits</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+grade, whichever is lower, to the top of the pipe.  [For fire protection yard mains or piping, an additional [_____]<MET> mm</MET><ENG> inch</ENG> of cover is required.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.10.3"><TTL>Heat Distribution System</TTL><BRK />
+<BRK />
+<TXT>Free initial backfill material of stones larger than<MET> 6.3 mm</MET><ENG> 1/4 inch</ENG> in any dimension.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.10.4"><TTL>Electrical Distribution System</TTL><BRK />
+<BRK />
+<TXT>Provide a minimum cover of<MET> 600 mm</MET><ENG> 24 inches</ENG> from the finished grade to direct burial cable and conduit or duct line, unless otherwise indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.10.5"><TTL>Sewage Absorption Trenches or Pits</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Delete these paragraphs when sewage absorption trenches or pits are not included in the project.  Consult 
-a geotechnical engineer and local standards in selecting bracketed information.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<SPT><TTL>Porous Fill</TTL><BRK/>
-<BRK/>
+a geotechnical engineer and local standards in selecting bracketed information.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="3.10.5.1"><TTL>Porous Fill</TTL><BRK />
+<BRK />
 <TXT>Provide backfill material consisting of clean crushed rock or gravel having a gradation [such that 100 percent passes the<MET> 50 mm</MET><ENG> 2 inch</ENG> sieve and 
 zero percent passes the<MET> 12.5 mm</MET><ENG> 1/2 inch</ENG> sieve.] [conforming to the requirements of gradation<MET> [4.75 mm]</MET><ENG> [No. 4]</ENG> [_____] for coarse aggregate in <RID>
-JIS A 5005</RID>.]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Cover</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Select appropriate bracketed information to correspond to the design indicated on the drawings.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>[Filter fabric] [Concrete]  [or a layer of straw at least<MET> 50 mm</MET><ENG> 2 inches</ENG> thick] as indicated.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>Rip-Rap Construction</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+JIS A 5005</RID>.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.10.5.2"><TTL>Cover</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Select appropriate bracketed information to correspond to the design indicated on the drawings.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>[Filter fabric] [Concrete]  [or a layer of straw at least<MET> 50 mm</MET><ENG> 2 inches</ENG> thick] as indicated.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.10.6"><TTL>Rip-Rap Construction</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Select information in brackets to best describe rip-rap construction.  Provide detail or typical section 
 through rip-rap on drawings as well as all dimensions necessary for estimating and construction.  If DOT standard 
 specifications are referenced for rip-rap construction, paragraphs entitled "Preparation" through "Grouting" may 
-be deleted.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+be deleted.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Construct rip-rap [on bedding material] [on filter fabric] [with grout] [in accordance with  [_____] local Standard, paragraph [_____]] in the 
-areas indicated.  Trim and dress indicated areas to conform to cross sections, lines and grades shown within a tolerance of<MET> 30 mm</MET><ENG> 0.1 foot</ENG>.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Bedding Placement</TTL><BRK/>
-<BRK/>
+areas indicated.  Trim and dress indicated areas to conform to cross sections, lines and grades shown within a tolerance of<MET> 30 mm</MET><ENG> 0.1 foot</ENG>.</TXT><BRK />
+<BRK />
+<SPT outline="3.10.6.1"><TTL>Bedding Placement</TTL><BRK />
+<BRK />
 <TXT>Spread [filter fabric] bedding material uniformly to a thickness of at least<MET> [75] [_____] mm</MET><ENG> [3] [_____] inches</ENG> on prepared subgrade as indicated.  
-[Compaction of bedding is not required.  Finish bedding to present even surface free from mounds and windrows.]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Stone Placement</TTL><BRK/>
-<BRK/>
+[Compaction of bedding is not required.  Finish bedding to present even surface free from mounds and windrows.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.10.6.2"><TTL>Stone Placement</TTL><BRK />
+<BRK />
 <TXT>Place rock for rip-rap on prepared bedding material to produce a well graded mass with the minimum practicable percentage of voids in conformance 
 with lines and grades indicated.  Distribute larger rock fragments, with dimensions extending the full depth of the rip-rap throughout the entire 
 mass and eliminate "pockets" of small rock fragments.  Rearrange individual pieces by mechanical equipment or by hand as necessary to obtain the 
 distribution of fragment sizes specified above.  [For grouted rip-rap, hand-place surface rock with open joints to facilitate grouting and do not 
 fill smaller spaces between surface rock with finer material.  Provide at least one "weep hole" through grouted rip-rap for every<MET> 4.65 square meters</MET><ENG>
  50 square feet</ENG> of finished surface.  Provide weep holes with columns of bedding material, <MET>100 mm</MET><ENG> 4 inches</ENG> in diameter, extending up to the rip-rap 
-surface without grout.]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Grouting</TTL><BRK/>
-<BRK/>
+surface without grout.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.10.6.3"><TTL>Grouting</TTL><BRK />
+<BRK />
 <TXT>[Prior to grouting, wet rip-rap surfaces.  Grout rip-rap in successive longitudinal strips, approximately<MET> 3 m</MET><ENG> 10 feet</ENG> in width, commencing at the 
 lowest strip and working up the slope.  Distribute grout to place of final deposit and work into place between stones with brooms, spades, trowels, 
-or vibrating equipment.  Take precautions to prevent grout from penetrating bedding layer.  Protect and cure surface for a minimum of 7 days.]</TXT><BRK/>
-<BRK/></SPT>
-</SPT></SPT><SPT><TTL>EMBANKMENTS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Earth Embankments</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+or vibrating equipment.  Take precautions to prevent grout from penetrating bedding layer.  Protect and cure surface for a minimum of 7 days.]</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="3.11"><TTL>EMBANKMENTS</TTL><BRK />
+<BRK />
+<SPT outline="3.11.1"><TTL>Earth Embankments</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Moisture content limits for compaction should be included in these paragraphs when necessary for obtaining 
 strength and stability in embankments and fill, for controlling movement of expansive soils and when, in the opinion 
-of the project geotechnical engineer, moisture control is required for the soils being used.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+of the project geotechnical engineer, moisture control is required for the soils being used.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Construct earth embankments from satisfactory materials free of organic or frozen material and rocks with any dimension greater than<MET> 75 mm</MET><ENG> 3 inches</ENG>
 .  Place the material in successive horizontal layers of loose material not more than<MET> 200 mm</MET><ENG> 8 inches</ENG> in depth.  Spread each layer uniformly on 
 a soil surface that has been moistened or aerated as necessary, and scarified or otherwise broken up so that the fill will bond with the surface 
 on which it is placed.  After spreading, plow, disk, or otherwise break up each layer; moisten or aerate as necessary; thoroughly mix; and compact 
 to at least 90 percent laboratory maximum density in accordance with <RID>JIS A 1210</RID> for cohesive materials or 95 percent laboratory maximum density 
 for cohesionless materials.  Backfill material must be within the range of -2 to +2 percent of optimum moisture content at the time of compaction, 
-when required.  </TXT><BRK/>
-<BRK/>
+when required.  </TXT><BRK />
+<BRK />
 <TXT>Compaction requirements for the upper portion of earth embankments forming subgrade for pavements are identical with those requirements specified 
 in paragraph SUBGRADE PREPARATION.  Finish compaction by sheepsfoot rollers, pneumatic-tired rollers, steel-wheeled rollers, vibratory compactors, 
-or other approved equipment.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Rock Embankments</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+or other approved equipment.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.11.2"><TTL>Rock Embankments</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  The designer will determine the appropriate values for all blank spaces, except the last one, on the basis 
 of recent experience on similar construction or of test results obtained from construction and testing of a test 
 section.  The specific method by which density will be determined in the laboratory and measured in the field 
 will be described in the project specification.  The total thickness of the pavement structure, including select 
-material subbase, base, and pavement will be placed in the last blank space in this paragraph.</NPR><BRK/>
-<BRK/>
+material subbase, base, and pavement will be placed in the last blank space in this paragraph.</NPR><BRK />
+<BRK />
 <NPR>The first blank space applies to rock fill of small maximum dimension and maximum lift placement of<MET> 200 to 250 
 mm</MET><ENG> 8 to 10 inches</ENG>.  Coordinate maximum size with satisfactory material definition.  If it is necessary to use 
 larger rock and thicker lifts, the second expression in brackets is applicable.  When thicker lifts are used, 
 it may be necessary to specify a minimum number of passes of the compactor.  Delete last sentence, unless the 
 rock excavation is engineered to be used under pavements with sufficient fines to prevent consolidation of the 
-embankment.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+embankment.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Construct rock embankments from material classified as rock excavation, as defined above, placed in successive horizontal layers of loose material 
 not more than [_____]<MET> mm</MET><ENG> inch</ENG> in depth.  Do not use pieces of rock larger than [_____]<MET> mm</MET><ENG> inch</ENG> in the greatest dimension.  Spread each layer of 
 material uniformly, completely saturate, and compact to a minimum density of [_____]<MET> kg/cubic meter</MET><ENG> pcf</ENG>.  Adequately bond each successive layer 
 of material to the material on which it is placed.  Finish compaction with vibratory compactors weighing at least [_____]<MET> metric tons</MET><ENG> tons</ENG>, heavy 
 rubber-tired rollers weighing at least [_____]<MET> metric tons</MET><ENG> tons</ENG>, or steel-wheeled rollers weighing at least [_____]<MET> metric tons</MET><ENG> tons</ENG>.  [Do not 
 use rock excavation as fill material for the construction of pavements.] [In embankments on which pavements are to be constructed, do not use rock 
-above a point [_____]<MET> mm</MET><ENG> inch</ENG> below the surface of the pavement.]</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>SUBGRADE PREPARATION</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Proof Rolling</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+above a point [_____]<MET> mm</MET><ENG> inch</ENG> below the surface of the pavement.]</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.12"><TTL>SUBGRADE PREPARATION</TTL><BRK />
+<BRK />
+<SPT outline="3.12.1"><TTL>Proof Rolling</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Specify proof rolling when the quality of the existing subgrade is questionable.  Proof rolling can be 
 used to verify that no unsatisfactory material is present (no bid quantity required, location shown or specified) 
 or to locate suspected unsatisfactory material (indicate a bid quantity to be removed).  Remove this paragraph 
-if not required in the project.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+if not required in the project.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Finish proof rolling on an exposed subgrade free of surface water (wet conditions resulting from rainfall) which would promote degradation of an 
 otherwise acceptable subgrade.  [After stripping,] proof roll the existing subgrade of the [_____] with six passes of a [dump truck loaded with<MET>
  6 cubic meters</MET><ENG> 4 cubic yards</ENG> of soil] [<MET>13.6 meter tons</MET><ENG> 15 ton</ENG>, pneumatic-tired roller.]  Operate the [roller] [truck] in a systematic manner to 
@@ -1418,22 +1418,22 @@ ensure the number of passes over all areas, and at speeds between<MET> 4 to 5.5 
 the passes made with the roller in a direction perpendicular to the other passes.]  Notify the Contracting Officer a minimum of 3 days prior to 
 proof rolling.  Perform proof rolling in the presence of the Contracting Officer.  Undercut rutting or pumping of material [as directed by the 
 Contracting Officer] [to a depth of [_____]<MET> mm</MET><ENG> inch</ENG>] and replace with [fill and backfill] [select] material.  [Prepare bids based on replacing 
-approximately [_____]<MET> square meters</MET><ENG> square yards</ENG>, with an average depth of [_____]<MET> mm</MET><ENG> inch</ENG> at various locations.]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Construction</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+approximately [_____]<MET> square meters</MET><ENG> square yards</ENG>, with an average depth of [_____]<MET> mm</MET><ENG> inch</ENG> at various locations.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.12.2"><TTL>Construction</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Moisture content limits for compaction should be included in these paragraphs when necessary for obtaining 
 strength and stability in embankments and fill, for controlling movement of expansive soils and when, in the opinion 
-of the project geotechnical engineer, moisture control is required for the soils being used.</NPR><BRK/>
-<BRK/>
+of the project geotechnical engineer, moisture control is required for the soils being used.</NPR><BRK />
+<BRK />
 <NPR>Special smoothness tolerances are not required for subgrades for railroads; therefore, both sets of brackets will 
 be removed when writing specifications for preparation of railroad subgrade only.  When writing specifications 
 for preparation of roadway and/or airfield pavement subgrade, the brackets will be removed from the applicable 
 sentences and the smoothness tolerances showing permissible deviations in fractions of a<MET> millimeter</MET><ENG> inch</ENG> and the 
-length of straightedge in<MET> meters</MET><ENG> feet</ENG> will be inserted in the blanks as appropriate.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+length of straightedge in<MET> meters</MET><ENG> feet</ENG> will be inserted in the blanks as appropriate.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Shape subgrade to line, grade, and cross section, and compact as specified.  Include plowing, disking, and any moistening or aerating required 
 to obtain specified compaction for this operation.  Remove soft or otherwise unsatisfactory material and replace with satisfactory excavated material 
 or other approved material as directed.  Excavate rock encountered in the cut section to a depth of<MET> 150 mm</MET><ENG> 6 inches</ENG> below finished grade for the 
@@ -1442,52 +1442,52 @@ and shape the entire subgrade to line, grade, and cross section and compact as s
 shall not show deviations greater than<MET> 13 mm</MET><ENG> 1/2 inch</ENG> when tested with a<MET> 4 m</MET><ENG> 12-foot</ENG> straightedge applied both parallel and at right angles to 
 the centerline of the area.] [After rolling, do not show deviations for the surface of the subgrade for airfields greater than [_____]<MET> mm</MET><ENG> inch</ENG> 
 when tested with a [_____]<MET> meter</MET><ENG> foot</ENG> straightedge applied both parallel and at right angles to the centerline of the area.]  Do not vary the elevation 
-of the finish subgrade more than<MET> 15 mm</MET><ENG> 0.05 foot</ENG> from the established grade and cross section.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Compaction</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+of the finish subgrade more than<MET> 15 mm</MET><ENG> 0.05 foot</ENG> from the established grade and cross section.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.12.3"><TTL>Compaction</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Use 90 percent of JIS A 1210 for General Site Compaction of cohesionless materials on Army projects and 
 85 percent of same for Navy projects.  For Army projects see UFC 3-220-01, UFC 3-260-02 and DM 21.3 for criteria 
-and design guidelines.   Specify compaction in terms of one compaction effort (JIS A 1210).</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+and design guidelines.   Specify compaction in terms of one compaction effort (JIS A 1210).</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Finish compaction by sheepsfoot rollers, pneumatic-tired rollers, steel-wheeled rollers, vibratory compactors, or other approved equipment.  Except 
-for paved areas and railroads, compact each layer of the embankment to at least [_____] percent of laboratory maximum density.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Subgrade for Railroads</TTL><BRK/>
-<BRK/>
+for paved areas and railroads, compact each layer of the embankment to at least [_____] percent of laboratory maximum density.</TXT><BRK />
+<BRK />
+<SPT outline="3.12.3.1"><TTL>Subgrade for Railroads</TTL><BRK />
+<BRK />
 <TXT>Compact subgrade for railroads to at least 90 percent laboratory maximum density for cohesive materials or 95 percent laboratory maximum density 
-for cohesionless materials in accordance with <RID>JIS A 1210</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Subgrade for Pavements</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+for cohesionless materials in accordance with <RID>JIS A 1210</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.12.3.2"><TTL>Subgrade for Pavements</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  If the compaction requirements are not shown in tabular form on the drawings, and the paragraphs as written 
-are not adequate, paragraphs Subgrade for Pavements and Subgrade for Shoulders will be rewritten as follows:</NPR><BRK/>
-<BRK/>
+are not adequate, paragraphs Subgrade for Pavements and Subgrade for Shoulders will be rewritten as follows:</NPR><BRK />
+<BRK />
 <NPR>Subgrade for [pavements] [and] [shoulders] shall be compacted to at least the percentage of laboratory maximum 
-density in the following table for the specific depths below the surface of the [pavement] [or] [shoulders] shown.</NPR><BRK/>
+density in the following table for the specific depths below the surface of the [pavement] [or] [shoulders] shown.</NPR><BRK />
 <TAB HEADERROWS="3">
 <WBK>
    <STS>
       <STY SID="s50">
-         <ALN VERTICAL="BOTTOM"/>
+         <ALN VERTICAL="BOTTOM" />
       </STY>
       <STY SID="s51">
-         <ALN HORIZONTAL="CENTER" VERTICAL="BOTTOM"/>
+         <ALN HORIZONTAL="CENTER" VERTICAL="BOTTOM" />
       </STY>
       <STY SID="s52">
-         <ALN HORIZONTAL="CENTER"/>
+         <ALN HORIZONTAL="CENTER" />
       </STY>
    </STS>
    <TDA COLUMNCOUNT="6" ROWCOUNT="4">
-      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="94.50"/>
-      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="94.50"/>
-      <COL AUTOWIDTH="0" WIDTH="94.50"/>
-      <COL AUTOWIDTH="0" WIDTH="94.50"/>
-      <COL AUTOWIDTH="0" WIDTH="94.50"/>
-      <COL AUTOWIDTH="0" WIDTH="90.00"/>
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="94.50" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="94.50" />
+      <COL AUTOWIDTH="0" WIDTH="94.50" />
+      <COL AUTOWIDTH="0" WIDTH="94.50" />
+      <COL AUTOWIDTH="0" WIDTH="94.50" />
+      <COL AUTOWIDTH="0" WIDTH="90.00" />
       <ROW AUTOHEIGHT="0" HEIGHT="24.00">
          <CEL MERGEACROSS="5" STYLEID="s51">
 <DTA TYPE="STRING">Percentage of Laboratory Maximum Density Required</DTA>
@@ -1525,142 +1525,142 @@ density in the following table for the specific depths below the surface of the 
          </CEL>
       </ROW>
       <ROW AUTOHEIGHT="0" HEIGHT="23.25">
-         <CEL STYLEID="s50"/>
-         <CEL STYLEID="s50"/>
-         <CEL/>
-         <CEL/>
-         <CEL/>
-         <CEL/>
+         <CEL STYLEID="s50" />
+         <CEL STYLEID="s50" />
+         <CEL />
+         <CEL />
+         <CEL />
+         <CEL />
       </ROW>
    </TDA>
 </WBK>
-<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB><BRK/>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK />
 <NPR>The desired depths and density percentages will be entered in the table in accordance with applicable data from 
-the following manuals, as appropriate:<BRK/>
-UFC 3-250-01 and UFC-3-260-02.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+the following manuals, as appropriate:<BRK />
+UFC 3-250-01 and UFC-3-260-02.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Compact subgrade for pavements to at least [_____] percentage laboratory maximum density in accordance with <RID>JIS A 1210</RID> for the depth below the 
 surface of the pavement shown.  When more than one soil classification is present in the subgrade, thoroughly blend, reshape, and compact the top 
-[_____]<MET> mm</MET><ENG> inch</ENG> of subgrade.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Subgrade for Shoulders</TTL><BRK/>
-<BRK/>
+[_____]<MET> mm</MET><ENG> inch</ENG> of subgrade.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.12.3.3"><TTL>Subgrade for Shoulders</TTL><BRK />
+<BRK />
 <TXT>Compact subgrade for shoulders to at least [_____] percentage laboratory maximum density in accordance with <RID>JIS A 1210</RID> for the [depth below the 
-surface of shoulder shown] [full depth of the shoulder].</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Subgrade for Airfield Pavements</TTL><BRK/>
-<BRK/>
+surface of shoulder shown] [full depth of the shoulder].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.12.3.4"><TTL>Subgrade for Airfield Pavements</TTL><BRK />
+<BRK />
 <TXT>Compact top<MET> 600 mm</MET><ENG> 24 inches</ENG> below finished pavement or top<MET> 300 mm</MET><ENG> 12 inches</ENG> of subgrades, whichever is greater, to [100] [_____] percent of <RID>JIS A 1210</RID>
-; compact fill and backfill material to [100] [_____] percent of <RID>JIS A 1210</RID>.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></SPT><SPT><TTL>SHOULDER CONSTRUCTION</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+; compact fill and backfill material to [100] [_____] percent of <RID>JIS A 1210</RID>.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="3.13"><TTL>SHOULDER CONSTRUCTION</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Shoulder construction will form a part of the work to be performed under this section of the specifications 
 except when shoulder construction is specified under the subbase, base-course, wearing course, or pavement sections 
-of the specifications and is designated in the contract to be performed and paid for under one of these sections.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+of the specifications and is designated in the contract to be performed and paid for under one of these sections.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Construct shoulders of satisfactory excavated <TAI OPT="BORROW">or borrow</TAI> material or as otherwise shown or specified..  Submit advanced notice on shoulder construction 
 for rigid pavements.  Construct shoulders immediately after adjacent paving is complete.  In the case of rigid pavements, do not construct shoulders 
 until permission of the Contracting Officer has been obtained.  Compact the entire shoulder area to at least the percentage of maximum density 
 as specified in paragraph SUBGRADE PREPARATION above, for specific ranges of depth below the surface of the shoulder.  Finish compaction by sheepsfoot 
 rollers, pneumatic-tired rollers, steel-wheeled rollers, vibratory compactors, or other approved equipment.  Finish shoulder construction in proper 
 sequence in such a manner that adjacent ditches will be drained effectively and that no damage of any kind is done to the adjacent completed pavement.  
-Align the completed shoulders true to grade and shaped to drain in conformity with the cross section shown.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>FINISHING</TTL><BRK/>
-<BRK/>
+Align the completed shoulders true to grade and shaped to drain in conformity with the cross section shown.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.14"><TTL>FINISHING</TTL><BRK />
+<BRK />
 <TXT>Finish the surface of excavations, embankments, and subgrades to a smooth and compact surface in accordance with the lines, grades, and cross sections 
 or elevations shown.  Provide the degree of finish for graded areas within<MET> 30 mm</MET><ENG> 0.1 foot</ENG> of the grades and elevations indicated except that the 
 degree of finish for subgrades specified in paragraph SUBGRADE PREPARATION.  Finish gutters and ditches in a manner that will result in effective 
 drainage.  Finish the surface of areas to be turfed from settlement or washing to a smoothness suitable for the application of turfing materials.  
-Repair graded, topsoiled, or backfilled areas prior to acceptance of the work, and re-established grades to the required elevations and slopes.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Subgrade and Embankments</TTL><BRK/>
-<BRK/>
+Repair graded, topsoiled, or backfilled areas prior to acceptance of the work, and re-established grades to the required elevations and slopes.</TXT><BRK />
+<BRK />
+<SPT outline="3.14.1"><TTL>Subgrade and Embankments</TTL><BRK />
+<BRK />
 <TXT>During construction, keep embankments and excavations shaped and drained.  Maintain ditches and drains along subgrade to drain effectively at all 
 times.  Do not disturb the finished subgrade by traffic or other operation.  Protect and maintain the finished subgrade in a satisfactory condition 
 until ballast, subbase, base, or pavement is placed.  Do not permit the storage or stockpiling of materials on the finished subgrade.  Do not lay 
 subbase, base course, ballast, or pavement until the subgrade has been checked and approved, and in no case place subbase, base, surfacing, pavement, 
-or ballast on a muddy, spongy, or frozen subgrade.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Capillary Water Barrier</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+or ballast on a muddy, spongy, or frozen subgrade.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.14.2"><TTL>Capillary Water Barrier</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  The compacted thickness of capillary water barrier will be indicated and will not be less than<MET> 100 mm</MET><ENG> 4 
-inches</ENG>.  The paragraph will be deleted where site conditions make the barrier unnecessary.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+inches</ENG>.  The paragraph will be deleted where site conditions make the barrier unnecessary.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Place a capillary water barrier under concrete floor and area-way slabs grade directly on the subgrade and compact with a minimum of two passes 
-of a hand-operated plate-type vibratory compactor.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Grading Around Structures</TTL><BRK/>
-<BRK/>
+of a hand-operated plate-type vibratory compactor.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.14.3"><TTL>Grading Around Structures</TTL><BRK />
+<BRK />
 <TXT>Construct areas within<MET> 1.5 m</MET><ENG> 5 feet</ENG> outside of each building and structure line true-to-grade, shape to drain, and maintain free of trash and debris 
-until final inspection has been completed and the work has been accepted.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><TAI OPT="TOPSOIL"><SPT><TTL>PLACING TOPSOIL</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+until final inspection has been completed and the work has been accepted.</TXT><BRK />
+<BRK /></SPT>
+</SPT><TAI OPT="TOPSOIL"><SPT><TTL>PLACING TOPSOIL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Topsoil will be separated, excavated, stored, and used for surface finish in preparation for seeding, sodding, 
 or other planting only where the topsoil is definitely superior for grass and other plant growth as compared to 
 the balance of the excavated materials.  Generally, topsoil will be spread after other operations have been completed.  
-When topsoil spreading is covered under a separate section of the specifications, this paragraph will be deleted.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+When topsoil spreading is covered under a separate section of the specifications, this paragraph will be deleted.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>On areas to receive topsoil, prepare the compacted subgrade soil to a<MET> 50 mm</MET><ENG> 2 inches</ENG> depth for bonding of topsoil with subsoil.  Spread topsoil 
 evenly to a thickness of [_____]<MET> mm</MET><ENG> inch</ENG> and grade to the elevations and slopes shown.  Do not spread topsoil when frozen or excessively wet or 
-dry.  Obtain material required for topsoil in excess of that produced by excavation within the grading limits from [offsite areas] [areas indicated].</TXT><BRK/>
-<BRK/></SPT>
-</TAI><SPT><TTL><SUB>TESTING</SUB></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+dry.  Obtain material required for topsoil in excess of that produced by excavation within the grading limits from [offsite areas] [areas indicated].</TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="3.15"><TTL><SUB>TESTING</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Density tests other than those specified in this paragraph may be required for certain types of soil, in 
 which case <HL3>paragraph "Degree of Compaction" </HL3>will be edited accordingly and the laboratory compaction requirement 
 applicable to the soil encountered will be specified.  See UFC 3-260-02 for a discussion of conditions requiring 
-nonstandard compaction control tests.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+nonstandard compaction control tests.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Perform testing by a Corps validated commercial testing laboratory or the Contractor's validated testing facility.  Submit qualifications of the 
 Corps validated commercial testing laboratory or the Contractor's validated testing facilities.  If the Contractor elects to establish testing 
 facilities, do not permit work requiring testing until the Contractor's facilities have been inspected, Corps validated and approved by the Contracting 
-Officer.</TXT><BRK/>
-<BRK/>
+Officer.</TXT><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  Determine <TST>field in-place density</TST> in accordance with  [<RID>JIS A 1214</RID>][<RID>JGS 1614</RID>] .  [When <RID>JGS 1614</RID> is used, check the calibration curves 
 and adjust using only the sand cone method as described in <RID>JIS A 1214</RID>.   results in a wet unit weight of soil in determining the moisture 
 content of the soil when using this method. Since <RID>JGS 1614</RID> uses equipment that contains radiactive materials, notify the Base BioEnvironmental 
-and/or Environmental Office and the Contracting Officer if this method is used.</LST><BRK/>
-<BRK/>
+and/or Environmental Office and the Contracting Officer if this method is used.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  Check the calibration curves furnished with the moisture gauges along with density calibration checks as described in <RID>JGS 1614</RID>; check 
 the calibration of both the density and moisture gauges at the beginning of a job on each different type of material encountered and at 
 intervals as directed by the Contracting Officer.]    When test results indicate, as determined by the Contracting Officer, that compaction 
-is not as specified, remove the material, replace and recompact to meet specification requirements.</LST><BRK/>
-<BRK/>
+is not as specified, remove the material, replace and recompact to meet specification requirements.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  Perform tests on recompacted areas to determine conformance with specification requirements.  Appoint a registered professional civil 
 engineer to certify inspections and test results.  These certifications shall state that the tests and observations were performed by or 
 under the direct supervision of the engineer and that the results are representative of the materials or conditions being certified by 
-the tests.  The following number of tests, if performed at the appropriate time, will be the minimum acceptable for each type operation.</LST><BRK/>
-<BRK/>
-<SPT><TTL><TST>Fill and Backfill Material Gradation</TST></TTL><BRK/>
-<BRK/>
+the tests.  The following number of tests, if performed at the appropriate time, will be the minimum acceptable for each type operation.</LST><BRK />
+<BRK />
+<SPT outline="3.15.1"><TTL><TST>Fill and Backfill Material Gradation</TST></TTL><BRK />
+<BRK />
 <TXT>One test per [_____] cubic<MET> meters</MET><ENG> yards</ENG> stockpiled or in-place source material.  Determine gradation of fill and backfill material in accordance 
-with  [<RID>JIS A 1102</RID>] [<RID>JIS A 1103</RID>].</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL><TST>In-Place Densities</TST></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+with  [<RID>JIS A 1102</RID>] [<RID>JIS A 1103</RID>].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.15.2"><TTL><TST>In-Place Densities</TST></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Density test frequency can vary from one test per<MET> 10 square meter</MET><ENG> 100 square feet</ENG> for small areas up to 
 one test per<MET> 900 square meter</MET><ENG> 10,000 square feet</ENG>.  The following table will also help establish test frequency 
-for various situations:</NPR><BRK/>
+for various situations:</NPR><BRK />
 <TAB>
 <WBK>
-   <STS/>
+   <STS />
    <TDA COLUMNCOUNT="3" ROWCOUNT="7">
-      <COL AUTOWIDTH="0" WIDTH="187.50"/>
-      <COL AUTOWIDTH="0" WIDTH="187.50"/>
-      <COL AUTOWIDTH="0" WIDTH="187.50"/>
+      <COL AUTOWIDTH="0" WIDTH="187.50" />
+      <COL AUTOWIDTH="0" WIDTH="187.50" />
+      <COL AUTOWIDTH="0" WIDTH="187.50" />
       <ROW AUTOHEIGHT="0" HEIGHT="24.00">
          <CEL>
 <DTA TYPE="STRING">Material Type</DTA>
@@ -1740,63 +1740,63 @@ for various situations:</NPR><BRK/>
       </ROW>
    </TDA>
 </WBK>
-<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB><BRK/>
-<AST/></NTE><BRK/>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK />
+<AST /></NTE><BRK />
 <LST INDENT="-0.33">a.  One test per [_____] square<MET> meters</MET><ENG> feet</ENG>, or fraction thereof, of each lift of fill or backfill areas compacted by other than hand-operated 
-machines.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  One test per [_____] square<MET> meters</MET><ENG> feet</ENG>, or fraction thereof, of each lift of fill or backfill areas compacted by hand-operated machines.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  One test per [_____] linear<MET> meters</MET><ENG> feet</ENG>, or fraction thereof, of each lift of embankment or backfill for [roads] [airfields].</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">d.  One test per [_____] linear<MET> meters</MET><ENG> feet</ENG>, or fraction thereof, of each lift of embankment or backfill for railroads.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL><TST>Check Tests on In-Place Densities</TST></TTL><BRK/>
-<BRK/>
-<TXT>If <RID>JGS 1614</RID> is used, check in-place densities by <RID>JIS A 1214</RID> as follows:</TXT><BRK/>
-<BRK/>
+machines.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  One test per [_____] square<MET> meters</MET><ENG> feet</ENG>, or fraction thereof, of each lift of fill or backfill areas compacted by hand-operated machines.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  One test per [_____] linear<MET> meters</MET><ENG> feet</ENG>, or fraction thereof, of each lift of embankment or backfill for [roads] [airfields].</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  One test per [_____] linear<MET> meters</MET><ENG> feet</ENG>, or fraction thereof, of each lift of embankment or backfill for railroads.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.15.3"><TTL><TST>Check Tests on In-Place Densities</TST></TTL><BRK />
+<BRK />
+<TXT>If <RID>JGS 1614</RID> is used, check in-place densities by <RID>JIS A 1214</RID> as follows:</TXT><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  One check test per lift for each [_____] square<MET> meters</MET><ENG> feet</ENG>, or fraction thereof, of each lift of fill or backfill compacted by other 
-than hand-operated machines.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  One check test per lift for each [_____] square<MET> meters</MET><ENG> feet</ENG>, of fill or backfill areas compacted by hand-operated machines.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  One check test per lift for each [_____] linear<MET> meters</MET><ENG> feet</ENG>, or fraction thereof, of embankment or backfill for [roads] [airfields].</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">d.  One check test per lift for each [_____] linear<MET> meters</MET><ENG> feet</ENG>, or fraction thereof, of embankment or backfill for railroads.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL><TST>Moisture Contents</TST></TTL><BRK/>
-<BRK/>
+than hand-operated machines.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  One check test per lift for each [_____] square<MET> meters</MET><ENG> feet</ENG>, of fill or backfill areas compacted by hand-operated machines.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  One check test per lift for each [_____] linear<MET> meters</MET><ENG> feet</ENG>, or fraction thereof, of embankment or backfill for [roads] [airfields].</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  One check test per lift for each [_____] linear<MET> meters</MET><ENG> feet</ENG>, or fraction thereof, of embankment or backfill for railroads.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.15.4"><TTL><TST>Moisture Contents</TST></TTL><BRK />
+<BRK />
 <TXT>In the stockpile, excavation, or borrow areas, perform  tests as required, to meet compaction requirements, per type of material or source of material 
 being placed during stable weather conditions.  During unstable weather, perform tests as dictated by local conditions and approved by the Contracting 
-Officer.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL><TST>Optimum Moisture and Laboratory Maximum Density</TST></TTL><BRK/>
-<BRK/>
+Officer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.15.5"><TTL><TST>Optimum Moisture and Laboratory Maximum Density</TST></TTL><BRK />
+<BRK />
 <TXT>Perform tests for each type material or source of material <TAI OPT="BORROW">including borrow material</TAI> to determine the optimum moisture and laboratory maximum density 
 values.  One representative test per [_____] cubic<MET> meters</MET><ENG> yards</ENG> of fill and backfill, or when any change in material occurs which may affect the 
-optimum moisture content or laboratory maximum density.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL><TST>Tolerance Tests for Subgrades</TST></TTL><BRK/>
-<BRK/>
-<TXT>Perform continuous checks on the degree of finish specified in paragraph SUBGRADE PREPARATION during construction of the subgrades.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL><TST>Displacement of Sewers</TST></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  The trench should be backfilled to at least<MET> 600 mm</MET><ENG> 2 feet</ENG>.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+optimum moisture content or laboratory maximum density.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.15.6"><TTL><TST>Tolerance Tests for Subgrades</TST></TTL><BRK />
+<BRK />
+<TXT>Perform continuous checks on the degree of finish specified in paragraph SUBGRADE PREPARATION during construction of the subgrades.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.15.7"><TTL><TST>Displacement of Sewers</TST></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  The trench should be backfilled to at least<MET> 600 mm</MET><ENG> 2 feet</ENG>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>After other required tests have been performed and the trench backfill compacted to [[_____]<MET>, meters</MET><ENG>, feet</ENG> above the top of the pipe] [the finished 
 grade surface], inspect the pipe to determine whether significant displacement has occurred.  Conduct this inspection in the presence of the Contracting 
 Officer.  Inspect pipe sizes larger than<MET> 900 mm</MET><ENG> 36 inches</ENG>, while inspecting smaller diameter pipe by shining a light or laser between manholes 
 or manhole locations, or by the use of television cameras passed through the pipe.  If, in the judgment of the Contracting Officer, the interior 
 of the pipe shows poor alignment or any other defects that would cause improper functioning of the system, replace or repair the defects as directed 
-at no additional cost to the Government.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>DISPOSITION OF SURPLUS MATERIAL</TTL><BRK/>
-<BRK/>
+at no additional cost to the Government.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.16"><TTL>DISPOSITION OF SURPLUS MATERIAL</TTL><BRK />
+<BRK />
 <TXT>Remove surplus material or other soil material not required or suitable for filling or backfilling, and brush, refuse, stumps, roots, and timber 
 [to a Government disposal area [as indicated][which is located within a haul distance of [_____]<MET> km</MET><ENG> miles</ENG>]][from Government property to an approved 
-location ] [from Government property and delivered to a licensed/permitted facility or to a location approved by the Contracting Officer.].</TXT><BRK/>
-<BRK/></SPT>
-</PRT>    <END/><BRK/></SEC>
+location ] [from Government property and delivered to a licensed/permitted facility or to a location approved by the Contracting Officer.].</TXT><BRK />
+<BRK /></SPT>
+</PRT>    <END /><BRK /></SEC>

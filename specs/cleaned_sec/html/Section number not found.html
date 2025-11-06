@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>Section number not found.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">Section number not found</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:49</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-01 32 16.00 20 (August 2018)<brk></brk>
+ -----------------------------------<brk></brk>
+Preparing Activity: <pra>NAVFAC</pra> Superseding<brk></brk>
+ UFGS-01 32 16.00 20 (February 2015)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<hl4>SECTION 01 32 16.00 20</hl4><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>SMALL PROJECT CONSTRUCTION PROGRESS SCHEDULES<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>08/18</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification applies to Design-Build and Design-Bid-Build projects and covers the requirements 
+for <scp>the preparation and use of construction schedules for small projects</scp>. The small projects covered by this 
+specification may be simple or complex, but would not benefit from the use of a cost-loaded Network Analysis Schedule 
+(NAS) as required by Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 32 17.00 20<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> COST LOADED NETWORK ANALYSIS SCHEDULES (NAS). This specification 
+includes two schedule options to choose from based on the complexity of the project. Edit this specification 
+by choosing the desired scheduling option described below.<brk></brk>
+Confirm with the Administering FEAD/ROICC that the project schedule should be prepared under the requirements 
+of this section. Further, this section should be reviewed and approved by the Administering FEAD/ROICC prior 
+to completion of the Request for Proposal.<brk></brk>
+Option 1: "Non-Cost Loaded Network Analysis Schedule (NAS)" – This is the NAVFAC preferred schedule for use on 
+most small projects and requires either Primavera P6 or Microsoft Project 2010 scheduling software to be used. 
+Option is provided for cost-loading Microsoft Project 2010 schedules at NAVFAC OCONUS locations where Primavera 
+P6 support is not currently available.<brk></brk>
+Option 2: "Bar Chart Schedule" – In lieu of Option 1 for non-complex projects or projects with minimal disciplines, 
+a simple bar chart (Non-NAS) may be specified. Project examples include: paving, painting, roof replacement, and lighting.<brk></brk>
+Coordination is required with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 20 00.00 20<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> PRICE AND PAYMENT PROCEDURES, with selection of "Schedule 
+of Prices" for bar charts and non-cost-loaded NAS, or "Earned Value Report" for cost-loaded Microsoft Project 
+2010 schedules.<brk></brk>
+Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections. Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text. For bracketed items, choose applicable item(s) or insert 
+appropriate information.<brk></brk>
+Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choose a tailoring option for either Network Analysis Schedule (NAS) or Bar Chart depending on which Option 
+is selected. Within NAS, Primavera P6 and Microsoft Project tailored options are available for the flexibility 
+of allowing both, or choosing one, depending on the FEAD/ROICC requirement.<brk></brk>
+This section also contains tailored options for Design-Build (DB), Army, and NAVFAC FE.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<spt outline="1.1"><ttl>1.1 SUBMITTALS</ttl><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review Submittal Description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G." Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System. Only add a "G" to an item, if the submittal is sufficiently important or complex in context 
+of the project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
+tags may be used following the "G" designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" for District Office (Engineering 
+Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
+for Project Office. Codes following the "G" typically are not used for Navy, Air Force, and NASA projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>The "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook to 
+fulfill federally mandated sustainable requirements in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Locate the "S" submittal under the SD number that best describes the submittal item.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Choose the first bracketed item for Navy, Air Force and NASA projects, or choose the second bracketed item for 
+Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; <tai opt="DESIGN-BID-BUILD">submittals not having a "G" designation are for information only</tai><tai opt="DESIGN-BUILD">submittals 
+not having a "G" designation are for Contractor Quality Control or Designer of Record approval</tai>. Submit the following in accordance with Section 
+<srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-01 Preconstruction Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Baseline Construction Schedule<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<tai opt="DESIGN-BUILD"><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Baseline Design Schedule<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>;<sub><pre class="display_SUB">&lt;SUB&gt;</pre> G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></tai>
+<brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Monthly Updates<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></spt>
+<spt outline="1.2"><ttl>1.2 PRE-CONSTRUCTION SCHEDULE REQUIREMENT</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph contains tailoring for NAS and BAR CHART and for Design-Build (DB).<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><tai opt="DESIGN-BUILD">Prior to the start of work, prepare and submit to the Contracting Officer a <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Baseline Design Schedule<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> and <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Baseline Construction Schedule<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> in the 
+form of a Network Analysis Schedule (NAS)or Bar Chart Schedule in accordance with the terms in Contract Clause FAR 52.236-15 Schedules for Construction 
+Contracts, except as modified in this contract. <brk></brk></tai>
+<tai opt="DESIGN-BID-BUILD">Prior to the start of work, prepare and submit to the Contracting Officer a <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Baseline Construction Schedule<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> in the form of a Network Analysis Schedule 
+(NAS) or Bar Chart Schedule in accordance with the terms in Contract Clause FAR 52.236-15 Schedules for Construction Contracts, except as modified 
+in this contract.</tai> <brk></brk>
+The approval of a Baseline Construction Schedule is a condition precedent to:</txt><brk></brk>
+<lst indent="-0.33">a. The Contractor starting demolition work or construction stage(s) of the contract.</lst><brk></brk>
+<lst indent="-0.33">b. Processing Contractor's invoice(s) for construction activities/items of work.</lst><brk></brk>
+<lst indent="-0.33">c. Review of any schedule updates.</lst><brk></brk>
+<txt>Submittal of the Baseline <tai opt="DESIGN-BUILD">Design and </tai>Construction Schedule, and subsequent schedule updates, is understood to be the Contractor's certification 
+that the submitted schedule meets the requirements of the Contract Documents, represents the Contractor's plan on how the work will be accomplished, 
+and accurately reflects the work that has been accomplished and how it was sequenced (as-built logic).</txt><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 SCHEDULE FORMAT</ttl><brk></brk>
+<txt>Provide schedule in either NAS or Bar Chart format as specified in the task order.</txt><brk></brk>
+<spt outline="1.3.1"><ttl>1.3.1 Network Analysis Schedule (NAS)</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is tailored for NAS. Use this paragraph if Option 1 (described in the Initial Editing Notes) 
+is applicable and a NAS is required for the project; otherwise delete. This paragraph contains tailoring within 
+for Primavera P6 and Microsoft Project. Use the bracketed item "or" if both programs are allowed; otherwise delete, 
+and choose the tailoring for Primavera P6 or Microsoft Project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use the bracketed option if Microsoft Project is the only software allowed.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Use the critical path method (CPM) to schedule and control project activities. Prepare and maintain project schedules using Primavera P6 or Microsoft 
+Project 2010.</txt><brk></brk>
+<txt>Within 15 calendar days after approval of the Initial Schedule <tai opt="DESIGN-BUILD">or approval of the final design for a design build project</tai>, submit to the Contracting 
+Officer a final NAS schedule.</txt><brk></brk>
+<spt outline="1.3.1.1"><ttl>1.3.1.1 Activity Requirements</ttl><brk></brk>
+<lst indent="-0.33">a. At a minimum, identify the following in the schedule:</lst><brk></brk>
+<itm indent="-0.33">(1) <tai opt="DESIGN-BUILD">Design and</tai> Construction time for major systems and components</itm><brk></brk>
+<itm indent="-0.33">(2) Each activity assigned with its appropriate Responsibility Code</itm><brk></brk>
+<itm indent="-0.33">(3) Each activity assigned with its appropriate Phase and Area Codes</itm><brk></brk>
+<itm indent="-0.33">(4) Major submittals and submittal processing time</itm><brk></brk>
+<itm indent="-0.33">(5) Major equipment lead time</itm><brk></brk>
+<lst indent="-0.33">b. Build the Schedule as follows:</lst><brk></brk>
+<itm indent="-0.33">(1) Show <tai opt="DESIGN-BUILD">design periods, </tai>submittals, Government review periods, material/equipment delivery, utility outages, on-site construction, 
+inspection, testing, and closeout activities.</itm><brk></brk>
+<itm indent="-0.33">(2) With the exception of the Contract Award and End Contract milestone activities, use of open-ended activities is not allowed; 
+each activity must have predecessor and successor ties. No activity must have open start or open finish (dangling) logic. Minimize 
+redundant logic ties. Once an activity exists on the schedule it must not be deleted or renamed to change the scope of the activity 
+and must not be removed from the schedule logic without approval from the Contracting Officer. While an activity cannot be deleted, 
+where said activity is no longer applicable to the schedule but must remain within the logic stream for historical record, it 
+can be changed to a milestone. Document any such change in the milestone's "Notebook," including a date and explanation for the 
+change. The ID number for a deleted activity must not be re-used for another activity.</itm><brk></brk>
+<itm indent="-0.33">(3) Assign each activity its appropriate Responsibility Code and Area Code, indicating location and responsibility to accomplish 
+the work indicated by the activity, Phase Code, and Work Location Code. Include anticipated tasks to be assigned Government responsibility.</itm><brk></brk>
+<itm indent="-0.33">(4) Date/time constraints or lags, other than those required by the contract, are not allowed unless approved by the Contracting 
+Officer. Include as the last activity in the contract schedule, a milestone activity named "Contract Completion Date".</itm><brk></brk>
+<itm indent="-0.33">(5) Include the following Contract Milestones:</itm><brk></brk>
+<itm>(a) Include as the first activity on the schedule a start milestone titled "Contract Award", which must have a Mandatory Start 
+constraint equal to the Contract Award Date;</itm><brk></brk>
+<itm>(b) Include Interim or Phased Completion Milestones required by the Contract or as approved by the Contracting Officer;</itm><brk></brk>
+<itm>(c) Include Facility Turnover Planning Meeting Milestones;</itm><brk></brk>
+<itm>(d) Include an unconstrained finish milestone on the schedule titled "Substantial Completion". Substantial Completion is defined 
+as the point in time the Government would consider the project ready for beneficial occupancy wherein by mutual agreement of the 
+Government and Contractor. Government use of the facility is allowed while construction access continues in order to complete 
+remaining items (e.g. punch list and other close out submittals).</itm><brk></brk>
+<itm>(e) Include an unconstrained finish milestone on the schedule titled "Projected Completion". Projected Completion is defined 
+as the point in time the Government would consider the project complete. This milestone must have the Contract Completion Date 
+(CCD) milestone as its only successor.</itm><brk></brk>
+<itm>(f) Include as the last activity on the schedule a finish milestone titled "Contract Completion (CCD)" with constraint type "Must 
+Finish No Later Than". Calculation of schedule updates must be such that if the finish of the "Projected Completion" milestone 
+falls after the contract completion date, then negative float will be calculated on the longest path and if the finish of the 
+"Projected Completion" milestone falls before the contract completion date, the float calculation must reflect positive float 
+on the longest path. This milestone must be set to 5:00 pm.</itm><brk></brk>
+<itm indent="-0.33">(6) Provide lead time for major equipment.</itm><brk></brk></spt>
+<spt outline="1.3.1.2"><ttl>1.3.1.2 Anticipated Weather Lost Work Days</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Check with the FEC's Scheduling Subject Matter Expert or with the FEAD/ROICC for known site-specific Adverse 
+Weather Delays to determine how to edit this paragraph. If historical data is not available, choose the first 
+paragraph using NOAA historical monthly averages as the basis for establishing non-workdays. Note that NOAA historical 
+data may not be available for all OCONUS locations.<brk></brk>
+If the historical adverse weather data is available, use the bracketed paragraph and table and populate the table 
+with the known data. Insert the data for each month in the blank, bracketed item provided. A bracketed choice 
+of 2 days per month is provided only as an option to remind the Designer to insert the actual data.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: A tailored bracketed option is provided for NAVFAC FE to use in lieu of NOAA if actual data is not available.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Refer to Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 11 00.00 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> GENERAL CONTRACT REQUIREMENTS, paragraph TIME EXTENSIONS FOR UNUSUALLY SEVERE WEATHER.</txt><brk></brk>
+<txt>Assign the Weather Calendar to any activity that could be impacted by adverse weather. The Contracting Officer will issue a modification in accordance 
+with the contract clauses, giving the Contractor a time extension for the difference of days between the anticipated and actual adverse weather 
+delay if the number of actual adverse weather delay days exceeds the number of days anticipated for the month in which the delay occurs and the 
+adverse weather delayed activities are critical to contract completion. A lost workday due to weather conditions is defined as a day in which 
+the Contractor cannot work at least 50 percent of the day on the impacted activity.</txt><brk></brk></spt>
+<spt outline="1.3.1.3"><ttl>1.3.1.3 Activity Identification</ttl><brk></brk>
+<lst indent="-0.33">a. Identify Government, Construction Quality Management (CQM), Construction activities planned for the project and other activities that 
+could impact project completion if delayed.</lst><brk></brk>
+<lst indent="-0.33">b. Identify administrative type activity/milestones including pre-construction submittal and permit requirements prior to demolition or 
+construction stage.</lst><brk></brk>
+<lst indent="-0.33">c. Create separate activities for each Phase, Area, Floor Level, and Location the activity is occurring.</lst><brk></brk>
+<lst indent="-0.33">d. Do not use construction category activity to represent non-work type reference (Such as, Serial Letter or Request for Information) 
+in NAS.</lst><brk></brk>
+<lst indent="-0.33">e. Place non-work reference within P6 activity details notebook. Activity categories included in the schedule are specified below.</lst><brk></brk></spt>
+<spt outline="1.3.1.4"><ttl>1.3.1.4 Responsibility Code</ttl><brk></brk>
+<txt>Assign each activity its appropriate Responsibility Code indicating responsibility to accomplish the work indicated by the activity, Phase Code 
+and Work Location Code.</txt><brk></brk></spt>
+<tai opt="PRIMAVERA P6"><spt><ttl>Primavera P6 Settings and Parameters</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use this tailored paragraph for NAS Schedules using Primavera P6. Delete this paragraph if only Microsoft 
+Project 2010 is allowed. This paragraph is tailored for Primavera P6.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Use the following Primavera P6 settings and parameters in preparing the Baseline Schedule. Deviation from these settings and parameters, without 
+prior consent of the Contracting Officer, is cause for rejection of schedule submission.</txt><brk></brk>
+<lst indent="-0.33">a. General: Define or establish Calendars and Activity Codes at the "Project" level, not the "Global" level.</lst><brk></brk>
+<lst indent="-0.33">b. Admin Drop-Down Menu, Admin Preferences, Time Periods Tab:</lst><brk></brk>
+<itm indent="-0.33">(1) Set time periods for P6 for Hours/Day, Hours/Week, Hours/Month and Hours/Year based on Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 11 00.00 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> Paragraph "WORKING 
+HOURS".</itm><brk></brk>
+<itm indent="-0.33">(2) Use assigned calendar to specify the number of work hours for each time period: Must be checked.</itm><brk></brk>
+<lst indent="-0.33">c. Admin Drop-Down Menu, Admin Preferences, Earned Value Tab: Earned Value Calculation: Use "Budgeted values with current dates".</lst><brk></brk>
+<lst indent="-0.33">d. Project Level, Dates Tab: Set "Must Finish By" date to "Contract Completion Date", and set "Must Finish By" time to 05:00pm.</lst><brk></brk>
+<lst indent="-0.33">e. Project Level, Defaults Tab:</lst><brk></brk>
+<itm indent="-0.33">(1) Duration Type: Set to "Fixed Duration &amp; Units".</itm><brk></brk>
+<itm indent="-0.33">(2) Percent Complete Type: Set to "Physical".</itm><brk></brk>
+<itm indent="-0.33">(3) Activity Type: Set to "Task Dependent".</itm><brk></brk>
+<itm indent="-0.33">(4) Calendar: Set to "Standard 5 Day Workweek". Calendar must reflect Saturday, Sunday and all Federal holidays as non-work days. 
+Alternative calendars may be used with Contracting Officer approval.</itm><brk></brk>
+<lst indent="-0.33">f. Project Level, Calculations Tab:</lst><brk></brk>
+<itm indent="-0.33">(1) Activity percent complete based on activity steps: Must be Checked.</itm><brk></brk>
+<itm indent="-0.33">(2) Reset Remaining Duration and Units to Original: Must be Checked.</itm><brk></brk>
+<itm indent="-0.33">(3) Subtract Actual from At Completion: Must be Checked.</itm><brk></brk>
+<itm indent="-0.33">(4) Recalculate Actual units and Cost when duration percent (%) complete changes: Must be Checked.</itm><brk></brk>
+<itm indent="-0.33">(5) Link Actual to Date and Actual This Period Units and Cost: Must be Checked.</itm><brk></brk>
+<itm indent="-0.33">(6) Price/Unit: Set to "$1/h".</itm><brk></brk>
+<itm indent="-0.33">(7) Update units when costs change on resource assignments: Must be Unchecked.</itm><brk></brk>
+<lst indent="-0.33">g. Project Level, Settings Tab:</lst><brk></brk>
+<itm indent="-0.33">(1) Define Critical Activities: Check "Longest Path".</itm><brk></brk>
+<lst indent="-0.33">h. The NAS must have a minimum of 30 construction activities. No on-site construction activity may have durations in excess of 20 working 
+days.</lst><brk></brk></spt>
+</tai><tai opt="MICROSOFT PROJECT"><spt><ttl>Microsoft Project 2010 Settings and Parameters</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use this tailored paragraph for NAS schedules using Microsoft Project 2010. Delete this paragraph if only 
+NAS schedules using Primavera P6 are allowed. This paragraph is tailored for Microsoft Project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Use the following MS Project 2010 settings and parameters in preparing the Baseline Schedule:</txt><brk></brk>
+<lst indent="-0.33">a. The Network must have a minimum of 30 construction activities. In general, all definable features of work identified in the Quality 
+Control Plan should be represented by construction activites where practicable or sensible.</lst><brk></brk>
+<lst indent="-0.33">b. No on-site construction activity may have durations in excess of 20 working days.</lst><brk></brk>
+<lst indent="-0.33">c. Critical is defined as having zero days of Total Slack. Within the Baseline Schedule no more than 20 percent of the activities shall 
+be critical.</lst><brk></brk>
+<lst indent="-0.33">d. Logic: include the following setting: File, Options, Schedule tab - Split in-progress tasks - must be selected.</lst><brk></brk>
+<lst indent="-0.33">e. Status Date gridline is displayed in the Gantt Chart view.</lst><brk></brk>
+<lst indent="-0.33">f. Task Type is set to Fixed Work for "boots-on-the-ground" construction activities.</lst><brk></brk>
+<lst indent="-0.33">g. Task Type is set to Fixed Duration for design activities, submittals, Government reviews, procurement, material/equipment delivery, 
+and utility outages.</lst><brk></brk>
+<lst indent="-0.33">h. "Effort Driven" is turned ON for Fixed Duration tasks.</lst><brk></brk>
+<lst indent="-0.33">i. Set time periods for the project for Hrs/Day, Hrs/Week, and days/month based on Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 11 00.00 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> Paragraph "WORKING HOURS.</lst><brk></brk></spt>
+<tai opt="MICROSOFT PROJECT"><spt><ttl>Cost Loading Microsoft Project 2010 Schedules</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use this paragraph for a Cost-Loading Microsoft Project Schedule on projects at or above $750,000 and when 
+required; otherwise, delete. This paragraph is tailored for Microsoft Project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Assign material, labor and equipment costs to their respective Construction Activities. Assign material and equipment costs, for which payment 
+will be requested in advance of installation, to their respective procurement activity (i.e. the material/equipment on-site activity). Evenly 
+disperse overhead and profit to each activity over the duration of the project. Cost loading must total to 100 percent of the value of the contract.</txt><brk></brk>
+<spt><ttl>Software Settings</ttl><brk></brk>
+<lst indent="-0.33">a. Resource Sheet</lst><brk></brk>
+<itm indent="-0.33">(1) Resource Name: Enter each code and resource for the project</itm><brk></brk>
+<itm indent="-0.33">(2) Type: Set to "Material"</itm><brk></brk>
+<itm indent="-0.33">(3) Material Label: Enter units of measurement for each resource</itm><brk></brk>
+<itm indent="-0.33">(4) Std. Rate: Enter unit cost for each resource</itm><brk></brk>
+<itm indent="-0.33">(5) Accrue at: Set to "Prorated"</itm><brk></brk>
+<lst indent="-0.33">b. Assigning Resources to Each Activity</lst><brk></brk>
+<itm indent="-0.33">(1) Select each activity in Gantt Chart </itm><brk></brk>
+<itm indent="-0.33">(2) Assign resources, Resource Tab </itm><brk></brk>
+<itm indent="-0.33">(3) Select each resource and enter the quantity of the units; then, assign the resource(s) to the activity</itm><brk></brk>
+<lst indent="-0.33">c. Baseline for Earned Value Calculation, File Tab, Options, Advanced, Default task Earned Value method: Set to "Physical % Complete" 
+or as directed by the Contracting Officer</lst><brk></brk></spt>
+<spt><ttl>Tabular Reports</ttl><brk></brk>
+<spt><ttl>Tracking Gantt Schedule with Cost Table</ttl><brk></brk>
+<txt>Submit a Tracking Gantt Schedule with each schedule update showing activity baseline cost, cost percent complete, and Budgeted Cost of Work Performed 
+(BCWP), as directed by the Contracting Officer.</txt><brk></brk></spt>
+<spt><ttl>Earned Value Over Time Report</ttl><brk></brk>
+<lst indent="-0.33">a. With each schedule submission, submit Earned Value Over Time Report S-Curves indicating Planned Value to the contract completion date 
+based on projected early and late activity finish dates and Earned Value.</lst><brk></brk>
+<lst indent="-0.33">b. Revise Earned Value Over Time Report S-Curves when the contract is modified, or as directed by the Contracting Officer.</lst><brk></brk></spt>
+</spt><spt><ttl>Pay Activity Data</ttl><brk></brk>
+<txt>Manually enter pay activity data in the RMS 3 database according to the requirements of Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 45 00.15 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> RESIDENT MANAGEMENT SYSTEM CONTRACTOR 
+MODE(RMS CM). Tha pay activity schedule shall be identical to the activities in the NAS.</txt><brk></brk></spt>
+</spt></tai></tai></spt><tai opt="BAR CHART"><spt><ttl>Bar Chart Schedule</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use this paragraph if Option 2 (described in the Initial Editing Notes) is applicable and a Bar Chart is 
+required for the project. This paragraph is tailored for Bar Chart.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The Bar Chart must, as a minimum, show work activities, submittals, Government review periods, material/equipment delivery, utility outages, on-site 
+construction, inspection, testing, and closeout activities. The Bar Chart must be time scaled and generated using an electronic spreadsheet program.</txt><brk></brk>
+<spt><ttl>Schedule of Prices</ttl><brk></brk>
+<txt>Within 15 calendar days after the NTP is acknowledged, prepare and deliver to the Contracting Officer a Schedule of Prices. Provide a detailed 
+breakdown of the task order price that assigns costs to activities shown on the Bar Chart Schedule.</txt><brk></brk>
+<txt>Costs may be considered for Bonding, Design Submittals, and on-site construction activities only. Cost may not be considered for activities that 
+do not result in tangible work in place including mobilization, temporary construction, Environmental Protection, Quality Control, Safety, submittals, 
+pre-constructionplanning, or similar.</txt><brk></brk>
+<txt>Overhead and profit costs shall be evenly dispersed over each pay activity and over the entire duration of the project. Cost loadings must total 
+100 percent of the task order value. The Schedule of Prices shall be manually entered in the RMS 3 database as pay activities according to the 
+requirements of Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 45 00.15 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> RESIDENT MANAGEMENT SYSTEM CONTRACTOR MODE(RMS CM).</txt><brk></brk></spt>
+</spt></tai><spt outline="1.3.2"><ttl>1.3.2 Schedule Submittals and Procedures</ttl><brk></brk>
+<txt>Submit Schedules and updates in hard copy and on electronic media that is acceptable to the Contracting Officer. Submit an electronic back-up 
+of the project schedule in an import format compatible with the Government's scheduling program.</txt><brk></brk></spt>
+</spt><spt outline="1.4"><ttl>1.4 PAYMENTS FOR STORED MATERIALS</ttl><brk></brk>
+<txt>Per FAR 52.232-5(B)(2), Payments Under Fix-Price Construction: "In preparation of estimates, the Contracting Office may authorize material delivered 
+on the site and preparatory work done to be taken into consideration." Material costs for which payment will be requested in advance of installation 
+must be assigned to their respective on-site construction activity. These Stored Materials payments requie evidence of paymnet, proper storage 
+on site, and inspection for compliance.</txt><brk></brk></spt>
+<spt outline="1.5"><ttl>1.5 COST LOADING OF CLOSEOUT ACTIVITES</ttl><brk></brk>
+<txt>Cost load the "Correction of punch list from Government pre-final inspection" activity(ies) not less than 5 percent of the present task order value. 
+Activity(ies) may be declared 100 percent complete upon the Government's verification of completion and correction of all punch list work identified 
+during Government pre-final inspection(s).</txt><brk></brk></spt>
+<spt outline="1.6"><ttl>SCHEDULE 1.6 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>MONTHLY UPDATES<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph contains tailoring for DB.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Update the <tai opt="DESIGN-BUILD">Design and </tai>Construction Schedule at monthly intervals. The updated schedule must be kept current, reflecting actual activity progress 
+and plan for completing the remaining work. Submit copies of purchase orders and confirmation of delivery dates as directed by the Contracting 
+Officer.</txt><brk></brk>
+<lst indent="-0.33">a. Narrative Report: Identify and justify the following:</lst><brk></brk>
+<itm indent="-0.33">(1) Progress made in each area of the project;</itm><brk></brk>
+<itm indent="-0.33">(2) Critical Path</itm><brk></brk>
+<itm indent="-0.33">(3) Date/time constraint(s), other than those required by the contract;</itm><brk></brk>
+<itm indent="-0.33">(4) Listing of changes made between the previous schedule and current updated schedule including: added or removed activities, 
+original and remaining durations for activities that have not started, logic (sequence, constraint, lag/lead), milestones, planned 
+sequence of operations, longest path, calendars or calendar assignments, and cost loading.</itm><brk></brk>
+<itm indent="-0.33">(5) Status of any long lead materials/equipment</itm><brk></brk>
+<itm indent="-0.33">(6) Status of critical testing requirements, (i.e. TAB (testing, adjusting and balancing), sewer line testing, commissioning).</itm><brk></brk>
+<itm indent="-0.33">(7) Status of Contract Completion Date and interim milestones;</itm><brk></brk>
+<itm indent="-0.33">(8) Current and anticipated delays (describe cause of delay and corrective actions(s) and mitigation measures to minimize);</itm><brk></brk>
+<itm indent="-0.33">(9) Description of current and future schedule problem areas.</itm><brk></brk>
+<txt>For each entry in the narrative report, cite the respective Activity ID and Activity Name, the date and reason for the change, and description 
+of the change.</txt><brk></brk></spt>
+<tai opt="NAS"><spt><ttl>CONTRACT MODIFICATION (applicable when use of NAS is specified)</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use this paragraph for projects with NAS schedules; otherwise, delete. Paragraph is tailored for NAS.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Submit a Time Impact Analysis (TIA) with each cost and time proposal for a proposed change. TIA must illustrate the influence of each change or 
+delay on the Contract Completion Date or milestones. No time extensions will be granted nor delay damages paid unless a delay occurs which consumes 
+all available Project Float, and extends the Projected Finish beyond the Contract Completion Date.</txt><brk></brk>
+<lst indent="-0.33">a. Each TIA must be in both narrative and schedule form. The narrative must define the scope and conditions of the change; provide start 
+and finish dates of impact, successor and predecessor activity to impact period, responsible party, describe how it originated, and how 
+it impacts the schedule. The schedule submission must consist of three native files:</lst><brk></brk>
+<itm indent="-0.33">(1) Schedule Sub-network - Model the scope of the change condition by showing only the schedule activites to be added as a result 
+of the change, their immediate predecessor and successor activities in the existing schedule, and how the change activities are 
+to be logically tied together.</itm><brk></brk>
+<itm indent="-0.33">(2) Update Schedule - Provide the most recently accepted update schedule in effect at the time of the change. This update schedule 
+shall not contain any revisions or additions to the existing logice or activities.</itm><brk></brk>
+<itm indent="-0.33">(3) Revised Update Schedule - Provide a schedule that models the effects of the disruption on the update schedule in effect at 
+the time of the change. The revised udate shall have the Schedule Sub-network inserted into the Update Schedule to show how the 
+project and scheduled completion date was impacted as a result of the disruption.</itm><brk></brk>
+<lst indent="-0.33">b. TIAs must include any mitigation, and must determine the apportionment of the overall delay assignable to each individual<brk></brk>
+delay. Apportionment must provide identification of delay type and classification of delay by compensable and non-compensable events. 
+The associated narrative must clearly describe analysis methodology used, and the findings in a chronological listing beginning with the 
+earliest delay event.</lst><brk></brk>
+<itm indent="-0.33">(1) Identify and classify types of delays as follows:</itm><brk></brk>
+<itm>(a) Force majeure delay (e.g. weather delay): Any delay event caused by something or someone other than the Government (including 
+its agents) or the Contractor, or the risk of which has not been assigned solely to the Government or the Contractor. If the force 
+majeure delay is on the critical path, in absence of other types of concurrent delays, the Contractor is granted an extension 
+of contract time, classified as a non-compensable event.</itm><brk></brk>
+<itm>(b) A Contractor-delay: Any delay event caused by the Contractor, or the risk of which has been assigned solely to the Contractor. 
+If the contractor-delay is on the critical path, in absence of other types of concurrent delays, Contractor is not granted extension 
+of contract time, and classified as a non-compensable event. Where absent other types of delays, and having impact to project 
+completion, provide a Corrective Action Plan, identifying plan to mitigate delay, to the Contracting Officer.</itm><brk></brk>
+<itm>(c) A Government-delay: Any delay event caused by the Government, or the risk of which has been assigned solely to the Government. 
+If the Government-delay is on the longest path, in absence of other types of concurrent delays, the Contractor is granted an extension 
+of contract time, and classified as a compensable event.</itm><brk></brk>
+<itm indent="-0.33">(2) Use functional theory to analyze concurrent delays, where: Separate delay issues delay project completion, do not necessarily 
+occur at same time, rather occur within same monthly schedule update period at minimum, or within same as-built period under review. 
+If a combination of functionally concurrent delay types occurs, it is considered Concurrent Delay, which is defined in the following 
+combinations:</itm><brk></brk>
+<itm>(a) Government-delay concurrent with Contractor-delay: Excusable time extension, classified non-compensable event.</itm><brk></brk>
+<itm>(b) Government-delay concurrent with force majeure delay: Excusable time extension, classified non-compensable event.</itm><brk></brk>
+<itm>(c) Contractor-delay concurrent with force majeure delay: Excusable time extension, classified non-compensable event.</itm><brk></brk>
+<itm indent="-0.33">(3) A pacing delay, reacting to another delay (parent delay) equally or more critical than paced activity, must be identified 
+prior to pacing. Contracting Officer will notify Contractor prior to pacing. Contractor must notify Contracting Officer prior 
+to pacing. Notification must include identification of parent delay issue, estimated parent delay time period, paced activity(s) 
+identity, and pacing reason(s). Pacing Concurrency is defined as follows:</itm><brk></brk>
+<itm>(a) Government-delay concurrent with Contractor-pacing: Excusable time extension, classified compensable event.</itm><brk></brk>
+<itm>(b) Contractor-delay concurrent with Government-pacing: Inexcusable time extension, classified non-compensable event.</itm><brk></brk>
+<lst indent="-0.33">c. Submit data containing the narrative and native schedule files.</lst><brk></brk>
+<lst indent="-0.33">d. Unless the Contracting Office request otherwise, only confirmed task order modifications must be added into the Construction Schedule.</lst><brk></brk></spt>
+</tai><spt outline="1.7"><ttl>1.7 3-WEEK LOOK AHEAD SCHEDULE</ttl><brk></brk>
+<txt>Prepare and issue a 3-Week Look Ahead schedule to provide a more detailed day-to-day plan of upcoming work identified on the Construction Schedule. 
+Key the work plans to activity numbers when a NAS is required and update each week to show the planned work for the current and following two-week 
+period. Additionally, include upcoming outages, closures, preparatory meetings, and initial meetings. Identify critical path activities on the 
+Three-Week Look Ahead Schedule. The detail work plans are to be bar chart type schedules, maintained separately from the Construction Schedule. 
+Activities must not exceed 5 working days in duration and have sufficient level of detail to assign crews, tools and equipment required to complete 
+the work.</txt><brk></brk></spt>
+<spt outline="1.8"><ttl>1.8 CORRESPONDENCE AND TEST REPORTS:</ttl><brk></brk>
+<txt>All correspondence (e.g., letters, Requests for Information (RFIs), e-mails, meeting minute items, Production and QC Daily Reports, material delivery 
+tickets, photographs) must reference Schedule Activities that are being addressed. All test reports (e.g., concrete, soil compaction, weld, pressure) 
+must reference Schedule Activities that are being addressed.</txt><brk></brk></spt>
+<spt outline="1.9"><ttl>1.9 ADDITIONAL SCHEDULING REQUIREMENTS</ttl><brk></brk>
+<txt>Any references to additional scheduling requirements, including systems to be inspected, tested and commissioned, that are located throughout the 
+remainder of the Contract Documents, are subject to all requirements of this section.</txt><ned></ned><brk></brk></spt>
+</prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<txt>Not used.</txt><brk></brk></prt>
+<prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<txt>Not used.</txt><brk></brk></prt>
+<end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

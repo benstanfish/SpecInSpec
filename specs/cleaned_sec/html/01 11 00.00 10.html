@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>01 11 00.00 10.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">01 11 00.00 10</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:49</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><brk></brk>
+<scn>SECTION 01 11 00.00 10</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>GENERAL CONTRACT REQUIREMENTS<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<spt outline="1.1"><ttl>1.1 DEFINITIONS</ttl><brk></brk>
+<txt>The term "Government" refers to "United States Government" whenever the term "Government" appears in this Contract, 
+unless otherwise indicated within the Contract.</txt><brk></brk></spt>
+<spt outline="1.2"><ttl>1.2 REFERENCES</ttl><brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are 
+referred to within the text by the basic designation only.</txt><brk></brk>
+<ref><org>AMERICAN SOCIETY OF HEATING, REFRIGERATING AND AIR-CONDITIONING ENGINEERS (ASHRAE)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASHRAE 189.1<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017) Standard for the Design of High-Performance 
+Green Buildings Except Low-Rise Residential 
+Buildings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASHRAE 52.2<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017) Method of Testing General Ventilation 
+Air-Cleaning Devices for Removal Efficiency 
+by Particle Size<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>ASTM INTERNATIONAL (ASTM)</org><brk></brk>
+<brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D6245<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2021) Using Indoor Carbon Dioxide Concentrations 
+to Evaluate Indoor Air Quality and Ventilation<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
+(2012) Using Indoor Carbon Dioxide Concentrations 
+to Evaluate Indoor Air Quality and Ventilation<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D6345<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2010) Selection of Methods for Active, Integrative 
+Sampling of Volatile Organic Compounds in Air<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
+(2010) Standard Guide for Selection of Methods 
+for Active, Integrative Sampling of Volatile 
+Organic Compounds in Air<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<brk></brk></ref>
+<ref><org>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 10<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2022) Standard for Portable Fire Extinguishers<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
+(2022; ERTA 1 2021) Standard for Portable Fire 
+Extinguishers<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk><pre class="display_ADD">&lt;/ADD&gt;</pre></add>
+<del><pre class="display_DEL">&lt;DEL&gt;</pre><brk></brk><pre class="display_DEL">&lt;/DEL&gt;</pre></del>
+<brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 241<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2022) Standard for Safeguarding Construction, 
+Alteration, and Demolition Operations<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>SHEET METAL AND AIR CONDITIONING CONTRACTORS' NATIONAL ASSOCIATION (SMACNA)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ANSI/SMACNA 008<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2007) IAQ Guidelines for Occupied Buildings 
+Under Construction, 2nd Edition<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>U.S. ARMY CORPS OF ENGINEERS (USACE)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid><del><pre class="display_DEL">&lt;DEL&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2014) Safety and Health Requirements Manual<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>
+ Safety -- Safety and Health Requirements Manual<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk></ref>
+<tai opt="NAVY"><ref><org>U.S. NAVAL FACILITIES ENGINEERING COMMAND (NAVFAC)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NAVFAC P-307<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) Weight Handling Program Management<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>CFAS Instruction 5532.2D<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>Base Access Control<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NAF Atsugi Instruction 5532.2D<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>Base Access Control<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</tai><tai opt="ARMY"><ref><org>U.S. ARMY GARRISON JAPAN (USAG-J)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>Regulation 190-13<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2013) Installation Access and Control Procedures<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</tai></spt><spt outline="1.3"><ttl>1.3 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review submittal description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.<brk></brk>
+The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G." Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System. 
+Only add a “G” to an item, if the submittal is sufficiently important or complex 
+in context of the project.<brk></brk>
+For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office. Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.<brk></brk>
+Use the "S" classification only in SD-11 Closeout Submittals. The "S" following 
+a submittal item indicates that the submittal is required for the Sustainability 
+Notebook to fulfill federally mandated sustainable requirements in accordance 
+with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING.<brk></brk>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; <tai opt="DESIGN-BID-BUILD">submittals not having a "G" designation 
+are for information only</tai><tai opt="DESIGN-BUILD">submittals not having a "G" designation are for Contractor Quality Control or Designer 
+of Record approval</tai>. Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00 <pre class="display_SRF">&lt;/SRF&gt;</pre></srf>SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-01 Preconstruction Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Initial Site Conditions Photos<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Key Personnel Qualifications<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<tai opt="BOOK STYLE CONFORMED SET"><div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Conformed Drawings Submittal<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div></tai><brk></brk>
+<tai opt="INDOOR AIR QUALITY PLAN"><div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>INDOOR AIR QUALITY (IAQ) MANAGEMENT PLAN<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm>]</div></tai><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-07 Certificates<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Monthly Progress Photos<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; </itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-11 Closeout Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<div class="brackets">[<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Construction Completion Photos<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; </itm>]</div><brk></brk></spt>
+<spt outline="1.4"><ttl>1.4 ACCEPTABLE ALTERNATIVE JAPANESE STANDARDS</ttl><brk></brk>
+<txt><tai opt="DESIGN-BID-BUILD">Where indicated in the technical specifications REFERENCES paragraphs, acceptable Japanese standards are listed 
+which are considered acceptable alternatives to the US Standards within the Contract Specifications. Contract 
+specifications authorize the use of specified acceptable alternative Japanese standards. </tai><tai opt="DESIGN-BUILD">A limited set of modified 
+UFGS incorporating previously identified and accepted Japanese standards and methods (also known as Japan Edited 
+Specifications, or JES) can be found at https://www.poj.usace.army.mil/Business-With-Us/References/. Other portions 
+of the specifications also authorize the use of specified acceptable alternative Japanese standards.</tai> The use 
+of products not meeting the applicable US standards of the Contract or alternative Japanese standards specifically 
+authorized by the Contract is prohibited unless authorized by the Contracting Officer. Japanese standards not 
+identified in these specifications as being acceptable alternatives to US standards may be submitted to the Contracting 
+Officer for consideration as acceptable alternatives after award using the variation request process set forth 
+in Section 01 33 00 SUBMITTAL PROCEDURES. Prior to the use of such proposed additional alternative Japanese standards, 
+written approval by the Contracting Officer is required. Incorporation of methods, materials, and equipment that 
+will promote cost-effective and timely maintenance, and that are otherwise authorized by the contract, is highly 
+encouraged.</txt><brk></brk></spt>
+<div class="brackets">[<spt outline="1.5"><ttl>1.5 GOVERNMENT FURNISHED CONTRACTOR INSTALLED ITEMS</ttl><brk></brk>
+<txt>Attachment 01 11 00.00 10-A "Government Furnished Property" provides the items that shall be Government Furnished, 
+Contractor Installed (GFCI).</txt><brk></brk></spt>
+]</div><spt outline="1.6"><ttl>1.6 MANDATORY U.S. TESTED PRODUCTS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Taken from FY16 C-130J Flight Simulator Facility project, confirm if 
+this is to be standard language for all projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The following items shall meet U.S. testing methods (e.g. UL listed, FM approved, ASTM, etc.) and shall be labeled 
+as required. These items shall not be substituted with Japanese testing methods (e.g. JIS, JASS, etc.) for certification:</txt><brk></brk>
+<lst indent="-0.33">a. Fire suppression systems, including valves, alarm valves, sprinklers<del><pre class="display_DEL">&lt;DEL&gt;</pre>(pipes and fittings of Japanese 
+manufacturer may meet the function requirements)<pre class="display_DEL">&lt;/DEL&gt;</pre></del>. Fire suppression systems includes wet chemical, dry 
+chemical, mist, deluge, pre-action, foam, and clean agent, in addition to standard sprinkler systems.</lst><brk></brk>
+<lst indent="-0.33">b. Fire pumps, including motors, controllers, drives, and valves.</lst><brk></brk>
+<lst indent="-0.33">c. Fire alarm and mass notification systems, including panels, initiating devices, notification appliances, 
+smoke alarms<del><pre class="display_DEL">&lt;DEL&gt;</pre> (conductors and conduits of Japanese manufacturer may meet the functional requirements)<pre class="display_DEL">&lt;/DEL&gt;</pre></del>.</lst><brk></brk>
+<lst indent="-0.33">d. Engineering technician requirements for development of fire suppression systems and alarm system 
+shop drawings, calculations, and material submittals.</lst><brk></brk>
+<lst indent="-0.33">e. Fire doors, smoke doors, and frames.</lst><brk></brk>
+<lst indent="-0.33">f. Fire dampers and smoke dampers.</lst><brk></brk>
+<lst indent="-0.33">g. Interior finishes with flame spread and smoke development ratings required for installation of rated 
+assemblies.</lst><brk></brk>
+<lst indent="-0.33">h. Insulation with flame spread and smoke development ratings.</lst><brk></brk>
+<lst indent="-0.33">i. Fire proofing and fire stopping materials.</lst><brk></brk>
+<lst indent="-0.33">j. Plenum rated cables.</lst><brk></brk>
+<lst indent="-0.33">k. Domestic water supply piping in the building and plumbing fixtures that directly dispense potable 
+drinking water (NSF stamped and/or<brk></brk>
+labeled). <del><pre class="display_DEL">&lt;DEL&gt;</pre>Japanese plumbing fixtures<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>Plumbing fixtures conforming to Japanese standards<pre class="display_ADD">&lt;/ADD&gt;</pre></add> that do not directly 
+dispense potable drinking water are allowed, such as urinals and water closets<add><pre class="display_ADD">&lt;ADD&gt;</pre>, bath and shower faucets, 
+utility/janitor faucets, lavatories and sinks<pre class="display_ADD">&lt;/ADD&gt;</pre></add>.</lst><add><pre class="display_ADD">&lt;ADD&gt;</pre><brk></brk><pre class="display_ADD">&lt;/ADD&gt;</pre></add>
+<brk></brk></spt>
+<spt outline="1.7"><ttl>1.7 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>KEY PERSONNEL QUALIFICATIONS<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>The Contractor's Project Key personnel shall not be assigned duties to any other Contracts (excluding the project 
+manager) without approval from the Contracting Officer. <div class="brackets">[The Project Superintendent, CQC System Manager, and 
+Site Safety Health Officer shall all be separate persons, and shall not have other duties assigned.]</div> <div class="brackets">[One person 
+may be assigned the duties of Project Superintendent and CQC System Manager provided they meet all qualification 
+requirements and maintain presence on site as required for the various duties. The Site Safety Health Officer 
+shall not be assigned other duties.]</div> Within five (5) working days after receipt of the Notice to Proceed, the 
+Contractor shall submit in writing to the Contracting Officer an organizational chart, the qualifications and 
+background history of the proposed Key Personnel for approval. The Contracting Officer shall have the explicit 
+right to determine acceptability (or rejection) of the proposed individuals. In addition, the Contractor shall 
+be responsible to replace said individuals upon notification by the Government should performance become inadequate 
+during the Contract period. Key Personnel shall attend the Preconstruction conference.</txt><brk></brk>
+<div class="brackets">[<spt outline="1.7.1"><ttl>1.7.1 Program Manager</ttl><brk></brk>
+<txt>The Program Manager is responsible for the overall management of the Contract. The Program Manager shall have 
+a minimum of <div class="brackets">[five (5)]</div> years experience in the administration of construction Contracts on construction projects 
+similar in size and scope to this Contract, and shall have a thorough knowledge of the duties of key management 
+personnel assigned to this Contract.</txt><brk></brk></spt>
+]</div><spt outline="1.7.2"><ttl>1.7.2 Project Manager</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Input field of expertise from Construction Memo placed here. Fields of 
+expertise can include, but are not limited to civil, architectural, structural, 
+mechanical, electrical, fire protection, etc.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The Project Manager shall have a minimum of <div class="brackets">[five (5)]</div> years experience as a Project Manager on construction 
+projects <div class="brackets">[containing <div class="brackets">[___]</div> components ]</div>similar in size and scope to this Contract. The Project Manager shall 
+maintain oversight of Contract proposals prepared by the Contractor staff and be authorized to negotiate Contract 
+terms and sign Contract documents on behalf of the Contractor. The project manager does not need to be present 
+on the site daily, but shall attend weekly progress meetings and be available on site within 24 hours upon request. 
+Project Manager <div class="brackets">[shall not have other duties assigned]</div><div class="brackets">[Project Manager may have other duties assigned]</div>.</txt><brk></brk></spt>
+<spt outline="1.7.3"><ttl>1.7.3 Project Superintendent (Supervisor)</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Input field of expertise from Construction Memo placed here. Fields of 
+expertise can include, but are not limited to civil, architectural, structural, 
+mechanical, electrical, fire protection, etc.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The Project Superintendent shall be on the work site when on-site work is being performed and shall be available 
+to the Contracting Officer or his representatives upon request. The Project Superintendent shall have overall 
+responsibility for all operations at the job site and be authorized to make decisions, negotiate Contract terms 
+and sign Contract documents on behalf of the Contractor. The Project Superintendent shall have a minimum of 
+<div class="brackets">[five (5)]</div> years experience as a superintendent on construction projects <div class="brackets">[containing <div class="brackets">[___]</div> components ]</div>similar 
+in size and scope to this Contract<div class="brackets">[.]</div><div class="brackets">[, and have at least one the following qualifications:]</div></txt><brk></brk>
+<div class="brackets">[<lst indent="-0.33">a. U.S. Registered Structural Engineer or U.S. Registered Architect or 1 Kyu Kenchikushi (1st Class 
+Qualified Architect).</lst><brk></brk>
+]</div><div class="brackets">[<lst indent="-0.33">b. U.S. Registered Civil Engineer or 1 Kyu Doboku Sekou Kanrigishi (1st Class Civil Engineering Works 
+Management Engineer).</lst><brk></brk>
+]</div><div class="brackets">[<lst indent="-0.33">c. U.S. Registered Mechanical or Electrical Engineer or 1 Kyu Kankouji Sekou Kanrigishi (1st Class Building 
+Mechanical and Electrical Engineer).</lst><brk></brk>
+]</div><div class="brackets">[<lst indent="-0.33">d. U.S. Registered Electrical Engineer or 1 Kyu Denkikouji Sekou Kanrigishi (1st Class Electric Construction 
+Management Engineer).</lst><brk></brk>
+]</div><div class="brackets">[<lst indent="-0.33">e. U.S. Bachelors Degree in Construction Management or 1 Kyu Kenchiku Sekou Kanrigishi (1st Class Building 
+Construction Management Engineer)</lst><brk></brk>
+]</div><div class="brackets">[<lst indent="-0.33">f. U.S. Bachelors Degree in Construction Management or AI*DD Sougoushu (AI*DD Construction Engineer).</lst><brk></brk>
+]</div><del><pre class="display_DEL">&lt;DEL&gt;</pre><div class="brackets">[<lst indent="-0.33">g. U.S. Registered Fire Protection Engineer.</lst><brk></brk>
+]</div><pre class="display_DEL">&lt;/DEL&gt;</pre></del></spt><spt outline="1.7.4"><ttl>1.7.4 English Speaking Representative (Interpreter)</ttl><brk></brk>
+<txt>At all times during the Contract period the Contractor shall have an employee capable of fluent bilingual speech 
+in the Japanese and English languages at the job site. The bilingual interpreter shall have the capability to 
+receive and issue concise and technical explanation and instructions between the Government representative(s) 
+and Contractor supervisory personnel concerning all aspects of Contract administration and construction. Within 
+fifteen (15) days after receipt of the Notice to Proceed, the Contractor shall submit in writing to the Contracting 
+Officer<del><pre class="display_DEL">&lt;DEL&gt;</pre>'s Representative<pre class="display_DEL">&lt;/DEL&gt;</pre></del> the qualifications and background history of the proposed interpreter for approval. 
+The Contracting Officer shall have the explicit right to determine acceptability or rejection of the proposed 
+individual. In addition, the Contractor shall be responsible to replace said individual upon notification by 
+the Government should performance become inadequate during the Contract period. The interpreter shall attend 
+the preconstruction conference.<add><pre class="display_ADD">&lt;ADD&gt;</pre> Interpreter shall not have other duties assigned. <pre class="display_ADD">&lt;/ADD&gt;</pre></add></txt><brk></brk></spt>
+<spt outline="1.7.5"><ttl>1.7.5 Contractor Quality Control</ttl><brk></brk>
+<spt outline="1.7.5.1"><ttl>1.7.5.1 Contractor Quality Control System Manager (CQCSM)</ttl><brk></brk>
+<txt>The CQC System Manager is required to be a graduate of an accredited college with an engineering, architecture, 
+or construction management degree, with a minimum of <div class="brackets">[5]</div> years construction experience on construction of similar 
+size and scope to this Contract. Refer to Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 45 00.00 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> QUALITY CONTROL, Paragraph "CQC System Manager" 
+for additional requirements.</txt><brk></brk></spt>
+<spt outline="1.7.5.2"><ttl>1.7.5.2 Contractor Quality Control Personnel</ttl><brk></brk>
+<txt>The following Contractor Quality Control (CQC) Personnel are required:<div class="brackets">[Civil, ]</div><div class="brackets">[Mechanical, ]</div><div class="brackets">[Electrical, ]</div><div class="brackets">[Structural, 
+]</div><div class="brackets">[Architectural, ]</div><div class="brackets">[Fire Protection, ]</div><div class="brackets">[Communications, ]</div><div class="brackets">[Environmental, ]</div><div class="brackets">[Submittals, ]</div><div class="brackets">[Occupied Family Housing, 
+]</div><div class="brackets">[Concrete, Pavements, and Soils, ]</div><div class="brackets">[Testing, Adjusting, and Balancing, ]</div><div class="brackets">[Design Quality Control Manager ]</div>. All 
+other specialties in section 01 45 00.00 10 not identified in this paragraph does not apply to this project.</txt><brk></brk>
+<txt>See Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 45 00.00 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> QUALITY CONTROL for qualification requirements for CQC personnel. These individuals 
+or specialized technical companies <div class="brackets">[must be directly employed by the prime Contractor and can not be employed 
+by a supplier or subcontractor on this project]</div><div class="brackets">[may be employed by the prime contractor or a subcontractor on 
+this project]</div>. These individuals <div class="brackets">[shall have no other duties other than quality control]</div> <div class="brackets">[can perform other duties 
+but need to be allowed sufficient time to perform the specialized personnel's assigned quality control duties 
+as described in the Quality Control Plan]</div>. <div class="brackets">[A single person can cover more than one area provided that the single 
+person is qualified to perform quality control activities in each designated and that workload allows.]</div><div class="brackets">[A single 
+person cannot cover more than one area]</div>.</txt><brk></brk></spt>
+</spt><spt outline="1.7.6"><ttl>1.7.6 Site Safety and Health Officer (SSHO)</ttl><brk></brk>
+<txt>See Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 35 26<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> GOVERNMENTAL SAFETY REQUIREMENTS.</txt><brk></brk></spt>
+<div class="brackets">[<spt outline="1.7.7"><ttl>1.7.7 [SUSTAINABILITY REPRESENTATIVE][TPC SUSTAINABILITY PROFESSIONAL]</ttl><brk></brk>
+<txt>See Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING.</txt><brk></brk></spt>
+]</div><add><pre class="display_ADD">&lt;ADD&gt;</pre><div class="brackets">[<spt><ttl><div class="brackets">[Protective Coating Specialist (PCS)]</div></ttl><brk></brk>
+<txt>See Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>09 97 13.27<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> HIGH PERFORMANCE COATING FOR STEEL STRUCTURES.</txt><brk></brk></spt>
+]</div><pre class="display_ADD">&lt;/ADD&gt;</pre></add><tai opt="ARMY"><spt><ttl>Pass Coordinator</ttl><brk></brk>
+<txt>A person on the contractor's staff who is familiar with the requirements of USAG-J <rid><pre class="display_RID">&lt;RID&gt;</pre>Regulation 190-13<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Individual 
+and Vehicle Access Pass Procedures, and USAG-J vehicle security inspection procedures. The Pass Coordinator 
+must be able to obtain a DBIDS access pass with escort privileges and may be required to escort other contract 
+personnel. Although a TOEIC score is not required, the Pass Coordinator must be able to understand pass requirements 
+and complete pass application forms in the English language.</txt><brk></brk></spt>
+</tai></spt><spt outline="1.8"><ttl>1.8 TIME EXTENSIONS FOR UNUSUALLY SEVERE WEATHER </ttl><brk></brk>
+<lst indent="-0.33">a. This paragraph specifies the procedure for determination of time extensions for unusually severe 
+weather in accordance with the Contract clause entitled "DEFAULT (FIXED-PRICE CONSTRUCTION)". In order 
+for the Contracting Officer to award a time extension under this clause, the following conditions must 
+be satisfied:</lst><brk></brk>
+<itm indent="-0.33">(1) The weather experienced at the project site during the Contract period must be found to 
+be unusually severe, that is, more severe than the adverse weather anticipated for the project 
+location during any given month.</itm><brk></brk>
+<itm indent="-0.33">(2) The unusually severe weather must actually cause a delay to the completion of the project. 
+The delay must be beyond the control and without the fault or negligence of the Contractor.</itm><brk></brk>
+<lst indent="-0.33">b. The listing below defines the monthly anticipated adverse weather days for the Contract period and 
+is based upon 20th Weather Squadron (MAC), U.S. Air Force; Iwakuni U.S. Marine Corps Air Station, Weather 
+Service; Sasebo Naval Pacific Meteorology and Oceanography Detachment; JASDF (Japan Air Self Defense 
+Force), or similar data for the geographic location of the project. (More specific information may be 
+obtained as specified under Special Contract Requirements Clause entitled "Physical Data.")</lst><brk></brk>
+<hl4><txt>MONTHLY ANTICIPATED ADVERSE WEATHER DELAYS</txt></hl4><brk></brk>
+<hl4><txt>WORK DAYS BASED ON (5) DAY WORK WEEK</txt></hl4><brk></brk>
+<txt> Misawa-area Kanto Plain Iwakuni Okinawa Sasebo Osaka</txt><brk></brk>
+<txt>JAN 8 1 2 5 7 4</txt><brk></brk>
+<txt>FEB 9 3 4 7 6 4</txt><brk></brk>
+<txt>MAR 6 6 7 8 7 5</txt><brk></brk>
+<txt>APR 3 6 6 6 7 4</txt><brk></brk>
+<txt>MAY 4 4 6 6 6 4</txt><brk></brk>
+<txt>JUN 5 9 8 6 12 5</txt><brk></brk>
+<txt>JUL 6 6 6 6 9 4</txt><brk></brk>
+<txt>AUG 6 6 5 9 9 3</txt><brk></brk>
+<txt>SEP 6 7 6 7 9 4</txt><brk></brk>
+<txt>OCT 4 5 4 4 8 4</txt><brk></brk>
+<txt>NOV 6 4 4 4 5 3</txt><brk></brk>
+<txt>DEC 7 1 3 5 5 3</txt><brk></brk>
+<txt>The above schedule of anticipated adverse weather days shall constitute the base line for monthly (or portion 
+thereof) weather time evaluations.</txt><brk></brk>
+<lst indent="-0.33">c. Upon acknowledgment of the Notice-to-Proceed (NTP) and continuing throughout the Contract, the Contractor 
+shall record on the daily CQC report, the occurrence of adverse weather and resultant impact to normally 
+scheduled work. Actual adverse weather delay days must prevent work on critical activities for 50 percent 
+or more of the Contractor's scheduled work day.</lst><brk></brk>
+<lst indent="-0.33">d. The number of actual adverse weather delay days shall include days impacted by actual adverse weather 
+(even if adverse weather occurred in previous month), be calculated chronologically from the first to 
+the last day of each month, and be recorded as full days. If the number of actual adverse weather delay 
+days exceeds the number of days anticipated in paragraph (b), above, the Contracting Officer shall convert 
+any qualifying delays to calendar days, giving full consideration for equivalent fair weather work days, 
+and issue a modification in accordance with the Contract clause entitled "DEFAULT (FIXED PRICE CONSTRUCTION)".</lst><brk></brk>
+<lst indent="-0.33">e. For all work under this Contract, adverse weather is defined as:</lst><brk></brk>
+<itm indent="-0.33">(1) Rainfall - Number of occurrences of precipitation greater than or equal to 0.10 inches (2.54mm).</itm><brk></brk>
+<itm indent="-0.33">(2) Snowfall - Number of occurrences of precipitation greater than or equal to 1.00 inches (25.4mm). 
+(Not applicable to Okinawa Area)</itm><brk></brk>
+<itm indent="-0.33">(3) Cold Temperature - Number of occurrences when daily maximum temperature does not exceed 
+the monthly mean low temperature or 32 degrees Fahrenheit (0 degrees Celsius), whichever is 
+lower. (Not applicable to Okinawa Area)</itm><brk></brk>
+<itm indent="-0.33">(4) Concurrence between snowfall and cold temperature is 80 percent, i.e. 80 percent of the 
+time snow falls, the temperature is "cold".</itm><brk></brk>
+<itm indent="-0.33">(5) Wind - Number of occurrences when the wind is gusting 30 knots (56 kilometers/hour) or greater.</itm><brk></brk>
+<lst indent="-0.33">f. The Contractor's schedule must reflect the above anticipated adverse weather delays on all weather-dependent 
+activities.</lst><brk></brk></spt>
+<spt outline="1.9"><ttl>1.9 PERMITS AND RESPONSIBILITIES</ttl><brk></brk>
+<txt>The Contractor shall, without additional expense to the Government, be responsible for obtaining any necessary 
+licenses and permits, and for complying with any laws, codes, and regulations (including the requirements of 
+material, prefectural, and local Government of Japan, and associated military installation) applicable to the 
+performance of work. The Contractor shall also be responsible for all damages to persons or property that occur 
+as a result of the Contractor's fault or negligence. These damages shall be repaired or replaced by the Contractor 
+at no cost to the Government. The Contractor shall take proper safety and health precautions to protect all work 
+and workers.</txt><brk></brk>
+<txt>Submit a schedule of planned road closures to the Contracting Officer with the initial project schedule. Notification 
+of specific road closures shall be in writing to the Contracting Officer not less than thirty (30) calendar days 
+in advance of the intended closure. The road closure request shall include the planned traffic control measures 
+as well as the general information about the closure. All road closures shall be coordinated with base officials 
+and are subject to base requirements. No road closure shall be permitted until the Contractor receives written 
+approval from the Contracting Officer. Full road closures is generally not permitted (at least one way traffic 
+shall always be provided).</txt><brk></brk>
+<tai opt="NAHA PORT"><spt><ttl>Naha Port Authority (NPA) Work Permit</ttl><brk></brk>
+<txt>The Contractor shall obtain a Harbor Facility Usage Permission Application (Form Number 5), also known as the 
+"Kowan Shisetsu Shiyou Kyoka Shinseisho" permit form addressed to the Naha Port Authority Administrator.</txt><brk></brk>
+<txt>The submission shall include basic information regarding the Contractor's point of contact information, project 
+title, description of work, and usage area information, as well as a work plan (to include scheduling), emergency 
+contact plan, and protection plans. Application shall be hand delivered to:</txt><brk></brk>
+<lst>Naha Port Authority<brk></brk>
+General Affairs Division<brk></brk>
+2-1 Tondocho (2nd Floor)<brk></brk>
+Naha City, Okinawa Prefecture<brk></brk>
+900-0035</lst><brk></brk>
+<txt>The NPA will require scheduling coordination and due consideration to all Naha Commercial Port end users and 
+coordination with other stakeholders, such as the Local Fisheries Association, to ensure that stakeholder operations 
+are not negatively impacted by the proposed activity and ensure that appropriate coordination is performed by 
+the construction activity proponent. The final Harbor Facility Usage Permit Application will be authorized by 
+the Okinawa Prefectural Governor's office.</txt><brk></brk></spt>
+<spt><ttl>Work Application Package</ttl><brk></brk>
+<txt>In accordance with Article 31 of the GOJ Act on Port Regulations "Kou Sokuhou", the Contractor shall submit a 
+Work Application Package known as a "Koji Sagyou Kyoka Shinseisho" for review and approval by the Maritime Traffic 
+Division Office of the Japan Coast Guard (JCG) at Naha. A physical printed out copy shall be hand delivered 
+to the following address:</txt><brk></brk>
+<lst>Japan Coast Guard<brk></brk>
+Naha Coast Guard Office<brk></brk>
+Maritime Traffic Division<brk></brk>
+2-11-1 Minatomachi<brk></brk>
+Naha City, Okinawa Prefecture<brk></brk>
+900-8548</lst><brk></brk>
+<txt>This application shall contain project safety information, work planning and scheduling, emergency management 
+information as well as copies of all pertinent certifications and licenses (e.g. boat licenses, commercial diver's 
+certifications, etc.) The minimum application review period is 30 days, although in the case of complicated 
+work sites, review of work permit application packages by the JCG may take longer.</txt><brk></brk>
+<txt>The Naha Coast Guard Office normally does not accept a work permit package from a Contractor until approval of 
+work is formalized first with the NPA. Therefore, ample time must be secured for the dredging Contractor to 
+clear both NPA and JCG Naha Coast Guard Office work permitting processes during the pre-construction phase of 
+the dredging project.</txt><brk></brk></spt>
+<spt><ttl>Safety Panel and Committee (SPC)</ttl><brk></brk>
+<txt>As part of the work permitting process, the Contractor shall also participate in a Safety Panel and Committee 
+(SPC). This SPC is required by the Japan Coast Guard, and shall be facilitated by a consultant hired by the 
+Okinawa Defense Bureau. Intent of the SPC is to provide a forum under which all stakeholder and port operator 
+concerns can be identified and addressed. The Contractor shall attend and present proposed safety, environmental, 
+and operational plans at the forum.</txt><brk></brk></spt>
+</tai></spt><spt outline="1.10"><ttl>1.10 SPECIAL CONTRACT REQUIREMENTS</ttl><brk></brk>
+<spt outline="1.10.1"><ttl>1.10.1 Meetings</ttl><brk></brk>
+<tai opt="DESIGN-BUILD"><brk></brk>
+<lst indent="-0.33">a. Predesign Conference. A predesign conference per FAR 42.503 shall be held. The chairperson shall 
+be the Contracting Officer or his/her designee. The chairperson shall be responsible for providing minutes 
+of the meeting.</lst><brk></brk>
+<lst indent="-0.33">a. Preconstruction Conference. A Preconstruction Conference per FAR 42.503 shall be held. The chairperson 
+shall be the Contracting Officer or his/her designee. The chairperson shall be responsible for providing 
+minutes of the meeting.</lst><brk></brk></tai>
+<brk></brk>
+<tai opt="DESIGN-BID-BUILD"><lst indent="-0.33">a. Post Award Orientation. A post award orientation (often referred to as a Preconstruction Conference) 
+per FAR 42.503 shall be held. The chairperson shall be the Contracting Officer or his/her designee. 
+The chairperson shall be responsible for providing minutes of the meeting.</lst><brk></brk></tai>
+<brk></brk>
+<lst indent="-0.33">b. Weekly Progress Meetings. A weekly progress meeting shall be conducted, with the day, time, and 
+location to be determined at the Preconstruction Conference. The Contractor's Project Manager, Superintendent, 
+Interpreter, and Quality Control Manager shall attend. Representatives from the Government may include, 
+but are not limited to, Director of Public Works/Facilities Engineering personnel, Project's Resident 
+Office personnel, and Project Manager. The Contractor shall be prepared to discuss work completed during 
+the previous week, work currently in progress, and work forecasted for the following week, as well as 
+the status of any construction issues and open action items. Provide the meeting agenda for review 24 
+hours prior to the meeting, take notes during the meeting, and provide electronic copies of the meeting 
+minutes in English within 24 hours of the progress meeting for review.</lst><brk></brk>
+<lst indent="-0.33">c. Red Zone Meeting. A Red Zone meeting shall be conducted for Contracts with a value in excess of 
+55,000,000 JPY or those deemed sufficiently complex by the Contracting Officer to warrant one. The purpose 
+of the Red Zone meeting is to discuss closeout requirements for the contract and to establish a timeline 
+to get those items completed (see Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 78 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> CLOSEOUT SUBMITTALS for typical closeout requirements). 
+The meeting is a good time for the Contractor to gain approval on format for items such as Operations 
+and Maintenance manuals, the equipment-in-place list, the warranty plan, and any other items. The Initial 
+Red Zone is typically scheduled when project reached 75 percent completion milestone. Provide the meeting 
+agenda for review 24 hours prior to the meeting, take notes during the meeting, and provide electronic 
+copies of the meeting minutes in English within 24 hours of the Red Zone meeting.</lst><brk></brk>
+<lst indent="-0.33">d. Safety and Quality Control Meetings. Safety and quality control meetings shall be held as needed 
+and determined by the Contractor. See Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 35 26<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> GOVERNMENTAL SAFETY REQUIREMENTS and Section 
+<srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 45 00.00 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> USACE QUALITY CONTROL for specific requirements.</lst><brk></brk>
+<lst indent="-0.33">e. Construction Waste Management Meetings. See Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 74 19<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> CONSTRUCTION AND DEMOLITION WASTE MANAGEMENT 
+for requirements.</lst><brk></brk>
+<tai opt="DESIGN-BUILD"><lst indent="-0.33">f. Monthly Design Progress Meetings. A monthly design progress meeting shall be conducted, with the 
+day, time, and location to be determined at the project kickoff meeting. The Contractor's Design team, 
+Interpreter, and Design Quality Control manager shall attend. Representatives from the Government may 
+include, but are not limited to, Client, Project Manager, and POJ Engineering personnel. The Contractor 
+shall be prepared to discuss work completed during the previous week, work currently in progress, and 
+work forecasted for the following week, as well as the status of any design issues and open action items. 
+Provide the meeting agenda for review 24 hours prior to the meeting, take notes during the meeting, and 
+provide electronic copies of the meeting minutes in English within 24 hours of the progress meeting for 
+review.</lst><brk></brk></tai>
+</spt><tai opt="BOOK STYLE CONFORMED SET"><div class="brackets">[<spt><ttl><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Conformed Drawings Submittal<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Contractor shall submit one (1) hard copy Japanese-style folded and bound set of conformed A3 size drawings. 
+Submittal shall be provided to the Resident Office at the Pre-Construction meeting. Conformed drawings are defined 
+as the original advertised drawings with amended drawing sheets replaced in-kind with the corresponding original 
+sheet number. If applicable, add new sheets and remove deleted sheets in accordance with amendment instructions. 
+If multiple amendments are issued, supersede any previously amended drawing so that only the highest numbered 
+amendment drawing is included.</txt> <brk></brk></spt>
+]</div></tai><tai opt="INDOOR AIR QUALITY PLAN"><spt><ttl>CONSTRUCTION <sub><pre class="display_SUB">&lt;SUB&gt;</pre>INDOOR AIR QUALITY (IAQ) MANAGEMENT PLAN<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Submit an IAQ Management Plan within 15 days after Notice to Proceed and not less than 10 days before the preconstruction 
+meeting. The Plan shall include IAQ management practices implemented during construction and preoccupancy phases 
+and describe how each requirement in <rid><pre class="display_RID">&lt;RID&gt;</pre>ANSI/SMACNA 008<pre class="display_RID">&lt;/RID&gt;</pre></rid> <div class="brackets">[and TPC requirements ]</div>will be met, addressed, and managed 
+on the job site. The plan shall cover the following additional items:</txt><brk></brk>
+<lst indent="-0.33">a. Identify the key players and person(s) responsible for implementing the plan.</lst><brk></brk>
+<lst indent="-0.33">b. Specify procedures for protecting stored and installed absorptive materials from moisture damage.</lst><brk></brk>
+<lst indent="-0.33">c. Prohibit the use of tobacco products inside the building and within 7.5 meters (50 feet) of the building 
+entrance at all times during construction. Consider prohibiting smoking on the entire job site. If smoking 
+will be allowed, locate on a site plan the designated locations and signage. Comply with the tobacco 
+use policy of the local jurisdiction.</lst><brk></brk>
+<lst indent="-0.33">d. Indicate whether air handlers will be operated during construction, and specify compliant filtration 
+procedures for permanent equipment that will be used.</lst><brk></brk>
+<lst indent="-0.33">e. Take photographs of each IAQ measure for documentation. Annotate photographs to indicate each IAQ 
+measure depicted and its general location. Provide photographs of the methods employed to protect stored 
+and installed absorptive materials from moisture damage during construction and preoccupancy.</lst><brk></brk>
+<txt>Revise and resubmit the Plan as required by the Contracting Officer. Make copies of the final plan available 
+to all workers on site. Include provisions in the Plan to meet the requirements specified below and to ensure 
+safe, healthy air for construction workers and building occupants.</txt><brk></brk>
+<spt><ttl>Requirements During Construction</ttl><brk></brk>
+<txt>Provide for evaluation of indoor Carbon Dioxide concentrations in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D6245<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide for evaluation 
+of volatile organic compounds (VOCs) in indoor air in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D6345<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Use filters with a Minimum 
+Efficiency Reporting Value (MERV) of 8 in permanently installed air handlers during construction.</txt><brk></brk>
+<spt><ttl>Control Measures</ttl><brk></brk>
+<txt>Meet or exceed the requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>ANSI/SMACNA 008<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Chapter 3, to help minimize contamination of the building 
+from construction activities. The five requirements of this manual which must be adhered to are described below:</txt><brk></brk>
+<lst indent="-0.33">a. HVAC protection: Isolate return side of HVAC system from surrounding environment to prevent construction 
+dust and debris from entering the duct work and spaces.</lst><brk></brk>
+<lst indent="-0.33">b. Source control: Use low emitting paints and other finishes, sealants, adhesives, and other materials 
+as specified. When available, cleaning products must have a low VOC content and be non-toxic to minimize 
+building contamination. Utilize cleaning techniques that minimize dust generation. Cycle equipment 
+off when not needed. Prohibit idling motor vehicles where emissions could be drawn into building. Designate 
+receiving/storage areas for incoming material that minimize IAQ impacts.</lst><brk></brk>
+<lst indent="-0.33">c. Pathway interruption: When pollutants are generated use strategies such as 100 percent outside air 
+ventilation or erection of physical barriers between work and non-work areas to prevent contamination.</lst><brk></brk>
+<lst indent="-0.33">d. Housekeeping: Clean frequently to remove construction dust and debris. Promptly clean up spills. 
+Remove accumulated water and keep work areas dry to discourage the growth of mold and bacteria. Take 
+extra measures when hazardous materials are involved.</lst><brk></brk>
+<lst indent="-0.33">e. Scheduling: Control the sequence of construction to minimize the absorption of VOCs by other building 
+materials.</lst><brk></brk></spt>
+<spt><ttl>Moisture Contamination</ttl><brk></brk>
+<lst indent="-0.33">a. Remove accumulated water and keep work dry.</lst><brk></brk>
+<lst indent="-0.33">b. Use dehumidification to remove moist, humid air from a work area</lst>.<brk></brk>
+<lst indent="-0.33">c. Do not use combustion heaters or generators inside the building.</lst><brk></brk>
+<lst indent="-0.33">d. Protect porous materials from exposure to moisture.</lst><brk></brk>
+<lst indent="-0.33">e. Remove and replace items which remain damp for more than a few hours.</lst><brk></brk></spt>
+</spt><spt><ttl>Requirements after Construction</ttl><brk></brk>
+<txt>After construction ends and prior to occupancy, conduct IAQ testing in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASHRAE 189.1<pre class="display_RID">&lt;/RID&gt;</pre></rid> Section 10.3.1.4.</txt><brk></brk>
+<txt>In the event that IAQ testing fails, conduct a building flush-out in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASHRAE 189.1<pre class="display_RID">&lt;/RID&gt;</pre></rid> Section 10.3.1.3<div class="brackets">[ 
+and TPC requirements]</div>. The space shall be ventilated at a minimum rate of 1.5 Liters per second per square meter 
+of outdoor air while maintaining an internal temperature of at least 15 degrees C (60 degrees F) and no higher 
+than 27 degrees C (80 degrees F) and relative humidity no higher than 60%. Total air volume of outdoor air will 
+be determined by <rid><pre class="display_RID">&lt;RID&gt;</pre>ASHRAE 189.1<pre class="display_RID">&lt;/RID&gt;</pre></rid> Section 10.3.1.4 Equation 10-1. Total volume of outdoor air shall be approved 
+by the Contracting Office prior to building flush-out</txt><brk></brk>
+<txt>Air contamination testing must be consistent with EPA's current Compendium of Methods for the Determination of 
+Air Pollutants in Ambient Air. After building flush-out or testing and prior to occupancy, replace filtration 
+media. Filtration media must have a MERV of 13 as determined by <rid><pre class="display_RID">&lt;RID&gt;</pre>ASHRAE 52.2<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+</spt></tai></spt><spt outline="1.11"><ttl>1.11 PROGRESS AND COMPLETION PHOTOGRAPHS</ttl><brk></brk>
+<txt>Photographically document site conditions prior to start of construction operations. Provide monthly, and within 
+one month of the completion of work, digital photographs, 1600 by 1200 by 24 bit true color 300 DPI minimum resolution 
+in JPEG file format showing the sequence and progress of work. Take a minimum of <div class="brackets">[20]</div> digital photographs each 
+week throughout the entire project<div class="brackets">[ and <div class="brackets">[20]</div> digital photographs at completion of project]</div>. Submit the <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Initial 
+Site Conditions Photos<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>, <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Monthly Progress Photos<pre class="display_SUB">&lt;/SUB&gt;</pre></sub><div class="brackets">[, and <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Construction Completion Photos<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>]</div>. Indicate photographs demonstrating 
+environmental procedures. Provide photographs for each month in a separate monthly directory and name each file 
+to indicate its location on the view location sketch. Include a date designator in file names. Cross reference 
+submittals in the appropriate daily report. Photographs provided are for unrestricted use by the Government.</txt><brk></brk></spt>
+<spt outline="1.12"><ttl>1.12 BASE REGULATIONS</ttl><brk></brk>
+<txt>The Contractor and Subcontractor(s) shall become familiar with and obey all base regulations, including fire, 
+traffic, safety, and security regulations. All Contractors shall keep within the limits of the work (and avenues 
+of ingress and egress), and shall not enter any restricted areas unless required to do so and are cleared for 
+such entry. The Contractor's equipment shall be conspicuously marked for identification.</txt><brk></brk>
+<spt outline="1.12.1"><ttl>1.12.1 Request for Contractor's Employee Passes and Vehicle Passes</ttl><brk></brk>
+<txt>No employee or representative of the Contractor shall be admitted to the work site without a Contracting Officer's 
+furnished authorized admittance. <tai opt="ARMY">Refer to USAG-J <rid><pre class="display_RID">&lt;RID&gt;</pre>Regulation 190-13<pre class="display_RID">&lt;/RID&gt;</pre></rid>. </tai>Prior to the start of on-site work, submit 
+applications for base passes to the Contracting Officer for key employees (project manager, site supervisor, 
+interpreter, etc.) for long term DBIDS passes. The Contractor<tai opt="ARMY"> (through the employment of a Pass Coordinator)</tai>
+, with assistance from the Resident Office, is responsible for securing sufficient passes for other workers, 
+including subcontractor's employees and vehicles, required to access the base for the project duration. Additional 
+personnel data shall also be furnished.</txt><brk></brk>
+<tai opt="ARMY"><brk></brk>
+<txt>The Contractor shall use the USAG-J Form 1529 "EZ Pass" as the primary means of obtaining passes for all personnel 
+who do not qualify for DBIDS passes. The USAG-J Form 1529 "EZ Pass" One Time/Multiple Access Roster must be 
+complete and submitted to the Provost Marshall Pass and Vehicle Registration Office a minimum of three (3) U.S. 
+workdays prior to access. The use of the USAG-J "one day" pass (AJ Form 47) should be avoided, and used only 
+for urgent situations. Applicants for a "one day" pass may be required to wait for several hours for their pass 
+to be issued. Contractor personnel applying for more than one (1) "one-day" pass within any 15-day period will 
+not be issued multiple one-day passes, and will instead be required to apply for access via the USAG-J Form 1529, 
+and wait three or more days for approval.</txt><brk></brk></tai>
+<brk></brk>
+<txt>Provide all information required for background checks to meet base access requirements to be accomplished by 
+Base Provost Marshal Office, Director of Emergency Services or Security Office. Contractor workforce must comply 
+with all personal identity verification requirements as directed by DOD, HQDA and/or local policy. The Government 
+reserves the right to make changes to the Contractor security requirements or processes due to a change in the 
+Force Protection Condition (FPCON).</txt><brk></brk>
+<tai opt="NAVY"><brk></brk>
+<txt>In addition to security requirements, cranes, delivery "unic"<brk></brk>
+trucks, forklifts, backhoes, and other equipment capable of<brk></brk>
+vertical lift operations must comply with NAVFAC rules for access<brk></brk>
+to the base. Refer to <rid><pre class="display_RID">&lt;RID&gt;</pre>NAVFAC P-307<pre class="display_RID">&lt;/RID&gt;</pre></rid>. The operator must submit<brk></brk>
+a P-1 Pass request and submit the equipment, its records, and<brk></brk>
+operator records for inspection by Public Works prior to the<brk></brk>
+initial entry onto base property. Vehicle passes for vertical<brk></brk>
+lift equipment must be renewed monthly with Public Works as long<brk></brk>
+as the equipment remains on base property.</txt><brk></brk></tai>
+<brk></brk>
+<txt>Upon completion of this Contract, return all employee and vehicle passes to the base, and obtain a certification 
+of receipt. Final payment shall be withheld until all passes have been returned.</txt><brk></brk></spt>
+<spt outline="1.12.2"><ttl>1.12.2 No Smoking Policy</ttl><brk></brk>
+<txt>Smoking is prohibited on installations except in designated smoking areas. This applies to existing buildings, 
+buildings under construction, and buildings under renovation. Discarding tobacco materials other than into designated 
+tobacco receptacles is considered littering and is subject to fines. The Contracting Officer shall identify 
+designated smoking areas.</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: MEC and UXO Paragraphs<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+Parapgraph "Munitions and Explosives of Concern (MEC)" applies to all locations EXCEPT KADENA. Paragraph "Unexploded 
+Ordnance (UXO) Procedures on Kadena Air Base" applies to KADENA only. For CAMP FOSTER include the paragraph 
+"Munitions and Explosives of Concern (MEC)" and the paragraph "Additional Requirements for Camp Foster."<brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk></spt>
+<spt outline="1.12.3"><tai opt="AIR FORCE,ARMY,ARMY-OKINAWA,MARINE CORPS IN OKINAWA,NAVY,OKINAWA AO"><ttl>1.12.3 Munitions and Explosives of Concern (MEC)</ttl><brk></brk>
+<txt>Munitions and Explosives of Concern (MEC): Unexploded Ordnance (UXO), Material Presenting a Potential Explosive 
+Hazard (MPPEH), Chemical Agents (CA), or Discarded Military Munitions (DMM) on jobsites shall be treated as extremely 
+dangerous and must be reported immediately. Follow the 3Rs: RECOGNIZE, RETREAT, and REPORT. In the event MEC 
+are discovered or uncovered, immediately stop work in that area and immediately inform the Contracting Officer's 
+Representative. Contractor shall provide dispatch and Contracting Officer's Representative with specific location 
+of the item. Contractor personnel shall stop work in the immediate vicinity of the discovery and maintain a minimum 
+distance of 300 meters from the item. Contractor shall maintain flexibility in redirecting personnel and work 
+effort in the event that items possessing an explosive hazard are discovered and construction personnel are excluded 
+from areas during the destruction/removal process.<brk></brk></txt>
+</tai><brk></brk>
+<tai opt="MARINE CORPS IN OKINAWA"><spt><ttl>Additional Requirements for Camp Foster</ttl><brk></brk>
+<txt>All workers on site involved in the earthwork, in any manner, must attend a UXO brief on Marine Camp Foster. 
+Upon completion of the brief, the worker will receive a laminated card verifying that they attended the brief. 
+The card does not expire and is valid for all USACE construction contracts on Okinawa, but is non-transferrable 
+between workers. The USACE team will help coordinate the training and assist with processing base access requests 
+for Marine Camp Foster as needed. The brief is free of charge, but the contractor is responsible for all other 
+costs associated with transport, labor, and all other costs related to the training. The expected duration of 
+this training is two hours.</txt><brk></brk></spt>
+</tai></spt><tai opt="KADENA AB"><spt><ttl>Unexploded Ordnance (UXO) Procedures on Kadena Air Base</ttl><brk></brk>
+<txt>Kadena Air Base 718 CES/CEN assesses the area as UXO unlikely<brk></brk>
+with a low probability of uncovering UXO's on the site. However, since<brk></brk>
+there is always a possibility of encountering UXOs anywhere on Okinawa,<brk></brk>
+albeit unlikely at this location, excavations and other construction<brk></brk>
+activities related earth work on the project site, require a measure of<brk></brk>
+caution. The Ground Penetrating Radar (GPR) survey specified in <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 35 26<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> paragraph "Utilities Within and Under 
+Concrete, Bituminous Asphalt, and Other Impervious Surfaces" for the identification of underground utilities 
+will identify anomalies. Best practices of conducting GPR surveys are to repeat them in areas greater than the 
+used method's level of detection (LOD), down to a depth of 2 meters, to ensure no utility lines or other suspicious 
+objects are present. If suspected UXOs are identified, the construction team needs to follow the standard UXO 
+notification procedures per the Kadena policies identified in attachment 01 11 00.00 10-<div class="brackets">[B]</div> "UXO Emergency Mitigation 
+Steps and Survey Policies." The contact number for the Emergency Dispatch Center for Kadena Air Base is 098-934-5911. 
+See the following website for additional information: <url>www.kadena.af.mil/About-Us/Emergency-Actions/</url>.</txt><brk></brk></spt>
+</tai></spt><spt outline="1.13"><ttl>1.13 ORDER OF WORK</ttl><brk></brk>
+<spt outline="1.13.1"><ttl>1.13.1 Schedule</ttl><brk></brk>
+<txt>Schedule all work to cause the least amount of interference with activity operations. Permission to interrupt 
+any activity or roads shall be requested in writing a minimum of 30 calendar days prior to the desired date of 
+interruption. Interruptions of activities, roads, and utility services shall be allowed only when they will 
+not cause interference with the operations of the activity. The Contractor shall remove and dispose off Government 
+property all Contractor generated debris at the end of each shift, or more frequently if required, to keep the 
+space usable. Upon award of this Contract, the Contractor shall begin and complete all required work; ready 
+for use and including cleanup, within the time period specified on this Contract. All work scheduled in occupied 
+areas shall be accomplished in such a manner as to cause the least possible inconvenience to the occupants.</txt><brk></brk></spt>
+<spt outline="1.13.2"><ttl>1.13.2 Working Hours</ttl><brk></brk>
+<txt>Normal Working Hours and Days are Monday through Friday, 0800 hours through 1700 hours. Saturday work is allowed 
+on this contract and does not require additional approvals. Notify the Contracting Officer at least three days 
+in advance when scheduling Saturday work.</txt><brk></brk></spt>
+<spt outline="1.13.3"><ttl>1.13.3 Noise and Vibration</ttl><brk></brk>
+<txt>Noise greater than 70 decibels and vibration producing work in occupied buildings shall be conducted outside 
+core school/business hours (0700 - 1430) unless written permission is given by the Contracting Officer.</txt><brk></brk></spt>
+<spt outline="1.13.4"><ttl>1.13.4 Work Outside of Regular Hours</ttl><brk></brk>
+<txt>If the Contractor desires to carry on work outside the regular hours, on Sundays, or holidays, a written application 
+shall be submitted to the Contracting Officer or his representative for approval. The Contractor shall allow 
+three working days notice to enable satisfactory arrangements to be made by the Government for inspecting the 
+work in progress. If work is to be accomplished after daylight hours, the Contractor shall illuminate the area 
+in a manner approved by the Contracting Officer or their representative and in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Unless 
+directed by a Contracting Officer, work accomplished outside regular working hours shall be at no additional 
+cost to the Government.</txt><brk></brk></spt>
+</spt><tai opt="NAVY"><spt><ttl>NUCLEAR DENSOMETER TESTING</ttl><brk></brk>
+<txt>Nuclear densometer testing and all forms of radiography are not permitted on U.S. Navy installations in Japan 
+because such testing may interfere with Government of Japan monitoring activities.</txt><brk></brk></spt>
+</tai><spt outline="1.14"><ttl>1.14 FIRE PREVENTION DURING CONSTRUCTION</ttl><brk></brk>
+<spt outline="1.14.1"><ttl>1.14.1 General</ttl><brk></brk>
+<txt>Comply with all pertinent fire prevention provisions of the US Army Corps of Engineers Manual <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 241<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ and shall follow the Installation fire regulations. Prior to commencement of welding or other hot work operations, 
+obtain approval from the Installation Fire Chief.</txt><brk></brk></spt>
+<spt outline="1.14.2"><ttl>1.14.2 Supply</ttl><brk></brk>
+<txt>No more than one day's supply of paint, paint materials, or compounds shall be allowed within the area of the 
+building, and shall be removed from the job site after each working day. No gasoline or similar low flash point 
+flammable liquid shall be allowed within the building area. After proper coordination with the Facility's Emergency 
+Services (to confirm the maximum allowable quantities and location of storage), storage of additional product 
+may be authorized.</txt><brk></brk></spt>
+<spt outline="1.14.3"><ttl>1.14.3 Fire Extinguishers</ttl><brk></brk>
+<txt>Provide, as a minimum, the number, size, and type of fire extinguishers in accordance with the latest <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 10<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+. The Contractor shall comply with the Installation Fire Chief's policies if they are more stringent than <rid><pre class="display_RID">&lt;RID&gt;</pre>NFPA 10<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+. Fire extinguishers shall remain the property of the Contractor and shall be removed upon completion of the 
+project.</txt><brk></brk></spt>
+<spt outline="1.14.4"><ttl>1.14.4 Housekeeping</ttl><brk></brk>
+<txt>Accumulations of combustible material shall be removed from the building area on a daily basis.</txt><brk></brk></spt>
+<spt outline="1.14.5"><ttl>1.14.5 Handling of Gasoline</ttl><brk></brk>
+<txt>Gasoline shall be stored in industry standard approved safety containers. Adequate ventilation shall be provided 
+to safely dispose of flammable vapors where flammable liquids are utilized. Gasoline powered equipment shall 
+be refueled a minimum 6 meters away from the building area.</txt><brk></brk></spt>
+<spt outline="1.14.6"><ttl>1.14.6 Notification of Fire</ttl><brk></brk>
+<txt>Be familiar with methods for notifying the Installation Fire Department. The Installation's fire poster shall 
+be posted in conspicuous locations and at telephones in construction shacks.</txt><brk></brk></spt>
+</spt><spt outline="1.15"><ttl>1.15 CONTRACTOR FURNISHED MATERIAL AND WORKMANSHIP</ttl><brk></brk>
+<txt>The Contractor shall furnish all materials necessary for performance of the work of this contract unless otherwise 
+specified. Materials procured shall be new and shall meet any specifications and standards listed in these specifications. 
+If no specification for a material needed to perform this contract are stated, the material shall be new, of 
+acceptable industrial grade and quality, equal to or better than the manufacturer's original equipment for equipment 
+being repaired or replaced, and will be compatible with existing materials and systems. All materials provided 
+under this contract shall be free of asbestos, lead in paint, and PCB. The Contracting Officer reserves the 
+right to request submittal of any material being provided under this contract. The Contracting Officer shall 
+make the final determination of the acceptability of any material used on this contract.</txt><brk></brk></spt>
+<spt outline="1.16"><ttl>1.16 CORRESPONDENCE</ttl><brk></brk>
+<txt>All correspondence addressed to the Government shall be made through serialized letters furnished with one original 
+and two copies. Serialized letters shall begin with the number S-0001 and shall be continuous without a break 
+in numbering. Serialized letters shall include the contract title and number, date, subject, and shall be signed 
+by an authorized representative of the Contractor.</txt><brk></brk></spt>
+</prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><txt> (NOT USED)</txt><brk></brk></prt>
+<prt outline="3"><ttl>PART 3 EXECUTION</ttl><txt> (NOT USED)</txt><brk></brk>
+<brk></brk></prt>
+<end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>01 11 30.00 25.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">01 11 30.00 25</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:49</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><hdr><ast><hr/></ast><brk></brk>
+USACE JES<hls>-01 11 30.00 25</hls> (<hls>May 2024</hls>)<brk></brk>
+ ------------------------------------<brk></brk>
+Preparing Activity: USACE<brk></brk>
+<hl4><hl4>JAPAN EDITED SPECIFICATIONS</hl4></hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated <hls>May 2024</hls></hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 01 11 30.00 25</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>DIVING<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>diving</scp>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Remove information and requirements not required in respective project, whether 
+or not brackets are present.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<spt outline="1.1"><ttl>1.1 1.1 GENERAL INFORMATION</ttl><brk></brk>
+<txt>This Section covers the general requirements for Contract diving operations to be performed as specified within 
+this Contract. Diving shall be performed in accordance with the latest edition of the U.S. Army Corps of Engineers 
+Safety and Occupational Health Requirements, <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid> Chapter 30; The U.S. Navy Diving Manuals, <rid><pre class="display_RID">&lt;RID&gt;</pre>NAVSEA 0994-LP001-0910<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ and<rid><pre class="display_RID">&lt;RID&gt;</pre> NAVSEA 0994-LP001-0920<pre class="display_RID">&lt;/RID&gt;</pre></rid>; <rid><pre class="display_RID">&lt;RID&gt;</pre>29 CFR 1910<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Occupational Safety and Health Standards, Subpart T: Commericial Diving 
+Operations; Japan's Ministry of Health, Labour and Welfare's "Ordinance on Safety and Health of Work under High 
+Pressure" (JISHA <rid><pre class="display_RID">&lt;RID&gt;</pre>ORDINANCE NO. 171<pre class="display_RID">&lt;/RID&gt;</pre></rid>) standard, and <rid><pre class="display_RID">&lt;RID&gt;</pre>ADCI <pre class="display_RID">&lt;/RID&gt;</pre></rid>International Consensus Standards inclusive of all other 
+references listed therein. All diving operations shall be considered incidental to the work specified elsewhere 
+herein. No separate payment for diving work will be made.</txt><brk></brk></spt>
+<spt outline="1.2"><ttl>1.2 1.2 REFERENCES</ttl><brk></brk>
+<txt>The latest editions of the publications listed below form a part of this specification to the extent referenced. 
+The publications are referred to in the text by basic designation only. </txt><brk></brk>
+<ref><org>ASSOCIATION OF DIVING CONTRACTORS INTERNATIONAL (ADCI)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ADCI<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2020) International Consensus Standards For 
+Commercial Diving And Underwater Operations, 
+6.4<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>AMERICAN WELDING SOCIETY (AWS)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2020; Errata 1 2021) Structural Welding Code 
+- Steel<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D3.6M<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017) Underwater Welding Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>U.S. ARMY CORPS OF ENGINEERS (USACE)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre><del><pre class="display_DEL">&lt;DEL&gt;</pre>(2024) Safety -- Safety and Health Requirements 
+Manual<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre> Safety -- Safety and Health Requirements 
+Manual<pre class="display_ADD">&lt;/ADD&gt;</pre></add><pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ER 385-1-86<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2021) Safety, U.S. Army Corps of Engineers 
+Dive Program<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>29 CFR 1910<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>Occupational Safety and Health Standards<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>U.S. NAVAL SEA SYSTEMS COMMAND (NAVSEA)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NAVSEA 0994-LP001-0910<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) U.S. Navy Diving Manual, REV 7<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>NAVSEA 0994-LP001-0920<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) U.S. Navy Diving Manual, REV 7<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>MINISTRY OF HEALTH, LABOUR AND WELFARE, GOVERNMENT OF JAPAN (MHLW)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ORDINANCE NO. 171<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2001) Ordinance on Safety and Health of Work 
+under High Pressure<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.3"><ttl>1.3 1.3 SUBMITTALS</ttl><brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are for information only. When used, a designation following the "G" designation identifies the office that will 
+review the submittal for the Government.</txt><brk></brk>
+<txt>The following shall be submitted in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES and <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 35 26<pre class="display_SRF">&lt;/SRF&gt;</pre></srf>, GOVERNMENTAL 
+SAFETY REQUIREMENTS.</txt><brk></brk>
+<txt>Submit the following preconstruction submittal items no later than 30 calendar days after Notice to Proceed:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-01 Preconstruction Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Dive Operations Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Dive Personnel Qualifications<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Dive Submittal Review Checklist<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Addendums To The Dive Operations Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-06 Test Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Underwater Quality Control (UWQC) Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-07 Certificates<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Equipment Certifications<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-11 Closeout Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Dive Logs<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></spt>
+<spt outline="1.4"><ttl>1.4 1.4 PRE-QUALIFIED DIVE COMPANIES AND DIVE TEAM PERSONNEL</ttl><brk></brk>
+<spt outline="1.4.1"><ttl>1.4.1 1.4.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Dive Personnel Qualifications<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<lst indent="-0.33">a. Qualifications, and training certificates of dive personnel.<brk></brk>
+"Annual" diver physicals shall conform to the requirements of <brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid> &amp; JISHA <rid><pre class="display_RID">&lt;RID&gt;</pre>ORDINANCE NO. 171<pre class="display_RID">&lt;/RID&gt;</pre></rid>.<brk></brk></lst>
+<brk></brk>
+<lst indent="-0.33">b. Contractor shall submit only a statement from a licensed physician (DMO or MD) with experience with 
+dive physiology that states the diver is "Fit to Dive". "Fit to Dive" certificates will not be accepted 
+with signatures from Occupational Health Nurses. Physicians' assistants are acceptable if currently licensed 
+specialty in Dive / Hyperbaric Medicine.</lst><brk></brk>
+<lst indent="-0.33">c. Submitted physician statement shall contain at a minimum the diver's name, examination date, physician's 
+name, physician's signature, physicians' medical license number, and physicians telephone number. To 
+include legible contact information and stamp.</lst><brk></brk>
+<lst indent="-0.33">d. The signing physician shall be an MD, DMO, or an OD. Submitted statement shall NOT contain divers 
+Personal Health Information (PHI) or Personal Identification Information (PII). To meet JISHA <rid><pre class="display_RID">&lt;RID&gt;</pre>ORDINANCE NO. 171<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ requirements, the divers Fit to Dive/ Physicals should be considered a living document and the contractor 
+shall update the divers Physicals / fit to dive statements per JISHA <rid><pre class="display_RID">&lt;RID&gt;</pre>ORDINANCE NO. 171<pre class="display_RID">&lt;/RID&gt;</pre></rid> requirements and 
+frequency.</lst><brk></brk>
+<lst indent="-0.33">e. First Aid (FA), Cardiopulmonary Resuscitation (CPR) &amp; Emergency Oxygen System (EO2) training 
+shall be in accordance with the JISHA <rid><pre class="display_RID">&lt;RID&gt;</pre>ORDINANCE NO. 171<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Chapter 30-3.D and all applicable OSHA regulations.</lst><brk></brk>
+<lst indent="-0.33">f. FA, CPR &amp; EO2 training are required to be Hands-on training. Online training will "NOT" be accepted.</lst><brk></brk>
+<lst indent="-0.33">g. Proof of Hands-on training shall be provided within this submittal.</lst><brk></brk>
+<lst indent="-0.33">h. All certifications shall be maintained &amp; submitted as required for the life cycle of the project.</lst><brk></brk></spt>
+<spt outline="1.4.2"><ttl>1.4.2 1.4.2 Pre-Dive Conference</ttl><brk></brk>
+<lst indent="-0.33">a. A Pre-Dive Conference shall be held prior to commencement of any diving operations and will be attended 
+by the following Personnel prior to commencement of operations.</lst><brk></brk>
+<itm indent="-0.33">1. Contractor Dive Supervisor</itm><brk></brk>
+<itm indent="-0.33">2. Designated Diving Coordinator &amp; Government Safety Representative</itm><brk></brk>
+<itm indent="-0.33">3. Contracting Officers Representative (having authority on contract</itm><brk></brk>
+<itm indent="-0.33">4. Contractor SSHO</itm><brk></brk>
+<itm indent="-0.33">5. Contractor individual with sufficient authority to speak and make agreements on the Contractors 
+behalf </itm><brk></brk>
+<lst indent="-0.33">b. Additional requirement prior to commencement of operations.</lst><brk></brk>
+<itm indent="-0.33">1. Designated Dive Coordinator (DDC) / Dive Safety Inspector (DSI) inspection of gear to be 
+used and location of operations.</itm><brk></brk>
+<itm indent="-0.33">2. Successful performance of an Unresponsive Diver Drill. This shall be required annually and 
+performed with change of Dive Supervisor, replacement of more than 50% of dive personnel, or 
+as requested by the District Dive Coordinator for cause.</itm><brk></brk></spt>
+</spt><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Specifications Writer to coordinate with and obtain direction/guidance 
+from the assigned Designated Diving Coordinator (DDC) on tailoring the bracketed 
+options in Subpart 1.5 DIVING ENVIRONMENT.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<spt outline="1.5"><ttl>1.5 1.5 DIVING ENVIRONMENT</ttl><brk></brk>
+<txt>Each diving Contract must contain the following environmental and work-area information:</txt><brk></brk>
+<lst indent="-0.33">a. The estimated maximum working depth for demolition and repair work is approximately <div class="brackets">[X]</div> (MSW) meters 
+below water surface.</lst><brk></brk>
+<lst indent="-0.33">b. The estimated maximum depth (distance from water surface to bottom) the diver(s) will be exposed 
+to is approximately <div class="brackets">[X]</div> (MSW) meters below water surface.</lst><brk></brk>
+<lst indent="-0.33">c. Turbidity during normal working conditions may limit visibility to <div class="brackets">[X]</div> CM or less.</lst><brk></brk>
+<lst indent="-0.33">d. The current water velocity through the work area is estimated to be approximately <div class="brackets">[X]</div> knots, weather 
+dependent.</lst><brk></brk>
+<lst indent="-0.33">e. Water temperature(s) are estimated to vary between <div class="brackets">[X]</div> and <div class="brackets">[XX]</div> degrees Celsius.</lst><brk></brk>
+<lst indent="-0.33">f. Underwater operations <div class="brackets">[<div class="brackets">[XXX]</div> will not]</div><div class="brackets">[will <div class="brackets">[XXX]</div>]</div> require diver(s) to perform work within confined 
+spaces and/or enclosed areas or areas with overhead obstruction. If this type of work is to be performed, 
+all requirements most recent version of <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Chapter 30 shall apply.</lst><brk></brk>
+<lst indent="-0.33">g. The overall work site is a restricted access area and shall be delineated by turbidity curtains and 
+marker buoys.</lst><brk></brk>
+<lst indent="-0.33">h. Work to be performed is on an active (Military or Civilian) <div class="brackets">[briefly specify the site that the work 
+is to be performed on ie: fuel pier, etc.]</div> whose primary function is <div class="brackets">[provide brief explanation of the 
+site's function]</div>.</lst><brk></brk>
+<lst indent="-0.33">i. The contractor shall at no time cause delay to any existing marine operations unless properly scheduled 
+in advance with the Authority having Jurisdiction (AHJ).<brk></brk>
+Any delays incurred by the contractor to scheduled marine operations shall be burdened by the contractor 
+and will represent no additional cost to the government.</lst><brk></brk>
+<lst indent="-0.33">j. At no time will divers be deployed while vessels are operating in AOR unless predetermined zones 
+have been established and approved.</lst><brk></brk>
+<lst indent="-0.33">k. Divers shall not work under suspended or unsecured loads. Loads bearing structure require associated 
+engineering assessments to be performed by a Registered Professional Engineer (of appropriate Discipline) 
+as required by the contracting officer's representative and shall be performed at no additional cost 
+of the government.</lst><brk></brk>
+<txt>Contractor shall take the above into account while scheduling work.</txt><brk></brk></spt>
+<spt outline="1.6"><ttl>1.6 1.6 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>DIVE OPERATIONS PLAN<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>, SCHEDULE, AND CHECKLIST</ttl><brk></brk>
+<txt>No later than 30 working days prior to the first planned diving operation, the Dive Plan and Schedule shall be 
+submitted to coordinate work schedules at the Project and other concurrent work.</txt><brk></brk>
+<txt>The Dive Plan and Schedule shall detail dive locations and shall be flexible enough to accommodate any conflicts 
+with Marine operations. Personnel and <sub><pre class="display_SUB">&lt;SUB&gt;</pre>equipment certifications<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> shall be included in the plan.</txt><brk></brk>
+<txt>A site-specific Emergency Management Plan shall be included in the Dive Plan in accordance with all applicable references.<brk></brk>
+A job specific Activity Hazard Analysis (AHA) shall be prepared in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ER 385-1-86<pre class="display_RID">&lt;/RID&gt;</pre></rid> and <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+, Chapter 30, Diving Operations, and shall be included in the Dive Plan.</txt><brk></brk>
+<txt>In addition to the Dive Plan and Schedule, the <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Dive Submittal Review Checklist<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> (Attachment 01 11 30.00 25-A) 
+shall be completed and submitted for review and approval by the DDC.</txt><brk></brk>
+<txt>Adjustments shall be coordinated and approved by the Contracting Officer's Representative (COR). Dive locations 
+and schedules shall be submitted in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf>, SUBMITTAL PROCEDURES, for approval.</txt><brk></brk>
+<txt>In the event of any <sub><pre class="display_SUB">&lt;SUB&gt;</pre>addendums to the Dive Operations Plan<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> are required, the Contractor must obtain DDC approval 
+as per <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Should the Contractor fail to acquire approval for the addnedums, the DDC is authorized to 
+stop any and all on going diving operations.</txt><brk></brk></spt>
+<spt outline="1.7"><ttl>1.7 1.7 RESOLUTION OF CONFLICT</ttl><brk></brk>
+<txt><rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>, <rid><pre class="display_RID">&lt;RID&gt;</pre>ER 385-1-86<pre class="display_RID">&lt;/RID&gt;</pre></rid>, as applied by the USACE Japan Engineer District, through the DDC. Supplemental waivers 
+or applicable Memorandum of Agreement (MOA) shall be the controlling authority(s) for implementation of all Contract 
+diving policy.<brk></brk>
+All Resolution requiring full waivers of any regulation requirement shall be done in accordance with (IAW) <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ (latest version) &amp; <rid><pre class="display_RID">&lt;RID&gt;</pre>ER 385-1-86<pre class="display_RID">&lt;/RID&gt;</pre></rid>. All requests will be submitted officially and require District DDC concurrence.<brk></brk></txt>
+<brk></brk></spt>
+</prt><prt outline="2"><ttl>PART 2 PRODUCTS - NOT USED</ttl><brk></brk></prt>
+<prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 3.1 DIVE TEAM COMPOSITION AND DIVE EQUIPMENT</ttl><brk></brk>
+<txt>Surface supplied air (SSA) is the only approved form of diving authorized for execution of work unless otherwise 
+noted.</txt><brk></brk>
+<lst indent="-0.33">a. Minimum dive team staffing shall, unless a waiver is approved by the Authority Having Jurisdiction 
+(AHJ) HQUSACE, Honolulu District Safety Office, via District DDC, be comprised of personnel levels as 
+required by <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>:</lst><brk></brk>
+<itm indent="-0.33">1. A single diver requires a 5-man crew as defined in this reference and for two in-water working 
+divers, a 6-man crew shall be required, which includes the addition of one stand-by diver and 
+one tender.</itm><brk></brk>
+<itm indent="-0.33">2. For depths exceeding 100 ft. a 6-man crew is required AND hyperbaric chamber meeting requirements 
+listed in this specification is available onsite.</itm><brk></brk>
+<lst indent="-0.33">b. Any use of breathing gas with oxygen content more than 21 percent is considered mixed gas diving. 
+Mixed gas diving is not authorized on this contract unless specifically approved per the requirements 
+of <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>. </lst><brk></brk>
+<lst indent="-0.33">c. Surface-supplied air diving equipment with 2-way voice communication shall be used by divers and 
+standby divers.</lst><brk></brk>
+<lst indent="-0.33">d. An independent reserve air system (30CU bailout bottle at minimum) for all divers is required as 
+specified by <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</lst><brk></brk>
+<lst indent="-0.33">e. As a minimum, all diver surface air supply compressors, tanks, helmets, and other related equipment 
+must comply with the requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</lst><brk></brk>
+<lst indent="-0.33">f. All dive team members must meet the requirements as listed in <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>, Chapter 30-3.b through 
+3 and 30-8.a (10), <rid><pre class="display_RID">&lt;RID&gt;</pre>ER 385-1-86<pre class="display_RID">&lt;/RID&gt;</pre></rid>, and JISHA <rid><pre class="display_RID">&lt;RID&gt;</pre>ORDINANCE NO. 171<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</lst><brk></brk>
+<lst indent="-0.33">g. Self-Contained Underwater Breathing Apparatus (SCUBA) Diving is not authorized on this contract with 
+the exception of UNDERWATER QUALITY CONTROL (UWQC) TESTING or QA testing and inspection is authorized 
+at Government discretion with DDC concurrence.</lst><brk></brk>
+<lst indent="-0.33">h. Use of SCUBA, tethered or otherwise requires approval from DDC prior to commencement of testing / 
+Inspection AND shall not relieve UWQC or QA activities of 2-way voice communication requirement to be 
+used by divers and standby divers. An independent reserve air system (30CU bailout bottle at minimum) 
+is required to perform UWQC / QA operations.</lst><brk></brk>
+<lst indent="-0.33">i. All necessary top-side equipment such as cranes, trucks, personnel vehicles, access to a hyperbaric 
+chamber (if required) per applicable regulation, and appropriately powered underwater hand/power tools 
+shall be furnished by the Contractor to enable accomplishment of all required dive work.</lst><brk></brk>
+<lst indent="-0.33">j. If a crane is used, a certified crane operator shall not be included as a dive-team member. The operator 
+shall be exclusively dedicated to crane operation and shall have direct communication with the diving 
+supervisor (DS).</lst><brk></brk></spt>
+<spt outline="3.2"><ttl>3.2 3.2 CONTRACTOR-FURNISHED DIVING SUPPORT EQUIPMENT </ttl><brk></brk>
+<txt>There is no government furnished diving support equipment used on this contract.</txt><brk></brk></spt>
+<spt outline="3.3"><ttl>3.3 3.3 CONTRACTOR-PROVIDED SPECIAL UNDERWATER EQUIPMENT </ttl><brk></brk>
+<txt>The Contractor is expected to furnish all appropriate tools, equipment, and materials needed to accomplish the 
+tasks as stated in paragraph DIVING WORK DESCRIPTION and the specifications of this contract.</txt><brk></brk></spt>
+<spt outline="3.4"><ttl>3.4 3.4 SAFE CLEARANCE PROCEDURES</ttl><brk></brk>
+<lst indent="-0.33">a. A safe clearance Lock-out/Tag-out system is to be used by dive personnel to ensure continuity of 
+service and safety to personnel and equipment. Any work performed which requires taking Project operating 
+equipment out of service shall be done only after formal clearance is obtained through the Government 
+DDC, DSI, Government Quality Assurance Representative (GQAR), or supervisory / controlling authority 
+of water way operational area.</lst><brk></brk>
+<lst indent="-0.33">b. The Contractor will furnish a checklist of clearance lock-out/tag-out items implemented for each 
+clearance action and the Contractor dive supervisor shall accompany Government personnel during the verification 
+of the lock-out/tag-out process.</lst><brk></brk>
+<lst indent="-0.33">c. The Contractor dive supervisor Shall keep one of the following personnel always informed of all diving 
+activity underway; DDC, DSI, GQAR, Harbor Master (or designee), or supervisory / controlling authority 
+of water way operational area.</lst><brk></brk>
+<lst indent="-0.33">d. In, on, or around project site areas where differential Pressures (DIF-P) or Hazardous energy exist 
+or are of concern, Contractor personnel who violate Clearances or procedures, will be cause to immediately 
+and permanently ban the person(s) from the project site at the discretion of the District DDC to include 
+concurrence from the Contracting Officers Representative.</lst><brk></brk></spt>
+<spt outline="3.5"><ttl>3.5 3.5 BOAT RESTRICTED ZONE (BRZ)</ttl><brk></brk>
+<spt outline="3.5.1"><ttl>3.5.1 3.5.1 General</ttl><brk></brk>
+<txt>Each USACE Japan Engineer District Project requires compliance with any site-specific Boat Restricted Zone (BRZ) 
+Policy, where any work on or over water near structures with active vessel operations will be planned and coordinated 
+with local Marine Operations personnel and the COR or representative before approaching the worksite. </txt><brk></brk></spt>
+<spt outline="3.5.2"><ttl>3.5.2 3.5.2 Permission</ttl><brk></brk>
+<txt>The Contractor shall be informed of pending marine vessel schedules that would impact diving operations, in advance 
+of the anticipated work interruption date(s). Coordination with Marine Operations and the Contractor shall include 
+the COR or their representative at minimum. </txt><brk></brk></spt>
+<spt outline="3.5.3"><ttl>3.5.3 3.5.3 Safety Requirements &amp; Restrictions</ttl><brk></brk>
+<lst indent="-0.33">a. Untethered Scuba, Mixed Gas Diving, and Scientific Snorkeling are not authorized methodology for 
+use on this contract unless otherwise noted.</lst><brk></brk>
+<lst indent="-0.33">b. Confined space diving is not authorized on this contract unless otherwise noted.</lst><brk></brk>
+<lst indent="-0.33">c. Turbidity curtain installation if applicable, movement, and maintenance is required to be accomplished 
+by divers unless otherwise prescribed in this contract specification.</lst><brk></brk>
+<lst indent="-0.33">d. Divers shall not work under loads, suspended or otherwise unsecured load at any time. Loads bearing 
+structure require associated engineering be performed by a Registered Professional Engineer (of appropriate 
+Discipline) as required by the contracting officer's representative and shall be performed at no additional 
+cost of the government.</lst><brk></brk>
+<lst indent="-0.33">e. Dive supervisor is not authorized to dive unless an accepted alternate supervisor possesses the same 
+certifications at a supervisory level.</lst><brk></brk>
+<lst indent="-0.33">f. All Dive Supervisors shall meet the minimum requirements for Dive Supervisor as listed in all applicable 
+reference in this specification.</lst><brk></brk>
+<lst indent="-0.33">g. Underwater Structural welders will not be accepted for welding work without meeting the requirements <rid><pre class="display_RID">&lt;RID&gt;</pre>
+AWS D1.1/D1.1M<pre class="display_RID">&lt;/RID&gt;</pre></rid> &amp; <rid><pre class="display_RID">&lt;RID&gt;</pre>AWS D3.6M<pre class="display_RID">&lt;/RID&gt;</pre></rid>, or Host Country governing regulations pertaining to welding certifications. </lst><brk></brk>
+<lst indent="-0.33"> Divers submitting welding qualifications meeting the intent of the AWS requirements, however and 
+were trained and working as an underwater welder prior to the acceptance of the AWS standards will be 
+considered on a case-by-case basis for Supplemental waivers by the District DDC and the contracting officer's 
+representative (U.S. diving contractors only). </lst><brk></brk>
+<lst indent="-0.33">h. Arrange with local authorities for emergency dive medical response, treatment and evacuation to medical 
+facility and nearest hyperbaric chamber. Provide map with route directions to nearest hospital and hyperbaric 
+chamber in dive plan Emergency Management Plan required by <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</lst><brk></brk></spt>
+<spt outline="3.5.4"><ttl>3.5.4 3.5.4 Safety items required prior to entry into the BRZ</ttl><brk></brk>
+<lst indent="-0.33">a. The requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid> &amp; <rid><pre class="display_RID">&lt;RID&gt;</pre>ER 385-1-86<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</lst><brk></brk>
+<lst indent="-0.33">b. As a minimum, each vessel including floating plants used for dive operations, must meet JISHA <rid><pre class="display_RID">&lt;RID&gt;</pre>ORDINANCE NO. 171<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+ / Japan Coast Guard, or for military projects on base, governing agency's safety standards for day and 
+night vessel operation. Included but not limited to; fire extinguishing capability, personal safety devices, 
+running and anchor lights, propellar guards (where required) and an audible warning device capable of 
+being heard anywhere within the BRZ.</lst><brk></brk>
+<lst indent="-0.33">c. A marine band radio capable of communication with Marine Operations on channel <div class="brackets">[XX]</div> must be available 
+to the boat operator. Failure to maintain communication with the Harbor Master (or AHJ) anytime vessels 
+are operating within the BRZ is cause for removal from the BRZ until deficiencies are rectified.</lst><brk></brk>
+<lst indent="-0.33">d. The dive boat operator shall always remain at the boat controls during dive operations and have no 
+other duties while inside the BRZ.</lst><brk></brk>
+<lst indent="-0.33">e. The vessel used for primary diving operations shall only be used for the diving operations. A second 
+boat shall be provided specifically for rescue per the requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</lst><brk></brk>
+<lst indent="-0.33">f. A rescue line shall be available in a throw bag. The rescue line length shall be of sufficient length 
+to reach personnel which have gone overboard. A minimum length of 75 feet / 23 meters is recommended. 
+Rescue Line which is constructed of a buoyant material is recommended.</lst><brk></brk>
+<lst indent="-0.33">g. A spotlight which can be easily operated by the boat operator must be available when performing nighttime 
+operations.</lst><brk></brk>
+<lst indent="-0.33">h. A second boat of sufficient size, capable of safely removing "ALL" personnel from the work zone, 
+must be dedicated and shall be of sufficient size to carry a stokes litter and backboard along with boat 
+operator and any personnel rendering aid during rescue.</lst><brk></brk>
+<lst indent="-0.33">i. Both boats must remain in radio contact with each other. The rescue boat is not to perform any work. 
+It is to be manned by a boat operator and at least one rescue individual. <brk></brk>
+Dive station personnel may be used during emergencies for this purpose. Procedures shall be clearly listed 
+in Contractor's emergency management plan. Active working boats shall not be used for rescue (<rid><pre class="display_RID">&lt;RID&gt;</pre>EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+)</lst><brk></brk>
+<lst indent="-0.33">j. Both boats must be powered by engines capable of motoring upstream at twice the speed of the quickest 
+flow that will be encountered inside the BRZ while fully loaded and operational.</lst><brk></brk>
+<lst indent="-0.33">k. Each boat must have two motors and be of sufficient size to safely remove "ALL" personnel from the 
+work zone.</lst><brk></brk>
+<lst indent="-0.33">l. Each boat shall have an adequately sized tow line capable of towing a disabled boat to safety.</lst><brk></brk>
+<lst indent="-0.33">m. Contractor shall provide means of identification (flags) for all vessels that are granted permission 
+to enter the BRZ. These flags shall be always displayed clearly and prominently the boat is in the BRZ. 
+If diving, a one (1)-meter square Code Alpha Flag as well as a "Diver Down" flag must be flown a minimum 
+of five feet above the vessel's highest point.</lst><brk></brk>
+<lst indent="-0.33">n. All boat operators must present their credentials prior to initiation of work. This will include 
+all licenses, certifications and resume of appropriate experience. Each operator must be approved by 
+the Contracting Officer (or their representative) prior to beginning work.</lst><brk></brk></spt>
+</spt><spt outline="3.6"><ttl>3.6 3.6 DIVING WORK OPERATIONS</ttl><brk></brk>
+<txt>Description of the various diving tasks to be accomplished is as follows:</txt><brk></brk>
+<lst indent="-0.33">a. Execute dives in accordance with approved Dive Operations Plan submittal.</lst><brk></brk>
+<lst indent="-0.33">b. Contractor shall submit completed daily <sub><pre class="display_SUB">&lt;SUB&gt;</pre>dive logs<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> at the end of each dive day. Daily dive logs shall 
+be submitted with the daily quality control report and provided to the District Dive Coordinator or authorized 
+representative upon request. Contractor shall use COE form ENG 4615 or accepted equivalent (must contain 
+same information) to record daily diving activities. The ENG form can be found in the USACE publication 
+website. (<url href="https://www.publications.usace.army.mil">https://www.publications.usace.army.mil/</url>)<brk></brk></lst>
+<brk></brk>
+<lst indent="-0.33">c. Site specific dive plan shall be approved prior to commencement of underwater construction. </lst><brk></brk>
+<lst indent="-0.33">d. All debris, cuttings, chips, spalls created during the construction process, and any items placed 
+in the water that do not become a permanent part of the repaired structures shall be recovered and disposed 
+of at the Contractor expense.</lst><brk></brk></spt>
+<spt outline="3.7"><ttl>3.7 3.7 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>UNDERWATER QUALITY CONTROL (UWQC) REPORTS<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<lst indent="-0.33">a. Contractor is required to provide photographic, or video documentation of all underwater work as 
+required by contract for acceptance by the Contracting Officers Representative.</lst><brk></brk>
+<lst indent="-0.33">b. If third party UWQC is required and is not being performed by the Contractor's diving subcontractor, 
+the Contractor must provide an UWQC Team at the work site to perform underwater surveillance and inspection 
+for the Government of contracted repairs. The UWQC Team divers must have current commercial diver's credentials, 
+with a minimum of five (5) years' experience with underwater inspection.</lst><brk></brk>
+<lst indent="-0.33">c. The personnel makeup of the UWQC team must comply with all the applicable safety requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>
+EM 385-1-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>, OSHA and local requirements for Contract diving operations.</lst><brk></brk>
+<lst indent="-0.33">d. The UWQC lead diver must be thoroughly familiar with the design plans and specifications to sufficiently 
+understand the engineering aspects of the underwater construction and to be able to recognize and document 
+potential problem areas such as improperly constructed or defective areas.</lst><brk></brk>
+<lst indent="-0.33">e. Provide all necessary equipment to conduct surveillance and inspection services, including but not 
+limited to diver's equipment, dive boat, communication equipment, and photographic/video equipment.</lst><brk></brk></spt>
+</prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

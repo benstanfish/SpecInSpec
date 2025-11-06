@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>12 21 00.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">12 21 00</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:57</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><brk></brk>
+<hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-12 21 00 (August 2017)<brk></brk>
+ Change 2 - 11/18<brk></brk>
+ ---------------------------<brk></brk>
+Preparing Activity: <pra>USACE</pra> Superseding<brk></brk>
+ UFGS-12 21 00 (August 2010)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated April 2019</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 12 21 00</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>WINDOW BLINDS<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>08/17</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification has been edited to cover the minimum requirements and include Japanese products, 
+where feasible, for a standard Japan Engineer District project. The Designer of Record (DOR) shall tailor as 
+applicable to meet project specific requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>window blinds and hardware.</scp><brk></brk>
+Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections. Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text. For bracketed items, choose applicable item(s) or insert 
+appropriate information.<brk></brk>
+Remove information and requirements not required in respective project, whether or not brackets are present.<brk></brk>
+Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>12 22 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> for CURTAINS AND DRAPES. Use Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>12 24 13<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> for ROLLER WINDOW SHADES.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="1.1"><ttl>1.1 SUMMARY</ttl><brk></brk>
+<txt>Provide window treatment, complete with necessary brackets, fittings, and hardware. Provide each window treatment type as a complete unit in accordance 
+with paragraph WINDOW TREATMENT PLACEMENT SCHEDULE. <tst>Mount and operate equipment in accordance with manufacturer's instructions.</tst> Completely cover 
+windows to receive a treatment.</txt><brk></brk></spt>
+<spt outline="1.2"><ttl>1.2 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of the guide specification. The publications 
+are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
+date, and title.<brk></brk>
+Use the Reference Wizard's Check Reference feature when you add a RID outside of the Section's Reference Article 
+to automatically place the reference in the Reference Article. Also use the Reference Wizard's Check Reference 
+feature to update the issue dates.<brk></brk>
+References not used in the text will automatically be deleted from this section of the project specification when 
+you choose to reconcile references in the publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are referred to in the text by basic 
+designation only.</txt><brk></brk>
+<ref><del><pre class="display_DEL">&lt;DEL&gt;</pre><org>JAPANESE INDUSTRIAL STANDARDS (JIS)</org><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><org>JAPANESE STANDARDS ASSOCIATION (JSA)</org><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1901<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Determination of the Emission of Volatile Organic Compounds and Aldehydes 
+by Building Products - Small Chamber Test Method<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.3"><ttl>1.3 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review submittal description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project.<brk></brk>
+The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G." Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System. Only add a “G” to an item, if the submittal is sufficiently important or complex in context 
+of the project.<brk></brk>
+For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
+tags may be used following the "G" designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" for District Office (Engineering 
+Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
+for Project Office. Codes following the "G" typically are not used for Navy, Air Force, and NASA projects.<brk></brk>
+The "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook to 
+fulfill federally mandated sustainable requirements in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Locate the "S" submittal under the SD number that best describes the submittal item.<brk></brk>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose the second bracketed item for 
+Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are for <div class="brackets">[Contractor Quality Control 
+approval.]</div><div class="brackets">[information only. When used, a designation following the "G" designation identifies the office that will review the submittal for the 
+Government.]</div> Submittals with an "S" are for inclusion in the Sustainability eNotebook, in conformance to Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-02 Shop Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Installation<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-10 Operation and Maintenance Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Window Blinds<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></spt>
+<div class="brackets">[<spt outline="1.4"><ttl>1.4 CERTIFICATIONS</ttl><brk></brk>
+<spt outline="1.4.1"><ttl>1.4.1 Window Blinds</ttl><brk></brk>
+<txt>Provide products certified to meet indoor air quality requirements by <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1901<pre class="display_RID">&lt;/RID&gt;</pre></rid> or provide certification or validation by other third-party program 
+that products meet the requirements of this Section. Provide current product certification documentation from certification body. When product 
+does not have certification, provide validation that product meets the indoor air quality product requirements cited herein.</txt><brk></brk></spt>
+</spt>]</div><spt outline="1.5"><ttl>1.5 DELIVERY, STORAGE, AND HANDLING</ttl><brk></brk>
+<txt>Deliver components to the jobsite in the manufacturer's original packaging with the brand or company name, item identification, and project reference 
+clearly marked. Store components in a dry location that is adequately ventilated and free from dust, water, or other contaminants and has easy 
+access for inspection and handling. Store materials flat in a clean dry area with temperature maintained above<met><pre class="display_MET">&lt;MET&gt;</pre> 1 0 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 50 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Do 
+not open containers until needed for installation unless verification inspection is required.</txt><brk></brk></spt>
+<spt outline="1.6"><ttl>1.6 WARRANTY</ttl><brk></brk>
+<txt>Provide manufacturer's standard performance guarantees or warranties that extend beyond a 1 year period.</txt><brk></brk></spt>
+</prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Coordinate with the drapery hardware specified for the project.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="2.1"><ttl>2.1 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>WINDOW BLINDS<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Provide each blind, including hardware, accessory items, mounting brackets and fastenings, as a complete unit produced by one manufacturer. Unless 
+otherwise indicated, all parts will be the same color and will match the color of the blind slat. Treat steel features for corrosion resistance. 
+Submit product data and samples of each type and color of window treatment. Provide <div class="brackets">[slat]</div><div class="brackets">[louver]</div> samples<met><pre class="display_MET">&lt;MET&gt;</pre> 150 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> in length for each color.<div class="brackets">[ 
+Window blinds must meet emissions requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1901<pre class="display_RID">&lt;/RID&gt;</pre></rid> (use the office or classroom requirement, regardless of space type). Provide certification 
+or validation of indoor air quality for window blinds.]</div></txt><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use materials with recycled content where appropriate for use. Verify suitability, availability within 
+the region, cost effectiveness and adequate competition (including verification of bracketed percentages included 
+in this guide specification) before specifying product recycled content requirements. <brk></brk>
+Research shows the product is available among US national manufacturers above the minimum recycled content of 
+the first bracket. Some manufacturers and regions have higher percentages. If desired, insert higher percentages 
+into the second set of brackets.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="2.1.1"><ttl>2.1.1 Horizontal Blinds</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Typically horizontal blinds are fabricated to fill the openings from head-to-sill and jamb-to-jamb with 
+inside mounted brackets. A clearance of<met><pre class="display_MET">&lt;MET&gt;</pre> 6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> should be allowed at each jamb. This typical mounting 
+procedure may not be appropriate under certain conditions for<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> slats and for windows in special frames, 
+sliding glass doors, or windows in doors. Check specifications of glass manufacturer for recommended clearances 
+when detailing the mounting<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide horizontal blinds with<div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div><div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> slats. Blind units must be capable of nominally 180 degree partial tilting operation 
+and full-height raising. Blinds must be <div class="brackets">[inside]</div><div class="brackets">[outside]</div> mount. Provide tapes for<met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> slats with longitudinal reinforced vinyl plastic 
+in 1-piece turn ladder construction. Tapes for <met><pre class="display_MET">&lt;MET&gt;</pre>25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> slats must be braided polyester or nylon.</txt><brk></brk>
+<spt outline="2.1.1.1"><ttl>2.1.1.1 Head Channel and Slats</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> venetian blinds, aluminum slats should be specified, unless justification exists for using 
+steel. Steel slats have a tendency to cut the thin-line tape used with<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> slats.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Do not use steel materials in humid locations or project locations with Environmental Severity Classifications 
+(ESC) of C3 thru C5. Humid project locations are those in ASHRAE climate zones 0A, 1A, 2A, 3A, 3C, 4C and 5C 
+(as identified in ASHRAE 90.1). See UFC 1-200-01 for determination of ESC for project locations. Provide window 
+blinds of prefinished aluminum with a minimum thickness of 0.813 mm for recommended spans.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide head channel made of<div class="brackets">[ steel or]</div> aluminum with corrosion-resistant finish nominal<div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre> 0.46 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.018 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> for <met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div><div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre> 0.61 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.024 
+inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> for<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> slats. Provide slats of aluminum, not less than<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[0.203]</div><div class="brackets">[0.152]</div><div class="brackets">[0.813]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[0.008]</div><div class="brackets">[0.006]</div><div class="brackets">[0.032]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick, and of sufficient 
+strength to prevent sag or bow in the finished blind. Provide a sufficient amount of slats to assure proper control, uniform spacing, and adequate 
+overlap. Enclose all hardware in the headrail.</txt><brk></brk></spt>
+<spt outline="2.1.1.2"><ttl>2.1.1.2 Controls</ttl><brk></brk>
+<txt>A transparent tilting wand will be provided to tilt the slats, it will hang vertically by its own weight, and will swivel for easy operation. 
+Provide a tilter control of enclosed construction. Provide moving parts and mechanical drive made of compatible materials which do not require 
+lubrication during normal expected life. The tilter will tilt the slats to any desired angle and hold them at that angle so that any vibration 
+or movement of ladders and slats will not drive the tilter and change the angle of slats. Include a mechanism to prevent over tightening. Provide 
+a wand of sufficient length to reach to within<met><pre class="display_MET">&lt;MET&gt;</pre> 1500 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of the floor. <div class="brackets">[Provide cordless blinds <del><pre class="display_DEL">&lt;DEL&gt;</pre>or blinds with cords that are out of reach 
+of children and strangle proof<pre class="display_DEL">&lt;/DEL&gt;</pre></del>.]</div></txt><brk></brk></spt>
+<spt outline="2.1.1.3"><ttl>2.1.1.3 Intermediate Brackets</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Appropriate spacing for placement of intermediate brackets at<met><pre class="display_MET">&lt;MET&gt;</pre> 1200 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 48 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and<met><pre class="display_MET">&lt;MET&gt;</pre> 1500 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 60 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> are typical 
+for Type<met><pre class="display_MET">&lt;MET&gt;</pre> 25 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> blinds and<met><pre class="display_MET">&lt;MET&gt;</pre> 2100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 84 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> for<met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> blinds.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide intermediate brackets for installation, as recommended by the manufacturer, of blinds over <met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[1200]</div><div class="brackets">[1500]</div><div class="brackets">[2100]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre><div class="brackets">[48]</div><div class="brackets">[60]</div><div class="brackets">[84]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide.</txt><brk></brk></spt>
+<spt outline="2.1.1.4"><ttl>2.1.1.4 Bottom Rail</ttl><brk></brk>
+<txt>Provide bottom rail made of corrosion-resistant steel with factory applied finish. Provide closed oval shaped bottom rail with double-lock seam 
+for maximum strength. Bottom rail and end caps to match slats in color.</txt><brk></brk></spt>
+<spt outline="2.1.1.5"><ttl>2.1.1.5 Braided Ladders</ttl><brk></brk>
+<txt>Provide braided ladders of 100 percent polyester yarn, color to match the slat color. Space ladders 15.2 slats per <met><pre class="display_MET">&lt;MET&gt;</pre>300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of drop in order 
+to provide a uniform overlap of the slats in a closed position.</txt><brk></brk></spt>
+<spt outline="2.1.1.6"><ttl>2.1.1.6 Hold-Down Brackets</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Holddown brackets should not be specified for windows except where air movement may cause the blinds to 
+sway excessively.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide universal type hold-down brackets for sill or jamb mount where indicated on placement list.</txt><brk></brk></spt>
+</spt><spt outline="2.1.2"><ttl>2.1.2 Light Control and Privacy Blinds</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Light control and privacy blinds are special purpose blinds to be used only when more than average blocking 
+of light and privacy is required. Refer to UFGS SECTION <srf><pre class="display_SRF">&lt;SRF&gt;</pre>12 24 13<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> ROLLER WINDOW SHADES for black out shades.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>In addition to requirements for horizontal blinds, provide each unit with a feature that offers hidden slat holes for maximum light control and 
+privacy.</txt><brk></brk></spt>
+<spt outline="2.1.3"><ttl>2.1.3 Vertical Blinds</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Typically, vertical blinds will be wall mounted with outside brackets, sill length. Certain instances 
+will call for different installation methods. When selecting a ceiling mount with inside brackets, the designer 
+should verify that the window recess will accommodate this type installation.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide vertical blind units capable of nominal 180 degree partial tilting operation and full stackback. Provide blinds that are listed by the 
+manufacturer as designed for heavy duty strength applications including heavy duty hardware. Provide <div class="brackets">[ceiling]</div><div class="brackets">[wall]</div> mounted vertical blinds with 
+<div class="brackets">[outside]</div><div class="brackets">[inside]</div> brackets. Provide blinds that are <div class="brackets">[sill]</div><div class="brackets">[floor]</div> length. Outside mount type installation must provide adequate overlap to control 
+light and privacy.</txt><brk></brk>
+<spt outline="2.1.3.1"><ttl>2.1.3.1 Louvers</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Fabric louvers are freehanging and different from groover louvers. Groovers are vinyl louvers with fabric 
+inserts included. Edit accordingly and do not use groovers and fabric louvers together.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Generally,<met><pre class="display_MET">&lt;MET&gt;</pre> 90 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3-1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> blinds will be specified because they are more economical. In some cases,<met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 
+inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> blinds will be more aesthetically pleasing because of the window size.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide louvers <div class="brackets">[which are fire resistant solid vinyl, UV stable, and impact resistant.]</div><div class="brackets">[which are flame retardant fabric having straight, flat, 
+unfrayed edges and flat, without noticeable twists. Provide a weight at the bottom of the louver without the insert discoloring the fabric.]</div>
+<div class="brackets">[which are groover extruded from solid vinyl with clear non-yellowing channel lips to accept fabric inserts. Provide fabric inserts that are flame 
+retardant and colorfast.]</div> Louvers that are<div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre> 90 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3-1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> must overlap not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 10 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div><div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre> 50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> must overlap not less than<met><pre class="display_MET">&lt;MET&gt;</pre>
+ mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> and be dimensionally stable.</txt><brk></brk></spt>
+<spt outline="2.1.3.2"><ttl>2.1.3.2 Carriers</ttl><brk></brk>
+<txt>Provide carriers to support each louver made of molded plastic to transverse on self-fabricated wheels for smooth, easy operation. The hook of 
+the carrier must have an automatic latch to permit easy installation and removal of the louver, and to securely lock the louver for tilting and 
+traversing.</txt><brk></brk></spt>
+<spt outline="2.1.3.3"><ttl>2.1.3.3 Headrail System</ttl><brk></brk>
+<txt>Provide headrail system not less than<met><pre class="display_MET">&lt;MET&gt;</pre> 1.19 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.047 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick and made of anodized aluminum alloy or<met><pre class="display_MET">&lt;MET&gt;</pre> 0.635 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.027 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick phosphate treated 
+steel with a baked on ivory gloss enamel paint finish. Provide a headrail that extends the full width of the blind and can be closed <del><pre class="display_DEL">&lt;DEL&gt;</pre>with an end 
+cap at each end<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>with an end cap at each end and contain the traversing and tilting controls<pre class="display_ADD">&lt;/ADD&gt;</pre></add>. One cap will contain the traversing and tilting controls. 
+The opposite cap will house the pulley for the traversing cord.</txt><brk></brk></spt>
+<spt outline="2.1.3.4"><ttl>2.1.3.4 Valance</ttl><brk></brk>
+<txt>Attach the manufacturer's standard valance to the headrail by metal or plastic holders which grip the top and bottom edge of the valance and accept 
+an insert of the same material as the slats. Provide sufficient clearance behind the valance to permit the louvers to tilt without interference. 
+Extend the headrail cover the full width of the blind.<div class="brackets">[ Provide returns]</div>.</txt><brk></brk></spt>
+<spt outline="2.1.3.5"><ttl>2.1.3.5 Controls</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Typically, a tilting control baton is used because it is unobtrusive. Control mechanisms generally are 
+on the right side, but window placement may require the controls to be placed on the left side for ease of operation.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Select which direction the vertical blind will traverse in the Placement Schedule, considering there must be adequate 
+space for the width of the stack without concealing any electrical or mechanical components.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide tilting and traversing controls that hang compactly at the side of the blinds and reach within <met><pre class="display_MET">&lt;MET&gt;</pre>1500 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>5 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of the floor. Provide <div class="brackets">[tilt/traverse 
+control]</div><div class="brackets">[bead chain tilting control]</div> that tilts all vanes simultaneously to any desired angle and hold them at that angle. Provide louvers that 
+traverse <div class="brackets">[one way to the right]</div> <div class="brackets">[one way to the left]</div> <div class="brackets">[two-way split]</div>.<del><pre class="display_DEL">&lt;DEL&gt;</pre><div class="brackets">[<pre class="display_DEL">&lt;/DEL&gt;</pre></div></del> <del><pre class="display_DEL">&lt;DEL&gt;</pre>The traversing control cord will be minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 1.78 mm <pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>0.070 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> in diameter 
+with a minimum breaking strength of<met><pre class="display_MET">&lt;MET&gt;</pre> 556 N<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 125 pounds<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.<pre class="display_DEL">&lt;/DEL&gt;</pre></del> <del><pre class="display_DEL">&lt;DEL&gt;</pre> Anchor the cord to a lead carrier linked to all adjacent carriers.] Provide louvers that 
+traverse along the headrail by pulling one side of the looped cord <div class="brackets">[fastened to a cord tension pulley]</div><div class="brackets">[ or ]</div><pre class="display_DEL">&lt;/DEL&gt;</pre></del><div class="brackets">[<del><pre class="display_DEL">&lt;DEL&gt;</pre>a<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>A<pre class="display_ADD">&lt;/ADD&gt;</pre></add> fiberglass wand that tilts the 
+louvers by turning the wand and traverses the louvers by using the wand as a control]</div>. Sliding glass doors will have a one way draw with stackback 
+occurring opposite door openings.</txt><brk></brk></spt>
+<spt outline="2.1.3.6"><ttl>2.1.3.6 Connectors and Spacers</ttl><brk></brk>
+<txt>The connector must be flexible, smooth and flat to slide unhindered when carriers move independently of each other, and to nest compactly when 
+carriers are stacking. Relate the length of the links to the louver width in order to equally space the traversing louvers, to maintain uniform 
+and adequate overlap of louvers, and to fully cover the width of the opening.</txt><brk></brk></spt>
+<spt outline="2.1.3.7"><ttl>2.1.3.7 Intermediate Brackets</ttl><brk></brk>
+<txt>Provide intermediate installation brackets for blinds over<met><pre class="display_MET">&lt;MET&gt;</pre> 1575 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 62 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide.</txt><brk></brk></spt>
+</spt></spt><spt outline="2.2"><ttl>2.2 COLOR</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Editing of color reference sentence(s) must be coordinated with the Government. Generally, Section 
+<srf><pre class="display_SRF">&lt;SRF&gt;</pre>09 06 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SCHEDULES FOR FINISHES or drawings are used when the project is designed by an Architect or Interior 
+designer. Color must be selected from manufacturer's standard colors or identified as a manufacturer's color 
+in this specification only when the project has minimal finishes.<brk></brk>
+When the government directs that color be located in the drawings, a note will be added that states: "Where color 
+is shown as being specific to one manufacturer, an equivalent color by another manufacturer may be submitted for 
+approval. Manufacturers and materials specified are not intended to limit the selection of equal colors from 
+other manufacturers. The word "color" as used herein includes surface color and pattern."<brk></brk>
+When more than one type, pattern or color is specified, identify location.<brk></brk>
+When a manufacturer's name, stock number, pattern, and color is specified for color, be certain that the product 
+conforms to the specification, as edited.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide color, pattern and texture <div class="brackets">[in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>09 06 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SCHEDULES FOR FINISHES]</div><div class="brackets">[as indicated]</div><div class="brackets">[selected from manufacturer's standard 
+colors]</div><div class="brackets">[<div class="brackets">[_____]</div>. Color listed is not intended to limit the selection of equal colors from other manufacturers.]</div></txt><brk></brk></spt>
+</prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 EXAMINATION</ttl><brk></brk>
+<txt>After becoming familiar with details of the work, verify all dimensions in the field, and advise the Contracting Officer of any discrepancy before 
+performing the work.</txt><brk></brk></spt>
+<spt outline="3.2"><ttl>3.2 WINDOW TREATMENT PLACEMENT SCHEDULE</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The Window Treatment Placement Schedule will be provided at the designer's option to clarify placement 
+of the treatments. When all exterior windows are to receive a window treatment, a note can be made to this effect 
+instead of filling out the schedule. The location of the window treatment should be clearly defined within this 
+specification.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><div class="brackets">[All exterior windows include <div class="brackets">[_____]</div>.]</div> <div class="brackets">[Provide window covering as follows:</div></txt><brk></brk>
+<txt><tab>
+<wbk>
+<sts>
+<sty sid="s50">
+<aln vertical="BOTTOM"></aln>
+</sty>
+<sty sid="s51">
+<aln horizontal="CENTER" vertical="BOTTOM"></aln>
+</sty>
+<sty sid="s52">
+<aln horizontal="CENTER"></aln>
+</sty>
+</sts>
+<tda columncount="5" rowcount="2">
+<col autowidth="0" styleid="s50" width="113.25"/>
+<col autowidth="0" styleid="s50" width="113.25"/>
+<col autowidth="0" width="113.25"/>
+<col autowidth="0" width="113.25"/>
+<col autowidth="0" width="118.50"/>
+<row autoheight="0" height="33.75">
+<cel styleid="s51">
+<dta type="STRING">Room Number/Name</dta>
+</cel>
+<cel styleid="s52">
+<dta type="STRING">Window Covering Type</dta>
+</cel>
+<cel styleid="s52">
+<dta type="STRING">Vertical Blind Draw Direction</dta>
+</cel>
+<cel styleid="s52">
+<dta type="STRING">Window Type</dta>
+</cel>
+<cel styleid="s52">
+<dta type="STRING">Quantity</dta>
+</cel>
+</row>
+<row>
+<cel styleid="s52">
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+<cel styleid="s52">
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+<cel styleid="s52">
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+<cel styleid="s52">
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+<cel styleid="s52">
+<dta type="STRING"><div class="brackets">[_____]</div></dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab></txt>]<brk></brk></spt>
+<spt outline="3.3"><ttl>3.3 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>INSTALLATION<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Do not install building construction materials that show visual evidence of biological growth.</txt><brk></brk>
+<txt>Submit drawings showing fabrication and Installation details. Show layout and locations of track, direction of draw, mounting heights, and details. 
+Provide Manufacturer's Instructions and Operation and Maintenance Data.<brk></brk>
+Perform installation of window blinds in accordance with the approved detail drawings and manufacturer's installation instructions. Install units 
+level, plumb, secure, and at proper height and location relative to window units. Provide and install supplementary or miscellaneous items in 
+total, including clips, brackets, or anchorages incidental to or necessary for a sound, secure, and complete installation. Do not start installation 
+until completion of room painting and finishing operations.</txt><brk></brk></spt>
+<spt outline="3.4"><ttl>3.4 CLEAN-UP</ttl><brk></brk>
+<txt>Upon completion of the installation, inspect window treatments for soiling, damage or blemishes; and adjust them for form and appearance and proper 
+operating condition. Repair or replace damaged units as directed by the Contracting Officer. Isolate metal parts from direct contact with concrete, 
+mortar, or dissimilar metals. Ensure blinds installed in recessed pockets can be removable without disturbing the pocket. The entire blind, when 
+retracted, must be contained behind the pocket. For blinds installed outside the jambs and mullions, overlap each jamb and mullion<met><pre class="display_MET">&lt;MET&gt;</pre> 20 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.75 
+inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> or more when the jamb and mullion sizes permit. Include all hardware, brackets, anchors, fasteners, and accessories necessary for a complete, 
+finished installation.</txt><brk></brk></spt>
+</prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

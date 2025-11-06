@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>01 45 35.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">01 45 35</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:50</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><brk></brk>
+<hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-01 45 35 (February 2015)<brk></brk>
+ -----------------------------<brk></brk>
+Preparing Activity: <pra>USACE</pra> Superseding<brk></brk>
+ UFGS-01 45 35 (August 2008)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated April 2019</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 01 45 35</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>SPECIAL INSPECTIONS<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>02/15</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification has been edited to cover the minimum requirements and include Japanese products, 
+where feasible, for a standard Japan Engineer District project. The Designer of Record (DOR) shall tailor as 
+applicable to meet project specific requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>special inspections when required by UFC 3-301-01. 
+This specification will apply only to buildings</scp>.<brk></brk>
+Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections. Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text. For bracketed items, choose applicable item(s) or insert 
+appropriate information.<brk></brk>
+Remove information and requirements not required in respective project, whether or not brackets are present.<brk></brk>
+Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification will be applicable to both new buildings and existing building rehabilitations 
+designed according to UFC 3-301-01 STRUCTURAL ENGINEERING.<brk></brk>
+In addition to the Special Inspection and testing specified requirements, a registered design professional must 
+perform "structural observations" during construction when required by UFC 3-301-01. All observed deficiencies 
+will be immediately reported to the Contracting Officer. The registered design professional performing these observations 
+will be a representative of the Designer of Record (DOR) for the building being constructed.<brk></brk>
+Structural observations are required for the following project conditions per IBC Chapter 17:<brk></brk>
+1) Seismic Design Category D, E or F; and assigned<brk></brk>
+ to Risk Cat III, IV or V.<brk></brk>
+2) Seismic Design Category D, E or F; and with a<brk></brk>
+ height greater than<met><pre class="display_MET">&lt;MET&gt;</pre> 23m<pre class="display_MET">&lt;/MET&gt;</pre></met>.<brk></brk>
+3) Seismic Design Category E, assigned to Risk <brk></brk>
+ Category I or II and the building is greater <brk></brk>
+ than two stories above grade plane.<brk></brk>
+4) Nominal design wind speed in excess of<met><pre class="display_MET">&lt;MET&gt;</pre> 49 m/sec<pre class="display_MET">&lt;/MET&gt;</pre></met>;<brk></brk>
+ and assigned to Risk Cat III, IV or V.<brk></brk>
+5) Nominal deisgn wind speed in excess of<met><pre class="display_MET">&lt;MET&gt;</pre> 49 m/sec<pre class="display_MET">&lt;/MET&gt;</pre></met>;<brk></brk>
+ and with a height greater than<met><pre class="display_MET">&lt;MET&gt;</pre> 23 m<pre class="display_MET">&lt;/MET&gt;</pre></met>.<brk></brk>
+Coordinate with the Contracting Officer how Structural Observations will be covered for Design-Bid-Build projects 
+as this service will not be covered by the Contractor.<brk></brk>
+Special Inspections are minimum Quality Assurance requirements that are in addition to the Quality Control requirements 
+that are defined in Sections <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 45 00.00 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> QUALITY CONTROL and <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 45 00.00 20<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> QUALITY CONTROL.<brk></brk>
+The requirements for Special Inspections, the special inspector, and related testing will be used where required 
+by UFC 3-301-01 and UFC 4-023-03.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of the guide specification. The publications 
+are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
+date, and title.<brk></brk>
+Use the Reference Wizard's Check Reference feature when you add a Reference Identifier (RID) outside of the Section's 
+Reference Article to automatically place the reference in the Reference Article. Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<brk></brk>
+References not used in the text will automatically be deleted from this section of the project specification when 
+you choose to reconcile references in the publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are referred to within the text by 
+the basic designation only.</txt><brk></brk>
+<ref><org>AMERICAN SOCIETY OF CIVIL ENGINEERS (ASCE)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASCE 7<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017) Minimum Design Loads for Buildings and Other Structures<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>INTERNATIONAL CODE COUNCIL (ICC)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ICC IBC<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(20<del><pre class="display_DEL">&lt;DEL&gt;</pre>18<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>21<pre class="display_ADD">&lt;/ADD&gt;</pre></add>) International Building Code<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><del><pre class="display_DEL">&lt;DEL&gt;</pre><org>JAPANESE INDUSTRIAL STANDARDS (JIS)</org><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><org>JAPANESE STANDARDS ASSOCIATION (JSA)</org><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z2305<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2013) Non-destructive Testing - Qualification and Certification of Personnel<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org>U.S. DEPARTMENT OF DEFENSE (DOD)</org><brk></brk>
+<brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 03-301-01<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2019) Structural Engineering<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.2"><ttl>1.2 GENERAL REQUIREMENTS</ttl><brk></brk>
+<txt>Perform Special Inspections in accordance with the Statement of Special Inspections, Schedule of Special Inspections and Chapter 17 of <rid><pre class="display_RID">&lt;RID&gt;</pre>ICC IBC<pre class="display_RID">&lt;/RID&gt;</pre></rid>. 
+The Statement of Special Inspections and Schedule of Special Inspections are included as an attachment to this specification. Special Inspections 
+are to be performed by an independent third party and are intended to ensure that the work of the prime contractor is in accordance with the Contract 
+Documents and applicable building codes. Special inspections do not take the place of the three phases of control inspections performed by the 
+Contractor's QC Manager or any testing and inspections required by other sections of the specifications.</txt><div class="brackets">[<brk></brk>
+<txt>Structural observations will be performed by the Government. The contractor must provide notification to the Contracting Officer 14 days prior 
+to the following points of construction:</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Define the points in construction that structural observations need to occur.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<lst indent="-0.33">a. <div class="brackets">[_____]</div></lst><brk></brk>
+<lst indent="-0.33">b. <div class="brackets">[_____]</div></lst><brk></brk>
+<lst indent="-0.33">c. <div class="brackets">[_____]</div></lst>]</div><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 DEFINITIONS</ttl><brk></brk>
+<spt outline="1.3.1"><ttl>1.3.1 Continuous Special Inspections</ttl><brk></brk>
+<txt>Continuous Special Inspections is the constant monitoring of specific tasks by a special inspector. These inspections must be carried out continuously 
+over the duration of the particular tasks.</txt><brk></brk></spt>
+<spt outline="1.3.2"><ttl>1.3.2 Periodic Special Inspections</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Consider revising the definition of periodic if there is a specific time interval that is required between 
+periodic inspections. For a specific time interval on a specific Special Inspections, indicate the time interval 
+in the Schedule of Special Inspections for that task.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Periodic Special Inspections is Special Inspections by the special inspector who is intermittently present where the work to be inspected has been 
+or is being performed.</txt><brk></brk></spt>
+<spt outline="1.3.3"><ttl>1.3.3 Perform</ttl><brk></brk>
+<txt>Perform these Special Inspections tasks for each welded joint or member, bolted or fastener connection, and required verification.</txt><brk></brk></spt>
+<spt outline="1.3.4"><ttl>1.3.4 Observe</ttl><brk></brk>
+<txt>Observe these Special Inspections items on a random daily basis. Operations need not be delayed pending these inspections.</txt><brk></brk></spt>
+<spt outline="1.3.5"><ttl>1.3.5 Special Inspector (SI)</ttl><brk></brk>
+<txt>A qualified person retained by the contractor and approved by the Contracting Officer as having the competence necessary to inspect a particular 
+type of construction requiring Special Inspections. The SI must be an independent third party hired directly by the Prime Contractor.</txt><brk></brk></spt>
+<spt outline="1.3.6"><ttl>1.3.6 Associate Special Inspector (ASI)</ttl><brk></brk>
+<txt>A qualified person who assists the SI in performing Special Inspections but must perform inspection under the direct supervision of the SI and 
+cannot perform inspections without the SI on site.</txt><brk></brk></spt>
+<spt outline="1.3.7"><ttl>1.3.7 Third Party</ttl><brk></brk>
+<txt>A third party inspector must not be company employee of the Contractor or any Sub-Contractor performing the work to be inspected.</txt><brk></brk></spt>
+<div class="brackets">[<spt outline="1.3.8"><ttl>1.3.8 Special Inspector of Record (SIOR)</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The Special Inspector of Record is required for the following project conditions per UFC 3-301-01:<brk></brk>
+1) Seismic Design Category D, E or F; and assigned<brk></brk>
+ to Risk Cat III, IV or V.<brk></brk>
+2) Seismic Design Category D, E or F; and with a <brk></brk>
+ height greater than<met><pre class="display_MET">&lt;MET&gt;</pre> 22860 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 75 ft<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.<brk></brk>
+3) Seismic Design Category E, assigned to Risk <brk></brk>
+ Category I or II and the building is greater than<brk></brk>
+ two stories above grade plane.<brk></brk>
+4) Nominal design wind speed in excess of<met><pre class="display_MET">&lt;MET&gt;</pre> 49 m/sec<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <brk></brk>
+ 110 mph<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>; and assigned to Risk Cat III, IV or V.<brk></brk>
+5) Nominal deisgn wind speed in excess of<met><pre class="display_MET">&lt;MET&gt;</pre> 49 m/sec<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <brk></brk>
+ 110 mph<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>; and with a height greater than<met><pre class="display_MET">&lt;MET&gt;</pre> 23 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 75 ft<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.<brk></brk>
+In additional to these conditions, the DOR is encouraged to consider using an SIOR on large magnitude or critical 
+projects where this additional level of quality control is affordable.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>A licensed engineer in responsible charge of supervision all special inspectors for the project and approved by the Contracting officer. The SIOR 
+must be an independent third party hired directly by the Prime Contractor.</txt><brk></brk></spt>
+]</div><spt outline="1.3.9"><ttl>1.3.9 Contracting Officer</ttl><brk></brk>
+<txt>The Government official having overall authority for administrative contracting actions. Certain contracting actions may be delegated to the Contracting 
+Officer's Representative (COR).</txt><brk></brk></spt>
+<spt outline="1.3.10"><ttl>1.3.10 Contractor's Quality Control (QC) Manager</ttl><brk></brk>
+<txt>An individual retained by the prime contractor and qualified in accordance with the Section <div class="brackets">[<srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 45 00.00 10<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> QUALITY CONTROL]</div> having the overall 
+responsibility for the contractor's QC organization.</txt><brk></brk></spt>
+<spt outline="1.3.11"><ttl>1.3.11 Designer of Record (DOR)</ttl><brk></brk>
+<txt>A registered design professional <div class="brackets">[employed by the Government]</div> <div class="brackets">[contracted by the Government as an A/E]</div> responsible for the overall design and review 
+of submittal documents prepared by others. The DOR is registered or licensed to practice their respective design profession as defined by the 
+statutory requirements of the professional registration laws in state in which the design professional works. The DOR is also referred to as the 
+Engineer of Record (EOR) in design code documents.</txt><brk></brk></spt>
+<spt outline="1.3.12"><ttl>1.3.12 Statement of Special Inspections (SSI)</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The Statement of Special Inspections will be developed by the DOR and must cover the following items:<brk></brk>
+1) List of the Architectural Designated Seismic <brk></brk>
+ Systems.<brk></brk>
+ a. These components are in or attached to a Risk <brk></brk>
+ Category IV or V structure and are needed for <brk></brk>
+ continued operation of the facility or their <brk></brk>
+ failure could impair the continued operation of<brk></brk>
+ the facility.<brk></brk>
+2) List of the Mechanical Designated Seismic <brk></brk>
+ Systems.<brk></brk>
+ a. For Seismic Design Category C or Risk Category<brk></brk>
+ V list the following:<brk></brk>
+ i. Heating, ventilation and air-conditioning <brk></brk>
+ (HVAC) ductwork containing hazardous <brk></brk>
+ materials and anchorage of such ductwork.<brk></brk>
+ ii. Piping systems and mechanical units <brk></brk>
+ containing flammable, combustible or highly<brk></brk>
+ toxic materials.<brk></brk>
+ b. For Seismic Design Category D, E or F or Risk<brk></brk>
+ Category V list mechanical system that meet one<brk></brk>
+ of the following:<brk></brk>
+ i. Life safety component required to function <brk></brk>
+ after an earthquake<brk></brk>
+ ii. Component that contains hazardous content<brk></brk>
+ iii. All components in an essential facility <brk></brk>
+ needed for continued operation after an <brk></brk>
+ earthquake<brk></brk>
+3) List of the Electrical Designated Seismic <brk></brk>
+ Systems.<brk></brk>
+ a. For Seismic Design Category C or Risk Category<brk></brk>
+ V list the following:<brk></brk>
+ i. Anchorage of electrical equipment used for<brk></brk>
+ emergency or standby power systems.<brk></brk>
+ b. For Seismic Design Category D, E or F list <brk></brk>
+ electrical system that meet one of the <brk></brk>
+ following:<brk></brk>
+ i. Life safety component required to function<brk></brk>
+ after an earthquake<brk></brk>
+ ii. Component that contains hazardous content<brk></brk>
+ iii. All components in an essential facility <brk></brk>
+ needed for continued operation after an <brk></brk>
+ earthquake<brk></brk>
+4) Define the periodic walk-down inspections <brk></brk>
+ required by UFC 3-301-01.<brk></brk>
+5) List of elements that are part of the progressive<brk></brk>
+ collapse resistance system.<brk></brk>
+ a. Provide a description of the following as they<brk></brk>
+ apply:<brk></brk>
+ i. Elements of the tie force system consisting<brk></brk>
+ of internal longitudinal and transverse, <brk></brk>
+ vertical, and peripheral ties.<brk></brk>
+ ii. Elements of the alternate path system.<brk></brk>
+ iii. Elements having enhanced local resistance.<brk></brk>
+The Statement of Special Inspections and the Schedule of Special Inspections will be included as an attachment 
+to this specification.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>A document developed by the DOR identifying the material, systems, components and work required to have Special Inspections.</txt><brk></brk></spt>
+<spt outline="1.3.13"><ttl>1.3.13 Schedule of Special Inspections</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: A template for the Schedule of Special Inspections can be found on the Whole Building Design Guide website 
+at <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs/forms-graphics-tables">http://www.wbdg.org/ffc/dod/unified-facilities-guide-<brk></brk>
+specifications-ufgs/forms-graphics-tables</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>See Japan District Design Guide, Appendix C for Schedule of Special Inspections template.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>A schedule which lists each of the required Special Inspections, the extent to which each Special Inspections is to be performed, and the required 
+frequency for each in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ICC IBC<pre class="display_RID">&lt;/RID&gt;</pre></rid> Chapter 17.</txt><brk></brk></spt>
+<div class="brackets">[<spt outline="1.3.14"><ttl>1.3.14 Designated Seismic System</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include this paragraph when Designated Seismic Systems are required in accordance with UFC 03-301-01.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Those nonstructural components that require design in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASCE 7<pre class="display_RID">&lt;/RID&gt;</pre></rid> Chapter 13 and for which the component importance factor, Ip, is greater 
+than 1.0. This designation applies to systems that are required to be operational following the Design Earthquake for RC I - IV structures <div class="brackets">[and 
+following the MCER for RC V structures. All systems in RC V facilities designated as MC-1 in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>UFC 03-301-01<pre class="display_RID">&lt;/RID&gt;</pre></rid> are considered part 
+of the Designated Seismic Systems]</div>. <div class="brackets">[Designated Seismic Systems will be identified by Owner and will have an Importance Factor Ip = 1.5]</div>.</txt><brk></brk></spt>
+]</div><div class="brackets">[<spt outline="1.3.15"><ttl>1.3.15 Component Certification and O&amp;M Manual</ttl><brk></brk>
+<txt>For any electrical or mechanical component required by <rid><pre class="display_RID">&lt;RID&gt;</pre>ASCE 7<pre class="display_RID">&lt;/RID&gt;</pre></rid> Section 13.2.2 to be certified, evidence demonstrating compliance with the requirement 
+shall be maintained in a file identified as "Equipment Certification Documentation." This file shall be a part of the Operations &amp; Maintenance 
+Manual that is turned over to the Contracting Officer. The project specifications shall require the Operations &amp; Maintenance Manual state that 
+replaced or modified components need to be certified per the original certification criteria.</txt><brk></brk></spt>
+]</div><div class="brackets">[<spt outline="1.3.16"><ttl>1.3.16 Component Identification Nameplate</ttl><brk></brk>
+<txt>Any electrical or mechanical component required by <rid><pre class="display_RID">&lt;RID&gt;</pre>ASCE 7<pre class="display_RID">&lt;/RID&gt;</pre></rid> SSection 13.2.2 to be certified shall bear permanent marking or nameplates constructed 
+of a durable heat and water resistant material. Nameplates shall be mechanically attached to such nonstructural components and placed on each component 
+for clear identification. The nameplate shall not be less than 125 x 180 with red letters 25 in height on a white background stating "Certified 
+Equipment." The following statement shall be on the nameplate: "This equipment/component is certified. No modifications are allowed unless authorized 
+in advance and documented in the Equipment Certification Documentation file." The nameplate shall also contain the component identification number 
+in accordance with the drawings/specifications and the O&amp;M manuals.</txt><brk></brk></spt>
+]</div></spt><spt outline="1.4"><ttl>1.4 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review submittal description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project.<brk></brk>
+The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G." Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System. Only add a “G” to an item, if the submittal is sufficiently important or complex in context 
+of the project.<brk></brk>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose the second bracketed item for 
+Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are for <div class="brackets">[Contractor Quality Control 
+approval.]</div><div class="brackets">[information only. When used, a designation following the "G" designation identifies the office that will review the submittal for the 
+Government.]</div> Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-01 Preconstruction Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SIOR Letter of Acceptance<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm>Special Inspections <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Project Manual<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm>Special Inspections Agency's <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Written Practices<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>NDT Procedures and Equipment Calibration Records<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-06 Test Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm>Special Inspections <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Daily Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm>Special Inspections <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Biweekly Reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-07 Certificates<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Fabrication Plant<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Certificate of Compliance<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Special Inspector of Record<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> Qualifications; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Special Inspector<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> Qualifications; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Qualification Records<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> for NDT technicians</itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-11 Closeout Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include this submittal for large complex projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Interim Final Report<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> of Special Inspections</itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Comprehensive Final Report<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> of Special Inspections; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></spt>
+<spt outline="1.5"><ttl>1.5 SPECIAL INSPECTOR QUALIFICATIONS</ttl><brk></brk>
+<txt>Submit qualifications for each <sub><pre class="display_SUB">&lt;SUB&gt;</pre>special inspector<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> <div class="brackets">[and the special inspector of record]</div>.</txt><brk></brk>
+<lst><tab>
+<wbk>
+<sts></sts>
+<tda columncount="2" rowcount="8">
+<col autowidth="0" width="151.50"/>
+<col autowidth="0" width="388.50"/>
+<row autoheight="0" height="24.00">
+<cel mergeacross="1">
+<dta type="STRING">Certifying Associations</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">FM</dta>
+</cel>
+<cel>
+<dta type="STRING">Factory Mutual</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">ICC</dta>
+</cel>
+<cel>
+<dta type="STRING">International Code Council</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">JCI</dta>
+</cel>
+<cel>
+<dta type="STRING">Japan Concrete Institute</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">JSFA</dta>
+</cel>
+<cel>
+<dta type="STRING">Japan Steel Fabricators Association</dta>
+</cel>
+</row>
+<row autoheight="0" height="24.00">
+<cel>
+<dta type="STRING">JWES</dta>
+</cel>
+<cel>
+<dta type="STRING">Japan Welding Engineering Society</dta>
+</cel>
+</row>
+<row autoheight="0" height="23.25">
+<cel>
+<dta type="STRING">UL</dta>
+</cel>
+<cel>
+<dta type="STRING">Underwriters Laboratories</dta>
+</cel>
+</row>
+<row autoheight="0" height="48.00">
+<cel>
+<dta type="STRING">Architect Under Bldg Standard Law of Japan</dta>
+</cel>
+<cel>
+<dta type="STRING">First Class Architect (Kenchikushi) Registered Under Standard Law of Japan</dta>
+</cel>
+</row>
+</tda>
+</wbk>
+<brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl><brl></brl></tab></lst><brk></brk>
+<spt outline="1.5.1"><ttl>1.5.1 Steel Construction and High Strength Bolting</ttl><brk></brk>
+<spt outline="1.5.1.1"><ttl>1.5.1.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. Structural Steel Work Manager (Tekkotsu Koji Kanri Sekininsha), or</lst><brk></brk>
+<lst indent="-0.33">b. Japan Welding Society Certified Inspector (Nihon Yosetsu Kyokai Kensa-in), or</lst><brk></brk>
+<lst indent="-0.33">c. Non-Destructive Test Technician (Hihakai Kensa Gijutsusha), or</lst><brk></brk>
+<lst indent="-0.33">d. Architectural or Civil Construction Managing Engineer (Kenchiku/ Doboku Koji Sekou Kanrigishi), or</lst><brk></brk>
+<lst indent="-0.33">e. JSFA Certified Architectural High Strength Bolt Joint Management Engineer </lst><brk></brk></spt>
+</spt><spt outline="1.5.2"><ttl>1.5.2 Welding Structural Steel</ttl><brk></brk>
+<spt outline="1.5.2.1"><ttl>1.5.2.1 Special Inspector</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: For highly complex steel projects use only Certified Welding Inspectors.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<lst indent="-0.33">a. JWES Certified Welding Management Engineer </lst><brk></brk>
+<lst indent="-0.33">b. JSFA Certified Architectural Structural Steel Products Inspection Engineer </lst><brk></brk></spt>
+</spt><spt outline="1.5.3"><ttl>1.5.3 Nondestructive Testing of Welds</ttl><brk></brk>
+<spt outline="1.5.3.1"><ttl>1.5.3.1 Special Inspector</ttl><brk></brk>
+<txt><rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z2305<pre class="display_RID">&lt;/RID&gt;</pre></rid> NDT Level III Certificate.</txt><brk></brk></spt>
+<spt outline="1.5.3.2"><ttl>1.5.3.2 Associate Special Inspector</ttl><brk></brk>
+<txt><rid><pre class="display_RID">&lt;RID&gt;</pre>JIS Z2305<pre class="display_RID">&lt;/RID&gt;</pre></rid> NDT Level II Certificate plus one year of related experience.</txt><brk></brk></spt>
+</spt><spt outline="1.5.4"><ttl>1.5.4 Cold Formed Steel Framing</ttl><brk></brk>
+<spt outline="1.5.4.1"><ttl>1.5.4.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. JSFA Certified Architectural Structural Steel Products Inspection Engineer, or</lst><brk></brk>
+<lst indent="-0.33">b. Registered Professional Engineer with related experience.</lst><brk></brk></spt>
+</spt><spt outline="1.5.5"><ttl>1.5.5 Concrete Construction</ttl><brk></brk>
+<spt outline="1.5.5.1"><ttl>1.5.5.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. Japan Concrete Institute Concrete Engineer (JCI Concrete Gishi), or</lst><brk></brk>
+<lst indent="-0.33">b. Registered Professional Engineer with related experience, or</lst><brk></brk>
+<lst indent="-0.33">c. First Class Kenchikushi with four years of related experience. </lst><brk></brk>
+<lst indent="-0.33">d. Architectural or Civil Construction Managing Engineer (Kenchiku/ Doboku Sekou Kanrigishi)</lst><brk></brk></spt>
+</spt><spt outline="1.5.6"><ttl>1.5.6 Prestressed Concrete Construction</ttl><brk></brk>
+<spt outline="1.5.6.1"><ttl>1.5.6.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. Registered Professional Engineer with related experience, or</lst><brk></brk>
+<lst indent="-0.33">b. First Class Kenchikushi with four years of related experience</lst><brk></brk></spt>
+</spt><spt outline="1.5.7"><ttl>1.5.7 Post-tensioned Concrete Construction</ttl><brk></brk>
+<spt outline="1.5.7.1"><ttl>1.5.7.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. Registered Professional Engineer with related experience, or</lst><brk></brk>
+<lst indent="-0.33">b. First Class Kenchikushi with four years of related experience.</lst><brk></brk></spt>
+</spt><spt outline="1.5.8"><ttl>1.5.8 Masonry Construction</ttl><brk></brk>
+<spt outline="1.5.8.1"><ttl>1.5.8.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. Registered Professional Engineer with related experience, or</lst><brk></brk>
+<lst indent="-0.33">b. First Class Kenchikushi with four years of related experience.</lst><brk></brk></spt>
+</spt><spt outline="1.5.9"><ttl>1.5.9 Wood</ttl><brk></brk>
+<spt outline="1.5.9.1"><ttl>1.5.9.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. Registered Professional Engineer with related experience</lst><brk></brk>
+<lst indent="-0.33">b. First Class Kenchikushi with four years of related experience</lst><brk></brk></spt>
+</spt><spt outline="1.5.10"><ttl>1.5.10 Verification of Site Soil Condition, Fill Placement and Load-Bearing Requirements</ttl><brk></brk>
+<spt outline="1.5.10.1"><ttl>1.5.10.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. First Class Kenchikushi, or</lst><brk></brk>
+<lst indent="-0.33">b. First Class Doboku Sekou Kanrigishi (1st class Civil Engineering Works Management Engineer), or</lst><brk></brk>
+<lst indent="-0.33">c. Geotechnical Survey Technician (Chishitsu Chosa Gishi), or</lst><brk></brk>
+<lst indent="-0.33">d. Soil Investigation Technician (Jiban Kensa Gishi)</lst><brk></brk></spt>
+</spt><spt outline="1.5.11"><ttl>1.5.11 Deep Foundations</ttl><brk></brk>
+<spt outline="1.5.11.1"><ttl>1.5.11.1 Special Inspector</ttl><brk></brk>
+<txt>Chishitsu Chosa Gishi (Professional Geotechnical Engineer)</txt><brk></brk></spt>
+</spt><spt outline="1.5.12"><ttl>1.5.12 Sprayed Fire Resistant Material</ttl><brk></brk>
+<spt outline="1.5.12.1"><ttl>1.5.12.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. ICC Spray-applied Fireproofing Special Inspector Certificate, or</lst><brk></brk>
+<lst indent="-0.33">b. ICC Fire Inspector I Certificate with one year of related experience, or</lst><brk></brk>
+<lst indent="-0.33">c. Registered Professional Engineer with related experience, or</lst><brk></brk>
+<lst indent="-0.33">d. First Class Kenchikushi with four years related experience.</lst><brk></brk></spt>
+</spt><spt outline="1.5.13"><ttl>1.5.13 Mastic and Intumescent Fire Resistant Coatings</ttl><brk></brk>
+<spt outline="1.5.13.1"><ttl>1.5.13.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. ICC Spray-applied Fireproofing Special Inspector Certificate, or</lst><brk></brk>
+<lst indent="-0.33">b. ICC Fire Inspector I Certificate with one year of related experience, or</lst><brk></brk>
+<lst indent="-0.33">c. Registered Professional Engineer with related experience, or</lst><brk></brk>
+<lst indent="-0.33">d. First Class Kenchikushi with four years related experience</lst><brk></brk></spt>
+</spt><spt outline="1.5.14"><ttl>1.5.14 Exterior Insulation and Finish System (EIFS)</ttl><brk></brk>
+<spt outline="1.5.14.1"><ttl>1.5.14.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. Registered Professional Engineer with related experience, or</lst><brk></brk>
+<lst indent="-0.33">b. First Class Kenchikushi with four years related experience.</lst><brk></brk></spt>
+</spt><spt outline="1.5.15"><ttl>1.5.15 Fire-Resistant Penetrations and Joints</ttl><brk></brk>
+<spt outline="1.5.15.1"><ttl>1.5.15.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. Passed the UL Firestop Exam with one year of related experience, or</lst><brk></brk>
+<lst indent="-0.33">b. Passed the FM Firestop Exam with one year of related experience, or</lst><brk></brk>
+<lst indent="-0.33">c. Registered Professional Engineer with related experience, or</lst><brk></brk>
+<lst indent="-0.33">d. First Class Kenchikushi with four years related experience.</lst><brk></brk></spt>
+</spt><spt outline="1.5.16"><ttl>1.5.16 Smoke Control</ttl><brk></brk>
+<spt outline="1.5.16.1"><ttl>1.5.16.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. AABC Technician Certification with one year of related experience, or</lst><brk></brk>
+<lst indent="-0.33">b. Registered Professional Engineer with related experience, or</lst><brk></brk>
+<lst indent="-0.33">c. First Class Kenchikushi with four years related experience</lst><brk></brk></spt>
+</spt><spt outline="1.5.17"><ttl>1.5.17 Architectural Components</ttl><brk></brk>
+<spt outline="1.5.17.1"><ttl>1.5.17.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. Registered Professional Architect with related experience, or</lst><brk></brk>
+<lst indent="-0.33">b. Registered Professional Engineer with related experience, or</lst><brk></brk>
+<lst indent="-0.33">c. First Class Kenchikushi with four years related experience.</lst><brk></brk></spt>
+</spt><spt outline="1.5.18"><ttl>1.5.18 Mechanical, Electrical, and Plumbing Designated Seismic Systems</ttl><brk></brk>
+<spt outline="1.5.18.1"><ttl>1.5.18.1 Special Inspector</ttl><brk></brk>
+<lst indent="-0.33">a. Registered Professional Engineer with related experience, or</lst><brk></brk>
+<lst indent="-0.33">b. First Class Kenchikushi with four years related experience.</lst><brk></brk></spt>
+</spt><spt outline="1.5.19"><ttl>1.5.19 Verification of Electrical Systems</ttl><brk></brk>
+<lst indent="-0.33">a. Chief Electrical Engineer (Denki Shunin Gijutusha), or</lst><brk></brk>
+<lst indent="-0.33">b. Electrical Construction Managing Engineer (Denki Sekou Kanrigishi), or</lst><brk></brk>
+<lst indent="-0.33">c. Japanese Licensed Electrician (Denki Koujishi)</lst><brk></brk></spt>
+<div class="brackets">[<spt outline="1.5.20"><ttl>1.5.20 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Special Inspector of Record<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> (SIOR)</ttl><brk></brk>
+<txt>Registered Professional Engineer or First Class Kenchikushi with four years of related experience.</txt><brk></brk></spt>
+]</div></spt></prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<spt outline="2.1"><ttl>2.1 FABRICATOR SPECIAL INSPECTIONS</ttl><brk></brk>
+<txt>Special Inspections of fabricator's work performed in the fabricator's shop is required to be inspected in accordance with the Statement of Special 
+Inspections and the Schedule of Special Inspections unless the fabricator is certified by the approved agency to perform such work without Special 
+Inspections. Submit the following certification <div class="brackets">[certifications]</div> to the Contracting Officer for information to allow work performed in the fabricator's 
+shop to not be subjected to Special Inspections.</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: The following certification is an acceptable alternative to meet the requirements for fabricator approval 
+in accordance with paragraph 1704.2.5.2 of IBC.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<lst>Minister of Land, Infrastructure and Transportation (MLIT) Certified <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Fabrication Plant<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>, Category as specified</lst><brk></brk>
+<txt>At the completion of fabrication, submit a <sub><pre class="display_SUB">&lt;SUB&gt;</pre>certificate of compliance<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>, to be included with the comprehensive final report of Special Inspections, 
+stating that the materials supplied and work performed by the fabricator are in accordance the construction documents.</txt><brk></brk></spt>
+</prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 RESPONSIBILITIES</ttl><brk></brk>
+<div class="brackets">[<spt outline="3.1.1"><ttl>3.1.1 Special Inspector of Record</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include this paragraph when the SIOR is required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<lst indent="-0.33">a. Supervise all Special Inspectors required by the contract documents and the IBC.</lst><brk></brk>
+<lst indent="-0.33">b. Submit a <sub><pre class="display_SUB">&lt;SUB&gt;</pre>SIOR Letter of Acceptance<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> to the Contracting Officer attesting to acceptance of the duties of SIOR, signed and sealed by the 
+SIOR.</lst><brk></brk>
+<lst indent="-0.33">c. Verify the qualifications of all of the Special Inspectors.</lst><brk></brk>
+<lst indent="-0.33">d. Verify the qualifications of fabricators.</lst><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the following bracketed requirements when the structural design is required to follow AISC 341 
+for seismic design of steel structures.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<lst indent="-0.33">e. Submit Special Inspections agency's <sub><pre class="display_SUB">&lt;SUB&gt;</pre>written practices<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> for the monitoring and control of the agency's operations to include the following:</lst><brk></brk>
+<itm indent="-0.33">(1) The agency's procedures for the selection and administration of inspection personnel, describing the training, experience 
+and examination requirements for qualifications and certification of inspection personnel.</itm><brk></brk>
+<itm indent="-0.33">(2) The agency's inspection procedures, including general inspection, material controls, and visual welding inspection.</itm><brk></brk>
+<lst indent="-0.33">f. Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>qualification records<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> for nondestructive testing (NDT) technicians designated for the project.</lst><brk></brk>
+<lst indent="-0.33">g. Submit <sub><pre class="display_SUB">&lt;SUB&gt;</pre>NDT procedures and equipment calibration records<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> for NDT to be performed and equipment to be used for the project.</lst>]</div><brk></brk>
+<lst indent="-0.33">h. Prepare a Special Inspections <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Project Manual<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>, which will cover the following:</lst><brk></brk>
+<itm>(1) Roles and responsibilities of the following individuals during Special Inspections: SIOR, SI, General Contractor, Subcontractors, 
+QC Manager, and DOR.</itm><brk></brk>
+<itm indent="-0.33">(2) Organizational chart and/or communication plan, indicating lines of communication.</itm><brk></brk>
+<itm indent="-0.33">(3) Contractor's internal plan for scheduling inspections. Address items such as timeliness of inspection requests, who to contact 
+for inspection requests, and availability of alternate inspectors.</itm><brk></brk>
+<itm indent="-0.33">(4) Indicate the government reporting procedures.</itm><brk></brk>
+<itm indent="-0.33">(5) Propose forms or templates to be used by SI and SIOR to document inspections.</itm><brk></brk>
+<itm indent="-0.33">(6) Indicate procedures for tracking nonconforming work and verification that corrective work is complete.</itm><brk></brk>
+<itm indent="-0.33">(7) Indicate how the SIOR and/or SI will participate in weekly QC meetings.</itm><brk></brk>
+<itm indent="-0.33">(8) Indicate how Special Inspections of shop fabricated items will be handled when the fabricator's shop is not certified per 
+paragraph FABRICATOR SPECIAL INSPECTIONS.</itm><brk></brk>
+<itm indent="-0.33">(9) Include a section in the manual that covers each specific item requiring Special Inspections that is indicated on the Schedule 
+of Special Inspections. Provide names and qualifications of each special inspector who will be performing the Special Inspections 
+for each specific item. Provide detail on how the Special Inspections are to be carried out for each item so that the expectations 
+are clear for the General Contractor and the Subcontractor performing the work.</itm><brk></brk>
+<lst>Make a copy of the Special Inspections Project Manual available on the job site during construction. Submit a copy of the Special Inspections 
+Project Manual for approval. </lst><brk></brk>
+<lst indent="-0.33">i. Attend coordination and mutual understanding meeting where the information in the Special Inspections Project Manual will be reviewed 
+to verify that all parties have a clear understanding of the Special Inspections provisions and the individual duties and responsibilities 
+of each party.</lst><brk></brk>
+<lst indent="-0.33">j. Maintain a 3- ring binder for the Special Inspector's daily and <sub><pre class="display_SUB">&lt;SUB&gt;</pre>biweekly reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> and the Special Inspections Project Manual. This 
+file must be located in a conspicuous place in the project trailer/office to allow review by the Contracting Officer and the DOR. </lst><brk></brk>
+<lst indent="-0.33">k. Submit a copy of the Special Inspector's <sub><pre class="display_SUB">&lt;SUB&gt;</pre>daily reports<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> to the QC Manager.</lst><brk></brk>
+<lst indent="-0.33">l. Discrepancies that are observed during Special Inspections must be reported to the QC Manager for correction. If discrepancies are 
+not corrected before the special inspector leaves the site the observed discrepancies must be documented in the daily report.</lst><brk></brk>
+<lst indent="-0.33">m. Submit a biweekly Special Inspections report until all work requiring Special Inspections is complete. A report is required for each 
+biweekly period in which Special Inspections activity occurs, and must include the following:</lst><brk></brk>
+<itm indent="-0.33">(1) A brief summary of the work performed during the reporting time frame.</itm><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the bracketed portion of the following line when there are designated seismic systems for mechanical 
+and electrical.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<itm indent="-0.33">(2) Changes and/or discrepancies with the drawings, specifications <div class="brackets">[and mechanical or electrical component certification,]</div> that 
+were observed during the reporting period.</itm><brk></brk>
+<itm indent="-0.33">(3) Discrepancies which were resolved or corrected.</itm><brk></brk>
+<itm indent="-0.33">(4) A list of nonconforming items requiring resolution.</itm><brk></brk>
+<itm indent="-0.33">(5) All applicable test results including nondestructive testing reports.</itm><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include this paragraph on large complex projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<lst indent="-0.33">n. At the completion of each Definable Feature of Work (DFOW) requiring Special Inspections, submit an <sub><pre class="display_SUB">&lt;SUB&gt;</pre>interim final report<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> of Special 
+Inspections that documents the Special Inspections completed for that DFOW and corrections of all discrepancies noted in the daily reports. 
+The interim final report of Special Inspections must be signed, dated and bear the seal of the SIOR.</lst>]</div><brk></brk>
+<lst indent="-0.33">o. At the completion of the project submit a comprehensive final report of Special Inspections that documents the Special Inspections 
+completed for the project and corrections of all discrepancies noted in the daily reports. The comprehensive final report of Special Inspections 
+must be signed, dated and bear the seal of the SIOR.</lst><brk></brk></spt>
+]</div><spt outline="3.1.2"><ttl>3.1.2 Quality Control Manager</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the bracketed items when there is no SIOR.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<lst indent="-0.33">a. Supervise all Special Inspectors required by the contract documents and the IBC.</lst><brk></brk>
+<lst indent="-0.33">b. Verify the qualifications of all of the Special Inspectors.</lst><brk></brk>
+<lst indent="-0.33">c. Verify the qualifications of fabricators.</lst><brk></brk>
+<lst indent="-0.33">d. Maintain a 3- ring binder for the Special Inspector's daily and biweekly reports. This file must be located in a conspicuous place 
+in the project trailer/office to allow review by the Contracting Officer and the DOR.</lst><brk></brk>
+]</div><lst indent="-0.33"><div class="brackets">[a.]</div><div class="brackets">[e.]</div> Maintain a rework items list that includes discrepancies noted on the Special Inspectors daily report.</lst><brk></brk></spt>
+<spt outline="3.1.3"><ttl>3.1.3 Special Inspectors</ttl><brk></brk>
+<lst indent="-0.33">a. Inspect all elements of the project for which the special inspector is qualified to inspect and are identified in the Schedule of Special 
+Inspections.</lst><brk></brk>
+<lst indent="-0.33">b. Attend preparatory phase meetings related to the Definable Feature of Work (DFOW) for which the special inspector is qualified to inspect.</lst><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include subparagraphs “c” through “j” when the SIOR is NOT required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include subparagraphs “c” through “e” requirements when the structural design is required to follow AISC 
+341 for seismic design of steel structures.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<lst indent="-0.33">c. Submit Special Inspections agency's written practices for the monitoring and control of the agency's operations to include the following:</lst><brk></brk>
+<itm indent="-0.33">(1) The agency's procedures for the selection and administration of inspection personnel, describing the training, experience 
+and examination requirements for qualifications and certification of inspection personnel.</itm><brk></brk>
+<itm indent="-0.33">(2) The agency's inspection procedures, including general inspection, material controls, and visual welding inspection.</itm><brk></brk>
+<lst indent="-0.33">d. Submit qualification records for nondestructive testing (NDT) technicians designated for the project.</lst><brk></brk>
+<lst indent="-0.33">e. Submit NDT procedures and equipment calibration records for NDT to be performed and equipment to be used for the project.</lst>]</div><brk></brk>
+<lst indent="-0.33">f. Submit a copy of the daily reports to the QC Manager.</lst><brk></brk>
+<lst indent="-0.33">g. Discrepancies that are observed during Special Inspections must be reported to the QC Manager for correction. If discrepancies are 
+not corrected before the special inspector leaves the site the observed discrepancies must be documented in the daily report.</lst><brk></brk>
+<lst indent="-0.33">h. Submit a biweekly Special Inspection Report until all inspections are complete. A report is required for each biweekly period in which 
+Special Inspections activity occurs, and must include the following:</lst><brk></brk>
+<itm indent="-0.33">(1) A brief summary of the work performed during the reporting time frame.</itm><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the bracketed portion when there are designated seismic systems for mechanical and electrical.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<itm indent="-0.33">(2) Changes and/or discrepancies with the drawings, specifications <div class="brackets">[and mechanical or electrical component certification,]</div> that 
+were observed during the reporting period.</itm><brk></brk>
+<itm indent="-0.33">(3) Discrepancies which were resolved or corrected.</itm><brk></brk>
+<itm indent="-0.33">(4) A list of nonconforming items requiring resolution.</itm><brk></brk>
+<itm indent="-0.33">5) All applicable test result including nondestructive testing reports.</itm><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include this paragraph for large complex projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<lst indent="-0.33">i. At the completion of each DFOW requiring Special Inspections, submit an interim final report of Special Inspections that documents 
+the Special Inspections completed for that DFOW. Identify the inspector responsible for each item inspected and corrections of all discrepancies 
+noted in the daily reports. The interim final report of Special Inspections must be signed, dated and indicate the certification of the 
+special inspector qualifying them to conduct the inspection. </lst>]</div><brk></brk>
+<lst indent="-0.33">j. At the completion of the project submit a <sub><pre class="display_SUB">&lt;SUB&gt;</pre>comprehensive final report<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> of Special Inspections that documents the Special Inspections 
+completed for the project and corrections of all discrepancies noted in the daily reports. The comprehensive final report of Special Inspections 
+must be signed, dated and indicate the certification of the special inspector qualifying them to conduct the inspection.</lst><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the following requirement when the SIOR is required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<lst indent="-0.33">k. Submit daily reports to the SIOR.</lst><brk></brk>
+]</div></spt></spt><spt outline="3.2"><ttl>3.2 DEFECTIVE WORK</ttl><brk></brk>
+<txt>Check work as it progresses, but failure to detect any defective work or materials must in no way prevent later rejection if defective work or 
+materials are discovered, nor obligate the Contracting Officer to accept such work.</txt><brk></brk></spt>
+</prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

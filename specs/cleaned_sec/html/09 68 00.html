@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>09 68 00.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">09 68 00</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:56</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><brk></brk>
+<hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-09 68 00 (November 2017)<brk></brk>
+ Change 1 - 08/18<brk></brk>
+ ----------------------------<brk></brk>
+Preparing Activity: <pra>USACE</pra> Superseding<brk></brk>
+ UFGS-09 68 00 (August 2016)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated April 2019</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 09 68 00</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>CARPETING<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>11/17</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project. The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>broadloom carpet, 
+modular tile carpet, and entrance carpet.</scp><brk></brk>
+This section is intended for floor coverings only, and should not be used to 
+specify carpeting installed on wall or ceiling surfaces. Where carpeting is 
+to be used on surfaces other than floors, refer to Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>09 72 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> WALLCOVERINGS.<brk></brk>
+Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections. Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text. For bracketed items, choose applicable 
+item(s) or insert appropriate information.<brk></brk>
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<brk></brk>
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of 
+the guide specification. The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<brk></brk>
+Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article. Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<brk></brk>
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are 
+referred to within the text by the basic designation only.</txt><brk></brk>
+<ref><org>ASTM INTERNATIONAL (ASTM)</org><brk></brk>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre><rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D2859<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2016) Standard Test Method for Ignition Characteristics 
+of Finished Textile Floor Covering Materials<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk><pre class="display_ADD">&lt;/ADD&gt;</pre></add>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E648<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017a) Standard Test Method for Critical Radiant 
+Flux of Floor-Covering Systems Using a Radiant 
+Heat Energy Source<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><add><pre class="display_ADD">&lt;ADD&gt;</pre><brk></brk><pre class="display_ADD">&lt;/ADD&gt;</pre></add>
+<brk></brk></ref>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre><ref><org>CALIFORNIA DEPARTMENT OF PUBLIC HEALTH (CDPH)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>CDPH SECTION 01350<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017; Version 1.2) Standard Method for the 
+Testing and Evaluation of Volatile Organic Chemical 
+Emissions from Indoor Sources using Environmental 
+Chambers<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<pre class="display_ADD">&lt;/ADD&gt;</pre></add><ref><org>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION (ISO)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ISO 2551<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(1981) Machine-made Textile Floor Coverings 
+- Determination of Dimensional Changes Due to 
+the Effects of Varied Water and Heat Conditions<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><del><pre class="display_DEL">&lt;DEL&gt;</pre><org>JAPANESE INDUSTRIAL STANDARDS (JIS)</org><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><org>JAPANESE STANDARDS ASSOCIATION (JSA)</org><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1125<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Methods Of Test For Moisture Content 
+Of Aggregate And Surface Moisture In Aggregate 
+By Drying<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1901-1<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Determination of the emission of volatile 
+organic compounds and aldehydes by building 
+products -- Sampling, preparation of test specimens 
+and testing condition -- Part 1: Boards, wallpaper 
+and floor materials<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5536<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Adhesives for Resilient Textile or Laminate 
+Floor Coverings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 2265-1<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2007)<add><pre class="display_ADD">&lt;ADD&gt;</pre> <pre class="display_ADD">&lt;/ADD&gt;</pre></add>Determination of flash point - Part 1: 
+Tag closed cup method<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 7134<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(1999)Cellular rubber and plastics - Determination 
+of dynamic cushioning performance<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 0805<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2005)Gray Scale for Assessing Staining<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 0849<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2013) Test Methods for color fastness to rubbing<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 1021-3<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2007)Textile floor coverings - Part 3: Determination 
+of thickness<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 1021-4<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2007)Textile floor coverings - Part 4: Methods 
+for determination of mass<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 1021-5<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2007)Textile floor coverings - Part 5: Determination 
+of number of tufts and/or loops per unit.<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 1021-10<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2007)Textiles floor coverings - Part 10: Test 
+Methods for dimensional changes due to water 
+and heat effects<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 1021-13<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2007)Textile floor coverings - Part 13: Assessment 
+of changes in appearance<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 1902<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015)Antimicrobial Fabric Test<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 4405<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2008) Tufted Pile Carpet<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 4406<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2008) Tile Carpet<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org><del><pre class="display_DEL">&lt;DEL&gt;</pre>MINISTRY OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM, GOVERNMENT OF JAPAN (MLIT)<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>MINISTRY 
+OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM (MLIT)<pre class="display_ADD">&lt;/ADD&gt;</pre></add></org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT SS Chapter 19<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2019) Public Building Construction Standard 
+Specifications Chapter 19: Interior Finishing 
+Works<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.2"><ttl>1.2 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review submittal description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.<brk></brk>
+The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G." Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System. 
+Only add a “G” to an item, if the submittal is sufficiently important or complex 
+in context of the project.<brk></brk>
+For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office. Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.<brk></brk>
+The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. Locate the "S" 
+submittal under the SD number that best describes the submittal item.<brk></brk>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are for <div class="brackets">[Contractor Quality Control approval.]</div> <div class="brackets">[information only. When used, a designation following the "G" 
+designation identifies the office that will review the submittal for the Government.]</div> Submittals with an "S" 
+are for inclusion in the Sustainability eNotebook, in conformance to Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-02 Shop Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Installation Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-10 Operation and Maintenance Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Cleaning and Protection<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Maintenance Service<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<add><pre class="display_ADD">&lt;ADD&gt;</pre><itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Maintenance Service Information<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk><pre class="display_ADD">&lt;/ADD&gt;</pre></add>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-11 Closeout Submittals<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Warranty<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 CERTIFICATIONS</ttl><brk></brk>
+<spt outline="1.3.1"><ttl>1.3.1 Indoor Air Quality Certifications</ttl><brk></brk>
+<spt outline="1.3.1.1"><ttl>1.3.1.1 Floor Covering Materials</ttl><brk></brk>
+<txt>Provide products certified to meet indoor air quality requirements by providing the certification or validation 
+by other third-party program that products meet the requirements of this Section. Provide current product certification 
+documentation from certification body. When product does not have certification, provide validation that product 
+meets the indoor air quality product requirements cited herein.</txt><brk></brk></spt>
+</spt></spt><spt outline="1.4"><ttl>1.4 DELIVERY, STORAGE, AND HANDLING</ttl><brk></brk>
+<txt>Deliver materials to the site in the manufacturer's original wrappings and packages clearly labeled with the 
+manufacturer's name, brand name, size, dye lot number, and related information. Remove materials from packaging 
+and store them in a clean, dry, well ventilated area (100 percent outside air supply, minimum of 1.5 air changes 
+per hour, and no recirculation), protected from damage, soiling, and moisture, and strong contaminant sources 
+and residues, and maintain at a temperature above<met><pre class="display_MET">&lt;MET&gt;</pre> 16 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 60 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> for 2 days prior to installation. 
+Do not store carpet or carpet tiles with materials which have high emissions of volatile organic compounds (VOCs) 
+or other contaminants, including paints and adhesives. Do not store carpet near materials that may off gas or 
+emit harmful fumes, such as kerosene heaters, fresh paint, or adhesives.</txt><brk></brk></spt>
+<spt outline="1.5"><ttl>1.5 AMBIENT CONDITIONS</ttl><brk></brk>
+<txt>Maintain areas in which carpeting is to be installed at a temperature above<met><pre class="display_MET">&lt;MET&gt;</pre> 16 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 60 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and below<met><pre class="display_MET">&lt;MET&gt;</pre>
+ 32 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 90 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> for 2 days before installation, during installation, and for 2 days after installation. 
+Provide temporary ventilation during work of this section. Maintain a minimum temperature of<met><pre class="display_MET">&lt;MET&gt;</pre> 13 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 55 
+degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thereafter for the duration of the contract.</txt><brk></brk></spt>
+<spt outline="1.6"><ttl>1.6 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>WARRANTY<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Provide manufacturer's standard performance guarantees or warranties including minimum ten year wear warranty, 
+two year material and workmanship and ten year tuft bind and delamination.</txt><brk></brk></spt>
+</prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<spt outline="2.1"><ttl>2.1 CARPET</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: If more than one carpet type is required for a project, use a separate 
+paragraph for each carpet type. Designate each carpet type with a letter or 
+number symbol. Use the same designations to key carpets to locations on the 
+drawings and in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>09 06 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SCHEDULES FOR FINISHES.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>ADA Requirements: Carpet must be securely attached; have a firm cushion, or 
+backing, or no cushion; and have a level loop, textured loop, level cut pile, 
+or level cut/uncut pile texture. The maximum thickness should be<met><pre class="display_MET">&lt;MET&gt;</pre> 13 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/2 
+inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Fasten exposed edges of carpet to floor surfaces and have trim along 
+the entire length of the exposed edge.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Nylon fiber is typically abrasion resistant and durable in all pile configurations 
+using filament fiber, has good stain removal characteristics, and is recommended 
+for commercial installations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Triexta (PTT) fiber is recommended for residential installations. Some PTT 
+fiber made outside the US can be used in commercial applications, but specification 
+of these products must comply with the Buy America Act when applicable. Triexta 
+is marketed as offering excellent durability, resiliency and crush resistance. 
+Permanent stain resistance, bleach resistance and colorfastness built into the 
+fiber helps to make triexta carpets easy to clean and can extend the life of 
+the carpet. It is important to note that long term performance of triexta fiber 
+has not yet been tested. <pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Polyethylene terephthalate (PET) recycled polyester fiber has permanent fade 
+resistance, is permanently colorfast, has a permanent stain resistance which 
+is higher than other type fibers, is impervious to harsh chemicals, and has 
+the lowest static buildup. PET type polyester carpet, once crushed under continued 
+high pressure, is less likely than nylon carpet to rebound. PET carpet is not 
+recommended for severe and moderate wear level areas and should be limited to 
+light wear areas.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Wool is a natural fiber, which is inherently flame resistant, forming a char 
+that will neither melt nor drip. Wool is also rapidly renewable and resilient, 
+and due to the scaly character of its fiber it scatters optical light, thus 
+reducing soiling visibility. Wool is highly recommended for shipboard use due 
+to it being inherently flame resistant.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Wool, cotton, jute, hemp and sisal carpets may not meet accepted performance 
+requirements of commercial carpet. Verify suitability, availability and adequate 
+competition before specifying these products.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Flexible and modular components, like carpet tile, reduce the labor and materials 
+costs related to operations and maintenance, churn, and future renovations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Continuous dye process uses two to three times less water than batch dyeing 
+during manufacture.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Furnish first quality carpet that is free of visual blemishes, streaks, poorly dyed areas, fuzzing of pile yarn, 
+spots or stains, and other physical and manufacturing defects. Provide carpet materials and treatments as reasonably 
+nonallergenic and free of other recognized health hazards. Provide a static control construction on all grade 
+carpets which gives adequate durability and performance. Submit manufacturer's catalog data and printed documentation 
+stating physical characteristics, durability, resistance to fading, and flame resistance characteristics for 
+each type of carpet material and installation accessory. Submit manufacturer's Product Data for 1) Carpet, 2) 
+Moldings, and 3) Carpet Cushion. Also, submit Samples of the following:</txt><brk></brk>
+<lst indent="-0.33">a. Carpet: <div class="brackets">[Two]</div> <div class="brackets">[_____]</div> "Production Quality" samples<met><pre class="display_MET">&lt;MET&gt;</pre> 450 by 450 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 18 by 18 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of each carpet 
+proposed for use, showing quality, pattern, and color specified</lst><brk></brk>
+<lst indent="-0.33">b. Moldings: <div class="brackets">[Two]</div> <div class="brackets">[_____]</div> samples of each type minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 300 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> long</lst><brk></brk>
+<lst indent="-0.33">c. Carpet Cushion: <div class="brackets">[Two]</div> <div class="brackets">[_____]</div> samples minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 150 by 150 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 by 6 inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> </lst><brk></brk>
+<spt outline="2.1.1"><ttl>2.1.1 Indoor Air Quality Requirements</ttl><brk></brk>
+<txt>Products must meet emissions requirements of <rid><pre class="display_RID">&lt;RID&gt;</pre>CDPH SECTION 01350<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide certification or validation of indoor 
+air quality for carpet.</txt><brk></brk></spt>
+<spt outline="2.1.2"><ttl>2.1.2 Physical Characteristics for [Broadloom] [Modular Tile] [Entrance] Carpet</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Copy this paragraph including subparagraphs if more than one carpet is 
+specified. Designate each carpet type with a letter or number symbol. Use 
+the same designations to key carpets to locations on the drawings or in Section 
+<srf><pre class="display_SRF">&lt;SRF&gt;</pre>09 06 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SCHEDULES FOR FINISHES.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="2.1.2.1"><ttl>2.1.2.1 Carpet Construction</ttl><brk></brk>
+<txt><div class="brackets">[Tufted]</div> <div class="brackets">[Woven]</div> <div class="brackets">[Bonded]</div> <div class="brackets">[Needlebond]</div> <div class="brackets">[Needle Felt]</div> <div class="brackets">[_____]</div></txt><brk></brk></spt>
+<spt outline="2.1.2.2"><ttl>2.1.2.2 Type</ttl><brk></brk>
+<txt><div class="brackets">[Broadloom<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[3.6]</div> <div class="brackets">[1.8]</div> m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[12]</div> <div class="brackets">[6]</div> feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> minimum usable carpet width <div class="brackets">[with exception of corridors]</div> <div class="brackets">[and]</div> <div class="brackets">[stairs]</div>
+<div class="brackets">[_____]</div>.]</div><div class="brackets">[Modular tile<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[450 by 450]</div> <div class="brackets">[500 by 500]</div> <div class="brackets">[600 by 600]</div> <div class="brackets">[914 by 305]</div> <div class="brackets">[1219 by 305]</div> <div class="brackets">[_____]</div> mm square<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[18 
+by 18]</div> <div class="brackets">[20 by 20]</div> <div class="brackets">[24 by 24]</div> <div class="brackets">[36 by 12]</div> <div class="brackets">[48 by 12]</div> <div class="brackets">[_____]</div> inch square<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> with 0.15 percent growth/shrink rate in 
+accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ISO 2551<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 1021-10<pre class="display_RID">&lt;/RID&gt;</pre></rid>.]</div> <div class="brackets">[Entrance<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[450 by 450]</div> <div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[18 by 18]</div> <div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> square<met><pre class="display_MET">&lt;MET&gt;</pre>
+<div class="brackets">[3.6]</div> <div class="brackets">[1.8]</div> m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[12]</div> <div class="brackets">[6]</div> feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> width <div class="brackets">[_____]</div> mat size.]</div></txt><brk></brk></spt>
+<spt outline="2.1.2.3"><ttl>2.1.2.3 Pile Type</ttl><brk></brk>
+<txt><div class="brackets">[Level-loop]</div> <div class="brackets">[Multilevel loop]</div> <div class="brackets">[Cut and loop]</div> <div class="brackets">[Frieze]</div> <div class="brackets">[Cut pile]</div> <div class="brackets">[Random sheared]</div> <div class="brackets">[Level tip shear]</div></txt><brk></brk></spt>
+<spt outline="2.1.2.4"><ttl>2.1.2.4 Pile Fiber</ttl><brk></brk>
+<txt>Commercial 100 percent branded (federally registered trademark) <div class="brackets">[nylon continuous filament]</div> <div class="brackets">[nylon staple]</div>.</txt><brk></brk></spt>
+<spt outline="2.1.2.5"><ttl>2.1.2.5 Gauge or Pitch</ttl><brk></brk>
+<txt>Minimum <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 1021-5<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.1.2.6"><ttl>2.1.2.6 Stitches or Rows/Wires</ttl><brk></brk>
+<txt>Minimum <div class="brackets">[_____]</div> per<met><pre class="display_MET">&lt;MET&gt;</pre> square meter<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> square inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng></txt><brk></brk></spt>
+<spt outline="2.1.2.7"><ttl>2.1.2.7 Surface Pile Weight</ttl><brk></brk>
+<txt>Minimum <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre> kg/square meter<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> ounces per square yard<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. This does not include weight of backings. Determine 
+weight in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 1021-4<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.1.2.8"><ttl>2.1.2.8 Pile Thickness</ttl><brk></brk>
+<txt>Minimum <div class="brackets">[_____]</div><met><pre class="display_MET">&lt;MET&gt;</pre> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 1021-3<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.1.2.9"><ttl>2.1.2.9 Pile Density</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Pile Density = 36 x Pile Weight/Pile Thickness.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Minimum <div class="brackets">[_____]</div></txt><brk></brk></spt>
+<spt outline="2.1.2.10"><ttl>2.1.2.10 Dye Method</ttl><brk></brk>
+<txt><div class="brackets">[Solution dyed]</div> <div class="brackets">[Stock dyed]</div> <div class="brackets">[Yarn (or Skein) dyed]</div> <div class="brackets">[Piece dyed]</div> <div class="brackets">[Space dyed]</div> <div class="brackets">[Continuous dyed]</div></txt><brk></brk></spt>
+<spt outline="2.1.2.11"><ttl>2.1.2.11 Backing Materials</ttl><brk></brk>
+<txt>Provide primary backing materials like <div class="brackets">[those customarily used and accepted by the trade for each type of carpet]</div>
+<div class="brackets">[polypropylene]</div> <div class="brackets">[synthetic material]</div> <div class="brackets">[rubber]</div> <div class="brackets">[jute]</div> <div class="brackets">[cotton]</div> <div class="brackets">[_____]</div>. Provide secondary backing to suit project 
+requirements of those customarily used and accepted by the trade for each type of carpet.</txt><brk></brk></spt>
+<spt outline="2.1.2.12"><ttl>2.1.2.12 Attached Cushion</ttl><brk></brk>
+<txt>Provide an attached cushion <div class="brackets">[chemically frothed polyurethane with minimum weight of<met><pre class="display_MET">&lt;MET&gt;</pre> 0.610 kg/sq. m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 18 oz/sq. 
+yard<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, minimum density of<met><pre class="display_MET">&lt;MET&gt;</pre> 176 kg/cubic m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 11 lb/cubic foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> <div class="brackets">[mechanically frothed polyurethane with minimum weight 
+of<met><pre class="display_MET">&lt;MET&gt;</pre> 0.745 kg/sq. m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 22 oz/sq. yard<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, minimum density of<met><pre class="display_MET">&lt;MET&gt;</pre> 224 kg/cubic m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 14 lb/cubic foot<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, minimum thickness of<met><pre class="display_MET">&lt;MET&gt;</pre> 2.5 
+mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.100 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, and maximum compression resistance of<met><pre class="display_MET">&lt;MET&gt;</pre> 34.5 kPa<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5 psi<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, and compression set of 15 percent in accordance 
+with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 7134<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div>. Do not exceed the maximum ash content of 50 percent. Pass the accelerated aging test in accordance 
+with <div class="brackets">[<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 7134<pre class="display_RID">&lt;/RID&gt;</pre></rid>]</div> for the cushion.</txt><brk></brk></spt>
+</spt></spt><spt outline="2.2"><ttl>2.2 PERFORMANCE REQUIREMENTS</ttl><brk></brk>
+<spt outline="2.2.1"><ttl>2.2.1 Texture Appearance Retention Rating (TARR)</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use the chart below to identify the recommended minimum use TARR traffic 
+level classification that corresponds to the end-use application. These classifications 
+are based on typical usage. Use a higher classification if traffic exposure 
+is expected to be greater than usual. Provide a TARR traffic level classification 
+for each carpet used on a project.<brk></brk>
+<hl1>END-USE CLASSIFICATION CHART</hl1><brk></brk>
+<hl2>End-Use Application</hl2> <hl2>Minimum Use <brk></brk>
+ Classification</hl2><brk></brk>
+BANKS/CREDIT UNIONS<brk></brk>
+ Entrances and customer banking space Severe<brk></brk>
+ Open office space, private offices Heavy<brk></brk>
+BOWLING ALLEYS<brk></brk>
+ Concourses (excluding food service,<brk></brk>
+ working and storage areas) Severe<brk></brk>
+CHAPELS AND OTHER RELIGIOUS FACILITIES<brk></brk>
+ Educational wing, worship areas Heavy<brk></brk>
+CHILD CARE CENTERS<brk></brk>
+ All areas Severe<brk></brk>
+CLUBS<brk></brk>
+ All areas Severe<brk></brk>
+HOUSING<brk></brk>
+<hl2>Single Family</hl2><brk></brk>
+ Family rooms,living rooms,dining rooms Heavy<brk></brk>
+ Sleeping rooms Heavy<brk></brk>
+ Combination living/sleeping rooms Heavy<brk></brk>
+<hl2>Multi-Family</hl2><brk></brk>
+ Common areas (lobbies,lounges) Severe<brk></brk>
+ Corridors Severe<brk></brk>
+ Family rooms,living rooms,dining rooms Heavy<brk></brk>
+ Multi-purpose areas Severe<brk></brk>
+ Sleeping rooms Heavy<brk></brk>
+ Combination living/sleeping rooms Heavy<brk></brk>
+LABORATORY/RESEARCH FACILITIES<brk></brk>
+ Computer work areas Severe<brk></brk>
+ Closed private office Heavy<brk></brk>
+ Open work areas, dry labs Severe<brk></brk>
+LIBRARIES<brk></brk>
+ Conference rooms, corridors Severe<brk></brk>
+LODGING FACILITIES/DORMITORIES<brk></brk>
+ Conference rooms Severe<brk></brk>
+ Combination living/sleeping rooms Severe<brk></brk>
+ Dining facilities Severe<brk></brk>
+ Offices Heavy<brk></brk>
+ Public areas(lobbies,lounges,TV rooms,<brk></brk>
+ day rooms) Severe<brk></brk>
+ Sleeping rooms Heavy<brk></brk>
+MEDICAL FACILITIES <brk></brk>
+(excluding patient treatment areas)<brk></brk>
+ Assisted living areas,classrooms Heavy<brk></brk>
+ Chapels, consultation rooms Heavy<brk></brk>
+ Clinical waiting areas (outpatient,<brk></brk>
+ pharmacy,ancillary zone only) Severe<brk></brk>
+ Corridors,dining areas,elevators Severe<brk></brk>
+ Entrance areas<brk></brk>
+ (entry mats should be used) Severe<brk></brk>
+ Libraries Heavy<brk></brk>
+ Lobbies Severe<brk></brk>
+ Lounges Heavy<brk></brk>
+ Offices (private,semi-private) Severe<brk></brk>
+ Patient rooms Heavy<brk></brk>
+ Playrooms (OB/GYN,Pediatric clinics) Severe<brk></brk>
+ Staff sleeping and watch areas Heavy<brk></brk>
+MILITARY HOUSING<brk></brk>
+<hl2>Family Housing</hl2><brk></brk>
+ Flag Heavy<brk></brk>
+ Single unit Heavy<brk></brk>
+ Multi-unit (corridors,sleeping/living <brk></brk>
+ rooms) Heavy<brk></brk>
+ Multi-unit (public areas,lobbies,lounges) Severe<brk></brk>
+<hl2>Bachelor Officer Quarters</hl2><brk></brk>
+ Sleeping/living rooms Heavy<brk></brk>
+ Public areas (lobbies,lounges) Severe<brk></brk>
+ Dining Facilities Severe<brk></brk>
+ Offices Heavy<brk></brk>
+<hl2>Bachelor Enlisted Quarters</hl2><brk></brk>
+ Sleeping/living rooms Severe<brk></brk>
+ Public areas (lobbies,lounges) Severe<brk></brk>
+ Dining Facilities Severe<brk></brk>
+ Offices Heavy<brk></brk>
+MUSIC OR DRAMA CENTERS<brk></brk>
+ All areas Severe<brk></brk>
+OFFICES (including administrative areas)<brk></brk>
+ Closed private offices Heavy<brk></brk>
+ Corridors Severe<brk></brk>
+ Conference rooms Heavy<brk></brk>
+ Open plan office (circulation areas) Severe<brk></brk>
+ Open plan office (work areas) Heavy<brk></brk>
+RESTAURANTS (excluding work spaces)<brk></brk>
+ Dining areas Severe<brk></brk>
+ Cafeteria-type dining areas,enlisted <brk></brk>
+ canteens Severe<brk></brk>
+ Office areas Heavy<brk></brk>
+RETAIL STORES<brk></brk>
+ Offices Heavy<brk></brk>
+ Restaurant and cafeteria dining areas Severe<brk></brk>
+ Sales areas Severe<brk></brk>
+THEATERS<brk></brk>
+ All areas Severe<brk></brk>
+TRAINING BUILDINGS/EDUCATIONAL FACILITIES <brk></brk>
+(including dependents' schools)<brk></brk>
+ Classrooms,corridors Severe<brk></brk>
+ Staff/administration offices Heavy<brk></brk>
+YOUTH CENTERS<brk></brk>
+ All areas Severe<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide carpet with a greater than or equal to <div class="brackets">[3.0 (Heavy)]</div> <div class="brackets">[3.5 (Severe)]</div> TARR traffic level classification 
+in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 1021-13<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.2.2"><ttl>2.2.2 Static Control</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Specify static control to meet project requirements. Installations for 
+critical areas such as computer rooms will use the 2.0 kV requirements. Static 
+protected carpets for most commercial installations are normally rated at 3.5 
+kV.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide static control to permanently regulate static buildup to less than <div class="brackets">[3.5]</div> <div class="brackets">[2.0]</div> <div class="brackets">[_____]</div> kV when tested 
+at 20 percent relative humidity and<met><pre class="display_MET">&lt;MET&gt;</pre> 21 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 70 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 4406<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.2.3"><ttl>2.2.3 Flammability and Critical Radiant Flux Requirements</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choice of critical radiant flux level as it applies to building type 
+and area of application will be made in accordance with the latest edition of 
+NFPA 101. Wherever the use of Class II (0.22) watts finish is required, Class 
+I (0.45) watts will be permitted.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Comply with <add><pre class="display_ADD">&lt;ADD&gt;</pre><rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D2859<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <pre class="display_ADD">&lt;/ADD&gt;</pre></add><rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E648<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Provide carpet in corridors and exits with a minimum average critical radiant 
+flux of <div class="brackets">[0.22]</div> <div class="brackets">[0.45]</div> watts per square centimeter when tested in accordance with <add><pre class="display_ADD">&lt;ADD&gt;</pre><rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM D2859<pre class="display_RID">&lt;/RID&gt;</pre></rid> or <pre class="display_ADD">&lt;/ADD&gt;</pre></add><rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E648<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Flame 
+time earlier than 20 seconds, burned yarn shorter than 10 mm in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 4406<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Carpet shall be flameproof 
+in accordance with Japan Fire Defense Law and prescribed in Fire Service Act (Act No. 186 of 1948).</txt><brk></brk></spt>
+<spt outline="2.2.4"><ttl>2.2.4 Tuft Bind</ttl><brk></brk>
+<txt>Comply with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 4405<pre class="display_RID">&lt;/RID&gt;</pre></rid> for tuft bind force required to pull a tuft or loop free from carpet backing with a minimum 
+<div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>40 N <pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>10 pound <pre class="display_ENG">&lt;/ENG&gt;</pre></eng>average force for loop pile broadloom]</div> <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>18 N <pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>3 pound <pre class="display_ENG">&lt;/ENG&gt;</pre></eng>average force for cut pile broadloom]</div> <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>36 
+N <pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>8 pound <pre class="display_ENG">&lt;/ENG&gt;</pre></eng>average force for modular carpet tile]</div>. Provide tuft bind force required to pull a tuft or loop free 
+from carpet backing with a minimum 24.5 N average force for loop pile in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 4406<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.2.5"><ttl>2.2.5 Colorfastness to Crocking</ttl><brk></brk>
+<txt>Comply dry and wet crocking with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 0849<pre class="display_RID">&lt;/RID&gt;</pre></rid> for all colors.</txt><brk></brk></spt>
+<spt outline="2.2.6"><ttl>2.2.6 Colorfastness to Light</ttl><brk></brk>
+<txt>Comply colorfastness to light with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 0805<pre class="display_RID">&lt;/RID&gt;</pre></rid>/ <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 4406<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+<spt outline="2.2.7"><ttl>2.2.7 Colorfastness to Water</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include this test when specifying carpet constructed of yarn dyed fibers.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Comply colorfastness to water with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 1021-10<pre class="display_RID">&lt;/RID&gt;</pre></rid> and with a minimum 4.0 gray scale rating and a minimum 4.0 transfer 
+scale rating.</txt><brk></brk></spt>
+<spt outline="2.2.8"><ttl>2.2.8 Delamination Strength</ttl><brk></brk>
+<txt>Provide delamination strength for tufted carpet with a secondary back of minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 440 N/m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2.5 lbs/inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.</txt><brk></brk></spt>
+<spt outline="2.2.9"><ttl>2.2.9 Antimicrobial</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include when required for a specific use such as child care, dining facilities 
+or hospitals.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Nontoxic antimicrobial treatment in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS L 1902<pre class="display_RID">&lt;/RID&gt;</pre></rid> guaranteed by the carpet manufacturer to last 
+the life of the carpet.</txt><brk></brk></spt>
+</spt><spt outline="2.3"><ttl>2.3 CARPET CUSHION</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Carpet cushions are EPA designated products for recycled content. Use 
+materials with recycled content where appropriate for use. Verify suitability, 
+availability within the region, cost effectiveness and adequate competition 
+(including verification of bracketed percentages included in this guide specification) 
+before specifying product recycled content requirements. A resource that can 
+be used to identify products with recycle content is the "Comprehensive Procurement 
+Guidelines (CPG)" page within the EPA's website at http://www.epa.gov. Other 
+products with recycled content are also acceptable when meeting all requirements 
+of this specification.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Research shows the product is available from US national manufacturers above 
+the minimum recycled content percentages shown below. Some manufacturers and 
+regions have higher percentages. Based on research, insert desired minimum percentages 
+into the empty set of brackets.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Select the appropriate carpet cushion.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<spt outline="2.3.1"><ttl>2.3.1 Fiber Cushion</ttl><brk></brk>
+<txt><div class="brackets">[Rubberized hair, mothproofed and sterilized]</div> <div class="brackets">[Rubberized jute <div class="brackets">[with minimum 40 percent recycled content]</div>, mothproofed 
+and sterilized]</div> <div class="brackets">[Synthetic with minimum <div class="brackets">[___]</div> percent recycled content]</div> <div class="brackets">[Resinated, recycled textile]</div>.</txt><brk></brk>
+<spt outline="2.3.1.1"><ttl>2.3.1.1 Weight</ttl><brk></brk>
+<txt><met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[_____]</div> g/sq.m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre><div class="brackets">[_____]</div> oz./sq. yd.<pre class="display_ENG">&lt;/ENG&gt;</pre></eng></txt><brk></brk></spt>
+<spt outline="2.3.1.2"><ttl>2.3.1.2 Thickness</ttl><brk></brk>
+<txt><met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre><div class="brackets">[_____]</div> inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> plus 5 percent maximum</txt><brk></brk></spt>
+<spt outline="2.3.1.3"><ttl>2.3.1.3 Density</ttl><brk></brk>
+<txt><met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[_____]</div> kg/cu.m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre><div class="brackets">[_____]</div> lb/cu.ft.<pre class="display_ENG">&lt;/ENG&gt;</pre></eng></txt><brk></brk></spt>
+</spt>]</div><div class="brackets">[<spt outline="2.3.2"><ttl>2.3.2 Rubber Cushion</ttl><brk></brk>
+<txt><div class="brackets">[Flat]</div> <div class="brackets">[Rippled waffle]</div> <div class="brackets">[Textured flat]</div> <div class="brackets">[Reinforced]</div> <div class="brackets">[, with minimum 60 percent recycled content.]</div></txt><brk></brk>
+<spt outline="2.3.2.1"><ttl>2.3.2.1 Weight</ttl><brk></brk>
+<txt><met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[_____]</div> g/sq.m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre><div class="brackets">[_____]</div> oz./sq. yd.<pre class="display_ENG">&lt;/ENG&gt;</pre></eng></txt><brk></brk></spt>
+<spt outline="2.3.2.2"><ttl>2.3.2.2 Thickness</ttl><brk></brk>
+<txt><met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre><div class="brackets">[_____]</div> inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> plus 5 percent maximum</txt><brk></brk></spt>
+<spt outline="2.3.2.3"><ttl>2.3.2.3 Density</ttl><brk></brk>
+<txt><met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[_____]</div> kg/cu.m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre><div class="brackets">[_____]</div> lb/cu.ft.<pre class="display_ENG">&lt;/ENG&gt;</pre></eng></txt><brk></brk></spt>
+</spt>]</div><div class="brackets">[<spt outline="2.3.3"><ttl>2.3.3 Polyurethane-Foam Cushion</ttl><brk></brk>
+<txt><div class="brackets">[Grafted prime]</div> <div class="brackets">[Densified]</div> <div class="brackets">[Bonded]</div> <div class="brackets">[Mechanically frothed]</div> <div class="brackets">[, with minimum 15 percent recycled content]</div>.</txt><brk></brk>
+<spt outline="2.3.3.1"><ttl>2.3.3.1 Thickness</ttl><brk></brk>
+<txt><met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre><div class="brackets">[_____]</div> inches<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> plus 5 percent maximum</txt><brk></brk></spt>
+<spt outline="2.3.3.2"><ttl>2.3.3.2 Density</ttl><brk></brk>
+<txt><div class="brackets">[_____]</div> kg/cu.m<eng><pre class="display_ENG">&lt;ENG&gt;</pre><div class="brackets">[_____]</div> lb/cu.ft.<pre class="display_ENG">&lt;/ENG&gt;</pre></eng></txt><brk></brk></spt>
+</spt>]</div><spt outline="2.3.4"><ttl>2.3.4 Performance Requirements - Critical Radiant Flux</ttl><brk></brk>
+<txt>Provide carpet cushion in corridors and exits with a minimum average critical radiant flux of <div class="brackets">[0.22]</div><div class="brackets">[0.45]</div> watts 
+per square centimeter when tested in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E648<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+</spt><spt outline="2.4"><ttl>2.4 ADHESIVES AND CONCRETE PRIMER</ttl><brk></brk>
+<txt>Comply with applicable regulations regarding toxic and hazardous materials. Provide water resistant, mildew 
+resistant, nonflammable, and nonstaining adhesives and concrete primers for carpet installation as required by 
+the carpet manufacturer. Provide release adhesive for modular tile carpet as recommended by the carpet manufacturer. 
+Provide adhesives flashpoint of minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 60 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 140 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS K 2265-1<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Non-aerosol 
+adhesive, aerosol adhesives, and concrete primer products used on the interior of the building (defined as inside 
+of the weatherproofing system) must meet emission requirements of F 4-Star.</txt><brk></brk></spt>
+<spt outline="2.5"><ttl>2.5 MOLDINGS</ttl><brk></brk>
+<txt>Provide carpet moldings where floor covering material changes or carpet edge does not abut a vertical surface. 
+Provide <div class="brackets">[a heavy-duty <div class="brackets">[vinyl]</div> <div class="brackets">[rubber]</div> molding designed for the type of carpet being installed. Provide floor 
+flange of a minimum<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[38 mm]</div><pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[1 1/2 inches]</div><pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide. Provide color to match <div class="brackets">[resilient base]</div> <div class="brackets">[_____]</div>.]</div> <div class="brackets">[an aluminum 
+molding, pinless clamp-down type, designed for the type of carpet being installed. Provide <div class="brackets">[natural color anodized]</div>
+<div class="brackets">[prefinished color <div class="brackets">[_____]</div> finish. Provide a floor flange of a minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 38 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1-1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide and face a minimum<met><pre class="display_MET">&lt;MET&gt;</pre>
+ 16 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 5/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> wide.]</div>]</div></txt><brk></brk></spt>
+<spt outline="2.6"><ttl>2.6 TAPE</ttl><brk></brk>
+<txt>Provide tape for seams as recommended by the carpet manufacturer for the type of seam used in broadloom installation. 
+Seam sealant must have a maximum VOC content of no more than 50 grams/liter. Do not use sealants that contain 
+1,1,1-trichloroethane or toluene.</txt><brk></brk></spt>
+<spt outline="2.7"><ttl>2.7 COLOR, TEXTURE, AND PATTERN</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Coordinate editing of color reference sentence(s) with the Government. 
+Generally the Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>09 06 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SCHEDULES FOR FINISHES or drawings are used when 
+the project is designed by an Architect or Interior designer. Select color 
+from manufacturer's standard colors or identified in this specification only 
+when the project has minimal finishes.<brk></brk>
+When the government directs that color be located in the drawings, add a note 
+that states: "Where color is shown as being specific to one manufacturer, an 
+equivalent color by another manufacturer may be submitted for approval. Manufacturers 
+and materials specified are not intended to limit the selection of equal colors 
+from other manufacturers. The word "color" as used herein includes surface 
+color and pattern."<brk></brk>
+When more than one type, pattern or color is specified identify location.<brk></brk>
+When a manufacturer's name, stock number, pattern, and color is specified for 
+color, be certain that the product conforms to the specification, as edited. <pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide color, texture, and pattern in accordance with this section or as indicated on the drawings.</txt><brk></brk></spt>
+</prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 SURFACE PREPARATION</ttl><brk></brk>
+<txt>Do not install carpet on surfaces that are unsuitable and will prevent a proper installation. Prepare subfloor 
+in accordance with flooring manufacturer's recommended instructions. Repair holes, cracks, depressions, or rough 
+areas using material recommended by the carpet or adhesive manufacturer. Free floor of any foreign materials 
+and sweep clean. Before beginning work, test subfloor with glue and carpet to determine "open time" and bond. 
+Submit <div class="brackets">[three]</div> <div class="brackets">[_____]</div> copies of the manufacturer's printed Installation instructions for the carpet, including 
+Surface Preparation, seaming techniques, and recommended adhesives and tapes.</txt><brk></brk></spt>
+<spt outline="3.2"><ttl>3.2 MOISTURE AND ALKALINITY TESTS</ttl><brk></brk>
+<txt>Test concrete slab for moisture content in accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1125<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Conform to manufacturer recommendations 
+for pH level and alkalinity of the concrete substrate. Submit <div class="brackets">[three]</div> <div class="brackets">[_____]</div> copies of reports of Moisture 
+and Alkalinity Tests including content of concrete slab stating date of test, person conducting the test, and 
+the area tested.</txt><brk></brk></spt>
+<spt outline="3.3"><ttl>3.3 PREPARATION OF CONCRETE SUBFLOOR</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Coordinate need for sealing of concrete slab with project requirements 
+such as wet conditions which might occur in hospital care.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Do not commence installation of the carpeting until concrete substrate is at least 90 days old. Prepare the 
+concrete surfaces in accordance with the carpet manufacturer's instructions. Match carpet, when required, and 
+adhesives to prevent off-gassing to a type of curing compounds, leveling agents, and concrete sealer.</txt><brk></brk></spt>
+<spt outline="3.4"><ttl>3.4 INSTALLATION</ttl><brk></brk>
+<txt>Installation shall comply with <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT SS Chapter 19<pre class="display_RID">&lt;/RID&gt;</pre></rid>. Isolate area of installation from rest of building. Perform 
+all work by manufacturer's approved installers. Conduct installation in accordance with the manufacturer's printed 
+instructions. Protect edges of carpet meeting hard surface flooring with molding and install in accordance with 
+the molding manufacturer's printed instructions. Use autofoam mothproofing system for wool carpets. Follow 
+ventilation, personal protection, and other safety precautions recommended by the adhesive manufacturer. Continue 
+ventilation during installation and for at least 72 hours following installation. Do not permit traffic or movement 
+of furniture or equipment in carpeted area for 24 hours after installation. Complete other work which would 
+damage the carpet prior to installation of carpet. Submit <div class="brackets">[three]</div> <div class="brackets">[_____]</div> copies of <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Installation Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> for 
+1) Carpet, 2) Carpet Cushion, and 3) Moldings indicating areas receiving carpet, carpet types, patterns, direction 
+of pile, location of seams, and locations of edge molding.</txt><brk></brk>
+<txt>Do not install building construction materials that show visual evidence of biological growth.</txt><brk></brk>
+<spt outline="3.4.1"><ttl>3.4.1 Broadloom Installation</ttl><brk></brk>
+<txt>Install broadloom carpet <div class="brackets">[direct glue down]</div> <div class="brackets">[pre-applied adhesive glue down]</div> smooth, uniform, and secure, with 
+a minimum of seams. Apply regular, unnoticeable, and treated seams with a seam adhesive. Run side seams toward 
+the light, where practical, and where such layout does not increase the number of seams. Install breadths parallel, 
+with carpet pile in the same direction. Match patterns accurately. Neatly cut and fit cutouts, at door jambs, 
+columns and ducts securely. Locate seams at doorways parallel to and centered directly under doors. Do not 
+make seams perpendicular to doors or at pivot points. Provide seams at changes in directions of corridors to 
+follow the wall line parallel to the carpet direction. Lay the carpet lengthwise down the corridors with widths 
+less than<met><pre class="display_MET">&lt;MET&gt;</pre> 1.8 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>.</txt><brk></brk></spt>
+<spt outline="3.4.2"><ttl>3.4.2 Modular Tile Installation</ttl><brk></brk>
+<txt>Install modular tiles with <div class="brackets">[releasable]</div> <div class="brackets">[manufacturer approved adhesive tab system]</div> <div class="brackets">[permanent vinyl-compatible]</div>
+<div class="brackets">[_____]</div> adhesive and snug joints. Use <div class="brackets">[monolithic]</div> <div class="brackets">[1/4 turn]</div> <div class="brackets">[ashlar]</div> <div class="brackets">[brick]</div> <div class="brackets">[herringbone]</div> <div class="brackets">[random]</div> <div class="brackets">[_____]</div> 
+installation method. Comply with manufacturer installation instructions for required drying time of releasable 
+adhesive so it sets up properly. Provide accessibility to the subfloor where required. Carpet tile on stairs 
+and sloped surfaces must be installed with a more permanent installation method in accordance with the manufacturer's 
+instructions and with manufacturer recommended adhesives for this application. </txt><brk></brk></spt>
+<spt outline="3.4.3"><ttl>3.4.3 Entrance Carpet Installation</ttl><brk></brk>
+<txt><div class="brackets">[Install tiles with <div class="brackets">[permanent vinyl-compatible]</div> <div class="brackets">[releasable]</div> adhesive and snug joints. Use <div class="brackets">[monolithic]</div> <div class="brackets">[1/4 
+turn]</div> <div class="brackets">[ashlar]</div> <div class="brackets">[brick]</div> <div class="brackets">[random]</div> installation method.]</div> <div class="brackets">[Install roll goods <div class="brackets">[direct glue down]</div> <div class="brackets">[pre-applied adhesive 
+glue down]</div> and smooth, uniform, and secure, with a minimum of seams. Prepare regular, unnoticeable, and treated 
+seams with a seam adhesive. Install breadths parallel, with carpet pile in the same direction. Match patterns 
+accurately. Neatly cut and fit, securely, cutouts at door jambs, columns, and ducts. Locate seams at doorways 
+parallel to and centered directly under doors. Do not make seams perpendicular to doors or at pivot points.]</div>
+<div class="brackets">[Cut mats to specified size and finish them with a tapered vinyl edge that is glued and sewn on.]</div></txt><brk></brk></spt>
+<div class="brackets">[<spt outline="3.4.4"><ttl>3.4.4 Stretch-in Installation</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Installation with tack strips (stretch in method) over cushion can avoid 
+potential adhesive interaction with carpet backing. It is appropriate for residential 
+and hospitality settings, in which rooms are relatively small and separate cushion 
+is used; but not feasible in large, open spaces.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide carpet tack strips wherever carpeting abuts vertical surfaces. Install tackless carpet stripping by 
+nailing. Place carpet cushion face-up, as recommended by cushion manufacturer, over entire floor area to be 
+carpeted with joints butted. Do not use adhesives to attach carpet, cushion, or substrate. Comply with carpet 
+manufacturer's instructions for installation. Attach rubber or metal edge strip to substrate with adhesive for 
+transition when carpet meets other flooring materials or to finish carpet edge when required.</txt><brk></brk></spt>
+]</div></spt><spt outline="3.5"><ttl>3.5 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>CLEANING AND PROTECTION<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<txt>Submit <div class="brackets">[three]</div> <div class="brackets">[_____]</div> copies of carpet manufacturer's maintenance instructions describing recommended type of 
+cleaning equipment and material, spotting and cleaning methods, and cleaning cycles.</txt><brk></brk>
+<spt outline="3.5.1"><ttl>3.5.1 Cleaning</ttl><brk></brk>
+<txt>As specified in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 78 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> CLOSEOUT SUBMITTALS. After installation of the carpet, remove debris, scraps, 
+and other foreign matter. Remove soiled spots and adhesive from the face of the carpet with appropriate spot 
+remover. Cut off and remove protruding face yarn. Vacuum carpet clean with a high-efficiency particulate air 
+(HEPA) filtration vacuum.</txt><brk></brk></spt>
+<spt outline="3.5.2"><ttl>3.5.2 Protection</ttl><brk></brk>
+<txt>Protect the installed carpet from soiling and damage with heavy, reinforced, nonstaining kraft paper, plywood, 
+or hardboard sheets. Lap and secure edges of kraft paper protection to provide a continuous cover. Restrict 
+traffic for at least 48 hours. Remove protective covering when directed by the Contracting Officer.</txt><brk></brk></spt>
+</spt><spt outline="3.6"><ttl>3.6 REMNANTS</ttl><brk></brk>
+<txt>Manage waste as specified in the Waste Management Plan. <div class="brackets">[Provide remnants remaining from the installation, consisting 
+of scrap pieces more than<met><pre class="display_MET">&lt;MET&gt;</pre> 600 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> in dimension with more than<met><pre class="display_MET">&lt;MET&gt;</pre> 0.6 square meters<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 square feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> total <div class="brackets">[to 
+the Government]</div> <div class="brackets">[to local non-profit such as Habitat for Humanity as directed by the Government]</div>]</div>. <div class="brackets">[Set aside 
+and return non-retained scraps to manufacturer for recycling into new product]</div> <div class="brackets">[Remove non-retained scraps from 
+site and recycle appropriately]</div>.</txt><brk></brk></spt>
+<spt outline="3.7"><ttl>3.7 MAINTENANCE</ttl><brk></brk>
+<spt outline="3.7.1"><ttl>3.7.1 Extra Materials</ttl><brk></brk>
+<txt>Provide extra material from same dye lot consisting of <div class="brackets">[full width continuous broadloom]</div> <div class="brackets">[and]</div> <div class="brackets">[uncut carpet 
+tiles]</div> for future maintenance. Provide a minimum of <div class="brackets">[three]</div> <div class="brackets">[_____]</div> percent of total<met><pre class="display_MET">&lt;MET&gt;</pre> square meters<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> square yards<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
+ of each carpet type, pattern, and color. <div class="brackets">[Furnish <div class="brackets">[three]</div> <div class="brackets">[____]</div> percent extra of total adhesive tabs.]</div></txt><brk></brk></spt>
+<spt outline="3.7.2"><ttl>3.7.2 <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Maintenance Service<add><pre class="display_ADD">&lt;ADD&gt;</pre> Information<pre class="display_ADD">&lt;/ADD&gt;</pre></add><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Maintenance agreements are standard practice in the building industry. 
+Under a green lease, when the customer no longer requires the use of the particular 
+product or requires an updated model, the manufacturer is obligated to reclaim 
+it and refurbish it or disassemble it for recycling as appropriate.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Collect<add><pre class="display_ADD">&lt;ADD&gt;</pre> <sub><pre class="display_SUB">&lt;SUB&gt;</pre>Maintenance Service<pre class="display_SUB">&lt;/SUB&gt;</pre></sub><pre class="display_ADD">&lt;/ADD&gt;</pre></add> information from the manufacturer about <div class="brackets">[maintenance agreement]</div> <div class="brackets">[green lease]</div> options, 
+and submit to Contracting Officer. Service <add><pre class="display_ADD">&lt;ADD&gt;</pre>options <pre class="display_ADD">&lt;/ADD&gt;</pre></add>must reclaim materials for recycling and/or reuse. Service <add><pre class="display_ADD">&lt;ADD&gt;</pre>
+options <pre class="display_ADD">&lt;/ADD&gt;</pre></add>must not landfill or burn reclaimed materials. <del><pre class="display_DEL">&lt;DEL&gt;</pre> <pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre> <pre class="display_ADD">&lt;/ADD&gt;</pre></add>When such a service is not available, seek local recyclers 
+to reclaim the materials. Submit documentation of manufacturer's <div class="brackets">[maintenance agreement]</div> <div class="brackets">[take-back program]</div>
+<div class="brackets">[green lease]</div> for carpet. Include contact information, summary of procedures, and the limitations and conditions 
+applicable to the project. Indicate manufacturer's commitment to reclaim materials for recycling and reuse.</txt><brk></brk></spt>
+</spt></prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

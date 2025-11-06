@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style id="reboot">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}</style>
+<style id="styles">:root {
+    --standard-text-color: black;
+    --standard-margin: 12px;
+
+    --rid-color: magenta;
+    --rtl-color: rgb(209, 15, 209);
+    --rtl-bg: rgb(255, 195, 255);
+
+    --sub-color: blue;
+    --sub-bg: rgb(179, 179, 255);
+    --add-color: red; 
+    --del-color: green;
+    --note-color: #aaa;
+
+    --met-color: rgb(14, 113, 212);
+    --met-bg: rgb(174, 213, 252);
+    --eng-color: orangered;
+    --eng-bg: rgb(255, 192, 181);
+
+    --srf-color: indigo;
+    --srf-bg: violet;
+
+    --stl-color: indigo;
+    --stl-bg: violet;
+}
+
+body {
+    max-width: 100ch;
+    margin: 72px auto;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+main {
+    margin-top: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border-width: 0.25px;
+}
+
+label {
+    display: inline-block;
+}
+
+td + td {
+    padding: 0 16px;
+}
+
+
+brk {
+    /* this is used by specsintact instead of <br /> line breaks */
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+scn,
+stl,
+dte,
+ttl,
+org,
+spt {
+    display: block;
+    margin-bottom: var(--standard-margin);
+}
+
+url {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+lst {
+    display: block;
+}
+
+lst sub {
+    color: black;
+}
+
+itm {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+hdr {
+    display: none;
+    color: var(--note-color);
+}
+
+pra {
+    color: tomato;
+    font-weight: bold;
+}
+
+ast {
+    display: block;
+    color: grey
+}
+
+scn {
+    margin-top: 72px;
+}
+
+srf {
+    background-color: var(--srf-bg);
+    color: var(--srf-color);
+    font-weight: bold;
+}
+
+
+scn,
+stl:first-of-type,
+dte {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--standard-text-color);
+    background-color: transparent; */
+}
+
+stl:not(:first-of-type) {
+    background-color: var(--stl-bg);
+    color: var(--stl-color);
+    font-weight: bold;
+}
+
+
+dte {
+    margin-bottom: 72px;
+    font-size: 20px;
+}
+
+ttl {
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+npr,
+nte,
+ast {
+    color: var(--note-color);
+    display: none;
+}
+
+ref org {
+    display: block;
+    font-weight: bold;
+    margin-top: var(--standard-margin);
+}
+
+rid {
+    font-weight: bolder;
+    color: var(--rid-color);
+}
+
+rtl {
+    font-weight: normal;
+    background-color: none;
+}
+
+ref br {
+    display: block;
+}
+
+ref org + br {
+    display: none;
+}
+
+ref rid {
+    display: table-cell;
+    min-width: 25ch;
+}
+
+ref rtl {
+    display: table-cell;
+    padding-left: 6px;
+
+}
+
+del {
+    display: none;
+    color: var(--del-color);
+}
+
+ttl {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+add {
+    display: inline;
+    color: var(--standard-text-color);
+}
+
+
+sub {
+    /* specsintact overrides the standard sub tag for 'submittals' */
+    color: var(--sub-color);
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: inherit;
+    display: inline;
+}
+
+lst {
+    list-style-type: none;
+}
+
+lst sub {
+    display: inline;
+    color: var(--sub-color);
+    margin: var(--standard-margin) 0;
+}
+
+ttl sub {
+    color: var(--sub-color);
+}
+
+met {
+    background-color:var(--met-bg);
+    color: var(--met-color);
+    font-weight: bold;
+}
+
+eng {
+    background-color: var(--eng-bg);
+    color: var(--eng-color);
+    font-weight: bold;
+}
+
+
+tab {
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 6px;
+    display: table;
+}
+
+tab row {
+    display: table-row;
+}
+
+tab cel {
+    display: table-cell;
+    background-color: mistyrose;
+    border: 1px solid white;
+}
+
+prt > ttl {
+    margin-top: 48px !important;
+}
+
+
+.this_section_number {
+    font-weight: bold !important;
+}
+
+.user-selections {
+    top: 0;
+    position: fixed;
+    display: none;
+
+    background-color: aliceblue;
+    border: 1px solid dodgerblue;
+    
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;  
+
+    margin: -24px;
+    padding: 24px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    margin-top: -24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.user-instructions {
+    width: calc(8in + 2 * var(--standard-margin));
+    margin-bottom: 12px;
+
+}
+
+.user-instructions p {
+    margin-bottom: 12px;
+}
+
+.user-table-container {
+    overflow: auto;
+}
+
+tr {
+    margin-bottom: 12px;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+
+.display_NTE,
+.display_NPR {
+    display: none;
+    color: white;
+    background-color: orange;
+    font-weight: bold
+}
+
+.display_ENG,
+.display_MET {
+    display: none;
+    font-weight: bold;
+}
+
+.display_ENG {
+    background-color: var(--eng-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_MET {
+    background-color: var(--met-color);
+    color: white;
+    font-weight: bold;
+}
+
+.display_RID {
+    background-color: magenta;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_RTL {
+    display: none;
+    color: var(--rtl-color);
+    background-color: rgb(255, 211, 255);
+}
+
+.display_DEL {
+    background-color: var(--del-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_ADD {
+    background-color: var(--add-color);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.display_AST {
+
+}
+
+.display_DTE {
+
+}
+
+.display_HDR {
+
+}
+
+.display_HL1 {
+
+}
+
+.display_HL4 {
+
+}
+
+.display_ITM {
+
+}
+
+.display_LST {
+
+}
+
+.display_ORG {
+
+}
+
+.display_PRT {
+
+}
+
+.display_REF {
+
+}
+
+
+
+
+.display_SCN {
+
+}
+
+.display_SCP {
+
+}
+
+.display_SPT {
+
+}
+
+.display_SRF {
+    display: none;
+}
+
+.display_STL {
+    display: none;
+}
+
+.display_SUB {
+    display: none;
+    color: var(--sub-color);
+    background-color: var(--sub-bg);
+}
+
+.display_TAB {
+
+}
+
+.display_TAI {
+
+}
+
+.display_TST {
+
+}
+
+.display_TTL {
+
+}
+
+.display_TXT {
+
+}
+
+.display_URL {
+
+}
+
+.brackets {
+    background-color: yellow;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: dodgerblue !important;
+}
+
+
+
+#menuBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    background-color: darkslateblue;
+}
+
+#indexBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 100px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+#hideBtn {
+    display: block;
+    margin: 16px auto;
+
+    border: none; 
+    outline: none;
+    color: black; 
+    background-color: rgba(30, 143, 255, 0.2);
+
+    padding: 6px; 
+    border: 1px solid dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and mobiles) */
+    body {
+            max-width: none;
+            padding: 12px;
+    }
+
+    .user-selections {
+        top: 5vh;
+        left: 5vw;
+        position: fixed;
+        display: block;
+
+        margin: 0;
+        padding: 12px;
+
+        max-width: none;
+        height: 90dvh;
+        width: 90dvw;
+
+        border: 1px solid dodgerblue;
+        
+        border-radius: 12px;
+    }   
+
+    .user-instructions {
+        width: calc(90dvw - 2 * var(--standard-margin));
+        margin-bottom: 0;
+    }
+
+    .user-table-container {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+}</style>
+<link href="../../src/html/reboot.css" rel="stylesheet"/>
+<link href="../../src/html/style.css" rel="stylesheet"/>
+<title>09 65 00.sec Viewer</title>
+</head>
+<body>
+<div class="user-selections">
+<div class="user-instructions">
+<h1>Display Preferences</h1>
+<p>
+                This is a web version (html) of the <span class="this_section_number">09 65 00</span> SpecsIntact .sec file (created <span class="create_date">2025-11-06 14:13:56</span>), modified to allows users to visualize and interact with formatting elements. For more see SpecsIntact website: <a href="https://www.wbdg.org/tools/specsintact/Help/SITags/SpecsIntactTags.htm" target="_blank">SpecsIntact Tags</a>
+</p>
+<p>Select which elements to display (elements hidden by default):</p>
+</div>
+<div class="user-table-container">
+<table class="user-pref-table">
+<tr>
+<td>User Notes</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="notes-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="notes-toggle-switch"><pre>Show Notes</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="nte-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="nte-toggle-switch"><pre>&lt;NTE&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="npr-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="npr-toggle-switch"><pre>&lt;NPR&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brackets (Options)</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="brackets-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="brackets-toggle-switch"><pre>Highlight</pre></label>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>Add &amp; Delete</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-toggle-switch"><pre>Show &lt;ADD&gt; Tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-toggle-switch"><pre>Show &lt;DEL&gt; Tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="add-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="add-color-toggle-switch"><pre>Color <span style="color: var(--add-color); font-weight: bold;">Additions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="del-color-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="del-color-toggle-switch"><pre>Color <span style="color: var(--del-color); font-weight: bold;">Deletions</span></pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="show-deletions-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="show-deletions-toggle-switch">Show deletions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="eng-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="eng-toggle-switch"><pre>Show Imperial &lt;ENG&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="met-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="met-toggle-switch"><pre>Show Metric &lt;MET&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>References</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rid-toggle-switch"><pre>Show reference &lt;RID&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="rtl-toggle-switch"><pre>Show reference &lt;RTL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rid-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rid-toggle-switch">Color <span style="color: var(--rid-color); font-weight: bold;">References</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-rtl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-rtl-toggle-switch">Color <span style="color: var(--rtl-color); font-weight: normal;">Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Other Sections</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="srf-toggle-switch"><pre>Show Section &lt;SRF&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="stl-toggle-switch"><pre>Show Section &lt;STL&gt; tags</pre></label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-srf-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-srf-toggle-switch">Color <span style="color: var(--srf-color); background-color: var(--srf-bg); font-weight: bold;">Section Refs</span></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-stl-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-stl-toggle-switch">Color <span style="color: var(--stl-color); background-color: var(--stl-bg); font-weight: normal;">Section Titles</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td>Submittals</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="sub-toggle-switch"><pre>Show &lt;SUB&gt; tags</pre></label>
+</div>
+</td>
+<td>
+<div class="toggle-container">
+<input class="toggle-checkbox" id="color-sub-toggle-switch" type="checkbox"/>
+<label class="toggle-label" for="color-sub-toggle-switch">Color <span style="color: var(--sub-color); font-weight: bold;">Submittals</span></label>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Tables</td>
+<td colspan="3">
+<p>
+                            Table styling is automatically applied, but is necessarily different from SpecsIntact table styling.
+                        </p>
+</td>
+</tr>
+</table>
+</div>
+<button id="hideBtn" onclick="toggleMenu()" title="Toggle menu">Hide Menu</button>
+</div>
+<main>
+<sec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><mta content="NEW" name="SUBFORMAT"></mta><mta content="TRUE" name="AUTONUMBER"></mta><brk></brk>
+<hdr><ast><hr/></ast><brk></brk>
+USACE / NAVFAC / AFCEC / NASA UFGS-09 65 00 (August 2010)<brk></brk>
+ Change 3 - 08/18<brk></brk>
+ ---------------------------<brk></brk>
+Preparing Activity: <pra>USACE</pra> Superseding<brk></brk>
+ UFGS-09 65 00 (February 2009)<brk></brk>
+<hl4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</hl4><brk></brk>
+<hl4>References are in agreement with UMRL dated April 2019</hl4><brk></brk>
+<ast><hr/></ast><brk></brk></hdr>
+<brk></brk>
+<scn>SECTION 09 65 00</scn><brk></brk>
+<stl><pre class="display_STL">&lt;STL&gt;</pre>RESILIENT FLOORING<pre class="display_STL">&lt;/STL&gt;</pre></stl><brk></brk>
+<dte>08/10</dte><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification has been edited to cover the minimum requirements and include Japanese products, 
+where feasible, for a standard Japan Engineer District project. The Designer of Record (DOR) shall tailor as 
+applicable to meet project specific requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This guide specification covers the requirements for <scp>resilient floor coverings, base materials, and accessory 
+items</scp>.<brk></brk>
+Adhere to <url href="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</url> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections. Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text. For bracketed items, choose applicable item(s) or insert 
+appropriate information.<brk></brk>
+Remove information and requirements not required in respective project, whether or not brackets are present.<brk></brk>
+Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <url href="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</url>.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<prt outline="1"><ttl>PART 1 GENERAL</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Resilient flooring may be used over wood subfloor provided that the subfloor underside is well ventilated 
+and the installation conforms to the manufacturer's recommendations. Note that not all products are recommended 
+for installation over panel type underlayment.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Flooring such as nonslip tile is not included in this specification; add appropriate wordingwhen it is required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Show location of resilient flooring, including types, on the drawings.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="1.1"><ttl>1.1 REFERENCES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: This paragraph is used to list the publications cited in the text of the guide specification. The publications 
+are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
+date, and title.<brk></brk>
+Use the Reference Wizard's Check Reference feature when you add a Reference Identifier (RID) outside of the Section's 
+Reference Article to automatically place the reference in the Reference Article. Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<brk></brk>
+References not used in the text will automatically be deleted from this section of the project specification when 
+you choose to reconcile references in the publish print process.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>The publications listed below form a part of this specification to the extent referenced. The publications are referred to within the text by 
+the basic designation only.</txt><brk></brk>
+<ref><org>ASTM INTERNATIONAL (ASTM)</org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E648<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2017a) Standard Test Method for Critical Radiant Flux of Floor-Covering Systems 
+Using a Radiant Heat Energy Source<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><del><pre class="display_DEL">&lt;DEL&gt;</pre><org>JAPANESE INDUSTRIAL STANDARDS (JIS)</org><pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre><org>JAPANESE STANDARDS ASSOCIATION (JSA)</org><pre class="display_ADD">&lt;/ADD&gt;</pre></add><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 1901<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Determination of the Emission of Volatile Organic Compounds and Aldehydes 
+by Building Products - Small Chamber Test Method<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5536<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2015) Adhesives for Resilient Textile or Laminate Floor Coverings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5705<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2010) Polyvinyl Chloride Floorcoverings<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+<ref><org><del><pre class="display_DEL">&lt;DEL&gt;</pre>MINISTRY OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM, GOVERNMENT OF JAPAN (MLIT)<pre class="display_DEL">&lt;/DEL&gt;</pre></del><add><pre class="display_ADD">&lt;ADD&gt;</pre>MINISTRY OF LAND, INFRASTRUCTURE, TRANSPORT 
+AND TOURISM (MLIT)<pre class="display_ADD">&lt;/ADD&gt;</pre></add></org><brk></brk>
+<rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT SS Chapter 19<pre class="display_RID">&lt;/RID&gt;</pre></rid><rtl><pre class="display_RTL">&lt;RTL&gt;</pre>(2019) Public Building Construction Standard Specifications Chapter 19: Interior 
+Finishing Works<pre class="display_RTL">&lt;/RTL&gt;</pre></rtl><brk></brk></ref>
+</spt><spt outline="1.2"><ttl>1.2 SUBMITTALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Review submittal description (SD) definitions in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project.<brk></brk>
+The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G." Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System. Only add a “G” to an item, if the submittal is sufficiently important or complex in context 
+of the project.<brk></brk>
+For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
+tags may be used following the "G" designation to indicate the approving authority. Codes for Army projects using 
+the Resident Management System (RMS) are: "AE" for Architect-Engineer; "DO" for District Office (Engineering 
+Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
+for Project Office. Codes following the "G" typically are not used for Navy, Air Force, and NASA projects.<brk></brk>
+The "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook to 
+fulfill federally mandated sustainable requirements in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Locate the "S" submittal under the SD number that best describes the submittal item.<brk></brk>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose the second bracketed item for 
+Army projects.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are for <div class="brackets">[Contractor Quality Control 
+approval.]</div> <div class="brackets">[information only. When used, a designation following the "G" designation identifies the office that will review the submittal for 
+the Government.]</div> Submittals with an "S" are for inclusion in the Sustainability eNotebook, in conformance to Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 29<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUSTAINABILITY REPORTING. 
+Submit the following in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 33 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SUBMITTAL PROCEDURES:</txt><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-02 Shop Drawings<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Resilient Flooring and Accessories<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk>
+<lst><sub><pre class="display_SUB">&lt;SUB&gt;</pre>SD-10 Operation and Maintenance Data<pre class="display_SUB">&lt;/SUB&gt;</pre></sub></lst><brk></brk>
+<itm><sub><pre class="display_SUB">&lt;SUB&gt;</pre>Resilient Flooring and Accessories<pre class="display_SUB">&lt;/SUB&gt;</pre></sub>; <sub><pre class="display_SUB">&lt;SUB&gt;</pre>G<div class="brackets">[, <div class="brackets">[_____]</div>]</div><pre class="display_SUB">&lt;/SUB&gt;</pre></sub></itm><brk></brk></spt>
+<spt outline="1.3"><ttl>1.3 JAPAN PUBLIC BUILDING CONSTRUCTION STANDARDS</ttl><brk></brk>
+<txt>Follow <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT SS Chapter 19<pre class="display_RID">&lt;/RID&gt;</pre></rid> for interior finishing works.</txt><brk></brk></spt>
+<spt outline="1.4"><ttl>1.4 INDOOR AIR QUALITY</ttl><brk></brk>
+<spt outline="1.4.1"><ttl>1.4.1 Floor Covering Materials</ttl><brk></brk>
+<txt>Provide <div class="brackets">[Vinyl Composition Tile]</div><div class="brackets">[Sheet Vinyl Flooring]</div><div class="brackets">[Rubber Tile]</div><div class="brackets">[Rubber Sheet Flooring]</div><div class="brackets">[Luxury Vinyl Tile]</div><div class="brackets">[Solid Vinyl Tile]</div><div class="brackets">[Sheet Linoleum]</div><div class="brackets">[Linoleum 
+Tile]</div><div class="brackets">[Cork Flooring]</div>, and wall base products certified to meet indoor air quality requirements of third-party programs.</txt><brk></brk>
+<spt outline="1.4.1.1"><ttl>1.4.1.1 Adhesives, Caulking and Sealants </ttl><brk></brk>
+<txt>Provide products certified to meet emission requirement of F 4-Star and JAIA 4VOC.</txt><brk></brk></spt>
+</spt></spt><spt outline="1.5"><ttl>1.5 DELIVERY, STORAGE, AND HANDLING</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the following section when specifying cork flooring. Use certified sustainably harvested wood 
+where suitable for application and cost effective. Sustainably Harvested Wood is a product which comes from a 
+third-party Forest Certification Program and thus carries certain characteristics: 1) Protection of biodiversity, 
+species at risk and wildlife habitat, sustainable harvest regeneration (such as, replanting and reforestation); 
+2) Third-party certification audits performed by accredited certification bodies; 3) publicly available certification 
+audit summaries; 4) Multi-stakeholder involvement in a standards development process; 5) Complaints and appeals process.<brk></brk>
+Verify suitability, availability within the region, cost effectiveness and adequate competition before specifying 
+these sustainably harvested wood certifications - if these conditions are verified for the project locale, include 
+the following section. For projects pursuing LEED, delete certification other than FSC; for all other projects 
+pursuing third-party certification allow the entire list of third party certifications.<brk></brk><pre class="display_NPR">&lt;/NPR&gt;</pre></npr>
+<brk></brk>
+<ast><hr/></ast><pre class="display_NTE">&lt;/NTE&gt;</pre></nte><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Materials which are woven, fibrous, or porous in nature have a high capacity to adsorb VOC emissions; for 
+instance, acoustical ceilings, carpet, textiles, and unprimed gypsum wall board. If specifying porous materials 
+include bracketed text and indicate materials to be protected.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Deliver materials to the building site in original unopened containers bearing the manufacturer's name, style name, pattern color name and number, 
+production run, project identification, and handling instructions. Store materials in a clean, dry, secure, and well-ventilated area free from 
+strong contaminant sources and residues with ambient air temperature maintained above 20 degrees C and below 30 degrees C, stacked according to 
+manufacturer's recommendations. Remove resilient flooring products from packaging to allow ventilation prior to installation. Protect materials 
+from the direct flow of heat from hot-air registers, radiators and other heating fixtures and appliances. Observe ventilation and safety procedures 
+specified in the MSDS. Do not store rubber surface products with materials that have a high capacity to adsorb volatile organic compound (VOC) 
+emissions, including <div class="brackets">[_____]</div>. Do not store exposed rubber surface materials in occupied spaces. <div class="brackets">[Do not store <div class="brackets">[_____]</div> near materials that may 
+off gas or emit harmful fumes, such as kerosene heaters, fresh paint, or adhesives.]</div></txt><brk></brk></spt>
+<spt outline="1.6"><ttl>1.6 ENVIRONMENTAL REQUIREMENTS</ttl><brk></brk>
+<txt>Maintain areas to receive resilient flooring at a temperature above<met><pre class="display_MET">&lt;MET&gt;</pre> 20 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 68 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and below<met><pre class="display_MET">&lt;MET&gt;</pre> 30 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 85 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> for 3 days before 
+application, during application and 2 days after application, unless otherwise directed by the flooring manufacturer for the flooring being installed. 
+Maintain a minimum temperature of<met><pre class="display_MET">&lt;MET&gt;</pre> 13 degrees C<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 55 degrees F<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thereafter. Provide adequate ventilation to remove moisture from area and to comply 
+with regulations limiting concentrations of hazardous vapors.</txt><brk></brk></spt>
+<spt outline="1.7"><ttl>1.7 SCHEDULING</ttl><brk></brk>
+<txt>Schedule resilient flooring application after the completion of other work which would damage the finished surface of the flooring.</txt><brk></brk></spt>
+<spt outline="1.8"><ttl>1.8 WARRANTY</ttl><brk></brk>
+<txt>Provide manufacturer's standard performance guarantees or warranties that extend beyond a one year period.</txt><brk></brk></spt>
+<spt outline="1.9"><ttl>1.9 EXTRA MATERIALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: To ensure matching flooring that may become damaged and require spot replacement, a supply of extra flooring 
+of same types, colors and dye lot is recommended. Coordinate requirement for extra stock with customer; warehousing 
+may not be available.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide extra flooring material of each color and pattern at the rate of 5 tiles for each 1000 tiles. Provide extra wall base material composed 
+of<met><pre class="display_MET">&lt;MET&gt;</pre> 6 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 20 linear feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> of each type, color and pattern. Package all extra materials in original properly marked containers bearing the manufacturer's 
+name, brand name, pattern color name and number, production run, and handling instructions. Provide extra materials from the same lot as those 
+installed. Leave extra stock at the site in location assigned by Contracting Officer.</txt><brk></brk></spt>
+</prt><prt outline="2"><ttl>PART 2 PRODUCTS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Appropriate flooring material should be determined by:<brk></brk>
+ -Amount and type (such as, foot, cart, wheelchair) of traffic<brk></brk>
+ -Abrasiveness of local soil conditions<brk></brk>
+ -Exposure to water, chemicals, grease, and burns<brk></brk>
+ -Exposure to in-use damage (cuts, tears, gouges)<brk></brk>
+ -Exposure to direct sunlight (fading potential)<brk></brk>
+ -Anticipated type of and frequency of maintenance<brk></brk>
+ -Cost of maintenance<brk></brk>
+ -Appearance expectations<brk></brk>
+Verify proposed use of flooring with manufacturer's recommendations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Sheet flooring should be considered for areas such as healthcare facilities due to the reduced amount of seams. 
+Seam welded sheet flooring without backing provides a monolithic floor impervious to moisture penetration.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Specify special adhesive for resilient flooring installed on floors with radiant heating, wet areas and areas 
+with heavy rolling loads.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>If more than one type of resilient flooring is required, a separate paragraph for each type will be used. Each 
+type will be designated with a letter or number symbol. Use the same symbols to key flooring to locations on 
+the drawings and in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>09 06 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SCHEDULES FOR FINISHES. Delete reference to type symbol if not used.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<spt outline="2.1"><ttl>2.1 VINYL COMPOSITION TILE [TYPE [A][_____]]</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: When vinyl composition tile is used,<met><pre class="display_MET">&lt;MET&gt;</pre> 3.2 mm<pre class="display_MET">&lt;/MET&gt;</pre></met> <eng><pre class="display_ENG">&lt;ENG&gt;</pre>1/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick should be utilized in high traffic commercial 
+type installations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Solid color tiles are tiles with uniform color throughout. These are recommended for use as an accent only in 
+small quantities and not as the floor field color. These tiles do not hide soiling well and show scratches easily.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Through pattern tiles are tiles with patterning distributed through the entire thickness.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5705<pre class="display_RID">&lt;/RID&gt;</pre></rid>, asbestos-free, <met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[300]</div> <div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[12]</div> <div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> square and<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[2.4]</div> <div class="brackets">[3.2]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[3/32]</div> <div class="brackets">[1/8]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick. Provide color and 
+pattern uniformly distributed throughout the thickness of the tile. </txt><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use materials with recycled content where appropriate for use. Verify suitability, availability within 
+the region, cost effectiveness and adequate competition before specifying product recycled content requirements. <brk></brk>
+Research shows the product is available from some US national manufacturers above the minimum recycled content 
+shown. Some manufacturers do not offer recycled content.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<div class="brackets">[<txt>Provide Vinyl Composition Tile containing a minimum of 10 percent recycled content.]</txt></div><brk></brk></spt>
+<spt outline="2.2"><ttl>2.2 SHEET VINYL FLOORING [TYPE [A] [_____]]</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Not all sheet vinyl flooring is available with chemically bonded or heat welded seams. Research available 
+products.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5705<pre class="display_RID">&lt;/RID&gt;</pre></rid> and a minimum <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>1800 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 6 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre>3660 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 12 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> wide. Extend color and pattern through the total thickness of the material. 
+As required, provide welding rods as recommended by the manufacturer for heat welding of joints.</txt><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use materials with recycled content where appropriate for use. Verify suitability, availability within 
+the region, cost effectiveness and adequate competition before specifying product recycled content requirements. <brk></brk>
+Research shows the product is available from some US national manufacturers above the minimum recycled content 
+shown. Some manufacturers do not offer recycled content.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk></spt>
+<spt outline="2.3"><ttl>2.3 LUXURY VINYL TILE [TYPE [A][_____]]</ttl><brk></brk>
+<txt>Conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5705<pre class="display_RID">&lt;/RID&gt;</pre></rid> printed film with a minimum wear layer thickness <div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre> 0.50 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.020 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> (20 mil)]</div><div class="brackets">[<met><pre class="display_MET">&lt;MET&gt;</pre> 0.70 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.030 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> (30 mil)]</div><div class="brackets">[_____]</div> and 
+minimum overall thickness <div class="brackets">[<div class="brackets">[ <met><pre class="display_MET">&lt;MET&gt;</pre> 2.5 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.098 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div> <div class="brackets">[or]</div> <div class="brackets">[ <met><pre class="display_MET">&lt;MET&gt;</pre> 3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.118 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div>]</div> <div class="brackets">[ <met><pre class="display_MET">&lt;MET&gt;</pre> 5 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.197 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng><div class="brackets">[ with non slip/skid backing]</div>]</div>. Provide<div class="brackets">[ <met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[300 by 
+600]</div> <div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[12 by 24]</div> <div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div><div class="brackets">[ <met><pre class="display_MET">&lt;MET&gt;</pre><div class="brackets">[300]</div> <div class="brackets">[400]</div> <div class="brackets">[450]</div> <div class="brackets">[600]</div> <div class="brackets">[900]</div> <div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[12]</div> <div class="brackets">[16]</div> <div class="brackets">[18]</div> <div class="brackets">[24]</div> <div class="brackets">[36]</div> <div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> square]</div><div class="brackets">[_____]</div> tile.<div class="brackets">[ 
+Provide tile with a factory protective finish that enhances cleanability and durability.]</div></txt><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Use materials with recycled content where appropriate for use. Verify suitability, availability within 
+the region, cost effectiveness and adequate competition before specifying product recycled content requirements. <brk></brk>
+Research shows the product is available from some US national manufacturers above the minimum recycled content 
+shown. Some manufacturers do not offer recycled content.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk></spt>
+<spt outline="2.4"><ttl>2.4 SOLID VINYL TILE [TYPE [A][_____]]</ttl><brk></brk>
+<txt>Conform to <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5705<pre class="display_RID">&lt;/RID&gt;</pre></rid> Class I monolithic (minimum wear layer thickness<met><pre class="display_MET">&lt;MET&gt;</pre> 3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.125 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> and minimum overall thickness<met><pre class="display_MET">&lt;MET&gt;</pre> 3 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.125 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>, Type <div class="brackets">[A (smooth)]</div>
+<div class="brackets">[B (embossed)]</div>. Provide<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[300]</div> <div class="brackets">[400]</div> <div class="brackets">[450]</div> <div class="brackets">[600]</div> <div class="brackets">[900]</div> <div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[12]</div> <div class="brackets">[16]</div> <div class="brackets">[18]</div> <div class="brackets">[24]</div> <div class="brackets">[36]</div> <div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> square tile.</txt><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Include the last bracketed sentence requiring products with indoor air quality certifications when product 
+will be located in offices or classrooms.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk></spt>
+<spt outline="2.5"><ttl>2.5 WALL BASE</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Job formed corners are recommended. The return on preformed corners is not always long enough to hold 
+the piece in place and the corners can be knocked off during vacuuming and other cleaning operations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Base is available in different lengths ranging from<met><pre class="display_MET">&lt;MET&gt;</pre> 1.22 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> pieces to<met><pre class="display_MET">&lt;MET&gt;</pre> 30.48 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 100 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> or<met><pre class="display_MET">&lt;MET&gt;</pre> 36.58 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 120 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
+ rolls. Availability and roll lengths vary dependent on manufacturer. Identify required length if it impacts 
+design intent. Some manufacturers of Type TS (vulcanized thermoset rubber) base offer only<met><pre class="display_MET">&lt;MET&gt;</pre> 1.22 m<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 4 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> lengths 
+and not roll goods.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[100]</div> <div class="brackets">[150]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[4]</div> <div class="brackets">[6]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> high and a minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 3.175 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/8 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick wall base. Provide <div class="brackets">[preformed]</div> <div class="brackets">[job formed]</div> corners in matching 
+height, shape, and color. </txt><brk></brk></spt>
+<spt outline="2.6"><ttl>2.6 INTEGRAL COVE BASE</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Integral coves can be used in many situations in which sheet vinyl and linoleum flooring are used to enhance 
+the sanitary capacity inherent in seamless construction.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Consider specifying corner protectors in high traffic areas and areas that may receive some abuse.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>Corner protectors are preferred in naval installations.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Extend integral coved base for <div class="brackets">[<div class="brackets">[sheet vinyl]</div> <div class="brackets">[and]</div> <div class="brackets">[sheet linoleum]</div> flooring up the wall<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[100]</div> <div class="brackets">[150]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[4]</div> <div class="brackets">[6]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>]</div>. Provide a <div class="brackets">[vinyl]</div> <div class="brackets">[or]</div>
+<div class="brackets">[rubber]</div> <div class="brackets">[clear anodized aluminum]</div>, <div class="brackets">[square]</div> <div class="brackets">[round]</div> cap strip and vinyl, rubber, or wood fillet strip with a minimum radius of<met><pre class="display_MET">&lt;MET&gt;</pre> 19 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> 
+for integral coved bases <div class="brackets">[at perimeter and fixed vertical interruptions to flooring]</div> <div class="brackets">[as shown]</div>. Provide integral cove of the same material as 
+flooring. <div class="brackets">[Provide inside and outside corner protectors of <div class="brackets">[<div class="brackets">[_____]</div>-colored anodized aluminum]</div> <div class="brackets">[clear anodized aluminum]</div> <div class="brackets">[or]</div> <div class="brackets">[plastic]</div> approved 
+by flooring manufacturer.]</div></txt><brk></brk></spt>
+<spt outline="2.7"><ttl>2.7 STAIR TREADS, RISERS AND STRINGERS</ttl><brk></brk>
+<txt>Provide either a one piece nosing/tread/riser or a two piece nosing/tread design with a matching coved riser.</txt><brk></brk></spt>
+<spt outline="2.8"><ttl>2.8 MOULDING</ttl><brk></brk>
+<txt>Provide tapered mouldings of <div class="brackets">[<div class="brackets">[vinyl]</div> <div class="brackets">[or]</div> <div class="brackets">[rubber]</div>]</div> <div class="brackets">[<div class="brackets">[_____]</div>-colored anodized aluminum]</div> <div class="brackets">[clear anodized aluminum]</div> and types as recommended by 
+flooring manufacturer for both edges and transitions of flooring materials specified. Provide vertical lip on moulding of maximum<met><pre class="display_MET">&lt;MET&gt;</pre> 6 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>
+. Provide bevel change in level between<met><pre class="display_MET">&lt;MET&gt;</pre> 6 and 13 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 1/4 and 1/2 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> with a slope no greater than 1:2.</txt><brk></brk></spt>
+<spt outline="2.9"><ttl>2.9 ADHESIVES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: <brk></brk>
+Adhesives may be a source of VOCs. Some styles of plastic flooring are available in loose-laid design (puzzle 
+pieces that are tapped together with a rubber mallet) that can be installed without adhesive.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide adhesives for flooring, base and accessories as recommended by the manufacturer or per <rid><pre class="display_RID">&lt;RID&gt;</pre>JIS A 5536<pre class="display_RID">&lt;/RID&gt;</pre></rid> and comply with local indoor air quality 
+standards. Submit manufacturer's descriptive data, documentation stating physical characteristics, and mildew and germicidal characteristics.</txt><brk></brk></spt>
+<spt outline="2.10"><ttl>2.10 SURFACE PREPARATION MATERIALS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Panel type underlayments, such as plywood and hardboard, are specified in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>06 10 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> ROUGH CARPENTRY. 
+Coordinate underlayments requirements with the ROUGH CARPENTRY specifications.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide surface preparation materials, such as panel type underlayment, lining felt, and floor crack fillers as recommended by the flooring manufacturer 
+for the subfloor conditions. Use one of the following substrates:</txt><brk></brk>
+<div class="brackets">[<lst indent="-0.33">a. Particleboard: As specified in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>06 10 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> ROUGH CARPENTRY.</lst>]</div><brk></brk>
+<div class="brackets">[<lst indent="-0.33">b. Fiberboard: As specified in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>06 10 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> ROUGH CARPENTRY.</lst>]</div><brk></brk>
+<div class="brackets">[<lst indent="-0.33">c. Cork: As specified in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>06 10 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> ROUGH CARPENTRY.</lst>]</div><brk></brk>
+<div class="brackets">[<lst indent="-0.33">d. Cement-fiber board: As specified in Section 09 29 00 GYPSUM BOARD.</lst>]</div><brk></brk>
+<div class="brackets">[<lst indent="-0.33">e. Plywood: As specified in Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>06 10 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> ROUGH CARPENTRY.</lst>]</div><brk></brk>
+<div class="brackets">[<lst indent="-0.33">f. Concrete.</lst>]</div><brk></brk></spt>
+<spt outline="2.11"><ttl>2.11 POLISH/FINISH</ttl><brk></brk>
+<txt>Provide polish finish as recommended by the manufacturer.</txt><brk></brk></spt>
+<spt outline="2.12"><ttl>2.12 CAULKING AND SEALANTS</ttl><brk></brk>
+<txt>Provide caulking and sealants in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>07 92 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> JOINT SEALANTS.</txt><brk></brk></spt>
+<spt outline="2.13"><ttl>2.13 MANUFACTURER'S COLOR, PATTERN AND TEXTURE</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Coordinate color reference sentence(s) with the Government. Generally the Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>09 06 00<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> SCHEDULES FOR 
+FINISHES or drawings are used when the project is designed by an Architect or Interior designer. Select color 
+from manufacturer's standard colors or identify in this specification.<brk></brk>
+When the government directs that color be located in the drawings, add a note that states: "Where color is shown 
+as being specific to one manufacturer, an equivalent color by another manufacturer may be submitted for approval. 
+Manufacturers and materials specified are not intended to limit the selection of equal colors from other manufacturers. 
+The word "color" as used herein includes surface color and pattern."<brk></brk>
+When more than one type, pattern or color is specified identify location.<brk></brk>
+When a manufacturer's name, stock number, pattern, and color is specified for color, be certain that the product 
+conforms to the specification, as edited.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Drawings are required for projects with floor patterns.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide color, pattern and texture for <sub><pre class="display_SUB">&lt;SUB&gt;</pre>resilient flooring and accessories<pre class="display_SUB">&lt;/SUB&gt;</pre></sub> <div class="brackets">[selected from manufacturer's standard colors]</div> <div class="brackets">[<div class="brackets">[_____]</div>. Color listed 
+is not intended to limit the selection of equal colors from other manufacturers]</div>.<div class="brackets">[ Provide floor patterns as specified on the <div class="brackets">[drawings Sheet 
+No. <div class="brackets">[_____]</div>]</div> <div class="brackets">[_____]</div>.]</div> Provide flooring in any one continuous area or replacement of damaged flooring in continuous area from same production 
+run with same shade and pattern. Submit scaled drawings indicating patterns (including location of patterns and colors) and dimensions. Submit 
+manufacturer's descriptive data and <div class="brackets">[three]</div> <div class="brackets">[_____]</div> samples of each indicated color and type of flooring, base, mouldings, and accessories sized 
+a minimum<met><pre class="display_MET">&lt;MET&gt;</pre> 60 by 100 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 2-1/2 by 4 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Submit Data Package 1 in accordance with Section <srf><pre class="display_SRF">&lt;SRF&gt;</pre>01 78 23<pre class="display_SRF">&lt;/SRF&gt;</pre></srf> OPERATION AND MAINTENANCE DATA.</txt><brk></brk></spt>
+<spt outline="2.14"><ttl>2.14 FIRE RESISTANCE TESTING REQUIREMENTS</ttl><nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Choice of critical radiant flux level as it applies to building type and area of application will be made 
+in accordance with the latest edition of UFC 3-600-01 and NFPA 101. Wherever the use of Class II (0.22) watts 
+finish is required, Class I (0.45) watts will be permitted. Critical radiant flux will be a minimum average of 
+0.45 watts when used in corridors in bachelor enlisted quarters, bachelor officer quarters, hospital, child care 
+centers, temporary lodging facilities, and new construction of detention and correctional facilities. Generally 
+the critical radiant flux will be a minimum of 0.22 for corridors of other type facilities. Where an approved 
+automatic sprinkler system is installed, Class II interior floor finish may be used where Class I floor finish 
+is required, and where Class II is required, no critical radiant flux rating is required.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Provide a minimum average critical radiant flux of <div class="brackets">[0.22]</div><div class="brackets">[0.45]</div> watts per square centimeter for flooring in corridors and exits when tested in 
+accordance with <rid><pre class="display_RID">&lt;RID&gt;</pre>ASTM E648<pre class="display_RID">&lt;/RID&gt;</pre></rid>.</txt><brk></brk></spt>
+</prt><prt outline="3"><ttl>PART 3 EXECUTION</ttl><brk></brk>
+<spt outline="3.1"><ttl>3.1 EXAMINATION</ttl><brk></brk>
+<txt>Examine and verify that site conditions are in agreement with the design package. Report all conditions that will prevent a proper installation. 
+Do not take any corrective action without written permission from the Government. Work will proceed only when conditions have been corrected and 
+accepted by the installer. Submit manufacturer's printed installation instructions for all flooring materials and accessories, including preparation 
+of substrate, seaming techniques, and recommended adhesives.</txt><brk></brk></spt>
+<spt outline="3.2"><ttl>3.2 SURFACE PREPARATION</ttl><brk></brk>
+<txt>Provide a smooth, true, level plane for surface preparation of the flooring, except where indicated as sloped. Floor to be flat to within<met><pre class="display_MET">&lt;MET&gt;</pre> 4.75 
+in 3048 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 3/16 inch in 10 feet<pre class="display_ENG">&lt;/ENG&gt;</pre></eng>. Prepare subfloor in accordance with flooring manufacturer's recommended instructions. Prepare the surfaces of 
+lightweight concrete slabs (as defined by the flooring manufacturer) as recommended by the flooring manufacturer. Floor fills or toppings may be 
+required as recommended by the flooring manufacturer. Install underlayments, when required by the flooring manufacturer, in accordance with manufacturer's 
+recommended printed installation instructions. Before any work under this section is begun, correct all defects such as rough or scaling concrete, 
+chalk and dust, cracks, low spots, high spots, and uneven surfaces. Repair all damaged portions of concrete slabs as recommended by the flooring 
+manufacturer. Remove concrete curing and sealer compounds from the slabs, other than the type that does not adversely affect adhesion. Remove 
+paint, varnish, oils, release agents, sealers, waxes, and adhesives, as required by the flooring product in accordance with manufacturer's printed 
+installation instructions.</txt><brk></brk></spt>
+<spt outline="3.3"><ttl>3.3 MOISTURE, ALKALINITY AND BOND TESTS</ttl><brk></brk>
+<txt>Determine the suitability of the concrete subfloor for receiving the resilient flooring with regard to moisture content and pH level by moisture 
+and alkalinity tests. Conduct moisture testing recommended by the flooring manufacturer. Conduct alkalinity testing as recommended by the flooring 
+manufacturer. Determine the compatibility of the resilient flooring adhesives to the concrete floors by a bond test in accordance with the flooring 
+manufacturer's recommendations. Submit copy of test reports for moisture and alkalinity content of concrete slab, and bond test stating date of 
+test, person conducting the test, and the area tested.</txt><brk></brk></spt>
+<spt outline="3.4"><ttl>3.4 GENERAL INSTALLATION</ttl><brk></brk>
+<txt>Do not install building construction materials that show visual evidence of biological growth. Installation shall comply with <rid><pre class="display_RID">&lt;RID&gt;</pre>MLIT SS Chapter 19<pre class="display_RID">&lt;/RID&gt;</pre></rid>
+.</txt><brk></brk></spt>
+<spt outline="3.5"><ttl>3.5 PLACING VINYL COMPOSITION, LINOLEUM AND SOLID VINYL TILES</ttl><brk></brk>
+<txt>Install tile flooring and accessories in accordance with manufacturer's printed installation instructions. Prepare and apply adhesives in accordance 
+with manufacturer's directions. Keep tile lines and joints square, symmetrical, tight, and even. Keep each floor in true, level plane, except 
+where slope is indicated. Vary edge width as necessary to maintain full-size tiles in the field, no edge tile to be less than one-half the field 
+tile size, except where irregular shaped rooms make it impossible. Cut flooring to fit around all permanent fixtures, built-in furniture and cabinets, 
+pipes, and outlets. Cut, fit, and scribe edge tile to walls and partitions after field flooring has been applied.</txt><brk></brk></spt>
+<spt outline="3.6"><ttl>3.6 PLACING LUXURY VINYL TILES</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Most LVT flooring is installed using conventional glue down installation. LVT flooring that is<met><pre class="display_MET">&lt;MET&gt;</pre> 5 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> 0.197 
+inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> thick can be installed loose lay or adhesive dependent on the project requirements. Glue down installation 
+is typically required in areas with high traffic and rolling loads. Coordinate recommended installation methods 
+with flooring manufacturers.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt><div class="brackets">[Install luxury vinyl tile flooring using <div class="brackets">[glue down]</div> <div class="brackets">[loose lay (room perimter adhesive only)]</div> installation. ]</div>Install flooring and accessories 
+in accordance with manufacturer's printed installation instructions. Prepare and apply adhesives in accordance with manufacturer's directions 
+for installation method specified. Keep tile lines and joints square, symmetrical, tight, and even. Keep each floor in true, level plane, except 
+where slope is indicated. Vary edge width as necessary to maintain full-size tiles in the field, no edge tile to be less than one-half the field 
+tile size, except where irregular shaped rooms make it impossible. Cut flooring to fit around all permanent fixtures, built-in furniture and cabinets, 
+pipes, and outlets. Cut, fit, and scribe edge tile to walls and partitions after field flooring has been applied.</txt><brk></brk></spt>
+<spt outline="3.7"><ttl>3.7 PLACING SHEET VINYL FLOORING</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Determine if welded seams are necessary to meet project requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Install sheet vinyl flooring and accessories in accordance with manufacturer's printed installation instructions. Prepare and apply adhesives 
+in accordance with manufacturer's printed directions. Provide square, symmetrical, tight, and even flooring lines and joints. Keep each floor 
+in true, level plane, except where slope is indicated. Cut flooring to fit around all permanent fixtures, built-in furniture and cabinets, pipes, 
+and outlets. Lay out sheets to minimize waste. Cut, fit, and scribe flooring to walls and partitions after field flooring has been applied.<div class="brackets">[ 
+Provide <div class="brackets">[chemically bonded]</div> <div class="brackets">[or]</div> <div class="brackets">[heat welded]</div> seams and edges <div class="brackets">[in rooms <div class="brackets">[_____]</div>]</div> <div class="brackets">[shown on the drawings]</div> in accordance with the manufacturer's 
+written installation instructions. Finish joints flush, free from voids, recesses, and raised areas.]</div> <div class="brackets">[Install flooring with an integral coved 
+base.]</div></txt><brk></brk></spt>
+<spt outline="3.8"><ttl>3.8 PLACING SHEET LINOLEUM FLOORING</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Determine if welded seams are necessary to meet project requirements.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Install sheet linoleum flooring and accessories in accordance with manufacturer's printed installation instructions. Prepare and apply adhesives 
+in accordance with manufacturer's printed directions. Provide square, symmetrical, tight, and even flooring lines and joints. Keep each floor 
+in true, level plane, except where slope is indicated. Cut flooring to fit around all permanent fixtures, built-in furniture and cabinets, pipes, 
+and outlets. Lay out sheets to minimize waste. Cut, fit, and scribe flooring to walls and partitions after field flooring has been applied. 
+Cut seams by overlapping or underscribing as recommended by the manufacturer. <div class="brackets">[Provide heat welded seams <div class="brackets">[in rooms <div class="brackets">[_____]</div>]</div> <div class="brackets">[as shown on the drawings]</div> 
+in accordance with there manufacturer's written installation instructions.]</div> Finish joints flush, free from voids, recesses, and raised areas. 
+<div class="brackets">[Install flooring with an integral coved base.]</div></txt><brk></brk></spt>
+<spt outline="3.9"><ttl>3.9 PLACING CORK FLOORING</ttl><brk></brk>
+<txt>Install cork <div class="brackets">[tile]</div> <div class="brackets">[plank flooring]</div> and accessories in accordance with manufacturer's installation instructions. Prepare and apply adhesives 
+in accordance with manufacturer's directions. Provide square, symmetrical, tight, and even flooring lines and joints except where slope is indicated. 
+Keep each floor in true, level plane, except where slope is indicated. <div class="brackets">[Vary width of edge tiles as necessary to maintain full-size tiles in field, 
+while keeping edge tiles larger than one-half full size, except where irregular-shaped rooms make it impossible.]</div> Cut and fit flooring around 
+all permanent fixtures, built-in furniture and cabinets, pipes, and outlets. Cut, fit and scribe flooring to walls and partitions after field 
+flooring has been applied.</txt><brk></brk></spt>
+<spt outline="3.10"><ttl>3.10 PLACING FEATURE STRIPS</ttl><brk></brk>
+<txt>Install feature strips in accordance with manufacturer's printed installation instructions. Prepare and apply adhesives in accordance with manufacturer's 
+printed directions.</txt><brk></brk></spt>
+<spt outline="3.11"><ttl>3.11 PLACING MOULDING</ttl><brk></brk>
+<txt>Provide moulding where flooring termination is higher than the adjacent finished flooring and at transitions between different flooring materials. 
+When required, locate moulding under door centerline. Moulding is not required at doorways where thresholds are provided. <div class="brackets">[Secure moulding with 
+adhesive as recommended by the manufacturer. Prepare and apply adhesives in accordance with manufacturer's printed directions.]</div> <div class="brackets">[Anchor aluminum 
+moulding to floor surfaces as recommended by the manufacturer.]</div></txt><brk></brk></spt>
+<spt outline="3.12"><ttl>3.12 PLACING WALL BASE</ttl><brk></brk>
+<txt>Install wall base in accordance with manufacturer's printed installation instructions. Prepare and apply adhesives in accordance with manufacturer's 
+printed directions. Tighten base joints and make even with adjacent resilient flooring. Fill voids along the top edge of base at masonry walls 
+with caulk. Roll entire vertical surface of base with hand roller, and press toe of base with a straight piece of wood to ensure proper alignment. 
+Avoid excess adhesive in corners.</txt><brk></brk></spt>
+<spt outline="3.13"><ttl>3.13 PLACING STAIR TREADS, RISERS, AND STRINGERS</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Installation of stringers can be labor intensive. Dependent on the project requirements consider other 
+stringer finish alternatives, an example would be a painted stringer.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Secure and install stair treads, risers, and stringers in accordance with manufacturer's printed installation instructions. Cover the surface 
+of treads and risers<div class="brackets">[ the full width of the stairs]</div><div class="brackets">[ within <met><pre class="display_MET">&lt;MET&gt;</pre>150 mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre>6 inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> to the stair edges]</div>. Provide equal length pieces butted together to cover 
+the treads and risers for stairs wider than manufacturer's standard lengths. <div class="brackets">[Provide stringer angles on both the wall and banister sides of the 
+stairs, and landing trim.]</div></txt><brk></brk></spt>
+<spt outline="3.14"><ttl>3.14 PLACING INTEGRAL COVED BASE</ttl><brk></brk>
+<txt>Install integral cove base in accordance with manufacturer's printed installation instructions. Prepare and apply adhesives in accordance with 
+manufacturer's printed directions. Shape integral coved base by extending the flooring material<met><pre class="display_MET">&lt;MET&gt;</pre> <div class="brackets">[100]</div> <div class="brackets">[150]</div> <div class="brackets">[_____]</div> mm<pre class="display_MET">&lt;/MET&gt;</pre></met><eng><pre class="display_ENG">&lt;ENG&gt;</pre> <div class="brackets">[4]</div> <div class="brackets">[6]</div> <div class="brackets">[_____]</div> inch<pre class="display_ENG">&lt;/ENG&gt;</pre></eng> onto 
+the wall surface. Support cove by a filler. Provide a cap strip at the top of the base. Fill voids along the top edge of base at masonry walls 
+with caulk.</txt><brk></brk></spt>
+<spt outline="3.15"><ttl>3.15 CLEANING</ttl><brk></brk>
+<nte><pre class="display_NTE">&lt;NTE&gt;</pre><brk></brk>
+<ast><hr/></ast><brk></brk>
+<npr><pre class="display_NPR">&lt;NPR&gt;</pre>NOTE: Some activities prefer no-wax maintenance; others prefer waxing. Pre-waxed flooring and flooring that 
+does not require wax need not be waxed after installation if properly protected. Coordinate any requirements 
+for application of polish/floor finish with the end user. Modify paragraph accordingly.<pre class="display_NPR">&lt;/NPR&gt;</pre></npr><brk></brk>
+<ast><hr/></ast><brk></brk><pre class="display_NTE">&lt;/NTE&gt;</pre></nte>
+<brk></brk>
+<txt>Immediately upon completion of installation of flooring in a room or an area, dry and clean the flooring and adjacent surfaces to remove all surplus 
+adhesive. Clean flooring as recommended in accordance with manufacturer's printed maintenance instructions and within the recommended time frame. 
+As required by the manufacturer, apply the recommended number of coats and type of polish and finish in accordance with manufacturer's written 
+instructions.</txt><brk></brk></spt>
+<spt outline="3.16"><ttl>3.16 PROTECTION</ttl><brk></brk>
+<txt>From the time of installation until acceptance, protect flooring from damage as recommended by the flooring manufacturer. Remove and replace flooring 
+which becomes damaged, loose, broken, or curled and wall base which is not tight to wall or securely adhered.</txt><brk></brk></spt>
+</prt> <end></end><brk></brk></sec></main>
+<button id="menuBtn" onclick="toggleMenu()" title="Toggle menu">Menu</button>
+<button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+<button id="indexBtn" onclick="tocFunction()" title="TOC">Index</button>
+</body>
+<script id="scripts">
+
+switches = Array(
+    "notes-toggle-switch",
+    "nte-toggle-switch",
+    "npr-toggle-switch",
+    "brackets-toggle-switch",
+    "add-toggle-switch",
+    "del-toggle-switch",
+    "add-color-toggle-switch",
+    "del-color-toggle-switch",
+    "show-deletions-toggle-switch",
+    "eng-toggle-switch",
+    "met-toggle-switch",
+    "rid-toggle-switch",
+    "rtl-toggle-switch",
+    "color-rid-toggle-switch",
+    "color-rtl-toggle-switch",
+    "srf-toggle-switch",
+    "stl-toggle-switch",
+    "color-srf-toggle-switch",
+    "color-stl-toggle-switch",
+    "sub-toggle-switch",
+    "color-sub-toggle-switch"
+)
+
+
+set_up_toggle_by_class('nte-toggle-switch', '.display_NTE');
+set_up_toggle_by_class('npr-toggle-switch', '.display_NPR');
+set_up_toggle_by_class('add-toggle-switch', '.display_ADD');
+set_up_toggle_by_class('del-toggle-switch', '.display_DEL');
+
+set_up_toggle_by_class('eng-toggle-switch', '.display_ENG');
+set_up_toggle_by_class('met-toggle-switch', '.display_MET');
+set_up_toggle_by_class('rid-toggle-switch', '.display_RID');
+set_up_toggle_by_class('rtl-toggle-switch', '.display_RTL');
+
+set_up_toggle_by_class('srf-toggle-switch', '.display_SRF');
+set_up_toggle_by_class('stl-toggle-switch', '.display_STL');
+set_up_toggle_by_class('sub-toggle-switch', '.display_SUB', 'inline');
+
+toggle_bracket_style('brackets-toggle-switch', '.brackets')
+
+set_up_toggle_by_tag('notes-toggle-switch', 'HDR');
+set_up_toggle_by_tag('notes-toggle-switch', 'NTE');
+set_up_toggle_by_tag('notes-toggle-switch', 'NPR');
+set_up_toggle_by_tag('notes-toggle-switch', 'AST');
+set_up_toggle_by_tag('show-deletions-toggle-switch', 'DEL')
+
+toggle_color_style('add-color-toggle-switch', 'add', 'var(--add-color)')
+toggle_color_style('del-color-toggle-switch', 'del', 'var(--del-color)')
+
+toggle_color_style('color-rid-toggle-switch', 'rid', 'var(--rid-color)', 'var(--rid-bg')
+toggle_color_style('color-rtl-toggle-switch', 'rtl', 'var(--rtl-color)', 'var(--rtl-bg)')
+toggle_color_style('color-srf-toggle-switch', 'srf', 'var(--srf-color)', 'var(--srf-bg')
+
+toggle_color_style('color-stl-toggle-switch', 'stl', 'var(--stl-color)', 'var(--stl-bg)')
+toggle_color_style('color-sub-toggle-switch', 'sub', 'var(--sub-color)')
+
+
+document.getElementById('notes-toggle-switch').checked = false;
+document.getElementById('brackets-toggle-switch').checked = true;
+document.getElementById('rid-toggle-switch').checked = false;
+document.getElementById('del-color-toggle-switch').checked = true;
+document.getElementById('show-deletions-toggle-switch').checked = false;
+document.getElementById('color-rid-toggle-switch').checked = true;
+document.getElementById('color-srf-toggle-switch').checked = true;
+document.getElementById('color-sub-toggle-switch').checked = true;
+
+
+function set_up_toggle_by_tag(toggle_element_id, target_elements_tag_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_tag_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function set_up_toggle_by_class(toggle_element_id, target_elements_class_name, display_style='inline') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = display_style;
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+function toggle_bracket_style(toggle_element_id, target_elements_class_name) {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.backgroundColor = 'yellow';
+            } else {
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+function toggle_color_style(toggle_element_id, target_elements_class_name, custom_color, custom_bg_color='') {
+    let toggle_element = document.getElementById(toggle_element_id)
+    let target_elements = document.querySelectorAll(target_elements_class_name)
+    toggle_element.addEventListener('change', () => {
+        target_elements.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.color = custom_color;
+                if (custom_bg_color.length != 0) {
+                    item.style.backgroundColor = custom_bg_color
+                }
+            } else {
+                item.style.color = 'var(--standard-text-color)';
+                item.style.backgroundColor = 'transparent';
+            }
+        })
+    })
+}
+
+
+let topButton = document.getElementById("topBtn");
+let menuButton = document.getElementById("menuBtn");
+menuButton.onclick = function() {toggleMenu()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+let tocButton = document.getElementById("indexBtn");
+tocButton.onclick = function() {tocFunction()};
+function tocFunction() {
+    window.location.href = 'index.html'
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleMenu() {
+    let menuElement = document.querySelector('.user-selections');
+    let mainElement = document.querySelector('main');
+    if (menuElement.style.display != 'block') {
+        menuElement.style.display = 'block';
+        mainElement.style.marginTop = '200px';
+    } else {
+        menuElement.style.display = 'none';
+        mainElement.style.marginTop = '72px';
+    }
+}</script>
+<script src="../../src/html/scripts.js"></script>
+</html>

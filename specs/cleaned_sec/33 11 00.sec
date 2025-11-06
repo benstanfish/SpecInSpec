@@ -1,26 +1,26 @@
-<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><HDR><AST/><BRK/>
-USACE / NAVFAC / AFCEC / NASA                UFGS-33 11 00 (February 2018)<BRK/>
-                                             -----------------------------<BRK/>
-Preparing Activity: <PRA> NAVFAC</PRA>                  Superseding<BRK/>
-                                             UFGS-33 11 00 (May 2016)<BRK/>
-<BRK/>
-<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
-<BRK/>
-<HL4>References are in agreement with UMRL dated January 2019</HL4><BRK/>
-<AST/><BRK/></HDR>
-<BRK/>
-<SCN>SECTION 33 11 00</SCN><BRK/>
-<BRK/>
-<STL>WATER UTILITY DISTRIBUTION PIPING</STL><BRK/>
-<DTE>02/18</DTE><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                UFGS-33 11 00 (February 2018)<BRK />
+                                             -----------------------------<BRK />
+Preparing Activity: <PRA> NAVFAC</PRA>                  Superseding<BRK />
+                                             UFGS-33 11 00 (May 2016)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated January 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 33 11 00</SCN><BRK />
+<BRK />
+<STL>WATER UTILITY DISTRIBUTION PIPING</STL><BRK />
+<DTE>02/18</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This guide specification has been edited to cover the minimum requirements and include Japanese products, 
 where feasible, for a standard Japan Engineer District project.  The Designer of Record (DOR) shall tailor as 
-applicable to meet project specific requirements.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<NTE><BRK/>
-<AST/><BRK/>
+applicable to meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This guide specification covers the requirements for <SCP>potable and non-potable (i.e., raw water, sea, salt 
 water) systems</SCP>, in which the largest size pipe is<MET> 1200 mm</MET><ENG> 60 inches</ENG> in diameter and the maximum system working 
 pressure is<MET> 1000 kPa</MET><ENG> 150 psi</ENG>.  This maximum working pressure depends on piping materials and appurtenances listed 
@@ -28,340 +28,340 @@ in this specification.  Ensure that the pressure class of piping materials and a
 working pressure of the system.  This section covers water systems for use outside of buildings, including water 
 mains, water transmission mains and water service lines to a point approximately<MET> 1.5 m</MET><ENG> 5 feet</ENG> from the perimeter 
 of buildings or structures..  Water lines within<MET> 1.5 m</MET><ENG> 5 feet</ENG> of the building are typically covered by Division 
-22 specifications and occasionally Division 40 specifications.</NPR><BRK/>
-<BRK/>
+22 specifications and occasionally Division 40 specifications.</NPR><BRK />
+<BRK />
 <NPR>When control systems are used to monitor water utility systems include Section <SRF>25 05 11</SRF> CYBERSECURITY FOR FACILITY-RELATED 
-CONTROL SYSTEMS.</NPR><BRK/>
-<BRK/>
-<BRK/>
-<BRK/>
+CONTROL SYSTEMS.</NPR><BRK />
+<BRK />
+<BRK />
+<BRK />
 <NPR>For corrosive soils select materials, coatings or cathodic protection systems in accordance with UFC 3-230-01.  
-When cathodic protection is used include Section <SRF>26 42 13.00 20</SRF> CATHODIC PROTECTION BY GALVANIC ANODES.</NPR><BRK/>
-<BRK/>
+When cathodic protection is used include Section <SRF>26 42 13.00 20</SRF> CATHODIC PROTECTION BY GALVANIC ANODES.</NPR><BRK />
+<BRK />
 <NPR>When piping is beneath open piers and other exposed locations is subject to freezing temperatures, include requirements 
 for insulation and protective coverings in the project specification.  Information on this subject related to 
 open piers may be found in Technical Report R593, September 1968, "Freeze Protection for Freshwater and Sanitary 
 Piping Under Open Piers," by the Naval Facilities Engineering Services Center, 560 Center Drive, Port Hueneme, 
-California 93043-4328.</NPR><BRK/>
-<BRK/>
+California 93043-4328.</NPR><BRK />
+<BRK />
 <NPR>Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
 specification or preparing new project specification sections.  Edit this guide specification for project specific 
-requirements by adding, deleting, or revising text.</NPR><BRK/>
-<BRK/>
-<NPR>Remove information and requirements not required in respective project.</NPR><BRK/>
-<BRK/>
+requirements by adding, deleting, or revising text.</NPR><BRK />
+<BRK />
+<NPR>Remove information and requirements not required in respective project.</NPR><BRK />
+<BRK />
 <NPR>Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
-as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<NTE><BRK/>
-<AST/><BRK/>
+as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  For Army and Air Force, impress current cathodic protection(ICCP) may be used.  When ICCP is used include 
-Section <SRF>26 42 17.00 10</SRF> CATHODIC PROTECTION SYSTEM (IMPRESSED CURRENT).</NPR><BRK/>
-<AST/><BRK/></NTE>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  For Navy, comply with CNIC Instructions 5090.1, 5090.2 and 5090.3.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<PRT><TTL>PART 1   GENERAL<BRK/></TTL>
-<BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+Section <SRF>26 42 17.00 10</SRF> CATHODIC PROTECTION SYSTEM (IMPRESSED CURRENT).</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For Navy, comply with CNIC Instructions 5090.1, 5090.2 and 5090.3.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL<BRK /></TTL>
+<BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This guide specification has been edited to cover the minimum requirements for a basic Japan Engineer District 
-project. Designer shall tailor as applicable to meet project specific requirement.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<SPT><TTL>REFERENCES</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+project. Designer shall tailor as applicable to meet project specific requirement.</NPR><BRK />
+<AST /><BRK /></NTE>
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This paragraph is used to list the publications cited in the text of the guide specification.  The publications 
 are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
-date, and title.</NPR><BRK/>
-<BRK/>
+date, and title.</NPR><BRK />
+<BRK />
 <NPR>Use the Reference Wizard's Check Reference feature when you add a Reference Identifier (RID) outside of the Section's 
 Reference Article to automatically place the reference in the Reference Article.  Also use the Reference Wizard's 
-Check Reference feature to update the issue dates.</NPR><BRK/>
-<BRK/>
+Check Reference feature to update the issue dates.</NPR><BRK />
+<BRK />
 <NPR>References not used in the text will automatically be deleted from this section of the project specification when 
-you choose to reconcile references in the publish print process.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+you choose to reconcile references in the publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are referred to within the text by 
-the basic designation only.</TXT><BRK/>
-<BRK/>
-<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK/>
-<BRK/>
+the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK />
+<BRK />
 <RID>NFPA 24</RID><DEL><RTL>(2016; ERTA 2016) Standard for the Installation of Private Fire Service Mains 
 and Their Appurtenances</RTL></DEL><ADD><RTL>(2019; TIA 19-1) Standard for the Installation of Private 
-Fire Service Mains and Their Appurtenances</RTL></ADD><BRK/>
-<BRK/></REF>
-<REF><ORG>U.S. DEPARTMENT OF DEFENSE (DOD)</ORG><BRK/>
-<BRK/>
+Fire Service Mains and Their Appurtenances</RTL></ADD><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. DEPARTMENT OF DEFENSE (DOD)</ORG><BRK />
+<BRK />
 <RID>UFC 3-600-01</RID><DEL><RTL>(2016; with Change 1) Fire Protection Engineering for Facilities</RTL></DEL><ADD><RTL>(2016; with Change 
-6, 2021) Fire Protection Engineering for Facilities</RTL></ADD><BRK/>
-<BRK/></REF>
-<REF><ORG>UNDERWRITERS LABORATORIES (UL)</ORG><BRK/>
-<BRK/>
-<RID>UL 246</RID><RTL>(2011; Reprint Dec 2018) UL Standard for Safety Hydrants for Fire-Protection Service</RTL><BRK/>
-<BRK/>
-<RID>UL 262</RID><RTL>(2004; Reprint Oct 2011) Gate Valves for Fire-Protection Service</RTL><BRK/>
-<BRK/>
+6, 2021) Fire Protection Engineering for Facilities</RTL></ADD><BRK />
+<BRK /></REF>
+<REF><ORG>UNDERWRITERS LABORATORIES (UL)</ORG><BRK />
+<BRK />
+<RID>UL 246</RID><RTL>(2011; Reprint Dec 2018) UL Standard for Safety Hydrants for Fire-Protection Service</RTL><BRK />
+<BRK />
+<RID>UL 262</RID><RTL>(2004; Reprint Oct 2011) Gate Valves for Fire-Protection Service</RTL><BRK />
+<BRK />
 <RID>UL 312</RID><RTL>(2010; Reprint Mar 2018) UL Standard for Safety Check Valves for Fire-Protection 
-Service</RTL><BRK/>
-<BRK/>
+Service</RTL><BRK />
+<BRK />
 <RID>UL 789</RID><RTL>(2004; Reprint May 2017) UL Standard for Safety Indicator Posts for Fire-Protection 
-Service</RTL><BRK/>
-<BRK/></REF>
-<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK/>
-<BRK/>
-<RID>JIS A 5308</RID><RTL>(2014) Ready-Mixed Concrete</RTL><BRK/>
-<BRK/>
-<RID>JIS A 5314</RID><RTL>(2014) Mortar Lining for Ductile Iron Pipes</RTL><BRK/>
-<BRK/>
-<RID>JIS B 1171</RID><RTL>(2015) Cup Head Square Neck Bolts (Amendment 1)</RTL><BRK/>
-<BRK/>
+Service</RTL><BRK />
+<BRK /></REF>
+<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK />
+<BRK />
+<RID>JIS A 5308</RID><RTL>(2014) Ready-Mixed Concrete</RTL><BRK />
+<BRK />
+<RID>JIS A 5314</RID><RTL>(2014) Mortar Lining for Ductile Iron Pipes</RTL><BRK />
+<BRK />
+<RID>JIS B 1171</RID><RTL>(2015) Cup Head Square Neck Bolts (Amendment 1)</RTL><BRK />
+<BRK />
 <RID>JIS B 1180</RID><DEL><RTL>(2014) Hexagon Head Bolts and Hexagon Head Screws</RTL></DEL><ADD><RTL>(2014) Hexagon Head Bolts and 
-Hexagon Screws</RTL></ADD><BRK/>
-<BRK/>
-<RID>JIS B 1181</RID><RTL>(2014) Hexagon Nuts and Hexagon Thin Nuts</RTL><BRK/>
-<BRK/>
-<RID>JIS B 2011</RID><RTL>(2013) Bronze, Gate, Globe, Angle, and Check Valves (Amendment 2)</RTL><BRK/>
-<BRK/>
-<RID>JIS B 2031</RID><RTL>(2015) Gray Cast Iron Valves (Amendment 1)</RTL><BRK/>
-<BRK/>
-<RID>JIS B 2404</RID><RTL>(2018) Dimensions of Gaskets for Use with Pipe Flanges</RTL><BRK/>
-<BRK/>
-<RID>JIS B 7552</RID><RTL>(2011) Procedures for Calibration and Testing for Liquid Flowmeter</RTL><BRK/>
-<BRK/>
-<RID>JIS B 8570-1</RID><RTL>(2013) Meters for Cold Water and Hot Water - Part 1: General Specifications</RTL><BRK/>
-<BRK/>
-<RID>JIS G 5526</RID><RTL>(2014) Ductile Iron Pipes</RTL><BRK/>
-<BRK/>
-<RID>JIS G 5527</RID><RTL>(2014) Ductile Iron Fittings</RTL><BRK/>
-<BRK/>
-<RID>JIS K 1102</RID><RTL>(2000) Liquid Chlorine for Industrial Use - Determination of the Chlorine Content.</RTL><BRK/>
-<BRK/>
-<RID>JIS K 6353</RID><RTL>(2011) Rubber Goods for Water Works</RTL><BRK/>
-<BRK/>
-<RID>JIS K 6742</RID><RTL>(2016) Unplasticized poly (vinyl chloride) (PVC-U) pipes for water supply</RTL><BRK/>
-<BRK/>
-<RID>JIS K 6743</RID><RTL>(2016) Unplasticized Poly (Vinyl Chloride) (PVC-U) Pipe Fittings for Water Supply</RTL><BRK/>
-<BRK/>
-<RID>JIS K 6762</RID><RTL>(2012) Double Wall Polyethylene Pipes for Water Supply</RTL><BRK/>
-<BRK/>
-<RID>JIS S 3200-1</RID><RTL>(1997) Equipment for Water Supply Use - Test methods of Hydrostatic Pressure</RTL><BRK/>
-<BRK/>
-<RID>JIS S 3200-4</RID><RTL>(1997) Equipment for Water Supply Use - Test Method of Prevention from Back Current</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG>JAPAN WATER WORKS ASSOCIATION (JWWA)</ORG><BRK/>
-<BRK/>
-<RID>JWWA B 116</RID><RTL>(2012) Polyethylene Pipe Metal Fittings for Water Supply</RTL><BRK/>
-<BRK/>
-<RID>JWWA B 120</RID><RTL>(2017) Soft Seal Gate Valve for Water Supply</RTL><BRK/>
-<BRK/>
-<RID>JWWA B 122</RID><RTL>(2013) Ductile Cast Iron Gate Valve for Water Supply</RTL><BRK/>
-<BRK/>
-<RID>JWWA B 129</RID><RTL>(2013) Backflow Prevention Valve for Water Supply</RTL><BRK/>
-<BRK/>
-<RID>JWWA B 137</RID><RTL>(2013) Water Supply Rapid Air Valve</RTL><BRK/>
-<BRK/>
-<RID>JWWA B 138</RID><RTL>(2013) Water Supply Butterfly Valve</RTL><BRK/>
-<BRK/>
-<RID>JWWA G 113</RID><RTL>(2010) Ductile Iron Pipes for Water Works</RTL><BRK/>
-<BRK/>
-<RID>JWWA K 129</RID><RTL>(2019) Rubber Ring-Shaped Rigid Polyvinyl Chloride Pipe for Water Supply</RTL><BRK/>
-<BRK/>
-<RID>JWWA K 130</RID><RTL>(2019) Rubber Ring-Shaped Rigid Polyvinyl Chloride Pipe Joint for Water Supply</RTL><BRK/>
-<BRK/>
-<RID>JWWA K 144</RID><RTL>(2017) Polyethylene Pipe for Water Distribution </RTL><BRK/>
-<BRK/>
-<RID>JWWA K 145</RID><RTL>(2017) Polyethylene Pipe Fitting for Water Distribution</RTL><BRK/>
-<BRK/>
-<RID>JWWA K 156</RID><RTL>(2015) Rubber Material for Water Supply Facilities</RTL><BRK/>
-<BRK/>
-<RID>JWWA K 158</RID><RTL>(2017) Polyethylene Sleeve for Ductile Cast Iron Pipe for Water Supply</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG><DEL>JAPAN DUCTILE IRON PIPE ASSOCIATION (JDPA)</DEL><ADD>JAPAN DUCTILE IRON PIPE ASSOCIATION (JDPA)</ADD></ORG><BRK/>
-<BRK/>
-<RID>JDPA T 01</RID><RTL>(2017) Ductile Iron Pipe Laying Standard Manual</RTL><BRK/>
-<BRK/>
-<RID>JDPA Z 2010</RID><RTL>(2009) Synthetic Resin Coating for Ductile Iron Pipes and Fittings</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG>JAPAN CAST IRON COVER &amp; WASTE FITTING ASSOCIATION (JCW)</ORG><BRK/>
-<BRK/>
-<RID>JCW-104</RID><RTL>(2012) Valve Box</RTL><BRK/>
-<BRK/></REF>
-</SPT><SPT><TTL>DEFINITIONS</TTL><BRK/>
-<BRK/>
-<TAI OPT="WATER TRANSMISSION"><SPT><TTL>Water Transmission Mains</TTL><BRK/>
-<BRK/>
+Hexagon Screws</RTL></ADD><BRK />
+<BRK />
+<RID>JIS B 1181</RID><RTL>(2014) Hexagon Nuts and Hexagon Thin Nuts</RTL><BRK />
+<BRK />
+<RID>JIS B 2011</RID><RTL>(2013) Bronze, Gate, Globe, Angle, and Check Valves (Amendment 2)</RTL><BRK />
+<BRK />
+<RID>JIS B 2031</RID><RTL>(2015) Gray Cast Iron Valves (Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS B 2404</RID><RTL>(2018) Dimensions of Gaskets for Use with Pipe Flanges</RTL><BRK />
+<BRK />
+<RID>JIS B 7552</RID><RTL>(2011) Procedures for Calibration and Testing for Liquid Flowmeter</RTL><BRK />
+<BRK />
+<RID>JIS B 8570-1</RID><RTL>(2013) Meters for Cold Water and Hot Water - Part 1: General Specifications</RTL><BRK />
+<BRK />
+<RID>JIS G 5526</RID><RTL>(2014) Ductile Iron Pipes</RTL><BRK />
+<BRK />
+<RID>JIS G 5527</RID><RTL>(2014) Ductile Iron Fittings</RTL><BRK />
+<BRK />
+<RID>JIS K 1102</RID><RTL>(2000) Liquid Chlorine for Industrial Use - Determination of the Chlorine Content.</RTL><BRK />
+<BRK />
+<RID>JIS K 6353</RID><RTL>(2011) Rubber Goods for Water Works</RTL><BRK />
+<BRK />
+<RID>JIS K 6742</RID><RTL>(2016) Unplasticized poly (vinyl chloride) (PVC-U) pipes for water supply</RTL><BRK />
+<BRK />
+<RID>JIS K 6743</RID><RTL>(2016) Unplasticized Poly (Vinyl Chloride) (PVC-U) Pipe Fittings for Water Supply</RTL><BRK />
+<BRK />
+<RID>JIS K 6762</RID><RTL>(2012) Double Wall Polyethylene Pipes for Water Supply</RTL><BRK />
+<BRK />
+<RID>JIS S 3200-1</RID><RTL>(1997) Equipment for Water Supply Use - Test methods of Hydrostatic Pressure</RTL><BRK />
+<BRK />
+<RID>JIS S 3200-4</RID><RTL>(1997) Equipment for Water Supply Use - Test Method of Prevention from Back Current</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>JAPAN WATER WORKS ASSOCIATION (JWWA)</ORG><BRK />
+<BRK />
+<RID>JWWA B 116</RID><RTL>(2012) Polyethylene Pipe Metal Fittings for Water Supply</RTL><BRK />
+<BRK />
+<RID>JWWA B 120</RID><RTL>(2017) Soft Seal Gate Valve for Water Supply</RTL><BRK />
+<BRK />
+<RID>JWWA B 122</RID><RTL>(2013) Ductile Cast Iron Gate Valve for Water Supply</RTL><BRK />
+<BRK />
+<RID>JWWA B 129</RID><RTL>(2013) Backflow Prevention Valve for Water Supply</RTL><BRK />
+<BRK />
+<RID>JWWA B 137</RID><RTL>(2013) Water Supply Rapid Air Valve</RTL><BRK />
+<BRK />
+<RID>JWWA B 138</RID><RTL>(2013) Water Supply Butterfly Valve</RTL><BRK />
+<BRK />
+<RID>JWWA G 113</RID><RTL>(2010) Ductile Iron Pipes for Water Works</RTL><BRK />
+<BRK />
+<RID>JWWA K 129</RID><RTL>(2019) Rubber Ring-Shaped Rigid Polyvinyl Chloride Pipe for Water Supply</RTL><BRK />
+<BRK />
+<RID>JWWA K 130</RID><RTL>(2019) Rubber Ring-Shaped Rigid Polyvinyl Chloride Pipe Joint for Water Supply</RTL><BRK />
+<BRK />
+<RID>JWWA K 144</RID><RTL>(2017) Polyethylene Pipe for Water Distribution </RTL><BRK />
+<BRK />
+<RID>JWWA K 145</RID><RTL>(2017) Polyethylene Pipe Fitting for Water Distribution</RTL><BRK />
+<BRK />
+<RID>JWWA K 156</RID><RTL>(2015) Rubber Material for Water Supply Facilities</RTL><BRK />
+<BRK />
+<RID>JWWA K 158</RID><RTL>(2017) Polyethylene Sleeve for Ductile Cast Iron Pipe for Water Supply</RTL><BRK />
+<BRK /></REF>
+<REF><ORG><DEL>JAPAN DUCTILE IRON PIPE ASSOCIATION (JDPA)</DEL><ADD>JAPAN DUCTILE IRON PIPE ASSOCIATION (JDPA)</ADD></ORG><BRK />
+<BRK />
+<RID>JDPA T 01</RID><RTL>(2017) Ductile Iron Pipe Laying Standard Manual</RTL><BRK />
+<BRK />
+<RID>JDPA Z 2010</RID><RTL>(2009) Synthetic Resin Coating for Ductile Iron Pipes and Fittings</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>JAPAN CAST IRON COVER &amp; WASTE FITTING ASSOCIATION (JCW)</ORG><BRK />
+<BRK />
+<RID>JCW-104</RID><RTL>(2012) Valve Box</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>DEFINITIONS</TTL><BRK />
+<BRK />
+<TAI OPT="WATER TRANSMISSION"><SPT><TTL>Water Transmission Mains</TTL><BRK />
+<BRK />
 <TXT>Water transmission mains include water piping having diameters greater than<MET> 350 mm</MET><ENG> 14 inch</ENG>, specific materials, methods of joining and any appurtenances 
-deemed necessary for a satisfactory system.</TXT><BRK/>
-<BRK/></SPT>
-</TAI><SPT><TTL>Water Mains</TTL><BRK/>
-<BRK/>
+deemed necessary for a satisfactory system.</TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="1.2.1"><TTL>Water Mains</TTL><BRK />
+<BRK />
 <TXT>Water mains include water piping having diameters<MET> 100 through 350 mm</MET><ENG> 4 through 14 inch</ENG>, specific materials, methods of joining and any appurtenances 
-deemed necessary for a satisfactory system.</TXT><BRK/>
-<BRK/></SPT>
-<TAI OPT="SERVICE LINES"><SPT><TTL>Water Service Lines</TTL><BRK/>
-<BRK/>
+deemed necessary for a satisfactory system.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="SERVICE LINES"><SPT><TTL>Water Service Lines</TTL><BRK />
+<BRK />
 <TXT>Water service lines include water piping from a water main to a building service at a point approximately<MET> 1.5 m</MET><ENG> 5 feet</ENG> from building or the point 
-indicated on the drawings, specific materials, methods of joining and any appurtenances deemed necessary for a satisfactory system.</TXT><BRK/>
-<BRK/></SPT>
-</TAI><SPT><TTL>Additional Definitions</TTL><BRK/>
-<BRK/>
-<TXT>For additional definitions refer to the definitions in the applicable referenced standard.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>SUBMITTALS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+indicated on the drawings, specific materials, methods of joining and any appurtenances deemed necessary for a satisfactory system.</TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="1.2.2"><TTL>Additional Definitions</TTL><BRK />
+<BRK />
+<TXT>For additional definitions refer to the definitions in the applicable referenced standard.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.3"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Review Submittal Description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES and edit the following 
-list to reflect only the submittals required for the project.</NPR><BRK/>
-<BRK/>
+list to reflect only the submittals required for the project.</NPR><BRK />
+<BRK />
 <NPR>The Guide Specification technical editors have designated those items that require Government approval, due to 
 their complexity or criticality, with a "G."  Generally, other submittal items can be reviewed by the Contractor's 
 Quality Control System.  Only add a "G" to an item, if the submittal is sufficiently important or complex in context 
-of the project.</NPR><BRK/>
-<BRK/>
+of the project.</NPR><BRK />
+<BRK />
 <NPR>For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
 tags may be used following the "G" designation to indicate the approving authority.  Codes for Army projects using 
 the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" for District Office (Engineering 
 Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
-for Project Office.  Codes following the "G" typically are not used for Navy and Air Force projects.</NPR><BRK/>
-<BRK/>
+for Project Office.  Codes following the "G" typically are not used for Navy and Air Force projects.</NPR><BRK />
+<BRK />
 <NPR>The "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook to 
 fulfill federally mandated sustainable requirements in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
-Locate the "S" submittal under the SD number that best describes the submittal item.</NPR><BRK/>
-<BRK/>
-<BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+Locate the "S" submittal under the SD number that best describes the submittal item.</NPR><BRK />
+<BRK />
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are for information only.  When 
 used, a designation following the "G" designation identifies the office that will review the submittal for the Government.  Submittals with an 
 "S" are for inclusion in the Sustainability eNotebook, in conformance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Submit the following in 
-accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
-<BRK/>
-<BRK/>
-<LST><SUB>SD-03 Product Data</SUB></LST><BRK/>
-<TAI OPT="HYDRANTS"><BRK/>
-<ITM><SUB>Fire Hydrants</SUB>;</ITM><BRK/></TAI>
-<BRK/>
-<ITM><SUB>Meters</SUB>;</ITM><BRK/>
-<TAI OPT="BACKFLOW PREVENTERS"><BRK/>
-<ITM><SUB>Backflow Preventer</SUB>;</ITM><BRK/>
-<BRK/></TAI>
-<ITM><SUB>Disinfection Procedures</SUB>; <SUB>G</SUB></ITM><BRK/>
-<BRK/>
-<LST><SUB>SD-06 Test Reports</SUB></LST><BRK/>
-<TAI OPT="BACKFLOW PREVENTERS"><BRK/>
-<ITM><SUB>Backflow Preventer Tests</SUB>; <SUB>G</SUB></ITM><BRK/></TAI>
-<BRK/>
-<ITM><SUB>Bacteriological Samples</SUB>; <SUB>G</SUB></ITM><BRK/>
-<BRK/>
-<TAI OPT="NAVY"><ITM><SUB>Hydrostatic Sewer Test</SUB>; <SUB>G</SUB></ITM><BRK/>
-<BRK/></TAI>
-<ITM><SUB>Leakage Test</SUB>; <SUB>G</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Hydrostatic Test</SUB>; <SUB>G</SUB></ITM><BRK/>
-<BRK/>
-<LST><SUB>SD-07 Certificates</SUB></LST><BRK/>
-<TAI OPT="HYDRANTS"><BRK/>
-<ITM><SUB>Fire Hydrants</SUB></ITM><BRK/></TAI>
-<BRK/>
-<TAI OPT="BACKFLOW PREVENTERS"><ITM><SUB>Backflow Certificate</SUB></ITM><BRK/>
-<BRK/></TAI>
-<LST><SUB>SD-08 Manufacturer's Instructions</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Ductile Iron Piping</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>PVC Piping</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>PVCO Piping</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Polyethylene (PE) Pipe</SUB></ITM><BRK/>
-<BRK/>
-<TAI OPT="SERVICE LINES"><ITM><SUB>PVC Piping For Service Lines</SUB></ITM><BRK/>
-<BRK/></TAI>
-<BRK/></SPT>
-<SPT><TTL>QUALITY CONTROL</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Regulatory Requirements</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<BRK />
+<LST><SUB>SD-03 Product Data</SUB></LST><BRK />
+<TAI OPT="HYDRANTS"><BRK />
+<ITM><SUB>Fire Hydrants</SUB>;</ITM><BRK /></TAI>
+<BRK />
+<ITM><SUB>Meters</SUB>;</ITM><BRK />
+<TAI OPT="BACKFLOW PREVENTERS"><BRK />
+<ITM><SUB>Backflow Preventer</SUB>;</ITM><BRK />
+<BRK /></TAI>
+<ITM><SUB>Disinfection Procedures</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK />
+<TAI OPT="BACKFLOW PREVENTERS"><BRK />
+<ITM><SUB>Backflow Preventer Tests</SUB>; <SUB>G</SUB></ITM><BRK /></TAI>
+<BRK />
+<ITM><SUB>Bacteriological Samples</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<TAI OPT="NAVY"><ITM><SUB>Hydrostatic Sewer Test</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK /></TAI>
+<ITM><SUB>Leakage Test</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Hydrostatic Test</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK />
+<TAI OPT="HYDRANTS"><BRK />
+<ITM><SUB>Fire Hydrants</SUB></ITM><BRK /></TAI>
+<BRK />
+<TAI OPT="BACKFLOW PREVENTERS"><ITM><SUB>Backflow Certificate</SUB></ITM><BRK />
+<BRK /></TAI>
+<LST><SUB>SD-08 Manufacturer's Instructions</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Ductile Iron Piping</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>PVC Piping</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>PVCO Piping</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Polyethylene (PE) Pipe</SUB></ITM><BRK />
+<BRK />
+<TAI OPT="SERVICE LINES"><ITM><SUB>PVC Piping For Service Lines</SUB></ITM><BRK />
+<BRK /></TAI>
+<BRK /></SPT>
+<SPT outline="1.4"><TTL>QUALITY CONTROL</TTL><BRK />
+<BRK />
+<SPT outline="1.4.1"><TTL>Regulatory Requirements</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Effective January 2014, the Safe Drinking Water Act (SDWA) requirements for "lead free" were updated.  
 The amended definition of "lead free*" is 0.20 percent max lead for solder and flux; 0.25 percent max lead for 
 products by weighted average; Multiple component products are calculated to address total wetted exposure based 
-upon wetted surface area of each component and that component's lead content by percentage </NPR><BRK/>
-<BRK/>
+upon wetted surface area of each component and that component's lead content by percentage </NPR><BRK />
+<BRK />
 <NPR>NSF/ANSI 61 was revised in 2008 to establish Annex G for requirements when a 0.25 percent lead content requirement 
 needed to be met since some states (California, Vermont, Maryland, and Louisiana) incorporated these requirements 
-prior to the SDWA.  In 2010 the lead content evaluation procedures of Annex G were moved to NSF/ANSI 372.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>Comply with <RID>NFPA 24</RID> for materials, installation, and testing of fire main piping and components.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Delivery and Storage</TTL><BRK/>
-<BRK/>
+prior to the SDWA.  In 2010 the lead content evaluation procedures of Annex G were moved to NSF/ANSI 372.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Comply with <RID>NFPA 24</RID> for materials, installation, and testing of fire main piping and components.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.5"><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK />
+<BRK />
+<SPT outline="1.5.1"><TTL>Delivery and Storage</TTL><BRK />
+<BRK />
 <TXT>Inspect materials delivered to site for damage.  Unload and store with minimum handling and in accordance with manufacturer's instructions.  Store 
 materials on site in enclosures or under protective covering.  Store plastic piping, jointing materials and rubber gaskets under cover out of direct 
 sunlight.  Do not store materials directly on the ground.  Keep inside of pipes, fittings, valves, <TAI OPT="HYDRANTS">fire hydrants, </TAI>and other accessories free of 
-dirt and debris.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Handling</TTL><BRK/>
-<BRK/>
+dirt and debris.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.2"><TTL>Handling</TTL><BRK />
+<BRK />
 <TXT>Handle pipe, fittings, valves, <TAI OPT="HYDRANTS">fire hydrants, </TAI>and other accessories in accordance with manufacturer's instructions and in a manner to ensure delivery 
 to the trench in sound undamaged condition.  Avoid injury to coatings and linings on pipe and fittings; make repairs if coatings or linings are 
 damaged.  Do not place other material, hooks, or pipe inside a pipe or fitting after the coating has been applied.  Inspect the pipe for defects 
 before installation.  Carry, do not drag pipe to the trench.  Use of pinch bars and tongs for aligning or turning pipe will be permitted only on 
 the bare ends of the pipe.  Clean the interior of pipe and accessories of foreign matter before being lowered into the trench and keep them clean 
 during laying operations by plugging.  Replace defective material without additional expense to the Government.  Store rubber gaskets, not immediately 
-installed, under cover or out of direct sunlight.</TXT><BRK/>
-<BRK/>
-<BRK/></SPT>
-</SPT></PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>MATERIALS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+installed, under cover or out of direct sunlight.</TXT><BRK />
+<BRK />
+<BRK /></SPT>
+</SPT></PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>MATERIALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Specify fittings to withstand the hydrostatic test pressure specified in paragraphs  SPECIAL TESTING REQUIREMENTS 
-FOR FIRE SERVICE.</NPR><BRK/>
-<BRK/>
-<NPR>Show the following information on the project drawings:</NPR><BRK/>
-<BRK/>
+FOR FIRE SERVICE.</NPR><BRK />
+<BRK />
+<NPR>Show the following information on the project drawings:</NPR><BRK />
+<BRK />
 <NPR>Location of all new pipelines, diameter of pipe, fittings and appurtenances including but not limited to valves, 
-fire hydrants, yard hydrants, thrust blocks, restrained joints and details where necessary;</NPR><BRK/>
-<BRK/>
-<NPR>Location, size, and type of service of existing connecting, intersecting, and adjacent pipelines and other utilities;</NPR><BRK/>
-<BRK/>
-<NPR>Paved areas and railroads which pass over new pipelines;</NPR><BRK/>
-<BRK/>
-<NPR>Connection of service line to water main, if different from that specified;</NPR><BRK/>
-<BRK/>
+fire hydrants, yard hydrants, thrust blocks, restrained joints and details where necessary;</NPR><BRK />
+<BRK />
+<NPR>Location, size, and type of service of existing connecting, intersecting, and adjacent pipelines and other utilities;</NPR><BRK />
+<BRK />
+<NPR>Paved areas and railroads which pass over new pipelines;</NPR><BRK />
+<BRK />
+<NPR>Connection of service line to water main, if different from that specified;</NPR><BRK />
+<BRK />
 <NPR>Where different materials are required, show the material, class or thickness of pipe and limits where class or 
-thickness must be different for different sections of pipeline;</NPR><BRK/>
-<BRK/>
-<NPR>Bedding conditions;</NPR><BRK/>
-<BRK/>
+thickness must be different for different sections of pipeline;</NPR><BRK />
+<BRK />
+<NPR>Bedding conditions;</NPR><BRK />
+<BRK />
 <NPR>Location of flanged joints, joints made with sleeve-type mechanical couplings, grooved and shouldered type joints, 
-and insulating joints;</NPR><BRK/>
-<BRK/>
+and insulating joints;</NPR><BRK />
+<BRK />
 <NPR>Size and shape of fire hydrant operating nut and cap nuts if nonstandard nuts are required; dimensions of threads 
 (major diameter, minor diameter, pitch diameter, thread form, and number of threads per inch) on fire hydrant 
-hose and pumper connections if nonstandard threads are required.</NPR><BRK/>
-<BRK/>
-<NPR>Refer to fire suppression Sections for items such as fire department connections and post indicator valves.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+hose and pumper connections if nonstandard threads are required.</NPR><BRK />
+<BRK />
+<NPR>Refer to fire suppression Sections for items such as fire department connections and post indicator valves.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide all materials in accordance with JIS, JWWA and other approved Japanese <ADD>standards </ADD><DEL>commercial products   </DEL>as indicated herein.  Provide valves 
 and fittings with pressure ratings equivalent to the pressure ratings of the pipe. Provide <DEL>Japanese manufactured </DEL>materials and components for fire 
-protection service meeting the requirements of <RID>NFPA 24</RID> and related UL standards.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Pipe, Fittings, Joints And Couplings</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Contaminated Areas:</NPR><BRK/>
-<BRK/>
+protection service meeting the requirements of <RID>NFPA 24</RID> and related UL standards.</TXT><BRK />
+<BRK />
+<SPT outline="2.1.1"><TTL>Pipe, Fittings, Joints And Couplings</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Contaminated Areas:</NPR><BRK />
+<BRK />
 <NPR>Selection of materials is critical for water pipe in locations where there is likelihood the pipe will be exposed 
 to significant concentrations of pollutants composed of low-molecular-weight petroleum products or organic solvents 
 or their vapors.  Documented research has shown that pipe materials (such as polyethylene and polyvinyl chloride) 
@@ -370,617 +370,617 @@ glands) may be subject to <HL2>permeation</HL2> by lower molecular weight organi
 pipe must pass through such a contaminated area or an area subject to contamination, consult with the manufacturer 
 regarding permeation of pipe walls, jointing materials, and so forth, <HL2>before</HL2> selecting materials for use in that 
 area and refer to JWWA or AWWA standards and AWWA, Water Research Foundation, report Number 91204 Impact of Hydrocarbons 
-on PE/PVC Pipes and Gaskets.</NPR><BRK/>
-<BRK/>
+on PE/PVC Pipes and Gaskets.</NPR><BRK />
+<BRK />
 <NPR>Use tailoring options to select all piping materials for water transmission mains, water mains and water service 
-lines which are suitable for use in the project.</NPR><BRK/>
-<BRK/>
+lines which are suitable for use in the project.</NPR><BRK />
+<BRK />
 <NPR>Refer to the appropriate Unified Facilities Criteria, JWWA or AWWA Standards and pipe manufacturer's information 
-when evaluating suitability.</NPR><BRK/>
-<BRK/>
+when evaluating suitability.</NPR><BRK />
+<BRK />
 <NPR>Pipe materials which are known to be unsuitable for particular local conditions (i.e., corrosion, deterioration, 
-etc.) should not be deleted without consideration of protective coatings, where economically feasible.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+etc.) should not be deleted without consideration of protective coatings, where economically feasible.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Submit manufacturer's standard drawings or catalog cuts, except submit both drawings and cuts for push-on [and rubber-gasketed bell-and-spigot] 
-joints. Include information concerning gaskets with submittal for joints and couplings.</TXT><BRK/>
-<BRK/>
-<TAI OPT="DUCTILE IRON PIPING"><SPT><TTL><SUB>Ductile-Iron Piping</SUB></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE: </NPR><BRK/>
-<BRK/>
-<NPR>Insert the necessary Pressure Class/Thickness Class to meet project conditions.</NPR><BRK/>
-<BRK/>
+joints. Include information concerning gaskets with submittal for joints and couplings.</TXT><BRK />
+<BRK />
+<TAI OPT="DUCTILE IRON PIPING"><SPT><TTL><SUB>Ductile-Iron Piping</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: </NPR><BRK />
+<BRK />
+<NPR>Insert the necessary Pressure Class/Thickness Class to meet project conditions.</NPR><BRK />
+<BRK />
 <NPR>Materials rated for a minimum of<MET> 1000 kPa</MET><ENG> 150 psi</ENG> pipe will typically be specified for water systems.  In some 
 cases a higher classification may be required, comply with the minimum requirements in this specification and 
-as required by the authority having jurisdiction.</NPR><BRK/>
-<BRK/>
+as required by the authority having jurisdiction.</NPR><BRK />
+<BRK />
 <NPR>Class 150 pipe is furnished with wall thickness suitable for installation with a standard design depth of cover 
-and compacted backfill without blocks.</NPR><BRK/>
-<BRK/>
+and compacted backfill without blocks.</NPR><BRK />
+<BRK />
 <NPR>Cement-mortar linings with twice the standard thickness may be specified for ductile-iron pipe conveying unusually 
 aggressive waters.  Consideration will be given to the service life of the pipe and the potential for changes 
-in treatment methods.</NPR><BRK/>
-<BRK/>
-<NPR>Polyethylene encasement will apply where soil conditions warrant.</NPR><BRK/>
-<BRK/>
+in treatment methods.</NPR><BRK />
+<BRK />
+<NPR>Polyethylene encasement will apply where soil conditions warrant.</NPR><BRK />
+<BRK />
 <NPR>When pipe will be installed in contaminated ground conditions, select appropriate gasket material based on type 
-and concentration of contaminants.</NPR><BRK/>
-<BRK/>
-<NPR>For Army and Air Force: Coordinate with the cathodic protection engineer before using polyethylene encasement.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<SPT><TTL>Pipe and Fittings</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Ductile iron piping may be used for transmission.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+and concentration of contaminants.</NPR><BRK />
+<BRK />
+<NPR>For Army and Air Force: Coordinate with the cathodic protection engineer before using polyethylene encasement.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT><TTL>Pipe and Fittings</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Ductile iron piping may be used for transmission.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Pipe, except flanged pipe, <RID>JIS G 5526</RID> or <RID>JWWA G 113</RID>, Pressure Class [_____] Thickness Class [_____]. Flanged pipe, <RID>JIS G 5527</RID>.  Fittings, <RID>JIS G 5527</RID>
  or <RID>JWWA G 113</RID>; fittings with push-on joint ends are to meet the same requirements as fittings with mechanical-joint ends, except for the factory 
 modified bell design.  Provide fittings with pressure ratings equivalent to that of the pipe.  Provide compatible pipe ends and fittings for the 
-specified joints.  Provide cement-mortar lining, <RID>JIS A 5314</RID> , twice the standard thickness on pipe and fittings.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Joints and Jointing Material</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+specified joints.  Provide cement-mortar lining, <RID>JIS A 5314</RID> , twice the standard thickness on pipe and fittings.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Joints and Jointing Material</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Push-on joint or mechanical joint may be used except when the greater deflection afforded by the mechanical 
-joint (as compared to the push-on joint) is considered necessary for all joints in the water system. </NPR><BRK/>
-<BRK/>
+joint (as compared to the push-on joint) is considered necessary for all joints in the water system. </NPR><BRK />
+<BRK />
 <NPR>When mechanical joints, flanged joints, joints using sleeve-type mechanical couplings, grooved or shouldered type 
 joints, and insulating joints are specified as exceptions to the basic jointing method, indicate their location(s) 
-on the project drawings.</NPR><BRK/>
-<BRK/>
-<NPR>Show flanged joints,  on buried pipelines in valve pits or chambers on the drawings.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+on the project drawings.</NPR><BRK />
+<BRK />
+<NPR>Show flanged joints,  on buried pipelines in valve pits or chambers on the drawings.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide push-on joints or mechanical joints for pipe and fittings unless otherwise indicated. Provide mechanical joints where indicated.  Provide 
 flanged joints where indicated.  Provide mechanically coupled type joints using a sleeve-type mechanical coupling where indicated.    Provide insulating 
 joints where indicated. Sleeve-type mechanical couplings in lieu of push-on joints are acceptable, subject to the limitations specified in the 
-paragraph SLEEVE-TYPE MECHANICAL COUPLINGS.  </TXT><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Push-On Joints:  Shape of pipe ends and fitting ends, gaskets, and lubricant for joint assembly as recommended in <RID>JWWA K 156</RID>.</LST><BRK/>
-<BRK/>
+paragraph SLEEVE-TYPE MECHANICAL COUPLINGS.  </TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Push-On Joints:  Shape of pipe ends and fitting ends, gaskets, and lubricant for joint assembly as recommended in <RID>JWWA K 156</RID>.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  Mechanical Joints:  Dimensional and material requirements for pipe ends, glands, bolts and nuts, and gaskets as recommended in <RID>JWWA K 156</RID>
-.</LST><BRK/>
-<BRK/>
+.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  Flanged Joints:  Bolts, nuts, and gaskets for flanged connections compatible with <RID>JIS G 5527</RID> or <RID>JWWA G 113</RID> joints.  Provide <RID>JIS G 5527</RID>
  ductile iron flanges.  Provide epoxy coated steel set screw flanges.  Gasket and lubricants for set screw flanges, in accordance with 
-mechanical-joint gaskets conforming to <RID>JWWA K 156</RID> or <RID>JIS B 2404</RID>.</LST><BRK/>
-<BRK/>
+mechanical-joint gaskets conforming to <RID>JWWA K 156</RID> or <RID>JIS B 2404</RID>.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">d.  Insulating Joints:  Designed to prevent metal-to-metal contact at the joint between adjacent sections of piping.  Provide flanged type 
 joint with insulating gasket, insulating bolt sleeves, and insulating washers.  Provide full face dielectric type gaskets, for <RID>JIS G 5527</RID>
- fittings.  Bolts and nuts, for <RID>JIS G 5527</RID> fittings.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">e.  Sleeve-Type Mechanical Coupled Joints:  As specified in the paragraph SLEEVE-TYPE MECHANICAL COUPLINGS.</LST><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Pipe, Joint, Valve, and Fitting Coatings</TTL><BRK/>
-<BRK/>
+ fittings.  Bolts and nuts, for <RID>JIS G 5527</RID> fittings.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Sleeve-Type Mechanical Coupled Joints:  As specified in the paragraph SLEEVE-TYPE MECHANICAL COUPLINGS.</LST><BRK />
+<BRK /></SPT>
+<SPT><TTL>Pipe, Joint, Valve, and Fitting Coatings</TTL><BRK />
+<BRK />
 <TXT>Provide epoxy resin bonded coating meeting the requirements of <RID>JDPA Z 2010</RID>. Bonded coating shall have minimum thickness of <MET>0.1 mm</MET> for pipe and <MET>
-0.08 mm</MET> for bends.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></TAI><SPT><TTL>Plastic Piping</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+0.08 mm</MET> for bends.</TXT><BRK />
+<BRK /></SPT>
+</SPT></TAI><SPT outline="2.1.1.1"><TTL>Plastic Piping</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Do not use plastic pipe when it will be subject to temperature in excess of<MET> 37.8 degrees C</MET><ENG> 100 degrees 
-F</ENG> in installed usage or exposed to a source of heat from adjacent lines or equipment.</NPR><BRK/>
-<BRK/>
+F</ENG> in installed usage or exposed to a source of heat from adjacent lines or equipment.</NPR><BRK />
+<BRK />
 <NPR>Do not use plastic piping in areas subject to potential spillage of aromatic hydrocarbons without consulting with 
 the pipe manufacturer and referring to JWWA or AWWA Standards.  Aromatic hydrocarbons such as benzene and toluene 
-will dissolve some types of plastic pipes.</NPR><BRK/>
-<BRK/>
+will dissolve some types of plastic pipes.</NPR><BRK />
+<BRK />
 <NPR>When using plastic pipe in areas with contaminated soil or groundwater, consult with the manufacturer regarding 
 permeation of pipe walls.  When pipe is installed in contaminated soil or groundwater consult with the manufacturer 
-regarding selection of appropriate gasket material based on type and concentration of contaminants.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<SPT><TTL>PVC<TAI OPT="PVCO PIPING"> and PVCO</TAI> Piping</TTL><BRK/>
-<BRK/>
-<SPT><TTL><SUB>PVC Piping</SUB></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+regarding selection of appropriate gasket material based on type and concentration of contaminants.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="2.1.1.1.1"><TTL>PVC<TAI OPT="PVCO PIPING"> and PVCO</TAI> Piping</TTL><BRK />
+<BRK />
+<SPT outline="2.1.1.1.1.1"><TTL><SUB>PVC Piping</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Use a minimum Pressure Class 150 (DR 27.55).  Do not include PVC water main pipe when pipe of greater strength 
-than Pressure Class 305 is required.</NPR><BRK/>
-<BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT><RID>JWWA K 129</RID> or <RID>JIS K 6742</RID> plain end or gasket bell end pipe, with a minimum Pressure Class 150 (DR27.5) with ductile iron outside diameter.</TXT><BRK/>
-<BRK/></SPT>
-<TAI OPT="PVCO PIPING"><SPT><TTL><SUB>PVCO Piping</SUB></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+than Pressure Class 305 is required.</NPR><BRK />
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT><RID>JWWA K 129</RID> or <RID>JIS K 6742</RID> plain end or gasket bell end pipe, with a minimum Pressure Class 150 (DR27.5) with ductile iron outside diameter.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="PVCO PIPING"><SPT><TTL><SUB>PVCO Piping</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Use a minimum Pressure Class 165.  Do not include PVCO water main pipe when pipe of greater pressure class 
-305 is required.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT><RID>JWWA K 129</RID> plain end or gasket bell end pipe, Pressure Class 165 PVCO pressure pipe, with ductile iron outside diameter.</TXT><BRK/>
-<BRK/></SPT>
-</TAI><SPT><TTL>Fittings for PVC<TAI OPT="PVCO PIPING"> and PVCO</TAI> Pipe</TTL><BRK/>
-<BRK/>
-<TXT>Fittings shall be the same material as the pipe with elastomeric gaskets, in conformance with <RID>JWWA K 130</RID> or <RID>JIS K 6742</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Joints and Jointing Material for PVC<TAI OPT="PVCO PIPING"> and PVCO Piping</TAI></TTL><BRK/>
-<BRK/>
+305 is required.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT><RID>JWWA K 129</RID> plain end or gasket bell end pipe, Pressure Class 165 PVCO pressure pipe, with ductile iron outside diameter.</TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="2.1.1.1.1.2"><TTL>Fittings for PVC<TAI OPT="PVCO PIPING"> and PVCO</TAI> Pipe</TTL><BRK />
+<BRK />
+<TXT>Fittings shall be the same material as the pipe with elastomeric gaskets, in conformance with <RID>JWWA K 130</RID> or <RID>JIS K 6742</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.1.1.1.3"><TTL>Joints and Jointing Material for PVC<TAI OPT="PVCO PIPING"> and PVCO Piping</TAI></TTL><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  Push-on joints: Use jointing material as recommended by PVC and PVCO pipe manufacturers between pipes, pipes and metal fittings, valves, 
 and other accessories or compression-type joints/mechanical joints.  Provide each joint connection with an elastomeric gasket compatible 
 for the bell or coupling used. Gaskets for push-on joints and compression-type joints/mechanical joints for joint connections between pipe 
-and metal fittings, valves, and other accessories, <RID>JIS K 6353</RID>  for push-on joints and mechanical joints.</LST><BRK/>
-<BRK/>
+and metal fittings, valves, and other accessories, <RID>JIS K 6353</RID>  for push-on joints and mechanical joints.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  Mechanical Joint: Use mechanically coupled joints having a sleeve-type mechanical coupling, as specified in the paragraph SLEEVE-TYPE 
 MECHANICAL COUPLINGS, as an optional jointing method for plain-end PVC pipe, subject to the limitations specified for mechanically coupled 
 joints using a sleeve-type mechanical coupling as specified for compression-type joints.  Provide jointing material in conformance with 
-PVC and PVCO pipe manufacturer's recommendation between pipe and sleeve-type mechanical couplings.</LST><BRK/>
-<BRK/></SPT>
-</SPT><TAI OPT="PVC SERVICE PIPING,SERVICE LINES"><SPT><TTL><SUB>PVC Piping for Service Lines</SUB></TTL><BRK/>
-<BRK/>
-<SPT><TTL>Pipe and Fittings</TTL><BRK/>
-<BRK/>
-<TXT>Provide <RID>JIS K 6742</RID> pipes and <RID>JIS K 6743</RID> fittings.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Joints and Connections</TTL><BRK/>
-<BRK/>
-<TXT>Fittings may be joined by the solvent-cement method or threading.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Solvent Joining</TTL><BRK/>
-<BRK/>
-<TXT>Provide solvent joints per pipe manufacturer's recommendation.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></TAI><SPT><TTL><SUB>Polyethylene (PE) Pipe</SUB></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+PVC and PVCO pipe manufacturer's recommendation between pipe and sleeve-type mechanical couplings.</LST><BRK />
+<BRK /></SPT>
+</SPT><TAI OPT="PVC SERVICE PIPING,SERVICE LINES"><SPT><TTL><SUB>PVC Piping for Service Lines</SUB></TTL><BRK />
+<BRK />
+<SPT><TTL>Pipe and Fittings</TTL><BRK />
+<BRK />
+<TXT>Provide <RID>JIS K 6742</RID> pipes and <RID>JIS K 6743</RID> fittings.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Joints and Connections</TTL><BRK />
+<BRK />
+<TXT>Fittings may be joined by the solvent-cement method or threading.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Solvent Joining</TTL><BRK />
+<BRK />
+<TXT>Provide solvent joints per pipe manufacturer's recommendation.</TXT><BRK />
+<BRK /></SPT>
+</SPT></TAI><SPT outline="2.1.1.1.2"><TTL><SUB>Polyethylene (PE) Pipe</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Polyethylene (PE) pipe is subject to oxidative degradation by many variables including pH, the concentration 
 and type of disinfectant, water temperature, installation procedure and conditions.  Disinfectants like chlorine, 
-chloramines, chlorine dioxide, ozone and others may create an Oxidation Reduction Potential (ORP) in PE Pipe. </NPR><BRK/>
-<BRK/>
+chloramines, chlorine dioxide, ozone and others may create an Oxidation Reduction Potential (ORP) in PE Pipe. </NPR><BRK />
+<BRK />
 <NPR>Use PE4710, CC2 with a minimum Pressure Class 200 (DR 11).  Select either CC2 or CC3 based on computed service 
-life; see TN-44/2015.  Use AWWA M55 and <URL>https://plasticpipe.org/pdf/ppi-position-paper-hdpe-potable-water-pc-pipe-size.pdf</URL></NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT><RID>JWWA K 144</RID> or <RID>JIS K 6762</RID>  with a minimum Pressure Class 200 (DR11) with ductile iron outside diameter.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Fittings For PE Pipe</TTL><BRK/>
-<BRK/>
-<TXT><RID>JWWA K 145</RID> or <RID>JWWA B 116</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Joints and Jointing Materials</TTL><BRK/>
-<BRK/>
+life; see TN-44/2015.  Use AWWA M55 and <URL>https://plasticpipe.org/pdf/ppi-position-paper-hdpe-potable-water-pc-pipe-size.pdf</URL></NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT><RID>JWWA K 144</RID> or <RID>JIS K 6762</RID>  with a minimum Pressure Class 200 (DR11) with ductile iron outside diameter.</TXT><BRK />
+<BRK />
+<SPT outline="2.1.1.1.2.1"><TTL>Fittings For PE Pipe</TTL><BRK />
+<BRK />
+<TXT><RID>JWWA K 145</RID> or <RID>JWWA B 116</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.1.1.2.2"><TTL>Joints and Jointing Materials</TTL><BRK />
+<BRK />
 <TXT>Mechanical Joint:  <RID>JWWA K 156</RID> Mechanical joint adapter and gaskets for mechanical joints for joint connections between pipe and metal fittings, 
-valves, and other accessories.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></SPT><SPT><TTL>Piping Beneath Railroad Right-of-Way</TTL><BRK/>
-<BRK/>
+valves, and other accessories.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="2.1.1.2"><TTL>Piping Beneath Railroad Right-of-Way</TTL><BRK />
+<BRK />
 <TXT>Piping passing under the right-of-way of a commercial railroad is to conform to the specifications for pipelines conveying nonflammable substances.  
 Provide ductile-iron pipe in lieu of cast-iron pipe.  Ductile-iron railroad crossing casing pipe is to conform to and have strength computed in 
-accordance with <RID>JIS G 5526</RID>.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>Valves</TTL><BRK/>
-<BRK/>
+accordance with <RID>JIS G 5526</RID>.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.1.2"><TTL>Valves</TTL><BRK />
+<BRK />
 <TXT>Provide a JWWA compliant protective interior coating  for all valves whose interiors are exposed to sea water or salt water, or where there is 
-a serious corrosion problem other than galvanic corrosion for water having a pH range from 4 to 9.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Gate Valves<MET> 80 mm</MET><ENG> 3 Inch</ENG> Size and Larger on Buried Piping</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  </NPR><BRK/>
-<BRK/>
+a serious corrosion problem other than galvanic corrosion for water having a pH range from 4 to 9.</TXT><BRK />
+<BRK />
+<SPT outline="2.1.2.1"><TTL>Gate Valves<MET> 80 mm</MET><ENG> 3 Inch</ENG> Size and Larger on Buried Piping</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  </NPR><BRK />
+<BRK />
 <NPR>For UL 262 gate valves in systems on which pipe is pressure rated at<MET> 1000 kPa</MET><ENG> 150 psi</ENG>, use a working pressure 
 of<MET> 1200 kPa</MET><ENG> 175 psi</ENG> for valve sizes<MET> 300 mm</MET><ENG> 12 inches</ENG> and smaller, and<MET> 1000 kPa</MET><ENG> 150 psi</ENG> for valves larger than<MET> 
-300 mm</MET><ENG> 12 inches</ENG>.</NPR><BRK/>
-<TAI OPT="WATER TRANSMISSION"><BRK/>
+300 mm</MET><ENG> 12 inches</ENG>.</NPR><BRK />
+<TAI OPT="WATER TRANSMISSION"><BRK />
 <NPR>Indicator should be required for geared gate valves where valve is in location where gate position cannot readily 
-be seen.</NPR><BRK/></TAI>
-<AST/><BRK/></NTE>
-<BRK/>
-<BRK/>
+be seen.</NPR><BRK /></TAI>
+<AST /><BRK /></NTE>
+<BRK />
+<BRK />
 <LST INDENT="-0.33">a.  <RID>JWWA B 120</RID> or <RID>JWWA B 122</RID>: nonrising stem type with double-disc gate and mechanical-joint ends or push-on joint ends compatible for 
-the adjoining pipe</LST><BRK/>
-<BRK/>
+the adjoining pipe</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  <RID>JWWA B 120</RID> or <RID>JWWA B 122</RID>: nonrising stem type with mechanical-joint ends or resilient-seated gate valves<MET> 80 to 300 mm</MET><ENG> 3 to 12 inches</ENG>
- in size</LST><BRK/>
-<BRK/>
+ in size</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  JWWA compliant locally manufactured gate valve meeting the requirements of <RID>UL 262</RID> for pipe protection service: inside-screw type with 
 operating nut, double-disc or split-wedge type gate, designed for a hydraulic working pressure of<MET> 1200 kPa</MET><ENG> 175[_____] psi</ENG>, and have mechanical-joint 
-ends or push-on joint ends as appropriate for the pipe to which it is joined.</LST><BRK/>
-<BRK/>
+ends or push-on joint ends as appropriate for the pipe to which it is joined.</LST><BRK />
+<BRK />
 <TXT>Match materials for gate valves meeting <RID>UL 262</RID> to the reference standards specified in <RID>JWWA B 120</RID> or <RID>JWWA B 122</RID>.  Gate valves open by counterclockwise 
 rotation of the valve stem.  Stuffing boxes have 0-ring stem seals, except for those valves for which gearing is specified, in which case use conventional 
 packing in place of 0-ring seal.  Stuffing boxes are bolted and constructed so as to permit easy removal of parts for repair.  Use gate valves 
 with special ends for connection to sleeve-type mechanical coupling in lieu of mechanical-joint ends and push-on joint ends.  Provide valve ends 
 and gaskets for connection to sleeve-type mechanical couplings that conform to the requirements specified respectively for the joint or coupling.<TAI OPT="WATER TRANSMISSION">
   Provide <RID>JWWA B 122</RID> _____<MET> mm</MET><ENG> inch</ENG> gate valves with gearing and indicator.  Where an indicator post are shown, provide an indicator post flange 
-for <RID>JWWA B 122</RID> or locally manufactured gate valves conforming to the requirements of <RID>UL 262</RID>.</TAI>Provide all valves from one manufacturer.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Gate Valves<MET> 75 mm</MET><ENG> 3 Inch</ENG> Size and Larger in Valve Pit(s) and Aboveground Locations</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+for <RID>JWWA B 122</RID> or locally manufactured gate valves conforming to the requirements of <RID>UL 262</RID>.</TAI>Provide all valves from one manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.2"><TTL>Gate Valves<MET> 75 mm</MET><ENG> 3 Inch</ENG> Size and Larger in Valve Pit(s) and Aboveground Locations</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  For ordinary conditions, outside-screw-and-yoke rising-stem type is preferred to nonrising stem/inside-screw 
-type.</NPR><BRK/>
-<BRK/>
+type.</NPR><BRK />
+<BRK />
 <NPR>For ordinary conditions, the double-disc or split-wedge type gate is preferred to the solid-wedge/solid or one-piece 
-gate.</NPR><BRK/>
-<BRK/>
+gate.</NPR><BRK />
+<BRK />
 <NPR>For UL 262 gate valves in system on which pipe is pressure rated at<MET> 1000 kPa</MET><ENG> 150 psi</ENG>, use a working pressure of<MET>
  1200 kPa</MET><ENG> 175 psi</ENG> for valve sizes<MET> 300 mm</MET><ENG> 12 inches</ENG> and smaller, and<MET> 1000 kPa</MET><ENG> 150 psi</ENG> for gate valves larger than<MET>
- 300 mm</MET><ENG> 12 inches</ENG>.</NPR><BRK/>
-<TAI OPT="WATER TRANSMISSION"><BRK/>
-<NPR>Indicator is required for geared valves where valve is in location where gate position cannot readily be seen.</NPR><BRK/></TAI>
-<AST/><BRK/></NTE>
-<BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  <RID>JWWA B 120</RID> or <RID>JWWA B 122</RID> or <RID>JIS B 2031</RID>: nonrising stem type with double-disc gates and flanged ends</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  <RID>JWWA B 120</RID> or <RID>JWWA B 122</RID> or <RID>JIS B 2031</RID>: nonrising stem type with flanged ends</LST><BRK/>
-<BRK/>
+ 300 mm</MET><ENG> 12 inches</ENG>.</NPR><BRK />
+<TAI OPT="WATER TRANSMISSION"><BRK />
+<NPR>Indicator is required for geared valves where valve is in location where gate position cannot readily be seen.</NPR><BRK /></TAI>
+<AST /><BRK /></NTE>
+<BRK />
+<BRK />
+<LST INDENT="-0.33">a.  <RID>JWWA B 120</RID> or <RID>JWWA B 122</RID> or <RID>JIS B 2031</RID>: nonrising stem type with double-disc gates and flanged ends</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  <RID>JWWA B 120</RID> or <RID>JWWA B 122</RID> or <RID>JIS B 2031</RID>: nonrising stem type with flanged ends</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">c.  <RID>JWWA B 120</RID> or <RID>JWWA B 122</RID> or <RID>JIS B 2031</RID> or JWWA compliant locally manufactured gate valve meeting the requirements of <RID>UL 262</RID> for fire 
 protection service: inside-screw type, with double-disc or split-wedge type gate and flanged ends, and designed for a hydraulic working 
-pressure of<MET> 1200 kPa</MET><ENG> 175[_____] psi</ENG></LST><BRK/>
-<BRK/>
+pressure of<MET> 1200 kPa</MET><ENG> 175[_____] psi</ENG></LST><BRK />
+<BRK />
 <TXT>Match materials for gate valves meeting <RID>UL 262</RID> to the reference standards specified in <RID>JWWA B 120</RID> or <RID>JWWA B 122</RID> or <RID>JIS B 2031</RID>.  Provide gate valves 
 with handwheels that open by counterclockwise rotation of the valve stem.   Bolt and construct stuffing boxes so as to permit easy removal of parts 
-for repair. Provide all valves from one manufacturer.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Check Valves</TTL><BRK/>
-<BRK/>
+for repair. Provide all valves from one manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.3"><TTL>Check Valves</TTL><BRK />
+<BRK />
 <TXT>Provide a JWWA compliant protective interior coating  for all valves whose interiors are exposed to sea water or salt water, or where there is 
-a serious corrosion problem other than galvanic corrosion for water having a pH range from 4 to 9.  </TXT><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  <RID>JWWA B 129</RID> or <RID>JIS B 2031</RID>:  Iron or steel body and cover and flanged ends</LST><BRK/>
-<BRK/>
+a serious corrosion problem other than galvanic corrosion for water having a pH range from 4 to 9.  </TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  <RID>JWWA B 129</RID> or <RID>JIS B 2031</RID>:  Iron or steel body and cover and flanged ends</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  JWWA compliant locally manufactured check valve meeting the requirements of <RID>UL 312</RID> for fire protection service:  Cast iron or steel 
-body and cover, flanged ends, and designed for a minimum working pressure of<MET> 1000 kPa</MET><ENG> [150] [_____] psi</ENG>.</LST><BRK/>
-<BRK/>
+body and cover, flanged ends, and designed for a minimum working pressure of<MET> 1000 kPa</MET><ENG> [150] [_____] psi</ENG>.</LST><BRK />
+<BRK />
 <TXT>Materials for  check valves meeting <RID>UL 312</RID> are to match the reference standards specified in <RID>JWWA B 129</RID>.  Provide check valves with a clear port 
-opening.  Provide all check valves from one manufacturer.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Rubber-Seated Butterfly Valves</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+opening.  Provide all check valves from one manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.4"><TTL>Rubber-Seated Butterfly Valves</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Although butterfly valves are acceptable for use in<MET> 75 mm through 1,800 mm</MET><ENG> 3 in through 72 in</ENG> sizes, they 
-are typically used in sizes greater than<MET> 300 mm</MET><ENG> 12 inches</ENG>.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+are typically used in sizes greater than<MET> 300 mm</MET><ENG> 12 inches</ENG>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide rubber-seated butterfly valves and wafer type valves that match the performance requirements of <RID>JWWA B 138</RID>.  Wafer type valves not meeting 
 laying length requirements are acceptable if supplied and installed with a spacer, providing the specified laying length.  Meet all tests required 
 by <RID>JWWA B 138</RID>. Flanged-end valves are required in a pit.  Provide a union or sleeve-type coupling in the pit to permit removal.  Direct-bury mechanical-end 
 valves<MET> 80 through 250 mm</MET><ENG> 3 through 10 inches</ENG> in diameter.  Provide a valve box, means for manual operation, and an adjacent pipe joint to facilitate 
-valve removal.  Provide valve operators that restrict closing to a rate requiring approximately 60 seconds, from fully open to fully closed.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Pressure Reducing Valves</TTL><BRK/>
-<BRK/>
+valve removal.  Provide valve operators that restrict closing to a rate requiring approximately 60 seconds, from fully open to fully closed.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.5"><TTL>Pressure Reducing Valves</TTL><BRK />
+<BRK />
 <TXT>Maintain a constant downstream pressure regardless of fluctuations in demand.  Using pressure reducing valves capable of providing 1720<MET> kPa</MET><ENG> psi</ENG>
  operating pressure on the inlet side, with outlet pressure set for 340<MET> kPa</MET><ENG> psi</ENG>.  Provide hydraulically-operated, pilot controlled, globe or angle 
 type valves that are capable of being actuated either by diaphragm or piston.  Provide diaphragm-operated, adjustable, spring-loaded type pilot 
 controls made of lead-free bronze with stainless steel working parts, designed to permit flow when controlling pressure exceeds the spring setting.  
 Construct the bodies of bronze, cast iron or cast steel with lead-free bronze trim; the valve stem of stainless steel; the seat of lead-free bronze; 
-and the valve discs and diaphragms of synthetic rubber.  Provide flanged ends.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Air Release, Air/Vacuum, and Combination Air Valves</TTL><BRK/>
-<BRK/>
+and the valve discs and diaphragms of synthetic rubber.  Provide flanged ends.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.6"><TTL>Air Release, Air/Vacuum, and Combination Air Valves</TTL><BRK />
+<BRK />
 <TXT>Provide <RID>JWWA B 137</RID> air release , air vacuum and combination air valves that release air and prevent the formation of a vacuum.  Provide valves 
 with an iron body, lead-free bronze trim and stainless steel float that automatically releases air when the lines are being filled with water and 
-admits air into the line when water is being withdrawn in excess of the inflow.</TXT><BRK/>
-<BRK/></SPT>
-<TAI OPT="SERVICE LINES"><SPT><TTL>Water Service Valves</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Gate Valves Smaller than<MET> 75 mm</MET><ENG> 3 Inch</ENG> in Size on Buried Piping</TTL><BRK/>
-<BRK/>
+admits air into the line when water is being withdrawn in excess of the inflow.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="SERVICE LINES"><SPT><TTL>Water Service Valves</TTL><BRK />
+<BRK />
+<SPT><TTL>Gate Valves Smaller than<MET> 75 mm</MET><ENG> 3 Inch</ENG> in Size on Buried Piping</TTL><BRK />
+<BRK />
 <TXT>Gate valves smaller than<MET> 75 mm</MET><ENG> 3 inch</ENG> size on Buried Piping <RID>JIS B 2011</RID>, Class 150, solid wedge, nonrising stem, with flanged or threaded end connections, 
-a union on one side of the valve, and a handwheel operator.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Gate Valves Smaller Than<MET> 75 mm</MET><ENG> 3 Inch</ENG> Size in Valve Pits</TTL><BRK/>
-<BRK/>
+a union on one side of the valve, and a handwheel operator.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Gate Valves Smaller Than<MET> 75 mm</MET><ENG> 3 Inch</ENG> Size in Valve Pits</TTL><BRK />
+<BRK />
 <TXT><RID>JIS B 2011</RID>, Class 150, solid wedge, inside screw, rising stem.  Provide valves with flanged or threaded end connections, a union on one side of 
-the valve, and a handwheel operator.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Check Valves Smaller than<MET> 50 mm</MET><ENG> 2 Inch</ENG> in Size</TTL><BRK/>
-<BRK/>
+the valve, and a handwheel operator.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Check Valves Smaller than<MET> 50 mm</MET><ENG> 2 Inch</ENG> in Size</TTL><BRK />
+<BRK />
 <TXT>Provide check valves with a minimum working pressure of<MET> 1000 kPa</MET><ENG> 150 psi</ENG> or as indicated with a clear waterway equal to the full nominal diameter 
 of the valve.  Valves open to permit flow when inlet pressure is greater than the discharge pressure, and close tightly to prevent return flow 
 when discharge pressure exceeds inlet pressure.  Cast the size of the valve, working pressure, manufacturer's name, initials, or trademark on the 
-body of each valve.</TXT><BRK/>
-<BRK/>
-<TXT>Provide valves for screwed fittings, made of lead-free bronze and in conformance with <RID>JIS B 2011</RID>, Class 150, Types compatible for the application.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>Indicator Post</TTL><BRK/>
-<BRK/>
+body of each valve.</TXT><BRK />
+<BRK />
+<TXT>Provide valves for screwed fittings, made of lead-free bronze and in conformance with <RID>JIS B 2011</RID>, Class 150, Types compatible for the application.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT><TTL>Indicator Post</TTL><BRK />
+<BRK />
 <TXT>Provide upright gate valve with indicator post conforming to JWWA compliant local commercial products meeting the requirements of <RID>UL 789</RID> and <RID>NFPA 24</RID>
 . Construct indicator post body of cast iron, ductile iron or a combination of both, bronze operating nut, cast iron locking wrench with open and 
-shut target window.</TXT><BRK/>
-<BRK/></SPT>
-</TAI><SPT><TTL>Valve Boxes</TTL><BRK/>
-<BRK/>
+shut target window.</TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="2.1.2.7"><TTL>Valve Boxes</TTL><BRK />
+<BRK />
 <TXT>Provide a valve box for each gate valve on buried piping, except where indicator post is shown.  Construct adjustable valve boxes manufactured 
 from cast iron of a size compatible for the valve on which it is used.  Provide cast iron valve boxes conforming to <RID>JCW-104</RID>.  Coat the cast-iron 
 box with a heavy coat of bituminous paint.  Provide a round head.  Cast the word "WATER" on the lid.  The minimum diameter of the shaft of the 
-box is <MET>135 mm</MET><ENG>5 1/4 inches</ENG> or as indicated.  </TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Valve Pits</TTL><BRK/>
-<BRK/>
-<TXT>Construct the valve pits at locations indicated or as required above and in accordance with the details shown.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>Blowoff Valve Assemblies</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Show locations of blowoff valve assemblies on drawings and details.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+box is <MET>135 mm</MET><ENG>5 1/4 inches</ENG> or as indicated.  </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.8"><TTL>Valve Pits</TTL><BRK />
+<BRK />
+<TXT>Construct the valve pits at locations indicated or as required above and in accordance with the details shown.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.1.3"><TTL>Blowoff Valve Assemblies</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Show locations of blowoff valve assemblies on drawings and details.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide blowoff valve assemblies complete with all pipe, fittings, valve, valve box, riser box and lid, riser extension, discharge fitting and 
 other materials required to connect to the water main.  Provide blow off valve assemblies<MET> 100 mm</MET><ENG> 4 inches</ENG> or larger conforming to JWWA compliant 
-local commercial products.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL><TAI OPT="FIRE HYDRANTS">Fire Hydrants</TAI></TTL><BRK/>
-<BRK/>
-<TAI OPT="FIRE HYDRANTS"><SPT><TTL><SUB>Fire Hydrants</SUB></TTL><BRK/>
-<BRK/>
+local commercial products.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.4"><TTL><TAI OPT="FIRE HYDRANTS">Fire Hydrants</TAI></TTL><BRK />
+<BRK />
+<TAI OPT="FIRE HYDRANTS"><SPT><TTL><SUB>Fire Hydrants</SUB></TTL><BRK />
+<BRK />
 <TXT>Provide fire hydrants where indicated.  Paint fire hydrants with at least one coat of primer and two coats of enamel paint.  Paint barrel and bonnet 
-colors in accordance with <RID>UFC 3-600-01</RID>.  Stencil fire hydrant number and main size on the fire hydrant barrel using black stencil paint.</TXT><BRK/>
-<TXT><BRK/>
+colors in accordance with <RID>UFC 3-600-01</RID>.  Stencil fire hydrant number and main size on the fire hydrant barrel using black stencil paint.</TXT><BRK />
+<TXT><BRK />
 Provide a JWWA compliant protective epoxy interior coating on those portions of the fire hydrant continuously in contact with sea water or salt 
-water.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Dry-Barrel Type and Wet-Barrel Type Fire Hydrants</TTL><BRK/>
-<BRK/>
+water.</TXT><BRK />
+<BRK />
+<SPT><TTL>Dry-Barrel Type and Wet-Barrel Type Fire Hydrants</TTL><BRK />
+<BRK />
 <TXT>Provide Dry-barrel type fire hydrants conforming to JWWA compliant local commercial product of aboveground fire hydrants and meeting the requirements 
 of <RID>UL 246</RID>, "Base Valve" with<MET> 150 mm</MET><ENG> 6 inch</ENG> inlet,<MET> 135 mm</MET><ENG> 5 1/4 inch</ENG> valve opening, one<MET> 115 mm</MET><ENG> [4 1/2] [_____] inch</ENG> pumper connection, and two<MET> 65 
 mm</MET><ENG> 2 1/2 inch</ENG> hose connections.  Provide Wet-barrel type fire hydrants conforming to JWWA compliant local commercial product of aboveground fire 
 hydrants and meeting the requirements of <RID>UL 246</RID>, "Wet Barrel" with<MET> 150 mm</MET><ENG> 6 inch</ENG> inlet, one<MET> 115 mm</MET><ENG> [4 1/2] [_____] inch</ENG> pumper connection, and 
 two<MET> 65 mm</MET><ENG> 2 1/2 inch</ENG> hose connections.  Individually valve pumper connection and hose connections with independent nozzle gate valves. The locally 
 manufactured and JWWA compliant commercial product of fire hydrants shall be compatible with the <MET>115 mm</MET> pumper and two <MET>65 mm</MET> hose connection and 
-shall be of the type as applicable to U.S. military construction projects in Japan. </TXT><BRK/>
-<BRK/>
+shall be of the type as applicable to U.S. military construction projects in Japan. </TXT><BRK />
+<BRK />
 <TXT>Provide mechanical-joint or push-on joint end inlet , except where flanged end is indicated.  Provide fire hydrants with breakable features .  
 Provide fire hydrant with special couplings joining upper and lower sections of fire hydrant barrel and upper and lower sections of fire hydrant 
-stem that break from a force imposed by a moving vehicle.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></TAI></SPT><TAI OPT="METERS"><SPT><TTL><SUB>Meters</SUB></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+stem that break from a force imposed by a moving vehicle.</TXT><BRK />
+<BRK /></SPT>
+</SPT></TAI></SPT><TAI OPT="METERS"><SPT><TTL><SUB>Meters</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Water meters are required to be installed for most facilities.  Refer to UFC 1-200-02 High Performance 
-and Sustainable Building Requirements for criteria and guidance.  In some situations, sub-metering may be required.</NPR><BRK/>
-<BRK/>
+and Sustainable Building Requirements for criteria and guidance.  In some situations, sub-metering may be required.</NPR><BRK />
+<BRK />
 <NPR>This specification is primarily written for outside meter settings used for measuring water consumption from potable 
-water systems delivered to facilities such as those meters for buildings, structures, piers, and ships.</NPR><BRK/>
-<BRK/>
-<NPR>This specification is for meters with working pressures of 150 psi or less.</NPR><BRK/>
-<BRK/>
+water systems delivered to facilities such as those meters for buildings, structures, piers, and ships.</NPR><BRK />
+<BRK />
+<NPR>This specification is for meters with working pressures of 150 psi or less.</NPR><BRK />
+<BRK />
 <NPR>This specification is for cold water meters.  Refer to the appropriate JWWA or AWWA Standard for water temperature 
-limitations.</NPR><BRK/>
-<BRK/>
+limitations.</NPR><BRK />
+<BRK />
 <NPR>This specification is not intended to cover other types of dedicated operational meters such as those used in 
-booster pump stations or production sources.</NPR><BRK/>
-<BRK/>
-<BRK/>
+booster pump stations or production sources.</NPR><BRK />
+<BRK />
+<BRK />
 <NPR>Size meters according to AWWA M22.  It is common that the needed meter size is smaller than the service line pipe 
-size, to avoid over sizing. </NPR><BRK/>
-<BRK/>
+size, to avoid over sizing. </NPR><BRK />
+<BRK />
 <NPR>Coordinate with the Installation's Public Works Department to determine Installation specific meter requirements.  
-In some cases the Government may provide a water meter to be installed by the Contractor.</NPR><BRK/>
-<BRK/>
-<BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+In some cases the Government may provide a water meter to be installed by the Contractor.</NPR><BRK />
+<BRK />
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Submit certificates certifying all required and recommended tests set forth in the referenced standard and <RID>JIS B 8570-1</RID> have been performed and 
 comply with all applicable requirements of the referenced standard and  <RID>JIS B 8570-1</RID> within the past three years.  Include certification that each 
 meter has been tested for accuracy of registration and that each meter complies with the accuracy and capacity requirements of the referenced standard 
-when tested in accordance with <RID>JIS B 7552</RID>.</TXT><BRK/>
-<BRK/>
-<TXT>Include a register with all meters whether they are or are not connected to a remote reading system.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Propeller Type Meters</TTL><BRK/>
-<BRK/>
+when tested in accordance with <RID>JIS B 7552</RID>.</TXT><BRK />
+<BRK />
+<TXT>Include a register with all meters whether they are or are not connected to a remote reading system.</TXT><BRK />
+<BRK />
+<SPT><TTL>Propeller Type Meters</TTL><BRK />
+<BRK />
 <TXT>Provide  Advanced Metering Infrastructure (AMI) and Direct Digital Communication (DDC) compatible meter for waterworks of sizes 50mm to 1800mm, 
 conforming to JWWA compliant local commercial products.  Flow tubes or main cases constructed of cast iron or fabricated steel with JWWA compliant 
-protective coating.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Displacement Type Meters</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+protective coating.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Displacement Type Meters</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE: There are two variations of displacement meters, the nutating piston (disc) and the oscillating piston. 
 Both are essentially equal in performance.  These meters have a combination of accuracy, long life, simple design, 
-moderate cost, and easy maintenance.</NPR><BRK/>
-<BRK/>
-<BRK/>
-<BRK/>
+moderate cost, and easy maintenance.</NPR><BRK />
+<BRK />
+<BRK />
+<BRK />
 <NPR>Where highly aggressive water is encountered, the manufacturers should be consulted for recommendations concerning 
-the use of materials that are more resistant to corrosive attack.</NPR><BRK/>
-<BRK/>
-<BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+the use of materials that are more resistant to corrosive attack.</NPR><BRK />
+<BRK />
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide  Advanced Metering Infrastructure (AMI) and Direct Digital Communication (DDC) compatible meter for waterworks of sizes 50 mm or smaller, 
 conforming to JWWA compliant local commercial products.  Pressure casings constructed of copper alloy containing not less than 75 percent copper.  
 Provide registers with non-breakable covers and straight-reading  registers.  Provide non-breakable covers of copper alloy containing not less 
-than 75 percent copper.  For meter sizes<MET> 13mm</MET><ENG> 1/2 inch</ENG> through<MET> 25 mm</MET><ENG> 1 inch</ENG> provide frost-protection-type design.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Compound Type Meters</TTL><BRK/>
-<BRK/>
+than 75 percent copper.  For meter sizes<MET> 13mm</MET><ENG> 1/2 inch</ENG> through<MET> 25 mm</MET><ENG> 1 inch</ENG> provide frost-protection-type design.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Compound Type Meters</TTL><BRK />
+<BRK />
 <TXT>Provide  Advanced Metering Infrastructure (AMI) and Direct Digital Communication (DDC) compatible meter with  strainers for waterworks of sizes 
 50 mm through 200 mm, conforming to JWWA compliant local commercial products. Main casing constructed of cast iron or fabricated steel with JWWA 
-compliant protective coating.  Equip with tapped bosses near the outlet for field testing purposes.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Register</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+compliant protective coating.  Equip with tapped bosses near the outlet for field testing purposes.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Register</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Meter registers installed below grade, regardless of optional mechanical pumping features, must be suitable 
 for submerged/pit environments.  Such registers generally have a negligible increase in the metering cost.  Also 
 use a submergible type where exposure to wet environments is possible.  The most common water meter register is 
-a 6-wheel type mechanical display.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+a 6-wheel type mechanical display.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide  open straight-reading register  supplied by the meter manufacturer.  Equip register with<MET> cubic meters</MET><ENG> [U.S. gallons][cubic feet]</ENG> readings.  
-Use  encoder type remote register designed in accordance with JWWA compliant  local commercial product of water meter.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Strainers</TTL><BRK/>
-<BRK/>
+Use  encoder type remote register designed in accordance with JWWA compliant  local commercial product of water meter.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Strainers</TTL><BRK />
+<BRK />
 <TXT>Provide  strainer recommended and supplied by the local meter manufacturer.  Provide strainer of the same material as the meter body (i.e., bronze, 
-ductile, or stainless).</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Meter Connections</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+ductile, or stainless).</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Meter Connections</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This paragraph is written for meters located outside of the building.  Inside meter settings as well as 
-those used outside above ground or in hot-boxes, would follow the same principles.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>Provide connections compatible with the type of pipe and conditions encountered.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Advanced Metering Infrastructure</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+those used outside above ground or in hot-boxes, would follow the same principles.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide connections compatible with the type of pipe and conditions encountered.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Advanced Metering Infrastructure</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Advanced Metering Infrastructure (AMI) Water Meters are required per the Utility Meter Policy Memo dated 
 16 April 2013 from the Office of Under Secretary of Defense.  Coordinate advance metering with the Installation 
-AMI manager.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+AMI manager.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>The Government will supply an Advanced Metering Infrastructure (AMI) compatible water meter(s) for the Contractor to install and connect to the 
 existing AMI Data Acquisition System (DAS).  Use the existing Government laptop computers to configure the meter using existing software loaded 
 on the computer.  Modifications to existing software on the computer or the addition of software to the computer is not allowed.  The Contractor 
-must ensure that the meter(s) transmit the metered data to the DAS.  The current meters being used by [_____] are:  [_____].  </TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Direct Digital Control System Interface</TTL><BRK/>
-<BRK/>
-<TXT>Provide all meters with the capability of providing pulse output to the DDC system.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Meter Setter</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+must ensure that the meter(s) transmit the metered data to the DAS.  The current meters being used by [_____] are:  [_____].  </TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Direct Digital Control System Interface</TTL><BRK />
+<BRK />
+<TXT>Provide all meters with the capability of providing pulse output to the DDC system.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Meter Setter</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Meter setters are intended to allow the meter to be placed or removed in a meter box or vault.  Meter setters 
 may bought or assembled of separate components.  Assembled meter setters usually increase construction costs and 
-decrease uniformity among meter settings.</NPR><BRK/>
-<BRK/>
+decrease uniformity among meter settings.</NPR><BRK />
+<BRK />
 <NPR>Three basic styles of setters include yokes, copper setters, and yoke meter boxes.  Variations could also include 
-the meter setter being pre-assembled and piped into a plastic meter box.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+the meter setter being pre-assembled and piped into a plastic meter box.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>For water meter 50 mm or greater, provide a by-pass assembly with the valve located outside the vault.  Provide valve box for valve located outside 
-of vault.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Meter Boxes Vaults</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  Indicate traffic rated and non traffic rated meter boxes on the drawings.</NPR><BRK/>
-<BRK/>
-<NPR>Use cast iron and concrete meter boxes in traffic areas.</NPR><BRK/>
-<BRK/>
+of vault.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Meter Boxes Vaults</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Indicate traffic rated and non traffic rated meter boxes on the drawings.</NPR><BRK />
+<BRK />
+<NPR>Use cast iron and concrete meter boxes in traffic areas.</NPR><BRK />
+<BRK />
 <NPR>Meter Vaults are intended for large meters (i.e.,<MET> 75 mm</MET><ENG> 3 inch</ENG> and above).  Meter boxes are intended for less 
-than<MET> 75 mm</MET><ENG> 3 inch</ENG> diameter pipes.</NPR><BRK/>
-<BRK/>
-<NPR>When meter vaults are used provide construction details of meter setting on the drawings.</NPR><BRK/>
-<BRK/>
-<NPR>Ensure meter boxes and vaults provide adequate clearance for meter removal, access for valve operation or maintenance.</NPR><BRK/>
-<BRK/>
+than<MET> 75 mm</MET><ENG> 3 inch</ENG> diameter pipes.</NPR><BRK />
+<BRK />
+<NPR>When meter vaults are used provide construction details of meter setting on the drawings.</NPR><BRK />
+<BRK />
+<NPR>Ensure meter boxes and vaults provide adequate clearance for meter removal, access for valve operation or maintenance.</NPR><BRK />
+<BRK />
 <NPR>Use rounds lids when possible.  Round lids provide an advantage over other shapes since they do not fall down 
 into the meter pit damaging the metering equipment below.  When used in areas with foot traffic, a round lid can 
 also reduce the risk for someone falling into the pit and causing an injury.  The oval or rectangular meter box 
-can sometimes provide an advantage since they can be used in a more narrow space while providing the needed length.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+can sometimes provide an advantage since they can be used in a more narrow space while providing the needed length.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide meter boxes vaults of sufficient size to completely enclose the meter and shutoff valve or service stop and in accordance with the details 
 shown on the drawings.  Provide a meter boxes or vaults with a height equal to the distance from invert of the service line to finished grade at 
-the meter location.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Cast Iron</TTL><BRK/>
-<BRK/>
+the meter location.</TXT><BRK />
+<BRK />
+<SPT><TTL>Cast Iron</TTL><BRK />
+<BRK />
 <TXT>Provide  cast iron meter box and lid.  Provide a round lid with precast holes for remote electronic meter reading modules having the word "WATER" 
-cast on the top surface.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Meter Boxes Vaults</TTL><BRK/>
-<BRK/>
-<BRK/>
-<SPT><TTL>Vault Access Door</TTL><BRK/>
-<BRK/>
-<TXT>Provide a single-leaf or double-leaf cast-in aluminum or painted steel diamond-plate access door with the following dimensions:</TXT><BRK/>
-<BRK/>
-<LST>Width: [_____]<MET> mm</MET><ENG> feet</ENG></LST><BRK/>
-<BRK/>
-<LST>Length: [_____]<MET> mm</MET><ENG> feet</ENG></LST><BRK/>
-<BRK/>
+cast on the top surface.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Meter Boxes Vaults</TTL><BRK />
+<BRK />
+<BRK />
+<SPT><TTL>Vault Access Door</TTL><BRK />
+<BRK />
+<TXT>Provide a single-leaf or double-leaf cast-in aluminum or painted steel diamond-plate access door with the following dimensions:</TXT><BRK />
+<BRK />
+<LST>Width: [_____]<MET> mm</MET><ENG> feet</ENG></LST><BRK />
+<BRK />
+<LST>Length: [_____]<MET> mm</MET><ENG> feet</ENG></LST><BRK />
+<BRK />
 <TXT>Include stainless steel spring or pneumatic lift assist, type 316 stainless steel slam locking latch, automatic hold-open arm with a red release 
-handle, and flush mounted retractable lifting handle.  Door must have a minimum load rating <MET>6,800 kg</MET><ENG>15,000 lbs</ENG> load.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Fittings</TTL><BRK/>
-<BRK/>
-<TXT>Provide flanged fittings for pipe<MET> 75 mm</MET><ENG> 3 inches</ENG> and larger.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Vault Valves</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+handle, and flush mounted retractable lifting handle.  Door must have a minimum load rating <MET>6,800 kg</MET><ENG>15,000 lbs</ENG> load.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Fittings</TTL><BRK />
+<BRK />
+<TXT>Provide flanged fittings for pipe<MET> 75 mm</MET><ENG> 3 inches</ENG> and larger.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Vault Valves</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Use indicating type valves inside the vault (i.e., OS&amp;Y, ball, butterfly) so that the valve's position 
-can be observed without entering the confined space.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>Provide ball or outside screw and yoke (OS&amp;Y) or butterfly valves in meter vault.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></SPT></SPT></TAI><TAI OPT="BACKFLOW PREVENTERS"><SPT><TTL>Backflow Preventers</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+can be observed without entering the confined space.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide ball or outside screw and yoke (OS&amp;Y) or butterfly valves in meter vault.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT></SPT></TAI><TAI OPT="BACKFLOW PREVENTERS"><SPT><TTL>Backflow Preventers</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This specification covers backflow preventers installed used to protect the potable water system in outside 
-applications.</NPR><BRK/>
-<BRK/>
-<NPR>Require a minimum working pressure of<MET> 1000 kPa</MET><ENG> 150 psi</ENG>.</NPR><BRK/>
-<BRK/>
+applications.</NPR><BRK />
+<BRK />
+<NPR>Require a minimum working pressure of<MET> 1000 kPa</MET><ENG> 150 psi</ENG>.</NPR><BRK />
+<BRK />
 <NPR>Backflow preventers (i.e., the double check valve assembly (DC) and the reduced pressure principle assembly (RP)) 
-must be installed above ground to prevent cross contamination.</NPR><BRK/>
-<BRK/>
+must be installed above ground to prevent cross contamination.</NPR><BRK />
+<BRK />
 <NPR>Locate backflow preventers assemblies in areas with adequate drainage.  Double check valves may get the surrounding 
 area wet when testing is being performed.  RPs can discharge large quantities of water.  A<MET> 25 mm</MET><ENG> 1 inch</ENG> RP may 
-discharge up to 125 gallons per minute of water, so having adequate drainage is crucial.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<TXT>Provide a JWWA compliant local commercial product  reduced pressure principle type <SUB>backflow preventer</SUB> meeting the following requirements:</TXT><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  Size: [_____]</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Maximum Rated Flow: [_____]</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Allowable Pressure Loss: [_____]</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">d.  Flanged cast iron,  mounted gate valve</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">e.  Strainer of the same material as the backflow preventer</LST><BRK/>
-<BRK/>
+discharge up to 125 gallons per minute of water, so having adequate drainage is crucial.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide a JWWA compliant local commercial product  reduced pressure principle type <SUB>backflow preventer</SUB> meeting the following requirements:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Size: [_____]</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Maximum Rated Flow: [_____]</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Allowable Pressure Loss: [_____]</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Flanged cast iron,  mounted gate valve</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Strainer of the same material as the backflow preventer</LST><BRK />
+<BRK />
 <TXT>The particular make, model, and size of backflow preventers to be installed must be included in the latest edition of the List of Approved Backflow 
 Prevention Assemblies  and be accompanied by a <SUB>backflow certificate</SUB> .  Select materials for piping, strainers, and valves used in assembly installation 
 that are galvanically compatible.  Materials joined, connected, or otherwise in contact are to have no greater than 0.25 V difference on the Anodic 
-Index, unless separated by a dielectric type union or fitting.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Backflow Preventer Enclosure</TTL><BRK/>
-<BRK/>
-<TXT>Provide an insulated enclosure where freezing temperature are possible.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></TAI><SPT><TTL>Disinfection</TTL><BRK/>
-<BRK/>
-<TXT>Chlorinating materials are to conform to:  Chlorine, Liquid: <RID>JIS K 1102</RID>; Hypochlorite, Calcium and Sodium: Approved local commercial product.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>ACCESSORIES</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Pipe Restraint</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Thrust Blocks</TTL><BRK/>
-<BRK/>
-<TXT>Use <RID>JIS A 5308</RID> concrete having a minimum compressive strength of <MET>18 MPa</MET> at 28 days.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Joint Restraint</TTL><BRK/>
-<BRK/>
-<TXT>Provide restrained joints in accordance with <RID>NFPA 24</RID>, Chapter 10 and in accordance with applicable JWWA standard test method for joint restrain.</TXT><BRK/>
-<BRK/>
+Index, unless separated by a dielectric type union or fitting.</TXT><BRK />
+<BRK />
+<SPT><TTL>Backflow Preventer Enclosure</TTL><BRK />
+<BRK />
+<TXT>Provide an insulated enclosure where freezing temperature are possible.</TXT><BRK />
+<BRK /></SPT>
+</SPT></TAI><SPT outline="2.1.5"><TTL>Disinfection</TTL><BRK />
+<BRK />
+<TXT>Chlorinating materials are to conform to:  Chlorine, Liquid: <RID>JIS K 1102</RID>; Hypochlorite, Calcium and Sodium: Approved local commercial product.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.2"><TTL>ACCESSORIES</TTL><BRK />
+<BRK />
+<SPT outline="2.2.1"><TTL>Pipe Restraint</TTL><BRK />
+<BRK />
+<SPT outline="2.2.1.1"><TTL>Thrust Blocks</TTL><BRK />
+<BRK />
+<TXT>Use <RID>JIS A 5308</RID> concrete having a minimum compressive strength of <MET>18 MPa</MET> at 28 days.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.1.2"><TTL>Joint Restraint</TTL><BRK />
+<BRK />
+<TXT>Provide restrained joints in accordance with <RID>NFPA 24</RID>, Chapter 10 and in accordance with applicable JWWA standard test method for joint restrain.</TXT><BRK />
+<BRK />
 <TXT>Provide mechanical joint restraint restraint devices with gripper wedges incorporated into a follower gland and specifically designed for the pipe 
-material and meeting the requirements of <RID>JIS G 5527</RID> or metal harness fabricated by the pipe manufacturer.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>Protective Enclosures</TTL><BRK/>
-<BRK/>
+material and meeting the requirements of <RID>JIS G 5527</RID> or metal harness fabricated by the pipe manufacturer.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.2.2"><TTL>Protective Enclosures</TTL><BRK />
+<BRK />
 <TXT>Provide Freeze-Protection Enclosures that are insulated and designed to protect aboveground water piping, equipment, or specialties from freezing 
-and damage.</TXT><BRK/>
-<BRK/></SPT>
-[<SPT><TTL>Tapping Sleeves</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<BRK/>
-<BRK/>
-<NPR>NOTE: Show size of tapping sleeve on drawings.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+and damage.</TXT><BRK />
+<BRK /></SPT>
+[<SPT outline="2.2.3"><TTL>Tapping Sleeves</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<BRK />
+<BRK />
+<NPR>NOTE: Show size of tapping sleeve on drawings.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Provide cast gray, ductile, malleable iron or stainless steel, split-sleeve type tapping sleeves of the sizes indicated for connection to existing 
 main with flanged or grooved outlet, and with bolts, follower rings and gaskets on each end of the sleeve.  Utilize similar metals for bolts, nuts, 
 and washers to minimize the possibility of galvanic corrosion.  Provide dielectric gaskets where dissimilar metals adjoin.  Provide a tapping sleeve 
@@ -988,10 +988,10 @@ assembly with a maximum working pressure of<MET> 1000 kPa</MET><ENG> [150] [____
 and mechanical joints with gaskets as recommended by the manufacturer of the sleeve.  When using grooved mechanical tee, utilize an upper housing 
 with full locating collar for rigid positioning which engages a machine-cut hole in pipe, encasing an elastomeric gasket which conforms to the 
 pipe outside diameter around the hole and a lower housing with positioning lugs, secured together during assembly by nuts and bolts as specified, 
-pre-torqued to<MET> 67.8 Newton meters</MET><ENG> 50 foot-pound</ENG>.</TXT><BRK/>
-<BRK/></SPT>
-]<SPT><TTL>Sleeve-Type Mechanical Couplings</TTL><BRK/>
-<BRK/>
+pre-torqued to<MET> 67.8 Newton meters</MET><ENG> 50 foot-pound</ENG>.</TXT><BRK />
+<BRK /></SPT>
+]<SPT outline="2.2.4"><TTL>Sleeve-Type Mechanical Couplings</TTL><BRK />
+<BRK />
 <TXT>Use couplings to join plain-end piping by compression of a ring gasket at each end of the adjoining pipe sections.  The coupling consists of one 
 middle ring flared or beveled at each end to provide a gasket seat; two follower rings; two resilient tapered rubber gaskets; and bolts and nuts 
 to draw the follower rings toward each other to compress the gaskets.  Provide true circular middle ring and the follower rings sections free from 
@@ -1002,112 +1002,112 @@ square-neck type bolts, <RID>JIS B 1171</RID> with hex nuts <RID>JIS B 1181</RID
 fast to the necks of the bolts used.  Do not use mechanically coupled joints using a sleeve-type mechanical coupling as an optional method of jointing 
 except where pipeline is adequately anchored to resist tension pull across the joint.  Provide a tight flexible joint with mechanical couplings 
 under reasonable conditions, such as pipe movements caused by expansion, contraction, slight settling or shifting in the ground, minor variations 
-in trench gradients, and traffic vibrations.  Match coupling strength to that of the adjoining pipeline.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Insulating Joints</TTL><BRK/>
-<BRK/>
+in trench gradients, and traffic vibrations.  Match coupling strength to that of the adjoining pipeline.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.5"><TTL>Insulating Joints</TTL><BRK />
+<BRK />
 <TXT>Provide a rubber-gasketed insulating joint or dielectric coupling between pipe of dissimilar metals which will effectively prevent metal-to-metal 
-contact between adjacent sections of piping.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Bonded Joints</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+contact between adjacent sections of piping.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.6"><TTL>Bonded Joints</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Use bonded joints to maintain electrical continuity in metallic pipeline where cathodic protection is provided 
-during construction or where it is anticipated that cathodic protection will be provided in the future.</NPR><BRK/>
-<BRK/>
-<NPR>Coordinate bonded joints with nearby existing cathodic protection systems.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+during construction or where it is anticipated that cathodic protection will be provided in the future.</NPR><BRK />
+<BRK />
+<NPR>Coordinate bonded joints with nearby existing cathodic protection systems.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>For all ferrous pipe, provide a metallic bond at each joint, including joints made with flexible couplings, caulking, or rubber gaskets, of ferrous 
 metallic piping to effect continuous conductivity.  Provide Size 1/0 copper conductor thermal weld type bond wire designed for direct burial and 
-shaped to stand clear of the joint.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Dielectric Fittings</TTL><BRK/>
-<BRK/>
+shaped to stand clear of the joint.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.7"><TTL>Dielectric Fittings</TTL><BRK />
+<BRK />
 <TXT>Install dielectric fittings between threaded ferrous and nonferrous metallic pipe, fittings and valves, except where corporation stops join mains 
-to prevent metal-to-metal contact of dissimilar metallic piping elements and compatible with the indicated working pressure.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Tracer Wire for Nonmetallic Piping</TTL><BRK/>
-<BRK/>
+to prevent metal-to-metal contact of dissimilar metallic piping elements and compatible with the indicated working pressure.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.8"><TTL>Tracer Wire for Nonmetallic Piping</TTL><BRK />
+<BRK />
 <TXT>Provide a continuous bare copper or aluminum wire not less than<MET> 2.5 mm</MET><ENG> 0.10 inch</ENG> in diameter in sufficient length over each separate run of nonmetallic 
-pipe.</TXT><BRK/>
-<BRK/></SPT>
-<TAI OPT="SERVICE LINES"><SPT><TTL>Water Service Line Appurtenances</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Corporation Stops</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+pipe.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="SERVICE LINES"><SPT><TTL>Water Service Line Appurtenances</TTL><BRK />
+<BRK />
+<SPT><TTL>Corporation Stops</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Delete the paragraph when there is no water service piping of<MET> 50 mm</MET><ENG> 2 inch</ENG> diameter or less included in 
-the project.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+the project.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Ground key type; lead-free bronze,  compatible with the working pressure of the system and solder-joint, or flared tube compression type joint.  
-Threaded ends for inlet and outlet of corporation stops,  coupling nut for connection to flared copper tubing.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Curb or Service Stops</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+Threaded ends for inlet and outlet of corporation stops,  coupling nut for connection to flared copper tubing.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Curb or Service Stops</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Delete this paragraph when there is no water service piping of<MET> 40 mm</MET><ENG> 1 1/2 inch</ENG> diameter or less included 
-in the project.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+in the project.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Ground key, round way, inverted key type; made of lead-free bronze,  and compatible with the working pressure of the system.  Provide compatible 
-ends for connection to the service piping.  Cast an arrow into body of the curb or service stop indicating direction of flow.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Service Clamps</TTL><BRK/>
-<BRK/>
+ends for connection to the service piping.  Cast an arrow into body of the curb or service stop indicating direction of flow.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Service Clamps</TTL><BRK />
+<BRK />
 <TXT>Provide single or double flattened strap type service clamps used for repairing damaged cast-iron, steel or PVC pipe with a pressure rating not 
 less than that of the pipe being repaired.  Provide clamps with a galvanized malleable-iron body with cadmium plated straps and nuts and a rubber 
-gasket cemented to the body.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Goosenecks</TTL><BRK/>
-<BRK/>
+gasket cemented to the body.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Goosenecks</TTL><BRK />
+<BRK />
 <TXT>Manufacture goosenecks from Type K copper tubing; provide joint ends for goosenecks compatible with connecting to corporation stop and service 
 line.  Where multiple gooseneck connections are required for an individual service, connect goosenecks to the service line through a compatible 
-lead-free brass or bronze branch connection; the total clear area of the branches to be at least equal to the clear area of the service line.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Curb Boxes</TTL><BRK/>
-<BRK/>
+lead-free brass or bronze branch connection; the total clear area of the branches to be at least equal to the clear area of the service line.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Curb Boxes</TTL><BRK />
+<BRK />
 <TXT>Provide a curb box for each curb or service stop manufactured from cast iron, size capable of containing the stop where it is used.  Provide a 
-round head.  Cast the word "WATER" on the lid.  Factory coat the box with a heavy coat of bituminous paint.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></TAI></SPT></PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
-<BRK/>
-<SPT><TTL>PREPARATION</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Connections to Existing System</TTL><BRK/>
-<BRK/>
-<TXT>Perform all connections to the existing water system in the presence of the Contracting Officer.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Operation of Existing Valves</TTL><BRK/>
-<BRK/>
-<TXT>Do not operate valves within or directly connected to the existing water system unless expressly directed to do so by the Contracting Officer.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Earthwork</TTL><BRK/>
-<BRK/>
-<TXT>Perform earthwork operations in accordance with Section <TAI OPT="AIR FORCE,ARMY,NASA"><SRF>31 00 00</SRF> EARTHWORK</TAI>.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>INSTALLATION</TTL><BRK/>
-<BRK/>
-<TXT>Install all materials in accordance with the applicable reference standard, manufacturers instructions and as indicated herein.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Piping</TTL><BRK/>
-<BRK/>
-<SPT><TTL>General Requirements</TTL><BRK/>
-<BRK/>
+round head.  Cast the word "WATER" on the lid.  Factory coat the box with a heavy coat of bituminous paint.</TXT><BRK />
+<BRK /></SPT>
+</SPT></TAI></SPT></PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>PREPARATION</TTL><BRK />
+<BRK />
+<SPT outline="3.1.1"><TTL>Connections to Existing System</TTL><BRK />
+<BRK />
+<TXT>Perform all connections to the existing water system in the presence of the Contracting Officer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.2"><TTL>Operation of Existing Valves</TTL><BRK />
+<BRK />
+<TXT>Do not operate valves within or directly connected to the existing water system unless expressly directed to do so by the Contracting Officer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.3"><TTL>Earthwork</TTL><BRK />
+<BRK />
+<TXT>Perform earthwork operations in accordance with Section <TAI OPT="AIR FORCE,ARMY,NASA"><SRF>31 00 00</SRF> EARTHWORK</TAI>.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2"><TTL>INSTALLATION</TTL><BRK />
+<BRK />
+<TXT>Install all materials in accordance with the applicable reference standard, manufacturers instructions and as indicated herein.</TXT><BRK />
+<BRK />
+<SPT outline="3.2.1"><TTL>Piping</TTL><BRK />
+<BRK />
+<SPT outline="3.2.1.1"><TTL>General Requirements</TTL><BRK />
+<BRK />
 <TXT>Install pipe, fittings, joints and couplings in accordance with the applicable referenced standard, the manufacturer's instructions and as specified 
-herein.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Termination of Water Lines</TTL><BRK/>
-<BRK/>
-<TXT>Terminate the work covered by this section at a point approximately<MET> 1.5 m</MET><ENG> 5 feet</ENG> from the building, unless otherwise indicated.</TXT><BRK/>
-<BRK/>
+herein.</TXT><BRK />
+<BRK />
+<SPT outline="3.2.1.1.1"><TTL>Termination of Water Lines</TTL><BRK />
+<BRK />
+<TXT>Terminate the work covered by this section at a point approximately<MET> 1.5 m</MET><ENG> 5 feet</ENG> from the building, unless otherwise indicated.</TXT><BRK />
+<BRK />
 <TXT>Do not lay water lines in the same trench with gas lines, fuel lines, electric wiring, or any other utility.<TAI OPT="COPPER">  Do not install copper tubing in the 
 same trench with ferrous piping materials.</TAI>  Where nonferrous metallic pipe (i.e., copper tubing) crosses any ferrous piping, provide a minimum 
-vertical separation of<MET> 300 mm</MET><ENG> 12 inches</ENG> between pipes.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Pipe Laying and Jointing</TTL><BRK/>
-<BRK/>
+vertical separation of<MET> 300 mm</MET><ENG> 12 inches</ENG> between pipes.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.1.1.2"><TTL>Pipe Laying and Jointing</TTL><BRK />
+<BRK />
 <TXT>Remove fins and burrs from pipe and fittings.  Before placing in position, clean pipe, fittings, valves, and accessories, and maintain in a clean 
 condition.  Provide proper facilities for lowering sections of pipe into trenches.  Under no circumstances is it permissible to drop or dump pipe, 
 fittings, valves, or other water line material into trenches.  Cut pipe cleanly, squarely, and accurately to the length established at the site 
@@ -1119,68 +1119,68 @@ rests solidly on the pipe bedding; excavate recesses to accommodate bells, joint
 into place.  Make provision for expansion and contraction of pipelines.  Keep trenches free of water until joints have been assembled.  At the 
 end of each work day, close open ends of pipe temporarily with wood blocks or bulkheads.  Do not lay pipe when conditions of trench or weather 
 prevent installation.[  Provide a minimum of<MET> 760 mm</MET><ENG> 2 1/2 feet</ENG> depth of cover over top of pipe under non-traffic areas and minimum of <MET>900 mm</MET> under 
-traffic areas.]</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Tracer Wire</TTL><BRK/>
-<BRK/>
+traffic areas.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.1.1.3"><TTL>Tracer Wire</TTL><BRK />
+<BRK />
 <TXT>Install a continuous length of tracer wire for the full length of each run of nonmetallic pipe.  Attach wire to top of pipe in such manner that 
-it will not be displaced during construction operations.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Connections to Existing Water Lines</TTL><BRK/>
-<BRK/>
+it will not be displaced during construction operations.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.1.1.4"><TTL>Connections to Existing Water Lines</TTL><BRK />
+<BRK />
 <TXT>Make connections to existing water lines after coordination with the facility and with a minimum interruption of service on the existing line.  
 Make connections to existing lines under pressure in accordance with the recommended procedures of the manufacturer of the pipe being tapped and 
-as indicated.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Sewer Manholes</TTL><BRK/>
-<BRK/>
-<TXT>No water piping is to pass through or come in contact with any part of a sewer manhole.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Water Piping Parallel With Sewer Piping</TTL><BRK/>
-<TAI OPT="AIR FORCE,ARMY,NASA"><BRK/>
+as indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.1.1.5"><TTL>Sewer Manholes</TTL><BRK />
+<BRK />
+<TXT>No water piping is to pass through or come in contact with any part of a sewer manhole.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.1.1.6"><TTL>Water Piping Parallel With Sewer Piping</TTL><BRK />
+<TAI OPT="AIR FORCE,ARMY,NASA"><BRK />
 <TXT>Where the location of the water line is not clearly defined by dimensions on the drawings, do not lay water line closer than<MET> 3.0 m</MET><ENG> 10 feet</ENG>, horizontally, 
-from any sewer line.</TXT><BRK/></TAI>
-<BRK/>
+from any sewer line.</TXT><BRK /></TAI>
+<BRK />
 <TAI OPT="NAVY"><LST INDENT="-0.33">a.  Normal Conditions: Lay water piping at least<MET> 3.0 m</MET><ENG> 10 feet</ENG> horizontally from sewer or sewer manhole whenever possible.  Measure the 
 distance from outside edge to outside edge of pipe or outside edge of manhole.  When local conditions prevent horizontal separation install 
-water piping in a separate trench with the bottom of the water piping at least<MET> 450 mm</MET><ENG> 18 inches</ENG> above the top of the sewer piping.</LST><BRK/>
-<BRK/>
+water piping in a separate trench with the bottom of the water piping at least<MET> 450 mm</MET><ENG> 18 inches</ENG> above the top of the sewer piping.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  Unusual Conditions: When local conditions prevent vertical separation, construct sewer piping of JWWA compliant ductile iron water 
 piping and perform <SUB>hydrostatic sewer test</SUB>, without leakage, prior to backfilling.  When local conditions prevent vertical separation, test 
-the sewer manhole in place to ensure watertight construction.</LST><BRK/>
-<BRK/></TAI>
-</SPT><SPT><TTL>Water Piping Crossing Sewer Piping</TTL><BRK/>
-<TAI OPT="AIR FORCE,ARMY,NASA"><BRK/>
+the sewer manhole in place to ensure watertight construction.</LST><BRK />
+<BRK /></TAI>
+</SPT><SPT outline="3.2.1.1.7"><TTL>Water Piping Crossing Sewer Piping</TTL><BRK />
+<TAI OPT="AIR FORCE,ARMY,NASA"><BRK />
 <TXT>Provide at least<MET> 450 mm</MET><ENG> 18 inches</ENG> above the top (crown) of the sewer piping and the bottom (invert) of the water piping whenever possible.  Measure 
 the distance edge-to-edge.  Where water lines cross under gravity sewer lines, construct sewer line of JWWA compliant ductile iron water piping 
 with rubber-gasketed joints and no joint located within<MET> 3 m</MET><ENG> 10 feet,</ENG> horizontally, of the crossing.  Lay water lines which cross sewer force mains 
 and inverted siphons at least<MET> 600 mm</MET><ENG> 2 feet</ENG> above these sewer lines; when joints in the sewer line are closer than<MET> 900 mm</MET><ENG> 3 feet</ENG> horizontally from 
-the water line relay the sewer line to ensure no joint closer than<MET> 900 mm</MET><ENG> 3 feet</ENG>.</TXT><BRK/></TAI>
-<BRK/>
+the water line relay the sewer line to ensure no joint closer than<MET> 900 mm</MET><ENG> 3 feet</ENG>.</TXT><BRK /></TAI>
+<BRK />
 <TAI OPT="NAVY"><LST INDENT="-0.33">a.  Normal Conditions: Provide a separation of at least<MET> 450 mm</MET><ENG> 18 inches</ENG> between the bottom of the water piping and the top of the sewer 
-piping in cases where water piping crosses above sewer piping.</LST><BRK/>
-<BRK/>
+piping in cases where water piping crosses above sewer piping.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  Unusual Conditions:  When local conditions prevent a vertical separation described above, construct sewer piping passing over or under 
 water piping of JWWA compliant ductile iron water piping and perform hydrostatic sewer test, without leakage, prior to backfilling.  Construct 
 sewer crossing with a minimum<MET> 6.1 m</MET><ENG> 20 feet</ENG> length of the JWWA compliant ductile iron water piping, centered at the point of the crossing 
 so that joints are equidistant and as far as possible from the water piping.  Protect water piping passing under sewer piping by providing 
 a vertical separation of at least<MET> 450 mm</MET><ENG> 18 inches</ENG> between the bottom of the sewer piping and the top of the water piping; adequate structural 
-support for the sewer piping to prevent excessive deflection of the joints and the settling on or damage to the water piping.</LST><BRK/>
-<BRK/></TAI>
-</SPT><SPT><TTL>Penetrations</TTL><BRK/>
-<BRK/>
+support for the sewer piping to prevent excessive deflection of the joints and the settling on or damage to the water piping.</LST><BRK />
+<BRK /></TAI>
+</SPT><SPT outline="3.2.1.1.8"><TTL>Penetrations</TTL><BRK />
+<BRK />
 <TXT>Provide ductile-iron or Schedule 40 steel wall sleeves for pipe passing through walls of valve pits and structures.  Fill annular space between 
-walls and sleeves with rich cement mortar.  Fill annular space between pipe and sleeves with mastic.</TXT><BRK/>
-<BRK/></SPT>
-<TAI OPT="DUCTILE IRON PIPING"><SPT><TTL>Flanged Pipe</TTL><BRK/>
-<BRK/>
-<TXT>Only install flanged pipe aboveground or with the flanges in valve pits.</TXT><BRK/>
-<BRK/></SPT>
-</TAI></SPT><TAI OPT="DUCTILE IRON PIPING"><SPT><TTL>Ductile-Iron Piping</TTL><BRK/>
-<BRK/>
+walls and sleeves with rich cement mortar.  Fill annular space between pipe and sleeves with mastic.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="DUCTILE IRON PIPING"><SPT><TTL>Flanged Pipe</TTL><BRK />
+<BRK />
+<TXT>Only install flanged pipe aboveground or with the flanges in valve pits.</TXT><BRK />
+<BRK /></SPT>
+</TAI></SPT><TAI OPT="DUCTILE IRON PIPING"><SPT><TTL>Ductile-Iron Piping</TTL><BRK />
+<BRK />
 <TXT>Unless otherwise specified, install pipe and fittings in accordance with the paragraph GENERAL REQUIREMENTS and with the requirements of <RID>JDPA T 01</RID>
-for pipe installation, joint assembly, valve-and-fitting installation, and thrust restraint.</TXT><BRK/>
-<BRK/>
+for pipe installation, joint assembly, valve-and-fitting installation, and thrust restraint.</TXT><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  Jointing:  Make push-on joints with the gaskets and lubricant specified for this type joint; assemble in accordance with the applicable 
 requirements of pipe manufacturer for joint assembly. Make mechanical joints with the gaskets, glands, bolts, and nuts specified for this 
 type joint; assemble in accordance with the applicable requirements of of pipe manufacturer for joint assembly . Make flanged joints with 
@@ -1193,20 +1193,20 @@ with the recommendations of the set screw flange manufacturer.  During installat
 of gasket when joint to adjoining flange is made. Assemble joints made with sleeve-type mechanical couplings in accordance with the recommendations 
 of the coupling manufacturer.    Make insulating joints with the gaskets, sleeves, washers, bolts, and nuts previously specified for this 
 type joint.  Assemble insulating joints as specified for flanged joints, except that bolts with insulating sleeves are to be full size 
-for the bolt holes.  Ensure that there is no metal-to-metal contact between dissimilar metals after the joint has been assembled.</LST><BRK/>
-<BRK/>
+for the bolt holes.  Ensure that there is no metal-to-metal contact between dissimilar metals after the joint has been assembled.</LST><BRK />
+<BRK />
 <LST INDENT="-0.33">b.  Allowable Deflection:  Follow ductile iron pipe manufacturer's recommendation for the maximum allowable deflection.  If the alignment 
 requires deflection in excess of the above limitations, provide special bends or a sufficient number of shorter lengths of pipe to achieve 
-angular deflections within the limit set forth.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Exterior Protection:  Completely encase buried ductile iron pipelines  with polyethylene film, in conformance with <RID>JWWA K 158</RID>.</LST><BRK/>
-<BRK/></SPT>
-</TAI><TAI OPT="PVC PIPING"><SPT><TTL>PVC <TAI OPT="PVCO PIPING">and PVCO </TAI>Water Main Pipe</TTL><BRK/>
-<BRK/>
+angular deflections within the limit set forth.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Exterior Protection:  Completely encase buried ductile iron pipelines  with polyethylene film, in conformance with <RID>JWWA K 158</RID>.</LST><BRK />
+<BRK /></SPT>
+</TAI><TAI OPT="PVC PIPING"><SPT><TTL>PVC <TAI OPT="PVCO PIPING">and PVCO </TAI>Water Main Pipe</TTL><BRK />
+<BRK />
 <TXT>Unless otherwise specified, install pipe and fittings in accordance with the paragraph GENERAL REQUIREMENTS  for laying of pipe, joining PVC pipe 
 to fittings and accessories, <TAI OPT="FIRE HYDRANTS">setting of fire hydrants, </TAI>valves, and fittings; and with the recommendations for pipe joint assembly and appurtenance 
-per pipe manufacturer's installation instructions.</TXT><BRK/>
-<BRK/>
+per pipe manufacturer's installation instructions.</TXT><BRK />
+<BRK />
 <LST INDENT="-0.33">a.  Jointing:  Make push-on joints with the elastomeric gaskets specified for this type joint, using either elastomeric-gasket bell-end 
 pipe or elastomeric-gasket couplings.  For pipe-to-pipe push-on joint connections, use only pipe with push-on joint ends having factory-made 
 bevel; for push-on joint connections to metal fittings, valves, and other accessories, cut spigot end of pipe off square and re-bevel pipe 
@@ -1215,155 +1215,155 @@ pipe manufacturer for push-on joints.  Assemble push-on joints for pipe-to-pipe 
 to fittings, valves, and other accessories; make  compression-type joints/mechanical joints with the gaskets, glands, bolts, nuts, and 
 internal stiffeners previously specified for this type joint; cut off spigot end of pipe for compression-type joint/mechanical-joint connections 
 and do not re-bevel; assemble  joints made with sleeve-type mechanical couplings , all in accordance with pipe manufacturer's installation 
-instructions.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Joint Offset:  Construct joint offset .  Do not exceed the minimum longitudinal bending as recommended by pipe manufacturer.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  Fittings:  Install in accordance with PVC and PVCO pipe manufacturer's installation standards.</LST><BRK/>
-<BRK/></SPT>
-</TAI><SPT><TTL>Polyethylene (PE) Piping</TTL><BRK/>
-<BRK/>
-<TXT>Install PE pipes in accordance with pipe manufacturer's installation instruction.</TXT><BRK/>
-<BRK/></SPT>
-<TAI OPT="PVC SERVICE PIPING"><SPT><TTL>Plastic Service Piping</TTL><BRK/>
-<BRK/>
+instructions.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Joint Offset:  Construct joint offset .  Do not exceed the minimum longitudinal bending as recommended by pipe manufacturer.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Fittings:  Install in accordance with PVC and PVCO pipe manufacturer's installation standards.</LST><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="3.2.1.2"><TTL>Polyethylene (PE) Piping</TTL><BRK />
+<BRK />
+<TXT>Install PE pipes in accordance with pipe manufacturer's installation instruction.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="PVC SERVICE PIPING"><SPT><TTL>Plastic Service Piping</TTL><BRK />
+<BRK />
 <TXT>Install pipe and fittings in accordance with the paragraph GENERAL REQUIREMENTS and with the applicable requirements, pipe manufacturer's installation 
 instructions , unless otherwise specified.  Handle solvent cements used to join plastic piping in accordance with pipe manufacturer's installation 
-instructions.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Jointing</TTL><BRK/>
-<BRK/>
+instructions.</TXT><BRK />
+<BRK />
+<SPT><TTL>Jointing</TTL><BRK />
+<BRK />
 <TXT>Make solvent-cemented joints for PVC piping using the solvent cement previously specified for this material; assemble joints in accordance with 
 pipe manufacturer's installation instructions.  Make plastic pipe joints to other pipe materials in accordance with the recommendations of the 
-plastic pipe manufacturer.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Plastic Pipe Connections to Appurtenances</TTL><BRK/>
-<BRK/>
-<TXT>Connect plastic service lines to corporation stops and gate valves in accordance with the recommendations of the plastic pipe manufacturer.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></TAI><SPT><TTL>Fire Protection Service Lines for Sprinkler Supplies</TTL><BRK/>
-<BRK/>
-<TXT>Connect water service lines used to supply building sprinkler systems for fire protection to the water main in accordance with <RID>NFPA 24</RID>.</TXT><BRK/>
-<BRK/></SPT>
-<TAI OPT="SERVICE LINES"><SPT><TTL>Water Service Piping</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Location</TTL><BRK/>
-<BRK/>
+plastic pipe manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Plastic Pipe Connections to Appurtenances</TTL><BRK />
+<BRK />
+<TXT>Connect plastic service lines to corporation stops and gate valves in accordance with the recommendations of the plastic pipe manufacturer.</TXT><BRK />
+<BRK /></SPT>
+</SPT></TAI><SPT outline="3.2.1.3"><TTL>Fire Protection Service Lines for Sprinkler Supplies</TTL><BRK />
+<BRK />
+<TXT>Connect water service lines used to supply building sprinkler systems for fire protection to the water main in accordance with <RID>NFPA 24</RID>.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="SERVICE LINES"><SPT><TTL>Water Service Piping</TTL><BRK />
+<BRK />
+<SPT><TTL>Location</TTL><BRK />
+<BRK />
 <TXT>Connect water service piping to the building service where the building service has been installed.  Where building service has not been installed, 
 terminate water service lines approximately<MET> 1.5 m</MET><ENG> 5 feet</ENG> from the building line at the points indicated; close such water service lines with plugs 
-or caps.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Water Service Line Connections to Water Mains</TTL><BRK/>
-<BRK/>
+or caps.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Water Service Line Connections to Water Mains</TTL><BRK />
+<BRK />
 <TXT>Connect  water service lines to the main by a corporation stop and gooseneck and install a service stop below the frostline. Connect water service 
 lines to ductile-iron water mains in accordance with pipe manufacturer's installation instructions for service taps. Connect water service lines 
-to PVC water mains in accordance with pipe manufacturer's installation instructions.  </TXT><BRK/>
-<BRK/></SPT>
-</SPT></TAI></SPT><SPT><TTL>Railroad Right-of-Way</TTL><BRK/>
-<BRK/>
+to PVC water mains in accordance with pipe manufacturer's installation instructions.  </TXT><BRK />
+<BRK /></SPT>
+</SPT></TAI></SPT><SPT outline="3.2.2"><TTL>Railroad Right-of-Way</TTL><BRK />
+<BRK />
 <TXT>Install piping passing under the right-of-way of a commercial railroad in accordance with the specifications for pipelines conveying nonflammable 
-substances . For PVC  water main pipe, also install in accordance with the recommendations of pipe manufacturer for installation of casings.</TXT><BRK/>
-<BRK/></SPT>
-<TAI OPT="METERS"><SPT><TTL>Meters</TTL><BRK/>
-<BRK/>
+substances . For PVC  water main pipe, also install in accordance with the recommendations of pipe manufacturer for installation of casings.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="METERS"><SPT><TTL>Meters</TTL><BRK />
+<BRK />
 <TXT>Install meters and meter boxes vaults at the locations shown on the drawings.  Center meters in the boxes vaults to allow for reading and ease 
-of removal or maintenance.  Set top of box or vault at finished grade.</TXT><BRK/>
-<BRK/></SPT>
-</TAI><TAI OPT="BACKFLOW PREVENTERS"><SPT><TTL>Backflow Preventers</TTL><BRK/>
-<BRK/>
+of removal or maintenance.  Set top of box or vault at finished grade.</TXT><BRK />
+<BRK /></SPT>
+</TAI><TAI OPT="BACKFLOW PREVENTERS"><SPT><TTL>Backflow Preventers</TTL><BRK />
+<BRK />
 <TXT>Install backflow preventers of type, size, and capacity indicated a minimum of<MET> 300 mm</MET><ENG> 12 inch</ENG> and a maximum of <MET> 900 mm</MET><ENG> 36 inch</ENG> above concrete base.  
 Include valves and test cocks.  Install according to the manufacturers requirements and the requirements of plumbing and health department and 
 authorities having jurisdiction.  Support NPS<MET> 63 mm</MET><ENG> 2 1/2 inch</ENG> and larger backflow preventers, valves, and piping near floor with<MET> 300 mm</MET><ENG> 12 inch</ENG>
  minimum air gap, and on concrete piers or steel pipe supports.  Do not install backflow preventers that have a relief drain in vault or in other 
-spaces subject to flooding.  Do not install by-pass piping around backflow preventers.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Backflow Preventer Enclosure</TTL><BRK/>
-<BRK/>
+spaces subject to flooding.  Do not install by-pass piping around backflow preventers.</TXT><BRK />
+<BRK />
+<SPT><TTL>Backflow Preventer Enclosure</TTL><BRK />
+<BRK />
 <TXT>Install a level concrete base with top of concrete surface approximately <MET>50 mm</MET><ENG>2 inches</ENG> above grade.  Install protective enclosure over valve and 
-equipment.  Anchor protective enclosure to concrete base.</TXT><BRK/>
-<BRK/></SPT>
-</SPT></TAI><SPT><TTL>Disinfection</TTL><BRK/>
-<BRK/>
-<TXT>Disinfection of systems supplying non-potable water is not required.</TXT><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE:  The continuous-feed method of chlorination is recommended for disinfecting new water systems.  </NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+equipment.  Anchor protective enclosure to concrete base.</TXT><BRK />
+<BRK /></SPT>
+</SPT></TAI><SPT outline="3.2.3"><TTL>Disinfection</TTL><BRK />
+<BRK />
+<TXT>Disinfection of systems supplying non-potable water is not required.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  The continuous-feed method of chlorination is recommended for disinfecting new water systems.  </NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Prior to disinfection, provide <SUB>disinfection procedures</SUB>, proposed neutralization and disposal methods of waste water from disinfection as part of 
 the disinfection submittal.  Disinfect new water piping and existing water piping affected by Contractor's operations in accordance with the applicable 
 JWWA standards.  Ensure a free chlorine residual of not less than<MET> 10 mg/L</MET><ENG> 10 parts per million</ENG> after 24 hour holding period and prior to performing 
-bacteriological tests.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Flushing</TTL><BRK/>
-<BRK/>
+bacteriological tests.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.4"><TTL>Flushing</TTL><BRK />
+<BRK />
 <TXT>Perform bacteriological tests prior to flushing.  Flush solution from the systems with domestic water until maximum residual chlorine content is 
 within the range of<MET> 0.2 to 0.5 mg/L</MET><ENG> 0.2 to 0.5 parts per million</ENG>, the residual chlorine content of the distribution system, or acceptable for domestic 
-use.  Use  neutralizing chemicals as recommended by JWWA standards.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Pipe Restraint</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Concrete Thrust Blocks</TTL><BRK/>
-<BRK/>
-<TXT>Install concrete thrust blocks where indicated.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Restrained Joints</TTL><BRK/>
-<BRK/>
+use.  Use  neutralizing chemicals as recommended by JWWA standards.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.5"><TTL>Pipe Restraint</TTL><BRK />
+<BRK />
+<SPT outline="3.2.5.1"><TTL>Concrete Thrust Blocks</TTL><BRK />
+<BRK />
+<TXT>Install concrete thrust blocks where indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.5.2"><TTL>Restrained Joints</TTL><BRK />
+<BRK />
 <TXT>Install restrained joints in accordance with the manufacturer's instructions or  NFPA 24 where indicated.  For metal harness use tie rods and clamps 
-as shown in <RID>NFPA 24</RID>. Provide metal harness fabricated by the pipe manufacturer and furnished with the pipe.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>Valves</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Gate Valves</TTL><BRK/>
-<BRK/>
+as shown in <RID>NFPA 24</RID>. Provide metal harness fabricated by the pipe manufacturer and furnished with the pipe.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2.6"><TTL>Valves</TTL><BRK />
+<BRK />
+<SPT outline="3.2.6.1"><TTL>Gate Valves</TTL><BRK />
+<BRK />
 <TXT>Install gate valves in accordance with the requirements for valve-and-fitting installation and with the recommendations of the gate valve manufacturer.<TAI OPT="PVC PIPING">
   Install gate valves on PVC <TAI OPT="PVCO PIPING">and PVCO </TAI>water mains in accordance with the recommendations </TAI> of the gate valve manufacturer.  Make and assemble joints 
-to gate valves as specified for making and assembling the same type joints between pipe and fittings.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Check Valves</TTL><BRK/>
-<BRK/>
+to gate valves as specified for making and assembling the same type joints between pipe and fittings.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.6.2"><TTL>Check Valves</TTL><BRK />
+<BRK />
 <TXT>Install check valves in accordance with the applicable requirements for valve-and-fitting installation , except as otherwise indicated.  Make and 
-assemble joints to check valves as specified for making and assembling the same type joints between pipe and fittings.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Air Release, Air/Vacuum, and Combination Air Valves</TTL><BRK/>
-<BRK/>
+assemble joints to check valves as specified for making and assembling the same type joints between pipe and fittings.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.6.3"><TTL>Air Release, Air/Vacuum, and Combination Air Valves</TTL><BRK />
+<BRK />
 <TXT>Install pressure vacuum assemblies of type, size, and capacity indicated.  Include valves and test cocks.  Install according to the requirements 
 of plumbing and health department and authorities having jurisdiction.  Do not install pressure vacuum breaker assemblies in vault or other space 
-subject to flooding.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>Blowoff Valve Assemblies</TTL><BRK/>
-<BRK/>
+subject to flooding.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2.7"><TTL>Blowoff Valve Assemblies</TTL><BRK />
+<BRK />
 <TXT>Install blowoff valve assemblies as indicated on the drawings or in accordance with the manufactures recommendations.  Install discharge fitting 
-on the end of riser pipe to direct the flow of water so as to minimize damage to surrounding areas.</TXT><BRK/>
-<BRK/></SPT>
-<TAI OPT="FIRE HYDRANTS"><SPT><TTL>Fire Hydrants</TTL><BRK/>
-<BRK/>
+on the end of riser pipe to direct the flow of water so as to minimize damage to surrounding areas.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="FIRE HYDRANTS"><SPT><TTL>Fire Hydrants</TTL><BRK />
+<BRK />
 <TXT>Install fire hydrants in accordance with <RID>NFPA 24</RID> and with the requirements of <RID>JDPA T 01</RID> for pipe installation and as indicated.  Make and assemble 
 joints as specified for making and assembling the same type joints between pipe and fittings.  Provide metal harness as specified under pipe anchorage 
 requirements for the respective pipeline material to which fire hydrant is attached.  Install fire hydrants with the<MET> 115 mm</MET><ENG> 4 1/2 inch</ENG> connections 
 facing the adjacent paved surface.  If there are two paved adjacent surfaces, install fire hydrants with the<MET> 115 mm</MET><ENG> 4 1/2 inch</ENG> connection facing 
-the paved surface where the connecting main is located.</TXT><BRK/>
-<BRK/></SPT>
-</TAI></SPT><SPT><TTL>FIELD QUALITY CONTROL</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Tests</TTL><BRK/>
-<BRK/>
+the paved surface where the connecting main is located.</TXT><BRK />
+<BRK /></SPT>
+</TAI></SPT><SPT outline="3.3"><TTL>FIELD QUALITY CONTROL</TTL><BRK />
+<BRK />
+<SPT outline="3.3.1"><TTL>Tests</TTL><BRK />
+<BRK />
 <TXT>Notify the Contracting Officer a minimum of five days in advance of hydrostatic testing.  Coordinate the proposed method for disposal of waste 
 water from hydrostatic testing.  <TST>Perform field tests, and provide labor, equipment, and incidentals required for testing, except that water needed 
 for field tests will be furnished as set forth in paragraph AVAILABILITY AND USE OF UTILITY SERVICES in Section <SRF>01 50 00</SRF> TEMPORARY CONSTRUCTION 
-FACILITIES AND CONTROLS.</TST>  Provide documentation that all items of work have been constructed in accordance with the Contract documents.</TXT><BRK/>
-<BRK/>
-<SPT><TTL><SUB>Hydrostatic Test</SUB></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+FACILITIES AND CONTROLS.</TST>  Provide documentation that all items of work have been constructed in accordance with the Contract documents.</TXT><BRK />
+<BRK />
+<SPT outline="3.3.1.1"><TTL><SUB>Hydrostatic Test</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  NFPA 24 requires a minimum test pressure of<MET> 1,400 kPa</MET><ENG> 200 psi</ENG> or<MET> 375 kPa</MET><ENG> 50 psi</ENG> in excess of the system 
 working pressure.  Several of the AWWA standards do not meet the requirements of NFPA 24.  Where water mains or 
 water service lines provide fire service or water and fire service, they must be tested in accordance with NFPA 
-24.</NPR><BRK/>
-<BRK/>
-<BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+24.</NPR><BRK />
+<BRK />
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT><TST>Test the water system in accordance with the applicable JWWA standards.  Where water mains provide fire service, test in accordance with the special 
 testing requirements given in the paragraph SPECIAL TESTING REQUIREMENTS FOR FIRE SERVICE.  <TAI OPT="DUCTILE IRON PIPING">Test ductile-iron water mains in accordance with the 
 requirements of <RID>JIS S 3200-1</RID> for hydrostatic testing.  The amount of leakage on ductile-iron pipelines with mechanical-joints or push-on joints 
@@ -1372,59 +1372,59 @@ Test PVC<TAI OPT="PVCO PIPING"> and PVCO </TAI>plastic water systems made with P
 main pipe is not to exceed the amounts given in pipe manufacturer's installation instructions, except that at joints made with sleeve-type mechanical 
 couplings, no leakage will be allowed. </TAI><TAI OPT="SERVICE LINES">Test water service lines for hydrostatic testing.  No leakage will be allowed at <TAI OPT="COPPER">copper pipe joints, copper 
 tubing joints (soldered, compression type, brazed), </TAI><TAI OPT="PVC SERVICE PIPING">plastic pipe joints, </TAI><TAI OPT="DUCTILE IRON PIPING">flanged joints, </TAI>and <TAI OPT="AIR FORCE,ARMY,NASA">screwed joints</TAI>.</TAI></TST>  Do not backfill utility trench or 
-begin testing on any section of a pipeline where concrete thrust blocks have been provided until at least 7 days after placing of the concrete.</TXT><BRK/>
-<BRK/></SPT>
-<TAI OPT="NAVY"><SPT><TTL>Hydrostatic Sewer Test</TTL><BRK/>
-<BRK/>
+begin testing on any section of a pipeline where concrete thrust blocks have been provided until at least 7 days after placing of the concrete.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="NAVY"><SPT><TTL>Hydrostatic Sewer Test</TTL><BRK />
+<BRK />
 <TXT><TST>The hydrostatic pressure sewer test will be performed in accordance with the applicable JWWA standard for the piping material with a minimum test 
-pressure of 200 kPa.</TST></TXT><BRK/>
-<BRK/></SPT>
-</TAI><SPT><TTL>Leakage Test</TTL><BRK/>
-<BRK/>
+pressure of 200 kPa.</TST></TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="3.3.1.2"><TTL>Leakage Test</TTL><BRK />
+<BRK />
 <TXT><TST>For <SUB>leakage test</SUB>, use a hydrostatic pressure not less than the maximum working pressure of the system.  Leakage test may be performed at the same 
-time and at the same test pressure as the pressure test.</TST></TXT><BRK/>
-<BRK/>
-<TXT><TST>For PE perform leak testing in accordance with the applicable JWWA standards</TST></TXT>.<BRK/>
-<BRK/></SPT>
-<SPT><TTL>Bacteriological Testing</TTL><BRK/>
-<BRK/>
+time and at the same test pressure as the pressure test.</TST></TXT><BRK />
+<BRK />
+<TXT><TST>For PE perform leak testing in accordance with the applicable JWWA standards</TST></TXT>.<BRK />
+<BRK /></SPT>
+<SPT outline="3.3.1.3"><TTL>Bacteriological Testing</TTL><BRK />
+<BRK />
 <TXT><TST>Perform bacteriological tests in accordance with the applicable JWWA standards. </TST> Analyze samples by a certified laboratory, and submit the results 
-of the <SUB>bacteriological samples</SUB>.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Backflow Preventer Tests</TTL><BRK/>
-<BRK/>
+of the <SUB>bacteriological samples</SUB>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.1.4"><TTL>Backflow Preventer Tests</TTL><BRK />
+<BRK />
 <TXT><TST>After installation conduct <SUB>Backflow Preventer Tests</SUB> and provide test reports verifying that the installation meets the <RID>JIS S 3200-4</RID> or applicable 
-JWWA testing standards.</TST></TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Special Testing Requirements for Fire Service</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+JWWA testing standards.</TST></TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.1.5"><TTL>Special Testing Requirements for Fire Service</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  NFPA 24 requires a minimum test pressure of<MET> 1400 kPa</MET><ENG> 200 psi</ENG> or<MET> 375 kPa</MET><ENG> 50 psi</ENG> in excess of the system 
 working pressure.  Where water mains or water service lines provide fire service or water and fire service, they 
-must be tested in accordance with NFPA 24.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+must be tested in accordance with NFPA 24.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT><TST>Test water mains and water service lines providing fire service or water and fire service in accordance with <RID>NFPA 24</RID>.  The additional water added 
-to the system must not exceed the limits given in <RID>NFPA 24</RID></TST></TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Tracer Wire Continuity Test</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+to the system must not exceed the limits given in <RID>NFPA 24</RID></TST></TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.1.6"><TTL>Tracer Wire Continuity Test</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  To ensure future ability to locate non-metallic mains, require tracer wire continuity verification.  Delete 
-this requirement for metallic mains, including concrete mains with steel cylinders.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+this requirement for metallic mains, including concrete mains with steel cylinders.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT><TST>Test tracer wire for continuity after service connections have been completed and prior to final pavement or restoration.  Verify that tracer wire 
-is locatable with electronic utility locating equipment.  Repair breaks or separations and re-test for continuity.</TST></TXT><BRK/>
-<BRK/></SPT>
-</SPT></SPT><SPT><TTL>SYSTEM STARTUP</TTL><BRK/>
-<BRK/>
+is locatable with electronic utility locating equipment.  Repair breaks or separations and re-test for continuity.</TST></TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="3.4"><TTL>SYSTEM STARTUP</TTL><BRK />
+<BRK />
 <TXT>Water mains and appurtenances must be completely installed, disinfected, flushed, and satisfactory bacteriological sample results received prior 
 to permanent connections being made to the active distribution system.  Obtain approval by the Contracting Officer prior to the new water piping 
-being placed into service.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>CLEANUP</TTL><NED/><BRK/>
-<BRK/>
-<TXT>Upon completion of the installation of water lines and appurtenances, remove all debris and surplus materials resulting from the work.</TXT><BRK/>
-<BRK/></SPT>
-</PRT>    <END/><BRK/></SEC>
+being placed into service.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5"><TTL>CLEANUP</TTL><NED /><BRK />
+<BRK />
+<TXT>Upon completion of the installation of water lines and appurtenances, remove all debris and surplus materials resulting from the work.</TXT><BRK />
+<BRK /></SPT>
+</PRT>    <END /><BRK /></SEC>
