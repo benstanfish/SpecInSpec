@@ -18,6 +18,8 @@ from pathlib import Path
 from defusedxml import ElementTree as ET
 from xml.etree.ElementTree import Element
 
+import minify_html
+
 def get_timestamp(as_day:bool=False) -> str:
     if as_day:
         return datetime.now().strftime("%Y-%m-%d")
@@ -197,8 +199,10 @@ def make_html_from_sec(sec_path:str, output_path:str='') -> dict:
         soup = update_html_outline(soup)
         soup.prettify()
 
+        mini_html = minify_html.minify(str(soup), keep_comments=False, minify_css=True, minify_js=True)
+
         with open(html_file, 'w', encoding='utf-8') as file:
-            file.write(str(soup))
+            file.write(mini_html)
 
         return section_info
 

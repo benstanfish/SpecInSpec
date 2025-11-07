@@ -1,5 +1,3 @@
-
-
 switches = Array(
     "notes-toggle-switch",
     "nte-toggle-switch",
