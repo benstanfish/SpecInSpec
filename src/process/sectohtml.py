@@ -119,7 +119,7 @@ def make_subfolder(a_path:str, subfolder_name:str) -> str:
     return new_path
 
 
-def process_sec_file(sec_path:str, output_path:str='') -> dict:
+def make_html_from_sec(sec_path:str, output_path:str='') -> dict:
 
         tree = ET.parse(sec_path)
         root = tree.getroot()
@@ -132,7 +132,7 @@ def process_sec_file(sec_path:str, output_path:str='') -> dict:
         try:
             _section = root.find('SCN').text.replace('SECTION ', '').strip()
         except:
-            _section = 'Section number not found'
+            _section = Path(sec_path).stem + " - STL TAG ERROR"
         try:
             _title = root.find('STL').text.title().strip()
         except:
@@ -142,6 +142,7 @@ def process_sec_file(sec_path:str, output_path:str='') -> dict:
         except:
             _date = ''
 
+        
         section_info = {
             'section': _section,
             'title': _title,

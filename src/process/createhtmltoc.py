@@ -20,6 +20,7 @@ def get_timestamp(as_day:bool=False) -> str:
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 
+
 def create_error_html(html_dir:str) -> None:
     error_report = os.path.join(html_dir, 'errors.txt')
     if os.path.exists(error_report):

@@ -17,13 +17,35 @@ Example usage:
     >>> clean0x81.clean_0x81_files('path/do/dir', 'path/do/new_dir', '.sec')
 """
 
-__all__ = ['get_0x81_file_list', 'clean_0x81_files']
+__all__ = ['get_0x81_file_list', 'clean_files']
 
 import os, shutil
 from pathlib import Path
 from ..escapes.escapes import Escapes
 
-def clean_0x81_file(file_path: str, 
+
+
+
+
+def test_file_for_0x81(file_path: str) -> bool:
+    """Determine if the file contains occurances of the 0x81 character.
+
+    Args:
+        file_path (str): Path to .xml, .sec or other file.
+
+    Returns:
+        bool: True if file contains 0x81.
+    """
+    try: 
+        with open(file_path, 'r') as file:
+            content = file.read()
+        return False
+    except:
+        return True
+
+
+
+def clean_file(file_path: str, 
                     new_path: str='') -> None:
     """Replaces the 0x81 byte (all occurances) and saves to file.
 
@@ -48,21 +70,8 @@ def clean_0x81_file(file_path: str,
         pass
     # print(f'Cleaned file written {'new file' if new_path else 'existing path'}: {new_path if new_path else file_path}')
 
-def file_has_0x81(file_path: str) -> bool:
-    """Determine if the file contains occurances of the 0x81 character.
 
-    Args:
-        file_path (str): Path to .xml, .sec or other file.
 
-    Returns:
-        bool: True if file contains 0x81.
-    """
-    try: 
-        with open(file_path, 'r') as file:
-            content = file.read()
-        return False
-    except:
-        return True
 
 def get_file_dict(parent_dir: str, 
                   extension: str='.sec') -> dict:
@@ -80,7 +89,10 @@ def get_file_dict(parent_dir: str,
                     if Path(file).suffix.lower() == extension]
     return {Path(file_path).stem: file_path for file_path in file_list}
 
-def files_have_0x81(file_dict: dict) -> bool:
+
+
+
+def test_files_for_0x81(file_dict: dict) -> bool:
     """Loops through files in dictionary to test if each file has 0x81 character and prints color-coded results to console.
 
     Args:
@@ -92,7 +104,7 @@ def files_have_0x81(file_dict: dict) -> bool:
     dir_has_0x81 = False
     print('='*75)
     for file_stem, path in file_dict.items():
-        file_with_0x81 = file_has_0x81(path)
+        file_with_0x81 = test_file_for_0x81(path)
         if file_with_0x81:
             dir_has_0x81 = file_with_0x81
         print(f'{file_stem}: {Escapes.Red + Escapes.Bold if file_with_0x81 \
@@ -101,6 +113,10 @@ def files_have_0x81(file_dict: dict) -> bool:
     print(f'File dictionary {Escapes.Red + Escapes.Bold + 'has' if dir_has_0x81 \
                        else Escapes.Green + 'does not'}{Escapes.Reset} files with 0x81 character.\n')
     return dir_has_0x81
+
+
+
+
 
 def get_0x81_file_list(parent_dir: str=r'../../specs/sec', 
                        extension: str='.sec') -> None:
@@ -113,7 +129,7 @@ def get_0x81_file_list(parent_dir: str=r'../../specs/sec',
     file_dict = get_file_dict(parent_dir=parent_dir, extension=extension)
     has_list = []
     for file_stem, path in file_dict.items():
-        if file_has_0x81(path):
+        if test_file_for_0x81(path):
             has_list.append(Path(path).name)
     report_path = os.path.join(parent_dir, 'files_with_0x81.txt')
     try:
@@ -126,31 +142,44 @@ def get_0x81_file_list(parent_dir: str=r'../../specs/sec',
     except Exception as e:
         print(f'An exception occurred when trying to write the report: {e}')
 
-def clean_0x81_files(orig_dir: str, 
-                     new_dir: str, 
-                     file_type: str='.sec') -> str:
-    """Clean all files in a specified directory, copying to new directory (or overwrite existing files).
+
+
+
+
+def clean_files(orig_dir: str, temp_dir: str, file_type: str='.sec') -> dict:
+    """Clean all files in a specified directory, copying to new temp directory.
 
     Args:
-        orig_dir (str, optional): Path to directory with source files.
-        new_dir (str, optional): Path to directory to place new files. Use orig_dir to overwrite existing.
+        orig_dir (str): _description_
+        file_type (str, optional): _description_. Defaults to '.sec'.
+
+    Returns:
+        dict: _description_
     """
     
-    orig_files = get_file_dict(orig_dir, file_type)
+    target_files = get_file_dict(orig_dir, file_type)
+    
+    if not os.path.exists(temp_dir):
+        os.mkdir(os.path.abspath(temp_dir))
 
-    if not os.path.exists(new_dir):
-        os.mkdir(os.path.abspath(new_dir))
+    processed_files_dict = {}
 
-    cleaned_files = {}
-    for section, path in orig_files.items():
-        new_path = os.path.join(os.path.abspath(new_dir), section + file_type)
-        if new_path != path:
-            if file_has_0x81(path):
-                clean_0x81_file(path, new_path)
-            else:
-                shutil.copy(path, new_path)
-            cleaned_files[section] = new_path
+    for section, path in target_files.items():
+        new_path = os.path.join(os.path.abspath(temp_dir), section + file_type)
+        if test_file_for_0x81(path):
+            clean_file(path, new_path)
+            processed_files_dict[section] = {
+                'path': path,
+                'temp': new_path,
+                'has_0x81': True
+            }
         else:
-            cleaned_files[section] = path
-    return new_dir
+            shutil.copy(path, new_path)
+            processed_files_dict[section] = {
+                'path': path,
+                'temp': new_path,
+                'has_0x81': False
+            }
+
+    return processed_files_dict
 
