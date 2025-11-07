@@ -205,5 +205,3 @@ def make_html_from_sec(sec_path:str, output_path:str='') -> dict:
             file.write(mini_html)
 
         return section_info
-
-
