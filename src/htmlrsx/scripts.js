@@ -19,7 +19,8 @@ switches = Array(
     "color-srf-toggle-switch",
     "color-stl-toggle-switch",
     "sub-toggle-switch",
-    "color-sub-toggle-switch"
+    "color-sub-toggle-switch",
+    "toggle_all"
 )
 
 
@@ -127,12 +128,29 @@ function toggle_color_style(toggle_element_id, target_elements_class_name, custo
 }
 
 
+function toggle_all_tags(toggle_element) {
+    const all_display_tags = document.querySelectorAll('[class^="display_"]');
+    toggle_element.addEventListener('change', () => {
+        all_display_tags.forEach( item => {
+            if (toggle_element.checked) {
+                item.style.display = 'inline';
+            } else {
+                item.style.display = 'none';
+            }
+        })
+    })
+}
+
+
 let topButton = document.getElementById("topBtn");
 let menuButton = document.getElementById("menuBtn");
 menuButton.onclick = function() {toggleMenu()};
 
-window.onscroll = function() {scrollFunction()};
+let toggleAllButton = document.getElementById("toggle-all-switch")
+toggle_all_tags(toggleAllButton)
 
+
+window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topButton.style.display = "block";

@@ -310,31 +310,42 @@ tr td:first-of-type {
     font-weight: bold;
 }
 
+[class^="display_"] {
+    display: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--note-color);
+}
+
 
 .display_NTE,
 .display_NPR {
     display: none;
     color: white;
     background-color: orange;
-    font-weight: bold
+    font-weight: bold;
+    font-size: inherit;
 }
 
 .display_ENG,
 .display_MET {
     display: none;
     font-weight: bold;
+    font-size: inherit;
 }
 
 .display_ENG {
     background-color: var(--eng-color);
     color: white;
     font-weight: bold;
+    font-size: inherit;
 }
 
 .display_MET {
     background-color: var(--met-color);
     color: white;
     font-weight: bold;
+    font-size: inherit;
 }
 
 .display_RID {
@@ -342,12 +353,14 @@ tr td:first-of-type {
     color: white;
     font-weight: bold;
     display: none;
+    font-size: inherit;
 }
 
 .display_RTL {
     display: none;
     color: var(--rtl-color);
     background-color: rgb(255, 211, 255);
+    font-size: inherit;
 }
 
 .display_DEL {
@@ -355,6 +368,7 @@ tr td:first-of-type {
     color: white;
     font-weight: bold;
     display: none;
+    font-size: inherit;
 }
 
 .display_ADD {
@@ -362,8 +376,9 @@ tr td:first-of-type {
     color: white;
     font-weight: bold;
     display: none;
+    font-size: inherit;
 }
-
+/* 
 .display_AST {
 
 }
@@ -406,7 +421,6 @@ tr td:first-of-type {
 
 
 
-
 .display_SCN {
 
 }
@@ -415,12 +429,13 @@ tr td:first-of-type {
 
 }
 
-.display_SPT {
+.display_SPT { 
 
-}
+}*/
 
 .display_SRF {
     display: none;
+    font-size: inherit;
 }
 
 .display_STL {
@@ -429,11 +444,12 @@ tr td:first-of-type {
 
 .display_SUB {
     display: none;
-    color: var(--sub-color);
-    background-color: var(--sub-bg);
+    color: var(--sub-color) !important;
+    background-color: var(--sub-bg) !important;
+    font-size: inherit;
 }
 
-.display_TAB {
+/* .display_TAB {
 
 }
 
@@ -455,7 +471,7 @@ tr td:first-of-type {
 
 .display_URL {
 
-}
+} */
 
 .brackets {
     background-color: yellow;

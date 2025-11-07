@@ -155,7 +155,55 @@ def make_html_from_sec(sec_path:str, output_path:str='') -> dict:
         with open(sec_path, 'r') as file:
             content = file.read()
 
-        display_tags = ['NTE', 'NPR', 'ENG', 'MET', 'RID', 'RTL', 'ADD', 'DEL', 'SRF', 'STL', 'SUB']
+        display_tags = ['ADD',
+            # 'ALN',
+            'AST',
+            # 'BRK',
+            # 'BRL',
+            # 'CEL',
+            # 'COL',
+            'DEL',
+            # 'DTA',
+            'DTE',
+            # 'END',
+            'ENG',
+            'HDR',
+            'HL1',
+            'HL4',
+            'ITM',
+            'LST',
+            'MET',
+            # 'MTA',
+            # 'NED',
+            'NPR',
+            'NTE',
+            'ORG',
+            'PRA',
+            'PRT',
+            'REF',
+            'RID',
+            # 'ROW',
+            'RTL',
+            'SCN',
+            'SCP',
+            # 'SEC',
+            'SPT',
+            'SRF',
+            'STL',
+            # 'STS',
+            # 'STY',
+            'SUB',
+            'TAB',
+            'TAI',
+            # 'TDA',
+            'TST',
+            # 'TTL',
+            'TXT',
+            'URL',
+            # 'WBK'
+            ]
+
+        # display_tags = ['NTE', 'NPR', 'ENG', 'MET', 'RID', 'RTL', 'ADD', 'DEL', 'SRF', 'STL', 'SUB']
         for display_tag in display_tags:
             content = add_display_tags(tag_name=display_tag, all_text=content)
         content = wrap_brackets_in_span(content)
