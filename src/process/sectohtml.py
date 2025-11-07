@@ -134,7 +134,7 @@ def make_html_from_sec(sec_path:str, output_path:str='') -> dict:
         try:
             _section = root.find('SCN').text.replace('SECTION ', '').strip()
         except:
-            _section = Path(sec_path).stem + " - STL TAG ERROR"
+            _section = Path(sec_path).stem + "---STL TAG ERROR"
         try:
             _title = root.find('STL').text.title().strip()
         except:
