@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
+<HDR><AST/><BRK/>
+USACE / NAVFAC / AFCEC / NASA            UFGS-06 41 16.00 10 (August 2010)<BRK/>
+                                         Change 1 - 11/18<BRK/>
+                                         ---------------------------------<BRK/>
+Preparing Activity:  <PRA>USACE</PRA>               Nontechnical Title Revision<BRK/>
+                                         (August 2015)<BRK/>
+<BRK/>
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
+<BRK/>
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK/>
+<AST/><BRK/></HDR>
+<BRK/>
+<SCN>SECTION 06 41 16.00 10</SCN><BRK/>
+<BRK/>
+<STL>PLASTIC-LAMINATE-CLAD ARCHITECTURAL CABINETS</STL><BRK/>
+<DTE>08/10</DTE><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project.  The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>laminate clad architectural 
+casework</SCP>.<BRK/>
+<BRK/>
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.<BRK/>
+<BRK/>
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<BRK/>
+<BRK/>
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Designer should require materials, products, and innovative construction 
+methods and techniques which are environmentally sensitive, take advantage of 
+recycling and conserve natural resources.<BRK/>
+<BRK/>
+Executive Order No. 12873, dated 20 October 1993, requires that Federal Agencies 
+use environmentally preferable products and services and implement cost-effective 
+procurement preference programs favoring purchase of these products and services.  
+"Environmentally preferable" products and services are those that have a lesser 
+or reduced effect on human health and the environment when compared with competing 
+products or services that serve the same purpose.  This comparison may consider 
+raw materials, components, acquisition, production, manufacturing, packaging, 
+distribution, reuse, operation, maintenance, or disposal of the product or service.<BRK/>
+<BRK/>
+Factors to consider include, but are not limited to:<BRK/>
+<BRK/>
+   1)  Ease of repairability and high durability.  A lesser frequency of replacement 
+reduces landfill (i.e., need for more natural resources and energy) costs.<BRK/>
+<BRK/>
+   2)  Manufacturer/fabricator programs in place that reduce energy required 
+or re-cycle energy, water, by-products, or waste materials in production methods.<BRK/>
+<BRK/>
+   3) Low volatile organic compounds (VOCs) and off-gassing in the production, 
+fabrication, assembly, and installation of materials and components.<BRK/>
+<BRK/>
+Evaluation of the sustainable efforts of a manufacturer is subjective.  There 
+are no current measurable aspects of a sustainable program for casework materials 
+which easily qualifies or disqualifies a manufacturer or fabricator.  The submittal 
+reviewer should use the information provided in the Department of Army ETL 1110-3-491 
+in conjunction with a common sense approach in making the evaluation.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>REFERENCES</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification.  The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK/>
+<BRK/>
+Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<BRK/>
+<BRK/>
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK/>
+<BRK/>
+<REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK/>
+<BRK/>
+<RID>ASTM E84</RID><RTL>(2023) 
+Standard Test Method for Surface Burning Characteristics 
+of Building Materials</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION (ISO)</ORG><BRK/>
+<BRK/>
+<RID>ISO 16893</RID>   <RTL>(2016) Wood-based Panels - Particleboard</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG><BRK/>
+<BRK/>
+<RID>JIS A 1901</RID><RTL>(2015) Determination of the Emission of Volatile 
+Organic Compounds and Aldehydes by Building 
+Products - Small Chamber Test Method</RTL><BRK/>
+<BRK/>
+<RID>JIS A 5905</RID><RTL>(2014) Fiberboards</RTL><BRK/>
+<BRK/>
+<RID>JIS A 5908</RID><RTL>(2015) Particleboards</RTL><BRK/>
+<BRK/>
+<RID>JIS B 1099</RID><RTL>(2019) Construction Standard Specification</RTL><BRK/>
+<BRK/>
+<RID>JIS K 6903</RID><RTL>(2008) Laminated Thermosetting High-Pressure 
+Decorative Sheets</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>MINISTRY 
+OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM (MLIT)</ORG><BRK/>
+<BRK/>
+<RID>MLIT SS Chapter 12</RID><RTL>(2019) Public Building Construction Standard 
+Specification Chapter 12: Wood Work</RTL><BRK/>
+<BRK/></REF>
+</SPT><SPT><TTL>SYSTEM DESCRIPTION</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The term "laminate clad architectural casework" as used herein includes 
+all wood assembly components and specially designed and fabricated custom casework 
+that requires a high pressure decorative laminate finish.  This should include 
+such items as restroom vanities, cabinets, and built-in shelving as detailed 
+and located on the drawings.  Items such as running trim, moldings, wood railings,and 
+other wood decorative components should be specified in Section <SRF>06 20 00</SRF> FINISH 
+CARPENTRY.  Prefabricated, modular casework and cabinetry should be specified 
+in Section <SRF>12 32 00</SRF> MANUFACTURED WOOD CASEWORK.<BRK/>
+<BRK/>
+Solid polymer (solid surfacing) components of laminate architectural casework, 
+such as countertops, will be constructed in accordance with Section 
+<SRF>06 61 16</SRF> SOLID SURFACING FABRICATIONS.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Work in this section includes laminate clad custom casework [cabinets] [vanities] [_____] as shown on the drawings 
+and as described in this specification.  This Section includes high-pressure laminate surfacing and cabinet hardware.  
+Comply with EPA requirements in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  All exposed and semi-exposed 
+surfaces, whose finish is not otherwise noted on the drawings or finish schedule, shall be sanded smooth and 
+shall receive a clear finish of polyurethane.  Wood finish may be shop finished or field applied in accordance 
+with Section <SRF>09 90 00</SRF> PAINTS AND COATINGS.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>SUBMITTALS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.<BRK/>
+<BRK/>
+The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G."  Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a “G” to an item, if the submittal is sufficiently important or complex 
+in context of the project.<BRK/>
+<BRK/>
+For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority.  Codes following the "G" typically 
+are not used for Navy, Air Force, and NASA projects.<BRK/>
+<BRK/>
+The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
+submittal under the SD number that best describes the submittal item.<BRK/>
+<BRK/>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are for [Contractor Quality Control approval.] [information only.  When used, a designation following the "G" 
+designation identifies the office that will review the submittal for the Government.]  Submit the following in 
+accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
+<BRK/>
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Shop Drawings</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Installation</SUB></ITM><BRK/>
+<BRK/>
+<LST><SUB>SD-03 Product Data</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Finish Schedule</SUB></ITM><BRK/>
+<BRK/>
+<LST><SUB>SD-04 Samples</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Plastic Laminates</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Cabinet Hardware</SUB></ITM><BRK/>
+<BRK/>
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>QUALITY ASSURANCE</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This specification relies heavily on standards developed by the Architectural 
+Woodwork Institute (AWI), a national not-for-profit organization of manufacturers 
+of architectural woodwork, suppliers to the industry, and design professionals 
+to provide specifications which accurately describe and quantify minimum standards 
+for architectural woodwork.</NPR><BRK/>
+<BRK/>
+<NPR>AWI architectural woodwork quality standards for casework materials and fabrication 
+lists three quality categories: premium, custom, and economy grade.  The specifier 
+must judge the level of quality required for the specific end use conditions.  
+The specifier should become familiar with the differences between custom and 
+premium grade quality differences before editing this specification.<BRK/>
+<BRK/>
+To insure suitable durability and appearance it is recommended that either the 
+custom or premium grade quality be selected.  Economy grade should only be considered 
+where severe funding limitations dictate this lesser quality be specified.  
+AWI Sections 400G and 400B indicate the differences between grades regarding 
+acceptable materials for substrates and components, fabrication methods, joinery, 
+tolerances, and other factors.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>General Requirements</TTL><BRK/>
+<BRK/>
+<TXT>Unless otherwise noted on the drawings, all materials, construction methods, and fabrication shall conform to 
+and comply with the [premium] [custom] grade quality standards as outlined in this specification. Contractors 
+and their personnel engaged in the work shall be able to demonstrate successful experience with work of comparable 
+extent, complexity and quality to that shown and specified.  Submit a quality control statement which illustrates 
+compliance with and understanding of project requirements.  The quality control statement shall also certify 
+a minimum of ten years Contractor's experience in laminate clad casework fabrication and construction.  The quality 
+control statement shall provide a list of a minimum of five successfully completed projects of a similar scope, 
+size, and complexity.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK/>
+<BRK/>
+<TXT>Casework may be delivered knockdown or fully assembled.  Deliver all units to the site in undamaged condition, 
+stored off the ground in fully enclosed areas, and protected from damage.  The storage area shall be well ventilated 
+and not subject to extreme changes in temperature or humidity.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>SEQUENCING AND SCHEDULING</TTL><BRK/>
+<BRK/>
+<TXT>Coordinate work with other trades.  Units shall not be installed in any room or space until painting, and ceiling 
+installation are complete within the room where the units are located.  Floor cabinets shall be installed before 
+finished flooring materials are installed.</TXT><BRK/>
+<BRK/></SPT>
+</PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>WOOD MATERIALS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Lumber</TTL><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  All framing lumber shall be kiln-dried with moisture content 6 to 8 percent, to dimensions as shown 
+on the drawings.  Frame front, where indicated on the drawings, shall be nominal<MET> 15 mm to 19 mm</MET><ENG> 3/4 inch</ENG>
+ hardwood.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Standing or running trim casework components, which are specified to receive a transparent finish, 
+shall be [_____] hardwood species, plain sawn.  Grade shall be [premium] [custom].  Location, shape, 
+and dimensions shall be as indicated on the drawings.</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Panel Products</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The plastic laminate industry recommends using medium density fiber board 
+(MDF) or medium density particleboard as suitable panel substrates.  The use 
+of plywood is discouraged whenever possible due to the potential for stress 
+crack, shrink-back, and telegraphing problems.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>Plywood</TTL><BRK/>
+<BRK/>
+<TXT>All plywood panels used for framing purposes shall be veneer core hardwood plywood.  Nominal thickness of plywood 
+panels shall be as indicated in this specification and on the drawings.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Particleboard</TTL><BRK/>
+<BRK/>
+<TXT>All particleboard shall be industrial grade, medium density (<MET>640 to 800 kg per cubic meter</MET><ENG> 40 to 50 pounds per 
+cubic foot</ENG>), <MET>15 mm to 19 mm</MET><ENG> 3/4 inch</ENG> thick.  A moisture-resistant particleboard shall be used as the substrate 
+for plastic laminate covered [countertops] [backsplashes] [_____] [components as located on the drawings] and 
+other areas subjected to moisture.  Particleboard shall meet the minimum standards listed in <RID>JIS A 5908</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Medium Density Fiberboard</TTL><BRK/>
+<BRK/>
+<TXT>Medium density fiberboard (MDF) shall be an acceptable panel substrate where noted on the drawings.  Medium density 
+fiberboard shall meet the minimum standards listed in <RID>JIS A 5905</RID>.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></SPT><SPT><TTL>SOLID POLYMER MATERIAL</TTL><BRK/>
+<BRK/>
+<TXT>Solid surfacing casework components shall conform to the requirements of Section <SRF>06 61 16</SRF> SOLID SURFACING FABRICATIONS.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>HIGH PRESSURE DECORATIVE LAMINATE (HPDL)</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The grades listed in this paragraph should be edited to include only 
+those grades required for the specific end use of the casework and components.  
+General characteristics and intended end uses are as follows:<BRK/>
+<BRK/>
+Horizontal HGS grade is thicker and therefore the most durable.  It is not intended 
+to be post formed to a tight radius.<BRK/>
+<BRK/>
+Vertical VGS grade is thinner and does not have the impact resistance of a horizontal grade.<BRK/>
+<BRK/>
+Horizontal HGP and vertical VGP grades are thinner than their general purpose 
+grade counterparts and are engineered specially for post forming to tight inside 
+and outside bends.<BRK/>
+<BRK/>
+Cabinet liner CLS grade is much thinner than general purpose vertical grade 
+and is intended for light duty use on such surfaces as semi-exposed interior 
+cabinet body and drawer interior surfaces.<BRK/>
+<BRK/>
+Horizontal HGF and vertical VGF grades are specially formulated to provide a 
+Class A flammability rating in accordance with ASTM E84-00a, where required.<BRK/>
+<BRK/>
+Backing sheet BK grade is intended for use on the back side of laminated panels 
+or components to prevent moisture and humidity absorption and minimize warpage, 
+thereby maximizing dimensional stability of the laminated panel substrate material.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>All <SUB>plastic laminates</SUB> shall meet the requirements of <RID>JIS K 6903</RID> for high-pressure decorative laminates.  Design, 
+colors, surface finish and texture, and locations shall be as indicated on [the drawings].  Submit two samples 
+of each plastic laminate pattern and color.  Samples shall be a minimum of<MET> 120 by 170 mm</MET><ENG> 5 by 7 inches</ENG> in size.  
+Plastic laminate types and nominal minimum thicknesses for casework components shall be as indicated in the following 
+paragraphs.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Horizontal General Purpose Standard (HGS) Grade</TTL><BRK/>
+<BRK/>
+<TXT>Horizontal general purpose standard grade plastic laminate shall be<MET> 0.95 mm to 1.2 mm </MET>in thickness.  This laminate 
+grade is intended for horizontal surfaces where postforming is not required.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Vertical General Purpose Standard (VGS) Grade</TTL><BRK/>
+<BRK/>
+<TXT>Vertical general purpose standard grade plastic laminate shall be<MET> 0.55 mm to 0.7 mm</MET><ENG> 0.028 inches (plus or minus 
+0.004 inches)</ENG> in thickness.  This laminate grade is intended for exposed exterior vertical surfaces of casework 
+components where postforming is not required.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Horizontal General Purpose Postformable (HGP) Grade</TTL><BRK/>
+<BRK/>
+<TXT>Horizontal general purpose postformable grade plastic laminate shall be<MET> 0.95 mm to 1.2 mm</MET><ENG> 0.042 inches (plus 
+or minus 0.005 inches)</ENG> in thickness.  This laminate grade is intended for horizontal surfaces where post forming 
+is required.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Vertical General Purpose Postformable (VGP) Grade</TTL><BRK/>
+<BRK/>
+<TXT>Vertical general purpose postformable grade plastic laminate shall be<MET> 0.7 mm</MET><ENG> 0.028 inches (plus or minus 0.004 
+inches)</ENG>in thickness.  This laminate grade is intended for exposed exterior vertical surfaces of components where 
+postforming is required for curved surfaces.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Horizontal General Purpose Fire Rated (HGF) Grade (U.S. Product only)</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Where fire rated assemblies are required, it is important to note that 
+each material, including the finish, substrate, and other component materials 
+must each be tested separately to conform with the required fire rating.  Testing 
+of assemblies as an integral system is not allowed.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Horizontal general purpose fire rated grade plastic laminate shall be<MET> 1.22 mm (plus or minus 0.127 mm)</MET><ENG> 0.048 
+inches (plus or minus 0.005 inches)</ENG> in thickness.  Laminate grade shall have a class 1, class A fire rating in 
+accordance with <RID>ASTM E84</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Vertical General Purpose Fire Rated (VGF) Grade</TTL><BRK/>
+<BRK/>
+<TXT>Vertical general purpose fire rated grade plastic laminate shall be<MET> 0.71 mm (plus or minus 0.012 mm)</MET><ENG> 0.028 inches 
+(plus or minus 0.004 inches)</ENG> in thickness.  This laminate grade shall have a class 1, class A fire rating in 
+accordance with <RID>ASTM E84</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Cabinet Liner Standard (CLS) Grade</TTL><BRK/>
+<BRK/>
+<TXT>Cabinet liner standard grade plastic laminate shall be<MET> 0.55 mm</MET><ENG> 0.020 inches</ENG> in thickness.  This laminate grade 
+is intended for light duty semi-exposed interior surfaces of casework components.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Backing Sheet (BK) Grade</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  All panel substrates not mechanically constrained, should be backed with 
+a laminate manufacturer's backing sheet to minimize moisture absorption and 
+provide substrate stabilization.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Undecorated backing sheet grade laminate is formulated specifically to be used on the backside of plastic laminated 
+panel substrates to enhance dimensional stability of the substrate.  Backing sheet thickness shall be<MET> 0.51 mm</MET><ENG>
+ 0.020 inches</ENG>.  Backing sheets shall be provided for all laminated casework components where plastic laminate 
+finish is applied to only one surface of the component substrate.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>THERMOSET DECORATIVE OVERLAYS (MELAMINE)</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Thermoset decorative overlays are also called low pressure decorative 
+laminate or melamine.  This product is usually pre laminated by thermal fusion 
+to particleboard, medium density fiber board or other cellulosic material to 
+form a part of the manufactured panel.  Performance characteristics are equal 
+to a<MET> 0.5 mm</MET><ENG> 0.020 inch</ENG> thick general purpose grade or liner grade HPDL laminate.  
+Primary use is as an alternate solution for liner grade laminate for cabinet 
+interiors.  Drawback lies in limited color availability from most manufacturers 
+compared to HPDL.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Thermoset decorative overlays (melamine panels) shall be used for [casework cabinet interior] [drawer interior] 
+[all semi-exposed] [_____] surfaces.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>EDGE BANDING</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  PVC edge banding for cabinet door and drawer front edges is a standard, 
+industry-wide approved and widely used alternative to using plastic laminate.  
+Advantages include:<BRK/>
+<BRK/>
+1) A more flexible material for better adhesion to substrate and minimization 
+of delamination problems often occurring with laminate edges.<BRK/>
+<BRK/>
+2) Solid color through the banding eliminates the contrasting dark line at door 
+and drawer edges typically found when plastic laminate is used to finish the 
+edges, especially with light and solid colored laminates.<BRK/>
+<BRK/>
+3) PVC is more durable and less brittle under impact than laminate.  Typical 
+installation detail and product standard width allows the PVC edging to overlap 
+the laminate edge on the front and back surfaces of the doors and drawers to 
+protect and minimizes the chance of chipped door edges commonly seen with laminate 
+edged installations.<BRK/>
+<BRK/>
+The most common edge banding is<MET> 0.5 mm</MET><ENG> 0.020 inch</ENG> in thickness and<MET> 24 mm</MET><ENG> 15/16 
+inch</ENG> wide.  This edge banding is available in almost all solid colors and many 
+patterns and woodgrains to match all major laminate selections.  If matching 
+is desired, recommend coordination and selection during casework design to insure availability.<BRK/>
+<BRK/>
+Edge banding is also available in other thicknesses for more durability, however, 
+color selection is very limited in these greater thicknesses.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Edge banding for casework doors and drawer fronts shall be PVC vinyl and shall be [<MET>0.5 mm</MET><ENG> 0.020 inch</ENG>] [<MET>3 mm</MET><ENG> 0.125 
+inch</ENG>] [_____] thick.  Material width shall be [as indicated on the drawings] [_____].  Color and pattern shall 
+[match exposed door and drawer front laminate pattern and color] [be as indicated on the drawings] [_____].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL><SUB>CABINET HARDWARE</SUB></TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  To insure a minimum standard quality is met, every attempt should be 
+made to utilize standard hardware components which can be found in ANSI/BHMA 
+A156.9.  Use the ANSI/BHMA numbering system to provide a BHMA number for each 
+component which specifies the product class, base material, type of product, 
+description, and grade.<BRK/>
+<BRK/>
+Specially designed, custom, or proprietary hardware should be thoroughly described 
+and defined in this paragraph.<BRK/>
+<BRK/>
+The basic hardware components listed and described below are not inclusive.  
+The list should be edited to modify, delete, or add hardware components as necessary 
+to provide the specifications required for each end use and casework function.</NPR><BRK/>
+<BRK/>
+<NPR>Hinge type will depend on cabinet construction style requiring flush, inset 
+lipped, or overlay door design, and desired appearance.  Wherever possible it 
+is highly recommended that self-closing hinges be utilized to eliminate the 
+need for door catches, latches, or magnets which require constant adjustment 
+and have a high failure rate after extended use.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Submit one sample of each cabinet hardware item specified to include [hinges], [pulls], [drawer glides], and 
+[_____].  All hardware shall follow the requirements to <RID>MLIT SS Chapter 12</RID>, unless otherwise noted, and shall 
+consist of the following components:</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Door Hinges</TTL><BRK/>
+<BRK/>
+<TXT>[_____] type.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Cabinet Pulls</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Cabinet pulls come in a wide variety of styles, finishes, and sizes many 
+of which do not fit a BHMA category.  Where a BHMA number is not appropriate, 
+provide a detailed description and commercial model number for reference.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>[_____] type.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Drawer Slide</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  For drawer stability, superior support, durability, and maximum load 
+capability, only side mounted hinges should be specified.  Full extension slides 
+provide maximum utilization of drawer space and aid in cleaning.<BRK/>
+<BRK/>
+Bottom or top center-mounted slides should only be specified where side clearance 
+precludes the use of side-mounted slides.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Side mounted [_____] type, with [full] [_____] extension and a minimum [<MET>34 kg</MET><ENG> 75 pound</ENG>] [<MET>45 kg</MET><ENG> 100 pound</ENG>] [_____] 
+load capacity.  Slides shall include an [integral] [positive] stop to avoid accidental drawer removal.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Adjustable Shelf Support System</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Two methods for shelf support are approved by AWI.  For premium grade 
+AWI requires recessed (mortised) metal shelf standards with snap-in metal clips 
+or multiple drilled holes with metal shelf rests.  AWI custom grade allows only 
+multiple drilled holes with shelf rests.  Either system is satisfactory depending 
+on the specifier's requirements.  Surface mounted metal standards are not approved 
+under AWI premium and custom grades. Specifier shall choose a method from those 
+shown below or permit Contractor option.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>[Recessed (mortised) metal standards, finish: [_____].  Support clips for the standards shall be [open type,] 
+[closed type,] finish: [_____]] [Multiple holes with [metal] [plastic] [wood] pin supports].</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>FASTENERS</TTL><BRK/>
+<BRK/>
+<TXT>Nails, screws, and other suitable fasteners shall be the size and type best suited for the purpose and shall 
+conform to <RID>JIS B 1099</RID> where applicable.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>ADHESIVES, CAULKS, AND SEALANTS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Adhesives</TTL><BRK/>
+<BRK/>
+<TXT>Adhesives shall be of a formula and type recommended by manufacturer.  Adhesives shall be selected for their 
+ability to provide a durable, permanent bond and shall take into consideration such factors as materials to be 
+bonded, expansion and contraction, bond strength, fire rating, and moisture resistance. Adhesives shall meet 
+UL2818(Greenguard) Gold, SCS Global Services Indoor Advantage Gold, CDPH SECTION 01350 (limit requirements for 
+either office or classroom spaces regardless of space type), VOC content requirements of SCAQMD Rule 1168, or 
+F 4-Star regarding VOC emissions and off-gassing.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Wood Joinery</TTL><BRK/>
+<BRK/>
+<TXT>Adhesives used to bond wood members shall be for interior use [urea-formaldehyde resin formula] [polyvinyl acetate 
+resin emulsion] [_____].  Adhesives shall withstand a bond test as described in <RID>MLIT SS Chapter 12</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Laminate Adhesive</TTL><BRK/>
+<BRK/>
+<TXT>Adhesive used to join high-pressure decorative laminate to wood shall be [a water-based contact adhesive] [_____] 
+[adhesive consistent with AWI and laminate manufacturer's recommendations].  PVC edgebanding shall be adhered 
+using a polymer-based hot melt glue.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Caulk</TTL><BRK/>
+<BRK/>
+<TXT>Caulk used to fill voids and joints between laminated components and between laminated components and adjacent 
+surfaces shall be clear, 100 percent silicone.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Sealant</TTL><BRK/>
+<BRK/>
+<TXT>Sealant shall be of a type and composition recommended by the substrate manufacturer to provide a moisture barrier 
+at sink cutouts and all other locations where unfinished substrate edges may be subjected to moisture.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>WOOD FINISHES</TTL><BRK/>
+<BRK/>
+<TXT>Paint, stain, varnish and their applications required for laminate clad casework components shall be [_____] 
+[as indicated in Section <SRF>09 90 00</SRF> PAINTS AND COATINGS] [as indicated in Section <SRF>09 06 00</SRF> SCHEDULES FOR FINISHES].  
+Color and location shall be as indicated on the drawings.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>ACCESSORIES</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Glass and Glazing</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Specifier must select from glass types below or include specifications 
+for other glass type as required for the project.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Glass required in laminated casework shall be referenced by type in accordance with Section <SRF>08 81 00</SRF> GLAZING.  
+Glass shall be one of the following:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a. Type [A] [_____].</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b. [Float] [Patterned] glass: [Clear] [pattern] quality.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c. Safety glass: [Clear] [_____]; [heat strengthened] [fully tempered] [laminated] [_____]; [_____]<MET> mm</MET><ENG>
+ inches</ENG> thick minimum.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d. Wire Glass: [Clear] [_____], polished [both sides] [one side]; [square] [diagonal] [_____] mesh woven 
+stainless steel wire of grid [_____]<MET> mm</MET><ENG> inches</ENG> size; [_____]<MET> mm</MET><ENG> inches</ENG> thick.</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Grommets</TTL><BRK/>
+<BRK/>
+<TXT>Grommets shall be [plastic] [metal] [rubber] [_____] material for cutouts with a diameter of [_____]<MET> mm</MET><ENG> inches</ENG>
+.  Locations shall be as indicated on the drawings.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>FABRICATION</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Fabrication as described below is for typical casework cabinetry and 
+restroom vanity construction.  Techniques, methods, and materials would also 
+apply to other laminated architectural casework fabrications such as built-in 
+shelving, bookcases, and cafeteria counters.  Where one or more options are 
+shown, all options are acceptable for either AWI premium or custom grade unless 
+other wise noted.  The specification should be edited and tailored to describe 
+the particular casework items being fabricated.<BRK/>
+<BRK/>
+Shop fabrication and shop assembly of components should be maximized to the 
+extent possible.  Quality of fabrication and installation are generally superior 
+when accomplished in a millwork shop facility as opposed to field work.  Field 
+fabrication and assembly should be limited to those assemblies and final adjustments 
+necessary to finish installation of the casework.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Verify field measurements as indicated in the <SUB>shop drawings</SUB> before fabrication.  Fabrication and assembly of 
+components shall be accomplished at the shop site to the maximum extent possible.  Construction and fabrication 
+of cabinets and their components shall meet or exceed the requirements for AWI [premium] [custom] grade unless 
+otherwise indicated in this specification.  Cabinet style, shall be [flush overlay] [reveal overlay] [flush inset 
+without face frame] [flush inset with face frame] [as indicated on the drawings].</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Base and Wall Cabinet Case Body</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Specifier must choose a material from those listed below for each component 
+or permit Contractor option.<BRK/>
+<BRK/>
+Commentary: Japan cabinet utilize particleboard and MDF as the standard construction.  
+Plywood is available but it is uncommon.  Specify plywood at wet area.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>Cabinet Components</TTL><BRK/>
+<BRK/>
+<TXT>Frame members shall be glued-together, kiln-dried hardwood lumber.  Top corners, bottom corners, and cabinet 
+bottoms shall be braced with either hardwood blocks or water-resistant glue and nailed in place metal or plastic 
+corner braces.  Cabinet components shall be constructed from the following materials and thicknesses:</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Body Members (Ends, Divisions, Bottoms, and Tops)</TTL><BRK/>
+<BRK/>
+<TXT><MET>15 mm to 20 mm</MET><ENG> 3/4 inch</ENG> [veneered particleboard per <RID>JIS A 5908</RID>] [medium density fiberboard (MDF)] [veneer core 
+plywood] panel product</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Face Frames and Rails</TTL><BRK/>
+<BRK/>
+<TXT><MET>15 mm to 20 mm</MET><ENG> 3/4 inch</ENG> [hardwood lumber] [panel product]</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Shelving</TTL><BRK/>
+<BRK/>
+<TXT><MET>15 mm to 20 mm</MET><ENG> 3/4 inch</ENG> [veneered particleboard per <RID>JIS A 5908</RID> or <RID>ISO 16893</RID>] [medium density fiberboard (MDF)] 
+[veneer core plywood] panel product</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Cabinet Backs</TTL><BRK/>
+<BRK/>
+<TXT><MET>5 mm</MET><ENG> 1/4 inch</ENG> [veneered particleboard per <RID>JIS A 5908</RID> or <RID>ISO 16893</RID>] [medium density fiberboard (MDF)] [veneer 
+core plywood] panel product</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Drawer Sides, Backs, and Subfronts</TTL><BRK/>
+<BRK/>
+<TXT><MET>13 mm</MET><ENG> 1/2 inch</ENG> [hardwood lumber] [panel product]</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Drawer Bottoms</TTL><BRK/>
+<BRK/>
+<TXT><MET>5 mm</MET><ENG> 1/4 inch</ENG> [veneered particleboard per <RID>JIS A 5908</RID> or <RID>ISO 16893</RID>] [medium density fiberboard (MDF)] [veneer 
+core plywood] panel product</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Door and Drawer Fronts</TTL><BRK/>
+<BRK/>
+<TXT><MET>15 mm to 20 mm</MET><ENG> 3/4-inch</ENG> [veneered particleboard] [medium density fiberboard (MDF)] panel product</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Joinery Method for Case Body Members</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Specifier must choose a method from those listed below or permit Contractor 
+option.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>Tops, Exposed Ends, and Bottoms</TTL><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Steel "European" assembly screws (<MET>37 mm</MET><ENG> 1-1/2 inch</ENG> from end, <MET>128 mm</MET><ENG> 5 inch</ENG> on center, fasteners will 
+not be visible on exposed parts).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Doweled, glued under pressure (approx. 4 dowels per<MET> 300 mm</MET><ENG> 12 inches</ENG> of joint).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Stop dado, glued under pressure, and either nailed, stapled or screwed (fasteners will not be visible 
+on exposed parts).</LST><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The following method is approved for AWI custom grade only.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<LST INDENT="-0.33">d.  Spline or biscuit, glued under pressure.</LST> <BRK/>
+<BRK/></SPT>
+<SPT><TTL>Exposed End Corner and Face Frame Attachment</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Mitered Joint</TTL><BRK/>
+<BRK/>
+<TXT>Lock miter or spline or biscuit, glued under pressure (no visible fasteners)</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Non-Mitered Joint (90 degree)</TTL><BRK/>
+<BRK/>
+<TXT>Butt joint glued under pressure (no visible fasteners)</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Butt Joint</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This method is approved for AWI custom grade only.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Glued and nailed</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Cabinet Backs (Wall Hung Cabinets)</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Specifier must choose a method from those listed below or permit Contractor 
+option.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Wall hung cabinet backs must not be relied upon to support the full weight of the cabinet and its anticipated 
+load for hanging/mounting purposes.  Method of back joinery and hanging/mounting mechanisms should transfer the 
+load to case body members.  Fabrication method shall be:</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Full Bound</TTL><BRK/>
+<BRK/>
+<TXT>Full bound, captured in grooves on cabinet sides, top, and bottom.  Cabinet backs for floor standing cabinets 
+shall be side bound, captured in grooves; glued and fastened to top and bottom.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Full Overlay</TTL><BRK/>
+<BRK/>
+<TXT>Full overlay, plant-on backs with minimum back thickness of<MET> 13 mm </MET><ENG> 1/2 inch</ENG>and minimum No. 12 plated (no case 
+hardened) screws spaced a minimum<MET> 80 mm</MET><ENG> 3 inches</ENG> on center.  Edge of back shall not be exposed on finished sides.  
+Anchor strips are not required when so attached.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Side Bound</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This method is approved for AWI custom grade only.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Side bound, captured in groove or rabbetts; glued and fastened.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Cabinet Backs (Floor Standing Cabinets)</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Specifier must choose a method from those listed below or permit Contractor 
+option.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>Side Bound</TTL><BRK/>
+<BRK/>
+<TXT>Side bound, captured in grooves; glued and fastened to top and bottom.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Full Overlay</TTL><BRK/>
+<BRK/>
+<TXT>Full overlay, plant-on backs with minimum back thickness of<MET> 13 mm</MET><ENG> 1/2 inch</ENG> and minimum No. 12 plated (no case 
+hardened) screws spaced a minimum<MET> 80 mm</MET><ENG> 3 inches</ENG> on center.  Edge of back shall not be exposed on finished sides.  
+Anchor strips are not required when so attached.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Side Bound with Rabbetts</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This method is approved for AWI custom grade only.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Side bound, placed in rabbetts; glued and fastened in rabbetts.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Wall Anchor Strips</TTL><BRK/>
+<BRK/>
+<TXT>Wall Anchor Strips shall be required for all cabinets with backs less than<MET> 13 mm</MET><ENG> 1/2 inch</ENG> thick.  Strips shall 
+consist of minimum<MET> 13 mm</MET><ENG> 1/2 inch</ENG> thick lumber, minimum<MET> 60 mm</MET><ENG> 2-1/2 inches</ENG> width; securely attached to wall side 
+of cabinet back - top and bottom for wall hung cabinets, top only for floor standing cabinets.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></SPT><SPT><TTL>Cabinet Floor Base</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Care should be taken in the selection of cabinet floor base materials 
+in areas subjected to moisture (for example: adjacent flooring cleaned by wet-mopping 
+or liquid cleaners, and where the finished base material does not provide a 
+moisture barrier.  Recommend treated lumber, or panel products specifically 
+engineered to be moisture resistant, be used in these areas.<BRK/>
+<BRK/>
+Commentary: Japan standard board thickness is 15mm.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Floor cabinets shall be mounted on a base constructed of [nominal<MET> 50 mm</MET><ENG> 2 inch</ENG> thick lumber] [<MET>19 mm</MET><ENG> 3/4 inch</ENG> 
+particleboard] [<MET>19 mm</MET><ENG> 3/4 inch</ENG> fiberboard] [<MET>19 mm</MET><ENG> 3/4 inch</ENG> veneer core exterior plywood].  Base assembly components 
+shall be [treated lumber] [a moisture-resistant panel product].  Finished height for each cabinet base shall 
+be [not less than the full height of the installed, specified wall base] [as indicated on the drawings].  Bottom 
+edge of the cabinet door or drawer face shall [be flush with top of base] [extend below the top of the base as 
+indicated on the drawings].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Cabinet Door and Drawer Fronts</TTL><BRK/>
+<BRK/>
+<TXT>Door and drawer fronts shall be fabricated from [<MET>15 mm</MET><ENG> 3/4 inch</ENG> medium density particleboard] [<MET>15 mm</MET><ENG> 3/4 inch</ENG>
+ medium density fiberboard (MDF].  All door and drawer front edges shall be surfaced with [high pressure plastic 
+laminate] [PVC edgebanding], color and pattern [to match exterior face laminate] [as indicated on the drawings] 
+[as indicated in Section <SRF>09 06 00</SRF> SCHEDULES FOR FINISHES].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Drawer Assembly</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Specifier must choose the substrate material from those listed below 
+based on the proposed finish for the component.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>Drawer Components</TTL><BRK/>
+<BRK/>
+<TXT>Drawer components shall consist of a removable drawer front, sides, backs, and bottom.  Drawer components shall 
+be constructed of the following materials and thicknesses:</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Drawer Sides and Backs For Transparent Finish</TTL><BRK/>
+<BRK/>
+<TXT><MET>13 mm</MET><ENG> 1/2 inch</ENG> thick [solid hardwood lumber] [7-ply hardwood veneer core plywood (no voids), any species]</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Drawer Sides and Backs For Laminate Finish</TTL><BRK/>
+<BRK/>
+<TXT><MET>13 mm</MET><ENG> 1/2 inch</ENG> thick 7-ply hardwood veneer core substrate</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Drawer Sides and Back For Thermoset Decorative Overlay (Melamine) Finish</TTL><BRK/>
+<BRK/>
+<TXT><MET>13 mm</MET><ENG> 1/2 inch</ENG> thick medium density particleboard or MDF fiberboard substrate</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Drawer Bottom</TTL><BRK/>
+<BRK/>
+<TXT><MET>6 mm</MET><ENG> 1/4 inch</ENG> thick [veneer core panel product for transparent or plastic laminate finish] [thermoset decorative 
+overlay melamine panel product]</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Drawer Assembly Joinery Method</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Specifier must choose a method from those listed below or permit Contractor 
+option.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<LST INDENT="-0.33">a. Multiple dovetail (all corners) or French dovetail front/dadoed back, glued under pressure.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b. Doweled, glued under pressure.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c. Lock shoulder, glued and pin nailed.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d. Bottoms shall be set into sides, front, and back, <MET>6 mm</MET><ENG> 1/4 inch</ENG> deep groove with a minimum<MET> 9 mm</MET><ENG> 3/8 
+inch</ENG> standing shoulder.</LST><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Shelving</TTL><BRK/>
+<BRK/>
+<SPT><TTL>General Requirements</TTL><BRK/>
+<BRK/>
+<TXT>Shelving shall be fabricated from [<MET>15 mm</MET><ENG> 3/4 inch</ENG> medium density particleboard] [<MET>15 mm</MET><ENG> 3/4 inch</ENG> medium density 
+fiberboard (MDF] [<MET>15 mm</MET><ENG> 3/4 inch</ENG> veneer core plywood].  All shelving top and bottom surfaces shall be finished 
+with [HPDL plastic laminate] [thermoset decorative overlay (melamine)].  Shelf edges shall be finished in a [HPDL 
+plastic laminate] [thermoset decorative overlay (melamine)] [PVC edgebanding].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Shelf Support System</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Specifier must choose a method from those listed below or permit Contractor 
+option.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>The shelf support system shall be:</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Recessed (Mortised) Metal Shelf Standards</TTL><BRK/>
+<BRK/>
+<TXT>Mortise standards flush with the finishes surface of the cabinet interior side walls, two per side.  Position 
+and space standards on the side walls to provide a stable shelf surface that eliminates tipping when shelf front 
+is weighted.  Install and adjust standards vertically to provide a level, stable shelf surface when clips are 
+in place.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Pin Hole Method</TTL><BRK/>
+<BRK/>
+<TXT>Drill holes on the interior surface of the cabinet side walls.  Evenly space holes in two vertical columns  Space 
+the holes in each column at [<MET>25 mm</MET><ENG> 1 inch</ENG>] [_____] increments starting [<MET>150 mm</MET><ENG> 6 inches</ENG>] [_____] from the cabinet 
+interior bottom and extending to within [<MET>150 mm</MET><ENG> 6 inches</ENG>] [_____] of the top interior surface of the cabinet.  
+Drill holes to provide a level, stable surface when the shelf is resting on the shelf pins.  Coordinate hole 
+diameter with pin insert size to provide a firm, tight fit.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></SPT><SPT><TTL>Edge Style</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Specifier should select from the general countertop edge types listed 
+below or specify other types as needed.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Front [and exposed side] countertop edges shall be in shapes and to dimensions as shown on the drawings.  The 
+countertop edge material shall be:</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Post Formed Plastic Laminate</TTL><BRK/>
+<BRK/>
+<TXT>Laminate edge shall be integral with countertop surface.  Shape and profile shall be [bullnose] [waterfall] [as 
+indicated] [_____] and to dimensions as indicated.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Hardwood</TTL><BRK/>
+<BRK/>
+<TXT>Species, finish, profile, shape, and dimensions shall be as indicated on the drawings.  Hardwood edge shall overlap 
+the exposed countertop laminate edge and shall be installed flush with the countertop laminate surface.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Vinyl</TTL><BRK/>
+<BRK/>
+<TXT>Vinyl tee-mould edge shall be in shape, thickness, and color as indicated on the drawings.  Tee mould edge shall 
+overlap the exposed countertop laminate edge and shall be installed flush with the countertop laminate surface.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Plastic Laminate Self Edge</TTL><BRK/>
+<BRK/>
+<TXT>Flat, 90 degree "self " edge.  Edge must be applied before top.  Laminate edge shall overlap countertop laminate 
+and shall be eased to eliminate sharp corners.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Laminate Clad Splashes</TTL><BRK/>
+<BRK/>
+<TXT>Countertop splash substrate shall be<MET> 20 mm</MET><ENG> 3/4 inch</ENG> [particleboard] [MDF fiberboard] [veneer core plywood].  
+Laminate clad backsplash shall be [integral with countertop, coved to radius and to dimensions as indicated on 
+the drawings] [loose, to be installed at the time of countertop installation].  Side splashes shall be straight 
+profile and provided loose, to be installed at the time of countertop installation.  Back and side splash laminate 
+pattern and color shall match the adjacent countertop laminate.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Laminate Application</TTL><BRK/>
+<BRK/>
+<TXT>Laminate application to substrates shall follow the recommended procedures and instructions of the laminate manufacturer 
+and <RID>JIS K 6903</RID>, using tools and devices specifically designed for laminate fabrication and application.  Provide 
+a balanced backer sheet (Grade BK) wherever only one surface of the component substrate requires a plastic laminate 
+finish.  Apply required grade of laminate in full uninterrupted sheets consistent with manufactured sizes using 
+one piece for full length only, using adhesives specified herein or as recommended by the manufacturer.  Fit 
+corners and joints hairline.  All laminate edges shall be machined flush, filed, sanded, or buffed to remove 
+machine marks and eased (sharp corners removed).  Clean up at easing shall be such that no overlap of the member 
+eased is visible.  Fabrication shall conform to laminate types and grades for component surfaces and shall be 
+as follows unless otherwise indicated on the drawings:</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Base/Wall Cabinet Case Body</TTL><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Exterior (exposed) surfaces to include exposed and semi-exposed face frame surfaces: HPDL Grade [VGS] 
+[VGP].</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Interior (semi-exposed) surfaces to include interior back wall, bottom, and side walls: [HPDL Grade 
+CLS] [Thermoset Decorative Overlay (melamine)].</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Adjustable Shelving</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Top and Bottom Surfaces</TTL><BRK/>
+<BRK/>
+<TXT>[HPDL Grade HGS] [Thermoset Decorative Overlay (melamine)]</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>All Edges</TTL><BRK/>
+<BRK/>
+<TXT>[HPDL Grade VGS] [Thermoset Decorative Overlay (melamine)][PVC edgebanding]</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Fixed Shelving</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Top and Bottom Surfaces</TTL><BRK/>
+<BRK/>
+<TXT>[HPDL Grade HGS] [Thermoset Decorative Overlay (melamine)]</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Exposed Edges</TTL><BRK/>
+<BRK/>
+<TXT>[HPDL Grade VGS] [Thermoset Decorative Overlay (melamine)][PVC edgebanding]</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Door, Drawer Fronts, Access Panels</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Exterior (Exposed) and Interior (Semi-Exposed) Faces</TTL><BRK/>
+<BRK/>
+<TXT>HPDL Grade [VGS] [VGP]</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Edges</TTL><BRK/>
+<BRK/>
+<TXT>[HPDL Grade VGS] [PVC edgebanding]</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Drawer Assembly</TTL><BRK/>
+<BRK/>
+<TXT>All interior and exterior surfaces: [HPDL Grade CLS] [Thermoset Decorative Overlay (melamine)].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Countertops and Splashes</TTL><BRK/>
+<BRK/>
+<TXT>All exposed and semi-exposed surfaces: HPDL Grade HGS</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Tolerances</TTL><BRK/>
+<BRK/>
+<TXT>Flushness, flatness, and joint tolerances of laminated surfaces shall meet the [premium] [custom] grade requirements.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Finishing</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Filling</TTL><BRK/>
+<BRK/>
+<TXT>No fasteners shall be exposed on laminated surfaces.  All nails, screws, and other fasteners in non-laminated 
+cabinet components shall be countersunk and the holes filled with wood filler consistent in color with the wood 
+species.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Sanding</TTL><BRK/>
+<BRK/>
+<TXT>All surfaces requiring coatings shall be prepared by sanding with a grit and in a manner that scratches will 
+not show in the final system.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Coatings</TTL><BRK/>
+<BRK/>
+<TXT>Types, method of application and location of casework finishes shall be in accordance with the <SUB>finish schedule</SUB>
+, drawings and Section <SRF>09 90 00</SRF> PAINTS AND COATINGS.  All cabinet reveals shall be painted.  Submit descriptive 
+data which provides narrative written verification of all types of construction materials and finishes, methods 
+of construction, etc. not clearly illustrated on the submitted shop drawings.  Data shall provide written verification 
+of conformance for the quality indicated to include materials, tolerances, and types of construction.  Both the 
+manufacturer of materials and the fabricator shall submit available literature which describes re-cycled product 
+content, operations and processes in place that support efficient use of natural resources, energy efficiency, 
+emissions of ozone depleting chemicals, management of water and operational waste, indoor environmental quality, 
+and other production techniques supporting sustainable design and products.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></SPT></PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
+<BRK/>
+<SPT><TTL><SUB>INSTALLATION</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Installation shall comply with applicable requirements for [premium] [custom] quality standards.  Countertops 
+and fabricated assemblies shall be installed level, plumb, and true to line, in locations shown on the drawings.  
+Cabinets and other laminate clad casework assemblies shall be attached and anchored securely to the floor and 
+walls with mechanical fasteners that are appropriate for the wall and floor construction.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Anchoring Systems</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Floor</TTL><BRK/>
+<BRK/>
+<TXT>[Base cabinets] [_____] shall utilize a floor anchoring system [as detailed on the drawings].  Anchoring and 
+mechanical fasteners shall not be visible from the finished side of the casework assembly.  [Cabinet] [_____] 
+assemblies shall be attached to anchored bases without visible fasteners [as indicated in the drawings].  Where 
+assembly abuts a wall surface, anchoring shall include a minimum<MET> 13 mm</MET><ENG> 1/2 inch</ENG> thick lumber or panel product 
+hanging strip, minimum<MET> 60 mm</MET><ENG> 2-1/2 inch</ENG> width; securely attached to the top of the wall side of the cabinet back.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Wall</TTL><BRK/>
+<BRK/>
+<TXT>[Cabinet] [vanity] [_____] to be wall mounted shall utilize minimum<MET> 13 mm</MET><ENG> 1/2 inch</ENG> thick lumber or panel product 
+hanging strips, minimum<MET> 60 mm</MET><ENG> 2-1/2 inch</ENG> width; securely attached to the wall side of the cabinet back, both 
+top and bottom.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Countertops</TTL><BRK/>
+<BRK/>
+<TXT>Countertops shall be installed in locations as indicated on the drawings.  Countertops shall be fastened to supporting 
+casework structure with mechanical fasteners, hidden from view.  All joints formed by the countertop or countertop 
+splash and adjacent wall surfaces shall be filled with a clear silicone caulk.  Loose [back] [side] splashes 
+shall be adhered to both the countertop surface perimeter and the adjacent wall surface with adhesives appropriate 
+for the type of materials to be adhered.  Joints between the countertop surface and splash shall be filled with 
+clear silicone caulk in a smooth consistent concave bead.  Bead size shall be the minimum necessary to fill the 
+joint and any surrounding voids or cracks.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Hardware</TTL><BRK/>
+<BRK/>
+<TXT>Casework hardware shall be installed in types and locations as indicated on the drawings.  Where fully concealed 
+European-style hinges are specified to be used with particleboard or fiberboard doors, the use of plastic or 
+synthetic insertion dowels shall be used to receive<MET> 5 mm</MET><ENG> 3/16 inch</ENG> "Euroscrews".  The use of wood screws without 
+insertion dowels is prohibited.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Doors, Drawers and Removable Panels</TTL><BRK/>
+<BRK/>
+<TXT>The fitting of doors, drawers and removable panels shall be accomplished within target fitting tolerances for 
+gaps and flushness in accordance with [premium] [custom] grade requirements.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Plumbing Fixtures</TTL><BRK/>
+<BRK/>
+<TXT>Install sinks, sink hardware, and other plumbing fixtures in locations as indicated on the drawings and in accordance 
+with [Section <SRF>22 00 00</SRF> PLUMBING, GENERAL PURPOSE] [_____].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Glass</TTL><BRK/>
+<BRK/>
+<TXT>Install glass and glazing in the casework using methods and materials specified in Section <SRF>08 81 00</SRF> GLAZING in 
+locations as indicated on the drawings.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></PRT>    <END/><BRK/></SEC>

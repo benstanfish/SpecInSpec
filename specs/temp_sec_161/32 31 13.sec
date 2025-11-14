@@ -1,0 +1,625 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                UFGS-32 31 13 (November 2016)<BRK />
+                                             Change 1 - 05/17<BRK />
+                                             -----------------------------<BRK />
+Preparing Activity:  <PRA>NASA</PRA>                    Superseding<BRK />
+                                             UFGS-32 31 13 (August 2010)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated January 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 32 31 13</SCN><BRK />
+<BRK />
+<STL>CHAIN LINK FENCES AND GATES</STL><BRK />
+<DTE>11/16</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements and include Japanese products, 
+where feasible, for a standard Japan Engineer District project.  The Designer of Record (DOR) shall tailor as 
+applicable to meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>steel fencing, including posts, fabric, gates, and 
+miscellaneous accessories</SCP>.  Colored fabric and accessories may be used if required.  Edit specifications to suit 
+the project scope.</NPR><BRK />
+<BRK />
+<NPR>Use Section <SRF>32 31 13.53</SRF> HIGH-SECURITY CHAIN LINK FENCES AND GATES when covering the requirements for chain link 
+fence for high security applications.</NPR><BRK />
+<BRK />
+<NPR>Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections.  Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text.</NPR><BRK />
+<BRK />
+<NPR>Remove information and requirements not required in respective project.</NPR><BRK />
+<BRK />
+<NPR>Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements for a basic Japan Engineer District 
+project. Designer shall tailor as applicable to meet project specific requirement.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of the guide specification.  The publications 
+are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
+date, and title.</NPR><BRK />
+<BRK />
+<NPR>Use the Reference Wizard's Check Reference feature when you add a Reference Identifier (RID) outside of the Section's 
+Reference Article to automatically place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.</NPR><BRK />
+<BRK />
+<NPR>References not used in the text will automatically be deleted from this section of the project specification when 
+you choose to reconcile references in the publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are referred to within the text by 
+the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG><BRK />
+<BRK />
+<RID>JIS A 5308</RID><RTL>(2014) Ready-Mixed Concrete</RTL><BRK />
+<BRK />
+<RID>JIS A 5540</RID><RTL>(2008) Turnbuckle for Building</RTL><BRK />
+<BRK />
+<RID>JIS B 1180</RID><RTL>(2014) Hexagon Head Bolts and 
+Hexagon Screws</RTL><BRK />
+<BRK />
+<RID>JIS B 1181</RID><RTL>(2014) Hexagon Nuts and Hexagon Thin Nuts</RTL><BRK />
+<BRK />
+<RID>JIS B 1256</RID><RTL>(2008) Plain Washers</RTL><BRK />
+<BRK />
+<RID>JIS G 3101</RID><RTL>(2020) Rolled Steels for 
+General Structure</RTL><BRK />
+<BRK />
+<RID>JIS G 3444</RID><RTL>(2021) Carbon Steel Tubes for General Structure</RTL><BRK />
+<BRK />
+<RID>JIS G 3532</RID><RTL>(2011) Low Carbon Steel Wires</RTL><BRK />
+<BRK />
+<RID>JIS G 3533</RID><RTL>(2008) Barbed Wires</RTL><BRK />
+<BRK />
+<RID>JIS G 3552</RID><RTL>(2011) Chain Link Wire Netting</RTL><BRK />
+<BRK />
+<RID>JIS H 8641</RID><RTL>(2021) Hot Dip Galvanized Coatings</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Review Submittal Description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project.</NPR><BRK />
+<BRK />
+<NPR>The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G."  Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System.  Only add a &#8220;G&#8221; to an item, if the submittal is sufficiently important or complex in context 
+of the project.</NPR><BRK />
+<BRK />
+<NPR>For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
+tags may be used following the "G" designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" for District Office (Engineering 
+Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
+for Project Office.  Codes following the "G" typically are not used for Navy and  Air Force projects.</NPR><BRK />
+<BRK />
+<NPR> An "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook to 
+fulfill federally mandated sustainable requirements in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Locate the "S" submittal under the SD number that best describes the submittal item.</NPR><BRK />
+<BRK />
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are for information only.  When 
+used, a designation following the "G" designation identifies the office that will review the submittal for the Government.  Submittals with an 
+"S" are for inclusion in the Sustainability eNotebook, in conformance to Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Submit the following in accordance 
+with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Fence Assembly</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Location of Gate, Corner, End, and Pull Posts</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Gate Assembly</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Gate Hardware and Accessories</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Erection/Installation Drawings</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-03 Product Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Fence Assembly</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Gate Assembly</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Gate Hardware and Accessories</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Zinc Coating</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>PVC Coating</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Fabric</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Stretcher Bars</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Barbed Wire</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Precast Concrete Posts</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Padlocks</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Turnbuckles</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Truss Rod</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Tension Wires</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Wire Ties</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Concrete</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Certificates of Compliance</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-08 Manufacturer's Instructions</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Fence Assembly</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Gate Assembly</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Hardware Assembly</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Accessories</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-11 Closeout Submittals</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Recycled Material Content</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>QUALITY CONTROL</TTL><BRK />
+<BRK />
+<SPT outline="1.3.1"><TTL>Certificates of Compliance</TTL><BRK />
+<BRK />
+<TXT>Submit <SUB>certificates of compliance</SUB> in accordance with the applicable reference standards and descriptions of this section for the following:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Zinc coating</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  PVC coating</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Fabric</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Stretcher bars</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Gate hardware and accessories</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Concrete</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.4"><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK />
+<BRK />
+<TXT>Deliver materials to site in an undamaged condition.  Store materials off the ground to provide protection against oxidation caused by ground contact.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify Japanese manufactured products for chain link fence and gates that conform to the applicable Japanese 
+Industrial Standards (JIS) as listed in this specification section.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="2.1"><TTL>SYSTEM DESCRIPTION</TTL><BRK />
+<BRK />
+<TXT>Provide fencing and gate materials, as specified.<BRK /></TXT>
+<TXT>Submit reports of listing chain-link fencing and accessories regarding weight in<MET> grams</MET><ENG> ounces</ENG> for zinc coating, thickness of <SUB>PVC coating</SUB>.</TXT><BRK />
+<BRK />
+<TXT>Submit manufacturer's catalog data for complete <SUB>fence assembly</SUB>, gate assembly, <SUB>hardware assembly</SUB> and <SUB>accessories</SUB>. Provide chain link fence on concrete 
+posts for Okinawa Area and chain link fence on pipe posts for all other regions in Japan.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2"><TTL>COMPONENTS FOR CHAIN LINK FENCE AND GATE</TTL><BRK />
+<BRK />
+<SPT outline="2.2.1"><TTL><SUB>Fabric</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Coordinate type of fabric with project requirements.  Fabric with heavier zinc or aluminum coating or polyvinyl 
+chloride (PVC) coatings may be useful in highly corrosive environments.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Choose core wire gage appropriate for the design.  Gages are not the same for all materials.  Polyvinyl 
+chloride (PVC) coating may be specified for other than security purposes when aesthetics are of prime importance 
+and the additional cost is justified.  There are different PVC-coated fabrics on the market.  Variations may include:  
+The methods of applying PVC coating, wall thickness of PVC coating, adhesion of PVC coating to wire, and cost.  
+Take these factors into consideration when selecting a fence fabric for different environmental applications.  
+PVC coating of fencing for certain security applications and grounded fencing requires detailed design and specifying.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Fabric for fence and gates shall be galvanized steel chain link wire netting conforming to <RID>JIS G 3552</RID> No. 8, <MET>50 mm</MET> standard wire mesh.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="NAVY"><SPT><TTL>Posts , Rails and Braces</TTL><BRK />
+<BRK />
+<SPT><TTL>Fence Posts for Okinawa Area</TTL><BRK />
+<BRK />
+<TXT>Shall be the commercial <SUB>precast concrete posts</SUB> of the type and size as indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Fence Posts for Other Regions in Japan</TTL><BRK />
+<BRK />
+<TXT>Shall be carbon steel pipe conforming to <RID>JIS G 3444</RID>, size and thickness as indicated, and galvanized.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Fence Rails and Braces, and Pipe Connectors</TTL><BRK />
+<BRK />
+<TXT>Shall be carbon steel pipe conforming to <RID>JIS G 3444</RID>, size and thickness as indicated, and galvanized.</TXT><BRK /></SPT>
+<BRK /></SPT>
+</TAI><SPT outline="2.2.2"><TTL>Structural Steel Bars, Plates and Shapes</TTL><BRK />
+<BRK />
+<TXT>Shall be<RID> JIS G 3101</RID>, SS 400, galvanized.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.3"><TTL><SUB>Barbed Wire</SUB></TTL><BRK />
+<BRK />
+<TXT>Shall be <RID>JIS G 3533</RID>, #12-gage, two-wire strand, a pitch of <MET>102 mm</MET>, 4-pointed barbs and 2 to 7 twists.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.4"><TTL>Fastening Accessories</TTL><BRK />
+<BRK />
+<TXT>Shall be galvanized steel and shall be manufacturer's standard product.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.5"><TTL><SUB>Stretcher Bars</SUB></TTL><BRK />
+<BRK />
+<TXT>Provide bars that have one-piece lengths equal to the full height of the fabric with a minimum cross section of<MET> 5 by 20 millimeter</MET><ENG> 3/16 by 3/4 
+inch</ENG> or of size as recommended by the fence manufacturer and conforming to <RID>JIS G 3101</RID>.<BRK />
+<BRK /></TXT>
+</SPT><SPT outline="2.2.6"><TTL>Stretcher Bar Bands</TTL><BRK />
+<BRK />
+<TXT>Provide bar bands for securing stretcher bars to posts that are steel, wrought iron, or malleable iron spaced not over<MET> 381 millimeter</MET><ENG> 15 inches</ENG>
+ on center or of size as recommended by the fence manufacturer.  Bands may also be used in conjunction with special fittings for securing rails 
+to posts.  Provide bands with projecting edges chamfered or eased.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.7"><TTL>Post Tops</TTL><BRK />
+<BRK />
+<TXT>Provide tops that are steel, wrought iron, or malleable iron designed as a weathertight closure cap.  Provide one cap for each post, unless equal 
+protection is provided by a combination post-cap and wire supporting arm.  Provide caps with an opening to permit through passage of the top rail.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.8"><TTL>Gate Posts</TTL><BRK />
+<BRK />
+<TXT>Shall be carbon steel pipe conforming to <RID>JIS G 3444</RID>, size and thickness as indicated, and galvanized.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.9"><TTL>Gates</TTL><BRK />
+<BRK />
+<SPT outline="2.2.9.1"><TTL><SUB>Gate Assembly</SUB></TTL><BRK />
+<BRK />
+<TXT>Shape and size of the gate frame shall be as indicated. Framing and bracing members shall be of steel pipe specified herein.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.9.2"><TTL>Gate Leaves</TTL><BRK />
+<BRK />
+<TXT>For gate leaves, more than <MET>2.44 m</MET> wide, provide intermediate members as necessary to provide rigid construction, free from sag or twist. Gate leaves 
+less than <MET>2.44 m</MET> wide shall have truss rods or intermediate braces. Provide intermediate braces on all gate frames with an electro-mechanical lock. 
+Attach fabric to the gate frame by method standard with the manufacturer except that welding will not be permitted.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.9.3"><TTL><SUB>Gate Hardware And Accessories</SUB></TTL><BRK />
+<BRK />
+<TXT>Submit manufacturer's catalog data. Furnish and install latches, hinges, stops, keepers, rollers, and other hardware items as required for the 
+operation of the gate and shall be zinc-coated steel having weight of zinc-coating not less than HDZ 40B, <RID>JIS H 8641</RID>. Gate latches shall be fork 
+or plunger bar type. Arrange latches for padlocking so that the padlock will be accessible from both sides of the gate. Provide stops for holding 
+the gates in the open position. For high security applications, each end member of gate frames shall be extended sufficiently above the top member 
+to carry three strands of barbed wire in horizontal alignment with barbed wire strands on the fence.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.9.4"><TTL><SUB>Turnbuckles</SUB> for Gates</TTL><BRK />
+<BRK />
+<TXT><RID>JIS A 5540</RID>, galvanized, size as indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.9.5"><TTL><SUB>Truss Rod</SUB></TTL><BRK />
+<BRK />
+<TXT>Shall be <RID>JIS G 3101</RID>, <MET>10 mm</MET> diameter, welded to fence post where indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.9.6"><TTL><SUB>Tension Wires</SUB></TTL><BRK />
+<BRK />
+<TXT>Provide galvanized, coiled spring wire conforming to <RID>JIS G 3532</RID> SWM-G3. Provide Zinc coating that weighs not less than 370 gram per square meter. </TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.2.10"><TTL><SUB>Wire Ties</SUB></TTL><BRK />
+<BRK />
+<TXT>Provide<MET> 2.3 millimeter</MET><ENG> 11-gage</ENG> galvanized steel wire conforming to <RID>JIS G 3532</RID> for tying fabric to line posts,spaced<MET> 300 millimeter</MET><ENG> 12 inches</ENG> on 
+center.  For tying fabric to rails and braces, space wire ties <MET> 600 millimeter</MET><ENG> 24 inches</ENG> on center.  For tying fabric to tension wire, space <MET>2.7 
+millimeter </MET><ENG>0.105-inch </ENG>hog rings <MET>600 millimeter</MET><ENG> 24 inches</ENG> on center.</TXT><BRK />
+<BRK />
+<TXT>Manufacturer's standard procedure will be accepted if of equal strength and durability.</TXT><BRK />
+<BRK />
+<TXT>Provide wire ties constructed of the same material as the fencing fabric.  Provide accessories with polyvinyl (PVC) coatings when PVC-coated fence 
+fabric is required.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.11"><TTL>Bolts, Nuts and Washers</TTL><BRK />
+<BRK />
+<TXT>Steel conforming to <RID>JIS B 1180</RID>, <RID>JIS B 1181</RID>, <RID>JIS B 1256</RID> respectively.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.12"><TTL><SUB>Padlocks</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Consult station regarding padlocks.  Most stations will provide padlocks.  If Contractor furnished padlocks 
+are required for certain security applications, a padlock conforming to an appropriate Military or Agency Specification 
+may need to be specified.  See referenced specification for types, grades, and options available.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide padlocks with keys and chain in conformance with the appropriate specification of the installation agency having 
+jurisdiction. </TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3"><TTL>OTHER MATERIALS</TTL><BRK />
+<BRK />
+<SPT outline="2.3.1"><TTL><SUB>Zinc Coating</SUB></TTL><BRK />
+<BRK />
+<TXT>Hot dip galvanization shall be in conformance with <RID>JIS H 8641</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.2"><TTL>Cast-in-Place Concrete for Fence and Gate Posts</TTL><BRK />
+<BRK />
+<TXT>Shall be of size as indicated. <SUB>Concrete</SUB> in conformance with <RID>JIS A 5308</RID> and shall be a minimum compressive strength of <MET>18 MPa</MET> at 28 days.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.3"><TTL>Grout</TTL><BRK />
+<BRK />
+<TXT>Provide grout of proportions one part portland cement to three parts clean, well-graded sand and a minimum amount of water to produce a workable 
+mix.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.4"><TTL>GROUNDING</TTL><BRK />
+<BRK />
+<TXT>Ground the chain link fence and gates as indicated on drawings.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<TXT>Submit manufacturer's <SUB>erection/installation drawings</SUB> and instructions that detail proper assembly and materials in the design for fence, gate, 
+hardware and accessories.</TXT><BRK />
+<BRK />
+<BRK />
+<SPT outline="3.1"><TTL>PREPARATION</TTL><BRK />
+<BRK />
+<TXT>Ensure final grading and established elevations are complete prior to commencing fence installation.</TXT><BRK />
+<BRK />
+<SPT outline="3.1.1"><TTL>Clearing and Grading</TTL><BRK />
+<BRK />
+<TXT>Clear fence line of trees, brush, and other obstacles to install fencing .  Establish a graded, compacted fence line prior to fencing installation.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2"><TTL>INSTALLATION</TTL><BRK />
+<BRK />
+<SPT outline="3.2.1"><TTL>Security</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete this paragraph if new fencing does not involve relocation or replacement of existing fencing.  Depending 
+on nature of fence work, paragraph may need further elaboration regarding necessary construction to maintain perimeter.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Install new chain link fencing, remove existing fencing, and perform related work to provide continuous security for facility.  Schedule and fully 
+coordinate work with Contracting Officer and cognizant Security Officer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.2"><TTL>Fence Installation</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Certain security applications require conformance to an applicable OPNAVINST.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Install fence on prepared surfaces to line and grade indicated.    Install fence in accordance with fence manufacturer's written installation instructions 
+except as modified herein.</TXT><BRK />
+<BRK />
+<SPT outline="3.2.2.1"><TTL>Post Spacing</TTL><BRK />
+<BRK />
+<TXT>Provide line posts spaced equidistantly apart, not exceeding<MET> 3.048 m</MET><ENG> 10 feet</ENG> on center.  Provide gate posts spaced as necessary for size of gate 
+openings.  Do not exceed<MET> 152.4 m</MET><ENG> 500 feet</ENG> on straight runs between braced posts.  Provide corner or pull posts, with bracing in both directions, 
+for changes in direction of<MET> 0.26 rad</MET><ENG> 15 degrees</ENG> or more, or for abrupt changes in grade.  Submit drawings showing <SUB>location of gate, corner, end, 
+and pull posts</SUB>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.2.2"><TTL>Top and Bottom Tension Wire</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Coordinate with requirements for top and bottom rails.  Specify bottom tension wire to maintain fence alignment, 
+except for designs requiring bottom rail.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Install top and bottom tension wires before installing chain-link fabric, and pull wires taut.  Place top and bottom tension wires within<MET> 203 mm</MET><ENG>
+ 8 inches</ENG> of respective fabric line.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2.3"><TTL>Excavation</TTL><BRK />
+<BRK />
+<TXT>Provide excavations for post footings which are drilled holes in virgin or compacted soil, of minimum sizes as indicated.</TXT><BRK />
+<BRK />
+<TXT>Space footings for line posts<MET> 3048 millimeter</MET><ENG> 10 feet</ENG> on center maximum and at closer intervals when indicated, with bottoms of the holes approximately<MET>
+ 75 millimeter</MET><ENG> 3 inches</ENG> below the bottoms of the posts.  Set bottom of each post not less than <MET>915 millimeter </MET><ENG>36 inches </ENG>below finished grade when 
+in firm, undisturbed soil.  Set posts deeper, as required, in soft and problem soils and for heavy, lateral loads.</TXT><BRK />
+<BRK />
+<TXT> Remove excavated soil from Government property.</TXT><BRK />
+<BRK />
+<TXT>When solid rock is encountered near the surface, drill into the rock at least<MET> 305 millimeter</MET><ENG> 12 inches</ENG> for line posts and at least<MET> 457 millimeter</MET><ENG>
+ 18 inches</ENG> for end, pull, corner, and gate posts.  Drill holes at least<MET> 25.4 millimeter</MET><ENG> 1 inch</ENG> greater in diameter than the largest dimension of 
+the placed post.</TXT><BRK />
+<BRK />
+<TXT>If solid rock is below the soil overburden, drill to the full depth required except that penetration into rock need not exceed the minimum depths 
+specified above.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.4"><TTL>Setting Posts</TTL><BRK />
+<BRK />
+<TXT>Remove loose and foreign materials from holes and moisten the soil prior to placing concrete.</TXT><BRK />
+<BRK />
+<TXT>Provide tops of footings that are trowel finished and sloped or domed to shed water away from posts.  Set hold-open devices, sleeves, and other 
+accessories in concrete.</TXT><BRK />
+<BRK />
+<TXT>Keep exposed concrete moist for at least 7 calendar days after placement or cured with a membrane curing material, as approved.</TXT><BRK />
+<BRK />
+<TXT>Grout all posts set into sleeved holes in concrete with an approved grouting material.</TXT><BRK />
+<BRK />
+<TXT>Maintain vertical alignment of posts in concrete construction until concrete has set.</TXT><BRK />
+<BRK />
+<SPT outline="3.2.4.1"><TTL>Earth and Bedrock</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Alternate drive anchor method may be specified as an option where evidence indicates that optional method 
+under similar ground conditions has satisfactory and proven performance record.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide concrete bases of dimensions indicated on the manufactures installation drawings, except in bedrock.  Compact concrete to eliminate voids, 
+and finish to a dome shape.  In bedrock, set posts with a minimum of <MET>25.4 mm</MET><ENG> 1 inch</ENG> of grout around each post.  Work grout into hole to eliminate 
+voids, and finish to a dome shape.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.4.2"><TTL>Concrete Slabs and Walls</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use the following paragraph where required by the design, otherwise delete.  Sleeve joints for non-removable 
+fence sections are usually filled with lead or nonshrink grout.  Removable fence sections may be useful as an 
+economical means for providing access to equipment.  Sleeve joints in removable fence sections may be a tight 
+sliding type, or where moisture entry could be a problem, filled with pipe sulphur jointing compound.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Set posts into zinc-coated sleeves, set in concrete slab or wall, to a minimum depth of<MET> 305 mm</MET><ENG> 12 inches</ENG>.  Fill sleeve joint with lead, nonshrink 
+grout, or other approved material.  Set posts for support of removable fence sections into sleeves that provide a tight sliding joint and hold 
+posts aligned and plumb without use of lead or setting material.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.4.3"><TTL>Bracing</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use a single diagonal truss rod for fences less than<MET> 3.7 m</MET><ENG> 12 feet</ENG> high.  Use two diagonal truss rods on 
+fences<MET> 3.7 m</MET><ENG> 12 feet</ENG> and higher.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Brace gate, corner, end, and pull posts to nearest post with a horizontal brace used as a compression member, placed at least<MET> 305 mm</MET><ENG> 12 inches</ENG> 
+below top of fence, and two diagonal tension rods.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Tolerances</LST><BRK />
+<BRK />
+<TXT>Provide posts that are straight and plumb within a vertical tolerance of<MET> 6.35 millimeter</MET><ENG> 1/4 inch</ENG> after the fabric has been stretched.  Provide 
+fencing and gates that are true to line with no more than<MET> 12.7 millimeter</MET><ENG> 1/2 inch</ENG> deviation from the established centerline between line posts.  
+Repair defects as directed.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2.5"><TTL>Concrete Strength</TTL><BRK />
+<BRK />
+<TXT>Provide concrete that has attained at least 75 percent of its minimum 28-day compressive strength, but in no case sooner than 7 calendar days after 
+placement, before rails, tension wire, or fabric are installed.  Do not stretch fabric and wires or hang gates until the concrete has attained 
+its full design strength.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete the following paragraph if the referenced section is not included.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT><TST>Take samples and test concrete to determine strength as specified</TST>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.6"><TTL>Supporting Arms (only for Security Chain Link Fence and Gates)</TTL><BRK />
+<BRK />
+<TXT>It is the Contractor's option to choose the following type of supporting arms; type (1) or type (2). Type (1): Supporting arm shall be top part 
+of fence and gate post, which shall be one length, seamless pipe through post to arm. Type (2): If the selected manufacturer's standard product 
+uses the sectional type supporting arms, that shall be designed to accomodate the top rail. Install supporting arms as recommended by the manufacturer. 
+In addition to manufacturer's standard connections, securely anchor supporting arms to posts to prevent easy removal with hand tools.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.7"><TTL>Top Rails</TTL><BRK />
+<BRK />
+<TXT>Provide top rails that run continuously through post caps or extension arms, bending to radius for curved runs.  Provide expansion couplings as 
+recommended by the fencing manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.8"><TTL>Brace Assembly</TTL><BRK />
+<BRK />
+<TXT>Provide bracing assemblies at end and gate posts and at both sides of corner and pull posts, with the horizontal brace located at midheight of 
+the fabric.</TXT><BRK />
+<BRK />
+<TXT>Install brace assemblies so posts are plumb when the diagonal rod is under proper tension.</TXT><BRK />
+<BRK />
+<TXT>Provide two complete brace assemblies at corner and pull posts where required for stiffness and as indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.9"><TTL>Tension Wire Installation</TTL><BRK />
+<BRK />
+<TXT>Install tension wire by weaving them through the fabric and tying them to each post with not less than<MET> 3.9 millimeter</MET><ENG> 7-gage</ENG> galvanized wire or 
+by securing the wire to the fabric with<MET> 3.5 millimeter</MET><ENG> 10-gage</ENG> ties or clips spaced<MET> 610 millimeter</MET><ENG> 24 inches</ENG> on center.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.10"><TTL>Fabric Installation</TTL><BRK />
+<BRK />
+<TXT>Provide fabric in single lengths between stretch bars with bottom barbs placed approximately<MET> 38 millimeter</MET><ENG> 1-1/2 inches</ENG> above the ground line.  
+Pull fabric taut and tied to posts, rails, and tension wire with wire ties and bands.</TXT><BRK />
+<BRK />
+<TXT>Install fabric on the security side of fence, unless otherwise directed.</TXT><BRK />
+<BRK />
+<TXT>Ensure fabric remains under tension after the pulling force is released.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.11"><TTL>Stretcher Bar Installation</TTL><BRK />
+<BRK />
+<TXT>Thread stretcher bars through or clamped to fabric <MET>102 millimeter </MET><ENG>4 inches </ENG>on center and secured to posts with metal bands spaced<MET> 381 millimeter</MET><ENG>
+ 15 inches</ENG> on center.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.12"><TTL>Barbed Wire (only for Security Chain Link Fence and Gate)</TTL><BRK />
+<BRK />
+<TXT>Install barbed wire on supporting arms above fence posts. Extend each end member of gate frames sufficiently above top member to carry three strands 
+of barbed wire in horizontal alignment with barbed wire strands on the fence. Pull each strand taut and securely fasten each strand to each supporting 
+arm and extend member. The method of securing wires shall be as follows: twist tie barbed wire to arm using wire which has been looped through 
+a hole in the supporting arm.  Other methods of securing barbed wire are acceptable provided they are equally secure, and are approved in advance 
+by the Contracting Officer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.13"><TTL>Gate Installation</TTL><BRK />
+<BRK />
+<TXT>Install gates plumb, level, and secure, with full opening without interference.  Install ground set items in concrete for anchorage as recommended 
+by the fence manufacturer.  Adjust hardware for smooth operation and lubricated where necessary.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.14"><TTL>Tie Wires</TTL><BRK />
+<BRK />
+<TXT>Provide tie wires that are U-shaped to the pipe diameters to which attached.  Twist ends of tie wires not less than two full turns and bent so 
+as not to present a hazard.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.15"><TTL>Fasteners</TTL><BRK />
+<BRK />
+<TXT>Install nuts for tension bands and hardware on the side of the fence opposite the fabric side.  Peen ends of bolts to prevent removal of nuts.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.16"><TTL>Zinc-Coating Repair</TTL><BRK />
+<BRK />
+<TXT>Clean and repair galvanized surfaces damaged by welding or abrasion, and cut ends of fabric, or other cut sections with specified galvanizing repair 
+material applied in strict conformance with the manufacturer's printed instructions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.17"><TTL>Accessories Installation</TTL><BRK />
+<BRK />
+<SPT outline="3.2.17.1"><TTL>Post Caps</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Coordinate with requirements for top rails or supporting arms.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>  Install post caps as recommended by the manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.17.2"><TTL>Padlocks</TTL><BRK />
+<BRK />
+<TXT>Provide padlocks for gate openings and provide chains that are securely attached to gate or gate posts.  Provide padlocks keyed alike, and provide 
+two keys for each padlock.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2.18"><TTL>Grounding</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete this paragraph if grounding is not required.  If grounding is required and lightning protection 
+is not part of project design, the requirements in the second set of brackets will be used in lieu of those in 
+the first set of brackets.</NPR><BRK />
+<BRK />
+<NPR>Provide fence grounding details when composite type posts are specified where grounding of the fence is required.  
+Grounding requirements may be indicated on the drawings or included in this section.</NPR><BRK />
+<BRK />
+<NPR>Specify polyvinyl chloride coated fencing with care when grounding is a project requirement.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Ground all fences crossed by overhead power lines in excess of 600 volts, and all electrical equipment attached to the fence.  Ground fences on 
+each side of all gates, at each corner, at the closest approach to each building located within<MET> 15 m</MET><ENG> 50 feet</ENG> of the fence, and where the fence 
+alignment changes more than 15 degrees.  Grounding locations can not exceed <MET>198 m</MET><ENG> 650 feet</ENG>.  Bond each gate panel with a flexible bond strap to 
+its gate post.  Ground fences crossed by power lines of 600 volts or more at or near the point of crossing and at distances not exceeding<MET> 45 m</MET><ENG> 
+150 feet</ENG> on each side of crossing.  Provide ground conductor consisting of No. 6 AWG solid copper wire.  Provide copper-clad steel rod grounding 
+electrodes<MET> 19 mm </MET><ENG>3/4 inch</ENG> by<MET> 3.05 m</MET><ENG> 10 foot</ENG> long.  Drive electrodes into the earth so that the top of the electrode is at least<MET> 152 mm</MET><ENG> 6 inches</ENG>
+ below the grade.  Where driving is impracticable, bury electrodes a minimum of<MET> 305 mm</MET> <ENG>12 inches</ENG> deep and radially from the fence, with top of 
+the electrode not less than<MET> 610 mm</MET><ENG> 2 feet</ENG> or more than<MET> 2.4 m</MET><ENG> 8 feet</ENG> from the fence.  Clamp ground conductor to the fence and electrodes with bronze 
+grounding clamps to create electrical continuity between fence posts, fence fabric, and ground rods.  Total resistance of the fence to ground cannot 
+exceed 25 ohms.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.3"><TTL>CLOSEOUT ACTIVITIES</TTL><BRK />
+<BRK />
+<TXT>Remove waste fencing materials and other debris from the work site.</TXT><BRK />
+<BRK />
+<NED /><TXT>Submit manufacturer's data indicating percentage of <SUB>recycled material content</SUB> in protective fence materials, including chain link fence, fabric, 
+and gates to verify affirmative procurement compliance.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4"><TTL>RESTORATION</TTL><BRK />
+<BRK />
+<TXT>The Contractor shall restore all damaged and disturbed areas caused by this project work to match existing condition as directed.</TXT><BRK />
+<BRK />
+<SPT outline="3.4.1"><TTL>Surface Course Restoration</TTL><BRK />
+<BRK />
+<TXT>Concrete and/or asphalt concrete surface course which has been damaged and disturbed to accomplish this project shall be restored to match existing 
+condition with new concrete and/or new asphalt concrete, including crushed stone base course.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.2"><TTL>Turf Restoration</TTL><BRK />
+<BRK />
+<TXT>Sodded area which has been damaged and disturbed to accomplish this project shall be restored to match existing condition by reusing existing sod 
+or new sod. Water thoroughly immediately after replanting.</TXT><BRK />
+<BRK /></SPT>
+</SPT></PRT>    <END /><BRK /></SEC>

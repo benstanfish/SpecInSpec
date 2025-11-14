@@ -1,0 +1,118 @@
+01 10 00^ DESCRIPTION OF WORK^^^0^11/15/2016 09:08^^^^
+01 11 00^ STATEMENT OF WORK^^^0^2/2/2021 10:47^^^^
+01 11 00.00 10^ GENERAL CONTRACT REQUIREMENTS^^^0^1/16/2025 10:22^^^^
+01 11 30.00 25^ DIVING^^^0^1/16/2025 10:22^^^^diving
+01 20 00^ PRICE AND PAYMENT PROCEDURES^^^0^8/7/2024 13:12^^^^
+01 32 01.00 10^ PROJECT SCHEDULE^USACE^08/23^0^1/16/2025 10:22^^^^the preparation and maintenance of the project schedule for construction projects or design-build construction projects
+01 32 16.00 20^ SMALL PROJECT CONSTRUCTION PROGRESS SCHEDULES^NAVFAC^08/18^0^5/14/2020 17:07^^^^the preparation and use of construction schedules for small projects
+01 33 00^ SUBMITTAL PROCEDURES^NASA^08/18, CHG 4: 02/21^0^1/16/2025 10:22^^^^general procedures regarding submittals, data normally submitted for review to establish conformance with the design concept and contract documents
+01 33 16^ DESIGN AFTER AWARD^^^0^1/16/2025 10:22^^^^
+01 33 29^ SUSTAINABILITY REQUIREMENTS AND REPORTING^NAVFAC^02/21^0^1/16/2025 10:22^^^^providing sustainability documentation for Guiding Principles Validation (GPV) and Third Party Certification (TPC)
+01 35 26^ GOVERNMENTAL SAFETY REQUIREMENTS^^^0^1/16/2025 10:22^^^^safety and occupational health requirements for the protection of Contractor and Government personnel, property, and resources
+01 42 00^ SOURCES FOR REFERENCE PUBLICATIONS^USACE^02/19^0^1/16/2025 10:22^^^^listing of organizations whose publications are referenced in other sections of the specifications.
+01 42 15^ METRIC MEASUREMENTS^^^0^6/11/2016 17:22^^^^
+01 45 00.00 10^ QUALITY CONTROL^USACE^11/16^0^1/16/2025 10:22^^^^Contractor Quality Control for construction projects or design-build construction projects
+01 45 00.15 10^ RESIDENT MANAGEMENT SYSTEM CONTRACTOR MODE (RMS CM)^USACE^11/16^0^1/16/2025 10:22^^^^use of the Resident Management System (RMS) for contract monitoring and administration.
+01 45 35^ SPECIAL INSPECTIONS^USACE^02/15^0^1/16/2025 10:22^^^^special inspections when required by UFC 3-301-01.  This specification will apply only to buildings
+01 50 00^ TEMPORARY CONSTRUCTION FACILITIES AND CONTROLS^^^0^1/16/2025 10:22^^^^
+01 57 19^ TEMPORARY ENVIRONMENTAL CONTROLS^NAVFAC^^0^1/16/2025 10:22^^^^environmental protection and other environmental temporary controls
+01 57 19.01^ TEMPORARY ENVIRONMENTAL CONTROLS - AIR FORCE INSTALLATIONS^^01/24^0^1/16/2025 10:22^^^^
+01 74 19^ CONSTRUCTION AND DEMOLITION WASTE MANAGEMENT^^^0^1/16/2025 10:22^^^^
+01 78 00^ CLOSEOUT SUBMITTALS^USACE^05/19^0^1/16/2025 10:22^^^^closeout submittals including:  revised project documents, warranty management, testing, adjusting and balancing, O & M manuals, and cleanup
+01 78 23^ OPERATION AND MAINTENANCE DATA^^^0^9/28/2022 08:30^^^^
+01 91 00.15 10^ TOTAL BUILDING COMMISSIONING^USACE^05/16^0^1/16/2025 10:22^^^^Total Building Commissioning requirements for new construction and major renovations
+02 61 13^ EXCAVATION AND HANDLING OF CONTAMINATED MATERIAL^USACE^^0^1/16/2025 10:22^^^^excavation, handling, and temporary storage of contaminated material
+02 65 00^ UNDERGROUND STORAGE TANK REMOVAL^USACE^02/10^0^1/16/2025 10:22^^^^removal and disposal of underground, nonhardened tanks and piping used to store petroleum products, waste oils or hazardous wastes in accordance with Federal, State, and local regulations.
+02 81 00^ TRANSPORTATION AND DISPOSAL OF HAZARDOUS MATERIALS^USACE^^0^1/16/2025 10:22^^^^transportation and disposal of hazardous material
+02 82 00^ ASBESTOS REMEDIATION^NAVFAC^01/24^0^1/16/2025 10:22^^^^safety procedures and requirements for the demolition, removal,encapsulation, enclosureencasement, or repair of friable and non-friable encapsulation, and disposal of asbestos containing materials (ACM) alteration, renovation, or maintenance of structures, substrates, equipment or portions thereof that contain asbestos; transportation, disposal, storage, containment of; and housekeeping activities on the site at which these activities are performed
+02 83 00^ LEAD REMEDIATION^NAVFAC^^0^1/16/2025 10:22^^^^protection of workers, disposal of lead, cadmium and chromium painted material, abatement of lead based paint hazards in target housing and child occupied facilities and limiting occupational and environmental exposure to lead-based paint or paint with lead (LBP/PWL)
+02 84 16^ HANDLING OF LIGHTING BALLASTS AND LAMPS CONTAINING PCBS AND MERCURY^NAVFAC^^0^1/16/2025 10:22^^^^requirements for removal and disposal of polychlorinated biphenyl (PCB) containing lighting ballasts and mercury containing lamps, and the handling of resulting wastes
+02 84 33^ REMOVAL AND DISPOSAL OF POLYCHLORINATED BIPHENYLS (PCBs)^NAVFAC^01/24^0^1/16/2025 10:22^^^^the removal and disposal of polychlorinated biphenyls (PCBs) and the handling of PCB containing materials
+03 30 00^ CAST-IN-PLACE CONCRETE^NAVFAC^02/19^0^1/16/2025 10:22^^^^cast-in-place concrete not exposed to a marine or high chloride environment
+05 05 23.13 10^ ULTRASONIC INSPECTION OF WELDMENTS^USACE^08/18^0^1/16/2025 10:22^^^^ultrasonic inspections of weldments; including qualifications and procedures
+05 05 23.16^ STRUCTURAL WELDING^USACE^08/18^0^1/16/2025 10:22^^^^(1) qualifying welding procedures, welders and welding operators, and (2) the fabrication, welding and inspection of carbon steel, low alloy steel, extra-high-strength quenched and tempered low alloy steels, and austenitic stainless steel materials for structural steel for buildings, other structures and non-structural use
+05 12 00^ STRUCTURAL STEEL^NAVFAC^08/18^0^1/16/2025 10:22^^^^structural steel used in building construction
+05 30 00^ STEEL DECKS^NAVFAC^05/15^0^1/16/2025 10:22^^^^steel floor and roof decks, including accessories
+05 50 13^ MISCELLANEOUS METAL FABRICATIONS^NAVFAC^05/17^0^1/16/2025 10:22^^^^miscellaneous metalwork
+05 51 00^ METAL STAIRS^NASA^02/17, CHG 1: 05/17^0^1/16/2025 10:22^^^^steel stair systems which are not a part of any other metals system of the specification
+05 51 33^ METAL LADDERS^NAVFAC^02/16^0^1/16/2025 10:22^^^^metal ladders and has been edited specifically for USACE Japan District
+05 52 00^ METAL RAILINGS^NASA^02/18^0^1/16/2025 10:22^^^^metal railing systems which are not a part of any other metals system of the specification
+06 10 00^ ROUGH CARPENTRY^NAVFAC^08/16, CHG 2: 11/18^0^1/16/2025 10:22^^^^framing, grounds, nailers, blocking, and sheathing of light wooden structures and includes the use of preassembled components and plastic lumber
+06 20 00^ FINISH CARPENTRY^NAVFAC^08/16, CHG 2: 11/18^0^1/16/2025 10:22^^^^covers general exterior and interior finish carpentry in a condensed format and is therefore intended for use on small projects
+06 41 16.00 10^ PLASTIC-LAMINATE-CLAD ARCHITECTURAL CABINETS^USACE^08/10^0^1/16/2025 10:22^^^^laminate clad architectural casework
+06 61 16^ SOLID SURFACING FABRICATIONS^USACE^08/20^0^1/16/2025 10:22^^^^solid polymer and quartz agglomerate (or "engineered quartz") fabrications
+07 05 23^ PRESSURE TESTING AN AIR BARRIER SYSTEM FOR AIR TIGHTNESS^USACE^08/19^0^1/16/2025 10:22^^^^requirements for pressure testing a building's air barrier for air leaks.  Minimizing air leakage through an air barrier helps reduce energy costs
+07 14 00^ FLUID-APPLIED WATERPROOFING^NAVFAC^02/12^0^1/16/2025 10:22^^^^fluid-applied elastomeric waterproofing systems for building decks over occupied space where membrane is protected of a separate wearing course
+07 21 16^ MINERAL FIBER BLANKET INSULATION^NAVFAC^11/11, CHG 4: 08/18^0^1/16/2025 10:22^^^^mineral fiber blanket thermal insulation in attics, ceilings, walls, and floors
+07 27 10.00 10^ BUILDING AIR BARRIER SYSTEM^USACE^08/19, CHG 1: 02/20^0^1/16/2025 10:22^^^^contractor responsibilities, quality control, and maximum leakage requirements of the constructed air barrier system
+07 52 00^ MODIFIED BITUMINOUS MEMBRANE ROOFING^NAVFAC^05/12^0^1/16/2025 10:22^^^^modified bitumen sheet roofing.  Hot mopped asphalt, torch applied, hot air, and cold-applied adhesive applications are included on both existing and new roof systems with slopes from 6 mm to 76 mm 1/4 inch to 3 inches per foot.  Both SBS and APP modified bitumen membranes are included
+07 60 00^ FLASHING AND SHEET METAL^NAVFAC^05/17^0^1/16/2025 10:22^^^^flashing and sheet metal work including gutters and downspouts, scuppers, splash pans, and sheet metal roofing
+07 92 00^ JOINT SEALANTS^NAVFAC^08/16^0^1/16/2025 10:22^^^^sealants for normal building construction
+08 11 13^ STEEL DOORS AND FRAMES^NAVFAC^08/20^0^1/16/2025 10:22^^^^steel doors and frames
+08 11 16^ ALUMINUM DOORS AND FRAMES^NAVFAC^05/17^0^1/16/2025 10:22^^^^aluminum doors and frames intended for use primarily as main entrance and vestibule doors, and for prominent interior doors from lobbies and similar spaces in buildings of public access
+08 14 00^ WOOD DOORS^NAVFAC^08/16^0^1/16/2025 10:22^^^^wood doors
+08 31 00^ ACCESS DOORS AND PANELS^NAVFAC^05/17, CHG 1: 08/18^0^1/16/2025 10:22^^^^access doors and panels
+08 32 13^ ALUMINUM SLIDING GLASS DOORS^NAVFAC^08/20^0^1/16/2025 10:22^^^^aluminum sliding glass doors for commercial, residential, and monumental type buildings
+08 41 13^ ALUMINUM-FRAMED ENTRANCES AND STOREFRONTS^NAVFAC^08/18, CHG 1: 08/18^0^1/16/2025 10:22^^^^Aluminum Entrances, glass and glazing, door hardware and components.
+08 51 13^ ALUMINUM WINDOWS^NAVFAC^05/19^0^1/16/2025 10:22^^^^R, LC, CW and AW performance class aluminum windows
+08 51 23^ STEEL WINDOWS^NAVFAC^08/20, CHG 1: 02/22^0^1/16/2025 10:22^^^^standard steel windows
+08 71 00^ DOOR HARDWARE^NAVFAC^02/16^0^1/16/2025 10:22^^^^finish hardware for permanent structures
+08 81 00^ GLAZING^NAVFAC^05/19^0^1/16/2025 10:22^^^^normal glazing
+08 91 00^ METAL [WALL] [AND] [DOOR] LOUVERS^NAVFAC^08/20^0^1/16/2025 10:22^^^^average metal wall louvers, metal louvers in wood doors, screens and frames, and accessories
+09 22 00^ SUPPORTS FOR PLASTER AND GYPSUM BOARD^NAVFAC^02/10^0^1/16/2025 10:22^^^^non-loadbearing cold-formed metal framing, furring, and ceiling suspension systems for the attachment of lath, plaster, stucco, and wallboard
+09 29 00^ GYPSUM BOARD^NAVFAC^08/16^0^1/16/2025 10:22^^^^gypsum board, cementitious backer units, and accessories intended for use in drywall construction
+09 30 10^ CERAMIC, QUARRY, AND GLASS TILING^USACE^08/17^0^1/16/2025 10:22^^^^a variety of types of ceramic tile for walls and floors
+09 51 00^ ACOUSTICAL CEILINGS^USACE^08/20^0^1/16/2025 10:22^^^^conventional and impact/abrasion resistant acoustical ceiling tile and panels, unit acoustical absorbers, hangers, and suspension system grid for installation in commercial-type work
+09 65 00^ RESILIENT FLOORING^USACE^08/10^0^1/16/2025 10:22^^^^resilient floor coverings, base materials, and accessory items
+09 68 00^ CARPETING^USACE^11/17^0^1/16/2025 10:22^^^^broadloom carpet, modular tile carpet, and entrance carpet.
+09 90 00^ PAINTS AND COATINGS^NAVFAC^05/11^0^1/16/2025 10:22^^^^painting of new and existing, interior and exterior substrates, including masonry, concrete, metal, wood and other miscellaneous materials
+10 14 00.10^ EXTERIOR SIGNAGE^USACE^08/17^0^1/16/2025 10:22^^^^common types of exterior signs, dimensional building letters, and metal plaques
+10 14 00.20^ INTERIOR SIGNAGE^USACE^08/17^0^1/16/2025 10:22^^^^common types of signs, dimensional letters, and metal plaques used inside buildings
+10 21 13^ TOILET COMPARTMENTS^USACE^08/17^0^1/16/2025 10:22^^^^ceiling-hung, floor anchored, and overhead-braced toilet partitions
+10 26 00^ WALL AND DOOR PROTECTION^USACE^08/17^0^1/16/2025 10:22^^^^corner guards, wall guards (bumper guards), door protectors, and wall panels
+10 28 13^ TOILET ACCESSORIES^USACE^08/17^0^1/16/2025 10:22^^^^toilet accessories suitable for a wide variety of applications
+12 21 00^ WINDOW BLINDS^USACE^08/17^0^1/16/2025 10:22^^^^window blinds and hardware.
+14 21 23^ ELECTRIC TRACTION PASSENGER ELEVATORS^TRI SERVICES^09/22^0^1/16/2025 10:22^^^^requirements for electric traction passenger elevators
+21 13 13^ WET PIPE SPRINKLER SYSTEMS, FIRE PROTECTION^USACE^08/20^0^1/16/2025 10:22^^^^wet pipe fire protection sprinkler systems
+21 30 00^ FIRE PUMPS^USACE^04/08^0^1/16/2025 10:22^^^^fire pumps
+22 00 00^ PLUMBING, GENERAL PURPOSE^NAVFAC^11/15^0^1/16/2025 10:22^^^^general purpose plumbing systems
+23 05 15^ COMMON PIPING FOR HVAC^NASA^02/14^0^1/16/2025 10:22^^^^standard basic mechanical work
+23 05 48.19^ [SEISMIC] BRACING FOR HVAC^USACE^05/18, CHG 2: 08/20^0^1/16/2025 10:22^^^^seismic protection of mechanical equipment, ductwork, building piping, and exterior utilities.
+23 07 00^ THERMAL INSULATION FOR MECHANICAL SYSTEMS^USACE^02/13^0^1/16/2025 10:22^^^^field applied thermal insulation on HVAC and plumbing systems located within, on, under, and adjacent to buildings; above and below ground
+23 23 00^ REFRIGERANT PIPING^USACE^10/07^0^1/16/2025 10:22^^^^refrigerant piping systems inside of buildings, or leading from equipment adjacent to buildings
+23 30 00^ HVAC AIR DISTRIBUTION^USACE^05/20^0^1/16/2025 10:22^^^^air supply, distribution, ventilation, and exhaust portions of an HVAC system
+23 64 10^ WATER CHILLERS, VAPOR COMPRESSION TYPE^NAVFAC^11/16^0^1/16/2025 10:22^^^^water chilling equipment
+23 64 26^ CHILLED, CHILLED-HOT, AND CONDENSER WATER PIPING SYSTEMS^NAVFAC^08/09^0^1/16/2025 10:22^^^^chilled water, chilled-hot (dual service) water and condenser water piping systems associated with HVAC systems, and located within, on, or under buildings, or connected to equipment adjacent to buildings
+23 65 00^ COOLING TOWERS AND REMOTE EVAPORATIVELY-COOLED CONDENSERS^NAVFAC^11/16^0^1/16/2025 10:22^^^^induced mechanical draft cooling towers (both packaged and field-erected)
+23 81 00^ DECENTRALIZED UNITARY HVAC EQUIPMENT^NAVFAC^05/18^0^1/16/2025 10:22^^^^room air conditioners, packaged terminal units, heat pumps, and air conditioners of the single package or split system type
+25 05 11^ CYBERSECURITY FOR FACILITY-RELATED CONTROL SYSTEMS^USACE^11/17^0^3/2/2020 11:30^^^^cybersecurity for facility-related control systems
+26 05 48.00 10^ SEISMIC PROTECTION FOR ELECTRICAL EQUIPMENT^USACE^10/07^0^1/16/2025 10:22^^^^seismic protection of electrical equipment, conduit, and exterior utilities.
+26 11 16.00 33^ THREE-PHASE, CUBICLE-TYPE PAD-MOUNTED TRANSFORMER^NAVFAC^08/19^0^1/16/2025 10:22^^^^
+26 12 19.10^ THREE-PHASE, LIQUID-FILLED PAD-MOUNTED TRANSFORMERS^NAVFAC^05/19^0^1/16/2025 10:22^^^^three-phase pad-mounted, liquid-filled transformers of the dead-front and live-front types for exterior applications
+26 20 00^ INTERIOR DISTRIBUTION SYSTEM^NAVFAC^02/14^0^1/16/2025 10:22^^^^procurement, installation, and testing of electrical wiring systems for construction projects
+26 23 00^ LOW-VOLTAGE SWITCHGEAR^NAVFAC^05/15^0^1/16/2025 10:22^^^^metal-enclosed low-voltage power circuit-breaker switchgear assemblies in either interior or exterior locations
+26 24 13^ SWITCHBOARDS^NAVFAC^05/15^0^1/16/2025 10:22^^^^free standing deadfront switchboard assemblies rated 6000 amperes or less, 600 volts or less
+26 29 23^ ADJUSTABLE SPEED DRIVE (ASD) SYSTEMS UNDER 600 VOLTS^NAVFAC^02/20, CHG 1: 05/21^0^1/16/2025 10:22^^^^ASD (also referred to as variable frequency drive (VFD)) for motors rated up to 575 volts, for use on electric power systems of 600 volts or less, 50/60 hertz
+26 41 00^ LIGHTNING PROTECTION SYSTEM^NAVFAC^11/13^0^1/16/2025 10:22^^^^lightning protection systems for non-ordnance facilities
+26 51 00^ INTERIOR LIGHTING^NAVFAC^05/16^0^1/16/2025 10:22^^^^lighting and lighting control system requirements for interior installations
+26 56 00^ EXTERIOR LIGHTING^NAVFAC^05/13^0^1/16/2025 10:22^^^^lighting system requirements for exterior installations
+27 10 00^ BUILDING TELECOMMUNICATIONS CABLING SYSTEM^NAVFAC^08/11^0^1/16/2025 10:22^^^^building telecommunications cabling systems using a physical star network topology for transporting telecommunications signals within a building.
+31 00 00^ EARTHWORK^USACE^08/08^0^1/16/2025 10:22^^^^earthwork activities for buildings, utilities, roadways, railroads, and airfields
+31 21 13^ RADON MITIGATION^NAVFAC^11/18^0^1/16/2025 10:22^^^^constructing radon mitigation systems in new buildings, existing buildings and facilities, including constructing radon mitigation systems enclosures, when required
+31 62 13.20^ PRECAST/PRESTRESSED CONCRETE PILES^NAVFAC^08/09^0^1/16/2025 10:22^^^^prestressed, pretensioned piles
+32 01 16.71^ COLD MILLING ASPHALT PAVING^USACE^02/17^0^3/2/2020 11:30^^^^cold milling of bituminous pavement for airfields, roads, streets, parking areas, and other general applications
+32 11 20^ BASE COURSE FOR RIGID AND SUBBASES FOR FLEXIBLE PAVING^USACE^08/17^0^1/16/2025 10:22^^^^subbase and rigid base courses for airfield pavements, roads and streets.
+32 11 23^ AGGREGATE BASE COURSES^USACE^08/17^0^1/16/2025 10:22^^^^base course to be used directly under bituminous pavement courses
+32 12 13^ BITUMINOUS TACK AND PRIME COATS^USACE^05/17^0^1/16/2025 10:22^^^^bituminous tack and prime coats for airfield pavements, roads, parking areas and general paving needs
+32 12 16.16^ HOT-MIX ASPHALT (HMA) FOR ROADS^USACE^08/09^0^1/16/2025 10:22^^^^hot-mix asphalt (HMA) courses (central-plant hot-mix) for roads
+32 15 00^ AGGREGATE SURFACING^USACE^05/17^0^1/16/2025 10:22^^^^aggregate surfacing for roads, parking areas and Army airfields
+32 16 19^ CONCRETE CURBS, GUTTERS AND SIDEWALKS^USACE^05/18^0^1/16/2025 10:22^^^^concrete sidewalks and curbs and gutters
+32 31 13^ CHAIN LINK FENCES AND GATES^NASA^11/16^0^1/16/2025 10:22^^^^steel fencing, including posts, fabric, gates, and miscellaneous accessories
+33 11 00^ WATER UTILITY DISTRIBUTION PIPING^NAVFAC^02/18^0^1/16/2025 10:22^^^^potable and non-potable (i.e., raw water, sea, salt water) systems
+33 30 00^ SANITARY SEWERAGE^USACE^05/18^0^1/16/2025 10:22^^^^piping and appurtenant structures for an exterior sanitary sewer system
+33 40 00^ STORM DRAINAGE UTILITIES^USACE^02/10^0^1/16/2025 10:22^^^^storm drainage piping systems using concrete,  polyvinyl chloride (PVC) and polyethylene (PE)
+33 71 02^ UNDERGROUND ELECTRICAL DISTRIBUTION^NAVFAC^02/15^0^1/16/2025 10:22^^^^underground electrical work
+33 82 00^ TELECOMMUNICATIONS OUTSIDE PLANT (OSP)^NAVFAC^04/06^0^1/16/2025 10:22^^^^exterior telecommunications Outside Plant consisting of the campus distributor, outside copper and fiber optic (FO) cable media, and associated hardware necessary to support communications systems at facility installations including permanently constructed buildings
+34 11 00^ RAILROAD TRACK AND ACCESSORIES^USACE^04/08^0^1/16/2025 10:22^^^^new railroads after the roadbed has been prepared, and railroad rehabilitation
+35 59 13.16^ EXTRUDED MARINE FENDERS^NAVFAC^11/21^0^1/16/2025 10:22^^^^extruded and molded marine fenders
+*****

@@ -63,4 +63,4 @@ def create_html_reports(folder_path:str) -> None:
     create_error_html(html_folder)
     create_index(html_folder)
 
-create_html_reports(sec_folder)
+create_html_reports('./specs/sec_161')

@@ -1,0 +1,163 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><BRK />
+<HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA               UFGS-32 01 16.71 (February 2017)<BRK />
+                                            ------------------------------<BRK />
+Preparing Activity:  <PRA>USACE</PRA>                  Superseding<BRK />
+                                            UFGS-32 01 16.17 (August 2008)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated January 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 32 01 16.71</SCN><BRK />
+<BRK />
+<STL>COLD MILLING ASPHALT PAVING</STL><BRK />
+<DTE>02/17</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements and include Japanese products, 
+where feasible, for a standard Japan Engineer District project.  The Designer of Record (DOR) shall tailor as 
+applicable to meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>cold milling of bituminous pavement for airfields, 
+roads, streets, parking areas, and other general applications</SCP>.<BRK />
+<BRK />
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections.  Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text.<BRK />
+<BRK />
+Remove information and requirements not required in respective project.<BRK />
+<BRK />
+Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification can be used to specify cold milling alone on structurally sound pavements for 
+surface texturing to increase skid resistance of a worn pavement, or for pavement removal to restore roadway geometry.  
+Cold milling can also be used in conjunction with mill and fill operations.</NPR><BRK />
+<BRK />
+<NPR>On the project drawings, show:</NPR><BRK />
+<BRK />
+<NPR>1.  Location and extent of milling operation.</NPR><BRK />
+<BRK />
+<NPR>2.  Required elevation of milled surface and finish surface of new pavement.</NPR><BRK />
+<BRK />
+<NPR>3.  Section indicating in<MET> mm</MET><ENG> inches</ENG> the depth that existing pavement has to be removed.</NPR><BRK />
+<BRK />
+<NPR>4.  Location of existing manholes, valve boxes and utility lines.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:This guide specification has been edited to cover the minimum requirements for a basic Japan Engineer District 
+project. Designer shall tailor as applicable to meet project specific requirement.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.1"><TTL>QUALITY ASSURANCE</TTL><BRK />
+<BRK />
+<SPT outline="1.1.1"><TTL>Grade</TTL><BRK />
+<BRK />
+<TXT>Mill pavement such that the finished surface conforms to the lines, grades, and cross sections indicated.  The maximum allowable deviation of the 
+finished milled pavement surfaces from the established plan grade line and elevation will be<MET> 6 mm</MET><ENG> [0] [1/4] inch</ENG>.  The deviations from the 
+plan grade line and elevation will not be permitted in areas of pavements where closer conformance with planned grade and elevation is required 
+for the proper functioning of appurtenant structures involved.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.1.2"><TTL>Surface Smoothness</TTL><BRK />
+<BRK />
+<TXT>The maximum allowable deviation of the finished surfaces from the testing edge in the transverse or longitudinal direction will be<MET> 6 mm</MET><ENG> 1/4 inch</ENG>
+.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.1.3"><TTL>Traffic Control</TTL><BRK />
+<BRK />
+<TXT>Provide all necessary traffic controls during milling operations.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.2"><TTL>EQUIPMENT, TOOLS, AND MACHINES</TTL><BRK />
+<BRK />
+<TXT>Maintain in a satisfactory working condition equipment, tools, and machines used in the performance of the work.</TXT><BRK />
+<BRK />
+<SPT outline="1.2.1"><TTL>Cold-Milling Machine</TTL><BRK />
+<BRK />
+<TXT>Provide a cold-milling machine which is self-propelled, capable of milling the pavement to a specified depth and smoothness and of establishing 
+grade control; with means of controlling transverse slope and dust produced during the pavement milling operation.  Machine will have capability 
+of adding water in front of equipment to minimize dust during milling operation.  The machine will have the ability to remove the millings or cuttings from the pavement and load them into a truck.  The milling machine will not damage any part of the 
+pavement structure that is not to be removed.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2.2"><TTL>Cleaning Equiment</TTL><BRK />
+<BRK />
+<TXT>Provide cleaning equipment suitable for removing and cleaning loose material from the pavement surface.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2.3"><TTL>Straightedge</TTL><BRK />
+<BRK />
+<TXT>Furnish and maintain at the site, in good condition, one<MET> 3.66 meter</MET><ENG> 12 foot</ENG> straightedge or other suitable device for each milling machine, for 
+testing the finished surface.  Make straightedge available for Government use. Use straightedges constructed of aluminum or other lightweight metal, 
+with blades of box or box-girder cross section with flat bottom reinforced to insure rigidity and accuracy.  Use straightedges with handles to 
+facilitate movement on the pavement.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.3"><TTL>ENVIRONMENTAL REQUIREMENTS</TTL><BRK />
+<BRK />
+<TXT>Do not perform milling when there is accumulation of snow or ice on the pavement surface.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<TXT> Not Used</TXT><BRK />
+<BRK /></PRT>
+<PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL><TST>MILLING OPERATION</TST></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<BRK />
+<BRK />
+<NPR>When the milled material (cutting) is to be cold recycled, the maximum size of the cuttings should be equal to 
+or less than one-half of the recycled pavement thickness.  Generally, the maximum size for a single<MET> 100 mm</MET><ENG> 4 inch</ENG>
+ lift of pavement will be<MET> 50 mm</MET><ENG> 2 inches</ENG> or less.  For hot recycling the recommended maximum size of the milled 
+material is<MET> 50 mm</MET><ENG> 2 inches</ENG>.</NPR><BRK />
+<BRK />
+<NPR>If design does not include removal of base course material and it is desired not to disturb the base course then 
+the following may be included in this paragraph:</NPR><BRK />
+<BRK />
+<NPR>Conduct cold-milling operation to ensure that only bituminous pavement is removed and base course is not disturbed.  
+Leave in place a layer of bituminous pavement,<MET> 25 mm</MET><ENG> 1 inch</ENG> thick, over the undisturbed base course.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>A minimum of seven days notice is required, prior to start work, for the Contracting Officer to coordinate the milling operation with other activities 
+at the site.  Make sufficient passes so that the designated area is milled to the grades and cross sections indicated.  Mill the pavement in depth 
+increments that will not damage the pavement below the designated finished grade.  If scabbing occurs, the surface will not meet smoothness requirements.  
+Take steps to modify the process as needed to prevent scabbing from occuring.  Repair or replace, as directed, items damaged during milling such 
+as manholes, valve boxes, utility lines, pavement that is torn, cracked, gouged, broken, or undercut.  Remove the 
+milled material from the pavement and load into trucks.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2"><TTL>GRADE AND SURFACE-SMOOTHNESS TESTING</TTL><BRK />
+<BRK />
+<SPT outline="3.2.1"><TTL><TST>Grade-Conformance Tests</TST></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For pavements in aircraft traffic areas such as airfield runways and taxiways, lines of levels to determine 
+elevation of the milled pavement will be run longitudinally and transversely at intervals not exceeding<MET> 8 meters</MET><ENG>
+ 25 feet</ENG>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Test the finished milled surface of the pavement for conformance with the plan-grade requirements and for acceptance by the Contracting Officer 
+by running lines of levels at intervals of<MET> 7.5 meters</MET><ENG> [25] [_____] feet</ENG> longitudinally and<MET> 7.5 meters</MET><ENG> [25] [_____] feet</ENG> transversely 
+to determine the elevation of the completed pavement.  Correct variations from the designated grade line and elevation in excess of the plan-grade 
+requirements as directed.  Skin patching for correcting low areas will not be permitted.  Remove and replace the deficient low area.  Remove sufficient 
+material to allow at least<MET> 25 mm</MET><ENG> 1 inch</ENG> of asphalt concrete to be placed.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.2"><TTL><TST>Surface-Smoothness Tests</TST></TTL><BRK />
+<BRK />
+<TXT>After completion of the final milling, the finished milled surface will be tested by the Government with a straightedge.  Other approved devices 
+may be used, provided that when satisfactorily and properly operated, such devices reveal all surface irregularities exceeding the tolerances specified.  
+Correct surface irregularities that depart from the testing edge by more than<MET> 6 mm</MET><ENG> 1/4 inch</ENG>.  Skin patching for correcting low areas will not be 
+permitted.  Remove and replace the deficient low area.  Remove sufficient material to allow at least<MET> 25 mm</MET><ENG> 1 inch</ENG> of asphalt concrete to be placed.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.3"><TTL>REMOVAL OF MILLED MATERIAL</TTL><BRK />
+<BRK />
+<TXT> Stockpile material that is removed as specified and in such a manner to prevent 
+segregation or contamination. Material that is removed will become the property of the Contractor and removed from the site.</TXT><BRK />
+<BRK /></SPT>
+</PRT>   <END /><BRK /></SEC>
