@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"> <MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><HDR><AST/><BRK/>
+USACE / NAVFAC / AFCEC / NASA                UFGS-05 52 00 (February 2018)<BRK/>
+                                             -----------------------------<BRK/>
+Preparing Activity:  <PRA>NASA</PRA>                    Superseding<BRK/>
+                                             UFGS-05 52 00 (August 2015)<BRK/>
+<BRK/>
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
+<BRK/>
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK/>
+<AST/><BRK/></HDR>
+<BRK/>
+<SCN>SECTION 05 52 00</SCN><BRK/>
+<BRK/>
+<STL>METAL RAILINGS</STL><BRK/>
+<DTE>02/18</DTE><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project.  The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>metal railing systems 
+which are not a part of any other metals system of the specification</SCP>.</NPR><BRK/>
+<BRK/>
+<NPR>Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.</NPR><BRK/>
+<BRK/>
+<NPR>Remove information and requirements not required in respective project, whether 
+or not brackets are present.</NPR><BRK/>
+<BRK/>
+<NPR>Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Associated work found in Division 05, "Metals," includes:</NPR><BRK/>
+<BRK/>
+<NPR>Structural steel</NPR><BRK/>
+<BRK/>
+<NPR>Miscellaneous metal</NPR><BRK/>
+<BRK/>
+<NPR>Steel stairs</NPR><BRK/>
+<BRK/>
+<NPR>Ornamental railings</NPR><BRK/>
+<BRK/>
+<NPR>Installation of inserts and anchorage devices</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>REFERENCES</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification.  The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.</NPR><BRK/>
+<BRK/>
+<NPR>Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.</NPR><BRK/>
+<BRK/>
+<NPR>References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK/>
+<BRK/>
+<REF><ORG>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION (ISO)</ORG><BRK/>
+<BRK/>
+<RID>ISO 898-1</RID><RTL>(2013) Mechanical Properties of Fasteners Made 
+of Carbon Steel and Alloy Steel — Part 1: Bolts, 
+Screws and Studs with Specified Property Classes 
+— Coarse Thread and Fine Pitch Thread</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG><BRK/>
+<BRK/>
+<RID>JIS B 1048</RID><RTL>(2007) Fasteners - Hot Dip Galvanized Coatings</RTL><BRK/>
+<BRK/>
+<RID>JIS B 1111</RID><RTL>(2017) Cross Recessed Machine Screws</RTL><BRK/>
+<BRK/>
+<RID>JIS B 1112</RID><RTL>(2019) Cross-Recessed Head Wood Screws</RTL><BRK/>
+<BRK/>
+<RID>JIS B 1189</RID><RTL>(2014) Hexagon Bolt with Flange</RTL><BRK/>
+<BRK/>
+<RID>JIS B 1251</RID><RTL>(2018) Spring Lock Washers</RTL><BRK/>
+<BRK/>
+<RID>JIS B 1256</RID><RTL>(2008) Plain Washers</RTL><BRK/>
+<BRK/>
+<RID>JIS F 2106</RID><RTL>(2013) General Chain for Ships</RTL><BRK/>
+<BRK/>
+<RID>JIS G 3101</RID><RTL>(2020) Rolled Steels for General Structure</RTL><BRK/>
+<BRK/>
+<RID>JIS G 3138</RID><RTL>(2021) Rolled Steel Bars for Building Structure</RTL><BRK/>
+<BRK/>
+<RID>JIS G 3444</RID><RTL>(2021) Carbon Steel Tubes for General Structure</RTL><BRK/>
+<BRK/>
+<RID>JIS G 3459</RID><RTL>(2017) Stainless Steel Pipes (Amendment 1)</RTL><BRK/>
+<BRK/>
+<RID>JIS G 3466</RID><RTL>(2021) Carbon Steel Square and Rectangular 
+Tubes for General Structure</RTL><BRK/>
+<BRK/>
+<RID>JIS G 3475</RID><RTL>
+(2021) Carbon Steel Tubes for Building Structure</RTL><BRK/>
+<BRK/>
+<RID>JIS G 4051</RID><RTL>(2018) Carbon Steels for Machine Structural 
+Use (Amendment 1)</RTL><BRK/>
+<BRK/>
+<RID>JIS G 4304</RID><RTL>(2021) Hot-Rolled Stainless Steel Plate, Sheet 
+and Strip</RTL><BRK/>
+<BRK/>
+<RID>JIS G 4305</RID><RTL>(2015) Cold-Rolled Stainless Steel Plate, Sheet 
+and Strip (Amendment 1)</RTL><BRK/>
+<BRK/>
+<RID>JIS G 5101</RID><RTL>(1991) Carbon Steel Castings</RTL><BRK/>
+<BRK/>
+<RID>JIS G 5705</RID><RTL>(2018) Malleable Iron Castings</RTL><BRK/>
+<BRK/>
+<RID>JIS H 4040</RID><RTL>(2015) Aluminum and Aluminum Alloy Bars and 
+Wires</RTL><BRK/>
+<BRK/>
+<RID>JIS H 4100</RID><RTL>(2015) Aluminum and Aluminum Alloy Extru
+ded Profiles</RTL><BRK/>
+<BRK/>
+<RID>JIS H 5202</RID><RTL>(2010) Aluminum Alloy Castings</RTL><BRK/>
+<BRK/>
+<RID>JIS H 8641</RID><RTL>(2021) Hot Dip Galvanized Coatings</RTL><BRK/>
+<BRK/>
+<RID>JIS Z 3410</RID><RTL>(2013) Welding Coordination - Tasks and Responsibilities</RTL><BRK/>
+<BRK/>
+<RID>JIS Z 3420</RID><RTL>(2003) Specification and Approval of Welding 
+Procedures for Metallic Materials - General 
+Rules</RTL><BRK/>
+<BRK/>
+<RID>JIS Z 3604</RID><RTL>(2016) Inert Gas Arc Welding Standard for Aluminum</RTL><BRK/>
+<BRK/>
+<RID>JIS Z 3801</RID><RTL>(2018) Standard Qualification Test and Acceptance 
+Requirements for Manual Welding Technique</RTL><BRK/>
+<BRK/>
+<RID>JIS Z 3841</RID><RTL>(2018) Standard Qualification 
+Test and Acceptance Requirements for Semi-Automatic 
+Welding Technique</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>MINISTRY 
+OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM (MLIT)</ORG><BRK/>
+<BRK/>
+<RID>MLIT Chapter 14</RID><RTL>Metal Work</RTL><BRK/>
+<BRK/></REF>
+</SPT><SPT><TTL>ADMINISTRATIVE REQUIREMENTS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Preinstallation Meetings</TTL><BRK/>
+<BRK/>
+<TXT>Within [30] [_____] days of contract award, submit <SUB>fabrication drawings</SUB> [to the Contracting Officer] for the 
+following items:</TXT><BRK/>
+<BRK/>
+[<LST INDENT="-0.33">a.  Iron and steel hardware</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">b.  Steel shapes, plates, bars and strips</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">c.  Steel railings and handrails</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">d.  Stainless Steel railings and handrails</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">e.  Aluminum railings and handrails</LST><BRK/>
+<BRK/>
+]<LST INDENT="-0.33">f.  Anchorage and fastening systems</LST><BRK/>
+<BRK/>
+<TXT>Submit manufacturer's catalog data, including two copies of manufacturers specifications, load tables, dimension 
+diagrams, and anchor details for the following items:</TXT><BRK/>
+<BRK/>
+[<LST INDENT="-0.33">a.  Structural-steel plates, shapes, and bars</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">b.  Structural-steel tubing</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">c.  Cold-finished steel bars</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">d.  Hot-rolled carbon steel bars</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">e.  Cold-drawn steel tubing</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">f.  Concrete inserts</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">g.  Masonry anchorage devices</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">h.  Protective coating</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">i.  Steel railings and handrails</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">j.  Stainless Steel railings and handrails</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">k.  Aluminum railings and handrails</LST><BRK/>
+<BRK/>
+]<LST INDENT="-0.33">l.  Anchorage and fastening systems</LST><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>SUBMITTALS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Review Submittal Description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.</NPR><BRK/>
+<BRK/>
+<NPR>The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G."  Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a “G” to an item, if the submittal is sufficiently important or complex 
+in context of the project.</NPR><BRK/>
+<BRK/>
+<NPR>For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office.  Codes following the "G" typically are not used for Navy,  Air Force, 
+and NASA projects.</NPR><BRK/>
+<BRK/>
+<NPR> An "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
+submittal under the SD number that best describes the submittal item.</NPR><BRK/>
+<BRK/>
+<NPR>Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are [for Contractor Quality Control approval.][for information only.  When used, a designation following the 
+"G" designation identifies the office that will review the submittal for the Government.]  Submittals with an 
+"S" are for inclusion in the Sustainability eNotebook, in conformance to Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
+<BRK/>
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Fabrication Drawings</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Iron and Steel Hardware</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Steel Shapes, Plates, Bars and Strips</SUB></ITM><BRK/>
+<BRK/>
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Welding Procedures</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Welder Qualification</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK/>
+<BRK/>
+<LST><SUB>SD-08 Manufacturer's Instructions</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Installation Instructions</SUB></ITM><BRK/>
+<BRK/></SPT>
+<SPT><TTL>QUALITY CONTROL</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Welding Procedures</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  If Section <SRF>05 05 23.16</SRF> STRUCTURAL WELDING is not included in the project 
+specification, applicable requirements therefrom should be inserted and the 
+following paragraph deleted.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+[<TXT>Section <SRF>05 05 23.16</SRF> STRUCTURAL WELDING applies to work specified in this section.</TXT><BRK/>
+<BRK/>
+]<TXT>Submit results of <TST><SUB>welding procedures</SUB> testing</TST> in accordance with <RID>JIS Z 3801</RID> or <RID>JIS Z 3841</RID> made in the presence 
+of the Contracting Officer and by an approved testing laboratory at the Contractor's expense.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Welder Qualification</TTL><BRK/>
+<BRK/>
+<TXT><TST>Submit certified <SUB>welder qualification</SUB> by tests in accordance with <RID>JIS Z 3801</RID> or <RID>JIS Z 3841</RID>, or under an equivalent 
+approved qualification test.</TST>  In addition, perform tests on test pieces in positions and with clearances equivalent 
+to those actually encountered.  If a test weld fails to meet requirements, conduct an immediate retest of two 
+test welds and ensure that each test weld passes.  Failure in the immediate retest will require that the welder 
+be retested after further practice or training and make a complete set of test welds.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>DESIGN</TTL><BRK/>
+<BRK/>
+<TXT>Design all handrails and guards to resist a concentrated load of[ 890 N][ ] [_____] in any direction at any point 
+of the top of the rail or[ 730 N/m][ ] [_____] applied horizontally to the top of the rail, whichever is more 
+severe.  Intermediate rails, balusters and panel fillers shall be design to resist a concentrated load of[ 220 
+N][ ].  <RID>MLIT Chapter 14</RID>, provide the same size rail and post.  Provide pipe collars of the same material and 
+finish as the handrail and posts.  [Provide series 300 stainless-steel pipe collars.]</TXT><BRK/>
+<BRK/>
+<TXT>In addition to the above loads exterior railings shall be also designed to withstand a wind load of [  ]N/m.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>FABRICATION</TTL><BRK/>
+<BRK/>
+<TXT>Preassemble items in the shop to the greatest extent possible.  Disassemble units only to the extent necessary 
+for shipping and handling.  Clearly mark units for reassembly and coordinated installation.</TXT><BRK/>
+<BRK/>
+<TXT>For the fabrication of work exposed to view, use only materials that are smooth and free of surface blemishes, 
+including pitting, seam marks, roller marks, rolled trade names, and roughness.  Remove blemishes by grinding, 
+or by welding and grinding, before cleaning, treating, and applying surface finishes, including zinc coatings.</TXT><BRK/>
+<BRK/>
+<TXT>Provide railing and handrail detail plans and elevations at not less than<MET> 1 to 10 scale</MET><ENG> 1 inch to 1 foot</ENG>.  Provide 
+details of sections and connections at not less than<MET> 1 to 5 scale</MET><ENG> 3 inches to 1 foot</ENG>.  Also detail setting drawings, 
+diagrams, templates for installation of anchorages, including concrete inserts, anchor bolts, and miscellaneous 
+metal items having integral anchors.</TXT><BRK/>
+<BRK/>
+<TXT>Use materials of size and thicknesses indicated or, if not indicated, of the size and thickness necessary to 
+produce adequate strength and durability in the finished product for its intended use.  Work the materials to 
+the dimensions indicated on approved detail drawings, using proven details of fabrication and support.  Use the 
+type of materials indicated or specified for the various components of work.</TXT><BRK/>
+<BRK/>
+<TXT>Form exposed work true to line and level, with accurate angles and surfaces and straight sharp edges.  Ensure 
+that all exposed edges are eased to a radius of approximately<MET> 0.8 millimeter</MET><ENG> 1/32 inch</ENG>.  Bend metal corners to 
+the smallest radius possible without causing grain separation or otherwise impairing the work.</TXT><BRK/>
+<BRK/>
+<TXT>Weld corners and seams continuously and in accordance with the recommendations of <RID>JIS Z 3420</RID> and <RID>JIS Z 3604</RID>.  
+Grind exposed welds smooth and flush to match and blend with adjoining surfaces.</TXT><BRK/>
+<BRK/>
+<TXT>Form the exposed connections with hairline joints that are flush and smooth, using concealed fasteners wherever 
+possible.  Use exposed fasteners of the type indicated or, if not indicated, use countersunk Phillips flathead 
+screws or bolts.</TXT><BRK/>
+<BRK/>
+<TXT>Provide anchorage of the type indicated and coordinated with the supporting structure.  Fabricate anchoring devices 
+and space as indicated and as required to provide adequate support for the intended use of the work.</TXT><BRK/>
+<BRK/>
+<TXT>Use hot-rolled steel bars for work fabricated from bar stock unless work is indicated or specified to be fabricated 
+from cold-finished or cold-rolled stock.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Aluminum Railings and Handrails</TTL><BRK/>
+<BRK/>
+<TXT>Fabrication:  Provide fabrication jointing by one of the following methods:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Use flush-type rail fittings, welded and ground smooth with splice locks secured with<MET> 10 mm</MET><ENG> 3/8 inch</ENG>
+ recessed-head set screws.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Ensure that mitered and welded joints made by fitting; post to top rail; intermediate rail to post; 
+and corners, are groove welded and ground smooth.  Where allowed by the Contracting Officer, provide 
+butt splices reinforced by a tight-fitting dowel or sleeve not less than<MET> 150 mm</MET><ENG> 6 inches</ENG> in length.  
+Tack-weld or epoxy-cement the dowel or sleeve to one side of the splice.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Assemble railings using slip-on aluminum-magnesium alloy fittings for joints.  Fasten fittings to 
+pipe or tube with<MET> 6 or 10 mm</MET><ENG> 1/4 or 3/8 inch</ENG> stainless-steel recessed-head setscrews. Provide assembled 
+railings with fittings only at vertical supports or at rail terminations attached to walls.  Provide 
+expansion joints at the midpoint of panels.  Provide a setscrew in only one side of the slip-on sleeve.  
+Provide alloy fittings to conform to <RID>JIS H 5202</RID>.</LST><BRK/>
+<BRK/>
+[<TXT>Provide removable railing sections as indicated.  [Provide toe-boards and brackets where indicated, using flange 
+castings as appropriate.]</TXT><BRK/>
+<BRK/>
+]</SPT><SPT><TTL>Steel Railings and Handrails</TTL><BRK/>
+<BRK/>
+<TXT>Fabricate joint posts, rail, and corners by one of the following methods:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Flush-type rail fittings of commercial standard, welded and ground smooth, with railing splice locks 
+secured with<MET> 10 mm</MET><ENG> 3/8 inch</ENG> hexagonal-recessed-head setscrews.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Mitered and welded joints made by fitting post to top rail and intermediate rail to post, mitering 
+corners, groove-welding joints, and grinding smooth.  Butt railing splices and reinforce them by a tight-fitting 
+interior sleeve not less than<MET> 150 mm</MET><ENG> 6 inches</ENG> long.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Railings may be bent at corners in lieu of jointing, provided that bends are made in suitable jigs 
+and the pipe is not crushed.</LST><BRK/>
+<BRK/>
+[<TXT>Provide removable sections as indicated.</TXT><BRK/>
+<BRK/>
+]</SPT>[<SPT><TTL>Stainless Steel Railings and Handrails</TTL><BRK/>
+<BRK/>
+<TXT>Provide stainless steel tubing, welded or seamless, conforming to <RID>JIS G 4304</RID>, <RID>JIS G 4305</RID> or <RID>JIS G 3459</RID> unless 
+otherwise noted.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Protective Coating</TTL><BRK/>
+<BRK/>
+[<TXT>Shop-prime the steelwork as indicated in accordance with Section <SRF>09 90 00</SRF> PAINTS AND COATINGS except the following:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  steel surfaces encased in concrete</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  steel surfaces for welding</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  high-strength bolt-connected contact surfaces</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  crane rail surfaces</LST><BRK/>
+<BRK/>
+][<TXT>Provide hot-dipped galvanized steelwork as indicated in accordance with <RID>JIS H 8641</RID>.  Touch up abraded surfaces 
+and cut ends of galvanized members with zinc-dust, zinc-oxide primer, or an approved galvanizing repair compound.</TXT><BRK/>
+<BRK/>
+]</SPT>]</SPT><SPT><TTL>COMPONENTS</TTL><BRK/>
+<BRK/>
+[<SPT><TTL>Structural Steel Plates, Shapes And Bars</TTL><BRK/>
+<BRK/>
+<TXT>Provide structural-size shapes and plates, except plates to be bent or cold-formed, conforming to <RID>JIS G 3101</RID>, 
+unless otherwise noted.</TXT><BRK/>
+<BRK/>
+<TXT>Provide steel plates, to be bent or cold-formed, conforming to <RID>JIS G 3101</RID>, SS 400.</TXT><BRK/>
+<BRK/>
+<TXT>Provide steel bars and bar-size shapes conforming to <RID>JIS G 3101</RID>, unless otherwise noted.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Structural-Steel Tubing</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Includes square, rectangular, round, and specially shaped structural-steel 
+tubing.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide structural-steel tubing, hot-formed, welded or seamless, conforming to <RID>JIS G 3466</RID> unless otherwise noted.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Hot-Rolled Carbon Steel Bars</TTL><BRK/>
+<BRK/>
+<TXT>Provide bars and bar-size shapes conforming to <RID>JIS G 3138</RID>, grade as selected by the fabricator.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Cold-Finished Steel Bars</TTL><BRK/>
+<BRK/>
+<TXT>Provide cold-finished steel bars conforming to <RID>JIS G 4051</RID>, grade as selected by the fabricator.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Cold-Drawn Steel Tubing</TTL><BRK/>
+<BRK/>
+<TXT>Provide tubing conforming to <RID>JIS G 3444</RID>, sunk-drawn, butt-welded, cold-finished, and stress-relieved.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Steel Pipe</TTL><BRK/>
+<BRK/>
+<TXT>Provide pipe conforming to <RID>JIS G 3466</RID> STK 400 and 235 MPa or <RID>JIS G 3475</RID>, STKN400B and 235 MPa; primed finish, 
+unless galvanizing is required; standard weight (Schedule 40).</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Concrete Inserts</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Use inserts for fastening steel stair items to cast-in-place concrete 
+construction subjected to direct pullout loadings such as shelf angles and supports 
+attached to concrete slab ceilings.  Indicate all locations of inserts.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+[<TXT>Provide threaded-type concrete inserts consisting of galvanized ferrous castings, internally threaded to receive<MET>
+ M20</MET><ENG> 3/4 inch</ENG> diameter machine bolts; either malleable iron conforming to <RID>JIS G 5705</RID> or cast steel conforming 
+to <RID>JIS G 5101</RID>, SC 42, SC 46 or SC 49, hot-dip galvanized in accordance with <RID>JIS B 1048</RID>.</TXT><BRK/>
+<BRK/>
+][<TXT>Provide wedge-type concrete inserts consisting of galvanized box-type ferrous castings designed to accept<MET> M20</MET><ENG>
+ 3/4 inch</ENG> diameter bolts having special wedge-shaped heads, made of either malleable iron conforming to <RID>JIS G 5705</RID>
+ or cast steel conforming to <RID>JIS G 5101</RID> and hot-dip galvanized in accordance with <RID>JIS B 1048</RID>.</TXT><BRK/>
+<BRK/>
+][<TXT>Provide carbon steel bolts having special wedge-shaped heads, nuts, washers, and shims, galvanized in accordance 
+with <RID>JIS B 1048</RID>. Provide slotted-type concrete inserts consisting of a galvanized 3 millimeter thick pressed-steel 
+plate conforming to <RID>JIS G 3101</RID> SS41 or SB35, made of box-type welded construction with a slot designed to receive 
+M20 diameter square-head bolt with knockout cover; and hot-dip galvanized in accordance with <RID>JIS H 8641</RID>.</TXT><BRK/>
+<BRK/>
+]</SPT>][<SPT><TTL>Fasteners</TTL><BRK/>
+<BRK/>
+<TXT>Provide galvanized zinc-coated fasteners in accordance with <RID>JIS B 1048</RID> used for exterior applications or where 
+built into exterior walls or floor systems.  Select fasteners for the type, grade, and class required for the 
+installation of steel stair items.</TXT><BRK/>
+<BRK/>
+[<TXT>Provide standard hexagon-head bolts, conforming to<MET> <RID>ISO 898-1</RID></MET>.</TXT><BRK/>
+<BRK/>
+][<TXT>Provide square-head lag bolts conforming to <RID>JIS B 1189</RID>.</TXT><BRK/>
+<BRK/>
+][<TXT>Provide cadmium-plated steel machine screws conforming to <RID>JIS B 1111</RID>.</TXT><BRK/>
+<BRK/>
+][<TXT>Provide flat-head carbon steel wood screws conforming to <RID>JIS B 1112</RID>.</TXT><BRK/>
+<BRK/>
+][<TXT>Provide plain round, general-assembly-grade, carbon steel washers conforming to<RID>JIS B 1256</RID>.</TXT><BRK/>
+<BRK/>
+][<TXT>Provide helical spring, carbon steel lockwashers conforming to <RID>JIS B 1251</RID>.</TXT><BRK/>
+<BRK/>
+]</SPT>][<SPT><TTL>Steel Railings and Handrails</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Ensure that handrail design meets loads of the applicable building code, 
+OSHA, and ADA.  Decorative architectural handrail is not covered in this section.  
+See NAAMM, "Pipe Railing Manual" for suggestions.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Design grab bars, shower seats, and dressing room bench seat systems 
+to resist a single concentrated load of 1.11 kN applied in any direction at 
+any point.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>Steel Handrails</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The minimum outside diameter is<MET> 45 mm</MET><ENG> 1.66 inches</ENG>.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide steel handrails, including inserts in concrete, [steel pipe conforming to JIS G 3466] [or] [structural 
+tubing conforming to <RID>JIS G 3466</RID>].  Provide steel railings of<MET> [40] [50] mm</MET><ENG> [1 1/2] [2] inch</ENG> nominal size,[ hot-dip 
+galvanized] [and] [shop-painted].</TXT><BRK/>
+<BRK/>
+<TXT>Provide kickplates between railing posts where indicated and consisting of<MET> 4 millimeter</MET><ENG> 1/8 inch</ENG> steel flat bars 
+not less than<MET> 150 millimeter</MET><ENG> 6 inches</ENG> high.  Secure kickplates as indicated.</TXT><BRK/>
+<BRK/>
+[<TXT>Galvanize exterior railings, including pipe, fittings, brackets, fasteners, and other ferrous metal components.  
+Provide black steel pipe for interior railings.</TXT><BRK/>
+<BRK/>
+][<TXT>Provide galvanized exterior and interior railings where indicated, including pipe, fittings, brackets, fasteners, 
+and other ferrous metal components.  Provide black steel pipe for interior railings not indicated as galvanized.</TXT><BRK/>
+<BRK/>
+][<TXT>Provide galvanized railings, including pipe, fittings, brackets, fasteners, and other ferrous metal components.</TXT><BRK/>
+<BRK/>
+]</SPT></SPT>][<SPT><TTL>Aluminum Railings and Handrails</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Do not use slip-on fittings and set screws for locations subject to abusive 
+use by building occupants.  The less expensive Alloy 6061-T6 meets the strength 
+requirements, but is not suitable for bending, and discolors when anodized. 
+Handrail fastenings should be of Series 300 stainless steel.  Specify No. 316 
+for marine environments.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide railings and handrails consisting of[<MET> [40] [50] mm</MET><ENG> [1 1/2] [2] inch</ENG> nominal schedule 40 pipe <RID>JIS H 4100</RID>
+],<MET> 45 mm</MET><ENG> 1 3/4 inch square</ENG> aluminum semi hollow tube with rounded corners <RID>JIS H 4040</RID>.  Provide [mill-finish] 
+[anodized] aluminum [_____] color railings.  Ensure that all fasteners are Series 300 stainless steel.</TXT><BRK/>
+<BRK/></SPT>
+]<SPT><TTL>Safety Chains [and Guardrails]</TTL><BRK/>
+<BRK/>
+<TXT>Provide safety chains of galvanized steel, straight-link type,<MET> 5 mm</MET><ENG> 3/16 inch</ENG> diameter, with at least 12 links 
+per<MET> 300 mm</MET><ENG> foot</ENG>, and with snap hooks on each end.  <TST>Test safety chain in accordance with <RID>JIS F 2106</RID>.</TST>  Provide 
+snap hooks of boat type.  Provide galvanized<MET> 10 mm</MET><ENG> 3/8 inch</ENG> bolt with<MET> 20 mm</MET><ENG> 3/4 inch</ENG> eye diameter for attachment 
+of chain, anchored as indicated.  Supply two chains,<MET> 100 mm</MET><ENG> 4 inches</ENG> longer than the anchorage spacing, for each 
+guarded area.  Locate [guardrails] safety chain where indicated.  Mount the top chain [rail]<MET> 1050 mm</MET><ENG> feet 6 inches</ENG>
+ [_____] above the [floor] [ground] and mount the lower chain [rail]<MET> 600 mm</MET><ENG> 2 feet</ENG> [_____] above the [floor] 
+[ground].</TXT><BRK/>
+<BRK/></SPT>
+</SPT></PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
+<BRK/>
+<SPT><TTL>PREPARATION</TTL><BRK/>
+<BRK/>
+<TXT>Adjust stair railings and handrails before securing in place in order to ensure proper matching at butting joints 
+and correct alignment throughout their length.  Space posts not more than<MET> [2440 millimeter] [_____]</MET><ENG> [8 feet] 
+[_____]</ENG> on center.  Plumb posts in each direction.  Secure posts and rail ends to building construction as follows:</TXT><BRK/>
+<BRK/>
+[<LST INDENT="-0.33">a.  Anchor posts in concrete by means of pipe sleeves set and anchored into concrete.  Provide sleeves 
+of galvanized, standard-weight, steel pipe, not less than<MET> 150 millimeter</MET><ENG> 6 inches</ENG> long, and having an 
+inside diameter not less than<MET> 13 millimeter</MET><ENG> 1/2 inch</ENG> greater than the outside diameter of the inserted 
+pipe post.  Provide steel plate closure secured to the bottom of the sleeve, with closure width and length 
+not less than<MET> 25 millimeter</MET><ENG> 1 inch</ENG> greater than the outside diameter of the sleeve.  After posts have 
+been inserted into sleeves, fill the annular space between the post and sleeve with non-shrink grout 
+or a quick-setting hydraulic cement.  Cover anchorage joint with a round steel flange welded to the post.</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">b.  Anchor posts to steel with oval steel flanges, angle type or floor type as required by conditions, 
+welded to posts and bolted to the steel supporting members.</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">c.  Anchor rail ends into concrete and masonry with round steel flanges welded to rail ends and anchored 
+into the wall construction with lead expansion shields and bolts.</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">d.  Anchor rail ends to steel with oval or round steel flanges welded to tail ends and bolted to the 
+structural-steel members.</LST><BRK/>
+<BRK/>
+]<TXT>Secure handrails to walls by means of wall brackets and wall return fitting at handrail ends.  Provide brackets 
+of malleable iron castings, with not less than<MET> 75 millimeter</MET><ENG> 3 inch</ENG> projection from the finished wall surface 
+to the center of the pipe, drilled to receive one<MET> M10</MET><ENG> 3/8 inch</ENG> bolt.  Locate brackets not more than<MET> 1525 millimeter</MET><ENG>
+ 60 inches</ENG> on center.  Provide wall return fittings of cast iron castings, flush type, with the same projection 
+as that specified for wall brackets.  Secure wall brackets and wall return fittings to building construction 
+as follows:</TXT><BRK/>
+<BRK/>
+[<LST INDENT="-0.33">a.  For concrete and solid masonry anchorage, use bolt anchor expansion shields and lag bolts.</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">b.  For hollow masonry and stud partition anchorage, use toggle bolts having square heads.</LST><BRK/>
+<BRK/>
+]<TXT>Install toe boards and brackets where indicated.  Make splices, where required, at expansion joints.  Install 
+removable sections as indicated.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>INSTALLATION</TTL><BRK/>
+<BRK/>
+<TXT>Submit manufacturer's <SUB>installation instructions</SUB> for the following products to be used in the fabrication of [steel] 
+[_____] [stair railing] [and] [hand rail work]:</TXT><BRK/>
+<BRK/>
+[<LST INDENT="-0.33">a.  Structural-steel plates, shapes, and bars</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">b.  Structural-steel tubing</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">c.  Cold-finished steel bars</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">d.  Hot-rolled carbon steel bars</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">e.  Cold-drawn steel tubing</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">f.  Protective coating</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">g.  Masonry anchorage devices</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">h.  Steel railings and handrails</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">i.  Aluminum railings and handrails</LST><BRK/>
+<BRK/>
+][<LST INDENT="-0.33">j.  Anchorage and fastening systems</LST><BRK/>
+<BRK/>
+]<TXT>Provide complete, detailed fabrication and installation drawings for all <SUB>iron and steel hardware</SUB>, and for all <SUB>
+steel shapes, plates, bars, and strips</SUB> used in accordance with the design specifications cited in this section.</TXT><BRK/>
+<BRK/>
+[<SPT><TTL>Steel Handrail</TTL><BRK/>
+<BRK/>
+<TXT>Install handrail [in pipe sleeves embedded in concrete and filled with non-shrink grout or quick-setting anchoring 
+cement with anchorage covered with standard pipe collar pinned to post.][by means of pipe sleeves secured to 
+wood with screws.][by means of masonry with expansion shields and bolts or toggle bolts.][by means of base plates 
+bolted to stringers or structural-steel frame work.]  Secure rail ends by steel pipe flanges [anchored by expansion 
+shields and bolts.] [through-bolted to a back plate or by<MET> 6 mm</MET><ENG> 1/4 inch</ENG> lag bolts to studs or solid backing.]</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Aluminum Handrail</TTL><BRK/>
+<BRK/>
+<TXT>Affix to base structure by [flanges anchored to concrete or other existing masonry by expansion shields] [base 
+plates or flanges bolted to stringers or structural-steel framework] [flanges through-bolted to a backing plate 
+on the other side of a wall] [flanges lag-bolted to studs or other structural timbers].  Provide Series 300 stainless-steel 
+bolts to anchor aluminum alloy flanges, of a size appropriate to the standard product of the manufacturer.  Where 
+aluminum or alloy fittings or extrusions are to be in contact with dissimilar metals or concrete, coat the contact 
+surface with a heavy coating of bituminous paint.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Touchup Painting</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Delete the paragraph and heading if touchup painting is to be excluded 
+from the steel stair erector's work.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Immediately after installation, clean field welds, bolted connections, abraded areas of the shop paint, and exposed 
+areas painted with the paint used for shop painting.  Apply paint by brush or spray to provide a minimum dry-film 
+thickness of<MET> 0.051 millimeter</MET><ENG> 2 mils</ENG>.</TXT><BRK/>
+<BRK/></SPT>
+]</SPT><SPT><TTL>FIELD QUALITY CONTROL</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Field Welding</TTL><BRK/>
+<BRK/>
+<TXT>Ensure that procedures of manual shielded metal arc welding, appearance and <NED/>quality of welds made, and methods 
+used in correcting welding work comply with <RID>JIS Z 3410</RID>, <RID>JIS Z 3420</RID>, or <RID>JIS Z 3604</RID>.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></PRT>    <END/><BRK/></SEC>

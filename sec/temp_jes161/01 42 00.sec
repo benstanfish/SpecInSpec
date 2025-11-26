@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
+<HDR><AST/><BRK/>
+USACE / NAVFAC / AFCEC / NASA                UFGS-01 42 00 (February 2019)<BRK/>
+                                             -----------------------------<BRK/>
+Preparing Activity:  <PRA>USACE</PRA>                   Superseding<BRK/>
+                                             UFGS-01 42 00 (November 2014)<BRK/>
+<BRK/>
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
+<AST/><BRK/></HDR>
+<BRK/>
+<SCN>SECTION 01 42 00</SCN><BRK/>
+<BRK/>
+<STL>SOURCES FOR REFERENCE PUBLICATIONS</STL><BRK/>
+<DTE>02/19</DTE><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification provides a <SCP>listing of organizations whose publications 
+are referenced in other sections of the specifications.</SCP><BRK/>
+<BRK/>
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.<BRK/>
+<BRK/>
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<BRK/>
+<BRK/>
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
+<BRK/>
+<NPR>In accordance with FAR 11.201 Identification and Availability of Specifications, 
+identification of sources for obtaining documents referenced in the specifications 
+must be provided in contract documents.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
+<BRK/>
+<SPT><TTL>REFERENCES</TTL><BRK/>
+<BRK/>
+<TXT>Various publications are referenced in other sections of the specifications to establish requirements for the 
+work.  These references are identified in each section by document number, date and title.  The document number 
+used in the citation is the number assigned by the standards producing organization (e.g., ASTM B564 Standard 
+Specification for Nickel Alloy Forgings).  However, when the standards producing organization has not assigned 
+a number to a document, an identifying number has been assigned for reference purposes.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>ORDERING INFORMATION</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This paragraph is automatically edited when processed using SpecsIntact.  
+The processor removes those organizations not included in other sections of 
+the project specifications when SpecsIntact (Reconcile Addresses item from the 
+Print menu) is used for job processing.  However, if publications of organizations 
+in addition to those listed below are used in the project, add such organizations 
+to this paragraph.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>The addresses of the standards publishing organizations whose documents are referenced in other sections of these 
+specifications are listed below, and if the source of the publications is different from the address of the sponsoring 
+organization, that information is also provided.</TXT><BRK/>
+<BRK/>
+<REF><ORG>AACE INTERNATIONAL (AACE)</ORG><BRK/>
+<OAD>1265 Suncrest Towne Centre Drive<BRK/>
+Morgantown, WV 26505-1876 USA<BRK/>
+Ph:   304-296-8444<BRK/>
+Fax:  304-291-5728<BRK/>
+Internet:  <URL HREF="https://web.aacei.org">https://web.aacei.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AIR BARRIER ASSOCIATION OF AMERICA (ABAA)</ORG><BRK/>
+<OAD>1600 Boston-Providence Hwy<BRK/>
+Walpole, MA 02081<BRK/>
+Ph:   1-866-956-5888<BRK/>
+Fax:  1-866-956-5819<BRK/>
+Internet:  <URL HREF="https://www.airbarrier.org">https://www.airbarrier.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AIR MOVEMENT AND CONTROL ASSOCIATION INTERNATIONAL, INC. (AMCA)</ORG><BRK/>
+<OAD>30 West University Drive<BRK/>
+Arlington Heights, IL 60004 U.S.A.<BRK/>
+Ph:   +1 847-394-0150<BRK/>
+E-mail:  communications@amca.org<BRK/>
+Internet:  <URL HREF="https://www.amca.org">https://www.amca.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AIR-CONDITIONING, HEATING AND REFRIGERATION INSTITUTE (AHRI)</ORG><BRK/>
+<OAD>2111 Wilson Blvd, Suite 400<BRK/>
+Arlington, VA  22201<BRK/>
+Ph:   703-524-8800<BRK/>
+Internet: <URL HREF="http://www.ahrinet.org">http://www.ahrinet.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>ALUMINUM ASSOCIATION (AA)</ORG><BRK/>
+<OAD>1400 Crystal Drive<BRK/>
+Suite 430<BRK/>
+Arlington, VA  22202<BRK/>
+Ph:   703-358-2960<BRK/>
+E-Mail:  info@aluminum.org<BRK/>
+Internet:  <URL HREF="https://www.aluminum.org">https://www.aluminum.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN ARCHITECTURAL MANUFACTURERS ASSOCIATION (AAMA)</ORG><BRK/>
+<OAD>1900 E Golf Rd, Suite 1250<BRK/>
+Schaumburg, IL  60173<BRK/>
+Ph:   847-303-5664<BRK/>
+E-mail: customerservice@aamanet.org<BRK/>
+Internet:  <URL HREF="https://aamanet.org">https://aamanet.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN ASSOCIATION OF RADON SCIENTISTS AND TECHNOLOGISTS (AARST)</ORG><BRK/>
+<OAD>475 South Church Street - Suite 600<BRK/>
+Hendersonville, NC  28792<BRK/>
+Ph:   800-269-4174<BRK/>
+Fax:  828-214-6299<BRK/>
+E-mail: info@aarst.org<BRK/>
+Internet:  <URL HREF="http://aarst-nrpp.com/wp">http://aarst-nrpp.com/wp/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN ASSOCIATION OF STATE HIGHWAY AND TRANSPORTATION OFFICIALS (AASHTO)</ORG><BRK/>
+<OAD>444 North Capital Street, NW, Suite 249<BRK/>
+Washington, DC  20001<BRK/>
+Ph:   202-624-5800<BRK/>
+Fax:  202-624-5806<BRK/>
+E-Mail: info@aashto.org<BRK/>
+Internet:  <URL HREF="https://www.transportation.org">https://www.transportation.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN CONCRETE INSTITUTE (ACI)</ORG><BRK/>
+<OAD>ACI World Headquarters<BRK/>
+38800 Country Club Drive<BRK/>
+Farmington Hills, MI<BRK/>
+48331-3439 USA<BRK/>
+Ph:   248-848-3800<BRK/>
+Internet:  <URL HREF="https://www.concrete.org">https://www.concrete.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN FOREST FOUNDATION (AFF)</ORG><BRK/>
+<OAD>American Tree Farm System<BRK/>
+2000 M Street, NW, Suite 550<BRK/>
+Washington, DC  20036<BRK/>
+Ph:  202-765-3660<BRK/>
+Fax: 202-827-7924<BRK/>
+Email: info@forestfoundation.org<BRK/>
+Internet:  <URL HREF="https://www.treefarmsystem.org">https://www.treefarmsystem.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN HARDBOARD ASSOCIATION (AHA)</ORG><BRK/>
+<OAD>1210 West Northwest Highway<BRK/>
+Palatine,  IL 60067<BRK/>
+Ph:   847-934-8800<BRK/>
+Fax:  847-934-8803<BRK/>
+E-mail:  aha@hardboard.org<BRK/>
+Internet:  <URL HREF="http://domensino.com/AHA">http://domensino.com/AHA/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN INSTITUTE OF STEEL CONSTRUCTION (AISC)</ORG><BRK/>
+<OAD>130 East Randolph, Suite 2000<BRK/>
+Chicago, IL  60601<BRK/>
+Ph:   312-670-5444<BRK/>
+Fax:  312-670-5403<BRK/>
+Steel Solutions Center:  866-275-2472<BRK/>
+E-mail:  solutions@aisc.org<BRK/>
+Internet:  <URL HREF="https://www.aisc.org">https://www.aisc.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN INSTITUTE OF TIMBER CONSTRUCTION (AITC)</ORG><BRK/>
+<OAD>7012 South Revere Parkway, Suite 140<BRK/>
+Centennial, CO  80112<BRK/>
+Ph:   503-639-0651<BRK/>
+Fax:  503-684-8928<BRK/>
+E-mail:  mschoen@wclib.org<BRK/>
+Internet:  <URL HREF="http://www.aitc-glulam.org">http://www.aitc-glulam.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN IRON AND STEEL INSTITUTE (AISI)</ORG><BRK/>
+<OAD>25 Massachusetts Avenue, NW Suite 800<BRK/>
+Washington, DC 20001<BRK/>
+Ph:   202-452-7100<BRK/>
+Internet:  <URL HREF="https://www.steel.org">https://www.steel.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN LUMBER STANDARDS COMMITTEE (ALSC)</ORG><BRK/>
+<OAD>7470 New Technology Way, Suite F<BRK/>
+Frederick, MD  21703<BRK/>
+Ph:   301-972-1700<BRK/>
+Fax:  301-540-8004<BRK/>
+E-mail:  alsc@alsc.org<BRK/>
+Internet:   <URL HREF="http://www.alsc.org">http://www.alsc.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN NATIONAL STANDARDS INSTITUTE (ANSI)</ORG><BRK/>
+<OAD>1899 L Street, NW,11th Floor<BRK/>
+Washington, DC  20036<BRK/>
+Ph:   202-293-8020<BRK/>
+Fax:  202-293-9287<BRK/>
+E-mail:  storemanager@ansi.org<BRK/>
+Internet:  <URL HREF="https://www.ansi.org">https://www.ansi.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN PETROLEUM INSTITUTE (API)</ORG><BRK/>
+<OAD>1220 L Street, NW<BRK/>
+Washington, DC  20005-4070<BRK/>
+Ph:   202-682-8000<BRK/>
+Internet:  <URL HREF="https://www.api.org">https://www.api.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN RAILWAY ENGINEERING AND MAINTENANCE-OF-WAY ASSOCIATION (AREMA)</ORG><BRK/>
+<OAD>4501 Forbes Blvd., Suite 130<BRK/>
+Lanham, MD  20706<BRK/>
+Ph:   301-459-3200<BRK/>
+E-mail:  info@arema.org<BRK/>
+Internet:  <URL HREF="https://www.arema.org">https://www.arema.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN SOCIETY FOR NONDESTRUCTIVE TESTING (ASNT)</ORG><BRK/>
+<OAD>P.O. Box 28518<BRK/>
+1711 Arlingate Lane<BRK/>
+Columbus, OH  43228-0518<BRK/>
+Ph:   800-222-2768 or 614-274-6003<BRK/>
+Fax:  614-274-6899<BRK/>
+E-mail:  tjones@asnt.org<BRK/>
+Internet:  <URL HREF="https://www.asnt.org">https://www.asnt.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN SOCIETY OF CIVIL ENGINEERS (ASCE)</ORG><BRK/>
+<OAD>1801 Alexander Bell Drive<BRK/>
+Reston, VA  20191<BRK/>
+Ph:   800-548-2723; 703-295-6300<BRK/>
+Internet:  <URL HREF="https://www.asce.org">https://www.asce.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN SOCIETY OF HEATING, REFRIGERATING AND AIR-CONDITIONING ENGINEERS (ASHRAE)</ORG><BRK/>
+<OAD>1791 Tullie Circle, NE<BRK/>
+Atlanta, GA  30329<BRK/>
+Ph:   404-636-8400 or 800-527-4723<BRK/>
+Fax:  404-321-5478<BRK/>
+E-mail:  ashrae@ashrae.org<BRK/>
+Internet:  <URL HREF="https://www.ashrae.org">https://www.ashrae.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN SOCIETY OF MECHANICAL ENGINEERS (ASME)</ORG><BRK/>
+<OAD>Two Park Avenue<BRK/>
+New York, NY  10016-5990<BRK/>
+Ph:   800-843-2763<BRK/>
+Fax:  973-882-1717<BRK/>
+E-mail:  customercare@asme.org<BRK/>
+Internet:  <URL HREF="https://www.asme.org">https://www.asme.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN SOCIETY OF SAFETY PROFESSIONALS (ASSP)</ORG><OAD><BRK/>
+520 N. Northwest Highway<BRK/>
+Park Ridge, IL 60068<BRK/>
+Ph:  847-699-2929<BRK/>
+E-mail:  customerservice@assp.org<BRK/>
+Internet:  <URL HREF="https://www.assp.org">https://www.assp.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN SOCIETY OF SANITARY ENGINEERING (ASSE)</ORG><BRK/>
+<OAD>18927 Hickory Creek Drive, Suite 220<BRK/>
+Mokena, IL  60448<BRK/>
+Ph:   708-995-3019<BRK/>
+Fax:  708-479-6139<BRK/>
+Internet: <URL HREF="http://www.asse-plumbing.org">http://www.asse-plumbing.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN WATER WORKS ASSOCIATION (AWWA)</ORG><BRK/>
+<OAD>6666 W. Quincy Avenue<BRK/>
+Denver, CO  80235 USA<BRK/>
+Ph:  303-794-7711 or 800-926-7337<BRK/>
+Fax:  303-347-0804<BRK/>
+Internet:  <URL HREF="https://www.awwa.org">https://www.awwa.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN WELDING SOCIETY (AWS)</ORG><BRK/>
+<OAD>8669 NW 36 Street, #130<BRK/>
+Miami, FL  33166-6672<BRK/>
+Ph:   800-443-9353<BRK/>
+Internet:  <URL HREF="https://www.aws.org">https://www.aws.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN WOOD COUNCIL (AWC)</ORG><BRK/>
+<OAD>222 Catoctin Circle SE, Suite 201<BRK/>
+Leesburg, VA  20175<BRK/>
+Ph:   800-890-7732<BRK/>
+Fax:  412-741-0609<BRK/>
+E-mail:  publications@awc.org<BRK/>
+Internet:  <URL HREF="https://www.awc.org">https://www.awc.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN WOOD PROTECTION ASSOCIATION (AWPA)</ORG><BRK/>
+<OAD>P.O. Box 361784<BRK/>
+Birmingham, AL  35236-1784<BRK/>
+Ph:   205-733-4077<BRK/>
+Fax:  205-733-4075<BRK/>
+Internet: <URL HREF="http://www.awpa.com">http://www.awpa.com</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>APA - THE ENGINEERED WOOD ASSOCIATION (APA)</ORG><BRK/>
+<OAD>7011 South 19th St.<BRK/>
+Tacoma, WA  98466-5333<BRK/>
+Ph:   253-565-6600<BRK/>
+Fax:  253-565-7265<BRK/>
+Internet:  <URL HREF="https://www.apawood.org">https://www.apawood.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>ARCHITECTURAL INSTITUTE OF JAPAN (AIJ)</ORG><BRK/>
+<OAD>26-20 Shiba 5-chome<BRK/>
+Minato-ku, Tokyo  108-8414<BRK/>
+PH:   +81-3-3456-2051<BRK/>
+E-mail:  info@aij.or.jp<BRK/>
+Internet:  <URL HREF="https://www.aij.or.jp/aijhome.htm">https://www.aij.or.jp/aijhome.htm</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>ASSOCIATED AIR BALANCE COUNCIL (AABC)</ORG><BRK/>
+<OAD>1220 19th St NW, Suite 410<BRK/>
+Washington, DC  20036<BRK/>
+Ph:   202-737-0202<BRK/>
+Fax:  202-315-0285<BRK/>
+E-mail:  info@aabc.com<BRK/>
+Internet:  <URL HREF="https://www.aabc.com">https://www.aabc.com/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>ASSOCIATION FOR MATERIALS PROTECTION AND PERFORMANCE (AMPP)</ORG><BRK/>
+<OAD>800 Trumbull Drive<BRK/>
+Pittsburgh, PA 15205<BRK/>
+Ph (US):  +1-877-281-7772<BRK/>
+Ph (International):  +1-412-281-2331<BRK/>
+Internet:  <URL HREF="https://www.ampp.org/home">https://www.ampp.org/home</URL></OAD></REF><BRK/>
+<BRK/>
+<REF><ORG>ASSOCIATION OF DIVING CONTRACTORS INTERNATIONAL (ADCI)</ORG><BRK/>
+<OAD>5206 Cypress Creek Parkway Ste. 202<BRK/>
+Houston, TX 77069<BRK/>
+Ph:   281-891-8388 or 281-893-6438<BRK/>
+Fax:  281-893-5118<BRK/>
+Internet:  <URL HREF="https://www.adc-int.org">https://www.adc-int.org/</URL></OAD></REF><BRK/>
+<BRK/>
+<REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK/>
+<OAD>100 Barr Harbor Drive, P.O. Box C700<BRK/>
+West Conshohocken, PA  19428-2959<BRK/>
+Ph:   610-832-9500<BRK/>
+Fax:  610-832-9555<BRK/>
+E-mail:  service@astm.org<BRK/>
+Internet:  <URL HREF="https://www.astm.org">https://www.astm.org/</URL></OAD>
+</REF><BRK/>
+<BRK/>
+<REF><ORG>BUILDERS HARDWARE MANUFACTURERS ASSOCIATION (BHMA)</ORG><BRK/>
+<OAD>529 14th Street NW Suite 1280<BRK/>
+Washington, DC 20045<BRK/>
+Ph:  212-297-2122<BRK/>
+Fax: 212-370-9047<BRK/>
+Internet:  <URL HREF="https://www.buildershardware.com">https://www.buildershardware.com/</URL></OAD><BRK/></REF>
+<BRK/>
+<REF><ORG>CALIFORNIA AIR RESOURCES BOARD (CARB)</ORG><BRK/>
+<OAD>1001 I Street<BRK/>
+Sacramento, CA  95814<BRK/>
+Ph:   800-242-4450<BRK/>
+Email:  helpline@arb.ca.gov<BRK/>
+Internet: <URL HREF="https://ww2.arb.ca.gov">https://ww2.arb.ca.gov/</URL></OAD></REF><BRK/>
+<BRK/>
+<REF><ORG>CALIFORNIA DEPARTMENT OF PUBLIC HEALTH (CDPH)</ORG><BRK/>
+<OAD>PO Box 997377, MS 0500<BRK/>
+Sacramento, CA  95899-7377<BRK/>
+Ph:   916-558-1784<BRK/>
+Internet:  <URL HREF="https://www.cdph.ca.gov">https://www.cdph.ca.gov/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>COMPOSITE PANEL ASSOCIATION (CPA)</ORG><BRK/>
+<OAD>19465 Deerfield Avenue, Suite 306<BRK/>
+Leesburg, VA  20176<BRK/>
+Ph:   703-724-1128<BRK/>
+Fax:  703-724-1588<BRK/>
+Internet:  <URL HREF="https://www.compositepanel.org">https://www.compositepanel.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>COMPRESSED GAS ASSOCIATION (CGA)</ORG><BRK/>
+<OAD>14501 George Carter Way, Suite 103<BRK/>
+Chantilly, VA  20151-1788<BRK/>
+Ph:   703-788-2700<BRK/>
+Fax:  703-961-1831<BRK/>
+E-mail:  cga@cganet.com<BRK/>
+Internet:  <URL HREF="https://www.cganet.com">https://www.cganet.com/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>COUNCIL ON ENVIRONMENTAL QUALITY (CEQ) (WHITE HOUSE)</ORG><BRK/>
+<OAD>722 Jackson Place<BRK/>
+Washington DC  20506<BRK/>
+Internet:  <URL>https://www.whitehouse.gov/administration/eop/ceq</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>CRANE MANUFACTURERS ASSOCIATION OF AMERICA (CMAA)</ORG><BRK/>
+<OAD>8720 Red Oak Boulevard, Suite 201<BRK/>
+Charlotte, NC  28217-3992<BRK/>
+Ph:  704-676-1190<BRK/>
+Fax:  704-676-1199<BRK/>
+Internet:  <URL HREF="http://www.mhi.org/cmaa">http://www.mhi.org/cmaa</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>CSA GROUP (CSA)</ORG><BRK/>
+<OAD>178 Rexdale Blvd.<BRK/>
+Toronto, ON, Canada M9W 1R3<BRK/>
+Ph:   416-747-4044<BRK/>
+Fax:  416-747-2510<BRK/>
+E-mail:  member@csagroup.org<BRK/>
+Internet:  <URL HREF="https://www.csagroup.org">https://www.csagroup.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>EUROPEAN COMMITTEE FOR STANDARDIZATION (CEN/CENELEC)</ORG><BRK/>
+<OAD>CEN-CENELEC Management Centre<BRK/>
+Rue de la Science 23<BRK/>
+B - 1040 Brussels, Belgium<BRK/>
+Ph:  32-2-550-08-11<BRK/>
+Fax: 32-2-550-08-19<BRK/>
+Internet:  <URL HREF="https://www.cencenelec.eu">https://www.cencenelec.eu/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>ELECTRICAL SAFETY INSPECTION ASSOCIATIONS</ORG><BRK/>
+<OAD>Shintoranomon Jitsugyokaikan 9F<BRK/>
+1-1-21 Toranomon<BRK/>
+Minato-ku, Tokyo  105-0011, JAPAN <BRK/>
+E-mail:  info@denki-hoan.org<BRK/>
+Internet:  <URL HREF="https://denkihoan.org/en">https://denkihoan.org/en/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>FEDERAL EMERGENCY MANAGEMENT AGENCY (FEMA)</ORG><BRK/>
+<OAD>615 Chestnut Street<BRK/>
+One Independence Mall, Sixth Floor<BRK/>
+Philadelphia, PA  19106-4404<BRK/>
+Ph:   215-931-5597<BRK/>
+E-mail:  femar3newsdesk@fema.dhs.gov<BRK/>
+Internet:  <URL HREF="https://www.fema.gov">https://www.fema.gov/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>FM GLOBAL (FM)</ORG><BRK/>
+<OAD>270 Central Avenue<BRK/>
+Johnston, RI  02919-4949<BRK/>
+Ph:   401-275-3000<BRK/>
+Fax:  401-275-3029<BRK/>
+Internet:  <URL HREF="https://www.fmglobal.com">https://www.fmglobal.com/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>FOREST STEWARDSHIP COUNCIL (FSC)</ORG><BRK/>
+<OAD>708 First Street North, Suite 235<BRK/>
+Minneapolis, MN  55401<BRK/>
+Ph:   612-353-4511<BRK/>
+E-mail: info@us.fcs.org<BRK/>
+Internet:  <URL HREF="https://us.fsc.org">https://us.fsc.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>FOUNDATION FOR CROSS-CONNECTION CONTROL AND HYDRAULIC RESEARCH (FCCCHR)</ORG><BRK/>
+<OAD>USC Foundation Office<BRK/>
+Research Annex 219<BRK/>
+Los Angeles, CA  90089-7700<BRK/>
+Ph:   866-545-6340<BRK/>
+Fax:  213-740-8399<BRK/>
+E-mail:  fccchr@usc.edu<BRK/>
+Internet:  <URL HREF="https://fccchr.usc.edu">https://fccchr.usc.edu/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>GREEN BUSINESS CERTIFICATION INC. (GBCI)</ORG><BRK/>
+<OAD>Washington, D.C.<BRK/>
+Ph:  1-800-795-1747<BRK/>
+Internet:  <URL HREF="https://www.gbci.org">https://www.gbci.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>GREEN BUILDING INITIATIVE (GBI)</ORG><BRK/>
+<OAD>7805 SW 40th Ave.  #80010<BRK/>
+Portland, Oregon  97219<BRK/>
+Ph:  503-274-0448<BRK/>
+Email: info@thegbi.org<BRK/>
+Internet:  <URL HREF="https://www.thegbi.org">https://www.thegbi.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>GREEN SEAL (GS)</ORG><BRK/>
+<OAD>1001 Connecticut Avenue, NW<BRK/>
+Suite 827<BRK/>
+Washington,  DC 20036-5525<BRK/>
+Ph:   202-872-6400<BRK/>
+Fax:  202-872-4324<BRK/>
+E-mail:  greenseal@greenseal.org<BRK/>
+Internet:  <URL HREF="https://www.greenseal.org">https://www.greenseal.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>GREEN CIRCULATION CERTIFICATION COUNCIL (SGEC/PEFC JAPAN)</ORG><BRK/>
+<OAD>4F Nagatacho Building<BRK/>
+2-4-3 Nagatacho, Chiyoda-ku<BRK/>
+Tokyo, 100-0014, JAPAN<BRK/>
+Internet:  <URL HREF="https://sgec-pefcj.jp">https://sgec-pefcj.jp/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>GYPSUM ASSOCIATION (GA)</ORG><BRK/>
+<OAD>962 Wayne Ave., Suite 620<BRK/>
+Silver Spring, MD  20910<BRK/>
+Ph:   301-277-8686<BRK/>
+Fax:  301-277-8747<BRK/>
+E-mail: info@gypsum.org<BRK/>
+Internet:  <URL HREF="https://www.gypsum.org">https://www.gypsum.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>GYPSUM BOARD ASSOCIATION OF JAPAN</ORG><BRK/>
+<OAD>5th floor, Yoshino Gypsum Toranomon Building<BRK/>
+2-13-10 Nishi-Shinbashi<BRK/>
+Minato-ku, Tokyo 105-0003, JAPAN<BRK/>
+Internet:  <URL HREF="https://www.gypsumboard-a.or.jp">https://www.gypsumboard-a.or.jp/</URL></OAD><BRK/></REF>
+<BRK/>
+<REF><ORG>HARDWOOD PLYWOOD AND VENEER ASSOCIATION (HPVA)</ORG><BRK/>
+<OAD>Decorative Hardwoods Association<BRK/>
+42777 Trade West Dr.<BRK/>
+Sterling, VA  20166<BRK/>
+Ph:   703-435-2900<BRK/>
+Fax:  703-435-2537<BRK/>
+E-mail:  Resources@decorativehardwoods.org<BRK/>
+Internet:  <URL HREF="https://www.decorativehardwoods.org">https://www.decorativehardwoods.org/</URL></OAD></REF><BRK/>
+<BRK/>
+<REF><ORG>ICC EVALUATION SERVICE, INC. (ICC-ES)</ORG><BRK/>
+<OAD>3060 Saturn Street, Suite 100<BRK/>
+Brea, CA  92821<BRK/>
+Ph:   800-423-6587<BRK/>
+Fax:  562-695-4694<BRK/>
+E-mail: es@icc-es.org<BRK/>
+Internet:  <URL HREF="https://icc-es.org">https://icc-es.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>INSTITUTE OF ELECTRICAL AND ELECTRONICS ENGINEERS (IEEE)</ORG><BRK/>
+<OAD>445 and 501 Hoes Lane<BRK/>
+Piscataway, NJ  08854-4141<BRK/>
+Ph:   732-981-0060 or 800-701-4333<BRK/>
+Fax:  732-981-9667<BRK/>
+E-mail: onlinesupport@ieee.org<BRK/>
+Internet:  <URL HREF="https://www.ieee.org">https://www.ieee.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>INTELLIGENCE COMMUNITY STANDARD (ICS)</ORG><BRK/>
+<OAD>Homeland Security Digital Library<BRK/>
+Ph:   831-272-2437<BRK/>
+E-mail:  hsdl@nps.edu<BRK/>
+Internet:  <URL HREF="https://www.hsdl.org/c">https://www.hsdl.org/c/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>INTERNATIONAL CODE COUNCIL (ICC)</ORG><BRK/>
+<OAD>500 New Jersey Avenue, NW <BRK/>
+6th Floor, Washington, DC  20001<BRK/>
+Ph:   800-786-4452 or 888-422-7233<BRK/>
+Fax:  202-783-2348<BRK/>
+E-mail:  order@iccsafe.org<BRK/>
+Internet:  <URL HREF="https://www.iccsafe.org">https://www.iccsafe.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL ELEVATOR INDUSTRY, INC. (NEII)</ORG><BRK/>
+<OAD>5537 SW Urish Road<BRK/>
+Topeka, KS 66610<BRK/>
+Ph:   703-589-9985<BRK/>
+E-Mail: info@neii.org<BRK/>
+Internet:  <URL HREF="https://nationalelevatorindustry.org">https://nationalelevatorindustry.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>INTERNATIONAL ELECTRICAL TESTING ASSOCIATION (NETA)</ORG><BRK/>
+<OAD>3050 Old Centre Ave. Suite 101<BRK/>
+Portage, MI  49024<BRK/>
+Ph:   269-488-6382<BRK/>
+Fax:  269-488-6383<BRK/>
+Internet:  <URL HREF="https://www.netaworld.org">https://www.netaworld.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>INTERNATIONAL CAST POLYMER ASSOCIATION (ICPA)</ORG><BRK/>
+<OAD>12195 Highway 92 Suite 114 #176<BRK/>
+Woodstock, GA 30188<BRK/>
+Ph:  470-219-8139<BRK/>
+Internet:  <URL HREF="https://theicpa.com">https://theicpa.com/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>INTERNATIONAL ELECTROTECHNICAL COMMISSION (IEC)</ORG><BRK/>
+<OAD>3, rue de Varembe, 1st floor<BRK/>
+P.O. Box 131<BRK/>
+CH-1211  Geneva 20, Switzerland<BRK/>
+Ph:   41-22-919-02-11<BRK/>
+Fax:  41-22-919-03-00<BRK/>
+E-mail:  info@iec.ch<BRK/>
+Internet:  <URL HREF="https://www.iec.ch">https://www.iec.ch/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>INTERNATIONAL NAVIGATION ASSOCIATION (PIANC)</ORG><BRK/>
+<OAD>General Secretariat<BRK/>
+Blvd. du Roi Albert II<BRK/>
+20 - Boite 3 <BRK/>
+B-1000 Brussels<BRK/>
+Belgium<BRK/>
+Ph:   +32 2 553 71 61<BRK/>
+E-mail:  info@pianc.org<BRK/>
+Internet:  <URL HREF="https://www.pianc.org">https://www.pianc.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION (ISO)</ORG><BRK/>
+<OAD>ISO Central Secretariat<BRK/>
+BIBC II<BRK/>
+Chemin de Blandonnet 8<BRK/>
+CP 401 - 1214 Vernier, Geneva<BRK/>
+Switzerland<BRK/>
+Ph:   41-22-749-01-11<BRK/>
+E-mail:  central@iso.ch<BRK/>
+Internet:  <URL HREF="https://www.iso.org">https://www.iso.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>INTERNATIONAL SAFETY EQUIPMENT ASSOCIATION (ISEA)</ORG><BRK/>
+<OAD>1901 North Moore Street<BRK/>
+Arlington, VA  22209-1762<BRK/>
+Ph:   703-525-1695<BRK/>
+Fax:  703-528-2148<BRK/>
+Internet:  <URL HREF="https://safetyequipment.org">https://safetyequipment.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPAN ADHESIVE INDUSTRY ASSOCIATION (JAIA)</ORG><BRK/>
+<OAD>2nd Fl., Maruishi Bldg.<BRK/>
+10-4 Kajicho 1-Chome<BRK/>
+Chiyoda-ku, Tokyo 101-0044, JAPAN<BRK/>
+Ph:  +81-3-3251-3360<BRK/>
+Internet:  <URL HREF="https://www.jaia.gr.jp">https://www.jaia.gr.jp/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPAN ROAD ASSOCIATION (JARA)</ORG><BRK/>
+<OAD>(Shoyu Kaikan) 3-3-1<BRK/>
+Kasumigaseki, Chiyoda-ku, Tokyo  100-8955, JAPAN<BRK/>
+Ph: +81 (0) 3-3581-2211  <BRK/>
+E-mail:  info@road.or.jp<BRK/>
+Internet:  <URL HREF="https://www.road.or.jp">https://www.road.or.jp/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPAN POWER CABLE ACCESSORIES ASSOCIATION (JCAA)</ORG><BRK/>
+<OAD>2-20-6 Nihonbashi Hama-cho<BRK/>
+Chuo-ku Tokyo 103-0007,  JAPAN<BRK/>
+Ph:   +81-3-3808-0750<BRK/>
+E-mail:  jcaasecr@ppp.star-net.or.jp<BRK/>
+Internet:  <URL HREF="https://www.jpcaa.or.jp/index.html">https://www.jpcaa.or.jp/index.html</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>THE JAPANESE ELECTRIC WIRE &amp; CABLE MAKERS' ASSOCIATION (JCMA)</ORG><BRK/>
+<OAD>Konwa Building<BRK/>
+2F, 1-12-22 Tsukiji<BRK/>
+Chuo-ku, Tokyo  104-0045, JAPAN<BRK/>
+Internet:  <URL HREF="https://www.jcma2.jp/index.html">https://www.jcma2.jp/index.html</URL><BRK/></OAD>
+<BRK/></REF>
+<REF><ORG>JAPAN CAST IRON COVER &amp; WASTE FITTING ASSOCIATION (JCW)</ORG><BRK/>
+<OAD>1-5-14 Kawaguchi<BRK/>
+Kawaguchi, Saitama 332-0015, JAPAN<BRK/>
+Ph:   048-226-3320</OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPAN DUCTILE IRON PIPE ASSOCIATION (JDPA)</ORG><BRK/>
+<OAD>4-chome-8-9 Kudanminami<BRK/>
+Chiyoda-ku, Tokyo 102-0074, JAPAN<BRK/>
+Ph:   81-3-3264-6655<BRK/>
+Internet:  <URL HREF="https://www.jdpa.gr.jp">https://www.jdpa.gr.jp/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPANESE ELECTROTECHNICAL COMMITTEE (JEC)</ORG><BRK/>
+<OAD>Homat Horizon Bldg.8FL, 6-2 Gobancho<BRK/>
+Chiyoda-ku, Tokyo  102-0076, JAPAN<BRK/>
+E-mail:  iec@iee.or.jp<BRK/>
+Internet:  <URL HREF="https://www.iee.jp">https://www.iee.jp/</URL></OAD><BRK/></REF>
+<BRK/>
+<REF><ORG>THE JAPAN ELECTRICAL MANUFACTURERS' ASSOCIATION (JEMA)</ORG><BRK/>
+<OAD>17-4, Ichiban-cho<BRK/>
+Chiyoda-ku, Tokyo  102-0082, JAPAN<BRK/>
+Ph:   +81-3-3556-5881<BRK/>
+Internet:  <URL HREF="https://www.jema-net.or.jp">https://www.jema-net.or.jp/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPAN INDUSTRIAL SAFETY &amp; HEALTH ASSOCIATION (JISHA)</ORG><BRK/>
+<OAD>5-35-2 Shiba<BRK/>
+Minato-ku, Tokyo, JAPAN<BRK/>
+Ph:   81-3-3452-6297 (c/o International Affairs Division)<BRK/>
+Fax:  81-3-5445-1774 (c/o International Affairs Division)<BRK/>
+E-mail:  kokusai@jisha.or.jp<BRK/>
+Internet:  <URL HREF="https://www.jisha.or.jp/index.html">https://www.jisha.or.jp/index.html</URL></OAD></REF><BRK/>
+<BRK/>
+<REF><ORG>JAPAN LIGHTING MANUFACTURERS ASSOCIATION (JLMA)</ORG><BRK/>
+<OAD>11-4, Taito 4-chome<BRK/>
+Taito-ku, Tokyo 110-0016, JAPAN<BRK/>
+Ph:   +81-3-6803-0501<BRK/>
+Internet:  <URL HREF="https://www.jlma.or.jp/index.htm">https://www.jlma.or.jp/index.htm</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPAN PIPE FITTINGS ASSOCIATION (JPFA)</ORG><BRK/>
+<OAD>Saito Building 8F, 3-14-6 Kyobashi<BRK/>
+Chuo-ku, Tokyo  104-0031<BRK/>
+Ph:  03-3564-2035<BRK/>
+Internet:   <URL HREF="http://www.tsugite.jp">http://www.tsugite.jp/</URL> </OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPAN PVC PIPE AND FITTINGS ASSOCIATION (JPPFA)</ORG><BRK/>
+<OAD>3F Tobu Building, 1-5-26 Motoakasaka<BRK/>
+Minato-ku, Tokyo 107-0051, JAPAN<BRK/>
+Ph:   03-3470-2251<BRK/>
+Internet:  <URL HREF="https://www.ppfa.gr.jp">https://www.ppfa.gr.jp/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPAN RAILWAYS ENGINEERS' ASSOCIATION (JREA)</ORG><BRK/>
+<OAD>Tani Building 4F<BRK/>
+1-28-6 Kameido, Koto-ku, Tokyo 136-0071<BRK/>
+Internet:  <URL HREF="https://www.jrea.or.jp"/>https://www.jrea.or.jp/</URL></OAD><BRK/></REF>
+<BRK/>
+<REF><ORG>JAPAN FREIGHT RAILWAY COMPANY (JR KAMOTSU)</ORG><BRK/>
+<OAD>5-33-8, Sendagaya, Shibuya-ku <BRK/>
+Tokyo, Japan  151-0051<BRK/>
+Internet: <URL HREF="https://www.jrfreight.co.jp"/>https://www.jrfreight.co.jp/</URL></OAD><BRK/></REF>
+<BRK/>
+<REF><ORG>JAPAN SEWAGE WORKS ASSOCIATION (JSWA)</ORG><BRK/>
+<OAD>Uchikanda Suisui Building<BRK/>
+2-10-12 Uchikanda<BRK/>
+Chiyodaku, Tokyo  101-0047, JAPAN<BRK/>
+Ph:   81-3-6206-0289<BRK/>
+Internet:  <URL HREF="https://www.jswa.jp">https://www.jswa.jp/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPAN VALVE MANUFACTURERS' ASSOCIATION (JVMA)</ORG><BRK/>
+<OAD>5th Floor, Kikai-Shinko Bldg.<BRK/>
+3-5-8, Shiba-Koen, Minato-Ku<BRK/>
+Tokyo 105-0011, JAPAN<BRK/>
+Ph:  +81-3-3434-1811<BRK/>
+E-mail:  info@j-valve.or.jp<BRK/>
+Internet:  <URL HREF="https://j-valve.or.jp">https://j-valve.or.jp/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPAN WATER WORKS ASSOCIATION (JWWA)</ORG><BRK/>
+<OAD>4-chome-8-9 Kudanminami<BRK/>
+Chiyoda-ku, Tokyo  102-0074, JAPAN<BRK/>
+Ph:   +81-3-3264-2307<BRK/>
+Internet:  <URL HREF="http://www.jwwa.or.jp">http://www.jwwa.or.jp/</URL><BRK/></OAD>
+<BRK/></REF>
+<REF><ORG>JAPANESE GEOTECHNICAL SOCIETY (JGS)</ORG><BRK/>
+<OAD>4-38-2 Sengoku<BRK/>
+Bunkyo-ku, Tokyo  112-0011, JAPAN<BRK/>
+Email:  jgs@jiban.or.jp<BRK/>
+Internet:  <URL HREF="https://www.jiban.or.jp/e">https://www.jiban.or.jp/e/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPANESE INDUSTRIAL STANDARDS COMMITTEE (JISC)</ORG><BRK/>
+<OAD>1-3-1 Kasumigaseki<BRK/>
+Chiyoda-ku, Tokyo 100-8901, JAPAN<BRK/>
+E-mail:  bzl-jisc@meti.go.jp<BRK/>
+Internet:  <URL HREF="https://www.jisc.go.jp">https://www.jisc.go.jp/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>THE JAPAN REFRIGERATION AND AIR CONDITIONING INDUSTRY ASSOCIATION (JRAIA)</ORG><BRK/>
+<OAD>Kikai Shinko Bldg. 201<BRK/>
+5-8, Shibakoen 3-chome<BRK/>
+Minato-ku, Tokyo 105-0011, JAPAN<BRK/>
+Ph:   +81-3-3432-1671<BRK/>
+<URL HREF="https://www.jraia.or.jp/english">Internet:  https://www.jraia.or.jp/english/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG><BRK/>
+<OAD>c/o MITA MT Bldg., 3-13-12 Mita<BRK/>
+Minato-ku, Tokyo 108-0073, JAPAN<BRK/>
+Fax:  81-3-4231-8650<BRK/>
+E-mail:  po@jsa.or.jp<BRK/>
+Internet:  <URL HREF="https://www.jsa.or.jp/en">https://www.jsa.or.jp/en/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPANESE SOCIETY OF STEEL CONSTRUCTION (JSS)</ORG><BRK/>
+<OAD>3 Chome-15-8 Nihonbashi<BRK/>
+Chuo City, Tokyo 103-0027, JAPAN<BRK/>
+Ph:   0335162151<BRK/>
+Internet:  <URL><URL HREF="http://www.jssc.or.jp">http://www.jssc.or.jp/</URL></URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>THE JAPAN WELDING ENGINEERING SOCIETY (JWES)</ORG><BRK/>
+<OAD>4 Chome-20 Kanda Sakumacho<BRK/>
+Chiyoda-ku, Tokyo  101-0025, JAPAN<BRK/>
+Internet:  <URL HREF="https://www.jwes.or.jp">https://www.jwes.or.jp/</URL></OAD></REF><BRK/>
+<BRK/>
+  <REF><ORG>MINISTRY OF AGRICULTURE, FORESTRY AND FISHERIES (MAFF)</ORG><BRK/>
+<OAD>1-2-1 Kasumigaseki<BRK/>
+Chiyoda-ku, Tokyo  100-8950, JAPAN<BRK/>
+Ph:   03-3502-8111<BRK/>
+Internet:  <URL HREF="https://www.maff.go.jp">https://www.maff.go.jp/</URL></OAD></REF><BRK/>
+<BRK/>
+<REF><ORG>METAL FRAMING MANUFACTURERS ASSOCIATION (MFMA)</ORG><BRK/>
+<OAD>330 N. Wabash Avenue<BRK/>
+Chicago, IL  60611<BRK/>
+Ph:   312-644-6610<BRK/>
+E-mail:  MFMAstats@smithbucklin.com<BRK/>
+Internet:  <URL HREF="http://www.metalframingmfg.org">http://www.metalframingmfg.org/</URL></OAD></REF><BRK/>
+<BRK/>
+  <REF><ORG>MINISTRY OF HEALTH, LABOUR AND WELFARE, GOVERNMENT OF JAPAN (MHLW)</ORG><BRK/>
+<OAD>1-2-2 Kasumigaseki <BRK/>
+Chiyoda-ku Tokyo, 100-8916, JAPAN<BRK/>
+Ph:   03-5253-1111<BRK/>
+E-mail:  www-admin@mhlw.go.jp<BRK/>
+Internet:  <URL HREF="https://www.mhlw.go.jp/index.html">https://www.mhlw.go.jp/index.html</URL></OAD></REF><BRK/>
+<BRK/>
+<REF><ORG>MINISTRY OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM (MLIT)</ORG><OAD> <BRK/>
+2-1-3 Kasumigaseki<BRK/>
+Chiyoda-ku, Tokyo  100-8918<BRK/>
+Ph:   +81-3-5253-8111<BRK/>
+Internet: <URL HREF="https://www.mlit.go.jp/en">https://www.mlit.go.jp/en/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>MINISTRY OF THE ENVIRONMENT GOVERNMENT OF JAPAN (MOE)</ORG><BRK/>
+<OAD>Godochosha No. 5<BRK/>
+Kasumigaseki 1-2-2<BRK/>
+Chiyoda-ku, Tokyo 100-8975, JAPAN<BRK/>
+Ph:  +81-3-3581-3351<BRK/>
+Internet:  <URL HREF="https://www.env.go.jp/en">https://www.env.go.jp/en/</URL></OAD></REF><BRK/>
+<BRK/>
+<REF><ORG>MASTER PAINTERS INSTITUTE (MPI)</ORG><BRK/>
+<OAD>2800 Ingleton Avenue<BRK/>
+Burnaby, BC CANADA V5C 6G7<BRK/>
+Ph: 1-888-674-8937<BRK/>
+Fax: 1-888-211-8708<BRK/>
+E-mail: info@paintinfo.com or techservices@mpi.net<BRK/>
+Internet:  <URL HREF="http://www.mpi.net">http://www.mpi.net/</URL></OAD></REF><BRK/>
+<BRK/>
+<REF><ORG>MANUFACTURERS STANDARDIZATION SOCIETY OF THE VALVE AND FITTINGS INDUSTRY (MSS)</ORG><BRK/>
+<OAD>127 Park Street, NE<BRK/>
+Vienna, VA  22180-4602<BRK/>
+Ph:   703-281-6613<BRK/>
+E-mail:  info@msshq.org<BRK/>
+Internet:  <URL HREF="http://msshq.org">http://msshq.org</URL></OAD></REF><REF><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL ASSOCIATION OF ARCHITECTURAL METAL MANUFACTURERS (NAAMM)</ORG><BRK/>
+<OAD>800 Roosevelt Road, Bldg C, Suite 312<BRK/>
+Glen Ellyn, IL  60137<BRK/>
+Ph:   630-942-6591<BRK/>
+Fax:  630-790-3095<BRK/>
+E-mail:  info@naamm.org<BRK/>
+Internet:  <URL HREF="http://www.naamm.org">http://www.naamm.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL ELECTRICAL MANUFACTURERS ASSOCIATION (NEMA)</ORG><BRK/>
+<OAD>1300 North 17th Street, Suite 900<BRK/>
+Arlington, VA  22209<BRK/>
+Ph:   703-841-3200<BRK/>
+Internet:  <URL HREF="https://www.nema.org">https://www.nema.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL ENVIRONMENTAL BALANCING BUREAU (NEBB)</ORG><BRK/>
+<OAD>8575 Grovemont Circle<BRK/>
+Gaithersburg, MD  20877<BRK/>
+Ph:   301-977-3698<BRK/>
+Fax:  301-977-9589<BRK/>
+Internet:  <URL HREF="http://www.nebb.org">http://www.nebb.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL FENESTRATION RATING COUNCIL (NFRC)</ORG><BRK/>
+<OAD>6305 Ivy Lane, Suite 140<BRK/>
+Greenbelt, MD  20770<BRK/>
+Ph:   301-589-1776<BRK/>
+Fax:  301-589-3884<BRK/>
+E-Mail:  info@nfrc.org<BRK/>
+Internet:  <URL HREF="http://www.nfrc.org">http://www.nfrc.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK/>
+<OAD>1 Batterymarch Park<BRK/>
+Quincy, MA  02169-7471<BRK/>
+Ph:   800-344-3555<BRK/>
+Fax:  800-593-6372<BRK/>
+Internet:  <URL HREF="https://www.nfpa.org">https://www.nfpa.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL HARDWOOD LUMBER ASSOCIATION (NHLA)</ORG><BRK/>
+<OAD>6830 Raleigh LaGrange Road<BRK/>
+PO Box 34518<BRK/>
+Memphis, TN  38184<BRK/>
+Ph:   901-377-1818<BRK/>
+Internet:  <URL HREF="https://nhla.com">https://nhla.com/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL INSTITUTE FOR CERTIFICATION IN ENGINEERING TECHNOLOGIES (NICET)</ORG><BRK/>
+<OAD>1420 King Street<BRK/>
+Alexandria, VA  22314-2794<BRK/>
+Ph:  888-476-4238 (1-888 IS-NICET)<BRK/>
+E-mail: tech@nicet.org<BRK/>
+Internet:  <URL HREF="https://www.nicet.org">https://www.nicet.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY AND HEALTH (NIOSH)</ORG><BRK/>
+<OAD>Patriots Plaza 1<BRK/>
+395 E Street, SW, Suite 9200<BRK/>
+Washington, DC  20201<BRK/>
+Ph:  800-232-4636<BRK/>
+Fax:  513-533-8347<BRK/>
+Internet:  <URL HREF="https://www.cdc.gov/niosh">https://www.cdc.gov/niosh/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST)</ORG><BRK/>
+<OAD>100 Bureau Drive<BRK/>
+Gaithersburg, MD  20899<BRK/>
+Ph:   301-975-2000<BRK/>
+Internet:  <URL HREF="https://www.nist.gov">https://www.nist.gov/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>NORTHEASTERN LUMBER MANUFACTURERS ASSOCIATION (NELMA)</ORG><BRK/>
+<OAD>272 Tuttle Road<BRK/>
+Cumberland, ME  04021<BRK/>
+Ph:   207-829-6901<BRK/>
+Fax:  207-829-4293<BRK/>
+E-mail:  info@nelma.org<BRK/>
+Internet:  <URL HREF="https://www.nelma.org">https://www.nelma.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>NSF INTERNATIONAL (NSF)</ORG><BRK/>
+<OAD>789 North Dixboro Road<BRK/>
+P.O. Box 130140<BRK/>
+Ann Arbor, MI  48105<BRK/>
+Ph:   734-769-8010 or 800-NSF-MARK<BRK/>
+Fax:  734-769-0109<BRK/>
+E-mail: info@nsf.org<BRK/>
+Internet: <URL HREF="http://www.nsf.org">http://www.nsf.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD)</ORG><BRK/>
+<OAD>2, rue Andre Pascal<BRK/>
+75775 Paris Cedex 16, France<BRK/>
+Ph:   + 33 1 45 24 82 00<BRK/>
+Fax:  33 1 45 24 85 00<BRK/>
+Internet: <URL HREF="http://www.oecd.org">http://www.oecd.org</URL><BRK/>
+U.S. Contact Center<BRK/>
+OECD Washington Center<BRK/>
+1776 I Street, NW, Suite 450<BRK/>
+Washington, DC  20006<BRK/>
+Ph:   202-785-6323<BRK/>
+E-mail:  washington.contact@oecd.org</OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>PLASTIC PIPE AND FITTINGS ASSOCIATION (PPFA)</ORG><BRK/>
+<OAD>800 Roosevelt Road<BRK/>
+Building C, Suite 312<BRK/>
+Glen Ellyn, IL  60137<BRK/>
+Ph:   630-858-6540<BRK/>
+Fax:  630-790-3095<BRK/>
+Internet:  <URL HREF="https://www.ppfahome.org">https://www.ppfahome.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>PROGRAMME FOR ENDORSEMENT OF FOREST CERTIFICATION (PEFC)</ORG><BRK/>
+<OAD>10, Route de l'Aeroport<BRK/>
+Case Postale 638<BRK/>
+1215 Geneva - Switzerland<BRK/>
+Ph:   +41 (22) 799-4540<BRK/>
+Fax:  +41 (22) 799-4550<BRK/>
+Internet: <URL HREF="https://www.pefc.org">https://www.pefc.org/</URL></OAD><BRK/></REF>
+<REF><ORG><BRK/>
+PLUMBING AND DRAINAGE INSTITUTE (PDI)</ORG><BRK/>
+<OAD>800 Turnpike Street, Suite 300<BRK/>
+North Andover, MA  01845<BRK/>
+Ph:   978-557-0720 or 800-589-8956<BRK/>
+E-Mail: pdi@PDIonline.org<BRK/>
+Internet:  <URL HREF="http://www.pdionline.org">http://www.pdionline.org</URL></OAD><BRK/></REF>
+<BRK/>
+<REF><ORG>REDWOOD INSPECTION SERVICE (RIS) OF THE CALIFORNIA REDWOOD ASSOCIATION (CRA)</ORG><OAD><BRK/>
+818 Grayson Road, Suite 201 <BRK/>
+Pleasant Hill, CA  94523<BRK/>
+Ph:   925-935-1499<BRK/>
+Fax:  925-935-1496<BRK/>
+Internet:  <URL HREF="https://www.wwpa.org/about-wwpa/redwood-inspection-service">https://www.wwpa.org/about-wwpa/redwood-inspection-service</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>SCIENTIFIC CERTIFICATION SYSTEMS (SCS)</ORG><OAD><BRK/>
+2000 Powell Street, Suite 600<BRK/>
+Emeryville, CA 94608<BRK/>
+Ph:   510-452-8000<BRK/>
+Fax:  510-452-8001<BRK/>
+E-mail:  info@SCSglobalservices.com<BRK/>
+Internet:  <URL HREF="https://www.scsglobalservices.com">https://www.scsglobalservices.com/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>SHEET METAL AND AIR CONDITIONING CONTRACTORS' NATIONAL ASSOCIATION (SMACNA)</ORG><BRK/>
+<OAD>4201 Lafayette Center Drive<BRK/>
+Chantilly, VA  20151-1219<BRK/>
+Ph:   703-803-2980<BRK/>
+Fax:  703-803-3732<BRK/>
+Internet:  <URL HREF="https://www.smacna.org">https://www.smacna.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>SOCIETY OF AUTOMOTIVE ENGINEERS INTERNATIONAL (SAE)</ORG><BRK/>
+<OAD>400 Commonwealth Drive<BRK/>
+Warrendale, PA  15096<BRK/>
+Ph:   877-606-7323 or 724-776-4841<BRK/>
+Fax:  724-776-0790<BRK/>
+E-mail:  customerservice@sae.org<BRK/>
+Internet:  <URL HREF="https://www.sae.org">https://www.sae.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>SOUTH COAST AIR QUALITY MANAGEMENT DISTRICT (SCAQMD)</ORG><BRK/>
+<OAD>21865 Copley Drive<BRK/>
+Diamond Bar, CA  91765<BRK/>
+Ph:   909-396-2000<BRK/>
+E-mail:  webinquiry@aqmd.gov<BRK/>
+Internet:  <URL HREF="http://www.aqmd.gov">http://www.aqmd.gov</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>SOUTHERN CYPRESS MANUFACTURERS ASSOCIATION (SCMA)</ORG><BRK/>
+<OAD>665 Rodi Road, Suite 305<BRK/>
+Pittsburgh, PA  15235<BRK/>
+Ph:   412-244-0440 <BRK/>
+Fax:  412-244-9090 <BRK/>
+Internet:  <URL HREF="http://www.cypressinfo.org">http://www.cypressinfo.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>SOUTHERN PINE INSPECTION BUREAU (SPIB)</ORG><BRK/>
+<OAD>P.O. Box 10915<BRK/>
+Pensacola, FL  32524-0915<BRK/>
+Ph:   850-434-2611 or 800-995-7742<BRK/>
+Fax:  850-434-1290<BRK/>
+E-mail:  spib@spib.org<BRK/>
+Internet:  <URL HREF="https://www.spib.org">https://www.spib.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>SPATIAL DATA STANDARD FOR FACILITIES, INFRASTRUCTURE, AND ENVIRONMENT (SDSFIE)</ORG><BRK/>
+<OAD>U.S. Army Corps of Engineers - Army Geospatial Center<BRK/>
+Internet:  <URL HREF="https://www.ampp.org/home">https://www.sdsfie.mil/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>STEEL DECK INSTITUTE (SDI)</ORG><BRK/>
+<OAD>P.O. Box 426<BRK/>
+Glenshaw, PA  15116<BRK/>
+Ph:   412-487-3325<BRK/>
+Fax:  412-487-3326<BRK/>
+Internet:  <URL HREF="https://www.sdi.org">https://www.sdi.org/</URL></OAD></REF><BRK/>
+<BRK/>
+<REF><ORG>THE SOCIETY OF HEATING, AIR-CONDITIONING AND SANITARY ENGINEERS OF JAPAN (SHASE)</ORG><BRK/>
+<OAD>4F Kagurazaka Plaza Building, 4-8 Kagurazaka<BRK/>
+Shinjuku-ku, Tokyo  162-0825, JAPAN<BRK/>
+Internet:  <URL HREF="https://www.shasej.org">https://www.shasej.org/</URL></OAD></REF><BRK/>
+<BRK/>
+<REF><ORG>SPRAY POLYURETHANE FOAM ALLIANCE (SPFA)</ORG><OAD><BRK/>
+3927 Old Lee Hwy. #101B<BRK/>
+Fairfax, VA  22030<BRK/>
+Ph: 800-523-6154<BRK/>
+Fax: 703-222-5816<BRK/>
+Internet:  <URL HREF="http://www.sprayfoam.org">http://www.sprayfoam.org</URL> </OAD></REF><BRK/>
+<BRK/>
+<REF><ORG>STEEL WINDOW INSTITUTE (SWI)</ORG><BRK/>
+<OAD>1300 Sumner Avenue<BRK/>
+Cleveland, OH  44115-2851<BRK/>
+Ph:   216-241-7333<BRK/>
+Fax:  216-241-0105<BRK/>
+E-mail:  swi@steelwindows.com<BRK/>
+Internet:  <URL HREF="https://www.steelwindows.com">https://www.steelwindows.com/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>SUSTAINABLE FOREST INITIATIVE (SFI)</ORG><BRK/>
+<OAD>2121 K Street NW<BRK/>
+Suite 750<BRK/>
+Washington, DC  20037<BRK/>
+Ph:   202-596-3450<BRK/>
+Fax:  202-596-3451<BRK/>
+E-mail:  info@sfiprogram.org<BRK/>
+Internet: <URL HREF="http://www.sfiprogram.org">http://www.sfiprogram.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>TECHNICAL ASSOCIATION OF THE PULP AND PAPER INDUSTRY (TAPPI)</ORG><OAD><BRK/>
+15 Technology Parkway South, Suite 115<BRK/>
+Peachtree Corners, GA  30092<BRK/>
+Ph:   800-332-8686 or 770-446-1400<BRK/>
+Fax:  770-446-6947<BRK/>
+E-mail: memberconnection@tappi.org<BRK/>
+Internet:  <URL HREF="http://www.tappi.org">http://www.tappi.org</URL></OAD></REF><REF><BRK/>
+<BRK/></REF>
+<REF><ORG>TRUSS PLATE INSTITUTE (TPI)</ORG><BRK/>
+<OAD>218 N. Lee Street, Suite 312<BRK/>
+Alexandria, VA  22314<BRK/>
+Ph:   703-683-1010<BRK/>
+Fax:  866-501-4012<BRK/>
+E-mail: info@tpinst.org<BRK/>
+Internet:  <URL HREF="https://www.tpinst.org">https://www.tpinst.org/</URL></OAD></REF><REF><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. AIR FORCE (USAF)</ORG><BRK/>
+<OAD>E-mail:  usaf.pentagon.saf-aa.mbx.AFDPO-PPL@mail.mil<BRK/>
+Internet:  <URL HREF="https://www.e-publishing.af.mil">https://www.e-publishing.af.mil/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. AIR FORCE, MISAWA AIR BASE</ORG><BRK/>
+<OAD>Ushirokubo-125-7 Misawa<BRK/>
+Aomori 033-0022, Japan<BRK/>
+Internet:  </OAD>https://www.misawa.af.mil/<BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. ARMY CORPS OF ENGINEERS (USACE)</ORG><BRK/>
+<OAD>CRD-C DOCUMENTS available on Internet:  <URL HREF="http://www.wbdg.org/ffc/army-coe/standards">http://www.wbdg.org/ffc/army-coe/standards</URL><BRK/>
+Order Other Documents from:<BRK/>
+Official Publications of the Headquarters, USACE<BRK/>
+E-mail:  hqpublications@usace.army.mil<BRK/>
+Internet:  <URL HREF="http://www.publications.usace.army.mil">http://www.publications.usace.army.mil/</URL><BRK/>
+     or   <URL HREF="https://www.hnc.usace.army.mil/Missions/Engineering-Directorate/TECHINFO">https://www.hnc.usace.army.mil/Missions/Engineering-Directorate/TECHINFO/</URL></OAD>
+</REF><REF><ORG>U.S. ARMY GARRISON JAPAN (USAG-J)</ORG><BRK/>
+<OAD>Internet:  <URL HREF="https://home.army.mil/japan">https://home.army.mil/japan/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. DEPARTMENT OF COMMERCE (DOC)</ORG><BRK/>
+<OAD>1401 Constitution Avenue, NW<BRK/>
+Washington, DC  20230<BRK/>
+Ph: 202-482-2000<BRK/>
+Internet:  <URL HREF="https://www.commerce.gov">https://www.commerce.gov/</URL><BRK/>
+Order Publications From:<BRK/>
+National Technical Information Service (NTIS)<BRK/>
+5301 Shawnee Road<BRK/>
+Alexandria, VA  22312<BRK/>
+Ph:   703-605-6060 or 1-800-363-2068<BRK/>
+Fax:  703-605-6880<BRK/>
+TDD:  703-487-4639<BRK/>
+E-mail: info@ntis.gov<BRK/>
+Internet:  <URL HREF="https://www.ntis.gov">https://www.ntis.gov/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. DEPARTMENT OF DEFENSE (DOD)</ORG><BRK/>
+<OAD>Order DOD Documents from:<BRK/>
+Room 3A750-The Pentagon<BRK/>
+1400 Defense Pentagon<BRK/>
+Washington, DC 20301-1400<BRK/>
+Ph:   703-571-3343<BRK/>
+Fax:  215-697-1462<BRK/>
+E-mail:  customerservice@ntis.gov<BRK/>
+Internet:  <URL HREF="https://www.ntis.gov">https://www.ntis.gov/</URL><BRK/>
+Obtain Military Specifications, Standards and Related Publications from:<BRK/>
+Acquisition Streamlining and Standardization Information System (ASSIST)<BRK/>
+Department of Defense Single Stock Point (DODSSP)<BRK/>
+Document Automation and Production Service (DAPS)<BRK/>
+Building 4/D<BRK/>
+700 Robbins Avenue<BRK/>
+Philadelphia, PA 19111-5094<BRK/>
+Ph:   215-697-6396 - for account/password issues<BRK/>
+Internet:  <URL HREF="https://assist.dla.mil/online/start">https://assist.dla.mil/online/start/</URL>; account registration required<BRK/>
+Obtain Unified Facilities Criteria (UFC) from:<BRK/>
+Whole Building Design Guide (WBDG)<BRK/>
+National Institute of Building Sciences (NIBS)<BRK/>
+1090 Vermont Avenue NW, Suite 700<BRK/>
+Washington, DC  20005<BRK/>
+Ph:  202-289-7800<BRK/>
+Fax: 202-289-1092<BRK/>
+Internet:  <URL HREF="https://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc">https://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. DEPARTMENT OF DEFENSE HEADQUARTERS, U.S. FORCES JAPAN (USFJ)</ORG><BRK/>
+<OAD>Building 714<BRK/>
+Yokota Air Base<BRK/>
+Fussa-shi, Tokyo 197-0001, JAPAN<BRK/>
+Internet:  <URL HREF="https://www.usfj.mil">https://www.usfj.mil/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. DEPARTMENT OF ENERGY (DOE)</ORG><OAD><BRK/>
+1000 Independence Avenue Southwest<BRK/>
+Washington, D.C.  20585<BRK/>
+Ph:   202-586-5000<BRK/>
+Fax:  202-586-4403<BRK/>
+E-mail:  The.Secretary@hq.doe.gov<BRK/>
+Internet:  <URL HREF="https://www.energy.gov">https://www.energy.gov/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. DEPARTMENT OF HOUSING AND URBAN DEVELOPMENT (HUD)</ORG><BRK/>
+<OAD>HUD User<BRK/>
+P.O. Box 23268<BRK/>
+Washington, DC 20026-3268<BRK/>
+Ph:   800-245-2691 or 202-708-3178<BRK/>
+TDD:  800-927-7589<BRK/>
+Fax:  202-708-9981<BRK/>
+E-mail:  helpdesk@huduser.gov<BRK/>
+Internet:  <URL HREF="https://www.huduser.gov">https://www.huduser.gov</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. DEPARTMENT OF THE NAVY</ORG><BRK/>
+<OAD>The Pentagon, Washington, DC  20350<BRK/>
+Internet:  <URL HREF="http://www.navy.mil">http://www.navy.mil</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. ENVIRONMENTAL PROTECTION AGENCY (EPA)</ORG><BRK/>
+<OAD>1200 Pennsylvania Avenue, N.W.<BRK/>
+Washington, DC  20004<BRK/>
+Ph:   202-564-4700<BRK/>
+Internet:  <URL HREF="https://www.epa.gov">https://www.epa.gov</URL><BRK/>
+--- Some EPA documents are available only from: <BRK/>
+National Technical Information Service (NTIS)<BRK/>
+5301 Shawnee Road<BRK/>
+Alexandria, VA  22312<BRK/>
+Ph:   703-605-6060 or 1-800-363-2068<BRK/>
+Fax:  703-605-6880<BRK/>
+TDD:  703-487-4639<BRK/>
+E-mail: info@ntis.gov<BRK/>
+Internet:  <URL HREF="https://www.ntis.gov">https://www.ntis.gov/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. FEDERAL AVIATION ADMINISTRATION (FAA)</ORG><BRK/>
+<OAD>Order for sale documents from:<BRK/>
+Superintendent of Documents<BRK/>
+U.S. Government Publishing Office (GPO)<BRK/>
+732 N. Capitol Street, NW<BRK/>
+Washington, DC  20401<BRK/>
+Ph:   202-512-1800 or 866-512-1800<BRK/>
+Bookstore:  202-512-0132<BRK/>
+Internet:  <URL HREF="https://www.gpo.gov">https://www.gpo.gov/</URL><BRK/>
+Order free documents from:<BRK/>
+U.S. Department of Transportation<BRK/>
+Federal Aviation Administration<BRK/>
+800 Independence Avenue, SW<BRK/>
+Washington, DC  20591<BRK/>
+Ph:   866-835-5322<BRK/>
+Internet:  <URL HREF="https://www.faa.gov">https://www.faa.gov/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. FEDERAL HIGHWAY ADMINISTRATION (FHWA)</ORG><BRK/>
+<OAD>1200 New Jersey Ave., SE<BRK/>
+Washington, DC  20590<BRK/>
+Ph:   202-366-4000<BRK/>
+E-mail:  ExecSecretariat.FHWA@dot.gov<BRK/>
+Internet:  <URL HREF="https://highways.dot.gov">https://highways.dot.gov/</URL><BRK/>
+Order from:<BRK/>
+Superintendent of Documents<BRK/>
+U.S. Government Publishing Office (GPO)<BRK/>
+732 N. Capitol Street, NW<BRK/>
+Washington, DC  20401<BRK/>
+Ph:   202-512-1800 or 866-512-1800<BRK/>
+Bookstore:  202-512-0132<BRK/>
+Internet:  <URL HREF="https://www.gpo.gov">https://www.gpo.gov/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. GENERAL SERVICES ADMINISTRATION (GSA)</ORG><BRK/>
+<OAD>General Services Administration<BRK/>
+1800 F Street, NW<BRK/>
+Washington, DC 20405<BRK/>
+Ph:   1-844-472-4111<BRK/>
+Internet:  <URL HREF="https://www.gsaelibrary.gsa.gov/ElibMain/home.do">https://www.gsaelibrary.gsa.gov/ElibMain/home.do</URL><BRK/>
+Obtain documents from:<BRK/>
+Acquisition Streamlining and Standardization Information System (ASSIST)<BRK/>
+Internet:  <URL HREF="https://assist.dla.mil/online/start">https://assist.dla.mil/online/start/</URL>; account registration required</OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U. S. GREEN BUILDING COUNCIL (USGBC)</ORG><BRK/>
+<OAD>2101 L St NW, Suite 500<BRK/>
+Washington, DC  20037<BRK/>
+Ph:   202-828-7422<BRK/>
+Internet:  <URL HREF="https://new.usgbc.org">https://new.usgbc.org/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)</ORG><BRK/>
+<OAD>8601 Adelphi Road <BRK/>
+College Park, MD  20740-6001<BRK/>
+Ph:  866-272-6272<BRK/>
+Internet:  <URL HREF="https://www.archives.gov">https://www.archives.gov/</URL><BRK/>
+Order documents from:<BRK/>
+Superintendent of Documents<BRK/>
+U.S. Government Publishing Office (GPO)<BRK/>
+732 N. Capitol Street, NW<BRK/>
+Washington, DC  20401<BRK/>
+Ph:   202-512-1800 or 866-512-1800<BRK/>
+Bookstore:  202-512-0132<BRK/>
+Internet:  <URL HREF="https://www.gpo.gov">https://www.gpo.gov/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. NAVAL FACILITIES ENGINEERING COMMAND (NAVFAC)</ORG><BRK/>
+<OAD>1322 Patterson Ave. SE, Suite 1000<BRK/>
+Washington Navy Yard, DC  20374-5065<BRK/>
+Ph:   202-685-9387<BRK/>
+Internet:  <URL HREF="http://www.navfac.navy.mil">http://www.navfac.navy.mil</URL></OAD>
+</REF><BRK/>
+<BRK/>
+<REF><ORG>U.S. NAVAL SEA SYSTEMS COMMAND (NAVSEA)</ORG><BRK/>
+<OAD>Commander Naval Sea Systems Command<BRK/>
+1333 Isaac Hull Ave., SE<BRK/>
+Washington Navy Yard, DC 20376-1080<BRK/>
+Ph:   202-781-0000<BRK/>
+E-mail:  navsea_publicqueries@navy.mil<BRK/>
+Internet:  <URL HREF="http://www.navsea.navy.mil/PublicInquiries.aspx">http://www.navsea.navy.mil/PublicInquiries.aspx</URL></OAD></REF><BRK/>
+<BRK/>
+<REF><ORG>UNDERWRITERS LABORATORIES (UL)</ORG><BRK/>
+<OAD>2600 N.W. Lake Road<BRK/>
+Camas, WA  98607-8542<BRK/>
+Ph:   877-854-3577 or 360-817-5500<BRK/>
+E-mail:  CustomerExperienceCenter@ul.com<BRK/>
+Internet:  <URL HREF="https://www.ul.com">https://www.ul.com/</URL><BRK/>
+UL Directories available through IHS at <URL HREF="https://ihsmarkit.com">https://ihsmarkit.com/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>UNDERWRITERS LABORATORIES OF CANADA (ULC)</ORG><BRK/>
+<OAD>7 Underwriters Road<BRK/>
+Toronto, Ontario, Canada M1R 3A9<BRK/>
+Ph:   866-937-3852<BRK/>
+Fax:  416.757.8727<BRK/>
+E-mail:  cec@ul.com<BRK/>
+Internet:  <URL HREF="https://canada.ul.com">https://canada.ul.com/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>VIBRATION ISOLATION AND SEISMIC CONTROL MANUFACTURERS ASSOCIATION (VISCMA)</ORG><BRK/>
+<OAD>994 Old Eagle School Road<BRK/>
+Suite 1019<BRK/>
+Wayne, PA  19087-1866<BRK/>
+Ph:   610-971-4850<BRK/>
+E-mail:  info@viscma.com<BRK/>
+Internet:  <URL HREF="http://www.viscma.com">http://www.viscma.com</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>WEST COAST LUMBER INSPECTION BUREAU (WCLIB)</ORG><BRK/>
+<OAD>6980 S.W. Varns<BRK/>
+Tigard, OR  97223<BRK/>
+Ph:   503-639-0651<BRK/>
+Fax:  503-684-8928<BRK/>
+E-mail:  info@wclib.org<BRK/>
+Internet:  <URL HREF="http://www.wclib.org">http://www.wclib.org</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>WINDOW AND DOOR MANUFACTURERS ASSOCIATION (WDMA)</ORG><BRK/>
+<OAD>2001 K Streeet NW<BRK/>
+3rd Floor North<BRK/>
+Washington, DC  20006<BRK/>
+Ph:   202-367-1157<BRK/>
+    or    <BRK/>
+330 N Wabash Avenue, Suite 2000<BRK/>
+Chicago, IL  60611<BRK/>
+Ph:   312-321-6802<BRK/>
+E-mail:  membersupport@wdma.com<BRK/>
+Internet:  <URL HREF="https://www.wdma.com">https://www.wdma.com/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>WOOD MOULDING AND MILLWORK PRODUCERS ASSOCIATION (WMMPA)</ORG><BRK/>
+<OAD>1282 Stabler Lane, STE 630 #146<BRK/>
+Yuba City, CA95993-2625<BRK/>
+Ph:   530-661-9591<BRK/>
+Fax:  530-661-9586<BRK/>
+E-mail: info@wmmpa.com<BRK/>
+Internet:  <URL HREF="https://www.wmmpa.com">https://www.wmmpa.com/</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>WOODWORK INSTITUTE (WI)</ORG><BRK/>
+<OAD>1455 Response Road, Suite 110<BRK/>
+Sacremento, CA 95815<BRK/>
+Ph:   916-372-9943<BRK/>
+Fax:  916-372-9950<BRK/>
+E-mail:  info@woodinst.com<BRK/>
+Internet:  <URL HREF="https://woodworkinstitute.com">https://woodworkinstitute.com</URL></OAD><BRK/>
+<BRK/></REF>
+<REF><ORG>WESTERN WOOD PRODUCTS ASSOCIATION (WWPA)</ORG><BRK/>
+<OAD>1500 SW First Ave., Suite 870<BRK/>
+Portland, OR  97201 <BRK/>
+Ph:   503-224-3930<BRK/>
+E-mail:  info@wwpa.org<BRK/>
+Internet:  <URL HREF="http://www.wwpa.org">http://www.wwpa.org</URL></OAD><BRK/>
+<BRK/></REF>
+</SPT></PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
+<BRK/>
+<TXT>Not used</TXT><BRK/>
+<BRK/></PRT>
+<PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
+<BRK/>
+<TXT>Not used</TXT><BRK/>
+<BRK/></PRT>
+    <END/><BRK/></SEC>

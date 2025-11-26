@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><HDR><AST/><TAB BORDERS="0">
+<WBK>
+   <STS/>
+   <TDA COLUMNCOUNT="2" ROWCOUNT="4">
+      <COL AUTOWIDTH="0" WIDTH="281.25"/>
+      <COL AUTOWIDTH="0" WIDTH="281.25"/>
+      <ROW AUTOHEIGHT="0" HEIGHT="15.00">
+         <CEL>
+<DTA TYPE="STRING">USACE / NAVFAC / AFCEC / NASA</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">UFGS-26 41 00 (November 2013)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="12.00">
+         <CEL MERGEDOWN="1"/>
+         <CEL/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="12.00">
+         <CEL INDEX="2">
+<DTA TYPE="STRING"><HL3>------------------------------------</HL3></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="44.25">
+         <CEL>
+<DTA TYPE="STRING">Preparing Activity:  <PRA>NAVFAC</PRA></DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">SupersedingUFGS-26 41 01.00 10 (November 2008)UFGS-26 41 00.00 20 (April 2006)</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB><BRK/>
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
+<BRK/>
+<HL4>References are in agreement with UMRL dated April 2022</HL4><BRK/>
+<AST/><BRK/></HDR>
+<BRK/>
+<SCN>SECTION 26 41 00</SCN><BRK/>
+<BRK/>
+<STL>LIGHTNING PROTECTION SYSTEM</STL><BRK/>
+<DTE>11/13</DTE><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>lightning protection 
+systems for non-ordnance facilities</SCP>. Modify this guide specification as needed 
+to address unique requirements for ordnance-related facilities. Follow requirements 
+in UFC 3-575-01, "Lightning and Static Electricity Protection Systems" and contact 
+the service-specific ordnance organization for guidance.<BRK/>
+<BRK/>
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.<BRK/>
+<BRK/>
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<BRK/>
+<BRK/>
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Show the following information on the project drawings:<BRK/>
+<BRK/>
+1.  Location and height of air terminals.<BRK/>
+<BRK/>
+2.  Location of down conductors, including locations where down conductors are 
+subject to physical damage and require additional protection.<BRK/>
+<BRK/>
+3.  Location of ground rods.<BRK/>
+<BRK/>
+4.  Location of ground ring electrodes or alternate methods for grounding electrodes 
+(if any).<BRK/>
+<BRK/>
+5.  Location of test wells.<BRK/>
+<BRK/>
+6.  Fence and gate bonding details. <BRK/>
+<BRK/>
+7.  For additions to lightning protection systems on existing facilities, show 
+locations of tie-in points.<BRK/></NPR>
+<BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
+<BRK/>
+<SPT><TTL>REFERENCES</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification. The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK/>
+ <BRK/>
+Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<BRK/>
+ <BRK/>
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK/>
+<BRK/>
+<REF><ORG>INSTITUTE OF ELECTRICAL AND ELECTRONICS ENGINEERS (IEEE)</ORG><BRK/>
+<BRK/>
+<RID>IEEE 81</RID><RTL>(2012) Guide for Measuring Earth Resistivity, 
+Ground Impedance, and Earth Surface Potentials 
+of a Ground System</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK/>
+<BRK/>
+<RID>NFPA 70</RID><DEL><RTL>(2020; ERTA 20-1 2020; ERTA 20-2 2020; TIA 20-1; 
+TIA 20-2; TIA 20-3; TIA 20-4) National Electrical 
+Code</RTL></DEL><ADD><RTL>(2023; ERTA 7 2023; TIA 23-15) National 
+Electrical Code</RTL></ADD><BRK/>
+<BRK/>
+<RID>NFPA 780</RID><RTL>(2020) Standard for the Installation of Lightning 
+Protection Systems</RTL><BRK/>
+<BRK/></REF>
+<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK/>
+<BRK/>
+<RID>JIS A 4201</RID><RTL>(2003) Protection of Structures Against Lightning</RTL><BRK/>
+<BRK/>
+<RID>JIS C 60364-5-54</RID><RTL><DEL>(2006) </DEL><ADD>(2006; R 2015) </ADD>Building Electrical Equipment-Part 
+5-54: Selection Of Electrical Equipment and 
+Contruction-Grounding Equipment, Protective 
+Conductor and Protective Bonding Conductor</RTL><ADD><BRK/>
+<BRK/>
+<RID>JIS Z 9290</RID><RTL>(2014) Protection Against Lightning</RTL><BRK/></ADD>
+<BRK/></REF>
+<REF><ORG>U.S. AIR FORCE (USAF)</ORG><BRK/>
+<BRK/>
+<RID>AFI 32-1065</RID><RTL>(2017) Grounding Systems</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>UNDERWRITERS LABORATORIES (UL)</ORG><BRK/>
+<BRK/>
+<RID>UL 96</RID><RTL>(2016) UL Standard for Safety Lightning Protection 
+Components</RTL><BRK/>
+<BRK/>
+<RID>UL 467</RID><DEL><RTL>(2013; Reprint Jun 2017) UL Standard for Safety 
+Grounding and Bonding Equipment</RTL></DEL><ADD><RTL>(2022) UL Standard 
+for Safety Grounding and Bonding Equipment</RTL></ADD><BRK/>
+<BRK/>
+<RID>UL Electrical Construction</RID><RTL>(2012) Electrical Construction Equipment Directory</RTL><BRK/>
+<BRK/></REF>
+</SPT><SPT><TTL>RELATED REQUIREMENTS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Verification of Dimensions</TTL><BRK/>
+<BRK/>
+<TXT>Confirm all details of work, verify all dimensions in field, and advise Contracting Officer of any discrepancy 
+before performing work.  Obtain prior approval of Contracting Officer before making any departures from the design.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>System Requirements</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This specification is based on compliance with NFPA 780 as specified 
+in UFC 3-575-01, "Lightning and Static Electricity Protection Systems".  <BRK/>
+<BRK/>
+NFPA 780 requires surge protective devices (SPDs) at all service entrances as 
+part of a lightning protection system.  Include Section <SRF>26 20 00</SRF> INTERIOR DISTRIBUTION 
+SYSTEM to specify SPD requirements.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide a system furnished under this specification consisting of the latest UL or JIS Listed products of a manufacturer 
+regularly engaged in production of lightning protection system components.  Comply with <RID>NFPA 70</RID>, <RID>NFPA 780</RID>, <RID>UL 96</RID><ADD>
+,</ADD><DEL> or</DEL> <RID>JIS A 4201</RID><ADD>, or <RID>JIS Z 9290</RID></ADD>.</TXT><BRK/>
+<BRK/>
+<TAI OPT="SPECIFIC HIGH-RISK AIR FORCE PROJECT"><TXT>For specific high-risk Air Force (AF) projects, such as explosives and communications facilities, the design 
+shall reflect the more stringent NFPA/AFMAN requirements. Certification shall be executed by either third-party 
+or AF-approved personnel in accordance with AFMAN standards.</TXT></TAI><BRK/>
+<BRK/></SPT>
+<SPT><TTL><SUB>Lightning Protection System Installers Documentation</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Provide documentation showing that the installer<ADD> is a company whose sole work is lightning protection in compliance 
+with Japanese industry standards, or</ADD> <DEL>is certified with a commercial third-party inspection company whose sole 
+work is lightning protection, or </DEL>is a UL Listed Lightning Protection Installer.  In either case, the documentation 
+must show that they have completed and passed the requirements for certification or listing, and have a minimum 
+of 2 years documented experience installing lightning protection systems for DoD projects of similar scope and 
+complexity.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>SUBMITTALS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Review Submittal Description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list, and corresponding submittal items in 
+the text, to reflect only the submittals required for the project.  The Guide 
+Specification technical editors have classified those items that require Government 
+approval, due to their complexity or criticality, with a "G."  Generally, other 
+submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a "G" to an item if the submittal is sufficiently important or complex 
+in context of the project.</NPR><BRK/>
+<BRK/>
+<NPR><TAI OPT="ARMY">For Army projects, fill in the empty brackets following the "G" classification, 
+with a code of up to three characters to indicate the approving authority.  
+Codes for Army projects using the Resident Management System (RMS) are:  "AE" 
+for Architect-Engineer; "DO" for District Office (Engineering Division or other 
+organization in the District Office); "AO" for Area Office; "RO" for Resident 
+Office; and "PO" for Project Office.  </TAI>Codes following the "G" typically are 
+not used for Navy, Air Force, and NASA projects.</NPR><BRK/>
+<BRK/>
+<NPR>The "S" classification indicates submittals required as proof of compliance 
+for sustainability Guiding Principles Validation or Third Party Certification 
+and as described in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES.</NPR><BRK/>
+<BRK/>
+<NPR>Choose the first bracketed item for Navy, Air Force, and NASA projects, or choose 
+the second bracketed item for Army projects.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Government approval is required for submittals with a "G" or "S" classification.  Submittals not having a "G" 
+or "S" classification are [for Contractor Quality Control approval.][for information only.  When used, a code 
+following the "G" classification identifies the office that will review the submittal for the Government.]  Submit 
+the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Modify submittals paragraphs to ensure that an appropriate submittal 
+is required for each item in the project.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  For the Air Force, modify Division 1 paragraphs to require submission 
+of lightning protection shop drawings, test reports and certificates to the 
+Base Civil Engineer and to the Designer of Record via the Contracting Officer 
+for approval.  The Base Civil Engineer retains final site approval authority.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Overall lightning protection system</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Each major component</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
+<BRK/>
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Lightning Protection and Grounding System Test Plan</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Lightning Protection and Grounding System Test</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
+<BRK/>
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Lightning Protection System Installers Documentation</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Component UL or JIS Listed and Labeled</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Lightning protection system inspection certificate</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Roof manufacturer's warranty</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK/>
+<BRK/></SPT>
+<SPT><TTL>QUALITY ASSURANCE</TTL><BRK/>
+<BRK/>
+<TXT>In each standard referred to herein, consider the advisory provisions to be mandatory, as though the word "shall" 
+or "must" has been substituted for "should" wherever it appears.  Interpret references in these standards to 
+"authority having jurisdiction," or words of similar meaning, to mean Contracting Officer.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Installation Drawings</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Overall System Drawing</TTL><BRK/>
+<BRK/>
+<TXT>Submit installation shop drawing for the <SUB>overall lightning protection system</SUB>.  Include on the drawings the physical 
+layout of the equipment (plan view and elevations), mounting details, relationship to other parts of the work, 
+and wiring diagrams.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Major Components</TTL><BRK/>
+<BRK/>
+<TXT>Submit detail drawings for <SUB>each major component</SUB> including manufacturer's descriptive and technical literature, 
+catalog cuts, and installation instructions.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL><SUB>Component UL or JIS Listed and Labeled</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Submit proof of compliance that components are UL or JIS Listed and Labeled.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL><SUB>Lightning Protection and Grounding System Test Plan</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Provide a lightning protection and grounding system test plan.  Detail both the visual inspection and electrical 
+testing of the  system and components in the test plan.  Identify (number) the  system test points/locations 
+along with a listing or description of the item to be tested and the type of test to be conducted.  As a minimum, 
+include a sketch of the facility and surrounding lightning protection system as part of the specific test plan 
+for each structure.  Include the requirements specified in paragraph, "Testing of Integral Lightning Protection 
+System" in the test plan.</TXT><BRK/>
+<BRK/></SPT>
+[<SPT><TTL><SUB>Lightning Protection System Inspection Certificate</SUB></TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Select the first bracketed option  for Army and Navy facilities.     <BRK/>
+<BRK/>
+Select second bracketed option for Air Force facilities.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+[<TXT>Provide <ADD>documentation</ADD><DEL>certification</DEL> from a commercial third-party inspection company whose sole work is lightning 
+protection, stating that the lightning protection system complies with <RID>NFPA 780</RID><ADD>,</ADD><DEL> or</DEL> <RID>JIS A 4201</RID><ADD>, or <RID>JIS Z 9290</RID></ADD>
+.  Third party inspection company cannot be the system installer or the system designer.</TXT><BRK/>
+<BRK/>
+][<TXT>Provide certification from a commercial third-party inspection company whose sole work is lightning protection, 
+stating that the lightning protection system complies with <RID>NFPA 780</RID> and <RID>AFI 32-1065</RID>.  Third party inspection 
+company cannot be the system installer or the system designer.</TXT> <BRK/>
+<BRK/>
+]<TXT>Inspection must cover every connection, air terminal, conductor, fastener, accessible grounding point and other 
+components of the lightning protection system to ensure 100% system compliance.  This includes witnessing the 
+tests for the resistance measurements for ground rods with test wells, and for continuity measurements for bonds.  
+It also includes verification of proper surge protective devices for power, data and telecommunication systems.  
+Random sampling or partial inspection of a facility is not acceptable.</TXT><BRK/>
+<BRK/></SPT>
+]</SPT><SPT><TTL>SITE CONDITIONS</TTL><BRK/>
+<BRK/>
+<TXT>Confirm all details of work, verify all dimensions in field, and advise Contracting Officer of any discrepancy 
+before performing work.  Obtain prior approval of Contracting Officer before changing the design.</TXT><BRK/>
+<BRK/></SPT>
+</PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>MATERIALS</TTL><BRK/>
+<BRK/>
+<TXT>Do not use a combination of materials that forms an electrolytic couple of such nature that corrosion is accelerated 
+in the presence of moisture unless moisture is permanently excluded from the junction of such metals.  Where 
+unusual conditions exist which would cause corrosion of conductors, provide conductors with protective coatings, 
+such as tin or lead, or oversize conductors.  Where a mechanical hazard is involved, increase conductor size 
+to compensate for the hazard or protect conductors.  When metallic conduit or tubing is provided, electrically 
+bond conductor to conduit or tubing at the upper and lower ends by clamp type connectors or welds (including 
+exothermic).  All lightning protection components, such as bonding plates, air terminals, air terminal supports 
+and braces, chimney bands, clips, connector fittings, and fasteners are to comply with the requirements of <RID>UL 96</RID><ADD>
+,</ADD><DEL> or</DEL> <RID>JIS A 4201</RID><ADD> or <RID>JIS Z 9290</RID></ADD> classes as applicable.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Main and Bonding Conductors</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  NFPA 780 - Class I are ordinary building<MET> 23m </MET><ENG> 75 ft</ENG> or less in height 
+and Class II are ordinary buildings over<MET> 23m </MET><ENG> 75 ft</ENG> in height.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT><RID>NFPA 780</RID>, <RID>UL 96</RID> or <RID>JIS A 4201</RID> modified materials as applicable.</TXT><BRK/>
+<BRK/></SPT>
+[<SPT><TTL>Copper Only</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Include the optional copper requirement only if established by technical 
+requirements of the project.  Otherwise, code requirements will dictate where 
+copper and aluminum can be used. </NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide copper conductors, except where aluminum conductors are required for connection to aluminum equipment.</TXT><BRK/>
+<BRK/></SPT>
+]</SPT><SPT><TTL>COMPONENTS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Air Terminals</TTL><BRK/>
+<BRK/>
+<TXT>Provide solid air terminals with a blunt tip. Tubular air terminals are not permitted.  Support air terminals 
+more than<MET> 600 mm</MET><ENG> 24 inches</ENG> in length by suitable brace, supported at not less than one-half the height of the 
+terminal.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Ground Rods</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The designer will determine the type and number of ground rods to be 
+used based on local conditions and earth resistivity data. NFPA 780 allows copper-clad 
+steel, solid copper, or stainless steel ground rods for multiple ground rod applications.  <BRK/>
+<BRK/>
+Specify copper clad steel rods for normal conditions.  The use of other materials 
+such as galvanized coated steel will require written authorization in accordance 
+with the MIL-STD-3007F, Paragraph 5.1.7, "Waivers and Exemptions".<BRK/>
+<BRK/>
+In high resistivity soils,<MET> 3000 mm</MET><ENG> 10 foot</ENG> sectional rods may be used to obtain 
+the required resistance to ground; however, where rock is encountered, additional 
+rods, a ground ring electrode, or ground grid may be necessary. Coordinate and 
+standardize rod selection for individual facilities with other specification 
+sections.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide [ground rods made of [copper-clad steel] [solid copper] conforming to conform to <RID>UL 467</RID> or <RID>JIS C 60364-5-54</RID>
+.]  Provide ground rods that are not less than<MET> 20 mm</MET><ENG> 3/4 inch</ENG> in diameter and<MET> 3000 mm</MET><ENG> 10 feet</ENG> in length.  Do 
+not mix ground rods of copper-clad steel or solid copper on the job.</TXT><BRK/>
+<BRK/></SPT>
+[<SPT><TTL>Grounding Plates</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The use of grounding plates is an allowed alternative to ground rods 
+in areas where excessive rock and surface ledge is encountered.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide grounding plates made of [copper-clad steel][iron][stainless steel] [solid copper] conforming to <RID>UL 96</RID><DEL>
+ or </DEL><ADD>, </ADD><RID>JIS A 4201</RID><ADD> or <RID>JIS Z 9290</RID></ADD>.</TXT><BRK/>
+<BRK/></SPT>
+]<SPT><TTL>Connections and Terminations</TTL><BRK/>
+<BRK/>
+<TXT>Provide connectors for splicing conductors that conform to <RID>UL 96</RID><DEL> or </DEL><ADD>, </ADD><RID>JIS A 4201</RID>, <ADD>or JIS Z 9290 </ADD>class as applicable.  
+Conductor connections can be made by clamps or welds (including exothermic).  Provide style and size connectors 
+required for the installation.  </TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Connector Fittings</TTL><BRK/>
+<BRK/>
+<TXT>Provide connector fittings for "end-to-end", "Tee", or "Y" splices that conform to <RID>NFPA 780</RID>, <RID>UL 96</RID>, <DEL>or </DEL><RID>JIS A 4201</RID><ADD>
+ or <RID>JIS Z 9290</RID></ADD>.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
+<BRK/>
+<SPT><TTL>INTEGRAL SYSTEM</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This specification is based on compliance with NFPA 780 as specified 
+in UFC 3-575-01, "Lightning and Static Electricity Protection Systems". <BRK/>
+<BRK/>
+Include bracketed option in first sentence for tie-ins to existing lightning 
+protection systems.  Include second bracketed option if ground ring electrodes 
+are required.  Include additional bracketed options as appropriate for the lightning 
+protection system design.  </NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide a lightning protection system that meets the requirements of <RID>NFPA 780</RID><DEL> or </DEL><ADD>, </ADD><RID>JIS A 4201</RID>[, including tie-ins 
+to existing lightning protection systems]<ADD>, or JIS Z 9290</ADD>.  Lightning protection system consists of air terminals, 
+roof conductors, down conductors, ground connections, [and] grounding electrodes[ and ground ring electrode conductor].  
+[Expose conductors on the structures except where conductors are required to be in protective sleeves.]  Bond 
+secondary conductors with grounded metallic parts within the building.  Make interconnections within side-flash 
+distances at or below the level of the grounded metallic parts.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Roof-Mounted Components</TTL><BRK/>
+<BRK/>
+<TXT>Coordinate with the roofing manufacturer and provide certification that the <SUB>roof manufacturer's warranty</SUB> is not 
+violated by the installation methods for air terminals and roof conductors.</TXT><BRK/>
+  <BRK/>
+<SPT><TTL>Air Terminals</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Select bracketed options based on roof type and location.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>[Use adhesive shoes with adhesive approved by the roof manufacturer when installing air terminals on "rubber" 
+(EPDM) type roofs.]  [In areas of snow or constant wind, ensure that a section of roofing material (minimum dimensional 
+area of<MET> 92,900 square mm</MET><ENG> 1 square foot</ENG>) is first glued to the roof and then the air terminal is glued to it unless 
+the roof manufacturer recommends another solution.]  [Use a standing seam base for installation of air terminals 
+on a standing seam metal roof that does not produce any roof penetrations.]</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Roof Conductors</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE: Select bracketed options based on roof type and location. Delete the last 
+bracketed option for concealing roof conductors for Air Force and Navy projects.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>[Use adhesive shoes with adhesive approved by the roof manufacturer when installing roof conductors on "rubber" 
+(EPDM) type roofs.]  [Use a standing seam base for installation of roof conductors on a standing seam metal roof 
+that does not produce any roof penetrations.]  [Roof conductors are to be concealed within the ceiling cavities 
+as much as practicable.]</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Down Conductors</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Select bracketed option if down conductors are to be concealed.  Delete 
+the bracketed option for Air Force and Navy projects.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Protect exposed down conductors from physical damage as required by <RID>NFPA 780</RID><ADD>,</ADD><DEL> or</DEL><RID><DEL> </DEL>JIS A 4201</RID><ADD>, <RID>JIS Z 9290</RID></ADD>.  Use 
+Schedule 80 PVC to protect down conductors.  Paint the Schedule 80 PVC to match the surrounding surface with 
+paint that is approved for use on PVC.  [Down conductors are to be concealed within the wall cavities.]</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Ground Connections</TTL><BRK/>
+<BRK/>
+<TXT>Attach each down conductor [and ground ring electrode] to ground rods by welding (including exothermic), brazing, 
+or compression.  All connections to ground rods below ground level must be by exothermic weld connection or with 
+a high compression connection using a hydraulic or electric compression tool to provide the correct circumferential 
+pressure.  Accessible connections above ground level and in test wells can be accomplished by mechanical clamping.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Grounding Electrodes</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Where soil conditions indicate definitely that a ground ring electrode 
+will not be required, all references to a ground ring electrode should be deleted 
+from the specifications.<BRK/>
+<BRK/>
+If required by soil conditions, select an alternate method for grounding electrodes 
+in shallow soil.  Utilize NFPA 780 or an alternate method meeting the intent 
+of NFPA 780. Validate by calculations or historical data for site conditions.  
+Modify the wording below as necessary to specify the system design.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Extend driven ground rods vertically into the existing undisturbed earth for a distance of not less<MET> 3000 mm</MET><ENG> 10 
+feet</ENG>.  Set ground rods not less than<MET> 915 mm</MET><ENG> 3 feet</ENG> nor more than<MET> 2440 mm</MET><ENG> 8 feet</ENG>, from the structure foundation, 
+and at least beyond the drip line for the facility.  After the completed installation, measure the total resistance 
+to ground using the fall-of-potential method described in <RID>IEEE 81</RID>.  Maximum allowed resistance of a driven ground 
+rod is [25] [_____] ohms, under normally dry conditions [when a ground ring electrode is not used].  Contact 
+the Contracting Officer for direction on how to proceed when two of any three ground rods, driven not less than<MET>
+ 3000 mm</MET><ENG> 10 feet</ENG> into the ground, a minimum of<MET> 3000 mm</MET><ENG> 10 feet</ENG> apart, and equally spaced around the perimeter, 
+give a combined value exceeding 50 ohms immediately after having driven.  [For ground ring electrode, provide 
+continuous No. 1/0 bare stranded copper cable.  Lay ground ring electrode around the perimeter of the structure 
+in a trench not less than<MET> 915 mm</MET><ENG> 3 feet</ENG> nor more than<MET> 2440 mm</MET><ENG> 8 feet</ENG> from the nearest point of the structure 
+foundation, and at least beyond the drip line for the facility.  Install ground ring electrode to a minimum depth 
+of<MET> 765 mm</MET><ENG> 30 inches</ENG>.  Install a ground ring electrode in earth undisturbed by excavation, not earth fill, and 
+do not locate beneath roof overhang, or wholly under paved areas or roadways where rainfall cannot penetrate 
+to keep soil moist in the vicinity of the cable.]</TXT><BRK/>
+<BRK/>
+<TXT>[_____]</TXT><BRK/>
+<BRK/></SPT>
+[<SPT><TTL>Grounding Plates</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The use of grounding plates is an allowed alternative to ground rods 
+in areas where excessive rock and surface ledge is encountered.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide a grounding plate for each down conductor.  Set grounding plates not less than<MET> 915 mm</MET><ENG> 3 feet</ENG> nor more 
+than<MET> 2440 mm</MET><ENG> 8 feet</ENG>, from the structure foundation, and at least beyond the drip line for the facility.  Grounding 
+plate is to be buried as deeply in the existing dirt as local conditions allow, without exceeding<MET> 3000 mm</MET><ENG> 10 
+feet</ENG> in depth.</TXT><BRK/>
+<BRK/></SPT>
+]</SPT><SPT><TTL>APPLICATIONS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Nonmetallic Exterior Walls with Metallic Roof</TTL><BRK/>
+<BRK/>
+<TXT>Bond metal roof sections together which are insulated from each other so that they are electrically continuous, 
+having a surface contact of at least<MET> 1935 square mm</MET><ENG> 3 square inches</ENG>.</TXT><BRK/>
+<BRK/></SPT>
+[<SPT><TTL>Personnel Ramps and Covered Passageways</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Personnel ramps and covered passageways that are in the zone of protection 
+of a lightning protection system, as defined by NFPA 780, do not need additional 
+lightning protection.  Protect personnel ramps and covered passageways that 
+are outside the zone of protection  with lightning protection conforming to 
+the requirements for buildings of similar construction.  Select the bracketed 
+option if lightning protection is required.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Place a down conductor and a driven ground at one of the corners where the ramp connects to each building or 
+structure.  Connect down conductor and driven ground to the ground ring electrode or nearest ground connection 
+of the building or structure.  Where buildings or structures and connecting ramps are clad with metal, separately 
+bond the metal of the buildings and ramps to a down conductor as close to grade as possible.</TXT><BRK/>
+<BRK/></SPT>
+]</SPT><SPT><TTL>INTERFACE WITH OTHER STRUCTURES</TTL><BRK/>
+<BRK/>
+[<SPT><TTL>Fences</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Select this bracketed option if metal fence and gate systems are located 
+within 6 feet of the lightning protection system.<BRK/>
+<BRK/>
+Coordinate with Section <SRF>33 71 02</SRF> UNDERGROUND ELECTRICAL DISTRIBUTION for additional 
+electrical distribution system requirements.  Coordinate with Section 
+<SRF>32 31 13</SRF> CHAIN LINK FENCES AND GATES, for fence grounding requirements.  </NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Bond metal fence and gate systems to the lightning protection system whenever the fence or gate is within<MET> 1830 
+mm</MET><ENG> 6 feet</ENG> of any part of the lightning protection system in accordance with ANSI C2.<BRK/></TXT>
+<BRK/></SPT>
+][<SPT><TTL>Exterior Overhead Systems</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Select this bracketed option whenever overhead systems entering the facility 
+are outside the zone of protection.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Bond to the nearest down conductor as close to grade as possible.  This includes overhead pipes, conduits, cable 
+trays, or any other metallic objects on the exterior of the building that enter a building.  In addition, bond 
+pipes, conduits, and cable trays to any metallic objects (such as steel structural support of air handling units 
+or cooling towers) that are within<MET> 1830 mm</MET><ENG> 6 feet</ENG>.</TXT><BRK/>
+<BRK/></SPT>
+]</SPT><SPT><TTL>RESTORATION</TTL><BRK/>
+<BRK/>
+<TXT>Where sod has been removed, place sod as soon as possible after completing the backfilling.  Restore, to original 
+condition, the areas disturbed by trenching, storing of dirt, cable laying, and other work.  Overfill to accommodate 
+for settling.  Include necessary topsoil, fertilizing, liming, seeding, sodding, sprigging or mulching in any 
+restoration.  Maintain disturbed surfaces and replacements until final acceptance.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>FIELD QUALITY CONTROL</TTL><BRK/>
+<BRK/>
+<SPT><TTL><SUB>Lightning Protection and Grounding System Test</SUB></TTL><BRK/>
+<BRK/>
+<NTE><AST/><BRK/>
+<NPR>NOTE:  Use 25 ohms in the bracketed option unless  the specific facility, such 
+as a telecommuunications facility, requires a lower value.</NPR><BRK/>
+<AST/><BRK/>
+<BRK/></NTE>
+<TXT><TST>Test the lightning protection and grounding system to ensure continuity is not in excess of 1 ohm and that resistance 
+to ground is not in excess of [25] [_____] ohms.</TST>  Provide documentation for the measured values at each test 
+point.  Test the ground rod for resistance to ground before making connections to the rod.  Tie the grounding 
+system together and test for resistance to ground.  Make resistance measurements in dry weather, not earlier 
+than 48 hours after rainfall.  <NED/>Include in the written report: locations of test points, measured values for continuity 
+and ground resistances, and soil conditions at the time that measurements were made.  Submit results of each 
+test to the Contracting Officer.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></PRT>    <END/><BRK/></SEC>

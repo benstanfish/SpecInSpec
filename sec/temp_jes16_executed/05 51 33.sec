@@ -1,0 +1,460 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                UFGS-05 51 33 (February 2016)<BRK />
+                                             Change 2 - 02/18<BRK />
+                                             -----------------------------<BRK />
+Preparing Activity:  <PRA>NAVFAC</PRA>                  Superseding<BRK />
+                                             UFGS-05 51 33 (May 2010)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 05 51 33</SCN><BRK />
+<BRK />
+<STL>METAL LADDERS</STL><BRK />
+<DTE>02/16</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project.  The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers requirements for <SCP>metal ladders and has 
+been edited specifically for USACE Japan District</SCP>.<BRK />
+<BRK />
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.<BRK />
+<BRK />
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<BRK />
+<BRK />
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Show the following information on the drawings:</NPR><BRK />
+<BRK />
+<NPR>1.  Location and configuration of all metalwork.</NPR><BRK />
+<BRK />
+<NPR>2.  All sizes and dimensions.</NPR><BRK />
+<BRK />
+<NPR>3.  Special fastenings, attachments or anchoring.</NPR><BRK />
+<BRK />
+<NPR>4.  Location of products to be galvanized.</NPR><BRK />
+<BRK />
+<NPR>5.  Location and support detail of ladders.</NPR><BRK />
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification. The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK />
+<BRK />
+Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<BRK />
+<BRK />
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG><BRK />
+<BRK />
+<RID>JIS B 1048</RID><RTL>(2007) Fasteners - Hot Dip Galvanized Coatings</RTL><BRK />
+<BRK />
+<RID>JIS B 9713-4</RID><RTL>(2004) Safety of machinery-Means of permanent 
+access to machinery-Part 4: Fixed Ladders</RTL><BRK />
+<BRK />
+<RID>JIS G 3101</RID><RTL>(2020) Rolled Steels for General Structure </RTL><BRK />
+<BRK />
+<RID>JIS G 3302</RID><RTL>
+(2022) Hot Dip Zinc Coated Steel Sheet and Strip</RTL><BRK />
+<BRK />
+<RID>JIS G 3444</RID><RTL>(2021) Carbon Steel Tubes for General Structure</RTL><BRK />
+<BRK />
+<RID>JIS G 3466</RID><RTL>(2021) Carbon Steel Square and Rectangular 
+Tubes for General Structure</RTL><BRK />
+<BRK />
+<RID>JIS G 5705</RID><RTL>(2018) Malleable Iron Castings</RTL><BRK />
+<BRK />
+<RID>JIS H 4000</RID><RTL>(2017) Aluminium 
+and Aluminium Alloy Sheets, Strips and Plates 
+(Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS H 4100</RID><RTL>(2015) Aluminum and Aluminum Alloy Extruded 
+Profiles</RTL><BRK />
+<BRK />
+<RID>JIS H 5202</RID><RTL>(2010) Aluminum Alloy Castings</RTL><BRK />
+<BRK />
+<RID>JIS K 2208</RID><RTL>(2009) Asphalt Emulsion</RTL><BRK />
+<BRK />
+<RID>JIS K 5553</RID><RTL>(2006) Thick Film Zinc Rich Paint</RTL><BRK />
+<BRK />
+<RID>JIS H 8641</RID><RTL>(2021) Hot Dip Galvanized Coatings</RTL><BRK />
+<BRK />
+<RID>JIS K 5674</RID><RTL>(2019) Lead-Free, Chromium-Free Anticorrosive 
+Paints</RTL><BRK />
+<BRK />
+<RID>JIS Z 0310</RID><RTL>(2016) Abrasive Blast Cleaning Methods for Surface 
+Preparation</RTL><BRK />
+<BRK />
+<RID>JIS Z 3410</RID><RTL>(2013) Welding Coordination - Tasks and Responsibilities</RTL><BRK />
+<BRK />
+<RID>JIS Z 3801</RID><RTL>(2018) Standard Qualification Test and Acceptance 
+Requirements for Manual Welding Technique</RTL><BRK />
+<BRK />
+<RID>JIS Z 3841</RID><RTL>(2018) Standard Qualification 
+Test and Acceptance Requirements for Semi-Automatic 
+Welding Technique</RTL><BRK />
+<BRK />
+<RID>OSHA 1910.28</RID><RTL>Occupational Safety and Health Administration</RTL><BRK />
+
+<BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Review Submittal Description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project<BRK />
+<BRK />
+The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G."  Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a "G" to an item, if the submittal is sufficiently important or complex 
+in context of the project.<BRK />
+<BRK />
+For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office.  Codes following the "G" typically are not used for Navy,  Air Force, 
+and NASA projects.<BRK />
+<BRK />
+The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
+submittal under the SD number that best describes the submittal item.<BRK />
+<BRK />
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are [for Contractor Quality Control approval.][for information only.  When used, a designation following the 
+"G" designation identifies the office that will review the submittal for the Government.]  Submittals with an 
+"S" are for inclusion in the Sustainability eNotebook, in conformance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Ladders</SUB>, Installation Drawings</ITM><BRK />
+<BRK />
+<ITM><SUB>Ship's Ladder</SUB> (With or Without Guards), Installation Drawings</ITM><BRK />
+<BRK />
+<LST><SUB>SD-03 Product Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Ladders</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Ship's Ladder</SUB> (With or Without Guards)</ITM><BRK />
+<BRK />
+<ITM><SUB>Ladder Safety Devices</SUB> (Climbing Ladder Fall Arrest Systems)</ITM><BRK />
+<BRK />
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Fabricator Certification for Ladder Assembly</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Fabricator Certification for Ships Ladder Assembly</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>CERTIFICATES</TTL><BRK />
+<BRK />
+<TXT>Provide <SUB>fabricator certification for ladder assembly</SUB> stating that the ladder and associated components have been 
+fabricated according to the requirements of <RID>JIS B 9713-4</RID>.</TXT><BRK />
+<BRK />
+<TXT>Provide <SUB>fabricator certification for ships ladder assembly</SUB> stating that the ships ladder and associated components 
+have been fabricated according to the requirements of <RID>JIS B 9713-4</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.4"><TTL>QUALIFICATION OF WELDERS</TTL><BRK />
+<BRK />
+<TXT>Qualify welders in accordance with <RID>JIS Z 3801</RID>, or <RID>JIS Z 3841</RID>.  Use procedures, materials, and equipment of the 
+type required for the work.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5"><TTL>DELIVERY, STORAGE, AND PROTECTION</TTL><BRK />
+<BRK />
+<TXT>Protect from corrosion, deformation, and other types of damage.  Store items in an enclosed area free from contact 
+with soil and weather. Remove and replace damaged items with new items.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Product selections should be based on esthetic values, reliability and 
+cost.  Delete alternate requirements where they occur.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="2.1"><TTL>MATERIALS</TTL><BRK />
+<BRK />
+<SPT outline="2.1.1"><TTL>Structural Carbon Steel</TTL><BRK />
+<BRK />
+<TXT><RID>JIS G 3101</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2"><TTL>Structural Tubing</TTL><BRK />
+<BRK />
+<TXT><RID>JIS G 3466</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.3"><TTL>Steel Pipe</TTL><BRK />
+<BRK />
+<TXT><RID>JIS G 3444</RID>, STK400.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.4"><TTL>Fittings for Steel Pipe</TTL><BRK />
+<BRK />
+<TXT>Standard malleable iron fittings <RID>JIS G 5705</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.5"><TTL>Aluminum Alloy Products</TTL><BRK />
+<BRK />
+<TXT>Conform to <RID>JIS H 4000</RID> for sheet plate, <RID>JIS H 4100</RID> for extrusions and <RID>JIS H 5202</RID> for castings, as applicable.  
+Provide aluminum extrusions at least<MET> 3 mm</MET><ENG> 1/8 inch</ENG> thick and aluminum plate or sheet at least<MET> 1.3 mm</MET><ENG> 0.050 inch</ENG>
+ thick.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.2"><TTL>FABRICATION FINISHES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  In the Safety Data Sheets (SDS) for coating materials show exclusion 
+or replacement of the following materials as intended ingredients: asbestos, 
+benzene, chromium compounds, coal tar, 2-ethoxyethanol and 2-methoxyethanol 
+and their acetates, halogenated hydrocarbons, and lead compounds.  The content 
+of volatile organic compounds (VOC), and marking, must be in compliance with 
+air quality regulations for the type of application and jurisdiction where used.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="2.2.1"><TTL>Galvanizing</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify galvanizing for items installed in exterior exposures subject 
+to salt spray or corrosive fumes and interior areas subject to continual wetting 
+or high humidity.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Hot-dip galvanize items specified to be zinc-coated, after fabrication where practicable.  Galvanizing:  <RID>JIS B 1048</RID>
+, <RID>JIS H 8641</RID>, <RID>JIS G 3302</RID>,<MET> Z27</MET><ENG> G90</ENG>, as applicable.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2"><TTL>Galvanize</TTL><BRK />
+<BRK />
+<TXT>Anchor bolts, washers, and parts or devices necessary for proper installation, unless indicated otherwise.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.3"><TTL>Repair of Zinc-Coated Surfaces</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete this paragraph when no galvanized items are specified.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Repair damaged surfaces with galvanizing repair method and paint conforming to <RID>JIS K 5553</RID> by application of stick 
+or thick paste material specifically designed for repair of galvanizing, as approved by Contracting Officer.  
+Clean areas to be repaired and remove slag from welds.  Heat surfaces to which stick or paste material is applied, 
+with a torch to a temperature sufficient to melt the metallics in stick or paste; spread molten material uniformly 
+over surfaces to be coated and wipe off excess material.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.4"><TTL>Shop Cleaning and Painting</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Shop painting herein is for steel protected from the weather and not 
+subjected to corrosive environments.  For steel which will be exposed to the 
+weather or corrosive environments, modify the shop painting accordingly.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="2.2.4.1"><TTL>Surface Preparation</TTL><BRK />
+<BRK />
+<TXT>Blast clean surfaces in accordance with<RID>JIS Z 0310</RID>.  Surfaces that will be exposed in spaces above ceiling or 
+in attic spaces, crawl spaces, furred spaces, and chases may be cleaned with power tools.  Wash cleaned surfaces 
+which become contaminated with rust, dirt, oil, grease, or other contaminants with solvents until thoroughly 
+clean.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.4.2"><TTL>Pretreatment, Priming and Painting</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use manufacturers standard treatment when painting and finishing is required.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Apply pretreatment, primer, and paint in accordance with manufacturer's printed instructions.[  On surfaces concealed 
+in the finished construction or not accessible for finish painting, apply an additional prime coat to a minimum 
+dry film thickness of<MET> 0.03 mm</MET><ENG> 1.0 mil</ENG>.  Tint additional prime coat with a small amount of tinting pigment.]</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.2.5"><TTL>Nonferrous Metal Surfaces</TTL><BRK />
+<BRK />
+<TXT>Protect by plating, anodic, or organic coatings.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.6"><TTL>Aluminum Surfaces</TTL><BRK />
+<BRK />
+<SPT outline="2.2.6.1"><TTL>Surface Condition</TTL><BRK />
+<BRK />
+<TXT>Before finishes are applied, remove roll marks, scratches, rolled-in scratches, kinks, stains, pits, orange peel, 
+die marks, structural streaks, and other defects which will affect uniform appearance of finished surfaces.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.6.2"><TTL>Aluminum Finishes</TTL><BRK />
+<BRK />
+<TXT>Unexposed plate and extrusions may have mill finish as fabricated. Sandblast castings' finish, medium. Unless 
+otherwise specified, provide all other aluminum items with [standard mill finish.] [hand sanded or machine finish 
+to a 240 grit.] Provide a coating thickness not less than that specified for protective and decorative type finishes 
+for items used in interior locations or architectural Class I type finish for items used in exterior locations.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="2.3"><TTL><SUB>LADDERS</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Indicate on the drawings ladder locations and details of critical dimensions 
+and materials.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Fabricate vertical ladders conforming to <RID>JIS B 9713-4</RID>.  Ladders shall be capable of supporting their maximum 
+intended load.  Use<MET> 65 by 10 mm</MET><ENG> 2 1/2 by 3/8 inch</ENG> steel flats for stringers and<MET> 20 mm</MET><ENG> 3/4 inch</ENG> diameter steel 
+rods for rungs.  Ladder rungs, step and cleats must be spaced not less than<MET> 25 cm</MET><ENG> 10 inches</ENG> and not more than<MET>
+ 400 mm</MET><ENG> 16 inches</ENG> wide (measured before installation of ladder safety system), spaced no more than<MET> 36 cm</MET><ENG> 14 inches</ENG>
+ apart, plug welded or shouldered and headed into stringers.  Install ladders so that the maximum perpendicular 
+distance from the centerline of the steps or rungs, or grab bars, or both, to the nearest permanent object in 
+the back of the ladder or to the finished wall surface will not be less than<MET> 175 mm</MET><ENG> 7 inches</ENG>, except for the 
+elevator pit ladders, which have a minimum perpendicular distance of<MET> 11 cm</MET><ENG> 4.5 inches</ENG>.  Provide heavy clip angles 
+riveted or bolted to the stringer and drilled[ for not less than two<MET> 12 mm</MET><ENG> 1/2 inch</ENG> diameter expansion bolts] 
+as indicated.  Provide intermediate clip angles not over<MET> 1200 mm</MET><ENG> 48 inches</ENG> on centers.  The top rung of the ladder 
+must be level with the top of the access level, parapet or landing served by the ladder except for hatches or 
+wells.  Extend the side rails of through or side step ladders<MET> 105 centimeters</MET><ENG> 42 inches</ENG> above the access level.  
+Provide ladder access protective swing gates at the top of access/egress level.  The drawings must indicate ladder 
+locations and details of critical dimensions and materials.</TXT><BRK />
+<BRK />
+<SPT outline="2.3.1"><TTL>Phasing out of Ladder Cages and Wells (29 CFR 1910.28, Nov 2016)</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete this paragraph when the length of climb is<MET> 6000 mm</MET><ENG> 20 feet</ENG> or 
+less.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Conform to <RID>JIS B 9713-4</RID>.</TXT><BRK />
+<BRK />
+[<TXT>Each ladder installed before 19 November, 2018 shall be equipped with a personal fall arrest system, ladder safety 
+device (climbing Ladder Fall Arrest System), cage, or well.</TXT><BRK />
+<BRK />
+]<TXT>Each newly installed ladder over<MET> 6,000 mm</MET><ENG> 20 feet</ENG> in length shall only be equipped with a personal fall arrest 
+system or climbing ladder fall arrest system (ladder safety device), cages and wells are prohibited.  When a 
+fixed ladder, cage, or well, or any portion of a section thereof, is replaced, a personal fall arrest system 
+or climbing ladder fall arrest system (ladder safety device) is installed in at least that section of the fixed 
+ladder, cage, or well where the replacement is located.  On and after November 18, 2036, all fixed ladders shall 
+only be equipped with a personal fall arrest system or a ladder safety device (climbing ladder Fall Arrest System).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.2"><TTL><SUB>Ladder Safety Devices</SUB> (Climbing Ladder Fall Arrest Systems) </TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete this paragraph when the length of climb is<MET> 6000 mm</MET><ENG> 20 feet</ENG> or 
+less.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Conform to <RID>JIS B 9713-4</RID>.  Install ladder safety devices on ladders over<MET> 6000 mm</MET><ENG> 20 feet</ENG> long or more.  The ladder 
+safety systems must meet the design requirement of the ladders which they serve.  The ladder safety system must 
+be capable of sustaining a minimum static load of<MET> 4.44kN</MET><ENG> 1,000 pounds</ENG>.  The applied loads transferred to the 
+climbing ladder mounting locations as a result of a fall shall be specified by the manufacturer of the climbing 
+ladder fall arrest system.  Each ladder safety system must allow the worker to climb up and down using both hands 
+and does not require the employee continuously, hold, push, or pull any part of the system while climbing.  The 
+connection between the carrier or lifeline and the point of attachment to the body harness does not exceed<MET> 23 
+cm</MET><ENG> 9 inches</ENG>.  The ladder safety system consists of a rigid or flexible carrier.  Mountings for the rigid carries 
+are attached at each end of the carrier, with intermediate mountings spaced as necessary, along the entire length 
+of the carrier.  Mountings for flexible carrier are attached at each end of the carrier and cable guides for 
+flexible carriers are installed at least<MET> 7.6 cm</MET><ENG> 25 feet</ENG> apart but not more than<MET> 12.2 m</MET><ENG> 40 feet</ENG> apart along the 
+entire length of the carrier.  The design and installation of mountings and cable guides does not reduce the 
+design strength of the ladder.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.3"><TTL><SUB>Ship's Ladder</SUB></TTL><BRK />
+<BRK />
+<TXT>Fabricate stringers and framing of steel plate or shapes.  Bolt, rivet or weld connections and anchor to supporting 
+construction.  Provide treads with non-slip surface as specified for safety treads.  [Aluminum ladders may be 
+provided, subject to approval of treads, materials, and shop drawings.  Requirements shown or specified for steel 
+apply.  Provide anchor items of zinc-coated steel.]  Design assembly, including tread connections and methods 
+of attachment, to support a live load of<MET> 1300 N</MET><ENG> 300 pounds</ENG> per tread. Provide railings as specified for metal 
+handrails.</TXT><BRK />
+<BRK /></SPT>
+</SPT></PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>GENERAL INSTALLATION REQUIREMENTS</TTL><BRK />
+<BRK />
+<TXT>Install items at locations indicated, according to manufacturer's instructions.  Verify all measurements and 
+take all field measurements necessary before fabrication.  Provide Exposed fastenings of compatible materials, 
+generally matching in color and finish, and harmonize with the material to which fastenings are applied.  Include 
+materials and parts necessary to complete each item, even though such work is not definitely shown or specified.  
+Poor matching of holes for fasteners will be cause for rejection.  Conceal fastenings where practicable.  Thickness 
+of metal and details of assembly and supports must provide strength and stiffness.  Formed joints exposed to 
+the weather to exclude water.  Items listed below require additional procedures.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2"><TTL>WORKMANSHIP</TTL><BRK />
+<BRK />
+<TXT>Metalwork must be well formed to shape and size, with sharp lines and angles and true curves.  Drilling and punching 
+must produce clean true lines and surfaces.  Continuously weld along the entire area of contact.  Do not tack 
+weld exposed connections of work in place.  Grid smooth exposed welds.  Provide smooth finish on exposed surfaces 
+of work in place, unless otherwise approved.  Where tight fits are required, mill joints.  Cope or miter corner 
+joints, well formed, and in true alignment.  Install in accordance with manufacturer's installation instructions 
+and approved drawings, cuts, and details.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3"><TTL>ANCHORAGE, FASTENINGS, AND CONNECTIONS</TTL><BRK />
+<BRK />
+<TXT>Provide anchorage where necessary for fastening metal items securely in place.  Include for anchorage not otherwise 
+specified or indicated slotted inserts, expansion anchors, and powder-actuated fasteners, when approved for concrete; 
+toggle bolts and through bolts for masonry; machine bolts, carriage bolts and powder-actuated threaded studs 
+for steel; through bolts, lag bolts, and screws for wood.  Do not use wood plugs in any material.  Provide non-ferrous 
+attachments for non-ferrous metal.  Make exposed fastenings of compatible materials, generally matching in color 
+and finish, to which fastenings are applied.  Conceal fastenings where practicable.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4"><TTL>WELDING</TTL><BRK />
+<BRK />
+<TXT><TST>Perform welding, welding inspection, and corrective welding, in accordance with <RID>JIS Z 3410</RID>.</TST>  Use continuous welds 
+on all exposed connections.  Grind visible welds smooth in the finished installation.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5"><TTL>FINISHES</TTL><BRK />
+<BRK />
+<SPT outline="3.5.1"><TTL>Dissimilar Materials</TTL><BRK />
+<BRK />
+<TXT>Where dissimilar metals are in contact, protect surfaces with a coat conforming to <RID>JIS K 5674</RID> to prevent galvanic 
+or corrosive action. Where aluminum is in contact with concrete, plaster, mortar, masonry, wood, or absorptive 
+materials subject to wetting, protect with <RID>JIS K 2208</RID>, asphalt-base emulsion.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5.2"><TTL>Field Preparation</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete these paragraphs when Section <SRF>09 90 00</SRF>, PAINTS AND COATINGS is 
+included in the project specifications.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Remove rust preventive coating just prior to field erection, using a remover approved by the rust preventive 
+manufacturer.  Surfaces, when assembled, must be free of rust, grease, dirt and other foreign matter.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5.3"><TTL>Environmental Conditions</TTL><BRK />
+<BRK />
+<TXT>Do not clean or paint surface when damp or exposed to foggy or rainy weather, when metallic surface temperature 
+is less than<MET> minus 15 degrees C</MET><ENG> 5 degrees F</ENG> above the dew point of the surrounding air, or when surface temperature 
+is below<MET> 7 degrees C or over 35 degrees C</MET><ENG> 45 degrees F or over 95 degrees F</ENG>, unless approved by the Contracting 
+Officer.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.6"><TTL>LADDERS</TTL><BRK />
+<BRK />
+<TXT>Per <RID>OSHA 1910.28</RID>(b)(9)(i)(B), each fixed ladder installed on and after November 19, 2018, shall be equipped with 
+a personal fall arrest system or a ladder safety system. Secure to the adjacent construction with the clip angles 
+attached to the stringer.[  Secure to masonry or concrete with not less than two<MET> 12 mm</MET><ENG> 1/2 inch</ENG> diameter expansion 
+bolts.]  Install intermediate clip angles not over<MET> 1200 mm</MET><ENG> 48 inches</ENG> on center.  Install brackets as required 
+for securing of <NED />ladders welded or bolted to structural steel or built into the masonry or concrete.  Ends of 
+ladders must not rest upon [finished roof][floor].</TXT><BRK />
+<BRK /></SPT>
+</PRT>    <END /><BRK /></SEC>

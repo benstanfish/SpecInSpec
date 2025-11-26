@@ -660,7 +660,7 @@ has no responsibility to provide emergency medical treatment.</TXT><BRK/>
       <COL AUTOWIDTH="0" WIDTH="238.50"/>
       <ROW AUTOHEIGHT="0" HEIGHT="32.25">
          <CEL MERGEACROSS="2" STYLEID="s50">
-<DTA TYPE="STRING"><HL3><HL4>Table<BRK/>Accident Reporting Required Timeline</HL3></DTA>
+<DTA TYPE="STRING"><HL3><HL4>Table<BRK/>Accident Reporting Required Timeline</HL4></HL3></DTA>
          </CEL>
       </ROW>
       <ROW AUTOHEIGHT="0" HEIGHT="47.25">

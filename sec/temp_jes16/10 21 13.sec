@@ -1,0 +1,811 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><BRK />
+<HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                 UFGS-10 21 13 (August 2017)<BRK />
+                                              Change 2 - 11/18<BRK />
+                                              ----------------------------<BRK />
+Preparing Activity:  <PRA>USACE</PRA>                    Superseding<BRK />
+                                              UFGS-10 21 13 (January 2007)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK />
+<BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 10 21 13</SCN><BRK />
+<BRK />
+<STL>TOILET COMPARTMENTS</STL><BRK />
+<DTE>08/17</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements and include Japanese products, 
+where feasible, for a standard Japan Engineer District project.  The Designer of Record (DOR) shall tailor as 
+applicable to meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>ceiling-hung, floor anchored, and overhead-braced 
+toilet partitions</SCP>.<BRK />
+<BRK />
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections.  Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text.  For bracketed items, choose applicable item(s) or insert 
+appropriate information.<BRK />
+<BRK />
+Remove information and requirements not required in respective project, whether or not brackets are present.<BRK />
+<BRK />
+Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Army facilities will meet the requirements of UFC 3-101-01 and will be accessible in accordance with 36 
+CFR 1191, Americans with Disabilities Act (ADA) Accessibility Guidelines for Buildings and Facilities.</NPR><BRK />
+<BRK />
+<NPR>Partition napkin disposal, toilet-tissue dispenser, grab bars, and other similar toilet-room accessories are specified 
+in a separate section.  Coordinate partition cutouts and reinforcement as required for the specified accessories.</NPR><BRK />
+<BRK />
+<NPR>If ceiling-hung toilet partitions are required for the project, coordinate with metal fabrications and shop drawings 
+for installation of indicated supporting members.</NPR><BRK />
+<BRK />
+<NPR>Include in the drawings:</NPR><BRK />
+<BRK />
+<NPR>Locations and dimensions of the partitions, doors, pilasters, screens, and door swings.</NPR><BRK />
+<BRK />
+<NPR>Heights of the bottoms of enclosures and screens above the floor</NPR><BRK />
+<BRK />
+<NPR>Method of support to be employed, using details where needed for clarity.</NPR><BRK />
+<BRK />
+<NPR>Provisions for attaching hardware to partitions.</NPR><BRK />
+<BRK />
+<NPR>A schedule to identify the finish and color to be used.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of the guide specification.  The publications 
+are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK />
+<BRK />
+Use the Reference Wizard's Check Reference feature when you add a RID outside of the Section's Reference Article 
+to automatically place the reference in the Reference Article.  Also use the Reference Wizard's Check Reference 
+feature to update the issue dates.<BRK />
+<BRK />
+References not used in the text will automatically be deleted from this section of the project specification when 
+you choose to reconcile references in the publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are referred to within the text by 
+the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>INTERNATIONAL CODE COUNCIL (ICC)</ORG><BRK />
+<BRK />
+<RID>ICC A117.1 COMM</RID><RTL>(2017) Standard and Commentary Accessible and Usable Buildings and Facilities</RTL><BRK />
+<BRK /></REF>
+<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK />
+<BRK />
+<RID>JIS A 1901</RID><RTL>(2015) Determination of the Emission of Volatile Organic Compounds and Aldehydes 
+by Building Products - Small Chamber Test Method</RTL><BRK />
+<BRK />
+<RID>JIS G 3203</RID><RTL>(1988) Alloy Steel Forgings for Pressure Vessels for High-Temperature Service</RTL><BRK />
+<BRK />
+<RID>JIS G 3302</RID><DEL><RTL>(2019) Hot Dip Zinc Coated Steel Sheet and Strip</RTL></DEL><ADD><RTL>(2022) Hot Dip Zinc Coated Steel 
+Sheet and Strip</RTL></ADD><BRK />
+<BRK />
+<RID>JIS G 4304</RID><RTL>(20<DEL>12</DEL><ADD>21</ADD>) Hot-Rolled Stainless Steel Plate, Sheet and Strip</RTL><BRK />
+<BRK />
+<RID>JIS H 3100</RID><RTL>(2018) Copper and Copper Alloy Sheets, Plates and Strips</RTL><BRK />
+<BRK />
+<RID>JIS H 4040</RID><RTL>(2015) Aluminum and Aluminum Alloy Bars and Wires</RTL><BRK />
+<BRK />
+<RID>JIS H 5301</RID><RTL>(2018) Zinc Alloy Die Castings</RTL><BRK />
+<BRK />
+<RID>JIS H 8601</RID><RTL>(1999) Anodic Oxide Coatings on Aluminum and Aluminum Alloys</RTL><BRK />
+<BRK />
+<RID>JIS H 8617</RID><RTL>(1999) Electroplated Coatings of Nickel and Chromium</RTL><BRK />
+<BRK />
+<RID>JIS H 8641</RID><RTL>(20<DEL>07</DEL><ADD>21</ADD>) Hot Dip Galvanized Coatings</RTL><BRK />
+<BRK />
+<RID>JIS K 6899</RID><RTL>(2015) Plastics-symbols and Abbreviations-Part 1: Basic Polymers and Their Properties</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)</ORG><BRK />
+<BRK />
+<RID>36 CFR 1191</RID><RTL>Americans with Disabilities Act (ADA) Accessibility Guidelines for Buildings and 
+Facilities; Architectural Barriers Act (ABA) Accessibility Guidelines</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project.<BRK />
+<BRK />
+The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G."  Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System.  Only add a &#8220;G&#8221; to an item, if the submittal is sufficiently important or complex in context 
+of the project.<BRK />
+<BRK />
+For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
+tags may be used following the "G" designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" for District Office (Engineering 
+Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
+for Project Office.  Codes following the "G" typically are not used for Navy, Air Force, and NASA projects.<BRK />
+<BRK />
+  The "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook 
+to fulfill federally mandated sustainable requirements in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Locate the "S" submittal under the SD number that best describes the submittal item.<BRK />
+<BRK />
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose the second bracketed item for 
+Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are for [Contractor Quality Control 
+approval.] [information only.  When used, a designation following the "G" designation identifies the office that will review the submittal for 
+the Government.]  Submittals with an "S" are for inclusion in the Sustainability eNotebook, in conformance to Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Fabrication Drawings</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Installation Drawings</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Warranty</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-10 Operation and Maintenance Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Plastic Identification</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>REGULATORY REQUIREMENTS</TTL><BRK />
+<BRK />
+<TXT>Conform to <RID>ICC A117.1 COMM</RID> code for access for the handicapped operation of toilet compartment door and hardware.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.4"><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK />
+<BRK />
+<TXT>Deliver materials in the manufacturer's original unopened packages with the brand, item identification, and project reference clearly marked.  
+Store components in a dry location that is adequately ventilated; free from dust, water, other contaminants, and damage during delivery, storage, 
+and construction.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5"><TTL><SUB>WARRANTY</SUB></TTL><BRK />
+<BRK />
+<TXT>Provide manufacturer's warranty to repair or replace defective materials and workmanship for a period of [one year][____] [years] from date of 
+final acceptance of the work.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Solid plastic partitions (solid phenolic, Finish 4, and solid polyethylene, Finish 5) should be used unless 
+not economically feasible.  Painted metal (Finish 1) toilet enclosures, urinal screens, and room entrance screens 
+are suitable for use in installations where the partitions are subjected to normal usage and exposure conditions.  
+Composite materials are generally not recyclable at the end of their useful life.  Any plastic or metal materials 
+used must contain recycled materials as indicated.  Laminated plastic (Finish 3) toilet partitions will not be 
+used where severe water conditions will be encountered, such as where cleaning is to be performed by spraying 
+water.</NPR><BRK />
+<BRK />
+<NPR>Where toilet partitions are indicated for hard usage or severe exposure areas, finishes other than painted metal 
+(Finish 1) or laminated plastic (Finish 3) should be specified when their high initial cost can be justified through 
+life cycle cost.  The least expensive painted metal finish is generally the least durable of the finishes listed 
+in CID A-A-60003.  Laminated plastic (Finish 3) costs more than the painted metal and less than stainless steel 
+(Finish 2), solid phenolic (Finish 4), or solid polyethylene (Finish 5).  Laminated plastic (Finish 3) finishes 
+are hard and smooth; resistant to wear, scratches, periodic moisture, impact, acids and alkalis, and cigarette burns.<BRK />
+<BRK />
+Next to stainless steel (Finish 2), the solid plastics (phenolic and polyethylene) are the most durable finishes 
+available and should be used wherever economically feasible.  When finishes other than painted metal (Finish 1) 
+are being considered, laminated plastic (Finish 3) should be the next logical choice, followed by solid plastics 
+and stainless steel (Finish 2), and solid phenolic (Finish 4).  Polyethylene (Finish 5), stainless steel (Finish 
+2), and solid phenolic (Finish 4) are highly resistant to humidity, steam, detergents, cleaning chemicals and 
+corrosion.  Interior fire and smoke finish classification must be addressed when materials other than metal partitions 
+are being considered.  Edit the following paragraphs for styles and finishes.</NPR><BRK />
+<BRK />
+<NPR>Generally, floor-supported enclosures, Style A, will be used; and overhead braced enclosures, Style C, and overhead 
+braced-alcove, Style F, will be used when pilasters cannot be anchored into minimum<MET> 76 mm</MET><ENG> 3 inches</ENG> thick structural 
+concrete.  Ceiling hung enclosures, Style B, will be used only when the additional cost is justified for reasons 
+of sanitation or appearance.  Ceiling hung enclosures, Style B, are not recommended by manufacturers when ceiling 
+height is greater than<MET> 2590 mm</MET> <ENG>8 feet 6 inches</ENG>.  Urinal screens, when deemed necessary, may be any of the 6 styles 
+available, but the floor to ceiling hung screen, Style D, is the most justifiable for reasons of cost and sanitation.  
+Type II, Style D, room entrance screens are generally the most durable style due to the floor to ceiling post 
+support design.  Edit as needed to meet project requirements.<BRK />
+<BRK />
+If ceiling hung enclosures are to be used, details showing the structural steel channel support system should 
+be shown on the drawings.  This section should be coordinated with Section <SRF>10 28 13</SRF> TOILET ACCESSORIES and the 
+drawings regarding toilet enclosures which will have partition-mounted accessories attached to the panels.</NPR><BRK />
+<BRK />
+<NPR>Screens and enclosures that are thicker than standard panels last longer, especially in high-use or high-abuse 
+areas.</NPR><BRK />
+<BRK />
+<NPR>Do not use galvanized or enameled steel products for panels, brackets, fasteners, or compartment hardware in locations 
+where deployments may leave facilities unoccupied or without conditioned spaces for extended time periods, or 
+unconditioned spaces in either humid project locations or exterior project locations with Environmental Severity 
+Classifications (ESC) C4 and C5. Humid project locations are those in ASHRAE climate zones 0A, 1A, 2A, 3A, 3C, 
+4C and 5C (as identified in ASHRAE 90.1). See UFC 1-200-01 for determination of ESC for project locations.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="2.1"><TTL>SYSTEM REQUIREMENTS</TTL><BRK />
+<BRK />
+<TXT>Provide a complete and usable toilet partition system, including toilet enclosures, room entrance screens, urinal screens, system of panels, hardware, 
+and support components.  Furnish the partition system from a single manufacturer, with a standard product as shown in the most recent catalog data.  
+Submit <SUB>Fabrication Drawings</SUB> for metal toilet partitions and urinal screens consisting of fabrication and assembly details to be performed in the 
+factory.  Submit manufacturer's Cleaning and Maintenance Instructions with Fabrication Drawings for review.</TXT><BRK />
+<BRK />
+<SPT outline="2.1.1"><TTL><SUB>Plastic Identification</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  The marking system indicated below is intended to provide assistance in identification of products for 
+making subsequent decisions as to handling, recycling, or disposal.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Verify that plastic products to be incorporated into the project are labeled in accordance with <RID>JIS K 6899</RID>.  Where products are not labeled, provide 
+product data indicating polymeric information in the Operation and Maintenance Manual.</TXT><BRK />
+<LST INDENT="-0.33"><TAB WIDTH="96">
+<WBK>
+   <STS />
+   <TDA COLUMNCOUNT="2" ROWCOUNT="7">
+      <COL AUTOWIDTH="0" WIDTH="69.75" />
+      <COL AUTOWIDTH="0" WIDTH="447.75" />
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL>
+<DTA TYPE="STRING">Type 1</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Polyethylene Terephthalate (PET, PETE)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL>
+<DTA TYPE="STRING">Type 2</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">High Density Polyethylene (HDPE)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL>
+<DTA TYPE="STRING">Type 3</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Vinyl (Polyvinyl Chloride or PVC)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL>
+<DTA TYPE="STRING">Type 4</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Low Density Polyethylene (LDPE)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL>
+<DTA TYPE="STRING">Type 5</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Polypropylene (PP)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.00">
+         <CEL>
+<DTA TYPE="STRING">Type 6</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Polystyrene (PS)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="60.00">
+         <CEL>
+<DTA TYPE="STRING">Type 7</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Other.  Use of this code indicates that the package in question is made with a resin other than the six listed above, or is made of more than one resin listed above, and used in a multi-layer combination.</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB></LST><BRK /></SPT>
+</SPT><SPT outline="2.2"><TTL>MATERIALS</TTL><BRK />
+<BRK />
+<SPT outline="2.2.1"><TTL>Galvanized Steel Sheet</TTL><BRK />
+<BRK />
+<TXT>Provide galvanized steel sheet cold-rolled, stretcher-level, commercial quality material, conforming to <RID>JIS G 3302</RID>.  Conform surface preparation 
+of material for painting to <RID>JIS H 8617</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2"><TTL>Sound-Deadening Cores</TTL><BRK />
+<BRK />
+<TXT>Provide sound deadening consisting of treated kraft paper honeycomb cores with a cell size of not more than<MET> 25 mm</MET><ENG> 1 inch</ENG>.  Resin-material content 
+must weigh not less than 11 percent of the finished core weight.  Expanded cores must be faced on both sides with kraft paper.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.3"><TTL>Anchoring Devices and Fasteners</TTL><BRK />
+<BRK />
+<TXT>Provide steel anchoring devices and fasteners hot-dipped galvanized after fabrication, in conformance with <RID>JIS G 3302</RID> and <RID>JIS H 8641</RID>.  Conceal 
+all galvanized anchoring devices.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.4"><TTL>Brackets</TTL><BRK />
+<BRK />
+<TXT>Wall brackets must be two-ear panel brackets, T-style, <MET>25 mm</MET><ENG> 1-inch</ENG> stock.  Provide stirrup style panel-to-pilaster brackets.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.5"><TTL>Hardware and Fittings</TTL><BRK />
+<BRK />
+<SPT outline="2.2.5.1"><TTL>General Requirements</TTL><BRK />
+<BRK />
+<TXT>Conform hardware for the toilet partition system for the specified type and style of partitions.  Provide hardware finish highly resistant to alkalis, 
+urine, and other common toilet room acids.  Comply latching devices and hinges for handicap compartments with <RID>36 CFR 1191</RID>; provide [chrome-plated 
+steel] [ or ] [stainless steel] devices and hinges with door latches that operate without either tight grasping or twisting of the wrist of the 
+operator.  Submit three samples of each item, including anchoring devices and fasteners.  Approved hardware samples may be installed in the work 
+if properly identified.</TXT><BRK />
+<BRK />
+<TXT><HL4><TAB HEADERROWS="0" WIDTH="89">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM" />
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="2" ROWCOUNT="6">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="231.75" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="288.00" />
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Material</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Conformance Standard</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Cold-rolled sheet steel</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><RID>JIS G 3203</RID>, commercial quality</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Zinc-base alloy</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><RID>JIS H 5301</RID> ZDC-1</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Brass</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><RID>JIS H 3100</RID>, Alloy C26800</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Aluminum</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><RID>JIS H 4040</RID></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Corrosion-resistant steel</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><RID>JIS G 4304</RID>, Type [SUS302][SUS304]</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB></HL4><BRK /></TXT>
+<BRK /></SPT>
+<SPT outline="2.2.5.2"><TTL>Finishes</TTL><BRK />
+<BRK />
+[<LST INDENT="-0.33">a. Chrome plating must conform to <RID>JIS H 8617</RID>.</LST>]<BRK />
+<BRK />
+[<LST INDENT="-0.33">b. Finish must conform to <RID>JIS H 8617</RID>, Class I (Corrosion Protective Plasting), Type [I, Bright] [II, Satin].</LST>]<BRK />
+<BRK />
+[<LST INDENT="-0.33">c. Aluminum must have a clear anodic coating conforming to <RID>JIS H 8601</RID>.</LST>]<BRK />
+<BRK />
+[<LST INDENT="-0.33">d. Corrosion-resistant steel must have a No. 4 finish.</LST>]<BRK />
+<BRK />
+[<LST INDENT="-0.33">e. Exposed fasteners must match the hardware and fittings.</LST>]<BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.2.6"><TTL>Door Hardware</TTL><BRK />
+<BRK />
+<SPT outline="2.2.6.1"><TTL>Hinges</TTL><BRK />
+<BRK />
+<TXT>Hinges must be adjustable to hold in-swinging doors open at any angle up to 90 degrees and outswinging doors to 10 degrees.  Provide self-lubricating 
+hinges with the indicated swing.  Hinges must [be the surface-mounted type.] [be the cutout-insert type.] [have the following type of return movement:</TXT><BRK />
+<BRK />
+[<LST INDENT="-0.33">a.  Gravity return movement</LST>]<BRK />
+<BRK />
+[<LST INDENT="-0.33">b.  Spring-action cam return movement</LST>]<BRK />
+<BRK />
+[<LST INDENT="-0.33">c.  Torsion-rod return movement]</LST>]<BRK />
+<BRK /></SPT>
+<SPT outline="2.2.6.2"><TTL>Latch and Pull</TTL><BRK />
+<BRK />
+<TXT>Latch and pull must be a combination rubber-faced door strike and keeper equipped with emergency access.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.6.3"><TTL>Coat Hooks</TTL><BRK />
+<BRK />
+<TXT>Coat hooks must be combination units with hooks and rubber tipped pins.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="2.3"><TTL>PARTITION PANELS AND DOORS</TTL><BRK />
+<BRK />
+<TXT>Fabricate partition panels and doors not less than<MET> 25 mm</MET><ENG> 1 inch</ENG> thick with face sheets not less than<MET> 1.006 mm</MET><ENG> 0.0396 inch</ENG> thick.</TXT><NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use materials with recycled content where appropriate for use.  Verify suitability, availability within 
+the region, cost effectiveness and adequate competition before specifying product recycled content requirements.<BRK />
+<BRK />
+Research shows painted steel, stainless steel, plastic laminate and solid polyethylene products are available 
+among US national manufacturers above the minimum recycled content percentages shown below.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<BRK />
+<TXT>[Provide painted steel toilet partitions and screens with recycled content of 27 percent minimum.  Provide data identifying percentage of recycled 
+content for painted steel partitions and screens.  ][Provide stainless steel toilet partitions and screens with recycled content of 50 percent 
+minimum.  Provide data identifying percentage of recycled content for stainless steel partitions and screens.] [Provide plastic laminate toilet 
+partitions and screens with recycled content of 45 percent minimum.  Provide data identifying percentage of recycled content for plastic laminate 
+partitions and screens.] [Provide solid polyethylene toilet partitions and screens with recycled content of 30 percent minimum.  Provide data identifying 
+percentage of recycled content for plastic, solid polyethylene partitions and screens.] </TXT><NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Based on research, certain base materials such as Plastic Laminated Clad and Phenolic (Black Core) are 
+available from US national manufacturers as a reduced VOC product certified by Greenguard or SCS Global Services.  
+Retain one of the last bracketed sentences requiring products with indoor air quality certification when the designer 
+of record confirms local/regional availability of Greenguard or SCS products that does not impact cost effectiveness.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<BRK />
+<TXT>Provide laminated plastic and solid phenolic toilet partitions and urinal screens to meet the emissions requirements of <RID>JIS A 1901</RID> (use the office 
+or classroom requirements, regardless of space type). [Provide certification or validation of indoor air quality for laminated plastic partitions 
+and screens.  ][Provide certification or validation of indoor air quality for solid phenolic, black core partitions and screens.]</TXT><BRK />
+<BRK />
+<SPT outline="2.3.1"><TTL>Toilet Enclosures</TTL><BRK />
+<BRK />
+<TXT>Provide Style [A, floor supported] [B, ceiling hung] [C, overhead braced] [F, overhead braced-alcove].  Furnish width, length, and height of toilet 
+enclosures as shown.  [Provide a width of<MET> 25 mm</MET><ENG> 1 inch</ENG>.]  Finish surface of panels must be [painted metal, Finish 1][stainless steel, Finish 2][laminated 
+plastic, Finish 3][solid phenolic, black core Finish 4][solid phenolic, color through the core Finish 4A][solid polyethylene, Finish 5][_____]; 
+water resistant; graffiti resistant; non-absorbent; [with plastic face sheets permanently fused to plastic core; <MET>6 mm</MET><ENG> 1/4 inch</ENG> radius beveled edges].  
+Reinforce panels indicated to receive toilet paper holders or grab bars for mounting of the items required.  Provide grab bars to withstand a bending 
+stress, shear stress, shear force, and a tensile force induced by<MET> 1112 N</MET><ENG> 250 lbf</ENG>.  Grab bars must not rotate within their fittings.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.2"><TTL>Room Entrance Screens</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete the following paragraphs when screens are not required.</NPR><BRK />
+<BRK />
+<NPR>Length and height of room entrance screens will be shown on the drawings, using standard size panels and pilasters 
+to the maximum extent practicable.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide Style [A, floor anchored] [B, ceiling hung braced] [C, overhead braced] [D, wall hung] [_____].  Provide finish surface of screens to be 
+[painted metal, Finish 1][stainless steel, Finish 2][laminated plastic, Finish 3][solid phenolic, black core Finish 4][solid phenolic, color through 
+the core Finish 4A][solid polyethylene, Finish 5][_____]; water resistant; graffiti resistant; non-absorbent[; with plastic face sheets permanently 
+fused to plastic core; <MET>6 mm</MET><ENG>1/4 inch</ENG> radius beveled edges].  Furnish length and height of screens as shown.  [Provide thickness of<MET> 25 mm</MET><ENG> 1 inch</ENG>.]  
+Fabricate screens from the same types of panels, pilasters, and fittings as the toilet partitions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.3"><TTL>Urinal Screens</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use of urinal screens between individual urinals will be dependent on the function of the facility.  Use 
+of urinal screens will normally be limited to those applications where sanitary protection is required, such as 
+between a urinal and an immediately adjacent lavatory.  Style A screens should normally be between<MET> 600 to 900 
+mm</MET><ENG> 24 to 36 inches</ENG> wide.  Style E screens should normally be between<MET> 400 to 600 mm</MET><ENG> 18 to 24 inches</ENG> wide.  Wall 
+hung, Style E, urinal screens will be used only where the supporting construction is masonry or concrete.  Where 
+high use is expected, choose the last bracketed sentence.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide and conform urinal screens Style [A, floor supported] [B, ceiling hung] [C, overhead braced] [D, floor to ceiling hung] [E, floor to ceiling 
+post supported].  Provide finish for surface of screens as [painted metal, Finish 1][stainless steel, Finish 2][laminated plastic, Finish 3][solid 
+phenolic, black core Finish 4][solid phenolic, color through the core Finish 4A][solid polyethylene, Finish 5][_____]; water resistant; graffiti 
+resistant; non-absorbent; [with plastic face sheets permanently fused to plastic core; <MET>6 mm</MET><ENG> 1/4 inch</ENG> radius beveled edges].  Furnish width and 
+height of urinal screens as shown.  [Provide thickness of<MET> 25 mm</MET><ENG> 1 inch</ENG>.]  Secure wall hung urinal screens with [a minimum of three wall stirrup 
+brackets.] [<MET>1050 mm</MET><ENG> 42 inch</ENG> long, continuous flanges.]  Fabricate screens from the same types of panels and pilasters as the toilet partitions.  
+Use corrosion-resistant stainless steel fittings and fasteners.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.4"><TTL>CEILING-HUNG PARTITIONS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete this paragraph if ceiling-mounted partitions are not required.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Pilasters must be not less than<MET> 31.75 mm</MET><ENG> 1-1/4 inch</ENG> thick with face sheets not less than<MET> 1.613 mm</MET><ENG> 0.0635 inch</ENG> thick.  Anchoring device at the top 
+of the pilaster must be welded to the reinforced face sheets and must have not less than two<MET> 9.525 mm</MET><ENG> 3/8 inch</ENG> round threaded rods, lock washers, 
+and leveling-adjustment nuts.  Anchoring device must be designed to transmit the strain and loading on the pilaster directly to the structural 
+support above without putting strain or loading on the finished ceiling.  Trim piece at the top of the pilaster must be<MET> 76.2 mm</MET><ENG> 3 inch</ENG> high and 
+fabricated from not less than<MET> 0.762 mm</MET><ENG> 0.030 inch</ENG> thick stainless steel.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5"><TTL>FLOOR-ANCHORED PARTITIONS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete this paragraph if floor-supported partitions are not required.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Pilasters must be not less than<MET> 31.75 mm</MET><ENG> 1-1/4 inch</ENG> thick with face sheets not less than<MET> 1.613 mm</MET><ENG> 0.0635 inch</ENG> thick.  Provide anchoring device 
+at the bottom of the pilaster consisting of a steel bar not less than<MET> 12.7 by 22.2 mm</MET><ENG> 1/2 by 7/8 inch</ENG> welded to the reinforced face sheets and 
+having not less than two<MET> 9.5 mm</MET><ENG> 3/8 inch</ENG> round anchorage devices for securing to the floor slab.  Provide anchorage devices complete with threaded 
+rods, expansion shields, lock washers, and leveling-adjustment nuts.  Trim piece at the floor must be<MET> 76.2 mm</MET><ENG> 3 inch</ENG> high and fabricated from not 
+less than<MET> 0.76 mm</MET><ENG> 0.030 inch</ENG> thick corrosion-resistant stainless steel.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.6"><TTL>OVERHEAD-BRACED PARTITIONS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete this paragraph if overhead-braced partitions are not required.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Pilasters must be not less than<MET> 31.75 mm</MET><ENG> 1-1/4 inch</ENG> thick with face sheets not less than<MET> 1.0 mm</MET><ENG> 0.0393 inch</ENG> thick.  Provide anchoring device at 
+the bottom of the pilaster consisting of a channel-shaped floor stirrup fabricated from not less than<MET> 1.6 mm</MET><ENG> 0.0635 inch</ENG> thick material and a leveling 
+bolt.  Secure the stirrup to the pilaster with not less than a<MET> 4.76 mm</MET><ENG> 3/16 inch</ENG> bolt and nut after the pilaster is leveled.  Secure the stirrup 
+to the floor with not less than two lead expansion shields and sheetmetal screws.  Fabricate overhead brace from a continuous extruded aluminum 
+tube not less than<MET> 25 mm</MET><ENG> 1 inch</ENG> wide by<MET> 38 mm</MET><ENG> 1-1/2 inch</ENG> high, <MET>3.2 mm</MET><ENG> 0.125-inch</ENG> wall thickness.  Finish must be clear anodized with a minimum 
+0.4 mils or thicker in accordance with <RID>JIS H 8601</RID>.  Set and secure brace into the top of each pilaster.  Fabricate<MET> 75 mm</MET><ENG> 3 inch</ENG> high trim piece 
+at the floor from not less than<MET> 0.75 mm</MET><ENG> 0.030 inch</ENG> thick corrosion-resistant stainless steel.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7"><TTL>PILASTER SHOES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Designer must verify that products meeting the indicated minimum recycled content are available, preferably 
+from at least three sources, to ensure adequate competition.  If not, write in suitable recycled content values 
+that reflect availability and competition.  Use second option if Contractor is choosing recycled content products 
+in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.</NPR><BRK />
+<BRK />
+<NPR>  In consideration of the high humidity environments specify stainless steel or HDPE materials that are consistent 
+with the panel and pilaster construction.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide shoes at pilasters to conceal floor-mounted anchorage.  Pilaster shoes must be [aluminum] [stainless steel] [one piece molded HDPE] [_____].  
+Height is a minimum<MET> 76 mm</MET><ENG> 3 inches</ENG>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.8"><TTL>HARDWARE</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:    In consideration of the high humidity environments specify stainless steel hardware wherever possible 
+consistent with the manufacturer's product line.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide hardware for the toilet partition system for the specified type and style of partitions.  [Provide hardware pre-drilled by manufacturer.]  
+Use a hardware finish that is highly resistant to alkalis, urine, and other common toilet room acids.  [Hardware includes: chrome plated non ferrous 
+cast pivot hinges, gravity type, adjustable for door close positioning; nylon bearings; [black anodized] [chrome plated] [______] aluminum door 
+latch; door strike and keeper with rubber bumper; and cast alloy chrome plated coat hook and bumper, [_____].]   Provide latching devices and hinges 
+for handicap compartments complying with <RID>36 CFR 1191</RID> and [chrome-plated steel] [or] [stainless steel] door latches that operate without either 
+tight grasping or twisting of the wrist of the operator.  Use stainless steel, tamper proof type screws and bolts.  Wall mounting brackets must 
+be continuous, full height, [aluminum] [stainless steel] [heavy duty plastic] [_____], in accordance with toilet compartment manufacturer's instructions. 
+[Provide floor-mounted anchorage consisting of corrosion-resistant anchoring assemblies with threaded rods, lock washers, and leveling adjustment 
+nuts at pilasters for structural connection to floor.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9"><TTL>COLORS AND FINISHES</TTL><BRK />
+<BRK />
+<SPT outline="2.9.1"><TTL>Colors</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  In areas where a high degree of damage, corrosion, and frequent replacement has been experienced or where, 
+for reasons of sanitation or appearance, additional cost is justified, partition finishes should be selected on 
+the basis of Life Cycle Cost Analysis (LCC).  The LCC analysis should be performed for a period of not less than 
+ten years.  For any project requiring non-combustible partitions, panels, screens, or door finishes, exclude finish 
+No. 5.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide manufacturer's standard color charts for color of finishes for toilet partition system components.  [Color of pilaster shoes must match 
+the core of solid plastic compartments and screens.]  Submit three samples showing a finished edge on two adjacent sides and core construction, 
+each not less than<MET> 304.8 mm</MET><ENG> 12-inch</ENG> square</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.2"><TTL>Finishes No. 1 Through No. 3</TTL><BRK />
+<BRK />
+<TXT>Conform partitions, panels, screen, and door finishes finished with [Finish No. 1, baked enamel] [Finish No. 2, stainless steel] [Finish No. 3, 
+laminated plastic].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.3"><TTL>Finishes No.4 and No. 5</TTL><BRK />
+<BRK />
+<TXT>Provide solid plastic fabricated of [solid phenolic core with melamine facing sheets] [or] [polymer resins (polyethylene)] formed under high pressure 
+rendering a single component section not less than<MET> 25 mm</MET><ENG> one inch</ENG> thick.  Colors must extend throughout the panel thickness.  Provide exposed finish 
+surfaces: smooth, waterproof, non-absorbent, and resistant to staining and marking with pens, pencils, or other writing devices.  Solid plastic 
+partitions must not show any sign of deterioration when immersed in the following chemicals and maintained at a temperature of<MET> 27 degrees C</MET><ENG> 80 
+degrees F</ENG> for a minimum of 30 days:</TXT><BRK />
+<LST INDENT="-0.33"><TAB HEADERROWS="0" WIDTH="81">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM" />
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="2" ROWCOUNT="12">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="195.75" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="240.00" />
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Acetic Acid (80 percent)</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Hydrochloric Acid (40 percent)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Acetone</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Hydrogen Peroxide (30 percent)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Ammonia (liquid)</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Isopropyl Alcohol</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Ammonia Phosphate</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Lactic Acid (25 percent)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Bleach (12 percent)</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Lime Sulfur</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Borax</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Nicotine</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Brine</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Potassium Bromide</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Caustic Soda</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Soaps</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Chlorine Water</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Sodium Bicarbonate</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Citric Acid</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Trisodium Phosphate</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Copper Chloride</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Urea; Urine</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Core Oils</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Vinegar</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /></TAB></LST><BRK /></SPT>
+</SPT></PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>PREPARATION</TTL><BRK />
+<BRK />
+<TXT>Take field measurements prior to the preparation of drawing and fabrication to ensure proper fits.  Verify that field measurements, surfaces, substrates 
+and conditions are as required, and ready to receive work.  Verify correct spacing of plumbing fixtures.  Verify correct location of built in framing, 
+anchorage, and bracing.  Report in writing to Contracting Officer prevailing conditions that will adversely affect satisfactory execution of the 
+work of this section.  Do not proceed with work until unsatisfactory conditions have been corrected.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2"><TTL>METAL PARTITION FABRICATION</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Fabricate metal Partition Panels, doors, screens, and pilasters required for the project from galvanized-steel face sheets with formed 
+edges.  Face sheets must be pressure-laminated to the sound-deadening core with edges sealed with a continuous locking strip and corners 
+mitered and welded.  Ground all welds smooth.  Provide concealed reinforcement for installation of hardware, fittings, and accessories.  
+Surface of face sheets must be smooth and free from wave, warp, or buckle.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Before application of an enamel coating system, solvent-clean galvanized-steel surfaces to remove processing compounds, oils, and other 
+contaminants harmful to coating-system adhesion.  After cleaning, coat the surfaces with a metal-pretreatment phosphate coating.  After 
+pretreatment, finish exposed galvanized-steel surfaces with a baked-enamel coating system as specified.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Provide an enamel coating system consisting of a factory-applied baked acrylic enamel coating system.  Coating system must be a durable, 
+washable, stain-resistant, mar-resistant finish.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.3"><TTL>INSTALLATION</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Toilet partitions in barracks, and other hard usage areas, as well as those partitions on which grab bars 
+are to be mounted, will be bolted to walls.  Through-bolting will be specified for these applications; except, 
+toggle bolts may be specified when through-bolting would be exposed in a finished room or would otherwise be unsuitable.</NPR><BRK />
+<BRK />
+<NPR>Select anchorage devices for types of wall construction as required.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Do not install items that show visual evidence of biological growth.  Install partitions rigid, straight, plumb, and level, with the panels centered 
+between the fixtures.  Provide a panel clearance of not more than<MET> 13 mm</MET><ENG> 1/2 inch</ENG> and secure the panels to walls and pilasters with not less than 
+two wall brackets attached near the top and bottom of the panel.  Locate wall brackets so that holes for wall bolts occur in masonry or tile joints.  
+Secure Panels to pilasters with brackets matching the wall brackets.  Provide for adjustment due to minor floor variations.  Locate head rail joints 
+at pilaster center lines.  Install adjacent components for consistency of line and plane.  Equip each door with hinges, one door latch, and one 
+coat hook and bumper.  Align hardware to uniform clearance at vertical edges of doors.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Secure panels to hollow plastered walls with toggle bolts using not less than<MET> M6x1</MET><ENG> 1/4-20</ENG> screws of the length required for the wall 
+thickness.  Toggle bolts must have a load-carrying strength of not less than<MET> 2668.9 N</MET><ENG> 600 pounds</ENG> per anchor.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Secure panels to ceramic tile on hollow plastered walls or hollow concrete-masonry walls with toggle bolts using not less than<MET> M6x1</MET><ENG>
+ 1/4-20</ENG> screws of the length required for the wall thickness.  Toggle bolts must have a load-carrying strength of not less than<MET> 2668.9 
+N</MET><ENG> 600 pounds</ENG> per anchor.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Secure panels to solid masonry or concrete with lead or brass expansion shields designed for use with not less than<MET> M6x1</MET><ENG> 1/4-20</ENG> screws, 
+with a shield length of not less than<MET> 38 mm</MET><ENG> 1-1/2 inch</ENG>.  Expansion shields must have a load-carrying strength of not less than<MET> 2668.9 N</MET><ENG>
+ 600 pounds</ENG> per anchor.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Submit <SUB>Installation Drawings</SUB> for metal toilet partitions and urinal screens showing plans, elevations, details of construction, hardware, 
+reinforcing and blocking, fittings, mountings and escutcheons.  Indicate on drawings the type of partition, location, mounting height, 
+cutouts, and reinforcement required for toilet-room accessories.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.4"><TTL>CEILING-HUNG PARTITIONS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete this paragraph if ceiling-mounted partitions are not required.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Secure pilasters to the structural support above with the anchorage device specified.  Make all leveling devices readily accessible for leveling, 
+plumbing, and tightening the installation.  Level the bottoms of doors with bottoms of pilasters when doors are in a closed position.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5"><TTL>FLOOR-ANCHORED PARTITIONS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete this paragraph if floor-anchored partitions are not required.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Secure pilasters to the floor with the anchorage device specified.  Make all leveling devices readily accessible for leveling, plumbing, and tightening 
+the installation.  Level tops of doors with tops of pilasters when doors are in a closed position.  Expansion shields must have a minimum<MET> 50 mm</MET><ENG>
+ 2-inch</ENG> penetration into the concrete slab.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.6"><TTL>OVERHEAD-BRACED PARTITIONS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete this paragraph if overhead-braced partitions are not required.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Secure pilasters to the floor with the anchorage device specified.  Make all leveling devices readily accessible for leveling, plumbing, and tightening 
+the installation.  Secure overhead brace to the pilaster face with not less than two fasteners per face.  Expansion shields must have a minimum<MET>
+ 50 mm</MET><ENG> 2-inch</ENG> penetration into the concrete slab.  Make tops of doors parallel with the overhead brace when doors are in a closed position.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.7"><TTL>FINAL ADJUSTMENT</TTL><BRK />
+<BRK />
+<TXT>After completion of the installation, make final adjustments to the pilaster-leveling devices, door hardware, and other working parts of the partition 
+assembly.  Doors must have a uniform vertical edge clearance of approximately<MET> 5 mm</MET><ENG> 3/16 inch</ENG> and must rest open at approximately 30 degrees when 
+unlatched.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.8"><TTL>CLEANING</TTL><BRK />
+<BRK />
+<TXT>Baked enamel finish must be touched up with the same color of paint that was used for the finish.  Clean all surfaces of the work, and adjacent 
+surfaces soiled as a result of the work, in an approved manner compliant with the manufacturer's <NED />recommended cleaning and protection from damage 
+procedures until accepted.  Remove all equipment, tools, surplus materials, and work debris from the site.</TXT><BRK />
+<BRK /></SPT>
+</PRT>   <END /><BRK /></SEC>

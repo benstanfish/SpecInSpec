@@ -1,13 +1,5 @@
 # Copyright (c) 2025 Ben Fisher
-""" 
-XXX
 
-It includes functions for:
-- XXX
-
-Example usage:
-    >>> XXX
-"""
 import os
 from pathlib import Path
 
@@ -15,12 +7,10 @@ from src.process.clean0x81 import clean_files
 from src.process.sectohtml import make_html_from_sec
 from src.process.createhtmltoc import create_error_html, create_index
 
-sec_folder = './specs/sec'
-
 def create_html_reports(folder_path:str) -> None:
     source_basename = os.path.basename(folder_path)
     parent_folder = Path(folder_path).parent.resolve()
-    html_folder = os.path.join(parent_folder, 'html')
+    html_folder = os.path.join(parent_folder, f'html_{source_basename}')
 
     if not os.path.exists(html_folder):
         os.mkdir(html_folder)
@@ -63,4 +53,9 @@ def create_html_reports(folder_path:str) -> None:
     create_error_html(html_folder)
     create_index(html_folder)
 
-create_html_reports('./specs/sec_161')
+clean_dirs = ['./sec/jes16',
+              './sec/jes16_executed',
+              './sec/jes161']
+
+for a_dir in clean_dirs:
+    create_html_reports(a_dir)

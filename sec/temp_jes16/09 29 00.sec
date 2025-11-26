@@ -1,0 +1,840 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                  UFGS-09 29 00 (August 2016)<BRK />
+                                               Change 3 - 11/18<BRK />
+                                               ---------------------------<BRK />
+PREPARING ACTIVITY:  <PRA>NAVFAC</PRA>                    Superseding<BRK />
+                                               UFGS-09 29 00 (May 2011)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 09 29 00</SCN><BRK />
+<BRK />
+<STL>GYPSUM BOARD</STL><BRK />
+<DTE>08/16</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project.  The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification includes the requirements for <SCP>gypsum board, 
+cementitious backer units, and accessories intended for use in drywall construction</SCP>.<BRK />
+<BRK />
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.<BRK />
+<BRK />
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<BRK />
+<BRK />
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<BRK />
+<NPR>Reference Section <SRF>05 40 00</SRF> COLD-FORMED METAL FRAMING for load bearing studwork.  
+Reference Section <SRF>09 22 00</SRF> SUPPORTS FOR PLASTER AND GYPSUM BOARD for non-loadbearing 
+studs, furring and ceiling suspension systems.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  On the drawings, show:</NPR><BRK />
+<BRK />
+<NPR>1.  Locations of each type of gypsum board, backing board and cementitious backer 
+units, using same terminology as in the specification.</NPR><BRK />
+<BRK />
+<NPR>2.  Locations and MLIT design number(s) for fire rated gypsum board and cementitious 
+backer unit assemblies.</NPR><BRK />
+<BRK />
+<NPR>3.  Locations of asphalt impregnated building felt if gypsum sheathing is used 
+or if cementitious backer units are used in wet areas.</NPR><BRK />
+<BRK />
+<NPR>In general, there are currently no USACE JED acceptable fire resistive rating 
+assemblies over 1-hour using Japanese materials.  Yoshino Gypsum assemblies 
+A21 and B15 have been found acceptable for 1-hour assemblies.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification. The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK />
+<BRK />
+Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<BRK />
+<BRK />
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK />
+<BRK />
+<RID>ASTM E84</RID><RTL><DEL>(2018a) Standard Test Method for Surface<BRK />
+Burning Characteristics of Building Materials</DEL><ADD>
+(2023) Standard Test Method for Surface Burning 
+Characteristics of Building Materials</ADD></RTL><BRK />
+<BRK /></REF>
+<REF><ORG><DEL>GYPSUM BOARD ASSOCIATION OF JAPAN (GRAJ)</DEL><ADD>GYPSUM BOARD ASSOCIATION OF JAPAN</ADD></ORG><BRK />
+<BRK />
+<RID>GRAM</RID><RTL>Gypsum Board Application Manual</RTL><BRK />
+<BRK /></REF>
+<REF><ORG><DEL>JAPAN ADHESIVE INDUSTRY ASSOCIATION (JAIA)</DEL><ADD>JAPAN ADHESIVE INDUSTRY ASSOCIATION (JAIA)</ADD></ORG><BRK />
+<BRK />
+<RID>JAIA 4VOC</RID><RTL>Voluntary VOC Regulating Rule for Indoor Air 
+Pollution Control</RTL><BRK />
+<BRK /></REF>
+<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK />
+<BRK />
+<RID>JIS A 1408</RID><RTL>(2017) Test Methods of Bending and Impact for 
+Building Boards</RTL><BRK />
+<BRK />
+<RID>JIS A 1453</RID><RTL>(2017) Abrasion Test Method for Building Materials 
+and Building Components (Abrasive Paper Method)</RTL><BRK />
+<BRK />
+<RID>JIS A 1901</RID><RTL>(2015) Determination of the Emission of Volatile 
+Organic Compounds and Aldehydes by Building 
+Products - Small Chamber Test Method</RTL><BRK />
+<BRK />
+<RID>JIS A 5430</RID><RTL>(2018) Fiber Reinforced Cement Boards</RTL><BRK />
+<BRK />
+<RID>JIS A 5508</RID><RTL>(20<DEL>09</DEL><ADD>19</ADD>) Nails</RTL><BRK />
+<BRK />
+<RID>JIS A 6005</RID><RTL>(2005) Asphalt Roofing Felts</RTL><BRK />
+<BRK />
+<RID>JIS A 6901</RID><RTL>(201<DEL>4</DEL><ADD>9</ADD>) Gypsum Boards</RTL><BRK />
+<BRK />
+<RID>JIS A 6914</RID><RTL>(20<DEL>08</DEL><ADD>17</ADD>) Jointing Materials for Gypsum Plasterboards</RTL><BRK />
+<BRK />
+<RID>JIS B 1125</RID><RTL>(20<DEL>15</DEL><ADD>20</ADD>) Self Drilling Tapping Screws</RTL><BRK />
+<BRK />
+<RID>JIS Z 2911</RID><RTL>(2018) Methods of Test for Fungus Resistance</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>UNDERWRITERS LABORATORIES (UL)</ORG><BRK />
+<BRK />
+<RID>UL Fire Resistance</RID><RTL>(2014) Fire Resistance Directory</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Review Submittal Description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.</NPR><BRK />
+<BRK />
+<NPR>The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G."  Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a "G" to an item, if the submittal is sufficiently important or complex 
+in context of the project.</NPR><BRK />
+<BRK />
+<NPR>For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office.  Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.</NPR><BRK />
+<BRK />
+<NPR>The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
+submittal under the SD number that best describes the submittal item.</NPR><BRK />
+<BRK />
+<NPR>Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are [for Contractor Quality Control approval.][for information only.  When used, a designation following the 
+"G" designation identifies the office that will review the submittal for the Government.]  Submittals with an 
+"S" are for inclusion in the Sustainability eNotebook, in conformance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-08 Manufacturer's Instructions</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Safety Data Sheets</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-10 Operation and Maintenance Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Manufacturer Maintenance Instructions</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK />
+<BRK />
+<SPT outline="1.3.1"><TTL>Delivery</TTL><BRK />
+<BRK />
+<TXT>Deliver materials in the original packages, containers, or bundles with each bearing the brand name, applicable 
+standard designation, and name of manufacturer, or supplier.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3.2"><TTL>Storage</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Gypsum board provides a sink for adsorbing high short-term emissions 
+of VOCs, formaldehyde, particulates, or other air-borne compounds.  Materials 
+with high short-term emissions include, but are not limited to: adhesives, sealants 
+and glazing compounds (specifically those with petrochemical vehicles or carriers); 
+paint, wood preservatives, and finishes; control and/or expansion joint fillers; 
+hard finishes requiring adhesive installation; gypsum board (with associated 
+finish processes and products); and composite or engineered wood products with 
+formaldehyde binders.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Keep materials dry by storing inside a sheltered building.  Where necessary to store gypsum board and cementitious 
+backer units outside, store off the ground, properly supported on a level platform, and protected from direct 
+exposure to rain, snow, sunlight, and other extreme weather conditions.  Provide adequate ventilation to prevent 
+condensation.  Store per manufacturer's recommendations for allowable temperature and humidity range.  Do not 
+store gypsum wallboard with materials which have high emissions of volatile organic compounds (VOCs) or other 
+contaminants, including [_____].  Do not store panels near materials that may off gas or emit harmful fumes, 
+such as kerosene heaters, fresh paint, or adhesives.  Do not use materials that have visible moisture or biological 
+growth.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3.3"><TTL>Handling</TTL><BRK />
+<BRK />
+<TXT>Neatly stack gypsum board and cementitious backer units flat to prevent sagging or damage to the edges, ends, 
+and surfaces.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.4"><TTL>QUALIFICATIONS</TTL><BRK />
+<BRK />
+<TXT>Furnish type of gypsum board work specialized by the installer with a minimum of [3] [_____] years of documented 
+successful experience.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5"><TTL>SCHEDULING</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use one or both of the following procedures to minimize the exposure 
+of gypsum wallboard to materials or finishes which have high short-term emissions 
+of VOCs, formaldehyde, particulates, or other air-borne compounds.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>[The gypsum wallboard must be taped, finished and primed before the installation of the highly emitting materials, 
+including [_____].] [The gypsum wallboard must be installed after the installation and ventilation period of 
+the highly emitting materials, including [_____].]</TXT><BRK />
+<BRK />
+<TXT>Commence application only after the area scheduled for gypsum board work is completely weathertight.  The heating, 
+ventilating, and air-conditioning systems must be complete and in operation prior to application of the gypsum 
+board.  If the mechanical system cannot be activated before gypsum board is begun, the gypsum board work may 
+proceed in accordance with an approved plan to maintain the environmental conditions specified below.  Apply 
+gypsum board prior to the installation of finish flooring and acoustic ceiling.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6"><TTL>ENVIRONMENTAL REQUIREMENTS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Gypsum board is a thin sheathing that will be adversely affected by extreme 
+or non-uniform drying conditions and by rapid changes in temperature.  It should 
+not be used in spaces where adequate environmental control cannot be obtained.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Do not expose the gypsum board to excessive sunlight prior to gypsum board application.  Maintain a continuous 
+uniform temperature of not less than<MET> 10 degrees C</MET><ENG> 50 degrees F</ENG> and not more than<MET> 27 degrees C</MET><ENG> 80 degrees F</ENG> for 
+at least one week prior to the application of gypsum board work, while the gypsum board application is being 
+done, and for at least one week after the gypsum board is set.  Shield air supply and distribution devices to 
+prevent any uneven flow of air across the plastered surfaces.  Provide ventilation to exhaust moist air to the 
+outside during gypsum board application, set, and until gypsum board jointing is dry.  In glazed areas, keep 
+windows open top and bottom or side to side<MET> 75 to 100 mm</MET><ENG> 3 to 4 inches</ENG>.  Reduce openings in cold weather to prevent 
+freezing of joint compound when applied.  For enclosed areas lacking natural ventilation, provide temporary mechanical 
+means for ventilation.  In unglazed areas subjected to hot, dry winds or temperature differentials from day to 
+night of<MET> 10 degrees C</MET><ENG> 20 degrees F</ENG> or more, screen openings with cheesecloth or similar materials.  Avoid rapid 
+drying.  During periods of low indoor humidity, provide minimum air circulation following gypsum boarding and 
+until gypsum board jointing complete and is dry.</TXT><BRK />
+<BRK /></SPT>
+[<SPT outline="1.7"><TTL>FIRE RESISTIVE CONSTRUCTION</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For fire-resistive assemblies, drawing details must follow the tested 
+and approved designs.  Tested and approved designs are published by gypsum wallboard 
+manufacturers, Underwriters Laboratory, and Factory Mutual, and are included 
+in the Gypsum Association Fire Resistance Design Manual.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Comply with specified fire-rated assemblies for design numbers indicated.</TXT><BRK />
+<BRK /></SPT>
+]</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>MATERIALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Check ASTM C840, GA 216, ANSI A108.11 and JIS A 6901 for details of materials, 
+fasteners, and application.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Conform to specifications, standards and requirements specified.  Provide gypsum board types, gypsum backing 
+board types, cementitious backing units, and joint treating materials manufactured from asbestos free materials 
+only.  Submit <SUB>Safety Data Sheets</SUB> and <SUB>manufacturer maintenance instructions</SUB> for gypsum materials including adhesives.</TXT><BRK />
+<BRK />
+<SPT outline="2.1.1"><TTL>Gypsum Board</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>Use materials with recycled content where appropriate for use. Verify suitability, 
+availability within the region, cost effectiveness and adequate competition 
+(including verification of bracketed percentages included in this guide specification) 
+before specifying product recycled content requirements.  A resource that can 
+be used to identify products with recycled content is the "Comprehensive Procurement 
+Guidelines (CPG)" page within the EPA's website at <URL>http://www.epa.gov</URL>.  Other 
+products with recycled content are also acceptable when meeting all requirements 
+of this specification.<BRK />
+<BRK />
+Section allows establishing recycled content requirements based on either the 
+gypsum board product in its entirety, or on the paper facing and gypsum core 
+separately.  Include the first bracketed sentence if specifying a recycled product 
+in its entirety; include the second bracketed sentence if specifying a recycled 
+product based on its separate components.  Research shows the product is available 
+from US national manufacturers above the minimum recycled content of the first 
+bracket.  Some manufacturers and regions have higher percentages (for components 
+that have a threshold less than 100 percent).  Based on research, insert desired 
+minimum percentages into the empty set of brackets.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT><RID>JIS A 6901</RID>.</TXT><BRK />
+<BRK />
+<SPT outline="2.1.1.1"><TTL>Regular</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: Use tapered and featured edge gypsum board with embedding and finishing 
+compounds when a very flat surface is required, such as long walls with lighting 
+at the end of the wall and down or up lighted walls.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT><MET>900 mm </MET><ENG>48 inch </ENG>wide,<MET> [12.5] [15] mm </MET><ENG> [1/2] [5/8] inch</ENG>thick, [tapered][, tapered and featured] edges.  [Provide 
+tapered and featured edge gypsum board [in Rooms [_____] ] [as indicated].]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.1.2"><TTL>Foil-Backed</TTL><BRK />
+<BRK />
+<TXT><MET>900 mm </MET><ENG>48 inch </ENG>wide,[12.5] [15] mm thick, square, [tapered] [tapered and featured] edges.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.1.3"><TTL>Type X or Type Z (Special Fire-Resistant)</TTL><BRK />
+<BRK />
+<TXT>900 mm wide, [12.5] [15] mm thick, [tapered] [tapered and featured] edges.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.1.4"><TTL>Mold Resistant / Anti-Microbial Gypsum</TTL><BRK />
+<BRK />
+<TXT><RID>JIS Z 2911</RID>.  900 mm wide, [12.5] [15] mm thick, square, tapered or beveled edges.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.1.2"><TTL>Gypsum Backing Board</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: When thicker board is needed, replace the term "backing board" with "coreboard", 
+and change dimension to<MET> 19.05 to 25.4 mm</MET><ENG> 3/4 to 1 inch</ENG>, depending on system 
+used.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT><RID>JIS A 6901</RID>, gypsum backing board must be used as a base in a multilayer system.</TXT><BRK />
+<BRK />
+<SPT outline="2.1.2.1"><TTL>Regular</TTL><BRK />
+<BRK />
+<TXT>900 mm wide, [12.5] [15] mm thick, square, tapered or beveled edges.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.2"><TTL>Type Z (Special Fire-Resistant)</TTL><BRK />
+<BRK />
+<TXT>1200 mm wide, [12.5] [15] mm thick, square or tapered edges.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.1.3"><TTL>Regular Water-Resistant Gypsum Backing Board</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For adhesive applied ceramic tile in wet areas (tubs, shower enclosures, 
+saunas, steam rooms, gang shower rooms, etc.), use cementitious backer units 
+(Tile Council of America (TCA) Handbook) as a substrate. Specify JIS A 6901 
+for all other tiled areas including areas where only ceramic or quarry tile 
+base is to be installed, and for ceilings in humid areas.  When using water-resistant 
+gypsum backing board at tile applications, the metal studs should not be spaced 
+more than<MET> 400 mm</MET><ENG> 16 inches</ENG> o.c.  Specify moisture resistant gypsum board for 
+humid areas that are not exposed to direct moisture.</NPR><BRK />
+<BRK />
+<NPR>When using moisture resistant board on ceilings, spacing of supports should 
+be no more than<MET> 300 mm</MET><ENG> 12 inch</ENG> on center.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Additives used to produce water-resistant gypsum board ("green board") 
+may include VOCs. Water-resistant types may be difficult to recycle.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="2.1.3.1"><TTL>Regular</TTL><BRK />
+<BRK />
+<TXT>900 mm wide, [12.5] [15] mm thick, tapered or beveled edges.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.3.2"><TTL>Type X or Type Z (Special Fire-Resistant)</TTL><BRK />
+<BRK />
+<TXT><MET>900 mm </MET><ENG>48 inch </ENG>wide,<MET> [12.5] [15] mm</MET><ENG> [1/2] [5/8] inch</ENG> thick, tapered or beveled edges.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.1.4"><TTL>Glass Mat Water-Resistant Gypsum Tile Backing Board</TTL><BRK />
+<BRK />
+<TXT>Water absorption rate of less than 5 percent.</TXT><BRK />
+<BRK />
+<SPT outline="2.1.4.1"><TTL>Regular</TTL><BRK />
+<BRK />
+<TXT>1200 mm wide, [12.5] [15] mm thick, square, tapered or beveled edges.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.4.2"><TTL>Type Z (Special Fire-Resistant)</TTL><BRK />
+<BRK />
+<TXT>900 mm wide, [12.5] [15] mm thick, square, tapered or beveled edges.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.1.5"><TTL>Abuse Resistant Gypsum Board</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>Note: Abuse Resistant Gypsum Board Should Be Used When Abuse Or Vandalism Of 
+Walls Is Anticipated And Gypsum Board Is The Only Wall Material Alternative 
+Feasible. Consult Manufacture For Use Restrictions Of Abuse Resistant Gypsum 
+Board On Exterior Walls. This Product Requires A Minimum Of 20 Gauge Metal Framing 
+As Support, Coordinate with Section <SRF>09 22 00</SRF> SUPPORTS FOR PLASTER AND GYPSUM 
+BOARD.</NPR><BRK />
+<BRK />
+<NPR>Some products rely on lexan backing for penetration resistance. The impervious 
+layer will act as a vapor barrier which may not be desirable in certain wall 
+systems and climates.</NPR><BRK />
+<BRK />
+<NPR>None of the paper faced gypsum products have high resistance to abrasion.  Consider 
+high strength veneer plaster on wall systems using abuse resistant gypsum wallboard, 
+coordinate with Section <SRF>09 26 00</SRF> VENEER PLASTER.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>900 mm wide, [15] mm thick, tapered edges. Reinforced gypsum panel with imbedded fiber mesh or lexan backing 
+tested in accordance with the following tests.  Hard body impact test must attain a maximum indentation depth 
+of 2.5 mm in accordance with <RID>JIS A 1408</RID>.  Provide fasteners that meet manufacturer requirements and specifications 
+stated within this section.  Abuse resistant gypsum board, when tested in accordance with <RID>ASTM E84</RID>, have [a flame 
+spread rating of 25 or less and a smoke developed rating of 50 or less for [_____]] [and] [a flame spread rating 
+of 75 or less and a smoke developed rating of 100 or less for [_____]].</TXT><BRK />
+<BRK />
+<SPT outline="2.1.5.1"><TTL>Hard Body Impact Test</TTL><BRK />
+<BRK />
+<TXT>Comply with hard body impact test in accordance with <RID>JIS A 1408</RID> with a maximum indentation depth of 2.5 mm.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.5.2"><TTL>Surface Abrasion Test</TTL><BRK />
+<BRK />
+<TXT>Comply with test surface abrasion test in accordance with <RID>JIS A 1453</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.5.3"><TTL>Indentation Test</TTL><BRK />
+<BRK />
+<TXT><RID>JIS A 1408</RID> for indentation resistance.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.1.6"><TTL>Cementitious Backer Units</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: For adhesive applied ceramic tile in wet areas (tubs, shower enclosures, 
+saunas, steam rooms, gang shower rooms), specify only cementitious backer units.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>In accordance with <RID>JIS A 5430</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.7"><TTL>Joint Treatment Materials</TTL><BRK />
+<BRK />
+<TXT><RID>JIS A 6914</RID>.  Product must be low emitting VOC types with VOC limits not exceeding 50 g/L.  Provide data identifying 
+VOC content of joint compound.  [Use all-purpose joint and texturing compound containing inert fillers and natural 
+binders, including lime compound.  Pre-mixed compounds must be free of antifreeze, vinyl adhesives, preservatives, 
+biocides and other slow releasing compounds.]</TXT><BRK />
+<BRK />
+<SPT outline="2.1.7.1"><TTL>Embedding Compound</TTL><BRK />
+<BRK />
+<TXT>Specifically formulated and manufactured for use in embedding tape at gypsum board joints and compatible with 
+tape, substrate and fasteners.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.7.2"><TTL>Finishing or Topping Compound</TTL><BRK />
+<BRK />
+<TXT>Specifically formulated and manufactured for use as a finishing compound.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.7.3"><TTL>All-Purpose Compound</TTL><BRK />
+<BRK />
+<TXT>Specifically formulated and manufactured to serve as both a taping and a finishing compound and compatible with 
+tape, substrate and fasteners.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.7.4"><TTL>Setting or Hardening Type Compound</TTL><BRK />
+<BRK />
+<TXT>Specifically formulated and manufactured for use with fiber glass mesh tape.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.7.5"><TTL>Joint Tape</TTL><BRK />
+<BRK />
+<TXT>Use cross-laminated, tapered edge, reinforced paper, or fiber glass mesh tape recommended by the manufacturer.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.1.8"><TTL>Fasteners</TTL><BRK />
+<BRK />
+<SPT outline="2.1.8.1"><TTL>Nails</TTL><BRK />
+<BRK />
+<TXT><RID>JIS A 5508</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.8.2"><TTL>Screws</TTL><BRK />
+<BRK />
+<TXT><RID>JIS B 1125</RID> steel drill screws for fastening gypsum board to gypsum board, wood framing members and steel framing 
+members less than<MET> 0.84 mm</MET><ENG> 0.033 inch</ENG> thick.  <RID>JIS B 1125</RID> steel drill screws for fastening gypsum board to steel 
+framing members<MET> 0.84 to 2.84 mm</MET><ENG> 0.033 to 0.112 inch</ENG> thick.  Provide cementitious backer unit screws with a polymer 
+coating.  </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.8.3"><TTL>Staples</TTL><BRK />
+<BRK />
+<TXT><MET>1.5 mm thick </MET><ENG>No. 16 USS gage </ENG>flattened galvanized wire staples with<MET> 11.1 mm</MET><ENG> 7/16 inch</ENG> wide crown outside measurement 
+and divergent point for base ply of two-ply gypsum board application.  Use as follows:</TXT><BRK />
+<HL4><TAB WIDTH="70">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN HORIZONTAL="CENTER" />
+      </STY>
+      <STY SID="s51">
+         <ALN HORIZONTAL="CENTER" VERTICAL="BOTTOM" />
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="2" ROWCOUNT="3">
+      <COL AUTOWIDTH="0" WIDTH="169.50" />
+      <COL AUTOWIDTH="0" WIDTH="239.25" />
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><HL1>Length of Legs</HL1></DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING"><HL1>Thickness of Gypsum Board</HL1></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING"><MET>28.6 mm</MET><ENG> 1-1/8 inches</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">12.5 mm</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="29.25">
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING"><MET>31.8 mm</MET><ENG> 1-1/4 inches</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">15 mm</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB></HL4><BRK /></SPT>
+</SPT><SPT outline="2.1.9"><TTL>Adhesives</TTL><BRK />
+<BRK />
+<TXT>Provide non-aerosol adhesive products used on the interior of the building (defined as inside of the weatherproofing 
+system) meeting either emissions requirements of UL 2818(Greenguard) Gold, SCS Global SErvices Indoor ADvantage 
+Gold, or F 4-Star and  <RID>JAIA 4VOC</RID> .  Provide aerosol adhesive products used on the interior of the building (defined 
+as inside of the weatherproofing system) meeting either emissions requirements of <RID>JIS A 1901</RID> (limit requirements 
+for either office or classroom spaces regardless of space type.  Provide certification or validation of indoor 
+air quality for non-aerosol adhesives applied on the interior of the building (inside of the weatherproofing 
+system).  Provide certification or validation of indoor air quality for aerosol adhesives used on the interior 
+of the building (inside of the weatherproofing system).</TXT><BRK />
+<BRK />
+<SPT outline="2.1.9.1"><TTL>Adhesive for Laminating</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use adhesive only where screw type fastener attachment is not possible 
+to avoid difficulty with future gypsum recycling.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>[Not permitted.][ Adhesive attachment is not permitted for multi-layer gypsum boards.  For laminating gypsum 
+studs to face panels, provide adhesive recommended by gypsum board manufacturer.]</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.1.10"><TTL>Gypsum Studs</TTL><BRK />
+<BRK />
+<TXT>Provide<MET> 25 mm</MET><ENG> one inch</ENG> minimum thickness and<MET> 150 mm</MET><ENG> 6 inch</ENG> minimum width.  Studs may be of<MET> 25 mm</MET><ENG> one inch</ENG> thick 
+gypsum board or multilayers fastened to required thickness.  Conform to <RID>JIS A 6901</RID> for material and Gypsum Board 
+Application Manual (GRAM) for installation.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.11"><TTL>Shaftwall Liner Panel</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: Shaftwall panels are typically used for elevators, stairwells and mechanical 
+chases that penetrate rated floor systems.  When using shaftwall system, edit 
+Section <SRF>09 22 00</SRF> SUPPORTS FOR PLASTER AND GYPSUM BOARD to include shaftwall 
+liner panel metal studs.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Conform to the <RID>UL Fire Resistance</RID> or MLIT for the Design Numbers(s) indicated for shaftwall liner panels.  Manufacture 
+liner panel for cavity shaftwall system, with water-resistant paper faces, bevel edges, single lengths to fit 
+required conditions, as indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.12"><TTL>Accessories</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  In areas of high humidity or project locations with Environmental Severity 
+Classifications (ESC) of C3 thru C5, use PVC or plastic trim and accessories.  
+Galvanized metal will rust over time.  Humid project locations are those in 
+ASHRAE climate zones 0A, 1A, 2A, 3A, 3C, 4C and 5C (as identified in ASHRAE 
+90.1).  See UFC 1-200-01 for determination of ESC for project locations.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Fabricate from [corrosion protected steel][ or ][plastic] designed for intended use.  Accessories manufactured 
+with paper flanges are not acceptable.  Flanges must be free of dirt, grease, and other materials that may adversely 
+affect bond of joint treatment.  Provide prefinished or job decorated materials.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.13"><TTL>Asphalt Impregnated Building Felt</TTL><BRK />
+<BRK />
+<TXT>Provide a<MET> 6.7 kg</MET><ENG> 15 lb</ENG> asphalt moisture barrier over glass mat covered or reinforced gypsum sheathing.  Conforming 
+to <RID>JIS A 6005</RID> for asphalt impregnated building felt.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.14"><TTL>Water</TTL><BRK />
+<BRK />
+<TXT>Provide clean, fresh, and potable water.</TXT><BRK />
+<BRK /></SPT>
+</SPT></PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>EXAMINATION</TTL><BRK />
+<BRK />
+<SPT outline="3.1.1"><TTL>Framing and Furring</TTL><BRK />
+<BRK />
+<TXT>Verify that framing and furring are securely attached and of sizes and spacing to provide a suitable substrate 
+to receive gypsum board and cementitious backer units.  Verify that all blocking, headers and supports are in 
+place to support plumbing fixtures and to receive soap dishes, grab bars, towel racks, and similar items.  Do 
+not proceed with work until framing and furring are acceptable for application of gypsum board and cementitious 
+backer units.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.2"><TTL>[Gypsum Board] [and] [Framing]</TTL><BRK />
+<BRK />
+<TXT>Verify that surfaces of [gypsum board] [and] [framing] to be bonded with an adhesive are free of dust, dirt, 
+grease, and any other foreign matter.  Do not proceed with work until surfaces are acceptable for application 
+of gypsum board with adhesive.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.3"><TTL>[Masonry] [and] [Concrete] Walls</TTL><BRK />
+<BRK />
+<TXT>Verify that surfaces of [masonry] [and] [concrete] walls to receive gypsum board applied with adhesive are dry, 
+free of dust, oil, form release agents, protrusions and voids, and any other foreign matter.  Do not proceed 
+with work until surfaces are acceptable for application of gypsum board with adhesive.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.4"><TTL>Building Construction Materials</TTL><BRK />
+<BRK />
+<TXT>Do not install building construction materials that show visual evidence of biological growth.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2"><TTL>APPLICATION OF GYPSUM BOARD</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Coordinate with the drawings to ensure that all types of gypsum board 
+specified are indicated. Terminology on the drawings should be identical to 
+that in the specifications.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Allow adhesive bonding of gypsum board and substrate members only when 
+required for proper installation.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use of special clips designed to provide support at wall corners and 
+wall-ceiling intersections in lieu of backup studs or blocking minimizes framing, 
+and is approved except where not permitted in fire rated assemblies.  Include 
+gypsum or ceiling board over framing sentence when appropriate with design and 
+meets industry guidance and requirements for fire rated assemblies.  Ceilings 
+insulated with heavy or compressed insulation (such as cellulose, mineral wool, 
+or compressed fiberglass batts) may require<MET> 16 mm</MET><ENG> 5/8 inch</ENG> gypsum board.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Apply gypsum board to framing and furring members in accordance with Gypsum Board Application Manual (<RID>GRAM</RID>), 
+Gypsum Board Association of Japan or Manufacturers instructions and the requirements specified.  Apply gypsum 
+board with separate panels in moderate contact; do not force in place.  Stagger end joints of adjoining panels.  
+Neatly fit abutting end and edge joints.  Use gypsum board of maximum practical length; select panel sizes to 
+minimize waste.  Cut out gypsum board to make neat, close, and tight joints around openings.  In vertical application 
+of gypsum board, provide panels in lengths required to reach full height of vertical surfaces in one continuous 
+piece.  Lay out panels to minimize waste; reuse cutoffs whenever feasible.  Surfaces of gypsum board and substrate 
+members may [not ]be bonded together with an adhesive[, except where prohibited by fire rating(s)]. Treat edges 
+of cutouts for plumbing pipes, screwheads, and joints with water-resistant compound as recommended by the gypsum 
+board manufacturer.  Minimize framing by floating corners with single studs and drywall clips.  [Install [<MET>16 
+mm</MET><ENG>5/8 inch</ENG>][_____] gypsum or [<MET>13 mm</MET><ENG>1/2 inch</ENG>][_____] ceiling board over framing at [<MET>610 mm</MET><ENG>24 inch</ENG>][_____] on center.]  
+Provide type of gypsum board for use in each system specified herein as indicated.</TXT><BRK />
+<BRK />
+<SPT outline="3.2.1"><TTL>Application of Single-Ply Gypsum Board to Wood Framing</TTL><BRK />
+<BRK />
+<TXT>Apply in accordance with Gypsum Board Application Manual (<RID>GRAM</RID>), Gypsum Board Association of Japan or Manufacturer's 
+Instructions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.2"><TTL>Application of Two-Ply Gypsum Board to Wood Framing</TTL><BRK />
+<BRK />
+<TXT>Apply in accordance with Gypsum Board Application Manual (<RID>GRAM</RID>), Gypsum Board Association of Japan or Manufacturer's 
+Instructions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.3"><TTL>Adhesive Application to Interior Masonry or Concrete Walls</TTL><BRK />
+<BRK />
+<TXT>Apply in accordance with Gypsum Board Application Manual (<RID>GRAM</RID>), Gypsum Board Association of Japan or Manufacturer's 
+Instructions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.4"><TTL>Application of Gypsum Board to Steel Framing and Furring</TTL><BRK />
+<BRK />
+<TXT>Apply in accordance with Gypsum Board Application Manual (<RID>GRAM</RID>), Gypsum Board Association of Japan or Manufacturer's 
+Instructions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.5"><TTL>Arches and Bending Radii</TTL><BRK />
+<BRK />
+<TXT>Apply in accordance with Gypsum Board Application Manual (<RID>GRAM</RID>), Gypsum Board Association of Japan or Manufacturer's 
+Instructions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.6"><TTL>Gypsum Board for Wall Tile or Tile Base Applied with Adhesive</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: For adhesive applied ceramic tile in wet areas (tubs, shower enclosures, 
+saunas, steam rooms, gang shower rooms), specify cementitious backer board (in 
+accordance with the Tile Council of America Handbook) as the substrate; specify 
+ASTM C1178/C1178M glass mat water-resistant backing board or ASTM C1396/C1396M 
+water-resistant gypsum backing board for other tiled areas including areas where 
+only ceramic or quarry tile base is to be installed.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>In dry areas (areas other than tubs, shower enclosures, saunas, steam rooms, gang shower rooms), apply glass 
+mat water-resistant gypsum tile backing board [or water-resistant gypsum backing board] in accordance with Gypsum 
+Board Application Manual (<RID>GRAM</RID>), Gypsum Board Association of Japan or Manufacturer's Instructions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.7"><TTL>Exterior Application</TTL><BRK />
+<BRK />
+<TXT>Apply exterior gypsum board (such as at soffits) in accordance with Gypsum Board Application Manual (<RID>GRAM</RID>), Gypsum 
+Board Association of Japan or Manufacturer's Instructions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.8"><TTL>Floating Interior Angles</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use of special clips designed to provide support at wall corners and  
+wall-ceiling intersections in lieu of backup studs or blocking minimizes framing,  
+and is approved except where not permitted in fire rated assemblies.  Include  
+gypsum or ceiling board over framing sentence when appropriate for design and  
+meets industry guidance and requirements for fire rated assemblies.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Minimize framing by floating corners with single studs and drywall clips.  Locate the attachment fasteners adjacent 
+to ceiling and wall intersections in accordance with Gypsum Board Application Manual (<RID>GRAM</RID>), Gypsum Board Association 
+of Japan or Manufacturer's Instructions, for [single-ply] [and] [two-ply] applications of gypsum board to wood 
+framing.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.9"><TTL>Control Joints</TTL><BRK />
+<BRK />
+<TXT>Install expansion and contraction joints in ceilings and walls in accordance with Gypsum Board Application Manual 
+(GRAM), Gypsum Board Association of Japan or Manufacturer's Instructions.   Fill control joints between studs 
+in fire-rated construction with firesafing insulation to match the fire-rating of construction.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.10"><TTL>Application of Abuse Resistant Gypsum Board</TTL><BRK />
+<BRK />
+<TXT>Apply in accordance with applicable system of Gypsum Board Application Manual (GRAM), Gypsum Board Association 
+of Japan or Manufacturer's Instructions.  Follow manufacturers written instructions on how to cut, drill and 
+attach board.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.3"><TTL>APPLICATION OF CEMENTITIOUS BACKER UNITS</TTL><BRK />
+<BRK />
+<SPT outline="3.3.1"><TTL>Application</TTL><BRK />
+<BRK />
+<TXT>In wet areas (tubs, shower enclosures, saunas, steam rooms, gang shower rooms), apply cementitious backer units.  
+Place a<MET> 7.6 kg</MET><ENG> 15 lb</ENG> asphalt impregnated, continuous felt paper membrane behind cementitious backer units, between 
+backer units and studs or base layer of gypsum board.  Place membrane with a minimum<MET> 150 mm</MET><ENG> 6 inch</ENG> overlap of 
+sheets laid shingle style.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.2"><TTL>Joint Treatment</TTL><BRK />
+<BRK />
+<TXT>Gypsum Board Application Manual (<RID>GRAM</RID>), Gypsum Board Association of Japan or Manufacturer's Instructions.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.4"><TTL>FINISHING OF GYPSUM BOARD</TTL><BRK />
+<BRK />
+<TXT>Finish plenum areas above ceilings to Level 1.  Finish water resistant gypsum backing board to receive ceramic 
+tile to Level 2.  Finish walls and ceilings to receive a heavy-grade wall covering or heave textured finish before 
+painting to Level 3.  Finish walls and ceilings without critical lighting to receive flat paints, light textures, 
+or wall coverings to Level 4.  Unless otherwise specified, finish all gypsum board walls, partitions and ceilings 
+to Level 5.  Provide joint, fastener depression, and corner treatment.  Tool joints as smoothly as possible to 
+minimize sanding and dust.  Do not use self-adhering fiber glass mesh tape with conventional drying type joint 
+compounds; use setting or hardening type compounds only.  Provide treatment for water-resistant gypsum board 
+as recommended by the gypsum board manufacturer.  Protect workers, building occupants, and HVAC systems from 
+gypsum dust.</TXT><BRK />
+<BRK />
+<SPT outline="3.4.1"><TTL>Uniform Surface</TTL><BRK />
+<BRK />
+<TXT>Wherever gypsum board is to receive eggshell, semigloss or gloss paint finish, or where severe, up or down lighting 
+conditions occur, finish gypsum wall surface in accordance to  Level 5.  Apply a thin skim coat of joint compound 
+to the entire gypsum board surface, after the two-coat joint and fastener treatment is complete and dry.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.2"><TTL>Gypsum Board Finish Levels</TTL><BRK />
+<BRK />
+<SPT outline="3.4.2.1"><TTL>Level 1</TTL><BRK />
+<BRK />
+<TXT>All joints and interior angles shall have tape set in joint compound. Surface shall be free of excess joint compound.  
+Tool marks and ridges are acceptable.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.2.2"><TTL>Level 2</TTL><BRK />
+<BRK />
+<TXT>All joints and interior angles shall have tape embedded in joint compound and wiped with a joint knife leaving 
+a thin coating of joint compound over all joints and interior angles. Fastener heads and accessories shall be 
+covered with a coat of joint compound. Surface shall be free of excess joint compound. Tool marks and ridges 
+are acceptable. Joint compound applied over the body of the tape at the time of tape embedment shall be considered 
+a separate coat of joint compound and shall satisfy the conditions of this level.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.2.3"><TTL>Level 3</TTL><BRK />
+<BRK />
+<TXT>All joints and interior angles shall have tape embedded in joint compound and shall be immediately wiped with 
+a joint knife leaving a thin coating of joint compound over all joints and interior angles. One additional coat 
+of joint compound shall be applied over all joints and interior angles. Fastener heads and accessories shall 
+be covered with two separate coats of joint compound. All joint compound shall be smooth and free of tool marks 
+and ridges. Note:  It is recommended that the prepared surface be coated with a drywall primer prior to the application 
+of final finishes.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.2.4"><TTL>Level 4</TTL><BRK />
+<BRK />
+<TXT>All joints and interior angles shall have tape embedded in joint compound and shall be immediately wiped with 
+a joint knife leaving a thin coating of joint compound over all joints and interior angles. Two separate coats 
+of joint compound shall be applied overall flat joints and one separate coat of joint compound shall be applied 
+over interior angles. Fastener heads and accessories shall be covered with three separate coats of joint compound. 
+All joint compound shall be smooth and free of tool marks and ridges. Note:  It is recommended that the prepared 
+surface be coated with a drywall primer prior to the application of final finishes.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.2.5"><TTL>Level 5</TTL><BRK />
+<BRK />
+<TXT>All joints and interior angles shall have tape embedded in joint compound and shall be immediately wiped with 
+a joint knife leaving a thin coating of joint compound over all joints and interior angles. Two separate coats 
+of joint compound shall be applied over all flat joints and one separate coat of joint compound shall be applied 
+over interior angles. Fastener heads and accessories shall be covered with three separate coats of joint compound. 
+A thin skim coat of joint compound trowel applied, or a material manufactured especially for this purpose and 
+applied in accordance with manufacturer's recommendations, applied to the entire surface. The surface shall be 
+smooth and free of tool marks and ridges. </TXT><BRK />
+<BRK />
+<TXT>Note: It is recommended that the prepared surface be coated with a drywall primer prior to the application of 
+finish paint.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="3.5"><TTL>SEALING</TTL><BRK />
+<BRK />
+<TXT>Seal openings around pipes, fixtures, and other items projecting through gypsum board and cementitious backer 
+units as specified in Section <SRF>07 92 00</SRF> JOINT SEALANTS.  Apply material with exposed surface flush with gypsum 
+board or cementitious backer units.</TXT><BRK />
+<BRK />
+[<SPT outline="3.5.1"><TTL>Sealing for Glass Mat or Reinforced Gypsum Board Sheathing</TTL><BRK />
+<BRK />
+<TXT>Apply silicone sealant in a<MET> 9.5 mm</MET><ENG> 3/8 inch</ENG> bead to all joints and trowel flat. Apply enough of the same sealant 
+to all fasteners penetrating through the glass mat gypsum board surface to completely cover the penetration when 
+troweled flat.  [Do not place construction and materials behind sheathing until a visual inspection of sealed 
+joints during daylight hours has been completed by Contracting Officer.]</TXT><BRK />
+<BRK /></SPT>
+]</SPT><SPT outline="3.6"><TTL>FIRE-RESISTANT ASSEMBLIES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Coordinate with the drawings to ensure that UL or GA design numbers are 
+indicated for fire-resistant assemblies.  If review of building code requires 
+pressurized enclosures, include the following:</NPR><BRK />
+<BRK />
+<NPR>Pressurized fire-rated gypsum board enclosures must allow the mechanical and 
+electrical life-safety systems to operate in accordance with the design intent.  
+Air pressure within elevator shaft must be<MET> 360 Pa.</MET><ENG> 7.5 psf.</ENG>  Air pressure within 
+stair shaft must be<MET> 240 Pa.</MET><ENG> 5.0 psf.</ENG>  Maximum mid-span deflection must be L/360.</NPR><BRK />
+<BRK />
+<NPR>In general, there are currently no USACE JED acceptable fire resistive rating 
+assemblies over 1 hour using Japanese materials.  Yoshino Gypsum assemblies 
+A21 and B15 have been found acceptable for 1-hour assemblies.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Wherever fire-rated construction is indicated, provide materials and application methods, including types and 
+spacing of fasteners,[ wall and ceiling framing] in accordance with the specifications contained in [UL Fire 
+Resistance for the Design Number(s) indicated] or [GA 600 for the File Number(s) indicated].  Seal penetrations 
+through rated partitions and ceilings tight in accordance with tested systems.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.7"><TTL>PATCHING</TTL><BRK />
+<BRK />
+<TXT>Patch surface defects in gypsum board to a smooth, uniform appearance, ready to receive finishes. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.8"><TTL>SHAFTWALL FRAMING</TTL><BRK />
+<BRK />
+<TXT>Install the shaftwall system in accordance with the system manufacturer's published instructions.  Coordinate 
+bucks, anchors, <NED />blocking and other items placed in or behind shaftwall framing with electrical and mechanical 
+work.  Patch or replace fireproofing materials which are damaged or removed during shaftwall construction.</TXT><BRK />
+<BRK /></SPT>
+</PRT>    <END /><BRK /></SEC>

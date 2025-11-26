@@ -1,0 +1,1364 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                UFGS-08 71 00 (February 2016)<BRK />
+                                             Change 2 - 11/18<BRK />
+                                             -----------------------------<BRK />
+Preparing Activity:  <PRA>NAVFAC</PRA>                  Superseding<BRK />
+                                             UFGS-08 71 00 (August 2008)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK />
+<AST /></HDR><BRK />
+<BRK />
+<SCN>SECTION 08 71 00</SCN><BRK />
+<BRK />
+<STL>DOOR HARDWARE</STL><BRK />
+<DTE>02/16</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project.  The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>finish hardware 
+for permanent structures</SCP>.  All items of finish hardware necessary for completion 
+of the project and not specified in other sections should be included in this 
+section.</NPR><BRK />
+<BRK />
+<NPR>Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.</NPR><BRK />
+<BRK />
+<NPR>Remove information and requirements not required in respective project, whether 
+or not brackets are present.</NPR><BRK />
+<BRK />
+<NPR>Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  On the drawings, show:</NPR><BRK />
+<BRK />
+<NPR>1.  Location, class, and hourly rating of fire doors;</NPR><BRK />
+<BRK />
+<NPR>2.  Location and installation details for blocking behind door stops (wall bumpers) 
+mounted on wallboard partitions; and</NPR><BRK />
+<BRK />
+<NPR>3.  Either hardware set numbers (e.g. HW-2) in the door schedule, or list doors 
+by number in each hardware set.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification.  The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.</NPR><BRK />
+<BRK />
+<NPR>Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.</NPR><BRK />
+<BRK />
+<NPR>References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG><BRK />
+<BRK />
+<RID>JIS A 1510-2</RID><RTL>(2019) Test Method for Door Fittings - Part 
+2: Fittings for Doors</RTL><BRK />
+<BRK />
+<RID>JIS A 1510-3</RID><RTL>(2001) Test Methods for Door Fittings - Part 
+3: Floor Concealed Door Closers, Door Closers 
+and Hinge Closers</RTL><BRK />
+<BRK />
+<RID>JIS A 1516</RID><RTL>(1998) Windows and Doorsets - Air Permeability 
+Test</RTL><BRK />
+<BRK />
+<RID>JIS A 1541-1</RID><RTL>(2016) Building Hardware - Locks and Latches 
+- Part 1: Test Methods for Locks and Latches</RTL><BRK />
+<BRK />
+<RID>JIS A 1541-2</RID><RTL>(2016) Building Hardware - Locks and Latches 
+- Part 2: Methods of the Presentation and Grade 
+of Criteria for Practical Performance Item</RTL><BRK />
+<BRK />
+<RID>JIS A 1525</RID><RTL>(1996) Doorsets - Repeated and Opening and Closing 
+Test</RTL><BRK />
+<BRK />
+<RID>JIS A 1551</RID><RTL>(2014) Test Method for Automatic Door Opener</RTL><BRK />
+<BRK />
+<RID>JIS A 4702</RID>   <RTL>(2021) Doorsets</RTL><BRK />
+<BRK />
+<RID>JIS A 4721</RID><RTL>(2005) Automatic Revolving Door - Safety</RTL><BRK />
+<BRK />
+<RID>JIS A 4722</RID><RTL>(2017) Power Operated Pedestrian Door Sets - 
+Safety</RTL><BRK />
+<BRK />
+<RID>JIS A 5756</RID><RTL>(2013) Preformed Gaskets Used in Buildings - 
+Classification, Specifications and Test Methods</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK />
+<BRK />
+<RID>NFPA 101</RID><RTL>(2021; TIA 21-1) Life Safety Code</RTL><BRK />
+<BRK />
+<RID>NFPA 252</RID><RTL>(2022) Standard Methods of Fire Tests of Door 
+Assemblies</RTL><BRK />
+<BRK />
+<RID>NFPA 70</RID><RTL>(2023; 
+ERTA 7 2023; TIA 23-15) National Electrical 
+Code</RTL><BRK />
+<BRK />
+<RID>NFPA 72</RID><RTL>(2022; ERTA 22-1) National 
+Fire Alarm and Signaling Code</RTL><BRK />
+<BRK />
+<RID>NFPA 80</RID><RTL>(2022) Standard for Fire Doors and 
+Other Opening Protectives</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)</ORG><BRK />
+<BRK />
+<RID>36 CFR 1191</RID><RTL>Americans with Disabilities Act (ADA) Accessibility 
+Guidelines for Buildings and Facilities; Architectural 
+Barriers Act (ABA) Accessibility Guidelines</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>UNDERWRITERS LABORATORIES (UL)</ORG><BRK />
+<BRK />
+<RID>UL 14C</RID><RTL>(2006; Reprint Jul 2017) UL Standard for Safety 
+Swinging Hardware for Standard Tin-Clad Fire 
+Doors Mounted Singly and in Pairs</RTL><BRK />
+<BRK />
+<RID>UL 437</RID><RTL>(2013) Standard for Key Locks</RTL><BRK />
+<BRK />
+<RID>UL Bld Mat Dir</RID><RTL>(updated continuously online) Building Materials 
+Directory</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Review Submittal Description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.</NPR><BRK />
+<BRK />
+<NPR>The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G."  Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a "G" to an item, if the submittal is sufficiently important or complex 
+in context of the project.</NPR><BRK />
+<BRK />
+<NPR>For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office.  Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.</NPR><BRK />
+<BRK />
+<NPR>The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
+submittal under the SD number that best describes the submittal item.</NPR><BRK />
+<BRK />
+<NPR>Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  If sustainable door hardware is available, choose bracketed option.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are [for Contractor Quality Control approval.][for information only.  When used, a designation following the 
+"G" designation identifies the office that will review the submittal for the Government.]  Submittals with an 
+"S" are for inclusion in the Sustainability eNotebook, in conformance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Manufacturer's Detail Drawings</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Verification of Existing Conditions</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Hardware Schedule</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Keying System</SUB>; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For special hardware items requiring shop drawings, add submittal requirement 
+for SD-04, Drawings.  Do not require shop drawings for standard commercial hardware.</NPR><BRK />
+<AST /><BRK /></NTE>
+<LST><SUB>SD-08 Manufacturer's Instructions</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Installation</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-10 Operation and Maintenance Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Hardware Schedule</SUB> Items, Data Package 1; <SUB>G<TAI OPT="ARMY">[, [_____]]</TAI></SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-11 Closeout Submittals</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Key Bitting</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>SHOP DRAWINGS</TTL><BRK />
+<BRK />
+<TXT>Submit <SUB>manufacturer's detail drawings</SUB> indicating all hardware assembly components and interface with adjacent 
+construction.[  Indicate power components and wiring coordination for electrified hardware.]  Base shop drawings 
+on verified field measurements and include <SUB>verification of existing conditions</SUB>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.4"><TTL>PRODUCT DATA</TTL><BRK />
+<BRK />
+<TXT>Indicate fire-ratings at applicable components.  Provide documentation of ABA/ADA accessibility compliance of 
+applicable components, as required by <RID>36 CFR 1191</RID> Appendix D - Technical.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5"><TTL><SUB>HARDWARE SCHEDULE</SUB></TTL><BRK />
+<BRK />
+<TXT>Prepare and submit hardware schedule in the following form:</TXT><BRK />
+<TAB HEADERROWS="0" WIDTH="94">
+<WBK>
+   <STS />
+   <TDA COLUMNCOUNT="9" ROWCOUNT="1">
+      <COL AUTOWIDTH="0" WIDTH="66.75" />
+      <COL AUTOWIDTH="0" WIDTH="63.75" />
+      <COL AUTOWIDTH="0" WIDTH="42.75" />
+      <COL AUTOWIDTH="0" WIDTH="75.75" />
+      <COL AUTOWIDTH="0" WIDTH="50.25" />
+      <COL AUTOWIDTH="0" WIDTH="57.75" />
+      <COL AUTOWIDTH="0" WIDTH="57.00" />
+      <COL AUTOWIDTH="0" WIDTH="53.25" />
+      <COL AUTOWIDTH="0" WIDTH="81.00" />
+      <ROW AUTOHEIGHT="0" HEIGHT="107.25">
+         <CEL>
+<DTA TYPE="STRING">Hardware Item</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Quantity</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Size</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Reference Publi-<BRK />cation Type No.</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Finish</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Mfr Name and Catalog No.</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Key Control Symbols</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">UL Mark (If fire- rated and listed)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">BHMA Finish Desig-<BRK />nation</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK />
+<TXT>In addition, submit  hardware schedule data package 1 in accordance with Section <SRF>01 78 23</SRF> OPERATION AND MAINTENANCE 
+DATA.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6"><TTL>KEY BITTING CHART REQUIREMENTS</TTL><BRK />
+<BRK />
+<SPT outline="1.6.1"><TTL>Requirements</TTL><BRK />
+<BRK />
+<TXT>Submit <SUB>key bitting</SUB> charts to the Contracting Officer prior to completion of the work.  Include:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Complete listing of all keys.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Complete listing of all key cuts.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Tabulation showing which key fits which door.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Copy of floor plan showing doors and door numbers.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Listing of 20 percent more key cuts than are presently required in each master system.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.7"><TTL>QUALITY ASSURANCE</TTL><BRK />
+<BRK />
+<SPT outline="1.7.1"><TTL>Hardware Manufacturers and Modifications</TTL><BRK />
+<BRK />
+<TXT>Provide, as far as feasible, locks, hinges,[ pivots,] and closers of one lock, hinge,[ pivot,] or closer manufacturer's 
+make.  Modify hardware as necessary to provide features indicated or specified.</TXT></SPT><BRK />
+<BRK />
+<SPT outline="1.7.2"><TTL>Key Shop Drawings Coordination Meeting</TTL><BRK />
+<BRK />
+<TXT>Prior to the submission of the key shop drawing, the Contracting Officer, Contractor, Door Hardware Subcontractor, 
+using Activity and Base Locksmith must meet to discuss and coordinate key requirements for the facility.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.8"><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Whenever construction master keying is required, permanent keys (and 
+removable cores) should be sent directly to the Contracting Officer.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Deliver hardware in original individual containers, complete with necessary appurtenances including fasteners 
+and instructions.  Mark each individual container with item number as shown on hardware schedule.[  <TST>Deliver permanent 
+keys[ and removable cores] to the Contracting Officer, either directly or by certified mail.  Deliver construction 
+master keys with the locks.</TST>]</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>TEMPLATE HARDWARE</TTL><BRK />
+<BRK />
+<TXT>Hardware applied to metal [or to prefinished ]doors must be manufactured using a template.  Provide templates 
+to door and frame manufacturers in accordance with <RID>JIS A 1510-2</RID> for template hinges.  Coordinate hardware items 
+to prevent interference with other hardware.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2"><TTL>HARDWARE FOR FIRE DOORS AND EXIT DOORS</TTL><BRK />
+<BRK />
+<TXT>Provide all hardware necessary to meet the requirements of <RID>NFPA 72</RID> for door alarms, <RID>NFPA 80</RID> for fire doors, <RID>NFPA 101</RID>
+ for exit doors, <RID>NFPA 252</RID> for fire tests of door assemblies, ABA/ADA accessibility requirements, and all  other 
+requirements indicated, even if such hardware is not specifically mentioned in paragraph HARDWARE SCHEDULE.[  
+Provide swinging hardware for tin-clad fire doors in accordance with <RID>UL 14C</RID>.]  Provide Underwriters Laboratories, 
+Inc. labels for such hardware in accordance with <RID>UL Bld Mat Dir</RID> or equivalent labels in accordance with another 
+testing laboratory approved in writing by the Contracting Officer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3"><TTL>HARDWARE ITEMS</TTL><BRK />
+<BRK />
+<TXT>Clearly and permanently mark with the manufacturer's name or trademark, hinges, pivots, locks, latches, exit 
+devices, bolts and closers where the identifying mark is visible after the item is installed.  For closers with 
+covers, the name or trademark may be beneath the cover.  Coordinate electrified door hardware components with 
+corresponding components specified in Division 28 ELECTRONIC SECURITY SYSTEMS (ESS).</TXT><BRK />
+<BRK />
+<SPT outline="2.3.1"><TTL>Hinges</TTL><BRK />
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 1510-3</RID>.  Provide hinges that are<MET> 114 by 114 mm</MET><ENG> 4-1/2 by 4-1/2 inch</ENG> unless otherwise 
+indicated.  Construct loose pin hinges for interior doors and reverse-bevel exterior doors so that pins are non-removable 
+when door is closed.  Other anti-friction bearing hinges may be provided in lieu of ball bearing hinges.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use full-mortise (butt) hinges except where special types are required.  
+Use swing-clear hinges where necessary to keep door opening completely clear 
+when door is opened 90 to 95 degrees.  Use wide-throw hinges where necessary 
+to keep door leaf clear of wall, casings, jambs, or reveals.  Use antifriction-bearing 
+hinges on high-frequency or extra-heavy doors, and on doors equipped with closers.  
+Use plain-bearing hinges on low-frequency doors up to<MET> 900 mm</MET><ENG> 3 feet</ENG> wide and 
+without closers.  Use hospital tips in neuropsychiatric areas of medical facilities.  
+In general, full-mortise hinges for interior doors should be steel with BHMA 
+600 finish (primed for painting).   Hinges on natural wood or plastic surfaced 
+interior doors should be steel with BHMA 652 finish (satin chromium plated) 
+or BHMA 639 finish (satin bronze plated) to match finish of other door hardware.  
+Hinges for exterior doors should be stainless steel finish or solid brass or 
+bronze with BHMA 626 finish.  Use stainless steel with finish on all exterior 
+hinges in humid conditions or project locations with Environmental Severity 
+Classifications (ESC) of C3 thru C5.  Humid locations are those in ASHRAE climate 
+zones 0A, 1A, 2A, 3A, 3C, 4C and 5C (as identified in ASHRAE 90.1).  See UFC 
+1-200-01 for determination of ESC for project locations.  Provide interior hinges 
+at project locations with ESC classifications of C3 thru C5 of cast or forged 
+bronze or stainless steel, Type 302 or 304.  Fire rated doors must have base 
+metal of steel or stainless steel.  Plated steel hinges may rust if used on 
+exterior doors.  Use two hinges for doors<MET> 1500 mm</MET><ENG> 60 inch</ENG> or less in height 
+and one additional hinge for each additional<MET> 750 mm</MET><ENG> 30 inches</ENG> (or fraction thereof) 
+of door height.<BRK />
+<BRK />
+1.  Select and size hinges for lead lined, unusually heavy, and high-frequency 
+doors on an individual basis.<BRK />
+<BRK />
+2.  The<MET> 114 by 114 mm</MET><ENG> 4-1/2 by 4-1/2 inch</ENG> listed is for<MET> 44 mm</MET><ENG> 1-3/4 inch</ENG> doors 
+up to<MET> 915 mm</MET><ENG> 3 feet</ENG> wide and with up to<MET> 20 mm</MET><ENG> 3/4 inch</ENG> trim projection, and 
+covers the majority of openings.  For other doors, determine hinge width in 
+accordance with:<BRK />
+<BRK />
+Twice the door thickness plus trim projection, minus<MET> 13 mm</MET><ENG> 1/2 inch</ENG>, or 2(t 
+plus p) minus 1/2.  If answer falls between regular hinge sizes, use nearest 
+larger size.  Formula is for hinges set back<MET> 6 mm</MET><ENG> 1/4 inch</ENG> from edge of door.<BRK /></NPR>
+<BRK />
+<MET><TAB HEADERROWS="2">
+<WBK>
+   <STS />
+   <TDA COLUMNCOUNT="3" ROWCOUNT="10">
+      <COL AUTOWIDTH="0" WIDTH="187.50" />
+      <COL AUTOWIDTH="0" WIDTH="187.50" />
+      <COL AUTOWIDTH="0" WIDTH="187.50" />
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="2">
+<DTA TYPE="STRING"><HL4>Hinge Sizes Chart</HL4></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="35.25">
+         <CEL>
+<DTA TYPE="STRING">Thickness of Doors in mm</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Width of Doors in mm</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Height of Hinges (Length of Joint) in mm</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">22 to 29 screen</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">To 915</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">76</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">35</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">To 815</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">89</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">35</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Over 815 to 940</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">102</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">44</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">To 915</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">114</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">44</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Over 915 to 1220</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">127 Heavy Weight</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">44</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Over 1220</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">152 Heavy Weight</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">51, 57, and 64</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">To 1065</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">127 Heavy Weight</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">51, 57, and 64</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Over 1065</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">152 Heavy Weight</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /><BRL /><BRL /></TAB><BRK /></MET>
+<BRK />
+<ENG><TAB HEADERROWS="2">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM" />
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="3" ROWCOUNT="10">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="150.00" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="150.00" />
+      <COL AUTOWIDTH="0" WIDTH="150.00" />
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="2" STYLEID="s50">
+<DTA TYPE="STRING"><HL4>Hinge Sizes Chart</HL4></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="34.50">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Thickness of Doors in inches</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Width of Doors in inches</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Height of Hinges (Length of Joint) in inches</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">7/8 to 1-1/8 screen</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">To 36</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">3</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">1-3/8</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">To 32</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">3-1/2</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">1-3/8</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Over 32 to 37</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">4</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">1-3/4</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">To 36</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">4-1/2</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">1-3/4</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Over 36 to 48</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">5 Heavy Weight</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">1-3/4</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Over 48</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">6 Heavy Weight</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">2, 2-1/4 and 2-1/2</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">To 42</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">5 Heavy Weight</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.75">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">2, 2-1/4 and 2-1/2</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Over 42</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">6 Heavy Weight</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /><BRL /><BRL /></TAB></ENG><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+[<SPT outline="2.3.1.1"><TTL>Protection Devices</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  In accordance with UFC 4-740-14 Design: Child Development Centers provide 
+finger guards to protect children's fingers from being crushed or injured in 
+the hinge space of a door or gate.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide full height hand and finger protection device at the hinge-side area opening of doors and gates.  Provide 
+hinge-side protection devices on both sides of doors and gates, covering hinges and space between door and frame 
+when doors are in the open position.  The installed device must push hand and fingers out of the opening and 
+away from a crushing hazard.</TXT><BRK />
+<BRK /></SPT>
+]</SPT><SPT outline="2.3.2"><TTL>Continuous Hinges</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For heavy duty doors, where required.  Coordinate with security door 
+specifications.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Where continuous hinges are required, provide in accordance with <RID>JIS A 1510-2</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.3"><TTL>Pivots</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For extra heavy doors, pivots are sometimes preferable to hinges, particularly 
+on entrance doors and lead-lined doors.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 1510-3</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.4"><TTL>Spring Hinges</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use spring hinges only where closers are not practicable and for gates 
+at counters.  Ensure that specified spring hinges are large enough and strong 
+enough to serve their purpose adequately.  See manufacturers catalogs for recommendations 
+on sizes, quantities, and styles of spring hinges.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 1510-3</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.5"><TTL>Locks and Latches</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify Series 1000, in paragraph MORTISE LOCKS AND LATCHES, for hollow 
+metal doors where security is a major factor.</NPR><BRK />
+<BRK />
+<NPR>For BEQ sleeping room doors, use heavy-duty pushbutton combination locks with 
+keyed cylinder bypass.  Check with activity housing managers to determine preference.</NPR><BRK />
+<BRK />
+<NPR>For doors between sleeping room and shared bath, use a privacy lock, and a deadlock, 
+(key by thumb turn) keyed like the sleeping room entrance door and with the 
+key on the bathroom side.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Choose the applicable paragraph(s) from the following.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Insert this paragraph into all locks and locksets in humid conditions 
+or project locations with Environmental Severity Classifications (ESC) of C3 
+thru C5.  Humid locations are those in ASHRAE climate zones 0A, 1A, 2A, 3A, 
+3C, 4C and 5C (as identified in ASHRAE 90.1).  See UFC 1-200-01 for determination 
+of ESC for project locations.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+[<LST INDENT="-0.33">a.  At exterior locations provide locksets of full stainless steel type 302 or 304 construction including 
+fronts, strike, escutcheons, knobs, bolts and all interior working parts.  Marine Grade I, fully non-ferrous.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  In non-air-conditioned interior environments or humid interior environments, provide interior locksets 
+on the same Marine Grade I, fully non-ferrous as exterior locksets.</LST><BRK />
+<BRK />
+]<SPT outline="2.3.5.1"><TTL>Mortise Locks and Latches</TTL><BRK />
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 1541-1</RID>.[  Provide factory installed lead lining in locks for lead shielded doors.][  
+Provide mortise locks with escutcheons not less than<MET> 178 by 57 mm</MET><ENG> 7 by 2-1/4 inch</ENG> with a bushing at least<MET> 6 mm</MET><ENG>
+ 1/4 inch</ENG> long.  Cut escutcheons to fit cylinders and provide trim items with straight, beveled, or smoothly 
+rounded sides, corners, and edges.]  Provide knobs and roses of mortise locks with screwless shanks and no exposed 
+screws.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.5.2"><TTL>Bored Locks and Latches</TTL><BRK />
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 4702</RID>.[  Provide factory installed lead lining in locks for lead -shielded doors.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.5.3"><TTL>Residential Bored Locks and Latches</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For temporary buildings and family housing only.  Delete if not applicable.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 4702</RID>.  Install locks for exterior doors with threaded roses or concealed machine 
+screws.</TXT><BRK />
+<BRK /></SPT>
+[<SPT outline="2.3.5.4"><TTL>Interconnected Locks and Latches</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For exterior doors in family housing units only.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 1541-2</RID>.</TXT><BRK />
+<BRK /></SPT>
+]<SPT outline="2.3.5.5"><TTL>Hospital Latches</TTL><BRK />
+<BRK />
+<TXT>Push-pull latch set as required to meet operational requirements,<MET> 13 mm</MET><ENG> 1/2 inch</ENG> throw, [<MET>70 mm</MET><ENG>2-3/4 inch</ENG>] [<MET>127 
+mm</MET><ENG>5 inch</ENG>] backset, to fit 161 cutout.  Cover approximately<MET> 64 by 140 mm</MET><ENG> 2-1/2 by 5-1/2 inch</ENG>, handle approximately<MET>
+ 38 by 114 mm</MET><ENG> 1-1/2 by 4-1/2 inch</ENG>, projection approximately<MET> 64 mm</MET><ENG> 2-1/2 inch</ENG>, covers and handles of stainless 
+steel finish, engraved "PUSH" and "PULL" on handles, push handle pointing up, pull handle pointing down.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.5.6"><TTL>Auxiliary Locks</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete if not applicable.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide lock having a [latch bolt] or [dead bolt] operated by a [key], [paddle [and] [and/or] turn], which is 
+used in addition to a primary lock or latching device to meet operational requirements.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.5.7"><TTL>Combination Locks</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For medical projects only, include the first bracketed option.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>[Key pharmacy door locks separately from building master key system.  ]Heavy-duty, mechanical combination lockset 
+with five push buttons, standard sized knobs,<MET> 20 mm</MET><ENG> 3/4 inch</ENG> deadlocking latch,<MET> 70 mm</MET><ENG> 2-3/4 inch</ENG> backset.  Locks 
+to operate by pressing two or more of the buttons in unison or individually in the proper sequence. Inside knob 
+operates the latch.  Provide a keyed cylinder on the interior to permit setting the combination.[  Provide a 
+keyed [removable core ]cylinder on the exterior to permit bypassing the combination.][  Provide a thumb turn 
+on the interior to activate passage set function so that outside knob operates latch without using the combination.]</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3.6"><TTL>Exit Devices</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Due to the difficulty in securing exit devices against unauthorized use, 
+they should only be specified where required by NFPA 101.  Use single exit doors 
+with locksets in preference to pairs of doors.  When pairs are required, specify 
+removable mullions and rim type devices.  Vertical rod devices require use of 
+an overlapping astragal and door coordinator for security and fire protection.  
+They should be used only where mullions are not feasible.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Insert the last bracketed paragraph for all exit devices in humid conditions 
+or project locations with Environmnental Severity Classifications (ESC) of C3 
+thru C5.  Humid locations are those in ASHRAE climate zones 0A, 1A, 2A, 3A, 
+3C, 4C and 5C (as identified in ASHRAE 90.1).  See UFC 1-200-01 for determination 
+of ESC for project locations.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide adjustable strikes for rim type and vertical rod devices.  Provide open back strikes for pairs of doors 
+with mortise and vertical rod devices.  Provide [touch bars in lieu of conventional crossbars and arms.][  Provide 
+escutcheons not less than<MET> 178 by 57 mm</MET><ENG> 7 by 2-1/4 inch</ENG>.]</TXT><BRK />
+<BRK />
+[<TXT>Use stainless steel or bronze base metal with plated finishes.  Also include stainless steel fasteners and screws.</TXT><BRK />
+<BRK />
+]</SPT><SPT outline="2.3.7"><TTL>Exit Locks With Alarm</TTL><BRK />
+<BRK />
+<TXT>Provide [with full width horizontal actuating bar] for single doors; Type E0431 [with actuating bar] or E0471 
+[with actuating bar and top and bottom bolts, both leaves active] for pairs of doors, unless otherwise specified.[  
+Provide terminals for connection to remote indicating panel.][  Provide outside control key.]  Provide door alarms 
+integrated with the fire alarm system in accordance with <RID>NFPA 72</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.8"><TTL>Cylinders and Cores</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  When an extension of an existing system is required, the manufacturer's 
+name and type of locks should be indicated.  Confirm existing hardware requirements 
+with Contracting Officer's Representative (COR).  Requirements may include but 
+are not limited to interchangeable cores, product level of quality, compatibility, 
+if any, with other manufacturers' hardware components.</NPR><BRK />
+<BRK />
+<NPR>Specify the system which will best meet the activity's needs without restricting 
+competition.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>[Provide cylinders and cores for new locks, including locks provided under other sections of this specification.  
+]Provide cylinders and cores with [six] [seven] pin tumblers.  Provide cylinders from the products of one manufacturer, 
+and provide cores from the products of one manufacturer.[  Rim cylinders, mortise cylinders, and knobs of bored 
+locksets have interchangeable cores which are removable by special control keys.  Stamp each interchangeable 
+core with a key control symbol in a concealed place on the core.]</TXT><BRK />
+<BRK />
+[<TXT>Provide cylinders for new locks, including locks provided under other sections of this specification.  Provide 
+fully compatible cylinders of Grade 1 products from products of one manufacturer with interchangeable cores that 
+are removable by a special control key.  Factory set the cores with [six] [seven] pin tumblers.  Submit a core 
+code sheet with the cores.  Provide master keyed cores in one system for this project.  Provide construction 
+interchangeable cores.</TXT><BRK />
+<BRK />
+][<TXT>For medical projects, key pharmacy door locks separately from building master key system.</TXT><BRK />
+<BRK />
+]<SPT outline="2.3.8.1"><TTL>High Security Cylinders</TTL><BRK />
+<BRK />
+<TXT>Provide high security cylinder with locking technology that limits the duplication of unauthorized keys or unauthorized 
+electronic credentials that would operate the locks.   High security cylinder must be able to stand up to forcing, 
+drilling, sawing, prying, pulling, plug driving, picking and have corrosion resistance.  [High security cylinder 
+to comply with <RID>UL 437</RID>].</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3.9"><TTL>Push Button Mechanisms</TTL><BRK />
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 1541-1</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.10"><TTL>Electrified Hardware</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: Coordinate electrified hardware operation and specific backup power requirements 
+with site safety personnel, site fire authority, and applicable life safety 
+codes.  Determine whether signal switches are required for the particular site 
+application.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Comply with the requirements of <RID>NFPA 70</RID> for wiring of electrified hardware.</TXT><BRK />
+<BRK />
+<SPT outline="2.3.10.1"><TTL>Electric Strikes and Frame Mounted Actuators</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: Specify electric strikes and lock functionality when power fails.  Choose 
+one of three bracketed choices (release automatically, remain secure or remain 
+maintained).</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide electric strikes and actuators as required to meet operational requirements.  Provide electric strikes 
+that [release automatically] [remain secure] [remain maintained] during power failure.[  Provide a separate power 
+supply for electric strikes, other locking devices and ancillary parts.][  Provide battery backup for continued 
+operation during power failure.]  Provide strikes and actuators with a minimum opening force of<MET> 101 kilonewtons 
+(kN)</MET><ENG> 2300 pounds</ENG>.</TXT><BRK />
+<BRK />
+<TXT>Provide facility interface devices that use direct current (dc) power to energize the solenoids.  Provide electric 
+strikes and actuators that incorporate end-of-line resistors to facilitate line supervision by the system. If 
+not incorporated into the electric strike or local controller, provide metal oxide resistors (MOVs) to protect 
+the controller from reverse current surges.</TXT><BRK />
+<BRK />
+<SPT outline="2.3.10.1.1"><TTL>Solenoid</TTL><BRK />
+<BRK />
+<TXT>Provide actuating solenoid for strikes and actuators that are rated for continuous duty, cannot dissipate more 
+than 12 Watts and must operate on 12 or 24 Volts dc.  Inrush current cannot exceed 1 ampere and the holding current 
+cannot be greater than 500 milliamperes.  Actuating solenoid must move from fully secure to fully open positions 
+in less than 500 milliseconds.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.10.1.2"><TTL>Signal Switches</TTL><BRK />
+<BRK />
+<TXT>Provide strikes and actuators with signal switches to indicate to the system when the bolt is not engaged or 
+the strike mechanism is unlocked.  Signal switches must report a forced entry to the system.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.10.1.3"><TTL>Tamper Resistance</TTL><BRK />
+<BRK />
+[<TXT>Provide strike guards that prevent tampering with the latch bolt of the locking hardware or the latch bolt keeper 
+of the electric strike.  Strike guards to bolt through the door using tamper resistant screws.  Provide strike 
+guards made of<MET> 3 mm</MET><ENG> 1/8 inch</ENG> thick brass and that are<MET> 286 mm</MET><ENG> 11-1/14 inch</ENG> high by<MET> 41 mm</MET><ENG> 1-5/8 inch wide</ENG>, with 
+a minimum<MET> 4 mm</MET><ENG> 5/32 inch</ENG> wide offset.</TXT><BRK />
+<BRK />
+]</SPT><SPT outline="2.3.10.1.4"><TTL>Coordination</TTL><BRK />
+<BRK />
+<TXT>Provide electric strikes and actuators of a size, weight and profile compatible with each specified door frame.  
+Field verify installation clearances prior to procurement.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.10.1.5"><TTL>Mounting Method</TTL><BRK />
+<BRK />
+<TXT>Provide electric strikes and actuators suitable for use with single and double doors, with mortise or rim type 
+hardware specified, and for right or left hand mounting as specified.  In double door installations, locate the 
+lock in the active leaf and monitor the fixed leaf.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3.10.2"><TTL>Electrified Mortise Locks</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: Electrified mortise locks provide an excellent solution for stairwell 
+doors that require positive latching when unlocked.  A power transfer hinge 
+or raceway is required to get power and signal wire from the door to the doorframe 
+for a secure and fully enclosed connection to the access control system.  Specify 
+power transfer hinges for doors with electrified hardware.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide electrified mortise locks that [release automatically] [remain secure] [remain maintained] during power 
+failure.  Provide facility interface devices that use dc power to energize solenoids.  Provide solenoids, resisters, 
+and signal switches in accordance with paragraph ELECTRIC STRIKES AND FRAME MOUNTED ACTUATORS.</TXT><BRK />
+<BRK />
+<SPT outline="2.3.10.2.1"><TTL>Power Transfer Hinges</TTL><BRK />
+<BRK />
+<TXT>Provide power transfer hinges with each electrified lock that route power and monitoring signals from the lockset 
+to the door frame.  Coordinate power transfer hinges with door frames.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3.10.3"><TTL>Card Readers and Keypad Access Control Hardware</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Verify card readers are compatible with card type.  Coordinate this section 
+with Division 28 ELECTRONIC SECURITY SYSTEMS (ESS) requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide devices that are tamper alarmed, tamper and vandal resistant, solid state, and do not contain electronics 
+which could compromise the access control subsystem should the subsystem be attacked.  Provide surface, semi-flush, 
+pedestal, or weatherproof mountable devices as specified for each individual location.[  Each device to contain 
+a visual display, either mounted on the face, or on an integral part of the device, to indicate access or exit 
+request processing, request approval, and request denial.]  Provide [proximity] [insertion] [swipe through] type 
+card readers capable of reading [magnetic stripe] [high coercivity magnetic stripe] [Wiegand] [Hollerith] [proximity] 
+[Transmissive Infrared] [Keypad] [[_____]/Keypad] [Smart Card] [Biometric] [_____] type access control cards.  
+Provide keypads that contain an integral 12-digit tactile keyboard with digits [arranged in numerical order].  
+Provide keypads that are [a standalone device] [or] [integrated into the card reader].  Coordinate access control 
+hardware with corresponding devices and systems specified in Division 28 ELECTRONIC SECURITY SYSTEMS (ESS).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.10.4"><TTL>Power Operated Pedestrian Door Hardware</TTL><BRK />
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 4722</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.10.5"><TTL>Release Devices</TTL><BRK />
+<BRK />
+<TXT>In accordance with <RID>JIS A 1510-3</RID>.</TXT><BRK />
+<BRK />
+<SPT outline="2.3.10.5.1"><TTL>Closer Holders</TTL><BRK />
+<BRK />
+<TXT>Provide [floor] [door] [header] mounted closer holder devices connected by [separate releasing] [integral releasing] 
+to [fire] [smoke] detecting devices.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.10.5.2"><TTL>Release Devices</TTL><BRK />
+<BRK />
+<TXT>Provide [wall] [floor] [door] mounted [Electromagnetic] [electromechanical] [free swinging] release devices connected 
+to [fire] [smoke] detecting devices.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3.10.6"><TTL>Power Assist and Low Energy Power Operated Doors</TTL><BRK />
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 4722</RID>. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.10.7"><TTL>Electromagnetic Locks</TTL><BRK />
+<BRK />
+<TXT>Provide electromagnetic locks that do not contain any moving parts and depend solely upon electromagnetism to 
+secure a portal by generating at least<MET> 5.3 kN</MET><ENG> 1200 pounds</ENG> of holding force. The lock must interface with the 
+local processors without external, internal or functional alteration of the local processor.  The electromagnetic 
+lock must incorporate an end of line resistor to facilitate line supervision by the system.  Provide metal-oxide 
+resistors (MOVs) to protect controllers from reverse current surges, if not incorporated into the electromagnetic 
+lock or local controller.</TXT><BRK />
+<BRK />
+<SPT outline="2.3.10.7.1"><TTL>Armature</TTL><BRK />
+<BRK />
+<TXT>Provide electromagnetic locks with internal circuitry to eliminate residual magnetism and inductive kickback.  
+Provide atuating armature that operates on 12 or 24 Volts dc and cannot dissipate more than 12 Watts.  Holding 
+current must be less than 500 milliamperes.  Actuating armature must take less than 300 milliseconds to change 
+the status of the lock from fully secure to fully open or fully open to fully secure.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.10.7.2"><TTL>Tamper Resistance</TTL><BRK />
+<BRK />
+<TXT>Provide lock mechanism encased in hardened guard barriers to deter forced entry.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.10.7.3"><TTL>Mounting Method</TTL><BRK />
+<BRK />
+<TXT>Provide electromagnetic lock suitable for use with single and double door with mortise or rim type hardware and 
+compatible with right or left hand mounting.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3.10.8"><TTL>Delayed Egress Locking System</TTL><BRK />
+<BRK />
+<TXT>Provide delayed egress product capable of allowing the door to be opened by actuating the lock which is equipped 
+with a 15-second maximum delayed feature including a zero-to-three second pre-delay.  The door shall be allowed 
+to close by action of the door closer.  Electrically re-lock the system so that the time delay is operative.  
+A force, not to exceed 67 N, shall be continuously applied on the door or release device allowing the door to 
+be opened after not more than 15 seconds.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.10.9"><TTL>Power and Manual Operated Revolving Pedestrian Doors</TTL><BRK />
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 1551</RID> for powered revolving pedestrian doors and <RID>JIS A 4721</RID> for manual operated 
+revolving pedestrian doors.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3.11"><TTL><SUB>Keying System</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Do not require higher levels of master keying than necessary because 
+each level decreases the security of the locks.  Specify a construction system 
+where necessary to ensure security after construction is complete.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide[ a [great][grand] master keying system][ an extension of the existing keying system.  Existing locks 
+were manufactured by [_____] and [do not] have interchangeable cores.][  Provide[ a construction master keying 
+system][ construction interchangeable cores].][  Provide key cabinet as specified.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.12"><TTL>Lock Trim</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For facilities that have not been certified as accessible only to able-bodied 
+personnel, specify lever handles for doors that will be accessible to disabled 
+persons and knurled or abrasive coated knobs and lever handles for doors that 
+are accessible to the visually impaired and that lead to dangerous areas.  When 
+only lever handles will be required, delete the paragraph KNOBS AND ROSES and 
+the first bracket statement in the paragraph LEVER HANDLES.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide cast, forged, or heavy wrought construction and commercial plain design for lock trim.</TXT><BRK />
+<BRK />
+<SPT outline="2.3.12.1"><TTL>Knobs and Roses</TTL><BRK />
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 4702</RID> and <RID>JIS A 1541-1</RID> for knobs, roses, and escutcheons.  For unreinforced knobs, 
+roses, and escutcheons, provide a<MET> 1.25 mm</MET><ENG> 0.050 inch</ENG> thickness.  For reinforced knobs, roses, and escutcheons, 
+provide an outer shell thickness of<MET> 0.89 mm</MET><ENG> 0.035 inch</ENG> and a combined total thickness of<MET> 1.78 mm</MET><ENG> 0.070 inch</ENG>, 
+except at knob shanks.  Provide knob shanks<MET> 1.52 mm</MET><ENG> 0.060 inch</ENG> thick.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.12.2"><TTL>Lever Handles</TTL><BRK />
+<BRK />
+<TXT>Provide lever handles [where indicated in the Hardware Schedule].  Provide lever handle locks with a breakaway 
+feature (such as a weakened spindle or a shear key) to prevent irreparable damage to the lock when force in excess 
+of that specified in <RID>JIS A 1541-1</RID> is applied to the lever handle.  Provide lever handles return to within<MET> 13 
+mm</MET><ENG> 1/2 inch</ENG> of the door face.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.12.3"><TTL>Texture</TTL><BRK />
+<BRK />
+<TXT>Provide knurled or abrasive coated knobs or lever handles for doors which are accessible to blind persons and 
+which lead to dangerous areas.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3.13"><TTL>Keys</TTL><BRK />
+<BRK />
+<TXT>[Furnish][Provide] one file key, one duplicate key, and one working key for each key change [and for each master 
+[and grand master] keying system].  [Furnish][Provide] one additional working key for each lock of each keyed-alike 
+group.[  [Furnish][Provide] two additional keys for each sleeping room.][  [Furnish][Provide] [[_____] great 
+grand master keys,] [[_____] construction master keys,] [and [_____] control keys for removable cores].][  [Furnish][Provide] 
+a quantity of key blanks equal to 20 percent of the total number of file keys.]  Stamp each key with appropriate 
+key control symbol and "U.S. property - do not duplicate."  Do not place room number on keys.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.14"><TTL>Door Bolts</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use chain and foot bolts for exceptionally high doors and where use of 
+flush bolts is impracticable.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 4702</RID>.  Provide dustproof strikes for bottom bolts, except at doors having metal 
+thresholds.  Provide automatic latching flush bolts to meet operational requirements.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.15"><TTL>Closers</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use closers Type C02011 with o.f. PT 4C for surface applications, except 
+use parallel arm closers, C02021, on outswinging exterior doors.  Specify holder 
+arms, C02051 and C02061, where doors must be held open from 90 degrees to 135 
+degrees, or to 180 degrees where desired.  Do not use holder arms for fire-rated 
+doors.  Use overhead concealed closers on main entrance doors of monumental 
+buildings, double-acting doors, and for other openings where concealment is 
+necessary.  Avoid overhead concealed closers with wood doors.  Where they cannot 
+be avoided, modify section on wood doors to require a<MET> 125 mm</MET><ENG> 5 inch</ENG> head rail.  
+Avoid use of floor-concealed closers, but where required, ascertain that floor 
+slab design will not interfere with closer case.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Insert the bracketed paragraph for all doors in humid conditions or project 
+locations with Environmnental Severity Classifications (ESC) of C3 thru C5.  
+Humid locations are those in ASHRAE climate zones 0A, 1A, 2A, 3A, 3C, 4C and 
+5C (as identified in ASHRAE 90.1).  See UFC 1-200-01 for determination of ESC 
+for project locations.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 1510-3</RID>.  Provide with brackets, arms, mounting devices, fasteners, [full size 
+covers, except at storefront mounting,] [pivots,] [cement cases,] and other features necessary for the particular 
+application.  Size closers in accordance with manufacturer's printed recommendations, or provide multi-size closers, 
+Sizes 1 through 6, and list sizes in the Hardware Schedule.  Provide manufacturer's 10 year warranty.</TXT><BRK />
+<BRK />
+[<TXT>Use stainless steel inside bracketed or door mounted closers on exterior doors.  Non-ferrous closers, such as 
+aluminum or cast bronze, are permissible where door utilization is minimal.  On interior doors use closers of 
+302 or 304 stainless steel or non-ferrous materials.  On surface-mounted closers use or apply rust inhibiting 
+finish on all ferrous parts.  Also apply this finish on concealed closers.</TXT><BRK />
+<BRK />
+]<SPT outline="2.3.15.1"><TTL>Identification Marking</TTL><BRK />
+<BRK />
+<TXT>Engrave each closer with manufacturer's name or trademark, date of manufacture, and manufacturer's size designation 
+in locations that will be  visible after installation.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3.16"><TTL>Overhead Holders</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use overhead holders for doors which will not swing 180 degrees and where 
+there is no adjacent wall to accommodate wall type holder and stop.  If holder 
+must be on outside of doors, specify bronze with satin chrome finish.  Overhead 
+holders can be specified as "Stop Only" where the hold open feature is not desirable.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 1510-3</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.17"><TTL>Door Protection Plates</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use pulls attached to plates.  Use<MET> 200 by 400 mm</MET><ENG> 8 by 16 inch</ENG> push plates 
+where door design permits.  Use push bars or push and pull bars on all-glass 
+doors.  Use kick plates for push sides of doors equipped with closers.  Use 
+door plates in high traffic areas and where damage from rolling carts, shoe 
+scuffs, and other potential damage to the bottom of doors is likely.  Use door 
+plates for hospital and clinic environments.  Use armor plates on heavy-duty 
+doors where hand trucks or other heavy objects regularly passing through the 
+door could cause damage.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 4702</RID>.</TXT><BRK />
+<BRK />
+<SPT outline="2.3.17.1"><TTL>Sizes of [Armor] [Mop] [and] Kick Plates</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  NFPA 80 requires that door plates be not more than<MET> 400 mm</MET><ENG> 16 inch</ENG> high.  
+Where wheelchair traffic is anticipated, kick plates should be<MET> 400 mm</MET><ENG> 16 inch</ENG>
+ high.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT><MET>50 mm</MET><ENG>2 inch</ENG> less than door width for single doors;<MET> 25 mm</MET><ENG> 1 inch</ENG> less than door width for pairs of doors.  Provide 
+[<MET>[200] [1200] mm </MET><ENG>[8] [10] inch</ENG> kick plates for flush doors] [and] [<MET>125 mm</MET><ENG>1 inch</ENG> less than height of bottom rail 
+for panel doors].  Provide a minimum<MET> [900] [1200] [_____] mm</MET><ENG> [36] [48] [_____] inch</ENG> armor plates for flush doors 
+[and] completely cover lower panels of panel doors, except<MET> 400 mm</MET><ENG> 16 inch</ENG> high armor plates on fire doors.  Provide<MET>
+ [100] [150] mm</MET><ENG> [4] [6] inch</ENG> mop plates.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.17.2"><TTL>Edge Guards</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Edge guards should be detailed on drawings; stipulate items such as material, 
+gauge, and dimensions.  Use edge guards in addition to armor plates on heavy-duty 
+doors where hand trucks or other heavy objects passing through could damage 
+doors.  They are not required at hinge stiles on doors equipped with "swing 
+clear" hinges.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Stainless steel, of same height as armor plates.  Apply to [hinge stile] [lock stile] [meeting stiles].</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3.18"><TTL>Door Stops and Silencers</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify wall bumpers wherever practical, except where they would be mounted 
+on stud walls or partitions.  Use floor stops only where necessary to prevent 
+doors from hitting towel bars or similar items, as they create stumbling hazards 
+and interfere with floor cleaning equipment.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 4702</RID>.  Provide three silencers for each single door, two for each pair.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.19"><TTL>Padlocks</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  See referenced specification for types, grades and options available.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide padlock of [solid extruded brass] [stainless steel]. [Shackle to be cut-resistant]. Provide lock functions 
+consisting of [key retained], [non-key retained], [frangible shackle], [double lockout], [weather cover], [car 
+seal slot].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.20"><TTL>Thresholds</TTL><BRK />
+<BRK />
+<TXT>Use vinyl or silicone rubber insert in face of stop, for exterior doors opening out, unless specified otherwise.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.21"><TTL>Weatherstripping Gasketing</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Weatherstripping is also specified in Section <SRF>08 11 13</SRF> STEEL DOORS AND 
+FRAMES Section <SRF>08 11 16</SRF> ALUMINUM DOORS AND FRAMES and Section <SRF>08 14 00</SRF> WOOD 
+DOORS.  Coordinate requirements to avoid conflict and duplication.  Do not use 
+interlocking type or spring tension type on metal doors and frames.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Maximum air leakage rates are<MET> 2.19 by 10-5 cms per sq m</MET><ENG> 0.5 cfm per sq. 
+ft.</ENG> of door area for residential swinging doors and<MET> 5.48 by 10-5 cms per sq 
+m</MET><ENG> 1.25 cfm per sq. ft.</ENG> of door area for non-residential swinging doors.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 5756</RID>.  Provide the type and function designation where specified in paragraph 
+HARDWARE SCHEDULE.  Provide a set to include head and jamb seals[, sweep strips,] [and, for pairs of doors, astragals].  
+Air leakage of weatherstripped doors not to exceed<MET> [2.19 by 10-5] [5.48 by 10-5] cms</MET><ENG> [0.5] [1.25] cubic feet</ENG> 
+per minute of air per square<MET> meter</MET><ENG> foot</ENG> of door area when tested in accordance with <RID>JIS A 1516</RID>.  Provide weatherstripping 
+with one of the following:</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  At exterior doors, retainers at sills are necessary for air leakage and 
+for weather and vermin protection.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="2.3.21.1"><TTL>Extruded Aluminum Retainers</TTL><BRK />
+<BRK />
+<TXT>Extruded aluminum retainers not less than<MET> 1.25 mm</MET><ENG> 0.050 inch</ENG> wall thickness with vinyl, neoprene, silicone rubber, 
+or polyurethane inserts.  Provide [clear (natural)] [bronze] anodized aluminum.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.21.2"><TTL>Interlocking Type</TTL><BRK />
+<BRK />
+<TXT>Zinc or bronze not less than<MET> 0.45 mm</MET><ENG> 0.018 inch</ENG> thick.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.21.3"><TTL>Spring Tension Type</TTL><BRK />
+<BRK />
+<TXT>Spring bronze or stainless steel not less than<MET> 0.20 mm</MET><ENG> 0.008 inch</ENG> thick.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3.22"><TTL>[Lightproofing] [and] [Soundproofing] Gasketing</TTL><BRK />
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 5756</RID>.  Provide adjustable doorstops at heads,jambs and automatic door bottoms 
+in accordance with the hardware set, of extruded aluminum, [clear (natural)] [bronze] anodized, surface applied, 
+with vinyl fin seals between plunger and housing.  Provide doorstops with solid neoprene tube, silicone rubber, 
+or closed cell sponge gasket.  Provide door bottoms with adjustable operating rod and silicone rubber or closed 
+cell sponge neoprene gasket.  Provide doorstops that are mitered at corners.  Provide type and function designation 
+where specified in paragraph HARDWARE SETS.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  At exterior doors that are not protected by a horizontal projection such 
+as an awning, roof, or eave, specify rain drips that overlap each side of each 
+door at the head of such exposed doors by choosing the bracketed item below.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK /></SPT>
+<SPT outline="2.3.23"><TTL>Rain Drips</TTL><BRK />
+<BRK />
+<TXT>Provide extruded aluminum rain drips, not less than<MET> 2.03 mm</MET><ENG> 0.08 inch</ENG> thick, [clear anodized] [bronze anodized] 
+[factory painted] [factory primed] finish.  Provide the manufacturer's full range of color choices to the Contracting 
+Officer for color selection.[  Provide rain drips with a<MET> 102 mm</MET><ENG> 4 inch</ENG> overlap on each side of each exterior 
+door that is not protected by an awning, roof, eave or other horizontal projection.]  Set drips in sealant and 
+fasten with stainless steel screws.</TXT><BRK />
+<BRK />
+<SPT outline="2.3.23.1"><TTL>Door Rain Drips</TTL><BRK />
+<BRK />
+<TXT>Approximately<MET> 38 mm high by 16 mm</MET><ENG> 1-1/2 inch high by 5/8 inch</ENG> projection.  Align bottom with bottom edge of door.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.23.2"><TTL>Overhead Rain Drips</TTL><BRK />
+<BRK />
+<TXT>Approximately<MET> 38 mm high by 64 mm</MET><ENG> 1-1/2 inch high by 2-1/2 inch</ENG> projection.  Align bottom with door frame rabbet.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3.24"><TTL>Auxiliary Hardware (Other than locks)</TTL><BRK />
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 4702</RID>. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.25"><TTL>Sliding and Folding Door Hardware</TTL><BRK />
+<BRK />
+<TXT>Provide in accordance with <RID>JIS A 1525</RID>.  Finishes to match other hardware specified herein.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.26"><TTL>Special Tools</TTL><BRK />
+<BRK />
+<TXT>Provide special tools, such as spanner and socket wrenches and dogging keys, as required to service and adjust 
+hardware items.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.4"><TTL>FASTENERS</TTL><BRK />
+<BRK />
+<TXT>Provide fasteners of type, quality, size, and quantity appropriate to the specific application.  Fastener finish 
+to match hardware.  Provide stainless steel or nonferrous metal fasteners in locations exposed to weather.  Verify 
+metals in contact with one another are compatible and will avoid galvanic corrosion when exposed to weather.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5"><TTL>FINISHES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Choose one of the following options. Choose the first option for new 
+buildings.  Choose the second option only where necessary to match the finish 
+on existing hardware.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use stainless steel in bathroom and toilet locations and in project locations 
+with Environmental Severity Classifications (ESC) of C3 through C5.  See UFC 
+1-200-01 for determination of ESC for project locations.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+[<TXT>Provide in accordance with <RID>JIS A 1541-2</RID>.  Provide hardware in satin stainless steel, unless specified otherwise.  
+Provide items not manufactured in stainless steel in satin chromium plated over brass or bronze, except [aluminum 
+paint] [prime coat] finish for surface door closers, and except satin chromium plated [primed for painting] for 
+steel hinges.  Provide hinges for exterior doors in stainless steel finish [or chromium plated brass or bronze 
+finish].  Furnish exit devices in satin chrome finish in lieu of stainless steel finish [except where specified 
+under paragraph HARDWARE SETS].  Match exposed parts of concealed closers to lock and door trim.  Match hardware 
+finish for aluminum doors to the doors.</TXT><BRK />
+<BRK />
+][<TXT>Provide in accordance with <RID>JIS A 1541-2</RID>.  Provide hardware in satin bronze, unless specified otherwise.  Finish 
+surface door closers [bronze paint] [prime coat] finish.  Provide steel hinges in [satin bronze plated] [primed 
+for painting].  Provide exposed parts of concealed closers finish to match lock and door trim.  Match hardware 
+finish for aluminum doors to match the doors.  Provide hardware showing on interior of [bathrooms] [shower rooms] 
+[toilet rooms] [washrooms] [laundry rooms] [and kitchens] in bright stainless steel or bright chromium plated.</TXT><BRK />
+<BRK />
+]</SPT><SPT outline="2.6"><TTL>KEY CABINET AND CONTROL SYSTEM</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Key cabinets hold keys on panels.  Systems include materials and devices 
+for recording and cross-referencing data on use and location of locks and keys.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide in accordance with project requirements, [[(25 hooks)] [(125 hooks)] [(150 hooks)] [(600 hooks)] [(700 
+hooks)].]  [Type required to yield a capacity (number of hooks) 50 percent greater than the number of key changes 
+used for door locks.]</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL><SUB>INSTALLATION</SUB></TTL><BRK />
+<BRK />
+<TXT>Provide hardware in accordance with manufacturers' printed installation instructions. Fasten hardware to wood 
+surfaces with full-threaded wood screws or sheet metal screws.  Provide machine screws set in expansion shields 
+for fastening hardware to solid concrete and masonry surfaces.  Provide toggle bolts where required for fastening 
+to hollow core construction.  Provide through bolts where necessary for satisfactory installation.</TXT><BRK />
+<BRK />
+<SPT outline="3.1.1"><TTL>Weatherstripping Installation</TTL><BRK />
+<BRK />
+<TXT>Provide full contact, weathertight seals that allow operation of doors without binding the weatherstripping.</TXT><BRK />
+<BRK />
+<SPT outline="3.1.1.1"><TTL>Stop Applied Weatherstripping</TTL><BRK />
+<BRK />
+<TXT>Fasten in place with color matched sheet metal screws not more than<MET> 225 mm</MET><ENG> 9 inch</ENG> on center after doors and frames 
+have been finish painted.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.1.2"><TTL>Interlocking Type Weatherstripping</TTL><BRK />
+<BRK />
+<TXT>Provide interlocking, self adjusting type on heads and jambs and flexible hook type at sills.  Nail weatherstripping 
+to door<MET> 25 mm</MET><ENG> 1 inch</ENG> on center and to heads and jambs at<MET> 100 mm</MET><ENG> 4 inch</ENG> on center.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.1.3"><TTL>Spring Tension Type Weatherstripping</TTL><BRK />
+<BRK />
+<TXT>Provide spring tension type on heads and jambs.  Provide bronze nails with bronze.  Provide stainless steel nails 
+with stainless steel.  Space nails not more than<MET> 38 mm</MET><ENG> 1-1/2 inch</ENG> on center.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.1.2"><TTL>[Lightproofing] [and] [Soundproofing] Installation</TTL><BRK />
+<BRK />
+<TXT>Provide as specified for stop applied weatherstripping.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.3"><TTL>Threshold Installation</TTL><BRK />
+<BRK />
+<TXT>Extend thresholds the full width of the opening and notch end for jamb stops.  Set thresholds in a full bed of 
+sealant and anchor to floor with cadmium-plated, countersunk, steel screws[ in expansion sleeves].  For aluminum 
+thresholds placed on top of concrete surfaces, coat the underside surfaces that are in contact with the concrete 
+with fluid applied waterproofing as a separation measure prior to placement.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2"><TTL>FIRE DOORS AND EXIT DOORS</TTL><BRK />
+<BRK />
+<TXT>Provide hardware in accordance with <RID>NFPA 72</RID> for door alarms, <RID>NFPA 80</RID> for fire doors, <RID>NFPA 101</RID> for exit doors, 
+and <RID>NFPA 252</RID> for fire tests of door assemblies.  [Provide tin-clad fire doors in accordance with <RID>UL 14C</RID>].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3"><TTL>HARDWARE LOCATIONS</TTL><BRK />
+<BRK />
+<TXT>Provide as indicated or specified otherwise.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Kick and Armor Plates:  Push side of single-acting doors.  Both sides of double-acting doors.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Mop Plates:  Bottom flush with bottom of door.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.4"><TTL>KEY CABINET AND CONTROL SYSTEM</TTL><BRK />
+<BRK />
+<TXT>Locate where [directed][indicated].  Tag one set of file keys and one set of duplicate keys.  Place other keys 
+in appropriately marked envelopes, or tag each key.  Provide complete instructions for setup and use of key control 
+system.  On tags and envelopes, indicate door and room numbers or master or grand master key.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5"><TTL>FIELD QUALITY CONTROL</TTL><BRK />
+<BRK />
+<TXT>After installation, protect hardware from paint, stains, blemishes, and other damage until acceptance of work.  
+Submit notice of testing 15 days before scheduled, so that testing can be witnessed by the Contracting Officer.  
+Adjust hinges, locks, latches, bolts, holders, closers, and other items to operate properly.  <TST>Demonstrate that 
+permanent keys operate respective locks, and give keys to the Contracting Officer.</TST>  Correct, repair, and finish, 
+errors in cutting and fitting and damage to adjoining work.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.6"><TTL>HARDWARE SETS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Coordinate this section with Section <SRF>08 11 16</SRF> ALUMINUM DOORS AND FRAMES.</NPR><BRK />
+<BRK />
+<NPR>Either list hardware set numbers on the drawings or list doors by number in 
+each hardware set.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide [hardware for aluminum doors under this section.  Deliver Hardware templates and hardware, except field 
+applied hardware, to the aluminum door and frame manufacturer for use in fabricating doors and frames.]</TXT><BRK />
+<BRK /></SPT>
+</PRT>    <END /><BRK /></SEC>

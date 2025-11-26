@@ -1,0 +1,930 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><BRK />
+<HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                  UFGS-01 78 00 (May 2019)<BRK />
+                                               ---------------------------<BRK />
+Preparing Activity:  <PRA>USACE</PRA>                     Superseding<BRK />
+                                               UFGS-01 78 00 (August 2011)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 01 78 00</SCN><BRK />
+<BRK />
+<STL>CLOSEOUT SUBMITTALS</STL><BRK />
+<DTE>05/19</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>closeout submittals 
+including:  revised project documents, warranty management, testing, adjusting 
+and balancing, O &amp; M manuals, and cleanup</SCP>.</NPR><BRK />
+<BRK />
+<NPR>Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.</NPR><BRK />
+<BRK />
+<NPR>This guide specification includes tailoring options for DESIGN-BID-BUILD (DBB), 
+DESIGN-BUILD (DB), ARMY, NAVY, AIR FORCE and NASA projects.  Selection or deselection 
+of a tailoring option will include or exclude that option in the section, but 
+editing the resulting section to fit the project is still required.  This guide 
+specification also includes tailoring options for BIM and Advanced BIM Modeling 
+and is tailored for ARMY and AIR FORCE.</NPR><BRK />
+<BRK />
+<NPR>Remove information and requirements not required in respective project, whether 
+or not brackets are present.</NPR><BRK />
+<BRK />
+<NPR>Comments and suggestions on this guide specification are welcome and should 
+be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Coordinate with the customer regarding special warranty requirements 
+and options.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification.  The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK />
+<BRK />
+Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<BRK />
+<BRK />
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK />
+<BRK />
+<RID>ASTM E1971</RID><RTL>(2005; R 2011) Stewardship for the Cleaning 
+of Commercial and Institutional Buildings</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>GREEN SEAL (GS)</ORG><BRK />
+<BRK />
+<RID>GS-37</RID><RTL>(2017) Cleaning Products for Industrial and 
+Institutional Use</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>SPATIAL DATA 
+STANDARD FOR FACILITIES, INFRASTRUCTURE, AND ENVIRONMENT (SDSFIE)</ORG><BRK />
+<BRK />
+<RID>SDSFIE 3.1.0.1</RID><RTL>(2015) Air Force Data Model</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. ARMY CORPS OF ENGINEERS (USACE)</ORG><BRK />
+<BRK />
+<RID>EM 1110-1-2909</RID><RTL>(2012) Geospatial Data and Systems</RTL><BRK />
+<BRK />
+<RID>ERDC/ITL TR-12-1</RID><RTL>(2015) A/E/C Graphics Standard, Release 2.0</RTL><BRK />
+<BRK />
+<RID>ERDC/ITL TR-12-6</RID><RTL>(2015) A/E/C CAD Standard - Release 6.0</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. DEPARTMENT OF DEFENSE (DOD)</ORG><BRK />
+<BRK />
+<RID>FC 1-300-09N</RID><RTL>(2014; with Change 4, 2018) Navy and Marine 
+Corps Design</RTL><BRK />
+<BRK />
+<RID>UFC 1-300-08</RID><RTL>(2009, with Change 2, 2011) Criteria for Transfer 
+and Acceptance of DoD Real Property</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>DEFINITIONS</TTL><BRK />
+<BRK />
+<SPT outline="1.2.1"><TTL>As-Built Drawings</TTL><BRK />
+<BRK />
+<TXT>As-built drawings are the marked-up drawings, maintained by the Contractor on-site, that depict actual conditions 
+and deviations from the Contract Documents.  These deviations and additions may result from coordination required 
+by, but not limited to: contract modifications; official responses to submitted Requests for Information (RFI's); 
+direction from the Contracting Officer; design that is the responsibility of the Contractor, and differing site 
+conditions.  Maintain the as-builts throughout construction as red-lined hard copies on site and/or red-lined 
+PDF files.  These files serve as the basis for the creation of the record drawings.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2.2"><TTL>Record Drawings</TTL><BRK />
+<BRK />
+<TXT>The record drawings are the final compilation of actual conditions reflected in the as-built drawings.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2.3"><TTL>USACE CAD/BIM Technology Center</TTL><BRK />
+<BRK />
+<TXT>The USACE CAD/BIM Technology Center hosts all standard content for USACE.  This content can be accessed through 
+the CAD/BIM Technology Center website, <URL HREF="https://cadbimcenter.erdc.dren.mil">https://cadbimcenter.erdc.dren.mil/</URL>.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.3"><TTL>SOURCE DRAWING FILES</TTL><BRK />
+<BRK />
+<TXT>Request the full set of electronic drawings, in the source format, for Record Drawing preparation, after award 
+and at least 30 days prior to required use.</TXT><BRK />
+<BRK />
+<SPT outline="1.3.1"><TTL>Terms and Conditions</TTL><BRK />
+<BRK />
+<TXT>Data contained on these electronic files must not be used for any purpose other than as a convenience in the 
+preparation of construction <TAI OPT="DESIGN-BUILD">drawings and </TAI>data for the referenced project.  Any other use or reuse shall be at 
+the sole risk of the Contractor and without liability or legal exposure to the Government.  The Contractor must 
+make no claim and waives to the fullest extent permitted by law, any claim or cause of action of any nature against 
+the Government, its agents or sub consultants that may arise out of or in connection with the use of these electronic 
+files.  The Contractor must, to the fullest extent permitted by law, indemnify and hold the Government harmless 
+against all damages, liabilities or costs, including reasonable attorney's fees and defense costs, arising out 
+of or resulting from the use of these electronic files.</TXT><BRK />
+<BRK />
+<TXT>These electronic CAD drawing files are not construction documents.  Differences may exist between the CAD files 
+and the corresponding construction documents.  The Government makes no representation regarding the accuracy 
+or completeness of the electronic CAD files, nor does it make representation to the compatibility of these files 
+with the Contractor hardware or software.  In the event that a conflict arises between the signed and sealed 
+construction documents prepared by the Government and the furnished Source drawing files, the signed and sealed 
+construction documents govern.  The Contractor is responsible for determining if any conflict exists.  Use of 
+these Source Drawing files does not relieve the Contractor of duty to fully comply with the contract documents, 
+including and without limitation, the need to check, confirm and coordinate the work of all contractors for the 
+project.  If the Contractor uses, duplicates or modifies these electronic source drawing files for use in producing 
+construction <TAI OPT="DESIGN-BUILD">drawings and</TAI>data related to this contract, remove all previous indicia of ownership (seals, logos, 
+signatures, initials and dates).</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.4"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.<BRK />
+<BRK />
+The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G."  Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a &#8220;G&#8221; to an item, if the submittal is sufficiently important or complex 
+in context of the project.<BRK />
+<BRK />
+For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office.  Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.<BRK />
+<BRK />
+The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
+submittal under the SD number that best describes the submittal item.<BRK />
+<BRK />
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; <TAI OPT="DESIGN-BID-BUILD">submittals not having a "G" designation 
+are for information only</TAI><TAI OPT="DESIGN-BUILD">submittals not having a "G" designation are for Contractor Quality Control or Designer 
+of Record approval</TAI>. Submit the following in accordance with Section <SRF>01 33 00</SRF>SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-03 Product Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Warranty Management Plan</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Warranty Tags</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Final Cleaning</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Spare Parts Data</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Spare Parts And Spare Parts Data</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-08 Manufacturer's Instructions</SUB></LST><BRK />
+<BRK />
+<ITM>Posted <SUB>Instructions</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-10 Operation and Maintenance Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Operation and Maintenance Manuals</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-11 Closeout Submittals</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>As-Built Drawings</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Record Drawings</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>As-Built Record of Equipment and Materials</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Final Approved Shop Drawings</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Construction Contract Specifications</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Interim DD FORM 1354</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Checklist for DD FORM 1354</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<BRK /></SPT>
+<SPT outline="1.5"><TTL><SUB>SPARE PARTS AND SPARE PARTS DATA</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Following sentence contains tailoring for NAVFAC NW for four copies.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Submit two copies of the <SUB>Spare Parts Data</SUB> list.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Supply the necessary quantity of items of each part for spare parts required by this contract, identified 
+in the technical specification herein. Indicate manufacturer's name, part number, nomenclature, and stock 
+level required for maintenance and repair.  List those items that may be standard to the normal maintenance 
+of the system.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="1.6"><TTL>QUALITY CONTROL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This subpart is tailored for ARMY and NASA use only.  Do not use this 
+paragraph for NAVY projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Additions and corrections to the contract drawings must be equal in quality and detail to that of the originals.  
+Line colors, line weights, lettering, layering conventions, and symbols must be the same as the original line 
+colors, line weights, lettering, layering conventions, and symbols.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.7"><TTL>WARRANTY MANAGEMENT</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  A warranty package based on a cost/benefit determination will be established 
+with the customer at the beginning of a project.  Coordinate with the customer 
+regarding special warranty requirements and options.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use four sets for NAVFAC NW.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.7.1"><TTL><SUB>Warranty Management Plan</SUB></TTL><BRK />
+<BRK />
+<TXT>Develop a warranty management plan which contains information relevant to FAR 52.246-21 Warranty of Construction.  
+At least 30 days before the planned pre-warranty conference, submit one set of the warranty management plan.  
+Include within the warranty management plan all required actions and documents to assure that the Government 
+receives all warranties to which it is entitled.  The plan narrative must contain sufficient detail to render 
+it suitable for use by future maintenance and repair personnel, whether tradesmen, or of engineering background, 
+not necessarily familiar with this contract.  The term "status" as indicated below must include due date and 
+whether item has been submitted or was accomplished.  Submit warranty information, made available during the 
+construction phase,  to the Contracting Officer for approval prior to each monthly pay estimate.  Assemble approved 
+information in a binder and turn over to the Government upon acceptance of the work.  The construction warranty 
+period must begin on the date of project acceptance and continue for the full product warranty period.  Conduct 
+a joint 4 month and 9 month warranty inspection, measured from time of acceptance; with the Contractor, Contracting 
+Officer and the Customer Representative.  The warranty management plan must include, but is not limited to, the 
+following:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Roles and responsibilities of personnel associated with the warranty process, including points of 
+contact and telephone numbers within the organizations of the Contractors, subcontractors, manufacturers 
+or suppliers involved.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  For each warranty, the name, address, telephone number, and email of each of the guarantor's representatives 
+nearest to the project location.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  A list and status of delivery of Certificates of Warranty for extended warranty items, including 
+roofs, HVAC balancing, pumps, motors, transformers, and for commissioned systems, such as fire protection 
+and alarm systems, sprinkler systems, and lightning protection systems.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  <SUB>As-Built Record of Equipment and Materials</SUB> list for each warranted equipment, item, feature of construction 
+or system indicating:</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1)  Name of item.</ITM><BRK />
+<ITM INDENT="-0.33">(2)  Model and serial numbers.</ITM><BRK />
+<ITM INDENT="-0.33">(3)  Location where installed.</ITM><BRK />
+<ITM INDENT="-0.33">(4)  Name and phone numbers of manufacturers or suppliers.</ITM><BRK />
+<ITM INDENT="-0.33">(5)  Warranties and terms of warranty.  Include one-year overall warranty of construction, including 
+the starting date of warranty of construction.  Items which have extended warranties must be 
+indicated with separate warranty expiration dates.</ITM><BRK />
+<ITM INDENT="-0.33">(6)  Cross-reference to warranty certificates as applicable.</ITM><BRK />
+<ITM INDENT="-0.33">(7)  Starting point and duration of warranty period.</ITM><BRK />
+<ITM INDENT="-0.33">(8)  Summary of maintenance procedures required to continue the warranty in force.</ITM><BRK />
+<ITM INDENT="-0.33">(9) Cross-reference to specific pertinent Operation and Maintenance manuals.</ITM><BRK />
+<ITM INDENT="-0.33">(10) Organization, names and phone numbers of persons to call for warranty service.</ITM><BRK />
+<ITM INDENT="-0.33">(11) Typical response time and repair time expected for various warranted equipment.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  The plans for attendance at the 4 and 9 month post-construction warranty inspections conducted by 
+the Government.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Procedure and status of tagging of equipment covered by extended warranties.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  Copies of <SUB>instructions</SUB> to be posted near selected pieces of equipment where operation is critical 
+for warranty or safety reasons.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="1.7.2"><TTL>Performance Bond</TTL><BRK />
+<BRK />
+<TXT>The Performance Bond must remain effective throughout the construction period.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use the bracketed item if the bond must extend beyond the construction 
+period; coordinate requirement with the Contracting Officer.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<LST INDENT="-0.33">a.  In the event the Contractor fails to commence and diligently pursue any construction warranty work 
+required, the Contracting Officer will have the work performed by others, and after completion of the 
+work, will charge the remaining construction warranty funds of expenses incurred by the Government while 
+performing the work, including, but not limited to administrative expenses.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  In the event sufficient funds are not available to cover the construction warranty work performed 
+by the Government at the Contractor's expense, the Contracting Officer will have the right to recoup 
+expenses from the bonding company.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Following oral or written notification of required construction warranty repair work, respond in 
+a timely manner.  Written verification will follow oral instructions.  Failure to respond will be cause 
+for the Contracting Officer to proceed against the Contractor.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="1.7.3"><TTL>Pre-Warranty Conference</TTL><BRK />
+<BRK />
+<TXT>Prior to contract completion, and at a time designated by the Contracting Officer, meet with the Contracting 
+Officer to develop a mutual understanding with respect to the requirements of this section.  At this meeting, 
+establish and review communication procedures for Contractor notification of construction warranty defects, priorities 
+with respect to the type of defect, reasonable time required for Contractor response, and other details deemed 
+necessary by the Contracting Officer for the execution of the construction warranty  In connection with these 
+requirements and at the time of the Contractor's quality control completion inspection, furnish the name, telephone 
+number and address of a licensed and bonded company which is authorized to initiate and pursue construction warranty 
+work action on behalf of the Contractor.  This point of contact must be located within the local service area 
+of the warranted construction, be continuously available, and be responsive to Government inquiry on warranty 
+work action and status.  This requirement does not relieve the Contractor of any of its responsibilities in connection 
+with other portions of this provision.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.7.4"><TTL>Contractor's Response to Construction Warranty Service Requirements</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This subpart is tailored for ARMY and NASA only.  Delete this paragraph 
+for NAVY projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Following oral or written notification by the Contracting Officer, respond to construction warranty service requirements 
+in accordance with the "Construction Warranty Service Priority List" and the three categories of priorities listed 
+below.  Submit a report on any warranty item that has been repaired during the warranty period.  Include within 
+the report the cause of the problem, date reported, corrective action taken, and when the repair was completed.  
+If the Contractor does not perform the construction warranty within the timeframe specified, the Government will 
+perform the work and back charge the construction warranty payment item established.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  First Priority Code 1.  Perform onsite inspection to evaluate situation, and determine course of 
+action within 4 hours, initiate work within 6 hours and work continuously to completion or relief.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Second Priority Code 2.  Perform onsite inspection to evaluate situation, and determine course of 
+action within 8 hours, initiate work within 24 hours and work continuously to completion or relief.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Third Priority Code 3.  All other work to be initiated within 3 work days and work continuously to 
+completion or relief.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  The "Construction Warranty Service Priority List" is as follows:</LST><BRK />
+<BRK />
+<LST>Code 1-Life Safety Systems</LST><BRK />
+<ITM INDENT="-0.33">(1)  Fire suppression systems.</ITM><BRK />
+<ITM INDENT="-0.33">(2)  Fire alarm system(s) in place in the building.</ITM><BRK />
+<BRK />
+<LST>Code 1-Air Conditioning Systems</LST><BRK />
+<ITM INDENT="-0.33">(1)  Recreational support.</ITM><BRK />
+<ITM INDENT="-0.33">(2)  Air conditioning leak in part of building, if causing damage.</ITM><BRK />
+<ITM INDENT="-0.33">(3)  Air conditioning system not cooling properly.</ITM><BRK />
+<BRK />
+<LST>Code 1-Doors</LST><BRK />
+<ITM INDENT="-0.33">(1)  Overhead doors not operational, causing a security, fire, or safety problem.</ITM><BRK />
+<ITM INDENT="-0.33">(2)  Interior, exterior personnel doors or hardware, not functioning properly, causing a security, 
+fire, or safety problem.</ITM><BRK />
+<BRK />
+<LST>Code 3-Doors</LST><BRK />
+<ITM INDENT="-0.33">(1)  Overhead doors not operational.</ITM><BRK />
+<ITM INDENT="-0.33">(2)  Interior/exterior personnel doors or hardware not functioning properly.</ITM><BRK />
+<BRK />
+<LST>Code 1-Electrical</LST><BRK />
+<ITM INDENT="-0.33">(1)  Power failure (entire area or any building operational after 1600 hours).</ITM><BRK />
+<ITM INDENT="-0.33">(2)  Security lights</ITM><BRK />
+<ITM INDENT="-0.33">(3)  Smoke detectors</ITM><BRK />
+<BRK />
+<LST>Code 2-Electrical</LST><BRK />
+<ITM INDENT="-0.33">(1)  Power failure (no power to a room or part of building).</ITM><BRK />
+<ITM INDENT="-0.33">(2)  Receptacle and lights (in a room or part of building).</ITM><BRK />
+<BRK />
+<LST>Code 3-Electrical</LST><BRK />
+<ITM INDENT="-0.33">Street lights.</ITM><BRK />
+<BRK />
+<LST>Code 1-Gas</LST><BRK />
+<ITM INDENT="-0.33">(1)  Leaks and breaks.</ITM><BRK />
+<ITM INDENT="-0.33">(2)  No gas to family housing unit or cantonment area.</ITM><BRK />
+<BRK />
+<LST>Code 1-Heat</LST><BRK />
+<ITM INDENT="-0.33">(1)  Area power failure affecting heat.</ITM><BRK />
+<ITM INDENT="-0.33">(2)  Heater in unit not working.</ITM><BRK />
+<BRK />
+<LST>Code 2-Kitchen Equipment</LST><BRK />
+<ITM INDENT="-0.33">(1)  Dishwasher not operating properly.</ITM><BRK />
+<ITM INDENT="-0.33">(2)  All other equipment hampering preparation of a meal.</ITM><BRK />
+<BRK />
+<LST>Code 1-Plumbing</LST><BRK />
+<ITM INDENT="-0.33">(1)  Hot water heater failure.</ITM><BRK />
+<ITM INDENT="-0.33">(2)  Leaking water supply pipes.</ITM><BRK />
+<BRK />
+<LST>Code 2-Plumbing</LST><BRK />
+<ITM INDENT="-0.33">(1)  Flush valves not operating properly.</ITM><BRK />
+<ITM INDENT="-0.33">(2)  Fixture drain, supply line to commode, or any water pipe leaking.</ITM><BRK />
+<ITM INDENT="-0.33">(3)  Commode leaking at base.</ITM><BRK />
+<BRK />
+<LST>Code 3  -Plumbing</LST><BRK />
+<ITM INDENT="-0.33">Leaky faucets.</ITM><BRK />
+<BRK />
+<LST>Code 3-Interior</LST><BRK />
+<ITM INDENT="-0.33">(1)  Floors damaged.</ITM><BRK />
+<ITM INDENT="-0.33">(2)  Paint chipping or peeling.</ITM><BRK />
+<ITM INDENT="-0.33">(3)  Casework.</ITM><BRK />
+<BRK />
+<LST>Code 1-Roof Leaks</LST><BRK />
+<ITM INDENT="-0.33">Temporary repairs will be made where major damage to property is occurring.</ITM><BRK />
+<BRK />
+<LST>Code 2-Roof Leaks</LST><BRK />
+<ITM INDENT="-0.33">Where major damage to property is not occurring, check for location of leak during rain and 
+complete repairs on a Code 2 basis.</ITM><BRK />
+<BRK />
+<LST>Code 2-Water (Exterior)</LST><BRK />
+<ITM INDENT="-0.33">No water to facility.</ITM><BRK />
+<BRK />
+<LST>Code 2-Water (Hot)</LST><BRK />
+<ITM INDENT="-0.33">No hot water in portion of building listed.</ITM><BRK />
+<BRK />
+<LST>Code 3-All other work not listed above.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="1.7.5"><TTL><SUB>Warranty Tags</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Paragraph below contains tailoring for NAVFAC NW for four copies.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>At the time of installation, tag each warranted item with a durable, oil and water resistant tag approved by 
+the Contracting Officer.  Attach each tag with a copper wire and spray with a silicone waterproof coating.  Also, 
+submit two record copies of the warranty tags showing the layout and design.  The date of acceptance and the 
+QC signature must remain blank until the project is accepted for beneficial occupancy.  Show the following information 
+on the tag.</TXT><BRK />
+<TXT><TAB HEADERROWS="0">
+<WBK>
+   <STS />
+   <TDA COLUMNCOUNT="2" ROWCOUNT="14">
+      <COL AUTOWIDTH="0" WIDTH="183.00" />
+      <COL AUTOWIDTH="0" WIDTH="388.50" />
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL>
+<DTA TYPE="STRING">Type of product/material</DTA>
+         </CEL>
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL>
+<DTA TYPE="STRING">Model number</DTA>
+         </CEL>
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL>
+<DTA TYPE="STRING">Serial number</DTA>
+         </CEL>
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL>
+<DTA TYPE="STRING">Contract number</DTA>
+         </CEL>
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL>
+<DTA TYPE="STRING">Warranty period from/to</DTA>
+         </CEL>
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL>
+<DTA TYPE="STRING">Inspector's signature</DTA>
+         </CEL>
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL>
+<DTA TYPE="STRING">Construction Contractor</DTA>
+         </CEL>
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL>
+<DTA TYPE="STRING">Address</DTA>
+         </CEL>
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL>
+<DTA TYPE="STRING">Telephone number</DTA>
+         </CEL>
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL>
+<DTA TYPE="STRING">Warranty contact</DTA>
+         </CEL>
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL>
+<DTA TYPE="STRING">Address</DTA>
+         </CEL>
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL>
+<DTA TYPE="STRING">Telephone number</DTA>
+         </CEL>
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL>
+<DTA TYPE="STRING">Warranty response time priority code</DTA>
+         </CEL>
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="44.25">
+         <CEL MERGEACROSS="1">
+<DTA TYPE="STRING">WARNING - PROJECT PERSONNEL TO PERFORM ONLY OPERATIONAL MAINTENANCE DURING THE WARRANTY PERIOD.</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB></TXT><BRK />
+<BRK /></SPT>
+</SPT></PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>RECORD DRAWINGS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is tailored for ARMY and NASA only.  Do not use for NAVY 
+projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use and edit this paragraph to specify CAD files compatible with the 
+customers CAD system.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Prepare the CAD drawing files in AutoCAD Release 2013 format <TAI OPT="ARMY">and Bentley Microstation V8i format </TAI>compatible with 
+a Windows 7 or higher operating system.</TXT><BRK />
+<BRK />
+<SPT outline="2.1.1"><TTL>Additional Drawings</TTL><BRK />
+<BRK />
+<TXT>If additional drawings are required, prepare them using the specified electronic file format applying the same 
+graphic standards specified for original drawings.  The title block and drawing border to be used for any new 
+final record drawings must be identical to that used on the contract drawings.</TXT><BRK />
+<BRK />
+<SPT outline="2.1.1.1"><TTL>Sheet Numbers and File Names</TTL><BRK />
+<BRK />
+<TXT>If a sheet needs to be added between two sequential sheets, append a Supplemental Drawing Designator in accordance 
+with <RID>ERDC/ITL TR-12-6</RID> Adding a drawing sheet, and <RID>ERDC/ITL TR-12-1</RID>.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="2.2"><TTL>PDF AS-BUILT FILES</TTL><BRK />
+<BRK />
+<TXT>Provide electronic PDF "plots" of all contract drawings sheets associated with the as-built drawing submittal.  
+Compile and organize the PDF set to match the contract drawings.  </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3"><TTL>REDLINES AND MARKUPS</TTL><BRK />
+<BRK />
+<TXT>Provide PDFs of the current working redlines and/or markups complying with the as-builts drawing and markup requirements 
+contained in this specification.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4"><TTL>AS-BUILT RE-SUBMISSION REQUIREMENTS</TTL><BRK />
+<BRK />
+<TXT>If elements of an as-built submittal or advanced modeling package are rejected, provide the following for each 
+re-submission, in addition to any information required in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Re-submit all components required under paragraph As-Builts or Advanced Modeling Package, including 
+a new Advanced Modeling Submittal Checklist and updated content in response to Government comments.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Provide a copy of all Government review comments.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Provide a disposition/response to each Government review comment for a back-check of the re-submission 
+deliverable.</LST><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL><SUB>AS-BUILT DRAWINGS</SUB></TTL><BRK />
+<BRK />
+<TXT>Provide and maintain two black line print copies of the PDF contract drawings for As-Built Drawings.  Maintain 
+the as-builts throughout construction as red-lined hard copies on site and/or red-lined PDF files.  Submit As-Built 
+Drawings 30 days prior to Beneficial Occupance Date (BOD).</TXT><BRK />
+<BRK />
+<SPT outline="3.1.1"><TTL>Markup Guidelines</TTL><BRK />
+<BRK />
+<TXT>Make comments and markup the drawings complete without reference to letters, memos, or materials that are not 
+part of the As-Built drawing.  Show what was changed, how it was changed, where item(s) were relocated and change 
+related details.  These working as-built markup prints must be neat, legible and accurate as follows:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Use base colors of red, green, and blue.  Color code for changes as follows:</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1)  Special (Blue) - Items requiring special information, coordination, or special detailing 
+or detailing notes.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2)  Deletions (Red) - Over-strike deleted graphic items (lines), lettering in notes and leaders.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3)  Additions (Green) - Added items, lettering in notes and leaders.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Provide a legend if colors other than the "base" colors of red, green, and blue are used.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Add and denote any additional equipment or material facilities, service lines, incorporated under 
+As-Built Revisions if not already shown in legend.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Use frequent written explanations on markup drawings to describe changes.  Do not totally rely on 
+graphic means to convey the revision.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Use legible lettering and precise and clear digital values when marking prints.  Clarify ambiguities 
+concerning the nature and application of change involved.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Wherever a revision is made, also make changes to related section views, details, legend, profiles, 
+plans and elevation views, schedules, notes and call out designations, and mark accordingly to avoid 
+conflicting data on all other sheets.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  For deletions, cross out all features, data and captions that relate to that revision.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  For changes on small-scale drawings and in restricted areas, provide large-scale inserts, with leaders 
+to the applicable location.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">i.  Indicate one of the following when attaching a print or sketch to a markup print:</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">1)  Add an entire drawing to contract drawings</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">2)  Change the contract drawing to show</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">3)  Provided for reference only to further detail the initial design.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">j.  Incorporate all shop and fabrication drawings into the markup drawings.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.2"><TTL>As-Built Drawings Content</TTL><BRK />
+<BRK />
+<TXT>Revise As-Built Drawings in accordance with <RID>ERDC/ITL TR-12-1</RID> and <RID>ERDC/ITL TR-12-6</RID>.  Keep these working as-built 
+markup drawings current on a weekly basis and at least one set available on the jobsite at all times.  Changes 
+from the contract drawings which are made during construction or additional information which might be uncovered 
+in the course of construction must be accurately and neatly recorded as they occur by means of details and notes.  
+Submit the working as-built markup drawings for approval prior to submission of each monthly pay estimate.  For 
+failure to maintain the working and final record drawings as specified herein, the Contracting Officer will withhold 
+10 percent of the monthly progress payment until approval of updated drawings.  Show on the as-built drawings, 
+but not limited to, the following information:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  The actual location, kinds and sizes of all sub-surface utility lines.  In order that the location 
+of these lines and appurtenances may be determined in the event the surface openings or indicators become 
+covered over or obscured, show by offset dimensions to two permanently fixed surface features the end 
+of each run including each change in direction on the record drawings.  Locate valves, splice boxes and 
+similar appurtenances by dimensioning along the utility run from a reference point.  Also record the 
+average depth below the surface of each run.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  The location and dimensions of any changes within the building structure.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Layout and schematic drawings of electrical circuits and piping.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Correct grade, elevations, cross section, or alignment of roads, earthwork, structures or utilities 
+if any changes were made from contract plans.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Changes in details of design or additional information obtained from working drawings specified to 
+be prepared or furnished by the Contractor; including but not limited to shop drawings, fabrication, 
+erection, installation plans and placing details, pipe sizes, insulation material, dimensions of equipment, 
+and foundations.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  The topography, invert elevations and grades of drainage installed or affected as part of the project 
+construction.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  Changes or Revisions which result from the final inspection.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  Where contract drawings or specifications present options, show only the option selected for construction 
+on the working as-built markup drawings.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">i.  If borrow material for this project is from sources on Government property, or if Government property 
+is used as a spoil area, furnish a contour map of the final borrow pit/spoil area elevations.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">j.  Systems designed or enhanced by the Contractor, such as HVAC controls, fire alarm, fire sprinkler, 
+and irrigation systems.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">k.  Changes in location of equipment and architectural features.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">j.  Modifications (include within change order price the cost to change working as-built markup drawings 
+to reflect modifications).</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">l.  Actual location of anchors, construction and control joints, etc., in concrete.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">m.  Unusual or uncharted obstructions that are encountered in the contract work area during construction.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">n.  Location, extent, thickness, and size of stone protection particularly where it will be normally 
+submerged by water.</LST><BRK />
+<BRK /></SPT>
+<TAI OPT="KADENA AB"><SPT><TTL>GIS Data</TTL><BRK />
+<BRK />
+<TXT>Provide GIS data with as-builts.  GIS data shall be in a format accepted by ESRI software.  Data shall comply 
+with <RID>SDSFIE 3.1.0.1</RID>.  The Air Force adaptation data dictionary can be obtained from the Kadena GeoBase Office 
+(718ces.geobase@us.af.mil or DSN 634-9322).  All GIS data shall be delivered with the following requirements:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Projection: UTM Zone 52N</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Datum: WGS 1984</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Geoid: EGM 96</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Units: Meters</LST><BRK />
+<BRK /></SPT>
+</TAI><TAI OPT="MARINE CORPS IN OKINAWA"><SPT><TTL>GIS Data</TTL><BRK />
+<BRK />
+<TXT>Provide GIS data with as-builts.  GIS data shall be in a format accepted by ESRI software.  Data shall comply 
+with <RID>SDSFIE 3.1.0.1</RID>.  All GIS data shall be delivered with the following requirements:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Projection: JGD 2000 Zone 15</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Datum: WGS 1984</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Geoid: EGM 96</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Units: Meters</LST><BRK />
+<BRK /></SPT>
+</TAI></SPT><SPT outline="3.2"><TTL>RECORD DRAWING FILES</TTL><BRK />
+<BRK />
+<TXT>If additional drawings are required, prepare them using the specified electronic file format applying the same 
+graphic standards specified for original drawings.  The title block and drawing border to be used for any new 
+final record drawings must be identical to that used on the contract drawings.  Accomplish additions and corrections 
+to the contract drawings using CAD files.  Provide all program files and hardware necessary to prepare final 
+PDF record drawings.  The Contracting Officer will review final PDF record drawings for accuracy and return them 
+to the Contractor for required corrections, changes, additions, and deletions.</TXT><BRK />
+<BRK />
+<SPT outline="3.2.1"><TTL>Rename the CAD Drawing files</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use the bracket with the ACES-PM Project Number requirement for Kadena 
+Air Base projects only.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Rename the CAD Drawing files using the [ACES-PM Project Number as the Project Code field, (e.g., LXEZ11745C-101.DWG)][Contract 
+number as the Project Code field, (e.g., W912HV-15-C-0001-A-101.DWG)] as instructed in the Pre-Construction conference.  
+Use only those renamed files for the Marked-up changes.  Make all changes on the layer/level as the original 
+item.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  For AutoCAD files (DWG), enter all as-built delta changes and notations on the AS-BUILT layer.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  When final revisions have been completed, show the wording "RECORD DRAWING AS-BUILTS" followed by 
+the name of the Contractor in letters at least 5 mm high on the cover sheet drawing.  Date RECORD DRAWING 
+AS-BUILTS" drawing revisions in the revision block.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Within 20 days  after Government approval of all of the working record drawings for a phase of work, 
+prepare the final CAD record drawings for that phase of work and submit PDF drawing files and two sets 
+of prints for review and approval.  The Government will promptly return one set of prints annotated with 
+any necessary corrections.  Within 10 days revise the CAD files accordingly at no additional cost and 
+submit one set of final prints for the completed phase of work to the Government.  Within 20 days of 
+substantial completion of all phases of work, submit the final record drawing package for the entire 
+project.  Submit one set of electronic CAD files, and one set of the approved working record PDF files 
+on an optical disc with two sets of prints.  The CAD files must be complete in all details and identical 
+in form and function to the CAD drawing files supplied by the Government.  Prepare AutoCAD files for 
+transmittal using e-Transmit. Make any transactions or adjustments necessary to accomplish this.  The 
+Government reserves the right to reject any drawing files it deems incompatible with the customer's CAD 
+system.  Paper prints, drawing files and storage media submitted will become the property of the Government 
+upon final approval.  Failure to submit final record PDF drawing files, CAD files and marked prints as 
+specified will be cause for withholding any payment due under this contract.  Approval and acceptance 
+of final record drawings must be accomplished before final payment is made.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.3"><TTL><SUB>RECORD DRAWINGS</SUB></TTL><BRK />
+<BRK />
+<TXT>Prepare final record drawings after the completion of each definable feature of work as listed in the Contractor 
+Quality Control Plan (such as Foundations, Utilities, or Structural Steel as appropriate for the project).  Transfer 
+the changes from the approved working as-built markup drawings to the original electronic CAD drawing files.  
+Modify the as-built CAD drawing files to correctly show the features of the project as-built by bringing the 
+working CAD drawing set into agreement with approved working as-built markup drawings, and adding such additional 
+drawings as may be necessary.  Refer to <RID>ERDC/ITL TR-12-1</RID>.  Jointly review the working as-built markup drawings 
+with printouts from working as-built CAD drawing PDF files for accuracy and completeness.  Monthly review of 
+working as-built CAD drawing PDF file printouts must cover all sheets revised since the previous review.  These 
+PDF drawing files are part of the permanent records of this project.  Any drawings damaged or lost must be satisfactorily 
+replaced at no expense to the Government.</TXT><BRK />
+<BRK />
+<TXT>Drawing revisions (include within change order price the cost to change working and final record drawings to 
+reflect revisions) and compliance with the following procedures.</TXT><BRK />
+<BRK />
+<ITM INDENT="-0.33">a.  Follow directions in the revision for posting descriptive changes.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">b.  The revision delta size must be 8 mm<ENG> 5/16 inch</ENG> unless the area where the delta is to be 
+placed is crowded.  Use a smaller size delta for crowded areas.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">c.  Place a revision delta at the location of each deletion.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">d.  For new details or sections which are added to a drawing, place a revision delta by the 
+detail or section title.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">e.  For minor changes, place a revision delta by the area changed on the drawing (each location).</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">f.  For major changes to a drawing, place a revision delta by the title of the affected plan, 
+section, or detail at each location.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">g.  For changes to schedules or drawings, place a revision delta either by the schedule heading 
+or by the change in the schedule.</ITM><BRK />
+<BRK />
+<SPT outline="3.3.1"><TTL>Final Record Drawing Package</TTL><BRK />
+<BRK />
+<TXT>Submit the final record PDF and  CAD drawings package for the entire project within 20 days of substantial completion 
+of all phases of work.  Submit one set of A1 size PDF and CAD files on optical disc, read-only memory (ROM), 
+two sets of A1 size prints and one set of the approved working record drawings.  The package must be complete 
+in all details and identical in form and function to the contract drawing files supplied by the Government.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.4"><TTL><SUB>FINAL APPROVED SHOP DRAWINGS</SUB></TTL><BRK />
+<BRK />
+<TXT>Submit final approved project shop drawings 30 days after transfer of the completed facility.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5"><TTL><SUB>CONSTRUCTION CONTRACT SPECIFICATIONS</SUB></TTL><BRK />
+<BRK />
+<TXT>Submit final PDF file record construction contract specifications, including revisions thereto, 30 days after 
+transfer of the completed facility.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.6"><TTL><SUB>AS-BUILT RECORD OF EQUIPMENT AND MATERIALS</SUB></TTL><BRK />
+<BRK />
+<TXT>Furnish one copy of preliminary record of equipment and materials used on the project 15 days prior to final 
+inspection.  This preliminary submittal will be reviewed and returned 2 days after final inspection with Government 
+comments.  Submit Two sets of final record of equipment and materials 10 days after final inspection.  Key the 
+designations to the related area depicted on the contract drawings.  List the following data:</TXT><BRK />
+<BRK />
+<TXT><TAB HEADERROWS="2">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM" />
+      </STY>
+      <STY SID="s51">
+         <ALN HORIZONTAL="CENTER" VERTICAL="BOTTOM" />
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="5" ROWCOUNT="4">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="108.00" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="108.00" />
+      <COL AUTOWIDTH="0" WIDTH="108.00" />
+      <COL AUTOWIDTH="0" WIDTH="108.00" />
+      <COL AUTOWIDTH="0" WIDTH="139.50" />
+      <ROW AUTOHEIGHT="0" HEIGHT="17.25">
+         <CEL MERGEACROSS="4" STYLEID="s51">
+<DTA TYPE="STRING">RECORD OF DESIGNATED EQUIPMENT AND MATERIALS DATA</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="54.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Description</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Specification Section</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Manufacturer and Catalog, Model, and Serial Number</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Composition and Size</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Where Used</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50" />
+         <CEL STYLEID="s50" />
+         <CEL />
+         <CEL />
+         <CEL />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="36.00">
+         <CEL STYLEID="s50" />
+         <CEL STYLEID="s50" />
+         <CEL />
+         <CEL />
+         <CEL />
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB></TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.7"><TTL><SUB>OPERATION AND MAINTENANCE MANUALS</SUB></TTL><BRK />
+<BRK />
+<TXT>Provide project operation and maintenance manuals as specified in Section <SRF>01 78 23</SRF> OPERATION AND MAINTENANCE 
+MANUALS DATA.  Provide one<BRK />
+electronic copy of the Operation and Maintenance Manual files and<BRK />
+three hard copies of the Operation and Maintenance Manuals.  Submit<BRK />
+to the Contracting Officer for approval within 30 calendar<BRK />
+days of the Beneficial Occupancy Date (BOD). Update and resubmit files for<BRK />
+final approval at BOD.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.8"><TTL>CLEANUP</TTL><BRK />
+<BRK />
+<TXT>Provide <SUB>final cleaning</SUB> in accordance with <RID>ASTM E1971</RID> and submit two copies of the listing of completed final 
+clean-up items.  Leave premises "broom clean."  Comply with <RID>GS-37</RID> for general purpose cleaning and bathroom cleaning.  
+Use only nonhazardous cleaning materials, including natural cleaning materials, in the final cleanup.  Clean 
+interior and exterior glass surfaces exposed to view; remove temporary labels, stains and foreign substances; 
+polish transparent and glossy surfaces; vacuum carpeted and soft surfaces.  Clean equipment and fixtures to a 
+sanitary condition.  Clean filters of operating equipment and comply with the Indoor Air Quality (IAQ) Management 
+Plan as required.  Clean debris from roofs, gutters, downspouts and drainage systems.  Sweep paved areas and 
+rake clean landscaped areas.  Remove waste and surplus materials, rubbish and construction facilities from the 
+site.  Recycle, salvage, and return construction and demolition waste from project in accordance with  Section 
+<SRF>01 57 19</SRF> TEMPORARY ENVIRONMENTAL CONTROLS, and <SRF>01 74 19</SRF> CONSTRUCTION WASTE MANAGEMENT AND DISPOSAL.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.9"><TTL>REAL PROPERTY RECORD</TTL><BRK />
+<BRK />
+<TXT>Near the completion of Project, but a minimum of 60 days prior to final acceptance of the work, complete and 
+submit an accounting of all installed property with <SUB>Interim DD FORM 1354</SUB>. Contact the Contracting Officer for 
+any project specific information necessary to complete the DD FORM 1354.  Refer to <RID>UFC 1-300-08</RID> for instruction 
+on completing the DD FORM 1354.<TAI OPT="DESIGN-BID-BUILD"> Refer to Attachment 01 78 00-A for the Draft DD FORM 1354.</TAI><TAI OPT="SUSTAINABILITY">Attach the Real Property 
+receiving Component's completed High Performance and Sustainable Building (HPSB) Checklist for each applicable 
+building to the completed DD 1354, in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  </TAI>For convenience, 
+a blank fillable PDF DD FORM 1354 may be obtained at the following link:  <URL HREF="www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1354.pdf">www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1354.pdf </URL><BRK />
+<BRK />
+Submit the completed <SUB>Checklist for DD FORM 1354</SUB> of Installed Building Equipment items.  Attach this list to the 
+updated DD FORM 1354.</TXT><BRK />
+<BRK /></SPT>
+</PRT><END /><BRK /></SEC>

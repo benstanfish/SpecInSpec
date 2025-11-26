@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
+<BRK/>
+<SCN>SECTION 01 50 00</SCN><BRK/>
+<BRK/>
+<STL>TEMPORARY CONSTRUCTION FACILITIES AND CONTROLS</STL><BRK/>
+<BRK/>
+<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
+<BRK/>
+<SPT><TTL>REFERENCES</TTL><BRK/>
+<BRK/>
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK/>
+<BRK/>
+<REF><ORG>AMERICAN WATER WORKS ASSOCIATION (AWWA)</ORG><BRK/>
+<BRK/>
+<RID>AWWA C511</RID><RTL>(2007) Standard for Reduced-Pressure Principle 
+Backflow Prevention Assembly</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>FOUNDATION FOR CROSS-CONNECTION CONTROL AND HYDRAULIC RESEARCH (FCCCHR)</ORG><BRK/>
+<BRK/>
+<RID>FCCCHR List</RID><RTL>(continuously updated) List of Approved Backflow 
+Prevention Assemblies</RTL><BRK/>
+<BRK/>
+<RID>FCCCHR Manual</RID><RTL>(10th Edition) Manual of Cross-Connection Control</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK/>
+<BRK/>
+<RID>NFPA 241</RID><RTL>(2022) Standard for Safeguarding Construction, 
+Alteration, and Demolition Operations</RTL><BRK/>
+<BRK/>
+<RID>NFPA 70</RID><RTL>(2023; ERTA 7 2023; TIA 23-15) National 
+Electrical Code</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. ARMY CORPS OF ENGINEERS (USACE)</ORG><BRK/>
+<BRK/>
+<RID>EM 385-1-1</RID><RTL> Safety -- Safety and Health Requirements 
+Manual</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. ENVIRONMENTAL PROTECTION AGENCY (EPA)</ORG><BRK/>
+<BRK/>
+<RID>PL 93-523</RID><RTL>(1974; A 1999) Safe Drinking Water Act</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. FEDERAL AVIATION ADMINISTRATION (FAA)</ORG><BRK/>
+<BRK/>
+<RID>FAA AC 70/7460-1</RID><RTL>(2016; Rev L; Change 2) Obstruction Marking 
+and Lighting</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. FEDERAL HIGHWAY ADMINISTRATION (FHWA)</ORG><BRK/>
+<BRK/>
+<RID>MUTCD</RID><RTL>(2009) Manual on Uniform Traffic Control Devices</RTL><BRK/>
+<BRK/></REF>
+</SPT><SPT><TTL>SUBMITTALS</TTL><BRK/>
+<BRK/>
+<TXT>Government approval is required for submittals with a "G" designation; <TAI OPT="DESIGN-BID-BUILD">submittals not having a "G" designation 
+are for information only</TAI><TAI OPT="DESIGN-BUILD">. Submittals not having a "G" designation are for Contractor Quality Control 
+or Designer of Record approval</TAI>.  Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
+<BRK/>
+<LST><SUB>SD-01 Preconstruction Submittals</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Construction Site Plan</SUB>; <SUB>G</SUB></ITM><BRK/>
+<ITM><SUB>Traffic Control Plan</SUB>; <SUB>G</SUB></ITM><BRK/>
+<ITM><SUB>Temporary Utility Connections Plan</SUB>; <SUB>G</SUB></ITM><BRK/>
+<BRK/></SPT>
+<SPT><TTL><SUB>CONSTRUCTION SITE PLAN</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Prior to the start of work, submit a site plan showing the locations and dimensions of temporary facilities (including 
+layouts and details, equipment and material storage area (onsite and offsite), and access and haul routes, avenues 
+of ingress/egress to the fenced area and details of the fence installation.  Identify any areas which may have 
+to be graveled to prevent the tracking of mud.  Indicate if the use of a supplemental or other staging area is 
+desired.  Show locations of safety and construction fences, site trailers, construction entrances, trash dumpsters, 
+temporary sanitary facilities, and worker parking areas.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>BACKFLOW PREVENTERS CERTIFICATE</TTL><BRK/>
+<BRK/>
+<TXT>Certificate of Full Approval from <RID>FCCCHR List</RID>, attesting that the design, size and make of each backflow preventer 
+has satisfactorily passed the complete sequence of performance testing and evaluation for the respective level 
+of approval.  Certificate of Provisional Approval will not be acceptable.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Backflow Tester Certificate</TTL><BRK/>
+<BRK/>
+<TXT>Certification issued by the local regulatory agency attesting that the backflow tester has successfully completed 
+a certification course sponsored by the regulatory agency.  Tester must not be affiliated with any company participating 
+in any other phase of this Contract.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Backflow Prevention Training Certificate</TTL><BRK/>
+<BRK/>
+<TXT>Certification recognized by the local authority that states the Contractor has completed at least 10 hours of 
+training in backflow preventer installations.  The certificate must be current.  Training and certification can 
+be obtained from the following sources:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a. Kyuusuikouji Gijutsu Koshin Zaidan; https://www.kyuukou.or.jp/</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b. Zenkoku Kensetsu Kenshu Center; https://www.jctc.jp/</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c. Tester Training Course, Foundation for Cross-Connection Control and Hydraulic Research, University 
+of Southern California; https://fccchr.usc.edu/tester.html</LST><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>TYPHOON AND STORM PREPARATIONS</TTL><BRK/>
+<BRK/>
+<TXT>In order to minimize damage to public properties and prevent personal injury, the following actions shall be 
+taken upon declaration of the typhoon conditions described below.  Ensure that the construction sites are well-prepared 
+for protection from the damages of heavy rain and strong winds.  Develop and establish the necessary procedures 
+to be taken for storm preparation.  In Part 1 of the Accident Prevention Plan, provide emergency phone numbers 
+and addresses where at least three Contractor officials may be reached and notified in the event that an immediate 
+typhoon alert is declared.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Tropical Cyclone Conditions of Readiness (TCCOR)</TTL><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  TCCOR STORM WATCH: The winds are not forecast to exceed 50 knots (58 mph/26 m/s) sustained (the criteria 
+for "destructive winds") but there still exists a probability of high winds due to the proximity of the 
+storm.  High winds may include gusts exceeding 50 knots and/or sustained winds meeting TCCOR 1 Caution 
+criteria.  The storm is also close enough to the area that a heightened alert status is necessary in 
+order to rapidly establish elevated TCCOR conditions should the storm deviate from the forecast track.  
+Personnel should follow Standard Operating Procedures for TCCOR Storm Watch and stay alert for any changes 
+to TCCOR status.</LST><BRK/>
+<BRK/>
+<LST>When wind gusts of 30 knots (35 mph/16 m/s) or greater are forecast, the Contractor shall be required 
+to perform general area cleanup and monitor TCCOR levels.</LST><BRK/>
+<BRK/>
+<LST>When a local storm warning has been issued, the Contractor competent person and/or SSHO shall determine 
+whether it is necessary to implement manufacturer recommendations for securing the equipment to include 
+Weight Handling Equipment (WHE).</LST><BRK/>
+<BRK/>
+<LST>Contractor reviews project site storm preparation plans and discuss plan of action with Contracting Officer's 
+Representative.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  TCCOR 4: Winds of 50 knots (58 mph/26 m/s) sustained or greater are possible within 72 hours.</LST><BRK/>
+<BRK/>
+<LST>When wind gusts of 30 knots (35 mph/16 m/s) or greater are forecast, the Contractor will be required 
+to perform general area cleanup and monitor TCCOR levels.</LST><BRK/>
+<BRK/>
+<LST>Cranes shall not be operated when wind speeds at the site attain the maximum wind velocity based on the 
+surface/load ratio recommendations of the manufacturer.</LST><BRK/>
+<BRK/>
+<LST>At winds greater than 20 mph (17 knots/9 m/s), the operator, rigger, lift supervisor, and SSHO shall 
+cease all crane operations, evaluate conditions and determine if the lift can proceed with Contracting 
+Officer's Representative acceptance.</LST><BRK/>
+<BRK/>
+<LST>All elevated work above 6 ft (1.8 m) shall be risk assessed by the Contractor's competent person and/or 
+SSHO and discussed with the Contracting Officer's Representative for acceptance.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  TCCOR 3: Winds of 50 knots (58 mph/26 m/s) sustained or greater are possible within 48 hours.</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) Clean and remove all loose debris and waste including scrap wood and metal, empty barrels, 
+and construction form materials no longer required on the job site, to a safe area for proper 
+disposition.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) Secure, tie down, and anchor construction field office and storage facilities, scaffolding, 
+concrete forms and supports, doors, windows, opening covers, stored lumber and other materials, 
+mechanized construction equipment, temporary power lines and supports, and other items that 
+may be blown away or that might cause injury or damage.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(3) Inspect all excavation and trenching work in process, and provide necessary temporary drainage 
+and proper protection and shoring for excavation sides and openings, in order to prevent damage 
+to public roads and facilities by slides or flooding.  Accumulation of water in the excavation 
+of structure foundation work shall be controlled and minimized.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(4) Inspect scaffolding or work platforms for loose materials, planking, etc. that could become 
+airborne projectile hazards and secure scaffold netting, tarps, etc. from wind loads.</ITM><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  TCCOR 2: Winds of 50 knots (58 mph/ 26 m/s) sustained or greater are possible within 24 hours.</LST><BRK/>
+<BRK/>
+<LST>Work required at remote areas such as off-shore facilities or high elevations shall cease immediately 
+and the workers shall be evacuated to a safe area.  During TCCOR 2, the Contractor shall continue the 
+actions described in TCCOR 3 above and the construction site shall be inspected for storm preparation 
+by the Contracting Officer's Representative.  The Contractor shall request an inspection by calling the 
+Contracting Officer's Representative at the appropriate Japan Engineer District field office.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  TCCOR 1: Winds of 50 knots (58 mph/26 m/s) sustained or greater are possible within 12 hours.</LST><BRK/>
+<BRK/>
+<LST>All work shall cease immediately and the Contractor's representative shall insure that all necessary 
+storm preparations, including the items listed below, are completed.</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) All electrical circuits and equipment including temporary power lines are cut off and secured 
+against unauthorized use.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) Gas cylinders, hot work equipment, and flammable materials properly stored at a safe area.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(3) No igniting source is present.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(4) All workers have been evacuated from the construction site.  When TCCOR 1 is declared without 
+the normal progression through TCCOR 3 and/or 2, the Contractor shall take the actions listed 
+in TCCOR 3 above, and also follow the procedures described herein.</ITM><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  TCCOR 1 Caution: Winds of 35 to 49 knots (39/17 to 56/25 mph/ m/s) sustained are occurring.</LST><BRK/>
+<BRK/>
+<LST>Construction Sites Secured.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  TCCOR 1 Emergency: Winds of 50 knots (58 mph/26 m/s) sustained or greater are occurring.</LST><BRK/>
+<BRK/>
+<LST>Construction Sites Secured.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">h.  TCCOR 1 Recovery: Winds of 50 knots (58 mph/26 m/s) sustained or greater are no longer forecast to 
+occur.  Strong winds may still exist.</LST><BRK/>
+<BRK/>
+<LST>Installation personnel begin storm damage assessments and clean up.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">i.  TCCOR Storm Clear: The storm is over and not forecast to return.  Used to inform personnel that the 
+threat of the storm is over, but the storm damage could still present a danger.</LST><BRK/>
+<BRK/>
+<LST>Contractor may resume normal activities.  The construction site shall be investigated for all damage 
+caused by the typhoon or high winds, and the result of the investigation shall be furnished in verbal 
+or written form to the Contracting Officer's Representative as soon as practicable.</LST><BRK/>
+<BRK/>
+<LST>Complete and submit PODWP 134 Typhoon Damage Report for storm damages or negative report of damage to 
+Emergency Management, Construction Division, and Safety Office.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">j.  TCCOR All Clear: The storm is over and not forecast to return, and recovery efforts are complete.</LST><BRK/>
+<BRK/>
+<LST>Resume normal activities.</LST><BRK/>
+<BRK/></SPT>
+</SPT></PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>TEMPORARY SIGNAGE</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Bulletin Board</TTL><BRK/>
+<BRK/>
+<TXT>Immediately upon beginning of work, provide a weatherproof glass-covered bulletin board not less than 915 by 
+1220 mm in size for displaying the Equal Employment Opportunity poster, a copy of the wage decision contained 
+in the Contract, Wage Rate Information poster, and other information approved by the Contracting Officer.  Locate 
+the bulletin board at the project site in a conspicuous place easily accessible to all employees, as approved 
+by the Contracting Officer.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Project and Safety Signs</TTL><BRK/>
+<BRK/>
+<TXT>Provide [one (1)] project sign and [one (1)] safety sign fabricated to size and design as shown in Attachment 
+01 50 00-A.  The signs shall be rigidly formed and erected at location designated by the Contracting Officer 
+prior to commencement of work.  A blue-line drawing of different letter sizes and style shall be made available 
+by the Contracting Officer upon request.  Prior to painting the sign, submit for approval a sketch, similar to 
+diagram shown in Attachment 01 50 00-A, indicating the actual information for the project.  The sketch shall 
+indicate lettering dimensions and locations.  The Corps of Engineers castle logo shall be painted red per Attachment 
+01 50 00-A.  Correct the data required by the safety sign daily, with light-colored metallic or non-metallic 
+numerals.  No separate payment shall be made for the sign, and all costs in connection therewith shall be included 
+in the Contract price for the project.  The sign shall be subject to the approval of the Contracting Officer.  
+Erect signs within 15 days after receipt of the Notice to Proceed.  Correct the data required by the safety sign 
+daily, with light-colored metallic or non-metallic numerals.  Upon completion of work under this Contract, the 
+signs shall be removed from the job site and shall remain the property of the Contractor.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>TEMPORARY TRAFFIC CONTROL</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Haul Roads</TTL><BRK/>
+<BRK/>
+<TXT>Construct access and haul roads necessary for proper prosecution of the work under this Contract.  Construct 
+with suitable grades and widths; sharp curves, blind corners, and dangerous cross traffic are to be avoided.  
+Provide necessary lighting, signs, barricades, and distinctive markings for the safe movement of traffic.  The 
+method of dust control must be adequate to ensure safe operation at all times.  Location, grade, width, and alignment 
+of construction and hauling roads are subject to approval by the Contracting Officer.  Lighting must be adequate 
+to assure full and clear visibility for full width of haul road and work areas during any night work operations.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Barricades</TTL><BRK/>
+<BRK/>
+<TXT>Erect and maintain temporary barricades to limit public access to hazardous areas.  Whenever safe public access 
+to paved areas such as roads, parking areas or sidewalks is prevented by construction activities or as otherwise 
+necessary to ensure the safety of both pedestrian and vehicular traffic barricades will be required.  Securely 
+place barricades clearly visible with adequate illumination to provide sufficient visual warning of the hazard 
+during both day and night.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Temporary Wiring</TTL><BRK/>
+<BRK/>
+<TXT>Provide temporary wiring in accordance with <RID>NFPA 241</RID> and <RID>NFPA 70</RID>.  Include frequent inspection of all equipment 
+and apparatus.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Backflow Preventers</TTL><BRK/>
+<BRK/>
+<TXT>Reduced pressure principle type conforming to the applicable requirements <RID>AWWA C511</RID>.  Provide backflow preventers 
+complete with 65 kg flanged, mounted gate valve and strainer, stainless steel or bronze, internal parts.  After 
+installation conduct Backflow Preventer Tests and provide test reports verifying that the installation meets 
+the <RID>FCCCHR Manual</RID> Standards.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
+<BRK/>
+<SPT><TTL>EMPLOYEE PARKING</TTL><BRK/>
+<BRK/>
+<TXT>Contractor employees will park privately owned vehicles in an area designated by the Contracting Officer.  This 
+area shall be within reasonable walking distance of the construction site.  Contractor employee parking must 
+not interfere with existing and established parking requirements of the government installation.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>TEMPORARY BULLETIN BOARD</TTL><BRK/>
+<BRK/>
+<TXT>Locate the bulletin board at the project site in a conspicuous place easily accessible to all employees, as approved 
+by the Contracting Officer.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>AVAILABILITY AND USE OF UTILITY SERVICES</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Payment for Utility Services</TTL><BRK/>
+<BRK/>
+<TXT>The Government shall make all reasonably required utilities available to the Contractor[ , without charge,] from 
+existing outlets and supplies, as specified in the Contract.  Carefully conserve any utilities.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Meters and Temporary Connections</TTL><BRK/>
+<BRK/>
+<TXT>At the Contractor's expense and in a manner satisfactory to the Contracting Officer, provide and maintain necessary 
+temporary connections, distribution lines, and meter bases required to measure the amount of each utility used. 
+Materials may be new or used, must be adequate for the required usage, not create unsafe conditions, and not 
+violate applicable codes and standards. Submit a <SUB>Temporary Utility Connections Plan</SUB> for approval to the Contracting 
+Officer, fifteen (15) working days before making temporary utility connections.</TXT><BRK/>
+[<BRK/>
+<TXT>The Government shall</TXT><BRK/>
+[<LST INDENT="-0.33">   Furnish the water meter</LST>]<BRK/>
+[<LST INDENT="-0.33">   Furnish the electric meter</LST>]<BRK/>
+[<LST INDENT="-0.33">   Furnish the backflow preventer</LST>]<BRK/>
+[<LST INDENT="-0.33">   Install the water meter</LST>]<BRK/>
+[<LST INDENT="-0.33">   Install the electric meter</LST>]<BRK/>
+[<LST INDENT="-0.33">   Install the backflow preventer</LST>]<BRK/>
+][<BRK/>
+<TXT>The Contractor shall</TXT><BRK/>
+[<LST INDENT="-0.33">   Furnish the water meter</LST>]<BRK/>
+[<LST INDENT="-0.33">   Furnish the electric meter</LST>]<BRK/>
+[<LST INDENT="-0.33">   Furnish the backflow preventer</LST>]<BRK/>
+[<LST INDENT="-0.33">   Install the water meter</LST>]<BRK/>
+[<LST INDENT="-0.33">   Install the electric meter</LST>]<BRK/>
+[<LST INDENT="-0.33">   Install the backflow preventer</LST>]<BRK/>
+]<BRK/>
+[</SPT><SPT><TTL>Advance Deposit</TTL><BRK/>
+<BRK/>
+<TXT>An advance deposit for utilities consisting of an estimated month's usage or a minimum of [6,000] JPY shall be 
+required.  Adjustments to the monthly bills shall be settled at the end of the fiscal year ending on 30 September.  
+Services to be rendered for the next fiscal year, beginning 1 October, shall require a new deposit.  Notification 
+of the due date for the new deposit shall be mailed to the Contractor prior to the end of the previous fiscal 
+year.</TXT><BRK/>
+<BRK/>
+]</SPT><SPT><TTL>Final Meter Reading</TTL><BRK/>
+<BRK/>
+<TXT>Before completion of the work and final acceptance of the work by the Government, notify the Contracting Officer, 
+in writing, five working days before termination is desired.  A final reading shall be taken by the Government.  
+Afterwards, remove all temporary distribution lines, meter bases, meters, and associated appurtenances.[  Pay 
+all outstanding utility bills before final acceptance of the work by the Government.]</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Sanitation</TTL><BRK/>
+<BRK/>
+<TXT>Provide and properly maintain temporary toilet facility for use of Contractor personnel.  Government toilet facilities 
+are not available to Contractor personnel.  Toilet facility shall be constructed as required in <RID>EM 385-1-1</RID> and 
+by local installation regulations, where directed.  Include provisions for pest control and elimination of odors.  
+Upon completion of the Contract, dispose facility outside the limits of Government-controlled land and at Contractor's 
+expense.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Electricity</TTL><BRK/>
+<BRK/>
+<TXT>The Contractor shall be responsible for all temporary connections required, as well as the removal of these temporary 
+connections upon completion of the project.  The Contractor's plan for temporary connections shall be submitted 
+to the Contracting Officer Representative for approval prior to making any temporary connections.</TXT><BRK/>
+<BRK/>
+<TXT>Electrical power system frequencies for different installations are as follows:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  50 Hertz (Hz): Camp Zama, Sagami Depot, Sagamihara Housing Area, Yokota Air Base, Commander Fleet 
+Activities Yokosuka, Naval Air Facility Atsugi, Misawa Air Base, Camp Fuji, and Naval Support Facility 
+Kamiseya.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  60 Hertz (Hz): Marine Corps Air Station Iwakuni, Commander Fleet Activities Sasebo, and all of Okinawa.</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Telephone and Data</TTL><BRK/>
+<BRK/>
+<TXT>Make arrangements and pay all costs for telephone facilities and data connections.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Obstruction Lighting of Cranes</TTL><BRK/>
+<BRK/>
+<TXT>Provide a minimum of 2 aviation red or high intensity white obstruction lights on temporary structures (including 
+cranes) over 30 meter above ground level.  Light construction and installation shall comply with <RID>FAA AC 70/7460-1</RID>
+.  Lights shall be operational during periods of reduced visibility, darkness, and as directed by the Contracting 
+Officer.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Fire Protection</TTL><BRK/>
+<BRK/>
+<TXT>Provide temporary fire protection equipment for the protection of personnel and property during construction.  
+Remove debris and flammable materials  daily to minimize potential hazards.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>TRAFFIC PROVISIONS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Maintenance of Traffic</TTL><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Conduct operations in a manner that will not close any thoroughfare or interfere in any way with 
+traffic except with written permission of the Contracting Officer at least 30 calendar days prior to 
+the proposed modification date, and provide a <SUB>Traffic Control Plan</SUB> detailing the proposed controls to 
+traffic movement for approval.  The plan must be in accordance with installation regulations.  Coordinate 
+with installation officials.  Contractor may move oversized and slow-moving vehicles to the worksite 
+once the requirements of the highway authority have been met.  Include a schedule of planned road closures 
+in the <BRK/>
+Initial Project Schedule.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Conduct work so [there is no obstruction of traffic, and maintain traffic on the full roadway width 
+at all times][as to minimize obstruction of traffic, and maintain traffic on at least half of the roadway 
+width at all times].  Obtain approval from the Contracting Officer prior to starting any activity that 
+will obstruct traffic.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  At the Contractor's expense, provide, erect, and maintain: lights, barriers, signals, passageways, 
+detours, and other items, that may be required by the Life Safety Signage overhead protection authority 
+having jurisdiction. </LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Protection of Traffic</TTL><BRK/>
+<BRK/>
+<TXT>Maintain and protect traffic on all affected roads during the construction period except as otherwise specifically 
+directed by the Contracting Officer.  Measures for the protection and diversion of traffic, including the provision 
+of watchmen and flagmen, erection of barricades, placing of lights around and in front of equipment, the work, 
+and the erection and maintenance of adequate warning, danger, and direction signs, will be as required by the 
+State and local authorities having jurisdiction. Protect the traveling public from damage to person and property.  
+Minimize the interference with public traffic on roads selected for hauling material to and from the site.  Investigate 
+the adequacy of existing roads and their allowable load limit.  Contractor is responsible for the repair of any 
+damage to roads caused by construction operations.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Dust Control</TTL><BRK/>
+<BRK/>
+<TXT>Dust control methods and procedures must be approved by the Contracting Officer.  Treat dust abatement on access 
+roads with applications of calcium chloride, water sprinklers, or similar methods or treatment.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>CONTRACTOR'S TEMPORARY FACILITIES</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Safety</TTL><BRK/>
+<BRK/>
+<TXT>Protect the integrity of any installed safety systems or personnel safety devices.  If entrance into systems 
+serving safety devices is required, the Contractor must obtain prior approval from the Contracting Officer.  
+If it is temporarily necessary to remove or disable personnel safety devices in order to accomplish contract 
+requirements, provide alternative means of protection prior to removing or disabling any permanently installed 
+safety devices or equipment and obtain approval from the Contracting Officer.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Administrative Field Offices</TTL><BRK/>
+<BRK/>
+<TXT>Provide and maintain administrative field office facilities within the construction area at the designated site.  
+Government office and warehouse facilities will not be available to the Contractor's personnel.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Temporary Project Safety and Storage Area Fencing</TTL><BRK/>
+<BRK/>
+<TXT>As soon as practicable, but not later than 15 days after the date established for commencement of work, furnish 
+and erect temporary project safety and storage area fencing to control access by unauthorized people.  Fencing 
+shall be able to restrain a force of at least 114 kg.  Safety and storage area fencing shall be [1.8 m high wire 
+mesh fence with lockable gates and visibility screening (similar to tennis court screening)][2.5 to 3.0m high 
+sheet metal fence (similar to construction fencing used throughout Japan)] [located around the perimeter of project 
+work areas and the perimeter of Contractor lay-down areas].[  Use plastic panels or perforated steel sheets to 
+improve visibility for vehicular traffic when erecting fencing within 3 meters of street corners.]  The intent 
+is to block (screen) public view of the construction, and prevent unauthorized access to the site.  Fence posts 
+may be driven, in lieu of concrete bases, where soil conditions permit.  Maintain the safety and storage area 
+fencing during the life of the Contract and, upon completion and acceptance of the work, shall become the property 
+of the Contractor and be removed from the work site.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Storage Area</TTL><BRK/>
+<BRK/>
+<TXT>Do not place or store trailers, materials, or equipment outside the fenced area unless such trailers, materials, 
+or equipment are assigned a separate and distinct storage area by the Contracting Officer away from the vicinity 
+of the construction site but within the installation boundaries.  Trailers, equipment, or materials must not 
+be open to public view with the exception of those items which are in support of ongoing work on any given day.  
+Do not stockpile materials outside the fence in preparation for the next day's work.  Park mobile equipment, 
+such as tractors, wheeled lifting equipment, cranes, trucks, and like equipment within the fenced area at the 
+end of each work day.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Supplemental Storage Area</TTL><BRK/>
+<BRK/>
+<TXT>Upon Contractor's request, the Contracting Officer will designate another or supplemental area for the Contractor's 
+use and storage of trailers, equipment, and materials.  This area may not be in close proximity of the construction 
+site but will be within the installation boundaries.  Fencing of materials or equipment will be required at this 
+site. The Contractor is responsible for cleanliness and orderliness of the area used and for the security of 
+any material or equipment stored in this area.  Utilities will not be provided to this area by the Government.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Appearance of Trailers</TTL><BRK/>
+<BRK/>
+<TXT>Trailers utilized by the Contractor for administrative or material storage purposes must present a clean and 
+neat exterior appearance and be in a state of good repair.  Trailers which, in the opinion of the Contracting 
+Officer, require exterior painting or maintenance will not be allowed on installation property.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Maintenance of Storage Area</TTL><BRK/>
+<BRK/>
+<TXT>Keep fencing in a state of good repair and proper alignment.  Grassed or unpaved areas, which are not established 
+roadways, will be covered with a layer of gravel as necessary to prevent rutting and the tracking of mud onto 
+paved or established roadways, should the Contractor elect to traverse them with construction equipment or other 
+vehicles; gravel gradation will be at the Contractor's discretion.  Mow and maintain grass to a maximum height 
+of 100 mm located within the boundaries of the construction site for the duration of the project.  Grass and 
+vegetation along fences, buildings, under trailers, and in areas not accessible to mowers will be edged or trimmed 
+neatly.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Security Provisions</TTL><BRK/>
+<BRK/>
+<TXT>Provide adequate outside security lighting at the Contractor's temporary facilities.  The Contractor will be 
+responsible for the security of its own equipment.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Weather Protection of Temporary Facilities and Stored Materials</TTL><BRK/>
+<BRK/>
+<TXT>Take necessary precautions to ensure that roof openings and other critical openings in the building are monitored 
+carefully.  Take immediate actions required to seal off such openings when rain or other detrimental weather 
+is imminent, and at the end of each workday.  Ensure that the openings are completely sealed off to protect materials 
+and equipment in the building from damage.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Building and Site Storm Protection</TTL><BRK/>
+<BRK/>
+<TXT>When a warning of gale force winds is issued, take precautions to minimize danger to persons, and protect the 
+work and nearby Government property.  Precautions must include, but are not limited to, closing openings; removing 
+loose materials, tools and equipment from exposed locations; and removing or securing scaffolding and other temporary 
+work.  Close openings in the work when storms of lesser intensity pose a threat to the work or any nearby Government 
+property.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></SPT><SPT><TTL>GOVERNMENT FIELD OFFICE</TTL><BRK/>
+<BRK/>
+<TXT>The Contractor shall be responsible for providing and maintaining, in good condition, an office for the sole 
+use of Government personnel, in a structure physically separated from the Contractor's site offices.  Facility 
+shall be furnished at a location designated and approved by the Contracting Officer, and available for use concurrent 
+with availability of Contractor's site office or within 15 calendar days of Notice to Proceed, whichever occurs 
+first.  The office facility, including all furniture, equipment, and connections, shall remain the property of 
+the Contractor and, upon completion of work under this Contract, shall be removed from the site by the Contractor 
+and the site returned as nearly as practical to the original conditions.</TXT><BRK/>
+<BRK/>
+<TXT>Contractor shall provide two designated USACE parking spaces as close to the Government Field Office as practicable.  
+The spaces shall not exceed 50 meters from the field office without written approval from the Contracting Officer.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Facility Requirements</TTL><BRK/>
+<BRK/>
+<TXT>Provide the Government an office with a minimum of [67 square meters (720 square feet)] in floor area, windows, 
+a door with lockset individually keyed with two keys, and a battery operated smoke detector in each room.  Provide 
+batteries for the smoke detectors, and replace batteries in each smoke detector at least twice annually.</TXT><BRK/>
+<BRK/>
+<TXT>The walls and ceiling of the office shall be insulated.  All windows shall<BRK/>
+be screened.  Windows shall be openable and be securely fastened from<BRK/>
+the inside.  Glass panels in windows shall be protected by bars or heavy<BRK/>
+mesh screens to prevent easy access to the facility through these panels.  The office shall contain a minimum 
+of eight (8) standard electrical outlets<BRK/>
+meeting local requirements and additionally provide for delivery of a<BRK/>
+minimum 3,000 Watts.</TXT><BRK/>
+<BRK/>
+<TXT>The office shall contain an integral toilet facility with western-type<BRK/>
+(with a push-type flush button) toilet fixture (bowl), which shall hold<BRK/>
+water in it at all times, and a wash basin.</TXT><BRK/>
+<BRK/>
+<TXT>The office facility shall contain a kitchenette type facility with a countertop/work area with a minimum surface 
+area of 55 cm (W) by 150 cm<BRK/>
+(L).  A minimum of two electrical outlets (local current) shall be located<BRK/>
+adjacent to the countertop.</TXT><BRK/>
+<BRK/>
+<TXT>Hot water for all faucets shall be provided.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Furniture and Equipment</TTL><BRK/>
+<BRK/>
+<TXT>Furnish the office with the following furniture and equipment.  All furnishing shall be new and manufactured 
+by a recognized supplier of office equipment.  All items shall be assembled, installed, and maintained by the 
+Contractor.</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Two desks (minimum 80 cm by 150 cm) double pedestal with lockable drawers.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Two desk chairs with arms: swivel tilt, hydraulic height-adjustable, medium back, fabric covered 
+seat cushion, castored.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  One conference table (minimum 120 cm by 250 cm), with a minimum of six new arm-chairs, castored.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Three file cabinets, capable of holding US letter-size documents, with a minimum five drawers each.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Two bookcases with a minimum of five shelves each.  Minimum dimensions are 120 cm (W) by 200 cm (H) 
+by 30 cm (D).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  One clock: wall hung, quartz, 12 dial, battery powered.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  Plan racks capable of holding two full-size set of Contract plans.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">h.  One dry-erase board with a minimum dimension of 1.5 m by 1.0 m.  Dry erase markers (minimum four 
+different colors) shall be provided and replaced as depleted.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">i.  One microwave (minimum 0.028 cubic meter).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">j.  One refrigerator (minimum 0.70 cubic meter).</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Lighting Requirements</TTL><BRK/>
+<BRK/>
+<TXT>The office facility shall include suitable electric lighting to meet the<BRK/>
+minimum lighting requirements (luminance) of administrative areas as<BRK/>
+indicated in <RID>EM 385-1-1</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Heating/Cooling Requirements</TTL><BRK/>
+<BRK/>
+<TXT>Provide heating and cooling capable of maintaining an interior temperature of between 16 degrees Celsius and 
+25 degrees Celsius in all seasons.  If applicable, use a fluorocarbon gas refrigerant with an Ozone Depletion 
+Potential (ODP) of less than or equal to 0.05.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Drinking Water</TTL><BRK/>
+<BRK/>
+<TXT>Provide potable drinking water for the facility that<BRK/>
+meets or exceeds <RID>PL 93-523</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Data Connection</TTL><BRK/>
+<BRK/>
+<TXT>Provide network connectivity (ADSL, Cable or Fiber), one USACE-dedicated router and one switching hub, eight-5 
+m network cables, and eight power strips.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Maintenance</TTL><BRK/>
+<BRK/>
+<TXT>Provide maintenance and janitorial services, to<BRK/>
+include:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Emptying of trash at least twice a week.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Cleaning of the office, including the toilet facilities, weekly.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Replenishment of liquid soap, toilet paper, and paper towels for daily use.  Adequate quantity of 
+these supplies shall be provided on-site and replaced as needed.</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Security Requirements</TTL><BRK/>
+<BRK/>
+<TXT>The physical security of the Government personnel, property, and field office shall be the responsibility of 
+the Contractor throughout the duration of the Contract.</TXT><BRK/>
+<BRK/>
+<TXT>If the project site is outside of the controlled area of an existing<BRK/>
+military installation, the Government field office shall have 30 meters of standoff from a fence enclosing the 
+office and all parking or roads.  Additional fencing, earth berms, concrete barriers, controlled access points, 
+and similar security features shall be provided to limit access to the site and provide additional building standoff 
+or security.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>PLANT COMMUNICATION</TTL><BRK/>
+<BRK/>
+<TXT>Whenever the Contractor has the individual elements of its plant so located that operation by normal voice between 
+these elements is not satisfactory, the Contractor must install a satisfactory means of communication, such as 
+telephone or other suitable devices and made available for use by Government personnel.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>CLEANUP</TTL><BRK/>
+<BRK/>
+<TXT>Remove construction debris, waste materials, packaging material and the like from the work site daily.  Any dirt 
+or mud which is tracked onto paved or surfaced roadways must be cleaned away.  Store any salvageable materials 
+resulting from demolition activities within the fenced area described above or at the supplemental storage area.  
+Neatly stack stored materials not in trailers, whether new or salvaged.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>RESTORATION OF STORAGE AREA</TTL><BRK/>
+<BRK/>
+<TXT>Upon completion of the project remove the bulletin board, signs, barricades, haul roads, and any other temporary 
+products from the site.  All tools, equipment, and materials not the property of the Government shall be removed 
+from the premises and properly disposed of off Government property.  After removal of trailers, materials, and 
+equipment from within the fenced area, remove the temporary project safety and storage area fencing.  Restore 
+areas used by the Contractor for the storage of equipment or material, or other use to the original or better 
+condition.  Remove gravel used to traverse grassed areas and restore the area to its original condition, including 
+top soil and seeding as necessary.  Upon completion of the work, notify the Contracting Officer for final inspection.</TXT><BRK/>
+<BRK/>
+<BRK/></SPT>
+</PRT><END/><BRK/></SEC>

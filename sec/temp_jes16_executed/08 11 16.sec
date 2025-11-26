@@ -1,0 +1,608 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                  UFGS-08 11 16 (May 2017)<BRK />
+                                                Change 2 - 11/18<BRK />
+                                               ---------------------------<BRK />
+Preparing Activity:  <PRA>NAVFAC</PRA>                    Superseding<BRK />
+                                               UFGS-08 11 16 (August 2008)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 08 11 16</SCN><BRK />
+<BRK />
+<STL>ALUMINUM DOORS AND FRAMES</STL><BRK />
+<DTE>05/17</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project.  The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers <SCP>aluminum doors and frames intended for 
+use primarily as main entrance and vestibule doors, and for prominent interior 
+doors from lobbies and similar spaces in buildings of public access</SCP> where appearance 
+is important.<BRK />
+<BRK />
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.<BRK />
+<BRK />
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<BRK />
+<BRK />
+Coordinate with or incorporate into this guide specification Aluminum-Framed 
+Entrances and Storefronts, Curtain Wall and Glazed Assemblies (frames), Steel/Aluminum 
+Doors and Frames and Glazing.  Insert the appropriate assembly in the blanks 
+as applicable.  Choose apprpriate damage level/level of protection for building 
+occupancy as defined in UFC 4-010-01 (Table 2-1).<BRK />
+<BRK />
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  On the drawings, show:</NPR><BRK />
+<BRK />
+<NPR>1.  Size and types of door openings; thicknesses, swings and travel of doors; 
+whether flush, paneled, glazed, or louvered; width of stiles and rails, and 
+power transfer components as applicable.</NPR><BRK />
+<BRK />
+<NPR>2.  Elevations of each door and frame type, at<MET> 1:50</MET><ENG> 1/4 inch</ENG> scale</NPR><BRK />
+<BRK />
+<NPR>3.  Details of head, jamb, sill, mullions, and transom sections; key sections 
+to door frame plans and elevations.  Indicate type and spacing of anchors.</NPR><BRK />
+<BRK />
+<NPR>4.  Indicate thickness of glazing required and cross reference to Section 
+<SRF>08 81 00</SRF> GLAZING.</NPR><BRK />
+<BRK />
+<NPR>5.  Details of weatherstripping for exterior doors.</NPR><BRK />
+<BRK />
+<NPR>6.  Amount of free area for louvers.</NPR><BRK />
+<BRK />
+<NPR>7.  A unique number for each door opening on door schedule.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification.  The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.</NPR><BRK />
+<BRK />
+<NPR>Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.</NPR><BRK />
+<BRK />
+<NPR>References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>AMERICAN SOCIETY OF CIVIL ENGINEERS (ASCE)</ORG><BRK />
+<BRK />
+<RID>ASCE 7</RID><RTL>(2017) Minimum Design Loads for Buildings and 
+Other Structures</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION (ISO)</ORG><BRK />
+<BRK />
+<RID>ISO 16932</RID>   <RTL>(2007) Glass in Buildings - Destructive Windstorm-Resistant 
+Security Glazing - Test and Clarification</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG><BRK />
+<BRK />
+<RID>JIS A 1516</RID>   <RTL>(1998) Windows and Doorsets - Air Permeability 
+Test</RTL><BRK />
+<BRK />
+<RID>JIS A 1517</RID>    <RTL>(2020) Windows and Doorsets - Watertightness 
+Test Under Dynamic Pressure</RTL><BRK />
+<BRK />
+<RID>JIS A 4702</RID>   <RTL>(2021) Doorsets</RTL><BRK />
+<BRK />
+<RID>JIS H 4000</RID>   <RTL>(2017) Aluminium 
+and Aluminium Alloy Sheets, Strips and Plates 
+(Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS H 4100</RID>   <RTL>(2015) Aluminum and Aluminum Alloy Extruded 
+Profiles</RTL><BRK />
+<BRK />
+<RID>JIS H 4040</RID>   <RTL>(2015) Aluminum and Aluminum Alloy Bars and 
+Wires</RTL> <BRK />
+<BRK />
+<RID>JIS H 8602</RID>   <RTL>(2010) Combined Coatings of Anodic Oxide and 
+Organic Coatings on Aluminum and Aluminum Alloys</RTL><BRK />
+<BRK />
+<RID>JIS K 5906</RID>   <RTL>(1998) Aluminum Pigments For Paints</RTL><BRK />
+<BRK />
+<RID>JIS R 3109</RID>   <RTL>(2018) Glass in Building - Destructive-Windstorm-Resistant 
+Security Glazing - Test Method</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>MINISTRY 
+OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM (MLIT)</ORG><BRK />
+<BRK />
+<RID>MLIT SS Chapter 16</RID><RTL>(2019) Building Construction Standard Specifications 
+- Chapter 16 Opening Construction</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>PERFORMANCE REQUIREMENTS</TTL><BRK />
+<BRK />
+<SPT outline="1.2.1"><TTL>Structural <SUB>Calculations</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Dynamic analysis is preferred because it typically yields a more appropriate 
+and economical/efficient design.  UFC 4-010-01 also indicates that for vestibules, 
+foyers, or similar entry configurations into inhabited areas where there are 
+inner and outer doors the vestibules, foyers, or similar entries are considered 
+not to be routinely occupied spaces.  Specify inner doors and glazing capable 
+of mitigating any hazards resulting from the enclosed vestibule or foyer outer 
+doors and glazing failure in response to the design blast event.  This is to 
+account for the fact that at levels of protection required in these standards 
+the outer doors and glazing may fail, which would subject the inner doors and 
+glazing to significant blast loads.  To provide that debris resistance, the 
+inner doors, sidelights, and transoms must meet the windborne debris resistance 
+requirements of ASTM E1996 (missiles A and D in Table 2).  For door assemblies 
+into vestibules, foyers, and similar entry configurations into inhabited areas 
+use the bracketed item "Wind-Borne Debris" below.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Commentary: Add wind pressure requirements in accordance with <RID>ASCE 7</RID>.</TXT><BRK />
+<BRK />
+<SPT outline="1.2.1.1"><TTL>Minimum Antiterrorism Performance</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Commentary: For buildings with a defined Level of Protection, provide 
+minimum prescriptive requirements for window system in contract drawings. For 
+buildings with no defined threat, provide the minimum glazing construction in 
+the Contract document and delete the entire Antiterrorism section.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide doors meeting the minimum antiterrorism performance as specified in the paragraphs below.</TXT><BRK />
+<BRK />
+<TXT>Aluminum door, window frame and window wall shall be designed to support <BRK />
+the wind pressures specified, but not less than the minimum section <BRK />
+properties indicated.  The anchorages shall be designed to support the wind load reactions calculated, but not 
+less than the support loads indicated on the contract documents.  <BRK />
+<BRK />
+If the minimum section properties and anchorages were not indicated, one of the following methods can be used 
+as noted in the following:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">[a.  Static Equivalent Load Design</LST><BRK />
+<BRK />
+]</SPT></SPT>[<SPT outline="1.2.2"><TTL>Wind Borne Debris</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  In projects located in windborne debris regions, design performance requirements 
+may exceed blast mitigation requirements.  Select the most stringent requirement 
+based on geographic region and AT standoff.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<LST INDENT="-0.33">    Provide impact resistant door [_____] assemblies meeting the Windborne-Debris-Impact Resistant Performance 
+requirements of <RID>JIS R 3109</RID> as follows:</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Pass missile-impact tests when tested according to <RID>JIS R 3109</RID> for missiles A and D in Table 
+2 or <RID>ISO 16932</RID> (Missile C).</ITM><BRK />
+<BRK /></SPT>
+]<SPT outline="1.2.3"><TTL><SUB>Air Infiltration</SUB></TTL><BRK />
+<BRK />
+<TXT>When tested in accordance with <RID>JIS A 1516</RID>, air infiltration per door leaf cannot exceed<MET> 2.83 by 10-4 cms per 
+square meter</MET><ENG> 0.6 cubic feet per minute per square foot</ENG> of fixed area at a test pressure of<MET> 0.30 kPa</MET><ENG> 6.24 pounds 
+per square foot</ENG>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2.4"><TTL><SUB>Water Penetration</SUB></TTL><BRK />
+<BRK />
+<TXT>When tested in accordance with <RID>JIS A 1517</RID>, there can be no water penetration at a pressure of<MET> 0.14 kPa</MET><ENG> 2.86 pounds 
+per square foot</ENG> of fixed area.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2.5"><TTL>Thermal Transmittance, Solar Heat Gain, Visible Light Transmittance</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Coordinate compliance with ASHRAE 90.1 for "whole-window" (or overall 
+assembly) thermal transmittance value (U-factor), Solar Heat Gain Coefficient 
+(SHGC) and visible light transmittance (VT) for field assembled fenestration.  
+Enter required values in brackets.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.2.5.1"><TTL>U-Factor</TTL><BRK />
+<BRK />
+<TXT>Provide exterior glazed assemblies, including aluminum entrances doors with greater than 50 percent glazed area 
+with U-Factor [_____].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2.5.2"><TTL>Solar Heat Gain Coefficient (SHGC)</TTL><BRK />
+<BRK />
+<TXT>Provide exterior glazed assemblies, including aluminum entrances doors with greater than 50 percent glazed area, 
+certified by the National Fenestration Rating Council with a whole window SHGC of [_____].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2.5.3"><TTL>Visible Light Transmittance (VLT)</TTL><BRK />
+<BRK />
+<TXT>Provide exterior glazed assemblies, including aluminum entrances doors with greater than 50 percent glazed area 
+with VLT [_____].</TXT><BRK />
+<BRK /></SPT>
+[<SPT outline="1.2.5.4"><TTL>Doors with Less than 50 Percent Glazed Area</TTL><BRK />
+<BRK />
+<TXT>For exterior aluminum entrances doors with less than 50 percent glazed area, the glazed area is considered the 
+fenestration area with a whole window U-Factor, SHGC and VLT as required above.</TXT><BRK />
+<BRK /></SPT>
+]</SPT></SPT><SPT outline="1.3"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Review Submittal Description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.</NPR><BRK />
+<BRK />
+<NPR>The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G."  Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a "G" to an item, if the submittal is sufficiently important or complex 
+in context of the project.</NPR><BRK />
+<BRK />
+<NPR>For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office.  Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.</NPR><BRK />
+<BRK />
+<NPR>The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
+submittal under the SD number that best describes the submittal item.</NPR><BRK />
+<BRK />
+<NPR>Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are [for Contractor Quality Control approval.][for information only.  When used, a designation following the 
+"G" designation identifies the office that will review the submittal for the Government.]  Submittals with an 
+"S" are for inclusion in the Sustainability eNotebook, in conformance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK />
+<BRK />
+<ITM>For Each Type of <SUB>Door and Frame Assembly</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-04 Samples</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Finish Samples</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-05 Design Data</SUB></LST><BRK />
+<BRK />
+<ITM>Structural <SUB>Calculations</SUB> for Deflection; <SUB>G[, [_____]]</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Air Infiltration</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Water Penetration</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-10 Operation and Maintenance Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Adjustments, Cleaning, and Maintenance</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.4"><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK />
+<BRK />
+<TXT>Inspect materials delivered to the site for damage.  Unload and store with minimum handling.  Provide storage 
+space in dry location with adequate ventilation, free from dust or water, and easily accessible for inspection 
+and handling.  Stack materials on non-absorptive strips or wood platforms.  Do not cover doors and frames with 
+tarps, polyethylene film, or similar coverings.  Protect finished surfaces during shipping and handling using 
+manufacturer's standard method.  Do not apply coatings or lacquers to surfaces to which caulking and glazing 
+compounds must adhere.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5"><TTL>QUALITY CONTROL</TTL><BRK />
+<BRK />
+<SPT outline="1.5.1"><TTL>Shop Drawing</TTL><BRK />
+<BRK />
+<TXT>Indicate elevations and sections for each type of <SUB>door and frame assembly</SUB>.  Show sizes and details of each assembly, 
+frame construction,[subframe attachment,] thickness and gages of metal, details of door and frame construction, 
+proposed method(s) of anchorage, glazing details, provisions for an location of hardware, [mullion details,] 
+method and materials for flashing and weatherstripping, miscellaneous trim, installation details, and other related 
+items necessary for a complete representation of all components.  A qualified blast engineer must perform testing 
+or calculations for door system design resistance to specified blast loads.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.2"><TTL><SUB>Finish Samples</SUB></TTL><BRK />
+<BRK />
+<TXT>Submit two color charts and two finish sample chips from manufacturer's standard color and finish options for 
+each type of finish indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.3"><TTL>Operation and Maintenance Data</TTL><BRK />
+<BRK />
+<TXT>Submit detailed instructions for installation, <SUB>adjustments, cleaning, and maintenance</SUB> of each type of assembly 
+indicated.</TXT><BRK />
+<BRK /></SPT>
+</SPT></PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>DOORS AND FRAMES</TTL><BRK />
+<BRK />
+<TXT>Provide swing-type aluminum doors and frames of size, design, and location indicated.  Provide doors complete 
+with frames, framing members[, subframes][, transoms][, adjoining side lites] , trim, and accessories.[  Coordinate 
+side lites, window walls, adjacent curtainwall with Section <SRF>08 41 13</SRF> ALUMINUM-FRAMED ENTRANCES AND STOREFRONTS][ 
+and Section <SRF>08 44 00</SRF> CURTAIN WALL AND GLAZED ASSEMBLIES.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2"><TTL>MATERIALS</TTL><BRK />
+<BRK />
+<SPT outline="2.2.1"><TTL>Anchors</TTL><BRK />
+<BRK />
+<TXT>Stainless steel [or steel with hot-dipped galvanized finish].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2"><TTL>Weatherstripping</TTL><BRK />
+<BRK />
+<TXT>Continuous wool pile, silicone treated, or type recommended by door manufacturer, and per <RID>JIS A 4702</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.3"><TTL>Aluminum Alloy for Doors and Frames</TTL><BRK />
+<BRK />
+<TXT><RID>JIS H 4040</RID>, Alloy 6063-T5 for extrusions.  <RID>JIS H 4000</RID>, alloy and temper best suited for aluminum sheets and strips.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.4"><TTL>Fasteners</TTL><BRK />
+<BRK />
+<TXT>Hard aluminum or stainless steel.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.5"><TTL>Structural Steel</TTL><BRK />
+<BRK />
+<TXT><RID>JIS H 4100</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.6"><TTL>Aluminum Paint</TTL><BRK />
+<BRK />
+<TXT>Aluminum door manufacturer's standard aluminum paint.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3"><TTL>FABRICATION</TTL><BRK />
+<BRK />
+<SPT outline="2.3.1"><TTL>Aluminum Frames</TTL><BRK />
+<BRK />
+<TXT>Extruded aluminum shapes with contours approximately as indicated.  Provide removable glass stops and glazing 
+beads for frames accommodating fixed glass.  Use countersunk stainless steel Phillips screws for exposed fastenings, 
+and space not more than<MET> 300 mm</MET><ENG> 12 inches</ENG> on center.  Mill joints in frame members to a hairline fit, reinforce, 
+and secure mechanically.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.2"><TTL>Aluminum Doors</TTL><BRK />
+<BRK />
+<TXT>Of type, size, and design indicated and minimum<MET> 45 mm</MET><ENG> 1-3/4 inch</ENG> thick.  minimum wall thickness,<MET> 3 mm</MET><ENG> 0.125 inch</ENG>
+, except beads and trim,<MET> 1.25 mm</MET><ENG> 0.050 inch</ENG>.  Door sizes shown are nominal; include standard clearances as follows: <MET>
+ 2.5 mm</MET><ENG> 0.093 inch</ENG> at hinge and lock stiles,<MET> 3 mm</MET><ENG> 0.125 inch</ENG> between meeting stiles,<MET> 3 mm</MET><ENG> 0.125 inch</ENG> at top rails,<MET>
+ 5 mm</MET><ENG> 0.187 inch</ENG> between bottom and threshold, and<MET> 17 mm</MET><ENG> 0.687 inch</ENG> between bottom and floor.[  Provide bevel 
+single-acting doors<MET> 2 or 3 mm</MET><ENG> 0.063 or 0.125 inch</ENG> at lock, hinge, and meeting stile edges.][  Provide double-acting 
+doors rounded edges at hinge stile, lock stile, and meeting stile edges.]</TXT><BRK />
+<BRK />
+<SPT outline="2.3.2.1"><TTL>Full Glazed Stile and Rail Doors</TTL><BRK />
+<BRK />
+<TXT>Provide doors with [narrow][medium][wide] stiles and rails as indicated. Fabricate from extruded aluminum hollow 
+seamless tubes or from a combination of open-shaped members interlocked or welded together.  Fasten top and bottom 
+rail together by means of welding or by<MET> 10 or 13 mm</MET><ENG> 3/8 or 1/2 inch</ENG> diameter cadmium-plated tensioned steel tie 
+rods.  Provide an adjustable mechanism of jack screws or other methods in the top rail to allow for minor clearance 
+adjustments after installation.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.2.2"><TTL>Flush Doors</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  The optional types of door construction may not be suitable for use in 
+all facilities.  Delete any option listed not considered desirable for a particular 
+usage or for use in a particular facility.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Use facing sheets with[ a vertical ribbed][ an embossed][ or][ a plain smooth] surface.  Use one of the following 
+constructions:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  A phenolic resin-impregnated kraft paper honeycomb core, surrounded at edges and around glass and 
+louvered areas with extruded aluminum shapes.  Provide cores with a minimum impregnation of 18 percent 
+resin content.  Provide sheet aluminum door facings minimum<MET> 0.8 mm</MET><ENG> 0.032 inch</ENG> thick laminated to a<MET> 2.5 
+mm</MET><ENG> 0.10 inch</ENG> thick tempered hardboard backing, with the backing bonded to the honeycomb core.  Bond facing 
+sheets to cores under heat and pressure with thermosetting adhesive and mechanically lock to extruded 
+edge members.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  A phenolic resin-impregnated kraft paper honeycomb core.  Use aluminum facing sheets minimum<MET> 1.25 
+mm</MET><ENG> 0.050 inch</ENG> thick and form into two pans to eliminate seams on faces.  Bond honeycomb core to face 
+sheets using epoxy resin or contact cement-type adhesive.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  A solid fibrous core, surrounded at edges and around glass and louvered areas and cross braced at 
+intermediate points with extruded aluminum shapes.  Use aluminum facing sheets of minimum<MET> 1.25 mm</MET><ENG> 0.050 
+inch</ENG> thickness.  Bond facing sheets to core under heat and pressure with a thermosetting adhesive, and 
+mechanically lock to the extruded edge members.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Form from extruded tubular stiles and rails mitered at corners, reinforce, and continuously weld 
+at miters.  Provide facing sheets of minimum<MET> 0.8 mm</MET><ENG> 0.032 inch</ENG> thick sheet aluminum internally reinforced 
+with aluminum channels or Z-bars placed horizontally not more than<MET> 400 mm</MET><ENG> 16 inch</ENG> apart and extending 
+the full width of panels.  Fit spaces between reinforcing with sound-deadening insulation.  Weld facing 
+sheets to reinforcing bars or channels and to stiles and rails.  Finish facing sheets flush with faces 
+of stiles and rails.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Form from an internal grid composed of extruded aluminum tubular sections.  Provide tubular sections 
+at all sides and perimeter of louver and glass openings.  Provide three extruded aluminum tubular sections 
+at top and bottom of each door.  Provide wall thickness of tubular sections minimum<MET> 2.25 mm</MET><ENG> 0.09 inch</ENG>
+ except at lock rails which must be minimum<MET> 3 mm</MET><ENG>0.125 inch</ENG> thick, hinge lock rails which must be minimum<MET>
+ 3 mm</MET><ENG> 0.125 inch</ENG> thick, and hinge rail edges which must be minimum<MET> 5 mm</MET><ENG> 0.19 inch</ENG> thick.  Fill spaces 
+in door with mineral insulation.  Provide facing sheets of aluminum minimum<MET> 2.25 mm</MET><ENG> 0.09 inch</ENG> thick.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Form from extruded aluminum members at top and bottom, both sides, and at perimeters of louver and 
+glass openings.  Provide wall sections of extruded aluminum members minimum<MET> 2.25 mm</MET><ENG> 0.09 inch</ENG> thick and 
+reinforce for application of hardware.  Cover framing members on both sides with aluminum facing sheets 
+minimum<MET> 2 mm</MET><ENG> 0.064 inch</ENG> thick.  Fill door panels with [<MET>172 kPa</MET><ENG>25 pounds per square inch</ENG> density polystyrene] 
+[<MET>40 kg per cubic meter</MET><ENG>2.5 pound per cubic foot</ENG> density, chlorofluorocarbon (CFC) free, foamed urethane] 
+with a flame spread rating of no more than 25.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.3.3"><TTL>Welding and Fastening</TTL><BRK />
+<BRK />
+<TXT>Where possible, locate welds on unexposed surfaces.  Dress welds on exposed surfaces smoothly.  Select welding 
+rods, filler wire, and flux to produce a uniform texture and color in finished work.  Remove flux and spatter 
+from surfaces immediately after welding.  Exposed screws or bolts will be permitted only in inconspicuous locations, 
+and must have countersunk heads.  Weld concealed reinforcements for hardware in place.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.4"><TTL>Weatherstripping</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Maximum air leakage rates are<MET> 2.19 by 10-5 cms per sq. m</MET><ENG> 0.5 cfm per 
+sq. ft.</ENG> of door area for residential swinging doors and<MET> 5.48 by 10-5 cms per 
+sq. m</MET><ENG> 1.25 cfm per sq. ft.</ENG> of door area for non-residential doors.  Both of 
+the air leakage rates assume the use of threshold and sweep strip.  Coordinate 
+with Section <SRF>08 71 00</SRF> DOOR HARDWARE.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide on stiles and rails of exterior doors.  Fit into slots which are integral with doors or frames.  Weatherstripping 
+must be replaceable without special tools, and adjustable at meeting rails of pairs of doors. During installation, 
+verify doors swing freely and close positively.  Refer to paragraph AIR INFILTRATION for air leakage requirements 
+and testing.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.5"><TTL>Anchors</TTL><BRK />
+<BRK />
+<TXT>On the backs of subframes, provide anchors of the sizes and shapes indicated for securing subframes to adjacent 
+construction.  Anchor transom bars at ends and mullions at head and sill.[  Where indicated, reinforce vertical 
+mullions with structural steel members of sufficient length to extend up to the overhead structural slab or framing 
+and secure thereto.][  Reinforce and anchor freestanding door frames to floor construction as indicated on approved 
+shop drawings and in accordance with manufacturer's recommendation.]  Place anchors [as indicated][near top and 
+bottom of each jamb and at intermediate points not more than<MET> 635 mm</MET><ENG> 25 inch</ENG> apart].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.6"><TTL>Provisions for Hardware</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification requires that hardware and glazing for aluminum 
+doors be specified in their respective sections of the project specification.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Where items of hardware such as operating mechanism for balanced doors, 
+integral push bars, concealed closing devices, and special panic bolts for exceptionally 
+narrow stile doors are designed as an integral part of door or frame construction, 
+it may be necessary to revise specification so these items are furnished as 
+part of door and frame unit.  When accessories, such as finger guards, electric 
+strikes, automatic power operators, and special thresholds are required, add 
+as necessary.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Coordinate with Section <SRF>08 71 00</SRF> DOOR HARDWARE.  Deliver hardware templates and hardware (except field-applied 
+hardware) to the door manufacturer for use in fabrication of aluminum doors and frames.  Cut, reinforce, drill, 
+and tap doors and frames at the factory to receive template hardware.  Provide doors to receive surface-applied 
+hardware, except push plates, kick plates, and mop plates, with reinforcing only; drill and tap in the field.  
+Provide hardware reinforcements of stainless steel or steel with hot-dipped galvanized finish, and secure with 
+stainless steel screws.[  Provide reinforcement in core of flush doors as required to receive locks, door closers, 
+and other hardware.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.7"><TTL>Provisions for Glazing</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification requires that hardware and glazing for aluminum 
+doors be specified in their respective sections of the project specification.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>[Provide extruded aluminum snap-in glazing beads on interior side of doors.][Provide extruded aluminum, theft-proof, 
+snap-in glazing beads or fixed glazing beads on exterior or security side of doors.][  Provide glazing beads 
+with vinyl insert glazing gaskets.][  Design glazing beads to receive thickness indicated for each glazed assembly.]  
+Coordinate requirements with Section <SRF>08 81 00</SRF> GLAZING.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.8"><TTL>Finishes</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify finish designation AA-M10-C22-A31, Architectural Class II clear 
+(natural) anodized finish or AA-M10-C22-A32, Architectural Class II color-anodized 
+finish, when doors will not be subject to excessive wear or abrasion and will 
+be regularly cleaned and maintained.  Specify finish designation AA-M10-C22-A41, 
+Architectural Class I clear (natural) anodized finish or AA-M10-C22-A42, Architectural 
+Class I color-anodized finish, when doors will be subject to excessive wear 
+and will not be regularly cleaned and maintained.  Also specify these designations 
+(Class I) are used in humid locations or project locations with Environmental 
+Severity Classifications (ESC) of C3 thru C5.  Humid locations are those in 
+ASHRAE climate zones 0A, 1A, 2A, 3A, 3C, 4C and 5C (as identified in ASHRAE 
+90.1).  See UFC 1-200-01 for determination of ESC for project locations..  Color-anodized 
+finish is available in medium bronze, dark bronze, and black.  Where revolving 
+aluminum doors and frames are shown in connection with aluminum swing doors, 
+exercise care to obtain matching color and finish of the two door types.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide exposed aluminum surfaces with [mill finish] [factory finish of anodic coating or organic coating].</TXT><BRK />
+<BRK />
+<SPT outline="2.3.8.1"><TTL>Anodic Coating</TTL><BRK />
+<BRK />
+<TXT>Clean exposed aluminum surfaces and provide an anodized finish conforming to <RID>JIS H 8602</RID>.  Provide [as selected 
+from manufacturer's [standard][complete] range of color options].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.8.2"><TTL>Organic Coating</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify baked enamel finish as an option to Class II anodized.  Specify 
+high-performance finish as an option to Class I anodized.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Clean and prime exposed aluminum surfaces.  Provide [a baked enamel finish in accordance with <RID>JIS K 5906</RID> with 
+total dry film thickness minimum<MET> 0.02 <BRK />
+mm</MET><ENG> 0.8 mil</ENG>].  Finish color to be [_____] [as indicated] [as selected from manufacturer's [standard][complete] 
+range of color options].</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT></PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>INSTALLATION</TTL><BRK />
+<BRK />
+<TXT>Plumb, square, level, and align frames and framing members to receive doors[, transoms][, adjoining side lites][, 
+and][, adjoining window walls] per <RID>MLIT SS Chapter 16</RID>. Anchor frames to adjacent construction as indicated and 
+in accordance with manufacturer's printed instructions and the approved shop drawings.  Install anchorage that 
+complies with applicable structural requirements.  Anchor bottom of each frame to rough floor construction with<MET>
+ 2.4 mm</MET><ENG> 3/32 inch</ENG> thick minimum stainless steel angle clips secured to back of each jamb and to floor construction; 
+use stainless steel bolts and expansion rivets for fastening clip anchors.  Hang doors to produce clearances 
+specified in paragraph ALUMINUM DOORS.  After erection and glazing, adjust doors and hardware to operate properly.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2"><TTL>PROTECTION FROM DISSIMILAR MATERIALS</TTL><BRK />
+<BRK />
+<SPT outline="3.2.1"><TTL>Dissimilar Metals</TTL><BRK />
+<BRK />
+<TXT>Where aluminum surfaces come in contact with metals other than stainless steel, zinc, or small areas of white 
+bronze, protect from direct contact to dissimilar metals.</TXT><BRK />
+<BRK />
+<SPT outline="3.2.1.1"><TTL>Protection</TTL><BRK />
+<BRK />
+<TXT>Provide one of the following systems to protect surfaces in contact with dissimilar metals:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Paint the dissimilar metal with one coat of heavy-bodied bituminous paint.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Apply elastomeric sealant between aluminum and dissimilar metals in accordance with Section 
+<SRF>07 92 00</SRF> JOINT SEALANTS.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Paint dissimilar metals with one coat of primer and one coat of aluminum paint.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Use a non-absorptive tape or gasket in permanently dry locations.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2.2"><TTL>Drainage from Dissimilar Metals</TTL><BRK />
+<BRK />
+<TXT>In locations where drainage from dissimilar metals has direct contact with aluminum, provide protective paint 
+to prevent aluminum discoloration.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.3"><TTL>Masonry and Concrete</TTL><BRK />
+<BRK />
+<TXT>Provide aluminum surfaces in contact with mortar, concrete, or other masonry materials with one coat of heavy-bodied 
+bituminous paint.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.4"><TTL>Wood or Other Absorptive Materials</TTL><BRK />
+<BRK />
+<TXT>Provide aluminum surfaces in contact with absorptive materials subject to frequent moisture, and aluminum surfaces 
+in contact with treated wood, with two coats of aluminum paint or one coat of heavy-bodied bituminous paint.  
+In lieu of painting aluminum, paint the wood or other absorptive surface with two coats of aluminum paint and 
+seal joints with elastomeric sealant.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.3"><TTL>SEALING AROUND ASSEMBLIES</TTL><BRK />
+<BRK />
+<TXT>Seal all penetrations of the air barrier by sealing around door openings as necessary to achieve compliance with 
+air leakage requirements indicated in [the air barrier sections of the specifications][, the requirements of 
+Section <SRF>07 27 10.00 10</SRF> BUILDING AIR BARRIER SYSTEM][, and Section <SRF>07 05 23</SRF> PRESSURE TESTING AN AIR BARRIER SYSTEM 
+FOR AIR TIGHTNESS].  Flash all doors with corrosion resistant flashing to prevent water intrusion.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4"><TTL>CLEANING</TTL><BRK />
+<BRK />
+<TXT>Upon completion of installation, clean door and frame surfaces in accordance with door manufacturer's written 
+recommended procedure.  Do not use abrasive, caustic, or acid cleaning agents.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5"><TTL>PROTECTION</TTL><BRK />
+<BRK />
+<TXT>Protect doors and frames from damage and from contamination by other <NED />materials such as cement mortar.  Prior 
+to completion and acceptance of the work, restore damaged doors and frames to original condition, or replace 
+with new ones.</TXT><BRK />
+<BRK /></SPT>
+</PRT>    <END /><BRK /></SEC>
