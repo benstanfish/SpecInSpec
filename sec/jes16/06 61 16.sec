@@ -30,7 +30,7 @@
 <DTA TYPE="STRING">Preparing Activity:  <PRA>USACE</PRA></DTA>
          </CEL>
          <CEL STYLEID="s50">
-<DTA TYPE="STRING">SupersedingUFGS-06 61 16 (August 2010)</DTA>
+<DTA TYPE="STRING">SupersedingUFGS-06 61 16 (August 2010)</DTA>
          </CEL>
       </ROW>
    </TDA>
@@ -411,7 +411,7 @@ Provide acrylic polymer that meets or exceeds the following minimum performance 
 <DTA TYPE="STRING">PROPERTY</DTA>
          </CEL>
          <CEL>
-<DTA TYPE="STRING">REQUIREMENT(min. or max.)</DTA>
+<DTA TYPE="STRING">REQUIREMENT(min. or max.)</DTA>
          </CEL>
          <CEL STYLEID="s50">
 <DTA TYPE="STRING"><HL4>TEST PROCEDURE</HL4></DTA>
@@ -579,7 +579,7 @@ Provide acrylic polymer that meets or exceeds the following minimum performance 
       </ROW>
       <ROW AUTOHEIGHT="0" HEIGHT="37.50">
          <CEL>
-<DTA TYPE="STRING">Flexural Strength</DTA>
+<DTA TYPE="STRING">Flexural Strength</DTA>
          </CEL>
          <CEL>
 <DTA TYPE="STRING">[6,800][10,400] psi (min.)</DTA>
@@ -618,7 +618,7 @@ to meet the following minimum performance requirements:</TXT><BRK/>
 <DTA TYPE="STRING">PROPERTY</DTA>
          </CEL>
          <CEL STYLEID="s50">
-<DTA TYPE="STRING">REQUIREMENT(min. or max.)</DTA>
+<DTA TYPE="STRING">REQUIREMENT(min. or max.)</DTA>
          </CEL>
          <CEL STYLEID="s51">
 <DTA TYPE="STRING"><HL4>TEST PROCEDURE</HL4></DTA>

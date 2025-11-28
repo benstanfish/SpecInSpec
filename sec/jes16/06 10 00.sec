@@ -32,7 +32,7 @@
 <DTA TYPE="STRING">Preparing Activity:  <PRA>NAVFAC</PRA></DTA>
          </CEL>
          <CEL STYLEID="s50">
-<DTA TYPE="STRING">SupersedingUFGS-06 10 00 (February 2012)</DTA>
+<DTA TYPE="STRING">SupersedingUFGS-06 10 00 (February 2012)</DTA>
          </CEL>
       </ROW>
    </TDA>
@@ -1863,7 +1863,7 @@ with TABLE I for the species used.  Sizes must be as follows unless otherwise sh
 <DTA TYPE="STRING">Bridging</DTA>
          </CEL>
          <CEL>
-<DTA TYPE="STRING"><MET>25 x 75</MET><ENG> 1 x 3</ENG> or<MET> 25 x 100</MET><ENG> 1 x 4</ENG> for use between members<MET> 50 x 300</MET><ENG> 2 x 12</ENG> and smaller;<MET> 50 x 100</MET><ENG> 2 x 4</ENG> for use between members larger than<MET> 50 x 300</MET><ENG> 2 x 12</ENG>.</DTA>
+<DTA TYPE="STRING"><MET>25 x 75</MET><ENG> 1 x 3</ENG> or<MET> 25 x 100</MET><ENG> 1 x 4</ENG> for use between members<MET> 50 x 300</MET><ENG> 2 x 12</ENG> and smaller;<MET> 50 x 100</MET><ENG> 2 x 4</ENG> for use between members larger than<MET> 50 x 300</MET><ENG> 2 x 12</ENG>.</DTA>
          </CEL>
       </ROW>
       <ROW>

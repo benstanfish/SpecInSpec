@@ -54,6 +54,7 @@ def create_html_reports(folder_path:str) -> None:
     create_index(html_folder)
 
 clean_dirs = ['./sec/jes16',
+              './sec/jes16_0x81 only',
               './sec/jes16_executed',
               './sec/jes161']
 

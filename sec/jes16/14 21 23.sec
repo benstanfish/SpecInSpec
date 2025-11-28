@@ -33,7 +33,7 @@
 <DTA TYPE="STRING">Preparing Activity:  <PRA><DEL>NAVFAC</DEL><ADD>TRI SERVICES</ADD></PRA></DTA>
          </CEL>
          <CEL STYLEID="s50">
-<DTA TYPE="STRING"><DEL>SupersedingUFGS-14 21 00.00 20 (May 2012)UFGS-14 21 23 (February 2009)</DEL></DTA>
+<DTA TYPE="STRING"><DEL>SupersedingUFGS-14 21 00.00 20 (May 2012)UFGS-14 21 23 (February 2009)</DEL></DTA>
          </CEL>
       </ROW>
    </TDA>

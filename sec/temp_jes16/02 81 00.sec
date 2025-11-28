@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
-<HDR><AST/><TAB BORDERS="0">
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><BRK />
+<HDR><AST /><TAB BORDERS="0">
 <WBK>
-   <STS/>
+   <STS />
    <TDA COLUMNCOUNT="2" ROWCOUNT="4">
-      <COL AUTOWIDTH="0" WIDTH="225.00"/>
-      <COL AUTOWIDTH="0" WIDTH="225.00"/>
+      <COL AUTOWIDTH="0" WIDTH="225.00" />
+      <COL AUTOWIDTH="0" WIDTH="225.00" />
       <ROW AUTOHEIGHT="0" HEIGHT="14.25">
          <CEL>
 <DTA TYPE="STRING">USACE / NAVFAC / AFCEC / NASA</DTA>
@@ -14,8 +14,8 @@
          </CEL>
       </ROW>
       <ROW AUTOHEIGHT="0" HEIGHT="11.25">
-         <CEL MERGEDOWN="1"/>
-         <CEL/>
+         <CEL MERGEDOWN="1" />
+         <CEL />
       </ROW>
       <ROW AUTOHEIGHT="0" HEIGHT="11.25">
          <CEL INDEX="2">
@@ -27,69 +27,69 @@
 <DTA TYPE="STRING">Preparing Activity:  <PRA>USACE</PRA></DTA>
          </CEL>
          <CEL>
-<DTA TYPE="STRING">SupersedingUFGS-02 81 00 (February 2010)</DTA>
+<DTA TYPE="STRING">SupersedingUFGS-02 81 00 (February 2010)</DTA>
          </CEL>
       </ROW>
    </TDA>
 </WBK>
-<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB><BRK/>
-<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
-<BRK/>
-<HL4>References are in agreement with UMRL dated January 2022</HL4><BRK/>
-<AST/><BRK/></HDR>
-<BRK/>
-<SCN>SECTION 02 81 00</SCN><BRK/>
-<BRK/>
-<STL>TRANSPORTATION AND DISPOSAL OF HAZARDOUS MATERIALS</STL><BRK/>
-01/24<BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated January 2022</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 02 81 00</SCN><BRK />
+<BRK />
+<STL>TRANSPORTATION AND DISPOSAL OF HAZARDOUS MATERIALS</STL><BRK />
+01/24<BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This is a Japan Edited Specification. For AFFF disposal, please select 
 the AFFF tailoring option. For other types of contaminants, select the POL tailoring 
-option.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<NTE><BRK/>
-<AST/><BRK/>
+option.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This guide specification covers the requirements for <SCP>transportation and 
-disposal of hazardous material</SCP>.<BRK/>
-<BRK/>
+disposal of hazardous material</SCP>.<BRK />
+<BRK />
 Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
 Standard when editing this guide specification or preparing new project specification 
 sections.  Edit this guide specification for project specific requirements by 
 adding, deleting, or revising text.  For bracketed items, choose applicable 
-item(s) or insert appropriate information.<BRK/>
-<BRK/>
+item(s) or insert appropriate information.<BRK />
+<BRK />
 Remove information and requirements not required in respective project, whether 
-or not brackets are present.<BRK/>
-<BRK/>
+or not brackets are present.<BRK />
+<BRK />
 Comments, suggestions and recommended changes for this guide specification are 
-welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This specification was developed for large management contracts where 
 there is a technical evaluation in the selection process.  For small purchases, 
 portions of this specification may be applicable, but should be closely considered.  
 This specification should be used in conjunction with the separate asbestos 
-and PCB management specifications when work involves these hazardous materials.</NPR><BRK/>
-<BRK/>
+and PCB management specifications when work involves these hazardous materials.</NPR><BRK />
+<BRK />
 <NPR>For other than remedial action, corrective action, or disposal of ammunition 
-contract, add DFAR clause 252.223.-7005</NPR><BRK/>
-<BRK/>
+contract, add DFAR clause 252.223.-7005</NPR><BRK />
+<BRK />
 <NPR>If work does not involve hazardous wastes, submittals regarding the hazardous 
 waste management plan, the EPA Biennial and State Annual Reports, exceptions 
-reports, and records of inspection may be removed by the designer.</NPR><BRK/>
-<BRK/>
+reports, and records of inspection may be removed by the designer.</NPR><BRK />
+<BRK />
 <NPR>If work does not involve hazardous wastes, PCB waste, or asbestos containing 
-waste, certificates of disposal may be removed by the designer.</NPR><BRK/>
-<BRK/>
+waste, certificates of disposal may be removed by the designer.</NPR><BRK />
+<BRK />
 <NPR>Regarding pre-established spill reporting procedures, the designer should consult 
 CEMP-RT memorandum of 20 July 1995, Subject:  Spill Reporting Procedures for 
 USACE Personnel Involved in HTRW Projects or updated memorandum scheduled to 
-be available by Jan 2004.</NPR><BRK/>
-<BRK/>
+be available by Jan 2004.</NPR><BRK />
+<BRK />
 <NPR>Security planning requirements (49 CFR 172) contain responsibilities for both 
 the offeror of the hazardous material as well as the transporter.  Thus both 
 the Government and Contractor have responsibilities for security planning that 
@@ -102,109 +102,109 @@ either a security plan is in place or to document exemption from the security
 plan requirement.  In developing this specification, Designers should determine 
 whether this specification requires modification to address Agency specific 
 requirements for pre-transportation security requirements in addition to transportation 
-related security requirements.<BRK/>
-<BRK/>
+related security requirements.<BRK />
+<BRK />
 Regarding security plan certifications, for USACE the intent is to obtain a 
 Contractor certification for pre-transportation activities as well as a separate 
 certification from the initial transporter.  Other agencies may take a different 
 approach to implementing security planning requirements and specification should 
-be modified accordingly.<BRK/>
-<BRK/>
+be modified accordingly.<BRK />
+<BRK />
 USACE projects require certificates of disposal for all hazardous waste, CERCLA 
 remediation wastes, PCBs, radionuclide containing waste, and asbestos as per 
-Engineering Pamphlet 415-1-266.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<SPT><TTL>REFERENCES</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+Engineering Pamphlet 415-1-266.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
 the guide specification.  The publications are referred to in the text by basic 
 designation only and listed in this paragraph by organization, designation, 
-date, and title.<BRK/>
-<BRK/>
+date, and title.<BRK />
+<BRK />
 Use the Reference Wizard's Check Reference feature when you add a Reference 
 Identifier (RID) outside of the Section's Reference Article to automatically 
 place the reference in the Reference Article.  Also use the Reference Wizard's 
-Check Reference feature to update the issue dates.<BRK/>
-<BRK/>
+Check Reference feature to update the issue dates.<BRK />
+<BRK />
 References not used in the text will automatically be deleted from this section 
 of the project specification when you choose to reconcile references in the 
-publish print process.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
-referred to within the text by the basic designation only.</TXT><BRK/>
-<BRK/>
-<REF><ORG>U.S. Department of Defense (DOD)</ORG><BRK/>
-<DEL><BRK/></DEL>
-<RID>JEGS</RID><RTL>(<ADD>Apr </ADD>202<DEL>2</DEL><ADD>4</ADD>) Japan Environmental Governing Standards</RTL><BRK/>
-<BRK/></REF>
-<REF><ORG>U.S. ARMY CORPS OF ENGINEERS (USACE)</ORG><BRK/>
-<BRK/>
+referred to within the text by the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>U.S. Department of Defense (DOD)</ORG><BRK />
+<DEL><BRK /></DEL>
+<RID>JEGS</RID><RTL>(<ADD>Apr </ADD>202<DEL>2</DEL><ADD>4</ADD>) Japan Environmental Governing Standards</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. ARMY CORPS OF ENGINEERS (USACE)</ORG><BRK />
+<BRK />
 <RID>EM 385-1-1</RID><DEL><RTL>(2014) Safety and Health Requirements Manual</RTL></DEL><ADD><RTL>
- Safety -- Safety and Health Requirements Manual</RTL></ADD></REF><BRK/>
-<BRK/></SPT>
-<SPT><TTL>DEFINITIONS</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Hazardous Material</TTL><BRK/>
-<BRK/>
+ Safety -- Safety and Health Requirements Manual</RTL></ADD></REF><BRK />
+<BRK /></SPT>
+<SPT outline="1.2"><TTL>DEFINITIONS</TTL><BRK />
+<BRK />
+<SPT outline="1.2.1"><TTL>Hazardous Material</TTL><BRK />
+<BRK />
 <TXT>Any material that exhibits any of the characteristics of a physical hazard, a health hazard, a simple asphyxiant, 
-combustible dust, or pyrophoric gas, or is regulated by the Government of Japan (GoJ). See <RID>JEGS</RID>.</TXT><BRK/></SPT>
-<BRK/>
-<TAI OPT="AFFF"><SPT><TTL>Aqueous Film Forming Foam (AFFF)</TTL><BRK/>
-<BRK/>
+combustible dust, or pyrophoric gas, or is regulated by the Government of Japan (GoJ). See <RID>JEGS</RID>.</TXT><BRK /></SPT>
+<BRK />
+<TAI OPT="AFFF"><SPT><TTL>Aqueous Film Forming Foam (AFFF)</TTL><BRK />
+<BRK />
 <TXT>A fire suppression agent used by DoD and non-DoD entities that may contain perfluoroalkyl substances (PFAS). 
-AFFF will be treated as a hazardous material for the purposes of this specification.</TXT><BRK/></SPT>
-<BRK/>
-<SPT><TTL>Perfluoroalkyl substances (PFAS)</TTL><BRK/>
-<BRK/>
+AFFF will be treated as a hazardous material for the purposes of this specification.</TXT><BRK /></SPT>
+<BRK />
+<SPT><TTL>Perfluoroalkyl substances (PFAS)</TTL><BRK />
+<BRK />
 <TXT>A chemical substance of environmental concern due its toxicity to humans and fauna, persistence in the environment, 
-and bioaccumulation potential. </TXT><BRK/></SPT>
-<BRK/>
-<SPT><TTL>Perfluorooctanoic acid (PFOA) &amp; Perfluorooctane sulfonate (PFOS)<BRK/></TTL>
-<BRK/>
+and bioaccumulation potential. </TXT><BRK /></SPT>
+<BRK />
+<SPT><TTL>Perfluorooctanoic acid (PFOA) &amp; Perfluorooctane sulfonate (PFOS)<BRK /></TTL>
+<BRK />
 <TXT>Fluorocarbon surfactants which are PFAS that are added to AFFF as surface active agents that facilitate fire 
 suppression. PFOS and its salts are listed in the <RID>JEGS</RID> as a hazardous substance, indicating that the material 
 is capable of posing an unreasonable risk to health, safety, or the environment if improperly handled, stored, 
 issued, transported, labeled, or disposed of. The JEGS do not list PFOS/PFOA as a hazardous waste nor do they 
-exhibit the listed hazardous waste characteristics.</TXT><BRK/></SPT>
-<BRK/>
-<SPT><TTL>AFFF Concentrate<BRK/></TTL>
-<BRK/>
+exhibit the listed hazardous waste characteristics.</TXT><BRK /></SPT>
+<BRK />
+<SPT><TTL>AFFF Concentrate<BRK /></TTL>
+<BRK />
 <TXT>AFFF Concentrate liquid for incineration. Unused or &gt; 10% AFFF product that is pumpable and presumed to contain 
 PFAS. All AFFF Concentrate encountered during this project shall be destroyed by high temperature incineration 
 using facilities that are licensed or permitted by the GoJ and approved by the DoD Lead Environmental Component 
 in accordance with the criteria listed in <RID>JEGS</RID> for the destruction of hazardous wastes (including PFAS containing 
-wastes).</TXT><BRK/></SPT>
-<BRK/>
-<SPT><TTL>AFFF Solutions<BRK/></TTL>
-<BRK/>
+wastes).</TXT><BRK /></SPT>
+<BRK />
+<SPT><TTL>AFFF Solutions<BRK /></TTL>
+<BRK />
 <TXT>AFFF rinsate/ water-diluted liquid for incineration. Used or &gt; 90% water solution that is pumpable and presumed 
 to contain PFAS. All AFFF Solutions encountered during this project shall be destroyed by high temperature incineration 
 using facilities that are licensed or permitted by the GoJ and approved by the DoD Lead Environmental Component 
 in accordance with the criteria listed in <RID>JEGS</RID> for the destruction of hazardous wastes (including PFAS containing 
-wastes).</TXT><BRK/></SPT>
-<BRK/>
-<SPT><TTL>AFFF-Contaminated Incidental Waste<BRK/></TTL>
-<BRK/>
+wastes).</TXT><BRK /></SPT>
+<BRK />
+<SPT><TTL>AFFF-Contaminated Incidental Waste<BRK /></TTL>
+<BRK />
 <TXT>AFFF-contaminated solids, sludges, or debris (e.g. personal protective equipment, filter media, etc.) for incineration. 
 May contain some free liquids, but not pumpable and presumed to contain PFAS. All AFFF-Contaminated Incidental 
 Wastes encountered during this project shall be destroyed by high temperature incineration using facilities that 
 are licensed or permitted by the GoJ and approved by the DoD Lead Environmental Component in accordance with 
-the criteria listed in <RID>JEGS</RID> for the destruction of hazardous wastes (including PFAS containing wastes).</TXT><BRK/></SPT>
-</TAI><BRK/>
-<TAI OPT="POL"><SPT><TTL>Petroleum, Oils, and Lubricants (POL)</TTL><BRK/>
-<BRK/>
+the criteria listed in <RID>JEGS</RID> for the destruction of hazardous wastes (including PFAS containing wastes).</TXT><BRK /></SPT>
+</TAI><BRK />
+<TAI OPT="POL"><SPT><TTL>Petroleum, Oils, and Lubricants (POL)</TTL><BRK />
+<BRK />
 <TXT>POL systems include: Bulk fueling facilities; Fuels laboratories; Refueler parking and maintenance facilities; 
 POL pipelines; Aircraft fueling facilities and associated infrastructure; Marine fueling facilities and associated 
 infrastructure; Ground vehicle fueling facilities and associated infrastructure (Military service station, Retail 
 gas station, Compressed natural gas vehicle service stations and Liquid propane vehicle service stations to include 
-industrial equipment (e.g., forklifts)).</TXT><BRK/>
-<BRK/></SPT>
-</TAI></SPT><SPT><TTL>SUBMITTALS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+industrial equipment (e.g., forklifts)).</TXT><BRK />
+<BRK /></SPT>
+</TAI></SPT><SPT outline="1.3"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
 PROCEDURES and edit the following list, and corresponding submittal items in 
 the text, to reflect only the submittals required for the project.  The Guide 
@@ -212,106 +212,106 @@ Specification technical editors have classified those items that require Governm
 approval, due to their complexity or criticality, with a "G."  Generally, other 
 submittal items can be reviewed by the Contractor's Quality Control System.  
 Only add a "G" to an item, if the submittal is sufficiently important or complex 
-in context of the project.</NPR><BRK/>
-<BRK/>
+in context of the project.</NPR><BRK />
+<BRK />
 <NPR>Codes following the "G" typically are not used for Navy, Air Force, and NASA 
-projects.</NPR><BRK/>
-<BRK/>
+projects.</NPR><BRK />
+<BRK />
 <NPR>The "S" classification indicates submittals required as proof of compliance 
 for sustainability Guiding Principles Validation or Third Party Certification 
-and as described in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES.</NPR><BRK/>
-<BRK/>
+and as described in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES.</NPR><BRK />
+<BRK />
 <NPR>Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
-the second bracketed item for Army projects.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+the second bracketed item for Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Government approval is required for submittals with a "G" or "S" classification.  Submittals not having a "G" 
 or "S" classification are for Contractor Quality Control approval. Submit the following in accordance with Section 
-<SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
-<BRK/>
-<LST><SUB>SD-01 Preconstruction Submittals</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Waste Management And Disposal Plan</SUB>; <SUB>G</SUB></ITM><BRK/>
-<BRK/>
-<LST><SUB>SD-06 Test Reports</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Spill Response</SUB></ITM><BRK/>
-<BRK/>
-<LST><SUB>SD-07 Certificates</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>Shipping Documents and Packagings Certification</SUB>; <SUB>G</SUB></ITM><BRK/>
-<BRK/>
-<ITM><SUB>Certificates Of Disposal/ Destruction</SUB>; <SUB>G</SUB></ITM><TAI OPT="AFFF"><LST><SUB>SD-11 Closeout Submittals</SUB></LST><BRK/>
-<BRK/>
-<ITM><SUB>AFFF Disposal Accountability Report</SUB>; <SUB>G</SUB></ITM></TAI><BRK/>
-<BRK/></SPT>
-<SPT><TTL>QUALITY ASSURANCE</TTL><BRK/>
-<BRK/>
-<SPT><TTL>Certification</TTL><BRK/>
-<BRK/>
+<SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-01 Preconstruction Submittals</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Waste Management And Disposal Plan</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Spill Response</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Shipping Documents and Packagings Certification</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Certificates Of Disposal/ Destruction</SUB>; <SUB>G</SUB></ITM><TAI OPT="AFFF"><LST><SUB>SD-11 Closeout Submittals</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>AFFF Disposal Accountability Report</SUB>; <SUB>G</SUB></ITM></TAI><BRK />
+<BRK /></SPT>
+<SPT outline="1.4"><TTL>QUALITY ASSURANCE</TTL><BRK />
+<BRK />
+<SPT outline="1.4.1"><TTL>Certification</TTL><BRK />
+<BRK />
 <TXT>The hazardous materials transporter and disposal facility must possess a current Certificate of Registration 
 issued by the GoJ or local prefectural regulatory agency. Submit copies of the certificates with the Waste Management 
 and Disposal Plan. The Contractor shall also comply with the EMS program, including all base environmental plans, 
-instructions, <RID>EM 385-1-1</RID>, and the Japan Environmental Governing Standards (<RID>JEGS</RID>). </TXT></SPT><BRK/>
-<BRK/>
-<SPT><TTL>Laws and Regulations Requirements</TTL><BRK/>
-<BRK/>
+instructions, <RID>EM 385-1-1</RID>, and the Japan Environmental Governing Standards (<RID>JEGS</RID>). </TXT></SPT><BRK />
+<BRK />
+<SPT outline="1.4.2"><TTL>Laws and Regulations Requirements</TTL><BRK />
+<BRK />
 <TXT>Comply with the <RID>JEGS</RID>, GoJ, prefectural, and local laws and regulations which are applicable. These requirements 
 are amended frequently and compliance with  amendments is required as they become effective. Notify the Contracting 
-Officer immediately if compliance exceeds the scope of work or conflicts with specific requirements of the contract.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><TAI OPT="POL"><SPT><TTL>POL Removal</TTL><BRK/>
-<BRK/>
-<TXT>Removal of POL is confined to the bulk tank containment area as shown on the demolition drawings.</TXT><BRK/>
-<BRK/></SPT>
-</TAI></PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+Officer immediately if compliance exceeds the scope of work or conflicts with specific requirements of the contract.</TXT><BRK />
+<BRK /></SPT>
+</SPT><TAI OPT="POL"><SPT><TTL>POL Removal</TTL><BRK />
+<BRK />
+<TXT>Removal of POL is confined to the bulk tank containment area as shown on the demolition drawings.</TXT><BRK />
+<BRK /></SPT>
+</TAI></PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  For US Army Corps of Engineer (USACE) Projects involving shipments containing 
 radioactive nuclides, additional products such as special marking may apply. 
 See USACE Engineering Pamphlet 415-1-266, Chapter 7, Resident Engineer Management 
 Guide for Hazardous, Toxic, and Radioactive Waste Projects and Engineering Manual 
-1110-35-1, Management Guidelines for Working with Radioactive and Mixed Waste.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
-<SPT><TTL>MATERIALS</TTL><BRK/>
-<BRK/>
+1110-35-1, Management Guidelines for Working with Radioactive and Mixed Waste.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="2.1"><TTL>MATERIALS</TTL><BRK />
+<BRK />
 <TXT>Provide all materials required for the packaging, labeling, marking, and transportation of hazardous materials 
 in conformance with GoJ and local prefectural laws and regulations. Details in this specification must not be 
-construed as establishing the limits of the Contractor's responsibility.</TXT><BRK/>
-<BRK/>
-<SPT><TTL>Packagings</TTL><BRK/>
-<BRK/>
+construed as establishing the limits of the Contractor's responsibility.</TXT><BRK />
+<BRK />
+<SPT outline="2.1.1"><TTL>Packagings</TTL><BRK />
+<BRK />
 <TXT>Provide bulk and non-bulk containers, as appropriate, suitable for shipping <TAI OPT="AFFF">AFFF concentrate</TAI><TAI OPT="POL">impacted media</TAI>, solutions, 
 and contaminated incidental materials to the disposal facility. Consult with the disposal facility for specific 
-packaging requirements. </TXT><BRK/></SPT>
-<BRK/>
-<SPT><TTL>Labeling</TTL><BRK/>
-<BRK/>
+packaging requirements. </TXT><BRK /></SPT>
+<BRK />
+<SPT outline="2.1.2"><TTL>Labeling</TTL><BRK />
+<BRK />
 <TXT>Provide primary and subsidiary labels for all containers. Labels must be durable weather-resistant and capable 
 of withstanding a 180-day exposure to conditions reasonably expected to be encountered during container storage 
-and transportation, without deterioration or substantial color change.</TXT><BRK/></SPT>
-<BRK/>
-<SPT><TTL>Spill Response Materials</TTL><BRK/>
-<BRK/>
+and transportation, without deterioration or substantial color change.</TXT><BRK /></SPT>
+<BRK />
+<SPT outline="2.1.3"><TTL>Spill Response Materials</TTL><BRK />
+<BRK />
 <TXT>Provide spill response materials including, but not limited to, containers, adsorbent, shovels, and personal 
 protective equipment.  Spill response materials must be available at all times when hazardous materials/wastes 
 are being handled or transported.  Spill response materials must be compatible with the type of material being 
-handled.</TXT><BRK/>
-<BRK/></SPT>
-</SPT><SPT><TTL>EQUIPMENT AND TOOLS</TTL><BRK/>
-<BRK/>
+handled.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.2"><TTL>EQUIPMENT AND TOOLS</TTL><BRK />
+<BRK />
 <TXT>Provide miscellaneous equipment and tools necessary to handle hazardous materials and hazardous wastes in a safe 
-and environmentally sound manner. Comply with <RID>EM 385-1-1</RID>.</TXT><BRK/>
-<BRK/></SPT>
-</PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
-<BRK/>
-<SPT><TTL><SUB>WASTE MANAGEMENT AND DISPOSAL PLAN</SUB></TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
-<NPR>NOTE: If AFFF is being disposed of select the appropriate bracketed options. </NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+and environmentally sound manner. Comply with <RID>EM 385-1-1</RID>.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL><SUB>WASTE MANAGEMENT AND DISPOSAL PLAN</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: If AFFF is being disposed of select the appropriate bracketed options. </NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>All<TAI OPT="POL">impacted media</TAI><TAI OPT="AFFF">AFFF concentrates and solutions</TAI> shall become the property of the Contractor and the Contractor 
 is solely responsible for all management and disposal requirements. There is no intent of US Government entities 
 to accept any wastes for disposal. The Contractor shall prepare a Waste Management and Disposal Plan detailing 
@@ -323,65 +323,65 @@ and stored; describe waste minimization methods; identify and describe packaging
 transporters to be used and the haul route(s) to move hazardous materials from the site to the disposal facility; 
 identify and describe facilities to be used for final treatment, storage, and disposal (TSD); and identify whether 
 transfer facilities are to be used; and if so, how the materials will be tracked to ultimate disposal. Submit 
-the plan to the Contracting Officer for approval prior to start of work. </TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>OFFSITE HAZARDOUS WASTE MANAGEMENT</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+the plan to the Contracting Officer for approval prior to start of work. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2"><TTL>OFFSITE HAZARDOUS WASTE MANAGEMENT</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  For US Army Corps of Engineer (USACE) Projects involving shipments containing 
 radioactive nuclides, additional management requirements may apply. Designers 
 should refer to USACE EP 415-1-266, Chapter 7, Resident Engineer Management 
 Guide for Hazardous, Toxic, and Radioactive Waste Projects and EM 1110-35-1, 
 Management Guidelines for Working with Radioactive and Mixed Waste.  For example, 
-a pink mark stating "Warning: Empty only at (destination)" is required.</NPR><BRK/>
-<BRK/>
+a pink mark stating "Warning: Empty only at (destination)" is required.</NPR><BRK />
+<BRK />
 <NPR>Designers should review new manifest requirements as they become available to 
-ensure this specification remains consistency with regulatory changes.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+ensure this specification remains consistency with regulatory changes.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>The Contractor is solely responsible for all management and disposal requirements. There is no intent of Government 
 entities to accept any wastes for disposal. Coordinate the off-site transfer of all hazardous materials<TAI OPT="AFFF">, including 
 AFFF concentrates, solutions, and contaminated incidental wastes,</TAI> with the installation environmental office 
 and the Contracting Officer. Use disposal facilities that are licensed or permitted by the GoJ and approved by 
 the DoD Lead Environmental Component in accordance with the criteria listed in the <RID>JEGS</RID> for the destruction of 
 hazardous wastes (including PFAS containing wastes). Handling and transportation of such material shall be in 
-accordance with Chapters 10 and 16 of the <RID>JEGS</RID> and GoJ or prefecture requirements, as applicable. </TXT><BRK/>
-<BRK/>
-<SPT><TTL>Treatment, Storage, and Disposal Facility and Transporter</TTL><BRK/>
-<BRK/>
+accordance with Chapters 10 and 16 of the <RID>JEGS</RID> and GoJ or prefecture requirements, as applicable. </TXT><BRK />
+<BRK />
+<SPT outline="3.2.1"><TTL>Treatment, Storage, and Disposal Facility and Transporter</TTL><BRK />
+<BRK />
 <TXT>Provide the Contracting Officer with the identity of licensed transporter(s) and a licensed disposal facility, 
 by name, address, phone number, permit/ identification number, type of facility (treatment, storage, disposal), 
 and permit expiration date. This information must be contained in the Waste Management and Disposal Plan and 
-be approved by the Contracting Officer prior to waste disposal.</TXT><BRK/></SPT>
-<BRK/>
-<SPT><TTL><SUB>Shipping Documents and Packagings Certification</SUB></TTL><BRK/>
-<BRK/>
+be approved by the Contracting Officer prior to waste disposal.</TXT><BRK /></SPT>
+<BRK />
+<SPT outline="3.2.2"><TTL><SUB>Shipping Documents and Packagings Certification</SUB></TTL><BRK />
+<BRK />
 <TXT>Prior to shipment of any hazardous material offsite and a minimum of 14 days prior to anticipated pickup, provide 
 for review written certification to the Contracting Officer that hazardous materials have been properly packaged, 
 labeled, and marked in accordance with Department of Transportation, JEGS, GoJ, and local prefectural requirements. 
 Furnish designated disposal facility packaging assurances   not later than 35 days after acceptance of the shipment. 
 The Contractor's EM must also provide written certification regarding waste minimization efforts documenting 
 that efforts have been taken to reduce the volume of waste to the degree economically practicable and that the 
-method of treatment, storage, or disposal selected minimizes threats to human health and the environment.<BRK/>
-<BRK/>
+method of treatment, storage, or disposal selected minimizes threats to human health and the environment.<BRK />
+<BRK />
 Package, label, and mark hazardous materials using the specified materials and in accordance with the referenced 
 authorizations. Ensure that each shipment of hazardous material sent offsite is accompanied by properly completed 
 shipping documents. If necessary, prepare a bill of lading for each shipment of hazardous material which fulfills 
 the shipping paper requirements. The bill of lading   must satisfy the requirements of GoJ, prefectural, or local 
 law or regulation, and must be submitted to the Contracting Officer for review and approval. Bill of ladings 
-requiring shipper's certifications must be signed by the Contractor.</TXT><BRK/></SPT>
-</SPT><BRK/>
-<SPT><TTL>TREATMENT AND DISPOSAL OF HAZARDOUS MATERIALS</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+requiring shipper's certifications must be signed by the Contractor.</TXT><BRK /></SPT>
+</SPT><BRK />
+<SPT outline="3.3"><TTL>TREATMENT AND DISPOSAL OF HAZARDOUS MATERIALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  For US Army Corps of Engineer (USACE) Projects involving shipments containing 
 radioactive nuclides, additional management requirements may apply.  Designers 
 should refer to USACE EP 415-1-266, Chapter 7, Resident Engineer Management 
 Guide for Hazardous, Toxic, and Radioactive Waste Projects and EM 1110-35-1, 
 Management Guidelines for Working with Radioactive and Mixed Waste.  For example, 
-a pink mark stating "Warning: Empty only at (destination)" is required.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+a pink mark stating "Warning: Empty only at (destination)" is required.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>The Contractor is solely responsible for the disposal of all hazardous materials<TAI OPT="AFFF">, including AFFF concentrate, 
 solutions, contaminated incidental materials, and metal components</TAI>. There is no intent of Government entities 
 to accept any wastes for disposal.<TAI OPT="AFFF">AFFF concentrate shall be segregated from AFFF solutions (i.e. rinsate). All 
@@ -390,105 +390,105 @@ of</TAI> shall be packaged in containers suitable for shipping to the disposal f
 facility for containerization requirements. Transport all<TAI OPT="POL">impacted media</TAI> <TAI OPT="AFFF">AFFF concentrate, solutions, contaminated 
 incidental materials, and metal components </TAI>to the disposal facility in accordance with the JEGS and GoJ or prefecture 
 requirements, as applicable.<TAI OPT="AFFF">Submit <SUB>Certificates of Disposal/ Destruction</SUB> documenting the ultimate destruction 
-by incineration. The disposal certificate shall include:<BRK/>
-<BRK/>
+by incineration. The disposal certificate shall include:<BRK />
+<BRK />
 - the identity of the disposal facility, by name, address, phone number, permit/ identification number, type 
-of facility (treatment, storage, disposal), permit expiration date;<BRK/>
+of facility (treatment, storage, disposal), permit expiration date;<BRK />
 - types and quantities of material being destroyed (i.e., AFFF concentrate, AFFF solutions, AFFF systems components, 
-location of origin of AFFF material);<BRK/>
-- date AFFF material was accepted by the disposal facility; and<BRK/>
+location of origin of AFFF material);<BRK />
+- date AFFF material was accepted by the disposal facility; and<BRK />
 - a statement certifying the fact of incineration of the identified material, including the date(s) of disposal 
-and process used. <BRK/>
-<BRK/>
-Receipt of these  certificates will be required for final payment.</TAI></TXT><TAI OPT="AFFF"><BRK/>
-<BRK/>
-<SPT><TTL>AFFF Concentrate</TTL><BRK/>
-<BRK/>
+and process used. <BRK />
+<BRK />
+Receipt of these  certificates will be required for final payment.</TAI></TXT><TAI OPT="AFFF"><BRK />
+<BRK />
+<SPT><TTL>AFFF Concentrate</TTL><BRK />
+<BRK />
 <TXT>Drain and collect for disposal all AFFF concentrate from atmospheric tanks, stationary bladder tanks, and associated 
 piping containing concentrate from the tank to the AFFF proportioner. Dispose of all collected AFFF concentrate 
 via high temperature incineration at disposal facilities that are licensed or permitted by the GoJ and approved 
 by the Installation Environmental Component for the disposal of hazardous wastes (including PFAS containing wastes). 
-The Contractor shall provide Certificates of Disposal/ Destruction (or processing) for all AFFF concentrate.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>AFFF Solutions</TTL><BRK/>
-<BRK/>
+The Contractor shall provide Certificates of Disposal/ Destruction (or processing) for all AFFF concentrate.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>AFFF Solutions</TTL><BRK />
+<BRK />
 <TXT>Collect all water/liquid within the associated concenrate piping and atmospheric tanks and dispose as AFFF solution. 
 Dispose of all collected AFFF solutions via high temperature incineration at disposal facilities that are licensed 
 or permitted by the GoJ and approved by the Installation Environmental Component for the disposal of hazardous 
 wastes (including PFAS containing wastes). The Contractor shall provide Certificates of Disposal/ Destruction 
-(or processing) for all AFFF solutions.<BRK/></TXT>
-<BRK/></SPT>
-<SPT><TTL>AFFF-Contaminated Incidental Waste</TTL><BRK/>
-<BRK/>
+(or processing) for all AFFF solutions.<BRK /></TXT>
+<BRK /></SPT>
+<SPT><TTL>AFFF-Contaminated Incidental Waste</TTL><BRK />
+<BRK />
 <TXT>Collect and dispose of all miscellaneous AFFF contaminated incidental waste produced while conducting fieldwork 
 consisting of non-metallic system components (that is, other than steel tanks or metal system piping, etc.), 
 wipes, absorbent pads, gloves, Tyvek suits, etc. Dispose of all collected miscellaneous AFFF contaminated incidental 
 waste via high temperature incineration at disposal facilities that are licensed or permitted by the GoJ and 
 approved by the Installation Environmental Component for the disposal of hazardous wastes (including PFAS containing 
 wastes). The Contractor shall provide Certificates of Disposal/ Destruction (or processing) for all contaminated 
-incidental wastes.<BRK/>
-<BRK/>
+incidental wastes.<BRK />
+<BRK />
 To meet these requirements while also safely handling ACM materials, AFFF contaminated ACM gaskets shall be treated 
 using a high temperature process that destroys (incinerates) AFFF materials while containing ACM materials safely.  
 The resulting slag waste shall be landfilled at a facility licensed or permitted by the GoJ and approved by the 
 Installation Environmental Component. The Contractor shall provide Certificates of Disposal/ Destruction (or 
-processing) for all slag wastes.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>Metal Components Requiring Disposal</TTL><BRK/>
-<NTE><BRK/>
-<AST/><BRK/>
+processing) for all slag wastes.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Metal Components Requiring Disposal</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
 <NPR>NOTE:  The designer should determine whether bill of lading certifications will 
 be signed by the Government or the Contractor.  This determination should be 
 based on whether the Government or the Contractor is responsible for classifying, 
-packaging, marking, labeling, and placarding the shipment.</NPR><BRK/>
-<AST/><BRK/></NTE>
-<BRK/>
+packaging, marking, labeling, and placarding the shipment.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
 <TXT>Metal components requiring disposal (e.g., system piping contaminated with AFFF) shall 1) be triple rinsed prior 
 to disposal through recycling via smelting or 2) disposed of as PFOS contaminated industrial waste at a facility 
 licensed or permitted by the GoJ. The Contractor shall provide Certificates of Disposal/ Destruction (or processing) 
-for the smelted metal waste.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL><SUB>AFFF Disposal Accountability Report</SUB></TTL><BRK/>
-<BRK/>
+for the smelted metal waste.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL><SUB>AFFF Disposal Accountability Report</SUB></TTL><BRK />
+<BRK />
 <TXT>The Contractor shall provide an AFFF Disposal Accountability Report for all AFFF concentrate, solutions (i.e., 
 rinsate, shell water) volumes removed or generated by the Contractor (as for the case of tank rinsate), AFFF-Contaminated 
 Incidental Waste, and metal components requiring disposal through final disposition (disposal). AFFF concentrate 
 and solutions shall be accounted for at the originating location (i.e., building, etc.). Quantities of other 
 AFFF contaminated system components requiring disposal shall also be accounted for. Disposal certificates for 
 all materials destroyed by high temperature incineration shall indicate quantities of AFFF concentrate/solution 
-(typically weights) or weights of solid components (i.e., bladders, etc.) treated, as applicable.</TXT><BRK/></SPT>
-</TAI><BRK/>
-<TAI OPT="POL"><SPT><TTL>POL Impacted Waste</TTL><BRK/>
-<BRK/>
+(typically weights) or weights of solid components (i.e., bladders, etc.) treated, as applicable.</TXT><BRK /></SPT>
+</TAI><BRK />
+<TAI OPT="POL"><SPT><TTL>POL Impacted Waste</TTL><BRK />
+<BRK />
 <TXT>Collect and dispose of all POL impacted waste. Dispose of all POL waste at disposal facilities that are licensed 
 or permitted by the GoJ and approved by the Installation Environmental Component for the disposal of hazardous 
 wastes. The Contractor shall provide Certificates of Disposal/ Destruction (or processing) for all contaminated 
-incidental wastes.</TXT><BRK/></SPT>
-</TAI></SPT><BRK/>
-<SPT><TTL><SUB>SPILL RESPONSE</SUB></TTL><BRK/>
-<BRK/>
+incidental wastes.</TXT><BRK /></SPT>
+</TAI></SPT><BRK />
+<SPT outline="3.4"><TTL><SUB>SPILL RESPONSE</SUB></TTL><BRK />
+<BRK />
 <TXT>In the event of a spill or release of a hazardous substance, or pollutant or contaminant, notify the Contracting 
 Officer immediately. Direction from the Contracting Officer concerning a spill or release is not considered a 
 change under the contract. If the spill exceeds a reporting threshold, follow the pre-established procedures 
 for immediate reporting to the Contracting Officer. Comply with applicable requirements of the installation Sill 
-Prevention and Response Plan, <RID>JEGS</RID>, GoJ, prefectural, or local laws or regulations regarding any spill incident.</TXT><BRK/>
-<BRK/></SPT>
-<SPT><TTL>EMERGENCY CONTACTS</TTL><BRK/>
-<BRK/>
+Prevention and Response Plan, <RID>JEGS</RID>, GoJ, prefectural, or local laws or regulations regarding any spill incident.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5"><TTL>EMERGENCY CONTACTS</TTL><BRK />
+<BRK />
 <TXT>Whenever the Contractor ships hazardous materials, provide a 24 hr emergency response contact and phone number 
 of a person knowledgeable about the hazardous materials being shipped and who has comprehensive emergency response 
 and incident mitigation information for that material, or has immediate access to a person who possesses such 
 knowledge and information.   Always monitor the phone on a 24-hour basis when the hazardous materials are in 
 transportation, including during storage incidental to transportation.   Ensure that information regarding this 
 emergency contact and phone number are placed on all hazardous material shipping documents.   Designate an emergency 
-coordinator and post the following information at areas in which hazardous wastes are managed:</TXT><BRK/>
-<BRK/>
-<LST INDENT="-0.33">a.  The name of the emergency coordinator.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">b.  Phone number through which the emergency coordinator can be contacted on a 24 hour basis.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">c.  The telephone number of the local fire department.</LST><BRK/>
-<BRK/>
-<LST INDENT="-0.33">d.  The location of fire extinguishers and spill control materials.</LST><BRK/>
-<BRK/></SPT>
-</PRT>    <END/><BRK/></SEC>
+coordinator and post the following information at areas in which hazardous wastes are managed:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  The name of the emergency coordinator.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Phone number through which the emergency coordinator can be contacted on a 24 hour basis.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  The telephone number of the local fire department.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  The location of fire extinguishers and spill control materials.</LST><BRK />
+<BRK /></SPT>
+</PRT>    <END /><BRK /></SEC>
