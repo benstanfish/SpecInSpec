@@ -1,0 +1,906 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                   UFGS-02 84 33 (April 2006)<BRK />
+                                                --------------------------<BRK />
+Preparing Activity:  <PRA>NAVFAC</PRA>                     Replacing without change<BRK />
+                                                UFGS-13284 (August 2004)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated January 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 02 84 33</SCN><BRK />
+<BRK />
+<STL>REMOVAL AND DISPOSAL OF POLYCHLORINATED BIPHENYLS (PCBs)</STL><BRK />
+<DTE>01/24</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>the removal and disposal of polychlorinated biphenyls 
+(PCBs) and the handling of PCB containing materials</SCP>.<BRK />
+<BRK />
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections.  Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text.  For bracketed items, choose applicable item(s) or insert 
+appropriate information.<BRK />
+<BRK />
+Remove information and requirements not required in respective project, whether or not brackets are present.<BRK />
+<BRK />
+Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification is intended for use in projects where PCBs or materials containing PCB at concentrations 
+of 0.5 parts per million (ppm) and above are to be removed and disposed of.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  A generator of PCB wastes who relinquishes control over the wastes by transporting, or offering for transport 
+by his own vehicle or by a vehicle owned by another person, or relinquishing for commercial off-site storage or 
+off-site disposal shall prepare a manifest  in accordance with the JEGS.  The generator shall specify on the manifest:</NPR><BRK />
+<BRK />
+<NPR>1.  For each bulk load of PCBs, the identity of the PCB waste, the earliest date of removal from service for disposal, 
+and the weight in kilograms of the PCB waste.</NPR><BRK />
+<BRK />
+<NPR>2.  For each PCB Article Container or PCB Container, the unique identifying number, type of PCB waste (e.g., soil, 
+debris, small capacitors), earliest date of removal from service for disposal, and weight in kilograms of the 
+PCB waste contained.</NPR><BRK />
+<BRK />
+<NPR>3.  For each PCB Article not in a PCB Container or PCB Article Container, the serial number if available, or other 
+identification if there is no serial number, the date of removal from service for disposal, and weight in kilograms 
+of the PCB waste in each PCB Article.</NPR><BRK />
+<BRK />
+<NPR>4.  One off-site commercial storage or disposal facility approved for the commercial storage or disposal of the 
+PCBs and PCB Items described on the manifest.</NPR><BRK />
+<BRK />
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of the guide specification. The publications 
+are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK />
+ <BRK />
+Use the Reference Wizard's Check Reference feature when you add a Reference Identifier (RID) outside of the Section's 
+Reference Article to automatically place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<BRK />
+ <BRK />
+References not used in the text will automatically be deleted from this section of the project specification when 
+you choose to reconcile references in the publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are referred to within the text by 
+the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG><DEL>JAPAN MINISTRY OF THE ENVIRONMENT(MOE)</DEL><ADD>MINISTRY OF THE ENVIRONMENT GOVERNMENT OF JAPAN (MOE)</ADD></ORG><BRK />
+<BRK />
+<RID>Act No. 137</RID><RTL>(1970, Amended 1991 and 2006) Waste Management and Public Cleansing Law</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. DEPARTMENT OF DEFENSE (DOD)</ORG><BRK />
+<BRK />
+<RID>JEGS</RID><RTL>(Apr 202<DEL>2</DEL><ADD>4</ADD>) <DEL> </DEL>Japan Environmental Governing Standards</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)</ORG><BRK />
+<BRK />
+<BRK />
+<RID>29 CFR 1910</RID><RTL>Occupational Safety and Health Standards</RTL><BRK />
+<BRK />
+<RID>29 CFR 1910.145</RID><RTL>Specifications for Accident Prevention Signs and Tags</RTL><BRK />
+<BRK />
+<RID>40 CFR 761</RID><RTL>Polychlorinated Biphenyls (PCBs) Manufacturing, Processing, Distribution in Commerce, 
+and Use Prohibitions</RTL><BRK />
+<BRK />
+<BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>REQUIREMENTS</TTL><BRK />
+<BRK />
+<TXT>The work includes the management of PCB containing [ballasts][ and ][transformers].  The Contractor shall inspect, confirm and identify all PCB-containing 
+items prior to commencement of work. Perform work in accordance with <RID>40 CFR 761</RID>, <RID>JEGS</RID>, and the requirements specified herein.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>DEFINITIONS</TTL><BRK />
+<BRK />
+<SPT outline="1.3.1"><TTL>Industrial Hygienist (IH)/Private Qualified Person (PQP)</TTL><BRK />
+<BRK />
+<TXT>An industrial hygienist/private qualified person (IH/PQP) hired by the Contractor shall be a registered Architect, Professional Engineer (licensed), 
+or US Certified Industrial Hygienist and having demonstrable experience in hazardous materials management (i.e. lighting ballasts and lamps containing 
+PCBs or mercury), who is trained in the recognition and control of hazardous chemical related hazards, and has the authority to take prompt corrective 
+actions to control the hazard.</TXT><BRK /></SPT>
+<BRK />
+<SPT outline="1.3.2"><TTL>Leak</TTL><BRK />
+<BRK />
+<TXT>Leak or leaking means any instance in which a PCB Article, PCB Container, or PCB Equipment has any PCBs on any portion of its external surface.<BRK />
+<BRK /></TXT>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  If the project scope disturbs lamps containing hazardous materials (mercury, mercury vapor, high pressure 
+sodium, and metal halide), include the following bracketed entry.</NPR><BRK />
+<AST /><BRK /></NTE>
+</SPT>[<SPT outline="1.3.3"><TTL>Lamps</TTL><BRK />
+<BRK />
+<TXT>Lamp is defined as the bulb or tube portion of an electric lighting device. A lamp is specifically designed to produce radiant energy, most often 
+in the ultraviolet, visible, and infra-red regions of the electromagnetic <BRK />
+spectrum. Examples of common universal waste electric lamps include, <BRK />
+but are not limited to, fluorescent, high intensity discharge, neon, <BRK />
+mercury vapor, high pressure sodium, and metal halide lamps.<BRK /></TXT>
+<BRK /></SPT>
+]<SPT outline="1.3.4"><TTL>PCBs</TTL><BRK />
+<BRK />
+<TXT>PCBs as used in this specification shall mean the same as PCBs, PCB Article, PCB Article Container, PCB Container, PCB Equipment, PCB Item, PCB 
+Transformer, PCB-Contaminated Electrical Equipment, as defined in the <RID>JEGS</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3.5"><TTL>Spill</TTL><BRK />
+<BRK />
+<TXT>Spill means both intentional and unintentional spills, leaks, and other uncontrolled discharges when the release results in any quantity of PCBs 
+running off or about to run off the external surface of the equipment or other PCB source, as well as the contamination resulting from those releases.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.4"><TTL>QUALITY ASSURANCE</TTL><BRK />
+<BRK />
+<SPT outline="1.4.1"><TTL><SUB>PCB and Lamp Management Plan</SUB></TTL><BRK />
+<BRK />
+<TXT>Prior to handling any PCB items, the Contractor shall submit a PCB and Lamp Management and Disposal Plan.  The submitted plan shall include the 
+PCB and Lamp removal and disposal procedures in accordance with the <RID>JEGS</RID>, GoJ, and prefectural laws, qualifications for the IH/PQP, Installation 
+specific requirements and plans, a designated Installation point of contact (POC),and a Japan Industrial Waste Collection and Transport Permit.</TXT><BRK />
+<BRK />
+<TXT>Include within the PCB and Lamp Management and Disposal Plan, a job-specific plan within [20]<TAI OPT="KADENA AF BASE">[14]</TAI> calendar days after [receipt of Notice to Proceed]<TAI OPT="KADENA AF BASE">
+[prior to removal work]</TAI> explaining the work procedures to be used in the removal, packaging, and storage of PCB-containing lighting ballasts and 
+associated hazardous material-containing lamps.  <BRK />
+<BRK />
+Submit a detailed job-specific plan of the work procedures to be used in the removal of PCB-containing materials, not to be combined with other 
+hazardous abatement plans.  Provide a Table of Contents for each abatement submittal which shall follow the sequence of requirements in the contract.  
+The plan shall include a sketch showing the location, size, and details of PCB control areas[, location and details of decontamination rooms, change 
+rooms, shower facilities, and mechanical ventilation system].  Include in the plan, eating, drinking, smoking and restroom procedures, interface 
+of trades, sequencing of PCB related work, PCB disposal plan, respirators, protective equipment, and a detailed description of the method of containment 
+of the operation to ensure that PCB contamination is not spread or carried outside of the control area.  [Include provisions to ensure that airborne 
+PCB concentrations of <MET> 0.50 milligrams per cubic meter</MET><ENG> 3.10 E-08 pound per cubic feet</ENG> of air are not exceeded outside of the PCB control area.  
+Include air sampling, training and strategy, sampling methodology, frequency, duration of sampling, and qualifications of air monitoring personnel 
+in the air sampling portion of the plan.] Obtain approval of the plan prior to the start of PCB removal work.  Include in the plan: Requirements 
+for Personal Protective Equipment (PPE), spill cleanup procedures and equipment, eating, smoking and restroom procedures.  <BRK />
+<BRK />
+The Plan shall comply with applicable requirements of Federal, <RID>JEGS</RID>, GOJ and prefectural PCB and hazardous material-related regulations. The plan 
+shall be approved and signed by the IH/PQP.  Obtain approval of the plan by the Contracting Officer prior to the start of PCB and/or lamp removal work.<BRK />
+<BRK />
+<TAI OPT="KADENA AF BASE">All US-made ballasts, even those marked &#8220;NO-PCB&#8221; shall be turned in to the 718 CES/CEIE PCB Storage section.  Call DSN 634-2600 5-days prior to 
+delivery to schedule a drop off.</TAI><BRK />
+<BRK />
+<TAI OPT="KADENA AF BASE">The plan shall address:</TAI></TXT><TAI OPT="KADENA AF BASE"><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Estimate the quantity of ballasts and other PCB containing equipment to be delivered to Bldg 3625.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Estimate the quantity of hazardous material-containing lamps to be disposed or recycled at a certified commercial facility.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  List the names and qualifications of each Contractor that will be transporting, storing, recycling and disposing of the toxic wastes.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Furnish a copy of current prefecture-issued waste permit showing that each company is certified by the prefecture to transport and 
+dispose/recycle hazardous material-containing lamps or other waste.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Names and qualifications (experience and training) of personnel who<BRK />
+will be working on-site with PCB and hazardous material-containing lamp wastes.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Spill prevention, containment, and cleanup contingency measures to be implemented.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  Schedule for PCB and hazardous material-containing lamp waste removal, containment, storage, transportation, disposal and or recycling.  
+Wastes shall be cleaned up and containerized daily.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  When submitting the Environmental Protection Plan (EPP) in accordance with Section [<SRF>01 57 19</SRF>][<SRF>01 57 19.01</SRF>] TEMPORARY ENVIRONMENTAL 
+CONTROLS, under the paragraphs pertaining to PCBs, state that the <SUB>PCB and Lamp Management Plan</SUB> will be submitted separately.</LST></TAI><BRK />
+<BRK />
+<SPT outline="1.4.1.1"><TTL>PCB and Lamp Disposal Plan</TTL><BRK />
+<BRK />
+<TXT>Include within the <SUB>PCB and Lamp Management Plan</SUB>, a PCB and lamp Disposal Plan within [45] [_____] calendar days after [receipt of Notice to Proceed][prior 
+to removal work].  The PCB and Lamp Disposal Plan shall comply with applicable requirements of the <RID>JEGS</RID> and applicable U.S. federal, GOJ, and local 
+prefecture and JEGS PCB regulations and address:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Identification of PCB wastes associated with the work.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Estimated quantities of wastes to be generated, disposed of, and recycled.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Names and qualifications of each Contractor personnel who will be working on-site with PCB and hazardous material-containing lamp wastes 
+and that will be transporting, storing, treating, and disposing of the wastes.  Include the facility location.  Include a 24-hour point 
+of contact.  Furnish two copies of PCB and hazardous material-containing lamp waste permit applications and pertinent identification numbers, 
+as required.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Spill prevention, containment, and cleanup contingency measures to be implemented.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  List of waste handling equipment to be used in performing the work, to include cleaning, volume reduction, and transport equipment.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Work plan and schedule for PCB and hazardous material-containing lamp waste removal, containment, storage, transportation, disposal 
+and or recycling.  Wastes shall be cleaned up and containerized daily.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.4.2"><TTL>Regulatory Requirements</TTL><BRK />
+<BRK />
+<TXT>Perform PCB related work in accordance with the <RID>JEGS</RID>, <RID>Act No. 137</RID>, and other applicable US Federal, GOJ, and local laws and regulations.  Perform 
+hazardous material-containing lamps storage and transport in accordance with the <RID>JEGS</RID>, <RID>Act No. 137</RID>, and other applicable US Federal, GOJ, and local 
+laws and regulations.  </TXT><BRK />
+<BRK />
+<SPT outline="1.4.2.1"><TTL>No Smoking</TTL><BRK />
+<BRK />
+<TXT>Smoking is not permitted within<MET> 15 m</MET><ENG> 50 feet</ENG> of the PCB control area.  Provide "No Smoking" signs as directed by the Contracting Officer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.4.2.2"><TTL>Work Operations</TTL><BRK />
+<BRK />
+<TXT>Ensure that work operations or processes involving PCB or PCB-contaminated materials are conducted in accordance with <RID>JEGS</RID> and the applicable requirements 
+of this section, including but not limited to:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Obtaining advance approval of PCB storage sites.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Notifying Contracting Officer prior to commencing the operation.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Reporting leaks and spills to the Contracting Officer.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Cleaning up spills.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Maintaining an access log of employees working in a PCB control area and providing a copy to the Contracting Officer upon completion 
+of the operation.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Inspecting PCB and PCB-contaminated items and waste containers for leaks and forwarding copies of inspection reports to the Contracting 
+Officer.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  Maintaining a spill kit as specified in paragraph entitled "PCB Spill Kit."</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  Maintaining inspection, inventory and spill records.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.4.3"><TTL>Training</TTL><BRK />
+<BRK />
+<TXT>Industrial Hygienist/Private Qualified Person (IH/PQP) shall instruct and certify the training of all persons involved in the removal of PCB containing 
+materials/equipment and lamps containing hazardous substances. The instruction shall include: The dangers of PCB and hazardous material exposure, 
+decontamination, safe work practices, and <RID>29 CFR 1910</RID>, <RID>JEGS</RID>, GOJ, and prefectural regulations. <BRK />
+<BRK />
+The IH/PQP shall review and approve the <SUB>PCB and Lamp Management Plan</SUB> and temporary on-site Storage Plans.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.4.4"><TTL>Regulation Documents</TTL><BRK />
+<BRK />
+<TXT>Maintain at all times one copy each at the office and one copy each in view at the job site of pertinent JEGS and a copy of the Contractor <SUB>PCB 
+and Lamp Management Plan</SUB>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.4.5"><TTL><SUB>Qualifications of IH/PQP</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Choose one of two bracketed paragraphs only.  Choose second bracketed item for Kadena AB projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>An industrial hygienist/private qualified person (IH/PQP) hired by the Contractor shall be a registered Architect, Professional Engineer (licensed), 
+or US Certified Industrial Hygienist and having demonstrable experience in hazardous materials management (i.e. lighting ballasts and lamps containing 
+PCBs or mercury), who is trained in the recognition and control of hazardous chemical related hazards, and has the authority to take prompt corrective 
+actions to control the hazard.  An IH/PQP must have working knowledge of applicable GOJ, Federal, local prefecture, and JEGS regulations as well 
+as occupational safety and health regulations and shall be capable of recognizing chemical hazards associated with lighting ballasts, lamps, and 
+other similar building equipment or materials.</TXT><NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: Choose one of two bracketed items.  For Kadena AB projects, choose [14] calendar days [prior to removal 
+work].  For all other projects, select [20] calendar days [after receipt of Notice to Proceed] unless instructed 
+otherwise by Installation Environmental Office. <BRK />
+<BRK />
+Edit removal plan requirements to suit the project.  Modify or delete decon and change rooms, showers, and ventilation.  
+Delete air sampling requirements except for work at elevated temperatures sufficient to vaporize PCB or for work 
+involving PCB contaminated dust or particulate generation such as grinding, sawing, or sweeping.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<BRK /></SPT>
+<SPT outline="1.4.6"><TTL><SUB>Training Certification</SUB></TTL><BRK />
+<BRK />
+<TXT>Submit certificates, prior to the start of work but after the main abatement submittals, signed and dated by the CIH and by each employee stating 
+that the employee has received training.  Certificates shall be organized by individual worker, not grouped by type of certificates.<BRK /></TXT>
+<BRK /></SPT>
+<SPT outline="1.4.7"><TTL><SUB>Notification</SUB></TTL><BRK />
+<BRK />
+<TXT>Notify the Contracting Officer 20 days prior to the start of PCB removal work.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.5"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Review Submittal Description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project. <BRK />
+<BRK />
+The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G".  Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System.   Only add a &#8220;G&#8221; to an item, if the submittal is sufficiently important or complex in 
+context of the project.<BRK />
+<BRK />
+For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
+tags may be used following the "G" designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" for District Office (Engineering 
+Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
+for Project Office.  Codes following the "G" typically are not used for Navy,  Air Force, and NASA projects.<BRK />
+<BRK />
+The "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook to 
+fulfill federally mandated sustainable requirements in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Locate the "S" submittal under the SD number that best describes the submittal item.<BRK />
+<BRK />
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose the second bracketed item for 
+Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are [for Contractor Quality Control 
+approval.][for information only.  When used, a designation following the "G" designation identifies the office that will review the submittal for 
+the Government.]  Submittals with an "S" are for inclusion in the Sustainability eNotebook, in conformance to Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-01 Preconstruction Submittals</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>PCB and Lamp Management Plan</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK />
+<BRK />
+<ITM>*<SUB>Qualifications of IH/PQP</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Training certification</SUB></ITM><BRK />
+<BRK />
+<TAI OPT="KADENA AF BASE"><ITM><SUB>Japan Specially Controlled Hazardous Waste Disposal Permit</SUB> (Submit separate SCIW Disposal Permits if lamps and PCB items are to 
+be disposed of at separate disposal sites.); G</ITM><BRK /></TAI>
+<BRK />
+<TAI OPT="KADENA AF BASE"><ITM>*<SUB>Japan Industrial Waste Collection And Transport Permit</SUB>; G</ITM></TAI><BRK />
+<BRK />
+<ITM><SUB>Copy E of the Japanese Hazardous Waste Manifest</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Notification</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Certification Of Decontamination</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Post Cleanup Sampling</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.6"><TTL>EQUIPMENT</TTL><BRK />
+<BRK />
+<SPT outline="1.6.1"><TTL>Special Clothing</TTL><BRK />
+<BRK />
+<TXT>Work clothes shall consist of PPE as required by OSHA regulations, including, but not limited to the following:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Disposable coveralls</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Gloves (Disposable rubber gloves may be worn under these)</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Disposable foot covers (polyethylene)</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Chemical safety goggles</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Half mask cartridge respirator.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="1.6.2"><TTL>Special Clothing for Government Personnel</TTL><BRK />
+<BRK />
+<TXT>Provide PPE specified in paragraph entitled "Special Clothing" to the Contracting Officer as required for inspection of the work.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6.3"><TTL>PCB Spill Kit</TTL><BRK />
+<BRK />
+<TXT>Assemble a spill kit to include the following items:</TXT><BRK />
+<TAB HEADERROWS="0" WIDTH="91">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM" />
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="2" ROWCOUNT="18">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="330.75" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="94.50" />
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><HL1>ITEM</HL1></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><HL1>MINIMUM QUANTITY</HL1></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">1.  Disposable gloves (polyethylene)</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">6 prs</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="36.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">2.  Gloves with a high degree of impermeability to PCB</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">6 prs</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="36.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">3.  Disposable coveralls with permeation resistance to PCB</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">4 ea</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">4.  Chemical safety goggles</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">2 ea</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="36.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">5.  Disposable foot covers (polyethylene)</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">6 prs</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="36.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">6.  PCB Caution Sign:  "PCB Spill--Authorized Personnel Only"</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">2 ea</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">7.  Banner guard or equivalent banner material</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>30 m</MET><ENG> 100 feet</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">8.  Absorbent material</DTA>
+         </CEL>
+         <CEL STYLEID="s50" />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">9.  Blue polyethylene waste bags</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">5 bags</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">10.  Cloth backed tape</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">5 ea</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">11.  Area access logs, blank</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">1 roll</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">12.  Brattice cloth,<MET> 2 m x 2 m</MET><ENG> 6' x 6'</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">10 ea</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">13.  Rags</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">1 piece</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">14.  Ball point pens</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">20 ea</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="36.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">15.  Herculite,<MET> 1.5 m x 1.5 m and 3 m x 3 m</MET><ENG> 4' x 4' and 8' x 8'</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">2 ea and 1 ea</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">16.  Blank metal signs and grease pencils</DTA>
+         </CEL>
+         <CEL STYLEID="s50" />
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="36.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">17.  Waste containers<MET> 208 liters</MET><ENG>  55 gallon</ENG> drum, may be used as container for kit</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">2 ea<BRK />[1] [_____] ea</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK /></SPT>
+</SPT><SPT outline="1.7"><TTL>SCHEDULING</TTL><BRK />
+<BRK />
+<TXT>Notify the Contracting Officer 20 days prior to the start of PCB and hazardous material-containing lamp removal work.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<TXT>Not used.</TXT><BRK />
+<BRK /></PRT>
+<PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>WORK PROCEDURE</TTL><BRK />
+<BRK />
+<TXT>Furnish labor, materials, services, and equipment necessary for the removal of PCB containing lighting ballasts, associated mercury-containing 
+fluorescent lamps, and high intensity discharge (HID) lamps in accordance with the JEGS, applicable GOJ and local, prefectural regulations.  Do 
+not expose PCBs to open flames or other high temperature sources since toxic decomposition by-products may be produced.  Do not break mercury containing 
+fluorescent lamps or high intensity discharge lamps.</TXT><BRK />
+<BRK />
+<SPT outline="3.1.1"><TTL>Protection</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Include this paragraph only if work involves cleanup of large PCB spills or if airborne contamination exists.  
+Consult cognizant Industrial Hygienist for recommendations.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<LST INDENT="-0.33">a.  Provide material and labor for construction of a decontamination room, a clean room, and shower facilities.  Provide rooms with doors 
+and attach to the exit ways of PCB work areas.  Rooms shall be of sufficient size to accommodate the Contractor's operation within.  [Existing 
+facilities with water closets, urinals, wash basins and showers may be used if available to the Contractor.] [Provide portable toilet and 
+shower facilities.  Locate shower facilities between the clean room and decontamination room.] Provide separate clothing lockers or containers 
+in each room to prevent contamination of street and work clothes.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Remove PCB-contaminated PPE in the decontamination room.  Workers shall then proceed to showers.  Workers shall shower before lunch 
+and at the end of each day's work.  Hot water, towels, soap, and hygienic conditions are the responsibility of the Contractor.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.2"><TTL>PCB Control Area</TTL><BRK />
+<BRK />
+<TXT>Isolate PCB control area by physical boundaries to prevent unauthorized entry of personnel.  Food, drink and smoking materials shall not be permitted 
+in areas where PCBs are handled or PCB items are stored.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.3"><TTL>Personnel Protection</TTL><BRK />
+<BRK />
+<TXT>Workers shall wear and use PPE, as recommended by the Industrial Hygienist, upon entering a PCB control area.  If PPE is not required per the CIH, 
+specify in the PCB and Lamp Management Plan.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.4"><TTL>Footwear</TTL><BRK />
+<BRK />
+<TXT>Work footwear shall remain inside work area until completion of the job.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.5"><TTL>Permissible Exposure Limits (PEL)</TTL><BRK />
+<BRK />
+<TXT>PEL for PCBs is<MET> 0.5 mg/m3</MET><ENG> 3.1 E-08 lb/cubic foot</ENG> on an 8-hour time weighted average basis.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.6"><TTL>Special Hazards</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  PCBs shall not be exposed to open flames or other high temperature sources since toxic decomposition by-products may be produced.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  PCBs shall not be heated to temperatures of<MET> 55 degrees C</MET><ENG> 135 degrees F</ENG> or higher without Contracting Officer's concurrence.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.7"><TTL>PCB Caution Label</TTL><BRK />
+<BRK />
+<TXT>Affix labels to PCB waste containers and other PCB-contaminated items.  Provide label with sufficient print size to be clearly legible, with bold 
+print on a contrasting background, displaying the following:  CAUTION:  Contains PCBs (Polychlorinated Biphenyls).  Installations shall label PCB 
+waste as a hazardous waste per JEGS Appendix 16B. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.8"><TTL>PCB Caution Sign</TTL><BRK />
+<BRK />
+<TXT><RID>29 CFR 1910.145</RID>.  Provide signs at approaches to PCB control areas.  Locate signs at such a distance that personnel may read the sign and take 
+the necessary precautions before entering the area.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2"><TTL>PCB TRANSFORMERS</TTL><BRK />
+<BRK />
+<SPT outline="3.2.1"><TTL>Draining of Transformer Liquid</TTL><BRK />
+<BRK />
+<TXT>Perform work in accordance with the <RID>JEGS</RID> and approved <SUB>PCB and Lamp Management Plan</SUB>.  Drain the transformer, switches, and regulators of free flowing 
+liquid prior to transportation.    The drums shall not contain more than<MET> 190 liters</MET><ENG> 50 gallons</ENG> of oil.  If the equipment cannot be drained, then 
+place it in DOT Spec 17C drums.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.2"><TTL>Markings</TTL><BRK />
+<BRK />
+<TXT>Provide drums and drained PCB-contaminated electrical equipment with caution label markings as specified in paragraph entitled "PCB Caution Label" 
+in both Japanese and English.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Choose this option and subparagraphs if PCB waste transportation and disposal has been arranged with Installation 
+Environmental Office.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK /></SPT>
+<SPT outline="3.2.3"><TTL>Laboratory Analysis</TTL><BRK />
+<BRK />
+<TXT>All transformers shall have a laboratory analysis for turn-in.  DLA-DS prefers a gas chromatograph test.  The only two exceptions to this rule 
+are:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  The transformer is hermetically sealed (solder sealed or fusion sealed.  No access ports or openings).</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  The name plate states that the transformer contains pyranol, interteen, etc.</LST><BRK />
+<BRK />
+<TXT>Attach a copy of the lab analysis to both the DD 1348-1 and the transformer itself.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.4"><TTL>Markings</TTL><BRK />
+<BRK />
+<SPT outline="3.2.4.1"><TTL>Transformers, Less Than 0.5ppm</TTL><BRK />
+<BRK />
+<TXT>Add absorbent material to absorb residue oil remaining after draining.  Write the date drained on the transformer.  Turn in transformers to the 
+DLA-DS Scrapyard.  Telephone 471-3636 to schedule appointment for turn-in.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.4.2"><TTL>Transformers, Greater Than 0.5 ppm</TTL><BRK />
+<BRK />
+<TXT>Stencil date drained on the transformer.  Turn in transformer to [include specific installation information].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.4.3"><TTL>Drums</TTL><BRK />
+<BRK />
+<TXT>Stencil on DOT-approved<MET> 208 liter</MET><ENG> 55 gallon</ENG> drums containing PCB liquid the following (in English and Japanese):</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  ppm</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Date drum filled</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Serial number of transformer liquid came from</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  National Stock Number</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1)  "9999-00-OIL" for &lt;50 ppm</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2)  "9999-00-CONPCB" for 50-499 ppm</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3)  "9999-00-PCBOIL" for &gt;500 ppm</ITM><BRK />
+<BRK />
+<TXT>Do not mix different ppms in the same drum.  Drums must have a<MET> 50 mm</MET><ENG> 2 inch</ENG> ullage space from the top of the drum.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="3.3"><TTL>PCB REMOVAL</TTL><BRK />
+<BRK />
+<TXT>Select PCB removal procedure to minimize contamination of work areas with PCB or other PCB-contaminated debris/waste.  Handle PCBs such that no 
+skin contact occurs.  PCB removal process should be described in the <SUB>PCB and Lamp Management Plan</SUB>.</TXT><BRK />
+<BRK />
+<SPT outline="3.3.1"><TTL>Confined Spaces</TTL><BRK />
+<BRK />
+<TXT>As feasible, do not carry out PCB handling operations in confined spaces as defined in <RID>29 CFR 1910</RID>.146.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.2"><TTL>Control Area</TTL><BRK />
+<BRK />
+<TXT>Establish a PCB control area around the PCB item as specified in paragraph entitled "PCB Control Area."  Only personnel briefed on the elements 
+in the paragraph entitled "Training" and on the handling precautions shall be allowed into the area.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.3"><TTL>Exhaust Ventilation</TTL><BRK />
+<BRK />
+<TXT>If used, exhaust ventilation for PCB operations shall discharge to the outside and away from personnel.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.4"><TTL>Temperatures</TTL><BRK />
+<BRK />
+<TXT>As feasible, handle PCBs at ambient temperatures and not at elevated temperatures.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.5"><TTL>Solvent Cleaning</TTL><BRK />
+<BRK />
+<TXT>Clean contaminated tools, containers, etc., after use by rinsing three times with an appropriate solvent or by wiping down three times with a solvent 
+wetted rag.  Suggested solvents are stoddard solvent or hexane.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.6"><TTL>Drip Pans</TTL><BRK />
+<BRK />
+<TXT>Drip pans are required under portable PCB transformers and rectifiers in use or stored for use.  The pans shall have a containment volume of at 
+least one and one-half times the internal volume of PCBs in the item.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.7"><TTL>Evacuation Procedures</TTL><BRK />
+<BRK />
+<TXT>Procedures shall be written for evacuation of injured workers.  Aid for a seriously injured worker shall not be delayed for reasons of decontamination.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.4"><TTL>PCB SPILL CLEANUP REQUIREMENTS</TTL><BRK />
+<BRK />
+<SPT outline="3.4.1"><TTL>PCB Spills</TTL><BRK />
+<BRK />
+<TXT>Immediately report to Installation ENV Office, Installation Emergency Response POC, and the Contracting Officer any PCB spills on the ground or 
+in the water, PCB spills in drip pans, or PCB leaks.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.2"><TTL>PCB Spill Control Area</TTL><BRK />
+<BRK />
+<TXT>Rope off an area around the edges of a PCB leak or spill and post a "PCB Spill Authorized Personnel Only" caution sign.  Immediately transfer leaking 
+items to a drip pan or other container.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.3"><TTL>PCB Spill Cleanup</TTL><BRK />
+<BRK />
+<TXT>Perform in accordance with the JEGS and approved PCB and Lamp Management Plan.  Initiate cleanup of spills as soon as possible, but no later than 
+48 hours of its discovery.  [To clean up spills, personnel shall wear the PPE prescribed in paragraph entitled "Special Clothing" of this section.]  
+If misting, elevated temperatures or open flames are present, or if the spill is situated in a confined space, notify the Installation ENV Office, 
+Installation Emergency Response POC, and Contracting Officer.  Mop up the liquid with rags or other conventional absorbent.  The spent absorbent 
+shall be properly contained and disposed of as solid PCB waste.  The spent absorbent shall be properly contained and turned over <TAI OPT="MARINE CORPS IN OKINAWA">to the MCB Butler 
+Environmental Support Team (EST) </TAI>as solid PCB waste.<TAI OPT="MARINE CORPS IN OKINAWA">  Follow all requirements in Attachment 02 84 16-B.</TAI></TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.4"><TTL>Records and Certification</TTL><BRK />
+<BRK />
+<TXT>Document the cleanup with records of decontamination in accordance with the <RID>JEGS</RID> and applicable US Federal, GOJ and prefectural  requirements for 
+PCB Spill Cleanup.  Provide <SUB>certification of decontamination</SUB>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.5"><TTL>Sampling Requirements</TTL><BRK />
+<BRK />
+<TXT>Perform <SUB>post cleanup sampling</SUB> as required by  JEGS Chapter 7.3.  Do not remove boundaries of the PCB control area until site is determined satisfactorily 
+clean by the Contracting Officer.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.5"><TTL>STORAGE FOR DISPOSAL</TTL><BRK />
+<BRK />
+<SPT outline="3.5.1"><TTL>Storage Containers for PCBs</TTL><BRK />
+<BRK />
+<TXT>Store liquid PCBs in accordance with UN specification packaging requirements: PGII standards.  Store nonliquid PCB mixtures, articles, or equipment 
+in accordance with DLA Disposition Services requirements..</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5.2"><TTL>Waste Containers</TTL><BRK />
+<BRK />
+<TXT>Label with the following:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  "Solid (or Liquid) Waste Polychlorinated Biphenyls"</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  The PCB Caution Label, paragraph entitled "PCB Caution Label"</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  The date the item was placed in storage and the name of the cognizant activity/building.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.5.3"><TTL>PCB Articles and PCB-Contaminated Items</TTL><BRK />
+<BRK />
+<TXT>Label with items b. through c. above.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5.4"><TTL>Approval of Storage Site</TTL><BRK />
+<BRK />
+<TXT>Obtain in advance Contracting Officer approval using the following criteria without exception.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Adequate roof and walls to prevent rainwater from reaching the stored PCBs.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  An adequate floor which has continuous curbing with a minimum<MET> 150 mm</MET><ENG> 6 inch</ENG> high curb.  Such floor and curbing shall provide a containment 
+volume equal to at least two times the internal volume of the largest PCB article or PCB container stored therein or 25 percent of the 
+total internal volume of all PCB equipment or containers stored therein, whichever is greater.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  No drain valves, floor drains, expansion joints, sewer lines, or other openings that would permit liquids to flow from the curbed area.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Floors and curbing constructed of continuous smooth and impervious materials such as portland cement, concrete or steel to prevent 
+or minimize penetrations of PCBs.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Not located at a site which is below the 100-year flood water elevation.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Each storage site shall be posted with the PCB Caution Sign, paragraph entitled "PCB Caution Sign."</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.6"><TTL>CLEANUP</TTL><BRK />
+<BRK />
+<TXT>Maintain surfaces of the PCB control area free of accumulations of PCBs.  Restrict the spread of dust and debris; keep waste from being distributed 
+over work area.<BRK />
+<BRK />
+Do not remove the PCB control area and warning signs prior to the Contracting Officer's approval.  Reclean areas showing residual PCBs.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.7"><TTL>DISPOSAL/TURNOVER</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  NOTE:  Edit paragraphs DISPOSAL/TURNOVER and TURNOVER PROCEDURES accordingly based on specific Installation 
+Requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>[Turn in hazardous material-containing lamps, ballasts, and other PCB or hazardous material-containing materials to the Installation Environmental 
+Division. Contact Installation Environmental Division at [phone number] at least [5] working days in advance to make arrangements for delivery 
+of these materials to the storage site.<BRK />
+<BRK />
+Do not dispose of mercury or PCB related materials at an off Government facility.  Do not consider US manufactured light ballasts with "No PCBs" 
+labeling to contain PCBs less than Japan regulatory limits and always acquire PCB content related information from the manufacturer.  All ballasts, 
+regardless of PCB or non-PCB containing types, shall be turned into the Installation Environmental Division per the turnover procedures as follows.</TXT></SPT><BRK />
+<BRK />
+<SPT outline="3.8"><TTL>Ballasts</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Choose one of two bracketed paragraphs only.  Choose first bracketed item for Kadena AB projects.  </NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+[<TXT>For removed ballasts that are not leaking, up to 300 ballasts may be stored on wooden or plastic pallets on-site for up to 30 days prior to delivery.</TXT><BRK />
+<BRK />
+<TXT>Ballasts that are leaking must be immediately stored in leak-proof drip pans, buckets, or double bagged in nitrile bags and stored in a secure 
+area that is not exposed to rainfall.  Mark the storage area in English and Japanese in accordance with the JEGS and Japan national and prefectural regulation.  <BRK />
+<BRK />
+Any PCB oil that has contaminated the ballast mount or other fixtures must be cleaned or removed and turned in with the ballasts.  Prior to transport 
+for disposal, the contractor shall perform the following: <BRK />
+<BRK />
+a.  Segregate ballasts by manufacturer.<BRK />
+<BRK />
+b.  Visit the websites of the manufacturers to verify if the ballasts contain PCB or not by product model number, product color, etc.  Certificates 
+shall be obtained stating that the ballast does not contain PCB.<BRK />
+<BRK />
+c.  Sort the ballast in cardboard cases by Non-PCB, PCB containing, unknown for each manufacturer/country of origin.<BRK />
+<BRK />
+d.  Bring ballasts to the Installation Environmental Division with certificates and supporting documents.<BRK />
+<BRK />
+All non-Japanese ballasts, including those with a "NO PCB" label shall be<BRK />
+assumed to contain as high as 49 ppm and shall be handled, stored,<BRK />
+transported, and disposed of as PCB ballasts. The contractor shall deliver<BRK />
+all non-Japanese ballasts to the Installation ENV Office. <TAI OPT="KADENA AF BASE">Ballasts may be delivered between 0800 and 1200 on any Friday except<BRK />
+for federal holidays. Call DSN 634-2600 a minimum of 5-days prior to<BRK />
+delivery to request forklift unloading assistance.</TAI><BRK />
+<BRK />
+For Japanese-made ballasts, the Contractor shall segregate regulated PCB<BRK />
+ballasts from non-regulated ballasts according to GOJ and prefectural<BRK />
+regulations. Information to discriminate between regulated and<BRK />
+non-regulated ballasts can be obtained from:<BRK />
+https://www.env.go.jp/recycle/poly/<BRK />
+https://www.env.go.jp/recycle/poly/law/no_14091618.pdf<BRK />
+<BRK />
+Regulated PCB ballasts shall be delivered to the Installation ENV Office. Non-regulated Japanese ballasts become property of<BRK />
+the contractor and shall be disposed of in accordance with GOJ and<BRK />
+prefectural regulations. In the submitted <SUB>PCB and Lamp Management Plan</SUB>, clearly state how non-regulated Japanese ballasts will be<BRK />
+disposed.<BRK />
+<BRK />
+<TAI OPT="KADENA AF BASE">A copy of the Signed Ballast Turn-in (at Bldg 3625) Sheet shall be submitted to the COR.</TAI></TXT>]<BRK />
+<BRK />
+[<TXT>Light ballasts may still contain PCBs even where a "No PCB" label exists on the ballast due to regulatory differences between U.S. and GOJ definitions 
+for "PCB Free".  [Regardless of PCB concentration, manufacturer, country of origin, all light ballasts shall be removed, containerized, and turned 
+into the Installation Environmental Division<TAI OPT="MARINE CORPS IN OKINAWA">, in accordance with Attachment 02 84 16-B</TAI>.]  PCB abatement or handling shall be in accordance with 
+the JEGS <TAI OPT="MARINE CORPS IN OKINAWA"> and Attachment 02 84 16-B</TAI>. <BRK />
+<BRK />
+The Contractor shall identify all project ballasts that contain and do not contain PCBs or are suspect to contain PCBs.  The Contractor shall submit 
+the PCB ballast list (to include suspect PCB ballasts) to the Installation ENV Office.  PCB containing ballasts and suspect PCB containing ballasts 
+shall be segregated by country of manufacture.<BRK />
+<BRK />
+The following procedures for US manufactured and Japan manufactured ballasts shall be used in the identification of PCB ballasts and described 
+in this section.]</TXT><BRK />
+<BRK />
+<SPT outline="3.8.1"><TTL>For US Manufactured Ballasts</TTL><BRK />
+<BRK />
+<TXT>US manufactured ballasts shall not be mixed with Japan manufactured ballasts.  The Contractor shall segregate and palletize US manufactured ballasts 
+separately from Japan manufactured ballasts<TAI OPT="MARINE CORPS IN OKINAWA"> at the point of generation for subsequent turn in to the MCB Butler EST (HW/PCB Program Manager, 098-970-3139 
+or 098-970-5790).  All ballasts, including "No PCB" labeled ballasts and non-PCB containing ballasts, shall be containerized and turned into the 
+MCB Butler EST</TAI>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.2"><TTL>For Japan Manufactured Ballasts</TTL><BRK />
+<BRK />
+<TXT>The Contractor shall carefully examine the ballast to identify the manufacturer name and year made.  Consult with the manufacturer to identify 
+any presence of PCBs.  If absence of PCB cannot be confirmed, assume and treat the ballast as a PCB item.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete bracketed section if paragraph 3.8.1, FOR US MANUFACTURED BALLASTS is used, due to redundancy</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+[<TXT>Japan manufactured ballasts shall not be mixed with US manufactured ballasts.  The Contractor shall segregate and palletize Japan manufactured 
+ballasts separately from US manufactured ballasts<TAI OPT="MARINE CORPS IN OKINAWA"> at the point of generation for subsequent turn in to the MCB Butler EST (HW/PCB Program Manager, 
+098-970-3139 or 098-970-5790)</TAI>.</TXT>]<BRK />
+<BRK /></SPT>
+<SPT outline="3.8.3"><TTL>For Unmarked/Unlabeled Ballasts</TTL><BRK />
+<BRK />
+<TXT>The Contractor shall treat all unmarked/unlabeled ballasts as suspect PCB-containing materials<TAI OPT="KADENA AF BASE"> and deliver to Bldg 3625</TAI>.  Segregate unmarked/unlabeled 
+ballasts from other US or Japanese manufactured items.<TAI OPT="MARINE CORPS IN OKINAWA">  The Contractor shall contact the MCB Butler EST (HW/PCB Program Manager, 098-970-3139 or 
+098-970-5790) to establish proper procedures for the management of unmarked/unlabeled ballasts.</TAI></TXT></SPT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<HLS><NPR>NOTE: For the paragraph title, choose [Fluorescent Lamps] for Kadena AB projects.  In the text section, choose 
+the second bracketed paragraph for Kadena AB projects.  </NPR></HLS><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="3.8.4"><TTL>[Fluorescent Light Tubes (Bulbs)]<TAI OPT="KADENA AF BASE">[Fluorescent Lamps]</TAI></TTL><BRK />
+<BRK />
+[<TXT>The Contractor shall carefully remove and store fluorescent light bulbs in a manner such that they remain intact.  Fluorescent light tubes suspect 
+for containing mercury shall be handled and disposed of by the Contractor in accordance to all GOJ, Federal, local prefectural laws and regulations 
+and the <RID>JEGS</RID>.  In the event of a lighting tube/lamp breaking, sweep and place waste in double plastic taped bags and dispose of as appropriate 
+to GOJ, Federal, local prefecture laws and regulations and the <RID>JEGS</RID>.</TXT>]<BRK />
+<BRK />
+<TAI OPT="KADENA AF BASE"><TXT>[Remove lighting lamps from the lighting fixture and carefully place into<BRK />
+appropriate containers in accordance with JEGS, GOJ, and prefecture<BRK />
+regulations. In the event of a lighting lamp breakage, sweep and place<BRK />
+waste in double plastic taped bags, place in appropriate containers, and<BRK />
+dispose together with the lamps.]</TXT></TAI><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.9"><TTL><SUB>Japan Specially Controlled Hazardous Waste Disposal Permit</SUB></TTL><BRK />
+<BRK />
+<TAI OPT="KADENA AF BASE"><TXT>In the submitted plan, include a copy of the Japan Specially Controlled Industrial Waste (SCIW) Permit (&#8220;Tokubetsu Kanri Haikibutsu Shobungyou 
+Kyoka&#8221;) for the disposal or recycling facility where the hazardous material-containing lamps will be disposed. The permit must specifically say 
+that the firm is authorized to accept hazardous material.</TXT></TAI></SPT><TAI OPT="KADENA AF BASE"><BRK />
+<BRK />
+<SPT><TTL><SUB>Japan Industrial Waste Collection and Transport Permit</SUB></TTL><BRK />
+<BRK />
+<TXT>Include a copy of the Japan Industrial Waste Collection and Transport Permit (&#8220;Sangyou Haikibutsu Shuushuu Unpangyou Kyoka&#8221;) for the transportation 
+of hazardous material-contaminated wastes from the installation within the <SUB>PCB and Lamp Management Plan</SUB>.</TXT></SPT><BRK />
+<BRK /></TAI>
+<SPT outline="3.10"><TTL>Japan Hazardous Waste Manifest (JHWM)</TTL><BRK />
+<BRK />
+<TXT>A minimum of 5-days prior to the scheduled transportation of hazardous material containing lamps or other PCB containing ballasts from the installation, 
+contact the Installation ENV Office to schedule a pre-transportation inspection. A government representative will inspect, annotate the (JHWM), 
+and authorize the shipment. No toxic wastes shall be transported off the installation without the approval of a US government representative.<BRK />
+<BRK />
+Within 60-days after the date of transportation of hazardous waste from the installation, submit <SUB>Copy E of the Japanese Hazardous Waste Manifest</SUB>
+ bearing the signature/stamp of the final hazardous material waste disposal/recycling facility as an SD-07 closeout submittal. <BRK />
+<BRK />
+For SCIW shipments to disposal facilities outside the prefecture, the manifest must be the "tsumikae" type manifest to allow multiple Chain of 
+Custody entries. <BRK />
+<BRK />
+Contract final payment will not be approved by the COR until the Copy E is submitted.<BRK />
+<BRK />
+Contractors failing to submit Copy E of the JHWM may be reported to United States Forces Japan (USFJ) and the Ministry of the Environment.</TXT><BRK /></SPT>
+<BRK />
+<BRK /></PRT>
+    <END /><BRK /></SEC>

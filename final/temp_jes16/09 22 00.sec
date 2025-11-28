@@ -1,0 +1,233 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                UFGS-09 22 00 (February 2010)<BRK />
+                                             Change 2 - 08/18<BRK />
+                                             -----------------------------<BRK />
+Preparing Activity:  <PRA>NAVFAC</PRA>                  Superseding<BRK />
+                                             UFGS-09 22 00 (August 2009)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated July 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION  09 22 00</SCN><BRK />
+<BRK />
+<STL>SUPPORTS FOR PLASTER AND GYPSUM BOARD</STL><BRK />
+<DTE>02/10</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements and include Japanese products, 
+where feasible, for a standard Japan Engineer District project.  The Designer of Record (DOR) shall tailor as 
+applicable to meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>non-loadbearing cold-formed metal framing, furring, 
+and ceiling suspension systems for the attachment of lath, plaster, stucco, and wallboard</SCP>.<BRK />
+<BRK />
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections.  Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text.  For bracketed items, choose applicable item(s) or insert 
+appropriate information.<BRK />
+<BRK />
+Remove information and requirements not required in respective project, whether or not brackets are present.<BRK />
+<BRK />
+Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Load-bearing cold-formed steel framing is included in Section <SRF>05 40 00</SRF> COLD-FORMED METAL FRAMING.  Metal 
+suspension systems for acoustical ceilings are included in Section <SRF>09 51 00</SRF> ACOUSTICAL CEILINGS.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  On the drawings, show:</NPR><BRK />
+<BRK />
+<NPR>1.  Locations of each type of metal framing, furring, or suspension system.</NPR><BRK />
+<BRK />
+<NPR>2.  Spacing and gage of members if other than those required by referenced publication.</NPR><BRK />
+<BRK />
+<NPR>3.  Seismic restraint for projects located in seismic zone 2, 3, or 4, in accordance with AISC 341 and UFC 3-310-04, 
+"Seismic Design for Buildings".</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of the guide specification. The publications 
+are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK />
+ <BRK />
+Use the Reference Wizard's Check Reference feature when you add a Reference Identifier (RID) outside of the Section's 
+Reference Article to automatically place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<BRK />
+ <BRK />
+References not used in the text will automatically be deleted from this section of the project specification when 
+you choose to reconcile references in the publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are referred to within the text by 
+the basic designation only.</TXT><BRK />
+<BRK />
+          BUILDING STANDARD LAW OF JAPAN<BRK />
+<BRK />
+<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK />
+<BRK />
+<RID>JIS A 5505</RID><RTL>(2014) Metal Laths</RTL><BRK />
+<BRK />
+<RID>JIS A 6517</RID><DEL><RTL>(2010) Steel Furrings for Wall and Ceiling in Buildings</RTL></DEL><ADD><RTL>(2020) Steel Furrings for 
+Wall and Ceiling in Buildings</RTL></ADD><BRK />
+<BRK />
+<RID>JIS G 3302</RID><DEL><RTL>(2019) Hot Dip Zinc Coated Steel Sheet and Strip</RTL></DEL><ADD><RTL>(2022) Hot Dip Zinc Coated Steel 
+Sheet and Strip</RTL></ADD><BRK />
+<BRK />
+<RID>JIS G 3314</RID><RTL>(2010) Hot-Dip Aluminum-Coated Steel Sheet and Strip</RTL><BRK />
+<BRK />
+<RID>JIS G 3321</RID><RTL>(2012) Molten 55 Percent Aluminum Zinc Alloy Plated Steel Sheet and Strip</RTL><BRK />
+<BRK />
+<RID>JIS G 3505</RID><RTL>(2017) Mild Steel Wire Rod</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Review Submittal Description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project.</NPR><BRK />
+<BRK />
+<NPR>The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G."  Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System.  Only add a "G" to an item, if the submittal is sufficiently important or complex in context 
+of the project.</NPR><BRK />
+<BRK />
+<NPR>For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
+tags may be used following the "G" designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" for District Office (Engineering 
+Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
+for Project Office.  Codes following the "G" typically are not used for Navy, Air Force, and NASA projects.</NPR><BRK />
+<BRK />
+<NPR>The "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook to 
+fulfill federally mandated sustainable requirements in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Locate the "S" submittal under the SD number that best describes the submittal item.</NPR><BRK />
+<BRK />
+<NPR>Choose the first bracketed item for Navy, Air Force and NASA projects, or choose the second bracketed item for 
+Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are [for Contractor Quality Control 
+approval.][for information only.  When used, a designation following the "G" designation identifies the office that will review the submittal for 
+the Government.]  Submittals with an "S" are for inclusion in the Sustainability eNotebook, in conformance with Section <SRF>01 33 29</SRF> SUSTAINABILITY 
+REPORTING.  Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Require drawings only for projects where complexity or quantity make it feasible.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<ITM><SUB>Metal Support Systems</SUB>; <SUB>G[, [_____]]</SUB></ITM><BRK />
+<BRK />
+<ITM>  Submit for the erection of metal[ framing,][ furring,][ and][ ceiling suspension systems].  Indicate materials, sizes, thicknesses, 
+and fastenings.</ITM><BRK />
+<BRK />
+<LST><SUB>SD-03 Product Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Metal Support Systems</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK />
+<BRK />
+<TXT>Deliver materials to the job site and store in ventilated dry locations permitting easy access for inspection and handling.  If materials are stored 
+outdoors, stack materials off the ground, supported on a level platform, and fully protected from the weather.  Handle materials carefully to prevent 
+damage.  Remove damaged items and provide new items.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>MATERIALS</TTL><BRK />
+<BRK />
+<TXT>Provide steel materials for <SUB>metal support systems</SUB> with galvanized coating <RID>JIS G 3302</RID>, Z18; aluminum coating <RID>JIS G 3314</RID>, with a plating adhesion 
+amount of 80, or <RID>JIS G 3321</RID>. Provide support systems, bracing and attachments per Building Standard Law of Japan.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use materials with recycled content where appropriate for use.  Verify suitability, availability within 
+the region, cost effectiveness and adequate competition before specifying product recycled content requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide metal support systems containing a minimum of 20 percent recycled content.</TXT><BRK />
+<BRK />
+<SPT outline="2.1.1"><TTL>Materials for Attachment of Lath</TTL><BRK />
+<BRK />
+<SPT outline="2.1.1.1"><TTL>Suspended and Furred Ceiling Systems and Wall Furring</TTL><BRK />
+<BRK />
+<TXT><RID>JIS A 5505</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.1.2"><TTL>Non-loadbearing Wall Framing and Furring</TTL><BRK />
+<BRK />
+<TXT><RID>JIS A 6517</RID>.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.1.2"><TTL>Materials for Attachment of Gypsum Wallboard</TTL><BRK />
+<BRK />
+<SPT outline="2.1.2.1"><TTL>Suspended and Furred Ceiling Systems</TTL><BRK />
+<BRK />
+<TXT><RID>JIS A 6517</RID>.  <RID>JIS G 3505</RID> for hanger rod and nut.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.2"><TTL>Nonload-Bearing Wall Framing and Furring</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Minimum thickness of<MET> 0.45 mm</MET><ENG> 0.0179 inch</ENG> (25 gage) is standard for interior nonload-bearing studs without 
+supporting attached loads.  Choose the second option of<MET> 0.85 mm</MET><ENG> 0.0329 inch</ENG> (20 gage) thickness for medical, dental 
+or other building types requiring large quantities of wall supported cabinet work and equipment throughout the 
+facility.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT><RID>JIS A 6517</RID>, but not thinner than[<MET> 0.45 mm</MET><ENG> 0.0179 inch</ENG> thickness, with<MET> 0.85 mm</MET><ENG> 0.0329 inch</ENG> minimum thickness supporting wall hung items such as 
+cabinetwork, equipment and fixtures][<MET> 0.85 mm</MET><ENG> 0.0329 inch</ENG> thickness regardless of the ASTM certified third party testing statement for equivalent 
+thicknesses].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.3"><TTL>Furring Structural Steel Columns</TTL><BRK />
+<BRK />
+<TXT><RID>JIS A 6517</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2.4"><TTL>Z-Furring Channels with Wall Insulation</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  The depth specified for Z-furring channels should be coordinated with the R-value specified for wall insulation 
+thickness.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Not lighter than<MET> 0.5 mm thick</MET><ENG> 26 gage</ENG> galvanized steel, Z-shaped, with<MET> 32 mm and 19 mm</MET><ENG> 1-1/4 inch and 3/4 inch</ENG> flanges and [<MET> [25] [38] [50] [75] 
+mm</MET><ENG> [1] [1 1/2] [2] [3] inch</ENG> furring depth] [depth as required by the insulation thickness provided].</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT></PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>INSTALLATION</TTL><BRK />
+<BRK />
+<SPT outline="3.1.1"><TTL>Systems for Attachment of Gypsum Board or Lath</TTL><BRK />
+<BRK />
+<TXT>Follow manufacturer's instructions.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2"><TTL>ERECTION TOLERANCES</TTL><BRK />
+<BRK />
+<TXT>Provide framing members which will be covered by finish materials such as wallboard, plaster, or ceramic tile set in a mortar setting bed, within 
+the following limits:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Layout of walls and partitions:<MET> 6 mm</MET><ENG> 1/4 inch</ENG> from intended position;</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Plates and runners:<MET> 5 mm in 1.9 meters</MET><ENG> 1/4 inch in 8 feet</ENG> from a straight line;</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Studs:<MET> 5 mm in 1.9 meters</MET><ENG> 1/4 inch in 8 feet</ENG> out of plumb, not cumulative; and</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Face of framing members:<MET> 5 mm in 1.9 meters</MET><ENG> 1/4 inch in 8 feet</ENG> from a true plane.</LST><BRK />
+<BRK />
+<TXT>Provide framing members which will be covered by ceramic tile set in dry-set mortar, latex-portland cement mortar, or organic adhesive within the 
+following limits:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Layout of walls and partitions:<MET> 6 mm</MET><ENG> 1/4 inch</ENG> from intended position;</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Plates and runners:<MET> 5 mm in 3.8 meters</MET><ENG> 1/8 inch in 8 feet</ENG> from a straight line;<BRK /></LST>
+<NED /><BRK />
+<LST INDENT="-0.33">c.  Studs:<MET> 5 mm in 3.8 meters</MET><ENG> 1/8 inch in 8 feet</ENG> out of plumb, not cumulative; and<BRK /></LST>
+<BRK />
+<LST INDENT="-0.33">d.  Face of framing members:<MET> 5 mm in 3.8 meters</MET><ENG> 1/8 inch in 8 feet</ENG> from a true plane.</LST><BRK />
+<BRK /></SPT>
+</PRT>    <END /><BRK /></SEC>

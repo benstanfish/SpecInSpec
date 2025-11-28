@@ -1,0 +1,838 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><BRK />
+<HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                   UFGS-33 30 00 (May 2018)<BRK />
+                                                --------------------------<BRK />
+Preparing Activity:  <PRA>USACE</PRA>                      Superseding<BRK />
+                                                UFGS-33 30 00 (April 2008)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 33 30 00</SCN><BRK />
+<BRK />
+<STL>SANITARY SEWERAGE</STL><BRK />
+<DTE>05/18</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements and include Japanese products, 
+where feasible, for a standard Japan Engineer District project.  The Designer of Record (DOR) shall tailor as 
+applicable to meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>piping and appurtenant structures for an exterior 
+sanitary sewer system</SCP>.</NPR><BRK />
+<BRK />
+<NPR>Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format Standard when editing this guide 
+specification or preparing new project specification sections.  Edit this guide specification for project specific 
+requirements by adding, deleting, or revising text.<BRK />
+<BRK />
+Remove information and requirements not required in respective project.</NPR><BRK />
+<BRK />
+<NPR>Comments, suggestions and recommended changes for this guide specification are welcome and should be submitted 
+as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<BRK />
+<NPR>For corrosive soils select materials, coatings or cathodic protection systems in accordance with UFC 3-230-01.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For Army and Air Force, impress current cathodic protection(ICCP) may be used.  When ICCP is used include 
+Section <SRF>26 42 17.00 10</SRF> CATHODIC PROTECTION SYSTEM (IMPRESSED CURRENT.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  In areas where problems with root penetration are anticipated, specify pipe which has the kind of joint 
+which will successfully resist root penetration.  Generally speaking, the more watertight the joint, the greater 
+the resistance to root penetration will be.  Rubber-gasketed and compression-type joints are considered to give 
+the best performance for this application.</NPR><BRK />
+<BRK />
+<NPR>When using plastic pipe in areas with contaminated soil or groundwater, consult with the manufacturer regarding 
+permeation of pipe walls. When pipe is installed in contaminated soil or groundwater consult with the manufacturer 
+regarding selection of appropriate gasket material based on type and concentration of contaminants.</NPR><BRK />
+<BRK />
+<NPR>Plastic pipe is subject to temperature limitations which must be observed.</NPR><BRK />
+<BRK />
+<NPR>Use caution if considering concrete pipe for septic flows.  Depending on septicity, these pipes may not be satisfactory.</NPR><BRK />
+<BRK />
+<NPR>Give special attention in the design stage of project to plastic pipe materials, particularly with respect to 
+superimposed external loads which could cause excessive deflection of the pipe.  The degree of sidefill compaction 
+should be considered realistically, particularly in marginal cases.</NPR><BRK />
+<BRK />
+<NPR>Where different classes, strengths, etc., of pipe are required for different sections of long pipelines due to 
+significant differences in external loading, expand or modify the applicable paragraphs of this specification 
+accordingly.  Show the limits for each class, strength, etc., either on the project drawings or appropriately 
+describe them in the applicable paragraph of the project specification.</NPR><BRK />
+<BRK />
+<NPR>Pipe joints:  When more than one type of joint is applicable for the specified piping, permit each as a Contractor's 
+option except where watertight joints are necessary or in areas where root penetration problems are anticipated.  
+In these cases, rubber-gasketed or compression-type, or solvent-cemented joints are preferred.  Use fuel resistant 
+joint gaskets when required.</NPR><BRK />
+<BRK />
+<BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements for a basic Japan Engineer District 
+project. Designer shall tailor as applicable to meet project specific requirement.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of the guide specification.  The publications 
+are referred to in the text by basic designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK />
+<BRK />
+Use the Reference Wizard's Check Reference feature when you add a Reference Identifier (RID) outside of the Section's 
+Reference Article to automatically place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<BRK />
+<BRK />
+References not used in the text will automatically be deleted from this section of the project specification when 
+you choose to reconcile references in the publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are referred to within the text by 
+the basic designation only.</TXT><BRK />
+<BRK />
+<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK />
+<BRK />
+<RID>JIS A 5001</RID><RTL>(2008) Crushed Stone for Road Construction</RTL><BRK />
+<BRK />
+<RID>JIS A 5005</RID><RTL>(2009) Crushed Stone and Manufactured Sand for Concrete</RTL><BRK />
+<BRK />
+<RID>JIS A 5308</RID><RTL>(2014) Ready-Mixed Concrete</RTL><BRK />
+<BRK />
+<RID>JIS A 5314</RID><RTL>(2014) Mortar Lining for Ductile Iron Pipes</RTL><BRK />
+<BRK />
+<RID>JIS A 5372</RID><RTL>(2016) Precast Reinforced Concrete Products</RTL><BRK />
+<BRK />
+<RID>JIS A 5506</RID><RTL>(2008) Manhole Covers for Sewerage Works</RTL><BRK />
+<BRK />
+<RID>JIS B 1171</RID><RTL>(2015) Cup Head Square Neck Bolts (Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS B 1180</RID><DEL><RTL>(2014) Hexagon Head Bolts and Hexagon Head Screws</RTL></DEL><ADD><RTL>(2014) Hexagon Head Bolts and 
+Hexagon Screws</RTL></ADD><BRK />
+<BRK />
+<RID>JIS B 1181</RID><RTL>(2014) Hexagon Nuts and Hexagon Thin Nuts</RTL><BRK />
+<BRK />
+<RID>JIS B 2404</RID><RTL>(2018) Dimensions of Gaskets for Use with Pipe Flanges</RTL><BRK />
+<BRK />
+<RID>JIS G 3101</RID><DEL><RTL>(2017) Rolled Steels for General Structure (Amendment 1)</RTL></DEL><ADD><RTL>(2020) Rolled Steels for 
+General Structure</RTL></ADD><BRK />
+<BRK />
+<RID>JIS G 5526</RID><RTL>(2014) Ductile Iron Pipes</RTL><BRK />
+<BRK />
+<RID>JIS G 5527</RID><RTL>(2014) Ductile Iron Fittings</RTL><BRK />
+<BRK />
+<RID>JIS H 8641</RID><RTL>(20<DEL>07</DEL><ADD>21</ADD>) Hot Dip Galvanized Coatings</RTL><BRK />
+<BRK />
+<RID>JIS K 0102</RID><RTL>(2019) Testing Methods for Industrial Wastewater (Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS K 6353</RID><RTL>(2011) Rubber Goods for Water Works</RTL><BRK />
+<BRK />
+<RID>JIS K 6739</RID><RTL>(2016) Unplasticized Poly (Vinyl Chloride) (PVC-U) Pipe Fittings for Drain</RTL><BRK />
+<BRK />
+<RID>JIS K 6741</RID><RTL><DEL>(2016)</DEL><ADD>(2016; R 2021)</ADD> Unplasticized Poly (Vinyl Chloride) (PVC-U) Pipes</RTL><BRK />
+<BRK />
+<RID>JIS K 6742</RID><RTL>(2016) Unplasticized poly (vinyl chloride) (PVC-U) pipes for water supply</RTL><BRK />
+<BRK />
+<RID>JIS K 6743</RID><RTL>(2016) Unplasticized Poly (Vinyl Chloride) (PVC-U) Pipe Fittings for Water Supply</RTL><BRK />
+<BRK />
+<RID>JIS R 5210</RID><RTL>(2009) Portland Cement</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>JAPAN WATER WORKS ASSOCIATION (JWWA)</ORG><BRK />
+<BRK />
+<RID>JWWA K 158</RID><RTL>(2017) Polyethylene Sleeve for Ductile Cast Iron Pipe for Water Supply</RTL><BRK />
+<BRK /></REF>
+<REF><ORG><DEL>JAPAN SEWAGE WORKS ASSOCIATION (JSWAS)</DEL><ADD>JAPAN SEWAGE WORKS ASSOCIATION (JSWA)</ADD></ORG><BRK />
+<BRK />
+<RID>JSWAS K-1</RID><RTL>(2010) Rigid PVC Pipe for Sewer</RTL><BRK />
+<BRK /></REF>
+<REF><ORG><DEL>THE SOCIETY OF HEATING, AIR-CONDITIONING AND SANITARY ENGINEERS OF JAPAN STANDARD (SHASE-S)</DEL><ADD>THE SOCIETY OF HEATING, AIR-CONDITIONING 
+AND SANITARY ENGINEERS OF JAPAN (SHASE)</ADD></ORG><BRK />
+<BRK />
+<RID>SHASE-S 209</RID><RTL>(2009) Manhole Cover</RTL><BRK />
+<BRK /></REF>
+<REF><ORG><DEL>JAPAN DUCTILE IRON PIPE ASSOCIATION (JDPA)</DEL><ADD>JAPAN DUCTILE IRON PIPE ASSOCIATION (JDPA)</ADD></ORG><BRK />
+<BRK />
+<RID>JDPA Z 2010</RID><RTL>(2009) Synthetic Resin Coating for Ductile Iron Pipes and Fittings</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES and edit the following 
+list to reflect only the submittals required for the project.<BRK />
+<BRK />
+The Guide Specification technical editors have designated those items that require Government approval, due to 
+their complexity or criticality, with a "G."  Generally, other submittal items can be reviewed by the Contractor's 
+Quality Control System.  Only add a &#8220;G&#8221; to an item, if the submittal is sufficiently important or complex in context 
+of the project.<BRK />
+<BRK />
+For submittals requiring Government approval on Army projects, a code of up to three characters within the submittal 
+tags may be used following the "G" designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" for District Office (Engineering 
+Division or other organization in the District Office); "AO" for Area Office; "RO" for Resident Office; and "PO" 
+for Project Office.  Codes following the "G" typically are not used for Navy and Air Force projects.<BRK />
+<BRK />
+The "S" following a submittal item indicates that the submittal is required for the Sustainability eNotebook to 
+fulfill federally mandated sustainable requirements in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Locate the "S" submittal under the SD number that best describes the submittal item.<BRK />
+<BRK /></NPR>
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are for information only.  When 
+used, a designation following the "G" designation identifies the office that will review the submittal for the Government.  Submittals with an 
+"S" are for inclusion in the Sustainability eNotebook, in conformance to Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Submit the following in accordance 
+with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Installation Drawings</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-03 Product Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Pressure Pipe</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Sewage Treatment Tanks</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Hydrostatic Sewer Test</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Infiltration Tests or Exfiltration Tests</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Tests For Pressure Lines</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<TAI OPT="AIR FORCE,ARMY,NASA"><ITM><SUB>Deflection Testing</SUB></ITM></TAI><BRK />
+<BRK />
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Gaskets</SUB></ITM><BRK />
+<BRK />
+<TAI OPT="NAVY"><ITM><SUB>Pre-Installation Inspection Request</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Post-Installation Inspection</SUB>; <SUB>G</SUB></ITM></TAI><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK />
+<BRK />
+<SPT outline="1.3.1"><TTL>Delivery and Storage</TTL><BRK />
+<BRK />
+<TXT>Check upon arrival; identify and segregate as to types, functions, and sizes.  Store off the ground in a manner affording easy accessibility and 
+not causing excessive rusting or coating with grease or other objectionable materials.</TXT><BRK />
+<BRK />
+<SPT outline="1.3.1.1"><TTL>Piping</TTL><BRK />
+<BRK />
+<TXT>Inspect materials delivered to site for damage; store with minimum of handling.  Store materials on site in enclosures or under protective coverings.  
+Store plastic piping and jointing materials and rubber gaskets under cover out of direct sunlight.  Do not store materials directly on the ground.  
+Keep inside of pipes and fittings free of dirt and debris.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3.1.2"><TTL>Cement, Aggregate, and Reinforcement</TTL><BRK />
+<BRK />
+<TXT>As specified in Section <SRF>03 30 00</SRF> CAST-IN-PLACE CONCRETE.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.3.2"><TTL>Handling</TTL><BRK />
+<BRK />
+<TXT>Handle pipe, fittings, and other accessories in such manner as to ensure delivery to the trench in sound undamaged condition.  Take special care 
+not to damage linings of pipe and fittings; if lining is damaged, make satisfactory repairs.  Carry, do not drag, pipe to trench.  Store solvents, 
+solvent compounds, lubricants, elastomeric gaskets, and any similar materials required to install the plastic pipe  in accordance with the manufacturer's 
+recommendation and discard those materials if the storage period exceeds the recommended shelf life.  Discard solvents in use when the recommended 
+pot life is exceeded.</TXT><BRK />
+<BRK /></SPT>
+</SPT></PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>SYSTEM DESCRIPTION</TTL><BRK />
+<BRK />
+<SPT outline="2.1.1"><TTL>Sanitary Sewer Gravity Pipeline</TTL><BRK />
+<BRK />
+<TXT>Provide mains and laterals of concrete pipe or polyvinyl chloride (PVC) plastic pipe.  Provide building connections  of  polyvinyl chloride (PVC) 
+plastic pipe. Provide new and modify existing exterior sanitary gravity sewer piping and appurtenances.  Provide each system complete and ready 
+for operation.  The exterior sanitary gravity sewer system includes equipment, materials, installation, and workmanship as specified herein more 
+than<MET> 1.5 m</MET><ENG> 5 feet</ENG> outside of building walls.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.1.2"><TTL>Sanitary Sewer Pressure Lines</TTL><BRK />
+<BRK />
+<TXT>Provide pressure lines of ductile iron pressure pipe or polyvinyl chloride (PVC) plastic pressure pipe.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.2"><TTL>MATERIALS</TTL><BRK />
+<NTE><AST /><BRK />
+<NPR>NOTE:  Show the following information on the project drawings:</NPR><BRK />
+<BRK />
+<NPR>Location of all new pipelines, diameter of pipe, fittings and appurtenances including but not limited to valves, 
+fire hydrants, yard hydrants, thrust blocks, restrained joints and details where necessary;</NPR><BRK />
+<BRK />
+<NPR>Location, size, and type of service of existing connecting, intersecting, or adjacent pipelines and other utilities;</NPR><BRK />
+<BRK />
+<NPR>Paved areas and railroads which pass over new pipelines;</NPR><BRK />
+<BRK />
+<NPR>Profile, where necessary to show unusual conditions</NPR><BRK />
+<BRK />
+<NPR>Invert elevations at beginning and end of pipelines and at manholes or similar structures;</NPR><BRK />
+<BRK />
+<NPR>Where different materials are required, show the material, class or thickness of pipe and limits where class or 
+thickness must be different for different sections of pipeline;</NPR><BRK />
+<BRK />
+<NPR>Details for manholes, and sewage treatment tanks;</NPR><BRK />
+<BRK />
+<NPR>Bedding conditions, where different from those specified in the appropriate specification ;</NPR><BRK />
+<BRK />
+<NPR>Location and size of thrust blocks on pressure lines</NPR><BRK />
+<BRK />
+<NPR>Location of flanged joints on pressure sewers;</NPR><BRK />
+<BRK />
+<NPR>Location of mechanical joints on ductile-iron piping (when used on only part of the system).</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide materials conforming to the respective specifications and other requirements specified below.  Submit manufacturer's product specification,standard 
+drawings or catalog cuts.</TXT><BRK />
+<BRK />
+<SPT outline="2.2.1"><TTL>Gravity Pipe</TTL><BRK />
+<BRK />
+<SPT outline="2.2.1.1"><TTL>Concrete Gravity Sewer Piping</TTL><BRK />
+<BRK />
+<SPT outline="2.2.1.1.1"><TTL>Concrete Gravity Pipe</TTL><BRK />
+<BRK />
+<TXT>Provide  reinforced concrete pipe conforming to<RID> JIS A 5372</RID>, external pressure type, Class 1 or Class 2, Type B.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.1.1.2"><TTL>Jointing Materials for Concrete Gravity Piping</TTL><BRK />
+<BRK />
+<TXT>Provide <SUB>gaskets</SUB> and pipe ends for rubber gasket joint  conforming to<RID>JIS K 6353</RID>.  Use gaskets suitable for use with sewage.</TXT><BRK />
+<BRK />
+<TXT>Submit certificates of compliance stating that the fittings or gaskets used for waste drains or lines are oil resistant.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.2.1.2"><TTL>PVC Gravity Sewer Piping</TTL><BRK />
+<BRK />
+<SPT outline="2.2.1.2.1"><TTL>Pipe and Fittings</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a. Pipe:<RID>JIS K 6741</RID>, Class VP or VU.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b. Fittings:<RID>JIS K 6739</RID></LST><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.1.2.2"><TTL>Joints and Jointing Material</TTL><BRK />
+<BRK />
+<TXT>Jointing Materials: Rubber gasket conforming to <RID>JIS K 6353</RID>. Gaskets shall be suitable for use in sewerage.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.1.2.3"><TTL>PVC Branch Pipe Connectors</TTL><BRK />
+<BRK />
+<TXT>Shall be standard product compatible with the PVC plastic pipe and conforming to <RID>JSWAS K-1</RID> and <RID>JIS K 6739</RID>. Adhesive materials shall be as per branch 
+pipe manufacturer's recommendation.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="2.2.2"><TTL><SUB>Pressure Pipe</SUB></TTL><BRK />
+<BRK />
+<SPT outline="2.2.2.1"><TTL>Ductile Iron Pressure Piping</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Ductile iron pipe is used for sizes<MET> 75 mm</MET><ENG> 3 inches</ENG> to<MET> 1600 mm</MET><ENG> 64 inches</ENG>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="2.2.2.1.1"><TTL>Ductile Iron Pressure Pipe and Fittings</TTL><BRK />
+<BRK />
+<TXT>Provide mechanical joint or flanged ductile-iron pipe  conforming to  <RID>JIS G 5526</RID>.  Provide fittings conforming to <RID>JIS G 5527</RID>. Use fittings which 
+have a pressure rating at least equivalent to that of the pipe. Pipe and fittings are to have interior cement-mortar lining conforming to <RID>JIS A 5314</RID>
+ and exterior pipe coating conforming to <RID>JDPA Z 2010</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2.1.2"><TTL>Ductile Iron Pressure Joints and Jointing Materials</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Joints, general:  Use mechanical joints for pipe and fittings. Use flanged joints where indicated. Joints made with sleeve-type mechanical 
+coupling may be used in lieu of push-on joint.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Mechanical joints:  Gaskets are to conform to <RID>JIS B 2404</RID>.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Flanged joints:  Provide bolts, nuts, and gaskets for flanged connections compatible with <RID>JIS G 5527</RID> joints.</LST><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  At the text below, delete "or steel" when middle ring of cast iron only is considered necessary due to 
+anticipated corrosion problems.  Delete requirement for strength of steel when steel is not allowed as a material 
+for middle ring.<BRK />
+<BRK />
+At the text below, minimum numbers of bolts for each pipe size should be as follows:<BRK />
+<BRK />
+<TAB HEADERROWS="0">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM" />
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="2" ROWCOUNT="11">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="160.50" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="159.75" />
+      <ROW AUTOHEIGHT="0" HEIGHT="17.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET> 75 mm</MET><ENG> 3 inch</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">3</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="17.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET> 100 mm</MET><ENG> 4 inch</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">4</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="17.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET> 150 mm</MET><ENG> 6 inch</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">5</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="17.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET> 200 mm</MET><ENG> 8 inch</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">6</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="17.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET> 250 mm</MET><ENG> 10 inch</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">7</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="17.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET> 300 and 350 mm</MET><ENG> 12 and 14 inch</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">8</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="17.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET> 400 mm</MET><ENG> 16 inch</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">9</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="17.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET> 450 mm</MET><ENG> 18 inch</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">10</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="17.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET> 500 mm</MET><ENG> 20 inch</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">12</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="17.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET> 550 mm</MET><ENG> 22 inch</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">13</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="90.75">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET> 600 mm</MET><ENG> 24 inch</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">14</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /><BRL /><BRL /></TAB></NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<LST INDENT="-0.33">d.  Joints made with sleeve-type mechanical couplings: Provide  bolts conforming to the tensile requirements of <RID>JIS B 1180</RID> with nuts conforming 
+to the tensile requirements of <RID>JIS B 1181</RID> or round-head square-neck type bolts conforming to <RID>JIS B 1171</RID> with hex nuts conforming to <RID>JIS B 1181</RID>
+.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.2.2.2"><TTL>PVC Pressure Pipe and Associated Fittings</TTL><BRK />
+<BRK />
+<SPT outline="2.2.2.2.1"><TTL>Pipe and Fittings</TTL><BRK />
+<BRK />
+<TXT>Pipe, couplings and fittings are to be manufactured of materials conforming to <RID>JIS K 6742</RID> and fittings conforming to <RID>JIS K 6743</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2.2.2"><TTL>Solvent Cement Joint</TTL><BRK />
+<BRK />
+<TXT>Provide solvent cement joint per pipe manufacturer's recommendation.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="2.2.3"><TTL>Piping Beneath Railroad Right-of-Way</TTL><BRK />
+<BRK />
+<TXT>Where pipeline passes under the right-of-way of a commercial railroad, piping is to conform to the specifications for pipelines conveying nonflammable 
+substances.  For casing pipe provide ductile-iron pipe in lieu of cast-iron soil pipe.  Ductile-iron pipe is to conform to and have strength computed 
+in accordance with <RID>JIS G 5526</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.4"><TTL>Portland Cement</TTL><BRK />
+<BRK />
+<TXT>Portland cement shall conform to <RID>JIS R 5210</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.5"><TTL>Portland Cement Concrete</TTL><BRK />
+<BRK />
+<TXT>Provide portland cement concrete  conforming to <RID>JIS A 5308</RID>, compressive strength of<MET> 24 MPa</MET><ENG> 4000 psi</ENG> at 28 days, except for concrete cradle and 
+encasement or concrete blocks for manholes.  Concrete used for cradle and encasement is to have a compressive strength of<MET> 18 MPa</MET><ENG> 2500 psi</ENG> minimum 
+at 28 days.  Protect concrete in place from freezing and moisture loss for 7 days.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.6"><TTL>Precast Concrete Manholes</TTL><BRK />
+<BRK />
+<TXT>Approved commercial products as shown on drawings and conforming to <RID>JIS A 5372</RID><ADD> or <RID>JSWAS K-1</RID></ADD>. Joints between precast concrete manhole sections shall 
+be made with flexible watertight, rubber-type gaskets per manhole manufacturer's standards.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.7"><TTL>Invert Mortar</TTL><BRK />
+<BRK />
+<TXT>Mortar for forming manhole inverts shall be composed of cement, sand and water mixed in proportion of 1 part cement to 2 parts of sand, sufficient 
+water to produce a workable mixture. Mortar shall be used in the work within one hour after mixing. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.8"><TTL>Gaskets and Connectors</TTL><BRK />
+<BRK />
+<TXT>Resilient connectors for making joints between manhole and pipes entering manhole are to conform to pipe manufacturer's standards.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.9"><TTL><SUB>Sewage Treatment Tanks</SUB></TTL><BRK />
+<BRK />
+<TXT>Shall be three functions of primary, secondary, and final sewage treatment and shall meet the requirements of biochemical oxygen demand (BOD) value 
+as indicated by testing in accordance with <RID>JIS K 0102</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.10"><TTL>Frames And Covers for Manholes</TTL><BRK />
+<BRK />
+<TXT>Shall be local manufacturer's standard product conforming to <RID>SHASE-S 209</RID>, and shall be of cast iron per <RID>JIS A 5506</RID>. Size, configuration and loading 
+capacity shall be as indicated on drawings. A letter "S" shall be stamped or cast into covers.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.11"><TTL>Manhole Steps</TTL><BRK />
+<BRK />
+<TXT>Materials shall conform to <RID>JIS G 3101</RID>, Type SS400, galvanized, and of the size and configuration as shown on drawing. Manhole steps are not required 
+in manholes and inlets less than <MET>1.2 m</MET> deep.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.12"><TTL>Manhole Ladders</TTL><BRK />
+<BRK />
+<TXT>Provide a steel ladder conforming to <RID>JIS G 3101</RID> where the depth of a manhole exceeds<MET> 3.6 m</MET><ENG> 12 feet</ENG>.  The ladder is not to be less than<MET> 406 mm</MET><ENG> 16 
+inches</ENG> in width, with<MET> 19 mm</MET><ENG> 3/4 inch</ENG> diameter rungs spaced<MET> 305 mm</MET><ENG> 12 inches</ENG> apart.  The two stringers are to be a minimum<MET> 10 mm</MET><ENG> 3/8 inch</ENG> thick 
+and<MET> 51 mm</MET><ENG> 2 inches</ENG> wide.  Galvanize ladders and inserts after fabrication in conformance with <RID>JIS H 8641</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.13"><TTL>Miscellaneous Items</TTL><BRK />
+<BRK />
+<SPT outline="2.2.13.1"><TTL>Warning Tape</TTL><BRK />
+<BRK />
+<TXT>Provide in accordance with requirements as specified in Section <SRF>31 00 00</SRF> EARTHWORK</TXT><BRK /></SPT>
+<BRK />
+<SPT outline="2.2.13.2"><TTL>Sand Fill</TTL><BRK />
+<BRK />
+<TXT>Fill around PVC drainage pipes shall be cleaned sand conforming to <RID>JIS A 5005</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.13.3"><TTL>Gravel Base Course</TTL><BRK />
+<BRK />
+<TXT>Crushed stone for base course at concrete structures shall be crusher run conforming to <RID>JIS A 5001</RID>, RC-40.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.13.4"><TTL>Surface Cleanouts</TTL><BRK />
+<BRK />
+<TXT>Surface cleanout shall have cast iron cover and fitting adaptable for connection to the lower PVC pipe. Traffic loading capacity shall be as required 
+for the manhole covers located within the same ground surface condition.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT></PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>PREPARATION</TTL><BRK />
+<BRK />
+<SPT outline="3.1.1"><TTL>Installation Drawings</TTL><BRK />
+<BRK />
+<TXT>Submit <SUB>Installation Drawings</SUB> showing complete detail, both plan and side view details with proper layout and elevations.</TXT></SPT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2"><TTL>INSTALLATION</TTL><BRK />
+<BRK />
+<TXT>Backfill after inspection by the Contracting Officer.  Before, during, and after installation, protect plastic pipe and fittings from any environment 
+that would result in damage or deterioration to the material.  Keep a copy of the manufacturer's instructions available at the construction site 
+at all times and  follow these instructions unless directed otherwise by the Contracting Officer.</TXT><BRK />
+<BRK />
+<SPT outline="3.2.1"><TTL>Connections to Existing Lines</TTL><BRK />
+<BRK />
+<TXT>Obtain approval from the Contracting Officer before making connection to existing line.  Conduct work so that there is minimum interruption of 
+service on existing line.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.2"><TTL>General Requirements for Installation of Pipelines</TTL><BRK />
+<BRK />
+<TXT>These general requirements apply except where specific exception is made in the following paragraphs entitled "Special Requirements."</TXT><BRK />
+<BRK />
+<SPT outline="3.2.2.1"><TTL>Location</TTL><BRK />
+<BRK />
+<TXT>Terminate the work covered by this section at a point approximately<MET> 1.5 m</MET><ENG> 5 feet</ENG> from the building, unless otherwise indicated. <TAI OPT="AIR FORCE,ARMY,NASA">Install pressure 
+sewer lines beneath water lines only, with the top of the sewer line being at least<MET> 0.60 m</MET><ENG> 2 feet</ENG> below bottom of water line. When these separation 
+distances can not be met, contact the Contracting Officer for direction.</TAI></TXT><BRK />
+<BRK />
+<TAI OPT="NAVY"><SPT><TTL>Sanitary Piping Installation Parallel with Water Line</TTL><BRK />
+<BRK />
+<SPT><TTL>Normal Conditions</TTL><BRK />
+<BRK />
+<TXT>Install sanitary piping or manholes at least<MET> 3 m</MET><ENG> 10 feet</ENG> horizontally from a water line whenever possible.  Measure the distance from edge-to-edge.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Unusual Conditions</TTL><BRK />
+<BRK />
+<TXT>When local conditions prevent a horizontal separation of<MET> 3 m</MET><ENG> 10 feet</ENG>, the sanitary piping or manhole may be laid closer to a water line provided 
+that:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  The top (crown) of the sanitary piping is to be at least<MET> 450 mm</MET><ENG> 18 inches</ENG> below the bottom (invert) of the water main.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Where this vertical separation cannot be obtained, construct the sanitary piping with JWWA-approved ductile iron water pipe pressure 
+and conduct a hydrostatic sewer testwithout leakage prior to backfilling.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  The sewer manhole is to be of watertight construction and tested in place.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT><TTL>Installation of Sanitary Piping Crossing a Water Line</TTL><BRK />
+<BRK />
+<SPT><TTL>Normal Conditions</TTL><BRK />
+<BRK />
+<TXT>Lay sanitary sewer piping by crossing under water lines to provide a separation of at least<MET> 450 mm</MET><ENG> 18 inches</ENG> between the top of the sanitary piping 
+and the bottom of the water line whenever possible.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Unusual Conditions</TTL><BRK />
+<BRK />
+<TXT>When local conditions prevent a vertical separation described above, use the following construction:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Construct sanitary piping passing over or under water lines  with JWWA-approved ductile iron water pressure piping and conduct a hydrostatic 
+sewer test without leakage prior to backfilling.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Protect sanitary piping passing over water lines  by providing:</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1)  A vertical separation of at least<MET> 450 mm</MET><ENG> 18 inches</ENG> between the bottom of the sanitary piping and the top of the water line.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2)  Adequate structural support for the sanitary piping to prevent excessive deflection of the joints and the settling on and 
+breaking of the water line.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3)  That the length, minimum<MET> 6.1 m</MET><ENG> 20 feet</ENG>, of the sanitary piping be centered at the point of the crossing so that joints are 
+equidistant and as far as possible from the water line.</ITM><BRK />
+<BRK /></SPT>
+</SPT></TAI><SPT outline="3.2.2.1.1"><TTL>Sanitary Sewer Manholes</TTL><BRK />
+<BRK />
+<TXT>No water piping shall pass through or come in contact with any part of a sanitary sewer manhole.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2.2.2"><TTL>Earthwork</TTL><BRK />
+<BRK />
+<TXT>Perform earthwork operations in accordance with Section <TAI OPT="AIR FORCE,ARMY,NASA"><SRF>31 00 00</SRF> EARTHWORK</TAI><TAI OPT="NAVY"><SRF>31 23 00.00 20</SRF> EXCAVATION AND FILL</TAI>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.2.3"><TTL>Pipe Laying and Jointing</TTL><BRK />
+<BRK />
+<TXT>Inspect each pipe and fitting before and after installation; replace those found defective and remove from site.  Provide proper facilities for 
+lowering sections of pipe into trenches.  Lay nonpressure pipe with the bell or groove ends in the upgrade direction.  Adjust spigots in bells  
+to give a uniform space all around.  Blocking or wedging between bells and spigots  will not be permitted.  Replace by one of the proper dimensions, 
+pipe or fittings that do not allow sufficient space for installation of joint material.  At the end of each work day, close open ends of pipe temporarily 
+with wood blocks or bulkheads.  Provide batterboards not more than<MET> 7.50 m</MET><ENG> 25 feet</ENG> apart in trenches for checking and ensuring that pipe invert 
+elevations are as indicated.  Laser beam method may be used in lieu of batterboards for the same purpose.  Construct branch connections by use 
+of regular fittings or with matching branch pipe connectors from the same pipe manufacturer. </TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2.3"><TTL>Special Requirements</TTL><BRK />
+<BRK />
+<SPT outline="3.2.3.1"><TTL>Installation of Concrete Gravity Sewer Piping</TTL><BRK />
+<BRK />
+<TXT>Make joints with the gaskets specified for concrete gravity sewer pipe joints.  Clean and dry surfaces receiving lubricants, cements, or adhesives.  
+Affix gaskets to pipe not more than 24 hours prior to the installation of the pipe.  Protect gaskets from sun, blowing dust, and other deleterious 
+agents at all times.  Before installation of the pipe, inspect gaskets and remove and replace loose or improperly affixed gaskets.  Align each 
+pipe section with the previously installed pipe section, and pull the joint together.  If, while pulling the joint, the gasket becomes loose and 
+can be seen through the exterior joint recess when the pipe is pulled up to within<MET> 25 mm</MET><ENG> 1 inch</ENG> of closure, remove the pipe and remake the joint.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.3.2"><TTL>Installation of Ductile-Iron Pressure Lines</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Make mechanical-joints with the gaskets, glands, bolts, and nuts specified for this type joint. Make flanged joints with gaskets, bolts, 
+and nuts specified for this type joint.  Make flanged joints up tight, taking care to avoid undue strain on flanges, fittings, and other 
+accessories.  Align bolt holes for each flanged joint.  Use full size bolts for the bolt holes; use of undersized bolts to make up for 
+misalignment of bolt holes or for any other purpose will not be permitted.  Do not allow adjoining flange faces to be out of parallel to 
+such degree that the flanged joint cannot be made watertight without overstraining the flange.  When flanged pipe or fittings have dimensions 
+that do not allow the making of a proper flanged joint as specified, replace it by one of proper dimensions.  </LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Exterior protection:  Completely wrap buried ductile iron pipelines with 8 mil (minimum) polyethylene  sheet in conformance with <RID>JWWA K 158</RID>
+.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Pipe anchorage:  Provide concrete thrust blocks (reaction backing) for pipe anchorage.  Size and position thrust blocks as indicated. 
+Use concrete conforming to <RID>JIS A 5308</RID> having a minimum compressive strength of<MET> 18 MPa</MET><ENG> 2,000 psi</ENG> at 28 days.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.3.3"><TTL>Installation of PVC Piping</TTL><BRK />
+<BRK />
+<TXT> Make joints to other pipe materials in accordance with the recommendations of the plastic pipe manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.3.4"><TTL>Installation of PVC Pressure Pipe</TTL><BRK />
+<BRK />
+<SPT outline="3.2.3.4.1"><TTL>Pipe </TTL><BRK />
+<BRK />
+<TXT>Make push-on joints with  elastomeric gasket  .  For pipe-to-pipe push-on joint connections, use only pipe with push-on joint ends having factory-made 
+bevel.  For push-on joint connections to fittings, use cut spigot end of pipe off square, marked to match the manufacturer's insertion line and 
+beveled to match factory supplied bevel. .  Use an approved lubricant recommended by the pipe manufacturer for push-on joints.  Assemble push-on 
+joints for pipe-to-pipe joint connections in accordance with the requirements of the pipe manufacturer for laying the pipe.  Assemble push-on joints 
+for connection to fittings in accordance with the requirements of the pipe manufacturer for joining PVC pipe to fittings and accessories. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.3.4.2"><TTL>Pipe Anchorage</TTL><BRK />
+<BRK />
+<TXT>Provide concrete thrust blocks (reaction backing) for pipe anchorage.  Size and position thrust blocks as indicated.  Use concrete conforming to <RID>
+JIS A 5308</RID> having a minimum compressive strength of<MET> 18 MPa</MET><ENG> 2,000 psi</ENG> at 28 days.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2.3.5"><TTL>Pipeline Installation Beneath Railroad Right-of-Way</TTL><BRK />
+<BRK />
+<TXT>Where pipeline passes under the right-of-way of a commercial railroad, install piping in accordance with the specifications for pipelines conveying 
+nonflammable substances.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2.4"><TTL>Concrete Work</TTL><BRK />
+<BRK />
+<TXT>Cast-in-place concrete is included in Section <SRF>03 30 00</SRF> CAST-IN-PLACE CONCRETE. Support the pipe on a concrete cradle, or encased in concrete where 
+indicated or directed.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.5"><TTL>Manhole Construction</TTL><BRK />
+<BRK />
+<TXT>Construct base slab of cast-in-place concrete or use precast concrete base sections.  Make inverts in cast-in-place concrete and precast concrete 
+bases with a smooth-surfaced semi-circular bottom conforming to the inside contour of the adjacent sewer sections.  For changes in direction of 
+the sewer and entering branches into the manhole, make a circular curve in the manhole invert of as large a radius as manhole size will permit.  
+For cast-in-place concrete construction, either pour bottom slabs and walls integrally or key and bond walls to bottom slab.  No parging will be 
+permitted on interior manhole walls.  For precast concrete construction, make joints between manhole sections with the gaskets specified for this 
+purpose; install in the manner specified for installing joints in concrete piping.  Parging will not be required for precast concrete manholes.  
+Perform cast-in-place concrete work in accordance with the requirements specified under paragraph entitled "Concrete Work" of this section.  Make 
+joints between concrete manholes and pipes entering manholes with the resilient connectors specified for this purpose; install in accordance with 
+the recommendations of the connector manufacturer.  Where a new manhole is constructed on an existing line, remove existing pipe as necessary to 
+construct the manhole.  Cut existing pipe so that pipe ends are approximately flush with the interior face of manhole wall, but not protruding 
+into the manhole.  Use resilient connectors as previously specified for pipe connectors to concrete manholes.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.6"><TTL>Miscellaneous Construction and Installation</TTL><BRK />
+<BRK />
+<SPT outline="3.2.6.1"><TTL>Connecting to Existing Manholes</TTL><BRK />
+<BRK />
+<TXT>Connect pipe to existing manholes such that finish work will conform as nearly as practicable to the applicable requirements specified for new 
+manholes, including all necessary concrete work, cutting, and shaping.  Center the connection on the manhole.  Holes for the new pipe are be of 
+sufficient diameter to allow packing cement mortar around the entire periphery of the pipe but no larger than 1.5 times the diameter of the pipe.  
+Cut the manhole in a manner that will cause the least damage to the walls.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.6.2"><TTL>Metal Work</TTL><BRK />
+<BRK />
+<SPT outline="3.2.6.2.1"><TTL>Workmanship and Finish</TTL><BRK />
+<BRK />
+<TXT>Perform metal work so that workmanship and finish will be equal to the best practice in modern structural shops and foundries.  Form iron to shape 
+and size with sharp lines and angles.  Do shearing and punching so that clean true lines and surfaces are produced.  Make castings sound and free 
+from warp, cold shuts, and blow holes that may impair their strength or appearance.  Give exposed surfaces a smooth finish with sharp well-defined 
+lines and arises.  Provide necessary rabbets, lugs, and brackets wherever necessary for fitting and support.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.6.2.2"><TTL>Field Painting</TTL><BRK />
+<BRK />
+<TXT>After installation, clean cast-iron frames, covers, gratings, and steps not buried in concrete to bare metal, remove mortar, rust, grease, dirt, 
+and other deleterious materials and apply a coat of bituminous paint.  Do not paint surfaces subject to abrasion.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="3.2.7"><TTL>Installations of Wye Branches and Branch Connectors</TTL><BRK />
+<BRK />
+<TXT>Install wye branches and branch connectorsin an existing sewer using a method which does not damage the integrity of the existing sewer.  Do not 
+cutinto piping for connections except when approved by the Contracting Officer.  When the connecting pipe cannot be adequately supported on undisturbed 
+earth or tamped backfill, support on a concrete cradle as directed by the Contracting Officer.  Provide and install concrete required because of 
+conditions resulting from faulty construction methods or negligence without any additional cost to the Government. Do not damage the existing sewer 
+when installing wye branches in an existing sewer.  </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.8"><TTL>Construction of Sewage Treatment Tanks</TTL><BRK />
+<BRK />
+<TXT>Construct sewage tank in accordance with approved drawings and manufacturer's catalog data.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.3"><TTL>FIELD QUALITY CONTROL</TTL><BRK />
+<BRK />
+<TXT>The Contracting Officer will conduct field inspections and witness field tests specified in this section.  Be able to produce evidence, when required, 
+that each item of work has been constructed in accordance with the drawings and specifications.</TXT><BRK />
+<BRK />
+<SPT outline="3.3.1"><TTL>Tests</TTL><BRK />
+<BRK />
+<TXT>Perform field tests and provide labor, equipment, and incidentals required for testing, except that water and electric power needed for field tests 
+will be furnished as set forth in Section [_____].  </TXT><BRK />
+<BRK />
+<TAI OPT="NAVY"><SPT><TTL><SUB>Hydrostatic Sewer Test</SUB></TTL><BRK />
+<BRK />
+<TXT><TST>When unusual conflicts are encountered between sanitary sewer and waterlines a hydrostatic pressure sewer test will be performed in accordance 
+with the applicable JWWA standard for the piping material with a minimum test pressure of 200 kPa.</TST></TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="3.3.1.1"><TTL>Leakage Tests for Nonpressure Lines</TTL><BRK />
+<BRK />
+<TXT>Test lines for leakage by either <SUB>infiltration tests or exfiltration tests</SUB>.  Prior to testing for leakage, backfill trench up to at least lower 
+half of pipe. When necessary to prevent pipeline movement during testing, place additional backfill around pipe sufficient to prevent movement, 
+but leaving joints uncovered to permit inspection. When leakage exceeds the allowable amount specified, make satisfactory correction and retest 
+pipeline section in the same manner. When the water table is 60 cm or more above top of pipe at upper end of pipeline section to be tested, measure 
+infiltration using a suitable weir or other acceptable device.  When the water table is less than 60 cm above top of pipe at upper end of pipeline 
+section to be tested, make exfiltration test by filling the line to be tested with water so that the head will be at least 1.2 m above top of pipe 
+at upper end of pipeline section being tested.  Allow filled pipeline to stand until the pipe has reached its maximum absorption, but not less 
+than 4 hours. After absorption, reestablish the head and measure amount of water needed to maintain this water level during a 2-hour test period. 
+Amount of leakage, as measured by either infiltration or exfiltration test shall not exceed one liter per cm of diameter per hour per 100 m of 
+pipeline.  When leakage exceeds the amount specified, make satisfactory correction and retest pipeline section in the same manner as previously 
+specified. Correct all visible leaks regardless of leakage test results.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.1.2"><TTL><SUB>Tests for Pressure Lines</SUB></TTL><BRK />
+<BRK />
+<TXT>Test pressure lines in accordance with the applicable standards as recommended by pipe manufacturer's installation manual for the respective pressure 
+pipes specified in this specification. For hydrostatic pressure test, use a hydrostatic pressure<MET> 345 kPa</MET><ENG> 50 psi</ENG> in excess of the maximum working 
+pressure of the system, but not less than<MET> 690 kPa</MET><ENG> 100 psi</ENG>, holding the pressure for a period of not less than one hour.  For leakage test, use 
+a hydrostatic pressure not less than the maximum working pressure of the system.  Leakage test may be performed at the same time and at the same 
+test pressure as the pressure test.</TXT><BRK />
+<BRK /></SPT>
+<TAI OPT="AIR FORCE,ARMY,NASA"><SPT><TTL><SUB>Deflection Testing</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify deflection testing only when warranted by scope or size of project.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT><TST>Perform a deflection test on entire length of installed plastic pipeline on completion of work adjacent to and over the pipeline, including leakage 
+tests, backfilling, placement of fill, grading, paving, concreting, and any other superimposed loads</TST>.  Deflection of pipe in the installed pipeline 
+under external loads is not to exceed 4.5 percent of the average inside diameter of pipe.  Determine whether the allowable deflection has been 
+exceeded by use of a pull-through device or a deflection measuring device.</TXT><BRK />
+<BRK />
+<SPT><TTL>Pull-Through Device</TTL><BRK />
+<BRK />
+<TXT>This device  is to be a spherical, spheroidal, or elliptical ball, a cylinder, or circular sections fused to a common shaft. Space circular sections 
+on the shaft so that the distance from external faces of front and back sections will equal or exceed the diameter of the circular section.  Pull-through 
+device may also be of a design recommended by the pipe manufacturer, provided the device meets the applicable requirements specified in this paragraph, 
+including those for diameter of the device, and that the mandrel has a minimum of 9 arms.  Ball, cylinder, or circular sections are to conform 
+to the following:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  A diameter, or minor diameter as applicable, of 95 percent of the average inside diameter of the pipe; tolerance of plus 0.5 percent 
+will be permitted.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Homogeneous material throughout, is to have a density greater than 1.0 as related to water at<MET> 4 degrees C</MET><ENG> 39.2 degrees F</ENG>, and a surface 
+Brinell hardness of not less than 150.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Center bored and through-bolted with a<MET> 6 mm</MET><ENG> 1/4 inch</ENG> minimum diameter steel shaft having a yield strength of not less than<MET> 483 MPa</MET><ENG> 
+70,000 psi</ENG>, with eyes or loops at each end for attaching pulling cables.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Suitably Back each eye or loop  with a flange or heavy washer such that a pull exerted on opposite end of shaft will produce compression 
+throughout remote end.</LST><BRK />
+<BRK /></SPT>
+<SPT><TTL>Deflection Measuring Device</TTL><BRK />
+<BRK />
+<TXT>Sensitive to 1.0 percent of the diameter of the pipe being tested and  be accurate to 1.0 percent of the indicated dimension. Prior approval is 
+required for the deflection measuring device.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Pull-Through Device Procedure</TTL><BRK />
+<BRK />
+<TXT>Pass the pull-through device through each run of pipe, either by pulling it through or flushing it through with water.  If the device fails to 
+pass freely through a pipe run, replace pipe which has the excessive deflection and completely retest in same manner and under same conditions.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Deflection measuring device procedure</TTL><BRK />
+<BRK />
+<TXT>Measure deflections through each run of installed pipe.  If deflection readings in excess of 4.5 percent of average inside diameter of pipe are 
+obtained, retest pipe by a run from the opposite direction.  If retest continues to show a deflection in excess of 4.5 percent of average inside 
+diameter of pipe, replace pipe which has excessive deflection and completely retest in same manner and under same conditions.</TXT><BRK />
+<BRK /></SPT>
+</SPT></TAI></SPT><SPT outline="3.3.2"><TTL>Field Tests for Cast-In-Place Concrete</TTL><BRK />
+<BRK />
+<TXT>Field testing requirements are covered in Section <SRF>03 30 00</SRF> CAST-IN-PLACE CONCRETE.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.3"><TTL>Inspection</TTL><BRK />
+<BRK />
+<TXT>Check each straight run of pipeline for gross deficiencies by holding a light in a manhole; the light must show a practically full circle of light 
+through the pipeline when viewed from the adjoining end of line.  </TXT><BRK />
+<BRK />
+<TAI OPT="NAVY"><SPT><TTL>Pre-Installation Inspection</TTL><BRK />
+<BRK />
+<TXT>Prior to connecting the new service, perform pre-installation inspection after trenching and layout is complete.  Submit <SUB>pre-installation inspection 
+request</SUB> for field support at least 14 days in advance.  The Installation's Utilities Field Support personnel will perform the pre-installation 
+inspection.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Post-Installation Inspection</TTL><BRK />
+<BRK />
+<TXT>Perform a post-installation inspection after connection has been made and before the connection is buried.  Submit <SUB>post-installation inspection</SUB>
+ request for field support at least 14 days in advance.  The Installation's Utilities Field Support personnel will perform the post-connection 
+inspection.</TXT><BRK />
+<BRK /></SPT>
+</TAI></SPT></SPT></PRT>   <END /><BRK /></SEC>

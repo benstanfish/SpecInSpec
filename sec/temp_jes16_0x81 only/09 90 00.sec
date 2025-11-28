@@ -1,0 +1,1666 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                  UFGS-09 90 00 (May 2011)<BRK />
+                                               Change 4 - 11/18<BRK />
+                                               ---------------------------<BRK />
+Preparing Activity:  <PRA>NAVFAC</PRA>                    Superseding<BRK />
+                                               UFGS-09 90 00 (August 2010)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 09 90 00</SCN><BRK />
+<BRK />
+<STL>PAINTS AND COATINGS</STL><BRK />
+<DTE>05/11</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project.  The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>painting of new 
+and existing, interior and exterior substrates, including masonry, concrete, 
+metal, wood and other miscellaneous materials</SCP>.<BRK />
+<BRK />
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.<BRK />
+<BRK />
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<BRK />
+<BRK />
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This Guide Specification is used in the preparation of project specifications 
+for Department of Defense facilities: <BRK />
+<BRK />
+1.  Buildings;<BRK />
+<BRK />
+2.  Related mechanical, electrical, and miscellaneous items; and<BRK />
+<BRK />
+3.  Shore-to-ship utility connections.<BRK />
+<BRK />
+This guide specification WAS NOT prepared to address the requirements of routine 
+maintenance painting although it could be modified to do so.<BRK />
+<BRK />
+This guide specification DOES NOT address high-performance or specialty coating 
+requirements, or protective coating of industrial structures or facilities, 
+including but not limited to:<BRK />
+<BRK />
+1.  Towers;<BRK />
+<BRK />
+2.  Pilings;<BRK />
+<BRK />
+3.  Pavement markings;<BRK />
+<BRK />
+4.  Items requiring specialized treatment due to peculiar usage;<BRK />
+<BRK />
+5.  Petroleum storage facilities;<BRK />
+<BRK />
+6.  Water storage facilities;<BRK />
+<BRK />
+7.  Waterfront facilities, except shore-to-ship utility connections; and <BRK />
+<BRK />
+8.  Hangars<BRK />
+<BRK />
+If such items are in the project include in a separate section or modify this 
+section accordingly.  The following guide specifications are examples of those 
+available for specific service conditions noted, and may be modified to provide 
+for related service conditions:<BRK />
+<BRK />
+1.  Section <SRF>09 97 23</SRF> METALLIC TYPE CONDUCTIVE/SPARK RESISTANT CONCRETE FLOOR 
+FINISH.  This specification covers the painting of hydraulic structures located 
+in fresh water such as locks and dams.<BRK />
+<BRK />
+2.  Section <SRF>09 97 13.15</SRF> LOW VOC POLYSULFIDE INTERIOR COATING OF WELDED STEEL 
+PETROLEUM FUEL TANKS<BRK />
+<BRK />
+3.  Section <SRF>09 97 13.27</SRF> EXTERIOR COATING OF STEEL STRUCTURES.  This specification 
+is usable for any steel structure exposed to weather, and is usable for other 
+purposes as well, such as hangar structures, enclosed swimming pool structures, 
+and most situations requiring high-performance protective coating systems.<BRK />
+<BRK />
+4.  Section <SRF>09 97 13.16</SRF> INTERIOR COATING OF WELDED STEEL WATER TANKS<BRK />
+<BRK />
+5.  Section <SRF>09 97 13.15</SRF> LOW VOC POLYSULFIDE INTERIOR COATING OF WELDED STEEL 
+PETROLEUM FUEL TANKS.  This is a three-coat epoxy system that is adaptable to 
+a wide range of high-performance protective coating requirements where there 
+is no exposure to sunlight.<BRK />
+<BRK />
+This guide generally contains only two types of coating systems, solvent based 
+and water based.  If different systems are required regionally, or for special 
+needs, modify the guide accordingly.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification.  The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.</NPR><BRK />
+<BRK />
+<NPR>Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.</NPR><BRK />
+<BRK />
+<NPR>References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK />
+<BRK />
+<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK />
+<BRK />
+<RID>JIS A 5758</RID><RTL>(20<ADD>22</ADD><DEL>16</DEL>) Sealants for Sealing and Glazing in 
+Buildings</RTL><BRK />
+<BRK />
+<RID>JIS A 6909</RID><RTL>(20<DEL>14</DEL><ADD>21</ADD>) Coating Materials for Textured Finishes 
+of Buildings</RTL><BRK />
+<BRK />
+<RID>JIS K5600</RID><RTL>(1999) Testing Methods for Paints </RTL><BRK />
+<BRK />
+<RID>JIS K5670</RID><RTL>(2008) Non-Aqueous Dispersion Acrylic Paint</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>MASTER PAINTERS INSTITUTE (MPI)</ORG><BRK />
+<BRK />
+<RID>MPI 77</RID><RTL>(2012) Epoxy, Gloss</RTL><BRK />
+<BRK /></REF>
+<REF><ORG><DEL>MINISTRY OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM, GOVERNMENT OF JAPAN (MLIT)</DEL><ADD>MINISTRY 
+OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM (MLIT)</ADD></ORG><BRK />
+<BRK />
+<RID>MLIT SS Chapter 18</RID><RTL>(2019) Public Building Construction Standard 
+Specification: Chapter 18 Painting Work</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. ARMY CORPS OF ENGINEERS (USACE)</ORG><BRK />
+<BRK />
+<RID>EM 385-1-1</RID><DEL><RTL>(2014) Safety and Health Requirements Manual</RTL></DEL><ADD><RTL>
+ Safety -- Safety and Health Requirements Manual</RTL></ADD><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. GENERAL SERVICES ADMINISTRATION (GSA)</ORG><BRK />
+<BRK />
+<RID>AMS-STD-595</RID><RTL>(2017) Colors Used in Government Procurement</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Review Submittal Description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.</NPR><BRK />
+<BRK />
+<NPR>The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G."  Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a "G" to an item, if the submittal is sufficiently important or complex 
+in context of the project.</NPR><BRK />
+<BRK />
+<NPR>For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office.  Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.</NPR><BRK />
+<BRK />
+<NPR>The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
+submittal under the SD number that best describes the submittal item.</NPR><BRK />
+<BRK />
+<NPR>Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are [for Contractor Quality Control approval.][for information only.  When used, a designation following the 
+"G" designation identifies the office that will review the submittal for the Government.]</TXT><BRK />
+<BRK />
+<TXT>Samples of specified materials may be taken and tested for compliance with specification requirements.</TXT><BRK />
+<BRK />
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Piping Identification</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-08 Manufacturer's Instructions</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Application Instructions</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Mixing</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-10 Operation and Maintenance Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Coatings</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>CERTIFICATES</TTL><BRK />
+<BRK />
+<SPT outline="1.3.1"><TTL>Indoor Air Quality</TTL><BRK />
+<BRK />
+<TXT>Submit required indoor air quality certifications in one submittal package.</TXT><BRK />
+<BRK />
+<SPT outline="1.3.1.1"><TTL>Paints and <SUB>Coatings</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  The Governments's preference is for use of products that have been certified 
+for indoor air quality by a third-party organization such as Greenguard or SCS 
+Global Services.  Research has shown that all paints except consolidated latex 
+paints are available among 3 national manufacturers. Verify there is a certified 
+product available when specifying consolidated latex paint that is both cost 
+effective and appropriate for the project.  Confirm local/regional availability 
+of Greenguard or SCS products when specifying consolidated latex paint that 
+does not impact cost effectiveness.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide paint and coating products certified to meet formaldehyde emission class F****.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="1.4"><TTL>APPLICATOR'S QUALIFICATIONS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  When using the contractor qualification clause rather than the SSPC Certification 
+requirements, edit to require appropriate experience.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: Select only one of the following two bracketed paragraphs. </NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+[<SPT outline="1.4.1"><TTL>Contractor Qualification</TTL><BRK />
+<BRK />
+<TXT>Submit the name, address, telephone number, FAX number, and e-mail address of the contractor that will be performing 
+all surface preparation and coating application.  Submit evidence that key personnel have successfully performed 
+surface preparation and application of coatings on [_____] on a minimum of three similar projects within the 
+past three years.  List information by individual and include the following:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Name of individual and proposed position for this work.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Information about each previous assignment including:</LST><BRK />
+<BRK />
+<ITM>Position or responsibility</ITM><BRK />
+<BRK />
+<ITM>Employer (if other than the Contractor)</ITM><BRK />
+<BRK />
+<ITM>Name of facility owner</ITM><BRK />
+<BRK />
+<ITM>Mailing address, telephone number, and telex number (if non-US) of facility owner</ITM><BRK />
+<BRK />
+<ITM>Name of individual in facility owner's organization who can be contacted as a reference</ITM><BRK />
+<BRK />
+<ITM>Location, size and description of structure</ITM><BRK />
+<BRK />
+<ITM>Dates work was carried out</ITM><BRK />
+<BRK />
+<ITM>Description of work carried out on structure</ITM><BRK />
+<BRK /></SPT>
+]<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For projects in continental US, Hawaii, Alaska, and Puerto Rico, require 
+SSPC Certification.  Use in other locations where qualified US contractor is 
+desired.  If project involves removal of paint containing hazardous materials, 
+add requirement for SSPC QP-2 certification in section of specification where 
+the hazardous paint removal is specified, generally Section <SRF>02 83 00</SRF> LEAD REMEDIATION.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: **WARNING**WARNING**WARNING**WARNING** Solicitations requiring SSPC Certification 
+should point out the existence and location of the certification requirement, 
+in the Project Information Form.  To be enforceable, include the requirement 
+in the solicitation documents.  SSPC Certification is a special responsibility 
+requirement pursuant to FAR 9.104-2 Special Standards.  This is analogous to 
+requiring bidders to have a specified level of experience or expertise and GAO 
+has sustained these types of special requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use bracket option below concerning SSPC QP 1 only when industrial coatings 
+are required.  Painting qualifications for projects such as BEQ's, training 
+facilities and general administration buildings do not require QP 1 certification.</NPR><BRK />
+<AST /><BRK /></NTE>
+</SPT><SPT outline="1.5"><TTL>QUALITY ASSURANCE</TTL><BRK />
+<BRK />
+<SPT outline="1.5.1"><TTL>Field Samples and Tests</TTL><BRK />
+<BRK />
+<TXT>The Contracting Officer may choose up to two coatings that have been delivered to the site to be tested at no 
+cost to the Government.  Take samples of each chosen product as specified in the paragraph SAMPLING PROCEDURES.  
+Test each chosen product as specified in the paragraph TESTING PROCEDURE.  Remove products from the job site 
+which do not conform, and replace with new products that conform to the referenced specification.  Test replacement 
+products that failed initial testing at no cost to the Government.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: Only require the testing for large quantities of epoxy/polyurethane coatings 
+or a single coating system that is used in large quantities on the project.  
+A large quantity of epoxy/polyurethane coatings is considered to be<MET> 189 Liters</MET><ENG>
+ 50 gallons</ENG> or more, a large quantity of other coating systems is considered 
+to be<MET> 757 Liters</MET><ENG> 200 gallons</ENG> or more.  List all coatings for testing by MPI 
+or SSPC paint number in the following paragraph.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.5.1.1"><TTL>Sampling Procedure</TTL><BRK />
+<BRK />
+<TXT>The Contracting Officer will select paint at random from the products that have been delivered to the job site 
+for sample testing.  The Contractor will provide<MET> one liter</MET><ENG> one quart</ENG> samples of the selected paint materials.  
+Take samples in the presence of the Contracting Officer, and label, and identify each sample.  Provide labels 
+in accordance with the paragraph PACKAGING, LABELING, AND STORAGE of this specification.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.5.1.2"><TTL>Testing Procedure</TTL><BRK />
+<BRK />
+<TXT>Qualification testing of coated surfaces per <RID>MLIT SS Chapter 18</RID> Painting Work, Table 18.1.1 and Section 18.1.7 
+and <RID>JIS K5600</RID>.</TXT><BRK />
+<BRK />
+<TXT>Testing of film thickness per <RID>JIS K5600</RID>.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="1.6"><TTL>REGULATORY REQUIREMENTS</TTL><BRK />
+<BRK />
+<SPT outline="1.6.1"><TTL>Environmental Protection</TTL><BRK />
+<BRK />
+<TXT>In addition to requirements specified elsewhere for environmental protection, indoor coating materials to conform 
+to formaldehyde emission class F****.  Notify Contracting Officer of any paint specified herein which fails to 
+conform.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6.2"><TTL>Lead Content</TTL><BRK />
+<BRK />
+<TXT>Do not use coatings having a lead content over <DEL>0.06</DEL><ADD>0.009</ADD> percent by weight of nonvolatile content.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6.3"><TTL>Chromate Content</TTL><BRK />
+<BRK />
+<TXT>Do not use coatings containing zinc-chromate or strontium-chromate.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6.4"><TTL>Asbestos Content</TTL><BRK />
+<BRK />
+<TXT>Provide asbestos-free materials.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6.5"><TTL>Mercury Content</TTL><BRK />
+<BRK />
+<TXT>Provide materials free of mercury or mercury compounds.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6.6"><TTL>Silica </TTL><BRK />
+<BRK />
+<TXT>Provide abrasive blast media containing no free crystalline silica.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6.7"><TTL>Human Carcinogens</TTL><BRK />
+<BRK />
+<TXT>Provide materials that do not contain confirmed human carcinogens or suspected human carcinogens.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.7"><TTL>PACKAGING, LABELING, AND STORAGE</TTL><BRK />
+<TAI OPT="NAVY"><NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Materials with a high capacity to absorb VOC emissions include materials 
+which are woven, fibrous or porous in nature, such as acoustical ceilings, carpet, 
+and textiles.</NPR><BRK />
+<AST /><BRK /></NTE>
+</TAI><BRK />
+<TXT>Provide paints in sealed containers that legibly show the contract specification number, designation name, formula 
+or specification number, batch number, color, quantity, date of manufacture, manufacturer's formulation number, 
+manufacturer's directions including any warnings and special precautions, and name and address of manufacturer.  
+Furnish pigmented paints in containers not larger than<MET> 20 liters</MET><ENG> 5 gallons</ENG>.  Store paints and thinners in accordance 
+with the manufacturer's written directions, and as a minimum, stored off the ground, under cover, with sufficient 
+ventilation to prevent the buildup of flammable vapors, and at temperatures between<MET> 4 to 35 degrees C</MET><ENG> 40 to 95 
+degrees F</ENG>.<TAI OPT="NAVY">  Do not store paint, polyurethane, varnish, or wood stain products with materials that have a high 
+capacity to adsorb VOC emissions, [including [_____]].  Do not store paint, polyurethane, varnish, or wood stain 
+products in occupied spaces.</TAI></TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.8"><TTL>SAFETY AND HEALTH</TTL><BRK />
+<BRK />
+<TXT>Apply coating materials using safety methods and equipment in accordance with the following:</TXT><BRK />
+<BRK />
+<TXT>Comply with applicable local laws and regulations, and with the ACCIDENT PREVENTION PLAN, including the Activity 
+Hazard Analysis as specified in Section <SRF>01 35 26</SRF> GOVERNMENT SAFETY REQUIREMENTS and in <DEL>Appendix A</DEL><ADD>Chapter 2</ADD> of <RID>
+EM 385-1-1</RID>.  Include in the Activity Hazard Analysis the potential impact of painting operations on painting 
+personnel and on others involved in and adjacent to the work zone.</TXT><BRK />
+<BRK />
+<SPT outline="1.8.1"><TTL>Safety Methods Used During Coating Application</TTL><BRK />
+<BRK />
+<TXT>Comply with the requirements of <RID>MLIT SS Chapter 18</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.8.2"><TTL>Toxic Materials</TTL><BRK />
+<BRK />
+<TXT>To protect personnel from overexposure to toxic materials, conform to the most stringent guidance of:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  The applicable manufacturer's Safety Data Sheets (SDS) or local regulation.</LST><BRK />
+<BRK />
+[<LST INDENT="-0.33">b.  Removal and disposal of coatings which contain lead is specified in Section <SRF>02 83 00</SRF> LEAD REMEDIATION[_____].  
+Refer to drawings for list of hazardous materials located on this project.  Coordinate paint preparation 
+activities with this specification section.</LST><BRK />
+]<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete following paragraph if no asbestos is contained in existing coating 
+systems.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+[<LST INDENT="-0.33">c.  Removal and disposal of coatings which contain asbestos materials is specified in Section 
+<SRF>02 82 00</SRF> ASBESTOS REMEDIATION.  Refer to drawings for list of hazardous materials located on this project.  
+Coordinate paint preparation activities with this specification section.</LST><BRK />
+<BRK />
+]<TXT>Submit manufacturer's Safety Data Sheets for coatings, solvents, and other potentially hazardous materials.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.9"><TTL>ENVIRONMENTAL CONDITIONS</TTL><BRK />
+<BRK />
+<TXT>Comply, at minimum, with manufacturer recommendations for space ventilation during and after installation.[  
+Isolate area of application from rest of building when applying high-emission paints or coatings.]</TXT><BRK />
+<BRK />
+<SPT outline="1.9.1"><TTL>Coatings</TTL><BRK />
+<BRK />
+<TXT>Do not apply coating when air or substrate conditions are:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Unsuitable for drying, including when the air temperature at a location for coating is below 5 degrees 
+C, the humidity is 85 percent or more and condensation occurs due to inadequate ventilation. Where it 
+is not possible to avoid coating, curing measures, such as warming and ventilation, shall be performed.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  External coatings shall generally not be performed if rain is likely to occur or during strong winds.</LST><BRK />
+<BRK /></SPT>
+<TAI OPT="NAVY"><SPT><TTL>Post-Application</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Choose the most appropriate option(s) for ventilation.  For instance, 
+high-humidity regions may generate too much condensate when using 100 percent 
+outside air.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Vacate space for as long as possible after application.  Wait a minimum of 48 hours before occupying freshly 
+painted rooms.  Maintain one of the following ventilation conditions during the curing period, or for 72 hours 
+after application:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Supply 100 percent outside air 24 hours a day.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Supply airflow at a rate of 6 air changes per hour, when outside temperatures are between<MET> 13 degrees 
+C</MET><ENG> 55 degrees F</ENG> and<MET> 29 degrees C</MET><ENG> 85 degrees F</ENG> and humidity is between 30 percent and 60 percent.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Supply airflow at a rate of 1.5 air changes per hour, when outside air conditions are not within 
+the range stipulated above.</LST><BRK />
+<BRK /></SPT>
+</TAI></SPT><TAI OPT="NAVY"><SPT><TTL>SCHEDULING</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Materials that adsorb VOCs include carpets, textiles, unprimed gypsum 
+wallboard, and acoustical ceiling panels.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Allow paint, polyurethane, varnish, and wood stain installations to cure prior to the installation of materials 
+that adsorb VOCs, including [_____].</TXT><BRK />
+<BRK /></SPT>
+</TAI><SPT outline="1.10"><TTL>COLOR SELECTION</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Include the following bracketed paragraph and Table if the project includes 
+painting of Shore-To-Ship Utility connections</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide colors of finish coats as indicated or specified.  Allow Contracting Officer to select colors not indicated 
+or specified.  Manufacturers' names and color identification are used for the purpose of color identification 
+only.  Named products are acceptable for use only if they conform to specified requirements.  Products of other 
+manufacturers are acceptable if the colors approximate colors indicated and the product conforms to specified 
+requirements.</TXT><BRK />
+<BRK />
+<TXT>Tint each coat progressively darker to enable confirmation of the number of coats.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  On Navy projects, do not use Section <SRF>09 06 00</SRF> SCHEDULES FOR FINISHES.  
+Provide color selection on the contract drawings.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Submit manufacturer's samples of paint colors.  Cross reference color samples to color scheme as indicated. Submit 
+color stencil codes.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.11"><TTL>LOCATION AND SURFACE TYPE TO BE PAINTED</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Drawings should indicate type and extent of work.  Specific quantities 
+should not be cited in the specification.  Indicate on the drawings the linear 
+amount of existing putty, glazing compound, sealant or caulking to be replaced 
+with new material and quantify the area of existing coating to be removed by 
+methods specified for each substrate material.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.11.1"><TTL>Painting Included</TTL><BRK />
+<BRK />
+<TXT>Where a space or surface is indicated to be painted, include the following unless indicated otherwise.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Surfaces behind portable objects and surface mounted articles readily detachable by removal of fasteners, 
+such as screws and bolts.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  New factory finished surfaces that require identification or color coding and factory finished surfaces 
+that are damaged during performance of the work.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Existing coated surfaces that are damaged during performance of the work.</LST><BRK />
+<BRK />
+<SPT outline="1.11.1.1"><TTL>Exterior Painting</TTL><BRK />
+<BRK />
+<TXT>Includes new surfaces[, existing coated surfaces,] [and] [existing uncoated surfaces,] of the building[s] and 
+appurtenances.  Also included are existing coated surfaces made bare by cleaning operations.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.11.1.2"><TTL>Interior Painting</TTL><BRK />
+<BRK />
+<TXT>Includes new surfaces[, existing uncoated surfaces,] [and] [existing coated surfaces] of the building[s] and 
+appurtenances as indicated and existing coated surfaces made bare by cleaning operations.  Where a space or surface 
+is indicated to be painted, include the following items, unless indicated otherwise.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Exposed columns, girders, beams, joists, and metal deck; and</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Other contiguous surfaces.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.11.2"><TTL>Painting Excluded</TTL><BRK />
+<BRK />
+<TXT>Do not paint the following unless indicated otherwise.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Surfaces concealed and made inaccessible by panelboards, fixed ductwork, machinery, and equipment 
+fixed in place.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Surfaces in concealed spaces.  Concealed spaces are defined as enclosed spaces above suspended ceilings, 
+furred spaces, attic spaces, crawl spaces, elevator shafts and chases.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Steel to be embedded in concrete.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Copper, stainless steel, aluminum, brass, and lead except existing coated surfaces.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Hardware, fittings, and other factory finished items.</LST><BRK />
+<BRK />
+[<LST INDENT="-0.33">f.  Do not paint surfaces in the following areas: [_____].</LST><BRK />
+<BRK />
+]</SPT><SPT outline="1.11.3"><TTL>Mechanical and Electrical Painting</TTL><BRK />
+<BRK />
+<TXT>Includes field coating of [interior] [and] [exterior] new [and existing] surfaces.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Where a space or surface is indicated to be painted, include the following items unless indicated 
+otherwise.</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Exposed piping, conduit, and ductwork;</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) Supports, hangers, air grilles, and registers;</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3) Miscellaneous metalwork and insulation coverings.</ITM><BRK />
+<BRK />
+[<LST INDENT="-0.33">b.  Do not paint the following, unless indicated otherwise:</LST><BRK />
+<BRK />
+[<ITM INDENT="-0.33">(1) New zinc-coated, aluminum, and copper surfaces under insulation</ITM><BRK />
+<BRK />
+][<ITM INDENT="-0.33">(2) New aluminum jacket on piping</ITM><BRK />
+<BRK />
+][<ITM INDENT="-0.33">(3) New interior ferrous piping under insulation.</ITM><BRK />
+<BRK />
+]][<SPT outline="1.11.3.1"><TTL>Fire Extinguishing Sprinkler Systems</TTL><BRK />
+<BRK />
+<TXT>Clean, pretreat, prime, and paint new fire extinguishing sprinkler systems including valves, piping, conduit, 
+hangers, supports, miscellaneous metalwork, and accessories.  Apply coatings to clean, dry surfaces, using clean 
+brushes.  Clean the surfaces to remove dust, dirt, rust, and loose mill scale.  Immediately after cleaning, provide 
+the metal surfaces with one coat primer per schedules.  Shield sprinkler heads with protective covering while 
+painting is in progress.  Upon completion of painting, remove protective covering from sprinkler heads.  Remove 
+sprinkler heads which have been painted and replace with new sprinkler heads.  Provide primed surfaces with the 
+following:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Piping in Unfinished Areas:  Provide primed surfaces with one coat of red alkyd gloss enamel applied 
+to a minimum dry film thickness of<MET> 0.025 mm</MET><ENG> 1.0 mil</ENG> in attic spaces, spaces above suspended ceilings, 
+crawl spaces, pipe chases, mechanical equipment room, and spaces where walls or ceiling are not painted 
+or not constructed of a prefinished material.[  In lieu of red enamel finish coat, provide piping with<MET>
+ 50 mm</MET><ENG> 2 inch</ENG> wide red enamel bands or self-adhering red plastic bands spaced at maximum of<MET> 6 meters</MET><ENG> 
+20 foot</ENG> intervals.]</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Piping in Finished Areas:  Provide primed surfaces with two coats of paint to match adjacent surfaces, 
+except provide valves and operating accessories with one coat of red alkyd gloss enamel applied to a 
+minimum dry film thickness of<MET> 0.025 mm</MET><ENG> 1.0 mil</ENG>.  Provide piping with <MET>50 mm</MET><ENG> 2 inch</ENG> wide red enamel bands 
+or self-adhering red plastic bands spaced at maximum of<MET> 6 meters</MET><ENG> 20 foot</ENG> intervals throughout the piping 
+systems.</LST><BRK />
+<BRK /></SPT>
+]</SPT>[<SPT outline="1.11.4"><TTL>Exterior Painting of Site Work Items</TTL><BRK />
+<BRK />
+<TXT>Field coat the following items:</TXT><BRK />
+<TBL><THD><BRK />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;New&#160;Surfaces&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Existing&#160;Surfaces<BRK /></THD>
+<BRK />
+&#160;&#160;&#160;&#160;&#160;&#160;a.&#160;&#160;[_____]&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[_____]<BRK />
+<BRK />
+&#160;&#160;&#160;&#160;&#160;&#160;b.&#160;&#160;[_____]&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[_____]<BRK />
+<BRK />
+&#160;&#160;&#160;&#160;&#160;&#160;c.&#160;&#160;[_____]&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[_____]<BRK /></TBL>
+<BRK /></SPT>
+]<SPT outline="1.11.5"><TTL>MISCELLANEOUS PAINTING</TTL><BRK />
+<BRK />
+<TXT>Lettering [Building ][Room Number(s) ]</TXT><BRK />
+<BRK />
+<TXT>Provide lettering [as scheduled on the drawings] [block] [Gothic] type, [black enamel] [water-type decalcomania, 
+finished with a protective coating of spar varnish].  Samples must be approved before application.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.11.6"><TTL>Definitions and Abbreviations</TTL><BRK />
+<BRK />
+<SPT outline="1.11.6.1"><TTL>Coating</TTL><BRK />
+<BRK />
+<TXT>A film or thin layer applied to a base material called a substrate.  A coating may be a metal, alloy, paint, 
+or solid/liquid suspensions on various substrates (such as metals, plastics, wood, paper, leather, cloth).  They 
+may be applied by electrolysis, vapor deposition, vacuum, or mechanical means such as brushing, spraying, calendaring, 
+and roller coating.  A coating may be applied for aesthetic or protective purposes or both.  The term "coating" 
+as used herein includes emulsions, enamels, stains, varnishes, sealers, epoxies, and other coatings, whether 
+used as primer, intermediate, or finish coat.  The terms paint and coating are used interchangeably.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.11.6.2"><TTL>Dry Film Thickness </TTL><BRK />
+<BRK />
+<TXT>Dry film thickness, the film thickness of the fully cured, dry paint or coating.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.11.6.3"><TTL>micron / microns</TTL><BRK />
+<BRK />
+<TXT>The metric measurement for 0.001 mm or one/one-thousandth of a millimeter.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.11.6.4"><TTL>mm</TTL><BRK />
+<BRK />
+<TXT>The metric measurement for millimeter, 0.001 meter or one/one-thousandth of a meter.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.11.6.5"><TTL>Gloss Levels</TTL><BRK />
+<BRK />
+<TXT><TBL><THD>Gloss&#160;&#160;&#160;&#160;&#160;&#160;&#160;Description&#160;&#160;&#160;&#160;&#160;&#160;Units&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Units<BRK />
+Level&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;at&#160;60&#160;degrees&#160;&#160;&#160;&#160;at&#160;85&#160;degrees</THD><BRK />
+<BRK />
+Gloss&#160;30&#160;&#160;&#160;&#160;Semi-Gloss&#160;&#160;&#160;&#160;&#160;&#160;&#160;15&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;30<BRK />
+Gloss&#160;50&#160;&#160;&#160;&#160;Semi-Gloss&#160;&#160;&#160;&#160;&#160;&#160;&#160;35&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;50<BRK />
+Gloss&#160;70&#160;&#160;&#160;&#160;Gloss&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;60&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;70<BRK />
+Glossy&#160;&#160;&#160;&#160;&#160;&#160;High-Gloss&#160;&#160;&#160;&#160;&#160;&#160;&#160;70+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;80+</TBL></TXT><BRK />
+<BRK />
+<TXT>Gloss is tested in accordance with <RID>JIS K5600</RID>.  Historically, the Government has used Flat(Matte), Gloss 30(Eggshell), 
+Gloss 50 (Semi-Gloss), and Gloss 70 (Gloss).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.11.6.6"><TTL>Paint</TTL><BRK />
+<BRK />
+<TXT>See Coating definition.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT></PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>MATERIALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Reprocessed and consolidated latex paints are EPA designated products.  
+Verify the availability of certified products within the region when specifying 
+consolidated latex paint.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Conform to the coating specifications and standards referenced in PART 3.  Submit product data sheets for specified 
+coatings and solvents.  Provide preprinted cleaning and maintenance instructions for all coating systems.</TXT><BRK />
+<BRK />
+<TXT>Submit Manufacturer's Instructions on Mixing: Detailed mixing instructions, minimum and maximum application temperature 
+and humidity, potlife, and curing and drying times between coats.</TXT><BRK />
+<BRK />
+<TXT>Provide certification of Indoor Air Quality for paints and primers.</TXT><BRK />
+<BRK />
+<TXT>[Provide certification of Indoor Air Quality for consolidated latex paints.</TXT><BRK />
+<BRK />
+]</SPT></PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Exercise caution when deviating from paint systems listed in tables of 
+"PART 3  EXECUTION."  Verify compatibility and suitability of paint systems 
+substituted by reviewing the Evaluation of Systems sections of the MPI Manuals.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="3.1"><TTL>PROTECTION OF AREAS AND SPACES NOT TO BE PAINTED</TTL><BRK />
+<BRK />
+<TXT>Prior to surface preparation and coating applications, remove, mask, or otherwise protect hardware, hardware 
+accessories, machined surfaces, radiator covers, plates, lighting fixtures, public and private property, and 
+other such items not to be coated that are in contact with surfaces to be coated.  Following completion of painting, 
+reinstall removed items by workmen skilled in the trades.  Restore surfaces contaminated by coating materials, 
+to original condition and repair damaged items.</TXT><BRK />
+<BRK /></SPT>
+[<SPT outline="3.2"><TTL>REPUTTYING AND REGLAZING</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Include this paragraph (3.2) only for projects involving painting of 
+existing windows but not including a glazing section.  Reputtying work should 
+be covered in glazing section if such a section is used in the project specifications.  
+This is normally used in historical preservation.<TAI OPT="NAVY">  Avoid using linseed oil putty 
+at building interior.</TAI></NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Remove cracked, loose, and defective putty or glazing compound on glazed sash and provide new putty or glazing 
+compound.  Where defective putty or glazing compound constitutes 30 percent or more of the putty at any one light, 
+remove the glass and putty or glazing compound and reset the glass. Remove putty or glazing compound without 
+damaging sash or glass.  Clean rabbets to bare wood or metal and prime prior to reglazing.  Provide linseed oil 
+putty for wood sash.  Patch surfaces to provide smooth transition between existing and new surfaces.  Finish 
+putty or glazing compound to a neat and true bead.  Allow glazing compound time to cure, in accordance with manufacturer's 
+recommendation, prior to coating application.  Allow putty to set one week prior to coating application.</TXT><BRK />
+<BRK /></SPT>
+][<SPT outline="3.3"><TTL>RESEALING OF EXISTING EXTERIOR JOINTS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Include this paragraph (3.3) only for projects involving resealing of 
+existing exterior joints but not including a sealant section <SRF>07 92 00</SRF> JOINT 
+SEALANTS.  Such work should be covered in sealant section if such a section 
+is used in the project specifications.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="3.3.1"><TTL>Surface Condition</TTL><BRK />
+<BRK />
+<TXT>Begin with surfaces that are clean, dry to the touch, and free from frost and moisture; remove grease, oil, wax, 
+lacquer, paint, defective backstop, or other foreign matter that would prevent or impair adhesion.  Where adequate 
+grooves have not been provided, clean out to a depth of<MET> 13 mm</MET><ENG> 1/2 inch</ENG> and grind to a minimum width of<MET> 6 mm</MET><ENG> 1/4 
+inch</ENG> without damage to adjoining work.  Grinding is not required on metal surfaces.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.2"><TTL>Backstops</TTL><BRK />
+<BRK />
+<TXT>In joints more than<MET> 13 mm</MET><ENG> 1/2 inch</ENG> deep, install glass fiber roving or neoprene, butyl, polyurethane, or polyethylene 
+foams free of oil or other staining elements as recommended by sealant manufacturer.  Provide backstop material 
+compatible with sealant.  Do not use oakum and other types of absorptive materials as backstops.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.3"><TTL>Primer and Bond Breaker</TTL><BRK />
+<BRK />
+<TXT>Install the type recommended by the sealant manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.4"><TTL>Ambient Temperature</TTL><BRK />
+<BRK />
+<TXT>Between<MET> 4 degrees C</MET><ENG> 38 degrees F</ENG> and<MET> 35 degrees C</MET><ENG> 95 degrees F</ENG> when applying sealant.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.5"><TTL>Exterior Sealant</TTL><BRK />
+<BRK />
+<TXT>For joints, provide <RID>JIS A 5758</RID>.  Color(s) will be selected by the Contracting Officer.  Apply the sealant in 
+accordance with the manufacturer's printed instructions.  Force sealant into joints with sufficient pressure 
+to fill the joints solidly.  Apply sealant uniformly smooth and free of wrinkles.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3.6"><TTL>Cleaning</TTL><BRK />
+<BRK />
+<TXT>Immediately remove fresh sealant from adjacent areas using a solvent recommended by the sealant manufacturer.  
+Upon completion of sealant application, remove remaining smears and stains and leave the work in a clean condition.  
+Allow sealant time to cure, in accordance with manufacturer's recommendations, prior to coating.</TXT><BRK />
+<BRK /></SPT>
+</SPT>]<SPT outline="3.4"><TTL>SURFACE PREPARATION</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Existing coating systems need to be defined compositionally before recoating:</NPR><BRK />
+<BRK />
+<NPR>1.  Hazardous Materials:  Follow regulatory restrictions when planning either 
+partial or full removal of existing coatings.  Records establishing the composition 
+of materials in the coating systems, if available, may assist in a preliminary 
+review of planned surface preparation and disposal.  Generally an overall assessment 
+of applicable regulations for personnel and environmental protection will be 
+required, with appropriate sampling and testing, followed by use of proper material 
+control procedures.</NPR><BRK />
+<BRK />
+<NPR>2.  Compatibility of the existing coating system with a planned repair or overcoating 
+system should be determined by procedures such as the following:</NPR><BRK />
+<BRK />
+<NPR>a.  Identification of the existing topcoat and any undercoats that will be exposed, 
+by consulting local records.</NPR><BRK />
+<BRK />
+<NPR>b.  If binder extraction is possible, ASTM D2621, "Infrared Identification of 
+Vehicle Solids from Solvent-Reducible Paints," can be used for vehicle identification.</NPR><BRK />
+<BRK />
+<NPR>c.  General compatibility considerations and chart listings of expected relationships 
+between binder types are given in MPI Evaluation of systems, "Transition Coat 
+and Architectural Paint Compatibility Chart".  Consult coating specialist codes 
+regarding questionable compatibilities indicated in the chart.</NPR><BRK />
+<BRK />
+<NPR>d.  For some maintenance operations, use of ASTM D5064, "Standard Practice for 
+Conducting a Patch Test to Assess Coating Compatibility," may be warranted.  
+Interpretation of the results of patch testing is not always straight-forward, 
+therefore, consult appropriate coating specialists when considering patch testing.  </NPR><BRK />
+<BRK />
+<AST /><BRK /></NTE>
+<NTE><AST /><BRK />
+<NPR>NOTE:  Specify nonhazardous cleaning agents when possible.<BRK />
+<BRK />
+The Ministry of Land, Infrastructure and Transport (MLIT) Architectural Standard 
+Specification Chapter 18 Painting Work can be used to establish preparation 
+standards.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Remove dirt, splinters, loose particles, grease, oil, [disintegrated coatings,] and other foreign matter and 
+substances deleterious to coating performance per <RID>MLIT SS Chapter 18</RID>  for each substrate before application of 
+paint or surface treatments.  Remove oil and grease prior to mechanical cleaning.  Schedule cleaning so that 
+dust and other contaminants will not fall on wet, newly painted surfaces.  Spot-prime exposed ferrous metals 
+such as nail heads on or in contact with surfaces to be painted with water-thinned paints, with a suitable corrosion-inhibitive 
+primer capable of preventing flash rusting and compatible with the coating specified for the adjacent areas.</TXT><BRK />
+<BRK />
+[<SPT outline="3.4.1"><TTL>Additional Requirements for Preparation of Surfaces With Existing Coatings</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete inapplicable phrases or entire paragraph if no previously painted 
+surfaces will be encountered.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Before application of coatings, perform the following on surfaces covered by soundly-adhered coatings, defined 
+as those which cannot be removed with a putty knife:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Test existing finishes for lead before sanding, scraping, or removing.  If lead is present, refer 
+to paragraph Toxic Materials.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Wipe previously painted surfaces to receive solvent-based coatings, except stucco and similarly rough 
+surfaces clean with a clean, dry cloth saturated with mineral spirits or per paint manufacturer's requirements.  
+Allow surface to dry.  Wipe immediately preceding the application of the first coat of any coating, unless 
+specified otherwise.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Sand existing glossy surfaces to be painted to reduce gloss. Brush, and wipe clean with a damp cloth 
+to remove dust.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  The requirements specified are minimum.  Comply also with the <SUB>application instructions</SUB> of <RID>MLIT SS Chapter 18</RID>
+ and the paint manufacturer.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Thoroughly clean previously painted surfaces [specified to be repainted] [damaged during construction] 
+of all grease, dirt, dust or other foreign matter.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Remove blistering, cracking, flaking and peeling or otherwise deteriorated coatings.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  Roughen slick surfaces. Repair damaged areas such as, but not limited to, nail holes, cracks, chips, 
+and spalls with suitable material to match adjacent undamaged areas.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  Feather and sand smooth edges of chipped paint.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">i.  Clean rusty metal surfaces per <RID>MLIT SS Chapter 18</RID> and per paint manufacturer's instructions.  Use 
+solvent, mechanical, or chemical cleaning methods to provide surfaces suitable for painting.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">j.  Provide new, proposed coatings that are compatible with existing coatings.</LST><BRK />
+<BRK /></SPT>
+][<SPT outline="3.4.2"><TTL>Existing Coated Surfaces with Minor Defects</TTL><BRK />
+<BRK />
+<TXT>[Sand, spackle, and treat minor defects to render them smooth.  Minor defects are defined as scratches, nicks, 
+cracks, gouges, spalls, alligatoring, chalking, and irregularities due to partial peeling of previous coatings.][  
+Remove chalking by sanding [or blasting].]</TXT><BRK />
+<BRK /></SPT>
+][<SPT outline="3.4.3"><TTL>Removal of Existing Coatings</TTL><BRK />
+<BRK />
+<TXT>Remove existing coatings from the following surfaces:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Surfaces containing large areas of minor defects;</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Surfaces containing more than 20 percent peeling area; and</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Surfaces designated by the Contracting Officer, such as surfaces where rust shows through existing 
+coatings.</LST><BRK />
+<BRK /></SPT>
+][<SPT outline="3.4.4"><TTL>Substrate Repair</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Repair substrate surface damaged during coating removal;</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Sand edges of adjacent soundly-adhered existing coatings so they are tapered as smooth as practical 
+to areas involved with coating removal; and</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Clean and prime the substrate as specified.</LST><BRK />
+<BRK /></SPT>
+]</SPT><SPT outline="3.5"><TTL>PREPARATION OF METAL SURFACES</TTL><BRK />
+<BRK />
+<SPT outline="3.5.1"><TTL>Existing and New Ferrous Surfaces</TTL><BRK />
+<BRK />
+<TXT>Base surface preparation per <RID>MLIT SS Chapter 18</RID> or per paint manufacturer's recommendations.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.6"><TTL>PREPARATION OF CONCRETE AND CEMENTITIOUS SURFACE</TTL><BRK />
+<BRK />
+<SPT outline="3.6.1"><TTL>Concrete and Masonry</TTL><BRK />
+<BRK />
+<TXT>Base surface preparation per <RID>MLIT SS Chapter 18</RID> or per paint manufacturer's recommendations.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Curing:  Allow concrete, stucco and masonry surfaces to cure at least 30 days before painting, and 
+concrete slab on grade to cure at least 90 days before painting.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Surface Cleaning:  Remove the following deleterious substances.</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Dirt,[ Chalking,] Grease, and Oil:  Wash new[ and existing uncoated] surfaces with a solution 
+per paint manufacturer's recommendations.  Then rinse thoroughly with fresh water.[  Wash existing 
+coated surfaces with a suitable detergent and rinse thoroughly.]  For large areas, water blasting 
+may be used.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) Fungus and Mold:  Wash [new][, existing coated,] [and existing uncoated] surfaces with a 
+solution per paint manufacturer's recommendations.  Rinse thoroughly with fresh water.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3) Paint and Loose Particles:  Remove by wire brushing.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(4) Efflorescence:  Remove by scraping or wire brushing followed by washing with a solution 
+per paint manufacturer's recommendations.</ITM><BRK />
+<BRK />
+[<ITM INDENT="-0.33">(5) Removal of Existing Coatings:  For surfaces to receive textured coating, remove existing 
+coatings including soundly adhered coatings if recommended by textured coating manufacturer.</ITM><BRK />
+<BRK />
+]<LST INDENT="-0.33">c.  Cosmetic Repair of Minor Defects:  Repair or fill mortar joints and minor defects, including but 
+not limited to spalls, in accordance with manufacturer's recommendations and prior to coating application.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Allowable Moisture Content:  Latex coatings may be applied to damp surfaces, but not to surfaces 
+with droplets of water.  Do not apply epoxies to damp vertical or horizontal surfaces as determined manufacturer's 
+recommendations.  In all cases follow manufacturers recommendations.  Allow surfaces to cure a minimum 
+of 30 days before painting.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.6.2"><TTL>Gypsum Board</TTL><BRK />
+<BRK />
+<TXT>Base surface preparation per <RID>MLIT SS Chapter 18</RID> or per paint manufacturer's recommendations.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Surface Cleaning:  Verify that plaster and stucco surfaces are free from loose matter and that gypsum 
+board is dry.  Remove loose dirt and dust by brushing with a soft brush, rubbing with a dry cloth, or 
+vacuum-cleaning prior to application of the first coat material.  A damp cloth or sponge may be used 
+if paint will be water-based.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Repair of Minor Defects:  Prior to painting, repair joints, cracks, holes, surface irregularities, 
+and other minor defects with patching plaster or spackling compound and sand smooth.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Allowable Moisture Content:  Latex coatings may be applied to damp surfaces, but not surfaces with 
+droplets of water.  Do not apply epoxies to damp surfaces as determined by the paint manufacturer.  Verify 
+that new plaster to be coated does not exceed maximum moisture content per manufacturer's recommendations. 
+In addition to moisture content requirements, allow new plaster to age a minimum of 30 days before preparation 
+for painting or as recommended by paint manufacturer.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.6.3"><TTL>Existing Asbestos Cement Surfaces</TTL><BRK />
+<BRK />
+<TXT>Remove oily stains by solvent cleaning with mineral spirits, per manufacturer's recommendations.  Remove loose 
+dirt, dust, and other deleterious substances by brushing with a soft brush or rubbing with a dry cloth prior 
+to application of the first coat material.  Do not wire brush or clean using other abrasive methods.  Verify 
+surfaces are dry and clean prior to application of the coating.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.7"><TTL>PREPARATION OF WOOD AND PLYWOOD SURFACES</TTL><BRK />
+<BRK />
+<SPT outline="3.7.1"><TTL>New [, Existing Uncoated,] [and] [Existing Coated] Plywood and Wood Surfaces, Except Floors:</TTL><BRK />
+<BRK />
+<TXT>Base surface preparation per <RID>MLIT SS Chapter 18</RID> or per paint manufacturer's recommendations.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Clean wood surfaces of foreign matter.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">    Surface Cleaning:  Verify that surfaces are free from dust and other deleterious substances and in 
+a condition approved by the Contracting Officer prior to receiving paint or other finish.  Do not use 
+water to clean uncoated wood.[  Scrape to remove loose coatings.  Lightly sand to roughen the entire 
+area of previously enamel-coated wood surfaces.]</LST><BRK />
+<BRK />
+[<LST INDENT="-0.33">b.  Removal of Fungus and Mold:  Wash existing coated surfaces with a solution as recommended by paint 
+manufacturer.  Rinse thoroughly with fresh water.</LST><BRK />
+<BRK />
+]<LST INDENT="-0.33">c.  Do not exceed 12 percent moisture content of the wood as measured by a moisture meter in accordance 
+with paint manufacturer's recommendations.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Prime or touch up wood surfaces adjacent to surfaces to receive water-thinned paints before applying 
+water-thinned paints.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Cracks and Nailheads:  Set and putty stop nailheads and putty cracks after the prime coat has dried.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Cosmetic Repair of Minor Defects:</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) Knots and Resinous Wood [and Fire, Smoke, Water, and Color Marker Stained Existing Coated 
+Surface]:  Prior to application of coating, cover knots and stains with two or more coats of<MET>
+ 1.3-kg-cut</MET><ENG> 3-pound-cut</ENG> shellac varnish, plasticized with<MET> 0.14 liters</MET><ENG> 5 ounces</ENG> of castor oil 
+per<MET> liter</MET><ENG> gallon</ENG> or as recommended by coating manufacturer.  .  Scrape away existing coatings 
+from knotty areas, and sand before treating.  Prime before applying any putty over shellacked 
+area.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) Open Joints and Other Openings:  Fill with whiting putty, linseed oil putty.  Sand smooth 
+after putty has dried.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3)  Checking:  Where checking of the wood is present, sand the surface, wipe and apply a coat 
+of pigmented orange shellac. Allow to dry before paint is applied.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  Prime Coat For New Exterior Surfaces:  Prime coat [wood doors,] [windows,] [frames,] [and] [trim] 
+before wood becomes dirty, warped, [or weathered].</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.7.2"><TTL>Wood Floor Surfaces, Natural Finish</TTL><BRK />
+<BRK />
+<TXT>Base surface preparation per <RID>MLIT SS Chapter 18</RID> or per paint manufacturer's recommendations.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Initial Surface Cleaning:  As specified in paragraph entitled "Surface Preparation."</LST><BRK />
+<BRK />
+[<LST INDENT="-0.33">b.  Existing Loose Boards and Shoe Molding:  Before sanding, renail loose boards.  Countersink nails 
+and fill with an approved wood filler.  Remove shoe molding before sanding and reinstall after completing 
+other work.  At Contractor's option, new shoe molding may be provided in lieu of reinstalling old.  Provide 
+new wood molding of the same size, wood species, and finish as the existing.</LST><BRK />
+<BRK />
+]<LST INDENT="-0.33">c.  Sanding and Scraping: Sanding of wood floors is specified in Section [<SRF>09 64 29</SRF> WOOD STRIP AND PLANK 
+FLOORING] [<SRF>09 64 23</SRF> WOOD PARQUET FLOORING] [<SRF>09 64 66</SRF> WOOD ATHLETIC FLOORING] [<SRF>09 64 00</SRF> PORTABLE (DEMOUNTABLE) 
+WOOD FLOORING].  Fill floors of oak or similar open-grain wood with wood filler recommended by the finish 
+manufacturer and the excess filler removed.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Final Cleaning:  After sanding, sweep and vacuum floors clean.  Do not walk on floors thereafter 
+until specified sealer has been applied and is dry.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.7.3"><TTL>Interior Wood Surfaces, Stain Finish</TTL><BRK />
+<BRK />
+<TXT>Sand interior wood surfaces to receive stain.  Fill oak and other open-grain wood to receive stain with a coat 
+of wood filler not less than 8 hours before the application of stain; remove excess filler and sand the surface 
+smooth.  Ensuing base surface preparation per <RID>MLIT SS Chapter 18</RID> or per paint manufacturer's recommendations.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.7.4"><TTL>Water Blasting of Existing Coated Wood Surfaces:</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Require water blasting for existing wood surfaces only for architectural 
+restoration work where the cost is justified.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide water blasting for the following surfaces:  [_____].</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Sample Panel:  Prior to the initial surface cleaning, water blast a representative surface designated 
+by the Contracting Officer.  Provide surface cleaning of the remaining work to match the sample panel 
+approved by the Contracting Officer.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Initial Surface Cleaning:  Water blast surfaces to receive paint with a high pressure spray, to remove 
+loose paint, dirt, and other foreign or deleterious materials.  <ENG> 20 gallons per minute (g/min.)</ENG>Do not 
+flood vents or damage windows and floors. If the pressure specified will cause damage to existing wood, 
+advise the Contracting Officer.  Direct the wash nozzle at the surface at an angle of approximately 75 
+degrees with the surface and at a distance not greater than<MET> 1500 mm</MET><ENG> 5 feet</ENG> to apply water pressure required 
+to remove loose paint, dirt, chalking, and other foreign matter.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Final Surface Cleaning:  After allowing the surfaces to dry for a minimum of 24 hours, remove remaining 
+dirt, splinters, loose particles, disintegrated and loose paint, grease, oil, and other foreign matter 
+from the surface.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.8"><TTL>APPLICATION</TTL><BRK />
+<BRK />
+<SPT outline="3.8.1"><TTL>Coating Application</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use the second bracket option when fire protection sprinkler systems 
+including valve, piping, conduit, hangers and other miscellaneous items are 
+to be painted.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Application of paint per <RID>MLIT SS Chapter 18</RID>.  At the time of application, paint must show no signs of deterioration.  
+Maintain uniform suspension of pigments during application.</TXT><BRK />
+<BRK />
+<TXT>Unless otherwise specified or recommended by the paint manufacturer, paint may be applied by brush, roller, or 
+spray.  Use trigger operated spray nozzles for water hoses.  Use rollers for applying paints and enamels of a 
+type designed for the coating to be applied and the surface to be coated.  Wear protective clothing and respirators 
+when applying oil-based paints or using spray equipment with any paints.</TXT><BRK />
+<BRK />
+<TXT>Only apply paints, except water-thinned types to surfaces that are completely free of moisture as determined 
+by sight or touch.</TXT><BRK />
+<BRK />
+<TXT>Thoroughly work coating materials into joints, crevices, and open spaces.  Pay special attention to ensure that 
+all edges, corners, crevices, welds, and rivets receive a film thickness equal to that of adjacent painted surfaces.</TXT><BRK />
+<BRK />
+<TXT>Apply each coat of paint so that dry film is of uniform thickness and free from runs, drops, ridges, waves, pinholes 
+or other voids, laps, brush marks, and variations in color, texture, and finish.  Completely hide all blemishes.</TXT><BRK />
+<BRK />
+<TXT>Touch up damaged coatings before applying subsequent coats.[  Broom clean and clear dust from interior areas 
+before and during the application of coating material.]</TXT><BRK />
+<BRK />
+[<TXT>Apply paint to new fire extinguishing sprinkler systems including valves, piping, conduit, hangers, supports, 
+miscellaneous metal work, and accessories.  Shield sprinkler heads with protective coverings while painting is 
+in progress.  Remove sprinkler heads which have been painted and replace with new sprinkler heads.  For piping 
+in unfinished spaces, provide primed surfaces with one coat of red alkyd gloss enamel to a minimum dry film thickness 
+of<MET> 0.025 mm</MET><ENG> 1.0 mil</ENG>.  Unfinished spaces include attic spaces, spaces above suspended ceilings, crawl spaces, 
+pipe chases, mechanical equipment room, and space where walls or ceiling are not painted or not constructed of 
+a prefinished material.  For piping in finished areas, provide prime surfaces with two coats of paint to match 
+adjacent surfaces, except provide valves and operating accessories with one coat of red alkyd gloss enamel.  
+Upon completion of painting, remove protective covering from sprinkler heads.</TXT><BRK />
+<BRK />
+]<LST INDENT="-0.33">a.  Drying Time:  Allow time between coats, as recommended by the coating manufacturer, to permit thorough 
+drying, but not to present topcoat adhesion problems.  Provide each coat in specified condition to receive 
+next coat.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Primers, and Intermediate Coats:  Do not allow primers or intermediate coats to dry more than 30 
+days, or longer than recommended by manufacturer, before applying subsequent coats.  Follow manufacturer's 
+recommendations for surface preparation if primers or intermediate coats are allowed to dry longer than 
+recommended by manufacturers of subsequent coatings.  Cover each preceding coat or surface completely 
+by ensuring visually perceptible difference in shades of successive coats.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Finished Surfaces:  Provide finished surfaces free from runs, drops, ridges, waves, laps, brush marks, 
+and variations in colors.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Thermosetting Paints:  Topcoats over thermosetting paints (epoxies and urethanes) should be applied 
+within the overcoating window recommended by the manufacturer.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Floors: [For nonslip surfacing on level floors, as the intermediate coat is applied, cover wet surface 
+completely with almandite garnet, Grit No. 36, with maximum passing .420 mm less than 0.5 percent.  When 
+the coating is dry, use a soft bristle broom to sweep up excess grit, which may be reused, and vacuum 
+up remaining residue before application of the topcoat.] [For nonslip surfacing on ramps, provide <RID>MPI 77</RID>
+ with non-skid additive, applied by roller in accordance with manufacturer's instructions.]</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.2"><TTL><SUB>Mixing</SUB> and Thinning of Paints</TTL><BRK />
+<BRK />
+<TXT>Reduce paints to proper consistency by adding fresh paint, except when thinning is mandatory to suit surface, 
+temperature, weather conditions, application methods, or for the type of paint being used.  Obtain written permission 
+from the Contracting Officer to use thinners.  Verify that the written permission includes quantities and types 
+of thinners to use.</TXT><BRK />
+<BRK />
+<TXT>The use of thinner does not relieve the Contractor from obtaining complete hiding, full film thickness, or required 
+gloss.  Thinning cannot cause the paint to exceed limits on volatile organic compounds.  Do not mix paints of 
+different manufacturers.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.3"><TTL>Two-Component Systems</TTL><BRK />
+<BRK />
+<TXT>Mix two-component systems in accordance with manufacturer's instructions.  Follow recommendation by the manufacturer 
+for any thinning of the first coat to ensure proper penetration and sealing for each type of substrate.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.4"><TTL>Coating Systems</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete Divisions from the Table listing below that are not required for 
+the project.  </NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<LST INDENT="-0.33">a.  Systems by Substrates:  Apply coatings that conform to the respective specifications listed in <RID>MLIT SS Chapter 18</RID>
+.</LST><BRK />
+          <BRK />
+   <LST INDENT="-0.33">b.  Minimum Dry Film Thickness (DFT):  Apply paints, primers, varnishes, enamels, undercoats, and other 
+coatings to a minimum dry film thickness as specified in <RID>MLIT SS Chapter 18</RID>.  Coating thickness where 
+specified, refers to the minimum dry film thickness.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Coatings for Surfaces Not Specified Otherwise:  Coat surfaces which have not been specified, the 
+same as surfaces having similar conditions of exposure.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Existing Surfaces Damaged During Performance of the Work, Including New Patches In Existing Surfaces:  
+Coat surfaces with the following:</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">(1) One coat of primer.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(2) One coat of undercoat or intermediate coat.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">(3) One topcoat to match adjacent surfaces.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Existing Coated Surfaces To Be Painted:  Apply coatings conforming to the respective specifications 
+listed in the Tables herein, except that pretreatments, sealers and fillers need not be provided on surfaces 
+where existing coatings are soundly adhered and in good condition.  Do not omit undercoats or primers.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.9"><TTL>COATING SYSTEMS FOR METAL</TTL><BRK />
+<BRK />
+<TXT>Apply coatings per <RID>MLIT SS Chapter 18</RID> for Exterior and Interior.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Apply specified ferrous metal primer on the same day that surface is cleaned, to surfaces that meet 
+all specified surface preparation requirements at time of application.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Inaccessible Surfaces:  Prior to erection, use one coat of specified primer on metal surfaces that 
+will be inaccessible after erection.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Shop-primed Surfaces:  Touch up exposed substrates and damaged coatings to protect from rusting prior 
+to applying field primer.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Surface Previously Coated with Epoxy or Urethane:  Apply MPI 101,<MET> 0.038 mm</MET><ENG> 1.5 mils</ENG> DFT immediately 
+prior to application of epoxy or urethane coatings.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Pipes and Tubing:  The semitransparent film applied to some pipes and tubing at the mill is not to 
+be considered a shop coat.  Overcoat these items with the specified ferrous-metal primer prior to application 
+of finish coats.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Exposed Nails, Screws, Fasteners, and Miscellaneous Ferrous Surfaces.  On surfaces to be coated with 
+water thinned coatings, spot prime exposed nails and other ferrous metal per paint manufacturer's recommendations.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.10"><TTL>COATING SYSTEMS FOR CONCRETE AND CEMENTITIOUS SUBSTRATES</TTL><BRK />
+<BRK />
+<TXT>Apply coatings per <RID>MLIT SS Chapter 18</RID> for Exterior and Interior.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.11"><TTL>COATING SYSTEMS FOR WOOD AND PLYWOOD</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Apply coatings per <RID>MLIT SS Chapter 18</RID> for Exterior and Interior.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Apply stains in accordance with manufacturer's printed instructions.</LST><BRK />
+<BRK />
+[<LST INDENT="-0.33">c.  Wood Floors to Receive Natural Finish:  Thin first coat 2 to 1 using thinner recommended by coating 
+manufacturer.  Apply second coat not less than 2 hours and not over 24 hours after first coat has been 
+applied.  Apply with applicators as recommended by coating manufacturer.  Buff or lightly sand between 
+intermediate coats as recommended by coating manufacturer's printed instructions.</LST><BRK />
+<BRK />
+]</SPT><SPT outline="3.12"><TTL><SUB>PIPING IDENTIFICATION</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: If pipe marking is to be covered in the mechanical section, delete this 
+paragraph</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Piping Identification, Including Surfaces In Concealed Spaces:  Provide per the following.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Flammable Materials: Defined as all materials known ordinarily as flammables or combustibles.  <RID>AMS-STD-595</RID>
+, Yellow, No. 13655.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Toxic and Poisonous Materials: Defined as all materials extremely hazardous to life or health under 
+normal conditions as toxics or poisons.  <RID>AMS-STD-595</RID>, Brown, No. 10080.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Anesthetics and Harmful Materials: Defined as all materials productive of anesthetic vapors and all 
+liquid chemicals and compound hazardous to life and property but not normally productive of dangerous 
+quantities of fumes or vapors. <RID>AMS-STD-595</RID>, Blue, No. 15102.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Oxidizing Materials: Defined as all materials which readily furnish oxygen for combustion and fire 
+producers which react explosively or with the evolution of heat in contact with many other materials.  <RID>
+AMS-STD-595</RID>, Green, No. 14187.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Physically Dangerous Materials: Defined as all materials, not dangerous in themselves, which are 
+asphyxiating in confined areas or which are generally handled in a dangerous physical state of pressure 
+or temperature.  <RID>AMS-STD-595</RID>, Gray, No. 16187.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Fire Protection Materials: Defined as all materials provided in piping systems or in compressed gas 
+cylinders exclusively for use in fire protection.  <RID>AMS-STD-595</RID>, Red, No. 11105.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  Water: Piping system containing water suitable for human consumption and installed for this purpose.  <RID>
+AMS-STD-595</RID>, White, No. 1787 or painted to match surroundings when not in conflict with other color designations.</LST><BRK />
+<BRK />
+<TXT>Place stenciling in clearly visible locations.  On piping not covered by the aforementioned stencil approved 
+names or code letters, in letters a minimum of<MET> 13 mm</MET><ENG> 1/2 inch</ENG> high for piping and a minimum of<MET> 50 mm</MET><ENG> 2 inches</ENG>
+ high elsewhere.  Stencil arrow-shaped markings on piping to indicate direction of flow using black stencil paint.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.13"><TTL>INSPECTION AND ACCEPTANCE</TTL><BRK />
+<BRK />
+<TXT>In addition to meeting previously specified requirements, demonstrate mobility of moving components, including 
+swinging and sliding doors, cabinets, and windows with operable sash, for inspection by the Contracting Officer.  
+Perform this demonstration after appropriate curing and drying times of coatings have elapsed and prior to invoicing 
+for final payment.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.14"><TTL>WASTE MANAGEMENT</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Take-back programs refer to programs in which the product manufacturer 
+"takes-back" scrap material or packaging associated with its product.  Coordinate 
+with Section <SRF>01 74 19</SRF> CONSTRUCTION WASTE MANAGEMENT AND DISPOSAL.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>As specified in the Waste Management Plan and as follows.  Do not use kerosene or any such organic solvents to 
+clean up water based paints.  Properly dispose of paints or solvents in designated containers. Close and seal 
+partially used containers of paint to maintain quality as necessary for reuse.  Store in protected, well-ventilated, 
+fire-safe area at moderate temperature.  Place materials defined as hazardous or toxic waste in designated containers.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.15"><TTL>PAINT TABLES</TTL><BRK />
+<BRK />
+<SPT outline="3.15.1"><TTL>Exterior Paint Tables</TTL><BRK />
+<BRK />
+<TBL><HL4>DIVISION&#160;3:&#160;&#160;EXTERIOR&#160;CONCRETE&#160;PAINT&#160;TABLE</HL4><BRK />
+<BRK />
+A.&#160;&#160;[New&#160;and&#160;uncoated&#160;existing]&#160;[and&#160;Existing,&#160;previously&#160;painted]&#160;concrete;<BRK />
+&#160;&#160;&#160;&#160;vertical&#160;surfaces,&#160;including&#160;undersides&#160;of&#160;balconies,&#160;soffits,&#160;roofs,<BRK />
+&#160;&#160;&#160;&#160;columns&#160;and&#160;beams&#160;but&#160;excluding&#160;tops&#160;of&#160;slabs:<BRK />
+<BRK />
+&#160;1.&#160;Paint&#160;system&#160;shall&#160;be&#160;formaldehyde&#160;emission&#160;class&#160;F****&#160;minimum,<BRK />
+&#160;&#160;&#160;&#160;Weatherproof&#160;Class&#160;3&#160;Type.&#160;&#160;Coatings&#160;shall&#160;comply&#160;with&#160;<RID>JIS&#160;A&#160;6909</RID>,<BRK />
+&#160;&#160;&#160;&#160;Multi-Layer,&#160;Type&#160;E:<BRK />
+<BRK />
+&#160;&#160;&#160;&#160;Spray&#160;Tile&#160;Finish&#160;System&#160;(4-Layer&#160;System):<BRK />
+<BRK />
+&#160;&#160;&#160;&#160;(1)&#160;&#160;&#160;Base&#160;Coat&#160;1:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Not&#160;less&#160;than&#160;0.1&#160;kg/sm<BRK />
+&#160;&#160;&#160;&#160;(2)&#160;&#160;&#160;Texture&#160;Base&#160;Coat&#160;1:&#160;&#160;&#160;&#160;&#160;&#160;Not&#160;less&#160;than&#160;0.7&#160;kg/sm<BRK />
+&#160;&#160;&#160;&#160;(3)&#160;&#160;&#160;Texture&#160;Top&#160;Coat:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Not&#160;less&#160;than&#160;0.8&#160;kg/sm<BRK />
+&#160;&#160;&#160;&#160;(4)&#160;&#160;&#160;Top&#160;Coat,&#160;Acrylic,<BRK />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Resin,&#160;Emulsion&#160;Type,<BRK />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;High&#160;Gloss&#160;Finish,<BRK />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2&#160;times:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Not&#160;less&#160;than&#160;0.25&#160;kg/sm<BRK />
+<BRK />
+&#160;&#160;&#160;&#160;Primer&#160;as&#160;recommended&#160;by&#160;manufacturer.&#160;&#160;Coating&#160;system&#160;shall&#160;be&#160;applied<BRK />
+&#160;&#160;&#160;&#160;by&#160;spray&#160;application&#160;in&#160;accordance&#160;with&#160;manufacturer's&#160;instructions.<BRK />
+<BRK />
+B.&#160;&#160;[New&#160;and&#160;uncoated&#160;existing]&#160;[and&#160;Existing,&#160;previously&#160;painted]&#160;concrete,<BRK />
+&#160;&#160;&#160;&#160;textured&#160;system;&#160;vertical&#160;surfaces,&#160;including&#160;undersides&#160;of&#160;balconies<BRK />
+&#160;&#160;&#160;&#160;and&#160;soffits&#160;but&#160;excluding&#160;tops&#160;of&#160;slabs:<BRK />
+<BRK />
+&#160;1.&#160;MLIT&#160;SS&#160;Chapter&#160;18<BRK />
+<BRK />
+&#160;&#160;&#160;&#160;Texture&#160;-&#160;[Fine]&#160;[Medium]&#160;[Coarse].&#160;&#160;Surface&#160;preparation&#160;and&#160;number&#160;of<BRK />
+&#160;&#160;&#160;&#160;coats&#160;in&#160;accordance&#160;with&#160;manufacturer's&#160;instructions.<BRK />
+&#160;&#160;&#160;&#160;Topcoat:&#160;&#160;Coating&#160;to&#160;match&#160;adjacent&#160;surfaces.<BRK />
+<BRK />
+C.&#160;&#160;[New&#160;and&#160;uncoated&#160;existing]&#160;[and&#160;Existing,&#160;previously&#160;painted]&#160;concrete,<BRK />
+&#160;&#160;&#160;&#160;elastomeric&#160;System;&#160;vertical&#160;surfaces,&#160;including&#160;undersides&#160;of&#160;balconies<BRK />
+&#160;&#160;&#160;&#160;and&#160;soffits&#160;but&#160;excluding&#160;tops&#160;of&#160;slabs:<BRK />
+<BRK />
+&#160;1.&#160;MLIT&#160;SS&#160;Chapter&#160;18<BRK />
+<BRK />
+&#160;&#160;&#160;&#160;Primer&#160;as&#160;recommended&#160;by&#160;manufacturer.&#160;&#160;Topcoat:&#160;&#160;Coating&#160;to&#160;match<BRK />
+&#160;&#160;&#160;&#160;adjacent&#160;surfaces.&#160;&#160;Surface&#160;preparation&#160;and&#160;number&#160;of&#160;coats&#160;in<BRK />
+&#160;&#160;&#160;&#160;accordance&#160;with&#160;manufacturer's&#160;instructions.<BRK />
+<BRK />
+D.&#160;&#160;[New&#160;and&#160;uncoated&#160;existing]&#160;[and&#160;Existing,&#160;previously&#160;painted]&#160;concrete:<BRK />
+&#160;&#160;&#160;&#160;walls&#160;and&#160;bottom&#160;of&#160;swimming&#160;pools.<BRK />
+<BRK />
+&#160;1.&#160;MLIT&#160;SS&#160;Chapter&#160;18<BRK />
+<BRK />
+E.&#160;&#160;[New]&#160;[and&#160;Existing]&#160;Cementitious&#160;composition&#160;board&#160;(including&#160;Asbestos<BRK />
+&#160;&#160;&#160;&#160;cement&#160;board):<BRK />
+<BRK />
+&#160;1.&#160;MLIT&#160;SS&#160;Chapter&#160;18<BRK />
+<BRK />
+&#160;&#160;&#160;&#160;Topcoat:&#160;&#160;Coating&#160;to&#160;match&#160;adjacent&#160;surfaces.</TBL><BRK />
+<BRK />
+<BRK />
+      DIVISION 4:  EXTERIOR CONCRETE MASONRY UNITS PAINT TABLE<BRK />
+<BRK />
+A.  [New] [and Existing] concrete masonry on uncoated surface:<BRK />
+<BRK />
+ 1. MLIT SS Chapter 18<BRK />
+<BRK />
+    Topcoat:  Coating to match adjacent surfaces.<BRK />
+<BRK />
+B.  [New] [and Existing] concrete masonry, textured system; on uncoated<BRK />
+    surface:<BRK />
+<BRK />
+ 1. MLIT SS Chapter 18<BRK />
+<BRK />
+    Texture - [Fine] [Medium] [Coarse].  Surface preparation and number of<BRK />
+    coats in accordance with manufacturer's instructions.  Topcoat:  Coating<BRK />
+    to match adjacent surfaces.<BRK />
+<BRK />
+C.  [New] [and Existing] concrete masonry, elastomeric system; on uncoated<BRK />
+    surface:<BRK />
+<BRK />
+ 1. MLIT SS Chapter 18<BRK />
+<BRK />
+    Primer as recommended by manufacturer.  Topcoat:  Coating to match<BRK />
+    adjacent surfaces.  Surface preparation and number of coats in accordance<BRK />
+    with manufacturer's instructions.<BRK />
+<BRK />
+<BRK />
+       DIVISION 5:  EXTERIOR METAL, FERROUS AND NON-FERROUS PAINT TABLE<BRK />
+<BRK />
+STEEL / FERROUS SURFACES<BRK />
+<BRK />
+A.  New Steel that has been hand or power tool cleaned  or per MLIT SS Chapter<BRK />
+    18.<BRK />
+<BRK />
+ 1. MLIT SS Chapter 18<BRK />
+<BRK />
+B.  New Steel that has been blast-cleaned:<BRK />
+<BRK />
+ 2. MLIT SS Chapter 18<BRK />
+<BRK />
+C.  Existing steel that has been spot-blasted:<BRK />
+<BRK />
+ 1. MLIT SS Chapter 18<BRK />
+<BRK />
+ 2. [Surface previously coated with epoxy:<BRK />
+    MLIT SS Chapter 18]<BRK />
+<BRK />
+D.  New [and existing] steel blast cleaned:<BRK />
+<BRK />
+ 1. MLIT SS Chapter 18<BRK />
+<BRK />
+ 2. [Pigmented Polyurethane<BRK />
+    MLIT SS Chapter 18]<BRK />
+<BRK />
+E.  Metal floors (non-shop-primed surfaces or non-slip deck surfaces) with<BRK />
+    non-skid additive (NSA), load at manufacturer's recommendations.:<BRK />
+<BRK />
+<LST> 1. MLIT SS Chapter 18</LST><BRK />
+<BRK />
+EXTERIOR GALVANIZED SURFACES<BRK />
+<BRK />
+F.  New Galvanized surfaces:<BRK />
+<BRK />
+ 1. MLIT SS Chapter 18<BRK />
+<BRK />
+ 2. [Waterborne Primer / Latex <BRK />
+    MLIT SS Chapter 18]<BRK />
+<BRK />
+ 3. [Waterborne Primer / Waterborne Light Industrial Coating<BRK />
+    MLIT SS Chapter 18<BRK />
+    System DFT:   112 microns]<BRK />
+<BRK />
+ 4. [Epoxy Primer / Waterborne Light Industrial Coating<BRK />
+    MLIT SS Chapter 18]<BRK />
+<BRK />
+ 5. [Pigmented Polyurethane<BRK />
+    MLIT SS Chapter 18]<BRK />
+<BRK />
+G.  Galvanized surfaces with slight coating deterioration; little or no<BRK />
+    rusting:<BRK />
+<BRK />
+ 1. MLIT SS Chapter 18<BRK />
+<BRK />
+ 2. [Pigmented Polyurethane<BRK />
+    MLIT SS Chapter 18]<BRK />
+<BRK />
+H.  Galvanized surfaces with severely deteriorated coating or rusting:<BRK />
+<BRK />
+ 1. MLIT SS Chapter 18<BRK />
+<BRK />
+ 2. [Pigmented Polyurethane<BRK />
+    MLIT SS Chapter 18]<BRK />
+                   <BRK />
+EXTERIOR SURFACES, OTHER METALS (NON-FERROUS)<BRK />
+<BRK />
+I.  Aluminum, aluminum alloy and other miscellaneous non-ferrous metal items<BRK />
+    not otherwise specified except hot metal surfaces, roof surfaces, and new<BRK />
+    prefinished equipment.  Match surrounding finish:<BRK />
+<BRK />
+ 1. [Alkyd<BRK />
+    MLIT SS Chapter 18]<BRK />
+<BRK />
+ 2. [Waterborne Light Industrial Coating<BRK />
+    MLIT SS Chapter 18]<BRK />
+<BRK />
+J.  Existing roof surfaces previously coated:<BRK />
+<BRK />
+ 1. MLIT SS Chapter 18<BRK />
+<BRK />
+ 2. [Aluminum Paint<BRK />
+    MLIT SS Chapter 18]<BRK />
+<BRK />
+K.  Surfaces adjacent to painted surfaces; [Mechanical,] [Electrical,] [Fire<BRK />
+    extinguishing sprinkler systems including valves, conduit, hangers,<BRK />
+    supports,][exposed copper piping,] [and miscellaneous metal items] not<BRK />
+    otherwise specified except floors, hot metal surfaces, and new<BRK />
+    prefinished equipment.  Match surrounding finish:<BRK />
+<BRK />
+ 1. [Alkyd<BRK />
+    MLIT SS Chapter 18]<BRK />
+<BRK />
+ 2. [Waterborne Light Industrial Coating<BRK />
+    MLIT SS Chapter 18]<BRK />
+<BRK /></SPT>
+<SPT outline="3.15.2"><TTL>Interior Paint Tables</TTL><BRK />
+<BRK />
+<TBL><HL4>DIVISION&#160;3:&#160;&#160;INTERIOR&#160;CONCRETE&#160;PAINT&#160;TABLE</HL4><BRK />
+<BRK />
+A.&#160;&#160;[New&#160;and&#160;uncoated&#160;existing]&#160;[and&#160;Existing,&#160;previously&#160;painted]&#160;Concrete,<BRK />
+&#160;&#160;&#160;&#160;vertical&#160;surfaces,&#160;not&#160;specified&#160;otherwise:<BRK />
+<BRK />
+&#160;1.&#160;MLIT&#160;SS&#160;Chapter&#160;18<BRK />
+<BRK />
+&#160;2.&#160;[High&#160;Performance&#160;Architectural&#160;Latex<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;3.&#160;[Institutional&#160;Low&#160;Odor&#160;/&#160;Low&#160;VOC&#160;Latex<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+B.&#160;&#160;Concrete&#160;ceilings,&#160;uncoated:<BRK />
+<BRK />
+&#160;1.&#160;[Latex&#160;Aggregate<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;&#160;&#160;&#160;Texture&#160;-&#160;[Fine]&#160;[Medium]&#160;[Coarse].&#160;&#160;Surface&#160;preparation,&#160;number&#160;of&#160;<BRK />
+&#160;&#160;&#160;&#160;coats,&#160;and&#160;primer&#160;in&#160;accordance&#160;with&#160;manufacturer's&#160;instructions.&#160;<BRK />
+&#160;&#160;&#160;&#160;Topcoat:&#160;&#160;Coating&#160;to&#160;match&#160;adjacent&#160;surfaces.<BRK />
+<BRK />
+C.&#160;&#160;[New&#160;and&#160;uncoated&#160;existing][&#160;and&#160;][Existing,&#160;previously&#160;painted]&#160;Concrete<BRK />
+&#160;&#160;&#160;&#160;in&#160;[toilets,]&#160;[food-preparation,]&#160;[food-serving,]&#160;[restrooms,]&#160;[laundry<BRK />
+&#160;&#160;&#160;&#160;areas,]&#160;[shower&#160;areas,]&#160;[areas&#160;requiring&#160;a&#160;high&#160;degree&#160;of&#160;sanitation,]<BRK />
+&#160;&#160;&#160;&#160;[_____]&#160;[and&#160;other&#160;high-humidity&#160;areas]&#160;not&#160;otherwise&#160;specified&#160;except<BRK />
+&#160;&#160;&#160;&#160;floors:<BRK />
+<BRK />
+&#160;1.&#160;Coating&#160;shall&#160;conform&#160;to&#160;<RID>JIS&#160;K5670</RID>,&#160;0.10&#160;kg/sm&#160;for&#160;base&#160;coat&#160;and<BRK />
+&#160;&#160;&#160;&#160;<RID>JIS&#160;K5670</RID>,&#160;0.10&#160;kg/sm&#160;for&#160;top&#160;coat.</TBL><BRK />
+<BRK />
+<BRK />
+<TBL><HL4>DIVISION&#160;4:&#160;&#160;INTERIOR&#160;CONCRETE&#160;MASONRY&#160;UNITS&#160;PAINT&#160;TABLE</HL4><BRK />
+<BRK />
+A.&#160;&#160;New&#160;[and&#160;uncoated&#160;Existing]&#160;Concrete&#160;masonry:<BRK />
+<BRK />
+&#160;1.&#160;[High&#160;Performance&#160;Architectural&#160;Latex<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18<BRK />
+&#160;&#160;&#160;&#160;Fill&#160;all&#160;holes&#160;in&#160;masonry&#160;surface]<BRK />
+<BRK />
+&#160;2.&#160;[Institutional&#160;Low&#160;Odor&#160;/&#160;Low&#160;VOC&#160;Latex<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+B.&#160;&#160;Existing,&#160;previously&#160;painted&#160;Concrete&#160;masonry:<BRK />
+<BRK />
+&#160;1.&#160;[High&#160;Performance&#160;Architectural&#160;Latex<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;2.&#160;[Institutional&#160;Low&#160;Odor&#160;/&#160;Low&#160;VOC&#160;Latex<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+C.&#160;&#160;New&#160;[and&#160;uncoated&#160;Existing]&#160;Concrete&#160;masonry&#160;units&#160;in&#160;[toilets,]&#160;<BRK />
+&#160;&#160;&#160;[food-preparation,]&#160;[food-serving,]&#160;[restrooms,]&#160;[laundry&#160;areas,]&#160;[shower&#160;<BRK />
+&#160;&#160;&#160;areas,]&#160;[areas&#160;requiring&#160;a&#160;high&#160;degree&#160;of&#160;sanitation,]&#160;[_____,]&#160;[and&#160;<BRK />
+&#160;&#160;&#160;other&#160;high&#160;humidity&#160;areas]&#160;unless&#160;otherwise&#160;specified:<BRK />
+<BRK />
+&#160;1.&#160;[Waterborne&#160;Light&#160;Industrial&#160;Coating<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18<BRK />
+&#160;&#160;&#160;&#160;Fill&#160;all&#160;holes&#160;in&#160;masonry&#160;surface]<BRK />
+<BRK />
+&#160;2.&#160;[Alkyd<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18<BRK />
+&#160;&#160;&#160;&#160;Fill&#160;all&#160;holes&#160;in&#160;masonry&#160;surface]<BRK />
+<BRK />
+&#160;3.&#160;[Epoxy<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18<BRK />
+&#160;&#160;&#160;&#160;Fill&#160;all&#160;holes&#160;in&#160;masonry&#160;surface]<BRK />
+<BRK />
+D.&#160;&#160;Existing,&#160;previously&#160;painted,&#160;concrete&#160;masonry&#160;units&#160;in&#160;[toilets,]&#160;<BRK />
+&#160;&#160;&#160;&#160;[food-preparation,]&#160;[food-serving,]&#160;[restrooms,]&#160;[laundry&#160;areas,]&#160;[shower<BRK />
+&#160;&#160;&#160;&#160;areas,]&#160;[areas&#160;requiring&#160;a&#160;high&#160;degree&#160;of&#160;sanitation,]&#160;[_____,]&#160;[and<BRK />
+&#160;&#160;&#160;&#160;other&#160;high&#160;humidity&#160;areas]&#160;unless&#160;otherwise&#160;specified:<BRK />
+<BRK />
+&#160;1.&#160;[Waterborne&#160;Light&#160;Industrial&#160;Coating<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;2.&#160;[Alkyd<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;3.&#160;[Epoxy<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]</TBL><BRK />
+<BRK />
+<BRK />
+<TBL><HL4>DIVISION&#160;5:&#160;&#160;INTERIOR&#160;METAL,&#160;FERROUS&#160;AND&#160;NON-FERROUS&#160;PAINT&#160;TABLE</HL4><BRK />
+<BRK />
+INTERIOR&#160;STEEL&#160;/&#160;FERROUS&#160;SURFACES<BRK />
+<BRK />
+A.&#160;&#160;Metal,&#160;[Mechanical,]&#160;[Electrical,]&#160;[Fire&#160;extinguishing&#160;sprinkler&#160;systems&#160;<BRK />
+&#160;&#160;&#160;&#160;including&#160;&#160;valves,&#160;conduit,&#160;hangers,&#160;supports].&#160;&#160;[Surfaces&#160;adjacent&#160;to&#160;<BRK />
+&#160;&#160;&#160;&#160;painted&#160;surfaces&#160;(Match&#160;surrounding&#160;finish),]&#160;[exposed&#160;copper&#160;piping,]<BRK />
+&#160;&#160;&#160;&#160;[and&#160;miscellaneous&#160;metal&#160;items]&#160;not&#160;otherwise&#160;specified&#160;except&#160;floors,<BRK />
+&#160;&#160;&#160;&#160;hot&#160;metal&#160;surfaces,&#160;and&#160;new&#160;prefinished&#160;equipment:&#160;&#160;<BRK />
+<BRK />
+&#160;1.&#160;[High&#160;Performance&#160;Architectural&#160;Latex<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;2.&#160;[Alkyd<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+B.&#160;&#160;Metal&#160;floors&#160;(non-shop-primed&#160;surfaces&#160;or&#160;non-slip&#160;deck&#160;surfaces)&#160;with&#160;<BRK />
+&#160;&#160;&#160;&#160;non-skid&#160;additive&#160;(NSA),&#160;load&#160;at&#160;manufacturer's&#160;recommendations.:<BRK />
+<BRK />
+&#160;1.&#160;[Alkyd&#160;Floor&#160;Paint<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;2.&#160;[Epoxy<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+C.&#160;&#160;Metal&#160;in&#160;[toilets,]&#160;[food-preparation,]&#160;[food-serving,]&#160;[restrooms,]<BRK />
+&#160;&#160;&#160;&#160;[laundry&#160;areas,]&#160;[shower&#160;areas,]&#160;[areas&#160;requiring&#160;a&#160;high&#160;degree&#160;of&#160;<BRK />
+&#160;&#160;&#160;&#160;sanitation,]&#160;[_____,]&#160;[and&#160;other&#160;high-humidity&#160;areas]&#160;not&#160;otherwise<BRK />
+&#160;&#160;&#160;&#160;specified&#160;except&#160;floors,&#160;hot&#160;metal&#160;surfaces,&#160;and&#160;new&#160;prefinished<BRK />
+&#160;&#160;&#160;&#160;equipment:<BRK />
+<BRK />
+&#160;1.&#160;[Alkyd<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+2.&#160;&#160;[Alkyd<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+D.&#160;&#160;Miscellaneous&#160;non-ferrous&#160;metal&#160;items&#160;not&#160;otherwise&#160;specified&#160;except&#160;<BRK />
+&#160;&#160;&#160;&#160;floors,&#160;hot&#160;metal&#160;surfaces,&#160;and&#160;new&#160;prefinished&#160;equipment.&#160;&#160;Match&#160;<BRK />
+&#160;&#160;&#160;&#160;surrounding&#160;finish:<BRK />
+<BRK />
+&#160;1.&#160;[High&#160;Performance&#160;Architectural&#160;Latex<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;2.&#160;[Alkyd<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]</TBL><BRK />
+<BRK />
+<BRK />
+<TBL><HL4>DIVISION&#160;6:&#160;&#160;INTERIOR&#160;WOOD&#160;PAINT&#160;TABLE</HL4><BRK />
+<BRK />
+A.&#160;&#160;New&#160;[and&#160;Existing,&#160;uncoated]&#160;Wood&#160;and&#160;plywood&#160;not&#160;otherwise&#160;specified:<BRK />
+<BRK />
+&#160;1.&#160;[High&#160;Performance&#160;Architectural&#160;Latex<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;2.&#160;[Alkyd<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;3.&#160;[Institutional&#160;Low&#160;Odor&#160;/&#160;Low&#160;VOC&#160;Latex<BRK />
+&#160;&#160;&#160;&#160;New;&#160;MPI&#160;INT&#160;6.3V-G2&#160;(Flat)<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+B.&#160;&#160;Existing,&#160;previously&#160;painted&#160;Wood&#160;and&#160;plywood&#160;not&#160;otherwise&#160;specified:<BRK />
+<BRK />
+&#160;1.&#160;[High&#160;Performance&#160;Architectural&#160;Latex<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;2.&#160;[Alkyd<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;3.&#160;[Institutional&#160;Low&#160;Odor&#160;/&#160;Low&#160;VOC&#160;Latex<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+C.&#160;&#160;New&#160;[and&#160;Existing,&#160;previously&#160;finished&#160;or&#160;stained]&#160;Wood&#160;and&#160;Plywood,<BRK />
+&#160;&#160;&#160;&#160;except&#160;floors;&#160;natural&#160;finish&#160;or&#160;stained:<BRK />
+<BRK />
+&#160;1.&#160;[Natural&#160;finish,&#160;oil-modified&#160;polyurethane<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;2.&#160;[Stained,&#160;oil-modified&#160;polyurethane<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;3.&#160;[Stained,&#160;Moisture&#160;Cured&#160;Urethane<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+D.&#160;&#160;New&#160;[and&#160;Existing,&#160;previously&#160;finished&#160;or&#160;stained]&#160;Wood&#160;Floors;&#160;Natural<BRK />
+&#160;&#160;&#160;&#160;finish&#160;or&#160;stained:<BRK />
+<BRK />
+&#160;1.&#160;[Natural&#160;finish,&#160;oil-modified&#160;polyurethane<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;2.&#160;[Natural&#160;finish,&#160;Moisture&#160;Cured&#160;Polyurethane<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;3.&#160;[Stained,&#160;oil-modified&#160;polyurethane<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;4.&#160;[Stained,&#160;Moisture&#160;Cured&#160;Polyurethane<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+E.&#160;&#160;New&#160;[and&#160;Existing,&#160;previously&#160;coated]&#160;Wood&#160;floors;&#160;pigmented&#160;finish:<BRK />
+<BRK />
+&#160;1.&#160;[Latex&#160;Floor&#160;Paint<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]&#160;&#160;<BRK />
+<BRK />
+&#160;2.&#160;[Alkyd&#160;Floor&#160;Paint<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+F.&#160;&#160;New&#160;[and&#160;Existing,&#160;uncoated]&#160;wood&#160;surfaces&#160;in&#160;[toilets,]&#160;<BRK />
+&#160;&#160;&#160;&#160;[food-preparation,]&#160;[food-serving,]&#160;[restrooms,]&#160;[laundry&#160;areas,]&#160;[shower<BRK />
+&#160;&#160;&#160;&#160;areas,]&#160;[areas&#160;requiring&#160;a&#160;high&#160;degree&#160;of&#160;sanitation,]&#160;[_____]&#160;[and<BRK />
+&#160;&#160;&#160;&#160;other&#160;high&#160;humidity&#160;areas]&#160;not&#160;otherwise&#160;specified.:<BRK />
+<BRK />
+&#160;1.&#160;[As&#160;specified&#160;in&#160;Section&#160;09&#160;96&#160;59&#160;HIGH-BUILD&#160;GLAZE&#160;COATINGS.]<BRK />
+<BRK />
+&#160;2.&#160;[MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;3.&#160;[Alkyd<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+G.&#160;&#160;Existing,&#160;previously&#160;painted&#160;wood&#160;surfaces&#160;in&#160;[toilets,]&#160;<BRK />
+&#160;&#160;&#160;&#160;[food-preparation,]&#160;[food-serving,]&#160;[restrooms,]&#160;[laundry&#160;areas,]&#160;[shower<BRK />
+&#160;&#160;&#160;&#160;areas,]&#160;[areas&#160;requiring&#160;a&#160;high&#160;degree&#160;of&#160;sanitation,]&#160;[_____]&#160;[and<BRK />
+&#160;&#160;&#160;&#160;other&#160;high&#160;humidity&#160;areas]&#160;not&#160;otherwise&#160;specified:<BRK />
+<BRK />
+&#160;1.&#160;[As&#160;specified&#160;in&#160;Section&#160;09&#160;96&#160;59&#160;HIGH-BUILD&#160;GLAZE&#160;COATINGS.]<BRK />
+<BRK />
+&#160;2.&#160;[MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;3.&#160;[Alkyd<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+H.&#160;&#160;New&#160;[and&#160;Existing,&#160;previously&#160;finished&#160;or&#160;stained]&#160;Wood&#160;Doors;&#160;Natural<BRK />
+&#160;&#160;&#160;Finish&#160;or&#160;Stained:<BRK />
+<BRK />
+&#160;1.&#160;[MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+&#160;&#160;&#160;&#160;Note:&#160;&#160;Sand&#160;between&#160;all&#160;coats&#160;per&#160;manufacturers&#160;recommendations.<BRK />
+<BRK />
+&#160;2.&#160;[Stained,&#160;oil-modified&#160;polyurethane<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+&#160;&#160;&#160;&#160;Note:&#160;&#160;Sand&#160;between&#160;all&#160;coats&#160;per&#160;manufacturers&#160;recommendations.<BRK />
+<BRK />
+&#160;3.&#160;[Stained,&#160;Moisture&#160;Cured&#160;Urethane<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+&#160;&#160;&#160;&#160;Note:&#160;&#160;Sand&#160;between&#160;all&#160;coats&#160;per&#160;manufacturers&#160;recommendations.<BRK />
+<BRK />
+I.&#160;&#160;New&#160;[and&#160;Existing,&#160;uncoated]&#160;Wood&#160;Doors;&#160;Pigmented&#160;finish:<BRK />
+<BRK />
+&#160;1.&#160;[Alkyd<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+&#160;&#160;&#160;&#160;Note:&#160;&#160;Sand&#160;between&#160;all&#160;coats&#160;per&#160;manufacturers&#160;recommendations.<BRK />
+<BRK />
+&#160;2.&#160;[Pigmented&#160;Polyurethane<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+&#160;&#160;&#160;&#160;Note:&#160;&#160;Sand&#160;between&#160;all&#160;coats&#160;per&#160;manufacturers&#160;recommendations.<BRK />
+<BRK />
+J.&#160;&#160;Existing,&#160;previously&#160;painted&#160;Wood&#160;Doors;&#160;Pigmented&#160;finish:<BRK />
+<BRK />
+&#160;1.&#160;[Alkyd<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;&#160;&#160;&#160;Note:&#160;&#160;Sand&#160;between&#160;all&#160;coats&#160;per&#160;manufacturers&#160;recommendations.</TBL><BRK />
+<BRK />
+ <BRK />
+<TBL><HL4>DIVISION&#160;9:&#160;&#160;INTERIOR&#160;PLASTER,&#160;GYPSUM&#160;BOARD,&#160;TEXTURED&#160;SURFACES&#160;PAINT&#160;TABLE</HL4><BRK />
+<BRK />
+A.&#160;&#160;New&#160;[and&#160;Existing,&#160;previously&#160;painted]&#160;[Plaster]&#160;[and]&#160;[Wallboard]&#160;not<BRK />
+&#160;&#160;&#160;&#160;otherwise&#160;specified:<BRK />
+<BRK />
+&#160;1.&#160;[Latex<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+&#160;<BRK />
+&#160;2.&#160;[High&#160;Performance&#160;Architectural&#160;Latex&#160;-&#160;High&#160;Traffic&#160;Areas<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;3.&#160;[Institutional&#160;Low&#160;Odor&#160;/&#160;Low&#160;VOC&#160;Latex<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+B.&#160;&#160;New&#160;[and&#160;Existing,&#160;previously&#160;painted]&#160;[Plaster]&#160;[and]&#160;[Wallboard]&#160;in<BRK />
+&#160;&#160;&#160;&#160;[toilets,]&#160;[food-preparation,]&#160;[food-serving,]&#160;[restrooms,]&#160;[laundry<BRK />
+&#160;&#160;&#160;&#160;areas,]&#160;[shower&#160;areas,]&#160;[areas&#160;requiring&#160;a&#160;high&#160;degree&#160;of&#160;sanitation,]<BRK />
+&#160;&#160;&#160;&#160;[_____]&#160;[and&#160;other&#160;high&#160;humidity&#160;areas]&#160;not&#160;otherwise&#160;specified.:<BRK />
+<BRK />
+&#160;1.&#160;[Waterborne&#160;Light&#160;Industrial&#160;Coating<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;2.&#160;[Alkyd<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]<BRK />
+<BRK />
+&#160;3.&#160;[Epoxy<BRK />
+&#160;&#160;&#160;&#160;MLIT&#160;SS&#160;Chapter&#160;18]</TBL><BRK />
+<BRK /></SPT>
+</SPT></PRT>    <END /><BRK /></SEC>

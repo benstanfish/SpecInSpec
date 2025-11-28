@@ -1,0 +1,2298 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA                  UFGS-23 64 26 (August 2009)<BRK />
+                                               Change 4 - 02/17<BRK />
+                                               ---------------------------<BRK />
+Preparing Activity:  <PRA>NAVFAC</PRA>                    Superseding <BRK />
+                                               UFGS-23 64 26 (April 2008)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 23 64 26</SCN><BRK />
+<BRK />
+<STL>CHILLED, CHILLED-HOT, AND CONDENSER WATER PIPING SYSTEMS</STL><BRK />
+<DTE>08/09</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project.  The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers requirements for <SCP>chilled water, chilled-hot 
+(dual service) water and condenser water piping systems associated with HVAC 
+systems, and located within, on, or under buildings, or connected to equipment 
+adjacent to buildings</SCP>.  <BRK />
+<BRK />
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.<BRK />
+<BRK />
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<BRK />
+<BRK />
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Project design may require supplemental information to be added to paragraphs 
+of this section.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Show the following information on project drawings:</NPR><BRK />
+<BRK />
+<NPR>1.  Only drawings (not specifications) shall indicate capacity, efficiency, 
+dimensions, details, plan views, sections, elevations and location of equipment; 
+and space required for equipment maintenance.</NPR><BRK />
+<BRK />
+<NPR>2.  Show configuration, slope and location of each piping system such as: above 
+or below floors, above or below ceilings, above or below roofs, above or below 
+ground.</NPR><BRK />
+<BRK />
+<NPR>3.  Location, sizes, and type of each valve.</NPR><BRK />
+<BRK />
+<NPR>4.  Details of expansion joints for aboveground piping.</NPR><BRK />
+<BRK />
+<NPR>5.  Locations and installation details of aboveground pipe hangers and supports.</NPR><BRK />
+<BRK />
+<NPR>6.  Scale ranges for pressure gages and thermometers.</NPR><BRK />
+<BRK />
+<NPR>7.  Whether piping is run aboveground on pedestals or poles, or run buried underground.</NPR><BRK />
+<BRK />
+<NPR>8.  Design working pressures and temperatures for each system.</NPR><BRK />
+<BRK />
+<NPR>9.  Cathodic protection for buried metal piping.</NPR><BRK />
+<BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  System requirements must conform to UFC 3-410-01, "Heating, Ventilating, 
+and Air Conditioning Systems".</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification. The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK />
+<BRK />
+Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<BRK />
+<BRK />
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK />
+<BRK />
+<RID>NFPA 90A</RID><RTL>(2018) Standard for the Installation of Air 
+Conditioning and Ventilating Systems</RTL><BRK /></REF>
+<DEL><REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK />
+<BRK />
+<RID>ASTM E84</RID><RTL>(2018a) Standard Test Method for Surface Burning 
+Characteristics of Building Materials</RTL><BRK />
+<BRK /></REF>
+</DEL><REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK />
+<BRK />
+<RID>JIS B 1178</RID> <RTL>(2015) Foundation Bolts (Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS B 1180</RID><DEL><RTL>(2014) Hexagon Head Bolts and Hexagon Head Screws</RTL></DEL><ADD><RTL>
+(2014) Hexagon Head Bolts and Hexagon Screws</RTL></ADD><BRK />
+<BRK />
+<RID>JIS B 1181</RID><RTL>(2014) Hexagon Nuts and Hexagon Thin Nuts</RTL><BRK />
+<BRK />
+<RID>JIS B 2011</RID> <RTL>(2013) Bronze, Gate, Globe, Angle, and Check 
+Valves (Amendment 2)</RTL><BRK />
+<BRK />
+<RID>JIS B 2031</RID> <RTL>(2015) Gray Cast Iron Valves (Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS B 2032</RID> <RTL>(2013) Wafer Type Rubber-Seated Butterfly Valves</RTL><BRK />
+<BRK />
+<RID>JIS B 2220</RID> <RTL>(2012) Steel Pipe Flanges</RTL><BRK />
+<BRK />
+<RID>JIS B 2301</RID> <RTL>(2013) Screwed Type Malleable Cast Iron Pipe 
+Fittings</RTL><BRK />
+<BRK />
+<RID>JIS B 2311</RID> <RTL>(2015) Steel Butt-Welding Pipe Fittings for 
+Ordinary Use</RTL><BRK />
+<BRK />
+<RID>JIS B 2313</RID> <RTL>(2015) Steel Plate Butt-Welding Pipe Fittings</RTL><BRK />
+<BRK />
+<RID>JIS B 2316</RID> <RTL>(2017) Steel Socket-Welding Pipe Fittings </RTL><BRK />
+<BRK />
+<RID>JIS B 2352</RID> <RTL>(2013) Bellows Type Expansion Joints</RTL><BRK />
+<BRK />
+<RID>JIS B 2404</RID><RTL>(2018) Dimensions of Gaskets for Use with Pipe 
+Flanges</RTL><BRK />
+<BRK />
+<RID>JIS B 6801</RID> <RTL>(2003) Manual Blowpipes for Welding, Cutting 
+and Heating</RTL><BRK />
+<BRK />
+<RID>JIS B 7505-1</RID> <RTL>(2017) Aneroid Pressure Gauges-Part 1: Bourdon 
+Tube Pressure Gauges</RTL><BRK />
+<BRK />
+<RID>JIS B 8285</RID> <RTL>(2010) Welding Procedure Qualification Test 
+for Pressure Vessels</RTL><BRK />
+<BRK />
+<RID>JIS B 8301</RID> <RTL>(2009) Technical Specifications for Centrifugal 
+Pumps-Class II</RTL><BRK />
+<BRK />
+<RID>JIS B 8308</RID> <RTL>(2009) Technical Specifications for Centrifugal 
+Pumps-Class II</RTL><BRK />
+<BRK />
+<RID>JIS B 8410</RID> <RTL>(2015) Pressure Reducing Valves for Water Works</RTL><BRK />
+<BRK />
+<RID>JIS B 8414</RID> <RTL>(2011) Relief Valves for Hot Water Appliances 
+(Amendment 3)</RTL><BRK />
+<BRK />
+<RID>JIS C 4212</RID> <DEL><RTL>(2010) Low-Voltage Three-Phase Squirrel-Cage 
+High-Efficiency Induction Motors (Amendment 
+1)</RTL></DEL><ADD><RTL>(2010; R 2022) Low-Voltage Three-Phase Squirrel-Cage 
+High-Efficiency Induction Motors (Amendment 
+1)</RTL></ADD><BRK />
+<BRK />
+<RID>JIS F 0602</RID> <RTL>(1995) Shipbuilding-Non-Asbestos Gaskets to 
+Cargo Piping System-Application Standard</RTL><BRK />
+<BRK />
+<RID>JIS G 3106</RID> <RTL>(20<DEL>17</DEL><ADD>20</ADD>) Rolled Steels for Welded Structure<DEL> 
+(Amendment 1) </DEL></RTL><BRK />
+<BRK />
+<RID>JIS G 3201</RID> <RTL>(2008) Carbon Steel Forgings for General Use 
+(Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS G 3202</RID> <RTL>(2008) Carbon Steel Forgings for Pressure Vessels 
+(Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS G 3302</RID> <DEL><RTL>(2019) Hot Dip Zinc Coated Steel Sheet and Strip</RTL></DEL><ADD><RTL>
+(2022) Hot Dip Zinc Coated Steel Sheet and Strip</RTL></ADD><BRK />
+<BRK />
+<RID>JIS G 3454</RID><RTL>(2019) Carbon Steel Pipes for Pressure Service 
+(Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS G 3456</RID> <RTL>(2019) Carbon Steel Pipes for High Temperature 
+Service </RTL><BRK />
+<BRK />
+<RID>JIS G 4051</RID> <RTL>(2018) Carbon Steels for Machine Structural 
+Use (Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS G 4053</RID> <RTL>(2018) Low-Alloyed Steels for Machine Structural 
+Use (Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS G 4107</RID> <RTL>(2015) Alloy Steel Bolting Materials for High 
+Temperature Service (Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS G 4303</RID> <RTL>(2012) Stainless Steel Bars</RTL><BRK />
+<BRK />
+<RID>JIS G 5502</RID> <RTL>(2007) Spheroidal Graphite Iron Castings</RTL><BRK />
+<BRK />
+<RID>JIS G 5705</RID> <RTL>(2018) Malleable Iron Castings </RTL> <BRK />
+<BRK />
+<RID>JIS H 3300</RID> <RTL>(2018) Copper and Copper Alloy Seamless Pipes 
+and Tubes</RTL><BRK />
+<BRK />
+<RID>JIS H 3401</RID> <RTL>(2001) Pipe Fittings of Copper and Copper Alloys</RTL><BRK />
+<BRK />
+<RID>JIS H 5120</RID> <RTL>(2016) Copper and Copper Alloy Castings</RTL><BRK />
+<BRK />
+<RID>JIS K 0102</RID> <RTL>(2019) Testing Methods for Industrial Wastewater 
+(Amendment 1)</RTL> <BRK />
+<BRK />
+<RID>JIS K 2234</RID> <RTL>(2018) Engine Antifreeze Coolants </RTL><BRK />
+<BRK />
+<RID>JIS R 3453</RID> <RTL>(2006) Compressed Fiber Jointing (Amendment 
+1)</RTL><BRK />
+<BRK />
+<RID>JIS Z 2371</RID><RTL>(2015) Methods of Salt Spray Testing</RTL><BRK />
+<BRK />
+<RID>JIS Z 3197</RID> <RTL>(2012) Test Methods for Soldering Fluxes</RTL><BRK />
+<BRK />
+<RID>JIS Z 3202</RID> <RTL>(2007) Copper and Copper Alloy Gas Welding Rods</RTL><BRK />
+<BRK />
+<RID>JIS Z 3284-1</RID> <RTL>(2014) Solder Paste-Part 1: Kinds and Quality 
+Classification</RTL><BRK />
+<BRK />
+<RID>JIS Z 3422-1</RID> <RTL>(2003) Specification and Approval of Welding 
+Procedures for Metallic Materials-Welding Procedure 
+Tests-Arc and Gas Welding of Steels and Arc 
+Welding of Nickel and Nickel Alloys</RTL><BRK />
+<BRK />
+<RID>JIS Z 3801</RID> <RTL>(2018) Standard Qualification Test and Acceptance 
+Requirements for Manual Welding Technique</RTL><BRK />
+<BRK />
+<RID>JIS Z 8802</RID> <RTL>(2011) Methods for Determination of PH of Aqueous 
+Solutions</RTL><BRK />
+<BRK />
+<ORG>THE SOCIETY OF HEATING, AIR-CONDITIONING AND SANITARY ENGINEERS OF JAPAN (SHASE)</ORG><BRK />
+<BRK />
+<RID>SHASE-S003</RID><RTL>(2012) Sleave Type Expansion Pipe Joints</RTL><BRK />
+<BRK />
+<ORG><DEL>MLIT MECHANICAL STANDARD SPECIFICATION</DEL><ADD>MINISTRY OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM 
+(MLIT)</ADD></ORG><BRK />
+<BRK />
+<RID>MLIT-M</RID> <DEL><RTL>(2019) Public Building Construction Standard 
+Specification</RTL></DEL><ADD><RTL>(2019) Public Building Construction 
+Standard Specification</RTL></ADD><BRK />
+<BRK />
+<ADD><ORG>MINISTRY OF HEALTH, LABOUR AND WELFARE, GOVERNMENT OF JAPAN (MHLW)</ORG><BRK />
+<BRK />
+<RID>MHLW-177</RID><RTL>(2018) WATER SUPPLY LAW</RTL><BRK />
+<BRK />
+<RID>MHLW-33</RID><RTL>(2020) Ordinance on Safety of Boilers and Pressure 
+Vessels</RTL><BRK />
+<BRK /></ADD>
+<DEL><ORG>WATER SUPPLY LAW</ORG><BRK />
+<BRK />
+<RID>PSCP</RID><RTL>Performance Standard Compliant Product</RTL><BRK />
+<BRK />
+<RID>CCPV</RID><RTL>(2016) Construction Code of Pressure Vessel</RTL><BRK />
+<BRK /></DEL>
+<ORG><DEL>JAPAN VALVE MANUFACTURERS ASSOCIATION</DEL><ADD>JAPAN VALVE MANUFACTURERS' ASSOCIATION (JVMA)</ADD></ORG><BRK />
+<BRK />
+<RID>JV-5</RID><RTL>(2008) Pipe end Anticorrosion Screwed Valve</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>SYSTEM DESCRIPTION</TTL><BRK />
+<BRK />
+<TXT>Provide the water systems having the minimum service (design) temperature-pressure rating indicated.   Provision 
+of the piping systems, including materials, installation, workmanship, fabrication, assembly, erection, examination, 
+inspection, and testing shall be in accordance with the required and advisory provisions of <RID>MLIT-M</RID> except as 
+modified or supplemented by this specification section or design drawings. This specification section covers 
+the water systems  piping which is located within, on, and adjacent to building(s) within the building(s)<MET> 1.66 
+meter</MET><ENG> 5 foot</ENG> line.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Review Submittal Description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.</NPR><BRK />
+<BRK />
+<NPR>The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G."  Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a "G" to an item, if the submittal is sufficiently important or complex 
+in context of the project.</NPR><BRK />
+<BRK />
+<NPR>For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office.  Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.</NPR><BRK />
+<BRK />
+<NPR>The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
+submittal under the SD number that best describes the submittal item.</NPR><BRK />
+<BRK />
+<NPR>Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are for information only.  Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+ <BRK />
+<LST><SUB>SD-03 Product Data</SUB></LST>  <BRK />
+<BRK />
+<ITM><SUB>Pumps</SUB>; <SUB>G<TAI OPT="ARMY">[[]]</TAI></SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Piping Welds NDE Report</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Pressure Tests Reports</SUB>; <SUB>G<TAI OPT="ARMY">[[]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM>  Report shall be provided in bound<MET> 216 by 279 mm</MET><ENG> 8-1/2 by 11 inch</ENG> booklets.  In the reports, 
+document all phases of the tests performed.  Include initial test summaries, all repairs/adjustments 
+made, and the final test results.</ITM><BRK />
+<BRK />
+<ITM><SUB>Condenser Water Quality Test Reports</SUB>; <SUB>G<TAI OPT="ARMY">[[]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM>  Test reports, each month for a period of one year after project completion, in bound<MET> 216 by 
+279 mm </MET><ENG> 8-1/2 by 11 inch </ENG>booklets.  In the reports, identify the chemical composition of the 
+condenser water.  Also include the comparison of the manufacturer's recommended operating conditions 
+for the cooling tower and condenser in relation to the condition of the condenser water.  Document 
+in the report any required corrective action taken.</ITM><BRK />
+<BRK />
+<ITM><SUB>One-Year Inspection Report For Cooling Water</SUB>; <SUB>G<TAI OPT="ARMY">[[]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM>  At the completion of one year of service, in bound<MET> 216 by 279 mm</MET><ENG> 8-1/2 by 11</ENG> inch booklets.  
+In the report, identify the condition of each cooling tower and condenser.  Include a comparison 
+of the condition of the cooling tower and condenser with the manufacturer's recommended operating 
+conditions.  Identify all actions taken by the Contractor and manufacturer to correct deficiencies 
+during the first year of service.</ITM><BRK />
+<BRK />
+<LST><SUB>SD-10 Operation and Maintenance Data</SUB></LST><BRK />
+<BRK />
+<ITM>  Requirements for data packages are specified Section <SRF>01 78 23</SRF> OPERATION AND MAINTENANCE DATA, 
+except as supplemented and modified by this specification section. </ITM><BRK />
+<BRK />
+<ITM>  Submit spare parts data for each different item of equipment specified, with operation and 
+maintenance data packages.  Include a complete list of parts and supplies, with current unit 
+prices and source of supply, a recommended spare parts list for 1 year of operation, and a list 
+of the parts recommended by the manufacturer to be replaced on a routine basis.</ITM><BRK />
+<BRK />
+<ITM>  Submit a list of qualified permanent service organizations with operation and maintenance 
+data packages.  Include service organization addresses and service area or expertise.  The service 
+organizations shall be reasonably convenient to the equipment installation and be able to render 
+satisfactory service to the equipment on a regular and emergency basis during the warranty period 
+of the contract.</ITM><BRK />
+<BRK />
+<ITM><SUB>Water Treatment Systems</SUB></ITM><BRK />
+<BRK />
+<ITM>  An operation manual in bound<MET> 216 by 279 mm</MET><ENG> 8-1/2 by 11 inch</ENG> booklets listing step-by-step 
+procedures required for system startup, operation, abnormal shutdown, emergency shutdown, and 
+normal shutdown.  Include testing procedures used in determining water quality.</ITM><BRK />
+<BRK />
+<ITM>  A maintenance manual in bound<MET> 216 by 279 mm</MET><ENG> 8-1/2 by 11 inch</ENG> booklets listing routine maintenance 
+procedures, possible breakdowns and repairs, and a trouble shooting guide.</ITM><BRK />
+<BRK />
+<ITM><SUB>Calibrated Balancing Valves</SUB>, Data Package 3; </ITM><BRK />
+<BRK />
+<ITM><SUB>Automatic Flow Control Valves</SUB>, Data Package 3;</ITM><BRK />
+<BRK />
+<ITM><SUB>Pump Discharge Valve</SUB>, Data Package 2; </ITM><BRK />
+<BRK />
+<ITM><SUB>Water Temperature Mixing Valve</SUB>, Data Package 3; </ITM><BRK />
+<BRK />
+<ITM><SUB>Water Temperature Regulating Valves</SUB>, Data Package 3; </ITM><BRK />
+<BRK />
+<ITM><SUB>Water Pressure Reducing Valve</SUB>, Data Package 3; </ITM><BRK />
+<BRK />
+<ITM><SUB>Pressure Relief Valve</SUB>, Data Package 2; </ITM><BRK />
+<BRK />
+<ITM><SUB>Combination Pressure and Temperature Relief Valves</SUB>, Data Package 2; </ITM><BRK />
+<BRK />
+<ITM><SUB>Expansion Joints</SUB>, Data Package 2; </ITM><BRK />
+<BRK />
+<ITM><SUB>Pumps</SUB>, Data Package 3; <SUB>G<TAI OPT="ARMY">[[]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Combination Strainer and Pump Suction Diffuser</SUB>, Data Package 2; </ITM><BRK />
+<BRK />
+<ITM><SUB>Expansion Tanks</SUB>, Data Package 2; <SUB>G<TAI OPT="ARMY">[[]]</TAI></SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Air Separator Tanks</SUB>, Data Package 2; <SUB>G<TAI OPT="ARMY">[[]]</TAI></SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.4"><TTL>MODIFICATIONS TO REFERENCES</TTL><BRK />
+<BRK />
+<TXT>In each of the publications referred to herein, consider the advisory provisions to be mandatory, as though the 
+word, "shall" had been substituted for "should" wherever it appears.  Interpret references in these publications 
+to the "authority having jurisdiction", or words of similar meaning, to mean the Contracting Officer.</TXT><BRK />
+<BRK />
+<SPT outline="1.4.1"><TTL>Definitions</TTL><BRK />
+<BRK />
+<TXT>For the International Code Council (ICC) Codes referenced in the contract documents, advisory provisions shall 
+be considered mandatory, the word "should" shall be interpreted as "shall."  Reference to the "code official" 
+shall be interpreted to mean the "Contracting Officer."  For Navy owned property, references to the "owner" shall 
+be interpreted to mean the "Contracting Officer."  For leased facilities, references to the "owner" shall be 
+interpreted to mean the "lessor."  References to the "permit holder" shall be interpreted to mean the "Contractor."</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.4.2"><TTL>Administrative Interpretations</TTL><BRK />
+<BRK />
+<TXT>For ICC Codes referenced in the contract documents, the provisions of Chapter 1, "Administrator," do not apply.  
+These administrative requirements are covered by the applicable Federal Acquisition Regulations (FAR) included 
+in this contract and by the authority granted to the Officer in Charge of Construction to administer the construction 
+of this project.  References in the ICC Codes to sections of Chapter 1, shall be applied appropriately by the 
+Contracting Officer as authorized by his administrative cognizance and the FAR.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.5"><TTL>SAFETY REQUIREMENTS</TTL><BRK />
+<BRK />
+<TXT>Exposed moving parts, parts that produce high operating temperature, parts which may be electrically energized, 
+and parts that may be a hazard to operating personnel shall be insulated, fully enclosed, guarded, or fitted 
+with other types of safety devices.  Safety devices shall be installed so that proper operation of equipment 
+is not impaired.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6"><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK />
+<BRK />
+<TXT>Protect stored items from the weather, humidity and temperature variations, dirt and dust, or other contaminants.  
+Proper protection and care of all material both before and during installation shall be the Contractor's responsibility.  
+Any materials found to be damaged shall be replaced at the Contractor's expense.  During installation, cap piping 
+and similar openings to keep out dirt and other foreign matter.  Any porous materials found to be contaminated 
+with mold or mildew will be replaced at the Contractor's expense.  Non-porous materials found to be contaminated 
+with mold or mildew will be disinfected and cleaned prior to installation.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.7"><TTL>PROJECT/SITE CONDITIONS</TTL><BRK />
+<BRK />
+<SPT outline="1.7.1"><TTL>Verification of Dimensions</TTL><BRK />
+<BRK />
+<TXT>The Contractor shall become familiar with all details of the work, verify all dimensions in the field, and advise 
+the Contracting Officer of any discrepancy before performing any work.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.7.2"><TTL>Drawings</TTL><BRK />
+<BRK />
+<TXT>Because of the small scale of the drawings, it is not possible to indicate all offsets, fittings, and accessories 
+that may be required.  The Contractor shall carefully investigate the plumbing, fire protection, electrical, 
+structural and finish conditions that would affect the work to be performed and shall arrange such work accordingly, 
+furnishing required offsets, fittings, and accessories to meet such conditions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.7.3"><TTL>Accessibility</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  The following requirement is intended to solicit the installer's help 
+in the prudent location of equipment when he has some control over locations.<BRK />
+<BRK />
+However, designer's should not rely on it at all since enforcing this requirement 
+in the field would be difficult.<BRK />
+<BRK />
+Therefore, the system designer needs to layout and indicate the locations of 
+equipment, control devices, and access doors so that most of the accessibility 
+questions are resolved inexpensively during design.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Install all work so that parts requiring periodic inspection, operation, maintenance, and repair are readily 
+accessible.  Install concealed valves, expansion joints, controls, dampers, and equipment requiring access, in 
+locations freely accessible through access doors.</TXT><BRK />
+<BRK /></SPT>
+</SPT></PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>STANDARD COMMERCIAL PRODUCTS</TTL><BRK />
+<BRK />
+<TXT>Materials and equipment shall be standard products of a manufacturer regularly engaged in the manufacturing of 
+such products, which are of a similar material, design and workmanship.  The standard products shall have been 
+in satisfactory commercial or industrial use for 2 years prior to bid opening.</TXT><BRK />
+<BRK />
+<TXT>The two year use shall include applications of equipment and materials under similar circumstances and of similar 
+size.  The 2 years experience shall be satisfactorily completed by a product which has been sold or is offered 
+for sale on the commercial market through advertisements, manufacturer's catalogs, or brochures.</TXT><BRK />
+<BRK />
+<TXT>Products having less than a 2 year field service record shall be acceptable if a certified record of satisfactory 
+field operation, for not less than 6000 hours exclusive of the manufacturer's factory tests, can be shown.  System 
+components shall be environmentally suitable for the indicated locations.</TXT><BRK />
+<BRK />
+<TXT>The equipment items shall be supported by service organizations.  These service organizations shall be reasonably 
+convenient to the equipment installation and able to render satisfactory service to the equipment on a regular 
+and emergency basis during the warranty period of the contract.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2"><TTL>STEEL PIPING</TTL><BRK />
+<BRK />
+<TXT>Water piping shall be steel pipe.  Provide steel piping with a Japanese Industrial Standards (JIS) Class 125 
+service rating, which for<MET> 66 degrees C the pressure rating is 1207 kPa</MET><ENG> 150 degrees F, the pressure rating is 
+175 psig</ENG>.</TXT><BRK />
+<BRK />
+<SPT outline="2.2.1"><TTL>Pipe</TTL><BRK />
+<BRK />
+<TXT>Steel pipe, conform to <RID>JIS G 3454</RID>, Schedule 40 and <RID>MLIT-M</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2"><TTL>Fittings and End Connections (Joints)</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Do not use press fittings on NAVFAC projects.<BRK />
+Do not use grooved connections on NAVFAC projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Piping and fittings<MET> 25 mm</MET><ENG> 1 inch</ENG> and smaller shall have threaded connections.  Piping and fittings larger than<MET>
+ 25 mm</MET><ENG> 1 inch</ENG> and smaller than<MET> 80 mm</MET><ENG> 3 inches</ENG> shall have either threaded, [grooved,] or welded connections.  
+Piping and fittings<MET> 80 mm</MET><ENG> 3 inches</ENG> and larger shall have [grooved,] welded, or flanged connections.  The manufacturer 
+of each fitting shall be permanently identified on the body of the fitting.</TXT><BRK />
+<BRK />
+<SPT outline="2.2.2.1"><TTL>Threaded Connections</TTL><BRK />
+<BRK />
+<TXT>Use threaded fitting conforming to <RID>JIS B 2301</RID>.  Use threaded unions conforming to <RID>JIS B 2301</RID>.  Use threaded pipe 
+nipples conforming to <RID>MLIT-M</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2.2"><TTL>Flanged Connections</TTL><BRK />
+<BRK />
+<TXT>Flanges shall conform to <RID>JIS B 2220</RID>.  Gaskets shall be nonasbestos compressed material in accordance with <RID>JIS B 2404</RID>
+,<MET> 1.59 mm</MET><ENG> 1/16 inch</ENG> thickness, full face or self-centering flat ring type.  These gaskets shall contain aramid 
+fibers bonded with styrene butadeine rubber (SBR) or nitrile butadeine rubber (NBR).  Bolts, nuts, and bolt patterns 
+shall conform to <RID>JIS B 1180</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2.3"><TTL>Welded Connections</TTL><BRK />
+<BRK />
+<TXT>Welded valves and pipe connections (both butt-welds and socket-welds types) shall conform to <RID>JIS B 2301</RID>.  Butt-welded 
+fittings shall conform to <RID>JIS B 2311</RID>.  Socket-welded fittings shall conform to <RID>JIS B 2316</RID>.  Welded fittings shall 
+be identified with the appropriate grade and marking symbol.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2.4"><TTL>Grooved Mechanical Connections For Steel</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Do not use this paragraph on NAVFAC projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Rigid grooved mechanical connections may only be used in serviceable aboveground locations where the temperature 
+of the circulating medium does not exceed<MET> 110 degrees C</MET><ENG> 230 degrees F</ENG>.  Flexible grooved connections shall be 
+used only as a flexible connector with grooved pipe system.  Unless otherwise specified, grooved piping components 
+shall meet the corresponding criteria specified for the similar welded, flanged, or threaded component specified 
+herein.</TXT><BRK />
+<BRK />
+<TXT>Each grooved mechanical joint shall be a system, including coupling housing, gasket, fasteners, all furnished 
+by the same manufacturer.  Joint installation shall be in compliance with joint manufacturer's written instructions.</TXT><BRK />
+<BRK />
+<TXT>Use fitting and coupling houses of malleable iron conforming to <RID>JIS G 5705</RID>; steel conforming <RID>JIS G 3454</RID>.  Use 
+gaskets of molded synthetic rubber with central cavity, pressure responsive configuration and conforming to <RID>MLIT-M</RID>
+. Grooved mechanical connections shall conform to <RID>MLIT-M</RID>.  Coupling nuts and bolts shall be steel and shall conform 
+to <RID>MLIT-M</RID>.  Pipe connections and fittings shall be the product of the same manufacturer.  Provide joint installation 
+be in compliance with joint manufacturer's written instructions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2.5"><TTL>Dielectric Waterways and Flanges</TTL><BRK />
+<BRK />
+<TXT>Provide dielectric waterways with a water impervious insulation barrier capable of limiting galvanic current 
+to 1 percent of short circuit current in a corresponding bimetallic joint.  When dry, insulation barrier shall 
+be able to withstand a 600-volt breakdown test.  Provide dielectric waterways constructed of galvanized steel 
+and have threaded end connections to match connecting piping.  Dielectric waterways shall be suitable for the 
+required operating pressures and temperatures.  Provide dielectric flanges with the same pressure ratings as 
+standard flanges and provide complete electrical isolation between connecting pipe and/or equipment as described 
+herein for dielectric waterways.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><TAI OPT="AIR FORCE,ARMY,NASA"><SPT><TTL>PIPING FOR STEAM AND CONDENSATE</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Paragraph PIPING FOR STEAM AND CONDENSATE and its sub-paragraphs should 
+not be used in Navy projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Steam and condensate piping for<MET> 1034-, 2413-, 13790-, 41369- kilopascal</MET><ENG> 150-, 350-, 2,000-, and 6,000-pound per 
+square inch (psi)</ENG> service shall be black carbon steel (BCS). Steam and condensate piping includes fittings, unions, 
+flanges, gaskets, and bolting. </TXT><BRK />
+<BRK />
+<SPT><TTL>Type BCS-150 (<MET> 1034 kilopascal</MET><ENG> 150-psi</ENG> Service)</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Avoid screwed-end connections in condensate piping wherever possible.  
+Bend pipe for change in direction where practicable.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Pipe or tube<MET> (DN6 through DN25):  </MET><ENG> (1/8 inch through 10 inches):  </ENG>Schedule 40 for steam, Schedule 80 for condensate, 
+seamless black carbon steel, conforming to <RID>JIS G 3456</RID>.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Select<MET> 1034 or 2068 kilopascal</MET><ENG> 150- or 300-psi</ENG> malleable-iron or forged-steel 
+fittings; delete fittings not applicable if option is not given.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Fittings<MET> (DN6 through DN50):  2068 kilopascal</MET><ENG> (1/8 inch through 2 inches):  300-psi</ENG> working steam pressure (wsp) 
+banded malleable iron, screwed end, conforming to <RID>JIS G 5705</RID> and <RID>JIS B 2301</RID>.</TXT><BRK />
+<BRK />
+<TXT>Fittings<MET> (DN6 through DN50): 15- or 20- megapascal</MET><ENG> (1/8 inch through 2 inches):  2,000-or 3,000-psi</ENG> water, oil, 
+or gas (wog) forged carbon steel, socket weld or screwed end, conforming to <RID>JIS G 3201</RID> and <RID>JIS G 3202</RID> and <RID>JIS B 2316</RID>
+.</TXT><BRK />
+<BRK />
+<TXT>Fittings<MET> (DN65 through DN250): </MET><ENG> (2-1/2 through 10 inches): </ENG> Wall thickness to match pipe, long radius, butt weld, 
+black carbon steel, conforming to <RID>JIS B 2313</RID>, Grade WPB, and <RID>JIS B 2313</RID>.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Select<MET> 1724 kilopascal</MET><ENG> 250-psi</ENG> malleable iron or forged steel unions.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Unions<MET> (DN6 through DN50): 1724 kilopascal</MET><ENG> (1/8 inch through 2 inches):  250-psi</ENG> wsp, malleable iron, screwed 
+end, ground joint, with brass or bronze seat insert, conforming to <RID>JIS B 2301</RID>.</TXT><BRK />
+<BRK />
+<TXT>Unions<MET> (DN6 through DN50): 15- or 20- megapascal</MET><ENG> (1/8 inch through 2 inches):  2,000 or 3,000-psi</ENG> wog, forged 
+carbon steel; socket weld through<MET> 50 millimeter</MET><ENG> 2-inch</ENG>, screwed end through<MET> 25 millimeter</MET><ENG> 1-inch</ENG>, conforming 
+to <RID>JIS G 3201</RID> and <RID>JIS G 3202</RID> and <RID>JIS B 2316</RID>, with ground joint and stainless-steel seat insert</TXT><BRK />
+<BRK />
+<TXT>Flanges<MET> (DN65 through DN250): 1034-kilopascal</MET><ENG> (2-1/2 through 10 inches):  150-pound</ENG>, forged carbon steel, welding 
+neck, with raised face or flat face and concentric finish, conforming to <RID>JIS G 3201</RID> and <RID>JIS G 3202</RID>.</TXT><BRK />
+<BRK />
+<TXT>Flange Gaskets:  Compressed non-asbestos sheet conforming to <RID>JIS F 0602</RID>, Type 1, P1161A or <RID>JIS R 3453</RID>, coated 
+on both sides with graphite or similar lubricant, containing not less than 75-percent non-asbestos fiber materials</TXT><BRK />
+<BRK />
+<TXT>Bolting:  Bolting and flange bolting shall be hexhead and shall conform to<MET> <RID>JIS B 1178</RID></MET><ENG> <RID>ASTM A325</RID></ENG>.  Heavy hex-nuts 
+shall conform to<MET> <RID>JIS B 1181</RID></MET><ENG> <RID>ASME B18.2.2</RID>.</ENG>  Square-head bolts and nuts are not acceptable.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Type BCS-350 (<MET> 2413 kilopascal</MET><ENG> 350-psi</ENG>Service)</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Avoid screwed-end connections in condensate piping wherever possible.  
+Bend pipe for change in direction, where practicable.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Pipe or tube <MET> (DN6 through DN25): </MET><ENG> (1/8 inch through 10 inches): </ENG>Schedule 40 for steam, Schedule 80 for condensate; 
+seamless black carbon steel, conforming to <RID>JIS G 3456</RID>.</TXT><BRK />
+<BRK />
+<TXT>Fittings <MET> (DN6 through DN50): 15- or 20- megapascal</MET><ENG> (1/8 inch through 2 inches):  2,000-or 3,000-psi</ENG> wog to match 
+pipe wall, forged carbon steel, socket weld or screwed end, conforming to <RID>JIS G 3201</RID> and <RID>JIS G 3202</RID> and <RID>JIS B 2316</RID>
+.</TXT><BRK />
+<BRK />
+<TXT>Fittings <MET> (DN6 through DN25): </MET><ENG> (1/8 inch through 10 inches): </ENG>Schedule 40, long-radius, butt weld, black carbon 
+steel, conforming to <RID>JIS B 2313</RID>, Grade WPB, and <RID>JIS B 2313</RID>.</TXT><BRK />
+<BRK />
+<TXT>Unions <MET> (DN6 through DN50): 15- or 20- megapascal</MET><ENG> (1/8 inch through 2 inches):  2,000-or 3,000-psi</ENG> wog to match 
+pipe wall, forged carbon steel, socket weld through<MET> 50 millimeter</MET><ENG> 2-inch</ENG>, screwed end through<MET> 25 millimeter</MET><ENG> 1-inch</ENG>
+, conforming to <RID>JIS G 3201</RID> and <RID>JIS G 3202</RID> and <RID>JIS B 2316</RID>, with ground joint and stainless-steel seat insert</TXT><BRK />
+<BRK />
+<TXT>Flanges<MET> (DN65 through DN250):  2068 kilopascal</MET><ENG> (2-1/2 through 10 inches):  300-pound</ENG>, forged carbon steel, weld 
+neck, with raised face and concentric serrated finish, conforming to <RID>JIS G 4051</RID></TXT><BRK />
+<BRK />
+<TXT>Gaskets:  Spiral-wound, non-asbestos-fiber-filled, carbon steel, with centering provisions, conforming to MLIT-M.</TXT><BRK />
+<BRK />
+<TXT>Bolting:  Heavy hex-head, carbon-steel bolts or bolt studs and semifinished heavy hexnuts, conforming to<MET> <RID>JIS B 1178</RID></MET><ENG>
+ <RID>ASTM A325</RID></ENG>.</TXT><BRK />
+<BRK />
+<TXT>Square-head bolts are not acceptable.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT><TTL>PIPING FOR HIGH-PRESSURE COMPRESSED-AIR SYSTEMS</TTL><BRK />
+<BRK />
+<TXT>High-pressure compressed-air condensate piping includes fittings, unions, flanges, gaskets, and bolting.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Paragraph PIPING FOR HIGH-PRESSURE COMPRESSED-AIR SYSTEMS and its sub-paragraphs 
+should not be used in Navy projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  ASME B31.1 Does not cover industrial compressed air piping outside of 
+power houses.  ANSI B31.2 covers only fuel gas portion of obsolete industrial 
+gas and air piping systems.  ANSI committee recommends interim use of ASME B31.3 
+for compressed-air piping.<BRK />
+<BRK />
+The following system pressures are based on ASME B31.3, zero corrosion factor, 
+welded joints, and a stress value of<MET> 138 megapascal</MET><ENG> 20,000 psi</ENG> systems with 
+pipe size larger than<MET> 80 millimeter</MET><ENG> 3 inches</ENG>.<BRK />
+<BRK />
+The following material specifications do not take into account material temperatures 
+lower than minus<MET> 7 degrees C</MET><ENG> 20 degrees F</ENG>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT><TTL>Type BCS-2,000 (<MET> 15 megapascal</MET><ENG> 2,000-psi</ENG> Service)</TTL><BRK />
+<BRK />
+<TXT>Pipe or tube<MET> (DN6 through DN80):  </MET><ENG> (1/8 inch through 3 inches):  </ENG>Schedule 40, seamless black carbon steel, conforming 
+to <RID>JIS G 3456</RID> or <RID>JIS G 3454</RID>.</TXT><BRK />
+<BRK />
+<TXT>Fittings<MET> (DN6 through DN40):  15 megapascal</MET><ENG> (1/8 inch through 1-1/2 inches):  2,000-psi</ENG> wog, forged carbon steel, 
+socket weld, conforming to <RID>JIS G 3201</RID> and <RID>JIS G 3202</RID> and <RID>JIS B 2316</RID>.</TXT><BRK />
+<BRK />
+<TXT>Fittings<MET> (DN50 through DN80): </MET><ENG> (2 through 3 inches):  </ENG> Schedule 40, long radius, butt weld, black carbon steel, 
+conforming to <RID>JIS B 2313</RID> and <RID>JIS B 2313</RID>.</TXT><BRK />
+<BRK />
+<TXT>Flanges<MET> (DN25 through DN80): 6200 kilopascal</MET><ENG> (1 inch through 3 inches):  900-pound</ENG>, forged carbon steel, welding 
+neck, with raised face and concentric serrated finish, conforming to <RID>JIS G 3201</RID> and <RID>JIS G 3202</RID> or <RID>JIS G 4051</RID>. </TXT><BRK />
+<BRK />
+<TXT>Gaskets:  Spiral wound, non-asbestos-fiber-filled, carbon steel, with centering provisions, conforming to <RID>MLIT-M</RID>
+.</TXT><BRK />
+<BRK />
+<TXT>Bolting:  Alloy-steel bolt studs conforming to <RID>JIS G 4107</RID>and <RID>JIS G 4303</RID>, and semifinished heavy hex-nuts, conforming 
+to <RID>JIS G 4051</RID>, <RID>JIS G 4303</RID> and <RID>JIS G 4053</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT><TTL>Type BCS-6,000 (<MET> 41368-kilopascal</MET><ENG> 6,000-psi</ENG> Service)</TTL><BRK />
+<BRK />
+<TXT>Pipe or tube<MET> (DN15 through DN80):  </MET><ENG> (1/2 inch through 3 inches):  </ENG>Seamless, black carbon steel, conforming to <RID>
+JIS G 3456</RID>, or <RID>JIS G 3454</RID>.</TXT><BRK />
+<BRK />
+<TXT>Fittings<MET> (DN15 through DN40):  41.3 megapascal</MET><ENG> (1/2 inch through 1-1/2 inches):  6,000-psi</ENG> wog, forged carbon 
+steel, socket weld, conforming to <RID>JIS G 3201</RID> and <RID>JIS G 3202</RID> and <RID>JIS B 2316</RID></TXT><BRK />
+<BRK />
+<TXT>Fittings<MET> (DN50 through DN80): </MET><ENG> (2 through 3 inches):  </ENG> Long-radius, butt weld, black carbon steel, conforming 
+to <RID>JIS B 2313</RID>, <RID>JIS B 2313</RID>, and <RID>JIS G 3456</RID></TXT><BRK />
+<BRK />
+<TXT>Flanges<MET> (DN50 through DN80):  17.2 megapascal</MET><ENG> (2 through 3 inches):  2,500-pound</ENG>, forged carbon steel, welding 
+neck with raised face and concentric serrated finish, conforming to <RID>JIS G 3201</RID> and <RID>JIS G 3202</RID>.</TXT><BRK />
+<BRK />
+<TXT>Gaskets:  Spiral-wound, non-asbestos-filled, carbon steel, with centering provisions, conforming to <RID>MLIT-M</RID>.</TXT><BRK />
+<BRK />
+<TXT>Bolting:  Alloy steel bolt studs conforming to <RID>JIS G 4107</RID>and <RID>JIS G 4303</RID>, and semifinished heavy hex-nuts, conforming 
+to <RID>JIS G 4051</RID>, <RID>JIS G 4303</RID> and <RID>JIS G 4053</RID>.</TXT><BRK />
+<BRK /></SPT>
+</SPT></TAI><SPT outline="2.3"><TTL>COPPER TUBING</TTL><BRK />
+<BRK />
+<TXT>Provide copper tubing and fittings with a <RID>JIS H 3300</RID> Class 125 service rating, which for<MET> 66 degrees C, the pressure 
+rating is 1207 kPa</MET><ENG> 150 degrees F., the pressure rating is 175 psig</ENG>.</TXT><BRK />
+<BRK />
+<SPT outline="2.3.1"><TTL>Tube</TTL><BRK />
+<BRK />
+<TXT>Use copper tube conforming to<MET> <RID>JIS H 3300</RID></MET><ENG> <RID>ASTM B88</RID></ENG>, Type L or M for aboveground tubing, and Type K for buried 
+tubing.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.2"><TTL>Fittings and End Connections (Solder and Flared Joints)</TTL><BRK />
+<BRK />
+<TXT>Wrought copper and bronze solder joint pressure fittings, including unions ands flanges, shall conform to <RID>JIS H 3401</RID>
+.  Provide adapters as required.   Cast copper alloy solder-joint pressure fittings , including unions and flanges, 
+shall conform to <RID>JIS H 3401</RID>.  Cast copper alloy fittings for flared copper tube shall conform to <RID>JIS H 3401</RID> and <RID>
+JIS H 5120</RID>.  <RID>JIS H 3300</RID> copper pipe nipples with threaded end connections shall conform to <RID>JIS H 3300</RID>.</TXT><BRK />
+<BRK />
+<TXT>Copper tubing of sizes larger than<MET> 100 mm</MET><ENG> 4 inches</ENG> shall have brazed joints.  Brass or bronze adapters for brazed 
+tubing may be used for connecting tubing to flanges and to threaded ends of valves and equipment.</TXT><BRK />
+<BRK />
+<TXT>Extracted brazed tee joints may be used if produced with an acceptable tool and installed in accordance with 
+tool manufacturer's written procedures.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.3"><TTL>Grooved Mechanical Connections For Copper</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Do not use this paragraph on NAVFAC projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Rigid grooved mechanical connections may only be used in serviceable aboveground locations where the temperature 
+of the circulating medium does not exceed<MET> 110 degrees C</MET><ENG> 230 degrees F</ENG>.  Flexible grooved connections shall be 
+used only as a flexible connector with grooved pipe system.  Unless otherwise specified, grooved piping components 
+shall meet the corresponding criteria specified for the similar welded, flanged, or threaded component specified 
+herein.</TXT><BRK />
+<BRK />
+<TXT>Each grooved mechanical joint shall be a system, including coupling housing, gasket, fasteners, all furnished 
+by the same manufacturer.  Joint installation shall be in compliance with joint manufacturer's written instructions.</TXT><BRK />
+<BRK />
+<TXT>Grooved fitting and mechanical coupling housing shall be ductile iron conforming to <RID>JIS G 5502</RID>.  Provide gaskets 
+for use in grooved joints shall constructed of molded synthetic polymer of pressure responsive design and shall 
+conform to <RID>MLIT-M</RID> for circulating medium up to<MET> 110 degrees C</MET><ENG> 230 degrees F</ENG>.  Provide grooved joints in conformance 
+with <RID>MLIT-M</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.4"><TTL>Solder</TTL><BRK />
+<BRK />
+<TXT>Provide solder in conformance with <RID>JIS Z 3284-1</RID>, grade Sb5, tin-antimony alloy.  Solder flux shall be liquid 
+or paste form, non-corrosive and conform to <RID>JIS Z 3197</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3.5"><TTL>Brazing Filler Metal</TTL><BRK />
+<BRK />
+<TXT>Filler metal shall conform to <RID>JIS Z 3202</RID>, Type BAg-5 with AWS Type 3 flux, except Type BCuP-5 or BCuP-6 may be 
+used for brazing copper-to-copper joints.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.4"><TTL>VALVES</TTL><BRK />
+<BRK />
+<TXT>Provide valves with a Japanese standard service rating.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Indicate on the design drawings valves that are located more than<MET> 3 m</MET><ENG>
+ 10 feet</ENG> or higher above the floor.  Indicate the valves that are to be provided 
+with chain operators.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Valves in sizes larger than<MET> 25 mm</MET><ENG> 1 inch</ENG> and used on steel pipe systems, may be provided with rigid grooved mechanical 
+joint ends.  Such grooved end valves shall be subject to the same requirements as rigid grooved mechanical joints 
+and fittings and, shall be furnished by the same manufacturer as the grooved pipe joint and fitting system.</TXT><BRK />
+<BRK />
+<SPT outline="2.4.1"><TTL>Gate Valve</TTL><BRK />
+<BRK />
+<TXT>Gate valves<MET> 65 mm</MET><ENG> 2-1/2 inches</ENG> and smaller shall conform to <RID>JIS B 2011</RID> Class 125 and shall be bronze with wedge 
+disc, rising stem and threaded, soldered, or flanged ends.  Gate valves<MET> 80 mm</MET><ENG> 3 inches</ENG> and larger shall conform 
+to <RID>JIS B 2031</RID>, Class 125, cast iron with bronze trim, outside screw and yoke, and flanged or threaded ends.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.2"><TTL>Globe and Angle Valve</TTL><BRK />
+<BRK />
+<TXT>Globe and angle valves<MET> 65 mm</MET><ENG> 2-1/2 inches</ENG> and smaller shall conform to <RID>JIS B 2011</RID>, Class 125.  Globe and angle 
+valves<MET> 80 mm</MET><ENG> 3 inches</ENG> and larger shall conform to <RID>JIS B 2031</RID>, Class 125.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.3"><TTL>Check Valve</TTL><BRK />
+<BRK />
+<TXT>Check valves<MET> 65 mm</MET><ENG> 2-1/2 inches</ENG> and smaller shall conform to <RID>JIS B 2011</RID>.  Check valves<MET> 80 mm</MET><ENG> 3 inches</ENG> and larger 
+shall conform to <RID>JIS B 2031</RID>, Class 125.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.4"><TTL>Butterfly Valve</TTL><BRK />
+<BRK />
+<TXT>Butterfly valves shall conform to <RID>JIS B 2032</RID> and <RID>JIS B 2011</RID>, Type 1 and shall be either the wafer or lug type.  
+Valves smaller than<MET> 200 mm</MET><ENG> 8 inches</ENG> shall have throttling handles with a minimum of [two][seven] locking positions.  
+Valves<MET> 200 mm</MET><ENG> 8 inches</ENG> and larger shall have totally enclosed manual gear operators with adjustable balance return 
+stops and position indicators.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Indicate on the design drawings valves that are located in insulated 
+lines that require extended necks to accommodate insulation thickness. Indicate 
+which valves require weatherproof operators with mechanical position indicators.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK /></SPT>
+<SPT outline="2.4.5"><TTL>Plug Valve</TTL><BRK />
+<BRK />
+<TXT>Plug valves<MET> 50 mm</MET><ENG> 2 inches</ENG> and larger shall conform to <RID>JIS B 2031</RID>, have flanged or threaded ends, and have cast 
+iron bodies with bronze trim.  Valves<MET> 50 mm</MET><ENG> 2 inches</ENG> and smaller shall be bronze with NPT connections for black 
+steel pipe and brazed connections for copper tubing.  Valve shall be lubricated, non-lubricated, or tetrafluoroethylene 
+resin-coated type.  Valve shall be resilient, double seated, trunnion mounted with tapered lift plug capable 
+of 2-way shutoff.  Valve shall operate from fully open to fully closed by rotation of the handwheel to lift and 
+turn the plug. [Valve shall a weatherproof operators with mechanical position indicators.]  Valves<MET> 200 mm</MET><ENG> 8 inches</ENG>
+ or larger shall be provided with manual gear operators with position indicators.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.6"><TTL>Ball Valve</TTL><BRK />
+<BRK />
+<TXT>Full port design.  Ball valves<MET> 15 mm</MET><ENG> 1/2 inch</ENG> and larger shall conform to <RID>JV-5</RID> and shall be cast iron or bronze 
+with threaded, soldered, or flanged ends.  Valves<MET> 200 mm</MET><ENG> 8 inches</ENG> or larger shall be provided with manual gear 
+operators with position indicators.  Ball valves may be provided in lieu of gate valves.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.7"><TTL>Square Head Cocks</TTL><BRK />
+<BRK />
+<TXT>Provide copper alloy or cast-iron body with copper alloy plugs, suitable for 125 psig water working pressure.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.8"><TTL><SUB>Calibrated Balancing Valves</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Plug and ball valves uses include being used as manual balancing valves 
+and will be indicated on the drawings.  A supplemental flow measuring scheme 
+or device must be used to measure flow with a manual balancing valve.  A calibrated 
+balancing valve incorporates a flow measuring element and can be used in place 
+of a manual balancing valve and a flow measuring device.  Delete the last sentence 
+of this paragraph if inapplicable.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Copper alloy or cast iron body, copper alloy or stainless internal working parts.  Provide valve calibrated so 
+that flow can be determined when the temperature and pressure differential across valve is known.  Valve shall 
+have an integral pointer which registers the degree of valve opening.  Valve shall function as a service valve 
+when in fully closed position.  Valve shall be constructed with internal seals to prevent leakage and shall be 
+supplied with preformed insulation.</TXT><BRK />
+<BRK />
+<TXT>Provide valve bodies with tapped openings and pipe extensions with positive shutoff valves outside of pipe insulation.  
+The pipe extensions shall be provided with quick connecting hose fittings for a portable differential pressure 
+meter connections to verify the pressure differential. Provide metal tag on each valve showing the<MET> liters per 
+second</MET><ENG> gallons per minute</ENG> flow for each differential pressure reading.  [In lieu of the balancing valve with 
+integral metering connections, a ball valve or plug valve with a separately installed orifice plate or venturi 
+tube may be used for balancing.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.9"><TTL><SUB>Automatic Flow Control Valves</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  An automatic flow control valve offers complete flow control in many 
+applications; however, the flow control range is dependent on inlet pressure 
+being within a given range, the flow selection is limited, and, in some cases 
+it may require pump power slightly more than alternative balancing means.  <BRK />
+<BRK />
+In any facility where typical load imbalances cannot be tolerated and where 
+automatic control is needed to ensure constant hydronic flow, the design shall 
+incorporate automatic flow control valves.  Show the location, capacity and 
+pressure range of the automatic flow control valves on the drawings.  Provide 
+a cyclonic separator in the water system where automatic flow control valves 
+are used for removing particles.<BRK />
+<BRK />
+Do not use automatic flow control valves where there is a high risk of dirty 
+sediment-laden water in the system.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Valve shall automatically maintain the constant flow indicated on the design drawings.  Valve shall modulate 
+by sensing the pressure differential across the valve body.  Valve shall be selected for the flow required and 
+provided with a permanent nameplate or tag carrying a permanent record of the factory-determined flow rate and 
+flow control pressure levels.  Provide valve that controls the flow within 5 percent of the tag rating.  Valve 
+materials shall be the same as specified for the ball or plug valves.</TXT><BRK />
+<BRK />
+<TXT>Provide valve that are [electric][ or ][pneumatic] type as indicated.  Valve shall be capable of positive shutoff 
+against the system pump head, valve bodies shall be provided with tapped openings and pipe extensions with shutoff 
+valves outside of pipe insulation.  The pipe extensions shall be provided with quick connecting hose fittings 
+and differential meter, suitable for the operating pressure specified.  Provide the meter complete with hoses, 
+vent, integral metering connections, and carrying case as recommended by the valve manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.10"><TTL><SUB>Pump Discharge Valve</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Pump discharge valves can be used as an alternative to a gate valve, 
+a check valve, and a balancing valve on the discharge side of a pump.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Valve shall shall perform the functions of a nonslam check valve, a manual balancing valve, and a shutoff.  Valve 
+shall be of cast iron or ductile iron construction with bronze and/or stainless steel accessories.  Provide an 
+integral pointer on the valve which registers the degree of valve opening.  Flow through the valve shall be manually 
+adjustable from bubble tight shutoff to full flow.  Valves smaller than<MET> 50 mm</MET><ENG> 2 inches</ENG> shall have NPT connections.  
+Valves<MET> 50 mm</MET><ENG> 2 inches</ENG> and larger shall have flanged or grooved end connections.  Valve design shall allow the 
+back seat for the stem to be replaced in the field under full line pressure.  </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.11"><TTL><SUB>Water Temperature Mixing Valve</SUB></TTL><BRK />
+<BRK />
+<TXT>Provide water temperature mixing valve that meets performance standards <DEL>(<RID>PSCP</RID>)</DEL>of the water supply Law<ADD> (<RID>MHLW-177</RID>
+)</ADD>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.12"><TTL><SUB>Water Temperature Regulating Valves</SUB></TTL><BRK />
+<BRK />
+<TXT>Provide copper alloy body, direct acting, pilot operated, for the intended service.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.13"><TTL><SUB>Water Pressure Reducing Valve</SUB></TTL><BRK />
+<BRK />
+<TXT>Valve, <RID>JIS B 8410</RID> for water service, copper alloy body.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.14"><TTL><SUB>Pressure Relief Valve</SUB></TTL><BRK />
+<BRK />
+<TXT>Valve shall prevent excessive pressure in the piping system when the piping system reaches its maximum heat buildup.  
+Valve, <RID>JIS B 8414</RID> and shall have cast iron bodies with corrosion resistant internal working parts.  The discharge 
+pipe from the relief valve shall be the size of the valve outlet unless otherwise indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.15"><TTL><SUB>Combination Pressure and Temperature Relief Valves</SUB></TTL><BRK />
+<BRK />
+<TXT><RID>JIS B 8414</RID>, copper alloy body, automatic re-seating, test lever, and discharge capacity based on AGA temperature 
+steam rating.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.16"><TTL>Float Valve</TTL><BRK />
+<BRK />
+<TXT>[Angle pattern] [Globe pattern].  Valve bodies<MET> 80 mm</MET><ENG> 3 inches</ENG> nominal pipe size and smaller shall be bronze.  
+Valve bodies larger than<MET> 80 mm</MET><ENG> 3 inches</ENG> shall be cast iron or bronze.  Steel parts shall be corrosion resistant.  
+Where float rods are extended for tank applications, extension shall be properly supported and guided to avoid 
+bending of float rod or stressing of valve pilot linkage.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.17"><TTL>Drain Valves</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Indicate the location of each drain valve on the design drawings.  Indicate 
+if a drain valve is freeze-proof.  Indicate whether a manual or automatic air 
+venting valve.  Delete freeze-proof drain valve specification if not required.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Valves, <RID>JIS B 2011</RID> gate valves.  Valve shall be manually-operated,<MET> 20 mm </MET> <ENG>3/4 inch</ENG> pipe size and above with a 
+threaded end connection.  Provide valve with a water hose nipple adapter.  [Freeze-proof type valves shall be 
+provided in installations exposed to freezing temperatures.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.18"><TTL>Air Venting Valves</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Indicate the location of each air venting valve on the drawings.  Indicate 
+whether a manual or automatic air venting valve.  </NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>[Automatic type air venting shall be the ball-float type with brass/bronze or brass bodies, 300 series corrosion-resistant 
+steel float, linkage and removable seat.]  Air venting valves on water coils shall have not less than<MET> 3 mm</MET><ENG> 1/8 
+inch</ENG> threaded end connections.  Air venting valves on water mains shall have not less than<MET> 20 mm</MET><ENG> 3/4 inch</ENG> threaded 
+end connections.  Air venting valves on all other applications shall have not less than<MET> 15 mm</MET><ENG> 1/2 inch</ENG> threaded 
+end connections.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.19"><TTL>Vacuum Relief Valves</TTL><BRK />
+<BRK />
+<TXT><RID>JIS B 8414</RID></TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.5"><TTL>PIPING ACCESSORIES</TTL><BRK />
+<BRK />
+<SPT outline="2.5.1"><TTL>Strainer</TTL><BRK />
+<BRK />
+<TXT>Strainer, <RID>MLIT-M</RID>, except as modified and supplemented in this specification.  Strainer shall be the cleanable, 
+basket or "Y" type, the same size as the pipeline.  Strainer bodies shall be fabricated of cast iron with bottoms 
+drilled, and tapped.  Provide blowoff outlet with pipe nipple, gate valve, and discharge pipe nipple.  The bodies 
+shall have arrows clearly cast on the sides indicating the direction of flow.</TXT><BRK />
+<BRK />
+<TXT>Provide strainer with removable cover and sediment screen.  The screen shall be made of minimum<MET> 0.8 mm</MET><ENG> 22 gauge</ENG>
+ [corrosion-resistant steel,] with small perforations numbering not less than<MET> 60 per square centimeter</MET><ENG> 400 per 
+square inch</ENG> to provide a net free area through the basket of at least 3.30 times that of the entering pipe.  
+The flow shall be into the screen and out through the perforations.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5.2"><TTL><SUB>Combination Strainer and Pump Suction Diffuser</SUB></TTL><BRK />
+<BRK />
+<TXT>Angle type body with removable strainer basket and internal straightening vanes, a suction pipe support, and 
+a blowdown outlet and plug.  Strainer shall be in accordance with <RID>MLIT-M</RID>, except as modified and supplemented 
+by this specification.  Unit body shall have arrows clearly cast on the sides indicating the direction of flow.</TXT><BRK />
+<BRK />
+<TXT>Strainer screen shall be made of minimum<MET> 0.8 mm</MET><ENG> 22 gauge</ENG> [corrosion-resistant steel,] with small perforations 
+numbering not less than<MET> 60 per square centimeter</MET><ENG> 400 per square inch</ENG> to provide a net free area through the basket 
+of at least 3.30 times that of the entering pipe.  Flow shall be into the screen and out through the perforations. 
+Provide an auxiliary disposable fine mesh strainer which shall be removed 30 days after start-up.  Provide warning 
+tag for operator indicating scheduled date for removal.</TXT><BRK />
+<BRK />
+<TXT>Casing shall have connection sizes to match pump suction and pipe sizes, and be provided with adjustable support 
+foot or support foot boss to relieve piping strains at pump suction.  Provide unit casing with blowdown port 
+and plug.  Provide a magnetic insert to remove debris from system.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5.3"><TTL>Flexible Pipe Connectors</TTL><BRK />
+<BRK />
+<TXT>Provide flexible bronze or stainless steel piping connectors with single braid.   Equip flanged assemblies with 
+limit bolts to restrict maximum travel to the manufacturer's standard limits.  Unless otherwise indicated, the 
+length of the flexible connectors shall be as recommended by the manufacturer for the service intended.  Internal 
+sleeves or liners, compatible with circulating medium, shall be provided when recommended by the manufacturer.  
+Provide covers to protect the bellows where indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5.4"><TTL>Pressure and Vacuum Gauges</TTL><BRK />
+<BRK />
+<TXT>Gauges, <RID>JIS B 7505-1</RID> with throttling type needle valve or a pulsation dampener and shut-off valve.  Provide gauges 
+with<MET> 115 mm</MET><ENG> 4.5 inch</ENG> dial, brass or aluminum case, bronze tube, and siphon. Gauge shall have a range from<MET> 0 kPa</MET>
+ <ENG>0 psig</ENG> to approximately 1.5 times the maximum system working pressure.  Each gauge range shall be selected so 
+that at normal operating pressure, the needle is within the middle-third of the range.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5.5"><TTL>Temperature Gauges</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  If known, indicate on the design drawings the locations where all universal 
+adjustable angle type or remote element type temperature gauges shall be provided 
+in accordance with requirements specified below.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Temperature gauges, shall be the industrial duty type and be provided for the required temperature range.  Provide 
+gauges with fixed thread connection, dial face gasketed within the case; and an accuracy within 2 percent of 
+scale range. Gauges shall have<MET> Celsius scale in 1 degree</MET><ENG> Fahrenheit scale in 2 degree</ENG> graduations scale (black 
+numbers) on a white face.  The pointer shall be adjustable.  Rigid stem type temperature gauges shall be provided 
+in thermal wells located within<MET> 1.5 m</MET><ENG> 5 feet</ENG> of the finished floor.  Universal adjustable angle type or remote 
+element type temperature gauges shall be provided in thermal wells located<MET> 1.5 to 2.1 m</MET><ENG> 5 to 7 feet</ENG> above the 
+finished floor or in locations indicated.  Remote element type temperature gauges shall be provided in thermal 
+wells located<MET> 2.1 m</MET><ENG> 7 feet</ENG> above the finished floor or in locations indicated.</TXT><BRK />
+<BRK />
+<SPT outline="2.5.5.1"><TTL>Stem Cased-Glass</TTL><BRK />
+<BRK />
+<TXT>Stem cased-glass case shall be polished stainless steel or cast aluminum,<MET> 229 mm</MET><ENG> 9 inches</ENG> long, with clear acrylic 
+lens, and non-mercury filled glass tube with indicating-fluid column.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5.5.2"><TTL>Bimetallic Dial</TTL><BRK />
+<BRK />
+<TXT>Bimetallic dial type case shall be not less than<MET> 89 mm</MET><ENG> 3-1/2 inches,</ENG> stainless steel, and shall be hermetically 
+sealed with clear acrylic lens.  Bimetallic element shall be silicone dampened and unit fitted with external 
+calibrator adjustment.  </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5.5.3"><TTL>Liquid-, Solid-, and Vapor-Filled Dial</TTL><BRK />
+<BRK />
+<TXT>Liquid-, solid-, and vapor-filled dial type cases shall be not less than<MET> 89 mm,</MET><ENG> 3-1/2 inches,</ENG> stainless steel 
+or cast aluminum with clear acrylic lens.  Fill shall be nonmercury, suitable for encountered cross-ambients, 
+and connecting capillary tubing shall be double-braided bronze.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5.5.4"><TTL>Thermal Well</TTL><BRK />
+<BRK />
+<TXT>Thermal well shall be identical size,<MET> 15 or 20 mm</MET><ENG> 1/2 or 3/4 inch</ENG> NPT connection, brass or stainless steel.  
+Where test wells are indicated, provide captive plug-fitted type<MET> 15 mm</MET><ENG> 1/2 inch</ENG> NPT connection suitable for use 
+with either engraved stem or standard separable socket thermometer or thermostat.  Mercury shall not be used 
+in thermometers.  Extended neck thermal wells shall be of sufficient length to clear insulation thickness by<MET> 
+25 mm</MET><ENG> 1 inch</ENG>.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.5.6"><TTL>Pipe Hangers, Inserts, and Supports</TTL><BRK />
+<BRK />
+<TXT>Pipe hangers, inserts, guides, and supports shall be in accordance with <RID>MLIT-M</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5.7"><TTL>Escutcheons</TTL><BRK />
+<BRK />
+<TXT>Provide one piece or split hinge metal plates for piping entering floors, walls, and ceilings in exposed spaces.  
+Secure plates in place by internal spring tension or set screws.  Provide polished stainless steel plates or 
+chromium-plated finish on copper alloy plates in finished spaces.  Provide paint finish on metal plates in unfinished 
+spaces.  </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5.8"><TTL><SUB>Expansion Joints</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Expansion loops, offsets, and bends will be used where possible instead 
+of expansion joints.  Indicate all expansion provisions, including necessary 
+details, on the drawings.  Locate expansion joints in serviceable areas.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="2.5.8.1"><TTL>Slip-Tube Type</TTL><BRK />
+<BRK />
+<TXT>Slip-tube expansion joints, <RID>SHASE-S003</RID>.  Joints shall be provided with internally-externally alignment guides, 
+injected semi-plastic packing, and service outlets.  End connections shall be flanged or beveled for welding 
+as indicated.  Initial settings shall be made in accordance with the manufacturer's recommendations to compensate 
+for ambient temperature at time of installation.  Pipe alignment guides shall be installed as recommended by 
+the joint manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5.8.2"><TTL>Flexible Ball Type</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  The ball joint only moves in an angular offset or rotation mode.  The 
+configuration of the ball joint link will require a 2 or 3 ball joint offset 
+to absorb axial and/or lateral movement.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Flexible ball expansion joints shall be capable of 360 degrees rotation plus 15 degrees angular flex movement.  
+Joints shall be constructed of carbon steel with the exterior spherical surface of carbon steel balls plated 
+with a minimum<MET> 0.12 mm</MET><ENG> 5 mils</ENG> of hard chrome in accordance with <RID>MLIT-M</RID>.  Joint end connections shall be threaded 
+for piping<MET> 50 mm</MET><ENG> 2 inches</ENG> or smaller.  Joint end connections larger than<MET> 50 mm</MET><ENG> 2 inches</ENG> shall be grooved, flanged, 
+or beveled for welding.  Provide joint with pressure-molded composition gaskets suitable for continuous operation 
+at twice design temperature.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.5.8.3"><TTL>Bellows Type</TTL><BRK />
+<BRK />
+<TXT>Bellows expansion type joints, <RID>JIS B 2352</RID> with Type 304 stainless steel corrugated bellows, reinforced with equalizing 
+rings, internal sleeves, and external protective covers.  Joint end connections shall be grooved, flanged, or 
+beveled for welding.  Guiding of piping on both sides of expansion joint shall be in accordance with the published 
+recommendations of the manufacturer of the expansion joint.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="2.6"><TTL><SUB>PUMPS</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Indicate pump capacity, efficiencies, motor sizes, and impeller types 
+on the drawings.  Typical impeller types include the double-suction horizontal 
+split-case type, end-suction vertical split-case type, close-coupled end-suction 
+type, and close-coupled in-line type.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Pumps shall be the electrically driven, non-overloading, centrifugal type which conform to <RID>JIS B 8308</RID> and <RID>JIS B 8301</RID>
+.  Pumps shall be selected at or within 5 percent of peak efficiency.  Pump curve shall rise continuously from 
+maximum capacity to shutoff.  Pump motor shall conform to <RID>JIS C 4212</RID>, be [open] [splash-proof] [totally enclosed], 
+and have sufficient<MET> wattage</MET><ENG> horsepower</ENG> for the service required.  Pump motor shall have the required capacity 
+to prevent overloading with pump operating at any point on its characteristic curve.  Pump speed shall not exceed 
+3,600 rpm, except where the pump head is less than<MET> 180 kPa</MET><ENG> 60 feet of water</ENG>, the pump speed shall not exceed 
+1,750 rpm.  Pump motor shall be equipped with an across-the-line magnetic controller in a industrial use, dust 
+tight enclosure with "START-STOP" switch in the cover.</TXT><BRK />
+<BRK />
+<SPT outline="2.6.1"><TTL>Construction</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  In most cases, mechanical shaft seals will be the preferred type of shaft 
+seal rather than the stuffing-box type.  Although less costly in many cases, 
+the stuffing-box type seals require periodic maintenance which means that the 
+seals are typically only economically justifiable for very large pumps where 
+the first cost difference is great.  The shaft seal selection should be based 
+upon a life cycle cost comparison.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Each pump casing shall be designed to withstand the discharge head specified plus the static head on system plus 
+50 percent of the total, but not less than<MET> 862 kPa</MET><ENG> 125 psig</ENG>.  Pump casing and bearing housing shall be close 
+grained cast iron.  High points in the casing shall be provided with manual air vents; low points shall be provided 
+with drain plugs.  Provide threaded suction and discharge pressure gage tapping with square-head plugs.</TXT><BRK />
+<BRK />
+<TXT>Impeller shall be statically and dynamically balanced.  Impeller, impeller wearing rings, glands, casing wear 
+rings, and shaft sleeve shall be bronze.  Shaft shall be carbon or alloy steel, turned and ground.  Bearings 
+shall be ball-bearings, roller-bearings, or oil-lubricated bronze-sleeve type bearings, and be efficiently sealed 
+or isolated to prevent loss of oil or entrance of dirt or water.</TXT><BRK />
+<BRK />
+<TXT>[Pump and motor shall be mounted on a common cast iron base having lipped edges and tapped drainage openings 
+or structural steel base with lipped edges or drain pan and tapped drainage openings.Pump shall be provided with 
+steel shaft coupling guard.  Base-mounted pump, coupling guard, and motor shall each be bolted to a fabricated 
+steel base which shall have bolt holes for securing base to supporting surface.] [Close-coupled pump shall be 
+provided with integrally cast or fabricated steel feet with bolt holes for securing feet to supporting surface. 
+Close- coupled pumps shall be provided with drip pockets and tapped openings.] Pump shall be accessible for servicing 
+without disturbing piping connections.  Shaft seals shall be mechanical-seals.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.6.2"><TTL>Mechanical Shaft Seals</TTL><BRK />
+<BRK />
+<TXT>Seals shall be single, inside mounted, end-face-elastomer bellows type with stainless steel spring, brass or 
+stainless steel seal head, carbon rotating face, and tungsten carbide or ceramic sealing face.  Glands shall 
+be bronze and of the water-flush design to provide lubrication flush across the face of the seal.  Bypass line 
+from pump discharge to flush connection in gland shall be provided, with filter or cyclone particle separator 
+in line.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.7"><TTL><SUB>EXPANSION TANKS</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Indicate the requirements for these tanks on the drawings including operating 
+pressure.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Tank shall be welded steel, constructed for, and tested to pressure-temperature rating of<MET> 862 kPa at 66 degrees 
+C</MET><ENG> 125 psi at 150 degrees F</ENG>. Provide tanks precharged to the minimum operating pressure.  Tank shall have a replaceable 
+polypropylene or butyl lined diaphragm which keeps the air charge separated from the water; shall be the captive 
+air type.</TXT><BRK />
+<BRK />
+<TXT>Tanks shall accommodate expanded water of the system generated within the normal operating temperature range, 
+limiting this pressure increase at all components in the system to the maximum allowable pressure at those components.  
+Each tank air chamber shall be fitted with a drain, fill, an air charging valve, and system connections.  Tank 
+shall be supported by steel legs or bases for vertical installation or steel saddles for horizontal installations.  
+The only air in the system shall be the permanent sealed-in air cushion contained within the expansion tank.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.8"><TTL><SUB>AIR SEPARATOR TANKS</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Indicate the requirements for these tanks on the drawings including operating 
+pressure.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Indicate the routing of all vent and blow-down piping.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Design to separate air from water and to direct released air to automatic air vent.  Unit shall be of one piece 
+cast-iron construction with internal baffles and two air chambers at top of unit; one air chamber shall have 
+outlet to expansion tank and other air chamber shall be provided with automatic air release device. Tank shall 
+be steel, constructed for, and tested <DEL>to a construction code of pressure vessel (<RID>CCPV</RID>) </DEL><ADD>to </ADD>pressure-temperature 
+rating<ADD> in accordance with Ordinance on Safety of Boilers and Pressure Vessels (<RID>MHLW-177</RID>)</ADD>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9"><TTL><SUB>WATER TREATMENT SYSTEMS</SUB></TTL><BRK />
+<BRK />
+<TXT>When water treatment is specified, the use of chemical-treatment products containing equivalent chromium (CPR) 
+is prohibited.</TXT><BRK />
+<BRK />
+<SPT outline="2.9.1"><TTL>Water Analysis</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  A water analysis may be available from the user.  If an analysis is not 
+available, an analysis will be performed during the design, and appropriate 
+data will be entered.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Conditions of make-up water to be supplied to the condenser and chilled water systems were reported in accordance 
+with <RID>JIS K 0102</RID> and <RID>JIS Z 8802</RID> and are as follows:</TXT><BRK />
+<TAB HEADERROWS="0">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM" />
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="2" ROWCOUNT="21">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="251.25" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="333.75" />
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Date of Sample</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____]</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Temperature</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] degrees<MET> C</MET><ENG> F</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Silica (Sino 2)</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Insoluble</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Iron and Aluminum Oxides</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Calcium (Ca)</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Magnesium (Mg)</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Sodium and Potassium (Nan and AK)</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Carbonate (HO 3)</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Sulfate (SO 4)</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Chloride (JCL)</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Nitrate (NO 3</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Turbidity</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] unit</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">pH</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____]</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Residual Chlorine</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Total Alkalinity</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] PM (me/1</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Non-Carbonate Hardness</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] PM (me/1</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Total Hardness</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] PM (me/1</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Dissolved Solids</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Fluorine</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Conductivity</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">[_____] McMahon/cm</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK /></SPT>
+<SPT outline="2.9.2"><TTL>Chilled and Condenser Water</TTL><BRK />
+<BRK />
+<TXT>Water to be used in the chilled and condenser water systems shall be treated to maintain the conditions recommended 
+by this specification as well as the recommendations from the manufacturers of the condenser and evaporator coils.  
+Chemicals shall meet all required local and base environmental regulations for the treatment of evaporator coils 
+and direct discharge to the sanitary sewer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.3"><TTL>Glycol Solution</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  If freeze protection for chilled water is not required, this paragraph 
+should be deleted.  When a glycol system is used, the size of the VAC systems 
+should be corrected due to changes in specific heat and viscosity.  ASHORE's 
+"VAC systems and Equipment Handbook" should be consulted for the appropriate 
+calculation procedures.  Ethylene glycol should be used for VAC systems.  However, 
+if the heat transfer media has the possibility of mixing with a potable water 
+system, propylene glycol should be used.  The required concentration should 
+be entered based upon the anticipated ambient or operating temperature.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>A [_____] percent concentration by volume of industrial grade [ethylene] [propylene] glycol shall be provided 
+in the chilled water.  The glycol shall be tested in accordance with <RID>JIS K 2234</RID> with less than<MET> 0.013 mm</MET><ENG> 0.5 mils</ENG>
+ penetration per year for all system metals.  The glycol shall contain corrosion inhibitors.  Silicate based 
+inhibitors shall not be used.  The solution shall be compatible with pump seals, other elements of the system, 
+and water treatment chemicals used within the system.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.4"><TTL>Water Treatment Services</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  The services of a water treatment company to treat a chilled water system 
+should only be required if the makeup water available is of very poor quality.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The services of a company regularly engaged in the treatment of [condenser and chilled] water systems shall be 
+used to determine the correct chemicals required, the concentrations required, and the water treatment equipment 
+sizes and flow rates required.  The company shall maintain the chemical treatment and provide all chemicals required 
+for the [condenser] [condenser and chilled] water systems for a period of 1 year from the date of occupancy.  
+The chemical treatment and services provided over the 1 year period shall meet the requirements of this specification 
+as well as the recommendations from the manufacturers of the condenser and evaporator coils.  Acid treatment 
+and proprietary chemicals shall not be used.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.5"><TTL>Chilled Water System</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  For dual temperature systems (chilled and heated water), coordinate the 
+compatibility of the separate water treatment systems.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>A shot feeder shall be provided on the chilled water piping as indicated.  Size and capacity of feeder shall 
+be based on local requirements and water analysis.  The feeder shall be furnished with an air vent, gauge glass, 
+funnel, valves, fittings, and piping.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.6"><TTL>Condenser Water</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Cooling towers with a capacity of greater than 176 kW (50 tons) will 
+be provided with automatic chemical feed and blow down systems.  Smaller towers 
+will be provided with continuously activated systems.  Indicate the location 
+of the entire water treatment system.  Specify only non-toxic chemicals for 
+use in cooling towers with automatic blowdown systems.  Delete all the information 
+under this paragraph if a cooling tower is not used in the system.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The water treatment system shall be capable of [automatically] [continuously] feeding chemicals and bleeding 
+the system to prevent corrosion, scale, and biological formations.  [Automatic chemical feed systems shall automatically 
+feed chemicals into the condenser water based on varying system conditions.] [Continuous chemical feed systems 
+shall continuously feed chemicals into the condenser water at a constant rate.  The system shall be initially 
+set manually based on the water analysis of the make-up water.]</TXT><BRK />
+<BRK />
+<SPT outline="2.9.6.1"><TTL>Chemical Feed Pump</TTL><BRK />
+<BRK />
+<TXT>One pump shall be provided for each chemical feed tank.  The chemical feed pumps shall be positive displacement 
+diaphragm type.  The flow rate of the pumps shall be adjustable from 0 to 100 percent while in operation.  The 
+discharge pressure of pumps shall not be less than 1.5 times the line pressure at the point of connection.  The 
+pumps shall be provided with a pressure relief valve and a check valve mounted in the pump discharge.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.6.2"><TTL>Tanks</TTL><BRK />
+<BRK />
+<TXT>Two chemical tanks shall be provided.  The tanks shall be constructed of [high density polyethylene] [stainless 
+steel] with a hinged cover.  The tanks shall have sufficient capacity to require recharging only once per 7 days 
+during normal operation.  A level indicating device shall be included with each tank.  An electric agitator shall 
+be provided for each tank.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.6.3"><TTL>Injection Assembly</TTL><BRK />
+<BRK />
+<TXT>An injection assembly shall be provided at each chemical injection point along the condenser water piping as 
+indicated.  The injection assemblies shall be constructed of stainless steel.  The discharge of the assemblies 
+shall extend to the centerline of the condenser water piping.  Each assembly shall include a shutoff valve and 
+check valve at the point of entrance into the condenser water line.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.6.4"><TTL>Water Meter</TTL><BRK />
+<BRK />
+<TXT>Water meters shall be provided with an electric contacting register and remote accumulative counter.  The meter 
+shall be installed within the make-up water line, as indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.6.5"><TTL>Timers</TTL><BRK />
+<BRK />
+<TXT>Timers shall be of the automatic reset, adjustable type, and electrically operated.  The timers shall be suitable 
+for a 120 volt current of available voltage.  The timers shall be located within the water treatment control 
+panel.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.6.6"><TTL>Water Treatment Control Panel</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  The MAN-OFF-AUTO switch should be deleted for continuously fed systems.  
+In areas where a panel could come in contact with the water treatment chemical, 
+choose the stainless steel construction.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The control panel shall be a industrial use, drip tight, dust tight enclosure suitable for surface mounting.  
+The panel shall be constructed of stainless steel or steel with a hinged door and lock.  The panel shall contain 
+a laminated plastic nameplate identifying each of the following functions:</TXT><BRK />
+<BRK />
+<ITM>(1) Main power switch and indicating light</ITM><BRK />
+<ITM>(2) MAN-OFF-AUTO selector switch</ITM><BRK />
+<ITM>(3) Indicating lamp for bleed-off valve</ITM><BRK />
+<ITM>(4) Indicating lamp for each chemical feed pump</ITM><BRK />
+<ITM>(5) Set point reading for each timer</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.6.7"><TTL>Chemical Piping</TTL><BRK />
+<BRK />
+<TXT>The piping and fittings shall be constructed of [schedule 80 PVC] [stainless steel] suitable for the water treatment 
+chemicals.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.6.8"><TTL>Sequence of Operation</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Choose the first set of brackets for automatic chemical feed systems.  
+Choose the second set of brackets for continuous chemical feed systems.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>[The chemicals shall be added based upon sensing the make-up water flow rate and activating appropriate timers.  
+A separate timer shall be provided for each chemical.  The blow down shall be controlled based upon the make-up 
+water flow rate and a separate timer.] [The system shall contain an adjustable valve for continuous blow down.  
+The flow rate from the appropriate chemical tanks shall be manually set at the metering pump for continuous chemical 
+feed.]  The injection of the chemical required for biological control shall be controlled by a timer which can 
+be manually set for proper chemical feed.  Timer set points, blow down rates, and chemical pump flow rates shall 
+be determined and set by the water treatment company.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.6.9"><TTL>Test Kits</TTL><BRK />
+<BRK />
+<TXT>One test kit of each type required to determine the water quality as outlined within the operation and maintenance 
+manuals shall be provided.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.9.6.10"><TTL>Bleed Line</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Delete the following paragraph on bleed lines if an automatic chemical 
+system is chosen.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>A bleed line with a flow valve of the needle-valve type sized for the flow requirement or fixed orifice shall 
+be provided in the pump return to the tower.  The bleed line shall be extended to the nearest drain for continuous 
+discharge.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="2.10"><TTL>ELECTRICAL WORK</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:<BRK />
+1.  Show the electrical characteristics, motor starter type(s), enclosure type, 
+and maximum rpm in the equipment schedules on the drawings.  <BRK />
+<BRK />
+2.  Where reduced-voltage motor starters are recommended by the manufacturer 
+or required otherwise, specify and coordinate the type(s) required in Section 
+<SRF>26 20 00</SRF> INTERIOR DISTRIBUTION SYSTEM.  Reduced-voltage starting is required 
+when full voltage starting will interfere with other electrical equipment and 
+circuits and when recommended by the manufacturer.  Where adjustable speed drives 
+(SD) are specified, reference Section <SRF>26 29 23</SRF> VARIABLE FREQUENCY DRIVE SYSTEMS 
+UNDER 600 VOLTS.  The methods for calculating the economy of using an adjustable 
+speed drive is described in UFC 3-520-01 "Interior Electrical Systems".   <BRK />
+<BRK /></NPR>
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide motors, controllers, integral disconnects, contactors, and controls with their respective pieces of equipment, 
+except controllers indicated as part of motor control centers.  Provide electrical equipment, including motors 
+and wiring, as specified in Section <SRF>26 20 00</SRF> INTERIOR DISTRIBUTION SYSTEM. Manual or automatic control and protective 
+or signal devices required for the operation specified and control wiring required for controls and devices specified, 
+but not shown, shall be provided.  For packaged equipment, the manufacturer shall provide controllers including 
+the required monitors and timed restart.</TXT><BRK />
+<BRK />
+<TXT>Provide high efficiency type, single-phase, fractional-horsepower alternating-current motors, including motors 
+that are part of a system, in accordance with <RID>JIS C 4212</RID>.</TXT>  <BRK />
+<BRK />
+<TXT>Provide polyphase, squirrel-cage medium induction motors, including motors that are part of a system, that meet 
+the efficiency ratings for premium efficiency motors in accordance with <RID>JIS C 4212</RID>.  Provide motors in accordance 
+with <RID>JIS C 4212</RID> and of sufficient size to drive the load at the specified capacity without exceeding the nameplate 
+rating of the motor.</TXT> <BRK />
+<BRK />
+<TXT>Motors shall be rated for continuous duty with the enclosure specified.   Motor duty requirements shall allow 
+for maximum frequency start-stop operation and minimum encountered interval between start and stop.  Motor torque 
+shall be capable of accelerating the connected load within 20 seconds with 80 percent of the rated voltage maintained 
+at motor terminals during one starting period. Provide motor starters complete with thermal overload protection 
+and other necessary appurtenances.  Motor bearings shall be fitted with grease supply fittings and grease relief 
+to outside of the enclosure.</TXT> <BRK />
+<BRK />
+<TXT>[Where two-speed or variable-speed motors are indicated, solid-state variable-speed controllers may be provided 
+to accomplish the same function. Use solid-state variable-speed controllers for motors rated<MET> 7.45 kW</MET><ENG> 10 hp</ENG> or 
+less and adjustable frequency drives for larger motors.]  [Provide variable frequency drives for motors as specified 
+in Section <SRF>26 29 23</SRF> VARIABLE FREQUENCY DRIVE SYSTEMS UNDER 600 VOLTS.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.11"><TTL>PAINTING OF NEW EQUIPMENT</TTL><BRK />
+<BRK />
+<TXT>New equipment painting shall be factory applied or shop applied, and shall be as specified herein, and provided 
+under each individual section.</TXT><BRK />
+<BRK />
+<SPT outline="2.11.1"><TTL>Factory Painting Systems</TTL><BRK />
+<BRK />
+<TXT>Manufacturer's standard factory painting systems may be provided.  The factory painting system applied will withstand 
+125 hours in a salt-spray fog test, except that equipment located outdoors shall withstand 500 hours in a salt-spray 
+fog test. </TXT> <BRK />
+<BRK />
+<TXT>Salt-spray fog test shall be in accordance with <RID>JIS Z 2371</RID>, and for that test, the acceptance criteria shall 
+be as follows:  immediately after completion of the test, the paint shall show no signs of blistering, wrinkling, 
+or cracking, and no loss of<MET> 3 mm</MET><ENG> 0.125 inch</ENG> on either side of the scratch mark.  The film thickness of the factory 
+painting system applied on the equipment shall not be less than the film thickness used on the test specimen.</TXT><BRK />
+<BRK />
+<TXT>If manufacturer's standard factory painting system is being proposed for use on surfaces subject to temperatures 
+above<MET> 50 degrees C</MET><ENG> 120 degrees F</ENG>, the factory painting system shall be designed for the temperature service.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.11.2"><TTL>Shop Painting Systems for Metal Surfaces</TTL><BRK />
+<BRK />
+<TXT>Shop painting for metal surface shall be in accordance with <RID>MLIT-M</RID>.</TXT><BRK />
+<BRK /></SPT>
+</SPT><DEL><SPT><TTL>FACTORY APPLIED INSULATION</TTL><BRK />
+<BRK />
+<TXT>Factory insulated items installed outdoors are not required to be fire-rated.  As a minimum, factory insulated 
+items installed indoors shall have a flame spread index no higher than 25 and a smoke developed index no higher 
+than 150. Factory insulated items (no jacket) installed indoors and which are located in air plenums, in ceiling 
+spaces, and in attic spaces shall have a flame spread index no higher than 25 and a smoke developed index no 
+higher than 50. Flame spread and smoke developed indexes shall be determined by <RID>ASTM E84</RID>.</TXT><BRK />
+<BRK />
+<TXT>Insulation shall be tested in the same density and installed thickness as the material to be used in the actual 
+construction. Material supplied by a manufacturer with a jacket shall be tested as a composite material. Jackets, 
+facings, and adhesives shall have a flame spread index no higher than 25 and a smoke develop.</TXT><BRK />
+<BRK /></SPT>
+</DEL><SPT outline="2.12"><TTL>NAMEPLATES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  In a salt water environment, substitute acceptable non-corroding metal 
+such as but not limited to nickel-copper, 304 stainless steel, or monel.  Aluminum 
+is unacceptable.  Nomenclature (or system identification) should be established 
+by the designer.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Major equipment including pumps, pump motors, expansion tanks, and air separator tanks shall have the manufacturer's 
+name, type or style, model or serial number on a plate secured to the item of equipment.  The nameplate of the 
+distributing agent will not be acceptable.  Plates shall be durable and legible throughout equipment life and 
+made of [anodized aluminum][stainless steel][_____].  Plates shall be fixed in prominent locations with nonferrous 
+screws or bolts.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.13"><TTL>RELATED COMPONENTS/SERVICES</TTL><BRK />
+<BRK />
+<SPT outline="2.13.1"><TTL>Drain and Make-Up Water Piping</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Indicate all drain and makeup water piping on the drawings.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Requirements for drain and make-up water piping and backflow preventer is specified in Section <SRF>22 00 00</SRF> PLUMBING, 
+GENERAL PURPOSE.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.13.2"><TTL>Cathodic Protection</TTL><BRK />
+<BRK />
+<TXT>Requirements for cathodic protection systems is specified in  [Section <SRF>26 42 14.00 10</SRF> CATHODIC PROTECTION SYSTEM 
+(SACRIFICIAL ANODE)] [Section <SRF>26 42 13.00 20</SRF> CATHODIC PROTECTION BY GALVANIC ANODES][and] [Section 
+<SRF>26 42 17.00 10</SRF> CATHODIC PROTECTION SYSTEM (IMPRESSED CURRENT)][Section <SRF>26 42 19.00 20</SRF> CATHODIC PROTECTION BY 
+IMPRESSED CURRENT].</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.13.3"><TTL>Field Applied Insulation</TTL><BRK />
+<BRK />
+<TXT>Requirements for field applied insulation is specified in Section <SRF>23 07 00</SRF> THERMAL INSULATION FOR MECHANICAL 
+SYSTEMS.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.13.4"><TTL>Field Applied Insulation</TTL><BRK />
+<BRK />
+<TXT>Requirements for field installed insulation is specified in Section <SRF>23 07 00</SRF> THERMAL INSULATION FOR MECHANICAL 
+SYSTEMS, except as supplemented and modified by this specification section.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.13.5"><TTL>Field Painting</TTL><BRK />
+<BRK />
+<TXT>Requirements for painting of surfaces not otherwise specified, and finish painting of items only primed at the 
+factory, are specified in Section <SRF>09 90 00</SRF>PAINTS AND COATINGS.</TXT><BRK />
+<BRK />
+<SPT outline="2.13.5.1"><TTL>Color Coding</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Color coding for piping identification required by the using agency will 
+be developed and inserted in the "Color Code Schedule" in Section <SRF>09 90 00</SRF> PAINTS 
+AND COATINGS.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Requirements for color coding for piping identification are specified in Section <SRF>09 90 00</SRF> PAINTS AND COATINGS.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.13.5.2"><TTL>Color Coding For Hidden Piping</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use this paragraph for Army projects only.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Color Coding Scheme may be deleted in accordance with Notes in Section 
+<SRF>22 00 00</SRF> PLUMBING, GENERAL PURPOSE.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>A color coding scheme for locating hidden piping shall be in accordance with [Section <SRF>22 00 00</SRF> PLUMBING, GENERAL 
+PURPOSE] [Section <SRF>22 00 70</SRF> PLUMBING, HEALTHCARE FACILITIES].</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT></PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>INSTALLATION</TTL><BRK />
+<BRK />
+<TXT>Cut pipe accurately to measurements established at the jobsite, and work into place without springing or forcing, 
+completely clearing all windows, doors, and other openings.  Cutting or other weakening of the building structure 
+to facilitate piping installation is not permitted without written approval.  Cut pipe or tubing square, remove 
+burrs by reaming, and fashion to permit free expansion and contraction without causing damage to the building 
+structure, pipe, joints, or hangers.</TXT><BRK />
+<BRK />
+<TXT>Notify the Contracting Officer in writing at least 15 calendar days prior to the date the connections are required.  
+Obtain approval before interrupting service.  Furnish materials required to make connections into existing systems 
+and perform excavating, backfilling, compacting, and other incidental labor as required.  Furnish labor and tools 
+for making actual connections to existing systems.</TXT><BRK />
+<BRK />
+<SPT outline="3.1.1"><TTL>Welding</TTL><BRK />
+<BRK />
+<TXT>Provide welding work specified this section for piping systems in conformance with <RID>JIS B 2301</RID>, as modified and 
+supplemented by this specification section and the accompanying drawings.  The welding work includes: qualification 
+of welding procedures, welders, welding operators, brazers, brazing operators, and nondestructive examination 
+personnel; maintenance of welding records, and examination methods for welds.</TXT><BRK />
+<BRK />
+<SPT outline="3.1.1.1"><TTL>Employer's Record Documents (For Welding)</TTL><BRK />
+<BRK />
+<TXT>Submit for review and approval the following documentation.  This documentation and the subject qualifications 
+shall be in compliance with <RID>JIS Z 3801</RID>.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  List of qualified welding procedures that is proposed to be used to provide the work specified in 
+this specification section.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  List of qualified welders, brazers, welding operators, and brazing operators that are proposed to 
+be used to provide the work specified in this specification section.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  List of qualified weld examination personnel that are proposed to be used to provide the work specified 
+in this specification section.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.1.2"><TTL>Welding Procedures and Qualifications</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Specifications and Test Results:  Submit copies of the welding procedures specifications and procedure 
+qualification test results for each type of welding required.  Approval of any procedure does not relieve 
+the Contractor of the responsibility for producing acceptable welds.  Submit this information on the 
+forms printed in <RID>JIS B 8285</RID> or their equivalent.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Certification:  Before assigning welders or welding operators to the work, submit a list of qualified 
+welders, together with data and certification that each individual is performance qualified as specified.  
+Do not start welding work prior to submitting welder, and welding operator qualifications.  The certification 
+shall state the type of welding and positions for which each is qualified, the code and procedure under 
+which each is qualified, date qualified, and the firm and individual certifying the qualification tests.<BRK /></LST>
+<BRK /></SPT>
+<SPT outline="3.1.1.3"><TTL>Examination of Piping Welds</TTL><BRK />
+<BRK />
+<TXT>Conduct non-destructive examinations (NDE) on piping welds and brazing and verify the work meets the acceptance 
+criteria specified in <RID>JIS Z 3801</RID>.  NDE on piping welds covered by <RID>JIS B 2301</RID> is visual inspection only.  Submit 
+a <SUB>piping welds NDE report</SUB> meeting the requirements specified in <RID>JIS B 2301</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.1.4"><TTL>Welding Safety</TTL><BRK />
+<BRK />
+<TXT>Welding and cutting safety requirements shall be in accordance with <RID>JIS Z 3422-1</RID> and <RID>JIS B 6801</RID>.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.1.2"><TTL>Directional Changes</TTL><BRK />
+<BRK />
+<TXT>Make changes in direction with fittings, except that bending of pipe<MET> 100 mm</MET><ENG> 4 inches</ENG> and smaller is permitted, 
+provided a pipe bender is used and wide weep bends are formed.  Mitering or notching pipe or other similar construction 
+to form elbows or tees is not permitted.  The centerline radius of bends shall not be less than 6 diameters of 
+the pipe.  Bent pipe showing kinks, wrinkles, flattening, or other malformations is not acceptable.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.3"><TTL>Functional Requirements</TTL><BRK />
+<BRK />
+<TXT>Pitch horizontal supply mains down in the direction of flow as indicated.  The grade shall not be less than<MET> 2 
+mm in 1 m</MET><ENG> 1 inch in 40 feet</ENG>.  Reducing fittings shall be used for changes in pipe sizes.  Cap or plug open ends 
+of pipelines and equipment during installation to keep dirt or other foreign materials out of the system.</TXT><BRK />
+<BRK />
+<TXT>Pipe not otherwise specified shall be uncoated.  Connections to appliances shall be made with malleable iron 
+unions for steel pipe<MET> 65 mm</MET><ENG> 2-1/2 inches</ENG> or less in diameter, and with flanges for pipe<MET> 80 mm</MET><ENG> 3 inches</ENG> and above 
+in diameter.  Connections between ferrous and copper piping shall be electrically isolated from each other with 
+dielectric waterways or flanges.</TXT><BRK />
+<BRK />
+<TXT>Piping located in air plenums shall conform to <RID>NFPA 90A</RID> requirements.  Pipe and fittings installed in inaccessible 
+conduits or trenches under concrete floor slabs shall be welded.  Equipment and piping arrangements shall fit 
+into space allotted and allow adequate acceptable clearances for installation, replacement, entry, servicing, 
+and maintenance.  Electric isolation fittings shall be provided between dissimilar metals.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.4"><TTL>Fittings and End Connections</TTL><BRK />
+<BRK />
+<SPT outline="3.1.4.1"><TTL>Threaded Connections</TTL><BRK />
+<BRK />
+<TXT>Threaded connecting shall be in accordance with <RID>MLIT-M</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.4.2"><TTL>Brazed Connections</TTL><BRK />
+<BRK />
+<TXT>Brazing, <RID>MLIT-M</RID>, except as modified herein.  During brazing, the pipe and fittings shall be filled with a pressure 
+regulated inert gas, such as nitrogen, to prevent the formation of scale.  Before brazing copper joints, both 
+the outside of the tube and the inside of the fitting shall be cleaned with a wire fitting brush until the entire 
+joint surface is bright and clean.  Do not use brazing flux.  Surplus brazing material shall be removed at all 
+joints.  Steel tubing joints shall be made in accordance with the manufacturer's recommendations.  Piping shall 
+be supported prior to brazing and not be sprung or forced.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.4.3"><TTL>Welded Connections</TTL><BRK />
+<BRK />
+<TXT>Branch connections shall be made with welding tees or forged welding branch outlets.  Pipe shall be thoroughly 
+cleaned of all scale and foreign matter before the piping is assembled.  During welding, the pipe and fittings 
+shall be filled with an inert gas, such as nitrogen, to prevent the formation of scale.  Beveling, alignment, 
+heat treatment, and inspection of weld shall conform to <RID>JIS Z 3801</RID>.  Weld defects shall be removed and rewelded 
+at no additional cost to the Government.  Electrodes shall be stored and dried in accordance with <RID>JIS G 3106</RID> 
+or as recommended by the manufacturer.  Electrodes that have been wetted or that have lost any of their coating 
+shall not be used.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.4.4"><TTL>Grooved Mechanical Connections</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Do not use this paragraph on NAVFAC projects.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Prepare grooves in accordance with the coupling manufacturer's instructions.  Pipe and groove dimensions shall 
+comply with the tolerances specified by the coupling manufacturer.  The diameter of grooves made in the field 
+shall be measured using a "go/no-go" gauge, vernier or dial caliper, or narrow-land micrometer, or other method 
+specifically approved by the coupling manufacturer for the intended application.  Groove width and dimension 
+of groove from end of pipe shall be measured and recorded for each change in grooving tool setup to verify compliance 
+with coupling manufacturer's tolerances.  Grooved joints shall not be used in concealed locations, such as behind 
+solid walls or ceilings, unless an access panel is shown on the drawings for servicing or adjusting the joint.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.4.5"><TTL>Flared Connections</TTL><BRK />
+<BRK />
+<TXT>When flared connections are used, a suitable lubricant shall be used between the back of the flare and the nut 
+in order to avoid tearing the flare while tightening the nut.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.4.6"><TTL>Flanges and Unions</TTL><BRK />
+<BRK />
+<TXT>Except where copper tubing is used, union or flanged joints shall be provided in each line immediately preceding 
+the connection to each piece of equipment or material requiring maintenance such as coils, pumps, control valves, 
+and other similar items.  Flanged joints shall be assembled square end tight with matched flanges, gaskets, and 
+bolts.  Gaskets shall be suitable for the intended application.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.1.5"><TTL>Valves</TTL><BRK />
+<BRK />
+<TXT>Isolation gate or ball valves shall be installed on each side of each piece of equipment, at the midpoint of 
+all looped mains, and at any other points indicated or required for draining, isolating, or sectionalizing purpose.  <DEL>
+Isolation valves may be omitted where balancing cocks are installed to provide both balancing and isolation functions.  </DEL>
+Each valve except check valves shall be identified.  Valves in horizontal lines shall be installed with stems 
+horizontal or above.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.6"><TTL>Air Vents</TTL><BRK />
+<BRK />
+<TXT>Air vents shall be provided at all high points, on all water coils, and where indicated to ensure adequate venting 
+of the piping system.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.7"><TTL>Drains</TTL><BRK />
+<BRK />
+<TXT>Drains shall be provided at all low points and where indicated to ensure complete drainage of the piping.  Drains 
+shall be accessible, and shall consist of nipples and caps or plugged tees unless otherwise indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.8"><TTL>Flexible Pipe Connectors</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Flexible pipe connectors will be provided where required to absorb expansion 
+and contraction, isolate vibration, absorb noise, compensate offset motion, 
+absorb continuous flexing, and relieve equipment from piping stresses.  Where 
+flexible pipe connectors are needed to correct lateral, parallel, and angular 
+misalignment, their use will be limited to maximum offset as recommended, in 
+writing, by the manufacturer.  Flexible pipe connectors will only be used on 
+water piping.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Connectors shall be attached to components in strict accordance with the latest printed instructions of the manufacturer 
+to ensure a vapor tight joint.  Hangers, when required to suspend the connectors, shall be of the type recommended 
+by the flexible pipe connector manufacturer and shall be provided at the intervals recommended.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.9"><TTL>Temperature Gauges</TTL><BRK />
+<BRK />
+<TXT>Temperature gauges shall be located on coolant supply and return piping at each heat exchanger, on condenser 
+water piping entering and leaving a condenser, at each automatic temperature control device without an integral 
+thermometer, and where indicated or required for proper operation of equipment.  Thermal wells for insertion 
+thermometers and thermostats shall extend beyond thermal insulation surface not less than<MET> 25 mm</MET><ENG> 1 inch</ENG>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.10"><TTL>Pipe Hangers, Inserts, and Supports</TTL><BRK />
+<BRK />
+<TXT>Pipe hangers, inserts, and supports shall conform to <RID>MLIT-M</RID>, except as supplemented and modified in this specification 
+section.  Hangers used to support piping<MET> 50 mm</MET><ENG> 2 inches</ENG> and larger shall be fabricated to permit adequate adjustment 
+after erection while still supporting the load.  Piping subjected to vertical movement, when operating temperatures 
+exceed ambient temperatures, shall be supported by variable spring hangers and supports or by constant support 
+hangers.</TXT><BRK />
+<BRK />
+<SPT outline="3.1.10.1"><TTL>Horizontal Pipe Supports</TTL><BRK />
+<BRK />
+<TXT>Horizontal pipe supports shall be spaced as specified in equivalent Japanese Standard and a support shall be 
+installed not over<MET> 300 mm</MET><ENG> 1 foot</ENG> from the pipe fitting joint at each change in direction of the piping.  Pipe 
+supports shall be spaced not over<MET> 1.5 m</MET><ENG> 5 feet</ENG> apart at valves.  Pipe hanger loads suspended from steel joist 
+with hanger loads between panel points in excess of<MET> 23 kg</MET><ENG> 50 pounds</ENG> shall have the excess hanger loads suspended 
+from panel points.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.10.2"><TTL>Vertical Pipe Supports</TTL><BRK />
+<BRK />
+<TXT>Vertical pipe shall be supported at each floor, except at slab-on-grade, and at intervals of not more than<MET> 4.5 
+m</MET><ENG> 15 feet</ENG>, not more than<MET> 2.4 m</MET><ENG> 8 feet</ENG> from end of risers, and at vent terminations.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.10.3"><TTL>Multiple Pipe Runs</TTL><BRK />
+<BRK />
+<TXT>In the support of multiple pipe runs on a common base member, a clip or clamp shall be used where each pipe crosses 
+the base support member.  Spacing of the base support members shall not exceed the hanger and support spacing 
+required for an individual pipe in the multiple pipe run.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.10.4"><TTL>Seismic Requirements</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use this subparagraph for Army projects only.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Provide seismic details, if a Government designer (either Corps office 
+of A/E) is the Engineer of Record, and show on the drawings.  Delete the bracketed 
+phrase if no seismic details are provided.  Sections <SRF>13 48 00</SRF> [SEISMIC] BRACING 
+FOR MISCELLANEOUS EQUIPMENT and <SRF>23 05 48.19</SRF> [SEISMIC] BRACING FOR HVAC, properly 
+edited, must be included in the contract documents.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Piping and attached valves shall be supported and braced to resist seismic loads as specified under Sections 
+<SRF>13 48 00</SRF> [SEISMIC] BRACING FOR MISCELLANEOUS EQUIPMENT and <SRF>23 05 48.19</SRF> [SEISMIC] BRACING FOR HVAC [as shown on 
+the drawings.]  Structural steel required for reinforcement to properly support piping, headers, and equipment 
+but not shown shall be provided under this section.  Material used for support shall be as specified under Section 
+<SRF>05 12 00</SRF> STRUCTURAL STEEL.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.10.5"><TTL>Structural Attachments</TTL><BRK />
+<BRK />
+<TXT>Attachment to building structure concrete and masonry shall be by cast-in concrete inserts, built-in anchors, 
+or masonry anchor devices.  Inserts and anchors shall be applied with a safety factor not less than 5.  Supports 
+shall not be attached to metal decking.  Supports shall not be attached to the underside of concrete filled floors 
+or concrete roof decks unless approved by the Contracting Officer.  Masonry anchors for overhead applications 
+shall be constructed of ferrous materials only.  Structural steel brackets required to support piping, headers, 
+and equipment, but not shown, shall be provided under this section.  Material used for support shall be as specified 
+under Section <SRF>05 12 00</SRF> STRUCTURAL STEEL.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.1.11"><TTL>Pipe Alignment Guides</TTL><BRK />
+<BRK />
+<TXT>Pipe alignment guides shall be provided where indicated for expansion loops, offsets, and bends and as recommended 
+by the manufacturer for expansion joints, not to exceed<MET> 1.5 m</MET><ENG> 5 feet</ENG> on each side of each expansion joint, and 
+in lines<MET> 100 mm</MET><ENG> 4 inches</ENG> or smaller not more than<MET> 600 mm</MET><ENG> 2 feet</ENG> on each side of the joint.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.12"><TTL>Pipe Anchors</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Designer shall indicate locations and details of pipe anchors on the 
+design drawings.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Anchors shall be provided where indicated.  Unless indicated otherwise, anchors shall comply with the requirements 
+specified.  Anchors shall consist of heavy steel collars with lugs and bolts for clamping and attaching anchor 
+braces, unless otherwise indicated.  Anchor braces shall be installed in the most effective manner to secure 
+the desired results using turnbuckles where required.</TXT><BRK />
+<BRK />
+<TXT>Supports, anchors, or stays shall not be attached where they will injure the structure or adjacent construction 
+during installation or by the weight of expansion of the pipeline.  Where pipe and conduit penetrations of vapor 
+barrier sealed surfaces occur, these items shall be anchored immediately adjacent to each penetrated surface, 
+to provide essentially zero movement within penetration seal.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.13"><TTL>Building Surface Penetrations</TTL><BRK />
+<BRK />
+<TXT>Sleeves shall not be installed in structural members except where indicated or approved.  Except as indicated 
+otherwise piping sleeves shall comply with requirements specified.  Sleeves in nonload bearing surfaces shall 
+be galvanized sheet metal, conforming to <RID>JIS G 3302</RID>.  Sleeves in load bearing surfaces shall be uncoated carbon 
+steel pipe, conforming to <RID>JIS G 3454</RID> and <RID>JIS B 2301</RID>, [Schedule 30][Schedule 20][Standard weight].  Sealants shall 
+be applied to moisture and oil-free surfaces and elastomers to not less than<MET> 13 mm</MET><ENG> 1/2 inch</ENG> depth.  Sleeves shall 
+not be installed in structural members.</TXT><BRK />
+<BRK />
+<SPT outline="3.1.13.1"><TTL>Refrigerated Space</TTL><BRK />
+<BRK />
+<TXT>Refrigerated space building surface penetrations shall be fitted with sleeves fabricated from hand-lay-up or 
+helically wound, fibrous glass reinforced polyester or epoxy resin with a minimum thickness equal to equivalent 
+size Schedule 40 steel pipe.  Sleeves shall be constructed with integral collar or cold side shall be fitted 
+with a bonded slip-on flange or extended collar.</TXT><BRK />
+<BRK />
+<TXT>In the case of masonry penetrations where sleeve is not cast-in, voids shall be filled with latex mixed mortar 
+cast to shape of sleeve and flange/external collar type sleeve shall be assembled with butyl elastomer vapor 
+barrier sealant through penetration to cold side surface vapor barrier overlap and fastened to surface with masonry 
+anchors.</TXT><BRK />
+<BRK />
+<TXT>Integral cast-in collar type sleeve shall be flashed [as indicated.] [with not less than<MET> 100 mm</MET><ENG> 4 inches</ENG> of cold 
+side vapor barrier overlap of sleeve surface.]  Normally noninsulated penetrating round surfaces shall be sealed 
+to sleeve bore with mechanically expandable seals in vapor tight manner and remaining warm and cold side sleeve 
+depth shall be insulated with not less than<MET> [100][_____]mm</MET><ENG> [4][_____] inches</ENG> of foamed-in-place rigid polyurethane 
+or foamed-in-place silicone elastomer.</TXT><BRK />
+<BRK />
+<TXT>Vapor barrier sealant shall be applied to finish warm side insulation surface.  Warm side of penetrating surface 
+shall be insulated beyond vapor barrier sealed sleeve insulation for a distance which prevents condensation.  
+Wires in refrigerated space surface penetrating conduit shall be sealed with vapor barrier plugs or compound 
+to prevent moisture migration through conduit and condensation therein.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.13.2"><TTL>General Service Areas</TTL><BRK />
+<BRK />
+<TXT>Each sleeve shall extend through its respective wall, floor, or roof, and shall be cut flush with each surface.  
+Pipes passing through concrete or masonry wall or concrete floors or roofs shall be provided with pipe sleeves 
+fitted into place at the time of construction.  Sleeves shall be of such size as to provide a minimum of<MET> 6.35 
+mm</MET><ENG> 1/4 inch</ENG> all-around clearance between bare pipe and sleeves or between jacketed-insulation and sleeves.  Except 
+in pipe chases or interior walls, the annular space between pipe and sleeve or between jacket over-insulation 
+and sleeve shall be sealed in accordance with Section <SRF>07 92 00</SRF> JOINT SEALANTS.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.13.3"><TTL>Waterproof Penetrations</TTL><BRK />
+<BRK />
+<TXT>Pipes passing through roof or floor waterproofing membrane shall be installed through a<MET> 5.17 kg/sq. m</MET><ENG> .17 ounce</ENG>
+ copper sleeve, or a<MET> 0.81 mm</MET><ENG> 0.032 inch</ENG> thick aluminum sleeve, each within an integral skirt or flange.</TXT><BRK />
+<BRK />
+<TXT>Flashing sleeve shall be suitably formed, and skirt or flange shall extend not less than<MET> 200 mm</MET><ENG> 8 inches</ENG> from 
+the pipe and be set over the roof or floor membrane in a troweled coating of bituminous cement.  The flashing 
+sleeve shall extend up the pipe a minimum of<MET> 50 mm</MET><ENG> 2 inches</ENG> above the roof or floor penetration.  The annular 
+space between the flashing sleeve and the bare pipe or between the flashing sleeve and the metal-jacket-covered 
+insulation shall be sealed as indicated.  Penetrations shall be sealed by either one of the following methods.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Waterproofing Clamping Flange:  Pipes up to and including<MET> 250 mm</MET><ENG> 10 inches</ENG> in diameter passing through 
+roof or floor waterproofing membrane may be installed through a cast iron sleeve with caulking recess, 
+anchor lugs, flashing clamp device, and pressure ring with brass bolts.  Waterproofing membrane shall 
+be clamped into place and sealant shall be placed in the caulking recess.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Modular Mechanical Type Sealing Assembly:  In lieu of a waterproofing clamping flange, a modular 
+mechanical type sealing assembly may be installed.  Seals shall consist of interlocking synthetic rubber 
+links shaped to continuously fill the annular space between the pipe/conduit and sleeve with corrosion 
+protected carbon steel bolts, nuts, and pressure plates.  Links shall be loosely assembled with bolts 
+to form a continuous rubber belt around the pipe with a pressure plate under each bolt head and each 
+nut.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">    After the seal assembly is properly positioned in the sleeve, tightening of the bolt shall cause 
+the rubber sealing elements to expand and provide a watertight seal rubber sealing elements to expand 
+and provide a watertight seal between the pipe/conduit seal between the pipe/conduit and the sleeve.  
+Each seal assembly shall be sized as recommended by the manufacturer to fit the pipe/conduit and sleeve 
+involved.  The Contractor electing to use the modular mechanical type seals shall provide sleeves of 
+the proper diameters.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.13.4"><TTL>Fire-Rated Penetrations</TTL><BRK />
+<BRK />
+<TXT>Penetration of fire-rated walls, partitions, and floors shall be sealed as specified in Section <SRF>07 84 00</SRF> FIRESTOPPING.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.1.13.5"><TTL>Escutcheons</TTL><BRK />
+<BRK />
+<TXT>Finished surfaces where exposed piping, bare or insulated, pass through floors, walls, or ceilings, except in 
+boiler, utility, or equipment rooms, shall be provided with escutcheons.  Where sleeves project slightly from 
+floors, special deep-type escutcheons shall be used.  Escutcheon shall be secured to pipe or pipe covering.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.1.14"><TTL>Access Panels</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  To the extent possible, designer shall indicate locations of access panels 
+on the design drawings.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Access panels shall be provided where indicated for all concealed valves, vents, controls, and additionally for 
+items requiring inspection or maintenance.  Access panels shall be of sufficient size and located so that the 
+concealed items may be serviced and maintained or completely removed and replaced.  Access panels shall be as 
+specified in[ Section <SRF>05 50 13</SRF> MISCELLANEOUS METAL FABRICATIONS][ Section <SRF>05 51 33</SRF> METAL LADDERS][ Section 
+<SRF>05 52 00</SRF> METAL RAILINGS][ Section <SRF>05 51 00</SRF> METAL STAIRS].</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.2"><TTL>ELECTRICAL INSTALLATION</TTL><BRK />
+<BRK />
+<TXT>Install electrical equipment in accordance with NFPA 70 and manufacturers instructions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3"><TTL>CLEANING AND ADJUSTING</TTL><BRK />
+<BRK />
+<TXT>Pipes shall be cleaned free of scale and thoroughly flushed of all foreign matter.  A temporary bypass shall 
+be provided for all water coils to prevent flushing water from passing through coils.  Strainers and valves shall 
+be thoroughly cleaned.  Prior to testing and balancing, air shall be removed from all water systems by operating 
+the air vents.  Temporary measures, such as piping the overflow from vents to a collecting vessel shall be taken 
+to avoid water damage during the venting process.  Air vents shall be plugged or capped after the system has 
+been vented.  Control valves and other miscellaneous equipment requiring adjustment shall be adjusted to setting 
+indicated or directed.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4"><TTL>FIELD TESTS</TTL><BRK />
+<BRK />
+<TXT>Field tests shall be conducted in the presence of the QC Manager or his designated representative to verify systems 
+compliance with  specifications.  Any material, equipment, instruments, and personnel required for the test shall 
+be provided by the Contractor.</TXT><BRK />
+<BRK />
+<SPT outline="3.4.1"><TTL>Equipment and Component Isolation</TTL><BRK />
+<BRK />
+<TXT>Prior to testing, equipment and components that cannot withstand the tests shall be properly isolated. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.2"><TTL>Pressure Tests</TTL><BRK />
+<BRK />
+<TXT>Each piping system shall be hydrostatically tested at a pressure not less than<MET> 1297 kPa (gage)</MET><ENG> 188 psig</ENG> for period 
+of time sufficient to inspect every joint in the system and in no case less than 2 hours.  Test pressure shall 
+be monitored by a currently calibrated test pressure gauge.  Leaks shall be repaired and piping retested until 
+test requirements are met.  No leakage or reduction in gage pressure shall be allowed.</TXT><BRK />
+<BRK />
+<TXT>Leaks shall be repaired by rewelding or replacing pipe or fittings.  Caulking of joints will not be permitted.  
+Concealed and insulated piping shall be tested in place before concealing.</TXT><BRK />
+<BRK />
+<TXT>Submit for approval <SUB>pressure tests reports</SUB> covering the above specified piping pressure tests; describe the systems 
+tested, test results, defects found and repaired, and signature of the pressure tests' director.  Obtain approval 
+from the QC Manager before concealing piping or applying insulation to tested and accepted piping.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.3"><TTL><SUB>Condenser Water Quality Test Reports</SUB></TTL><BRK />
+<BRK />
+<TXT>The condenser water system shall be analyzed by the water treatment company a minimum of once a month for a period 
+of one year after system acceptance.  Submit for approval the specified condenser water quality test reports.  
+The analysis and resulting reports shall include the following information recorded in accordance with <RID>JIS K 0102</RID>
+.</TXT><BRK />
+<TAB HEADERROWS="0">
+<WBK>
+   <STS />
+   <TDA COLUMNCOUNT="2" ROWCOUNT="21">
+      <COL AUTOWIDTH="0" WIDTH="251.25" />
+      <COL AUTOWIDTH="0" WIDTH="333.75" />
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Date of Sample</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____]</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Temperature</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] degrees<MET> C</MET><ENG> F</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Silica (Sino 2)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Insoluble</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Iron and Aluminum Oxides</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Calcium (Ca)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Magnesium (Mg)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Sodium and Potassium (Nan and AK)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Carbonate (HO 3)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Sulfate (SO 4)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Chloride (JCL)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Nitrate (NO 3</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] pp (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Turbidity</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] unit</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">pH</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____]</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Residual Chlorine</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] ppm (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Total Alkalinity</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] epm (meq/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Non-Carbonate Hardness</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] epm (meq/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Total Hardness</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] epm (meq/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Dissolved Solids</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] ppm (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Fluorine</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] ppm (mg/1)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL>
+<DTA TYPE="STRING">Conductivity</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[_____] microhm/cm</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK /></SPT>
+<SPT outline="3.4.4"><TTL>Related Field Inspections and Testing</TTL><BRK />
+<BRK />
+<SPT outline="3.4.4.1"><TTL>Piping Welds</TTL><BRK />
+<BRK />
+<TXT>Examination of Piping Welds is specified in the paragraph EXAMINATION OF PIPING WELDS (above).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4.4.2"><TTL>HVAC TAB</TTL><BRK />
+<BRK />
+<TXT>Requirements for testing, adjusting, and balancing (TAB) of HVAC water piping, and associated equipment is specified 
+in Section <SRF>23 05 93</SRF> TESTING, ADJUSTING, AND BALANCING FOR HVAC.  Coordinate with the TAB team, and provide support 
+personnel and equipment as specified in Section <SRF>23 05 93</SRF> TESTING, ADJUSTING AND BALANCING FOR HVAC to assist 
+TAB team to meet the TAB work requirements.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="3.5"><TTL>INSTRUCTION TO GOVERNMENT PERSONNEL</TTL><BRK />
+<BRK />
+<TXT>Furnish the services of competent instructors to give full instruction to the designated Government personnel 
+in the adjustment, operation, and maintenance, including pertinent safety requirements, of the [chilled water,] 
+[chilled-hot water,][ and][ condenser water piping system[s]].  Instructors shall be thoroughly familiar with 
+all parts of the installation and shall be instructed in operating theory as well as practical operation and 
+maintenance work.  Submit a lesson plan for the instruction course for approval.  The lesson plan and instruction 
+course shall be based on the approved operation and maintenance data and maintenance manuals.</TXT><BRK />
+<BRK />
+<TXT>Conduct a training course for the operating staff and maintenance staff selected by the Contracting Officer.  
+Give the instruction during the first regular work week after the equipment or system has been accepted and turned 
+over to the Government for regular operation.  The number of man-days (8 hours per day) of instruction furnished 
+shall be [one man-day.][[_____][_____] continuous man-days].  Use approximately half of the time for classroom 
+instruction and the other time for instruction at the location of equipment or system.</TXT><BRK />
+<BRK />
+<TXT>When significant changes or modifications in the equipment or system are made under the terms of the contract, 
+provide additional instruction to acquaint the operating personnel with the changes or modifications.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.6"><TTL><SUB>ONE-YEAR INSPECTION REPORT FOR COOLING WATER</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Include this paragraph and the corresponding submittal requirements if 
+the piping specified by this specification is to be used in conjunction with 
+either a cooling tower and/or water-cooled refrigeration/air-conditioning equipment.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>At the conclusion of the one year period, each connecting [cooling tower] [and] [liquid chiller condenser] inspect 
+for problems due to corrosion, scale, and biological growth.  If the equipment is found not to conform to the 
+manufacturers recommended conditions, and the water treatment company <NED />recommendations have been followed; the 
+water treatment company shall provide all chemicals and labor for cleaning or repairing the equipment as required 
+by the manufacturer's recommendations.</TXT><BRK />
+<BRK /></SPT>
+</PRT>    <END /><BRK /></SEC>

@@ -1,0 +1,2719 @@
+<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
+<HDR><AST/><BRK/>
+USACE / NAVFAC / AFCEC / NASA                UFGS-23 07 00 (February 2013)<BRK/>
+                                             Change 4 - 08/18<BRK/>
+                                             ---------------------------<BRK/>
+Preparing Activity:  <PRA>USACE</PRA>                   Superseding<BRK/>
+                                             UFGS-23 07 00 (August 2010)<BRK/>
+<BRK/>
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK/>
+<BRK/>
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK/>
+<AST/><BRK/></HDR>
+<BRK/>
+<SCN>SECTION 23 07 00</SCN><BRK/>
+<BRK/>
+<STL>THERMAL INSULATION FOR MECHANICAL SYSTEMS</STL><BRK/>
+<DTE>02/13</DTE><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project.  The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>field applied thermal 
+insulation on HVAC and plumbing systems located within, on, under, and adjacent 
+to buildings; above and below ground</SCP>.<BRK/>
+<BRK/>
+Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.  For bracketed items, choose applicable 
+item(s) or insert appropriate information.<BRK/>
+<BRK/>
+Remove information and requirements not required in respective project, whether 
+or not brackets are present.<BRK/>
+<BRK/>
+Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Show the following information on project drawings:</NPR><BRK/>
+<BRK/>
+<NPR>1.  Areas where pipe insulation differs from the "Typical;"</NPR><BRK/>
+<BRK/>
+<NPR>2.  Areas where ductwork is to be internally insulated;</NPR><BRK/>
+<BRK/>
+<NPR>3.  Areas where metal jackets or 8-ply vapor barrier jacket are to be used on 
+interior piping;</NPR><BRK/>
+<BRK/>
+<NPR>4.  Pumps to be insulated and encased in 20 gauge boxes; and</NPR><BRK/>
+<BRK/>
+<NPR>5.  Heat exchange temperatures.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>REFERENCES</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification.  The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK/>
+<BRK/>
+Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<BRK/>
+<BRK/>
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.  At the discretion of the Government, the manufacturer 
+of any material supplied will be required to furnish test reports pertaining to any of the tests necessary to 
+assure compliance with the standard or standards referenced in this specification.</TXT><BRK/>
+<BRK/>
+<REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK/>
+<BRK/>
+<RID>ASTM C547</RID><RTL>(2017) Standard Specification for Mineral Fiber 
+Pipe Insulation</RTL><BRK/>
+<BRK/>
+<RID>ASTM C592</RID><RTL>(2016) Standard Specification for Mineral Fiber 
+Blanket Insulation and Blanket-Type Pipe Insulation 
+(Metal-Mesh Covered) (Industrial Type)</RTL><BRK/>
+<BRK/>
+<RID>ASTM C612</RID><RTL>(2014) Mineral Fiber Block and Board Thermal 
+Insulation</RTL><BRK/>
+<BRK/>
+<RID>ASTM C647</RID><RTL>(2008; R 2013) Properties and Tests of Mastics 
+and Coating Finishes for Thermal Insulation</RTL><BRK/>
+<BRK/>
+<RID>ASTM C921</RID><RTL>(2010) Standard Practice for Determining the 
+Properties of Jacketing Materials for Thermal 
+Insulation</RTL><BRK/>
+<BRK/>
+<RID>ASTM C1136</RID><RTL>(2021) Standard Specification for Flexible, 
+Low Permeance Vapor Retarders for Thermal Insulation</RTL><BRK/>
+<BRK/>
+<RID>ASTM D882</RID><RTL>(2012) Tensile Properties of Thin Plastic Sheeting</RTL><BRK/>
+<BRK/>
+<RID>ASTM D5590</RID><RTL>(2000; R 2010; E 2012) Standard Test Method 
+for Determining the Resistance of Paint Films 
+and Related Coatings to Fungal Defacement by 
+Accelerated Four-Week Agar Plate Assay</RTL><BRK/>
+<BRK/>
+<RID>ASTM E84</RID><RTL>(2023) 
+Standard Test Method for Surface Burning Characteristics 
+of Building Materials</RTL><BRK/>
+<BRK/>
+<RID>ASTM E96/E96M</RID><RTL>(2021) Standard Test Methods for Water Vapor 
+Transmission of Materials</RTL><BRK/>
+<BRK/>
+<RID>ASTM E2231</RID><RTL>(2018) Standard Practice for Specimen Preparation 
+and Mounting of Pipe and Duct Insulation Materials 
+to Assess Surface Burning Characteristics</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>CALIFORNIA DEPARTMENT OF PUBLIC HEALTH (CDPH)</ORG><BRK/>
+<BRK/>
+<RID>CDPH SECTION 01350</RID><RTL>(2010; Version 1.1) Standard Method for the 
+Testing and Evaluation of Volatile Organic Chemical 
+Emissions from Indoor Sources using Environmental 
+Chambers</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>FM GLOBAL (FM)</ORG><BRK/>
+<BRK/>
+<RID>FM APP GUIDE</RID><RTL>(updated on-line) Approval Guide http://www.approvalguide.com/</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>GREEN SEAL (GS)</ORG><BRK/>
+<BRK/>
+<RID>GS-36</RID><RTL>(2013) Adhesives for Commercial Use</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION (ISO)</ORG><BRK/>
+<BRK/>
+<RID>ISO 2758</RID><RTL>(2014) Paper - Determination of Bursting Strength</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK/>
+<BRK/>
+<RID>NFPA 90A</RID><RTL>(2018) Standard for the Installation of Air 
+Conditioning and Ventilating Systems</RTL><BRK/>
+<BRK/>
+<RID>NFPA 90B</RID><RTL>(2018) Standard for the Installation of Warm 
+Air Heating and Air Conditioning Systems</RTL><BRK/>
+<BRK/>
+<RID>NFPA 96</RID><RTL>(2017; TIA 17-1) Standard for Ventilation Control 
+and Fire Protection of Commercial Cooking Operations</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>SOUTH COAST AIR QUALITY MANAGEMENT DISTRICT (SCAQMD)</ORG><BRK/>
+<BRK/>
+<RID>SCAQMD Rule 1168</RID><RTL>(2017) Adhesive and Sealant Applications</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>TECHNICAL ASSOCIATION OF THE PULP AND PAPER INDUSTRY (TAPPI)</ORG><BRK/>
+<BRK/>
+<RID>TAPPI T403 OM</RID><RTL>(2015) Bursting Strength of Paper</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. DEPARTMENT OF DEFENSE (DOD)</ORG><BRK/>
+<BRK/>
+<RID>MIL-A-24179</RID><RTL>(1969; Rev A; Am 2 1980; Notice 1 1987) Adhesive, 
+Flexible Unicellular-Plastic Thermal Insulation</RTL><BRK/>
+<BRK/>
+<RID>MIL-A-3316</RID><RTL>(1987; Rev C; Am 2 1990) Adhesives, Fire-Resistant, 
+Thermal Insulation</RTL><BRK/>
+<BRK/>
+<RID>MIL-PRF-19565</RID><RTL>(1988; Rev C) Coating Compounds, Thermal Insulation, 
+Fire- and Water-Resistant, Vapor-Barrier</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG><BRK/>
+<BRK/>
+<RID>JIS A 5538</RID><RTL>(2018) Adhesives for Wall and Ceiling Boards</RTL><BRK/>
+<BRK/>
+<RID>JIS A 9504</RID><RTL>(2021) Man Made Mineral Fibre Thermal Insulation 
+Materials</RTL><BRK/>
+<BRK/>
+<RID>JIS G 4304</RID><RTL>(2021) Hot-Rolled Stainless Steel Plate, Sheet 
+and Strip</RTL><BRK/>
+<BRK/>
+<RID>JIS H 4000</RID><RTL>(2017) Aluminium 
+and Aluminium Alloy Sheets, Strips and Plates 
+(Amendment 1)</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>MINISTRY OF LAND, INFRASTRUCTURE, TRANSPORT AND TOURISM 
+(MLIT)</ORG><BRK/>
+<BRK/>
+<RID>MLIT-M</RID><RTL>(2019) Public Building Construction Standard 
+Specification</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>UNDERWRITERS LABORATORIES (UL)</ORG><BRK/>
+<BRK/>
+<RID>UL 723</RID><RTL>(2018) UL Standard for Safety Test for Surface 
+Burning Characteristics of Building Materials</RTL><BRK/>
+<BRK/>
+<RID>UL 2818</RID><RTL>(2022) GREENGUARD Certification Program For 
+Chemical Emissions For Building Materials, Finishes 
+And Furnishings</RTL><BRK/>
+<BRK/>
+<BRK/></REF>
+<REF><ORG>SOUTH COAST AIR QUALITY MANAGEMENT DISTRICT (SCAQMD)</ORG><BRK/>
+<BRK/>
+<RID>SCAQMD Rule 1168</RID><RTL>(2017) Adhesive and Sealant Applications</RTL><BRK/>
+<BRK/>
+<BRK/></REF>
+</SPT><SPT><TTL>SYSTEM DESCRIPTION</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification is to be used for field applied insulation on 
+mechanical systems; interior and exterior, above and below ground.  Insulation 
+for energy distribution systems covered by Sections <SRF>33 61 13</SRF> PRE-ENGINEERED 
+UNDERGROUND HEAT DISTRIBUTION SYSTEM, <SRF>33 63 13.19</SRF> CONCRETE TRENCH HYDRONIC AND 
+STEAM ENERGY DISTRIBUTION, <SRF>33 61 13.13</SRF> PREFABRICATED UNDERGROUND HYDRONIC ENERGY 
+DISTRIBUTION, and <SRF>33 60 02</SRF> ABOVEGROUND HEAT DISTRIBUTION SYSTEM, are not within 
+the scope of this guide specification.  Heating, air conditioning, and evaporative 
+cooling <TAI OPT="DUCT INSULATION">duct;</TAI> <TAI OPT="EQUIPMENT INSULATION">equipment;</TAI> and <TAI OPT="PIPE INSULATION">piping</TAI> are included.<BRK/>
+<BRK/>
+<TAI OPT="PIPE INSULATION">Pipe insulation covered in this specification is valid for between<MET> minus 34 
+and plus 204 degrees C</MET><ENG> minus 30 and plus 400 degrees F</ENG>.</TAI>  <TAI OPT="EQUIPMENT INSULATION">Equipment insulation 
+covered in this specification is valid for between<MET> minus 34 and plus 982 degrees 
+C</MET><ENG> minus 30 and plus 1800 degrees F</ENG>.</TAI></NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>General</TTL><BRK/>
+<BRK/>
+<TXT>Provide field-applied insulation and accessories on mechanical systems as specified herein; factory-applied insulation 
+is specified under the piping, duct or equipment to be insulated.  Insulation of heat distribution systems and 
+chilled water systems outside of buildings shall be as specified in Section <SRF>33 61 13</SRF> PRE-ENGINEERED UNDERGROUND 
+HEAT DISTRIBUTION SYSTEM, Section <SRF>33 63 13.19</SRF> CONCRETE TRENCH HYDRONIC AND STEAM ENERGY DISTRIBUTION, Section 
+<SRF>33 60 02</SRF> ABOVEGROUND HEAT DISTRIBUTION SYSTEM, and Section <SRF>33 61 13.13</SRF> PREFABRICATED UNDERGROUND HYDRONIC ENERGY 
+DISTRIBUTION.  Field applied insulation materials required for use on Government-furnished items as listed in 
+the SPECIAL CONTRACT REQUIREMENTS shall be furnished and installed by the Contractor.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>SUBMITTALS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.<BRK/>
+<BRK/>
+The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G."  Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a “G” to an item, if the submittal is sufficiently important or complex 
+in context of the project.<BRK/>
+<BRK/>
+For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office.  Codes following the "G" typically are not used for Navy, Air Force, 
+and NASA projects.<BRK/>
+<BRK/>
+The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
+submittal under the SD number that best describes the submittal item.<BRK/>
+<BRK/>
+Choose the first bracketed item for Navy, Air Force and NASA projects, or choose 
+the second bracketed item for Army projects.</NPR><BRK/>
+<BRK/>
+<NPR>In SD-04, Designer will exclude ductwork insulation display samples for small, 
+simple projects where the extent of duct insulation is not likely to cause a 
+problem of enforcement with the requirements of the specification.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are for [Contractor Quality Control approval.] [information only.  When used, a designation following the "G" 
+designation identifies the office that will review the submittal for the Government.]  Submittals with an "S" 
+are for inclusion in the Sustainability eNotebook, in conformance to Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  
+Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
+<BRK/>
+<TXT>Submit the three SD types, SD-02 Shop Drawings, SD-03 Product Data, and SD-08 Manufacturer's Instructions at 
+the same time for each system.</TXT><BRK/>
+<BRK/>
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  For NAVFAC LANT projects, delete the requirement for this SD-02 Shop 
+Drawing Submittal.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<ITM><SUB>Pipe Insulation Systems</SUB> and Associated Accessories</ITM><BRK/>
+<BRK/>
+<ITM><SUB>Duct Insulation Systems</SUB> and Associated Accessories</ITM><BRK/>
+<BRK/>
+<TAI OPT="EQUIPMENT INSULATION"><ITM><SUB>Equipment Insulation Systems</SUB> and Associated Accessories</ITM></TAI><BRK/>
+<BRK/></SPT>
+<SPT><TTL>CERTIFICATIONS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Adhesives and Sealants</TTL><BRK/>
+<BRK/>
+<TXT>Provide products certified to meet indoor air quality requirements by <RID>UL 2818</RID> (Greenguard) 
+Gold, SCS Global Services Indoor Advantage Gold or provide certification or validation by other third-party programs 
+that products meet the requirements of this Section. Provide current product certification documentation from 
+certification body.  When product does not have certification, provide validation that product meets the indoor 
+air quality product requirements cited herein. Inlcude VOC content requirements of <RID>SCAQMD Rule 1168</RID>, <RID>GS-36</RID>, or 
+F 4-Star.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>QUALITY ASSURANCE</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Installer Qualification</TTL><BRK/>
+<BRK/>
+<TXT>Qualified installers shall have successfully completed three or more similar type jobs within the last 5 years.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>DELIVERY, STORAGE, AND HANDLING</TTL><BRK/>
+<BRK/>
+<TXT>Materials shall be delivered in the manufacturer's unopened containers.  Materials delivered and placed in storage 
+shall be provided with protection from weather, humidity, dirt, dust and other contaminants.  The Contracting 
+Officer may reject insulation material and supplies that become dirty, dusty, wet, or contaminated by some other 
+means.  Packages or standard containers of insulation, jacket material, cements, adhesives, and coatings delivered 
+for use, and samples required for approval shall have manufacturer's stamp or label attached giving the name 
+of the manufacturer and brand, and a description of the material, date codes, and approximate shelf life (if 
+applicable).  Insulation packages and containers shall be asbestos free.</TXT><BRK/>
+<BRK/></SPT>
+</PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>STANDARD PRODUCTS</TTL><BRK/>
+<BRK/>
+<TXT>Provide materials which are the standard products of manufacturers regularly engaged in the manufacture of such 
+products and that essentially duplicate items that have been in satisfactory use for at least 2 years prior to 
+bid opening.  Submit a complete list of materials, including manufacturer's descriptive technical literature, 
+performance data, catalog cuts, and installation instructions.  The product number, k-value, thickness and furnished 
+accessories including adhesives, sealants and jackets for each mechanical system requiring insulation shall be 
+included.  The product data must be copyrighted, have an identifying or publication number, and shall have been 
+published prior to the issuance date of this solicitation.  Materials furnished under this section shall be submitted 
+together in a booklet<TAI OPT="ARMY">. </TAI></TXT><BRK/>
+<BRK/>
+<SPT><TTL>Insulation System</TTL><BRK/>
+<BRK/>
+<TXT>Provide insulation systems in accordance with <RID>MLIT-M</RID>.  Provide field-applied insulation for heating, ventilating, 
+and cooling (HVAC) air distribution systems and piping systems that are located within, on, under, and adjacent 
+to buildings; and for plumbing systems.  </TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Surface Burning Characteristics</TTL><BRK/>
+<BRK/>
+<TXT>Unless otherwise specified, insulation must have a maximum flame spread<BRK/>
+index of 25 and a maximum smoke developed index of 50 when tested in<BRK/>
+accordance with <RID>ASTM E84</RID>.  Flame spread, and smoke developed indexes,shall be determined by <RID>ASTM E84</RID> or <RID>UL 723</RID>
+.  Test insulation in the same density and installed thickness as the material to be used in the actual construction.  
+Prepare and mount test specimens according to <RID>ASTM E2231</RID>.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>MATERIALS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Tables 1, 2, 3, 4, and 5 are not inclusive of systems requiring insulation.  
+Edit, modify, and add to the information contained in tables as required for 
+your project requiring insulation.  These tables shall become a part of project 
+specification.</NPR><BRK/>
+<BRK/>
+<NPR>For cryogenic equipment handling media between<MET> minus 34 and minus 18 degrees 
+C</MET><ENG> minus30 and minus one degree F</ENG>, use elastomeric closed cell or cellular glass.</NPR><BRK/>
+<BRK/>
+<NPR>Table 7 is primarily used for personnel safety where stacks or pipes are within 
+reach, or if stacks or pipes run through conditioned spaces where heat losses 
+may increase building energy usage.</NPR><BRK/>
+<BRK/>
+<NPR>ASHRAE 90.2 is for low-rise residential building.  ASHRAE 90.1 is for all buildings 
+except low-rise residential buildings.  Low-rise building has one or two stories 
+without elevators.  High-rise building has multistory with elevators.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Insulation exterior shall be cleanable, grease resistant, non-flaking and non-peeling.  Materials shall be compatible 
+and shall not contribute to corrosion, soften, or otherwise attack surfaces to which applied in either wet or 
+dry state.  </TXT><BRK/>
+<BRK/>
+<SPT><TTL>Adhesives</TTL><BRK/>
+<BRK/>
+<TXT>Provide non-aerosol adhesive products used on the interior of the building (defined as inside of the weatherproofing 
+system) that meet either emissions requirements of CDPH SECTION 01350 (limit requirements for either office or 
+classroom spaces regardless of space type) or VOC content requirements of SCAQMD Rule 1168 (HVAC duct sealants 
+must meet limit requirements of "Other" category within SCAQMD Rule 1168 sealants table).  Provide aerosol adhesives 
+used on the interior of the building that meet either emissions requirements of CDPH SECTION 01350 (use the office 
+or classroom requirements, regardless of space type) or VOC content requirements of GS-36.  Provide certification 
+or validation of indoor air quality for adhesives.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Acoustical Lining Insulation Adhesive</TTL><BRK/>
+<BRK/>
+<TXT>Adhesive shall be a nonflammable, fire-resistant adhesive conforming to <RID>JIS A 5538</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Mineral Fiber Insulation Cement</TTL><BRK/>
+<BRK/>
+<TXT>Cement shall be in accordance with <RID>JIS A 9504</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Lagging Adhesive</TTL><BRK/>
+<BRK/>
+<TXT>Lagging is the material used for thermal insulation, especially around a cylindrical object.  This may include 
+the insulation as well as the cloth/material covering the insulation.  [To resist mold/mildew, lagging adhesive 
+shall meet <RID>ASTM D5590</RID> with 0 growth rating.  ]Lagging adhesives shall be nonflammable and fire-resistant and 
+shall have a maximum flame spread index of 25 and a maximum smoke developed index of 50 when tested in accordance 
+with <RID>ASTM E84</RID>.  Adhesive shall be <RID>MIL-A-3316</RID>, Class 1, pigmented [white] [red] and be suitable for bonding fibrous 
+glass cloth to faced and unfaced fibrous glass insulation board; for bonding cotton brattice cloth to faced and 
+unfaced fibrous glass insulation board; for sealing edges of and bonding glass tape to joints of fibrous glass 
+board; for bonding lagging cloth to thermal insulation; or Class 2 for attaching fibrous glass insulation to 
+metal surfaces.  Lagging adhesives shall be applied in strict accordance with the manufacturer's recommendations 
+for pipe and duct insulation.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Contact Adhesive</TTL><BRK/>
+<BRK/>
+<TXT>Adhesives may be any of, but not limited to, the neoprene based, rubber based, or elastomeric type that have 
+a maximum flame spread index of 25 and a maximum smoke developed index of 50 when tested in accordance with <RID>ASTM E84</RID>
+.  The adhesive shall not adversely affect, initially or in service, the insulation to which it is applied, nor 
+shall it cause any corrosive effect on metal to which it is applied.  Any solvent dispersing medium or volatile 
+component of the adhesive shall have no objectionable odor and shall not contain any benzene or carbon tetrachloride.  
+The dried adhesive shall not emit nauseous, irritating, or toxic volatile matters or aerosols when the adhesive 
+is heated to any temperature up to<MET> 100 degrees C</MET><ENG> 212 degrees F</ENG>.  The dried adhesive shall be nonflammable and 
+fire resistant.  Flexible Elastomeric Adhesive:  Comply with <RID>MIL-A-24179</RID>, Type II, Class I.  Provide product 
+listed in <RID>FM APP GUIDE</RID>.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Caulking</TTL><BRK/>
+<BRK/>
+<TXT>Caulking shall be in accordance with <RID>MLIT-M</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Corner Angles</TTL><BRK/>
+<BRK/>
+<TXT>Nominal<MET> 0.406 mm</MET><ENG> 0.016 inch</ENG> aluminum<MET> 25 by 25 mm</MET><ENG> 1 by 1 inch</ENG> with factory applied kraft backing.  Aluminum shall 
+be<RID>JIS H 4000</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Finishing Cement</TTL><BRK/>
+<BRK/>
+<TXT><RID>MLIT-M</RID>: Mineral fiber hydraulic-setting thermal insulating and finishing cement.  All cements that may come in 
+contact with Austenitic stainless steel must comply with <RID>MLIT-M</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Fibrous Glass Cloth and Glass Tape</TTL><BRK/>
+<BRK/>
+<TXT>Fibrous glass cloth, with 20X20 maximum mesh size, and glass tape shall be have maximum flame spread index of 
+25 and a maximum smoke developed index of 50 when tested in accordance with <RID>ASTM E84</RID>.  Tape shall be<MET> 100 mm</MET><ENG> 4 
+inch</ENG> wide rolls.  Class 3 tape shall be<MET> 0.15 kg/square m</MET><ENG> 4.5 ounces/square yard</ENG>.  Elastomeric Foam Tape: Black 
+vapor-retarder foam tape with acrylic adhesive containing an anti-microbial additive.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Staples</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  For cold applications (cold water, chilled water, and brine systems), 
+staples and/or tacks are not permitted to be installed on vapor retarder/barrier 
+jackets or fitting covers.</NPR><BRK/>
+<BRK/>
+<NPR>Monel is a nickel rich alloy that has high strength, high ductility, and excellent 
+resistance to corrosion.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Outward clinching type [monel] [<RID>JIS G 4304</RID>, Type 304 or 316 stainless steel].</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Jackets</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The purpose of jacketing insulated pipes and vessels is to protect the 
+vapor retarder system and the insulation.  Protective jacketing is designed 
+to be installed over the vapor retarder/vapor barrier and insulation to prevent 
+weather and abrasion damage.  The protective jacketing must be installed independently 
+and in addition to any factory or field applied vapor retarder.</NPR><BRK/>
+<BRK/>
+<NPR>VAPOR BARRIER/VAPOR RETARDER.  To determine which system is required, the following 
+criteria shall be applied:  On ducts, piping and equipment operating below [select 
+a temperature that is at least equal to the dry bulb temperature's median of 
+extreme highs from the region's weather data] or located outside shall be equipped 
+with a vapor barrier.  Whereas ducts, pipes and equipment that are located inside 
+and that always operate above [use the same temperature selected earlier in 
+this paragraph which is based on the region's median of extreme highs dry bulb 
+temperature] shall be installed with a vapor retarder where required as stated 
+in "Vapor Retarder Required."<BRK/>
+<BRK/>
+A vapor barrier should be installed where there is a possiblity of condensation.  
+Therefore, the designer shall require a vapor barrier where the temperature 
+in the system may be below the ambient temperature.  If the application operates 
+at times above the selected temperature and other times below the selected temperature, 
+the application shall be equiped with a vapor barrier.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>Aluminum Jackets</TTL><BRK/>
+<BRK/>
+<TXT>Aluminum jackets shall be in accordance with <RID>MLIT-M</RID>, Table 2.3.1 and 2.3.2.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Vapor Barrier/Weatherproofing Jacket</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Do not provide this material on Navy projects.  Material greater than 
+8 ply is to be used for Army projects only.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Vapor barrier/weatherproofing jacket shall be in accordance with <RID>MLIT-M</RID>, Table 2.3.1 and 2.3.2.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Vapor Retarder Required</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The functions of a vapor retarder/vapor barrier are to keep out water, 
+water vapor, and to prevent water vapor infiltration, in order to keep the insulation 
+dry.  Type I is a vapor barrier for use over insulation on <TAI OPT="PIPE INSULATION">pipes,</TAI> <TAI OPT="DUCT INSULATION">ducts,</TAI> or <TAI OPT="EQUIPMENT INSULATION">
+equipment</TAI> operating at temperatures below ambient at least part of the time 
+or wherever a vapor barrier is required.  Type II vapor retarder is water vapor 
+permeable and for use over <TAI OPT="PIPE INSULATION">pipes,</TAI> <TAI OPT="DUCT INSULATION">ducts,</TAI> or <TAI OPT="EQUIPMENT INSULATION">equipment</TAI> operating above ambient 
+temperatures or wherever a vapor barrier is not required.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT><RID>ASTM C921</RID>, Type I, minimum puncture resistance 50 Beach units on all surfaces <TAI OPT="DUCT INSULATION">except concealed ductwork,</TAI> where 
+a minimum puncture resistance of 25 Beach units is acceptable.  Minimum tensile strength, <MET>6.1 N/mm</MET><ENG> 35 pounds/inch</ENG>
+ width.  <RID>ASTM C921</RID>, Type II, minimum puncture resistance 25 Beach units, tensile strength minimum<MET> 3.5 N/mm</MET><ENG> 20 
+pounds/inch</ENG> width.  Jackets used on insulation exposed in finished areas shall have white finish suitable for 
+painting without sizing.  Based on the application, insulation materials that require manufacturer or fabricator 
+applied pipe insulation jackets are cellular glass, when all joints are sealed with a vapor barrier mastic, and 
+mineral fiber.    All non-metallic jackets shall have a maximum flame spread index of 25 and a maximum smoke 
+developed index of 50 when tested in accordance with <RID>ASTM E84</RID>.  Flexible elastomerics require (in addition to 
+vapor barrier skin) vapor retarder jacketing for high relative humidity and below ambient temperature applications.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Vapor Retarder/Vapor Barrier Mastic Coatings</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Vapor Barrier</TTL><BRK/>
+<BRK/>
+<TXT>The vapor barrier shall be self adhesive (minimum<MET> 0.05 mm</MET><ENG> 2 mils</ENG> adhesive, <MET>0.075 mm</MET><ENG> 3 mils</ENG> embossed) greater 
+than 3 plies standard grade, silver, white, black and embossed white jacket for use on hot/cold pipes.  Permeability 
+shall be less than 0.02 when tested in accordance with <RID>ASTM E96/E96M</RID>.  Products shall meet <RID>UL 723</RID> or <RID>ASTM E84</RID>
+.  Flame and smoke requirements and shall be UV resistant.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Vapor Retarder</TTL><BRK/>
+<BRK/>
+<TXT>The vapor retarder coating shall be fire and water resistant and appropriately selected for either outdoor or 
+indoor service.  Color shall be white.  The water vapor permeance of the compound shall be 0.013 perms or less 
+at<MET> 1 mm</MET><ENG> 43 mils</ENG> dry film thickness as determined according to procedure B of <RID>ASTM E96/E96M</RID> or utilizing apparatus 
+described in <RID>ASTM E96/E96M</RID>.  The coating shall be nonflammable, fire resistant type.  [To resist mold/mildew, 
+coating shall meet <RID>ASTM D5590</RID> with 0 growth rating.  ]Coating shall meet <RID>MIL-PRF-19565</RID> Type II (if selected for 
+indoor service) and be Qualified Products Database listed.  All other application and service properties shall 
+be in accordance with <RID>ASTM C647</RID>.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Laminated Film Vapor Retarder</TTL><BRK/>
+<BRK/>
+<TXT><RID>ASTM C1136</RID>, Type I, maximum moisture vapor transmission 0.02 perms, minimum puncture resistance 50 Beach units 
+on all surfaces except concealed ductwork; where Type II, maximum moisture vapor transmission 0.02 perms, a minimum 
+puncture resistance of 25 Beach units is acceptable.  Vapor retarder shall have a maximum flame spread index 
+of 25 and a maximum smoke developed index of 50 when tested in accordance with <RID>ASTM E84</RID>.  Flexible Elastomeric 
+exterior foam with factory applied UV Jacket.  Construction of laminate designed to provide UV resistance, high 
+puncture, tear resistance and an excellent WVT rate.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Polyvinylidene Chloride (PVDC) Film Vapor Retarder</TTL><BRK/>
+<BRK/>
+<TXT>The PVDC film vapor retarder shall have a maximum moisture vapor transmission of 0.02 perms, minimum puncture 
+resistance of 150 Beach units, a minimum tensile strength in any direction of<MET> 5.3 kN/m</MET><ENG> 30 lb/inch</ENG> when tested 
+in accordance with <RID>ASTM D882</RID>, and a maximum flame spread index of 25 and a maximum smoke developed index of 50 
+when tested in accordance with <RID>ASTM E84</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Vapor Barrier/Weather Barrier</TTL><BRK/>
+<BRK/>
+<TXT>The vapor barrier shall be greater than 3 ply self adhesive laminate -white vapor barrier jacket- superior performance 
+(less than 0.0000 permeability when tested in accordance with <RID>ASTM E96/E96M</RID>).  Vapor barrier shall meet <RID>UL 723</RID>
+ or <RID>ASTM E84</RID>.  25 flame and 50 smoke requirements; and UV resistant.  Minimum burst strength<MET> 1.3 MPa</MET><ENG> 185 psi</ENG> 
+in accordance with [<RID>TAPPI T403 OM</RID>] [<RID>ISO 2758</RID>].  Tensile strength<MET> 0.12 kg/m</MET><ENG> 68 lb/inch</ENG> width (PSTC-1000).  Tape 
+shall be as specified for laminated film vapor barrier above.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Vapor Retarder Not Required</TTL><BRK/>
+<BRK/>
+<TXT><RID>ASTM C921</RID>, Type II, Class D, minimum puncture resistance 50 Beach units on all surfaces except ductwork, where 
+maximum moisture vapor transmission 0.10, a minimum puncture resistance of 25 Beach units is acceptable.  Jacket 
+shall have a maximum flame spread index of 25 and a maximum smoke developed index of 50 when tested in accordance 
+with <RID>ASTM E84</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Wire</TTL><BRK/>
+<BRK/>
+<TXT>Wire shall be in accordance with <RID>MLIT-M</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Sealants</TTL><BRK/>
+<BRK/>
+<TXT>Sealants shall be chosen from the butyl polymer type, the styrene-butadiene rubber type, or the butyl type of 
+sealants.  Sealants shall have a maximum permeance of 0.02 perms based on Procedure B for <RID>ASTM E96/E96M</RID>, and 
+a maximum flame spread index of 25 and a maximum smoke developed index of 50 when tested in accordance with <RID>ASTM E84</RID>
+.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><TAI OPT="PIPE INSULATION"><SPT><TTL><SUB>PIPE INSULATION SYSTEMS</SUB></TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Where the temperature of cold water entering a building is below the 
+average dew point of the indoor ambient air, and where condensate drip will 
+cause damage or create a hazard, the piping should be insulated to limit or 
+minimize condensation and a vapor barrier added per manufacturer's recommendations, 
+if needed, whether piping is above or below ceilings.  Insulation that may absorb 
+moisture will see a reduction in effectiveness even with a slight amount of 
+infiltration.  Moisture on the interior of certain metal jackets may lead to 
+corrosion and pitting.</NPR><BRK/>
+<BRK/>
+<NPR>Flexible elastomeric and cellular glass are very suitable for chilled water 
+applications.  Minimum thickness recommended for cellular glass insulation is<MET>
+ 40 mm</MET><ENG> 1.5 inches</ENG>.  The reason is that the breakage rate during shipment of<MET> 
+25 mm</MET><ENG> 1 inch</ENG> thick cellular insulation is too high to be economical.  Design 
+the insulation thickness based on worst case ambient conditions, such as a humid 
+environment.  Vapor Barrier Jacket for elastomeric and cellular glass are very 
+suitable for chilled water.</NPR><BRK/>
+<BRK/>
+<NPR>For NAVFAC LANT projects, delete the option of<MET> 13 mm</MET><ENG> 1/2 inch</ENG> from line 4 of 
+the following paragraph.</NPR><BRK/>
+<BRK/>
+<NPR>ASHRAE 90.2 is for low-rise residential building.  ASHRAE 90.1 is for all buildings 
+except low-rise residential buildings.  Low-rise building has one or two stories 
+without elevators.  High-rise building has multistory with elevators.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Conform insulation materials to Table 1 and minimum insulation thickness as listed in Table 2 and meet. Limit 
+pipe insulation materials to those listed herein and meeting the following requirements:</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Aboveground Cold Pipeline (<MET>-34 to 16 deg. C</MET><ENG> -30 to 60 deg. F</ENG>)</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  When it is necessary to insulate existing cold water systems or systems 
+that must remain in operation, the Designer may consider using a mineral fiber 
+insulation that meets ASTM C547, with an integral wicking material designed 
+to remove condensed water.  The Designer should not consider using a mineral 
+fiber integral wicking material when ambient conditions at the pipe location 
+can be expected to be exposed to any high humidity conditions.  Follow manufacturer's 
+recommendations for installation.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Insulation for outdoor, indoor, exposed or concealed applications, shall be as follows:</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Mineral Fiber Insulation with Integral Wicking Material (MFIWM)</TTL><BRK/>
+<BRK/>
+<TXT><RID>JIS A 9504</RID>.  Install in accordance with manufacturer's instructions.  Do not use in applications exposed to outdoor 
+ambient conditions in climatic zones 1 through 4.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Aboveground Hot Pipeline (Above<MET> 16 deg. C</MET><ENG> 60 deg. F</ENG>)</TTL><BRK/>
+<BRK/>
+<TXT>Insulation for outdoor, indoor, exposed or concealed applications shall meet the following requirements.  Supply 
+the insulation with manufacturer's recommended factory-applied jacket/vapor barrier.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Mineral Fiber</TTL><BRK/>
+<BRK/>
+<TXT><RID>JIS A 9504</RID>, supply the insulation with manufacturer's recommended factory-applied jacket.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Aboveground Dual Temperature Pipeline</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The use of multiple layered systems, i.e., a flexible form of insulation, 
+surrounded by a rigid form and sealed with mastics, sealants and vapor retarders/vapor 
+barrier, may provide the most advantageous form of insulation system for this 
+piping configuration.  This is due to the pipe expansion and contraction associated 
+with the change from hot to cold temperatures.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Selection of insulation for use over a dual temperature pipeline system (Outdoor, Indoor - Exposed or Concealed) 
+shall be in accordance with the most limiting/restrictive case.  Find an allowable material from paragraph PIPE 
+INSULATION MATERIALS and determine the required thickness from the most restrictive case.  Use the thickness 
+listed in paragraphs INSULATION THICKNESS for cold &amp; hot pipe applications.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></TAI><TAI OPT="DUCT INSULATION"><SPT><TTL>DUCT INSULATION SYSTEMS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  For NAVFAC ML projects, delete option of the following paragraph.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>Field Applied Insulation</TTL><BRK/>
+<BRK/>
+<TXT>"Provide 
+field applied insulation according to manufacturer's installation guidelines.  Provide manufacturer's standard 
+reinforced fire-retardant vapor barrier, with identification of installed thermal resistance (R) value and out-of-package 
+R values.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Kitchen Exhaust Ductwork Insulation</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  If kitchen exhaust hood has outside air<BRK/>
+connection to cold outdoor, provide vapor barrier<BRK/>
+for outside air connection to prevent dissolution of<BRK/>
+calcium silicate.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Insulation thickness shall be a minimum of<MET> 50 mm</MET><ENG> 2 inches</ENG>, blocks or boards, either mineral fiber conforming 
+to <RID>JIS A 9504</RID>.  The enclosure materials and the grease duct enclosure systems shall meet testing requirements 
+for noncombustibility, fire resistance, durability, internal fire, and fire-engulfment with a through-penetration 
+fire stop.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Acoustical Duct Lining</TTL><BRK/>
+<BRK/>
+<SPT><TTL>General</TTL><BRK/>
+<BRK/>
+<TXT>For ductwork indicated or specified in Section <SRF>23 30 00</SRF> AIR SUPPLY, DISTRIBUTION, VENTILATION, AND EXHAUST SYSTEM 
+to be acoustically lined, provide external insulation in accordance with this specification section and in addition 
+to the acoustical duct lining.  Do not use acoustical lining in place of duct wrap or rigid board insulation 
+(insulation on the exterior of the duct).</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Duct Insulation Jackets</TTL><BRK/>
+<BRK/>
+<SPT><TTL>All-Purpose Jacket</TTL><BRK/>
+<BRK/>
+<TXT>Provide insulation with insulation manufacturer's standard reinforced fire-retardant jacket with or without integral 
+vapor barrier as required by the service.  In exposed locations, provide jacket with a white surface suitable 
+for field painting.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Metal Jackets</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Aluminum Jackets</TTL><BRK/>
+<BRK/>
+<TXT><RID>JIS H 4000</RID>, with factory-applied polyethylene and kraft paper moisture barrier on inside surface.  Provide smooth 
+surface jackets for jacket outside dimension<MET> 200 mm</MET><ENG> 8 inches</ENG> and larger.  Provide corrugated surface jackets 
+for jacket outside dimension<MET> 200 mm</MET><ENG> 8 inches</ENG> and larger.  Provide stainless steel bands, minimum width of<MET> 13 
+mm</MET><ENG> 1/2 inch</ENG>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Stainless Steel Jackets</TTL><BRK/>
+<BRK/>
+<TXT><RID>JIS G 4304</RID>; Type 304, smooth surface with factory-applied polyethylene and kraft paper moisture barrier on inside 
+surface.  Provide stainless steel bands, minimum width of<MET> 13 mm</MET><ENG> 1/2 inch</ENG>.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></SPT></SPT></TAI><TAI OPT="EQUIPMENT INSULATION"><SPT><TTL>EQUIPMENT INSULATION SYSTEMS</TTL><BRK/>
+<BRK/>
+<TXT>Insulate equipment and accessories as specified in accordance with <RID>MLIT-M</RID>, Chapter 3.</TXT><BRK/>
+<BRK/></SPT>
+</TAI></PRT><PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Project specifications will contain only the specific <TAI OPT="PIPE INSULATION">pipe</TAI> or <TAI OPT="DUCT INSULATION">duct</TAI> systems 
+and <TAI OPT="EQUIPMENT INSULATION">equipment</TAI> in a particular project that require insulation.  Lists are not 
+inclusive of systems requiring insulation.  Edit, modify, and add to the information 
+contained in the lists as required.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<SPT><TTL>APPLICATION - GENERAL</TTL><BRK/>
+<BRK/>
+<TXT>Insulation shall only be applied to unheated and uncooled piping and equipment.  Flexible elastomeric cellular 
+insulation shall not be compressed at joists, studs, columns, ducts, hangers, etc.  The insulation shall not 
+pull apart after a one hour period; any insulation found to pull apart after one hour, shall be replaced.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Display Samples</TTL><BRK/>
+<BRK/>
+<TXT>Submit and display, after approval of materials, actual sections of installed systems, properly insulated in 
+accordance with the specification requirements.  Such actual sections must remain accessible to inspection throughout 
+the job and will be reviewed from time to time for controlling the quality of the work throughout the construction 
+site.  Each material used shall be identified, by indicating on an attached sheet the specification requirement 
+for the material and the material by each manufacturer intended to meet the requirement.  The Contracting Officer 
+will inspect display sample sections at the jobsite.  Approved display sample sections shall remain on display 
+at the jobsite during the construction period.  Upon completion of construction, the display sample sections 
+will be closed and sealed.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Pipe Insulation Display Sections</TTL><BRK/>
+<BRK/>
+<TXT>Display sample sections shall include as a minimum an elbow or tee, a valve, dielectric waterways and flanges, 
+a hanger with protection shield and insulation insert, or dowel as required, at support point, method of fastening 
+and sealing insulation at longitudinal lap, circumferential lap, butt joints at fittings and on pipe runs, and 
+terminating points for each type of pipe insulation used on the job, and for hot pipelines and cold pipelines, 
+both interior and exterior, even when the same type of insulation is used for these services.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Duct Insulation Display Sections</TTL><BRK/>
+<BRK/>
+<TXT>Display sample sections for rigid and flexible duct insulation used on the job.  Use a temporary covering to 
+enclose and protect display sections for duct insulation exposed to weather</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Installation</TTL><BRK/>
+<BRK/>
+<TXT>Except as otherwise specified, material shall be installed in accordance with the manufacturer's written instructions.  
+Insulation materials shall not be applied until [tests] [tests and heat tracing] specified in other sections 
+of this specification are completed.  Material such as rust, scale, dirt and moisture shall be removed from surfaces 
+to receive insulation.  Insulation shall be kept clean and dry.  Insulation shall not be removed from its shipping 
+containers until the day it is ready to use and shall be returned to like containers or equally protected from 
+dirt and moisture at the end of each workday.  Insulation that becomes dirty shall be thoroughly cleaned prior 
+to use.  If insulation becomes wet or if cleaning does not restore the surfaces to like new condition, the insulation 
+will be rejected, and shall be immediately removed from the jobsite.  Joints shall be staggered on multi layer 
+insulation.  Mineral fiber thermal insulating cement shall be mixed with demineralized water when used on stainless 
+steel surfaces.  Insulation, jacketing and accessories shall be installed in accordance with  plates except where 
+modified herein or on the drawings.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Firestopping</TTL><BRK/>
+<BRK/>
+<TXT>Where <TAI OPT="PIPE INSULATION">pipes</TAI> and <TAI OPT="DUCT INSULATION">ducts</TAI> pass through fire walls, fire partitions, above grade floors, and fire rated chase walls, 
+the penetration shall be sealed with fire stopping materials as specified in Section <SRF>07 84 00</SRF> FIRESTOPPING.  
+The protection of ducts at point of passage through firewalls must be in accordance with <RID>NFPA 90A</RID> and/or <RID>NFPA 90B</RID>
+. All other penetrations, such as piping, conduit, and wiring, through firewalls must be protected with a material 
+or system of the same hourly rating that is listed by <RID>MLIT-M</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Painting and Finishing</TTL><BRK/>
+<BRK/>
+<TXT>Painting shall be as specified in Section <SRF>09 90 00</SRF> PAINTS AND COATINGS.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Welding</TTL><BRK/>
+<BRK/>
+<TXT>No welding shall be done on <TAI OPT="PIPE INSULATION">piping,</TAI> <TAI OPT="DUCT INSULATION">duct</TAI> or <TAI OPT="EQUIPMENT INSULATION">equipment</TAI> without written approval of the Contracting Officer.  <TAI OPT="DUCT INSULATION">The 
+capacitor discharge welding process may be used for securing metal fasteners to duct</TAI>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL><TAI OPT="PIPE INSULATION">Pipes/</TAI><TAI OPT="DUCT INSULATION">Ducts/</TAI><TAI OPT="EQUIPMENT INSULATION">Equipment</TAI> That Require Insulation</TTL><BRK/>
+<BRK/>
+<TXT>Insulation is required on all <TAI OPT="PIPE INSULATION">pipes,</TAI> <TAI OPT="DUCT INSULATION">ducts,</TAI> or <TAI OPT="EQUIPMENT INSULATION">equipment,</TAI> except for omitted items as specified.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><TAI OPT="PIPE INSULATION"><SPT><TTL>PIPE INSULATION SYSTEMS INSTALLATION</TTL><BRK/>
+<BRK/>
+<TAI OPT="ARMY"><TXT>Install pipe insulation systems in accordance with the approved plates as supplemented by the manufacturer's 
+published installation instructions.</TXT><BRK/></TAI>
+<BRK/>
+<SPT><TTL>Pipe Insulation</TTL><BRK/>
+<BRK/>
+<SPT><TTL>General</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Insulation may be omitted on heating piping in heated spaces, and on 
+domestic cold water piping and interior roof drains where condensation and freezing 
+are not problems and where hot piping is not hazardous to the occupants.  However, 
+the designer must maintain environmental control under heating and cooling conditions, 
+meet the energy budget, not allow condensate formation and not allow freezing.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Pipe insulation shall be installed on aboveground hot and cold pipeline systems as specified below to form a 
+continuous thermal retarder/barrier, including straight runs, fittings and appurtenances unless specified otherwise.  
+Installation shall be with full length units of insulation and using a single cut piece to complete a run.  Cut 
+pieces or scraps abutting each other shall not be used.  Pipe insulation shall be omitted on the following:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Pipe used solely for fire protection.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Chromium plated pipe to plumbing fixtures.  However, fixtures for use by the physically handicapped 
+shall have the hot water supply and drain, including the trap, insulated where exposed.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Sanitary drain lines.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Air chambers.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Adjacent insulation.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  Access plates of fan housings.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  Cleanouts or handholes.</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Pipe Insulation Material and Thickness</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Where the temperature of cold water entering a building is below average 
+dew point of the indoor ambient air and where condensate drip will cause damage 
+or create a hazard, insulate piping with vapor barrier to prevent condensation, 
+regardless to whether piping is above or below ceilings.</NPR><BRK/>
+<BRK/>
+<NPR>Flexible elastomeric and cellular glass are very suitable for chilled water 
+applications.  Minimum thickness recommended for cellular glass insulation is<MET>
+ 40 mm</MET><ENG> 1.5 inches</ENG>.  The reason is that the breakage rate during shipment of<MET> 
+25 mm</MET><ENG> 1 inch</ENG> thick cellular insulation is too high to be economical.  Flexible 
+elastomeric recommended minimum thickness is<MET> 25 mm</MET><ENG> 1 inch</ENG>.</NPR><BRK/>
+<BRK/>
+<NPR>For cryogenic equipment handling media between<MET> minus 34 and minus 18 degrees 
+C</MET><ENG> minus 30 and minus 1 degree F</ENG>, use cellular glass insulation.</NPR><BRK/>
+<BRK/>
+<NPR>In Tables 1 and 3, state if a vapor barrier is required.  Pipes and equipment 
+with a temperature below<MET> 27 degrees C</MET><ENG> 80 degrees F</ENG> should generally be provided 
+with a vapor barrier jacket to prevent sweating.  However, engineering judgment 
+should be exercised to determine if a vapor barrier jacket is required.  Reference 
+paragraph ABOVEGROUND COLD PIPELINE (<MET>-34 TO 16 DEG. C</MET><ENG> -30 TO 60 DEG. F</ENG>) for 
+Vapor Retarder/Vapor Barrier requirements.</NPR><BRK/>
+<BRK/>
+<NPR>In Tables 1 and 2, when it is necessary to insulate existing cold water systems 
+or systems that must remain in operation, the Designer may consider using a 
+mineral fiber insulation that meets ASTM C547, with an integral wicking material 
+designed to remove condensed water.  The Designer should not consider using 
+a mineral fiber integral wicking material when ambient conditions at the pipe 
+location can be expected to be exposed to any high humidity conditions.  Follow 
+manufacturer's recommendations for installation.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  For NAVFAC LANT projects, delete "Type" and "Class" in its entirety from 
+Table 1; delete "Flexible Cellular" from material column of Tables 1 and 2 except 
+refrigerant suction piping; and provide vapor barriers for all services.  Delete 
+data from High Temperature Hot Water and Brine Systems.<BRK/>
+<BRK/>
+For NAVFAC SE projects, use only cellular glass with vapor barrier for chilled 
+water piping.<BRK/>
+<BRK/>
+For NAVFAC PAC projects in high humidity (tropical) areas, do not add mineral 
+fiber on chilled water, refrigerant suction, and other cold piping to Table 
+1.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  ASHRAE 90.2 is for low-rise residential building.  ASHRAE 90.1 is for 
+allbuildings except low-rise residential buildings.  Low-rise building has one 
+or two stories without elevators.  High-rise building has multistory with elevators.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  For NAVFAC MAR projects, use only cellular glass with vapor barrier for 
+chilled water piping.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Pipe insulation materials must be as listed in Table 1.  </TXT><BRK/>
+<TAB HEADERROWS="4">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN HORIZONTAL="CENTER"/>
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="6" ROWCOUNT="31">
+      <COL AUTOWIDTH="0" WIDTH="33.75"/>
+      <COL AUTOWIDTH="0" WIDTH="150.75"/>
+      <COL AUTOWIDTH="0" WIDTH="150.00"/>
+      <COL AUTOWIDTH="0" WIDTH="41.25"/>
+      <COL AUTOWIDTH="0" WIDTH="40.50"/>
+      <COL AUTOWIDTH="0" WIDTH="51.75"/>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.00">
+         <CEL MERGEACROSS="5" STYLEID="s50">
+<DTA TYPE="STRING">TABLE 1</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL MERGEACROSS="5" STYLEID="s50">
+<DTA TYPE="STRING">Insulation Material for Piping</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="15.00">
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Service</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Material</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Specification</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Type</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Class</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">VR/VB Req'd</DTA>
+         </CEL>
+      </ROW>
+      <ROW>
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Chilled Water (Supply &amp; Return, Dual Temperature Piping,<MET> 4.44 C</MET><ENG> 40 F</ENG> nominal)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="83.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">[Mineral Fiber with Wicking Material][Do not use in applications exposed to outdoor ambient conditions in climatic zones 1 through 4.]</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[]<RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">[I]</DTA>
+         </CEL>
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">[Yes]</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="22.50">
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Heating Hot Water Supply &amp; Return, Heated Oil (Max<MET> 121 C</MET><ENG> 250 F</ENG>)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.00">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING"><RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL/>
+         <CEL/>
+         <CEL/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.00">
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Cold Domestic Water Piping, Makeup Water &amp; Drinking Fountain Drain Piping</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="11.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING"><RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL/>
+         <CEL/>
+         <CEL/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.00">
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Hot Domestic Water Supply &amp; Recirculating Piping (Max<MET> 93 C</MET><ENG> 200 F</ENG>)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING"><RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL/>
+         <CEL/>
+         <CEL/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="11.25">
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Refrigerant Suction Piping (<MET>1.67 degrees C</MET><ENG>35 degrees F</ENG> nominal)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Shall be pre-insulated by manufacturer</DTA>
+         </CEL>
+         <CEL/>
+         <CEL/>
+         <CEL/>
+         <CEL/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="28.50">
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Compressed Air Discharge, Steam and Condensate Return (<MET>94 to 121 Degrees C</MET><ENG>201 to 250 Degrees F</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="11.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING"><RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL/>
+         <CEL/>
+         <CEL/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Exposed Lavatory Drains, Exposed Domestic Water Piping &amp; Drains to Areas for Handicapped Personnel</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING"><RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL/>
+         <CEL/>
+         <CEL/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="29.25">
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Horizontal Roof Drain Leaders (Including Underside of Roof Drain Fittings)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.00">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING"><RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL/>
+         <CEL/>
+         <CEL/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.00">
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Condensate Drain Located Inside Building</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="11.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING"><RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL/>
+         <CEL/>
+         <CEL/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="31.50">
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Medium Temperature Hot Water, Steam and Condensate (<MET>122 to 176 Degrees C</MET><ENG>251 to 350 Degrees F</ENG>)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING"><RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL/>
+         <CEL/>
+         <CEL/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="22.50">
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">High Temperature Hot Water &amp; Steam (<MET>177 to 371 Degrees C</MET><ENG>351 to 700 Degrees F</ENG>)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING"><RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL/>
+         <CEL/>
+         <CEL/>
+      </ROW>
+      <ROW>
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Brine Systems Cryogenics (<MET>-34 to -18 Degrees C</MET><ENG>-30 to 0 Degrees F</ENG>)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.00">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING"><RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL/>
+         <CEL/>
+         <CEL/>
+      </ROW>
+      <ROW>
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Brine Systems Cryogenics (<MET>-18 to 1.11 Degrees C</MET><ENG>0 to 34 Degrees F</ENG>)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING"><RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL/>
+         <CEL/>
+         <CEL/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="63.00">
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Note: VR/VB = Vapor Retarder/Vapor Barrier</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Table 2 is not inclusive of all systems requiring insulation.  Pipe insulation 
+thicknesses must meet or exceed the requirements of ASHRAE 90.2 for low-rise 
+residential buildings, and ASHRAE 90.1 for all other buildings except low-rise 
+residential.  Edit, modify, and add to the information contained in Tables 1 
+and 2 as required for the project.  Use Table 6.8.3A and Table 6.8.3B in ASHRAE 
+90.1 for minimum thickness in buildings other than low-rise residential.  For 
+low-rise residential buildings, refer to Table 6-4 of ASHRAE 90.2 for Minimum 
+Pipe Insulation.  These tables will become a part of the project specifications.</NPR><BRK/>
+<BRK/>
+<NPR>Where the temperature of cold water entering a building is below average dew 
+point of the indoor ambient air and where condensate drip will cause damage 
+or create a hazard, insulate piping with vapor barrier to prevent condensation, 
+regardless to whether piping is above or below ceilings.</NPR><BRK/>
+<BRK/>
+<NPR>Flexible elastomeric and cellular glass are very suitable for chilled water 
+applications.  Minimum thickness recommended for cellular glass insulation is<MET>
+ 40 mm</MET><ENG> 1.5 inches</ENG>.  The reason is that the breakage rate during shipment of<MET> 
+25 mm</MET><ENG> 1 inch</ENG> thick cellular insulation is too high to be economical.  Flexible 
+elastomeric recommended minimum thickness is<MET> 25 mm</MET><ENG> 1 inch</ENG></NPR><BRK/>
+<BRK/>
+<NPR>For cryogenic equipment handling media between<MET> minus 34 and minus 18 degrees 
+C</MET><ENG> 30 and minus 1 degree F</ENG>, use cellular glass.</NPR><BRK/>
+<BRK/>
+<NPR>Economic insulation thickness recommendations (EITR) are based on three factors:  
+energy, economics, and environment.  Design conditions are as follows:</NPR><BRK/>
+<BRK/>
+<NPR>1.  Ambient Temperature: <MET> 27 degrees C</MET><ENG> 80 degrees F</ENG>, Still Air.</NPR><BRK/>
+<BRK/>
+<NPR>2.  Jacket Surface Emissivity:  0.2 Metal, 0.9 All Purpose, 0.1 Oxidized Aluminum, 
+0.5 Coated Aluminized Vapor Barrier Jacket and Vapor Barrier/Weather Barrier..</NPR><BRK/>
+<BRK/>
+<NPR>3.  Surface Temperatures: <MET> 29 degrees C</MET><MET> 85 degrees F</MET> nominal for service temperatures 
+under<MET> 176 degrees C</MET><ENG> 350 degrees F</ENG>; maximum<MET> 60 degrees C</MET><ENG> 140 degrees F</ENG> for high 
+service temperatures at and above<MET> 177 degrees C</MET><ENG> 351 degrees F</ENG>.</NPR><BRK/>
+<BRK/>
+<NPR>4.  Average energy cost of six dollars per<MET> 1,055,000 kJ</MET><ENG> million Btu's</ENG>.</NPR><BRK/>
+<BRK/>
+<NPR>EITR is a term used by North America Insulation Manufacturers Association (NAIMA), 
+Commercial/Industrial Insulation Committee.  Current member companies are:  
+Knauf Fiber Glass, CertainTeed, Manville, Partek North America, Rock Wool Manufacturing, 
+and Owen Corning Fiberglass.  Data of mineral fiber and calcium silicate are 
+supplied by NAIMA.  Data of cellular glass are supplied by Pittsburgh Corning 
+Corporation.  Other data are obtained from manufacturers' published documents.  
+Insulation thickness calculation was generated by manufacturers.  Individual 
+and precise calculation may be done by using computer programs such as NAIMA 
+3 E's Insulation Thickness Computer Program.  These computer programs shall 
+comply with ASTM C680, 1989 "Determination of Heat Gain or Loss and the Surface 
+Temperatures of Insulated Pipe and Equipment Systems by the Use of a Computer 
+Program".</NPR><BRK/>
+<AST/><BRK/></NTE>
+<TAB HEADERROWS="5">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM"/>
+      </STY>
+      <STY SID="s51">
+         <ALN HORIZONTAL="CENTER" VERTICAL="BOTTOM"/>
+      </STY>
+      <STY SID="s52">
+         <ALN HORIZONTAL="CENTER"/>
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="7" ROWCOUNT="36">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="21.75"/>
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="183.75"/>
+      <COL AUTOWIDTH="0" WIDTH="36.00"/>
+      <COL AUTOWIDTH="0" WIDTH="42.75"/>
+      <COL AUTOWIDTH="0" WIDTH="52.50"/>
+      <COL AUTOWIDTH="0" WIDTH="52.50"/>
+      <COL AUTOWIDTH="0" WIDTH="78.75"/>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s51">
+<DTA TYPE="STRING">TABLE 2</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="93.00">
+         <CEL MERGEACROSS="6" STYLEID="s51">
+<DTA TYPE="STRING">Piping Insulation Thickness (<MET>mm</MET><ENG>inch</ENG>)<BRK/><MET>For flexible cellular foam the thickness should be 13mm instead of 15mm.  Economic thickness or prevention of condensation is the basis of these tables.  If prevention of condensation is the criterion, the ambient temperature and relative humidity must be stated.</MET>  Do not use integral wicking material in  Chilled water applications exposed to outdoor ambient conditions in climatic zones 1 through 4.</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">Service</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Material</DTA>
+         </CEL>
+         <CEL MERGEACROSS="4" STYLEID="s52">
+<DTA TYPE="STRING">Tube And Pipe Size<MET> (mm)</MET><ENG> (inch)</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>&lt;25</MET><ENG>&lt;1</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>25-&lt;40</MET><ENG>1-&lt;1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40-&lt;100</MET><ENG>1.5-&lt;4</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>100-&lt;200</MET><ENG>4-&lt;8</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">&gt; or = <MET>200</MET><ENG>&gt;8</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">[Chilled Water (Supply &amp; Return, Dual Temperature Piping,<MET> 4.44 Degrees C</MET><ENG> 40 Degrees F</ENG> nominal)]</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Mineral Fiber with Wicking Material</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>25</MET><ENG>1</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">[Chilled Water (Supply &amp; Return, Dual Temperature Piping,<MET> 4.44 Degrees C</MET><ENG> 40 Degrees F</ENG> nominal)]</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Mineral Fiber with Wicking Material</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>25</MET><ENG>1</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">Heating Hot Water Supply &amp; Return, Heated Oil (Max<MET> 121 C</MET><ENG> 250 F</ENG>)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">Cold Domestic Water Piping, Makeup Water &amp; Drinking Fountain Drain Piping</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">50</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Flexible Elastomeric Cellular</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>25</MET><ENG>1</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>25</MET><ENG>1</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>25</MET><ENG>1</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">N/A</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">N/A</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">Hot Domestic Water Supply &amp; Recirculating Piping (Max<MET> 93 C</MET><ENG> 200 F</ENG>)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>25</MET><ENG>1</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>25</MET><ENG>1</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>25</MET><ENG>1</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">Refrigerant Suction Piping (<MET>1.67 degrees C</MET><ENG>35 degrees F</ENG> nominal)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Shall be pre-insulated by manufacturer</DTA>
+         </CEL>
+         <CEL STYLEID="s52"/>
+         <CEL STYLEID="s52"/>
+         <CEL STYLEID="s52"/>
+         <CEL STYLEID="s52"/>
+         <CEL STYLEID="s52"/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">Compressed Air Discharge, Steam and Condensate Return (<MET>94 to 121 Degrees C</MET><ENG>201 to 250 Degrees F</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL MERGEDOWN="1" STYLEID="s50">
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL INDEX="3" STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG>*</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG>*</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>65</MET><ENG>2.5</ENG>*</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>80</MET><ENG>3</ENG>*</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>90</MET><ENG>3.5</ENG>*</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">Exposed Lavatory Drains, Exposed Domestic Water Piping &amp; Drains to Areas for Handicapped Personnel</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">40</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">40</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>0.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>0.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>0.5</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">Horizontal Roof Drain Leaders (Including Underside of Roof Drain Fittings)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">Condensate Drain Located Inside Building</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">50</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">Medium Temperature Hot Water, Steam and Condensate (<MET>122 to 176 Degrees C</MET><ENG>251 to 350 Degrees F</ENG>)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>40</MET><ENG>1.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>80</MET><ENG>3</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>80</MET><ENG>3</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>100</MET><ENG>4</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>100</MET><ENG>4</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>65</MET><ENG>2.5</ENG>*</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>80</MET>*</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>90</MET><ENG>3.5</ENG>*</DTA>
+         </CEL>
+         <CEL STYLEID="s52"/>
+         <CEL STYLEID="s52"/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">High Temperature Hot Water &amp; Steam (<MET>177 to 371 Degrees C</MET><ENG>351 to 700 Degrees F</ENG>)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>65</MET><ENG>2.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>80</MET><ENG>3</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>80</MET><ENG>3</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>100</MET><ENG>4</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>100</MET><ENG>4</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">Brine Systems Cryogenics (<MET>-34 to -18 Degrees C</MET><ENG>-30 to 0 Degrees F</ENG>)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">40</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">40</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">50</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">50</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">50</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">Brine Systems Cryogenics (<MET>-18 to 1.11 Degrees C</MET><ENG>0 to 34 Degrees F</ENG>)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.75">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">40</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">40</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">50</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">50</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
+<BRL/><BRL/><BRL/></TAB><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Aboveground Cold Pipelines</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Insulation may be omitted on domestic cold-water piping and interior 
+roof drains where condensation and freezing are not problems.  However, the 
+designer must maintain conditioned space control under cooling conditions - 
+meet the energy budget, not allow condensation formation and not allow freezing.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>The following cold pipelines for<MET> minus 34 to plus 16 degrees C</MET><ENG> minus 30 to plus 60 degrees F</ENG>, shall be insulated 
+in accordance with Table 2 except those piping listed in subparagraph Pipe Insulation in PART 3 as to be omitted.  
+This includes but is not limited to the following:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Make-up water.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Horizontal and vertical portions of interior roof drains.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Refrigerant suction lines.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Chilled water.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Dual temperature water, i.e. HVAC hot/chilled water.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  Air conditioner condensate drains.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  Brine system cryogenics</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">h.  Exposed lavatory drains and domestic water lines serving plumbing fixtures for handicap persons.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">i.  Domestic cold and chilled drinking water.</LST><BRK/>
+<BRK/>
+<SPT><TTL>Insulation Material and Thickness</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Table 1 is not all inclusive of service insulation requirements.  Edit, 
+modify, and add to the tables as required for your project.  Consideration may 
+be given to increasing or decreasing the thickness of insulation required if, 
+in the judgment of the designer, the situation warrants.  For example, hot water 
+piping in conditioned spaces may not require the tabulated thickness; or extremely 
+cold systems in a high humidity climate may require additional insulation.<BRK/>
+<BRK/>
+The designer should take into consideration the dew point temperature of the 
+area in which the system is to be built.  This is separate from the design dry 
+bulb and design wet bulb temperatures, and should not be confused with the information 
+provided in UFC 3-400-02.  When accounting for the dew point for design of the 
+insulation thickness, consider using a relative humidity range of 80 to 90 percent 
+unless you are in unusual circumstances.  In very dry environments (Denver) 
+consider using a relative humidity less than 80 percent, and remember to meet 
+the requirements of the energy budget.  In lower humidity environments, use 
+the lower end of this range outdoors (80 to 85 percent).  In high humidity environments 
+use 90 percent.  Indoors, where the humidity is to be controlled at 50 percent, 
+it is more appropriate to design to 70 percent.</NPR><BRK/>
+<BRK/>
+<NPR>ASHRAE 90.1 insulation standard is a reference the designer should use to introduce 
+a different material, or utilize an existing material type for an application 
+that is not listed, or is outside the temperature range listed in Table 2.  
+Table 2 may be modified for regions that meet one of the following conditions 
+from UFC 3-410-01 or UFC 3-410-02.  A wet bulb temperature of<MET> 19 degrees C</MET><ENG> 67 
+degrees F</ENG> or higher and the outside design relative humidity is 50 percent or 
+higher (dew point temperature greater than<MET> 16 C</MET><ENG> 60 F</ENG>) for 3,000 hours or more.  
+A wet bulb temperature of<MET> 22.8 degrees C</MET><ENG> 73 degrees F</ENG> or higher and the outside 
+design relative humidity is 50 percent or higher (dew point temperature greater 
+than<MET> 19 C</MET><ENG> 67 F</ENG>) for 1,500 hours or more.  (Outside design relative humidity 
+based on the 2.5 percent dry bulb and 5.0 percent wet bulb temperatures.)  (Weather 
+data obtained from UFC 3-400-02.)</NPR><BRK/>
+<BRK/>
+<NPR>  Further references for recommended thickness includes the International Mechanical 
+Code and manufacturers recommended thickness tables.  The refrigerant suction 
+piping thickness was determined for<MET> 1 degree C</MET><ENG> 35 degrees F</ENG> service and the 
+chilled water supply and return and dual temperature piping thickness was determined 
+for<MET> 4 degrees C</MET><ENG> 40 degrees F</ENG> nominal service temperature.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Insulation thickness for cold pipelines shall be determined using Table 2.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Aboveground Hot Pipelines</TTL><BRK/>
+<BRK/>
+<SPT><TTL>General Requirements</TTL><BRK/>
+<BRK/>
+<TXT>All hot pipe lines above<MET> 16 degrees C</MET><ENG> 60 degrees F</ENG>, except those piping listed in subparagraph Pipe Insulation 
+in PART 3 as to be omitted, shall be insulated in accordance with Table 2.  This includes but is not limited 
+to the following:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Domestic hot water supply &amp; re-circulating system.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Steam.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Condensate &amp; compressed air discharge.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Hot water heating.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Heated oil.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  Water defrost lines in refrigerated rooms.</LST><BRK/>
+<BRK/>
+<TXT>Insulation shall be covered, in accordance with manufacturer's recommendations, with a factory applied Type I 
+jacket or field applied aluminum where required or seal welded PVC.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Piping Exposed to Weather</TTL><BRK/>
+<BRK/>
+<TXT>Piping exposed to weather shall be insulated and jacketed in accordance with <RID>MLIT-M</RID>.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></TAI><TAI OPT="DUCT INSULATION"><SPT><TTL><SUB>DUCT INSULATION SYSTEMS</SUB> INSTALLATION</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Insulation may be omitted on heating duct in heated spaces.  Designer 
+will determine if internally lined ducts are comparable in insulating value 
+to those unlined ducts to be insulated.  If not, field insulation will be added.</NPR><BRK/>
+<BRK/>
+<NPR>The designer must maintain conditioned space control under cooling and heating 
+conditions - meet the energy budget, and not allow condensation formation.  
+The following do not require insulation:  factory fabricated double wall internally 
+insulated duct, glass fiber duct, site-erected air conditioning casings and 
+plenums constructed of factory-insulated sheet metal panels, ducts internally 
+lined with insulation or sound absorbing material, unless indicated otherwise, 
+return ducts in ceiling spaces or as indicated, supply ducts in ceiling spaces 
+which are used as return air plenums (or as indicated), factory pre-insulated 
+flexible ducts, ducts within HVAC equipment, exhaust air ducts unless noted, 
+and duct portions inside walls or floor-ceiling space in which both sides of 
+the space are exposed to conditioned air and the space is not vented or exposed 
+to unconditioned air.</NPR><BRK/>
+<BRK/>
+<NPR>Ceiling spaces shall be defined as those spaces between the ceiling and bottom 
+of floor deck or roof deck inside the air-conditioned space insulated envelope, 
+and ceilings that form plenums.</NPR><BRK/>
+<BRK/>
+<NPR>ASHRAE 90.2 is for low-rise residential building.  ASHRAE 90.1 is for all buildings 
+except low-rise residential buildings.  Low-rise building has one or two stories 
+without elevators.  High-rise building has multistory with elevators.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TAI OPT="ARMY"><TXT>Install duct insulation systems in accordance with the approved plates as supplemented by the manufacturer's 
+published installation instructions.  Duct insulation minimum thickness and insulation level must be as listed 
+in Table 4.</TXT></TAI><BRK/>
+<BRK/>
+<SPT><TTL>Duct Insulation Minimum Thickness</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  The following tables are adapted from ASHRAE 90.1.  They may be used 
+to modify the thicknesses listed in Table 3.  The thicknesses listed are recommended, 
+and may be changed at the discretion of the designer.  Duct insulation thicknesses 
+must meet or exceed the requirements of ASHRAE 90.2 for low-rise residential 
+buildings, and ASHRAE 90.1 for all other buildings except low-rise residential.</NPR><BRK/>
+<BRK/>
+<NPR>Use Table 6.8.2A and Table 6.8.2B in ASHRAE 90.1 for minimum required insulation 
+thickness for buildings other than low-rise residential.  For low-rise residential 
+buildings use minimum duct insulation requirements included in ASHRAE 90.2 </NPR><BRK/>
+<TAB HEADERROWS="3">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN HORIZONTAL="CENTER"/>
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="5" ROWCOUNT="14">
+      <COL AUTOWIDTH="0" WIDTH="90.00"/>
+      <COL AUTOWIDTH="0" WIDTH="90.00"/>
+      <COL AUTOWIDTH="0" WIDTH="90.00"/>
+      <COL AUTOWIDTH="0" WIDTH="90.00"/>
+      <COL AUTOWIDTH="0" WIDTH="90.00"/>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL MERGEACROSS="4" STYLEID="s50">
+<DTA TYPE="STRING">Table 3</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL MERGEACROSS="4" STYLEID="s50">
+<DTA TYPE="STRING">Minimum Duct Insulation</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL/>
+         <CEL MERGEACROSS="1" STYLEID="s50">
+<DTA TYPE="STRING">Cooling</DTA>
+         </CEL>
+         <CEL INDEX="4" MERGEACROSS="1" STYLEID="s50">
+<DTA TYPE="STRING">Heating</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="57.00">
+         <CEL>
+<DTA TYPE="STRING">Duct Location</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Annual Cooling Degree Days Base<MET> 18 C</MET><ENG> 65 F</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Insulation R-Value<MET> (sm K)/W</MET><ENG> (h sf F)/Btu</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Annual Heating Degree Days Base<MET> 18 C</MET><ENG> 65 F</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Insulation R-Value<MET> (sm K)/W</MET><ENG> (h sf F)/Btu</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL MERGEDOWN="3">
+<DTA TYPE="STRING">Exterior of Building</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">&lt;<MET>260</MET> <ENG>500</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>0.58</MET> <ENG>3.3</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">&lt;<MET>816</MET> <ENG>1500</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>0.58</MET> <ENG>3.3</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL INDEX="2" STYLEID="s50">
+<DTA TYPE="STRING"><MET>260 - 621</MET><ENG>500 - 1150</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>0.88</MET> <ENG>5.0</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>816 - 2482</MET><ENG>1500 - 4500</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>0.88</MET> <ENG>5.0</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL INDEX="2" STYLEID="s50">
+<DTA TYPE="STRING"><MET>622 - 1093</MET><ENG>1151 - 2000</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>1.14</MET> <ENG>6.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>2483 - 4149</MET><ENG>4501 - 7500</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>1.14</MET> <ENG>6.5</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL INDEX="2" STYLEID="s50">
+<DTA TYPE="STRING">&gt;<MET>1093</MET><ENG>2000</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>1.41</MET> <ENG>8.0</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">&gt;<MET>4149</MET><ENG>7500</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>1.41</MET> <ENG>8.0</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL/>
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50"/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="63.00">
+         <CEL/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Temperature Difference</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Insulation R-Value<MET> (sm K)/W</MET><ENG> (h sf F)/Btu</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Temperature Difference</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Insulation R-Value<MET> (sm K)/W</MET><ENG> (h sf F)/Btu</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL MERGEDOWN="2">
+<DTA TYPE="STRING">Inside building envelope or in unconditioned spaces</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">&lt;<MET>8</MET><ENG>15</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">None required</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">&lt;<MET>8</MET><ENG>15</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">None required</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="33.00">
+         <CEL INDEX="2" STYLEID="s50">
+<DTA TYPE="STRING"><MET>8 &lt;TD &lt;22</MET><ENG>15 &lt;TD &lt;40</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>0.58</MET> <ENG>3.3</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>8 &lt;TD &lt;22</MET><ENG>15 &lt;TD &lt;40</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>0.58</MET> <ENG>3.3</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL INDEX="2" STYLEID="s50">
+<DTA TYPE="STRING"><MET>22 &lt;TD</MET><ENG>40 &lt;TD</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>0.88</MET> <ENG>5.0</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>22 &lt;TD</MET><ENG>40 &lt;TD</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>0.88</MET> <ENG>5.0</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="245.25">
+         <CEL MERGEACROSS="4">
+<DTA TYPE="STRING">These R-values do not include the film resistances.  The required minimum thicknesses do not consider water vapor transmission and condensation.  Additional insulation, vapor retarders, or both, may be required to limit vapor transmission and condensation.  Where ducts are designed to convey both heated and cooled air, duct insulation shall be as required by the most restrictive condition.  Where exterior walls are used as plenum walls, wall insulation shall be a required by the most restrictive condition of this section or the insulation for the building envelope.  Cooling ducts are those designed to convey mechanically cooled air or return ducts in such systems.  Heating ducts are those designed to convey mechanically heated air or return ducts in such systems.  Thermal resistance will be measured in accordance with <RID>ASTM C518</RID> at a mean temperature of<MET> 24 degrees C</MET><ENG> 75 degrees F</ENG>.  The Temperature difference is at design conditions between the space within which the duct is located and the design air temperature in the duct.  Resistance for runouts to terminal devices less than<MET> 3 m</MET><ENG> 10 feet</ENG> in length need not exceed<MET> 0.58 (sm K)/W</MET><ENG> 3.3 (h sf F)/Btu</ENG>.  Unconditioned spaces include crawlspaces and attics.</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Duct insulation minimum thickness in accordance with Table 3.</TXT><BRK/>
+<TXT><TAB WIDTH="80">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN HORIZONTAL="CENTER"/>
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="2" ROWCOUNT="8">
+      <COL AUTOWIDTH="0" WIDTH="182.25"/>
+      <COL AUTOWIDTH="0" WIDTH="183.00"/>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL MERGEACROSS="1" STYLEID="s50">
+<DTA TYPE="STRING">Table 3 - Minimum Duct Insulation<MET> (mm)</MET><ENG> (inches)</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL>
+<DTA TYPE="STRING">Cold Air Ducts</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>50</MET> <ENG>2.0</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL>
+<DTA TYPE="STRING">Relief Ducts</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>40</MET> <ENG>1.5</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL>
+<DTA TYPE="STRING">Fresh Air Intake Ducts</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>40</MET> <ENG>1.5</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="12.00">
+         <CEL/>
+         <CEL STYLEID="s50"/>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.00">
+         <CEL>
+<DTA TYPE="STRING">Warm Air Ducts</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>50</MET> <ENG>2.0</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL>
+<DTA TYPE="STRING">Relief Ducts</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>40</MET> <ENG>1.5</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Fresh Air Intake Ducts</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>40</MET> <ENG>1.5</ENG></DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB></TXT><BRK/></SPT>
+<SPT><TTL>Insulation and Vapor Retarder/Vapor Barrier for Cold Air Duct</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Cold air ducts needing insulation are ducts that handle air at or below<MET>
+ 16 degrees C</MET><ENG> 60 degrees F</ENG>.  Mixing boxes, relief air ducts, and filter boxes 
+should not be insulated unless condensation is a problem.  Insulation may be 
+omitted on that portion of return air ducts installed in the ceiling spaces 
+where condensation is not a problem, and on that portion of supply ducts installed 
+in ceiling spaces used as a return air plenum where condensation is not a problem.  
+The designer is required to provide calculations to prove, if insulation is 
+not provided for ducts or equipment, the space will be properly cooled and condensation 
+will not form on ductwork or equipment.  For ducts to be used for both heating 
+and cooling, the requirements for cold ducts will govern.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Insulation and vapor retarder/vapor barrier shall be provided for the following cold air ducts and associated 
+equipment.</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Supply ducts.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Return air ducts.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Relief ducts.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Flexible run-outs (field-insulated).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Plenums.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  Duct-mounted coil casings.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  Coil headers and return bends.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">h.  Coil casings.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">i.  Fresh air intake ducts.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">j.  Filter boxes.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">k.  Mixing boxes (field-insulated).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">l.  Supply fans (field-insulated).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">m.  Site-erected air conditioner casings.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">n.  Ducts exposed to weather.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">o.  Combustion air intake ducts.</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Insulation for Warm Air Duct</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Warm air ducts needing insulation are ducts that handle air above<MET> 16 
+degrees C</MET><ENG> 60 degrees F</ENG>.  Mixing boxes, relief air ducts, and filter boxes should 
+not be insulated unless condensation is a problem.  Factory fabricated double-walled 
+internally insulated duct exposed to the weather should be externally insulated 
+on long runs of duct in cold climates.  If insulation is required for unique 
+building design, indicate on the drawings the locations the insulation is to 
+be installed.  Ducts for dual purposes will be as required for cold duct. Delete 
+items below as required.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Insulation and vapor barrier shall be provided for the following warm air ducts and associated equipment:.</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Supply ducts.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Return air ducts.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Relief air ducts</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Flexible run-outs (field insulated).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Plenums.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  Duct-mounted coil casings.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  Coil-headers and return bends.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">h.  Coil casings.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">i.  Fresh air intake ducts.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">j.  Filter boxes.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">k.  Mixing boxes.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">l.  Supply fans.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">m.  Site-erected air conditioner casings.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">n.  Ducts exposed to weather.</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Ducts Handling Air for Dual Purpose</TTL><BRK/>
+<BRK/>
+<TXT>For air handling ducts for dual purpose below and above<MET> 16 degrees C</MET><ENG> 60 degrees F</ENG>, ducts shall be insulated as 
+specified for cold air duct.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Duct Test Holes</TTL><BRK/>
+<BRK/>
+<TXT>After duct systems have been tested, adjusted, and balanced, breaks in the insulation and jacket shall be repaired 
+in accordance with the applicable section of this specification for the type of duct insulation to be repaired.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Duct Exposed to Weather</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Installation</TTL><BRK/>
+<BRK/>
+<TXT>Ducts exposed to weather shall be insulated and finished as specified in accordance with <RID>MLIT-M</RID>.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Kitchen Exhaust Duct Insulation</TTL><BRK/>
+<BRK/>
+<TXT><RID>NFPA 96</RID> for [ovens,] [griddles,] [deep fat fryers,] [steam kettles,] [vegetable steamers,] [high pressure cookers,] 
+[and] [mobile serving units].  Provide insulation with<MET> 19 mm</MET><ENG> 3/4 inch</ENG> wide, minimum<MET> 4 mm</MET><ENG> 0.15 inch</ENG> thick galvanized 
+steel bands spaced not over<MET> 305 mm</MET><ENG> 12 inches</ENG> o.c.; or 16 gauge galvanized steel wire with corner clips under 
+the wire; or with heavy welded pins spaced not over<MET> 305 mm</MET><ENG> 12 inches</ENG> apart each way.  Do not use adhesives.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></TAI><TAI OPT="EQUIPMENT INSULATION"><SPT><TTL><SUB>EQUIPMENT INSULATION SYSTEMS</SUB> INSTALLATION</TTL><BRK/>
+<BRK/>
+<TAI OPT="ARMY"><TXT>Install equipment insulation systems in accordance with <RID>MLIT-M</RID>.</TXT><BRK/>
+<BRK/></TAI>
+<SPT><TTL>Insulation for Cold Equipment</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Special cold equipment including Government-furnished equipment that 
+requires field-applied insulation will be inserted in the appropriate paragraph.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Cold equipment below<MET> 16 degrees C</MET><ENG> 60 degrees F</ENG>: Insulation shall be furnished on equipment handling media below<MET>
+ 16 degrees C</MET><ENG> 60 degrees F</ENG> including the following:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Pumps.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Refrigeration equipment parts that are not factory insulated.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Drip pans under chilled equipment.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Cold water storage tanks.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Water softeners.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  Duct mounted coils.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  Cold and chilled water pumps.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">h.  Pneumatic water tanks.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">i.  Roof drain bodies.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">j.  Air handling equipment parts that are not factory insulated.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">k.  Expansion and air separation tanks.</LST><BRK/>
+<BRK/>
+<SPT><TTL>Insulation Type</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Additional data on insulation thickness may be found in manufacturers 
+catalogs and computer sizing programs and from individual calculations.  Care 
+should be taken in the selection of an insulating material for high temperature 
+equipment.  If the equipment rises to high operating temperature in a short 
+period of time, thermal stresses may occur in rigid insulations that may lead 
+to cracking and subsequent deterioration of the insulation.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Insulation shall be suitable for the temperature encountered.  Material and thicknesses shall be as shown in 
+Table 5:</TXT><BRK/>
+<BRK/>
+<TXT><TAB HEADERROWS="4" WIDTH="99">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN HORIZONTAL="CENTER"/>
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="3" ROWCOUNT="5">
+      <COL AUTOWIDTH="0" WIDTH="36.75"/>
+      <COL AUTOWIDTH="0" WIDTH="308.25"/>
+      <COL AUTOWIDTH="0" WIDTH="107.25"/>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="2" STYLEID="s50">
+<DTA TYPE="STRING">TABLE 5</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="2" STYLEID="s50">
+<DTA TYPE="STRING">Insulation Thickness for Cold Equipment<MET> (mm)</MET><ENG> (inches)</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL MERGEACROSS="2">
+<DTA TYPE="STRING">Equipment handling media at indicated temperature</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Material</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Thickness<MET> (mm)</MET><ENG> (inches)</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING"><RID>MLIT-M</RID></DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB></TXT><BRK/></SPT>
+</SPT><SPT><TTL>Insulation for Hot Equipment</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Special hot equipment such as sterilizers, expansion tanks for high temperature 
+water systems, process equipment, and special Government-furnished equipment 
+that requires field-applied insulation will be inserted in the appropriate subparagraphs.  
+Expansion tanks on hot water heating systems will not normally be insulated.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Insulation shall be furnished on equipment handling media above<MET> 16 degrees C</MET><ENG> 60 degrees F</ENG> including the following:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Converters.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Heat exchangers.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Hot water generators.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Water heaters.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Pumps handling media above<MET> 54 degrees C</MET><ENG> 130 degrees F</ENG>.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  Fuel oil heaters.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  Hot water storage tanks.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">h.  Air separation tanks.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">i.  Surge tanks.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">j.  Flash tanks.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">k.  Feed-water heaters.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">l.  Unjacketed boilers or parts of boilers.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">m.  Boiler flue gas connection from boiler to stack (if inside).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">n.  Induced draft fans.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">o.  Fly ash and soot collectors.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">p.  Condensate receivers.</LST><BRK/>
+<BRK/>
+<SPT><TTL>Insulation</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Additional data on insulation thickness may be found in manufacturers 
+catalogs and computer sizing programs and from individual calculations.  Care 
+should be taken in the selection of an insulating material for high temperature 
+equipment.  If the equipment rises to high operating temperature in a short 
+period of time, thermal stresses may occur in rigid insulations that may lead 
+to cracking and subsequent deterioration of the insulation.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Insulation shall be suitable for the temperature encountered.  Shell and tube-type heat exchangers shall be insulated 
+for the temperature of the shell medium.</TXT><BRK/>
+<BRK/>
+<TXT>Insulation thickness for hot equipment shall be determined using Table 6:</TXT><BRK/>
+<BRK/>
+<TXT><TAB HEADERROWS="4" WIDTH="99">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM"/>
+      </STY>
+      <STY SID="s51">
+         <ALN HORIZONTAL="CENTER" VERTICAL="BOTTOM"/>
+      </STY>
+      <STY SID="s52">
+         <ALN HORIZONTAL="CENTER"/>
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="3" ROWCOUNT="14">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="36.75"/>
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="308.25"/>
+      <COL AUTOWIDTH="0" WIDTH="107.25"/>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL MERGEACROSS="2" STYLEID="s51">
+<DTA TYPE="STRING">TABLE 6</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL MERGEACROSS="2" STYLEID="s51">
+<DTA TYPE="STRING">Insulation Thickness for Hot Equipment<MET> (mm)</MET><ENG> (inches)</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL MERGEACROSS="2" STYLEID="s50">
+<DTA TYPE="STRING">Equipment handling steam or media at indicated pressure or temperature limit</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Material</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">Thickness<MET> (mm)</MET><ENG> (inches)</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL MERGEACROSS="2" STYLEID="s50">
+<DTA TYPE="STRING"><MET>103 kPa or 121 degrees C</MET><ENG>15 psig or 250 degrees F</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Rigid Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Flexible Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="19.50">
+         <CEL MERGEACROSS="2" STYLEID="s50">
+<DTA TYPE="STRING"><MET>1380 kPa or 204 degree C</MET><ENG>200psig or 400 degrees F</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Rigid Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>75</MET><ENG>3</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Flexible Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>75</MET><ENG>3</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL MERGEACROSS="2" STYLEID="s50">
+<DTA TYPE="STRING"><MET>316 degrees C</MET><ENG>600 degrees F</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Rigid Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>125</MET><ENG>5</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="20.25">
+         <CEL STYLEID="s50"/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Flexible Mineral Fiber</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING"><MET>150</MET><ENG>6</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="48.75">
+         <CEL MERGEACROSS="2" STYLEID="s50">
+<DTA TYPE="STRING"><MET>316 degrees C</MET><ENG>600 degrees F</ENG>:  Thickness necessary to limit the external temperature of the insulation to<MET> 50 C</MET><ENG> 120 F</ENG>.  Heat transfer calculations shall be submitted to substantiate insulation and thickness selection.</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB></TXT><BRK/></SPT>
+<SPT><TTL>Insulation of Boiler Stack and Diesel Engine Exhaust Pipe</TTL><BRK/>
+<BRK/>
+<TXT>Insulation type and thickness shall be in accordance with the following Table 7.</TXT><BRK/>
+<TAB HEADERROWS="5">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN HORIZONTAL="CENTER"/>
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="7" ROWCOUNT="17">
+      <COL AUTOWIDTH="0" WIDTH="21.00"/>
+      <COL AUTOWIDTH="0" WIDTH="144.00"/>
+      <COL AUTOWIDTH="0" WIDTH="54.00"/>
+      <COL AUTOWIDTH="0" WIDTH="51.00"/>
+      <COL AUTOWIDTH="0" WIDTH="54.75"/>
+      <COL AUTOWIDTH="0" WIDTH="53.25"/>
+      <COL AUTOWIDTH="0" WIDTH="90.00"/>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">TABLE 7</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="33.00">
+         <CEL MERGEACROSS="6" STYLEID="s50">
+<DTA TYPE="STRING">Insulation and Thickness for<BRK/>Boiler Stack and Diesel Engine Exhaust Pipe</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="33.00">
+         <CEL MERGEACROSS="6">
+<DTA TYPE="STRING">Service &amp; Surface Temperature Range (Degrees <MET>C</MET><ENG>F</ENG>)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="33.00">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Material</DTA>
+         </CEL>
+         <CEL MERGEACROSS="4" STYLEID="s50">
+<DTA TYPE="STRING">Outside Diameter<MET> (mm)</MET><ENG> (Inches)</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="47.25">
+         <CEL/>
+         <CEL/>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>6 - 32</MET><ENG>0.25 - 1.25</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>25 - 80</MET><ENG>1 - 1.67</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>90-125</MET><ENG>3.5-5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>150 - 250</MET><ENG>6 - 10</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">&gt; or = <MET>280 - 900</MET><ENG>11 - 36</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL MERGEACROSS="6">
+<DTA TYPE="STRING">Boiler Stack<MET> (Up to 204 degrees C)</MET><ENG> (Up to 400 degrees F)</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="36.00">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber<BRK/><RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">N/A</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">N/A</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>75</MET><ENG>3</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>90</MET><ENG>3.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>100</MET><ENG>4</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL MERGEACROSS="6">
+<DTA TYPE="STRING">Boiler Stack<MET> (205 to 315 degrees C)</MET><ENG> (401 to 600 degrees F)</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="63.00">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber<BRK/><RID>JIS A 9504</RID> <RID>ASTM C547</RID> Class 2,<BRK/><RID>ASTM C592</RID> Class 1, or<BRK/><RID>ASTM C612</RID> Class 3</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">N/A</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">N/A</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>100</MET><ENG>4</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>100</MET><ENG>4</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>125</MET><ENG>5</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="17.25">
+         <CEL/>
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Mineral Fiber/Cellular Glass Composite:</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="62.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber<BRK/>JIS A 9504 <RID>ASTM C547</RID> Class 2,<BRK/><RID>ASTM C592</RID> Class 1, or<BRK/><RID>ASTM C612</RID> Class 3</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>25</MET><ENG>1</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>25</MET><ENG>1</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>25</MET><ENG>1</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>25</MET><ENG>1</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="26.25">
+         <CEL MERGEACROSS="6">
+<DTA TYPE="STRING">Boiler Stack<MET> (316 to 427 degrees C)</MET><ENG> (601 to 800 degrees F)</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="72.00">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber<BRK/><RID>JIS A 9504</RID> <RID>ASTM C547</RID> Class 3,<BRK/><RID>ASTM C592</RID> Class 1, or<BRK/><RID>ASTM C612</RID> Class 3 <RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">N/A</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">N/A</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>100</MET><ENG>4</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>100</MET><ENG>4</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>150</MET><ENG>6</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="17.25">
+         <CEL/>
+         <CEL MERGEACROSS="5">
+<DTA TYPE="STRING">Mineral Fiber/Cellular Glass Composite:</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="74.25">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber<BRK/><RID>JIS A 9504</RID> <RID>ASTM C547</RID> Class 2,<BRK/><RID>ASTM C592</RID> Class 1, or<BRK/><RID>ASTM C612</RID> Class 3 <RID>JIS A 9504</RID></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>50</MET><ENG>2</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>80</MET><ENG>3</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>80</MET><ENG>3</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="27.00">
+         <CEL MERGEACROSS="6">
+<DTA TYPE="STRING">Diesel Engine Exhaust<MET> (Up to 371 degrees C)</MET><ENG> (Up to 700 degrees F)</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="66.75">
+         <CEL/>
+         <CEL>
+<DTA TYPE="STRING">Mineral Fiber<BRK/><RID>JIS A 9504</RID> <RID>ASTM C547</RID> Class 2, <RID>ASTM C592</RID> Class 1, or <RID>ASTM C612</RID> Class 3 JIS A 9504</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>50</MET><ENG>3</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>50</MET><ENG>3.5</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>50</MET><ENG>4</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>80</MET><ENG>4</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><MET>80</MET><ENG>4</ENG></DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB><BRK/></SPT>
+</SPT><SPT><TTL>Equipment Handling Dual Temperature Media</TTL><BRK/>
+<BRK/>
+<TXT>Below and above<MET> 16 degrees C</MET><ENG> 60 degrees F</ENG>:  equipment handling dual temperature media shall be insulated as specified 
+for cold equipment.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Equipment Exposed to Weather</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Installation</TTL><BRK/>
+<BRK/>
+<TXT>Equipment exposed to weather shall be insulated and finished in accordance with the requirements for ducts exposed 
+to weather in paragraph DUCT INSULATION INSTALLATION.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></SPT></TAI></PRT>   <END/><BRK/></SEC>

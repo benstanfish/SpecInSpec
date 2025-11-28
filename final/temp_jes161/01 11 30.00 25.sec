@@ -1,0 +1,471 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><HDR><AST /><BRK />
+USACE                                 JES<HLS>-01 11 30.00 25</HLS> (<HLS>May 2024</HLS>)<BRK />
+                                      ------------------------------------<BRK />
+Preparing Activity: USACE<BRK />
+<BRK />
+<HL4><HL4>JAPAN EDITED SPECIFICATIONS</HL4></HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated <HLS>May 2024</HLS></HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 01 11 30.00 25</SCN><BRK />
+<BRK />
+<STL>DIVING</STL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>diving</SCP>.</NPR><BRK />
+<BRK />
+<NPR>Remove information and requirements not required in respective project, whether 
+or not brackets are present.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>1.1   GENERAL INFORMATION</TTL><BRK />
+<BRK />
+<TXT>This Section covers the general requirements for Contract diving operations to be performed as specified within 
+this Contract. Diving shall be performed in accordance with the latest edition of the U.S. Army Corps of Engineers 
+Safety and Occupational Health Requirements, <RID>EM 385-1-1</RID> Chapter 30; The U.S. Navy Diving Manuals, <RID>NAVSEA 0994-LP001-0910</RID>
+ and<RID> NAVSEA 0994-LP001-0920</RID>; <RID>29 CFR 1910</RID>, Occupational Safety and Health Standards, Subpart T: Commericial Diving 
+Operations; Japan's Ministry of Health, Labour and Welfare's "Ordinance on Safety and Health of Work under High 
+Pressure" (JISHA <RID>ORDINANCE NO. 171</RID>) standard, and <RID>ADCI </RID>International Consensus Standards inclusive of all other 
+references listed therein. All diving operations shall be considered incidental to the work specified elsewhere 
+herein. No separate payment for diving work will be made.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.2"><TTL>1.2   REFERENCES</TTL><BRK />
+<BRK />
+<TXT>The latest editions of the publications listed below form a part of this specification to the extent referenced. 
+The publications are referred to in the text by basic designation only. </TXT><BRK />
+<BRK />
+<REF><ORG>ASSOCIATION OF DIVING CONTRACTORS INTERNATIONAL (ADCI)</ORG><BRK />
+<BRK />
+<RID>ADCI</RID><RTL>(2020) International Consensus Standards For 
+Commercial Diving And Underwater Operations, 
+6.4</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>AMERICAN WELDING SOCIETY (AWS)</ORG><BRK />
+<BRK />
+<RID>AWS D1.1/D1.1M</RID><RTL>(2020; Errata 1 2021) Structural Welding Code 
+- Steel</RTL><BRK />
+<BRK />
+<RID>AWS D3.6M</RID><RTL>(2017) Underwater Welding Code</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. ARMY CORPS OF ENGINEERS (USACE)</ORG><BRK />
+<BRK />
+<RID>EM 385-1-1</RID><RTL> Safety -- Safety and Health Requirements 
+Manual</RTL><BRK />
+<BRK />
+<RID>ER 385-1-86</RID><RTL>(2021) Safety, U.S. Army Corps of Engineers 
+Dive Program</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)</ORG><BRK />
+<BRK />
+<RID>29 CFR 1910</RID><RTL>Occupational Safety and Health Standards</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>U.S. NAVAL SEA SYSTEMS COMMAND (NAVSEA)</ORG><BRK />
+<BRK />
+<RID>NAVSEA 0994-LP001-0910</RID><RTL>(2016) U.S. Navy Diving Manual, REV 7</RTL><BRK />
+<BRK />
+<RID>NAVSEA 0994-LP001-0920</RID><RTL>(2016) U.S. Navy Diving Manual, REV 7</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>MINISTRY OF HEALTH, LABOUR AND WELFARE, GOVERNMENT OF JAPAN (MHLW)</ORG><BRK />
+<BRK />
+<RID>ORDINANCE NO. 171</RID><RTL>(2001) Ordinance on Safety and Health of Work 
+under High Pressure</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.3"><TTL>1.3   SUBMITTALS</TTL><BRK />
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are for information only. When used, a designation following the "G" designation identifies the office that will 
+review the submittal for the Government.</TXT><BRK />
+<BRK />
+<TXT>The following shall be submitted in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES and <SRF>01 35 26</SRF>, GOVERNMENTAL 
+SAFETY REQUIREMENTS.</TXT><BRK />
+<BRK />
+<TXT>Submit the following preconstruction submittal items no later than 30 calendar days after Notice to Proceed:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-01 Preconstruction Submittals</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Dive Operations Plan</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Dive Personnel Qualifications</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Dive Submittal Review Checklist</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Addendums To The Dive Operations Plan</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Underwater Quality Control (UWQC) Reports</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Equipment Certifications</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-11 Closeout Submittals</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Dive Logs</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.4"><TTL>1.4   PRE-QUALIFIED DIVE COMPANIES AND DIVE TEAM PERSONNEL</TTL><BRK />
+<BRK />
+<SPT outline="1.4.1"><TTL>1.4.1   <SUB>Dive Personnel Qualifications</SUB></TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Qualifications, and training certificates of dive personnel.<BRK />
+"Annual" diver physicals shall conform to the requirements of <BRK />
+<RID>EM 385-1-1</RID> &amp; JISHA <RID>ORDINANCE NO. 171</RID>.<BRK /></LST>
+<BRK />
+<LST INDENT="-0.33">b.  Contractor shall submit only a statement from a licensed physician (DMO or MD) with experience with 
+dive physiology that states the diver is "Fit to Dive". "Fit to Dive" certificates will not be accepted 
+with signatures from Occupational Health Nurses. Physicians' assistants are acceptable if currently licensed 
+specialty in Dive / Hyperbaric Medicine.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Submitted physician statement shall contain at a minimum the diver's name, examination date, physician's 
+name, physician's signature, physicians' medical license number, and physicians telephone number. To 
+include legible contact information and stamp.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  The signing physician shall be an MD, DMO, or an OD. Submitted statement shall NOT contain divers 
+Personal Health Information (PHI) or Personal Identification Information (PII). To meet JISHA <RID>ORDINANCE NO. 171</RID>
+ requirements, the divers Fit to Dive/ Physicals should be considered a living document and the contractor 
+shall update the divers Physicals / fit to dive statements per JISHA <RID>ORDINANCE NO. 171</RID> requirements and 
+frequency.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  First Aid (FA), Cardiopulmonary Resuscitation (CPR) &amp; Emergency Oxygen System (EO2) training 
+shall be in accordance with the JISHA <RID>ORDINANCE NO. 171</RID>, Chapter 30-3.D and all applicable OSHA regulations.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  FA, CPR &amp; EO2 training are required to be Hands-on training. Online training will "NOT" be accepted.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  Proof of Hands-on training shall be provided within this submittal.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  All certifications shall be maintained &amp; submitted as required for the life cycle of the project.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="1.4.2"><TTL>1.4.2   Pre-Dive Conference</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  A Pre-Dive Conference shall be held prior to commencement of any diving operations and will be attended 
+by the following Personnel prior to commencement of operations.</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">1.  Contractor Dive Supervisor</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">2.  Designated Diving Coordinator &amp; Government Safety Representative</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">3.  Contracting Officers Representative (having authority on contract</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">4.  Contractor SSHO</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">5.  Contractor individual with sufficient authority to speak and make agreements on the Contractors 
+behalf </ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">b.   Additional requirement prior to commencement of operations.</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">1.  Designated Dive Coordinator (DDC) / Dive Safety Inspector (DSI) inspection of gear to be 
+used and location of operations.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">2.  Successful performance of an Unresponsive Diver Drill. This shall be required annually and 
+performed with change of Dive Supervisor, replacement of more than 50% of dive personnel, or 
+as requested by the District Dive Coordinator for cause.</ITM><BRK />
+<BRK /></SPT>
+</SPT><NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specifications Writer to coordinate with and obtain direction/guidance 
+from the assigned Designated Diving Coordinator (DDC) on tailoring the bracketed 
+options in Subpart 1.5 DIVING ENVIRONMENT.</NPR><BRK />
+<AST /><BRK /></NTE>
+<SPT outline="1.5"><TTL>1.5   DIVING ENVIRONMENT</TTL><BRK />
+<BRK />
+<TXT>Each diving Contract must contain the following environmental and work-area information:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  The estimated maximum working depth for demolition and repair work is approximately [X] (MSW) meters 
+below water surface.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  The estimated maximum depth (distance from water surface to bottom) the diver(s) will be exposed 
+to is approximately [X] (MSW) meters below water surface.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Turbidity during normal working conditions may limit visibility to [X] CM or less.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  The current water velocity through the work area is estimated to be approximately [X] knots, weather 
+dependent.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Water temperature(s) are estimated to vary between [X] and [XX] degrees Celsius.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Underwater operations [[XXX] will not][will [XXX]] require diver(s) to perform work within confined 
+spaces and/or enclosed areas or areas with overhead obstruction. If this type of work is to be performed, 
+all requirements most recent version of <RID>EM 385-1-1</RID>, Chapter 30 shall apply.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  The overall work site is a restricted access area and shall be delineated by turbidity curtains and 
+marker buoys.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  Work to be performed is on an active (Military or Civilian) [briefly specify the site that the work 
+is to be performed on ie: fuel pier, etc.] whose primary function is [provide brief explanation of the 
+site's function].</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">i.  The contractor shall at no time cause delay to any existing marine operations unless properly scheduled 
+in advance with the Authority having Jurisdiction (AHJ).<BRK />
+<BRK />
+Any delays incurred by the contractor to scheduled marine operations shall be burdened by the contractor 
+and will represent no additional cost to the government.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">j.  At no time will divers be deployed while vessels are operating in AOR unless predetermined zones 
+have been established and approved.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">k.  Divers shall not work under suspended or unsecured loads. Loads bearing structure require associated 
+engineering assessments to be performed by a Registered Professional Engineer (of appropriate Discipline) 
+as required by the contracting officer's representative and shall be performed at no additional cost 
+of the government.</LST><BRK />
+<BRK />
+<TXT>Contractor shall take the above into account while scheduling work.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.6"><TTL>1.6   <SUB>DIVE OPERATIONS PLAN</SUB>, SCHEDULE, AND CHECKLIST</TTL><BRK />
+<BRK />
+<TXT>No later than 30 working days prior to the first planned diving operation, the Dive Plan and Schedule shall be 
+submitted to coordinate work schedules at the Project and other concurrent work.</TXT><BRK />
+<BRK />
+<TXT>The Dive Plan and Schedule shall detail dive locations and shall be flexible enough to accommodate any conflicts 
+with Marine operations. Personnel and <SUB>equipment certifications</SUB> shall be included in the plan.</TXT><BRK />
+<BRK />
+<TXT>A site-specific Emergency Management Plan shall be included in the Dive Plan in accordance with all applicable references.<BRK />
+<BRK />
+A job specific Activity Hazard Analysis (AHA) shall be prepared in accordance with <RID>ER 385-1-86</RID> and <RID>EM 385-1-1</RID>
+, Chapter 30, Diving Operations, and shall be included in the Dive Plan.</TXT><BRK />
+<BRK />
+<TXT>In addition to the Dive Plan and Schedule, the <SUB>Dive Submittal Review Checklist</SUB> (Attachment 01 11 30.00 25-A) 
+shall be completed and submitted for review and approval by the DDC.</TXT><BRK />
+<BRK />
+<TXT>Adjustments shall be coordinated and approved by the Contracting Officer's Representative (COR). Dive locations 
+and schedules shall be submitted in accordance with Section <SRF>01 33 00</SRF>, SUBMITTAL PROCEDURES, for approval.</TXT><BRK />
+<BRK />
+<TXT>In the event of any <SUB>addendums to the Dive Operations Plan</SUB> are required, the Contractor must obtain DDC approval 
+as per <RID>EM 385-1-1</RID>.  Should the Contractor fail to acquire approval for the addnedums, the DDC is authorized to 
+stop any and all on going diving operations.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.7"><TTL>1.7   RESOLUTION OF CONFLICT</TTL><BRK />
+<BRK />
+<TXT><RID>EM 385-1-1</RID>, <RID>ER 385-1-86</RID>, as applied by the USACE Japan Engineer District, through the DDC. Supplemental waivers 
+or applicable Memorandum of Agreement (MOA) shall be the controlling authority(s) for implementation of all Contract 
+diving policy.<BRK />
+<BRK />
+All Resolution requiring full waivers of any regulation requirement shall be done in accordance with (IAW) <RID>EM 385-1-1</RID>
+ (latest version) &amp; <RID>ER 385-1-86</RID>. All requests will be submitted officially and require District DDC concurrence.<BRK /></TXT>
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS - NOT USED</TTL><BRK />
+<BRK /></PRT>
+<PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>3.1   DIVE TEAM COMPOSITION AND DIVE EQUIPMENT</TTL><BRK />
+<BRK />
+<TXT>Surface supplied air (SSA) is the only approved form of diving authorized for execution of work unless otherwise 
+noted.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Minimum dive team staffing shall, unless a waiver is approved by the Authority Having Jurisdiction 
+(AHJ) HQUSACE, Honolulu District Safety Office, via District DDC, be comprised of personnel levels as 
+required by <RID>EM 385-1-1</RID>:</LST><BRK />
+<BRK />
+<ITM INDENT="-0.33">1.  A single diver requires a 5-man crew as defined in this reference and for two in-water working 
+divers, a 6-man crew shall be required, which includes the addition of one stand-by diver and 
+one tender.</ITM><BRK />
+<BRK />
+<ITM INDENT="-0.33">2.  For depths exceeding 100 ft. a 6-man crew is required AND hyperbaric chamber meeting requirements 
+listed in this specification is available onsite.</ITM><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Any use of breathing gas with oxygen content more than 21 percent is considered mixed gas diving. 
+Mixed gas diving is not authorized on this contract unless specifically approved per the requirements 
+of <RID>EM 385-1-1</RID>. </LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Surface-supplied air diving equipment with 2-way voice communication shall be used by divers and 
+standby divers.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  An independent reserve air system (30CU bailout bottle at minimum) for all divers is required as 
+specified by <RID>EM 385-1-1</RID>.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  As a minimum, all diver surface air supply compressors, tanks, helmets, and other related equipment 
+must comply with the requirements of <RID>EM 385-1-1</RID>.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  All dive team members must meet the requirements as listed in <RID>EM 385-1-1</RID>, Chapter 30-3.b through 
+3 and 30-8.a (10), <RID>ER 385-1-86</RID>, and JISHA <RID>ORDINANCE NO. 171</RID>.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  Self-Contained Underwater Breathing Apparatus (SCUBA) Diving is not authorized on this contract with 
+the exception of UNDERWATER QUALITY CONTROL (UWQC) TESTING or QA testing and inspection is authorized 
+at Government discretion with DDC concurrence.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  Use of SCUBA, tethered or otherwise requires approval from DDC prior to commencement of testing / 
+Inspection AND shall not relieve UWQC or QA activities of 2-way voice communication requirement to be 
+used by divers and standby divers. An independent reserve air system (30CU bailout bottle at minimum) 
+is required to perform UWQC / QA operations.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">i.  All necessary top-side equipment such as cranes, trucks, personnel vehicles, access to a hyperbaric 
+chamber (if required) per applicable regulation, and appropriately powered underwater hand/power tools 
+shall be furnished by the Contractor to enable accomplishment of all required dive work.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">j.  If a crane is used, a certified crane operator shall not be included as a dive-team member. The operator 
+shall be exclusively dedicated to crane operation and shall have direct communication with the diving 
+supervisor (DS).</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.2"><TTL>3.2   CONTRACTOR-FURNISHED DIVING SUPPORT EQUIPMENT </TTL><BRK />
+<BRK />
+<TXT>There is no government furnished diving support equipment used on this contract.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3"><TTL>3.3   CONTRACTOR-PROVIDED SPECIAL UNDERWATER EQUIPMENT </TTL><BRK />
+<BRK />
+<TXT>The Contractor is expected to furnish all appropriate tools, equipment, and materials needed to accomplish the 
+tasks as stated in paragraph DIVING WORK DESCRIPTION and the specifications of this contract.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4"><TTL>3.4   SAFE CLEARANCE PROCEDURES</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  A safe clearance Lock-out/Tag-out system is to be used by dive personnel to ensure continuity of 
+service and safety to personnel and equipment. Any work performed which requires taking Project operating 
+equipment out of service shall be done only after formal clearance is obtained through the Government 
+DDC, DSI, Government Quality Assurance Representative (GQAR), or supervisory / controlling authority 
+of water way operational area.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  The Contractor will furnish a checklist of clearance lock-out/tag-out items implemented for each 
+clearance action and the Contractor dive supervisor shall accompany Government personnel during the verification 
+of the lock-out/tag-out process.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  The Contractor dive supervisor Shall keep one of the following personnel always informed of all diving 
+activity underway; DDC, DSI, GQAR, Harbor Master (or designee), or supervisory / controlling authority 
+of water way operational area.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  In, on, or around project site areas where differential Pressures (DIF-P) or Hazardous energy exist 
+or are of concern, Contractor personnel who violate Clearances or procedures, will be cause to immediately 
+and permanently ban the person(s) from the project site at the discretion of the District DDC to include 
+concurrence from the Contracting Officers Representative.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.5"><TTL>3.5   BOAT RESTRICTED ZONE (BRZ)</TTL><BRK />
+<BRK />
+<SPT outline="3.5.1"><TTL>3.5.1   General</TTL><BRK />
+<BRK />
+<TXT>Each USACE Japan Engineer District Project requires compliance with any site-specific Boat Restricted Zone (BRZ) 
+Policy, where any work on or over water near structures with active vessel operations will be planned and coordinated 
+with local Marine Operations personnel and the COR or representative before approaching the worksite. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5.2"><TTL>3.5.2   Permission</TTL><BRK />
+<BRK />
+<TXT>The Contractor shall be informed of pending marine vessel schedules that would impact diving operations, in advance 
+of the anticipated work interruption date(s). Coordination with Marine Operations and the Contractor shall include 
+the COR or their representative at minimum. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5.3"><TTL>3.5.3   Safety Requirements &amp; Restrictions</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Untethered Scuba, Mixed Gas Diving, and Scientific Snorkeling are not authorized methodology for 
+use on this contract unless otherwise noted.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Confined space diving is not authorized on this contract unless otherwise noted.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Turbidity curtain installation if applicable, movement, and maintenance is required to be accomplished 
+by divers unless otherwise prescribed in this contract specification.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Divers shall not work under loads, suspended or otherwise unsecured load at any time. Loads bearing 
+structure require associated engineering be performed by a Registered Professional Engineer (of appropriate 
+Discipline) as required by the contracting officer's representative and shall be performed at no additional 
+cost of the government.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Dive supervisor is not authorized to dive unless an accepted alternate supervisor possesses the same 
+certifications at a supervisory level.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  All Dive Supervisors shall meet the minimum requirements for Dive Supervisor as listed in all applicable 
+reference in this specification.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  Underwater Structural welders will not be accepted for welding work without meeting the requirements <RID>
+AWS D1.1/D1.1M</RID> &amp; <RID>AWS D3.6M</RID>, or Host Country governing regulations pertaining to welding certifications. </LST><BRK />
+<BRK />
+<LST INDENT="-0.33">    Divers submitting welding qualifications meeting the intent of the AWS requirements, however and 
+were trained and working as an underwater welder prior to the acceptance of the AWS standards will be 
+considered on a case-by-case basis for Supplemental waivers by the District DDC and the contracting officer's 
+representative (U.S. diving contractors only). </LST><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  Arrange with local authorities for emergency dive medical response, treatment and evacuation to medical 
+facility and nearest hyperbaric chamber. Provide map with route directions to nearest hospital and hyperbaric 
+chamber in dive plan Emergency Management Plan required by <RID>EM 385-1-1</RID>.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.5.4"><TTL>3.5.4   Safety items required prior to entry into the BRZ</TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  The requirements of <RID>EM 385-1-1</RID> &amp; <RID>ER 385-1-86</RID>.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  As a minimum, each vessel including floating plants used for dive operations, must meet JISHA <RID>ORDINANCE NO. 171</RID>
+ / Japan Coast Guard, or for military projects on base, governing agency's safety standards for day and 
+night vessel operation. Included but not limited to; fire extinguishing capability, personal safety devices, 
+running and anchor lights, propellar guards (where required) and an audible warning device capable of 
+being heard anywhere within the BRZ.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  A marine band radio capable of communication with Marine Operations on channel [XX] must be available 
+to the boat operator. Failure to maintain communication with the Harbor Master (or AHJ) anytime vessels 
+are operating within the BRZ is cause for removal from the BRZ until deficiencies are rectified.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  The dive boat operator shall always remain at the boat controls during dive operations and have no 
+other duties while inside the BRZ.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  The vessel used for primary diving operations shall only be used for the diving operations. A second 
+boat shall be provided specifically for rescue per the requirements of <RID>EM 385-1-1</RID>.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  A rescue line shall be available in a throw bag. The rescue line length shall be of sufficient length 
+to reach personnel which have gone overboard. A minimum length of 75 feet / 23 meters is recommended. 
+Rescue Line which is constructed of a buoyant material is recommended.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  A spotlight which can be easily operated by the boat operator must be available when performing nighttime 
+operations.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  A second boat of sufficient size, capable of safely removing "ALL" personnel from the work zone, 
+must be dedicated and shall be of sufficient size to carry a stokes litter and backboard along with boat 
+operator and any personnel rendering aid during rescue.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">i.  Both boats must remain in radio contact with each other. The rescue boat is not to perform any work. 
+It is to be manned by a boat operator and at least one rescue individual. <BRK />
+<BRK />
+Dive station personnel may be used during emergencies for this purpose. Procedures shall be clearly listed 
+in Contractor's emergency management plan. Active working boats shall not be used for rescue (<RID>EM 385-1-1</RID>
+)</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">j.  Both boats must be powered by engines capable of motoring upstream at twice the speed of the quickest 
+flow that will be encountered inside the BRZ while fully loaded and operational.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">k.  Each boat must have two motors and be of sufficient size to safely remove "ALL" personnel from the 
+work zone.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">l.  Each boat shall have an adequately sized tow line capable of towing a disabled boat to safety.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">m.  Contractor shall provide means of identification (flags) for all vessels that are granted permission 
+to enter the BRZ. These flags shall be always displayed clearly and prominently the boat is in the BRZ. 
+If diving, a one (1)-meter square Code Alpha Flag as well as a "Diver Down" flag must be flown a minimum 
+of five feet above the vessel's highest point.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">n.  All boat operators must present their credentials prior to initiation of work. This will include 
+all licenses, certifications and resume of appropriate experience. Each operator must be approved by 
+the Contracting Officer (or their representative) prior to beginning work.</LST><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.6"><TTL>3.6   DIVING WORK OPERATIONS</TTL><BRK />
+<BRK />
+<TXT>Description of the various diving tasks to be accomplished is as follows:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Execute dives in accordance with approved Dive Operations Plan submittal.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Contractor shall submit completed daily <SUB>dive logs</SUB> at the end of each dive day. Daily dive logs shall 
+be submitted with the daily quality control report and provided to the District Dive Coordinator or authorized 
+representative upon request. Contractor shall use COE form ENG 4615 or accepted equivalent (must contain 
+same information) to record daily diving activities. The ENG form can be found in the USACE publication 
+website. (<URL HREF="https://www.publications.usace.army.mil">https://www.publications.usace.army.mil/</URL>)<BRK /></LST>
+<BRK />
+<LST INDENT="-0.33">c.  Site specific dive plan shall be approved prior to commencement of underwater construction. </LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  All debris, cuttings, chips, spalls created during the construction process, and any items placed 
+in the water that do not become a permanent part of the repaired structures shall be recovered and disposed 
+of at the Contractor expense.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="3.7"><TTL>3.7   <SUB>UNDERWATER QUALITY CONTROL (UWQC) REPORTS</SUB></TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Contractor is required to provide photographic, or video documentation of all underwater work as 
+required by contract for acceptance by the Contracting Officers Representative.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  If third party UWQC is required and is not being performed by the Contractor's diving subcontractor, 
+the Contractor must provide an UWQC Team at the work site to perform underwater surveillance and inspection 
+for the Government of contracted repairs. The UWQC Team divers must have current commercial diver's credentials, 
+with a minimum of five (5) years' experience with underwater inspection.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  The personnel makeup of the UWQC team must comply with all the applicable safety requirements of <RID>
+EM 385-1-1</RID>, OSHA and local requirements for Contract diving operations.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  The UWQC lead diver must be thoroughly familiar with the design plans and specifications to sufficiently 
+understand the engineering aspects of the underwater construction and to be able to recognize and document 
+potential problem areas such as improperly constructed or defective areas.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Provide all necessary equipment to conduct surveillance and inspection services, including but not 
+limited to diver's equipment, dive boat, communication equipment, and photographic/video equipment.</LST><BRK />
+<BRK /></SPT>
+</PRT>    <END /><BRK /></SEC>

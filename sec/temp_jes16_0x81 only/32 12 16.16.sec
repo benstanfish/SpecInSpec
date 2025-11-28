@@ -1,0 +1,1270 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><MTA NAME="AUTONUMBER" CONTENT="TRUE" /><BRK />
+<HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA               UFGS-32 12 16.16 (August 2009)<BRK />
+                                               ---------------------------<BRK />
+Preparing Activity:  <PRA>USACE</PRA>                     Superseding<BRK />
+                                               UFGS-32 12 16 (August 2008)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated January 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 32 12 16.16</SCN><BRK />
+<BRK />
+<STL>HOT-MIX ASPHALT (HMA) FOR ROADS</STL><BRK />
+<DTE>08/09</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements 
+and include Japanese products, where feasible, for a standard Japan Engineer 
+District project.  The Designer of Record (DOR) shall tailor as applicable to 
+meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>hot-mix asphalt 
+(HMA) courses (central-plant hot-mix) for roads</SCP>.</NPR><BRK />
+<BRK />
+<NPR>Adhere to <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-criteria-ufc/ufc-1-300-02">UFC 1-300-02</URL> Unified Facilities Guide Specifications (UFGS) Format 
+Standard when editing this guide specification or preparing new project specification 
+sections.  Edit this guide specification for project specific requirements by 
+adding, deleting, or revising text.<BRK />
+<BRK />
+Remove information and requirements not required in respective project.</NPR><BRK />
+<BRK />
+<NPR>Comments, suggestions and recommended changes for this guide specification are 
+welcome and should be submitted as a <URL HREF="http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs">Criteria Change Request (CCR)</URL>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements 
+for a basic Japan Engineer District project. Designer shall tailor as applicable 
+to meet project specific requirement.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This paragraph is used to list the publications cited in the text of 
+the guide specification.  The publications are referred to in the text by basic 
+designation only and listed in this paragraph by organization, designation, 
+date, and title.<BRK />
+<BRK />
+Use the Reference Wizard's Check Reference feature when you add a Reference 
+Identifier (RID) outside of the Section's Reference Article to automatically 
+place the reference in the Reference Article.  Also use the Reference Wizard's 
+Check Reference feature to update the issue dates.<BRK />
+<BRK />
+References not used in the text will automatically be deleted from this section 
+of the project specification when you choose to reconcile references in the 
+publish print process.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK />
+<BRK />
+<REF><DEL><ORG>JAPANESE INDUSTRIAL STANDARDS (JIS)</ORG></DEL><ADD><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG></ADD><BRK />
+<BRK />
+<RID>JIS A 1110</RID><RTL>(2006) Methods of Test for Density and Water 
+Absorption of Coarse Aggregates</RTL><BRK />
+<BRK />
+<RID>JIS A 1121</RID><RTL>(2007) Method of Test for Resistance to Abrasion 
+of Coarse Aggregate by Use of the Los Angeles 
+Machine</RTL><BRK />
+<BRK />
+<RID>JIS A 1122</RID><RTL>(2014) Method of Test for Soundness of Aggregate<DEL>
+ </DEL> by Use of Sodium Sulfate</RTL><BRK />
+<BRK />
+<RID>JIS A 1137</RID><RTL>(2014) Method of Test for Clay Lumps Contained 
+in Aggregates</RTL><BRK />
+<BRK />
+<RID>JIS A 5001</RID><RTL>(2008) Crushed Stone for Road Construction</RTL><BRK />
+<BRK />
+<RID>JIS A 5008</RID><RTL>(2008) Limestone Filler for Bituminous Paving 
+Mixtures</RTL><BRK />
+<BRK />
+<RID>JIS K 2207</RID><RTL>(2006) Petroleum Asphalts</RTL><BRK />
+<BRK /></REF>
+<REF><ORG><DEL>JAPAN ROAD ASSOCIATION (JRA)</DEL><ADD>JAPAN ROAD ASSOCIATION (JARA)</ADD></ORG><BRK />
+<BRK />
+<RID>JRA HAP</RID><RTL>(2019) Handbook for Asphalt Pavement</RTL><BRK />
+<BRK /></REF>
+</SPT><SPT outline="1.2"><TTL>GENERAL REQUIREMENTS</TTL><BRK />
+<BRK />
+<TXT>All materials, equipment, and construction procedures of hot-mix asphalt pavement for this project shall be in 
+accordance with the Japan Road Association standards per publication identified in this specification.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>SUBMITTALS</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Review submittal description (SD) definitions in Section <SRF>01 33 00</SRF> SUBMITTAL 
+PROCEDURES and edit the following list to reflect only the submittals required 
+for the project.<BRK />
+<BRK />
+The Guide Specification technical editors have designated those items that require 
+Government approval, due to their complexity or criticality, with a "G."  Generally, 
+other submittal items can be reviewed by the Contractor's Quality Control System.  
+Only add a &#8220;G&#8221; to an item, if the submittal is sufficiently important or complex 
+in context of the project.<BRK />
+<BRK />
+For submittals requiring Government approval on Army projects, a code of up 
+to three characters within the submittal tags may be used following the "G" 
+designation to indicate the approving authority.  Codes for Army projects using 
+the Resident Management System (RMS) are:  "AE" for Architect-Engineer; "DO" 
+for District Office (Engineering Division or other organization in the District 
+Office); "AO" for Area Office; "RO" for Resident Office; and "PO" for Project 
+Office.  Codes following the "G" typically are not used for Navy and Air Force projects.<BRK />
+<BRK />
+The "S" following a submittal item indicates that the submittal is required 
+for the Sustainability eNotebook to fulfill federally mandated sustainable requirements 
+in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Locate the "S" 
+submittal under the SD number that best describes the submittal item.<BRK />
+<BRK /></NPR>
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation 
+are for information only.  When used, a designation following the "G" designation identifies the office that 
+will review the submittal for the Government.  Submittals with an "S" are for inclusion in the Sustainability 
+eNotebook, in conformance to Section <SRF>01 33 29</SRF> SUSTAINABILITY REPORTING.  Submit the following in accordance with 
+Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<LST><SUB>SD-03 Product Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Mix Design</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Quality Control</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Material Acceptance</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Aggregates</SUB>; <SUB>G</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>QC Monitoring</SUB></ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.4"><TTL>ENVIRONMENTAL REQUIREMENTS</TTL><BRK />
+<BRK />
+<TXT>Do not place the hot-mix asphalt upon a wet surface or when the surface temperature of the underlying course 
+is less than specified in Table 3.  The temperature requirements may be waived by the Contracting Officer, if 
+requested; however, meet all other requirements, including compaction.</TXT><BRK />
+<TXT><TAB HEADERROWS="2">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM" />
+      </STY>
+      <STY SID="s51">
+         <ALN HORIZONTAL="CENTER" VERTICAL="BOTTOM" />
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="2" ROWCOUNT="4">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="286.50" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="285.00" />
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL MERGEACROSS="1" STYLEID="s51">
+<DTA TYPE="STRING">Table 3.  Surface Temperature Limitations of Underlying Course</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">Mat Thickness,<MET> mm</MET><ENG> inches</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">Degrees<MET> C</MET><ENG> F</ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING"><MET>75 </MET><ENG>3 </ENG>or greater</DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING"><MET> 4 </MET><ENG> 40 </ENG></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="32.25">
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">Less than<MET> 75</MET><ENG> 3</ENG></DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING"><MET> 7 </MET><ENG> 45 </ENG></DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB></TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>SYSTEM DESCRIPTION</TTL><BRK />
+<BRK />
+<TXT>Perform the work consisting of pavement courses composed of mineral aggregate and asphalt material heated and 
+mixed in a central mixing plant and placed on a prepared course.  HMA designed and constructed in accordance 
+with this section shall conform to the lines, grades, thicknesses, and typical cross sections indicated.  Construct 
+each course to the depth, section, or elevation required by the drawings and roll, finish, and approve it before 
+the placement of the next course.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2"><TTL><SUB>AGGREGATES</SUB></TTL><BRK />
+<BRK />
+<TXT>Provide aggregates consisting of crushed stone, crushed gravel, crushed slag, screenings, natural sand and mineral 
+filler, as required.  The portion of material retained on the<MET> 5 mm</MET><ENG> No. 4</ENG> sieve is coarse aggregate.  The portion 
+of material passing the<MET> 5 mm</MET><ENG> No. 4</ENG> sieve and retained on the<MET> 0.074 mm</MET><ENG> No. 200</ENG> sieve is fine aggregate.  The portion 
+passing the<MET> 0.074 mm</MET><ENG> No. 200</ENG> sieve is defined as mineral filler.  Submit all aggregate test results and samples 
+to the Contracting Officer at least 14 days prior to start of construction.</TXT><BRK />
+<BRK />
+<SPT outline="2.2.1"><TTL>Coarse Aggregate</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify the coarse aggregate gradation as recommended by Japan Road Association.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide coarse aggregate consisting of sound, tough, durable particles, free from films of material that would 
+prevent thorough coating and bonding with the asphalt material and free from organic matter and other deleterious 
+substances and conforming to <RID>JIS A 5001</RID>.  All individual coarse aggregate sources shall meet the following requirements:</TXT><BRK />
+<HL4><BRK />
+Percent Passing (by Weight)</HL4><BRK />
+<TAB BORDERS="1">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN HORIZONTAL="CENTER" />
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="4" ROWCOUNT="6">
+      <COL AUTOWIDTH="0" WIDTH="146.25" />
+      <COL AUTOWIDTH="0" WIDTH="146.25" />
+      <COL AUTOWIDTH="0" WIDTH="146.25" />
+      <COL AUTOWIDTH="0" WIDTH="146.25" />
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Sieve Size (mm)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">S-20 (20-13 mm)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">S-13 (13-5 mm)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">S-5 (5-2.5 mm)<BRK /></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">25</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">100</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">-</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">-</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">20</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">85 - 100</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">100</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">-</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">13</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">0 - 15</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">85 - 100</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">100</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">5</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">-</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">0 - 15</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">85 - 100</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">2.5</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">-</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">-</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">0 - 25</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK />
+<BRK />
+<BRK />
+<LST INDENT="-0.33">a.  At least 75 percent by weight of the aggregate shall have two or more fractured faces in accordance 
+with <RID>JRA HAP</RID></LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  It shall be of uniform quality, clean, hard and durable, and shall not contain deleterious substances 
+over the maximum percent by weight, such as clay or loam (0.25% maximum), soft stone pieces (5.0% maximum), 
+and flat or elongated stone pieces (10.0% maximum) in accordance with <RID>JRA HAP</RID>.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Specific gravity shall be 2.45 or more when tested with <RID>JIS A 1110</RID>, water absorption shall be 3.0 
+percent or less when tested with <RID>JIS A 1110</RID>, and wear shall be not more than 30 percent when tested with <RID>
+JIS A 1121</RID>.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Soundness of aggregate shall be not more than 12 percent when tested with <RID>JIS A 1122</RID>.</LST><BRK />
+<BRK />
+<BRK /></SPT>
+<SPT outline="2.2.2"><TTL>Fine Aggregate</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify the fine aggregate gradation as recommended by Japan Road Association.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Fine aggregate shall consist of natural or manufactured sand, and screenings conforming to <RID>JIS A 5001</RID>, except 
+as modified herein. Fine aggregate shall meet requirements for wear and soundness specified for coarse aggregate. 
+Since screenings may contain deleterious substances, such as silt and clay, it is necessary to perform sufficient 
+examination before use. Clay lumps content shall be less than 0.25% when tested with <RID>JIS A 1137</RID>. Gradation of 
+fine aggregate shall be as follows: </TXT><BRK />
+<TAB BORDERS="1">
+<WBK>
+   <STS />
+   <TDA COLUMNCOUNT="2" ROWCOUNT="7">
+      <COL AUTOWIDTH="0" WIDTH="293.25" />
+      <COL AUTOWIDTH="0" WIDTH="291.75" />
+      <ROW AUTOHEIGHT="0" HEIGHT="18.75">
+         <CEL>
+<DTA TYPE="STRING">Sieve Size (mm)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Percent Passing (by Weight)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.75">
+         <CEL>
+<DTA TYPE="STRING">5</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">100</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.75">
+         <CEL>
+<DTA TYPE="STRING">2.5</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">85 - 100</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.75">
+         <CEL>
+<DTA TYPE="STRING">0.6</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">25 - 55</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.75">
+         <CEL>
+<DTA TYPE="STRING">0.3</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">15 - 40</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.75">
+         <CEL>
+<DTA TYPE="STRING">0.15</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">7 - 28</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="54.75">
+         <CEL>
+<DTA TYPE="STRING">0.074</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">0 - 20</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK />
+<BRK />
+<BRK /></SPT>
+<SPT outline="2.2.3"><TTL>Mineral Filler</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify the mineral filler aggregate gradation as recommended by Japan 
+Road Association.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Mineral filler shall be pulverized limestone or igneous rock that is sufficiently dry and free of lumps and  
+meeting the requirements of <RID>JIS A 5008</RID>. Moisture content shall be less than 1.0 percent, and specific gravity 
+shall be more than 2.60 percent. Gradation of mineral filler shall be as follows:<BRK />
+<BRK />
+<TAB BORDERS="1">
+<WBK>
+   <STS />
+   <TDA COLUMNCOUNT="2" ROWCOUNT="4">
+      <COL AUTOWIDTH="0" WIDTH="285.75" />
+      <COL AUTOWIDTH="0" WIDTH="285.75" />
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL>
+<DTA TYPE="STRING">Sieve Size (mm)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Percent Passing (by Weight)</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL>
+<DTA TYPE="STRING">0.6</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">100</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="21.00">
+         <CEL>
+<DTA TYPE="STRING">0.15</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Over 90</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="32.25">
+         <CEL>
+<DTA TYPE="STRING">0.074</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Over 70</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK /></TXT>
+<BRK /></SPT>
+<SPT outline="2.2.4"><TTL>Composition of Hot-Mix Asphalt Mixture</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify the combined aggregate gradation as recommended by Japan Road 
+Association.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<BRK />
+<SPT outline="2.2.4.1"><TTL>Aggregate Gradation</TTL><BRK /></SPT>
+<BRK />
+<TXT>The combined aggregate gradation shall conform to gradations specified in Table 1 and shall not vary from the 
+low limit on one sieve to the high limit on the adjacent sieve or vice versa, but grade uniformly from coarse 
+to fine.</TXT><BRK />
+<BRK />
+<HL4>Table 1</HL4><BRK />
+<BRK />
+<HL4>Total Percent Passing (By Weight)</HL4><BRK />
+<TAB BORDERS="1">
+<WBK>
+   <STS />
+   <TDA COLUMNCOUNT="4" ROWCOUNT="10">
+      <COL AUTOWIDTH="0" WIDTH="146.25" />
+      <COL AUTOWIDTH="0" WIDTH="146.25" />
+      <COL AUTOWIDTH="0" WIDTH="146.25" />
+      <COL AUTOWIDTH="0" WIDTH="146.25" />
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">Sieve Size (mm)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Binder Course (Max. 20 mm)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Wearing Course (Max. 20 mm)</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Wearing Course (Max. 13 mm)<BRK /></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">25</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">100</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">100</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">-</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">20</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">95 - 100</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">95 - 100</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">100</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">13</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">70 - 90</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">75 - 90</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">95 - 100</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">5</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">35 - 55</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">45 - 65</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">55 -70</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">2.5</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">20 - 35</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">35 - 50</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">35 -50<BRK /></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="15.75">
+         <CEL>
+<DTA TYPE="STRING">0.6</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">11 - 23</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">18 - 30</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">18 - 30</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">0.3</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">5 - 16</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">10 - 21</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">10 - 21</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.00">
+         <CEL>
+<DTA TYPE="STRING">0.15</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">4 - 12</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">6 - 16</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">6 - 16<BRK /></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="31.50">
+         <CEL>
+<DTA TYPE="STRING">0.074</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">2 - 7</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">4 - 8</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">4 - 8<BRK /></DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /></TAB><BRK />
+<BRK />
+<SPT outline="2.2.4.2"><TTL>Quantity of Asphalt Cement</TTL><BRK />
+<BRK />
+<TXT>Mix asphalt cement with aggregates of corresponding mixes in the following proportions: </TXT><BRK />
+<BRK />
+<TAB>
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN HORIZONTAL="CENTER" />
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="2" ROWCOUNT="3">
+      <COL AUTOWIDTH="0" WIDTH="293.25" />
+      <COL AUTOWIDTH="0" WIDTH="291.75" />
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL MERGEACROSS="1" STYLEID="s50">
+<DTA TYPE="STRING">Asphalt Cement Percent by Weight of Total Mix</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="23.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Binder Course</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Wearing Course</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="24.75">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">4.5 - 6</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">5 - 7</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="2.3"><TTL>ASPHALT CEMENT</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Specify the asphalt cement binder as recommended by Japan Road Association.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Asphalt cement shall conform to <RID>JIS K 2207</RID>, penetration grade 40-60 (high traffic areas), 60-80 (general traffic 
+conditions), 80-100 (snowy regions), and 100-120 (extremely cold places).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4"><TTL><SUB>MIX DESIGN</SUB></TTL><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Develop the mix design.  The asphalt mix shall be composed of a mixture of well-graded aggregate, 
+mineral filler if required, and asphalt material.  The aggregate fractions shall be sized, handled in 
+separate size groups, and combined in such proportions that the resulting mixture meets the grading requirements 
+of the job mix formula (JMF).  Submit proposed JMF; do not produce hot-mix asphalt for payment until 
+a JMF has been approved.  The hot-mix asphalt shall be designed in accordance with Chapter 5 of the <RID>JRA HAP</RID>
+ - Handbook for Asphalt Pavement and the criteria shown in Table 2. </LST><BRK />
+<BRK />
+<SPT outline="2.4.1"><TTL>JMF Requirements</TTL><BRK />
+<BRK />
+<TXT>Submit in writing the job mix formula for approval at least 14 days prior to the start of the test section including 
+as a minimum:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Source and proportions, percent by weight, of each ingredient of the mixture.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Correct gradation, the percentages passing each size sieve listed in the specification for the mixture 
+to be used, for the aggregate and mineral filler from each separate source and from each different size 
+to be used in the mixture and for the composite mixture.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Amount of material passing the JIS 0.074 mm sieve as determined by dry sieving.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Number of blows of hammer compaction per side of molded specimen.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  Temperature viscosity relationship of the asphalt pavement.  </LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  Stability, flow, percent voids in mineral aggregate, percent air voids, and unit weight.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">g.  Asphalt absorption by the aggregate.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">h.  Effective asphalt content as percent by weight of total mix.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">i.  Temperature of the mixture immediately upon completion of mixing.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">j.  Asphalt viscosity grade and/or penetration range. </LST><BRK />
+<BRK />
+<LST INDENT="-0.33">k.  Curves for the binder and wearing courses.</LST><BRK />
+<BRK />
+<BRK />
+<SPT outline="2.4.1.1"><TTL>Marshall Test</TTL><BRK />
+<BRK />
+<TXT>Marshall test specimen of hot-mix asphalt mixture shall be prepared in a laboratory to determine the optimum 
+composition of aggregates and the optimum quantity of asphalt cement. Aggregate gradation and asphalt cement 
+content used in the mixtures shall be within the limits specified. Standard value for Marshall test shall be 
+as follows: </TXT><BRK />
+<BRK /></SPT>
+<BRK />
+<TXT><TAB HEADERROWS="2">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM" />
+      </STY>
+      <STY SID="s51">
+         <ALN HORIZONTAL="CENTER" VERTICAL="BOTTOM" />
+      </STY>
+      <STY SID="s52">
+         <ALN HORIZONTAL="CENTER" />
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="3" ROWCOUNT="8">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="267.75" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="145.50" />
+      <COL AUTOWIDTH="0" WIDTH="158.25" />
+      <ROW AUTOHEIGHT="0" HEIGHT="32.25">
+         <CEL MERGEACROSS="2" STYLEID="s51">
+<DTA TYPE="STRING">Table 2.  Mix Design Criteria</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="32.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Type of Mixture</DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">Binder Course</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">Wearing Course</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="32.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">
+Number of Blows (Traffic Classification C or heavier)</DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">75</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">75</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="32.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Number of Blows (Traffic Classification B or ligher)
+<BRK /></DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">50</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">50</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="32.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Percentage of Air Voids (%)</DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">3-7</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">3-6</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="32.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Voids Filled with Asphalt (%)</DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">65-85</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">70-85</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="32.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Marshall Stability (kgf)</DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">500 or more</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">750 or more</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="49.50">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Flow Value (1/100cm)</DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">20-40</DTA>
+         </CEL>
+         <CEL STYLEID="s52">
+<DTA TYPE="STRING">20-40</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL />
+<BRL /><BRL /><BRL /><BRL /><BRL /></TAB></TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.2"><TTL>Adjustments to Field JMF</TTL><BRK />
+<BRK />
+<TXT>Keep the Laboratory JMF for each mixture in effect until a new formula is approved in writing by the Contracting 
+Officer.  Should a change in sources of any materials be made, perform a new laboratory jmf design and a new 
+JMF approved before the new material is used.  The Contractor will be allowed to adjust the Laboratory JMF within 
+the limits specified below to optimize mix volumetric properties with the approval of the Contracting Officer.  
+Adjustments to the Laboratory JMF shall be applied to the field (plant) established JMF and limited to those 
+values as shown.  Adjustments shall be targeted to produce or nearly produce 4 percent voids total mix (VTM).</TXT><BRK />
+<TXT><TAB HEADERROWS="2" WIDTH="76">
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM" />
+      </STY>
+      <STY SID="s51">
+         <ALN HORIZONTAL="CENTER" VERTICAL="BOTTOM" />
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="2" ROWCOUNT="7">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="150.75" />
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="282.75" />
+      <ROW AUTOHEIGHT="0" HEIGHT="18.75">
+         <CEL MERGEACROSS="1" STYLEID="s51">
+<DTA TYPE="STRING">TABLE 3. Field (Plant) Established JMF Tolerances</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.75">
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">Sieves<MET>, mm</MET></DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">Adjustments (plus or minus), percent</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.75">
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">13</DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">3</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.75">
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">5</DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">3</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.75">
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">2.5</DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">3</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="18.75">
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">0.074</DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">1</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="54.75">
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">Binder Content</DTA>
+         </CEL>
+         <CEL STYLEID="s51">
+<DTA TYPE="STRING">0.4</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /><BRL /></TAB></TXT><BRK />
+<TXT>If adjustments are needed that exceed these limits, develop a new mix design.  Tolerances given above may permit 
+the aggregate grading to be outside the limits shown in Table 1; while not desirable, this is acceptable, except 
+for the<MET> 0.074 mm</MET><ENG> No. 200</ENG> sieve, which shall remain within the aggregate grading of Table 1.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.5"><TTL>RECYCLED HOT MIX ASPHALT</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Reclaimed Asphalt Pavement (RAP)can be used up to 30 percent as long 
+as the resulting recycled mix meets all requirements that are specified for 
+virgin mixtures.  The 30 percent is a general limit.  If the existing asphalt 
+pavement is relatively old, the amount of RAP used will not approach this limit.  
+If the recycling involves relatively new RAP materials, the percentage of RAP 
+specified below could be greater than 30 percent.  Remove these paragraphs if 
+RAP is not used. Refer to UFC 3-250-03, "Standard Practice Manual for Flexible 
+Pavements" for further design guidance.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Recycled HMA shall consist of reclaimed asphalt pavement (RAP), coarse aggregate, fine aggregate, mineral filler, 
+and asphalt cement to produce a consistent gradation and asphalt content and properties.  When RAP is fed into 
+the plant, the maximum RAP chunk size shall not exceed<MET> 50 mm</MET><ENG> 2 inches</ENG>.    The amount of RAP shall not exceed 
+30 percent.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>PREPARATION OF ASPHALT BINDER MATERIAL</TTL><BRK />
+<BRK />
+<TXT>Heat the asphalt cement material avoiding local overheating and providing a continuous supply of the asphalt 
+material to the mixer at a uniform temperature.  The temperature of unmodified asphalts shall be no more than<MET>
+ 160 degrees C</MET><ENG> 325 degrees F</ENG> when added to the aggregates. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2"><TTL>PREPARATION OF MINERAL AGGREGATE</TTL><BRK />
+<BRK />
+<TXT>Heat and dry the aggregate for the mixture prior to mixing.  No damage shall occur to the aggregates due to the 
+maximum temperature and rate of heating used.  The temperature of the aggregate and mineral filler shall not 
+exceed<MET> 175 degrees C</MET><ENG> 350 degrees F</ENG> when the asphalt cement is added.  The temperature shall not be lower than 
+is required to obtain complete coating and uniform distribution on the aggregate particles and to provide a mixture 
+of satisfactory workability.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.3"><TTL>PREPARATION OF HOT-MIX ASPHALT MIXTURE</TTL><BRK />
+<BRK />
+<TXT>Accurately weigh or gauge the aggregates and the dry mineral filler and convey into the mixer in the proportionate 
+amounts of each aggregate size required to meet the job-mix formula.  Introduce required amount of asphalt into 
+the mixer at a temperature at which it can be applied uniformly to the aggregate but not to exceed <MET>163 degrees 
+C</MET>. In batch mixing, after the aggregates and mineral filler have been introduced into the mixer and mixed for 
+not less than 15 seconds, add asphalt by spraying or other approved methods, and continue mixing for a period 
+of not less than 20 seconds or as much longer as may be required to obtain a homogeneous mixture.  The time required 
+to add or spray the asphalt into the mixer will not be added to the total wet-mixing time provided this operation 
+does not exceed 10 seconds and a homogeneous mixture is obtained.  The additional mixing time, when required, 
+will be as directed.  The temperature of the mixture at the time of discharge shall not exceed <MET>168 degrees C</MET>. 
+The temperature of the aggregate and mineral filler in the mixer shall not exceed <MET>177 degrees C</MET> when the asphalt 
+is added. When the mixture is prepared in a twin-pugmill mixer, the volume of the aggregates, mineral filler, 
+and asphalt shall not extend above the tips of the mixer blades when the blades are in a vertical position.  
+Overheated and carbonized mixtures, or mixtures that foam or show indication of free moisture, will be rejected.  
+When free moisture is detected in batch mix plant produced mixture, withdraw the aggregates in the hot bins immediately 
+and return to the respective stockpiles.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4"><TTL>PREPARATION OF THE UNDERLYING SURFACE</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  If the underlying surface to be paved is an unbound granular layer, a 
+prime coat should be applied, especially if this layer will be exposed to weather 
+for an extended period of time prior to covering with an asphalt mixture.  The 
+prime coat may be deleted if the base course is covered with hot mix within 
+7 days and no significant rainfall is anticipated.  If the base course is to 
+receive traffic prior to application of the surface course, it should first 
+be primed and cured.</NPR><BRK />
+<BRK />
+<NPR>If the underlying surface to be paved is an existing asphalt or concrete layer, 
+a tack coat should always be used to ensure an adequate bond between layers.</NPR><BRK />
+<BRK />
+<NPR>Delete requirement for prime coat if a drainage layer is used beneath the hot 
+mix layer.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Immediately before placing the hot mix asphalt, clean the underlying course of dust and debris.  Apply a [prime 
+coat] [and/or] [tack coat] in accordance with the contract specifications.</TXT><BRK />
+<BRK />
+<SPT outline="3.4.1"><TTL>Raising of Existing Manhole, Handhole, Valve Box and Catch Basin</TTL><BRK />
+<BRK />
+<TXT>If there are existing manhole, handhole, valve box and catch basins in existing asphalt concrete pavement to 
+be overlaid, those shall be raised up to flush with the finished surface of new hot-mix asphalt pavement before 
+new asphalt concrete is placed. Existing mortar leveling course under the manhole, handhole and valve box shall 
+be replaced with new up to new level to provide a flush setting.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.5"><TTL>TESTING LABORATORY</TTL><BRK />
+<BRK />
+<TXT>Submit laboratory certification issued by the local prefectural or central government (Japan Ministry of Land, 
+Infrastructure, Transport and Tourism (MLIT)).  Use a laboratory to develop the JMF.  The Government will inspect 
+the laboratory equipment and test procedures prior to the start of hot mix operations.  The laboratory shall 
+maintain a valid certification for the duration of the project.  A statement signed by the manager of the laboratory 
+stating that it meets these requirements or clearly listing all deficiencies shall be submitted to the Contracting 
+Officer prior to the start of construction.  The statement shall contain as a minimum:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Qualifications of personnel; laboratory manager, supervising technician, and testing technicians.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  A listing of equipment to be used in developing the job mix.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  A copy of the laboratory's quality control system.</LST><BRK />
+<BRK />
+<BRK /></SPT>
+<SPT outline="3.6"><TTL>TRANSPORTING AND PLACING</TTL><BRK />
+<BRK />
+<SPT outline="3.6.1"><TTL>Transporting</TTL><BRK />
+<BRK />
+<TXT>Transport the hot-mix asphalt from the mixing plant to the site in clean, tight vehicles.  Schedule deliveries 
+so that placing and compacting of mixture is uniform with minimum stopping and starting of the paver.  Provide 
+adequate artificial lighting for night placements.  Hauling over freshly placed material will not be permitted 
+until the material has been compacted as specified, and allowed to cool to<MET> 60 degrees C</MET><ENG> 140 degrees F</ENG>.  To deliver 
+mix to the paver, use a material transfer vehicle operated to produce continuous forward motion of the paver.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.6.2"><TTL>Placing</TTL><BRK />
+<BRK />
+<TXT>Place and compact the mix at a temperature suitable for obtaining density, surface smoothness, and other specified 
+requirements.  Upon arrival, place the mixture to the full width by an asphalt paver; it shall be struck off 
+in a uniform layer of such depth that, when the work is completed, it will have the required thickness and conform 
+to the grade and contour indicated.  Regulate the speed of the paver to eliminate pulling and tearing of the 
+asphalt mat.  Unless otherwise permitted, placement of the mixture shall begin along the centerline of a crowned 
+section or on the high side of areas with a one-way slope.  Place the mixture in consecutive adjacent strips 
+having a minimum width of<MET> 3 m</MET><ENG> 10 feet</ENG>.  The longitudinal joint in one course shall offset the longitudinal joint 
+in the course immediately below by at least<MET> 300 mm</MET><ENG> 1 foot</ENG>; however, the joint in the surface course shall be 
+at the centerline of the pavement.  Transverse joints in one course shall be offset by at least<MET> 3 m</MET><ENG> 10 feet</ENG> from 
+transverse joints in the previous course.  Transverse joints in adjacent lanes shall be offset a minimum of<MET> 3 
+m</MET><ENG> 10 feet</ENG>.  On isolated areas where irregularities or unavoidable obstacles make the use of mechanical spreading 
+and finishing equipment impractical, the mixture may be spread and luted by hand tools.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.7"><TTL>COMPACTION OF MIXTURE</TTL><BRK />
+<BRK />
+<TXT>After placing, the mixture shall be thoroughly and uniformly compacted by rolling.  Compact the surface as soon 
+as possible without causing displacement, cracking or shoving.  The sequence of rolling operations and the type 
+of rollers used shall be at the discretion of the Contractor.  The speed of the roller shall, at all times, be 
+sufficiently slow to avoid displacement of the hot mixture and be effective in compaction.  Any displacement 
+occurring as a result of reversing the direction of the roller, or from any other cause, shall be corrected at 
+once.  Furnish sufficient rollers to handle the output of the plant.  Continue rolling until the surface is of 
+uniform texture, true to grade and cross section, and the required field density is obtained.  To prevent adhesion 
+of the mixture to the roller, keep the wheels properly moistened but excessive water will not be permitted.  
+In areas not accessible to the roller, the mixture shall be thoroughly compacted with hand tampers.  Any mixture 
+that becomes loose and broken, mixed with dirt, contains check-cracking, or is in any way defective shall be 
+removed full depth, replaced with fresh hot mixture and immediately compacted to conform to the surrounding area.  
+This work shall be done at the Contractor's expense.  Skin patching will not be allowed.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.8"><TTL>JOINTS</TTL><BRK />
+<BRK />
+<TXT>The formation of joints shall be performed ensuring a continuous bond between the courses and to obtain the required 
+density.  All joints shall have the same texture as other sections of the course and meet the requirements for 
+smoothness and grade.</TXT><BRK />
+<BRK />
+<SPT outline="3.8.1"><TTL>Transverse Joints</TTL><BRK />
+<BRK />
+<TXT>Do not pass the roller over the unprotected end of the freshly laid mixture, except when necessary to form a 
+transverse joint.  When necessary to form a transverse joint, it shall be made by means of placing a bulkhead 
+or by tapering the course.  The tapered edge shall be cut back to its full depth and width on a straight line 
+to expose a vertical face prior to placing material at the joint.  Remove the cutback material from the project.  
+In both methods, all contact surfaces shall be given a light tack coat of asphalt material before placing any 
+fresh mixture against the joint.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.2"><TTL>Longitudinal Joints</TTL><BRK />
+<BRK />
+<TXT>Longitudinal joints which are irregular, damaged, uncompacted, cold (less than<MET> 80 degrees C</MET><ENG> 175 degrees F</ENG> at 
+the time of placing adjacent lanes), or otherwise defective, shall be cut back a maximum of<MET> 75 mm</MET><ENG> 3 inches</ENG> from 
+the top of the course with a cutting wheel to expose a clean, sound vertical surface for the full depth of the 
+course.  All cutback material shall be removed from the project.  All contact surfaces shall be given a light 
+tack coat of asphalt material prior to placing any fresh mixture against the joint.  The Contractor will be allowed 
+to use an alternate method if it can be demonstrated that density, smoothness, and texture can be met.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.9"><TTL>Finishing at Edge and Limit of Paving</TTL><BRK />
+<BRK />
+<TXT>Overlay of new hot-mix asphalt mixture shall be finished evenly in the same thickness indicated. Overlay shall 
+be finished in gentle slope so that the edge of new overlaying pavement shall meet the edge elevation of existing 
+asphalt concrete pavement. And where the drawing indicates "Limit of Paving," overlay shall be finished to provide 
+a smooth transition to existing concrete pavement.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.10"><TTL>Compacted Earth Shoulder</TTL><BRK />
+<BRK />
+<TXT>Place and compact earth at edges of course for at least 30 cm of the shoulder.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.11"><TTL><SUB>QUALITY CONTROL</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  The Contractor may be able to meet the specified quality control requirements 
+with in-house capability or may have to hire a material testing firm to provide 
+the required quality control testing.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="3.11.1"><TTL>General Quality Control Requirements</TTL><BRK />
+<BRK />
+<TXT>Develop and submit an approved Quality Control Plan.  Submit aggregate and QC test results.  Do not produce hot-mix 
+asphalt for payment until the quality control plan has been approved addressing all elements which affect the 
+quality of the pavement including, but not limited to:</TXT><BRK />
+<BRK />
+<ITM>a.  Mix Design</ITM><BRK />
+<BRK />
+<ITM>b.  Aggregate Grading</ITM><BRK />
+<BRK />
+<ITM>c.  Quality of Materials</ITM><BRK />
+<BRK />
+<ITM>d.  Stockpile Management</ITM><BRK />
+<BRK />
+<ITM>e.  Proportioning</ITM><BRK />
+<BRK />
+<ITM>f.  Mixing and Transportation</ITM><BRK />
+<BRK />
+<ITM>g.  Mixture Volumetrics</ITM><BRK />
+<BRK />
+<ITM>h.  Moisture Content of Mixtures</ITM><BRK />
+<BRK />
+<ITM>i.  Placing and Finishing</ITM><BRK />
+<BRK />
+<ITM>j.  Joints</ITM><BRK />
+<BRK />
+<ITM>k.  Compaction</ITM><BRK />
+<BRK />
+<ITM>l.  Surface Smoothness</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="3.11.2"><TTL>Testing Laboratory</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: For projects less than 1000<MET> metric</MET> tons delete the requirements for a 
+job site laboratory.  For small projects the Contractor may use a commercially 
+approved laboratory.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Provide a fully equipped asphalt laboratory located at the plant or job site.  Laboratory facilities shall be 
+kept clean and all equipment maintained in proper working condition.  The Contracting Officer shall be permitted 
+unrestricted access to inspect the Contractor's laboratory facility, to witness quality control activities, and 
+to perform any check testing desired.  The Contracting Officer will advise the Contractor in writing of any noted 
+deficiencies concerning the laboratory facility, equipment, supplies, or testing personnel and procedures.  When 
+the deficiencies are serious enough to adversely affect test results, the incorporation of the materials into 
+the work shall be suspended immediately and will not be permitted to resume until the deficiencies are corrected.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.11.3"><TTL>Quality Control Testing</TTL><BRK />
+<BRK />
+<TXT>Perform all quality control tests applicable to these specifications in accordance with the testing criteria 
+and frequency requirements as set forth in Chapter 6 of the <RID>JRA HAP</RID> - Handbook for Asphalt Pavement. Develop 
+a Quality Control Testing Plan as part of a Quality Control Program. The testing program shall include, but shall 
+not be limited to, tests for the control of asphalt content, aggregate gradation, temperatures, aggregate moisture, 
+moisture in the asphalt mixture, laboratory air voids, stability (, flow , in-place density, grade and smoothness. </TXT><BRK />
+<BRK />
+<SPT outline="3.11.3.1"><TTL>Additional Testing</TTL><BRK />
+<BRK />
+<TXT>Any additional testing, which the Contractor deems necessary to control the process, may be performed at the 
+Contractor's option.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.11.3.2"><TTL><SUB>QC Monitoring</SUB></TTL><BRK />
+<BRK />
+<TXT>Submit all QC test results to the Contracting Officer on a daily basis as the tests are performed.  The Contracting 
+Officer reserves the right to monitor any of the Contractor's quality control testing and to perform duplicate 
+testing as a check to the Contractor's quality control testing.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.11.4"><TTL>Sampling</TTL><BRK />
+<BRK />
+<TXT>When directed by the Contracting Officer, sample and test any material which appears inconsistent with similar 
+material being produced, unless such material is voluntarily removed and replaced or deficiencies corrected by 
+the Contractor.  All sampling shall be in accordance with standard procedures specified.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.12"><TTL><SUB>MATERIAL ACCEPTANCE</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  As written, this specification requires the Contractor to hire an independent 
+material testing laboratory to perform the testing listed in this Section.  
+The results are required to be forwarded daily to the Contracting Officer as 
+the basis for acceptance.</NPR><BRK />
+<BRK />
+<NPR>The project engineer may choose to have additional tests conducted by the QA 
+test agency to monitor aggregate gradation, asphalt content, Marshall stability 
+and flow.  These tests would serve as a check to the Contractor's QC testing.  
+Marshall stability and flow could be done at minimal cost since the specimens 
+have to be made anyway for laboratory air void determination.<BRK />
+<BRK /></NPR>
+<BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<SPT outline="3.12.1"><TTL>Grade</TTL><BRK />
+<BRK />
+<TXT>The final wearing surface of pavement shall conform to the elevations and cross sections shown and shall vary 
+not more than<MET> 15 mm</MET><ENG> 0.05 foot</ENG> from the plan grade established and approved at site of work.  Finished surfaces 
+at juncture with other pavements shall coincide with finished surfaces of abutting pavements.  Deviation from 
+the plan elevation will not be permitted in areas of pavements where closer conformance with planned elevation 
+is required for the proper functioning of drainage and other appurtenant structures involved.  The grade will 
+be determined by running lines of levels at intervals of<MET> 7.6 m</MET><ENG> 25 feet</ENG>, or less, longitudinally and transversely, 
+to determine the elevation of the completed pavement surface.  Within 5 working days, after the completion of 
+a particular lot incorporating the final wearing surface, test the final wearing surface of the pavement for 
+conformance with the specified plan grade.  Diamond grinding may be used to remove high spots to meet grade requirements.  
+Skin patching for correcting low areas or planing or milling for correcting high areas will not be permitted.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.12.2"><TTL>Surface Smoothness</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Edit these paragraphs as appropriate to the project.  Specify the profilograph 
+method for testing in the longitudinal direction for road length exceeding<MET> 0.4 
+km</MET><ENG> 1/4 mile</ENG>.  Specify the straightedge method for longitudinal testing on  road 
+lengths less than<MET> 0.4 km</MET><ENG> 1/4 mile</ENG> and for all transverse smoothness testing.  
+Use straightedge testing in both longitudinal and transverse directions for 
+parking lots and all other roads and for roads with design speeds less than<MET> 
+50 km/hr</MET><ENG> 30 mph</ENG>.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>  Perform all testing in the presence of the Contracting Officer.  Keep detailed notes of the results of the 
+testing and furnish a copy to the Government immediately after each day's testing.  Use the profilograph method 
+for all longitudinal testing, except where the runs would be less than<MET> 60 m</MET><ENG> 200 feet</ENG> in length and the ends where 
+the straightedge will be used. </TXT><BRK />
+<BRK />
+<SPT outline="3.12.2.1"><TTL>Smoothness Requirements</TTL><BRK />
+<BRK />
+<SPT outline="3.12.2.1.1"><TTL>Straightedge Testing</TTL><BRK />
+<BRK />
+<TXT>The finished surfaces of the pavements shall have no abrupt change of<MET> 6 mm</MET><ENG> 1/4 inch</ENG> or more, and all pavements 
+shall be within the tolerances of<MET> 6 mm</MET><ENG> 1/4 inch</ENG> in both the longitudinal and transverse directions, when tested 
+with an approved<MET> 3 m</MET><ENG> 12 feet</ENG> straightedge.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.12.2.1.2"><TTL>Profilograph Testing</TTL><BRK />
+<BRK />
+<TXT>The finished surfaces of the pavements shall have no abrupt change of<MET> 3 mm</MET><ENG> 1/8 inch</ENG> or more, and each<MET> 0.1 km</MET><ENG> 
+0.1 mile</ENG> segment of each pavement lot shall have a Profile Index not greater than<MET> 140 mm/km</MET><ENG> 9 inches/mile</ENG> when 
+tested with an approved Japanese construction practice using profilometer.  If the extent of the pavement in 
+either direction is less than<MET> 60 m</MET><ENG> 200 feet</ENG>, that direction shall be tested by the straightedge method and shall 
+meet requirements specified above.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.12.2.2"><TTL>Testing Method</TTL><BRK />
+<BRK />
+<TXT>After the final rolling, but not later than 24 hours after placement, test the surface of the pavement in each 
+entire lot in such a manner as to reveal all surface irregularities exceeding the tolerances specified above.  
+Separate testing of individual sublots is not required.  If any pavement areas are ground, these areas shall 
+be retested immediately after grinding.  Test each lot of the pavement in both a longitudinal and a transverse 
+direction on parallel lines.  Set the transverse lines<MET> 4.5 m</MET><ENG> 15 feet</ENG> or less apart, as directed.  The longitudinal 
+lines shall be at the centerline of each paving lane for lanes less than<MET> 6.1 m</MET><ENG> 20 feet</ENG> wide and at the third 
+points for lanes<MET> 6.1 m</MET><ENG> 20 feet</ENG> or wider.  Also test other areas having obvious deviations.  Longitudinal testing 
+lines shall be continuous across all joints.</TXT><BRK />
+<BRK />
+<SPT outline="3.12.2.2.1"><TTL>Straightedge Testing</TTL><BRK />
+<BRK />
+<TXT>Hold the straightedge in contact with the surface and move it ahead one-half the length of the straightedge for 
+each successive measurement.  Determine the amount of surface irregularity by placing the freestanding (unleveled) 
+straightedge on the pavement surface and allowing it to rest upon the two highest spots covered by its length, 
+and measuring the maximum gap between the straightedge and the pavement surface in the area between these two 
+high points.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.12.2.2.2"><TTL>Profilograph Testing</TTL><BRK />
+<BRK />
+<TXT>Perform profilograph testing using approved equipment and procedures.  The equipment shall utilize electronic 
+recording and automatic computerized reduction of data to indicate "must-grind" bumps and the Profile Index for 
+each<MET> 0.1 km</MET><ENG> 0.1 mile</ENG> segment of each pavement lot.  Grade breaks on parking lots shall be accommodated by breaking 
+the profile segment into shorter sections and repositioning the blanking band on each segment.  The "blanking 
+band" shall be<MET> 5 mm</MET><ENG> 0.2 inches</ENG> wide and the "bump template" shall span<MET> 25 mm</MET><ENG> 1 inch</ENG> with an offset of<MET> 7.5 mm</MET><ENG> 
+0.3 inch</ENG>.  Compute the Profile Index for each pass of the profilograph in each<MET> 0.1 km</MET><ENG> 0.1 mile</ENG> segment.  The 
+Profile Index for each segment shall be the average of the Profile Indices for each pass in each segment. Furnish 
+a copy of the reduced tapes to the Government at the end of each day's testing.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT></SPT></PRT>    <END /><BRK /></SEC>

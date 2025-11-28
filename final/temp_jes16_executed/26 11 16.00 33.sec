@@ -1,0 +1,1189 @@
+<SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW" /><HDR><AST /><BRK />
+USACE / NAVFAC / AFCESA / NASA      UFGS 26 11 16.00 33 (August 2019)<BRK />
+                                    -------------------------------<BRK />
+Preparing Activity:  <PRA>NAVFAC</PRA>      <BRK />
+<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated January 2020</HL4><BRK />
+<AST /><BRK /></HDR>
+<MTA NAME="AUTONUMBER" CONTENT="TRUE" /><HDR><AST /><BRK />
+USACE / NAVFAC / AFCEC / NASA          UFGS-23 81 00.00 20 (November 2009)<BRK />
+                                       Change 4 - 08/18<BRK />
+                                       -----------------------------------<BRK />
+Preparing Activity:  <PRA>NAVFAC</PRA>            Superseding<BRK />
+                                       UFGS-23 81 00.00 20 (July 2006)<BRK />
+<BRK />
+<HL4>UNIFIED FACILITIES GUIDE SPECIFICATIONS</HL4><BRK />
+<BRK />
+<HL4>References are in agreement with UMRL dated April 2019</HL4><BRK />
+<AST /><BRK /></HDR>
+<BRK />
+<SCN>SECTION 26 11 16.00 33</SCN><BRK />
+<BRK />
+<STL>THREE-PHASE, CUBICLE-TYPE PAD-MOUNTED TRANSFORMER</STL><BRK />
+<DTE>08/19</DTE><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  This guide specification has been edited to cover the minimum requirements and include Japanese products, 
+where feasible, for a standard Japan Engineer District project.  The Designer of Record (DOR) shall tailor as 
+applicable to meet project specific requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR><HL3>NOTE: For Honshu and Kyushu, typical voltage ratings are:  <BRK />
+Primary Voltage Ratings: 77kV, 66kV, 33kV, 22kV, 6.6kV, 3.3kV <BRK />
+Secondary Voltage Ratings: 440V, 440/254V, 420/242V, 220V, 210V, 210/105V, 208/120V<BRK />
+<BRK />
+For Okinawa, typical primary voltage is 13.8kV.<BRK />
+Secondary Voltage Ratings: 480/277V, 208/120V and 240/120V<BRK />
+<BRK />
+The following areas utilize 50 Hertz frequency:<BRK />
+Regional area by General Electricity Business as Hokkaido, Tohoku, Tokyo. <BRK />
+<BRK />
+The following remaining areas in Japan utilize 60 Hertz Frequency:  Regional area by General Electricity Business 
+as Hokuriku, Chubu, Chugoku, Kansai, Shikoku, Kyushu and Okinawa.<BRK />
+<BRK />
+Typical Japan manufactured mechanical equipment  voltages are 440V, 50Hz; 400V, 60Hz; 200V, 50/60Hz; 100V 50/60Hz. 
+Provide appropriate secondary voltage and frequency ratings to support mechanical equipment.</HL3></NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR><HL3>NOTE:  Japan voltage range categories are defined as follows:<BRK />
+Low Voltage (Voltages less than 1kV)<BRK />
+High Voltage (Voltages 1kV thru 7kV)<BRK />
+Extra High Voltage (Voltages over 7kV)</HL3></NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR><HL3>NOTE:  For transformers specified for the Honshu and Kyushu area, utilize specifications section 26 11 16.00 33. <BRK />
+<BRK />
+For transformers specified for the Okinawa area, utilize specifications section 26 12 19.10.</HL3></NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Use the following related guide<BRK />
+specifications for power distribution equipment:<BRK />
+--Section 26 20 00 INTERIOR DISTRIBUTION SYSTEM<BRK />
+--Section 26 23 00 LOW VOLTAGE SWITCHGEAR<BRK />
+--Section 26 24 13 SWITCHBOARDS</NPR><BRK />
+<AST /><BRK /></NTE>
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Show the following information on the project<BRK />
+drawings:<BRK />
+<BRK />
+1.   Single-line diagram showing pad-mounted transformer connectors, inserts, surge arresters, switches, fuses, 
+current transformers with ratings, and meters as applicable.<BRK />
+<BRK />
+2.   Grounding plan.<BRK />
+<BRK />
+3.   Type and number of cables, and size of conductors for each power circuit.<BRK />
+<BRK />
+4.   Transformer primary and secondary voltages.    State the primary voltage (nominal) actually in service and 
+not the voltage class.<BRK />
+<BRK />
+5.   Special conditions, such as altitude, temperature and humidity; exposure to fumes, vapors, dust, and gases; 
+and seismic requirements.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<PRT outline="1"><TTL>PART 1   GENERAL</TTL><BRK />
+<BRK />
+<SPT outline="1.1"><TTL>REFERENCES</TTL><BRK />
+<BRK />
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are referred to within the text by 
+the basic designation only.</TXT><BRK />
+<BRK />
+<REF><ORG>JAPANESE STANDARDS ASSOCIATION (JSA)</ORG><BRK />
+<BRK />
+<RID>JIS B 1178</RID><RTL>(2015) Foundation Bolts (Amendment 1)</RTL><BRK />
+<BRK />
+<RID>JIS C 0920</RID><RTL>(2003) Degrees Of Protection Provided By Enclosures (IP Code)</RTL><BRK />
+ <BRK />
+<RID>JIS C 1102-1</RID>   <RTL>(2007)Direct Acting Indicating Analogue Electrical Measuring Instruments And Their 
+Accessories Part 1:  Definitions And General Requirements Common To All Parts</RTL><BRK />
+<BRK />
+<RID>JIS C 1102-2</RID>   <RTL>(1997) Direct Acting Indicating Analogue Electrical Measuring Instruments And 
+Their Accessories Part 2:  Special Requirements For Ammeters And Voltmeters</RTL><BRK />
+<BRK />
+<RID>JIS C 1102-3</RID>   <RTL>(1997) Direct Acting Indicating Analogue Electrical Measuring Instruments And 
+Their Accessories Part 3:  Special Requirements For Wattmeters And Varmeters</RTL><BRK />
+<BRK />
+<RID>JIS C 1102-4</RID>   <RTL>(1997) Direct Acting Indicating Analogue Electrical Measuring Instruments And 
+Their Accessories Part 4: Special Requirements For Frequency Meters</RTL><BRK />
+<BRK />
+<RID>JIS C 1102-5</RID>   <RTL>(1997) Direct Acting Indicating Analogue Electrical Measuring Instruments And 
+Their Accessories Part 5: Special Requirements For Phase Meters, Power Factor 
+Meters And Synchroscopes</RTL><BRK />
+<BRK />
+<RID>JIS C 1102-6</RID>   <RTL>(1997) Direct Acting Indicating Analogue Electrical Measuring Instruments And 
+Their Accessories Part 6: Special Requirements For Ohmmeters (Impedance Meters) 
+And Conductance Meters</RTL><BRK />
+<BRK />
+<RID>JIS C 1102-7</RID>   <RTL>(1997) Direct Acting Indicating Analogue Electrical Measuring Instruments And 
+Their Accessories Part 7: Special Requirements For Multi-Function Instruments</RTL><BRK />
+<BRK />
+<RID>JIS C 1102-8</RID>   <RTL>(1997) Direct Acting Indicating Analogue Electrical Measuring Instruments And 
+Their Accessories Part 8: Special Requirements For Accessories</RTL><BRK />
+<BRK />
+<RID>JIS C 1103</RID>   <RTL>(1984) Dimensions of Electrical Indicating Instruments for Switchboards</RTL><BRK />
+<BRK />
+<RID>JIS C 1211-1</RID>   <RTL>(2009) Alternating-Current Watt-Hour Meters (For Direct Connection) -- Part 1: 
+General Measuring Instrument</RTL><BRK />
+<BRK />
+<RID>JIS C 1211-2</RID>   <RTL>(2017) Alternating-Current Watt-Hour Meters (For Direct Connection) -- Part 1: 
+General Measuring Instrument</RTL><BRK />
+<BRK />
+<RID>JIS C 1216-1</RID>   <RTL>(2009) Alternating-Current Watt-Hour Meters (For Connection Through Instrument 
+Transformer) -- Part 1: General Measuring Instrument</RTL><BRK />
+<BRK />
+<RID>JIS C 1263-1</RID>   <RTL>(2009) Var-Hour Meters -- Part 1: General Measuring Instrument </RTL><BRK />
+<BRK />
+<RID>JIS C 1281</RID>   <RTL>(1979) Weather-Proof Performance Of Electricity Meters</RTL><BRK />
+<BRK />
+<RID>JIS C 1283-1</RID>   <RTL>(2009) Watt-Hour, Var-Hour And Maximum Demand Indicators For Telemetering -- Part 
+1: General Measuring Instrument</RTL><BRK />
+<BRK />
+<RID>JIS C 3102</RID><RTL>(1984) Annealed Copper Wires for Electrical Purposes </RTL><BRK />
+<BRK />
+<RID>JIS C 3611</RID>   <RTL>(2020) Insulated Wires for Cubicle Type Unit Substation for 6.6 KV Receiving</RTL><BRK />
+<BRK />
+<RID>JIS C 3814</RID>   <RTL>(1999) Indoor Post Insulators</RTL><BRK />
+<BRK />
+<RID>JIS C 3851</RID>   <RTL>(2012) Indoor Post Insulator Of Organic Material</RTL><BRK />
+<BRK />
+<RID>JIS C 4304</RID>   <RTL>(2013) 6 KV Oil-Immersed Distribution Transformers</RTL><BRK />
+<BRK />
+<RID>JIS C 4306</RID><RTL>(2013) 6 kV mold transformer for distribution</RTL><BRK />
+<BRK />
+<RID>JIS C 4603</RID>   <RTL>(2019) High Voltage AC circuit breakers
+ </RTL><BRK />
+<BRK />
+<RID>JIS C 4604</RID>   <RTL>(2017) High Voltage Current-Limiting Fuses</RTL><BRK />
+<BRK />
+<RID>JIS C 4605</RID>   <RTL>(2020) AC Load Break Switches for rated voltage above 1kV 
+up to and including 52 kV</RTL><BRK />
+<BRK />
+<RID>JIS C 4606</RID><RTL>(R2011) Indoor Use Disconnectors for 3.3 kV or 6.6 kV</RTL><BRK />
+<BRK />
+<RID>JIS C 4607</RID>   <RTL>(1999) Ac Load Break Switches With Tripping Device for 3.3 kV or 6.6 kV</RTL><BRK />
+<BRK />
+<RID>JIS C 4608</RID><RTL>(2015)Surge arresters for 6.6 kV Cubicle Type Unit Substation</RTL><BRK />
+<BRK />
+<RID>JIS C 4611</RID>   <RTL>(1999) High-voltage alternating current switch-fuse combinations </RTL><BRK />
+<BRK />
+<RID>JIS C 4620</RID>   <RTL>(2018) Cubicle Type High Voltage Power Receiving Units</RTL><BRK />
+<BRK />
+<RID>JIS C 8105-1</RID><RTL>(2021) Luminaires - Part 1: General Requirements For Safety</RTL><BRK />
+<BRK />
+<RID>JIS C 8105-2-2</RID><RTL>(2017) Luminaires - Part 2. Luminaires Part 2: Particular requirements for safety 
+- Section 2: Recessed luminaires</RTL><BRK />
+<BRK />
+<RID>JIS C 8106</RID><RTL>(2015) Luminaires With Led Light Source Fluorescent Lamp For Commercial, Industrial 
+And Public Lighting </RTL><BRK />
+<BRK />
+<RID>JIS C 8201-2-1</RID>   <RTL>(2021) Low-Voltage Switchgear and Control Gear - Part 2-1: Circuit-Breakers</RTL><BRK />
+<BRK />
+<RID>JIS C 8201-2-2</RID>   <RTL>(2021) Low-Voltage Switchgear And Control Gear - Part 2-2: Circuit-Breakers Incorporating 
+Residual Current Protection</RTL><BRK />
+<BRK />
+<RID>JIS C 8201-7-1</RID>   <RTL>(2016) Low-Voltage Switchgear And Control Gear -- Part 7-1: Ancillary Equipment 
+-- Terminal Blocks For Copper Conductors</RTL><BRK />
+<BRK />
+<RID>JIS C 8303</RID>   <RTL>(2007; R 2022) Plugs And Receptacles For Domestic And Similar General Use </RTL><BRK />
+<BRK />
+<RID>JIS C 8364</RID>   <RTL>(2008; R 2018) Busways</RTL><BRK />
+<BRK />
+<RID>JIS C 8480</RID>   <RTL>(R2020) Box-Type Switchgear Assemblies for Low-Voltage Distribution Purpose</RTL><BRK />
+<BRK />
+<RID>JIS G 3553</RID><RTL>(2011) Crimped Wire Cloth (Amendment 1) </RTL><BRK />
+<BRK />
+<RID>JIS G 3555</RID><RTL>(2015) Woven Wire Cloth, 4th Edition, Incl Amendments</RTL><BRK />
+<BRK />
+<RID>JIS G 3555 PW-S</RID><RTL>(2015) The most basic way of weaving, where vertical and horizontal lines are 
+kept at regular intervals and intersect each other one by one. (Translated Japanese)</RTL><BRK />
+<BRK />
+<RID>JIS H 3140</RID>   <RTL>(2018) Copper Bus Bars</RTL><BRK />
+<BRK />
+<RID>JIS H 8641</RID>   <RTL>(2021) Hot Dip Galvanized Coatings</RTL><BRK />
+<BRK />
+<RID>JIS Z 8721</RID>   <RTL>(1993) Color Specification - Specification According To Their Three Attributes</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>THE JAPANESE ELECTRIC WIRE &amp; CABLE MAKERS' ASSOCIATION (JCMA)</ORG><BRK />
+<BRK />
+<RID>JCS 1226</RID><RTL>(2003) Soft Stranded Wire</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>JAPANESE ELECTROTECHNICAL COMMITTEE (JEC)</ORG><BRK />
+<BRK />
+<RID>JEC 2200</RID><RTL>(2015) Transformer</RTL><BRK />
+<BRK />
+<RID>JEC 2300</RID>   <RTL>(1998) Vacuum Circuit Breaker</RTL><BRK />
+<BRK />
+<RID>JEC 2310</RID>   <RTL>(2003) Disconnector and Earthing Switch</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>THE JAPAN ELECTRICAL MANUFACTURERS' ASSOCIATION (JEMA)</ORG><BRK />
+<BRK />
+<RID>JEM 1425</RID>    <RTL>(2011) Metal-enclosed Switch Gear and Control Gear</RTL><BRK />
+<BRK />
+<RID>JEM 1459</RID>    <RTL>(2013) Structure and dimensions of switchboard and control panel</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>JAPAN POWER CABLE ACCESSORIES ASSOCIATION (JCAA)</ORG><BRK />
+<BRK />
+<RID>JCAA C 3102</RID>    <RTL>(2016) 6600V Cross-linked Polyethylene Insulated Power Cable Rubber Stress Cone 
+Type Cubicle Termination Connection</RTL><BRK />
+<BRK /></REF>
+<REF><ORG>MINISTRY OF LAND, INFRASTRUCTURE, TRANSPORT 
+AND TOURISM (MLIT)</ORG><BRK />
+<BRK />
+<RID>METI</RID><RTL>Ministry of Economy Trade and Industry</RTL><BRK />
+<BRK />
+<RID>MLIT DSKKS</RID><RTL>Denki Setsubi Kouji Kanri Shishin (DSKKS) Electrical Construction Supervision 
+Guidelines</RTL><BRK />
+<BRK />
+<RID>MLIT ESS</RID><RTL>(2019) MLIT Electrical Standard Specification (ESS)</RTL><BRK /></REF>
+<BRK /></SPT>
+<SPT outline="1.2"><TTL>RELATED EQUIPMENT</TTL><BRK />
+<BRK />
+<TXT>Section <SRF>26 00 00.00 20</SRF>, BASIC ELECTRICAL MATERIAL AND METHOD, applies to this section, with the additions and modifications specified herein.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.3"><TTL>SUBMITTALS</TTL><BRK />
+<BRK />
+<TXT>Government approval is required for submittals with a "G" designation; submittals not having a "G" designation are for Contractor Quality Control 
+approval.  When used, a designation following the "G" designation identifies the office that will review the submittal for the Government.  The 
+following shall be submitted in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK />
+<BRK />
+<BRK />
+<LST><SUB>SD-02 Shop Drawings</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Cubicle Type Unit Substation</SUB> Including Concrete Foundation</ITM><BRK />
+<BRK />
+<ITM><SUB>Distribution</SUB> panel</ITM> <BRK />
+<BRK />
+<ITM><SUB>Cubicle type unit switching station</SUB> including concrete foundation</ITM><BRK />
+<BRK />
+<ITM><SUB>Switchgear</SUB> including concrete foundation</ITM><BRK />
+<BRK />
+<LST><SUB>SD-03 Product Data</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Transformers</SUB>; <SUB>G</SUB>[ [, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Primary Cutout</SUB> (PC)<SUB>G</SUB>[, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Disconnecting Switches (DS)</SUB>; <SUB>G</SUB>[, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Load Disconnecting Switches (LDS)</SUB>;<SUB> G</SUB>[, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Vacuum Circuit Breaker (VCB)</SUB>; <SUB>G</SUB>, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Load Break Switches (LBS)</SUB>; <SUB>G</SUB>[, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Load Break Switches (LBS) with tripping device</SUB>; <SUB>G</SUB>[, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Load Break Switches (LBS) with fuse</SUB>; <SUB>G</SUB>[, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Circuit breaker</SUB>; <SUB>G</SUB>[, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Circuit Breaker with GFCI</SUB>; <SUB>G</SUB>[, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Automatic Transfer Switch (ATS)</SUB>; <SUB>G</SUB>[, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Power Fuses (PF)</SUB>; <SUB>G</SUB> FIO [, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Instruments</SUB>; <SUB>G</SUB>[, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Instrument Control Switches</SUB>; <SUB>G</SUB>[, [    ]]</ITM><BRK />
+<BRK />
+<ITM><SUB>Buzzer</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Test Terminal</SUB></ITM><BRK />
+<BRK />
+<ITM><SUB>Lightning Arrester</SUB>; <SUB>G</SUB>[, [    ]]</ITM><BRK />
+<BRK />
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK />
+<BRK />
+<ITM><SUB>Acceptance Checks and Tests</SUB></ITM><BRK />
+<BRK />
+<LST><SUB>SD-10 Operation and Maintenance Data</SUB></LST> <BRK />
+<BRK />
+<ITM>Data Transformer(s), <SUB>Data Package 5</SUB>; <SUB>G</SUB>[, [    ]]</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="1.4"><TTL>QUALITY ASSURANCE</TTL><BRK />
+<BRK />
+<SPT outline="1.4.1"><TTL>PCB Free Certificate</TTL><BRK />
+<BRK />
+<TXT>Submit results of PCB analysis in transformer oil to certify that the transformers installed under this contract are PCB free transformer as specified 
+in Paragraph Also, analysis results shall be required maker name, serial number and other identification data of the transformers which are taken 
+and analyzed oil samples.  Analysis results appearing PCB rate shall be submitted to and approved by the Contracting Officer prior to install the 
+transformers.  The certificate shall include "PCB analysis report" prepared by the Contractor and "PCB-free certificate" prepared by the transformer 
+manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.4.2"><TTL>Lead-Containing Paint Material</TTL><BRK />
+<BRK />
+<TXT>Use of Lead-containing paint shall not be permitted.  Submit the Certification of Lead Free for each enclosure, and field-applied paint in accordance 
+with Section <SRF>01 78 00</SRF> CLOSEOUT SUBMITTALS.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.4.3"><TTL>Cubicle Type Transformer Drawings</TTL><BRK />
+<BRK />
+<TXT>Include the following as a minimum:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.   An outline drawing, including front, top, and side views.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.   Nameplate data.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.   Elementary diagrams and wiring diagrams[ with terminals identified of watthour meter and current transformers].</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.   One-line diagram, including switch(es)[, current transformers, meters, and fuses].</LST><BRK />
+<BRK /></SPT>
+<SPT outline="1.4.4"><TTL>Regulatory Requirements</TTL><BRK />
+<BRK />
+<TXT>In each of the publications referred to herein, consider the advisory provisions to be mandatory, except  when more stringent requirements are 
+specified or indicated, as though the word "must" had been substituted for "should" wherever it appears. Interpret references in these publications 
+to the "authority having jurisdiction," or words of similar meaning, to mean the Contracting Officer.   Provide equipment, materials, installation, 
+and workmanship in accordance with applicable codes and standards unless more stringent requirements are specified or indicated.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="1.4.5"><TTL>Standard Products</TTL><BRK />
+<BRK />
+<TXT>Provide materials and equipment that are products of manufacturers regularly engaged in the production of such products which are of equal material, 
+design and workmanship, and:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.   Have been in satisfactory commercial or industrial use for 2 years prior to bid opening including applications of equipment and materials 
+under similar circumstances and of similar size.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.   Have been on sale on the commercial market through advertisements, manufacturers' catalogs, or brochures during the 2-year period.</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.   Where two or more items of the same class of equipment are required, provide products of a single manufacturer; however, the component 
+parts of the item need not be the products of the same manufacturer unless stated in this section.</LST><BRK />
+<BRK /></SPT>
+<SPT outline="1.4.6"><TTL> Material and Equipment Manufacturing Date</TTL><BRK />
+<BRK />
+<TXT>Products manufactured more than 3 years prior to date of delivery to site are not acceptable.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="1.5"><TTL>   MAINTENANCE</TTL><BRK />
+<BRK />
+<SPT outline="1.5.1"><TTL>   Additions to Operation and Maintenance Data</TTL><BRK />
+<BRK />
+<TXT>Submit operation and maintenance data in accordance with Section <SRF>01 78 23 </SRF>OPERATION AND MAINTENANCE DATA and as specified herein. In addition to 
+requirements of <SUB>Data Package 5</SUB>, include the following on the actual transformer(s) provided:</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.   An instruction manual with pertinent items and information highlighted</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.   An outline drawing, front, top, and side views</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.   Prices for spare parts and supply list</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.   Routine and field acceptance test reports</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.   Fuse curves for primary fuses</LST><BRK />
+<BRK />
+[ <LST INDENT="-0.33">f.   Information on watthour demand meter, CT's, and fuse block</LST><BRK />
+<BRK />
+] <LST INDENT="-0.33">g.   Actual nameplate diagram</LST> <BRK />
+<BRK />
+  <LST INDENT="-0.33">h.   Date of purchase</LST><BRK />
+<BRK /></SPT>
+</SPT></PRT><PRT outline="2"><TTL>PART 2   PRODUCTS</TTL><BRK />
+<BRK />
+<SPT outline="2.1"><TTL>   GENERAL</TTL><BRK />
+<BRK />
+<TXT><RID>MLIT ESS</RID>.  Substation shall be open-type switchgear for secondary distribution with transformation.  The substation assembly shall consist of [one][ 
+] incoming section, [one][ ] transformer section and [one][ ] distribution section. Dimension and feature of the substation shall be as indicated. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.2"><TTL>   MATERIALS AND EQUIPMENT</TTL><BRK />
+<BRK />
+<TXT>All materials, equipment, and devices shall, as a minimum, meet the requirements of JIS where JIS Standards are established for those items, and 
+the requirements of <RID>MLIT ESS</RID>. All items shall be new unless specified or indicated otherwise.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.3"><TTL>   [MODIFICATION OF ]<SUB>CUBICLE TYPE UNIT SUBSTATION</SUB></TTL><BRK />
+<BRK />
+<TXT><RID>JIS C 4620</RID> and <RID>MLIT ESS</RID>. [ Substation shall be metal enclosed station type cubicle switchgear for secondary distribution with transformation.  
+The substation assembly shall consist of [one][] incoming section, [one][] transformer section and [one][] distribution section.  External doors 
+shall be suitable for handle key.  Enclosure of the substation, inside enclosure and oil transformers shall be coated by salt-air proofing paint, 
+heavy-duty type. Dimension and feature of the substation shall be as indicated.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4"><TTL>   <SUB>TRANSFORMERS</SUB> SECTION</TTL><BRK />
+<BRK />
+<SPT outline="2.4.1"><TTL>   Unit Frame</TTL><BRK />
+<BRK />
+<TXT>Unit frame shall conform to <RID>JEM 1459</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.4.2"><TTL>   Transformer</TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Select first or second bracketed option if primary voltage is the High Voltage range. Select the third 
+option if the primary voltage is the Extra High Voltage category.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>Oil immersed transformer shall conform to <RID>JIS C 4304</RID>.  Transformer shall be high-efficiency type.<BRK />
+<BRK />
+[Molded transformer shall conform to <RID>JIS C 4306</RID>.  Transformer shall be high-efficiency type.]<BRK />
+<BRK />
+[Extra-high voltage type transformer shall conform to <RID>JEC 2200</RID>.]<BRK />
+<BRK />
+Voltage tap shall be changed by outside setting.</TXT><BRK />
+<BRK />
+<SPT outline="2.4.2.1"><TTL>   Transformer (Insulation) Oil</TTL><BRK />
+<BRK />
+<TXT>The use of PCB containing oil shall not be permitted.  Before installation of transformer, the new transformer oil shall be tested in accordance 
+with the method described in the latest Law of the Japanese Government, and submit PCB free certificate with its testing method to the Contracting 
+Officer.  Materials containing PCBs (<MET>0.5 ppm</MET> and above) shall not be permitted to use.</TXT><BRK />
+<BRK /></SPT>
+</SPT></SPT><SPT outline="2.5"><TTL>   [MODIFICATION OF ]<SUB>CUBICLE TYPE UNIT SWITCHING STATION</SUB></TTL><BRK />
+<BRK />
+<TXT><RID>JIS C 4620</RID> and <RID>MLIT ESS</RID>. [Switching station shall be metal enclosed station-type cubicle switchgear for feeder distribution.  The switching station 
+assembly shall consist of [one][ ] incoming section, and [one][ ] distribution section.  External doors shall be suitable for handle key.  Enclosure 
+of the switching station and inside enclosure shall be coated by salt-air proofing paint, heavy-duty type. Dimension and feature of the switching 
+station shall be as indicated.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.6"><TTL>  [MODIFICATION OF ]<SUB>SWITCHGEAR</SUB></TTL><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Select JIS C 4620 if primary voltage is categorized as High Voltage. Select JEM 1425 if primary voltage 
+is categorized as Extra High Voltage.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>[<RID>JIS C 4620</RID>] [<RID>JEM 1425</RID>] and <RID>MLIT ESS</RID>. [Switchgear shall be metal enclosed [metal-clad] [cubicle] type switchgear for feeder distribution.]  The 
+switchgear assembly shall consist of [one] [_____] incoming section, and [one] [_____] distribution section.  External doors shall be suitable 
+for handle key.  Enclosure of the switchgear and inside enclosure shall be coated by salt-air proofing paint, heavy-duty type. Dimension and feature 
+of the switchgear shall be as indicated.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE:  Select first bracketed option if primary voltage is within the Extra High Voltage range. Select the second 
+option if the primary voltage is the High Voltage category.</NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+[<SPT outline="2.6.1"><TTL>   Interrupter Switch for Extra-High-voltage</TTL><BRK />
+<BRK />
+<SPT outline="2.6.1.1"><TTL>   <SUB>Primary Cutout</SUB> (PC)</TTL><BRK />
+<BRK />
+<TXT>As recommended by the primary cutout manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.6.1.2"><TTL>   <SUB>Disconnecting Switches (DS)</SUB></TTL><BRK />
+<BRK />
+<TXT>Shall conform to <RID>JEC 2310</RID>.</TXT></SPT><BRK />
+<BRK />
+<SPT outline="2.6.1.3"><TTL>   <SUB>Vacuum Circuit Breaker (VCB)</SUB></TTL><BRK />
+<BRK />
+<TXT>Shall conform to <RID>JEC 2300</RID></TXT>.<BRK />
+<BRK /></SPT>
+</SPT>][<SPT outline="2.6.2"><TTL>   Interrupter Switch for High-Voltage</TTL><BRK />
+<BRK />
+<SPT outline="2.6.2.1"><TTL>   Primary Cutout (PC)</TTL><BRK />
+<BRK />
+<TXT>Shall conform to <RID>JIS C 4620</RID>, Appendix C</TXT>.<BRK />
+<BRK /></SPT>
+<SPT outline="2.6.2.2"><TTL>   <SUB>Load Disconnecting Switches (LDS)</SUB></TTL><BRK />
+<BRK />
+<TXT>Shall conform to <RID>JIS C 4606</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.6.2.3"><TTL>   <SUB>Load Break Switches (Lbs)</SUB></TTL><BRK />
+<BRK />
+<TXT>Shall conform to <RID>JIS C 4605</RID>. <BRK />
+<BRK />
+LDS means fuse less type of Load Break Switches (LBS).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.6.2.4"><TTL>   <SUB>Load Break Switches (LBS) With Tripping Device</SUB></TTL><BRK />
+<BRK />
+<TXT>Shall conform to <RID>JIS C 4607</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.6.2.5"><TTL>   <SUB>Load Break Switches (LBS) With Fuse</SUB></TTL><BRK />
+<BRK />
+<TXT>Shall conform to <RID>JIS C 4611</RID>. <SUB>Power fuses (PF)</SUB> shall confrm to <RID>JIS C 4604</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.6.2.6"><TTL>   Vacuum Circuit Breaker (VCB)</TTL><BRK />
+<BRK />
+<TXT>Shall conform to <RID>JIS C 4603</RID></TXT>.<BRK />
+<BRK /></SPT>
+</SPT>]</SPT><SPT outline="2.7"><TTL>   <SUB>DISTRIBUTION</SUB> SECTION</TTL><BRK />
+<BRK />
+<TXT>Distribution switchboard shall be circuit breaker-equipped unless indicated otherwise.  Design shall be such that individual breakers can be removed 
+without disturbing adjacent units or without loosening or removing supplemental insulation supplied as means of obtaining clearances as required 
+by JEM.  Where "space only" is indicated, make provisions for future installation of breaker sized as indicated.  Directories shall be typed to 
+indicate load served by each circuit and mounted in holder behind transparent protective covering.</TXT> <BRK />
+<BRK />
+<SPT outline="2.7.1"><TTL>   Unit Frame</TTL><BRK />
+<BRK />
+<TXT>Unit frame shall conform to <RID>JEM 1459</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.2"><TTL>   Cubicle Type Cabinet</TTL><BRK />
+<BRK />
+<TXT>Cabinet shall conform to cubicle-type [<RID>JIS C 4620</RID>][<RID>JEM 1425</RID>].  Additional requirements shall be attached at the end of this section as a reference. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.3"><TTL>   Panelboard Type Cabinet</TTL><BRK />
+<BRK />
+<TXT>Cabinet shall conform to <RID>JIS C 8480</RID> shall have a mounting plate, and shall be provided with wiring gutters of adequate size at top, bottom and 
+sides.</TXT><BRK />
+<BRK />
+<SPT outline="2.7.3.1"><TTL>   Steel Type</TTL><BRK />
+<BRK />
+<TXT>Thickness of steel sheet shall be not less than <ENG>2.3 mm</ENG><MET>2.3 mm</MET>.<BRK />
+<BRK />
+Thickness of sheet steel for the cabinet shall be not less than <MET>2.3 mm</MET> for outdoor installation and <ENG>1.6 mm</ENG> for indoor installation.<BRK />
+<BRK />
+Cabinet located outside the building shall be of hot dip galvanized steel sheet material.<BRK />
+<BRK />
+Cabinets shall be painted in accordance with paragraph FACTORY APPLIED FINISH.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.3.2"><TTL>   Stainless Steel Type</TTL><BRK />
+<BRK />
+<TXT>Cabinet shall be of Stainless Steel.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.3.3"><TTL>   Weather Proof Type</TTL><BRK />
+<BRK />
+<TXT>Cabinet located outside of building and exposure to weather, shall be weather-proofed box.</TXT><BRK />
+<BRK />
+<TXT>Weather-proof cabinet shall conform to <RID>JIS C 0920</RID> [(IP44)] [(IP54)] [(IPXX and more)] [as indicated] and exposed screws to weather shall be non-corrosive 
+material.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.7.4"><TTL>   Interrupter Switch for Low-voltage</TTL><BRK />
+<BRK />
+<SPT outline="2.7.4.1"><TTL>   <SUB>Circuit Breaker</SUB></TTL><BRK />
+<BRK />
+<TXT><RID>JIS C 8201-2-1</RID>, thermal-magnetic, magnetic or solid-state (electronic) type with interrupting capacity as indicated.  Plug-in circuit breakers unacceptable.<BRK />
+<BRK />
+Interrupting rating of circuit breakers shall be as indicated. If not shown, do not select circuit breakers less than 10,000A asymmetrical interrupting 
+rating for voltages 240V and under, and 14,000A asymmetrical interrupting rating for 480V and under.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.4.2"><TTL>   <SUB>Circuit Breaker with GFCI</SUB></TTL><BRK />
+<BRK />
+<TXT><RID>JIS C 8201-2-2</RID>, Plug-in circuit breakers unacceptable.  Provide with "push-to-test" button, visible indication of tripped condition, and ability 
+to detect and trip on current imbalance of <MET>[15] [30] milliamperes</MET> or greater per requirements or as indicated on drawings.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.7.5"><TTL>   <SUB>Automatic Transfer Switch (ATS)</SUB></TTL><BRK />
+<BRK />
+<TXT>As recommended by the auto transfer switch manufacturer.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.6"><TTL>   Power Factor Improvement Equipments</TTL><BRK />
+<BRK />
+<TXT>[Provide as indicated on drawings.][_____]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.7"><TTL>   Protective Relays, Metering, and Control Devices</TTL><BRK />
+<BRK />
+<TXT>Provide protective relays as indicated [on drawings.] [per manufacturer's recommendations.] [_____]</TXT><BRK />
+<BRK />
+<SPT outline="2.7.7.1"><TTL>   <SUB>Instruments</SUB></TTL><BRK />
+<BRK />
+<TXT>General of instruments shall conform to <RID>JIS C 1102-1</RID>, <RID>JIS C 1102-8</RID> and <RID>JIS C 1103</RID>.</TXT><BRK />
+<BRK />
+<TXT>Ammeter (wide-range type), voltmeter (wide-range type) shall conform to <RID>JIS C 1102-2</RID> respectively.</TXT><BRK />
+<BRK />
+<TXT>Wattmeters and varmeters shall conform to <RID>JIS C 1102-3</RID>.</TXT><BRK />
+<BRK />
+<TXT>Frequency meters shall conform to <RID>JIS C 1102-4</RID>.</TXT><BRK />
+<BRK />
+<TXT>Phase meters, power factor meters and synchroscopes shall conform to <RID>JIS C 1102-5</RID>.</TXT><BRK />
+<BRK />
+<TXT>Ohmmeters (impedance meters) and conductance meters conform to <RID>JIS C 1102-6</RID>.</TXT><BRK />
+<BRK />
+<TXT>Multi-function instruments shall conform to <RID>JIS C 1102-7</RID>.</TXT><BRK />
+<BRK />
+<TXT>Watt-hour meter with pulse generator shall conform to <RID>JIS C 1211-1</RID>, <RID>JIS C 1211-2</RID>, <RID>JIS C 1216-1</RID>, <RID>JIS C 1281</RID> and <RID>JIS C 1283-1</RID>.</TXT><BRK />
+<BRK />
+<TXT>Var-hour meter shall conform to <RID>JIS C 1263-1</RID>.</TXT><BRK />
+<NTE><BRK />
+<AST /><BRK />
+<NPR>NOTE: For projects located in Kadena, metering may require compliance with AMRS specification. Designer shall 
+obtain the current requirements for the AMRS electric meter from the Kadena Base Installation Energy Manager. </NPR><BRK />
+<AST /><BRK /></NTE>
+<BRK />
+<TXT>[Metering shall be compliant with the current Advanced Meter Reading System (AMRS) Electric Meter Specifications.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.7.2"><TTL>   <SUB>Instrument Control Switches</SUB></TTL><BRK />
+<BRK />
+<TXT>Provide rotary cam-operated type with positive means of indicating contact positions.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.7.3"><TTL>   <SUB>Buzzer</SUB></TTL><BRK />
+<BRK />
+<TXT>Shall have a sound output rating of at least 90 decibels at <MET>1 m</MET>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.7.4"><TTL>   <SUB>Test Terminal</SUB></TTL><BRK />
+<BRK />
+<TXT>Provide current test terminal and voltage test terminal.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.7.5"><TTL>   Pilot and Indicating Lights</TTL><BRK />
+<BRK />
+<TXT>Provide transformer, resistor, or diode type.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.7.6"><TTL>   <SUB>Lightning Arrester</SUB></TTL><BRK />
+<BRK />
+<TXT>Shall conform to <RID>JIS C 4608</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.7.7"><TTL>   Insulators</TTL> <BRK />
+<BRK />
+<TXT>Shall conform to <RID>JIS C 3814</RID>, and <RID>JIS C 3851</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.7.8"><TTL>   EMCS Terminal</TTL><BRK />
+<BRK />
+<TXT>Provide plywood (<MET>600 mm</MET> x <MET>600mm</MET> x <MET>12mm</MET>) with terminal blocks, receptacle outlet and associated wiring as indicated on drawings.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.7.9"><TTL>   Space Heater</TTL><BRK />
+<BRK />
+<TXT>As indicated on drawings.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.7.10"><TTL>  Receptacles</TTL><BRK />
+<BRK />
+<TXT>Provide receptacle outlet for maintenance.</TXT><BRK />
+<BRK />
+<TXT>Shall conform to <RID>JIS C 8303</RID>, grounding-type and duplex type.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.7.11"><TTL>  LED Lighting Fixtures</TTL><BRK />
+<BRK />
+<TXT>Provide LED lighting fixtures inside cabinet.</TXT><BRK />
+<BRK />
+<TXT>Shall conform to <RID>JIS C 8106</RID>, <RID>JIS C 8105-1</RID> and <RID>JIS C 8105-2-2</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.7.7.12"><TTL>  Roof Fan</TTL><BRK />
+<BRK />
+<TXT>As indicated on drawings.</TXT><BRK />
+<BRK />
+<SPT outline="2.7.7.12.1"><TTL>   Air Intake Fan</TTL><BRK />
+<BRK />
+<TXT>Provide Air Intake Fan on side wall of receiving panel. Its cover (outdoor hood) shall have minimum <MET>500mm</MET> straight portion duct below lower portion 
+of opening for air intake on side wall. Straight portion duct shall be opened forward downside, and opening of duct shall be covered by crimped 
+wire cloth and woven wire cloth with stainless steel (SUS304) frame. Wire clothes shall be fixed to cover by bolts or screws. Requirements for 
+wire clothes are as follows, and their layer shall be following order from downside (outside);</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">(1) Crimped wire cloth, <RID>JIS G 3553</RID>, CR-S (SUS304), Wire dia. <MET>1.6mm</MET>, mesh size 9mm</LST><BRK />
+<LST INDENT="-0.33">(2) Woven wire cloth, <RID>JIS G 3555</RID>, PW-S (SUS304), Wire dia. <MET>0.65mm</MET>, 8 mesh</LST><BRK />
+<LST INDENT="-0.33">(3) Woven wire cloth, <RID>JIS G 3555 PW-S</RID> (SUS304), Wire dia. <MET>0.65mm</MET>, 10 mesh</LST><BRK />
+<BRK /></SPT>
+</SPT></SPT></SPT><SPT outline="2.8"><TTL>   WIRE AND CABLES</TTL><BRK />
+<BRK />
+<SPT outline="2.8.1"><TTL>   Current Carrying Section</TTL><BRK />
+<BRK />
+<SPT outline="2.8.1.1"><TTL>   Cable Head</TTL><BRK />
+<BRK />
+<TXT>Cable head shall be designed for terminating one single conductor cables per phase and shall be arranged for conduits entering from below. Cable 
+head Shall conform to <RID>JCAA C 3102</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.8.1.2"><TTL>   Bus Duct (Busway)</TTL><BRK />
+<BRK />
+<TXT><RID>JIS C 8364</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.8.1.3"><TTL>   Copper Bus Bars</TTL><BRK />
+<BRK />
+<TXT>Shall conform to <RID>JIS H 3140</RID>.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.8.1.4"><TTL>   Copper Ground Bus Terminal (Copper Bus Bar for Ground Terminal)</TTL><BRK />
+<BRK />
+<TXT>Provide a copper ground bus terminal of sufficient amperage and install.  Bus bars shall be <RID>JIS H 3140</RID>. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.8.1.5"><TTL>   Terminal Blocks</TTL><BRK />
+<BRK />
+<TXT><RID>JIS C 8201-7-1</RID>.</TXT><BRK />
+<BRK /></SPT>
+[<SPT outline="2.8.1.6"><TTL>  Extra-High-Voltage Cable (Over 6.6 kV)</TTL><BRK />
+<BRK />
+<TXT>Provide as specified in SECTION <SRF>33 71 02</SRF> UNDERGROUND ELECTRICAL DISTRIBUTION.</TXT><BRK />
+<BRK /></SPT>
+][<SPT outline="2.8.1.7"><TTL> High Voltage Wire (6.6 kV)</TTL><BRK />
+<BRK />
+<TXT>High voltage wire for cubicle type unit substation shall conform to <RID>JIS C 3611</RID>, Type KIP.</TXT> <BRK />
+<BRK /></SPT>
+][<SPT outline="2.8.1.8"><TTL> Low-Voltage Cable (600 V)</TTL><BRK />
+<BRK />
+<TXT>Provide as specified in SECTION <SRF>26 20 00</SRF> INTERIOR DISTRIBUTION SYSTEM.</TXT><BRK />
+<BRK /></SPT>
+]</SPT></SPT><SPT outline="2.9"><TTL>   CONDUITS</TTL><BRK />
+<BRK />
+<TXT>Provide as specified in SECTION <SRF>26 20 00,</SRF> INTERIOR DISTRIBUTION SYSTEM.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.10"><TTL>   FACTORY APPLIED FINISH</TTL><BRK />
+<BRK />
+<TXT>Electrical equipment shall have factory-applied painting systems which shall, as a minimum, meet the requirements of <RID>JIS C 0920</RID>corrosion-resistance 
+test and the additional requirements as specified herein.  Interior and exterior steel surfaces of equipment enclosures shall be thoroughly cleaned 
+and then receive a rust-inhibitive phosphatizing or equivalent treatment prior to painting.  Exterior surfaces shall be free from holes, seams, 
+dents, weld marks, loose scale or other imperfections.  Interior surfaces shall receive not less than one coat of corrosion-resisting paint in 
+accordance with the manufacturer's standard practice.  Exterior surfaces shall be primed, filled where necessary, and given not less than two coats 
+baked enamel with semigloss finish.  Equipment located indoors shall be ANSI Light Gray,[ and equipment located outdoors shall be ANSI[ Light Gray][ 
+Dark Gray]].  Provide manufacturer's coatings for touch-up work and as specified in paragraph FIELD APPLIED PAINTING.</TXT><BRK />
+<BRK />
+<SPT outline="2.10.1"><TTL>   Hot Dip Galvanizing</TTL><BRK />
+<BRK />
+<TXT><RID>JIS H 8641</RID>, Type HDZ35.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.10.2"><TTL>   Paint of Cabinet</TTL><BRK />
+<BRK />
+<TXT>Provide standard factory finishes including rust inhibiting treatment.  Unless otherwise specified or indicated finish of outside panels shall 
+be applied factory finish color. Field applied paint shall not be permitted for newly installed panels.  The cabinet shall include likely panelboard, 
+power panel, control panel, breaker box, disconnecting switch box, terminal box and steel cabinet for electrical work.</TXT><BRK />
+<BRK />
+<SPT outline="2.10.2.1"><TTL>   Clear Blue</TTL><BRK />
+<BRK />
+<TXT>Provide standard factory finishes including rust inhibiting treatment, except that the inside finish of the cabinet shall be vivid orange (2.5YR5/12 
+of <RID>JIS Z 8721</RID>) and the outside including exposed parts of trim and door shall be clear blue (2.5PB5/8 of <RID>JIS Z 8721</RID>).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.10.2.2"><TTL>   Sand Beige</TTL><BRK />
+<BRK />
+<TXT>Provide standard factory finishes including rust inhibiting treatment, except that the inside finish of the cabinet shall be vivid orange (2.5YR5/12 
+of <RID>JIS Z 8721</RID>) and the outside including exposed parts of trim and door shall be sand beige (2.5Y8.5/1 of <RID>JIS Z 8721</RID>).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.10.2.3"><TTL>   Surrounding</TTL><BRK />
+<BRK />
+<TXT>Provide standard factory finishes including rust inhibiting treatment, except that the inside finish of the cabinet shall be vivid orange (2.5YR5/12 
+of <RID>JIS Z 8721</RID>) and the outside including exposed parts of trim and door shall match to surrounding wall surface.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.10.2.4"><TTL>   Fire Red</TTL><BRK />
+<BRK />
+<TXT>Provide standard factory finishes including rust inhibiting treatment, except that the inside finish of the cabinet shall be vivid orange (No. 
+2.5YR5/12 of <RID>JIS Z 8721</RID>) and the outside including exposed parts of trim and door shall be fire red (No. 7.5R4/14 of <RID>JIS Z 8721</RID>).</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.10.2.5"><TTL>   Selection of Colors Outside</TTL><BRK />
+<BRK />
+<TXT>Selection of color outside cabinet including exposed parts of trim shall be clear blue in the industrial area and mechanical room, unless otherwise 
+specified or indicated.  The color of the cabinet located other area shall match to surrounding or sand beige. [Directed by the Contracting Officer.]</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.10.3"><TTL>   Nameplate</TTL><BRK />
+<BRK />
+<TXT>Provide as specified in Section <SRF>26 00 00.00 20</SRF>, BASIC ELECTRICAL MATERIALS AND METHODS.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.11"><TTL>   LEAD-IN POCKET FOR TEMPORARY CABLE</TTL><BRK />
+<BRK />
+<TXT>As indicated on drawings.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.12"><TTL>   WARNING SIGN</TTL><BRK />
+<BRK />
+<TXT>Warning sign shall be attached at the end of this section.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.13"><TTL>   GROUNDING AND BONDING</TTL><BRK />
+<BRK />
+<TXT>[Provide grounding and bonding as specified in Section <SRF>33 71 02.00 20</SRF> UNDERGROUND ELECTRICAL DISTRIBUTION.]</TXT><BRK />
+<BRK />
+<TXT>[Provide as specified in Section <SRF>26 20 00</SRF> INTERIOR DISTRIBUTION SYSTEM.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.14"><TTL>   MATERIALS FOR CONCRETE FOUNDATION</TTL><BRK />
+<BRK />
+<TXT>Features and dimension of the concrete foundation shall be as indicated.</TXT><BRK />
+<BRK />
+<SPT outline="2.14.1"><TTL>   Concrete Material</TTL><BRK />
+<BRK />
+<TXT>Specified in Section <SRF>03 30 00,</SRF> CAST-IN-PLACE CONCRETE.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.14.2"><TTL>   Anchor Bolt</TTL><BRK />
+<BRK />
+<TXT>Anchor bolts shall be <RID>JIS B 1178</RID>, Type L.  Bolts shall be stainless steel material conforming to SUS 304.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.14.3"><TTL>   Anchor Bolt (Expansion Anchor)</TTL><BRK />
+<BRK />
+<TXT>Tubular, multi-slit, internal thread, with stud bolt having a head of the expander shape, as indicated on drawing.  Do not use plastic material.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.14.4"><TTL>   Anchor Bolt (Chemical Anchor)</TTL><BRK />
+<BRK />
+<TXT>Shall be a two-part system composed of a threaded rod stud and a sealed glass capsule containing premeasured amounts of epoxy acrylic resin, quartz 
+sand, and a hardener contained in a separate vial within the capsule.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="2.14.5"><TTL>   Nuts and Washers</TTL><BRK />
+<BRK />
+<TXT>  Material shall be stainless steel conforming to SUS 304</TXT>.<BRK />
+<BRK /></SPT>
+</SPT><SPT outline="2.15"><TTL>   ADDITIONAL REQUIREMENTS OF THE SUBSTATION SWITCHING STATION SWITCHGEAR</TTL><BRK />
+<BRK />
+<TXT>Additional requirements of cubicle type unit substation open type unit substation switching station switchgear shall be attached at the end of 
+this section as a reference.</TXT><BRK />
+<BRK /></SPT>
+</PRT><PRT outline="3"><TTL>PART 3   EXECUTION</TTL><BRK />
+<BRK />
+<SPT outline="3.1"><TTL>   INSTALLATION</TTL><BRK />
+<BRK />
+<TXT>Unless otherwise indicated, installation shall be performed in accordance with  <RID>MLIT ESS</RID>, <RID>MLIT DSKKS</RID> and to the requirements specified herein.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2"><TTL>   GROUNDING</TTL><BRK />
+<BRK />
+<TXT>Provide grounding as indicated, in accordance with [<RID>MLIT ESS</RID> and <RID>MLIT DSKKS</RID>,] [except that grounding systems shall have a resistance to solid earth 
+ground not exceeding 5 ohms].</TXT><BRK />
+<BRK />
+<SPT outline="3.2.1"><TTL>   Grounding Electrodes</TTL><BRK />
+<BRK />
+<TXT>Provide driven ground rods as specified in [Section <SRF>33 71 02.00 20</SRF> UNDERGROUND ELECTRICAL DISTRIBUTION] [Section <SRF>26 20 00</SRF> Interior Distribution 
+System].  Connect ground conductors to the upper end of ground rods by exothermic weld or compression connector.  Provide compression connectors 
+at equipment end of ground conductors.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.2"><TTL>   Transformer Grounding</TTL><BRK />
+<BRK />
+<TXT>Provide separate copper grounding conductors and connect them to [the ground girdle as indicated] [copper ground bus terminal].  When work in addition 
+to that indicated or specified is required to obtain the specified ground resistance, the provision of the contract covering "Changes" shall apply.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.3"><TTL>   Grounding and Bonding Equipment</TTL><BRK />
+<BRK />
+<TXT>Provide separate copper grounding conductors and connect them to copper ground bus terminal.  Solid bare copper wire shall be <RID>JIS C 3102</RID>: Stranded 
+bare copper wire shall be <RID>JCS 1226</RID>, except as indicated or specified otherwise.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.4"><TTL>   Ground Girdle (Loop Ground)</TTL><BRK />
+<BRK />
+<TXT>Provide a <MET>60 sqmm</MET>  bare copper-ground girdle around substation switching station switchgear.  Girdle shall be buried <MET>305 mm </MET> (one foot) deep and 
+placed <MET>915 mm</MET> (3 feet) laterally from the substation enclosure.  Connect girdle to enclosure at two opposite places using 6<MET>0 sqmm</MET>  copper.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.2.5"><TTL>   Connections</TTL><BRK />
+<BRK />
+<TXT>Make joints in grounding conductors and ground girdle by exothermic weld or compression connector.  Exothermic welds and compression connectors 
+shall be installed as specified in [Section <SRF>33 71 02.00 20</SRF> UNDERGROUND ELECTRICAL DISTRIBUTION] [Section <SRF>26 20 00</SRF> Interior Distribution System]</TXT>.<BRK />
+<BRK /></SPT>
+<SPT outline="3.2.6"><TTL>   Resistance</TTL><BRK />
+<BRK />
+<TXT>[Maximum resistance-to-ground of grounding system shall be as specified in Section <SRF>33 71 02.00 20</SRF> UNDERGROUND ELECTRICAL DISTRIBUTION.]<BRK />
+[Maximum resistance-to-ground of grounding system shall be as specified in Section <SRF>26 20 00</SRF> Interior Distribution System.]</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.3"><TTL>   INSTALLATION OF EQUIPMENT AND ASSEMBLIES</TTL><BRK />
+<BRK />
+<TXT>Install and connect cubicle type unit substation open type unit substation switching station switchgear furnished under this section as indicated 
+on project drawings, the approved shop drawings, and as specified herein.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.4"><TTL>   FIELD APPLIED PAINTING</TTL><BRK />
+<BRK />
+<TXT>Field paint shall be specified in Section <SRF>09 90 00</SRF>, PAINTS AND COATINGS.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.5"><TTL>   WARNING SIGN MOUNTING</TTL><BRK />
+<BRK />
+<TXT>Provide the number of signs required to be readable from each accessible side, but space the signs a maximum of <MET>9 meters</MET>  apart.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.6"><TTL>   RESTORATION</TTL><BRK />
+<BRK />
+<TXT>Unless otherwise indicated, all existing objects which interfere with new work shall be removed temporary and reinstalled upon completion of new 
+work.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.7"><TTL>   FOUNDATION FOR EQUIPMENT AND ASSEMBLIES</TTL><BRK />
+<BRK />
+<TXT>Foundation shall be in accordance with <RID>MLIT ESS</RID>.</TXT>  <BRK />
+<BRK />
+<SPT outline="3.7.1"><TTL>   Cast-in-place concrete</TTL><BRK />
+<BRK />
+<TXT>Cast-in-place concrete work shall be as specified in Section <SRF>03 30 00 </SRF>CAST-IN-PLACE CONCRETE.</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.7.2"><TTL>   Sealing</TTL><BRK />
+<BRK />
+<TXT>When the installation is complete, the Contractor shall seal all conduit and other entries into the equipment enclosure with an approved sealing 
+compound.  Seals shall be of sufficient strength and durability to protect all energized live parts of the equipment from rodents, insects, or 
+other foreign matter.</TXT><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.8"><TTL>   FIELD QUALITY CONTROL</TTL><BRK />
+<BRK />
+<SPT outline="3.8.1"><TTL>   Testing Methods for Each Field Test</TTL><BRK />
+<BRK />
+<TXT>Use design documents and requirements specified in this section to develop test procedures. Procedures shall consist of detailed instructions for 
+a test setup, execution, and evaluation of test results.</TXT><BRK />
+<BRK />
+<TXT>Testing shall not proceed until after the Contractor has received written Contracting Officer's approval of the test procedures as specified. </TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.2"><TTL>   Performance of <SUB>Acceptance Checks and Tests</SUB></TTL><BRK />
+<BRK />
+<TXT>First Class Construction Electric Management Engineer (1 Kyu Dekikouji Sekou Kanrigishi) shall perform acceptance checks and testing in accordance 
+with the manufacturer's recommendations, and include [the following] visual and mechanical inspections and electrical tests, performed in accordance 
+with MLIT ESS, MLIT DSKKS, METI, the Technical Standard for Electrical Equipment TSEE, and 
+JEAC 8001.</TXT><BRK />
+<BRK />
+<LST INDENT="-0.33">a.  Protection co-ordination curve line</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">b.  Insulation resistance test</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">c.  Withstand voltage test</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">d.  Protective relays test</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">e.  [Leakage current test of transformer]</LST><BRK />
+<BRK />
+<LST INDENT="-0.33">f.  System test</LST><BRK />
+<BRK />
+<TXT>[Grounding system test are performed in accordance with the manufacturer's recommendations and include the following visual and mechanical inspections 
+and electrical tests.]</TXT><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.3"><TTL>   Equipment Checks and Tests</TTL><BRK />
+<BRK />
+<SPT outline="3.8.3.1"><TTL>   Interrupter Switches</TTL><BRK />
+<BRK />
+<LST>a.  Visual and Mechanical Inspection</LST><BRK />
+<BRK />
+<ITM>(1)  Compare equipment nameplate data with specifications and approved shop drawings.</ITM><BRK />
+<BRK />
+<ITM>(2)  Inspect physical and mechanical condition.</ITM><BRK />
+<BRK />
+<ITM>(3)  Confirm correct application of manufacturer's recommended lubricants.</ITM><BRK />
+<BRK />
+<ITM>(4)  Verify appropriate anchorage and required area clearances.</ITM><BRK />
+<BRK />
+<ITM>(5)  Verify appropriate equipment grounding.</ITM><BRK />
+<BRK />
+<ITM>(6)  Verify correct blade alignment, blade penetration, travel stops, and mechanical operation.</ITM><BRK />
+<BRK />
+<ITM>(7)  [Verify that fuse sizes and types correspond to approved shop drawings.]</ITM><BRK />
+<BRK />
+<ITM>(8)  [Verify that each fuse holder has adequate mechanical support.]</ITM><BRK />
+<BRK />
+<ITM>(9)  Verify tightness of accessible bolted electrical connections by calibrated torque-wrench method.  Thermographic surveying[ 
+is not][ is]required.</ITM><BRK />
+<BRK />
+<ITM>(10)  Test interlocking systems for correct operation and sequencing.</ITM><BRK />
+<BRK />
+<ITM>(11)  Verify correct phase barrier materials and installation.</ITM><BRK />
+<BRK />
+<ITM>(12)  Compare switch blade clearances with industry standards.</ITM><BRK />
+<BRK />
+<ITM>(13)  Inspect all indicating devices for correct operation </ITM><BRK />
+<BRK />
+<LST>b.  Electrical Tests</LST><BRK />
+<BRK />
+<ITM>(1)  Perform insulation-resistance tests</ITM>.<BRK />
+<BRK />
+<ITM>(2)  Perform over-potential tests.</ITM><BRK />
+<BRK />
+<ITM>(3)  Perform resistance measurements through all bolted connections with low-resistance ohmmeter, if applicable.</ITM><BRK />
+<BRK />
+<ITM>(4)  Measure closed contact-resistance across each switch blade[ and fuse holder].</ITM><BRK />
+<BRK />
+<ITM>(5)  [Measure fuse resistance.]</ITM><BRK />
+<BRK />
+<ITM>(6)  Verify heater operation.</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.3.2"><TTL>   Interrupter Switchgear (LDS, LBS)</TTL><BRK />
+<BRK />
+<LST>a.  Visual and Mechanical Inspection</LST><BRK />
+<BRK />
+<ITM>(1)  Compare equipment nameplate data with specifications and approved shop drawings.</ITM><BRK />
+<BRK />
+<ITM>(2)  Inspect physical and mechanical condition.</ITM><BRK />
+<BRK />
+<ITM>(3)  Confirm correct application of manufacturer's recommended lubricants.</ITM><BRK />
+<BRK />
+<ITM>(4)  Verify appropriate anchorage and required area clearances.</ITM><BRK />
+<BRK />
+<ITM>(5)  Verify appropriate equipment grounding.</ITM><BRK />
+<BRK />
+<ITM>(6)  Verify correct blade alignment, blade penetration, travel stops, and mechanical operation.</ITM><BRK />
+<BRK />
+<ITM>(7)  [Verify that fuse sizes and types correspond to approved shop drawings.]</ITM><BRK />
+<BRK />
+<ITM>(8)  [Verify that each fuse holder has adequate mechanical support.]</ITM><BRK />
+<BRK />
+<ITM>(9)  Inspect all bolted electrical connections for high resistance using low-resistance ohmmeter, verifying tightness of accessible 
+bolted electrical connections by calibrated torque-wrench method, or performing thermographic survey.</ITM> <BRK />
+<BRK />
+<ITM>(10)  Test interlocking systems for correct operation and sequencing.</ITM><BRK />
+<BRK />
+<ITM>(11)  Verify correct phase barrier materials and installation.</ITM><BRK />
+<BRK />
+<ITM>(12)  Compare switch blade clearances with industry standards</ITM>.<BRK />
+<BRK />
+<ITM>(13)  Inspect all indicating devices for correct operation </ITM><BRK />
+<BRK />
+<LST>b.  Electrical Tests</LST><BRK />
+<BRK />
+<ITM>(1)  Perform insulation-resistance tests.</ITM><BRK />
+<BRK />
+<ITM>(2)  Perform over-potential tests.</ITM><BRK />
+<BRK />
+<ITM>(3)  Perform resistance measurements through all bolted connections with low-resistance ohmmeter, if applicable</ITM>.<BRK />
+<BRK />
+<ITM>(4)  Measure closed contact-resistance across each switch blade[ and fuse holder].</ITM><BRK />
+<BRK />
+<ITM>(5)  [Measure fuse resistance.]</ITM><BRK />
+<BRK />
+<ITM>(6)  Verify heater operation.</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.3.3"><TTL>   Vacuum Circuit Breaker (VCB)</TTL><BRK />
+<BRK />
+<LST>a.  Visual and mechanical inspection</LST><BRK />
+<BRK />
+<ITM>(1)  Compare equipment nameplate data with specifications and approved shop drawings.</ITM><BRK />
+<BRK />
+<ITM>(2)  Inspect physical and mechanical condition.</ITM><BRK />
+<BRK />
+<ITM>(3)  Confirm correct application of manufacturer's recommended lubricants.</ITM><BRK />
+<BRK />
+<ITM>(4)  Inspect anchorage, alignment, and grounding.</ITM><BRK />
+<BRK />
+<ITM>(5)  Perform all mechanical operational tests on both the circuit breaker and its operating mechanism.</ITM><BRK />
+<BRK />
+<ITM>(6)  Measure critical distances such as contact gap as recommended by manufacturer.</ITM><BRK />
+<BRK />
+<ITM>(7)  Verify tightness of accessible bolted connections by calibrated torque-wrench method.  Thermographic survey[ is not][ is] 
+required.</ITM><BRK />
+<BRK />
+<ITM>(8)  Record as-found and as-left operation counter readings.</ITM><BRK />
+<BRK />
+<LST>b.  Electrical Tests</LST><BRK />
+<BRK />
+<ITM>(1)  Perform a contact-resistance test.</ITM><BRK />
+<BRK />
+<ITM>(2)  Verify trip, close, trip-free, and antipump function.</ITM><BRK />
+<BRK />
+<ITM>(3)  Trip circuit breaker by operation of each protective device.</ITM><BRK />
+<BRK />
+<ITM>(4)  Perform insulation-resistance tests.</ITM><BRK />
+<BRK />
+<ITM>(5)  Perform vacuum bottle integrity (overpotential) test across each bottle with the breaker in the open position in strict accordance 
+with manufacturer's instructions.  Do not exceed maximum voltage stipulated for this test.</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.3.4"><TTL>   Metering and Instrumentation</TTL><BRK />
+<BRK />
+<LST>a.  Visual and Mechanical Inspection</LST><BRK />
+<BRK />
+<ITM>(1)  Compare equipment nameplate data with specifications and approved shop drawings.</ITM><BRK />
+<BRK />
+<ITM>(2)  Inspect physical and mechanical condition.</ITM><BRK />
+<BRK />
+<ITM>(3)  Verify tightness of electrical connections.</ITM><BRK />
+<BRK />
+<LST>b.  Electrical Tests</LST><BRK />
+<BRK />
+<ITM>(1)  Verify accuracy of meters at 25, 50, 75, and 100 percent of full scale</ITM>.<BRK />
+<BRK />
+<ITM>(2)  Calibrate watthour meters according to manufacturer's published data.</ITM><BRK />
+<BRK />
+<ITM>(3)  Verify all instrument multipliers.</ITM><BRK />
+<BRK />
+<ITM>(4)  Verify that current transformer[ and voltage transformer] secondary circuits are intact.</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.3.5"><TTL>   Switchgear Assemblies</TTL><BRK />
+<BRK />
+<LST>a.  Visual and Mechanical Inspection</LST><BRK />
+<BRK />
+<ITM>(1)  Compare equipment nameplate data with specifications and approved shop drawings.</ITM><BRK />
+<BRK />
+<ITM>(2)  Inspect physical, electrical, and mechanical condition.</ITM><BRK />
+<BRK />
+<ITM>(3)  Confirm correct application of manufacturer's recommended lubricants.</ITM><BRK />
+<BRK />
+<ITM>(4)  Verify appropriate anchorage, required area clearances, and correct alignment.</ITM><BRK />
+<BRK />
+<ITM>(5)  Inspect all doors, panels, and sections for paint, dents, scratches, fit, and missing hardware.</ITM><BRK />
+<BRK />
+<ITM>(6)  Verify that[ fuse and] circuit breaker sizes and types correspond to approved shop drawings.</ITM><BRK />
+<BRK />
+<ITM>(7)  [Verify that current and potential transformer ratios correspond to approved shop drawings.]</ITM><BRK />
+<BRK />
+<ITM>(8)  Verify tightness of accessible bolted electrical connections by calibrated torque-wrench method.  Thermographic survey[ is 
+not][ is] required.</ITM><BRK />
+<BRK />
+<ITM>(9)  Confirm correct operation and sequencing of electrical and mechanical interlock systems.</ITM><BRK />
+<BRK />
+<ITM>(10)  Clean switchgear.</ITM><BRK />
+<BRK />
+<ITM>(11)  Inspect insulators for evidence of physical damage or contaminated surfaces.</ITM><BRK />
+<BRK />
+<ITM>(12)  Verify correct barrier[ and shutter] installation[ and operation].</ITM><BRK />
+<BRK />
+<ITM>(13)  Exercise all active components.</ITM><BRK />
+<BRK />
+<ITM>(14)  Inspect all mechanical indicating devices for correct operation.</ITM><BRK />
+<BRK />
+<ITM>(15)  Verify that vents are clear.</ITM><BRK />
+<BRK />
+<ITM>(16)  Test operation, alignment, and penetration of instrument transformer withdrawal disconnects.</ITM><BRK />
+<BRK />
+<ITM>(17)  Inspect control power transformers.</ITM><BRK />
+<BRK />
+<LST>b.  Electrical Tests</LST><BRK />
+<BRK />
+<ITM>(1)  Perform insulation-resistance tests on each bus section.</ITM><BRK />
+<BRK />
+<ITM>(2)  Perform overpotential tests.</ITM><BRK />
+<BRK />
+<ITM>(3)  Perform insulation-resistance test on control wiring; Do not perform this test on wiring connected to solid-state components.</ITM><BRK />
+<BRK />
+<ITM>(4)  Perform control wiring performance test</ITM>.<BRK />
+<BRK />
+<ITM>(5)  Perform primary current injection tests on the entire current circuit in each section of assembly.</ITM><BRK />
+<BRK />
+<ITM>(6)  [Perform phasing check on double-ended switchgear to ensure correct bus phasing from each source.]</ITM><BRK />
+<BRK />
+<ITM>(7)  Verify operation of heaters.</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.3.6"><TTL>   <SUB>Transformers</SUB></TTL><BRK />
+<BRK />
+<LST>a.  Visual and mechanical inspection</LST><BRK />
+<BRK />
+<ITM>(1)  Compare equipment nameplate information with specifications and approved shop drawings.</ITM><BRK />
+<BRK />
+<ITM>(2)  Inspect physical and mechanical condition.  Check for damaged or cracked insulators and leaks. </ITM><BRK />
+<BRK />
+<ITM>(3)  Inspect all bolted electrical connections for high resistance using low-resistance ohmmeter, verifying tightness of accessible 
+bolted electrical connections by calibrated torque-wrench method, or performing thermographic survey.</ITM><BRK />
+<BRK />
+<ITM>(4)  Verify correct liquid level in tanks.</ITM><BRK />
+<BRK />
+<ITM>(5)  Perform specific inspections and mechanical tests as recommended by manufacturer.</ITM><BRK />
+<BRK />
+<ITM>(6)  Verify correct equipment grounding.</ITM><BRK />
+<BRK />
+<ITM>(7)  Verify the presence of transformer surge arresters.</ITM><BRK />
+<BRK />
+<LST>b.  Electrical tests</LST><BRK />
+<BRK />
+<ITM>(1)  Perform resistance measurements through all bolted connections with low-resistance ohmmeter.</ITM><BRK />
+<BRK />
+<ITM>(2)  Verify that the tap-changer is set at specified ratio.</ITM><BRK />
+<BRK />
+<ITM>(3)  Verify proper secondary voltage phase-to-phase and phase-to-neutral after energization and prior to loading.</ITM><BRK />
+<BRK />
+<ITM>(4)  Perform transformer test in accordance with JEC 2200 and the transformer manufacture's written instruction.</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.3.7"><TTL>   Current Transformers</TTL><BRK />
+<BRK />
+<LST>a.  Visual and mechanical inspection</LST><BRK />
+<BRK />
+<ITM>(1)  Compare equipment nameplate data with specifications and approved shop drawings.</ITM> <BRK />
+<BRK />
+<ITM>(2)  Inspect physical and mechanical condition.</ITM><BRK />
+<BRK />
+<ITM>(3)  Verify correct connection.</ITM><BRK />
+<BRK />
+<ITM>(4)  Verify that adequate clearances exist between primary circuits and secondary circuit.</ITM><BRK />
+<BRK />
+<ITM>(5)  Inspect all bolted electrical connections for high resistance using low-resistance ohmmeter, verifying tightness of accessible 
+bolted electrical connections by calibrated torque-wrench method, or performing thermographic survey.</ITM><BRK />
+<BRK />
+<ITM>(6)  Verify that required grounding and shorting connections provide good contact.</ITM><BRK />
+<BRK />
+<LST>b.  Electrical tests</LST><BRK />
+<BRK />
+<ITM>(1)  Perform resistance measurements through all bolted connections with low-resistance ohmmeter, if applicable.</ITM><BRK />
+<BRK />
+<ITM>(2)  Perform insulation-resistance test.</ITM><BRK />
+<BRK />
+<ITM>(3)  Perform a polarity test.</ITM><BRK />
+<BRK />
+<ITM>(4)  Perform a ratio-verification test.</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.3.8"><TTL>   [Kilowatt Demand Meter][Watthour Meter]</TTL><BRK />
+<BRK />
+<LST>a.  Visual and mechanical inspection</LST><BRK />
+<BRK />
+<ITM>(1)  Compare equipment nameplate data with specifications and approved shop drawings.</ITM><BRK />
+<BRK />
+<ITM>(2)  Inspect physical and mechanical condition.</ITM><BRK />
+<BRK />
+<ITM>(3)  Verify tightness of electrical connections.</ITM><BRK />
+<BRK />
+<LST>b.  Electrical tests</LST><BRK />
+<BRK />
+<ITM>(1)  [Calibrate watthour meters according to manufacturer's published data.]</ITM><BRK />
+<BRK />
+<ITM>(2)  Verify that correct multiplier has been placed on face of meter, where applicable.</ITM><BRK />
+<BRK />
+<ITM>(3)  Verify that current transformer secondary circuits are intact.</ITM><BRK />
+<BRK /></SPT>
+<SPT outline="3.8.3.9"><TTL>   Grounding System</TTL><BRK />
+<BRK />
+<LST>a.  Visual and mechanical inspection</LST><BRK />
+<BRK />
+<ITM>(1)  Inspect ground system for compliance with contract plans and specifications.</ITM><BRK />
+<BRK />
+<LST>b.  Electrical tests</LST><BRK />
+<BRK />
+<ITM>(1)  Perform ground-impedance measurements utilizing the fall-of-potential method.  On systems consisting of interconnected ground 
+rods, perform tests after interconnections are complete (<HL1>not exceed 5 ohms</HL1>).  On systems consisting of a single ground rod perform 
+tests before any wire is connected (<HL1>not exceed 25 ohms</HL1>).  Take measurements in normally dry weather, not less than 48 hours after 
+rainfall.  Use a portable ground testing megger in accordance with manufacturer's instructions to test each ground or group of 
+grounds.  The instrument shall be equipped with a meter reading directly in ohms or fractions thereof to indicate the ground value 
+of the ground rod or grounding systems under test.</ITM><BRK />
+<BRK />
+<ITM>(2)  Submit the measured ground resistance of each ground rod (<HL1>not exceed 25 ohms</HL1>) and grounding system (<HL1>not exceed 5 ohm</HL1>s), indicating 
+the location of the rod and grounding system.  Include the test method and test setup (i.e., pin location) used to determine ground 
+resistance and soil conditions at the time the measurements were made.</ITM><BRK />
+<BRK /></SPT>
+</SPT><SPT outline="3.8.4"><TTL>   Follow-Up Verification</TTL><BRK />
+<BRK />
+<TXT>Upon completion of acceptance checks and tests, the Contractor shall show by demonstration in service that circuits and devices are in good operating 
+condition and properly performing the intended function.  As an exception to requirements stated elsewhere in the contract, the Contracting Officer 
+shall be given 5 working days advance notice of the dates and times of checking and testing.</TXT></SPT><BRK />
+<PGE />INSERT 7 DRAWINGS<BRK /></SPT>
+</PRT>   <END /><BRK /></SEC>

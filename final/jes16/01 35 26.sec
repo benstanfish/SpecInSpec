@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="windows-1252"?><SEC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://si.ksc.nasa.gov/sidownloads/xml/specsintactSEC.xsd"><MTA NAME="SUBFORMAT" CONTENT="NEW"/><MTA NAME="AUTONUMBER" CONTENT="TRUE"/><BRK/>
+<SCN>SECTION 01 35 26</SCN><BRK/>
+<BRK/>
+<STL>GOVERNMENTAL SAFETY REQUIREMENTS</STL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification covers the requirements for <SCP>safety and occupational 
+health requirements for the protection of Contractor and Government personnel, 
+property, and resources</SCP>.</NPR><BRK/>
+<BRK/>
+<NPR>This guide specification is intended for use in Contracts that specify FAR 52.236-13 
+Accident Prevention, or its Alternate I, to include Contracts for construction, 
+dismantling, renovation and demolition; dredging; environmental restoration 
+(investigation, design, remediation); asbestos abatement or lead hazard control; 
+projects in the continental U.S. and overseas.</NPR><BRK/>
+<BRK/>
+<NPR>The requirements of this guide specification are a supplement to the U.S. Army 
+Corps of Engineers (USACE) Safety and Occupational Health Requirements, EM 385-1-1 
+and clarify safety concerns for high-risk construction activities.</NPR><BRK/>
+<BRK/>
+<NPR>Remove information and requirements not required in respective project, whether 
+or not brackets are present.</NPR><BRK/>
+<BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This guide specification includes tailoring for DESIGN-BUILD, DESIGN-BID-BUILD, 
+INDOOR AIR QUALITY, DIVING and DREDGING projects.  Where an Editor's Note states 
+a paragraph is tailored for a Service or project type, the content of the paragraph, 
+or a portion of the paragraph, is suited specifically to be included only for 
+that Service or project type.</NPR><BRK/>
+<AST/></NTE><NTE><BRK/>
+<BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Include other referenced sections in the Contract where work, such as 
+environmental restoration, asbestos abatement, or lead hazard control, requires 
+additional safety and health plans to be made part of and appended to the APP.  
+These sections include Section <SRF>01 35 29.13</SRF> HEALTH, SAFETY, AND EMERGENCY RESPONSE 
+PROCEDURES FOR CONTAMINATED SITES for environmental restoration project; Section 
+<SRF>02 82 00</SRF> ASBESTOS REMEDIATION, for asbestos abatement; Section <SRF>02 83 00</SRF> LEAD 
+REMEDIATION for lead hazard control activities; and Section <SRF>02 85 00</SRF> MOLD REMEDIATION.</NPR><BRK/>
+<BRK/>
+<NPR>Japan may have more stringent and/or additional requirements; modify this section 
+as required to adequetly meet requirements and regulations.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<PRT><TTL>PART 1   GENERAL</TTL><BRK/>
+<BRK/>
+<SPT><TTL>REFERENCES</TTL><BRK/>
+<BRK/>
+<TXT>The publications listed below form a part of this specification to the extent referenced.  The publications are 
+referred to within the text by the basic designation only.</TXT><BRK/>
+<BRK/>
+<REF><ORG>AMERICAN SOCIETY OF HEATING, REFRIGERATING AND AIR-CONDITIONING ENGINEERS (ASHRAE)</ORG><BRK/>
+<BRK/>
+<RID>ASHRAE 52.2</RID><RTL>(2017) Method of Testing General Ventilation 
+Air-Cleaning Devices for Removal Efficiency 
+by Particle Size</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>AMERICAN SOCIETY OF SAFETY PROFESSIONALS (ASSP)</ORG><BRK/>
+<BRK/>
+<RID>ANSI/ASSP A10.34</RID><RTL>(2021) Protection of the Public on or Adjacent 
+to Construction Sites</RTL><BRK/>
+<BRK/>
+<RID>ANSI/ASSP A10.44</RID><RTL>(2020) Control of Energy Sources (Lockout/Tagout) 
+for Construction and Demolition Operations</RTL><BRK/>
+<BRK/>
+<RID>ANSI/ASSP A10.8</RID><RTL>(2019) Scaffolding Safety Requirements</RTL><BRK/>
+<BRK/>
+<RID>ANSI/ASSP Z490.1</RID><RTL>(2016) Criteria for Accepted Practices in Safety, 
+Health, and Environmental Training</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>ASTM INTERNATIONAL (ASTM)</ORG><BRK/>
+<BRK/>
+<RID>ASTM D6245</RID><RTL>(2012) Using Indoor Carbon Dioxide Concentrations 
+to Evaluate Indoor Air Quality and Ventilation</RTL><BRK/>
+<BRK/>
+<RID>ASTM D6345</RID><RTL>(2010) Standard Guide for Selection of Methods 
+for Active, Integrative Sampling of Volatile 
+Organic Compounds in Air</RTL><BRK/>
+<BRK/>
+<RID>ASTM F855</RID><RTL>(2020) Standard Specifications for Temporary 
+Protective Grounds to Be Used on De-energized 
+Electric Power Lines and Equipment</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>INSTITUTE OF ELECTRICAL AND ELECTRONICS ENGINEERS (IEEE)</ORG><BRK/>
+<BRK/>
+<RID>IEEE 1048</RID><RTL>(2016) Guide for Protective Grounding of Power 
+Lines</RTL><BRK/>
+<BRK/>
+<RID>IEEE C2</RID><RTL>(2023) National Electrical Safety Code</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>INTERNATIONAL SAFETY EQUIPMENT ASSOCIATION (ISEA)</ORG><BRK/>
+<BRK/>
+<RID>ANSI/ISEA Z89.1</RID><RTL>(2014; R 2019) American National Standard for 
+Industrial Head Protection</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>Japanese Standards Association (JSA)</ORG><BRK/>
+<BRK/>
+<RID>JIS A 8951</RID><RTL>(1995) Tubular Steel Scaffolds</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>MINISTRY OF HEALTH, LABOUR AND WELFARE, GOVERNMENT OF JAPAN (MHLW)</ORG><BRK/>
+<BRK/>
+<RID>MHLW</RID><RTL>(1972) Amendment No. 57 - 2006 Industrial Safety 
+and Health Law</RTL><BRK/>
+<BRK/>
+<RID>ORDINANCE NO. 34</RID><RTL>(1972) The Safety Ordinance for Cranes</RTL><BRK/>
+<BRK/>
+<RID>ORDINANCE NO. 47</RID><RTL>(2007) Ordinance on Industrial Safety and Health</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL ELECTRICAL MANUFACTURERS ASSOCIATION (NEMA)</ORG><BRK/>
+<BRK/>
+<RID>NEMA Z535.2</RID><RTL>(2011; R 2017)  Environmental and Facility Safety 
+Signs</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>NATIONAL FIRE PROTECTION ASSOCIATION (NFPA)</ORG><BRK/>
+<BRK/>
+<RID>NFPA 51B</RID><RTL>(2024) Standard for Fire Prevention During Welding, 
+Cutting, and Other Hot Work</RTL><BRK/>
+<BRK/>
+<RID>NFPA 70</RID><RTL>(2023; ERTA 7 2023; TIA 23-15) National Electrical 
+Code</RTL><BRK/>
+<BRK/>
+<RID>NFPA 70E</RID><RTL>(2024) Standard for Electrical Safety in the 
+Workplace</RTL><BRK/>
+<BRK/>
+<RID>NFPA 241</RID><RTL>(2022) Standard for Safeguarding Construction, 
+Alteration, and Demolition Operations</RTL><BRK/>
+<BRK/>
+<RID>NFPA 306</RID><RTL>(2024) Standard for the Control of Gas Hazards 
+on Vessels</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>SHEET METAL AND AIR CONDITIONING CONTRACTORS' NATIONAL ASSOCIATION (SMACNA)</ORG><BRK/>
+<BRK/>
+<RID>ANSI/SMACNA 008</RID><RTL>(2007) IAQ Guidelines for Occupied Buildings 
+Under Construction, 2nd Edition</RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. ARMY CORPS OF ENGINEERS (USACE)</ORG><BRK/>
+<BRK/>
+<RID>EM 385-1-1</RID><RTL><DEL>(2024) Safety -- Safety and Health Requirements 
+Manual</DEL><ADD> Safety -- Safety and Health Requirements 
+Manual</ADD></RTL><BRK/>
+<BRK/></REF>
+<REF><ORG>U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)</ORG><BRK/>
+<BRK/>
+<RID>10 CFR 20</RID><RTL>Standards for Protection Against Radiation</RTL><BRK/>
+<BRK/>
+<RID>29 CFR 1910</RID><RTL>Occupational Safety and Health Standards</RTL><BRK/>
+<BRK/>
+<RID>29 CFR 1910.1000</RID><RTL>Air Contaminants</RTL><BRK/>
+<BRK/>
+<RID>29 CFR 1915</RID><RTL>Confined and Enclosed Spaces and Other Dangerous 
+Atmospheres in Shipyard Employment</RTL><BRK/>
+<BRK/>
+<RID>29 CFR 1919</RID><RTL>Gear Certification</RTL><BRK/>
+<BRK/>
+<RID>29 CFR 1926</RID><RTL>Safety and Health Regulations for Construction</RTL><BRK/>
+<BRK/>
+<RID>49 CFR 173</RID><RTL>Shippers - General Requirements for Shipments 
+and Packagings</RTL><BRK/>
+<BRK/>
+<RID>CPL 2.100</RID><RTL>(1995) Application of the Permit-Required Confined 
+Spaces (PRCS) Standards, 29 CFR 1910.146</RTL><BRK/>
+<BRK/></REF>
+</SPT><SPT><TTL>DEFINITIONS</TTL><BRK/>
+<BRK/>
+<TXT>The following definitions are for the convenience of the reader.  If there is a referenced document in the text 
+of this specification section, that is the document that should define terms for that paragraph.  If further 
+clarification is needed, contact the Contracting Officer.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Site Safety and Health Officer (SSHO)</TTL><BRK/>
+<BRK/>
+<TXT>A Contractor Employee that is responsible for overseeing and ensuring implementation of the prime Contractor's 
+Safety and Occupational Health (SOH) program according to the Contract, <RID>EM 385-1-1</RID>, Chapter 2 applicable federal, 
+state, and local requirements.  </TXT><BRK/>
+<BRK/>
+<SPT><TTL>Level One SSHO</TTL><BRK/>
+<BRK/>
+<TXT>A designated employee with full-time SOH responsibility that meets and follows the requirements of <RID>EM 385-1-1</RID>
+, Chapter 2-3.  In conjunction with the local Safety and Occupational Health Office (SOHO), the Contracting Officer 
+will evaluate proposed Japanese equivalent training for applicability to the contract scope of work being performed.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Level Two SSHO</TTL><BRK/>
+<BRK/>
+<TXT>A designated employee with Level Two SSHO responsibility that meets and follows the requirements of <RID>EM 385-1-1</RID>
+, Chapter 2-3.  Level Two SSHOs cannot be assigned to projects that have a residual Risk Assessment Code (RAC) 
+of high or extremely high.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Level Three SSHO</TTL><BRK/>
+<BRK/>
+<TXT>A designated Qualified Person or Competent Person with SOH responsibility that meets and follows the requirements 
+of <RID>EM 385-1-1</RID>, Chapter 2-3.  Level 3 SSHOs cannot be assigned to projects that have a residual RAC of high or 
+extremely high.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Alternate SSHO</TTL><BRK/>
+<BRK/>
+<TXT>An employee that meets the definition of the contract-required level SSHO, but is not the primary SSHO.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Competent Person (CP)</TTL> <BRK/>
+<BRK/>
+ <TXT>The CP is a person designated in writing, who, through training, knowledge and experience, is capable of identifying, 
+evaluating, and addressing existing and predictable hazards in the working environment or working conditions 
+that are unsanitary, hazardous, or dangerous to personnel, and who has authorization to take prompt corrective 
+measures to eliminate them.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Qualified Person (QP)</TTL><BRK/>
+<BRK/>
+<TXT>The QP is a person designated in writing, who, by possession of a recognized degree, certificate, or professional 
+standing, or extensive knowledge, training, and experience, has successfully demonstrated their ability to solve 
+or resolve problems related to the subject matter, the work, or the project.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>SUBMITTALS</TTL><BRK/>
+<BRK/>
+<TXT>Government Acceptance or Approval does not remove responsibility from the Contractors for their actions or liability.</TXT><BRK/>
+<BRK/>
+<TXT>Government approval is required for submittals with a "G" classification.  <TAI OPT="DESIGN-BID-BUILD">Submittals not having a "G" classification 
+are for information only</TAI>.<TAI OPT="DESIGN-BUILD">  Submittals not having a "G" classification are for Contractor Quality Control or Designer 
+of Record approval.  </TAI>When used, a code following the "G" classification identifies the office that will review 
+the submittal for the Government.  Submit the following in accordance with Section <SRF>01 33 00</SRF> SUBMITTAL PROCEDURES:</TXT><BRK/>
+<BRK/>
+<LST><SUB>SD-01 Preconstruction Submittals</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Accident Prevention Plan (APP)</SUB>; <SUB>G</SUB></ITM><NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Include the following submittal if project contains any diving related 
+requirements</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<BRK/>
+<TAI OPT="DIVING"><ITM><SUB>Dive Operations Plan</SUB>; <SUB>G</SUB></ITM></TAI><BRK/>
+<TAI OPT="INDOOR AIR QUALITY"><NTE><AST/><BRK/>
+<NPR>NOTE:  The following two submittal items are tailored for INDOOR AIR QUALITY.  
+Include the following submittal when required by Section <SRF>01 33 29</SRF> SUSTAINABILITY 
+REQUIREMENTS AND REPORTING, IAQ requirements.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+[<ITM><SUB>Final IAQ Management Plan</SUB>; <SUB>S</SUB></ITM><BRK/>
+<BRK/>
+]<ITM><SUB>Indoor Air Quality (IAQ) Management Plan</SUB>; <SUB>G</SUB></ITM><BRK/>
+<BRK/></TAI>
+<LST><SUB>SD-06 Test Reports</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Accident Reports</SUB>; <SUB>G</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>LHE Inspection Reports</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Monthly Exposure Reports</SUB>; <SUB>G</SUB></ITM><BRK/>
+<BRK/>
+<LST><SUB>SD-07 Certificates</SUB></LST><BRK/>
+<BRK/>
+<ITM><SUB>Crane Operators/Riggers</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Activity Hazard Analysis (AHA)</SUB>; <SUB>G</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Certificate of Compliance</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Hot Work Permit</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Standard Lift Plan</SUB>; <SUB>G</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Certifications</SUB></ITM><BRK/>
+<BRK/>
+<ITM><SUB>Licenses</SUB></ITM><BRK/>
+<BRK/></SPT>
+<SPT><TTL>PUBLIC HEALTH EMERGENCIES</TTL><BRK/>
+<BRK/>
+<TXT>In the event of a declared public health emergency, follow safety precautions as required by installation emergency 
+management requirement.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL><SUB>MONTHLY EXPOSURE REPORTS</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Provide a Monthly Exposure Report and attach to the monthly billing request.  This report is a compilation of 
+employee-hours worked each month for all site workers, both Prime and subcontractor. Failure to submit the report 
+may result in retention of up to 10 percent of the voucher. Monthly exposure reports are to be tracked and generated 
+through RMS.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>REGULATORY REQUIREMENTS</TTL><BRK/>
+<BRK/>
+<TXT>In addition to the detailed requirements included in the provisions of this Contract, comply with the most recent 
+edition of USACE <RID>EM 385-1-1</RID>, <RID>MHLW</RID> Lawsand follow host nation laws, ordinances, criteria, rules and regulations 
+at the date of the Solicitation for this Contract.  Submit matters of interpretation of standards to the appropriate 
+administrative agency for resolution before starting work.  Where the requirements of this specification, applicable 
+laws, criteria, ordinances, regulations, and referenced documents vary, the most stringent requirements govern.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>SITE QUALIFICATIONS, DUTIES, AND MEETINGS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Site Safety and Health Officer (SSHO)</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Qualifications of SSHO</TTL><BRK/>
+<BRK/>
+<TXT>All SSHOs will have met the training, experience requirements identified in the <RID>EM 385-1-1</RID>, Chapter 2 and this 
+Contract.  In conjunction with the local Safety and Occupational Health Office (SOHO), the Contracting Officer 
+will evaluate proposed Japanese equivalent training for applicability to the contract scope of work being performed.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Duties of SSHO</TTL><BRK/>
+<BRK/>
+<TXT>All SSHOs will carry out the roles and responsibilities as identified in this Contract and the <RID>EM 385-1-1</RID>, Chapter 
+2.  All SSHOs will be designated on an ENG Form 6282, as approved by the Contracting Officer.  Superintendent, 
+QC Manager, and SSHO are subject to dismissal if their required duties are not being effectively carried out.  
+If either the Superintendent, QC Manager, or SSHO are dismissed, project work will be stopped and will not be 
+allowed to resume until a suitable replacement is approved and the above duties are again being effectively carried 
+out.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Safety Meetings</TTL><BRK/>
+<BRK/>
+<TXT>Conduct safety meetings to review past activities, plan for new or changed operations, review pertinent aspects 
+of appropriate AHA (by trade), establish safe working procedures for anticipated hazards, and provide pertinent 
+Safety and Occupational Health (SOH) training and motivation.  Conduct meetings at least once a month for all 
+supervisors at the project location.  The SSHO, supervisors, or foremen must conduct meetings at least once a 
+week for the trade workers.  Document meeting minutes to include the date, persons in attendance, subjects discussed, 
+and names of individual(s) who conducted the meeting.  Maintain documentation on-site and furnish copies to the 
+Contracting Officer on request.  Notify the Contracting Officer of all scheduled meetings 7 calendar days in 
+advance.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Roles and Responsibilities of Prime Contractor and SSHO</TTL><BRK/>
+<BRK/>
+<TXT>The Prime Contractor and SSHO must ensure that the requirements of all applicable OSHA and <RID>EM 385-1-1</RID>, Chapter 
+2 are met for the project.  The Prime Contractor must ensure an SSHO or an equally qualified Alternate SSHO(s) 
+is at the worksite at all times to implement and administer the Contractor's safety program and Government accepted 
+Accident Prevention Plan.  If the required SSHO has to temporarily (that is, up to 24 hours / 1 day) leave the 
+site of work due to unforeseen or emergency situations, a Level One, Two, or Three SSHO may be used in the interim 
+and must be on the site of work at all times when work is being performed.  For features of work with work with 
+multiple high or extremely high RAC codes, a Level One SSHO or Alternate Level One SSHO presence is required 
+on site at all times the work is being performed.</TXT><BRK/>
+<BRK/>
+<TXT>If the SSHO must be off-site for a period longer than 24 hours / 1 day, a qualified alternate that meets the 
+contract requirements must be onsite.</TXT><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">a.  Prime contractor must ensure all SSHOs will:</ITM><BRK/>
+<BRK/>
+<ITM>(1) Are designated on an ENG Form 6282.</ITM><BRK/>
+<BRK/>
+<ITM>(2) Meet minimum training and experience requirements identified in <RID>EM 385-1-1</RID>, Chapter 2.</ITM><BRK/>
+<BRK/>
+<ITM>(3) Execute roles and responsibilities identified in <RID>EM 385-1-1</RID>, Chapter 2.</ITM><BRK/>
+<BRK/></SPT>
+[<SPT><TTL>Contract Site Safety And Health Officer(s)(SSHOs) Minimum Requirements</TTL><BRK/>
+<BRK/>
+<TXT>Provide a minimum of one Level One SSHO that meets the requirements of <RID>EM 385-1-1</RID>, Chapter 2 for this project.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Contract Site Safety and Health Officer(s)(SSHOs) Minimum Requirements for Projects with[ Multiple Work Sites,][ 
+Multiple Shifts,][ Limited Scope,][ or Maintenance, or Service Contracts].</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Insert this paragraph when a contract has:<BRK/>
+<BRK/>
+1)  More than one worksite or multiple shifts that require a separate full-time SSHO.<BRK/>
+<BRK/>
+2)  A limited Scope.<BRK/>
+<BRK/>
+3)  Maintenance and Service Contracts.</NPR><BRK/>
+<BRK/>
+<NPR>Fill in the worksite locations below and the required level of SSHO when a project 
+has more than one worksite that requires a dedicated full-time SSHO.  Just because 
+a project has more than one worksite does not automatically mean additional 
+full-time SSHOs are required.  Only consider specifying additional full-time 
+SSHOs when the contract includes separate projects and each project is uniquely 
+different from one another usually having separate plans and specifications 
+or large geographical distances.  Add or delete locations as needed.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide a separate full-time Level [One][Two][Three] SSHO at each of the following worksites:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  [INDICATE WORKSITE LOCATION] Level [One][Two][Three] SSHO</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  [INDICATE WORKSITE LOCATION] Level [One][Two][Three] SSHO</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  [INDICATE WORKSITE LOCATION] Level [One][Two][Three] SSHO</LST><BRK/>
+<BRK/>
+<TXT>The SSHOs for the worksites listed above must each have the required training, experience, and qualifications 
+in accordance with <RID>EM 385-1-1</RID>, Chapter 2.</TXT><BRK/>
+<BRK/>
+<TXT>Each SSHO is responsible for implementing and managing the Safety and Occupational Health (SOH) program at the 
+worksite indicated, while ensuring that the <RID>29 CFR 1926</RID>, <RID>EM 385-1-1</RID>, Contracts, and all applicable federal, state, 
+and Local requirements are met.</TXT><BRK/>
+<BRK/></SPT>
+]<TAI OPT="DREDGING"><SPT><TTL>Dredging Contract Site Safety and Health Officer(s)(SSHOs) Requirements</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>Note:  This paragraph and subsequent paragraphs are tailored for DREDGING.  
+Dredging Contracts may include several project sites.  Specification writers 
+must coordinate with the assigned USACE Japan Engineer District KO, SOHO, and/or 
+assigned Resident Engineer / Resident Office to determine the project site and 
+SSHO staffing requirements, considering size of Contract, organization of dredging 
+operation requirements, dispersion of operations, and travel time to associated 
+sites by SSHO.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Since dredging typically involves underwater diving, refer to <RID>EM 385-1-1</RID>, Chapter 30 and Section 
+<SRF>01 11 30.00 25</SRF> DIVING for additional guidance.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Dredging SSHO Personnel Requirements</TTL><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Provide a minimum of one primary Level One SSHO assigned for the primary shift.</LST><BRK/>
+<BRK/>
+<LST>Note:  Hopper Dredges with U.S. Coast Guard, credentialed crews the prime contractor may designate a 
+Level Two SSHO in lieu of having a Level one SSHO onboard.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  For a project involving multiple work shifts, provide a minimum of a Level[ One][ Two] SSHO for each 
+additional shift.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  For individual dredging projects the prime contractor will designate additional Level Three SSHOs 
+at locations where the primary Level One SSHO is not located (example: on dredge, tug, material placement 
+site).</LST><BRK/>
+<BRK/>
+<LST>Examples of one dredging project site is reflected in each of the following:</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) a mechanical dredge, tug(s) and scow(s), scow route, and material placement site; or</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) a hydraulic pipeline dredge, attendant plant, and material placement site; or,</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(3) a hopper dredge (include land-based material placement site - if applicable.)</ITM><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Designated SSHOs must be present at the project site, located so that they have full mobility and 
+reasonable access to all major work operations and must be available during their shift for immediate 
+verbal consultation and notification.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Designated Level One and Two SSHOs must have direct report authority to a senior project (or corporate) 
+management official.</LST>  <BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  Designated Level Three SSHOs must report potential safety and occupational health hazards, incidents, 
+and concerns to the Level One or Two SSHO on shift.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  Level One and Level Two SSHOs for dredging must have a minimum of 3 years experience in one of the 
+following areas:</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) Supervising/managing dredging activities.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) Supervising/managing marine construction activities.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(3) Supervising/managing land-based construction activities.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(4) Work managing safety programs or processes.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(5) Conducting hazard analyses and developing controls in activities or environments with similar 
+hazards.</ITM><BRK/>
+<BRK/></SPT>
+</SPT></TAI><SPT><TTL>Competent Person for Confined Space Entry</TTL><BRK/>
+<BRK/>
+<TXT>Provide a CP for Confined Space Entry who meets the requirements of <RID>EM 385-1-1</RID>, Chapter 34 and herein.  The CP 
+for Confined Space Entry must supervise the entry into each confined space.</TXT><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Use this paragraph for operations involving combustible or hazardous 
+materials.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+[<TXT>Since this work involves operations that handle combustible or hazardous materials, this person must have the 
+ability to understand and follow through on the air sampling, Personal Protective Equipment (PPE), and instructions 
+of a Marine Chemist, Coast Guard authorized persons, or Certified Industrial Hygienist.  Confined space and enclosed 
+space work must comply with <RID>NFPA 306</RID>, <RID>29 CFR 1915</RID>, "Confined and Enclosed Spaces and Other Dangerous Atmospheres 
+in Shipyard Employment," or as applicable in <RID>29 CFR 1910</RID> for general industry, <RID>29 CFR 1926</RID> for construction.</TXT>]</SPT><BRK/>
+<BRK/>
+<SPT><TTL><SUB>Crane Operators/Riggers</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Provide Operators meeting the requirements in <RID>EM 385-1-1</RID>, Chapter 15 for Riggers and Chapter 16 for Crane Operators.  
+In addition, for mobile cranes with Original Equipment Manufacturer (OEM) rated capacities of 22,680 kg or greater, 
+designate crane operators qualified by a source that qualifies crane operators (i.e., union, a Government agency, 
+or an organization that tests and qualifies crane operators).  Provide proof of current qualification.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Load Handling Equipment Operator Accepted Alterative</TTL><BRK/>
+<BRK/>
+<TXT>The Commander, POJ, has determined that there are adequate provisions provided under the Government of Japan 
+(GOJ) Ordinance to achieve the required protections for crane operator licensing and practical training requirements 
+employed as part of contracted activities provided for USACE within the locality of Japan. Reference POJ-SO decision 
+memorandum, subject, Alternate Requirement Analysis - Load Handling Equipment, Qualifications, dated 8 January 
+2020.</TXT><BRK/>
+<BRK/>
+<TXT>Provisions within the JISHA (<RID>ORDINANCE NO. 34</RID>) Articles 223-228 provide sufficient confirmation of an operator's 
+certification/qualification and practical training to achieve the intent of <RID>EM 385-1-1</RID>, Chapter 16-3.</TXT><BRK/>
+<BRK/>
+<TXT>JISHA (<RID>ORDINANCE NO. 34</RID>) Articles 223 establishes the Director of the Prefectural Labour Bureau as the licensing 
+authority. Based upon this Article the Ministry of Labour is the recognized auditor, established for local accreditation 
+of certification and training programs.</TXT><BRK/></SPT>
+<BRK/></SPT>
+<SPT><TTL>Preconstruction Conference</TTL><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Contractor representatives who have a responsibility or significant role in accident prevention on 
+the project must attend the preconstruction conference.  This includes the project superintendent, Site 
+Safety and Occupational Health Officer, quality control manager, or any other assigned safety and health 
+professionals who participated in the development of the APP (including the Activity Hazard Analyses 
+(AHAs) and special plans, program and procedures associated with it).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Discuss the details of the submitted APP to include incorporated plans, programs, procedures, and 
+a listing of anticipated AHAs that will be developed and implemented during the performance of the Contract.  
+This list of proposed AHAs will be reviewed and an agreement will be reached between the Contractor and 
+the Contracting Officer as to which phases will require an analysis.  In addition, establish a schedule 
+for the preparation, submittal, and Government review of AHAs to preclude project delays.  The creation 
+of the APP and Schedule will be created  after being given Notice to Proceed.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Deficiencies in the submitted APP, identified during the Contracting Officer's review, must be corrected, 
+and the APP re-submitted for review prior to the start of construction.  Work is not permitted to begin 
+until an APP is established that is acceptable to the Contracting Officer.</LST><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL><SUB>ACCIDENT PREVENTION PLAN (APP)</SUB></TTL><BRK/>
+<BRK/>
+<TAI OPT="DESIGN-BUILD"><SPT><TTL>Design Accident Prevention Plan (APP)</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This paragraph is tailored for DESIGN-BUILD, use for DESIGN-BUILD projects 
+only.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Provide a site-specific Accident Prevention Plan (APP), including Activity Hazard Analyses (AHA), in accordance 
+with <RID>EM 385-1-1</RID>, ENG Form 6293, for the design team to follow during site visits and investigations.  For subsequent 
+visits, update the plan if there are changes in the personnel who will be attending, or the tasks to be performed.  
+Submit the APP for review and acceptance by the Government at least 15 calendar days prior to the start of the 
+design field work after being given Notice to Proceed.  Field work must not begin until the design APP is accepted 
+by the Contracting Officer.  Prior to the start of construction incorporate the Design APP into the Construction 
+APP so that one site specific APP exists for the project and submit to the Contracting Officer for acceptance.</TXT><BRK/>
+<BRK/>
+<TXT>If the design scope includes borings or other subsurface investigations, include in the APP the type of field 
+investigation and verification techniques, such as visual, local utility locating service scanning and third 
+party subcontractor scanning, potholing, or hand digging within two feet of a known utility that will be required.  
+Mark underground utilities before starting any ground-disturbing actions.  Notify the Contracting Officer 15 
+days prior to the start of soil borings or sub-surface investigations.</TXT><BRK/>
+<BRK/></SPT>
+</TAI><SPT><TTL>[Construction] Accident Prevention Plan (APP)</TTL><BRK/>
+<BRK/>
+<TXT>Submit the Accident Prevention Plan (APP) for review and acceptance by the Government at least 15 calendar days 
+prior to the start, after being given Notice to Proceed. A competent person must prepare the written<BRK/>
+site-specific APP. Prepare the APP in accordance with the format and requirements of <RID>EM 385-1-1</RID>, ENG Form 6293, 
+and herein. The APP must be job-specific and address any unusual or unique aspects of the project or activity 
+for which it is written. The APP must interface with the Contractor's overall safety and occupational health 
+program referenced in the APP in the applicable APP element, and made site-specific. Describe the methods to 
+evaluate past safety performance of potential subcontractors in the selection process. Also, describe innovative 
+methods used to ensure and monitor safe work practices of subcontractors. The Government considers the Prime 
+Contractor to be the "controlling employer" for all worksite safety and health of the subcontractors.  Contractors 
+are responsible for informing their subcontractors of the safety provisions under the terms of the Contract and 
+the penalties for noncompliance, coordinating the work to prevent one craft from interfering with or creating 
+hazardous working conditions for other crafts, and inspecting subcontractor operations to ensure that accident 
+prevention responsibilities are being carried out. The APP must be signed in accordance with ENG Form 6293 Accident 
+Prevention Plan Worksheet. The SSHO must provide and maintain the APP and a log of signatures by each subcontractor 
+foreman, attesting that they have read and understand the APP, and make the APP and log available on-site to 
+the Contracting Officer. If English is not the foreman's primary language, the Prime Contractor must provide 
+an interpreter.</TXT><BRK/>
+<BRK/>
+<TXT>Submit the APP to the Contracting Officer as attachment 01 35 26-A "ACCIDENT PREVENTION PLAN (APP) WORKSHEET; 
+ENG Form 6293" 15 calendar days<BRK/>
+prior to the date of the preconstruction conference for acceptance.  Work cannot proceed without an accepted 
+APP. Once reviewed and accepted by the Contracting Officer, the APP and attachments will be enforced as part 
+of the Contract.  Disregarding the provisions of this Contract or the accepted APP is cause for stopping of work, 
+at the discretion of the Contracting Officer, until the matter has been rectified. Continuously review and amend 
+the APP, as necessary, throughout the life of the Contract.  Changes to the accepted APP must be made with the 
+knowledge and concurrence of the Contracting Officer, project superintendent, SSHO and Quality Control Manager. 
+Incorporate unusual or high-hazard activities not identified in the original APP as they are discovered.  Should 
+any severe hazard exposure (i.e., imminent danger) become evident, stop work in the area, secure the area, and 
+develop a plan to remove the exposure and control the hazard. Notify the Contracting Officer within 24 hours 
+of discovery.  Eliminate and remove the hazard. In the interim, take all necessary action to restore and maintain 
+safe working conditions in order to safeguard onsite personnel, visitors, the public (as defined by <RID>ANSI/ASSP A10.34</RID>
+), and the environment.</TXT><BRK/>
+<BRK/>
+<TXT>Copies of the accepted APP shall be maintained at the resident engineer's office and at the job site.  Continuously 
+review and amend the APP, as necessary, throughout the life of the contract. Incorporate unusual or high-hazard 
+activities not identified in the original APP as discovered.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Names and Qualifications</TTL><BRK/>
+<BRK/>
+<TXT>Provide plans in accordance with the requirements outlined in <RID>EM 385-1-1</RID>, including the following:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Names and qualifications (resumes including education, training, experience and certifications) of 
+site safety and health personnel designated to perform work on this project to include the designated 
+Site Safety and Health Officer and other competent and qualified personnel to be used.  Specify the duties 
+of each position.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  As a minimum, designate and submit qualifications of Competent Persons (CP) for each of the following 
+major areas: excavation; scaffolding; fall protection; hazardous energy; confined space; health hazard 
+recognition, evaluation and control of chemical, physical and biological agents; and personal protective 
+equipment and clothing to include selection, use and maintenance.  Designate and submit qualifications 
+for additional CPs as applicable to the work performed under this Contract.</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Plans</TTL><BRK/>
+<BRK/>
+<TXT>Provide plans in the APP in accordance with the requirements outlined in <RID>EM 385-1-1</RID>, including the following:</TXT><BRK/>
+<BRK/>
+[<SPT><TTL>Lead, Cadmium, and Chromium Compliance Plan</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Include this bracketed subparagraph and the following subparagraphs when 
+project is expected to involve these hazardous materials or contaminated sites.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Identify the safety and health aspects of work involving lead, cadmium and chromium, and prepare in accordance 
+with Section <SRF>02 83 00</SRF> LEAD REMEDIATION.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Asbestos Hazard Abatement Plan</TTL><BRK/>
+<BRK/>
+<TXT>Identify the safety and health aspects of asbestos work, and prepare in accordance with Section <SRF>02 82 00</SRF> ASBESTOS 
+REMEDIATION.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Site Safety and Health Plan</TTL><BRK/>
+<BRK/>
+<TXT>Identify the safety and health aspects, and prepare in accordance with Section <SRF>01 35 29.13</SRF> HEALTH, SAFETY, AND 
+EMERGENCY RESPONSE PROCEDURES FOR CONTAMINATED SITES</TXT>.<BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Polychlorinated Biphenyls (PCB) Plan</TTL><BRK/>
+<BRK/>
+<TXT>Identify the safety and health aspects of Polychlorinated Biphenyls work, and prepare in accordance with Sections 
+<SRF>02 84 33</SRF> REMOVAL AND DISPOSAL OF POLYCHLORINATED BIPHENYLS (PCBs) and <SRF>02 61 23</SRF> REMOVAL AND DISPOSAL OF PCB CONTAMINATED 
+SOILS.</TXT><BRK/>
+<BRK/></SPT>
+][<SPT><TTL>Site Demolition Plan</TTL><BRK/>
+<BRK/>
+<TXT>Identify the safety and health aspects, and prepare in accordance with Section <SRF>02 41 00</SRF> [DEMOLITION] [AND] [DECONSTRUCTION] 
+and referenced sources.</TXT><BRK/>
+<BRK/></SPT>
+]</SPT></SPT><SPT><TTL><SUB>ACTIVITY HAZARD ANALYSIS (AHA)</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Before beginning each activity, task or Definable Feature of Work (DFOW) involving a type of work presenting 
+hazards not experienced in previous project operations, or where a new work crew or subcontractor is to perform 
+the work, the Contractor(s) performing that work activity must prepare an AHA.  AHAs must be developed by the 
+Prime Contractor, subcontractor, or supplier performing the work, and provided for Prime Contractor review and 
+approval before submitting to the Contracting Officer.  AHAs must be signed by the SSHO, Superintendent, QC Manager 
+and the subcontractor Foreman performing the work.  Format the AHA in accordance with <RID>EM 385-1-1</RID>, Chapter 2 or 
+as directed by the Contracting Officer.  Submit the AHA for review at least 15 working days prior to the start 
+of each activity task, or DFOW.  The Government reserves the right to require the Contractor to revise and resubmit 
+the AHA if it fails to effectively identify the work sequences, specific anticipated hazards, site conditions, 
+equipment, materials, personnel and the control measures to be implemented.</TXT><BRK/>
+<BRK/>
+<TXT>AHAs must identify competent persons required for phases involving high risk activities, including confined entry, 
+crane and rigging, excavations, trenching, electrical work, fall protection, and scaffolding.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>AHA Management</TTL><BRK/>
+<BRK/>
+<TXT>Review the AHA list periodically (at least monthly) at the Contractor supervisory safety meeting, and update 
+as necessary when procedures, scheduling, or hazards change.  Use the AHA during daily inspections by the SSHO 
+to ensure the implementation and effectiveness of the required safety and health controls for that work activity.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>AHA Signature Log</TTL><BRK/>
+<BRK/>
+<TXT>Each employee performing work as part of an activity, task or DFOW must review the AHA for that work and sign 
+a signature log specifically maintained for that AHA prior to starting work on that activity.  The SSHO must 
+maintain a signature log on site for every AHA.  Provide employees whose primary language is other than English, 
+with an interpreter to ensure a clear understanding of the AHA and its contents.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>SITE SAFETY REFERENCE MATERIALS</TTL><BRK/>
+<BRK/>
+<TXT>Maintain safety-related references applicable to the project, including those listed in paragraph REFERENCES.  
+Maintain applicable equipment manufacturer's manuals.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>EMERGENCY MEDICAL TREATMENT</TTL><BRK/>
+<BRK/>
+<TXT>Contractors must arrange for their own emergency medical treatment in accordance with <RID>EM 385-1-1</RID>.  The Government 
+has no responsibility to provide emergency medical treatment.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>NOTIFICATIONS AND REPORTS</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Accident Notification</TTL><BRK/>
+<BRK/>
+<TXT>Notify the Contracting Officer in accordance with the <RID>EM 385-1-1</RID> Accident Reporting Timeline.</TXT><BRK/>
+<TAB>
+<WBK>
+   <STS>
+      <STY SID="s50">
+         <ALN VERTICAL="BOTTOM"/>
+      </STY>
+   </STS>
+   <TDA COLUMNCOUNT="3" ROWCOUNT="4">
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="173.25"/>
+      <COL STYLEID="s50" AUTOWIDTH="0" WIDTH="173.25"/>
+      <COL AUTOWIDTH="0" WIDTH="238.50"/>
+      <ROW AUTOHEIGHT="0" HEIGHT="32.25">
+         <CEL MERGEACROSS="2" STYLEID="s50">
+<DTA TYPE="STRING"><HL3><HL4>Table</HL4><BRK/>Accident Reporting Required Timeline</HL3></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="47.25">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><HL4><HL3>Accident Type</HL3></HL4></DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING"><HL4><HL3>Notify KO or COR</HL3></HL4></DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING"><HL4><HL3>Complete Final Accident Report on ENG 3394 and provide to KO or COR</HL3></HL4></DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="69.00">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Fatality, in-patient hospitalization, amputation, eye loss, or property damage over $600,000.</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Immediately, no later than (NLT) 8 Hours</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Within 7 Days</DTA>
+         </CEL>
+      </ROW>
+      <ROW AUTOHEIGHT="0" HEIGHT="42.75">
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">All other accidents and near misses</DTA>
+         </CEL>
+         <CEL STYLEID="s50">
+<DTA TYPE="STRING">Immediately, no later than (NLT) 24 Hours</DTA>
+         </CEL>
+         <CEL>
+<DTA TYPE="STRING">Within 7 Days</DTA>
+         </CEL>
+      </ROW>
+   </TDA>
+</WBK>
+<BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/><BRL/></TAB><BRK/>
+<TXT>Within notification include Contractor name; Contract title; type of Contract; name of activity, installation 
+or location where accident occurred; date and time of accident; names of personnel injured; extent of property 
+damage, if any; extent of injury, if known, and brief description of accident (for example, type of construction 
+equipment used and PPE used).  Preserve the conditions and evidence on the accident site until the Government 
+investigation team arrives on-site and Government investigation is conducted.  Assist and cooperate fully with 
+the Government's investigation(s) of any accident or near miss.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL><SUB>Accident Reports</SUB></TTL><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Conduct an accident investigation for recordable injuries and illnesses, property damage, and near 
+misses as defined in <RID>EM 385-1-1</RID> to establish the root cause(s) of the accident.  All accidents are reportable, 
+regardless of whether or not it is recordable.  Complete the applicable USACE Accident Report, ENG Form 
+3394, and provide the report to the Contracting Officer within 7 calendar days of the accident.  The 
+Contracting Officer will provide copies of any required or special forms.  All accidents are reportable, 
+regardless of whether or not it is recordable.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Near Misses: Report all "Near Misses" to the Contracting Officer, using local accident reporting 
+procedures, within 24 hours.  The Contracting Officer will provide the Contractor the required forms.  
+Near miss reports are considered positive and proactive Contractor safety management actions.</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL><SUB>LHE Inspection Reports</SUB></TTL><BRK/>
+<BRK/>
+<TXT>Submit LHE inspection reports required in accordance with <RID>EM 385-1-1</RID> and as specified herein with Daily Reports 
+of Inspections.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL><SUB>Certificate of Compliance</SUB> and Pre-lift Plan/Checklist for LHE and Rigging</TTL><BRK/>
+<BRK/>
+<TXT>Provide a Certificate of Compliance for LHE entering an activity under this Contract and in accordance with <RID>EM 385-1-1</RID>
+, Chapter 16-10, paragraph b (16-10.b).  Post certifications on the crane.</TXT><BRK/>
+<BRK/>
+<TXT>Develop a <SUB>Standard Lift Plan</SUB> (SLP) in accordance with <RID>EM 385-1-1</RID>, Chapter 16-10, paragraph a (16-10.a) and using 
+Standard Pre-Lift Crane Plan/Checklist for each lift planned.  Submit SLP to the Contracting Officer for approval 
+within 15 calendar days in advance of planned lift.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL><SUB>HOT WORK PERMIT</SUB></TTL><BRK/>
+<BRK/>
+<SPT><TTL>Permit and Personnel Requirements</TTL><BRK/>
+<BRK/>
+<TXT>Submit and obtain a written permit prior to performing "Hot Work" (i.e. welding or cutting) or operating other 
+flame-producing/spark producing devices, from the Installation Fire Department.  Contractors are required to 
+meet all criteria before a permit is issued.  Provide at least two (2) 9kg 4A:20 BC rated extinguishers for normal 
+"Hot Work".  Extinguishers shall be current inspection tagged, and have approved safety pin and tamper resistant 
+seal.  It is also mandatory to have a designated FIRE WATCH for any "Hot Work" done at this activity.  The Fire 
+Watch shall be trained in accordance with <RID>NFPA 51B</RID> and remain on-site for a minimum of one hour after completion 
+of the task or as specified on the hot work permit.</TXT><BRK/>
+<BRK/>
+<TXT>When starting work in the facility, require personnel to familiarize themselves with the location of the nearest 
+fire alarm boxes and place in memory the emergency Base Fire Department phone number.  Report any fire, no matter 
+how small, to the responsible Base Fire Department immediately.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Work Around Flammable Materials</TTL><BRK/>
+<BRK/>
+<TXT>Obtain permit approval from a NFPA Certified Marine Chemist, or Certified Industrial Hygienist for "Hot Work" 
+within or around flammable materials (such as fuel systems or welding/cutting on fuel pipes) or confined spaces 
+(such as sewer wet wells, manholes, or vaults) that have the potential for flammable or explosive atmospheres.</TXT><BRK/>
+<BRK/>
+<TXT>Whenever these materials, except beryllium and chromium (VI), are encountered in indoor operations, local mechanical 
+exhaust ventilation systems that are sufficient to reduce and maintain personal exposures to within acceptable 
+limits must be used and maintained in accordance with manufacturer's instruction and supplemented by exceptions 
+noted in <RID>EM 385-1-1</RID>, Chapter 6.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>RADIATION SAFETY REQUIREMENTS</TTL><BRK/>
+<BRK/>
+<TXT>Notwithstanding any other hazardous material used in this Contract, radioactive materials or instruments capable 
+of producing ionizing/non-ionizing radiation (with the exception of radioactive material and devices used in 
+accordance with <RID>EM 385-1-1</RID> such as nuclear density meters for compaction testing and laboratory equipment with 
+radioactive sources) as well as materials which contain asbestos, mercury or polychlorinated biphenyls, di-isocyanates, 
+lead-based paint, and hexavalent chromium, are prohibited.  The Contracting Officer, upon written request by 
+the Contractor, may consider exceptions to the use of any of the above excluded materials.  Low mercury lamps 
+used within fluorescent lighting fixtures are allowed as an exception without further Contracting Officer approval.  
+The Contractor shall request approval in writing to the Contracting Officer not less than thirty (30) calendar 
+days in advance of any request for exception.  Following Contracting Officer approval of any radiation related 
+exception, the Contractor shall coordinate with the Contracting Officer's Representative at least fifteen (15) 
+calendar days in advance to notify the Radiation Safety Officer (RSO) prior to excepted items of radioactive 
+material and devices being brought on base.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>CONFINED SPACE ENTRY REQUIREMENTS</TTL><BRK/>
+<BRK/>
+<TXT>Confined space entry must comply with <RID>EM 385-1-1</RID>, Chapter 34, <RID>29 CFR 1926</RID>, <RID>29 CFR 1910</RID>, Host Nation, local regulatory 
+requirements and Directive <RID>CPL 2.100</RID>.  Any potential for a hazard in the confined space requires a permit system 
+to be used.  Obtain written permission from the Contracting Officer prior to confined space entry by personnel.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Rescue Procedures and Coordination with Local Emergency Responders</TTL><BRK/>
+<BRK/>
+<TXT>Develop and implement an on-site rescue and recovery plan and procedures.  The rescue plan must not rely on local 
+emergency responders for rescue from a confined space.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><TAI OPT="INDOOR AIR QUALITY"><SPT><TTL>CONSTRUCTION <SUB>INDOOR AIR QUALITY (IAQ) MANAGEMENT PLAN</SUB></TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  This paragraph and subsequent subparagraphs are tailored for INDOOR AIR 
+QUALITY.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Preventing indoor air quality problems resulting from the construction 
+process sustains the comfort and health of construction workers and building 
+occupants. Include last bracketed sentence when required by Section 
+<SRF>01 33 29</SRF> SUSTAINABILITY REQUIREMENTS AND REPORTING, IAQ requirements.</NPR><BRK/>
+<BRK/>
+<BRK/>
+<NPR>The following paragraph contains tailoring for DESIGN-BUILD and DESIGN-BID-BUILD.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Submit an IAQ Management Plan [within [15][_____] calendar days after<TAI OPT="DESIGN-BUILD"> design</TAI><TAI OPT="DESIGN-BID-BUILD">[ Contract award][ notice to proceed]</TAI>
+ and not less than 10 calendar days before the preconstruction conference.][not less than 10 calendar days before 
+the preconstruction conference.]  Revise and resubmit Plan as required by the Contracting Officer.  Make copies 
+of the final plan available to all workers on site.  Include provisions in the Plan to meet the requirements 
+specified below and to ensure safe, healthy air for construction workers and building occupants.[  Submit <SUB>Final 
+IAQ Management Plan</SUB> for inclusion in the Sustainability eNotebook, in accordance with Section <SRF>01 33 29</SRF> SUSTAINABILITY 
+REQUIREMENTS AND REPORTING.]</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Requirements During Construction</TTL><BRK/>
+<BRK/>
+<TXT>Provide for evaluation of indoor Carbon Dioxide concentrations in accordance with <RID>ASTM D6245</RID>.  Provide for evaluation 
+of volatile organic compounds (VOCs) in indoor air in accordance with <RID>ASTM D6345</RID>.  Use filters with a Minimum 
+Efficiency Reporting Value (MERV) of 8 in permanently installed air handlers during construction.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Control Measures</TTL><BRK/>
+<BRK/>
+<TXT>Meet or exceed the requirements of <RID>ANSI/SMACNA 008</RID> to help minimize contamination of the building from construction 
+activities.  The five requirements of this manual which must be adhered to are described below:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  HVAC protection:  Isolate return side of HVAC system from surrounding environment to prevent construction 
+dust and debris from entering the duct work and spaces.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Source control:  Use low emitting paints and other finishes, sealants, adhesives, and other materials 
+as specified. When available, cleaning products must have a low VOC content and be non-toxic to minimize 
+building contamination.  Utilize cleaning techniques that minimize dust generation.  Cycle equipment 
+off when not needed.  Prohibit idling motor vehicles where emissions could be drawn into building.  Designate 
+receiving/storage areas for incoming material that minimize IAQ impacts.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Pathway interruption:  When pollutants are generated use strategies such as 100 percent outside air 
+ventilation or erection of physical barriers between work and non-work areas to prevent contamination.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Housekeeping:  Clean frequently to remove construction dust and debris. Promptly clean up spills.  
+Remove accumulated water and keep work areas dry to discourage the growth of mold and bacteria.  Take 
+extra measures when hazardous materials are involved.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Scheduling:  Control the sequence of construction to minimize the absorption of VOCs by other building 
+materials.</LST><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Moisture Contamination</TTL><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Remove accumulated water and keep work dry.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Use dehumidification to remove moist, humid air from a work area.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Do not use combustion heaters or generators inside the building.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Protect porous materials from exposure to moisture.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Remove and replace items which remain damp for more than a few hours.</LST><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Requirements After Construction</TTL><BRK/>
+<BRK/>
+<TXT>After construction ends and prior to occupancy, conduct a building flush-out or test the indoor air contaminant 
+levels.  Flush-out must be a minimum 2 weeks with MERV-13 filtration media as determined by <RID>ASHRAE 52.2</RID> at 100 
+percent outside air.  Air contamination testing must be consistent with EPA's current Compendium of Methods for 
+the Determination of Air Pollutants in Indoor Air.  After building flush-out or testing and prior to occupancy, 
+replace filtration media.  Filtration media must have a MERV of 13 as determined by <RID>ASHRAE 52.2</RID>.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></TAI><TAI OPT="DIVING"><SPT><TTL>DIVE SAFETY REQUIREMENTS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Include if project contains any diving related requirements.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Develop a <SUB>Dive Operations Plan</SUB>, AHA, emergency management plan, and personnel list that includes qualifications, 
+for each separate diving operation in accordance with Section <SRF>01 11 30.00 25</SRF> Diving.  Submit these documents 
+to the District Dive Coordinator (DDC) via the Contracting Officer, for review and approval at least 30 working 
+days prior to commencement of diving operations.  These documents must be at the diving location at all times.  
+Provide each of these documents as a part of the project file.</TXT><BRK/>
+<BRK/></SPT>
+</TAI><SPT><TTL>SEVERE STORM PLAN</TTL><BRK/>
+<BRK/>
+<TXT>In the event of a severe storm warning, the Contractor must comply with the applicable Storm Plan and:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Secure outside equipment and materials and place materials that could be damaged in protected areas.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Check surrounding area, including roof, for loose material, equipment, debris, and other objects 
+that could be blown away or against existing facilities.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Ensure that temporary erosion controls are adequate.</LST><BRK/>
+<BRK/></SPT>
+</PRT><PRT><TTL>PART 2   PRODUCTS</TTL><BRK/>
+<BRK/>
+<TXT>Not Used</TXT><BRK/>
+<BRK/></PRT>
+<PRT><TTL>PART 3   EXECUTION</TTL><BRK/>
+<BRK/>
+<SPT><TTL>CONSTRUCTION AND OTHER WORK</TTL><BRK/>
+<BRK/>
+<TXT>Comply with <RID>EM 385-1-1</RID>, <RID>NFPA 70</RID>, <RID>NFPA 70E</RID>, <RID>NFPA 241</RID>, the APP, the AHA, Federal and State OSHA regulations, and 
+other related submittals and activity fire and safety regulations.  The most stringent standard prevails.</TXT><BRK/>
+<BRK/>
+<TXT>PPE is governed in all areas by the nature of the work the employee is performing.  Use personal hearing protection 
+at all times in designated noise hazardous areas or when performing noise hazardous tasks.  Safety glasses must 
+be worn or carried/available on each person.  Mandatory PPE includes:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  Head Protection that meets <RID>ANSI/ISEA Z89.1</RID></LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Long Pants</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  Appropriate Safety Footwear</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Appropriate Class Reflective Vests</LST><BRK/>
+<BRK/>
+<SPT><TTL>Worksite Communication</TTL><BRK/>
+<BRK/>
+<TXT>Employees working alone in a remote location or away from other workers must be provided an effective means of 
+emergency communications (i.e., cellular phone, two-way radios, land-line telephones or other acceptable means).  
+The selected communication must be readily available (easily within the immediate reach) of the employee and 
+must be tested prior to the start of work to verify that it effectively operates in the area/environment.  Develop 
+an employee check-in/check-out communication procedure to ensure employee safety.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Hazardous Material Exclusions</TTL><BRK/>
+<BRK/>
+<TXT>Notwithstanding any other hazardous material used in this Contract, radioactive materials or instruments capable 
+of producing ionizing/non-ionizing radiation (with the exception of radioactive material and devices used in 
+accordance with <RID>EM 385-1-1</RID> such as nuclear density meters for compaction testing and laboratory equipment with 
+radioactive sources) as well as materials which contain asbestos, mercury or polychlorinated biphenyls, di-isocyanates, 
+lead-based paint, and hexavalent chromium, are prohibited.  The Contracting Officer, upon written request by 
+the Contractor, may consider exceptions to the use of any of the above excluded materials.  Low mercury lamps 
+used within fluorescent lighting fixtures are allowed as an exception without further Contracting Officer approval.  
+The Contractor shall request approval in writing to the Contracting Officer not less than thirty (30) calendar 
+days in advance of any request for exception.  Following Contracting Officer approval of any radiation related 
+exception, the Contractor shall coordinate with the Contracting Officer's Representative at least fifteen (15) 
+calendar days in advance to notify the Radiation Safety Officer (RSO) prior to excepted items of radioactive 
+material and devices being brought on base.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Unforeseen Hazardous Material</TTL><BRK/>
+<BRK/>
+<TXT>Contract documents identify materials such as PCB, lead paint, and friable and non-friable asbestos and other 
+OSHA regulated chemicals (i.e., <RID>29 CFR 1910.1000</RID>).  If material(s) that may be hazardous to human health upon 
+disturbance are encountered during demolition, repair, renovation, or construction operations.  Stop that portion 
+of work and notify the Contracting Officer immediately.  Within [14][_____] calendar days the Government will 
+determine if the material is hazardous.  If material is not hazardous or poses no danger, the Government will 
+direct the Contractor to proceed without change.  If material is hazardous and handling of the material is necessary 
+to accomplish the work, the Government will issue a modification.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>UTILITY OUTAGE REQUIREMENTS</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Consult with local Installation on notice required for utility outage.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Apply for utility outages at least [sixty (60)][_____] days in advance.  At a minimum, the written request must 
+include the location of the outage, utilities being affected, duration of outage, any necessary sketches, and 
+a description of the means to fulfill energy isolation requirements in accordance with <RID>EM 385-1-1</RID>, Chapter 12.  
+In accordance with <RID>EM 385-1-1</RID>, Chapter 12 where outages involve Government or Utility personnel, coordinate with 
+the Government on all activities involving the control of hazardous energy.</TXT><BRK/>
+<BRK/>
+<TXT>These activities include, but are not limited to, a review of Hazardous Energy Control Program (HECP) and HEC 
+procedures, as well as applicable Activity Hazard Analyses (AHAs).  In accordance with <RID>EM 385-1-1</RID> and <RID>NFPA 70E</RID>
+, work on energized electrical circuits must not be performed without prior Government authorization.  Government 
+permission is considered through the permit process and submission of a detailed AHA.  Energized work permits 
+are considered only when de-energizing introduces additional or increased hazard or when de-energizing is infeasible.</TXT><BRK/>
+<BRK/>
+<TAI OPT="OKINAWA AO"><SPT><TTL>Okinawa Utility Outages</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Include for Okinawa based projects.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>Outages (power, water, sewer, and communications) for the following listed dates, times, and locations shall 
+not be permitted during the performance of this Contract, unless approved by the authorized agent of the Installation 
+Commander and Contracting Officer's Representative:</TXT><BRK/>
+<BRK/>
+<LST INDENT="-0.33">a.  DoDEA Schools: No outages from 01 September through 31 July, Monday through Friday between the hours 
+of 0700 and 1800.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">b.  Family Housing Areas: No outages will be allowed on Saturdays when DoDEA schools are not in session.  
+No more than two (2) outages for the same utility service shall be allowed in a one-month period (30 
+calendar days), and no more than one (1) outage in a two-week period (14 calendar days).</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">c.  U.S. Government Holidays: No outages during the following periods:</LST><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(1) New Year's Day - to include seven (7) calendar days before and one (1) calendar day after 
+this date (contiguous with the Christmas Day outage requirement).</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(2) Martin Luther King's Birthday - to include the following Tuesday.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(3) President's Day - to include the following Tuesday.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(4) Memorial Day - to include the following Tuesday.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(5) Juneteenth - to include one (1) calendar day before and after this date.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(6) Independence Day - to include one (1) calendar day before and after this date.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(7) Labor Day - to include the following Tuesday.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(8) Columbus Day - to include the preceding Friday.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(9) Veteran's Day - to include two (2) calendar days before and after this date.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(10)Thanksgiving Day - to include one (1) calendar day before and after this date.</ITM><BRK/>
+<BRK/>
+<ITM INDENT="-0.33">(11)Christmas Day - to include seven (7) calendar days before and after this date (contiguous 
+with the New Year's Day outage requirement).</ITM><BRK/>
+<BRK/>
+<LST INDENT="-0.33">d.  Child Development Centers (CDC): Outages allowed only when the CDC is closed or on Sundays.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">e.  Marine Corps Bases: No outages during Marine Corps Balls or Change of Commands which are normally 
+scheduled between 20 October and 21 November.  Specific dates and locations shall be provided during 
+or subsequent to the Preconstruction Conference.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">f.  Kadena Air Base: No outages during Change of Commands.  Specific dates and locations shall be provided 
+during or subsequent to the Preconstruction Conference.</LST><BRK/>
+<BRK/>
+<LST INDENT="-0.33">g.  Torii Station: No outages during Change of Commands.  Specific dates and locations shall be provided 
+during or subsequent to the Preconstruction Conference.</LST><BRK/>
+<BRK/></SPT>
+</TAI><TAI OPT="ATSUGI"><SPT><TTL>Reimbursement for Public Works Support of Electrical Outages</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Include for NAF Atsugi based projects.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>The Contractor shall reimburse the NAF Atsugi Public Works Department for its costs to prepare for, support, 
+and recover from Contractor requested utility outages associated with this work.  Public Works efforts include 
+setting up generators, securing elevators and securing utilities before the outage, and restoring these systems 
+after the outage.  The work includes resetting steam systems, air conditioning systems, hot water systems and 
+electrical systems.  Outages during the heating and cooling season cost $1,369 to support during normal working 
+hours, and $3,200 during overtime hours.  Outages in the spring and fall, between heating and cooling seasons, 
+cost $1,150 to support during normal working hours, and $2,696 during overtime hours.</TXT></SPT></TAI><BRK/>
+<BRK/></SPT>
+<SPT><TTL>OUTAGE COORDINATION MEETING</TTL><BRK/>
+<BRK/>
+<TXT>After the utility outage request is approved and prior to beginning work on the utility system requiring shut-down, 
+conduct a pre-outage coordination meeting in accordance with <RID>EM 385-1-1</RID>, Chapter 12.  This meeting must include 
+the Prime Contractor, the Prime and subcontractors performing the work, the Contracting Officer, and the Installation 
+representative.  All parties must fully coordinate HEC activities with one another.  During the coordination 
+meeting, all parties must discuss and coordinate on the scope of work, HEC procedures (specifically, the lock-out/tag-out 
+procedures for worker and utility protection), the AHA, assurance of trade personnel qualifications, identification 
+of competent persons, and compliance with HECP training in accordance with <RID>EM 385-1-1</RID>, Chapter 12.  Clarify when 
+personal protective equipment is required during switching operations, inspection, and verification.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>CONTROL OF HAZARDOUS ENERGY (LOCKOUT/TAGOUT)</TTL><BRK/>
+<BRK/>
+<TXT>Provide and operate a Hazardous Energy Control Program (HECP) in accordance with <RID>EM 385-1-1</RID>, Chapter 12 <RID>29 CFR 1910</RID>
+, <RID>29 CFR 1915</RID>, <RID>ANSI/ASSP A10.44</RID>, <RID>NFPA 70E</RID>.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Safety Preparatory Inspection Coordination Meeting with the Government or Utility</TTL><BRK/>
+<BRK/>
+<TXT>For electrical distribution equipment that is to be operated by Government or Utility personnel, the Prime Contractor 
+and the subcontractor performing the work must attend the safety preparatory inspection coordination meeting, 
+which will also be attended by the Contracting Officer's Representative, and required by <RID>EM 385-1-1</RID>, Chapter 
+12.  The meeting will occur immediately preceding the start of work and following the completion of the outage 
+coordination meeting.  Both the safety preparatory inspection coordination meeting and the outage coordination 
+meeting must occur prior to conducting the outage and commencing with lockout/tagout procedures.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Lockout/Tagout Isolation</TTL><BRK/>
+<BRK/>
+<TXT>Where the Government or Utility performs equipment isolation and lockout/tagout, the Contractor must place their 
+own locks and tags on each energy-isolating device and proceed in accordance with the HECP.  Before any work 
+begins, both the Contractor and the Government or Utility must perform energy isolation verification testing 
+while wearing required PPE detailed in the Contractor's AHA and required by <RID>EM 385-1-1</RID>, Chapter 12.  Install 
+personal protective grounds, with tags, to eliminate the potential for induced voltage in accordance with <RID>EM 385-1-1</RID>
+, Chapter 12.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Lockout/Tagout Removal</TTL><BRK/>
+<BRK/>
+<TXT>Upon completion of work, conduct lockout/tagout removal procedure in accordance with the HECP.  In accordance 
+with <RID>EM 385-1-1</RID>, Chapter 12, each lock and tag must be removed from each energy isolating device by the authorized 
+individual or systems operator who applied the device.  Provide formal notification to the Government (by completing 
+the Government form if provided by Contracting Officer's Representative), confirming that steps of de-energization 
+and lockout/tagout removal procedure have been conducted and certified through inspection and verification.  
+Government or Utility locks and tags used to support the Contractor's work will not be removed until the authorized 
+Government employee receives the formal notification.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>FALL PROTECTION PROGRAM</TTL><BRK/>
+<BRK/>
+<TXT>Establish a fall protection program, for the protection of all employees exposed to fall hazards.  Within the 
+program include company policy, identify roles and responsibilities, education and training requirements, fall 
+hazard identification, prevention and control measures, inspection, storage, care and maintenance of fall protection 
+equipment and rescue and evacuation procedures in accordance with <RID>EM 385-1-1</RID>, Chapter 21.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Fall Protection Equipment and Systems</TTL><BRK/>
+<BRK/>
+<TXT>Enforce use of personal fall protection equipment and systems designated (to include fall arrest, restraint, 
+and positioning) for each specific work activity in the Site Specific Fall Protection and Prevention Plan and 
+AHA at all times when an employee is exposed to a fall hazard.  Protect employees from fall hazards as specified 
+in <RID>EM 385-1-1</RID>, Chapter 21-4.</TXT><BRK/>
+<BRK/>
+<TXT>Provide personal fall protection equipment, systems, subsystems, and components that comply with <RID>EM 385-1-1</RID> and <RID>
+29 CFR 1926</RID>.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Additional Personal Fall Protection Measures</TTL><BRK/>
+<BRK/>
+<TXT>In addition to the required fall protection systems, other protective measures such as safety skiffs, personal 
+floatation devices, and life rings, are required when working above or next to water in accordance with <RID>EM 385-1-1</RID>
+, Chapter 21-8.t.  Personal fall protection systems and equipment are required when working from an articulating 
+or extendible boom, swing stages, or suspended platform.  In addition, personal fall protection systems are required 
+when operating other equipment such as scissor lifts.  The need for tying-off in such equipment is to prevent 
+ejection of the employee from the equipment during raising, lowering, travel, or while performing work.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Personal Fall Protection Equipment</TTL><BRK/>
+<BRK/>
+<TXT>Only a full-body harness with a shock-absorbing lanyard or self-retracting lanyard is an acceptable personal 
+fall arrest body support device.  The use of body belts is not acceptable.  Harnesses must have a fall arrest 
+attachment affixed to the body support (usually a Dorsal D-ring) and specifically designated for attachment to 
+the rest of the system.  Snap hooks and carabineers must be self-closing and self-locking, capable of being opened 
+only by at least two consecutive deliberate actions and have a minimum gate strength of<MET> 1633 kg</MET><ENG> 3,600 lbs</ENG> in 
+all directions.  Use webbing, straps, and ropes made of synthetic fiber.  The maximum free fall distance when 
+using fall arrest equipment must not exceed<MET> 1.8 m</MET><ENG> 6 feet</ENG>, unless the proper energy absorbing lanyard is used.  
+Always take into consideration the total fall distance and any swinging of the worker (pendulum-like motion), 
+that can occur during a fall, when attaching a person to a fall arrest system.  Equip all full body harnesses 
+with Suspension Trauma Preventers such as stirrups, relief steps, or similar in order to provide short-term relief 
+from the effects of orthostatic intolerance in accordance with <RID>EM 385-1-1</RID>, Chapter 21-8.t.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></SPT><SPT><TTL>SCAFFOLDING ACCEPTED ALTERNATIVE</TTL><BRK/>
+<BRK/>
+<TXT>The Commander, POJ, has determined that there are adequate provisions provided under the Government of Japan 
+Ordinance to achieve the required protections for supported metal scaffolding employed as part of contracted 
+activities provided for U.S. Army Corps of Engineers (USACE) within the locality of Japan. Reference POJ-SO decision 
+memorandum, subject, Alternate Requirement Analysis - Scaffolding Standards Review, dated 24 September 2019.</TXT><BRK/>
+<BRK/>
+<TXT>This determination only includes supported metal scaffolding structures and does not include other forms of scaffolding 
+methods included in <RID>EM 385-1-1</RID>, Chapter 22.</TXT><BRK/>
+<BRK/>
+<TXT>JISHA requirements for steel scaffolding structures to conform to the Japanese Industrial Standard <RID>JIS A 8951</RID>
+ are comparable to those of <RID>ANSI/ASSP A10.8</RID>, providing sufficient protection required to achieve the provisions 
+of <RID>EM 385-1-1</RID>, Chapter 22.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>RIGGING ACCEPTED ALTERNATIVE</TTL><BRK/>
+<BRK/>
+<TXT>The Commander, POJ, has determined that there are adequate provisions provided under the Government of Japan 
+(GOJ) Ordinance, which warrant a partial acceptance for rigging procedures and rigging equipment, employed as 
+part of contracted activities provided for USACE within the locality of Japan.  Reference POJ-SO decision memorandum, 
+subject, Alternate Requirement Analysis - Rigging Requirements and Procedures, dated 15 January 2020.</TXT><BRK/>
+<BRK/>
+<TXT>This acceptance excludes Multiple Lift Rigging (MLR) procedures as well as<BRK/>
+standards for all hooks used for lifting or load handling purposes. MLR<BRK/>
+and hooks used for load handling purposes will adhere to the respective<BRK/>
+sections of the <RID>EM 385-1-1</RID>, Chapter 15 without exception. <BRK/>
+<BRK/>
+Accepted standards include, JISHA <RID>ORDINANCE NO. 34</RID>, "The Safety Ordinance for Cranes", Chapter VIII Sling Work, 
+Section 1 Slinging Equipment Articles 213-220.  Also referenced, is the JISHA's "Guideline for sling work safety 
+(2000)".</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>EXCAVATIONS</TTL><BRK/>
+<BRK/>
+<TXT>Soil classification shall be performed by a competent person in accordance with <RID>EM 385-1-1</RID>, Chapter 25.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Excavations and Trenching Accepted Alterative</TTL><BRK/>
+<BRK/>
+<TXT>The Commander, POJ, has determined that there are adequate provisions provided under the Government of Japan 
+Ordinance to achieve the required protections for excavation and trenching systems including shoring, shielding, 
+and engineered designed systems employed as part of contracted activities provided for USACE within the locality 
+of Japan.  Reference POJ-SO decision memorandum, subject, Alternate Requirement Analysis - Excavation and Trenching 
+Review, dated 7 November 2019.</TXT><BRK/>
+<BRK/>
+<TXT>This determination only includes excavation and trenching systems including shoring, shielding, and engineered 
+designed systems where the manufactures or a registered professional engineer's tabulated data has been employed.</TXT><BRK/>
+<BRK/>
+<TXT>Provisions within JISHA <RID>ORDINANCE NO. 47</RID>, Articles 368-371 provide sufficient protection required to achieve 
+the provisions of <RID>EM 385-1-1</RID>, Chapter 25-2, paragraph j (25-2.j). JISHA <RID>ORDINANCE NO. 47</RID> instructions included 
+in Articles 368-371 conform with the provisions for manufactured shoring/shielding and engineered designed support 
+systems including material serviceability, structural design, and erection/installation.  These provisions provided 
+sufficient protection required to achieve the provisions of <RID>EM 385-1-1</RID>, Chapter 25-2, paragraph j (25-2.j).</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Utility Locations</TTL><BRK/>
+<BRK/>
+<TXT>The Contractor shall positively identify underground utilities in the work area and coordinate with the installation 
+utility department.  The Contractor shall obtain digging permits prior to start of excavation by contacting the 
+Contracting Officer at least fifteen (15) calendar days in advance.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Utility Location Verification</TTL><BRK/>
+<BRK/>
+<TXT>The Contractor shall scan the construction site with electromagnetic or sonic equipment, and mark the surface 
+of the ground where existing underground utilities are discovered.  Verify the elevations of existing piping, 
+utilities, and any type of underground or encased obstruction not indicated to be specified or removed, but indicated 
+or discovered during scanning in locations to be traversed by piping, ducts, and other work to be conducted or 
+installed.  Verify elevations before installing new work closer than nearest manhole or other structure at which 
+an adjustment in grade can be made.  Physically verify underground utility locations, including utility depth, 
+by hand digging using wood or fiberglass handled tools when any adjacent construction work is expected to come 
+within one meter of the underground system.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Utilities Within and Under Concrete, Bituminous Asphalt, and Other<BRK/>
+Impervious Surfaces</TTL><BRK/>
+<BRK/>
+<TXT>Utilities located within and under concrete slabs or pier structures, bridges, parking areas, and the like, are 
+extremely difficult to identify. Whenever Contract work involves chipping, saw cutting, or core drilling through 
+concrete, bituminous asphalt or other impervious surfaces, the existing utility location must be coordinated 
+with installation utility departments in addition to location and depth verification by the Contractor.  The 
+Contractor shall locate utility depth by use of Ground Penetrating Radar (GPR), X-ray, bore scope, or ultrasound 
+prior to the start of demolition and construction. Outages to isolate utility systems must be used in circumstances 
+where utilities are unable to be positively identified.  The use of historical drawings does not alleviate the 
+Contractor from meeting this requirement.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Munitions and Explosives of Concern (MEC)</TTL><BRK/>
+<BRK/>
+<TXT>Munitions and Explosives of Concern (MEC): Unexploded Ordinance (UXO), Material Presenting a Potential Explosive 
+Hazard (MPPEH), Chemical Agents (CA), or Discarded Military Munitions (DMM) on jobsites shall be treated as extremely 
+dangerous and must be reported immediately. Follow the 3Rs: RECOGNIZE, RETREAT, and REPORT.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Identification and Notification</TTL><BRK/>
+<BRK/>
+<TXT>If you encounter or suspect you have encountered MEC, the on-site supervisor shall immediately suspend all operations 
+put at risk due to the suspected MEC identified. STOP WORK, and DO NOT TOUCH, mark the location, keep people 
+out of the area, and report to the Government Designated Authority. Project personnel will withdraw along cleared 
+path upwind 300 meters from the discovery or as determined by emergency responders.</TXT><BRK/>
+<BRK/>
+<TXT>The on-site supervisor shall contact the installation emergency services who will intern contact the appropriate 
+Explosives Ordinance Disposal (EOD) unit. EOD will determine the threat and mitigate any immediate explosives 
+hazard(s).</TXT><BRK/>
+<BRK/>
+<TXT>Where suspected MEC are encountered during construction operations and other activities, notify the Contracting 
+Officer's Representative/Contracting Officer immediately. If no hazard is present or poses no danger, the Government 
+will direct the Contractor to proceed without change after given the all clear from the emergency responders. 
+If MEC are found the condition or probability of encountering MEC may also change. The responsible government 
+authority will conduct a new probability assessment, this determination will be used to plan the level of support 
+required and determine further requirements. Pursuant to FAR 52.243-4, "Changes" the Government may issue a modification.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><TAI OPT="OKINAWA MARINE CORPS"><SPT><TTL>Training</TTL><BRK/>
+<NTE><BRK/>
+<AST/><BRK/>
+<NPR>NOTE:  Include for Okinawa Marine Corps projects.</NPR><BRK/>
+<AST/><BRK/></NTE>
+<BRK/>
+<TXT>All workers on site involved in the earthwork, in any manner, must attend a UXO brief.  Coordinate with Contracting 
+Officer for scheduling of this Briefing. Upon completion of the brief, the worker will receive a laminated card 
+verifying that they attended the brief. The card does not expire and is valid for all USACE construction contracts 
+on Okinawa, but is non-transferrable between workers. The USACE team will help coordinate the training and assist 
+with processing base access requests as needed. The brief is free of charge, but the contractor is responsible 
+for all other costs associated with transport to Camp Foster, labor, and all other costs related to the training.  
+The expected duration of this training is two hours.</TXT><BRK/>
+<BRK/></SPT>
+</TAI></SPT><SPT><TTL>EQUIPMENT</TTL><BRK/>
+<BRK/>
+<SPT><TTL>Use of Explosives</TTL><BRK/>
+<BRK/>
+<TXT>Explosives must not be used or brought to the project site without prior written approval from the Contracting 
+Officer.  Such approval does not relieve the Contractor of responsibility for injury to persons or for damage 
+to property due to blasting operations.</TXT><BRK/>
+<BRK/>
+<TXT>Storage of explosives, when permitted on Government property, must be only where directed and in approved storage 
+facilities.  These facilities must be kept locked at all times except for inspection, delivery, and withdrawal 
+of explosives.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>ELECTRICAL </TTL><BRK/>
+<BRK/>
+<TXT>Perform electrical work in accordance with <RID>EM 385-1-1</RID>, Chapters 11 and 12.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Electrical Work</TTL><BRK/>
+<BRK/>
+<TXT>As described in <RID>EM 385-1-1</RID>, electrical work is to be conducted in a de-energized state unless there is no alternative 
+method for accomplishing the work.  In those cases obtain an energized work permit from the Contracting Officer.  
+The energized work permit application must be accompanied by the AHA and a summary of why the equipment/circuit 
+needs to be worked energized.  Underground electrical spaces must be certified safe for entry before entering 
+to conduct work.  Cables that will be cut must be positively identified and de-energized prior to performing 
+each cut.  Attach temporary grounds in accordance with <RID>ASTM F855</RID> and <RID>IEEE 1048</RID>.  Perform all high voltage cable 
+cutting remotely using hydraulic cutting tool.  When racking in or live switching of circuit breakers, no additional 
+person other than the switch operator is allowed in the space during the actual operation.  Plan so that work 
+near energized parts is minimized to the fullest extent possible.  Use of electrical outages clear of any energized 
+electrical sources is the preferred method.</TXT><BRK/>
+<BRK/>
+<TXT>When working in energized substations, only qualified electrical workers are permitted to enter.  When work requires 
+work near energized circuits as defined by <RID>NFPA 70</RID>, high voltage personnel must use personal protective equipment 
+that includes, as a minimum, electrical hard hat, safety footwear, insulating gloves and electrical arc flash 
+protection for personnel as required by <RID>NFPA 70E</RID>.  Insulating blankets, hearing protection, and switching suits 
+may also be required, depending on the specific job and as delineated in the Contractor's AHA.  Ensure that each 
+employee is familiar with and complies with these procedures and <RID>29 CFR 1910</RID>and <RID>29 CFR 1926</RID>.</TXT><BRK/>
+<BRK/>
+<SPT><TTL>Energized Electrical Work Permit (EEWP)</TTL><BRK/>
+<BRK/>
+<TXT>All equipment and circuits must be placed into an Establishing an Electrically Safe Working Condition (ESWC) 
+must be de-energized before work is started unless energized work can be justified.  A QP must complete and verify 
+the following to establish electrically safe working condition in accordance with <RID>EM 385-1-1</RID>, paragraph 11-8.d 
+unless the work meets the EEWP exemption located under <RID>EM 385-1-1</RID>, paragraph 11-8.e(5) or the host employer or 
+system owner can show that there are additional hazards or an increased risk from de-energizing.</TXT><BRK/>
+<BRK/>
+<TXT>Hazardous Energy:  Any energy including but not limited to mechanical (for example, power transmission apparatus, 
+counterbalances, springs, pressure, gravity), pneumatic, hydraulic, electrical, stored electrical energy exists 
+such as Uninterrupted Power Systems (UPS), chemical, nuclear, and thermal (for example, high or low temperature) 
+energies, which could cause injury to employees.</TXT><BRK/>
+<BRK/>
+<TXT>Once it has been determined that equipment must be worked on in an energized condition, an EEWP must be submitted 
+to the USACE supervisor/KO or COR and AHJ for acceptance.  Do not perform energized work without prior authorization.  
+All permits must be prepared, signed, and authorized in advance of performing any electrical work.  A non-mandatory 
+ENG Form 6277 (Energized Electrical Work Permit) is provided in <RID>EM 385-1-1</RID>, Chapter 11-10.</TXT><BRK/>
+<BRK/></SPT>
+</SPT><SPT><TTL>Qualifications</TTL><BRK/>
+<BRK/>
+<TXT>Electrical work must be performed by QP with verifiable credentials who are familiar with applicable code requirements.  
+Verifiable credentials consist of State, National and Local <SUB>Certifications</SUB> or <SUB>Licenses</SUB> that a Master or Journeyman 
+Electrician may hold, depending on work being performed, and must be identified in the appropriate AHA.  Journeyman/Apprentice 
+ratio must be in accordance with Host Nation requirements applicable to where work is being performed.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Arc Flash</TTL><BRK/>
+<BRK/>
+<TXT>Conduct a hazard analysis/arc flash hazard analysis whenever work on or near energized parts greater than 50 
+volts is necessary, in accordance with <RID>NFPA 70E</RID>.</TXT><BRK/>
+<BRK/>
+<TXT>All personnel entering the identified arc flash protection boundary must be QPs and properly trained in <RID>NFPA 70E</RID>
+ requirements and procedures.  Unless permitted by <RID>NFPA 70E</RID>, no Unqualified Person is permitted to approach nearer 
+than the Limited Approach Boundary of energized conductors and circuit parts.  Training must be administered 
+by an electrically qualified source and documented.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Grounding</TTL><BRK/>
+<BRK/>
+<TXT>Ground electrical circuits, equipment and enclosures in accordance with <RID>NFPA 70</RID> and <RID>IEEE C2</RID> to provide a permanent, 
+continuous and effective path to ground unless otherwise noted by <RID>EM 385-1-1</RID>.</TXT><BRK/>
+<BRK/></SPT>
+<SPT><TTL>Testing</TTL><BRK/>
+<BRK/>
+<TXT>Temporary electrical distribution systems and devices must be inspected, tested and found acceptable for Ground-Fault 
+Circuit Interrupter (GFCI) protection, polarity, ground continuity, and ground resistance before <NED/>initial use, 
+before use after modification and at least monthly.  Monthly inspections and tests must be maintained for each 
+temporary electrical distribution system, and signed by the electrical CP or QP.</TXT><BRK/>
+<BRK/></SPT>
+</SPT></PRT>    <END/><BRK/></SEC>

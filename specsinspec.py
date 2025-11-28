@@ -50,13 +50,25 @@ def create_html_reports(folder_path:str) -> None:
                 file.write(f'<li style="font-weight: bold;">{file_name}</li>')
             file.write(f'</ul>')
 
-    create_error_html(html_folder)
-    create_index(html_folder)
+    try:
+        create_error_html(html_folder)
+    except Exception as e:
+        print(e)
+    finally:
+        create_index(html_folder)
 
-clean_dirs = ['./sec/jes16',
-              './sec/jes16_0x81 only',
-              './sec/jes16_executed',
-              './sec/jes161']
+clean_dirs = [
+    # './sec/jes16',
+    # './sec/jes16_0x81 only',
+    # './sec/jes16_executed',
+    # './sec/jes161',
+    # './sec/fixed_jes16',
+    # './sec/fixed_jes16_executed',
+    # './sec/fixed_jes161',
+    # './final/jes16',
+    # './final/jes16_executed',
+    # './final/jes161'
+    ]
 
 for a_dir in clean_dirs:
     create_html_reports(a_dir)
