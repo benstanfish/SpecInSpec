@@ -56,11 +56,11 @@ def create_error_html(html_dir:str) -> None:
         soup.find(id='index_styles').append(css_styles)
         soup.find(id='scripts').append(js_scripts)
 
-        mini_html = minify_html.minify(str(soup), keep_comments=False, minify_css=True, minify_js=True)
+        # mini_html = minify_html.minify(str(soup), keep_comments=False, minify_css=True, minify_js=True)
 
         with open(error_html_file, 'w') as file:
-            file.write(mini_html)
-
+            # file.write(mini_html)
+            file.write(soup)
 
 
 
@@ -122,3 +122,4 @@ def create_index(html_dir:str) -> None:
 
     with open(index_file, 'w') as file:
         file.write(mini_html)
+        # file.write(soup)

@@ -251,5 +251,6 @@ def make_html_from_sec(sec_path:str, output_path:str='') -> dict:
 
         with open(html_file, 'w', encoding='utf-8') as file:
             file.write(mini_html)
+            # file.write(soup)
 
         return section_info
